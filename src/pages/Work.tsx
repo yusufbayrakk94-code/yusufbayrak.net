@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { Helmet } from "react-helmet-async";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 

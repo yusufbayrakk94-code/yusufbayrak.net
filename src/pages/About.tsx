@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { Helmet } from "react-helmet-async";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
 import profileAsset from "@/assets/yusuf-bayrak-profil.jpg.asset.json";
