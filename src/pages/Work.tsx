@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { Helmet } from "react-helmet-async";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 
@@ -29,6 +30,17 @@ const projects = [
 export default function Work() {
   return (
     <Layout>
+      <Helmet>
+        <title>Projeler | Yusuf Bayrak</title>
+        <meta name="description" content="AdGusto, Brandog & Marka-MCP ve Büyüme & Otomasyon Altyapıları başta olmak üzere geliştirdiğim ürün ve projeler." />
+        <link rel="canonical" href="https://digital-core-labs.lovable.app/projeler" />
+        <meta property="og:title" content="Projeler | Yusuf Bayrak" />
+        <meta property="og:description" content="SaaS, AI ve otomasyon odaklı ürün ve projelerimden seçkiler." />
+        <meta property="og:url" content="https://digital-core-labs.lovable.app/projeler" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Projeler | Yusuf Bayrak" />
+        <meta name="twitter:description" content="SaaS, AI ve otomasyon odaklı ürün ve projelerimden seçkiler." />
+      </Helmet>
       <section className="py-20">
         <div className="container">
           {/* Page Header */}

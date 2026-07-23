@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { CodeDivider } from "@/components/ui/CodeDivider";
@@ -34,6 +35,17 @@ const featuredProjects = [
 export default function Home() {
   return (
     <Layout>
+      <Helmet>
+        <title>Yusuf Bayrak | Dijital Pazarlama, B2B Lead Gen & AI Otomasyon</title>
+        <meta name="description" content="Web sitesi kurulumu ve B2B lead generation kurgularını yapay zeka otomasyonlarıyla uçtan uca inşa eden dijital pazarlama uzmanı." />
+        <link rel="canonical" href="https://digital-core-labs.lovable.app/" />
+        <meta property="og:title" content="Yusuf Bayrak | Dijital Pazarlama, B2B Lead Gen & AI Otomasyon" />
+        <meta property="og:description" content="Web sitesi kurulumu ve B2B lead generation kurgularını yapay zeka otomasyonlarıyla uçtan uca inşa ediyorum." />
+        <meta property="og:url" content="https://digital-core-labs.lovable.app/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Yusuf Bayrak | Dijital Pazarlama, B2B Lead Gen & AI Otomasyon" />
+        <meta name="twitter:description" content="Web sitesi kurulumu ve B2B lead generation kurgularını yapay zeka otomasyonlarıyla uçtan uca inşa ediyorum." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center bg-grid">
         <div className="container">
