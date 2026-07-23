@@ -50,14 +50,14 @@ export default function Styleguide() {
           <CodeDivider label="Typography" />
           <div className="space-y-8 mb-16">
             <div className="space-y-4">
-              <p className="font-mono text-xs text-primary">/* Headings - Inter */</p>
+              <p className="font-mono text-xs text-accent">/* Headings - Inter */</p>
               <h1 className="text-4xl font-bold">Heading 1</h1>
               <h2 className="text-3xl font-bold">Heading 2</h2>
               <h3 className="text-2xl font-semibold">Heading 3</h3>
               <h4 className="text-xl font-semibold">Heading 4</h4>
             </div>
             <div className="space-y-4">
-              <p className="font-mono text-xs text-primary">/* Body - Inter */</p>
+              <p className="font-mono text-xs text-accent">/* Body - Inter */</p>
               <p className="text-base text-foreground">
                 Body text in regular weight. Used for paragraphs and main content.
               </p>
@@ -66,7 +66,7 @@ export default function Styleguide() {
               </p>
             </div>
             <div className="space-y-4">
-              <p className="font-mono text-xs text-primary">/* Mono - JetBrains Mono */</p>
+              <p className="font-mono text-xs text-accent">/* Mono - JetBrains Mono */</p>
               <p className="font-mono text-base">
                 Monospace text for code and technical details.
               </p>
@@ -99,7 +99,7 @@ export default function Styleguide() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-primary/50">
+            <Card className="border-accent/50">
               <CardHeader>
                 <CardTitle>Highlighted Card</CardTitle>
               </CardHeader>
