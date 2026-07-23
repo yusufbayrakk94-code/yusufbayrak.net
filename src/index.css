@@ -170,8 +170,8 @@
   /* Technical grid pattern background that adapts to theme */
   .bg-grid {
     background-image:
-      linear-gradient(hsl(var(--grid-line) / 0.5) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--grid-line) / 0.5) 1px, transparent 1px);
+      linear-gradient(hsl(var(--grid-line) / 0.6) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--grid-line) / 0.6) 1px, transparent 1px);
     background-size: 50px 50px;
   }
 
