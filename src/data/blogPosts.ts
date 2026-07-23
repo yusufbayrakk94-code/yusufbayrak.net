@@ -62,6 +62,33 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
 ];
 
+export const BLOG_CATEGORIES_EN: BlogCategory[] = [
+  {
+    slug: "performans-pazarlama",
+    name: "Performance Marketing",
+    description:
+      "Data-driven Google, Meta and LinkedIn Ads campaigns with a focus on ROAS and conversion.",
+  },
+  {
+    slug: "b2b-lead-generation",
+    name: "B2B Lead Generation",
+    description:
+      "Outbound, ABM and inbound funnels; system design for qualified B2B lead generation.",
+  },
+  {
+    slug: "yapay-zeka-otomasyon",
+    name: "AI & Automation",
+    description:
+      "LLM-powered workflows, n8n/Make automations and MCP integrations that scale ops.",
+  },
+  {
+    slug: "saas-buyume",
+    name: "SaaS & Growth",
+    description:
+      "SaaS metrics, PLG, activation and retention-focused sustainable growth strategies.",
+  },
+];
+
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "b2b-lead-generation-huni-tasarimi",
