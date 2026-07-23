@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
+import profileAsset from "@/assets/yusuf-bayrak-profil.jpg.asset.json";
 
 const expertise = [
   "Performans Pazarlaması",
