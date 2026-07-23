@@ -108,7 +108,7 @@ export default function ProjectDetail() {
           {/* Back Link */}
           <Link 
             to="/projeler" 
-            className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-primary transition-colors mb-8 opacity-0 animate-fade-in-up"
+            className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-accent transition-colors mb-8 opacity-0 animate-fade-in-up"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Projelere Dön
@@ -131,8 +131,8 @@ export default function ProjectDetail() {
             </div>
 
             {/* Impact */}
-            <div className="p-4 bg-primary/5 border border-primary/20 rounded-lg">
-              <span className="font-mono text-sm text-primary">
+            <div className="p-4 bg-accent/5 border border-accent/20 rounded-lg">
+              <span className="font-mono text-sm text-accent">
                 <span className="text-muted-foreground">{"//"}</span> Etki: {project.impact}
               </span>
             </div>
@@ -147,7 +147,7 @@ export default function ProjectDetail() {
             <ul className="space-y-3">
               {project.challenges.map((challenge, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="font-mono text-primary mt-1">→</span>
+                  <span className="font-mono text-accent mt-1">→</span>
                   <span className="text-muted-foreground">{challenge}</span>
                 </li>
               ))}
@@ -163,7 +163,7 @@ export default function ProjectDetail() {
             <ul className="space-y-3">
               {project.features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="font-mono text-primary mt-1">✓</span>
+                  <span className="font-mono text-accent mt-1">✓</span>
                   <span className="text-muted-foreground">{feature}</span>
                 </li>
               ))}
@@ -177,7 +177,7 @@ export default function ProjectDetail() {
               Kaynak Kod
             </Button>
             {project.externalUrl ? (
-              <Button asChild variant="outline" className="font-mono">
+              <Button asChild className="font-mono">
                 <a href={project.externalUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Canlı Demo
