@@ -11,55 +11,55 @@
 
 @layer base {
   :root {
-    /* Light theme - #CBCBCB medium gray background */
-    --background: 0 0% 80%;
-    --foreground: 0 0% 4%;
+    /* Light theme - clean slate-50 background */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
 
-    --card: 0 0% 96%;
-    --card-foreground: 0 0% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 0 0% 96%;
-    --popover-foreground: 0 0% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Primary - Neon Green accent */
-    --primary: 130 100% 50%;
-    --primary-foreground: 0 0% 4%;
+    /* Primary - emerald-600 for buttons and interactive accents */
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Light gray surface */
-    --secondary: 0 0% 90%;
-    --secondary-foreground: 0 0% 4%;
+    /* Secondary - slate-100 surface */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    /* Muted - Subtle gray */
-    --muted: 0 0% 90%;
-    --muted-foreground: 0 0% 45%;
+    /* Muted - slate-100 with readable slate-600 text */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    /* Accent - Same as primary for consistency */
-    --accent: 130 100% 50%;
-    --accent-foreground: 0 0% 4%;
+    /* Accent - emerald-700 for deeper text accents */
+    --accent: 160 84% 31%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Borders - Medium gray lines */
-    --border: 0 0% 75%;
-    --input: 0 0% 75%;
-    --ring: 130 100% 50%;
+    /* Borders - slate-200 lines */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 160 84% 39%;
 
     --radius: 0.375rem;
 
     /* Sidebar */
-    --sidebar-background: 0 0% 80%;
-    --sidebar-foreground: 0 0% 4%;
-    --sidebar-primary: 130 100% 50%;
-    --sidebar-primary-foreground: 0 0% 4%;
-    --sidebar-accent: 0 0% 90%;
-    --sidebar-accent-foreground: 0 0% 4%;
-    --sidebar-border: 0 0% 75%;
-    --sidebar-ring: 130 100% 50%;
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 160 84% 39%;
 
     /* Overlay & decorative tokens */
-    --overlay: 0 0% 0%;
-    --grid-line: 0 0% 75%;
+    --overlay: 222 47% 11%;
+    --grid-line: 214 32% 91%;
   }
 
   .dark {
@@ -73,9 +73,9 @@
     --popover: 0 0% 7%;
     --popover-foreground: 0 0% 98%;
 
-    /* Primary - Neon Green accent */
-    --primary: 130 100% 50%;
-    --primary-foreground: 0 0% 4%;
+    /* Primary - emerald-600 for buttons and interactive accents */
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
 
     /* Secondary - Dark graphite */
     --secondary: 0 0% 12%;
@@ -85,9 +85,9 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
 
-    /* Accent - Same as primary for consistency */
-    --accent: 130 100% 50%;
-    --accent-foreground: 0 0% 4%;
+    /* Accent - emerald-700 for deeper text accents */
+    --accent: 160 84% 31%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -95,17 +95,17 @@
     /* Borders - Subtle dark lines */
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 130 100% 50%;
+    --ring: 160 84% 39%;
 
     /* Sidebar */
     --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 130 100% 50%;
-    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 130 100% 50%;
+    --sidebar-ring: 160 84% 39%;
 
     /* Overlay & decorative tokens */
     --overlay: 0 0% 0%;
