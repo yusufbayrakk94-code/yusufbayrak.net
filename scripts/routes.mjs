@@ -81,8 +81,11 @@ export function getBlogSlugs() {
       : file.indexOf("blogPosts");
     const source = postsSectionStart > 0 ? file.slice(postsSectionStart) : file;
     const known = ["performans-pazarlama","b2b-lead-generation","yapay-zeka-otomasyon","saas-buyume"];
+    const enSlugs = new Set(BLOG_SLUG_PAIRS.map((p) => p.en));
     const all = Array.from(source.matchAll(/^\s*slug:\s*"([^"]+)"/gm)).map((m) => m[1]);
-    return Array.from(new Set(all.filter((s) => !known.includes(s))));
+    // Exclude category slugs AND English post slugs — EN posts belong only
+    // under /en/blog/<slug>, not the root TR /blog/<slug> tree.
+    return Array.from(new Set(all.filter((s) => !known.includes(s) && !enSlugs.has(s))));
   } catch { return []; }
 }
 
