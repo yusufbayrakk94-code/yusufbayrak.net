@@ -5,20 +5,21 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { lazy, Suspense } from "react";
 import Home from "./pages/Home";
-import Work from "./pages/Work";
-import ProjectDetail from "./pages/ProjectDetail";
-import About from "./pages/About";
-import Styleguide from "./pages/Styleguide";
-import Contact from "./pages/Contact";
-import FreeTools from "./pages/FreeTools";
-import ArrCalculator from "./pages/tools/ArrCalculator";
-import CacCalculator from "./pages/tools/CacCalculator";
-import ChurnCalculator from "./pages/tools/ChurnCalculator";
-import LtvCalculator from "./pages/tools/LtvCalculator";
-import RoasCalculator from "./pages/tools/RoasCalculator";
-import UtmBuilder from "./pages/tools/UtmBuilder";
-import NotFound from "./pages/NotFound";
+const Work = lazy(() => import("./pages/Work"));
+const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
+const About = lazy(() => import("./pages/About"));
+const Styleguide = lazy(() => import("./pages/Styleguide"));
+const Contact = lazy(() => import("./pages/Contact"));
+const FreeTools = lazy(() => import("./pages/FreeTools"));
+const ArrCalculator = lazy(() => import("./pages/tools/ArrCalculator"));
+const CacCalculator = lazy(() => import("./pages/tools/CacCalculator"));
+const ChurnCalculator = lazy(() => import("./pages/tools/ChurnCalculator"));
+const LtvCalculator = lazy(() => import("./pages/tools/LtvCalculator"));
+const RoasCalculator = lazy(() => import("./pages/tools/RoasCalculator"));
+const UtmBuilder = lazy(() => import("./pages/tools/UtmBuilder"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/work" element={<Work />} />
@@ -52,6 +54,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </Suspense>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
