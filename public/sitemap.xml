@@ -128,21 +128,53 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/b2b-lead-generation-huni-tasarimi</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/b2b-lead-generation-huni-tasarimi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/google-ads-performans-optimizasyonu</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/google-ads-performans-optimizasyonu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/google-ads-performance-optimization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/n8n-ile-lead-enrichment-otomasyonu</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/n8n-ile-lead-enrichment-otomasyonu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/n8n-lead-enrichment-automation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/saas-metrikleri-arr-cac-ltv</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/saas-metrikleri-arr-cac-ltv" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/b2b-lead-generation-funnel-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/google-ads-performance-optimization</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/n8n-lead-enrichment-automation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/saas-metrics-arr-cac-ltv</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -262,6 +294,38 @@
     <loc>https://yusufbayrak.net/en/projects/buyume-otomasyon-altyapilari</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/projects/buyume-otomasyon-altyapilari" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/projeler/buyume-otomasyon-altyapilari" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/b2b-lead-generation-huni-tasarimi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/google-ads-performance-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/google-ads-performance-optimization" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/google-ads-performans-optimizasyonu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/n8n-lead-enrichment-automation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/n8n-lead-enrichment-automation" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/n8n-ile-lead-enrichment-otomasyonu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/saas-metrikleri-arr-cac-ltv" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
