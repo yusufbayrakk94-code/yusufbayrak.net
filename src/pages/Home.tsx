@@ -44,16 +44,12 @@ export default function Home() {
             {/* Headline with typing cursor */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Merhaba, ben Yusuf Bayrak.
-              <br />
-              <span className="text-muted-foreground">Web sitesi kurulumu ve B2B lead generation kurgularını, yapay zeka otomasyonlarıyla uçtan uca inşa ediyorum.</span>
               <TypingCursor />
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed opacity-0 animate-fade-in-up stagger-1">
-              A Mexico-based developer focused on building products that scale, perform, and deliver real impact. 
-              Working at the intersection of engineering, product, and design to turn 
-              complex problems into elegant solutions.
+              Web sitesi kurulumu ve B2B lead generation kurgularını, yapay zeka otomasyonlarıyla uçtan uca inşa ediyorum.
             </p>
 
             {/* CTA */}
