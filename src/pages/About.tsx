@@ -3,6 +3,16 @@ import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
 import profileAsset from "@/assets/yusuf-bayrak-profil.jpg.asset.json";
 
+// GitHub Pages ve diğer statik host'lar Lovable'ın "/__l5e/..." CDN yolunu
+// çözemez. Bu yüzden aynı görseli public/ altına da ekleyip, Lovable dışı
+// ortamlarda oradan servis ediyoruz. Asset sistemi (asset.json) korunuyor.
+const isLovableHost =
+  typeof window !== "undefined" &&
+  /lovable\.(app|dev)$/.test(window.location.hostname);
+const profileImageSrc = isLovableHost
+  ? profileAsset.url
+  : `${import.meta.env.BASE_URL}yusuf-bayrak-profil.jpg`;
+
 const expertise = [
   "Performans Pazarlaması",
   "B2B Lead Generation",
@@ -42,7 +52,7 @@ export default function About() {
               <div className="mb-8 opacity-0 animate-fade-in-up stagger-1">
                 <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden border-2 border-accent/30 transition-all duration-300 hover:border-accent">
                   <img
-                    src={profileAsset.url}
+                    src={profileImageSrc}
                     alt="Yusuf Bayrak"
                     className="w-full h-full object-cover"
                   />
