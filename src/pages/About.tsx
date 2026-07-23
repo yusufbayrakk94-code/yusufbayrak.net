@@ -43,7 +43,7 @@ export default function About() {
                 <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden border-2 border-primary/30 transition-all duration-300 hover:border-primary">
                   <img
                     src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
-                    alt="Diego Ramirez - Developer"
+                    alt="Yusuf Bayrak - Developer"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -51,7 +51,7 @@ export default function About() {
 
               <div className="opacity-0 animate-fade-in-up stagger-1">
                 <p className="text-lg text-foreground leading-relaxed">
-                  I'm <span className="text-primary font-medium">Diego Ramirez</span>, a developer based in Mexico focused on building systems that scale, perform, and last. 
+                  I'm <span className="text-primary font-medium">Yusuf Bayrak</span>, a developer based in Mexico focused on building systems that scale, perform, and last. 
                   I work at the intersection of engineering, product, and design, turning 
                   complex problems into reliable digital solutions.
                 </p>

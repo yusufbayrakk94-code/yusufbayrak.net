@@ -43,7 +43,7 @@ export default function Home() {
 
             {/* Headline with typing cursor */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Hi, I'm Diego Ramirez.
+              Hi, I'm Yusuf Bayrak.
               <br />
               <span className="text-muted-foreground">I build reliable digital systems</span>
               <TypingCursor />
