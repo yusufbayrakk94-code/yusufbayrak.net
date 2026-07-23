@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/", // <--- Özel domain root (kök) yerleşimi için eklendi
   server: {
     host: "::",
     port: 8080,
