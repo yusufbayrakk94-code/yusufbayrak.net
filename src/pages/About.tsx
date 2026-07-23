@@ -1,172 +1,77 @@
 import { Layout } from "@/components/layout/Layout";
-import { Helmet } from "react-helmet-async";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
 import profileAsset from "@/assets/yusuf-bayrak-profil.jpg.asset.json";
+import { useLocale } from "@/i18n/useLocale";
+import { LocaleMeta } from "@/i18n/LocaleMeta";
+import { pickAbout } from "@/content";
 
-// GitHub Pages ve diğer statik host'lar Lovable'ın "/__l5e/..." CDN yolunu
-// çözemez. Bu yüzden aynı görseli public/ altına da ekleyip, Lovable dışı
-// ortamlarda oradan servis ediyoruz. Asset sistemi (asset.json) korunuyor.
 const isLovableHost =
-  typeof window !== "undefined" &&
-  /lovable\.(app|dev)$/.test(window.location.hostname);
+  typeof window !== "undefined" && /lovable\.(app|dev)$/.test(window.location.hostname);
 const profileImageSrc = isLovableHost
   ? profileAsset.url
   : `${import.meta.env.BASE_URL}yusuf-bayrak-profil.jpg`;
 
-const expertise = [
-  "Performans Pazarlaması",
-  "B2B Lead Generation",
-  "Yapay Zeka & İş Akışı Otomasyonu",
-  "Web Geliştirme & Kurulum",
-  "Büyüme Stratejisi",
-  "SaaS Ürün Geliştirme",
-];
-
-const tools = [
-  "Google Ads",
-  "Meta Ads",
-  "LinkedIn Ads",
-  "AI APIs / LLMs",
-  "n8n",
-  "Cursor",
-  "Lovable",
-  "Web Analytics",
-];
-
 export default function About() {
+  const locale = useLocale();
+  const c = pickAbout(locale);
+
   return (
     <Layout>
-      <Helmet>
-        <title>Hakkımda | Yusuf Bayrak</title>
-        <meta name="description" content="Veri odaklı dijital pazarlama, B2B lead generation ve yapay zeka otomasyonu alanlarında çalışan Yusuf Bayrak'ın profesyonel özgeçmişi." />
-        <link rel="canonical" href="https://digital-core-labs.lovable.app/hakkimda" />
-        <meta property="og:title" content="Hakkımda | Yusuf Bayrak" />
-        <meta property="og:description" content="Dijital pazarlama, B2B lead generation ve AI otomasyonu üzerine uzmanlık alanlarım ve kullandığım araçlar." />
-        <meta property="og:url" content="https://digital-core-labs.lovable.app/hakkimda" />
-        <meta property="og:type" content="profile" />
-        <meta name="twitter:title" content="Hakkımda | Yusuf Bayrak" />
-        <meta name="twitter:description" content="Dijital pazarlama, B2B lead generation ve AI otomasyonu üzerine uzmanlık alanlarım ve kullandığım araçlar." />
-      </Helmet>
+      <LocaleMeta path={c.path} locale={locale} title={c.seoTitle} description={c.seoDescription} ogType="profile" />
       <section className="py-20">
         <div className="container">
-          {/* Page Header */}
           <div className="max-w-3xl mb-12 opacity-0 animate-fade-in-up">
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Hakkımda
-            </h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{c.heading}</h1>
           </div>
-
           <div className="grid gap-16 lg:grid-cols-3">
-            {/* Main Content */}
             <div className="lg:col-span-2 space-y-6">
-              {/* Developer Photo */}
               <div className="mb-8 opacity-0 animate-fade-in-up stagger-1">
                 <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden border-2 border-accent/30 transition-all duration-300 hover:border-accent">
-                  <img
-                    src={profileImageSrc}
-                    alt="Yusuf Bayrak"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={profileImageSrc} alt="Yusuf Bayrak" className="w-full h-full object-cover" />
                 </div>
               </div>
-
-              <div className="opacity-0 animate-fade-in-up stagger-1">
-                <p className="text-lg text-foreground leading-relaxed">
-                  Veri odaklı dijital pazarlama stratejilerini güçlü bir analitik
-                  bakış açısıyla harmanlıyorum. Performans pazarlama, B2B lead
-                  generation ve dijital altyapı yönetimi temel odak alanlarımı
-                  oluşturuyor.
-                </p>
-              </div>
-
-              <div className="opacity-0 animate-fade-in-up stagger-2">
-                <p className="text-muted-foreground leading-relaxed">
-                  Kapsam sadece reklam yönetimiyle sınırlı değil; web sitesi
-                  kurulumundan gelişmiş otomasyon kurgularına kadar markaların
-                  dijital ekosistemi uçtan uca inşa ediliyor. Operasyonel yükü
-                  hafifleten ve bütçe verimliliği sağlayan yapay zeka araçları
-                  sürecin merkezinde yer alıyor.
-                </p>
-              </div>
-
-              <div className="opacity-0 animate-fade-in-up stagger-3">
-                <p className="text-muted-foreground leading-relaxed">
-                  AdGusto, Brandog ve Marka-MCP gibi SaaS çözümleriyle dijital
-                  pazarlama ekosistemine katkı sunarken; sahada bizzat test edip
-                  sonuç aldığım sistemleri, markalar için sürdürülebilir büyüme
-                  motorlarına dönüştürüyorum.
-                </p>
-              </div>
-
-              <div className="opacity-0 animate-fade-in-up stagger-4">
-                <CodeDivider label="Yaklaşım" />
-              </div>
-
+              {c.paragraphs.map((p, i) => (
+                <div key={i} className={`opacity-0 animate-fade-in-up stagger-${Math.min(i + 1, 4)}`}>
+                  <p className={i === 0 ? "text-lg text-foreground leading-relaxed" : "text-muted-foreground leading-relaxed"}>{p}</p>
+                </div>
+              ))}
+              <div className="opacity-0 animate-fade-in-up stagger-4"><CodeDivider label={c.approachDivider} /></div>
               <div className="space-y-4 font-mono text-sm opacity-0 animate-fade-in-up stagger-4">
-                <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-accent">{"//"}</span> Veriye dayalı kararlar,
-                  sezgisel tahminlerin önünde
-                </p>
-                <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-accent">{"//"}</span> Otomasyonla operasyonel
-                  yükü azalt, ölçeklenebilirliği artır
-                </p>
-                <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-accent">{"//"}</span> SaaS çözümleriyle pazarlama
-                  ekosistemini güçlendir
-                </p>
-                <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-accent">{"//"}</span> Sadece kurgula; sahada test
-                  et ve sonuç al
-                </p>
+                {c.approach.map((line, i) => (
+                  <p key={i} className="text-muted-foreground transition-colors hover:text-foreground">
+                    <span className="text-accent">{"//"}</span> {line}
+                  </p>
+                ))}
               </div>
             </div>
-
-            {/* Sidebar */}
             <div className="space-y-8">
-              {/* Skills */}
               <div className="opacity-0 animate-fade-in-up stagger-2">
                 <h2 className="font-mono text-sm text-accent mb-4">
-                  <span className="text-muted-foreground">/*</span> Uzmanlık Alanları{" "}
-                  <span className="text-muted-foreground">*/</span>
+                  <span className="text-muted-foreground">/*</span> {c.expertiseLabel} <span className="text-muted-foreground">*/</span>
                 </h2>
                 <ul className="space-y-2">
-                  {expertise.map((item) => (
-                    <li
-                      key={item}
-                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      <span className="text-accent mr-2">→</span>
-                      {item}
+                  {c.expertise.map((item) => (
+                    <li key={item} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                      <span className="text-accent mr-2">→</span>{item}
                     </li>
                   ))}
                 </ul>
               </div>
-
-              {/* Tech Stack */}
               <div className="opacity-0 animate-fade-in-up stagger-3">
                 <h2 className="font-mono text-sm text-accent mb-4">
-                  <span className="text-muted-foreground">/*</span> Araçlar{" "}
-                  <span className="text-muted-foreground">*/</span>
+                  <span className="text-muted-foreground">/*</span> {c.toolsLabel} <span className="text-muted-foreground">*/</span>
                 </h2>
                 <div className="flex flex-wrap gap-2">
-                  {tools.map((tool) => (
-                    <TechTag key={tool}>{tool}</TechTag>
-                  ))}
+                  {c.tools.map((tool) => (<TechTag key={tool}>{tool}</TechTag>))}
                 </div>
               </div>
-
-              {/* Experience */}
               <div className="opacity-0 animate-fade-in-up stagger-4">
                 <h2 className="font-mono text-sm text-accent mb-4">
-                  <span className="text-muted-foreground">/*</span> Deneyim{" "}
-                  <span className="text-muted-foreground">*/</span>
+                  <span className="text-muted-foreground">/*</span> {c.experienceLabel} <span className="text-muted-foreground">*/</span>
                 </h2>
                 <div className="space-y-3 text-sm text-muted-foreground">
-                  <p>Performans pazarlama & otomasyon</p>
-                  <p>B2B lead generation sistemleri</p>
-                  <p>SaaS ürün geliştirme</p>
+                  {c.experience.map((e, i) => (<p key={i}>{e}</p>))}
                 </div>
               </div>
             </div>

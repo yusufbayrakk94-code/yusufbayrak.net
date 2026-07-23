@@ -1,0 +1,25 @@
+export const contact = {
+  path: "/en/contact",
+  seoTitle: "Contact | Yusuf Bayrak",
+  seoDescription:
+    "Get in touch with Yusuf Bayrak for product, digital marketing and AI automation projects.",
+  heading: "Contact",
+  intro:
+    "Reach out for a new project, collaboration or consulting call. Happy to talk about digital marketing, lead generation and product development.",
+  formDivider: "Send Message",
+  labelName: "Full Name",
+  placeholderName: "Your full name",
+  labelEmail: "Email",
+  placeholderEmail: "you@example.com",
+  labelMessage: "Message",
+  placeholderMessage: "Briefly describe your project...",
+  submit: "Send Message",
+  submitting: "Sending...",
+  toastTitle: "Message sent",
+  toastDescription: "Thanks for your message — I'll get back to you shortly.",
+  linksDivider: "Links",
+  linkedinLabel: "LinkedIn",
+  emailLabel: "Email",
+  statusLabel: "Status",
+  statusText: "Open for product and solution engagements.",
+};

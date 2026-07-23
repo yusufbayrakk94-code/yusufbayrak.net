@@ -1,41 +1,27 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/ui/ThemeProvider";
-
-const navItems = [
-  { href: "/", label: "Ana Sayfa" },
-  { href: "/hakkimda", label: "Hakkımda" },
-  { href: "/projeler", label: "Projeler" },
-  { href: "/blog", label: "Blog" },
-  { href: "/ucretsiz-araclar", label: "Ücretsiz Araçlar" },
-  { href: "/iletisim", label: "İletişim" },
-];
+import { useLocale } from "@/i18n/useLocale";
+import { pickSite } from "@/content";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
-
+  const locale = useLocale();
+  const site = pickSite(locale);
   return (
     <Button
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
       className="text-foreground"
-      aria-label={theme === "light" ? "Karanlık moda geç" : "Aydınlık moda geç"}
+      aria-label={theme === "light" ? site.themeToDark : site.themeToLight}
     >
-      {theme === "light" ? (
-        <Moon className="h-5 w-5" />
-      ) : (
-        <Sun className="h-5 w-5" />
-      )}
+      {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
     </Button>
   );
 }
@@ -43,29 +29,28 @@ function ThemeToggle() {
 export function Header() {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const locale = useLocale();
+  const site = pickSite(locale);
+  const brandHref = locale === "en" ? "/en" : "/";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
-        {/* Logo */}
         <Link
-          to="/"
+          to={brandHref}
           className="font-mono text-sm font-medium text-accent hover:opacity-80 transition-opacity"
         >
           {"Yusuf Bayrak"}
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
+          {site.nav.map((item) => (
             <Link
               key={item.href}
               to={item.href}
               className={cn(
                 "font-mono text-sm transition-colors hover:text-accent link-underline",
-                location.pathname === item.href
-                  ? "text-accent"
-                  : "text-muted-foreground"
+                location.pathname === item.href ? "text-accent" : "text-muted-foreground"
               )}
             >
               {item.label}
@@ -73,23 +58,28 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Right Actions */}
         <div className="flex items-center gap-2">
+          <LanguageSwitcher className="hidden sm:inline-flex" />
           <ThemeToggle />
 
-          {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="icon" className="text-foreground" aria-label="Menüyü aç/kapat">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-foreground"
+                aria-label={site.menuToggle}
+              >
                 <Menu className="h-5 w-5" aria-hidden="true" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-72 bg-background border-border">
               <div className="flex flex-col gap-6 mt-8">
-                <div className="font-mono text-sm text-accent mb-4">
-                  {"// Navigation"}
+                <div className="font-mono text-sm text-accent mb-2">
+                  {site.navigationComment}
                 </div>
-                {navItems.map((item) => (
+                <LanguageSwitcher className="sm:hidden self-start" />
+                {site.nav.map((item) => (
                   <SheetClose asChild key={item.href}>
                     <Link
                       to={item.href}

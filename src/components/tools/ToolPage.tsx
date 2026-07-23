@@ -4,62 +4,59 @@ import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
+  Accordion, AccordionContent, AccordionItem, AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useLocale } from "@/i18n/useLocale";
+import { LocaleMeta } from "@/i18n/LocaleMeta";
+import { pickTools } from "@/content";
+import { SITE_URL } from "@/i18n/routes";
+import type { ToolContent } from "@/content/types";
 
-export interface Faq {
-  q: string;
-  a: string;
-}
+// Generic tool page shell. Each calculator page passes its `toolKey`; content
+// (title, intro, SEO copy, FAQs, back-link, dividers, currency) is pulled from
+// the locale bundle. This keeps the calculator pages tiny and pure — they only
+// hold the numeric logic.
 
-interface ToolPageProps {
-  title: string;
-  description: string;
-  path: string;
-  intro: string;
+interface Props {
+  toolKey: keyof ReturnType<typeof pickTools>;
   children: React.ReactNode;
-  seoContent?: React.ReactNode;
-  faqs?: Faq[];
 }
 
-const SITE = "https://digital-core-labs.lovable.app";
+export function ToolPage({ toolKey, children }: Props) {
+  const locale = useLocale();
+  const bundle = pickTools(locale);
+  const tool = bundle[toolKey] as ToolContent;
 
-export function ToolPage({ title, description, path, intro, children, seoContent, faqs }: ToolPageProps) {
-  const url = `${SITE}${path}`;
-  const faqJsonLd = faqs && faqs.length > 0 ? {
+  const canonical = `${SITE_URL}${tool.path}`;
+  const faqJsonLd = tool.faqs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map((f) => ({
+    mainEntity: tool.faqs.map((f) => ({
       "@type": "Question",
-      "name": f.q,
-      "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
   } : null;
+
   return (
     <Layout>
+      <LocaleMeta
+        path={tool.path}
+        locale={locale}
+        title={`${tool.title} | Yusuf Bayrak`}
+        description={tool.description}
+      />
       <Helmet>
-        <title>{`${title} | Yusuf Bayrak`}</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={url} />
-        <meta property="og:title" content={`${title} | Yusuf Bayrak`} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${title} | Yusuf Bayrak`} />
-        <meta name="twitter:description" content={description} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          "name": title,
-          "description": description,
-          "url": url,
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" }
+          name: tool.title,
+          description: tool.description,
+          url: canonical,
+          applicationCategory: "BusinessApplication",
+          operatingSystem: "Web",
+          offers: { "@type": "Offer", price: "0", priceCurrency: bundle.currency },
+          inLanguage: locale === "en" ? "en-US" : "tr-TR",
         })}</script>
         {faqJsonLd && (
           <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
@@ -68,40 +65,40 @@ export function ToolPage({ title, description, path, intro, children, seoContent
       <section className="py-20">
         <div className="container max-w-3xl">
           <Link
-            to="/ucretsiz-araclar"
+            to={bundle.toolBackHref}
             className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-accent transition-colors mb-8 opacity-0 animate-fade-in-up"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Ücretsiz Araçlara Dön
+            {bundle.toolBackLabel}
           </Link>
-
           <div className="mb-8 opacity-0 animate-fade-in-up stagger-1">
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{title}</h1>
-            <p className="text-muted-foreground leading-relaxed">{intro}</p>
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{tool.title}</h1>
+            <p className="text-muted-foreground leading-relaxed">{tool.intro}</p>
           </div>
-
           <div className="opacity-0 animate-fade-in-up stagger-2">
-            <CodeDivider label="Hesaplayıcı" />
+            <CodeDivider label={bundle.toolCalculatorDivider} />
           </div>
-
           <div className="p-6 bg-card border border-border rounded-lg opacity-0 animate-fade-in-up stagger-3">
             {children}
           </div>
-
-          {seoContent && (
+          {tool.seoParagraphs.length > 0 && (
             <div className="mt-16 opacity-0 animate-fade-in-up stagger-3">
-              <CodeDivider label="Rehber" />
-              <article className="max-w-none text-muted-foreground leading-relaxed space-y-5 [&_h2]:text-foreground [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:mt-8 [&_h2]:mb-3 [&_strong]:text-foreground">
-                {seoContent}
+              <CodeDivider label={bundle.toolGuideDivider} />
+              <article className="max-w-none text-muted-foreground leading-relaxed space-y-5 [&_h2]:text-foreground [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:mt-8 [&_h2]:mb-3">
+                {tool.seoParagraphs.map((para, i) => (
+                  <div key={i}>
+                    {para.heading && <h2>{para.heading}</h2>}
+                    <p>{para.body}</p>
+                  </div>
+                ))}
               </article>
             </div>
           )}
-
-          {faqs && faqs.length > 0 && (
+          {tool.faqs.length > 0 && (
             <div className="mt-16 opacity-0 animate-fade-in-up stagger-3">
-              <CodeDivider label="Sıkça Sorulan Sorular" />
+              <CodeDivider label={bundle.toolFaqDivider} />
               <Accordion type="single" collapsible className="bg-card border border-border rounded-lg px-4">
-                {faqs.map((f, i) => (
+                {tool.faqs.map((f, i) => (
                   <AccordionItem key={i} value={`item-${i}`} className="border-border last:border-0">
                     <AccordionTrigger className="text-left font-mono text-sm text-foreground hover:text-accent hover:no-underline">
                       {f.q}
@@ -151,12 +148,7 @@ export function Field({ label, value, onChange, suffix, placeholder, type = "num
   );
 }
 
-interface ResultProps {
-  label: string;
-  value: string;
-  hint?: string;
-}
-
+interface ResultProps { label: string; value: string; hint?: string; }
 export function Result({ label, value, hint }: ResultProps) {
   return (
     <div className="p-4 bg-accent/5 border border-accent/20 rounded-lg">
@@ -165,4 +157,16 @@ export function Result({ label, value, hint }: ResultProps) {
       {hint && <div className="font-mono text-xs text-muted-foreground mt-2">{hint}</div>}
     </div>
   );
+}
+
+// Currency formatter that reads locale + currency from the active tool bundle.
+export function useCurrencyFormatter() {
+  const locale = useLocale();
+  const bundle = pickTools(locale);
+  return (n: number, maxDigits = 2) =>
+    new Intl.NumberFormat(bundle.numberLocale, {
+      style: "currency",
+      currency: bundle.currency,
+      maximumFractionDigits: maxDigits,
+    }).format(n);
 }

@@ -1,219 +1,127 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Helmet } from "react-helmet-async";
-
-const projectsData: Record<string, {
-  name: string;
-  description: string;
-  fullDescription: string;
-  stack: string[];
-  impact: string;
-  challenges: string[];
-  features: string[];
-  externalUrl?: string;
-}> = {
-  adgusto: {
-    name: "AdGusto",
-    description: "Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS projesi.",
-    fullDescription: "AdGusto, Meta Ads kütüphane entegrasyonu üzerinden rakiplerin kreatiflerini analiz etmeyi, kendi kreatif süreçlerini yönetmeyi ve ekiplerin reklam üretim hızını artırmayı sağlayan bir SaaS platformudur.",
-    stack: ["SaaS", "Meta Ads", "Kreatif Yönetimi", "React", "Node.js"],
-    impact: "Rakip analizi ve kreatif yönetimini hızlandırır",
-    challenges: [
-      "Meta Ads kütüphanesinden yüksek hacimli veriyi düzenli toplamak",
-      "Rakip kreatiflerini anlamlı kategorilere ayırmak",
-      "Ekipler için hızlı ve karar destekleyici bir arayüz tasarlamak",
-      "Ölçeklenebilir SaaS altyapısını maliyet-etkin yönetmek"
-    ],
-    features: [
-      "Rakip kreatif kütüphanesi ve filtreleme",
-      "Kreatif yönetim panosu",
-      "Meta Ads kütüphane entegrasyonu",
-      "Ekip iş birliği araçları"
-    ],
-    externalUrl: "https://www.adgusto.app"
-  },
-  "brandog-marka-mcp": {
-    name: "Brandog & Marka-MCP",
-    description: "TÜRKPATENT Veritabanına Yapay zeka Model Context Protocol (MCP) altyapısıyla bağlanan, güçlendirilmiş; marka tescil ve süreç yönetimini akıllı, otomatize bir yapıda buluşturan platform çözümü.",
-    fullDescription: "Brandog & Marka-MCP, TÜRKPATENT veritabanını Yapay Zeka Model Context Protocol (MCP) altyapısıyla güçlendirerek marka tescil araştırma, takip ve süreç yönetimini tek bir platformda birleştiren akıllı bir otomasyon çözümüdür.",
-    stack: ["MCP", "Yapay Zeka", "TÜRKPATENT", "Node.js", "PostgreSQL"],
-    impact: "Marka tescil süreçlerini otomatize eder",
-    challenges: [
-      "TÜRKPATENT verileriyle güvenilir ve hızlı entegrasyon kurmak",
-      "MCP protokolüne uygun bağlam tabanlı AI akışları tasarlamak",
-      "Marka hukuku süreçlerini otomasyona uyarlamak",
-      "Kullanıcılar için anlaşılır ve güven veren bir arayüz sunmak"
-    ],
-    features: [
-      "TÜRKPATENT veritabanı entegrasyonu",
-      "MCP tabanlı AI destekli araştırma",
-      "Marka tescil süreç takibi",
-      "Otomatik raporlama ve uyarılar"
-    ],
-    externalUrl: "https://brandog.lovable.app"
-  },
-  "buyume-otomasyon-altyapilari": {
-    name: "Büyüme & Otomasyon Altyapıları",
-    description: "Modern low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle markalar için kurguladığım sürdürülebilir büyüme motorları.",
-    fullDescription: "Markalar için low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle tasarlanmış sürdürülebilir büyüme motorları. Amaç; tekrar eden işleri minimize etmek, veriye dayalı kararları hızlandırmak ve ölçeklenebilir pazarlama & operasyon altyapıları kurmaktır.",
-    stack: ["Low-code", "Otomasyon", "Veri Stratejisi", "n8n", "Make", "Airtable"],
-    impact: "Sürdürülebilir büyüme motorları kurar",
-    challenges: [
-      "Farklı veri kaynaklarını tek bir otomasyon akışında birleştirmek",
-      "Low-code araçlarla kurumsal ölçekte güvenilir sistemler inşa etmek",
-      "Büyüme metriklerini gerçek zamanlı izlenebilir hale getirmek",
-      "Süreçleri otomatikleştirirken insan denetimini korumak"
-    ],
-    features: [
-      "Low-code otomasyon akışları",
-      "Veri odaklı büyüme panoları",
-      "Pazarlama ve operasyon entegrasyonları",
-      "Ölçeklenebilir süreç altyapısı"
-    ]
-  }
-};
+import { useLocale } from "@/i18n/useLocale";
+import { LocaleMeta } from "@/i18n/LocaleMeta";
+import { pickProjects, pickProjectsPage } from "@/content";
+import { SITE_URL } from "@/i18n/routes";
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
-  const project = slug ? projectsData[slug] : null;
+  const locale = useLocale();
+  const page = pickProjectsPage(locale);
+  const project = pickProjects(locale).find((p) => p.slug === slug);
 
-  if (!project) {
+  if (!project || !slug) {
     return (
       <Layout>
+        <LocaleMeta
+          path={`${page.detailBaseHref}/${slug ?? ""}`}
+          locale={locale}
+          title={page.notFoundTitle}
+          description={page.notFoundText}
+        />
         <section className="py-20">
-          <div className="container">
-            <div className="text-center">
-              <h1 className="text-3xl font-bold text-foreground mb-4">Hata: Proje Bulunamadı — Yusuf Bayrak</h1>
-              <p className="text-muted-foreground mb-8">Aradığınız proje mevcut değil.</p>
-              <Button asChild>
-                <Link to="/projeler">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Projelere Dön
-                </Link>
-              </Button>
-            </div>
+          <div className="container text-center">
+            <h1 className="text-3xl font-bold text-foreground mb-4">{page.notFoundTitle}</h1>
+            <p className="text-muted-foreground mb-8">{page.notFoundText}</p>
+            <Button asChild>
+              <Link to={page.listPath}>
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                {page.backToProjects}
+              </Link>
+            </Button>
           </div>
         </section>
       </Layout>
     );
   }
 
+  const detailPath = `${page.detailBaseHref}/${slug}`;
+
   return (
     <Layout>
+      <LocaleMeta
+        path={detailPath}
+        locale={locale}
+        title={`${project.name} | Yusuf Bayrak`}
+        description={project.description}
+        ogType="article"
+      />
       <Helmet>
-        <title>{`${project.name} | Yusuf Bayrak`}</title>
-        <meta name="description" content={project.description} />
-        <link rel="canonical" href={`https://digital-core-labs.lovable.app/projeler/${slug}`} />
-        <meta property="og:title" content={`${project.name} | Yusuf Bayrak`} />
-        <meta property="og:description" content={project.description} />
-        <meta property="og:url" content={`https://digital-core-labs.lovable.app/projeler/${slug}`} />
-        <meta property="og:type" content="article" />
-        <meta name="twitter:title" content={`${project.name} | Yusuf Bayrak`} />
-        <meta name="twitter:description" content={project.description} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          "name": project.name,
-          "description": project.fullDescription,
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "url": project.externalUrl || `https://digital-core-labs.lovable.app/projeler/${slug}`,
-          "author": {
-            "@type": "Person",
-            "name": "Yusuf Bayrak",
-            "url": "https://digital-core-labs.lovable.app/"
-          },
-          "keywords": project.stack.join(", ")
+          name: project.name,
+          description: project.fullDescription,
+          applicationCategory: "BusinessApplication",
+          operatingSystem: "Web",
+          url: project.externalUrl || `${SITE_URL}${detailPath}`,
+          author: { "@type": "Person", name: "Yusuf Bayrak", url: SITE_URL },
+          keywords: project.stack.join(", "),
+          inLanguage: locale === "en" ? "en-US" : "tr-TR",
         })}</script>
       </Helmet>
       <section className="py-20">
         <div className="container max-w-4xl">
-          {/* Back Link */}
-          <Link 
-            to="/projeler" 
-            className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-accent transition-colors mb-8 opacity-0 animate-fade-in-up"
-          >
+          <Link to={page.listPath} className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-accent transition-colors mb-8 opacity-0 animate-fade-in-up">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Projelere Dön
+            {page.backToProjects}
           </Link>
-
-          {/* Project Header */}
           <div className="mb-12 opacity-0 animate-fade-in-up stagger-1">
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              {project.name}
-            </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              {project.fullDescription}
-            </p>
-            
-            {/* Tech Stack */}
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{project.name}</h1>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">{project.fullDescription}</p>
             <div className="flex flex-wrap gap-2 mb-6">
-              {project.stack.map((tech) => (
-                <TechTag key={tech}>{tech}</TechTag>
-              ))}
+              {project.stack.map((tech) => (<TechTag key={tech}>{tech}</TechTag>))}
             </div>
-
-            {/* Impact */}
             <div className="p-4 bg-accent/5 border border-accent/20 rounded-lg">
               <span className="font-mono text-sm text-accent">
-                <span className="text-muted-foreground">{"//"}</span> Etki: {project.impact}
+                <span className="text-muted-foreground">{"//"}</span> {page.impactLabel}: {project.impact}
               </span>
             </div>
           </div>
-
-          <div className="opacity-0 animate-fade-in-up stagger-2">
-            <CodeDivider label="Zorluklar" />
-          </div>
-
-          {/* Challenges */}
+          <div className="opacity-0 animate-fade-in-up stagger-2"><CodeDivider label={page.challengesDivider} /></div>
           <div className="mb-12 opacity-0 animate-fade-in-up stagger-3">
             <ul className="space-y-3">
-              {project.challenges.map((challenge, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {project.challenges.map((c, i) => (
+                <li key={i} className="flex items-start gap-3">
                   <span className="font-mono text-accent mt-1">→</span>
-                  <span className="text-muted-foreground">{challenge}</span>
+                  <span className="text-muted-foreground">{c}</span>
                 </li>
               ))}
             </ul>
           </div>
-
-          <div className="opacity-0 animate-fade-in-up stagger-3">
-            <CodeDivider label="Özellikler" />
-          </div>
-
-          {/* Features */}
+          <div className="opacity-0 animate-fade-in-up stagger-3"><CodeDivider label={page.featuresDivider} /></div>
           <div className="mb-12 opacity-0 animate-fade-in-up stagger-4">
             <ul className="space-y-3">
-              {project.features.map((feature, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {project.features.map((f, i) => (
+                <li key={i} className="flex items-start gap-3">
                   <span className="font-mono text-accent mt-1">✓</span>
-                  <span className="text-muted-foreground">{feature}</span>
+                  <span className="text-muted-foreground">{f}</span>
                 </li>
               ))}
             </ul>
           </div>
-
-          {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 pt-8 border-t border-border opacity-0 animate-fade-in-up stagger-4">
             <Button variant="outline" className="font-mono" disabled>
               <Github className="mr-2 h-4 w-4" />
-              Kaynak Kod
+              {page.sourceCode}
             </Button>
             {project.externalUrl ? (
               <Button asChild className="font-mono">
                 <a href={project.externalUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-4 w-4" />
-                  Canlı Demo
+                  {page.liveDemo}
                 </a>
               </Button>
             ) : (
               <Button variant="outline" className="font-mono" disabled>
                 <ExternalLink className="mr-2 h-4 w-4" />
-                Canlı Demo
+                {page.liveDemo}
               </Button>
             )}
           </div>

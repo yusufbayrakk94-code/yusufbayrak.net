@@ -9,12 +9,14 @@ interface ProjectCardProps {
   stack: string[];
   impact: string;
   slug: string;
-  href?: string;
+  href?: string;        // external URL override
+  baseHref?: string;    // e.g. "/projeler" or "/en/projects"
   className?: string;
 }
 
-export function ProjectCard({ name, description, stack, impact, slug, href, className }: ProjectCardProps) {
+export function ProjectCard({ name, description, stack, impact, slug, href, baseHref, className }: ProjectCardProps) {
   const isExternal = href?.startsWith("http") ?? false;
+  const to = `${baseHref ?? "/projeler"}/${slug}`;
 
   const content = (
     <article
@@ -23,29 +25,16 @@ export function ProjectCard({ name, description, stack, impact, slug, href, clas
         className
       )}
     >
-      {/* Project Name */}
       <div className="flex items-center justify-between mb-2">
-        <h3 className="font-mono text-lg font-medium text-foreground group-hover:text-accent transition-colors">
-          {name}
-        </h3>
+        <h3 className="font-mono text-lg font-medium text-foreground group-hover:text-accent transition-colors">{name}</h3>
         <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all" />
       </div>
-
-      {/* Description */}
-      <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-        {description}
-      </p>
-
-      {/* Tech Stack */}
+      <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{description}</p>
       {stack.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-4">
-          {stack.map((tech) => (
-            <TechTag key={tech}>{tech}</TechTag>
-          ))}
+          {stack.map((tech) => (<TechTag key={tech}>{tech}</TechTag>))}
         </div>
       )}
-
-      {/* Impact */}
       {impact && (
         <div className="pt-4 border-t border-border">
           <span className="font-mono text-xs text-accent">
@@ -57,12 +46,8 @@ export function ProjectCard({ name, description, stack, impact, slug, href, clas
   );
 
   return isExternal ? (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="block">
-      {content}
-    </a>
+    <a href={href} target="_blank" rel="noopener noreferrer" className="block">{content}</a>
   ) : (
-    <Link to={`/projeler/${slug}`} className="block">
-      {content}
-    </Link>
+    <Link to={to} className="block">{content}</Link>
   );
 }
