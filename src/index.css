@@ -5,17 +5,68 @@
 @tailwind utilities;
 
 /* Developer Portfolio Design System
-   Dark, technical, terminal-inspired aesthetic
+   Light mode default, dark terminal-inspired aesthetic.
    All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Dark theme as default - deep black/graphite */
+    /* Light theme - clean white background */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
+
+    /* Primary - Neon Green accent */
+    --primary: 130 100% 50%;
+    --primary-foreground: 0 0% 4%;
+
+    /* Secondary - Light gray surface */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 4%;
+
+    /* Muted - Subtle gray */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent - Same as primary for consistency */
+    --accent: 130 100% 50%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders - Light gray lines */
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 130 100% 50%;
+
+    --radius: 0.375rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 4%;
+    --sidebar-primary: 130 100% 50%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 4%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 130 100% 50%;
+
+    /* Overlay & decorative tokens */
+    --overlay: 0 0% 0%;
+    --grid-line: 0 0% 90%;
+  }
+
+  .dark {
+    /* Dark theme - deep black/graphite */
     --background: 0 0% 4%;
     --foreground: 0 0% 98%;
 
-    /* Card backgrounds - slightly lighter graphite */
     --card: 0 0% 7%;
     --card-foreground: 0 0% 98%;
 
@@ -38,15 +89,13 @@
     --accent: 130 100% 50%;
     --accent-foreground: 0 0% 4%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
     /* Borders - Subtle dark lines */
     --border: 0 0% 18%;
     --input: 0 0% 18%;
     --ring: 130 100% 50%;
-
-    --radius: 0.375rem;
 
     /* Sidebar */
     --sidebar-background: 0 0% 5%;
@@ -57,37 +106,10 @@
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 18%;
     --sidebar-ring: 130 100% 50%;
-  }
 
-  .dark {
-    /* Same as root - dark theme is the default */
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 7%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 130 100% 50%;
-    --primary-foreground: 0 0% 4%;
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 130 100% 50%;
-    --accent-foreground: 0 0% 4%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 130 100% 50%;
-    --sidebar-background: 0 0% 5%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 130 100% 50%;
-    --sidebar-primary-foreground: 0 0% 4%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 130 100% 50%;
+    /* Overlay & decorative tokens */
+    --overlay: 0 0% 0%;
+    --grid-line: 0 0% 18%;
   }
 }
 
@@ -105,7 +127,7 @@
     @apply font-heading font-semibold tracking-tight;
   }
 
-  /* Custom scrollbar for dark theme */
+  /* Custom scrollbar that follows theme */
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -137,7 +159,7 @@
 
   /* Subtle glow effect for accent elements */
   .glow-primary {
-    box-shadow: 0 0 20px hsl(130 100% 50% / 0.3);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
   }
 
   /* Code-style text */
@@ -145,11 +167,11 @@
     font-family: 'JetBrains Mono', monospace;
   }
 
-  /* Technical grid pattern background */
+  /* Technical grid pattern background that adapts to theme */
   .bg-grid {
-    background-image: 
-      linear-gradient(hsl(0 0% 18% / 0.5) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(0 0% 18% / 0.5) 1px, transparent 1px);
+    background-image:
+      linear-gradient(hsl(var(--grid-line) / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--grid-line) / 0.5) 1px, transparent 1px);
     background-size: 50px 50px;
   }
 
@@ -160,7 +182,7 @@
 
   .hover-lift:hover {
     @apply -translate-y-1;
-    box-shadow: 0 10px 40px hsl(130 100% 50% / 0.1);
+    box-shadow: 0 10px 40px hsl(var(--primary) / 0.1);
   }
 
   /* Animated underline for links */
