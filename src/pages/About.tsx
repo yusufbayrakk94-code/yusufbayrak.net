@@ -42,7 +42,7 @@ export default function About() {
               <div className="mb-8 opacity-0 animate-fade-in-up stagger-1">
                 <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden border-2 border-accent/30 transition-all duration-300 hover:border-accent">
                   <img
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    src={profileAsset.url}
                     alt="Yusuf Bayrak"
                     className="w-full h-full object-cover"
                   />
