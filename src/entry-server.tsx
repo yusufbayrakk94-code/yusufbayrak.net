@@ -1,6 +1,6 @@
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
-import { HelmetProvider, type FilledContext } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
 import "./index.css";
 
@@ -9,19 +9,18 @@ import "./index.css";
 // state so the SSG script can splice per-route <title>, <meta>, <link>, etc.
 // into the base HTML template.
 
-export interface RenderResult {
-  html: string;
-  helmet: FilledContext["helmet"];
-}
-
-export function render(url: string): RenderResult {
-  const helmetContext: Partial<FilledContext> = {};
+// Shape of the object react-helmet-async writes onto the context after render.
+// Typed loosely since the library doesn't export FilledContext in v3.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function render(url: string): { html: string; helmet: any } {
+  const helmetContext: Record<string, unknown> = {};
   const html = renderToString(
-    <HelmetProvider context={helmetContext}>
+    <HelmetProvider context={helmetContext as never}>
       <StaticRouter location={url}>
         <App />
       </StaticRouter>
     </HelmetProvider>
   );
-  return { html, helmet: (helmetContext as FilledContext).helmet };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return { html, helmet: (helmetContext as any).helmet };
 }
