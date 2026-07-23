@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://digital-core-labs.lovable.app/sitemap.xml
