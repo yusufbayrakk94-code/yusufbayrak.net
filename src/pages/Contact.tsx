@@ -154,8 +154,7 @@ export default function Contact() {
                   <span className="text-accent">*/</span>
                 </p>
                 <p className="text-sm text-foreground">
-                  Yeni projelere, danışmanlık görüşmelerine ve iş birliklerine
-                  açığım.
+                  Ürün ve çözümler için iletişime geçebilirsiniz.
                 </p>
               </div>
             </div>
