@@ -84,6 +84,7 @@ export default function FreeTools() {
                 <Link
                   key={tool.slug}
                   to={`/ucretsiz-araclar/${tool.slug}`}
+                  aria-label={`${tool.name}: ${tool.description}`}
                   className="group p-6 bg-card border border-border rounded-lg hover:border-accent/50 transition-colors block"
                 >
                   <div className="flex items-start gap-4">

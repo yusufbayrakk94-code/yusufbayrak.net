@@ -86,7 +86,7 @@ export default function ProjectDetail() {
         <section className="py-20">
           <div className="container">
             <div className="text-center">
-              <h1 className="text-3xl font-bold text-foreground mb-4">Proje Bulunamadı</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-4">Hata: Proje Bulunamadı — Yusuf Bayrak</h1>
               <p className="text-muted-foreground mb-8">Aradığınız proje mevcut değil.</p>
               <Button asChild>
                 <Link to="/projeler">
