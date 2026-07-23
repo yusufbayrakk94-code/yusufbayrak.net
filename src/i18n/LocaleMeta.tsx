@@ -66,7 +66,7 @@ export function LocaleMeta({
 export function isRegisteredRoute(path: string): boolean {
   if (STATIC_ROUTE_PAIRS.some((p) => p.tr === path || p.en === path)) return true;
   if (/^\/(projeler|en\/projects)\/[^/]+$/.test(path)) return true;
-  if (/^\/blog(\/[^/]+)?$/.test(path)) return true;
+  if (/^\/(blog|en\/blog)(\/[^/]+)?$/.test(path)) return true;
   if (path === "/styleguide") return true;
   return false;
 }
