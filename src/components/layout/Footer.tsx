@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
-  { href: "https://github.com", icon: Github, label: "GitHub" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-  { href: "mailto:hello@developer.dev", icon: Mail, label: "Email" },
+  { href: "https://tr.linkedin.com/in/yyusuf-bayrak", icon: Linkedin, label: "LinkedIn" },
+  { href: "mailto:yyusufbayrak@gmail.com", icon: Mail, label: "E-posta" },
 ];
 
 export function Footer() {

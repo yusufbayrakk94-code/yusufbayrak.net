@@ -130,10 +130,11 @@ export default function Contact() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`${link.label} profili: ${link.handle}`}
                     className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-accent/50 transition-colors group"
                   >
                     <div className="flex items-center justify-center w-12 h-12 bg-secondary rounded-lg group-hover:bg-accent/10 transition-colors">
-                      <link.icon className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors" />
+                      <link.icon className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors" aria-hidden="true" />
                     </div>
                     <div>
                       <p className="font-mono text-sm text-foreground group-hover:text-accent transition-colors">
