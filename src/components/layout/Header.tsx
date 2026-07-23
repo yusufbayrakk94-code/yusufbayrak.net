@@ -15,6 +15,7 @@ const navItems = [
   { href: "/", label: "Ana Sayfa" },
   { href: "/hakkimda", label: "Hakkımda" },
   { href: "/projeler", label: "Projeler" },
+  { href: "/blog", label: "Blog" },
   { href: "/ucretsiz-araclar", label: "Ücretsiz Araçlar" },
   { href: "/iletisim", label: "İletişim" },
 ];
