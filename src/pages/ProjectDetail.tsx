@@ -105,6 +105,15 @@ export default function ProjectDetail() {
   return (
     <Layout>
       <Helmet>
+        <title>{`${project.name} | Yusuf Bayrak`}</title>
+        <meta name="description" content={project.description} />
+        <link rel="canonical" href={`https://digital-core-labs.lovable.app/projeler/${slug}`} />
+        <meta property="og:title" content={`${project.name} | Yusuf Bayrak`} />
+        <meta property="og:description" content={project.description} />
+        <meta property="og:url" content={`https://digital-core-labs.lovable.app/projeler/${slug}`} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:title" content={`${project.name} | Yusuf Bayrak`} />
+        <meta name="twitter:description" content={project.description} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
