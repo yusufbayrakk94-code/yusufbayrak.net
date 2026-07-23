@@ -19,6 +19,8 @@ const ChurnCalculator = lazy(() => import("./pages/tools/ChurnCalculator"));
 const LtvCalculator = lazy(() => import("./pages/tools/LtvCalculator"));
 const RoasCalculator = lazy(() => import("./pages/tools/RoasCalculator"));
 const UtmBuilder = lazy(() => import("./pages/tools/UtmBuilder"));
+const BlogList = lazy(() => import("./pages/blog/BlogList"));
+const BlogPost = lazy(() => import("./pages/blog/BlogPost"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -51,6 +53,8 @@ const App = () => (
             <Route path="/ucretsiz-araclar/roas-hesaplayici" element={<RoasCalculator />} />
             <Route path="/ucretsiz-araclar/utm-link-olusturucu" element={<UtmBuilder />} />
             <Route path="/iletisim" element={<Contact />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
