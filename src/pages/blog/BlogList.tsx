@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/i18n/useLocale";
 import {
   BLOG_CATEGORIES,
   BLOG_POSTS,
@@ -16,7 +17,55 @@ type FilterValue = BlogCategorySlug | "all";
 
 const SITE = "https://digital-core-labs.lovable.app";
 
+const UI = {
+  tr: {
+    title: "Blog — Performans Pazarlama, B2B Lead Gen ve AI | Yusuf Bayrak",
+    description:
+      "Performans pazarlama, B2B lead generation, yapay zeka otomasyonları ve SaaS büyümesi üzerine uygulamalı içerikler ve rehberler.",
+    ogTitle: "Blog | Yusuf Bayrak",
+    ogDescription:
+      "Performans pazarlama, B2B lead generation, AI otomasyon ve SaaS büyümesi üzerine uygulamalı içerikler.",
+    label: "/* Blog */",
+    heading: "Performans, B2B Lead ve Yapay Zeka Notları",
+    intro:
+      "Performans pazarlama, B2B lead generation, yapay zeka otomasyonları ve SaaS büyümesi üzerine sahada denenmiş, uygulamalı içerikler.",
+    categoriesDivider: "Kategoriler",
+    categoriesAria: "Blog kategorileri",
+    all: "Tümü",
+    postsAria: "Blog yazıları",
+    empty: "Bu kategoride henüz yazı yok.",
+    readSuffix: "dk",
+    fallbackNote: null as string | null,
+    dateLocale: "tr-TR",
+    linkBase: "/blog",
+  },
+  en: {
+    title: "Blog — Performance Marketing, B2B Lead Gen & AI | Yusuf Bayrak",
+    description:
+      "Practical guides on performance marketing, B2B lead generation, AI automation and SaaS growth.",
+    ogTitle: "Blog | Yusuf Bayrak",
+    ogDescription:
+      "Practical guides on performance marketing, B2B lead generation, AI automation and SaaS growth.",
+    label: "/* Blog */",
+    heading: "Notes on Performance, B2B Lead Gen and AI",
+    intro:
+      "Field-tested articles on performance marketing, B2B lead generation, AI automation and SaaS growth.",
+    categoriesDivider: "Categories",
+    categoriesAria: "Blog categories",
+    all: "All",
+    postsAria: "Blog posts",
+    empty: "No posts in this category yet.",
+    readSuffix: "min",
+    fallbackNote:
+      "Individual posts are currently available in Turkish. English translations are coming soon.",
+    dateLocale: "en-US",
+    linkBase: "/blog",
+  },
+} as const;
+
 export default function BlogList() {
+  const locale = useLocale();
+  const ui = UI[locale];
   const [filter, setFilter] = useState<FilterValue>("all");
 
   const posts = useMemo(() => {
@@ -35,22 +84,18 @@ export default function BlogList() {
     })),
   };
 
+  const path = locale === "en" ? "/en/blog" : "/blog";
+
   return (
     <Layout>
       <Helmet>
-        <title>Blog — Performans Pazarlama, B2B Lead Gen ve AI | Yusuf Bayrak</title>
-        <meta
-          name="description"
-          content="Performans pazarlama, B2B lead generation, yapay zeka otomasyonları ve SaaS büyümesi üzerine uygulamalı içerikler ve rehberler."
-        />
-        <link rel="canonical" href={`${SITE}/blog`} />
+        <title>{ui.title}</title>
+        <meta name="description" content={ui.description} />
+        <link rel="canonical" href={`${SITE}${path}`} />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Blog | Yusuf Bayrak" />
-        <meta
-          property="og:description"
-          content="Performans pazarlama, B2B lead generation, AI otomasyon ve SaaS büyümesi üzerine uygulamalı içerikler."
-        />
-        <meta property="og:url" content={`${SITE}/blog`} />
+        <meta property="og:title" content={ui.ogTitle} />
+        <meta property="og:description" content={ui.ogDescription} />
+        <meta property="og:url" content={`${SITE}${path}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(itemListJsonLd)}</script>
       </Helmet>
@@ -58,26 +103,28 @@ export default function BlogList() {
       <section className="py-20">
         <div className="container">
           <div className="max-w-2xl mb-12 opacity-0 animate-fade-in-up">
-            <p className="font-mono text-sm text-accent mb-3">/* Blog */</p>
+            <p className="font-mono text-sm text-accent mb-3">{ui.label}</p>
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Performans, B2B Lead ve Yapay Zeka Notları
+              {ui.heading}
             </h1>
-            <p className="text-muted-foreground leading-relaxed">
-              Performans pazarlama, B2B lead generation, yapay zeka otomasyonları ve SaaS büyümesi
-              üzerine sahada denenmiş, uygulamalı içerikler.
-            </p>
+            <p className="text-muted-foreground leading-relaxed">{ui.intro}</p>
+            {ui.fallbackNote && (
+              <p className="mt-4 text-xs font-mono text-muted-foreground border-l-2 border-accent/50 pl-3">
+                {ui.fallbackNote}
+              </p>
+            )}
           </div>
 
-          <CodeDivider label="Kategoriler" />
+          <CodeDivider label={ui.categoriesDivider} />
 
           {/* Category tabs */}
           <div
             role="tablist"
-            aria-label="Blog kategorileri"
+            aria-label={ui.categoriesAria}
             className="flex flex-wrap gap-2 mb-10"
           >
             <CategoryTab
-              label="Tümü"
+              label={ui.all}
               active={filter === "all"}
               onClick={() => setFilter("all")}
               count={BLOG_POSTS.length}
@@ -97,7 +144,7 @@ export default function BlogList() {
           </div>
 
           {/* Posts */}
-          <section aria-label="Blog yazıları" className="grid gap-6 md:grid-cols-2">
+          <section aria-label={ui.postsAria} className="grid gap-6 md:grid-cols-2">
             {posts.map((post) => {
               const cat = getCategory(post.category);
               return (
@@ -110,7 +157,7 @@ export default function BlogList() {
                     <span>•</span>
                     <span className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" aria-hidden="true" />
-                      {new Date(post.publishedAt).toLocaleDateString("tr-TR", {
+                      {new Date(post.publishedAt).toLocaleDateString(ui.dateLocale, {
                         day: "2-digit",
                         month: "short",
                         year: "numeric",
@@ -119,12 +166,12 @@ export default function BlogList() {
                     <span>•</span>
                     <span className="flex items-center gap-1">
                       <Clock className="h-3 w-3" aria-hidden="true" />
-                      {post.readingMinutes} dk
+                      {post.readingMinutes} {ui.readSuffix}
                     </span>
                   </div>
 
                   <h2 className="text-lg font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
-                    <Link to={`/blog/${post.slug}`} className="stretched-link">
+                    <Link to={`${ui.linkBase}/${post.slug}`} className="stretched-link">
                       {post.title}
                     </Link>
                   </h2>
@@ -151,9 +198,7 @@ export default function BlogList() {
           </section>
 
           {posts.length === 0 && (
-            <p className="text-muted-foreground font-mono text-sm">
-              Bu kategoride henüz yazı yok.
-            </p>
+            <p className="text-muted-foreground font-mono text-sm">{ui.empty}</p>
           )}
         </div>
       </section>
