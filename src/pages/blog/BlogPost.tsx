@@ -8,19 +8,61 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { getPostBySlug, getCategory } from "@/data/blogPosts";
+import {
+  getPostBySlugLocalized,
+  getCategoryForLocale,
+  getAlternateBlogSlug,
+} from "@/data/blogPosts";
+import { useLocale } from "@/i18n/useLocale";
 
 const SITE = "https://digital-core-labs.lovable.app";
 const AUTHOR = "Yusuf Bayrak";
 
+const UI = {
+  tr: {
+    titleSuffix: " | Yusuf Bayrak",
+    backLink: "Tüm yazılar",
+    tldrLabel: "TL;DR — Özet",
+    faqHeading: "Sıkça Sorulan Sorular",
+    readSuffix: "dk okuma",
+    dateLocale: "tr-TR",
+    inLanguage: "tr-TR",
+    linkBase: "/blog",
+    breadcrumbHome: "Ana Sayfa",
+    breadcrumbBlog: "Blog",
+    navigateFallback: "/blog",
+    authorPath: "/hakkimda",
+  },
+  en: {
+    titleSuffix: " | Yusuf Bayrak",
+    backLink: "All posts",
+    tldrLabel: "TL;DR — Summary",
+    faqHeading: "Frequently Asked Questions",
+    readSuffix: "min read",
+    dateLocale: "en-US",
+    inLanguage: "en-US",
+    linkBase: "/en/blog",
+    breadcrumbHome: "Home",
+    breadcrumbBlog: "Blog",
+    navigateFallback: "/en/blog",
+    authorPath: "/en/about",
+  },
+} as const;
+
 export default function BlogPost() {
+  const locale = useLocale();
+  const ui = UI[locale];
   const { slug } = useParams<{ slug: string }>();
-  const post = slug ? getPostBySlug(slug) : undefined;
+  const post = slug ? getPostBySlugLocalized(slug, locale) : undefined;
 
-  if (!post) return <Navigate to="/blog" replace />;
+  if (!post) return <Navigate to={ui.navigateFallback} replace />;
 
-  const category = getCategory(post.category);
-  const url = `${SITE}/blog/${post.slug}`;
+  const category = getCategoryForLocale(post.category, locale);
+  const url = `${SITE}${ui.linkBase}/${post.slug}`;
+  const altSlug = getAlternateBlogSlug(post.slug, locale === "en" ? "tr" : "en");
+  const altHref = altSlug
+    ? `${SITE}${locale === "en" ? "/blog" : "/en/blog"}/${altSlug}`
+    : null;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -31,11 +73,11 @@ export default function BlogPost() {
     url,
     datePublished: post.publishedAt,
     dateModified: post.updatedAt ?? post.publishedAt,
-    author: { "@type": "Person", name: AUTHOR, url: `${SITE}/hakkimda` },
+    author: { "@type": "Person", name: AUTHOR, url: `${SITE}${ui.authorPath}` },
     publisher: { "@type": "Person", name: AUTHOR, url: SITE },
     articleSection: category.name,
     keywords: post.tags.join(", "),
-    inLanguage: "tr-TR",
+    inLanguage: ui.inLanguage,
   };
 
   const faqJsonLd = {
@@ -52,8 +94,8 @@ export default function BlogPost() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: SITE },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE}/blog` },
+      { "@type": "ListItem", position: 1, name: ui.breadcrumbHome, item: `${SITE}${locale === "en" ? "/en" : "/"}` },
+      { "@type": "ListItem", position: 2, name: ui.breadcrumbBlog, item: `${SITE}${ui.linkBase}` },
       { "@type": "ListItem", position: 3, name: post.title, item: url },
     ],
   };
@@ -61,14 +103,26 @@ export default function BlogPost() {
   return (
     <Layout>
       <Helmet>
-        <title>{`${post.title} | Yusuf Bayrak`}</title>
+        <html lang={locale === "en" ? "en" : "tr"} />
+        <title>{`${post.title}${ui.titleSuffix}`}</title>
         <meta name="description" content={post.description} />
         <meta name="keywords" content={post.tags.join(", ")} />
         <link rel="canonical" href={url} />
+        {altHref && (
+          <link
+            rel="alternate"
+            hrefLang={locale === "en" ? "tr" : "en"}
+            href={altHref}
+          />
+        )}
+        <link rel="alternate" hrefLang={locale} href={url} />
+        <link rel="alternate" hrefLang="x-default" href={`${SITE}/`} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
         <meta property="og:url" content={url} />
+        <meta property="og:locale" content={locale === "en" ? "en_US" : "tr_TR"} />
+        <meta property="og:locale:alternate" content={locale === "en" ? "tr_TR" : "en_US"} />
         <meta property="article:published_time" content={post.publishedAt} />
         {post.updatedAt && (
           <meta property="article:modified_time" content={post.updatedAt} />
@@ -79,6 +133,8 @@ export default function BlogPost() {
           <meta key={t} property="article:tag" content={t} />
         ))}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.description} />
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
@@ -87,23 +143,23 @@ export default function BlogPost() {
       <article className="py-20">
         <div className="container max-w-3xl">
           <Link
-            to="/blog"
+            to={ui.linkBase}
             className="inline-flex items-center gap-2 font-mono text-sm text-muted-foreground hover:text-accent transition-colors mb-8"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            Tüm yazılar
+            {ui.backLink}
           </Link>
 
           <header className="mb-10">
             <div className="flex items-center gap-3 mb-4 text-xs font-mono text-muted-foreground">
-              <Link to="/blog" className="text-accent hover:underline">
+              <Link to={ui.linkBase} className="text-accent hover:underline">
                 {category.name}
               </Link>
               <span>•</span>
               <span className="flex items-center gap-1">
                 <Calendar className="h-3 w-3" aria-hidden="true" />
                 <time dateTime={post.publishedAt}>
-                  {new Date(post.publishedAt).toLocaleDateString("tr-TR", {
+                  {new Date(post.publishedAt).toLocaleDateString(ui.dateLocale, {
                     day: "2-digit",
                     month: "long",
                     year: "numeric",
@@ -113,7 +169,7 @@ export default function BlogPost() {
               <span>•</span>
               <span className="flex items-center gap-1">
                 <Clock className="h-3 w-3" aria-hidden="true" />
-                {post.readingMinutes} dk okuma
+                {post.readingMinutes} {ui.readSuffix}
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-4">
@@ -131,7 +187,7 @@ export default function BlogPost() {
             <div className="flex items-center gap-2 mb-4">
               <Sparkles className="h-4 w-4 text-accent" aria-hidden="true" />
               <h2 id="tldr-heading" className="font-mono text-sm text-accent uppercase tracking-wider">
-                TL;DR — Özet
+                {ui.tldrLabel}
               </h2>
             </div>
             <ul className="space-y-2 list-disc pl-5 marker:text-accent">
@@ -183,7 +239,7 @@ export default function BlogPost() {
 
           <section aria-labelledby="faq-heading" className="mt-16">
             <h2 id="faq-heading" className="text-2xl font-semibold text-foreground mb-6">
-              Sıkça Sorulan Sorular
+              {ui.faqHeading}
             </h2>
             <Accordion type="single" collapsible className="w-full">
               {post.faq.map((f, i) => (
