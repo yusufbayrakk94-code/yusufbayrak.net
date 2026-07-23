@@ -5,24 +5,25 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { lazy, Suspense } from "react";
+// Pages are imported statically (not React.lazy) so `renderToString` in the
+// SSG script gets the actual page tree — Suspense would otherwise render the
+// fallback and Helmet would emit empty meta tags.
 import Home from "./pages/Home";
-
-const Work = lazy(() => import("./pages/Work"));
-const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
-const About = lazy(() => import("./pages/About"));
-const Styleguide = lazy(() => import("./pages/Styleguide"));
-const Contact = lazy(() => import("./pages/Contact"));
-const FreeTools = lazy(() => import("./pages/FreeTools"));
-const ArrCalculator = lazy(() => import("./pages/tools/ArrCalculator"));
-const CacCalculator = lazy(() => import("./pages/tools/CacCalculator"));
-const ChurnCalculator = lazy(() => import("./pages/tools/ChurnCalculator"));
-const LtvCalculator = lazy(() => import("./pages/tools/LtvCalculator"));
-const RoasCalculator = lazy(() => import("./pages/tools/RoasCalculator"));
-const UtmBuilder = lazy(() => import("./pages/tools/UtmBuilder"));
-const BlogList = lazy(() => import("./pages/blog/BlogList"));
-const BlogPost = lazy(() => import("./pages/blog/BlogPost"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+import Work from "./pages/Work";
+import ProjectDetail from "./pages/ProjectDetail";
+import About from "./pages/About";
+import Styleguide from "./pages/Styleguide";
+import Contact from "./pages/Contact";
+import FreeTools from "./pages/FreeTools";
+import ArrCalculator from "./pages/tools/ArrCalculator";
+import CacCalculator from "./pages/tools/CacCalculator";
+import ChurnCalculator from "./pages/tools/ChurnCalculator";
+import LtvCalculator from "./pages/tools/LtvCalculator";
+import RoasCalculator from "./pages/tools/RoasCalculator";
+import UtmBuilder from "./pages/tools/UtmBuilder";
+import BlogList from "./pages/blog/BlogList";
+import BlogPost from "./pages/blog/BlogPost";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -81,9 +82,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <ScrollToTop />
-        <Suspense fallback={null}>
-          <AppRoutes />
-        </Suspense>
+        <AppRoutes />
       </TooltipProvider>
     </QueryClientProvider>
   </ThemeProvider>
