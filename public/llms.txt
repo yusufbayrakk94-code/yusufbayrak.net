@@ -1,0 +1,35 @@
+# Yusuf Bayrak
+
+> Dijital pazarlama uzmanı: web sitesi kurulumu ve B2B lead generation kurgularını yapay zeka otomasyonlarıyla uçtan uca inşa ediyor. Performans pazarlaması, B2B lead generation, yapay zeka & iş akışı otomasyonu, web geliştirme ve SaaS ürün geliştirme alanlarında çalışıyor.
+
+## Ana Sayfalar
+
+- [Ana Sayfa](https://yusufbayrak.net/): Yusuf Bayrak'ın kısa tanıtımı ve öne çıkan projeler.
+- [Hakkımda](https://yusufbayrak.net/hakkimda): Profesyonel geçmiş, uzmanlık alanları ve kullanılan araçlar.
+- [Projeler](https://yusufbayrak.net/projeler): Tüm proje ve ürünlerin listesi.
+- [İletişim](https://yusufbayrak.net/iletisim): İletişim bilgileri (e-posta ve LinkedIn).
+
+## Projeler
+
+- [AdGusto](https://yusufbayrak.net/projeler/adgusto): Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS. Canlı: https://www.adgusto.app
+- [Brandog & Marka-MCP](https://yusufbayrak.net/projeler/brandog-marka-mcp): TÜRKPATENT veritabanına Model Context Protocol (MCP) altyapısıyla bağlanan marka tescil ve süreç yönetim platformu. Canlı: https://brandog.lovable.app
+- [Büyüme & Otomasyon Altyapıları](https://yusufbayrak.net/projeler/buyume-otomasyon): Low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle kurulan sürdürülebilir büyüme motorları.
+
+## Ücretsiz Araçlar
+
+- [Ücretsiz Araçlar](https://yusufbayrak.net/ucretsiz-araclar): Pazarlama ve SaaS metriklerini hesaplayan tarayıcı tabanlı araçlar.
+- [ARR Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/arr-hesaplayici): Yıllık yinelenen gelir (Annual Recurring Revenue) hesaplayıcı.
+- [CAC Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/cac-hesaplayici): Müşteri edinme maliyeti (Customer Acquisition Cost) analiz aracı.
+- [Churn Rate Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/churn-rate-hesaplayici): Müşteri kayıp oranı ve elde tutma performansı ölçümü.
+- [LTV Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/ltv-hesaplayici): Müşteri yaşam boyu değeri hesaplama ve CAC karşılaştırması.
+- [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranı ve kampanya kârlılığı hesaplayıcı.
+- [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli link üretici.
+
+## İletişim
+
+- E-posta: yyusufbayrak@gmail.com
+- LinkedIn: https://tr.linkedin.com/in/yyusuf-bayrak
+
+## Optional
+
+- [Sitemap](https://yusufbayrak.net/sitemap.xml)
