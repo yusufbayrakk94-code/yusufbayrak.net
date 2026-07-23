@@ -335,3 +335,278 @@ export function getPostBySlug(slug: string) {
 export function getCategory(slug: BlogCategorySlug) {
   return BLOG_CATEGORIES.find((c) => c.slug === slug)!;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// English blog content. Each post mirrors a TR counterpart 1:1 via the
+// BLOG_SLUG_PAIRS map below, so language switcher + hreflang can point at
+// the exact translated URL instead of falling back to /en.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
+  { tr: "b2b-lead-generation-huni-tasarimi", en: "b2b-lead-generation-funnel-design" },
+  { tr: "google-ads-performans-optimizasyonu", en: "google-ads-performance-optimization" },
+  { tr: "n8n-ile-lead-enrichment-otomasyonu", en: "n8n-lead-enrichment-automation" },
+  { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
+];
+
+export const BLOG_POSTS_EN: BlogPost[] = [
+  {
+    slug: "b2b-lead-generation-funnel-design",
+    title: "How to Design a B2B Lead Generation Funnel: End-to-End Guide",
+    description:
+      "A practical framework covering ICP definition, channel mix, messaging and CRM integration for qualified B2B lead generation.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "B2B lead gen doesn't come from a single channel — it emerges from ICP + channel + message + CRM working together.",
+      "Outbound (LinkedIn + email) and inbound (SEO + content) funnels should feed each other.",
+      "Without clear MQL/SQL definitions, lead volume burns your sales team's time and conversion drops.",
+      "Automation (n8n, Clay, HubSpot) removes manual work and cuts lead-to-meeting time by 40–60%.",
+    ],
+    publishedAt: "2026-07-01",
+    readingMinutes: 9,
+    tags: ["B2B", "Lead Generation", "Outbound", "ABM"],
+    sections: [
+      {
+        heading: "Start with ICP and Buyer Persona",
+        paragraphs: [
+          "The first requirement of qualified lead generation is being crystal clear about who you sell to. Your ICP (Ideal Customer Profile) should be defined by company size, industry, geography, tech stack and trigger events (funding, hiring, product launches).",
+          "Your buyer persona covers the role, responsibilities, KPIs and objections of the decision-makers inside that ICP. Any spend before these two are locked in usually ends in low conversion rates.",
+        ],
+      },
+      {
+        heading: "Channel Mix: Outbound + Inbound",
+        paragraphs: [
+          "In modern B2B, single-channel funnels are fragile. A healthy setup runs outbound (LinkedIn Sales Navigator, cold email), inbound (SEO, blog, LinkedIn organic) and paid (LinkedIn Ads, Google Ads) in parallel.",
+        ],
+        bullets: [
+          "Outbound: short-term pipeline; ICP list + personalized message + multi-touch follow-up.",
+          "Inbound: long-term brand + intent traffic; SEO content and thought leadership.",
+          "Paid: retargeting and an intent layer; account-based ads to hit the ICP.",
+        ],
+      },
+      {
+        heading: "MQL / SQL Definitions and CRM Integration",
+        paragraphs: [
+          "If marketing and sales aren't speaking the same language, you leak leads at the bottom of the funnel. Lock in MQL (Marketing Qualified Lead) and SQL (Sales Qualified Lead) criteria up front and turn them into a scoring system inside a CRM like HubSpot or Pipedrive.",
+        ],
+      },
+      {
+        heading: "The Automation Layer",
+        paragraphs: [
+          "Doing lead enrichment, data cleanup and messaging triggers manually is a waste of time and money. Automating those steps with n8n, Clay and HubSpot Workflows meaningfully shortens the lead-to-meeting cycle.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Which channel is most effective for B2B lead gen?",
+        answer:
+          "It depends on price point and sales cycle. For high-ACV B2B SaaS, LinkedIn outbound + ABM tends to deliver the best ROI; for low ACV, an SEO + PLG funnel is more sustainable.",
+      },
+      {
+        question: "What's the difference between MQL and SQL?",
+        answer:
+          "An MQL has shown interest through marketing activity (content download, demo request). An SQL is a lead sales has qualified as ready to buy, with budget and timing confirmed.",
+      },
+      {
+        question: "What's a healthy reply rate for B2B outbound email?",
+        answer:
+          "Industry benchmarks sit around 30–50% open rate and 1–3% reply rate. With ICP-specific personalization and good timing, replies can climb to 8–12%.",
+      },
+    ],
+  },
+  {
+    slug: "google-ads-performance-optimization",
+    title: "7 Data-Driven Ways to Multiply Your Google Ads Performance",
+    description:
+      "Advanced optimization tactics used to lift ROAS across Search, Performance Max and Demand Gen campaigns.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Google Ads performance is the compound of bid strategy + audience signal + creative test cadence.",
+      "Asset group segmentation inside PMax typically lifts ROAS by 25–40%.",
+      "Smart Bidding cannot work without clean server-side conversion signals (Enhanced Conversions + GA4).",
+      "Without a weekly negative keyword and search terms review, budget keeps leaking.",
+    ],
+    publishedAt: "2026-07-05",
+    readingMinutes: 8,
+    tags: ["Google Ads", "PMax", "ROAS", "Performance"],
+    sections: [
+      {
+        heading: "Get Conversion Tracking Right",
+        paragraphs: [
+          "Smart Bidding is only as good as the signal you feed it. Without Enhanced Conversions, GA4 server-side tracking and offline conversion import (closed-won deals fed back from the CRM), tROAS/tCPA bidding won't hit target.",
+        ],
+      },
+      {
+        heading: "Performance Max Asset Group Segmentation",
+        paragraphs: [
+          "Instead of one giant asset group, splitting by category, margin or season gives the algorithm cleaner signal. Budget flows to high-margin products and ROAS typically lifts 25–40%.",
+        ],
+      },
+      {
+        heading: "Search Terms Report and Negative Keyword Discipline",
+        paragraphs: [
+          "Reviewing the search terms report weekly is critical to cut spend on irrelevant queries. Broad match and PMax especially need a constantly growing negative keyword list.",
+        ],
+        bullets: [
+          "Brand protection list",
+          "Out-of-industry query list",
+          "Informational queries (how to, what is, examples) — filter them out in B2B if they don't convert",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is Performance Max better than Search?",
+        answer:
+          "They're not competitors, they're complementary. Search converts high-intent brand and category queries. PMax uses the full inventory (YouTube, Display, Gmail, Discover). The right setup runs both together.",
+      },
+      {
+        question: "Does Enhanced Conversions actually make a difference?",
+        answer:
+          "Yes. Enhanced Conversions offsets post-iOS 14 cookie loss and typically recovers 5–15% of measured conversions, which flows straight into Smart Bidding accuracy.",
+      },
+    ],
+  },
+  {
+    slug: "n8n-lead-enrichment-automation",
+    title: "n8n Lead Enrichment Automation: Step-by-Step Setup",
+    description:
+      "How to combine Clay, Apollo and OpenAI inside n8n to build an automatic enrichment workflow for every new lead.",
+    category: "yapay-zeka-otomasyon",
+    tldr: [
+      "n8n is more flexible than Zapier, self-hostable and cost-scalable.",
+      "The enrichment flow is: webhook → Apollo/Clay enrichment → LLM-based ICP scoring → write to CRM.",
+      "Summarizing lead notes with OpenAI/Gemini and pushing them into HubSpot boosts SDR efficiency by 30%+.",
+      "The critical factor is data quality — bad enrichment burns the entire SDR team's time.",
+    ],
+    publishedAt: "2026-07-10",
+    readingMinutes: 10,
+    tags: ["n8n", "Automation", "LLM", "Lead Enrichment"],
+    sections: [
+      {
+        heading: "Why n8n Beats Zapier",
+        paragraphs: [
+          "Because n8n can be self-hosted, it wins on data sovereignty and cost. Beyond 400+ native integrations, a custom HTTP node connects to any API. Rich branching (if/switch) and JavaScript nodes make scenarios possible that Zapier cannot handle.",
+        ],
+      },
+      {
+        heading: "Architecture of the Enrichment Flow",
+        paragraphs: [
+          "A typical lead enrichment flow has these steps:",
+        ],
+        bullets: [
+          "Webhook: a lead's form submission lands in n8n.",
+          "Apollo/Clay: company info, employee count and tech stack are pulled by email.",
+          "OpenAI: an LLM prompt summarizes lead notes and scores ICP fit (0–100).",
+          "HubSpot/Pipedrive: enriched data is written to the CRM and an owner is assigned.",
+          "Slack: high-scoring leads notify the SDR team in real time.",
+        ],
+      },
+      {
+        heading: "LLM Prompting Tips",
+        paragraphs: [
+          "Give the model a clean criteria list for ICP fit scoring. Instead of vague questions like 'how well does this company match our ICP?', ask for a score based on industry, employee count and tech. Use structured output (JSON schema) so downstream nodes can process the data without breaking.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Should I use n8n Cloud or self-hosted?",
+        answer:
+          "For low-volume flows, n8n Cloud is convenient. Above 10,000 executions/month or with sensitive data, self-hosted (Docker/Railway) is better for cost and compliance.",
+      },
+      {
+        question: "Which enrichment sources are most accurate?",
+        answer:
+          "Apollo for company info, BuiltWith/Wappalyzer for tech stack, Clay or Hunter for contact info are the most common combinations. Cross-validating 2–3 sources is usually required.",
+      },
+      {
+        question: "How does MCP (Model Context Protocol) fit in here?",
+        answer:
+          "MCP lets an LLM connect to external sources (CRM, database, internal API) through a standard interface. When the LLM should query the CRM directly instead of going through n8n, an MCP architecture is preferred.",
+      },
+    ],
+  },
+  {
+    slug: "saas-metrics-arr-cac-ltv",
+    title: "SaaS Metrics 101: How to Read ARR, CAC, LTV and Churn",
+    description:
+      "The four core metrics that steer SaaS growth — where healthy bands sit and how to improve each one.",
+    category: "saas-buyume",
+    tldr: [
+      "ARR is calculated as MRR × 12 and shows the true size of a SaaS.",
+      "In a healthy SaaS, LTV/CAC ratio is at least 3:1 and CAC payback stays under 12 months.",
+      "Monthly churn above 5% means growth is spent replacing losses rather than acquiring net-new.",
+      "SaaS companies with Net Revenue Retention (NRR) above 110% can grow without any new customers.",
+    ],
+    publishedAt: "2026-07-15",
+    readingMinutes: 7,
+    tags: ["SaaS", "ARR", "LTV", "CAC", "Churn"],
+    sections: [
+      {
+        heading: "ARR and MRR: Measuring Size",
+        paragraphs: [
+          "Annual Recurring Revenue (ARR) is the annualized form of subscription revenue. For monthly-billed SaaS, ARR = MRR × 12. For investors, ARR is the clearest single measure of company size and growth rate.",
+        ],
+      },
+      {
+        heading: "CAC and LTV: Unit Economics",
+        paragraphs: [
+          "Customer Acquisition Cost (CAC) is the total marketing + sales cost to acquire one customer. Lifetime Value (LTV) is the net profit that customer brings across their tenure. Healthy SaaS runs at an LTV/CAC of at least 3:1 with CAC payback under 12 months.",
+        ],
+      },
+      {
+        heading: "Churn and NRR: The Retention Story",
+        paragraphs: [
+          "If monthly gross churn tops 5%, growth is spent filling the leaky bucket. Net Revenue Retention (NRR) also counts upsell/expansion — SaaS companies above 110% NRR grow even without net-new customers.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Are MRR and ARR the same thing?",
+        answer:
+          "No. MRR (Monthly Recurring Revenue) is monthly, ARR (Annual Recurring Revenue) is annual. Generally, ARR = MRR × 12.",
+      },
+      {
+        question: "What's a good LTV/CAC ratio?",
+        answer:
+          "The accepted healthy ratio in SaaS is 3:1. 1:1 is a loss; 5:1+ suggests you can invest more aggressively in growth.",
+      },
+      {
+        question: "How do I reduce churn?",
+        answer:
+          "The three most effective levers are activation (fast time-to-value), a customer success team and in-product engagement loops. For involuntary churn from failed payments, deploy dunning management (Stripe/Chargebee).",
+      },
+    ],
+  },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Locale-aware selectors used by BlogList / BlogPost / router.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type BlogLocale = "tr" | "en";
+
+export function getPostsForLocale(locale: BlogLocale): BlogPost[] {
+  return locale === "en" ? BLOG_POSTS_EN : BLOG_POSTS;
+}
+
+export function getCategoriesForLocale(locale: BlogLocale): BlogCategory[] {
+  return locale === "en" ? BLOG_CATEGORIES_EN : BLOG_CATEGORIES;
+}
+
+export function getPostBySlugLocalized(slug: string, locale: BlogLocale): BlogPost | undefined {
+  return getPostsForLocale(locale).find((p) => p.slug === slug);
+}
+
+export function getCategoryForLocale(slug: BlogCategorySlug, locale: BlogLocale): BlogCategory {
+  return getCategoriesForLocale(locale).find((c) => c.slug === slug)!;
+}
+
+export function getAlternateBlogSlug(slug: string, target: BlogLocale): string | null {
+  const pair = BLOG_SLUG_PAIRS.find((p) => p.tr === slug || p.en === slug);
+  if (!pair) return null;
+  return pair[target];
+}
