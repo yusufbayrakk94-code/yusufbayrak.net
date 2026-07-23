@@ -39,7 +39,7 @@ export default function Home() {
         <div className="container">
           <div className="max-w-3xl opacity-0 animate-fade-in-up">
             {/* Code-style label */}
-            <CodeLabel className="mb-6">Senior Developer</CodeLabel>
+            <CodeLabel className="mb-6">Dijital Pazarlama | Lead Generation | Ürün Geliştirme</CodeLabel>
 
             {/* Headline with typing cursor */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
