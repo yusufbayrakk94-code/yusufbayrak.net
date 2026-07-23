@@ -10,6 +10,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import About from "./pages/About";
 import Styleguide from "./pages/Styleguide";
 import Contact from "./pages/Contact";
+import FreeTools from "./pages/FreeTools";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,12 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/styleguide" element={<Styleguide />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Turkish routes */}
+          <Route path="/hakkimda" element={<About />} />
+          <Route path="/projeler" element={<Work />} />
+          <Route path="/projeler/:slug" element={<ProjectDetail />} />
+          <Route path="/ucretsiz-araclar" element={<FreeTools />} />
+          <Route path="/iletisim" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
