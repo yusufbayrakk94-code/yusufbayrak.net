@@ -159,26 +159,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yusufbayrak.net/blog/b2b-lead-generation-funnel-design</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yusufbayrak.net/blog/google-ads-performance-optimization</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yusufbayrak.net/blog/n8n-lead-enrichment-automation</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yusufbayrak.net/blog/saas-metrics-arr-cac-ltv</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://yusufbayrak.net/en</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
