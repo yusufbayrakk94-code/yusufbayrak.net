@@ -16,14 +16,14 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           {/* Copyright */}
           <p className="font-mono text-sm text-muted-foreground">
-            <span className="text-primary">//</span> © {currentYear} Yusuf Bayrak
+            <span className="text-accent">//</span> © {currentYear} Yusuf Bayrak
           </p>
 
           {/* Footer Links */}
           <div className="flex items-center gap-6">
             <Link
               to="/styleguide"
-              className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors"
+              className="font-mono text-sm text-muted-foreground hover:text-accent transition-colors"
             >
               Styleguide
             </Link>
@@ -37,7 +37,7 @@ export function Footer() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-accent transition-colors"
                 aria-label={link.label}
               >
                 <link.icon className="h-5 w-5" />

@@ -49,7 +49,7 @@ export function Header() {
         {/* Logo */}
         <Link
           to="/"
-          className="font-mono text-sm font-medium text-primary hover:opacity-80 transition-opacity"
+          className="font-mono text-sm font-medium text-accent hover:opacity-80 transition-opacity"
         >
           {"Yusuf Bayrak"}
         </Link>
@@ -61,9 +61,9 @@ export function Header() {
               key={item.href}
               to={item.href}
               className={cn(
-                "font-mono text-sm transition-colors hover:text-primary link-underline",
+                "font-mono text-sm transition-colors hover:text-accent link-underline",
                 location.pathname === item.href
-                  ? "text-primary"
+                  ? "text-accent"
                   : "text-muted-foreground"
               )}
             >
@@ -86,7 +86,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-72 bg-background border-border">
               <div className="flex flex-col gap-6 mt-8">
-                <div className="font-mono text-sm text-primary mb-4">
+                <div className="font-mono text-sm text-accent mb-4">
                   {"// Navigation"}
                 </div>
                 {navItems.map((item) => (
@@ -94,14 +94,14 @@ export function Header() {
                     <Link
                       to={item.href}
                       className={cn(
-                        "font-mono text-lg transition-colors hover:text-primary py-2",
+                        "font-mono text-lg transition-colors hover:text-accent py-2",
                         location.pathname === item.href
-                          ? "text-primary"
+                          ? "text-accent"
                           : "text-muted-foreground"
                       )}
                       onClick={() => setIsOpen(false)}
                     >
-                      <span className="text-primary mr-2">→</span>
+                      <span className="text-accent mr-2">→</span>
                       {item.label}
                     </Link>
                   </SheetClose>

@@ -1,5 +1,5 @@
 export function TypingCursor() {
   return (
-    <span className="inline-block w-[3px] h-[1em] bg-primary animate-blink ml-1 align-middle" />
+    <span className="inline-block w-[3px] h-[1em] bg-accent animate-blink ml-1 align-middle" />
   );
 }

@@ -46,16 +46,16 @@ export default function FreeTools() {
             {tools.map((tool) => (
               <div
                 key={tool.name}
-                className="p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors"
+                className="p-6 bg-card border border-border rounded-lg hover:border-accent/50 transition-colors"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex items-center justify-center w-10 h-10 bg-secondary rounded-lg shrink-0">
-                    <Wrench className="h-5 w-5 text-primary" />
+                    <Wrench className="h-5 w-5 text-accent" />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between gap-2 mb-2">
                       <h3 className="font-mono text-base text-foreground">{tool.name}</h3>
-                      <span className="font-mono text-xs text-primary border border-primary/40 px-2 py-0.5 rounded">
+                      <span className="font-mono text-xs text-accent border border-accent/40 px-2 py-0.5 rounded">
                         {tool.status}
                       </span>
                     </div>

@@ -39,7 +39,7 @@ export default function About() {
             <div className="lg:col-span-2 space-y-6">
               {/* Developer Photo */}
               <div className="mb-8 opacity-0 animate-fade-in-up stagger-1">
-                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden border-2 border-primary/30 transition-all duration-300 hover:border-primary">
+                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden border-2 border-accent/30 transition-all duration-300 hover:border-accent">
                   <img
                     src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
                     alt="Yusuf Bayrak"
@@ -82,19 +82,19 @@ export default function About() {
 
               <div className="space-y-4 font-mono text-sm opacity-0 animate-fade-in-up stagger-4">
                 <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-primary">{"//"}</span> Veriye dayalı kararlar,
+                  <span className="text-accent">{"//"}</span> Veriye dayalı kararlar,
                   sezgisel tahminlerin önünde
                 </p>
                 <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-primary">{"//"}</span> Otomasyonla operasyonel
+                  <span className="text-accent">{"//"}</span> Otomasyonla operasyonel
                   yükü azalt, ölçeklenebilirliği artır
                 </p>
                 <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-primary">{"//"}</span> SaaS çözümleriyle pazarlama
+                  <span className="text-accent">{"//"}</span> SaaS çözümleriyle pazarlama
                   ekosistemini güçlendir
                 </p>
                 <p className="text-muted-foreground transition-colors hover:text-foreground">
-                  <span className="text-primary">{"//"}</span> Sadece kurgula; sahada test
+                  <span className="text-accent">{"//"}</span> Sadece kurgula; sahada test
                   et ve sonuç al
                 </p>
               </div>
@@ -104,7 +104,7 @@ export default function About() {
             <div className="space-y-8">
               {/* Skills */}
               <div className="opacity-0 animate-fade-in-up stagger-2">
-                <h2 className="font-mono text-sm text-primary mb-4">
+                <h2 className="font-mono text-sm text-accent mb-4">
                   <span className="text-muted-foreground">/*</span> Uzmanlık Alanları{" "}
                   <span className="text-muted-foreground">*/</span>
                 </h2>
@@ -114,7 +114,7 @@ export default function About() {
                       key={item}
                       className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                     >
-                      <span className="text-primary mr-2">→</span>
+                      <span className="text-accent mr-2">→</span>
                       {item}
                     </li>
                   ))}
@@ -123,7 +123,7 @@ export default function About() {
 
               {/* Tech Stack */}
               <div className="opacity-0 animate-fade-in-up stagger-3">
-                <h2 className="font-mono text-sm text-primary mb-4">
+                <h2 className="font-mono text-sm text-accent mb-4">
                   <span className="text-muted-foreground">/*</span> Araçlar{" "}
                   <span className="text-muted-foreground">*/</span>
                 </h2>
@@ -136,7 +136,7 @@ export default function About() {
 
               {/* Experience */}
               <div className="opacity-0 animate-fade-in-up stagger-4">
-                <h2 className="font-mono text-sm text-primary mb-4">
+                <h2 className="font-mono text-sm text-accent mb-4">
                   <span className="text-muted-foreground">/*</span> Deneyim{" "}
                   <span className="text-muted-foreground">*/</span>
                 </h2>
