@@ -1,0 +1,25 @@
+export const contact = {
+  path: "/iletisim",
+  seoTitle: "İletişim | Yusuf Bayrak",
+  seoDescription:
+    "Ürün, dijital pazarlama ve AI otomasyonu projeleriniz için Yusuf Bayrak ile iletişime geçin.",
+  heading: "İletişim",
+  intro:
+    "Yeni bir proje, iş birliği veya danışmanlık görüşmesi için iletişime geçebilirsiniz. Dijital pazarlama, lead generation ve ürün geliştirme konularında konuşmaktan memnuniyet duyarım.",
+  formDivider: "Mesaj Gönder",
+  labelName: "Ad Soyad",
+  placeholderName: "Adınız ve soyadınız",
+  labelEmail: "E-posta",
+  placeholderEmail: "siz@ornek.com",
+  labelMessage: "Mesaj",
+  placeholderMessage: "Projenizden kısaca bahsedin...",
+  submit: "Mesaj Gönder",
+  submitting: "Gönderiliyor...",
+  toastTitle: "Mesaj gönderildi",
+  toastDescription: "Mesajınız için teşekkürler. En kısa sürede dönüş yapacağım.",
+  linksDivider: "Bağlantılar",
+  linkedinLabel: "LinkedIn",
+  emailLabel: "E-posta",
+  statusLabel: "Durum",
+  statusText: "Ürün ve çözümler için iletişime geçebilirsiniz.",
+};
