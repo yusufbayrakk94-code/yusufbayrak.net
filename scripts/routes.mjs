@@ -35,6 +35,7 @@ export const STATIC_EN = [
   "/en/free-marketing-tools/roas-calculator",
   "/en/free-marketing-tools/utm-builder",
   "/en/contact",
+  "/en/blog",
 ];
 
 // Reciprocal pairs used to emit hreflang alternates in the sitemap.
@@ -50,6 +51,7 @@ export const ROUTE_PAIRS = [
   { tr: "/ucretsiz-araclar/ltv-hesaplayici",         en: "/en/free-marketing-tools/ltv-calculator" },
   { tr: "/ucretsiz-araclar/roas-hesaplayici",        en: "/en/free-marketing-tools/roas-calculator" },
   { tr: "/ucretsiz-araclar/utm-link-olusturucu",     en: "/en/free-marketing-tools/utm-builder" },
+  { tr: "/blog",                    en: "/en/blog" },
 ];
 
 export const PROJECT_SLUGS = [
@@ -114,6 +116,7 @@ export function sitemapEntries() {
     "/projeler": { changefreq: "weekly", priority: "0.9" },
     "/en/projects": { changefreq: "weekly", priority: "0.9" },
     "/blog": { changefreq: "weekly", priority: "0.9" },
+    "/en/blog": { changefreq: "weekly", priority: "0.9" },
     "/ucretsiz-araclar": { changefreq: "weekly", priority: "0.9" },
     "/en/free-marketing-tools": { changefreq: "weekly", priority: "0.9" },
     "/iletisim": { changefreq: "yearly", priority: "0.6" },
