@@ -12,6 +12,12 @@ import About from "./pages/About";
 import Styleguide from "./pages/Styleguide";
 import Contact from "./pages/Contact";
 import FreeTools from "./pages/FreeTools";
+import ArrCalculator from "./pages/tools/ArrCalculator";
+import CacCalculator from "./pages/tools/CacCalculator";
+import ChurnCalculator from "./pages/tools/ChurnCalculator";
+import LtvCalculator from "./pages/tools/LtvCalculator";
+import RoasCalculator from "./pages/tools/RoasCalculator";
+import UtmBuilder from "./pages/tools/UtmBuilder";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +42,12 @@ const App = () => (
             <Route path="/projeler" element={<Work />} />
             <Route path="/projeler/:slug" element={<ProjectDetail />} />
             <Route path="/ucretsiz-araclar" element={<FreeTools />} />
+            <Route path="/ucretsiz-araclar/arr-hesaplayici" element={<ArrCalculator />} />
+            <Route path="/ucretsiz-araclar/cac-hesaplayici" element={<CacCalculator />} />
+            <Route path="/ucretsiz-araclar/churn-rate-hesaplayici" element={<ChurnCalculator />} />
+            <Route path="/ucretsiz-araclar/ltv-hesaplayici" element={<LtvCalculator />} />
+            <Route path="/ucretsiz-araclar/roas-hesaplayici" element={<RoasCalculator />} />
+            <Route path="/ucretsiz-araclar/utm-link-olusturucu" element={<UtmBuilder />} />
             <Route path="/iletisim" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
