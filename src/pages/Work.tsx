@@ -9,7 +9,6 @@ const projects = [
     description: "Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS projesi.",
     stack: ["SaaS", "Meta Ads", "Kreatif Yönetimi"],
     impact: "Rakip analizi ve kreatif yönetimini hızlandırır",
-    href: "https://www.adgusto.app",
   },
   {
     name: "Brandog & Marka-MCP",
