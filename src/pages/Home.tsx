@@ -87,9 +87,9 @@ export default function Home() {
           <div className="mt-12 text-center opacity-0 animate-fade-in-up stagger-4">
             <Link 
               to="/projeler" 
-              className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-primary transition-colors link-underline"
+              className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-accent transition-colors link-underline"
             >
-              <span className="text-primary mr-2">{"//"}</span>
+              <span className="text-accent mr-2">{"//"}</span>
               Tüm projeleri gör
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
