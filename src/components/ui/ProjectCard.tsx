@@ -19,16 +19,16 @@ export function ProjectCard({ name, description, stack, impact, slug, href, clas
   const content = (
     <article
       className={cn(
-        "group p-6 bg-card border border-border rounded-lg transition-all hover:border-primary/50 hover:bg-card/80 cursor-pointer",
+        "group p-6 bg-card border border-border rounded-lg transition-all hover:border-accent/50 hover:bg-card/80 cursor-pointer",
         className
       )}
     >
       {/* Project Name */}
       <div className="flex items-center justify-between mb-2">
-        <h3 className="font-mono text-lg font-medium text-foreground group-hover:text-primary transition-colors">
+        <h3 className="font-mono text-lg font-medium text-foreground group-hover:text-accent transition-colors">
           {name}
         </h3>
-        <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+        <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all" />
       </div>
 
       {/* Description */}
@@ -48,7 +48,7 @@ export function ProjectCard({ name, description, stack, impact, slug, href, clas
       {/* Impact */}
       {impact && (
         <div className="pt-4 border-t border-border">
-          <span className="font-mono text-xs text-primary">
+          <span className="font-mono text-xs text-accent">
             <span className="text-muted-foreground">{"//"}</span> {impact}
           </span>
         </div>
