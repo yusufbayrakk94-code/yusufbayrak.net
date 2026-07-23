@@ -60,6 +60,15 @@ export const PROJECT_SLUGS = [
   "buyume-otomasyon-altyapilari",
 ];
 
+// Blog TR<->EN slug pairs. Mirror of BLOG_SLUG_PAIRS in
+// src/data/blogPosts.ts (kept manually in sync — no TS import from Node).
+export const BLOG_SLUG_PAIRS = [
+  { tr: "b2b-lead-generation-huni-tasarimi", en: "b2b-lead-generation-funnel-design" },
+  { tr: "google-ads-performans-optimizasyonu", en: "google-ads-performance-optimization" },
+  { tr: "n8n-ile-lead-enrichment-otomasyonu", en: "n8n-lead-enrichment-automation" },
+  { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
+];
+
 export function getBlogSlugs() {
   try {
     const file = fs.readFileSync(
@@ -83,12 +92,14 @@ export function allRoutes() {
   const projectTr = PROJECT_SLUGS.map((s) => `/projeler/${s}`);
   const projectEn = PROJECT_SLUGS.map((s) => `/en/projects/${s}`);
   const blog = getBlogSlugs().map((s) => `/blog/${s}`);
+  const blogEn = BLOG_SLUG_PAIRS.map((p) => `/en/blog/${p.en}`);
   return [
     ...STATIC_TR,
     ...projectTr,
     ...blog,
     ...STATIC_EN,
     ...projectEn,
+    ...blogEn,
   ];
 }
 
@@ -104,6 +115,13 @@ export function sitemapEntries() {
   for (const slug of PROJECT_SLUGS) {
     const tr = `/projeler/${slug}`;
     const en = `/en/projects/${slug}`;
+    pairMap.set(tr, { self: tr, alt: en, selfLang: "tr", altLang: "en" });
+    pairMap.set(en, { self: en, alt: tr, selfLang: "en", altLang: "tr" });
+  }
+  // Blog post dynamic pairs (slugs differ per locale)
+  for (const pair of BLOG_SLUG_PAIRS) {
+    const tr = `/blog/${pair.tr}`;
+    const en = `/en/blog/${pair.en}`;
     pairMap.set(tr, { self: tr, alt: en, selfLang: "tr", altLang: "en" });
     pairMap.set(en, { self: en, alt: tr, selfLang: "en", altLang: "tr" });
   }

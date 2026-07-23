@@ -36,6 +36,16 @@ export const PROJECT_SLUGS = [
   "buyume-otomasyon-altyapilari",
 ] as const;
 
+// Blog TR<->EN slug pairs. Kept in sync with BLOG_SLUG_PAIRS in
+// src/data/blogPosts.ts (single source of truth is the data module; this
+// mirror avoids a circular import between routing and content).
+export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
+  { tr: "b2b-lead-generation-huni-tasarimi", en: "b2b-lead-generation-funnel-design" },
+  { tr: "google-ads-performans-optimizasyonu", en: "google-ads-performance-optimization" },
+  { tr: "n8n-ile-lead-enrichment-otomasyonu", en: "n8n-lead-enrichment-automation" },
+  { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
+];
+
 // Given a pathname, detect locale from URL prefix (/en or /en/*).
 export function getLocaleFromPath(pathname: string): Locale {
   if (pathname === "/en" || pathname.startsWith("/en/")) return "en";
@@ -58,6 +68,18 @@ export function getAlternateRoute(pathname: string, target: Locale): string | nu
   if (trProj && target === "en") return `/en/projects/${trProj[1]}`;
   const enProj = pathname.match(/^\/en\/projects\/([^/]+)$/);
   if (enProj && target === "tr") return `/projeler/${enProj[1]}`;
+
+  // Blog post routes: /blog/:slug <-> /en/blog/:slug (slugs differ per locale)
+  const trBlog = pathname.match(/^\/blog\/([^/]+)$/);
+  if (trBlog && target === "en") {
+    const pair = BLOG_SLUG_PAIRS.find((p) => p.tr === trBlog[1]);
+    return pair ? `/en/blog/${pair.en}` : null;
+  }
+  const enBlog = pathname.match(/^\/en\/blog\/([^/]+)$/);
+  if (enBlog && target === "tr") {
+    const pair = BLOG_SLUG_PAIRS.find((p) => p.en === enBlog[1]);
+    return pair ? `/blog/${pair.tr}` : null;
+  }
 
   return null;
 }

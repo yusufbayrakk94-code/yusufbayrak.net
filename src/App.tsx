@@ -63,6 +63,7 @@ export function AppRoutes() {
       <Route path="/en/free-marketing-tools/utm-builder" element={<UtmBuilder />} />
       <Route path="/en/contact" element={<Contact />} />
       <Route path="/en/blog" element={<BlogList />} />
+      <Route path="/en/blog/:slug" element={<BlogPost />} />
 
       {/* Legacy English aliases kept for existing inbound links */}
       <Route path="/work" element={<Work />} />
