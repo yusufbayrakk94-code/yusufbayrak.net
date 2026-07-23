@@ -4,6 +4,7 @@ import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 
 const projectsData: Record<string, {
   name: string;
@@ -103,6 +104,23 @@ export default function ProjectDetail() {
 
   return (
     <Layout>
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": project.name,
+          "description": project.fullDescription,
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": project.externalUrl || `https://digital-core-labs.lovable.app/projeler/${slug}`,
+          "author": {
+            "@type": "Person",
+            "name": "Yusuf Bayrak",
+            "url": "https://digital-core-labs.lovable.app/"
+          },
+          "keywords": project.stack.join(", ")
+        })}</script>
+      </Helmet>
       <section className="py-20">
         <div className="container max-w-4xl">
           {/* Back Link */}
