@@ -37,6 +37,17 @@ const tools = [
 export default function About() {
   return (
     <Layout>
+      <Helmet>
+        <title>Hakkımda | Yusuf Bayrak</title>
+        <meta name="description" content="Veri odaklı dijital pazarlama, B2B lead generation ve yapay zeka otomasyonu alanlarında çalışan Yusuf Bayrak'ın profesyonel özgeçmişi." />
+        <link rel="canonical" href="https://digital-core-labs.lovable.app/hakkimda" />
+        <meta property="og:title" content="Hakkımda | Yusuf Bayrak" />
+        <meta property="og:description" content="Dijital pazarlama, B2B lead generation ve AI otomasyonu üzerine uzmanlık alanlarım ve kullandığım araçlar." />
+        <meta property="og:url" content="https://digital-core-labs.lovable.app/hakkimda" />
+        <meta property="og:type" content="profile" />
+        <meta name="twitter:title" content="Hakkımda | Yusuf Bayrak" />
+        <meta name="twitter:description" content="Dijital pazarlama, B2B lead generation ve AI otomasyonu üzerine uzmanlık alanlarım ve kullandığım araçlar." />
+      </Helmet>
       <section className="py-20">
         <div className="container">
           {/* Page Header */}

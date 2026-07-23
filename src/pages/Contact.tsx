@@ -46,6 +46,17 @@ export default function Contact() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>İletişim | Yusuf Bayrak</title>
+        <meta name="description" content="Ürün, dijital pazarlama ve AI otomasyonu projeleriniz için Yusuf Bayrak ile iletişime geçin." />
+        <link rel="canonical" href="https://digital-core-labs.lovable.app/iletisim" />
+        <meta property="og:title" content="İletişim | Yusuf Bayrak" />
+        <meta property="og:description" content="Ürün ve çözümler için iletişime geçebilirsiniz — LinkedIn ve e-posta." />
+        <meta property="og:url" content="https://digital-core-labs.lovable.app/iletisim" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="İletişim | Yusuf Bayrak" />
+        <meta name="twitter:description" content="Ürün ve çözümler için iletişime geçebilirsiniz — LinkedIn ve e-posta." />
+      </Helmet>
       <section className="py-20">
         <div className="container">
           {/* Page Header */}
