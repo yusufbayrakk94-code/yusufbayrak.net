@@ -49,7 +49,7 @@ export function Header() {
         {/* Logo */}
         <Link
           to="/"
-          className="font-mono text-sm font-medium text-primary hover:opacity-80 transition-opacity"
+          className="font-mono text-sm font-medium text-accent hover:opacity-80 transition-opacity"
         >
           {"Yusuf Bayrak"}
         </Link>

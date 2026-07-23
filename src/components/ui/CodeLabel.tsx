@@ -9,7 +9,7 @@ export function CodeLabel({ children, className }: CodeLabelProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center font-mono text-xs text-primary",
+        "inline-flex items-center font-mono text-xs text-accent",
         className
       )}
     >

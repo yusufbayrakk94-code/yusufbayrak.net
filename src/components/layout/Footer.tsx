@@ -16,7 +16,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           {/* Copyright */}
           <p className="font-mono text-sm text-muted-foreground">
-            <span className="text-primary">//</span> © {currentYear} Yusuf Bayrak
+            <span className="text-accent">//</span> © {currentYear} Yusuf Bayrak
           </p>
 
           {/* Footer Links */}
