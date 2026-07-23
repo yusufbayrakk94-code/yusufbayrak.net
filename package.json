@@ -5,10 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:client && npm run build:server && npm run build:ssg",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:client": "vite build",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server --emptyOutDir",
+    "build:ssg": "node scripts/ssg.mjs",
+    "sitemap": "node scripts/generate-sitemap.mjs public/sitemap.xml"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
