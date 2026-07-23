@@ -13,81 +13,64 @@ const projectsData: Record<string, {
   impact: string;
   challenges: string[];
   features: string[];
+  externalUrl?: string;
 }> = {
-  "scalable-fintech-platform": {
-    name: "Scalable Fintech Platform",
-    description: "Development of a scalable financial platform designed to handle millions of transactions with real-time processing capabilities.",
-    fullDescription: "Built a comprehensive financial platform from the ground up, focusing on security, reliability, and performance at scale. The system processes millions of transactions daily with sub-second latency, implementing sophisticated fraud detection algorithms and real-time analytics dashboards for stakeholders.",
-    stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Redis", "AWS"],
-    impact: "35% latency reduction, support for millions of users",
+  adgusto: {
+    name: "AdGusto",
+    description: "Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS projesi.",
+    fullDescription: "AdGusto, Meta Ads kütüphane entegrasyonu üzerinden rakiplerin kreatiflerini analiz etmeyi, kendi kreatif süreçlerini yönetmeyi ve ekiplerin reklam üretim hızını artırmayı sağlayan bir SaaS platformudur.",
+    stack: ["SaaS", "Meta Ads", "Kreatif Yönetimi", "React", "Node.js"],
+    impact: "Rakip analizi ve kreatif yönetimini hızlandırır",
     challenges: [
-      "Handling high-volume concurrent transactions without data loss",
-      "Implementing real-time fraud detection with minimal false positives",
-      "Ensuring PCI-DSS compliance across the entire stack",
-      "Scaling horizontally while maintaining data consistency"
+      "Meta Ads kütüphanesinden yüksek hacimli veriyi düzenli toplamak",
+      "Rakip kreatiflerini anlamlı kategorilere ayırmak",
+      "Ekipler için hızlı ve karar destekleyici bir arayüz tasarlamak",
+      "Ölçeklenebilir SaaS altyapısını maliyet-etkin yönetmek"
     ],
     features: [
-      "Real-time transaction processing engine",
-      "Multi-factor authentication system",
-      "Automated fraud detection with ML models",
-      "Comprehensive audit logging and reporting"
+      "Rakip kreatif kütüphanesi ve filtreleme",
+      "Kreatif yönetim panosu",
+      "Meta Ads kütüphane entegrasyonu",
+      "Ekip iş birliği araçları"
+    ],
+    externalUrl: "https://www.adgusto.app"
+  },
+  "brandog-marka-mcp": {
+    name: "Brandog & Marka-MCP",
+    description: "TÜRKPATENT Veritabanına Yapay zeka Model Context Protocol (MCP) altyapısıyla bağlanan, güçlendirilmiş; marka tescil ve süreç yönetimini akıllı, otomatize bir yapıda buluşturan platform çözümü.",
+    fullDescription: "Brandog & Marka-MCP, TÜRKPATENT veritabanını Yapay Zeka Model Context Protocol (MCP) altyapısıyla güçlendirerek marka tescil araştırma, takip ve süreç yönetimini tek bir platformda birleştiren akıllı bir otomasyon çözümüdür.",
+    stack: ["MCP", "Yapay Zeka", "TÜRKPATENT", "Node.js", "PostgreSQL"],
+    impact: "Marka tescil süreçlerini otomatize eder",
+    challenges: [
+      "TÜRKPATENT verileriyle güvenilir ve hızlı entegrasyon kurmak",
+      "MCP protokolüne uygun bağlam tabanlı AI akışları tasarlamak",
+      "Marka hukuku süreçlerini otomasyona uyarlamak",
+      "Kullanıcılar için anlaşılır ve güven veren bir arayüz sunmak"
+    ],
+    features: [
+      "TÜRKPATENT veritabanı entegrasyonu",
+      "MCP tabanlı AI destekli araştırma",
+      "Marka tescil süreç takibi",
+      "Otomatik raporlama ve uyarılar"
     ]
   },
-  "internal-design-system": {
-    name: "Internal Design System",
-    description: "Creation of a comprehensive design system that enables multiple development teams to build consistent interfaces.",
-    fullDescription: "Developed and maintained a company-wide design system used by 50+ developers across multiple product teams. The system includes a complete component library, design tokens, documentation portal, and automated visual regression testing to ensure consistency across all products.",
-    stack: ["React", "Storybook", "CSS-in-JS", "TypeScript", "Figma API"],
-    impact: "40% increase in team productivity, improved visual consistency",
+  "buyume-otomasyon-altyapilari": {
+    name: "Büyüme & Otomasyon Altyapıları",
+    description: "Modern low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle markalar için kurguladığım sürdürülebilir büyüme motorları.",
+    fullDescription: "Markalar için low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle tasarlanmış sürdürülebilir büyüme motorları. Amaç; tekrar eden işleri minimize etmek, veriye dayalı kararları hızlandırmak ve ölçeklenebilir pazarlama & operasyon altyapıları kurmaktır.",
+    stack: ["Low-code", "Otomasyon", "Veri Stratejisi", "n8n", "Make", "Airtable"],
+    impact: "Sürdürülebilir büyüme motorları kurar",
     challenges: [
-      "Aligning design and engineering teams on component APIs",
-      "Maintaining backward compatibility during updates",
-      "Creating accessible components that meet WCAG 2.1 AA standards",
-      "Documenting usage patterns for diverse use cases"
+      "Farklı veri kaynaklarını tek bir otomasyon akışında birleştirmek",
+      "Low-code araçlarla kurumsal ölçekte güvenilir sistemler inşa etmek",
+      "Büyüme metriklerini gerçek zamanlı izlenebilir hale getirmek",
+      "Süreçleri otomatikleştirirken insan denetimini korumak"
     ],
     features: [
-      "60+ production-ready components",
-      "Automated visual regression testing",
-      "Figma-to-code synchronization",
-      "Interactive documentation with live examples"
-    ]
-  },
-  "real-time-analytics-dashboard": {
-    name: "Real-Time Analytics Dashboard",
-    description: "A real-time dashboard built for instant decision-making with live data visualization.",
-    fullDescription: "Created a high-performance analytics dashboard that processes and visualizes millions of data points in real-time. The system features customizable widgets, alerting capabilities, and seamless integration with multiple data sources including databases, APIs, and streaming platforms.",
-    stack: ["Next.js", "WebSockets", "D3.js", "Redis", "ClickHouse"],
-    impact: "Instant insights for product and business teams",
-    challenges: [
-      "Rendering large datasets without performance degradation",
-      "Implementing efficient data aggregation pipelines",
-      "Creating intuitive drag-and-drop dashboard customization",
-      "Handling network interruptions gracefully"
-    ],
-    features: [
-      "Real-time data streaming with WebSocket connections",
-      "Customizable dashboard layouts and widgets",
-      "Advanced filtering and drill-down capabilities",
-      "Automated alerting and anomaly detection"
-    ]
-  },
-  "e-commerce-microservices-architecture": {
-    name: "E-Commerce Microservices Architecture",
-    description: "Complete microservices ecosystem for a high-traffic e-commerce platform.",
-    fullDescription: "Architected and implemented a distributed microservices system handling peak traffic of 100K+ requests per minute. The platform features event-driven communication, automated scaling, circuit breakers, and comprehensive observability with distributed tracing.",
-    stack: ["Go", "Kubernetes", "gRPC", "MongoDB", "Kafka", "Prometheus"],
-    impact: "99.99% uptime, 10x throughput improvement",
-    challenges: [
-      "Designing resilient inter-service communication",
-      "Implementing distributed transactions across services",
-      "Managing data consistency in eventual consistency model",
-      "Orchestrating deployments across 20+ microservices"
-    ],
-    features: [
-      "Event-driven architecture with Kafka",
-      "Kubernetes-native auto-scaling",
-      "Distributed tracing with Jaeger",
-      "Comprehensive health monitoring and alerting"
+      "Low-code otomasyon akışları",
+      "Veri odaklı büyüme panoları",
+      "Pazarlama ve operasyon entegrasyonları",
+      "Ölçeklenebilir süreç altyapısı"
     ]
   }
 };
@@ -102,12 +85,12 @@ export default function ProjectDetail() {
         <section className="py-20">
           <div className="container">
             <div className="text-center">
-              <h1 className="text-3xl font-bold text-foreground mb-4">Project Not Found</h1>
-              <p className="text-muted-foreground mb-8">The project you're looking for doesn't exist.</p>
+              <h1 className="text-3xl font-bold text-foreground mb-4">Proje Bulunamadı</h1>
+              <p className="text-muted-foreground mb-8">Aradığınız proje mevcut değil.</p>
               <Button asChild>
-                <Link to="/work">
+                <Link to="/projeler">
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Work
+                  Projelere Dön
                 </Link>
               </Button>
             </div>
@@ -123,11 +106,11 @@ export default function ProjectDetail() {
         <div className="container max-w-4xl">
           {/* Back Link */}
           <Link 
-            to="/work" 
+            to="/projeler" 
             className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-primary transition-colors mb-8 opacity-0 animate-fade-in-up"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Work
+            Projelere Dön
           </Link>
 
           {/* Project Header */}
@@ -149,13 +132,13 @@ export default function ProjectDetail() {
             {/* Impact */}
             <div className="p-4 bg-primary/5 border border-primary/20 rounded-lg">
               <span className="font-mono text-sm text-primary">
-                <span className="text-muted-foreground">{"//"}</span> Impact: {project.impact}
+                <span className="text-muted-foreground">{"//"}</span> Etki: {project.impact}
               </span>
             </div>
           </div>
 
           <div className="opacity-0 animate-fade-in-up stagger-2">
-            <CodeDivider label="Challenges" />
+            <CodeDivider label="Zorluklar" />
           </div>
 
           {/* Challenges */}
@@ -171,7 +154,7 @@ export default function ProjectDetail() {
           </div>
 
           <div className="opacity-0 animate-fade-in-up stagger-3">
-            <CodeDivider label="Features" />
+            <CodeDivider label="Özellikler" />
           </div>
 
           {/* Features */}
@@ -190,12 +173,21 @@ export default function ProjectDetail() {
           <div className="flex flex-wrap gap-4 pt-8 border-t border-border opacity-0 animate-fade-in-up stagger-4">
             <Button variant="outline" className="font-mono" disabled>
               <Github className="mr-2 h-4 w-4" />
-              View Code
+              Kaynak Kod
             </Button>
-            <Button variant="outline" className="font-mono" disabled>
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Live Demo
-            </Button>
+            {project.externalUrl ? (
+              <Button asChild variant="outline" className="font-mono">
+                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Canlı Demo
+                </a>
+              </Button>
+            ) : (
+              <Button variant="outline" className="font-mono" disabled>
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Canlı Demo
+              </Button>
+            )}
           </div>
         </div>
       </section>
