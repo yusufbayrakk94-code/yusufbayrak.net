@@ -5,13 +5,22 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { Linkedin, Mail, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const socialLinks = [
-  { href: "https://github.com", icon: Github, label: "GitHub", handle: "@developer" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn", handle: "/in/developer" },
-  { href: "mailto:hello@developer.dev", icon: Mail, label: "Email", handle: "hello@developer.dev" },
+  {
+    href: "https://tr.linkedin.com/in/yyusuf-bayrak",
+    icon: Linkedin,
+    label: "LinkedIn",
+    handle: "/in/yyusuf-bayrak",
+  },
+  {
+    href: "mailto:yyusufbayrak@gmail.com",
+    icon: Mail,
+    label: "E-posta",
+    handle: "yyusufbayrak@gmail.com",
+  },
 ];
 
 export default function Contact() {
@@ -21,15 +30,15 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    
+
     toast({
-      title: "Message sent",
-      description: "Thanks for reaching out. I'll get back to you soon.",
+      title: "Mesaj gönderildi",
+      description: "Mesajınız için teşekkürler. En kısa sürede dönüş yapacağım.",
     });
-    
+
     setIsSubmitting(false);
     (e.target as HTMLFormElement).reset();
   };
@@ -41,28 +50,29 @@ export default function Contact() {
           {/* Page Header */}
           <div className="max-w-2xl mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Contact
+              İletişim
             </h1>
             <p className="text-muted-foreground leading-relaxed">
-              Have a project in mind or want to discuss opportunities? 
-              I'm always open to interesting conversations and collaborations.
+              Yeni bir proje, iş birliği veya danışmanlık görüşmesi için
+              iletişime geçebilirsiniz. Dijital pazarlama, lead generation ve
+              ürün geliştirme konularında konuşmaktan memnuniyet duyarım.
             </p>
           </div>
 
           <div className="grid gap-16 lg:grid-cols-2">
             {/* Contact Form */}
             <div>
-              <CodeDivider label="Send a Message" />
-              
+              <CodeDivider label="Mesaj Gönder" />
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="font-mono text-sm">
-                    <span className="text-accent">//</span> Name
+                    <span className="text-accent">//</span> Ad Soyad
                   </Label>
                   <Input
                     id="name"
                     name="name"
-                    placeholder="Your name"
+                    placeholder="Adınız ve soyadınız"
                     required
                     className="bg-card border-border font-mono text-sm"
                   />
@@ -70,13 +80,13 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <Label htmlFor="email" className="font-mono text-sm">
-                    <span className="text-accent">//</span> Email
+                    <span className="text-accent">//</span> E-posta
                   </Label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="your@email.com"
+                    placeholder="siz@ornek.com"
                     required
                     className="bg-card border-border font-mono text-sm"
                   />
@@ -84,12 +94,12 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <Label htmlFor="message" className="font-mono text-sm">
-                    <span className="text-accent">//</span> Message
+                    <span className="text-accent">//</span> Mesaj
                   </Label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Tell me about your project..."
+                    placeholder="Projenizden kısaca bahsedin..."
                     rows={6}
                     required
                     className="bg-card border-border font-mono text-sm resize-none"
@@ -98,10 +108,10 @@ export default function Contact() {
 
                 <Button type="submit" disabled={isSubmitting} className="font-mono">
                   {isSubmitting ? (
-                    "Sending..."
+                    "Gönderiliyor..."
                   ) : (
                     <>
-                      Send Message
+                      Mesaj Gönder
                       <Send className="ml-2 h-4 w-4" />
                     </>
                   )}
@@ -111,8 +121,8 @@ export default function Contact() {
 
             {/* Social Links */}
             <div>
-              <CodeDivider label="Connect" />
-              
+              <CodeDivider label="Bağlantılar" />
+
               <div className="space-y-6">
                 {socialLinks.map((link) => (
                   <a
@@ -140,10 +150,12 @@ export default function Contact() {
               {/* Availability */}
               <div className="mt-8 p-4 bg-card border border-border rounded-lg">
                 <p className="font-mono text-xs text-muted-foreground mb-2">
-                  <span className="text-accent">/*</span> Availability <span className="text-accent">*/</span>
+                  <span className="text-accent">/*</span> Durum{" "}
+                  <span className="text-accent">*/</span>
                 </p>
                 <p className="text-sm text-foreground">
-                  Currently open to new opportunities and freelance projects.
+                  Yeni projelere, danışmanlık görüşmelerine ve iş birliklerine
+                  açığım.
                 </p>
               </div>
             </div>
