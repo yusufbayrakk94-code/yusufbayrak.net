@@ -7,10 +7,10 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLocale } from "@/i18n/useLocale";
 import {
-  BLOG_CATEGORIES,
-  BLOG_POSTS,
   type BlogCategorySlug,
-  getCategory,
+  getPostsForLocale,
+  getCategoriesForLocale,
+  getCategoryForLocale,
 } from "@/data/blogPosts";
 
 type FilterValue = BlogCategorySlug | "all";
@@ -56,10 +56,9 @@ const UI = {
     postsAria: "Blog posts",
     empty: "No posts in this category yet.",
     readSuffix: "min",
-    fallbackNote:
-      "Individual posts are currently available in Turkish. English translations are coming soon.",
+    fallbackNote: null as string | null,
     dateLocale: "en-US",
-    linkBase: "/blog",
+    linkBase: "/en/blog",
   },
 } as const;
 
@@ -68,18 +67,21 @@ export default function BlogList() {
   const ui = UI[locale];
   const [filter, setFilter] = useState<FilterValue>("all");
 
+  const allPosts = useMemo(() => getPostsForLocale(locale), [locale]);
+  const categories = useMemo(() => getCategoriesForLocale(locale), [locale]);
+
   const posts = useMemo(() => {
-    const list = filter === "all" ? BLOG_POSTS : BLOG_POSTS.filter((p) => p.category === filter);
+    const list = filter === "all" ? allPosts : allPosts.filter((p) => p.category === filter);
     return [...list].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
-  }, [filter]);
+  }, [filter, allPosts]);
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: BLOG_POSTS.map((p, i) => ({
+    itemListElement: allPosts.map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: `${SITE}/blog/${p.slug}`,
+      url: `${SITE}${ui.linkBase}/${p.slug}`,
       name: p.title,
     })),
   };
@@ -127,10 +129,10 @@ export default function BlogList() {
               label={ui.all}
               active={filter === "all"}
               onClick={() => setFilter("all")}
-              count={BLOG_POSTS.length}
+              count={allPosts.length}
             />
-            {BLOG_CATEGORIES.map((cat) => {
-              const count = BLOG_POSTS.filter((p) => p.category === cat.slug).length;
+            {categories.map((cat) => {
+              const count = allPosts.filter((p) => p.category === cat.slug).length;
               return (
                 <CategoryTab
                   key={cat.slug}
@@ -146,7 +148,7 @@ export default function BlogList() {
           {/* Posts */}
           <section aria-label={ui.postsAria} className="grid gap-6 md:grid-cols-2">
             {posts.map((post) => {
-              const cat = getCategory(post.category);
+              const cat = getCategoryForLocale(post.category, locale);
               return (
                 <article
                   key={post.slug}
