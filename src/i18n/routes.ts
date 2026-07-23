@@ -26,6 +26,7 @@ export const STATIC_ROUTE_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "/ucretsiz-araclar/ltv-hesaplayici",         en: "/en/free-marketing-tools/ltv-calculator" },
   { tr: "/ucretsiz-araclar/roas-hesaplayici",        en: "/en/free-marketing-tools/roas-calculator" },
   { tr: "/ucretsiz-araclar/utm-link-olusturucu",     en: "/en/free-marketing-tools/utm-builder" },
+  { tr: "/blog",                    en: "/en/blog" },
 ];
 
 // Project detail pairs (shared slugs, different URL prefix).
@@ -92,4 +93,5 @@ export const STATIC_EN_ROUTES = [
   "/en/free-marketing-tools/roas-calculator",
   "/en/free-marketing-tools/utm-builder",
   "/en/contact",
+  "/en/blog",
 ] as const;
