@@ -43,9 +43,9 @@ export default function Home() {
 
             {/* Headline with typing cursor */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Hi, I'm Yusuf Bayrak.
+              Merhaba, ben Yusuf Bayrak.
               <br />
-              <span className="text-muted-foreground">I build reliable digital systems</span>
+              <span className="text-muted-foreground">Web sitesi kurulumu ve B2B lead generation kurgularını, yapay zeka otomasyonlarıyla uçtan uca inşa ediyorum.</span>
               <TypingCursor />
             </h1>
 
