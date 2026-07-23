@@ -52,7 +52,8 @@ const projectsData: Record<string, {
       "MCP tabanlı AI destekli araştırma",
       "Marka tescil süreç takibi",
       "Otomatik raporlama ve uyarılar"
-    ]
+    ],
+    externalUrl: "https://brandog.lovable.app"
   },
   "buyume-otomasyon-altyapilari": {
     name: "Büyüme & Otomasyon Altyapıları",
