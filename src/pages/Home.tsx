@@ -9,32 +9,26 @@ import { ArrowRight } from "lucide-react";
 
 const featuredProjects = [
   {
-    name: "Scalable Fintech Platform",
-    slug: "scalable-fintech-platform",
-    description: "Development of a scalable financial platform handling millions of transactions with real-time processing and robust security measures.",
-    stack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-    impact: "35% latency reduction, millions of users supported",
+    name: "AdGusto",
+    slug: "adgusto",
+    description: "Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS projesi.",
+    stack: ["SaaS", "Meta Ads", "Kreatif Yönetimi"],
+    impact: "Rakip analizi ve kreatif yönetimini hızlandırır",
+    href: "https://www.adgusto.app",
   },
   {
-    name: "Internal Design System",
-    slug: "internal-design-system",
-    description: "Creation of a robust design system enabling multiple teams to build consistent, accessible interfaces at scale.",
-    stack: ["React", "Storybook", "CSS-in-JS"],
-    impact: "40% increase in team productivity",
+    name: "Brandog & Marka-MCP",
+    slug: "brandog-marka-mcp",
+    description: "TÜRKPATENT Veritabanına Yapay zeka Model Context Protocol (MCP) altyapısıyla bağlanan, güçlendirilmiş; marka tescil ve süreç yönetimini akıllı, otomatize bir yapıda buluşturan platform çözümü.",
+    stack: ["MCP", "Yapay Zeka", "TÜRKPATENT"],
+    impact: "Marka tescil süreçlerini otomatize eder",
   },
   {
-    name: "Real-Time Analytics Dashboard",
-    slug: "real-time-analytics-dashboard",
-    description: "Real-time dashboard for instant decision-making with live data visualization and customizable metrics.",
-    stack: ["Next.js", "WebSockets", "D3.js"],
-    impact: "Instant insights for product and business teams",
-  },
-  {
-    name: "E-Commerce Microservices",
-    slug: "e-commerce-microservices-architecture",
-    description: "Complete microservices ecosystem for high-traffic e-commerce platform with event-driven architecture and automated scaling.",
-    stack: ["Go", "Kubernetes", "gRPC", "MongoDB"],
-    impact: "99.99% uptime, 10x throughput improvement",
+    name: "Büyüme & Otomasyon Altyapıları",
+    slug: "buyume-otomasyon-altyapilari",
+    description: "Modern low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle markalar için kurguladığım sürdürülebilir büyüme motorları.",
+    stack: ["Low-code", "Otomasyon", "Veri Stratejisi"],
+    impact: "Sürdürülebilir büyüme motorları kurar",
   },
 ];
 
@@ -66,8 +60,8 @@ export default function Home() {
             {/* CTA */}
             <div className="opacity-0 animate-fade-in-up stagger-2">
               <Button asChild size="lg" className="font-mono transition-transform hover:scale-105">
-                <Link to="/work">
-                  View Work
+                <Link to="/projeler">
+                  Projeleri Gör
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -80,10 +74,10 @@ export default function Home() {
       <section className="py-20">
         <div className="container">
           <div className="opacity-0 animate-fade-in-up">
-            <CodeDivider label="Featured Work" />
+            <CodeDivider label="Öne Çıkan Projeler" />
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredProjects.map((project, index) => (
               <div 
                 key={project.name} 
@@ -97,11 +91,11 @@ export default function Home() {
           {/* View All Link */}
           <div className="mt-12 text-center opacity-0 animate-fade-in-up stagger-4">
             <Link 
-              to="/work" 
+              to="/projeler" 
               className="inline-flex items-center font-mono text-sm text-muted-foreground hover:text-primary transition-colors link-underline"
             >
               <span className="text-primary mr-2">{"//"}</span>
-              View all projects
+              Tüm projeleri gör
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
