@@ -34,6 +34,10 @@ export default function ArrCalculator() {
         </div>
         <Result label="Yıllık Yinelenen Gelir (ARR)" value={fmt(arr)} hint="ARR = MRR × 12" />
       </div>
+
+      {arrSeoContent}
     </ToolPage>
   );
 }
+
+const arrSeoContent = null; // placeholder overwritten below
