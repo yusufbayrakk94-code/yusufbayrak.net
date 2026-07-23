@@ -11,10 +11,11 @@ import {
 import { Button } from "@/components/ui/button";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/work", label: "Work" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/", label: "Ana Sayfa" },
+  { href: "/hakkimda", label: "Hakkımda" },
+  { href: "/projeler", label: "Projeler" },
+  { href: "/ucretsiz-araclar", label: "Ücretsiz Araçlar" },
+  { href: "/iletisim", label: "İletişim" },
 ];
 
 export function Header() {
