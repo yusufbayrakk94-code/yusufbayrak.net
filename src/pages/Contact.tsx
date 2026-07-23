@@ -57,7 +57,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="font-mono text-sm">
-                    <span className="text-primary">//</span> Name
+                    <span className="text-accent">//</span> Name
                   </Label>
                   <Input
                     id="name"
@@ -70,7 +70,7 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <Label htmlFor="email" className="font-mono text-sm">
-                    <span className="text-primary">//</span> Email
+                    <span className="text-accent">//</span> Email
                   </Label>
                   <Input
                     id="email"
@@ -84,7 +84,7 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <Label htmlFor="message" className="font-mono text-sm">
-                    <span className="text-primary">//</span> Message
+                    <span className="text-accent">//</span> Message
                   </Label>
                   <Textarea
                     id="message"
@@ -120,13 +120,13 @@ export default function Contact() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors group"
+                    className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-accent/50 transition-colors group"
                   >
-                    <div className="flex items-center justify-center w-12 h-12 bg-secondary rounded-lg group-hover:bg-primary/10 transition-colors">
-                      <link.icon className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                    <div className="flex items-center justify-center w-12 h-12 bg-secondary rounded-lg group-hover:bg-accent/10 transition-colors">
+                      <link.icon className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors" />
                     </div>
                     <div>
-                      <p className="font-mono text-sm text-foreground group-hover:text-primary transition-colors">
+                      <p className="font-mono text-sm text-foreground group-hover:text-accent transition-colors">
                         {link.label}
                       </p>
                       <p className="font-mono text-xs text-muted-foreground">
@@ -140,7 +140,7 @@ export default function Contact() {
               {/* Availability */}
               <div className="mt-8 p-4 bg-card border border-border rounded-lg">
                 <p className="font-mono text-xs text-muted-foreground mb-2">
-                  <span className="text-primary">/*</span> Availability <span className="text-primary">*/</span>
+                  <span className="text-accent">/*</span> Availability <span className="text-accent">*/</span>
                 </p>
                 <p className="text-sm text-foreground">
                   Currently open to new opportunities and freelance projects.
