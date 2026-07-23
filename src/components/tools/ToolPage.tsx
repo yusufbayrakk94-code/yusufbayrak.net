@@ -3,6 +3,17 @@ import { Helmet } from "react-helmet-async";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+export interface Faq {
+  q: string;
+  a: string;
+}
 
 interface ToolPageProps {
   title: string;
@@ -10,12 +21,23 @@ interface ToolPageProps {
   path: string;
   intro: string;
   children: React.ReactNode;
+  seoContent?: React.ReactNode;
+  faqs?: Faq[];
 }
 
 const SITE = "https://digital-core-labs.lovable.app";
 
-export function ToolPage({ title, description, path, intro, children }: ToolPageProps) {
+export function ToolPage({ title, description, path, intro, children, seoContent, faqs }: ToolPageProps) {
   const url = `${SITE}${path}`;
+  const faqJsonLd = faqs && faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((f) => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a },
+    })),
+  } : null;
   return (
     <Layout>
       <Helmet>
@@ -39,6 +61,9 @@ export function ToolPage({ title, description, path, intro, children }: ToolPage
           "operatingSystem": "Web",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" }
         })}</script>
+        {faqJsonLd && (
+          <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        )}
       </Helmet>
       <section className="py-20">
         <div className="container max-w-3xl">
@@ -62,6 +87,33 @@ export function ToolPage({ title, description, path, intro, children }: ToolPage
           <div className="p-6 bg-card border border-border rounded-lg opacity-0 animate-fade-in-up stagger-3">
             {children}
           </div>
+
+          {seoContent && (
+            <div className="mt-16 opacity-0 animate-fade-in-up stagger-3">
+              <CodeDivider label="Rehber" />
+              <article className="max-w-none text-muted-foreground leading-relaxed space-y-5 [&_h2]:text-foreground [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:mt-8 [&_h2]:mb-3 [&_strong]:text-foreground">
+                {seoContent}
+              </article>
+            </div>
+          )}
+
+          {faqs && faqs.length > 0 && (
+            <div className="mt-16 opacity-0 animate-fade-in-up stagger-3">
+              <CodeDivider label="Sıkça Sorulan Sorular" />
+              <Accordion type="single" collapsible className="bg-card border border-border rounded-lg px-4">
+                {faqs.map((f, i) => (
+                  <AccordionItem key={i} value={`item-${i}`} className="border-border last:border-0">
+                    <AccordionTrigger className="text-left font-mono text-sm text-foreground hover:text-accent hover:no-underline">
+                      {f.q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                      {f.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          )}
         </div>
       </section>
     </Layout>
