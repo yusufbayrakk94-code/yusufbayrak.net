@@ -4,7 +4,7 @@ export const home = {
   path: "/",
   seoTitle: "Yusuf Bayrak | Dijital Pazarlama Uzmanı",
   seoDescription:
-    "Dijital Pazarlama Uzmanı Yusuf Bayrak, Sistem Global Danışmanlık firmasında görev almaktadır. Kendi sitesi yusufbayrak.net üzerinden B2B ve e-ticaret projeleri, ücretsiz pazarlama araçları ve blog yazıları paylaşmaktadır.",
+    "Dijital Pazarlama Uzmanı. Sistem Global Danışmanlık'ta görev almaktadır. B2B ve e-ticaret markaları için web sitesi kurulumu, performans reklam yönetimi ve lead generation kurguları geliştirir; süreçlerini yapay zeka destekli otomasyonlarla güçlendirir.",
   heroLabel: "Dijital Pazarlama | Lead Generation | Ürün Geliştirme",
   heroHeading: "Merhaba, ben Yusuf Bayrak.",
   heroSubline:
