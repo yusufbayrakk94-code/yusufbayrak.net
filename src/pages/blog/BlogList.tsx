@@ -15,7 +15,7 @@ import {
 
 type FilterValue = BlogCategorySlug | "all";
 
-const SITE = "https://digital-core-labs.lovable.app";
+import { SITE_URL as SITE } from "@/i18n/routes";
 
 const UI = {
   tr: {
