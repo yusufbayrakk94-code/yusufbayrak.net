@@ -67,25 +67,29 @@ function readBlogPosts() {
   const trStart = src.indexOf("export const BLOG_POSTS:");
   const enStart = src.indexOf("export const BLOG_POSTS_EN");
   const trBody = src.slice(trStart, enStart > trStart ? enStart : undefined);
-  const posts = [];
-  const blocks = trBody.split(/\n\s*\{\s*\n\s*slug:\s*"/).slice(1);
-  for (const raw of blocks) {
-    const slug = (raw.match(/^([^"]+)"/) || [])[1];
-    if (!slug) continue;
-    const title = (raw.match(/\btitle:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || slug;
-    // description may span into a second line via `\n      "..."`.
-    const desc =
-      (raw.match(/\bdescription:\s*\n?\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || "";
-    posts.push({ slug, title, description: desc });
-  }
-  return posts;
+  const enBody = enStart >= 0 ? src.slice(enStart) : "";
+  const parse = (body) => {
+    const posts = [];
+    const blocks = body.split(/\n\s*\{\s*\n\s*slug:\s*"/).slice(1);
+    for (const raw of blocks) {
+      const slug = (raw.match(/^([^"]+)"/) || [])[1];
+      if (!slug) continue;
+      const title = (raw.match(/\btitle:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || slug;
+      const desc =
+        (raw.match(/\bdescription:\s*\n?\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || "";
+      posts.push({ slug, title, description: desc });
+    }
+    return posts;
+  };
+  return { tr: parse(trBody), en: parse(enBody) };
 }
 
 function build() {
   const meta = readSiteMeta();
   const projects = readProjects();
   const tools = readTools();
-  const posts = readBlogPosts();
+  const { tr: posts, en: postsEn } = readBlogPosts();
+  const postsEnBySlug = new Map(postsEn.map((p) => [p.slug, p]));
 
   const lines = [];
   lines.push(`# ${meta.name}`);
@@ -135,7 +139,10 @@ function build() {
   lines.push(`- [Blog (EN)](${SITE_URL}/en/blog): English blog index.`);
   lines.push(`- [Contact](${SITE_URL}/en/contact): Contact details.`);
   for (const pair of BLOG_SLUG_PAIRS) {
-    lines.push(`- [Blog post (EN)](${SITE_URL}/en/blog/${pair.en})`);
+    const p = postsEnBySlug.get(pair.en);
+    const title = p?.title || pair.en;
+    const desc = p?.description ? `: ${p.description}` : "";
+    lines.push(`- [${title}](${SITE_URL}/en/blog/${pair.en})${desc}`);
   }
   lines.push("");
 
