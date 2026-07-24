@@ -41,10 +41,10 @@
 - [Free Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools): SaaS & marketing calculators.
 - [Blog (EN)](https://yusufbayrak.net/en/blog): English blog index.
 - [Contact](https://yusufbayrak.net/en/contact): Contact details.
-- [Blog post (EN)](https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design)
-- [Blog post (EN)](https://yusufbayrak.net/en/blog/google-ads-performance-optimization)
-- [Blog post (EN)](https://yusufbayrak.net/en/blog/n8n-lead-enrichment-automation)
-- [Blog post (EN)](https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv)
+- [How to Design a B2B Lead Generation Funnel: End-to-End Guide](https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design): A practical framework covering ICP definition, channel mix, messaging and CRM integration for qualified B2B lead generation.
+- [7 Data-Driven Ways to Multiply Your Google Ads Performance](https://yusufbayrak.net/en/blog/google-ads-performance-optimization): Advanced optimization tactics used to lift ROAS across Search, Performance Max and Demand Gen campaigns.
+- [n8n Lead Enrichment Automation: Step-by-Step Setup](https://yusufbayrak.net/en/blog/n8n-lead-enrichment-automation): How to combine Clay, Apollo and OpenAI inside n8n to build an automatic enrichment workflow for every new lead.
+- [SaaS Metrics 101: How to Read ARR, CAC, LTV and Churn](https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv): The four core metrics that steer SaaS growth — where healthy bands sit and how to improve each one.
 
 ## İletişim
 
