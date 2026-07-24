@@ -1,29 +1,50 @@
 # Yusuf Bayrak
 
-> Dijital pazarlama uzmanı: web sitesi kurulumu ve B2B lead generation kurgularını yapay zeka otomasyonlarıyla uçtan uca inşa ediyor. Performans pazarlaması, B2B lead generation, yapay zeka & iş akışı otomasyonu, web geliştirme ve SaaS ürün geliştirme alanlarında çalışıyor.
+> Dijital Pazarlama Uzmanı. Sistem Global Danışmanlık'ta görev almaktadır. B2B ve e-ticaret markaları için web sitesi kurulumu, performans reklam yönetimi ve lead generation kurguları geliştirir; süreçlerini yapay zeka destekli otomasyonlarla güçlendirir.
 
 ## Ana Sayfalar
 
-- [Ana Sayfa](https://yusufbayrak.net/): Yusuf Bayrak'ın kısa tanıtımı ve öne çıkan projeler.
+- [Ana Sayfa](https://yusufbayrak.net/): Yusuf Bayrak kısa tanıtımı ve öne çıkan projeler.
 - [Hakkımda](https://yusufbayrak.net/hakkimda): Profesyonel geçmiş, uzmanlık alanları ve kullanılan araçlar.
 - [Projeler](https://yusufbayrak.net/projeler): Tüm proje ve ürünlerin listesi.
 - [İletişim](https://yusufbayrak.net/iletisim): İletişim bilgileri (e-posta ve LinkedIn).
 
 ## Projeler
 
-- [AdGusto](https://yusufbayrak.net/projeler/adgusto): Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS. Canlı: https://www.adgusto.app
-- [Brandog & Marka-MCP](https://yusufbayrak.net/projeler/brandog-marka-mcp): TÜRKPATENT veritabanına Model Context Protocol (MCP) altyapısıyla bağlanan marka tescil ve süreç yönetim platformu. Canlı: https://brandog.lovable.app
-- [Büyüme & Otomasyon Altyapıları](https://yusufbayrak.net/projeler/buyume-otomasyon): Low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle kurulan sürdürülebilir büyüme motorları.
+- [AdGusto](https://yusufbayrak.net/projeler/adgusto): Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS projesi. Canlı: https://www.adgusto.app
+- [Brandog & Marka-MCP](https://yusufbayrak.net/projeler/brandog-marka-mcp): TÜRKPATENT Veritabanına Yapay zeka Model Context Protocol (MCP) altyapısıyla bağlanan, güçlendirilmiş; marka tescil ve süreç yönetimini akıllı, otomatize bir yapıda buluşturan platform çözümü. Canlı: https://brandog.lovable.app
+- [Büyüme & Otomasyon Altyapıları](https://yusufbayrak.net/projeler/buyume-otomasyon-altyapilari): Modern low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle markalar için kurguladığım sürdürülebilir büyüme motorları.
 
 ## Ücretsiz Araçlar
 
 - [Ücretsiz Araçlar](https://yusufbayrak.net/ucretsiz-araclar): Pazarlama ve SaaS metriklerini hesaplayan tarayıcı tabanlı araçlar.
-- [ARR Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/arr-hesaplayici): Yıllık yinelenen gelir (Annual Recurring Revenue) hesaplayıcı.
-- [CAC Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/cac-hesaplayici): Müşteri edinme maliyeti (Customer Acquisition Cost) analiz aracı.
-- [Churn Rate Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/churn-rate-hesaplayici): Müşteri kayıp oranı ve elde tutma performansı ölçümü.
-- [LTV Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/ltv-hesaplayici): Müşteri yaşam boyu değeri hesaplama ve CAC karşılaştırması.
-- [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranı ve kampanya kârlılığı hesaplayıcı.
-- [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli link üretici.
+- [ARR Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/arr-hesaplayici): Yıllık yinelenen gelir (Annual Recurring Revenue) hesaplama aracı.
+- [CAC Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/cac-hesaplayici): Müşteri edinme maliyetini (Customer Acquisition Cost) analiz edin.
+- [Churn Rate Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/churn-rate-hesaplayici): Müşteri kayıp oranınızı ve elde tutma performansınızı ölçün.
+- [LTV Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/ltv-hesaplayici): Müşteri yaşam boyu değerini hesaplayın ve CAC ile karşılaştırın.
+- [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.
+- [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli linkler oluşturun.
+
+## Blog
+
+- [Blog](https://yusufbayrak.net/blog): Performans pazarlama, B2B lead generation, AI otomasyon ve SaaS büyüme üzerine yazılar.
+- [B2B Lead Generation Hunisi Nasıl Tasarlanır? Uçtan Uca Rehber](https://yusufbayrak.net/blog/b2b-lead-generation-huni-tasarimi): Nitelikli B2B lead üretmek için ICP tanımı, kanal seçimi, mesajlaşma ve CRM entegrasyonunu kapsayan pratik bir framework.
+- [Google Ads'te Performansı Katlamanın 7 Data-Driven Yolu](https://yusufbayrak.net/blog/google-ads-performans-optimizasyonu): Search, PMax ve Demand Gen kampanyalarında ROAS'ı yükseltmek için kullanılan gelişmiş optimizasyon taktikleri.
+- [n8n ile Lead Enrichment Otomasyonu: Adım Adım Kurulum](https://yusufbayrak.net/blog/n8n-ile-lead-enrichment-otomasyonu): Clay, Apollo ve OpenAI'ı n8n üzerinden birleştirerek her yeni lead için otomatik zenginleştirme akışı nasıl kurulur?
+- [SaaS Metrikleri 101: ARR, CAC, LTV ve Churn Nasıl Yorumlanır?](https://yusufbayrak.net/blog/saas-metrikleri-arr-cac-ltv): SaaS büyümesini yöneten dört temel metrik; sağlıklı bir işletme için hangi bantlarda olmalı ve nasıl iyileştirilir?
+
+## English
+
+- [Home (EN)](https://yusufbayrak.net/en): English homepage.
+- [About](https://yusufbayrak.net/en/about): Background and expertise.
+- [Projects](https://yusufbayrak.net/en/projects): Products and projects.
+- [Free Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools): SaaS & marketing calculators.
+- [Blog (EN)](https://yusufbayrak.net/en/blog): English blog index.
+- [Contact](https://yusufbayrak.net/en/contact): Contact details.
+- [Blog post (EN)](https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design)
+- [Blog post (EN)](https://yusufbayrak.net/en/blog/google-ads-performance-optimization)
+- [Blog post (EN)](https://yusufbayrak.net/en/blog/n8n-lead-enrichment-automation)
+- [Blog post (EN)](https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv)
 
 ## İletişim
 
