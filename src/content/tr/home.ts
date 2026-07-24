@@ -8,7 +8,7 @@ export const home = {
   heroLabel: "Dijital Pazarlama | Lead Generation | Ürün Geliştirme",
   heroHeading: "Merhaba, ben Yusuf Bayrak.",
   heroSubline:
-    "Web sitesi kurulumu ve B2B lead generation kurgularını, yapay zeka otomasyonlarıyla uçtan uca inşa ediyorum.",
+    "Dijital Pazarlama Uzmanı olarak B2B ve e-ticaret markaları için web sitesi kurulumu, reklam yönetimi ve lead generation kurguları geliştiriyorum.",
   heroCta: "Projeleri Gör",
   heroCtaHref: "/projeler",
   featuredDivider: "Öne Çıkan Projeler",
