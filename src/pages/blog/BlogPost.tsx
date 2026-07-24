@@ -15,7 +15,7 @@ import {
 } from "@/data/blogPosts";
 import { useLocale } from "@/i18n/useLocale";
 
-const SITE = "https://digital-core-labs.lovable.app";
+import { SITE_URL as SITE } from "@/i18n/routes";
 const AUTHOR = "Yusuf Bayrak";
 
 const UI = {
