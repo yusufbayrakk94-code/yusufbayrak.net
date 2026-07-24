@@ -14,5 +14,6 @@ export const freeToolsPage = {
     { key: "ltv",   name: "LTV Hesaplayıcı",           description: "Müşteri yaşam boyu değerini hesaplayın ve CAC ile karşılaştırın.",                    href: "/ucretsiz-araclar/ltv-hesaplayici" },
     { key: "roas",  name: "ROAS Hesaplayıcı",          description: "Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.",                    href: "/ucretsiz-araclar/roas-hesaplayici" },
     { key: "utm",   name: "UTM Link Oluşturucu",       description: "Kampanya takibi için UTM parametreli linkler oluşturun.",                              href: "/ucretsiz-araclar/utm-link-olusturucu" },
+    { key: "llms",  name: "llms.txt Oluşturucu",       description: "AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.", href: "/ucretsiz-araclar/llms-txt-olusturucu" },
   ],
 };

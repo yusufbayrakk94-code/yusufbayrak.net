@@ -14,5 +14,6 @@ export const freeToolsPage = {
     { key: "ltv",   name: "LTV Calculator",        description: "Calculate customer lifetime value and compare it against CAC.",                         href: "/en/free-marketing-tools/ltv-calculator" },
     { key: "roas",  name: "ROAS Calculator",       description: "Measure Return on Ad Spend and campaign profitability.",                                href: "/en/free-marketing-tools/roas-calculator" },
     { key: "utm",   name: "UTM Link Builder",      description: "Build UTM-tagged links for accurate campaign attribution.",                             href: "/en/free-marketing-tools/utm-builder" },
+    { key: "llms",  name: "llms.txt Generator",    description: "Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.", href: "/en/free-marketing-tools/llms-txt-generator" },
   ],
 };
