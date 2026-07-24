@@ -2,9 +2,9 @@ import type { ProjectSummary } from "../types";
 
 export const home = {
   path: "/",
-  seoTitle: "Yusuf Bayrak — B2B Lead Gen & AI Otomasyon Uzmanı",
+  seoTitle: "Yusuf Bayrak | Dijital Pazarlama Uzmanı",
   seoDescription:
-    "Web sitesi kurulumu ve B2B lead generation kurgularını yapay zeka otomasyonlarıyla uçtan uca inşa eden dijital pazarlama uzmanı.",
+    "Dijital Pazarlama Uzmanı Yusuf Bayrak, Sistem Global Danışmanlık firmasında görev almaktadır. Kendi sitesi yusufbayrak.net üzerinden B2B ve e-ticaret projeleri, ücretsiz pazarlama araçları ve blog yazıları paylaşmaktadır.",
   heroLabel: "Dijital Pazarlama | Lead Generation | Ürün Geliştirme",
   heroHeading: "Merhaba, ben Yusuf Bayrak.",
   heroSubline:
