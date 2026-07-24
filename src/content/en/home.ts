@@ -8,7 +8,7 @@ export const home = {
   heroLabel: "Digital Marketing | Lead Generation | Product Development",
   heroHeading: "Hi, I'm Yusuf Bayrak.",
   heroSubline:
-    "I build websites and B2B lead generation systems end-to-end, powered by AI automation.",
+    "As a Digital Marketing Specialist, I develop website setup, ad management and lead generation systems for B2B and e-commerce brands.",
   heroCta: "View Projects",
   heroCtaHref: "/en/projects",
   featuredDivider: "Featured Projects",
