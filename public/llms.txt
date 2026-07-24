@@ -24,6 +24,7 @@
 - [LTV Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/ltv-hesaplayici): Müşteri yaşam boyu değerini hesaplayın ve CAC ile karşılaştırın.
 - [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.
 - [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli linkler oluşturun.
+- [llms.txt Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu): AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.
 
 ## Blog
 
