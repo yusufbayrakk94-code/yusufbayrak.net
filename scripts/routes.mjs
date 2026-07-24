@@ -18,6 +18,7 @@ export const STATIC_TR = [
   "/ucretsiz-araclar/ltv-hesaplayici",
   "/ucretsiz-araclar/roas-hesaplayici",
   "/ucretsiz-araclar/utm-link-olusturucu",
+  "/ucretsiz-araclar/llms-txt-olusturucu",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -34,6 +35,7 @@ export const STATIC_EN = [
   "/en/free-marketing-tools/ltv-calculator",
   "/en/free-marketing-tools/roas-calculator",
   "/en/free-marketing-tools/utm-builder",
+  "/en/free-marketing-tools/llms-txt-generator",
   "/en/contact",
   "/en/blog",
 ];
@@ -51,6 +53,7 @@ export const ROUTE_PAIRS = [
   { tr: "/ucretsiz-araclar/ltv-hesaplayici",         en: "/en/free-marketing-tools/ltv-calculator" },
   { tr: "/ucretsiz-araclar/roas-hesaplayici",        en: "/en/free-marketing-tools/roas-calculator" },
   { tr: "/ucretsiz-araclar/utm-link-olusturucu",     en: "/en/free-marketing-tools/utm-builder" },
+  { tr: "/ucretsiz-araclar/llms-txt-olusturucu",     en: "/en/free-marketing-tools/llms-txt-generator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 

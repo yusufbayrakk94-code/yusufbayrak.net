@@ -1,12 +1,12 @@
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { Link } from "react-router-dom";
-import { TrendingUp, Users, UserMinus, HeartHandshake, Target, Link2, ArrowRight } from "lucide-react";
+import { TrendingUp, Users, UserMinus, HeartHandshake, Target, Link2, FileText, ArrowRight } from "lucide-react";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
 import { pickFreeTools } from "@/content";
 
-const iconMap = { arr: TrendingUp, cac: Users, churn: UserMinus, ltv: HeartHandshake, roas: Target, utm: Link2 } as const;
+const iconMap = { arr: TrendingUp, cac: Users, churn: UserMinus, ltv: HeartHandshake, roas: Target, utm: Link2, llms: FileText } as const;
 
 export default function FreeTools() {
   const locale = useLocale();

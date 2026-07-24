@@ -21,6 +21,7 @@ import ChurnCalculator from "./pages/tools/ChurnCalculator";
 import LtvCalculator from "./pages/tools/LtvCalculator";
 import RoasCalculator from "./pages/tools/RoasCalculator";
 import UtmBuilder from "./pages/tools/UtmBuilder";
+import LlmsTxtGenerator from "./pages/tools/LlmsTxtGenerator";
 import BlogList from "./pages/blog/BlogList";
 import BlogPost from "./pages/blog/BlogPost";
 import NotFound from "./pages/NotFound";
@@ -44,6 +45,7 @@ export function AppRoutes() {
       <Route path="/ucretsiz-araclar/ltv-hesaplayici" element={<LtvCalculator />} />
       <Route path="/ucretsiz-araclar/roas-hesaplayici" element={<RoasCalculator />} />
       <Route path="/ucretsiz-araclar/utm-link-olusturucu" element={<UtmBuilder />} />
+      <Route path="/ucretsiz-araclar/llms-txt-olusturucu" element={<LlmsTxtGenerator />} />
       <Route path="/iletisim" element={<Contact />} />
       <Route path="/blog" element={<BlogList />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
@@ -61,6 +63,7 @@ export function AppRoutes() {
       <Route path="/en/free-marketing-tools/ltv-calculator" element={<LtvCalculator />} />
       <Route path="/en/free-marketing-tools/roas-calculator" element={<RoasCalculator />} />
       <Route path="/en/free-marketing-tools/utm-builder" element={<UtmBuilder />} />
+      <Route path="/en/free-marketing-tools/llms-txt-generator" element={<LlmsTxtGenerator />} />
       <Route path="/en/contact" element={<Contact />} />
       <Route path="/en/blog" element={<BlogList />} />
       <Route path="/en/blog/:slug" element={<BlogPost />} />

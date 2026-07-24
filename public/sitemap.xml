@@ -82,6 +82,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-marketing-tools/llms-txt-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/iletisim</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/iletisim" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/contact" />
@@ -234,6 +242,14 @@
     <loc>https://yusufbayrak.net/en/free-marketing-tools/utm-builder</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-marketing-tools/utm-builder" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/free-marketing-tools/llms-txt-generator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-marketing-tools/llms-txt-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
