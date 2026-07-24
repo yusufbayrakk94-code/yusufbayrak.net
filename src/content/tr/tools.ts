@@ -125,4 +125,25 @@ export const utm: ToolContent = {
   ],
 };
 
-export const trTools = { arr, cac, churn, ltv, roas, utm };
+export const llmsTxt: ToolContent = {
+  slug: "llms-txt",
+  path: "/ucretsiz-araclar/llms-txt-olusturucu",
+  title: "llms.txt Oluşturucu",
+  description:
+    "Sitenizin AI botları (ClaudeBot, GPTBot, Perplexity) tarafından daha iyi anlaşılması için ücretsiz llms.txt dosyası oluşturun ve indirin.",
+  intro:
+    "Site adınızı, kısa açıklamanızı ve önemli dokümantasyon/örnek/opsiyonel bağlantılarınızı girin. Araç, girdilerinizi llmstxt.org standardına uygun bir Markdown dosyasına dönüştürür; canlı önizleme ile birlikte tek tıkla .txt olarak indirebilirsiniz.",
+  seoParagraphs: [
+    { heading: "llms.txt Nedir ve Neden Önemlidir?", body: "llms.txt, bir web sitesinin köküne konulan ve büyük dil modellerine (LLM) sitenin ne hakkında olduğunu, hangi sayfaların önemli olduğunu ve içeriklerin nasıl gruplandığını kısa, yapılandırılmış bir Markdown formatında anlatan bir dosyadır. ClaudeBot, GPTBot, PerplexityBot ve benzeri AI tarayıcıları; bir siteyi 'anlamaya' çalışırken önce bu dosyaya bakarak sayfaların, dokümantasyonun ve öne çıkan kaynakların haritasını tek noktadan alabilir." },
+    { body: "robots.txt tarayıcılara nereye girebileceklerini söyler; sitemap.xml ise indekslenmesi gereken URL'lerin makine dostu bir listesini verir. llms.txt bunların yerine geçmez — tamamlayıcıdır. Farkı, insan tarafından yazılmış kısa bir 'site rehberi' sunmasıdır: proje adı, tek cümlelik açıklama, önemli dokümantasyon bağlantıları, örnekler ve opsiyonel kaynaklar. Bu sayede LLM'ler sitenizi tararken bağlamı çok daha hızlı kurar ve yanıtlarında daha isabetli referans verir." },
+    { body: "Özellikle SaaS ürünleri, dokümantasyon siteleri, kişisel portföyler ve içerik-yoğun projeler için llms.txt eklemek, üretken arama motorlarında (Generative Engine Optimization / GEO) doğru şekilde temsil edilmenin en hızlı yoludur. Dosyayı hazırlamak dakikalar sürer; ancak AI botlarının sitenizi keşfetme ve alıntılama şeklini doğrudan etkiler." },
+  ],
+  faqs: [
+    { q: "llms.txt dosyasını nereye yüklemeliyim?", a: "Dosya sitenizin kök dizinine yerleştirilmeli ve https://alanadiniz.com/llms.txt adresinden erişilebilir olmalıdır. Alt dizin veya alt alan adına konulursa AI tarayıcılar bulmayabilir." },
+    { q: "robots.txt ile llms.txt arasındaki fark nedir?", a: "robots.txt tarayıcılara hangi yolları taramaya izin verildiğini söyleyen bir erişim kuralları dosyasıdır. llms.txt ise sitenizin ne hakkında olduğunu ve hangi kaynakların önemli olduğunu LLM'lere kısa, insan tarafından yazılmış bir rehber olarak sunar. Biri erişimi düzenler, diğeri bağlamı anlatır — birbirinin yerine geçmez." },
+    { q: "Bu dosya SEO sıralamamı etkiler mi?", a: "Hayır. llms.txt, Google veya Bing gibi klasik arama motorlarının sıralama sinyallerinden biri değildir. Amacı; ChatGPT, Claude, Perplexity gibi LLM tabanlı sistemlerin sitenizi daha doğru anlaması ve alıntılamasıdır. SEO'yu değil, üretken arama görünürlüğünü (GEO) hedefler." },
+    { q: "llms.txt'ye hangi bilgiler eklenmelidir?", a: "En az proje/site adı, tek cümlelik bir açıklama ve önemli dokümantasyon sayfalarının bağlantıları bulunmalıdır. İsteğe bağlı olarak örnekler, blog yazıları, API referansları ve opsiyonel kaynak bağlantıları da eklenebilir. Dosya kısa ve öz olmalı; ayrıntılı içerik zaten linklenen sayfalarda yer alır." },
+  ],
+};
+
+export const trTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };
