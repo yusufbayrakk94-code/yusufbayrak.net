@@ -125,4 +125,25 @@ export const utm: ToolContent = {
   ],
 };
 
-export const enTools = { arr, cac, churn, ltv, roas, utm };
+export const llmsTxt: ToolContent = {
+  slug: "llms-txt",
+  path: "/en/free-marketing-tools/llms-txt-generator",
+  title: "llms.txt Generator",
+  description:
+    "Create and download a free llms.txt file to help AI bots (ClaudeBot, GPTBot, Perplexity) understand your website better.",
+  intro:
+    "Enter your site name, a short description and the important documentation, example and optional links. The tool converts your input into a Markdown file that follows the llmstxt.org standard, with a live preview and a one-click .txt download.",
+  seoParagraphs: [
+    { heading: "What Is llms.txt and Why Does It Matter?", body: "llms.txt is a small Markdown file placed at the root of a website that tells large language models what the site is about, which pages matter, and how the content is organised. AI crawlers such as ClaudeBot, GPTBot and PerplexityBot check this file to build a fast, structured map of your documentation, examples and key resources — before diving into the raw HTML." },
+    { body: "robots.txt tells crawlers where they may go; sitemap.xml gives them a machine-readable list of URLs to index. llms.txt does not replace either — it complements them. Its job is to provide a human-written 'site guide': project name, a one-sentence summary, curated documentation links, examples and optional resources. That context helps LLMs cite your site more accurately when they answer user questions." },
+    { body: "SaaS products, documentation sites, personal portfolios and content-heavy projects benefit the most from adding llms.txt. It is the fastest way to be represented correctly in generative search engines (Generative Engine Optimization / GEO). Preparing the file takes minutes, but it directly shapes how AI systems discover and quote your site." },
+  ],
+  faqs: [
+    { q: "Where should I upload the llms.txt file?", a: "It must be placed at the root of your domain and reachable at https://yourdomain.com/llms.txt. Placing it in a sub-directory or a sub-domain means AI crawlers may not find it." },
+    { q: "What is the difference between robots.txt and llms.txt?", a: "robots.txt defines which paths crawlers are allowed to fetch. llms.txt describes what your site is about and which resources matter, written for LLMs as a short human-written guide. One controls access, the other provides context — they do not replace each other." },
+    { q: "Does this file affect my SEO ranking?", a: "No. llms.txt is not a ranking signal for classic search engines like Google or Bing. Its purpose is to help LLM-based systems (ChatGPT, Claude, Perplexity) understand and cite your site accurately. It targets generative search visibility (GEO), not traditional SEO." },
+    { q: "What information should llms.txt include?", a: "At a minimum: the project or site name, a single-sentence description and links to the most important documentation pages. Optionally you can list examples, blog posts, API references and optional resources. Keep it concise — the detail lives in the pages you link to." },
+  ],
+};
+
+export const enTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };
