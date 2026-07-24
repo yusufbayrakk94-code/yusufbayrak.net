@@ -8,12 +8,13 @@ import { componentTagger } from "lovable-tagger";
 // Runs scripts/generate-sitemap.mjs at dev-server start and after each
 // production build so public/sitemap.xml and dist/sitemap.xml stay in sync
 // with the route inventory. Full SSG prerender happens via `npm run build`.
-function sitemapPlugin() {
+function contentGeneratorsPlugin() {
   return {
-    name: "sitemap-runner",
+    name: "content-generators",
     configureServer() {
       try {
         execSync("node scripts/generate-sitemap.mjs public/sitemap.xml", { stdio: "inherit" });
+        execSync("node scripts/generate-llms-txt.mjs public/llms.txt", { stdio: "inherit" });
       } catch { /* non-fatal in dev */ }
     },
     closeBundle() {
@@ -23,6 +24,10 @@ function sitemapPlugin() {
         try {
           execSync(
             `node scripts/generate-sitemap.mjs public/sitemap.xml dist/sitemap.xml`,
+            { stdio: "inherit" }
+          );
+          execSync(
+            `node scripts/generate-llms-txt.mjs public/llms.txt dist/llms.txt`,
             { stdio: "inherit" }
           );
         } catch { /* non-fatal */ }
@@ -37,7 +42,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === "development" && componentTagger(),
-    sitemapPlugin(),
+    contentGeneratorsPlugin(),
   ].filter(Boolean),
   resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
   build: {
