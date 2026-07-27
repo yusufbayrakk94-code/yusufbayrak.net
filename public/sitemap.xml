@@ -167,6 +167,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/meta-ads-exit-learning-phase-tactics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -322,6 +330,14 @@
     <loc>https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/saas-metrikleri-arr-cac-ltv" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/meta-ads-exit-learning-phase-tactics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/meta-ads-exit-learning-phase-tactics" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

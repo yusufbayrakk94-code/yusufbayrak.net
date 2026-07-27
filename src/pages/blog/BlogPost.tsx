@@ -12,6 +12,7 @@ import {
   getPostBySlugLocalized,
   getCategoryForLocale,
   getAlternateBlogSlug,
+  getRelatedToolForPost,
 } from "@/data/blogPosts";
 import { useLocale } from "@/i18n/useLocale";
 
@@ -32,6 +33,8 @@ const UI = {
     breadcrumbBlog: "Blog",
     navigateFallback: "/blog",
     authorPath: "/hakkimda",
+    relatedToolHeading: "İlgili Araç",
+    relatedToolCta: "Aracı deneyin",
   },
   en: {
     titleSuffix: " | Yusuf Bayrak",
@@ -46,6 +49,8 @@ const UI = {
     breadcrumbBlog: "Blog",
     navigateFallback: "/en/blog",
     authorPath: "/en/about",
+    relatedToolHeading: "Related Tool",
+    relatedToolCta: "Try the tool",
   },
 } as const;
 
@@ -100,6 +105,24 @@ export default function BlogPost() {
     ],
   };
 
+  const howToJsonLd = post.howTo
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: post.howTo.name,
+        description: post.howTo.description ?? post.description,
+        inLanguage: ui.inLanguage,
+        step: post.howTo.steps.map((s, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          name: s.name,
+          text: s.text,
+        })),
+      }
+    : null;
+
+  const relatedTool = getRelatedToolForPost(post, locale);
+
   return (
     <Layout>
       <Helmet>
@@ -138,6 +161,9 @@ export default function BlogPost() {
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
+        {howToJsonLd && (
+          <script type="application/ld+json">{JSON.stringify(howToJsonLd)}</script>
+        )}
       </Helmet>
 
       <article className="py-20">
@@ -254,6 +280,33 @@ export default function BlogPost() {
               ))}
             </Accordion>
           </section>
+
+          <aside
+            aria-labelledby="related-tool-heading"
+            className="mt-16 p-6 rounded-lg border border-accent/30 bg-accent/5"
+          >
+            <p
+              id="related-tool-heading"
+              className="font-mono text-xs text-accent uppercase tracking-wider mb-2"
+            >
+              {ui.relatedToolHeading}
+            </p>
+            <Link
+              to={relatedTool.href}
+              className="text-lg font-semibold text-foreground hover:text-accent transition-colors"
+            >
+              {relatedTool.label} →
+            </Link>
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+              {relatedTool.description}
+            </p>
+            <Link
+              to={relatedTool.href}
+              className="mt-4 inline-flex items-center gap-2 font-mono text-sm text-accent hover:underline"
+            >
+              {ui.relatedToolCta} →
+            </Link>
+          </aside>
         </div>
       </article>
     </Layout>

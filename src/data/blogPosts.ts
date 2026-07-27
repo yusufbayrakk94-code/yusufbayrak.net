@@ -21,6 +21,23 @@ export interface BlogSection {
   bullets?: string[];
 }
 
+export interface BlogHowToStep {
+  name: string;
+  text: string;
+}
+
+// Keys map to tool pages via getRelatedToolForPost() below. Kept as a
+// discriminated string so both TR and EN URLs can be resolved from one
+// value on the post.
+export type RelatedToolKey =
+  | "arr"
+  | "cac"
+  | "churn"
+  | "ltv"
+  | "roas"
+  | "utm"
+  | "llms-txt";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -33,6 +50,17 @@ export interface BlogPost {
   tags: string[];
   sections: BlogSection[];
   faq: BlogFAQ[];
+  // Optional HowTo schema payload — when present, BlogPost renders a
+  // schema.org/HowTo JSON-LD block so Google can surface step-list rich
+  // results for "step-by-step" content.
+  howTo?: {
+    name: string;
+    description?: string;
+    steps: BlogHowToStep[];
+  };
+  // Optional internal-link CTA to a related free tool. Falls back to a
+  // category default when omitted (see RELATED_TOOL_BY_CATEGORY).
+  relatedToolKey?: RelatedToolKey;
 }
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
@@ -154,6 +182,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Ortalama sektör benchmark'ı: %30-50 açılma, %1-3 yanıt oranıdır. ICP'ye özel kişiselleştirme ve doğru zamanlama ile yanıt oranı %8-12'ye çıkabilir.",
       },
     ],
+    relatedToolKey: "utm",
   },
   {
     slug: "google-ads-performans-optimizasyonu",
@@ -207,6 +236,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Evet. iOS 14+ sonrası cookie kaybını telafi eden Enhanced Conversions, tipik olarak ölçülen dönüşüm sayısında %5-15 artış sağlar; bu doğrudan Smart Bidding'in doğruluğuna yansır.",
       },
     ],
+    relatedToolKey: "roas",
   },
   {
     slug: "n8n-ile-lead-enrichment-otomasyonu",
@@ -267,6 +297,34 @@ export const BLOG_POSTS: BlogPost[] = [
           "MCP; LLM'in dış veri kaynaklarına (CRM, veritabanı, iç API) standart bir arayüzle bağlanmasını sağlar. Enrichment akışında n8n yerine doğrudan LLM'in CRM'i sorgulaması gereken senaryolarda MCP mimarisi tercih edilir.",
       },
     ],
+    howTo: {
+      name: "n8n ile Lead Enrichment Akışı Kurulumu",
+      description:
+        "Yeni bir form leadini otomatik olarak zenginleştirip skorlayarak CRM'e ve Slack'e yazan uçtan uca n8n akışı.",
+      steps: [
+        {
+          name: "Webhook node'u kurun",
+          text: "n8n'de bir Webhook trigger oluşturun ve form aracınızdan (Typeform, HubSpot, custom form) gelen lead payload'unu buraya yönlendirin.",
+        },
+        {
+          name: "Apollo veya Clay ile enrichment yapın",
+          text: "Gelen e-posta üzerinden Apollo/Clay API'sini çağırarak şirket adı, employee count, sektör ve teknoloji stack'i bilgilerini çekin.",
+        },
+        {
+          name: "OpenAI ile ICP fit skorlayın",
+          text: "Zenginleştirilmiş veriyi OpenAI node'una gönderin ve structured output (JSON schema) ile 0-100 arasında ICP fit skoru üretin.",
+        },
+        {
+          name: "CRM'e yazın ve owner atayın",
+          text: "HubSpot veya Pipedrive node'u ile zenginleştirilmiş kaydı oluşturun, skora göre uygun sales owner'ı otomatik atayın.",
+        },
+        {
+          name: "Slack bildirimi gönderin",
+          text: "Skor eşiğin (örn. 70+) üstündeyse SDR kanalına Slack mesajı gönderin; düşük skorluları nurture listesine ekleyin.",
+        },
+      ],
+    },
+    relatedToolKey: "llms-txt",
   },
   {
     slug: "saas-metrikleri-arr-cac-ltv",
@@ -320,6 +378,108 @@ export const BLOG_POSTS: BlogPost[] = [
           "Aktivasyon (ilk değerin hızla yaşanması), müşteri başarısı ekibi ve ürün içi engagement döngüleri en etkili üç kaldıraçtır. Ödeme sorunlarından kaynaklanan involuntary churn için dunning management (Stripe/Chargebee) devreye alınmalıdır.",
       },
     ],
+    relatedToolKey: "arr",
+  },
+  {
+    slug: "meta-ads-ogrenme-asamasindan-cikma-taktikleri",
+    title: "Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır? 5 Taktik",
+    description:
+      "Meta Ads Learning Phase'i 7 gün içinde tamamlamak için bütçe, event, audience ve kreatif odaklı 5 pratik taktik.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Meta Ads Learning Phase, ad set başına 7 gün içinde 50 optimizasyon eventi ile tamamlanır; aksi hâlde CPA sabit kalmaz.",
+      "Bütçeyi çok küçük tutmak, event pencerenizle uyumsuz teklif seçmek ve sık edit yapmak learning'i sıfırlar.",
+      "Broad audience + doğru event + günlük bütçe = beklenen event hacmi formülünü kurmak, çıkış süresini kısaltır.",
+      "5 taktik: doğru event seçimi, CBO ile bütçe konsolidasyonu, kreatif çeşitliliği, edit disiplini ve Advantage+ testleri.",
+    ],
+    publishedAt: "2026-07-20",
+    readingMinutes: 8,
+    tags: ["Meta Ads", "Facebook Ads", "Learning Phase", "Performans"],
+    sections: [
+      {
+        heading: "Learning Phase Nedir ve Neden Önemli?",
+        paragraphs: [
+          "Meta'nın makine öğrenmesi algoritması yeni (ya da anlamlı biçimde değiştirilmiş) her ad set için 7 günlük bir pencere içinde 50 optimizasyon eventi toplamayı hedefler. Bu eşik aşılmadan CPA dalgalı seyreder ve teslim verimliliği düşük kalır.",
+          "Uygulamada birçok reklamveren bu 50 eventi asla toplayamaz; çünkü bütçe düşük, event çok üstte (satın alma yerine görüntüleme), audience çok dar ya da ad set sürekli düzenleniyordur. Aşağıdaki 5 taktik, çıkış süresini belirgin biçimde kısaltır.",
+        ],
+      },
+      {
+        heading: "5 Taktik: Learning Phase'den Hızlı Çıkış",
+        paragraphs: [
+          "Aşağıdaki adımlar sırayla uygulandığında, ad set başına ortalama 3-5 gün içinde learning tamamlanır ve tCPA hedefine oturur:",
+        ],
+        bullets: [
+          "1) Doğru optimizasyon eventini seçin — huninin en aşağısındaki event yerine haftalık 50+ tetiklenebilecek olanı hedefleyin.",
+          "2) Bütçeyi Campaign Budget Optimization (Advantage Campaign Budget) ile konsolide edin; 3-5 ad set arasında ezberi bozmayın.",
+          "3) Ad set başına en az 4-6 kreatif varyantı yükleyin; algoritmanın gerçek anlamda test yapabileceği bir kütüphane bırakın.",
+          "4) Ad set edit disiplini uygulayın — bütçe, audience ve teklif değişikliklerini 4 günden önce yapmayın; her önemli edit learning'i sıfırlar.",
+          "5) Advantage+ Audience ve Advantage+ Shopping Campaigns ile geniş hedefleme testleri açın; broad audience learning'i hızlandırır.",
+        ],
+      },
+      {
+        heading: "Bütçe ile Event Hacmini Eşleştirme",
+        paragraphs: [
+          "Ad set günlük bütçesi × 7 gün, tahmini CPA'ya bölündüğünde beklenen event sayısını verir. Beklenen sayı 50'nin altındaysa learning tamamlanamaz — ya bütçeyi büyütmek ya eventi yukarı taşımak (örn. purchase yerine add-to-cart) gerekir.",
+          "Yeni ürün lansmanı veya düşük hacimli e-ticaret için 'proxy event' yaklaşımı kritik: ilk 30-45 gün add-to-cart üzerinden optimize edin, purchase hacmi büyüdüğünde eventi yükseltin.",
+        ],
+      },
+      {
+        heading: "Kreatif Yorulması ve Sürekli Test Döngüsü",
+        paragraphs: [
+          "Learning tamamlansa bile 2-3 hafta içinde frekans artar, CTR düşer ve CPA yeniden yükselir (creative fatigue). Haftalık kreatif refresh takvimi ve rakip analizi (Meta Ads Library üzerinden benchmark) sürdürülebilir performans için gereklidir.",
+        ],
+      },
+    ],
+    howTo: {
+      name: "Meta Ads Learning Phase'den Hızlı Çıkış",
+      description:
+        "Ad set başına 7 gün içinde 50 event toplayarak Learning Phase'i tamamlamak için uygulanacak 5 adım.",
+      steps: [
+        {
+          name: "Doğru optimizasyon eventini seçin",
+          text: "Haftalık 50+ tetiklenebilecek en alt huni eventini seçin. Purchase hacmi düşükse Add to Cart veya Initiate Checkout üzerinden optimize edin.",
+        },
+        {
+          name: "Bütçeyi CBO ile konsolide edin",
+          text: "Campaign Budget Optimization (Advantage Campaign Budget) açın ve bütçeyi 3-5 ad set arasında dağıtın; çok fazla küçük ad set açmaktan kaçının.",
+        },
+        {
+          name: "Kreatif kütüphanesini genişletin",
+          text: "Ad set başına en az 4-6 farklı kreatif varyantı (video, statik, UGC, testimonial) yükleyerek algoritmaya test yapabileceği alan bırakın.",
+        },
+        {
+          name: "Edit disiplini uygulayın",
+          text: "İlk 4-7 gün boyunca bütçe, audience veya teklif değişikliği yapmayın. Her önemli edit learning'i sıfırlar ve sayacı yeniden başlatır.",
+        },
+        {
+          name: "Advantage+ ile broad audience testi açın",
+          text: "Advantage+ Audience ve Advantage+ Shopping Campaigns kullanarak geniş hedefleme testleri kurun; broad audience learning'i belirgin biçimde hızlandırır.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "Meta Ads Learning Phase kaç günde biter?",
+        answer:
+          "Standart eşik 7 gün içinde ad set başına 50 optimizasyon eventidir. Bu hacme ulaşan ad set'ler learning'den 'Active' statüsüne geçer; ulaşamayanlar 'Learning Limited' olarak kalır ve CPA dalgalı seyreder.",
+      },
+      {
+        question: "Learning Limited uyarısını nasıl kaldırırım?",
+        answer:
+          "Üç kaldıraç var: (1) ad set bütçesini artırarak beklenen event sayısını 50'nin üstüne çıkarın, (2) eventi huninin daha üstüne taşıyın (purchase yerine add-to-cart), (3) benzer ad set'leri birleştirerek event sinyalini konsolide edin.",
+      },
+      {
+        question: "Ad set'i edit etmek learning'i sıfırlar mı?",
+        answer:
+          "Anlamlı editler (bütçe %20+ değişim, audience, optimization event, teklif stratejisi, kreatif değişikliği) learning'i sıfırlar. Kreatif ekleme genelde sıfırlamaz; kreatif değiştirme ise sıfırlar.",
+      },
+      {
+        question: "CBO mu manuel bütçe mi Learning Phase için daha iyi?",
+        answer:
+          "CBO (Advantage Campaign Budget), bütçeyi en iyi performans gösteren ad set'e otomatik akıttığı için toplam event hacmini artırır ve learning'i hızlandırır. Manuel bütçe, sadece ad set'ler net biçimde ayrı hedef veya coğrafya için ayrılmışsa mantıklıdır.",
+      },
+    ],
+    relatedToolKey: "roas",
   },
 ];
 
@@ -347,6 +507,7 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "google-ads-performans-optimizasyonu", en: "google-ads-performance-optimization" },
   { tr: "n8n-ile-lead-enrichment-otomasyonu", en: "n8n-lead-enrichment-automation" },
   { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
+  { tr: "meta-ads-ogrenme-asamasindan-cikma-taktikleri", en: "meta-ads-exit-learning-phase-tactics" },
 ];
 
 export const BLOG_POSTS_EN: BlogPost[] = [
@@ -414,6 +575,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "Industry benchmarks sit around 30–50% open rate and 1–3% reply rate. With ICP-specific personalization and good timing, replies can climb to 8–12%.",
       },
     ],
+    relatedToolKey: "utm",
   },
   {
     slug: "google-ads-performance-optimization",
@@ -467,6 +629,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "Yes. Enhanced Conversions offsets post-iOS 14 cookie loss and typically recovers 5–15% of measured conversions, which flows straight into Smart Bidding accuracy.",
       },
     ],
+    relatedToolKey: "roas",
   },
   {
     slug: "n8n-lead-enrichment-automation",
@@ -527,6 +690,34 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "MCP lets an LLM connect to external sources (CRM, database, internal API) through a standard interface. When the LLM should query the CRM directly instead of going through n8n, an MCP architecture is preferred.",
       },
     ],
+    howTo: {
+      name: "n8n Lead Enrichment Flow Setup",
+      description:
+        "An end-to-end n8n workflow that enriches, scores and routes every new form lead to CRM and Slack automatically.",
+      steps: [
+        {
+          name: "Set up a Webhook node",
+          text: "Create a Webhook trigger in n8n and point your form tool (Typeform, HubSpot, custom form) at it so lead payloads land here.",
+        },
+        {
+          name: "Enrich with Apollo or Clay",
+          text: "Call the Apollo/Clay API by email to pull company name, employee count, industry and tech stack for the lead.",
+        },
+        {
+          name: "Score ICP fit with OpenAI",
+          text: "Pass the enriched data into an OpenAI node and use structured output (JSON schema) to produce an ICP fit score between 0 and 100.",
+        },
+        {
+          name: "Write to CRM and assign owner",
+          text: "Use a HubSpot or Pipedrive node to create the enriched contact and auto-assign the right sales owner based on the score.",
+        },
+        {
+          name: "Send a Slack notification",
+          text: "If the score is above a threshold (e.g. 70+), post to the SDR Slack channel; drop lower scores into a nurture list.",
+        },
+      ],
+    },
+    relatedToolKey: "llms-txt",
   },
   {
     slug: "saas-metrics-arr-cac-ltv",
@@ -580,6 +771,108 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "The three most effective levers are activation (fast time-to-value), a customer success team and in-product engagement loops. For involuntary churn from failed payments, deploy dunning management (Stripe/Chargebee).",
       },
     ],
+    relatedToolKey: "arr",
+  },
+  {
+    slug: "meta-ads-exit-learning-phase-tactics",
+    title: "How to Exit Meta Ads Learning Phase Fast: 5 Tactics",
+    description:
+      "Five practical budget, event, audience and creative tactics to finish the Meta Ads Learning Phase within 7 days.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Meta Ads Learning Phase completes when an ad set collects 50 optimization events within 7 days — otherwise CPA stays volatile.",
+      "Budgets that are too small, events set too deep in the funnel and frequent edits reset learning.",
+      "Broad audience + right event + daily budget = expected event volume is the formula that shortens exit time.",
+      "5 tactics: pick the right event, consolidate budget with CBO, expand creative library, apply edit discipline, and test Advantage+.",
+    ],
+    publishedAt: "2026-07-20",
+    readingMinutes: 8,
+    tags: ["Meta Ads", "Facebook Ads", "Learning Phase", "Performance"],
+    sections: [
+      {
+        heading: "What Is the Learning Phase and Why It Matters",
+        paragraphs: [
+          "Meta's machine learning targets 50 optimization events per ad set within a 7-day window for every new (or meaningfully edited) ad set. Until that threshold is met, CPA fluctuates and delivery efficiency stays low.",
+          "In practice, many advertisers never hit those 50 events because the budget is too low, the event is too deep in the funnel (purchase vs. view), the audience is too narrow, or the ad set is constantly edited. The 5 tactics below shorten the exit time significantly.",
+        ],
+      },
+      {
+        heading: "5 Tactics: Exit Learning Phase Fast",
+        paragraphs: [
+          "Applied in order, these steps typically complete learning in 3–5 days per ad set and lock CPA close to target:",
+        ],
+        bullets: [
+          "1) Pick the right optimization event — target one that can realistically fire 50+ times/week rather than the deepest funnel event.",
+          "2) Consolidate budget with Campaign Budget Optimization (Advantage Campaign Budget); keep it across 3–5 ad sets, not many small ones.",
+          "3) Upload 4–6+ creative variants per ad set so the algorithm actually has a library to test against.",
+          "4) Apply edit discipline — avoid budget, audience or bid changes in the first 4 days; every meaningful edit resets learning.",
+          "5) Open broad-audience tests with Advantage+ Audience and Advantage+ Shopping Campaigns; broad targeting accelerates learning.",
+        ],
+      },
+      {
+        heading: "Matching Budget to Event Volume",
+        paragraphs: [
+          "Ad set daily budget × 7 days, divided by expected CPA, gives your expected event count. If that number is below 50, learning cannot complete — you must either increase budget or move the event higher in the funnel (e.g. add-to-cart instead of purchase).",
+          "For new product launches or low-volume ecommerce, a 'proxy event' approach is critical: optimize on add-to-cart for the first 30–45 days, then move up to purchase once volume grows.",
+        ],
+      },
+      {
+        heading: "Creative Fatigue and the Test Cadence",
+        paragraphs: [
+          "Even after learning completes, frequency climbs and CTR drops within 2–3 weeks, so CPA rises again (creative fatigue). A weekly creative refresh cadence and competitor benchmarking through the Meta Ads Library are required to keep performance sustainable.",
+        ],
+      },
+    ],
+    howTo: {
+      name: "Exit Meta Ads Learning Phase Fast",
+      description:
+        "Five steps to collect 50 optimization events per ad set within 7 days and complete Meta Ads Learning Phase.",
+      steps: [
+        {
+          name: "Pick the right optimization event",
+          text: "Choose the deepest funnel event that can still fire 50+ times per week. If purchase volume is low, optimize on Add to Cart or Initiate Checkout instead.",
+        },
+        {
+          name: "Consolidate budget with CBO",
+          text: "Turn on Campaign Budget Optimization (Advantage Campaign Budget) and spread budget across 3–5 ad sets; avoid opening many tiny ad sets.",
+        },
+        {
+          name: "Expand the creative library",
+          text: "Upload at least 4–6 distinct creative variants per ad set (video, static, UGC, testimonial) so the algorithm has real room to test.",
+        },
+        {
+          name: "Apply edit discipline",
+          text: "Do not change budget, audience or bidding during the first 4–7 days. Every meaningful edit resets learning and restarts the counter.",
+        },
+        {
+          name: "Open broad-audience tests with Advantage+",
+          text: "Use Advantage+ Audience and Advantage+ Shopping Campaigns to run broad targeting tests — broad audiences accelerate learning noticeably.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "How long does the Meta Ads Learning Phase take?",
+        answer:
+          "The standard threshold is 50 optimization events per ad set within 7 days. Ad sets that hit that volume graduate to 'Active'; those that don't stay in 'Learning Limited' and CPA stays volatile.",
+      },
+      {
+        question: "How do I remove the Learning Limited warning?",
+        answer:
+          "Three levers: (1) raise the ad set budget so expected events cross 50, (2) move the event higher in the funnel (add-to-cart instead of purchase), (3) merge similar ad sets to consolidate the event signal.",
+      },
+      {
+        question: "Does editing an ad set reset learning?",
+        answer:
+          "Meaningful edits (budget ±20%+, audience, optimization event, bid strategy, creative changes) reset learning. Adding a new creative usually doesn't; replacing an existing one does.",
+      },
+      {
+        question: "CBO or manual budget for Learning Phase?",
+        answer:
+          "CBO (Advantage Campaign Budget) routes spend to the best-performing ad set automatically, growing total event volume and accelerating learning. Manual budgets only make sense when ad sets are clearly split by distinct goal or geography.",
+      },
+    ],
+    relatedToolKey: "roas",
   },
 ];
 
@@ -609,4 +902,121 @@ export function getAlternateBlogSlug(slug: string, target: BlogLocale): string |
   const pair = BLOG_SLUG_PAIRS.find((p) => p.tr === slug || p.en === slug);
   if (!pair) return null;
   return pair[target];
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Related-tool internal linking. Every blog post can either explicitly point
+// at a tool via `relatedToolKey`, or fall back to the category default. The
+// href is locale-aware so /blog/* CTAs stay on the TR tool and /en/blog/*
+// CTAs stay on the EN tool.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface RelatedToolLink {
+  href: string;
+  label: string;
+  description: string;
+}
+
+type LocalizedToolMeta = Record<BlogLocale, RelatedToolLink>;
+
+const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
+  arr: {
+    tr: {
+      href: "/ucretsiz-araclar/arr-hesaplayici",
+      label: "ARR Hesaplayıcı",
+      description: "MRR'den yıllık yinelenen gelirinizi anında hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/arr-calculator",
+      label: "ARR Calculator",
+      description: "Compute annual recurring revenue from your MRR instantly.",
+    },
+  },
+  cac: {
+    tr: {
+      href: "/ucretsiz-araclar/cac-hesaplayici",
+      label: "CAC Hesaplayıcı",
+      description: "Müşteri edinme maliyetinizi hızlıca hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/cac-calculator",
+      label: "CAC Calculator",
+      description: "Calculate your customer acquisition cost in seconds.",
+    },
+  },
+  churn: {
+    tr: {
+      href: "/ucretsiz-araclar/churn-rate-hesaplayici",
+      label: "Churn Rate Hesaplayıcı",
+      description: "Aylık churn oranınızı ve retention etkisini görün.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/churn-rate-calculator",
+      label: "Churn Rate Calculator",
+      description: "See your monthly churn rate and its impact on retention.",
+    },
+  },
+  ltv: {
+    tr: {
+      href: "/ucretsiz-araclar/ltv-hesaplayici",
+      label: "LTV Hesaplayıcı",
+      description: "Müşteri yaşam boyu değerinizi (LTV) hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/ltv-calculator",
+      label: "LTV Calculator",
+      description: "Estimate customer lifetime value (LTV).",
+    },
+  },
+  roas: {
+    tr: {
+      href: "/ucretsiz-araclar/roas-hesaplayici",
+      label: "ROAS Hesaplayıcı",
+      description: "Reklam harcamanızın getirisini (ROAS) hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/roas-calculator",
+      label: "ROAS Calculator",
+      description: "Calculate return on ad spend (ROAS) for your campaigns.",
+    },
+  },
+  utm: {
+    tr: {
+      href: "/ucretsiz-araclar/utm-link-olusturucu",
+      label: "UTM Link Oluşturucu",
+      description: "Kampanya URL'leriniz için standart UTM etiketleri üretin.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/utm-builder",
+      label: "UTM Link Builder",
+      description: "Generate standard UTM tags for your campaign URLs.",
+    },
+  },
+  "llms-txt": {
+    tr: {
+      href: "/ucretsiz-araclar/llms-txt-olusturucu",
+      label: "llms.txt Oluşturucu",
+      description: "Sitenizin AI botları için llms.txt dosyasını üretin.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/llms-txt-generator",
+      label: "llms.txt Generator",
+      description: "Generate your site's llms.txt file for AI crawlers.",
+    },
+  },
+};
+
+const CATEGORY_DEFAULT_TOOL: Record<BlogCategorySlug, RelatedToolKey> = {
+  "performans-pazarlama": "roas",
+  "b2b-lead-generation": "utm",
+  "yapay-zeka-otomasyon": "llms-txt",
+  "saas-buyume": "arr",
+};
+
+export function getRelatedToolForPost(
+  post: BlogPost,
+  locale: BlogLocale
+): RelatedToolLink {
+  const key = post.relatedToolKey ?? CATEGORY_DEFAULT_TOOL[post.category];
+  return RELATED_TOOLS[key][locale];
 }
