@@ -4,6 +4,7 @@ export const site = {
     { href: "/en", label: "Home" },
     { href: "/en/about", label: "About" },
     { href: "/en/projects", label: "Projects" },
+    { href: "/en/blog", label: "Blog" },
     { href: "/en/free-marketing-tools", label: "Free Tools" },
     { href: "/en/contact", label: "Contact" },
   ],
