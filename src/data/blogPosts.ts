@@ -21,6 +21,23 @@ export interface BlogSection {
   bullets?: string[];
 }
 
+export interface BlogHowToStep {
+  name: string;
+  text: string;
+}
+
+// Keys map to tool pages via getRelatedToolForPost() below. Kept as a
+// discriminated string so both TR and EN URLs can be resolved from one
+// value on the post.
+export type RelatedToolKey =
+  | "arr"
+  | "cac"
+  | "churn"
+  | "ltv"
+  | "roas"
+  | "utm"
+  | "llms-txt";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -33,6 +50,17 @@ export interface BlogPost {
   tags: string[];
   sections: BlogSection[];
   faq: BlogFAQ[];
+  // Optional HowTo schema payload — when present, BlogPost renders a
+  // schema.org/HowTo JSON-LD block so Google can surface step-list rich
+  // results for "step-by-step" content.
+  howTo?: {
+    name: string;
+    description?: string;
+    steps: BlogHowToStep[];
+  };
+  // Optional internal-link CTA to a related free tool. Falls back to a
+  // category default when omitted (see RELATED_TOOL_BY_CATEGORY).
+  relatedToolKey?: RelatedToolKey;
 }
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
