@@ -70,6 +70,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "google-ads-performans-optimizasyonu", en: "google-ads-performance-optimization" },
   { tr: "n8n-ile-lead-enrichment-otomasyonu", en: "n8n-lead-enrichment-automation" },
   { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
+  { tr: "meta-ads-ogrenme-asamasindan-cikma-taktikleri", en: "meta-ads-exit-learning-phase-tactics" },
 ];
 
 export function getBlogSlugs() {
