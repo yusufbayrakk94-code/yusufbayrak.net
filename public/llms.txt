@@ -33,6 +33,7 @@
 - [Google Ads'te Performansı Katlamanın 7 Data-Driven Yolu](https://yusufbayrak.net/blog/google-ads-performans-optimizasyonu): Search, PMax ve Demand Gen kampanyalarında ROAS'ı yükseltmek için kullanılan gelişmiş optimizasyon taktikleri.
 - [n8n ile Lead Enrichment Otomasyonu: Adım Adım Kurulum](https://yusufbayrak.net/blog/n8n-ile-lead-enrichment-otomasyonu): Clay, Apollo ve OpenAI'ı n8n üzerinden birleştirerek her yeni lead için otomatik zenginleştirme akışı nasıl kurulur?
 - [SaaS Metrikleri 101: ARR, CAC, LTV ve Churn Nasıl Yorumlanır?](https://yusufbayrak.net/blog/saas-metrikleri-arr-cac-ltv): SaaS büyümesini yöneten dört temel metrik; sağlıklı bir işletme için hangi bantlarda olmalı ve nasıl iyileştirilir?
+- [Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır? 5 Taktik](https://yusufbayrak.net/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri): Meta Ads Learning Phase'i 7 gün içinde tamamlamak için bütçe, event, audience ve kreatif odaklı 5 pratik taktik.
 
 ## English
 
@@ -46,6 +47,7 @@
 - [7 Data-Driven Ways to Multiply Your Google Ads Performance](https://yusufbayrak.net/en/blog/google-ads-performance-optimization): Advanced optimization tactics used to lift ROAS across Search, Performance Max and Demand Gen campaigns.
 - [n8n Lead Enrichment Automation: Step-by-Step Setup](https://yusufbayrak.net/en/blog/n8n-lead-enrichment-automation): How to combine Clay, Apollo and OpenAI inside n8n to build an automatic enrichment workflow for every new lead.
 - [SaaS Metrics 101: How to Read ARR, CAC, LTV and Churn](https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv): The four core metrics that steer SaaS growth — where healthy bands sit and how to improve each one.
+- [How to Exit Meta Ads Learning Phase Fast: 5 Tactics](https://yusufbayrak.net/en/blog/meta-ads-exit-learning-phase-tactics): Five practical budget, event, audience and creative tactics to finish the Meta Ads Learning Phase within 7 days.
 
 ## İletişim
 
