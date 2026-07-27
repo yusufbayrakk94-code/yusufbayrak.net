@@ -37,15 +37,12 @@ export const PROJECT_SLUGS = [
   "buyume-otomasyon-altyapilari",
 ] as const;
 
-// Blog TR<->EN slug pairs. Kept in sync with BLOG_SLUG_PAIRS in
-// src/data/blogPosts.ts (single source of truth is the data module; this
-// mirror avoids a circular import between routing and content).
-export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
-  { tr: "b2b-lead-generation-huni-tasarimi", en: "b2b-lead-generation-funnel-design" },
-  { tr: "google-ads-performans-optimizasyonu", en: "google-ads-performance-optimization" },
-  { tr: "n8n-ile-lead-enrichment-otomasyonu", en: "n8n-lead-enrichment-automation" },
-  { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
-];
+// Blog TR<->EN slug pairs. Re-exported from the single source of truth in
+// src/data/blogPosts.ts so new posts automatically show up in the language
+// switcher and hreflang without a second manual edit. blogPosts.ts does not
+// import from this module, so no circular dependency is introduced.
+export { BLOG_SLUG_PAIRS } from "@/data/blogPosts";
+import { BLOG_SLUG_PAIRS } from "@/data/blogPosts";
 
 // Given a pathname, detect locale from URL prefix (/en or /en/*).
 export function getLocaleFromPath(pathname: string): Locale {
