@@ -903,3 +903,120 @@ export function getAlternateBlogSlug(slug: string, target: BlogLocale): string |
   if (!pair) return null;
   return pair[target];
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Related-tool internal linking. Every blog post can either explicitly point
+// at a tool via `relatedToolKey`, or fall back to the category default. The
+// href is locale-aware so /blog/* CTAs stay on the TR tool and /en/blog/*
+// CTAs stay on the EN tool.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface RelatedToolLink {
+  href: string;
+  label: string;
+  description: string;
+}
+
+type LocalizedToolMeta = Record<BlogLocale, RelatedToolLink>;
+
+const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
+  arr: {
+    tr: {
+      href: "/ucretsiz-araclar/arr-hesaplayici",
+      label: "ARR Hesaplayıcı",
+      description: "MRR'den yıllık yinelenen gelirinizi anında hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/arr-calculator",
+      label: "ARR Calculator",
+      description: "Compute annual recurring revenue from your MRR instantly.",
+    },
+  },
+  cac: {
+    tr: {
+      href: "/ucretsiz-araclar/cac-hesaplayici",
+      label: "CAC Hesaplayıcı",
+      description: "Müşteri edinme maliyetinizi hızlıca hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/cac-calculator",
+      label: "CAC Calculator",
+      description: "Calculate your customer acquisition cost in seconds.",
+    },
+  },
+  churn: {
+    tr: {
+      href: "/ucretsiz-araclar/churn-rate-hesaplayici",
+      label: "Churn Rate Hesaplayıcı",
+      description: "Aylık churn oranınızı ve retention etkisini görün.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/churn-rate-calculator",
+      label: "Churn Rate Calculator",
+      description: "See your monthly churn rate and its impact on retention.",
+    },
+  },
+  ltv: {
+    tr: {
+      href: "/ucretsiz-araclar/ltv-hesaplayici",
+      label: "LTV Hesaplayıcı",
+      description: "Müşteri yaşam boyu değerinizi (LTV) hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/ltv-calculator",
+      label: "LTV Calculator",
+      description: "Estimate customer lifetime value (LTV).",
+    },
+  },
+  roas: {
+    tr: {
+      href: "/ucretsiz-araclar/roas-hesaplayici",
+      label: "ROAS Hesaplayıcı",
+      description: "Reklam harcamanızın getirisini (ROAS) hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/roas-calculator",
+      label: "ROAS Calculator",
+      description: "Calculate return on ad spend (ROAS) for your campaigns.",
+    },
+  },
+  utm: {
+    tr: {
+      href: "/ucretsiz-araclar/utm-link-olusturucu",
+      label: "UTM Link Oluşturucu",
+      description: "Kampanya URL'leriniz için standart UTM etiketleri üretin.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/utm-builder",
+      label: "UTM Link Builder",
+      description: "Generate standard UTM tags for your campaign URLs.",
+    },
+  },
+  "llms-txt": {
+    tr: {
+      href: "/ucretsiz-araclar/llms-txt-olusturucu",
+      label: "llms.txt Oluşturucu",
+      description: "Sitenizin AI botları için llms.txt dosyasını üretin.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/llms-txt-generator",
+      label: "llms.txt Generator",
+      description: "Generate your site's llms.txt file for AI crawlers.",
+    },
+  },
+};
+
+const CATEGORY_DEFAULT_TOOL: Record<BlogCategorySlug, RelatedToolKey> = {
+  "performans-pazarlama": "roas",
+  "b2b-lead-generation": "utm",
+  "yapay-zeka-otomasyon": "llms-txt",
+  "saas-buyume": "arr",
+};
+
+export function getRelatedToolForPost(
+  post: BlogPost,
+  locale: BlogLocale
+): RelatedToolLink {
+  const key = post.relatedToolKey ?? CATEGORY_DEFAULT_TOOL[post.category];
+  return RELATED_TOOLS[key][locale];
+}
