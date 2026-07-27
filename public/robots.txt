@@ -1,16 +1,26 @@
-User-agent: Googlebot
+User-Agent: *
+
 Allow: /
 
-User-agent: Bingbot
-Allow: /
+Disallow: /api/
 
-User-agent: Twitterbot
-Allow: /
+Disallow: /admin/
 
-User-agent: facebookexternalhit
-Allow: /
+User-Agent: GPTBot
+User-Agent: ChatGPT-User
+User-Agent: OAI-SearchBot
+User-Agent: ClaudeBot
+User-Agent: anthropic-ai
+User-Agent: Claude-Web
+User-Agent: PerplexityBot
+User-Agent: Perplexity-User
+User-Agent: Google-Extended
+User-Agent: Applebot-Extended
+User-Agent: CCBot
+User-Agent: Amazonbot
+User-Agent: Bytespider
+User-Agent: Meta-ExternalAgent
 
-User-agent: *
 Allow: /
 
 Sitemap: https://yusufbayrak.net/sitemap.xml
