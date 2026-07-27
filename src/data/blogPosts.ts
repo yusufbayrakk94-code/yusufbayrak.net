@@ -182,6 +182,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Ortalama sektör benchmark'ı: %30-50 açılma, %1-3 yanıt oranıdır. ICP'ye özel kişiselleştirme ve doğru zamanlama ile yanıt oranı %8-12'ye çıkabilir.",
       },
     ],
+    relatedToolKey: "utm",
   },
   {
     slug: "google-ads-performans-optimizasyonu",
@@ -235,6 +236,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Evet. iOS 14+ sonrası cookie kaybını telafi eden Enhanced Conversions, tipik olarak ölçülen dönüşüm sayısında %5-15 artış sağlar; bu doğrudan Smart Bidding'in doğruluğuna yansır.",
       },
     ],
+    relatedToolKey: "roas",
   },
   {
     slug: "n8n-ile-lead-enrichment-otomasyonu",
@@ -295,6 +297,34 @@ export const BLOG_POSTS: BlogPost[] = [
           "MCP; LLM'in dış veri kaynaklarına (CRM, veritabanı, iç API) standart bir arayüzle bağlanmasını sağlar. Enrichment akışında n8n yerine doğrudan LLM'in CRM'i sorgulaması gereken senaryolarda MCP mimarisi tercih edilir.",
       },
     ],
+    howTo: {
+      name: "n8n ile Lead Enrichment Akışı Kurulumu",
+      description:
+        "Yeni bir form leadini otomatik olarak zenginleştirip skorlayarak CRM'e ve Slack'e yazan uçtan uca n8n akışı.",
+      steps: [
+        {
+          name: "Webhook node'u kurun",
+          text: "n8n'de bir Webhook trigger oluşturun ve form aracınızdan (Typeform, HubSpot, custom form) gelen lead payload'unu buraya yönlendirin.",
+        },
+        {
+          name: "Apollo veya Clay ile enrichment yapın",
+          text: "Gelen e-posta üzerinden Apollo/Clay API'sini çağırarak şirket adı, employee count, sektör ve teknoloji stack'i bilgilerini çekin.",
+        },
+        {
+          name: "OpenAI ile ICP fit skorlayın",
+          text: "Zenginleştirilmiş veriyi OpenAI node'una gönderin ve structured output (JSON schema) ile 0-100 arasında ICP fit skoru üretin.",
+        },
+        {
+          name: "CRM'e yazın ve owner atayın",
+          text: "HubSpot veya Pipedrive node'u ile zenginleştirilmiş kaydı oluşturun, skora göre uygun sales owner'ı otomatik atayın.",
+        },
+        {
+          name: "Slack bildirimi gönderin",
+          text: "Skor eşiğin (örn. 70+) üstündeyse SDR kanalına Slack mesajı gönderin; düşük skorluları nurture listesine ekleyin.",
+        },
+      ],
+    },
+    relatedToolKey: "llms-txt",
   },
   {
     slug: "saas-metrikleri-arr-cac-ltv",
