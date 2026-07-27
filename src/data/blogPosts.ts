@@ -575,6 +575,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "Industry benchmarks sit around 30–50% open rate and 1–3% reply rate. With ICP-specific personalization and good timing, replies can climb to 8–12%.",
       },
     ],
+    relatedToolKey: "utm",
   },
   {
     slug: "google-ads-performance-optimization",
@@ -628,6 +629,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "Yes. Enhanced Conversions offsets post-iOS 14 cookie loss and typically recovers 5–15% of measured conversions, which flows straight into Smart Bidding accuracy.",
       },
     ],
+    relatedToolKey: "roas",
   },
   {
     slug: "n8n-lead-enrichment-automation",
@@ -688,6 +690,34 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "MCP lets an LLM connect to external sources (CRM, database, internal API) through a standard interface. When the LLM should query the CRM directly instead of going through n8n, an MCP architecture is preferred.",
       },
     ],
+    howTo: {
+      name: "n8n Lead Enrichment Flow Setup",
+      description:
+        "An end-to-end n8n workflow that enriches, scores and routes every new form lead to CRM and Slack automatically.",
+      steps: [
+        {
+          name: "Set up a Webhook node",
+          text: "Create a Webhook trigger in n8n and point your form tool (Typeform, HubSpot, custom form) at it so lead payloads land here.",
+        },
+        {
+          name: "Enrich with Apollo or Clay",
+          text: "Call the Apollo/Clay API by email to pull company name, employee count, industry and tech stack for the lead.",
+        },
+        {
+          name: "Score ICP fit with OpenAI",
+          text: "Pass the enriched data into an OpenAI node and use structured output (JSON schema) to produce an ICP fit score between 0 and 100.",
+        },
+        {
+          name: "Write to CRM and assign owner",
+          text: "Use a HubSpot or Pipedrive node to create the enriched contact and auto-assign the right sales owner based on the score.",
+        },
+        {
+          name: "Send a Slack notification",
+          text: "If the score is above a threshold (e.g. 70+), post to the SDR Slack channel; drop lower scores into a nurture list.",
+        },
+      ],
+    },
+    relatedToolKey: "llms-txt",
   },
   {
     slug: "saas-metrics-arr-cac-ltv",
@@ -741,6 +771,108 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "The three most effective levers are activation (fast time-to-value), a customer success team and in-product engagement loops. For involuntary churn from failed payments, deploy dunning management (Stripe/Chargebee).",
       },
     ],
+    relatedToolKey: "arr",
+  },
+  {
+    slug: "meta-ads-exit-learning-phase-tactics",
+    title: "How to Exit Meta Ads Learning Phase Fast: 5 Tactics",
+    description:
+      "Five practical budget, event, audience and creative tactics to finish the Meta Ads Learning Phase within 7 days.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Meta Ads Learning Phase completes when an ad set collects 50 optimization events within 7 days — otherwise CPA stays volatile.",
+      "Budgets that are too small, events set too deep in the funnel and frequent edits reset learning.",
+      "Broad audience + right event + daily budget = expected event volume is the formula that shortens exit time.",
+      "5 tactics: pick the right event, consolidate budget with CBO, expand creative library, apply edit discipline, and test Advantage+.",
+    ],
+    publishedAt: "2026-07-20",
+    readingMinutes: 8,
+    tags: ["Meta Ads", "Facebook Ads", "Learning Phase", "Performance"],
+    sections: [
+      {
+        heading: "What Is the Learning Phase and Why It Matters",
+        paragraphs: [
+          "Meta's machine learning targets 50 optimization events per ad set within a 7-day window for every new (or meaningfully edited) ad set. Until that threshold is met, CPA fluctuates and delivery efficiency stays low.",
+          "In practice, many advertisers never hit those 50 events because the budget is too low, the event is too deep in the funnel (purchase vs. view), the audience is too narrow, or the ad set is constantly edited. The 5 tactics below shorten the exit time significantly.",
+        ],
+      },
+      {
+        heading: "5 Tactics: Exit Learning Phase Fast",
+        paragraphs: [
+          "Applied in order, these steps typically complete learning in 3–5 days per ad set and lock CPA close to target:",
+        ],
+        bullets: [
+          "1) Pick the right optimization event — target one that can realistically fire 50+ times/week rather than the deepest funnel event.",
+          "2) Consolidate budget with Campaign Budget Optimization (Advantage Campaign Budget); keep it across 3–5 ad sets, not many small ones.",
+          "3) Upload 4–6+ creative variants per ad set so the algorithm actually has a library to test against.",
+          "4) Apply edit discipline — avoid budget, audience or bid changes in the first 4 days; every meaningful edit resets learning.",
+          "5) Open broad-audience tests with Advantage+ Audience and Advantage+ Shopping Campaigns; broad targeting accelerates learning.",
+        ],
+      },
+      {
+        heading: "Matching Budget to Event Volume",
+        paragraphs: [
+          "Ad set daily budget × 7 days, divided by expected CPA, gives your expected event count. If that number is below 50, learning cannot complete — you must either increase budget or move the event higher in the funnel (e.g. add-to-cart instead of purchase).",
+          "For new product launches or low-volume ecommerce, a 'proxy event' approach is critical: optimize on add-to-cart for the first 30–45 days, then move up to purchase once volume grows.",
+        ],
+      },
+      {
+        heading: "Creative Fatigue and the Test Cadence",
+        paragraphs: [
+          "Even after learning completes, frequency climbs and CTR drops within 2–3 weeks, so CPA rises again (creative fatigue). A weekly creative refresh cadence and competitor benchmarking through the Meta Ads Library are required to keep performance sustainable.",
+        ],
+      },
+    ],
+    howTo: {
+      name: "Exit Meta Ads Learning Phase Fast",
+      description:
+        "Five steps to collect 50 optimization events per ad set within 7 days and complete Meta Ads Learning Phase.",
+      steps: [
+        {
+          name: "Pick the right optimization event",
+          text: "Choose the deepest funnel event that can still fire 50+ times per week. If purchase volume is low, optimize on Add to Cart or Initiate Checkout instead.",
+        },
+        {
+          name: "Consolidate budget with CBO",
+          text: "Turn on Campaign Budget Optimization (Advantage Campaign Budget) and spread budget across 3–5 ad sets; avoid opening many tiny ad sets.",
+        },
+        {
+          name: "Expand the creative library",
+          text: "Upload at least 4–6 distinct creative variants per ad set (video, static, UGC, testimonial) so the algorithm has real room to test.",
+        },
+        {
+          name: "Apply edit discipline",
+          text: "Do not change budget, audience or bidding during the first 4–7 days. Every meaningful edit resets learning and restarts the counter.",
+        },
+        {
+          name: "Open broad-audience tests with Advantage+",
+          text: "Use Advantage+ Audience and Advantage+ Shopping Campaigns to run broad targeting tests — broad audiences accelerate learning noticeably.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "How long does the Meta Ads Learning Phase take?",
+        answer:
+          "The standard threshold is 50 optimization events per ad set within 7 days. Ad sets that hit that volume graduate to 'Active'; those that don't stay in 'Learning Limited' and CPA stays volatile.",
+      },
+      {
+        question: "How do I remove the Learning Limited warning?",
+        answer:
+          "Three levers: (1) raise the ad set budget so expected events cross 50, (2) move the event higher in the funnel (add-to-cart instead of purchase), (3) merge similar ad sets to consolidate the event signal.",
+      },
+      {
+        question: "Does editing an ad set reset learning?",
+        answer:
+          "Meaningful edits (budget ±20%+, audience, optimization event, bid strategy, creative changes) reset learning. Adding a new creative usually doesn't; replacing an existing one does.",
+      },
+      {
+        question: "CBO or manual budget for Learning Phase?",
+        answer:
+          "CBO (Advantage Campaign Budget) routes spend to the best-performing ad set automatically, growing total event volume and accelerating learning. Manual budgets only make sense when ad sets are clearly split by distinct goal or geography.",
+      },
+    ],
+    relatedToolKey: "roas",
   },
 ];
 
