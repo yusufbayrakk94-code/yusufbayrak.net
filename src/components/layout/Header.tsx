@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { useTheme } from "@/components/ui/ThemeProvider";
 import { useLocale } from "@/i18n/useLocale";
 import { pickSite } from "@/content";
@@ -74,6 +75,10 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-72 bg-background border-border">
+              <VisuallyHidden>
+                <SheetTitle>{site.menuToggle}</SheetTitle>
+                <SheetDescription>{site.navigationComment}</SheetDescription>
+              </VisuallyHidden>
               <div className="flex flex-col gap-6 mt-8">
                 <div className="font-mono text-sm text-accent mb-2">
                   {site.navigationComment}
