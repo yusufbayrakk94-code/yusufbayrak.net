@@ -1,13 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams, Navigate } from "react-router-dom";
-import { ArrowLeft, Calendar, Clock, Sparkles } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { ArrowLeft, Calendar, Clock, Sparkles, ChevronDown } from "lucide-react";
 import {
   getPostBySlugLocalized,
   getCategoryForLocale,
@@ -256,12 +250,13 @@ export default function BlogPost() {
 
           <div className="mt-12 pt-8 border-t border-border flex flex-wrap gap-2">
             {post.tags.map((t) => (
-              <span
+              <Link
                 key={t}
-                className="text-xs font-mono px-2 py-1 rounded bg-secondary text-muted-foreground"
+                to={`${ui.linkBase}?tag=${encodeURIComponent(t)}`}
+                className="text-xs font-mono px-2 py-1 rounded bg-secondary text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
               >
                 #{t}
-              </span>
+              </Link>
             ))}
           </div>
 
@@ -269,18 +264,22 @@ export default function BlogPost() {
             <h2 id="faq-heading" className="text-2xl font-semibold text-foreground mb-6">
               {ui.faqHeading}
             </h2>
-            <Accordion type="single" collapsible className="w-full">
+            <div className="w-full divide-y divide-border border-y border-border">
               {post.faq.map((f, i) => (
-                <AccordionItem key={i} value={`faq-${i}`}>
-                  <AccordionTrigger className="text-left text-foreground">
-                    {f.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                <details key={i} className="group py-1" open={i === 0}>
+                  <summary className="flex w-full cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-foreground hover:underline [&::-webkit-details-marker]:hidden">
+                    <h3 className="text-base font-medium">{f.question}</h3>
+                    <ChevronDown
+                      className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
+                      aria-hidden="true"
+                    />
+                  </summary>
+                  <div className="pb-4 text-muted-foreground leading-relaxed">
                     {f.answer}
-                  </AccordionContent>
-                </AccordionItem>
+                  </div>
+                </details>
               ))}
-            </Accordion>
+            </div>
           </section>
 
           {post.resources && post.resources.length > 0 && (
