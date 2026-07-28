@@ -26,6 +26,14 @@ export interface BlogHowToStep {
   text: string;
 }
 
+// Curated internal/external references rendered at the end of a post.
+// `external: true` opens in a new tab with rel="noopener noreferrer".
+export interface BlogResource {
+  label: string;
+  href: string;
+  external?: boolean;
+}
+
 // Keys map to tool pages via getRelatedToolForPost() below. Kept as a
 // discriminated string so both TR and EN URLs can be resolved from one
 // value on the post.
@@ -61,6 +69,8 @@ export interface BlogPost {
   // Optional internal-link CTA to a related free tool. Falls back to a
   // category default when omitted (see RELATED_TOOL_BY_CATEGORY).
   relatedToolKey?: RelatedToolKey;
+  // Optional curated reference list (internal cross-links + external sources).
+  resources?: BlogResource[];
 }
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
