@@ -497,6 +497,9 @@ export function getPostsByCategory(slug: BlogCategorySlug | "all") {
   if (slug === "all") return BLOG_POSTS;
   return BLOG_POSTS.filter((p) => p.category === slug);
 }
+  if (slug === "all") return BLOG_POSTS;
+  return BLOG_POSTS.filter((p) => p.category === slug);
+}
 
 export function getPostBySlug(slug: string) {
   return BLOG_POSTS.find((p) => p.slug === slug);
