@@ -35,6 +35,7 @@ const UI = {
     authorPath: "/hakkimda",
     relatedToolHeading: "İlgili Araç",
     relatedToolCta: "Aracı deneyin",
+    resourcesHeading: "Kaynaklar ve İlgili İçerikler",
   },
   en: {
     titleSuffix: " | Yusuf Bayrak",
@@ -51,6 +52,7 @@ const UI = {
     authorPath: "/en/about",
     relatedToolHeading: "Related Tool",
     relatedToolCta: "Try the tool",
+    resourcesHeading: "Resources & Related Reading",
   },
 } as const;
 
