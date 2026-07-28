@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLocale } from "@/i18n/useLocale";
@@ -34,6 +34,8 @@ const UI = {
     all: "Tümü",
     postsAria: "Blog yazıları",
     empty: "Bu kategoride henüz yazı yok.",
+    tagLabel: "Etiket:",
+    clearTag: "Etiket filtresini temizle",
     readSuffix: "dk",
     fallbackNote: null as string | null,
     dateLocale: "tr-TR",
@@ -55,6 +57,8 @@ const UI = {
     all: "All",
     postsAria: "Blog posts",
     empty: "No posts in this category yet.",
+    tagLabel: "Tag:",
+    clearTag: "Clear tag filter",
     readSuffix: "min",
     fallbackNote: null as string | null,
     dateLocale: "en-US",
@@ -66,14 +70,20 @@ export default function BlogList() {
   const locale = useLocale();
   const ui = UI[locale];
   const [filter, setFilter] = useState<FilterValue>("all");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const activeTag = searchParams.get("tag");
 
   const allPosts = useMemo(() => getPostsForLocale(locale), [locale]);
   const categories = useMemo(() => getCategoriesForLocale(locale), [locale]);
 
   const posts = useMemo(() => {
-    const list = filter === "all" ? allPosts : allPosts.filter((p) => p.category === filter);
+    let list = filter === "all" ? allPosts : allPosts.filter((p) => p.category === filter);
+    if (activeTag) {
+      const t = activeTag.toLowerCase();
+      list = list.filter((p) => p.tags.some((tag) => tag.toLowerCase() === t));
+    }
     return [...list].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
-  }, [filter, allPosts]);
+  }, [filter, allPosts, activeTag]);
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
@@ -146,6 +156,20 @@ export default function BlogList() {
           </div>
 
           {/* Posts */}
+          {activeTag && (
+            <div className="mb-6 flex items-center gap-3 font-mono text-xs text-muted-foreground">
+              <span>
+                {ui.tagLabel} <span className="text-accent">#{activeTag}</span>
+              </span>
+              <button
+                type="button"
+                onClick={() => setSearchParams({})}
+                className="underline underline-offset-4 hover:text-foreground"
+              >
+                {ui.clearTag}
+              </button>
+            </div>
+          )}
           <section aria-label={ui.postsAria} className="grid gap-6 md:grid-cols-2">
             {posts.map((post) => {
               const cat = getCategoryForLocale(post.category, locale);
@@ -184,12 +208,13 @@ export default function BlogList() {
                   <div className="flex items-center justify-between">
                     <div className="flex flex-wrap gap-1">
                       {post.tags.slice(0, 3).map((t) => (
-                        <span
+                        <Link
                           key={t}
-                          className="text-[10px] font-mono px-2 py-0.5 rounded bg-secondary text-muted-foreground"
+                          to={`${ui.linkBase}?tag=${encodeURIComponent(t)}`}
+                          className="relative z-10 text-[10px] font-mono px-2 py-0.5 rounded bg-secondary text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                         >
                           {t}
-                        </span>
+                        </Link>
                       ))}
                     </div>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all" />
