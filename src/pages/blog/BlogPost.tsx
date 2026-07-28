@@ -35,6 +35,7 @@ const UI = {
     authorPath: "/hakkimda",
     relatedToolHeading: "İlgili Araç",
     relatedToolCta: "Aracı deneyin",
+    resourcesHeading: "Kaynaklar ve İlgili İçerikler",
   },
   en: {
     titleSuffix: " | Yusuf Bayrak",
@@ -51,6 +52,7 @@ const UI = {
     authorPath: "/en/about",
     relatedToolHeading: "Related Tool",
     relatedToolCta: "Try the tool",
+    resourcesHeading: "Resources & Related Reading",
   },
 } as const;
 
@@ -280,6 +282,42 @@ export default function BlogPost() {
               ))}
             </Accordion>
           </section>
+
+          {post.resources && post.resources.length > 0 && (
+            <section aria-labelledby="resources-heading" className="mt-16">
+              <h2
+                id="resources-heading"
+                className="text-2xl font-semibold text-foreground mb-6"
+              >
+                {ui.resourcesHeading}
+              </h2>
+              <ul className="space-y-3 list-disc pl-5 marker:text-accent">
+                {post.resources.map((r) =>
+                  r.external ? (
+                    <li key={r.href}>
+                      <a
+                        href={r.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-accent underline underline-offset-4 transition-colors"
+                      >
+                        {r.label} ↗
+                      </a>
+                    </li>
+                  ) : (
+                    <li key={r.href}>
+                      <Link
+                        to={r.href}
+                        className="text-muted-foreground hover:text-accent underline underline-offset-4 transition-colors"
+                      >
+                        {r.label}
+                      </Link>
+                    </li>
+                  )
+                )}
+              </ul>
+            </section>
+          )}
 
           <aside
             aria-labelledby="related-tool-heading"

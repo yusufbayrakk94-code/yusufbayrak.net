@@ -26,6 +26,14 @@ export interface BlogHowToStep {
   text: string;
 }
 
+// Curated internal/external references rendered at the end of a post.
+// `external: true` opens in a new tab with rel="noopener noreferrer".
+export interface BlogResource {
+  label: string;
+  href: string;
+  external?: boolean;
+}
+
 // Keys map to tool pages via getRelatedToolForPost() below. Kept as a
 // discriminated string so both TR and EN URLs can be resolved from one
 // value on the post.
@@ -61,6 +69,8 @@ export interface BlogPost {
   // Optional internal-link CTA to a related free tool. Falls back to a
   // category default when omitted (see RELATED_TOOL_BY_CATEGORY).
   relatedToolKey?: RelatedToolKey;
+  // Optional curated reference list (internal cross-links + external sources).
+  resources?: BlogResource[];
 }
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
@@ -481,6 +491,174 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "roas",
   },
+  {
+    slug: "b2b-lead-generation-maliyetleri-nasil-dusurulur",
+    title: "B2B Lead Generation Maliyetleri Nasıl Düşürülür? (2026 Rehberi)",
+    description:
+      "Offline conversion tracking, katmanlı hedefleme, GEO ve davranışsal e-posta otomasyonu ile B2B lead başına maliyeti ek bütçe harcamadan %30-50 düşürme rehberi.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "Reklam optimizasyonunu form doldurmadan CRM'deki SQL verisine bağlayın (offline conversion tracking) — ek bütçe gerektirmeyen en yüksek etkili adım.",
+      "Hedeflemeyi tek kademeden çok kademeli yapıya çevirin: bütçenin %60-70'i Manager/Specialist, kalanı üst yönetim.",
+      "Davranışsal e-posta otomasyonlarıyla terk edilen leadleri geri kazanın; yeni soğuk lead almaktan çok daha ucuz.",
+      "Bu üç adım, ek reklam bütçesi olmadan CPA'yi %30-50 aralığında düşürebilir.",
+    ],
+    publishedAt: "2026-07-28",
+    readingMinutes: 10,
+    tags: ["B2B", "Lead Generation", "CAC", "GEO", "Offline Conversion"],
+    sections: [
+      {
+        heading: "B2B Lead Maliyetleri Neden Yükselir? (Temel Nedenler)",
+        paragraphs: [
+          "Google Ads veya LinkedIn Campaign Manager'da bir kampanyayı \"lead\" veya \"form doldurma\" hedefine göre optimize ettiğinizde, algoritma size formu dolduran herkesi getirir. Bütçesi olan, satın alma yetkisi olan biri mi, yoksa üniversite ödevi için anket dolduran bir öğrenci mi — algoritma bunu ayırt edemez. Çünkü sinyal olarak elinde sadece \"form gönderildi\" verisi var.",
+          "Bunun pratikteki sonucu şu: CPA'niz düşük görünür (örneğin form başına 40-50 TL gibi cazip bir rakam), ama satış ekibi bu leadlerin yüzde 70-80'ini \"uygun değil\" diye elerse, gerçek müşteri edinme maliyetiniz aslında raporlanandan 4-5 kat yüksektir. Panel size yalan söylemiyor, yanlış soruyu cevaplıyor.",
+          "Çözüm, offline conversion tracking kurmaktır. CRM'inizde bir lead \"SQL\" (Sales Qualified Lead) statüsüne geçtiğinde veya bir fırsat kapandığında, bu bilgiyi API veya native entegrasyon üzerinden reklam paneline geri besleyin. HubSpot-Google Ads entegrasyonu, Salesforce-LinkedIn entegrasyonu gibi hazır bağlantılar bunun için var; sıfırdan bir şey kurmanıza gerek yok. Bu yapıldığında algoritma 2-3 hafta içinde \"hangi profil özelliklerinin gerçek satışa dönüştüğünü\" öğrenmeye başlar ve teklif verme davranışını buna göre ayarlar.",
+          "Bunu kurmayan şirketlerin çoğu, aslında hiç düşük olmayan bir maliyeti düşük sanarak bütçe artırmaya devam ediyor.",
+        ],
+      },
+      {
+        heading: "B2B Reklam Hedeflemesi Nasıl Katmanlandırılır?",
+        paragraphs: [
+          "\"C-Level'ı hedefleyelim, karar onlarda\" mantığı kulağa doğru geliyor ama pratikte pahalıya patlıyor. LinkedIn'de CFO veya CTO unvanına sahip birine ulaşmanın maliyeti, Manager veya Team Lead seviyesindeki birine göre kolayca 3-4 kat daha yüksek olabilir — çünkü rekabet o segmentte çok daha yoğun.",
+          "Gerçekte B2B satın alma süreçlerinin çoğunda (özellikle 50+ kişilik şirketlerde) karar tek kişiye ait değil, bir komite işliyor. Süreci başlatan ve araştıran genelde orta kademe biri oluyor; bu kişi ihtiyacı tanımlıyor, kısa liste çıkarıyor, sonra üst yönetime \"bunlardan birini seçelim\" diye götürüyor. Yani reklamı sadece nihai imza atan kişiye göstermek, satın alma yolculuğunun en pahalı ve en rekabetçi noktasında savaşmak demek.",
+        ],
+        bullets: [
+          "Bütçenin yüzde 60-70'ini Manager/Specialist seviyesine, kalanını üst yönetime ayırın.",
+          "LinkedIn \"Matched Audiences\" ile siteyi ziyaret edip form doldurmayanları retarget edin.",
+          "Retargeting genelde soğuk hedeflemeden belirgin şekilde daha düşük maliyetli çalışır — kişi zaten sizi tanıyor.",
+        ],
+      },
+      {
+        heading: "GEO (Generative Engine Optimization) ile Organik Lead Maliyeti Nasıl Düşürülür?",
+        paragraphs: [
+          "GEO, içeriğin ChatGPT, Perplexity gibi yapay zeka arama araçları tarafından kaynak olarak referans gösterilmesini hedefleyen optimizasyon yaklaşımıdır. B2B alıcıların artan bir kısmı araştırma sürecini bu araçlar üzerinden başlatıyor; bu da GEO'yu reklam bağımlılığını azaltan, marjinal maliyeti sıfıra yakın bir kanal haline getiriyor.",
+          "Pratikte bu, mevcut blog içeriğinin schema.org işaretlemesini düzeltmek ve sayfa yükleme hızını optimize etmekle büyük ölçüde çözülüyor; ayrı bir \"GEO bütçesi\" veya yeni bir ajans hizmeti genellikle gerekmiyor.",
+        ],
+        bullets: [
+          "Yapılandırılmış soru-cevap formatı: FAQ schema'sı doğru işaretlenmeli; modeller doğrudan soruya cevap veren bloğu daha kolay çekiyor.",
+          "Ölçülebilir veri kullanımı: \"Çoğu şirket\" gibi belirsiz ifadeler yerine somut rakam ve kaynak; modeller doğrulanabilir iddiaları referans göstermeye daha yatkın.",
+          "Net konu hiyerarşisi: tek H1, konuyla birebir örtüşen H2/H3'ler ve her bölümün tek bir alt-niyete cevap vermesi.",
+        ],
+      },
+      {
+        heading: "Davranışsal E-posta Otomasyonu ile Kayıp Leadler Nasıl Geri Kazanılır?",
+        paragraphs: [
+          "B2B'de bir potansiyel müşteri genelde ilk temasta satın almaz — ortalama karar süreci 3-6 ay arasında değişebiliyor, sektöre göre daha da uzayabiliyor. Bu yüzden \"form doldurmadıysa kayıp\" mantığı büyük bir kaynak israfı.",
+          "Somut bir örnek: bir kişi fiyatlandırma sayfanıza girip formu doldurmadan çıktıysa, bu kişi hâlâ değerli bir sinyal veriyor demektir. Bu davranışa göre tetiklenen bir e-posta dizisi (örneğin \"fiyatlandırma sayfasını inceleyenlere özel karşılaştırma dokümanı\") kurmak, sıfırdan yeni bir soğuk lead almaktan çok daha ucuza satışa dönüşüyor — çünkü kişi zaten niyetini bir kere göstermiş oluyor.",
+          "Bunu kurmak için karmaşık bir altyapıya gerek yok; ActiveCampaign, HubSpot gibi araçların davranışsal tetikleyici (behavioral trigger) özellikleri bu iş için yeterli. Önemli olan, hangi sayfa ziyaretinin hangi otomasyonu tetikleyeceğini önceden net tanımlamak.",
+        ],
+      },
+      {
+        heading: "B2B Lead Generation İçin Gerekli Araç ve Yazılım Altyapısı",
+        paragraphs: [
+          "Küçük ve orta ölçekli B2B şirketlerin sık yaptığı hata, büyük şirketlerin kullandığı araç yığınını kopyalamaya çalışmak. Gerçekte ihtiyaç, ekip büyüklüğüne ve lead hacmine göre değişiyor.",
+          "Buradaki kritik nokta: CRM'i atlayıp direkt pazarlama otomasyonu veya gelişmiş attribution araçlarına para vermek yaygın bir hata. CRM olmadan diğer araçların ürettiği veri bağlamsız kalıyor — hangi kampanyanın gerçekten satışa dönüştüğünü göremezsiniz, sadece \"kaç kişi tıkladı\" gibi yüzeysel metrikler kalır elinizde.",
+        ],
+        bullets: [
+          "CRM — ilk günden itibaren, tek kullanıcı için bile: HubSpot (ücretsiz katman var), Pipedrive. 0-90 $/kullanıcı/ay.",
+          "Pazarlama otomasyonu — ayda 50+ lead almaya başladığınızda anlamlı: ActiveCampaign, Mailchimp. 30-300 $/ay.",
+          "LinkedIn Sales Navigator — manuel outbound veya hesap tabanlı satış (ABM) yapıyorsanız: ~80 $/ay/kullanıcı.",
+          "Attribution / analitik — birden fazla kanaldan eşzamanlı reklam veriyorsanız: GA4 (ücretsiz), Dreamdata, Triple Whale. 0-500+ $/ay.",
+        ],
+      },
+      {
+        heading: "B2B Lead Kalitesini Ölçmek İçin Hangi Metrikler Takip Edilmeli?",
+        paragraphs: [
+          "Pazarlama raporlarında en sık görülen hata, \"bu ay 340 lead aldık\" gibi tek bir sayıya odaklanmak. Bu sayı tek başına hiçbir şey söylemiyor. Aşağıdaki üç oranı takip etmek daha anlamlı bir tablo veriyor.",
+        ],
+        bullets: [
+          "MQL → SQL dönüşüm oranı: pazarlamanın ürettiği leadlerin yüzde kaçı satışa değer bulunuyor. %15'in altındaysa hedefleme veya lead magnet'te sorun var.",
+          "Kanal bazlı SQL maliyeti — sadece lead maliyeti değil. Ucuz lead getiren ama SQL'e dönmeyen kanal, göründüğünden çok daha pahalıdır.",
+          "CAC:LTV oranı: genel kabul gören eşik 1:3. Oran 1:1'e yaklaşıyorsa büyüme sürdürülebilir değildir, sadece nakit yakıyorsunuzdur.",
+        ],
+      },
+    ],
+    howTo: {
+      name: "B2B lead maliyetini düşürmek için uygulama sırası",
+      description:
+        "Sınırlı bütçe ve kaynakla çalışan B2B ekipleri için lead başına maliyeti düşürmenin öncelik sırası.",
+      steps: [
+        {
+          name: "Offline conversion tracking kurun",
+          text: "Reklam panellerindeki optimizasyon hedefini form doldurmadan CRM'deki SQL verisine bağlayın. Ek bütçe gerektirmeyen, tek başına en yüksek etkiyi yaratan adım budur.",
+        },
+        {
+          name: "Hedeflemeyi katmanlandırın",
+          text: "Sadece nihai karar vericiyi değil, süreci başlatan orta kademeyi de kapsayın; bütçenin çoğunluğunu Manager/Specialist seviyesine ayırın.",
+        },
+        {
+          name: "Davranışsal e-posta akışı kurun",
+          text: "Terk edilen form ve sayfa ziyaretlerini davranışsal tetikleyicili otomatik e-posta dizisiyle yeniden devreye alın.",
+        },
+        {
+          name: "İçeriği GEO standartlarına göre düzenleyin",
+          text: "FAQ ve HowTo schema işaretlemesini, başlık hiyerarşisini ve soru-cevap yapısını netleştirin.",
+        },
+        {
+          name: "Yeni araç veya kanal eklemeyi en son yapın",
+          text: "Mevcut trafiğin verimini artırmak, yeni trafik satın almaktan her zaman daha ucuzdur.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "B2B lead maliyetlerini düşürmek için ilk olarak ne yapılmalı?",
+        answer:
+          "Reklam panellerindeki optimizasyon hedefi form doldurmaktan çıkarılıp, CRM'deki nitelikli müşteri (SQL) verisine bağlanmalıdır (offline conversion tracking). Bu adım genellikle ek bütçe gerektirmez ve en hızlı etkiyi yaratır.",
+      },
+      {
+        question: "Küçük bütçeli işletmeler hangi kanallara odaklanmalı?",
+        answer:
+          "Yüksek reklam harcamasına girmeden önce niş içerik pazarlaması, GEO odaklı statik blog altyapısı ve LinkedIn Sales Navigator üzerinden manuel ağ kurma stratejilerine öncelik verilmelidir.",
+      },
+      {
+        question: "B2B'de ortalama lead başına maliyet (CPL) ne kadardır?",
+        answer:
+          "Sektöre, hedeflenen unvana ve kanala göre büyük farklılık gösterir; LinkedIn'de C-Level hedeflemede CPL, orta kademe hedeflemeye göre 3-4 kat daha yüksek olabilir. Tek bir \"ortalama\" rakam yerine kanal bazlı SQL maliyetini takip etmek daha doğru sonuç verir.",
+      },
+      {
+        question: "MQL ile SQL arasındaki fark nedir?",
+        answer:
+          "MQL (Marketing Qualified Lead), pazarlamanın ilgi gösterdiğini tespit ettiği kişidir. SQL (Sales Qualified Lead), satış ekibinin görüşmeye değer bulduğu, satın alma potansiyeli doğrulanmış kişidir. MQL→SQL oranının yüzde 15'in altında olması, hedefleme veya içerik teklifinde sorun olduğuna işaret eder.",
+      },
+      {
+        question: "CAC:LTV oranı ne olmalı?",
+        answer:
+          "Genel kabul gören sağlıklı eşik 1:3'tür — müşteri edinme maliyeti, o müşterinin yaşam boyu getireceği gelirin en fazla üçte biri olmalıdır. Oran 1:1'e yaklaştıkça büyüme sürdürülemez hale gelir.",
+      },
+    ],
+    relatedToolKey: "cac",
+    resources: [
+      {
+        label: "B2B Lead Generation Hunisi Nasıl Tasarlanır? Uçtan Uca Rehber",
+        href: "/blog/b2b-lead-generation-huni-tasarimi",
+      },
+      {
+        label: "n8n ile Lead Enrichment Otomasyonu",
+        href: "/blog/n8n-ile-lead-enrichment-otomasyonu",
+      },
+      {
+        label: "SaaS Metrikleri: ARR, CAC ve LTV",
+        href: "/blog/saas-metrikleri-arr-cac-ltv",
+      },
+      { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici" },
+      {
+        label: "Google Ads — Offline dönüşüm içe aktarma dokümantasyonu",
+        href: "https://support.google.com/google-ads/answer/2998031",
+        external: true,
+      },
+      {
+        label: "LinkedIn Ads — Matched Audiences dokümantasyonu",
+        href: "https://www.linkedin.com/help/lms/answer/a423304",
+        external: true,
+      },
+      {
+        label: "HubSpot — Google Ads entegrasyonu",
+        href: "https://knowledge.hubspot.com/ads/use-the-google-ads-integration",
+        external: true,
+      },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -508,7 +686,9 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "n8n-ile-lead-enrichment-otomasyonu", en: "n8n-lead-enrichment-automation" },
   { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
   { tr: "meta-ads-ogrenme-asamasindan-cikma-taktikleri", en: "meta-ads-exit-learning-phase-tactics" },
+  { tr: "b2b-lead-generation-maliyetleri-nasil-dusurulur", en: "how-to-reduce-b2b-lead-generation-costs" },
 ];
+
 
 export const BLOG_POSTS_EN: BlogPost[] = [
   {
@@ -873,6 +1053,174 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       },
     ],
     relatedToolKey: "roas",
+  },
+  {
+    slug: "how-to-reduce-b2b-lead-generation-costs",
+    title: "How to Reduce B2B Lead Generation Costs (2026 Guide)",
+    description:
+      "Cut B2B cost per lead by 30–50% without extra ad budget: offline conversion tracking, layered targeting, GEO and behavioral email automation.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "Tie ad optimization to CRM SQL data instead of form fills (offline conversion tracking) — the highest-impact step that needs no extra budget.",
+      "Move targeting from a single tier to a layered structure: 60–70% of budget on Manager/Specialist roles, the rest on executives.",
+      "Recover abandoned leads with behavioral email automation; far cheaper than buying a brand-new cold lead.",
+      "Together these three steps can cut CPA by 30–50% without increasing ad spend.",
+    ],
+    publishedAt: "2026-07-28",
+    readingMinutes: 10,
+    tags: ["B2B", "Lead Generation", "CAC", "GEO", "Offline Conversion"],
+    sections: [
+      {
+        heading: "Why B2B Lead Costs Rise (Root Causes)",
+        paragraphs: [
+          "When you optimize a Google Ads or LinkedIn Campaign Manager campaign toward \"leads\" or \"form fills\", the algorithm brings you everyone who fills the form. Whether that person has budget and buying authority, or is a student filling out a survey for a class assignment, the algorithm cannot tell — the only signal it holds is \"form submitted\".",
+          "The practical result: your CPA looks low (say an attractive $2–3 per form), but if sales disqualifies 70–80% of those leads, your real customer acquisition cost is 4–5x higher than reported. The dashboard isn't lying to you; it's answering the wrong question.",
+          "The fix is offline conversion tracking. When a lead reaches \"SQL\" (Sales Qualified Lead) status in your CRM or an opportunity closes, push that back into the ad platform via API or a native integration. HubSpot–Google Ads and Salesforce–LinkedIn connectors already exist; you don't need to build anything from scratch. Once this is live, within 2–3 weeks the algorithm starts learning which profile traits actually turn into revenue and adjusts bidding accordingly.",
+          "Most companies that skip this keep raising budget on a cost they wrongly believe is low.",
+        ],
+      },
+      {
+        heading: "How to Layer B2B Ad Targeting",
+        paragraphs: [
+          "\"Let's target C-level, they make the decision\" sounds right but gets expensive fast. On LinkedIn, reaching someone with a CFO or CTO title can easily cost 3–4x more than reaching a Manager or Team Lead — competition in that segment is far denser.",
+          "In reality, most B2B purchases (especially in companies with 50+ employees) are made by a committee, not one person. The process is usually started and researched by someone mid-level: they define the need, build a shortlist, then take it upstairs. Showing ads only to the final signer means fighting at the most expensive, most competitive point of the buying journey.",
+        ],
+        bullets: [
+          "Allocate 60–70% of budget to Manager/Specialist seniority and the remainder to executives.",
+          "Use LinkedIn Matched Audiences to retarget visitors who browsed but never submitted a form.",
+          "Retargeting typically runs meaningfully cheaper than cold targeting — the person already knows you.",
+        ],
+      },
+      {
+        heading: "How GEO (Generative Engine Optimization) Lowers Organic Lead Cost",
+        paragraphs: [
+          "GEO is the practice of optimizing content so AI search tools such as ChatGPT and Perplexity cite it as a source. A growing share of B2B buyers now start research in these tools, which turns GEO into a channel with near-zero marginal cost that reduces dependence on paid media.",
+          "In practice, most of this is solved by fixing schema.org markup on your existing blog content and improving page speed; a separate \"GEO budget\" or a new agency retainer is usually unnecessary.",
+        ],
+        bullets: [
+          "Structured Q&A format: mark up FAQ schema correctly — models pull the block that answers the question directly.",
+          "Measurable data: replace vague claims like \"most companies\" with concrete numbers and sources; models prefer verifiable statements.",
+          "Clear topic hierarchy: one H1, H2/H3s that match the topic exactly, and one sub-intent answered per section.",
+        ],
+      },
+      {
+        heading: "Recovering Lost Leads with Behavioral Email Automation",
+        paragraphs: [
+          "In B2B, a prospect rarely buys on first contact — the average decision cycle runs 3–6 months and can stretch further by industry. Treating \"didn't fill the form\" as \"lost\" wastes a lot of demand you already paid for.",
+          "A concrete example: someone visits your pricing page and leaves without converting. That behavior is still a strong signal. A sequence triggered on it (for instance, \"a comparison doc for people who reviewed pricing\") converts far more cheaply than sourcing a brand-new cold lead, because intent has already been shown once.",
+          "You don't need complex infrastructure for this; behavioral triggers in ActiveCampaign or HubSpot are enough. What matters is defining upfront which page visit fires which automation.",
+        ],
+      },
+      {
+        heading: "The Tool Stack B2B Lead Generation Actually Requires",
+        paragraphs: [
+          "A common mistake among small and mid-sized B2B companies is copying the tool stack of enterprises. Real needs scale with team size and lead volume.",
+          "The critical point: paying for marketing automation or advanced attribution while skipping the CRM is a frequent error. Without a CRM the data those tools produce lacks context — you can't see which campaign produced revenue, only surface metrics like clicks.",
+        ],
+        bullets: [
+          "CRM — from day one, even for a single user: HubSpot (free tier available), Pipedrive. $0–90/user/month.",
+          "Marketing automation — worthwhile once you pass ~50 leads/month: ActiveCampaign, Mailchimp. $30–300/month.",
+          "LinkedIn Sales Navigator — if you run manual outbound or account-based selling (ABM): ~$80/user/month.",
+          "Attribution / analytics — if you run several paid channels at once: GA4 (free), Dreamdata, Triple Whale. $0–500+/month.",
+        ],
+      },
+      {
+        heading: "Which Metrics Actually Measure B2B Lead Quality?",
+        paragraphs: [
+          "The most common reporting mistake is fixating on a single number like \"we got 340 leads this month\". On its own that number says nothing. These three ratios give a far more honest picture.",
+        ],
+        bullets: [
+          "MQL → SQL conversion rate: what share of marketing-sourced leads sales considers worth a conversation. Below 15% points to a targeting or lead-magnet problem.",
+          "SQL cost per channel — not just cost per lead. A channel with cheap leads but poor SQL conversion is far more expensive than it looks.",
+          "CAC:LTV ratio: the accepted healthy threshold is 1:3. As it approaches 1:1, growth isn't sustainable — you're just burning cash.",
+        ],
+      },
+    ],
+    howTo: {
+      name: "Implementation order for reducing B2B lead cost",
+      description:
+        "The recommended priority sequence for B2B teams working with limited budget and resources.",
+      steps: [
+        {
+          name: "Set up offline conversion tracking",
+          text: "Move the optimization goal in your ad platforms from form fills to CRM SQL data. It needs no extra budget and delivers the single highest impact.",
+        },
+        {
+          name: "Layer your targeting",
+          text: "Cover not only the final decision maker but the mid-level role that starts the process; put most of the budget on Manager/Specialist seniority.",
+        },
+        {
+          name: "Build behavioral email flows",
+          text: "Re-engage abandoned forms and page visits with automated sequences fired by behavioral triggers.",
+        },
+        {
+          name: "Bring content up to GEO standards",
+          text: "Clean up FAQ and HowTo schema markup, heading hierarchy and question-answer structure.",
+        },
+        {
+          name: "Add new tools or channels last",
+          text: "Improving the efficiency of existing traffic is always cheaper than buying new traffic.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "What should be the first step to reduce B2B lead costs?",
+        answer:
+          "Move the optimization goal in your ad platforms away from form fills and tie it to qualified (SQL) data in your CRM via offline conversion tracking. It usually requires no extra budget and produces the fastest impact.",
+      },
+      {
+        question: "Which channels should small-budget businesses focus on?",
+        answer:
+          "Before committing to heavy ad spend, prioritize niche content marketing, a GEO-ready static blog foundation, and manual networking through LinkedIn Sales Navigator.",
+      },
+      {
+        question: "What is the average cost per lead (CPL) in B2B?",
+        answer:
+          "It varies widely by industry, seniority targeted and channel; on LinkedIn, C-level targeting can carry a CPL 3–4x higher than mid-level targeting. Instead of one \"average\" figure, track SQL cost per channel.",
+      },
+      {
+        question: "What is the difference between MQL and SQL?",
+        answer:
+          "An MQL (Marketing Qualified Lead) is someone marketing has identified as showing interest. An SQL (Sales Qualified Lead) is someone sales considers worth a conversation with validated buying potential. An MQL→SQL rate under 15% signals a targeting or offer problem.",
+      },
+      {
+        question: "What should the CAC:LTV ratio be?",
+        answer:
+          "The widely accepted healthy threshold is 1:3 — acquisition cost should be at most one third of the revenue that customer generates over their lifetime. The closer the ratio gets to 1:1, the less sustainable growth becomes.",
+      },
+    ],
+    relatedToolKey: "cac",
+    resources: [
+      {
+        label: "How to Design a B2B Lead Generation Funnel: End-to-End Guide",
+        href: "/en/blog/b2b-lead-generation-funnel-design",
+      },
+      {
+        label: "n8n Lead Enrichment Automation",
+        href: "/en/blog/n8n-lead-enrichment-automation",
+      },
+      {
+        label: "SaaS Metrics: ARR, CAC and LTV",
+        href: "/en/blog/saas-metrics-arr-cac-ltv",
+      },
+      { label: "LTV Calculator", href: "/en/free-marketing-tools/ltv-calculator" },
+      {
+        label: "Google Ads — Import offline conversions documentation",
+        href: "https://support.google.com/google-ads/answer/2998031",
+        external: true,
+      },
+      {
+        label: "LinkedIn Ads — Matched Audiences documentation",
+        href: "https://www.linkedin.com/help/lms/answer/a423304",
+        external: true,
+      },
+      {
+        label: "HubSpot — Google Ads integration",
+        href: "https://knowledge.hubspot.com/ads/use-the-google-ads-integration",
+        external: true,
+      },
+    ],
   },
 ];
 
