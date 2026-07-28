@@ -688,6 +688,7 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "meta-ads-ogrenme-asamasindan-cikma-taktikleri", en: "meta-ads-exit-learning-phase-tactics" },
 ];
 
+
 export const BLOG_POSTS_EN: BlogPost[] = [
   {
     slug: "b2b-lead-generation-funnel-design",
