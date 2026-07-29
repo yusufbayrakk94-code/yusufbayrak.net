@@ -81,6 +81,29 @@ function readToolCategories(locale = "tr") {
   return cats;
 }
 
+// --- blog posts: parse TR posts array from src/data/blogPosts.ts ---
+function readBlogPosts() {
+  const src = read("src/data/blogPosts.ts");
+  const trStart = src.indexOf("export const BLOG_POSTS:");
+  const enStart = src.indexOf("export const BLOG_POSTS_EN");
+  const trBody = src.slice(trStart, enStart > trStart ? enStart : undefined);
+  const enBody = enStart >= 0 ? src.slice(enStart) : "";
+  const parse = (body) => {
+    const posts = [];
+    const blocks = body.split(/\n\s*\{\s*\n\s*slug:\s*"/).slice(1);
+    for (const raw of blocks) {
+      const slug = (raw.match(/^([^"]+)"/) || [])[1];
+      if (!slug) continue;
+      const title = (raw.match(/\btitle:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || slug;
+      const desc =
+        (raw.match(/\bdescription:\s*\n?\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || "";
+      posts.push({ slug, title, description: desc });
+    }
+    return posts;
+  };
+  return { tr: parse(trBody), en: parse(enBody) };
+}
+
 function build() {
   const meta = readSiteMeta();
   const projects = readProjects();
