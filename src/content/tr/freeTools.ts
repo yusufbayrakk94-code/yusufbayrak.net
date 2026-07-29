@@ -7,6 +7,60 @@ export const freeToolsPage = {
   intro:
     "Pazarlama, SaaS ve büyüme metriklerinizi saniyeler içinde hesaplayan pratik araçlar. Hepsi ücretsiz, hepsi tarayıcıda çalışır — veri sunucuya gönderilmez.",
   divider: "Araçlar",
+  sections: [
+    {
+      heading: "Ücretsiz pazarlama ve SaaS hesaplayıcıları ne işe yarar?",
+      body:
+        "Bu sayfadaki araçlar, bir pazarlama veya ürün ekibinin haftalık olarak takip ettiği temel metrikleri (ARR, CAC, LTV, churn, ROAS, dönüşüm oranı, brüt ve net kar marjı) tek tek elektronik tabloya formül yazmadan hesaplamanızı sağlar. Her hesaplayıcı sektörde kabul görmüş standart formülleri kullanır; sonucu yalnızca sayı olarak değil, ne anlama geldiğini açıklayan bir yorumla birlikte verir.",
+    },
+    {
+      heading: "Kimler için tasarlandı: SaaS kurucuları, e-ticaret sahipleri ve pazarlamacılar",
+      body:
+        "SaaS kurucuları için araçlar yatırımcı raporlaması ve büyüme modellemesi sırasında ihtiyaç duyulan abonelik metriklerini üretir. E-ticaret sahipleri ürün ve mağaza bazında gerçek kârlılığı görür. Performans pazarlamacıları ise kampanya linklerini doğru etiketler, reklam getirisini ve dönüşüm oranını aynı çerçevede değerlendirir. Ortak nokta: karar vermeden önce sayıyı görmek.",
+    },
+    {
+      heading: "Pazarlama Araçları hangi durumda kullanılır?",
+      body:
+        "Sorunuz \"bu kampanya işe yarıyor mu?\" ise Pazarlama Araçları kategorisine bakın. UTM Link Oluşturucu trafik kaynaklarını ayrıştırır, Dönüşüm Oranı Hesaplayıcı trafiğin ne kadarının aksiyona dönüştüğünü gösterir, ROAS Hesaplayıcı harcanan her birimin geri dönüşünü ölçer, llms.txt Oluşturucu ise sitenizi AI arama motorlarına tanıtır. Bu araçlar kampanya seviyesinde, günlük-haftalık kararlar içindir.",
+    },
+    {
+      heading: "SaaS Araçları hangi durumda kullanılır?",
+      body:
+        "Sorunuz \"iş modelim sürdürülebilir mi?\" ise SaaS Araçları kategorisi doğru adres. ARR ve MRR abonelik gelirinin büyüklüğünü, CAC bir müşteriyi kazanmanın maliyetini, LTV o müşterinin ömür boyu getirisini, churn ise ne kadar hızlı kaybettiğinizi gösterir. Bu metrikler aylık-çeyreklik döngüde, birim ekonomisi ve yatırımcı raporlaması için anlamlıdır.",
+    },
+    {
+      heading: "E-Ticaret Araçları hangi durumda kullanılır?",
+      body:
+        "Sorunuz \"bu üründen gerçekten kazanıyor muyum?\" ise E-Ticaret Araçları kategorisine geçin. Brüt Kar Marjı Hesaplayıcı ürün maliyeti (COGS) sonrası kalan payı, Net Kar Marjı Hesaplayıcı ise reklam, kargo, komisyon ve operasyon giderleri düşüldükten sonra elde kalanı verir. Fiyatlandırma ve reklam bütçesi kararları bu iki sayı üzerine kurulur.",
+    },
+    {
+      heading: "Verileriniz nereye gidiyor?",
+      body:
+        "Hiçbir yere. Tüm hesaplamalar tarayıcınızın içinde JavaScript ile yapılır; girdiğiniz gelir, maliyet veya müşteri verisi sunucuya gönderilmez, kaydedilmez ve üçüncü taraflarla paylaşılmaz. Üyelik gerekmez, kullanım limiti yoktur.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Bu ücretsiz araçları kullanmak için üye olmam gerekiyor mu?",
+      a: "Hayır. Araçların tamamı üyelik, e-posta veya ödeme gerektirmeden çalışır. Hesaplamalar tarayıcınızda yapıldığı için girdiğiniz veriler hiçbir sunucuya iletilmez.",
+    },
+    {
+      q: "Hangi kategoriden başlamalıyım?",
+      a: "Kampanya performansını ölçüyorsanız Pazarlama Araçları, abonelik iş modelinin büyüme ve birim ekonomisini inceliyorsanız SaaS Araçları, ürün kârlılığını ve fiyatlandırmayı çözüyorsanız E-Ticaret Araçları ile başlayın. Çoğu ekip önce dönüşüm oranı ve ROAS'a, ardından CAC ve LTV'ye bakar.",
+    },
+    {
+      q: "Hesaplamalarda kullanılan formüller güvenilir mi?",
+      a: "Evet. Her araç sektörde standart kabul edilen formülleri kullanır: ROAS = gelir / reklam harcaması, CAC = toplam satış ve pazarlama gideri / yeni müşteri sayısı, LTV = ortalama gelir × ortalama müşteri ömrü, churn = kaybedilen müşteri / dönem başı müşteri. Her sayfada formül ve varsayımlar açıkça yazılıdır.",
+    },
+    {
+      q: "Sonuçları raporlarımda veya yatırımcı sunumumda kullanabilir miyim?",
+      a: "Kullanabilirsiniz. Araçlar standart tanımlara göre hesap yaptığı için çıkan değerler yatırımcı raporlaması, bütçe planlaması ve ekip içi performans takibi için uygundur. Yalnızca girdi dönemlerinizin (aylık/yıllık) tutarlı olmasına dikkat edin.",
+    },
+    {
+      q: "Araçlar mobil cihazlarda çalışıyor mu?",
+      a: "Evet. Tüm hesaplayıcılar mobil ve masaüstü tarayıcılarda çalışacak şekilde tasarlandı; kurulum, eklenti veya uygulama indirmeye gerek yoktur.",
+    },
+  ],
   cards: [
     { key: "arr",   name: "ARR Hesaplayıcı",           description: "Yıllık yinelenen gelir (Annual Recurring Revenue) hesaplama aracı.",                  href: "/ucretsiz-araclar/arr-hesaplayici" },
     { key: "cac",   name: "CAC Hesaplayıcı",           description: "Müşteri edinme maliyetini (Customer Acquisition Cost) analiz edin.",                  href: "/ucretsiz-araclar/cac-hesaplayici" },
