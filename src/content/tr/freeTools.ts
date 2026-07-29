@@ -17,6 +17,7 @@ export const freeToolsPage = {
     { key: "llms",  name: "llms.txt Oluşturucu",       description: "AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.", href: "/ucretsiz-araclar/llms-txt-olusturucu" },
     { key: "gross", name: "Brüt Kar Marjı Hesaplayıcı", description: "Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici" },
     { key: "net",   name: "Net Kar Marjı Hesaplayıcı",  description: "Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici" },
+    { key: "conversion", name: "Dönüşüm Oranı Hesaplayıcı", description: "Ziyaretçi ve dönüşüm sayınızla dönüşüm oranınızı ve hedefe farkı hesaplayın.", href: "/ucretsiz-araclar/donusum-orani-hesaplayici" },
   ],
 };
 
@@ -35,7 +36,7 @@ export const toolCategories = [
       "UTM oluşturucu, dönüşüm oranı ve ROAS hesaplayıcı gibi ücretsiz pazarlama araçları.",
     intro:
       "Performans pazarlaması yürüten ekipler için hazırlanmış ücretsiz araçlar. Kampanya linklerinizi doğru etiketleyin, reklam harcamanızın getirisini ölçün ve sitenizi AI arama motorlarına tanıtın. Hepsi tarayıcıda çalışır; girdiğiniz veri sunucuya gönderilmez.",
-    tools: ["utm", "roas", "llms"],
+    tools: ["utm", "roas", "conversion", "llms"],
   },
   {
     key: "saas",
