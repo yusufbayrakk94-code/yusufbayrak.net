@@ -51,43 +51,43 @@ function readProjects() {
   return list;
 }
 
-// --- free tools: parse cards array from src/content/tr/freeTools.ts ---
-function readTools() {
-  const src = read("src/content/tr/freeTools.ts");
+// --- free tools: parse cards + categories from src/content/{tr,en}/freeTools.ts ---
+function readTools(locale = "tr") {
+  const src = read(`src/content/${locale}/freeTools.ts`);
   const list = [];
-  const re = /\{\s*key:\s*"[^"]+",\s*name:\s*"((?:[^"\\]|\\.)*)",\s*description:\s*"((?:[^"\\]|\\.)*)",\s*href:\s*"([^"]+)"\s*\}/g;
+  const re = /\{\s*key:\s*"([^"]+)",\s*name:\s*"((?:[^"\\]|\\.)*)",\s*description:\s*"((?:[^"\\]|\\.)*)",\s*href:\s*"([^"]+)"\s*\}/g;
   let m;
-  while ((m = re.exec(src))) list.push({ name: m[1], description: m[2], href: m[3] });
+  while ((m = re.exec(src))) list.push({ key: m[1], name: m[2], description: m[3], href: m[4] });
   return list;
 }
 
-// --- blog posts: parse TR posts array from src/data/blogPosts.ts ---
-function readBlogPosts() {
-  const src = read("src/data/blogPosts.ts");
-  const trStart = src.indexOf("export const BLOG_POSTS:");
-  const enStart = src.indexOf("export const BLOG_POSTS_EN");
-  const trBody = src.slice(trStart, enStart > trStart ? enStart : undefined);
-  const enBody = enStart >= 0 ? src.slice(enStart) : "";
-  const parse = (body) => {
-    const posts = [];
-    const blocks = body.split(/\n\s*\{\s*\n\s*slug:\s*"/).slice(1);
-    for (const raw of blocks) {
-      const slug = (raw.match(/^([^"]+)"/) || [])[1];
-      if (!slug) continue;
-      const title = (raw.match(/\btitle:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || slug;
-      const desc =
-        (raw.match(/\bdescription:\s*\n?\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || "";
-      posts.push({ slug, title, description: desc });
-    }
-    return posts;
-  };
-  return { tr: parse(trBody), en: parse(enBody) };
+function readToolCategories(locale = "tr") {
+  const src = read(`src/content/${locale}/freeTools.ts`);
+  const start = src.indexOf("export const toolCategories");
+  if (start < 0) return [];
+  const body = src.slice(start);
+  const cats = [];
+  for (const raw of body.split(/\{\s*\n\s*key:\s*"/).slice(1)) {
+    const key = (raw.match(/^([^"]+)"/) || [])[1];
+    if (!key) continue;
+    const chunk = raw.split(/\n\s*\},/)[0];
+    const path = (chunk.match(/path:\s*"([^"]+)"/) || [])[1];
+    const name = (chunk.match(/name:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || key;
+    const short = (chunk.match(/short:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || "";
+    const toolsRaw = (chunk.match(/tools:\s*\[([^\]]*)\]/) || [])[1] || "";
+    const tools = Array.from(toolsRaw.matchAll(/"([^"]+)"/g)).map((t) => t[1]);
+    if (path) cats.push({ key, path, name, short, tools });
+  }
+  return cats;
 }
 
 function build() {
   const meta = readSiteMeta();
   const projects = readProjects();
-  const tools = readTools();
+  const tools = readTools("tr");
+  const toolsEn = readTools("en");
+  const cats = readToolCategories("tr");
+  const catsEn = readToolCategories("en");
   const { tr: posts, en: postsEn } = readBlogPosts();
   const postsEnBySlug = new Map(postsEn.map((p) => [p.slug, p]));
 
@@ -115,12 +115,22 @@ function build() {
   lines.push("## Ücretsiz Araçlar");
   lines.push("");
   lines.push(
-    `- [Ücretsiz Araçlar](${SITE_URL}/ucretsiz-araclar): Pazarlama ve SaaS metriklerini hesaplayan tarayıcı tabanlı araçlar.`
+    `- [Ücretsiz Araçlar](${SITE_URL}/ucretsiz-araclar): Pazarlama, SaaS ve e-ticaret metriklerini hesaplayan tarayıcı tabanlı ücretsiz araçlar (kategori hub sayfası).`
   );
-  for (const t of tools) {
-    lines.push(`- [${t.name}](${SITE_URL}${t.href}): ${t.description}`);
-  }
   lines.push("");
+  {
+    const byKey = new Map(tools.map((t) => [t.key, t]));
+    for (const cat of cats) {
+      lines.push(`### ${cat.name}`);
+      lines.push("");
+      lines.push(`- [${cat.name}](${SITE_URL}${cat.path}): ${cat.short}`);
+      for (const key of cat.tools) {
+        const t = byKey.get(key);
+        if (t) lines.push(`- [${t.name}](${SITE_URL}${t.href}): ${t.description}`);
+      }
+      lines.push("");
+    }
+  }
 
   lines.push("## Blog");
   lines.push("");
@@ -135,7 +145,17 @@ function build() {
   lines.push(`- [Home (EN)](${SITE_URL}/en): English homepage.`);
   lines.push(`- [About](${SITE_URL}/en/about): Background and expertise.`);
   lines.push(`- [Projects](${SITE_URL}/en/projects): Products and projects.`);
-  lines.push(`- [Free Marketing Tools](${SITE_URL}/en/free-marketing-tools): SaaS & marketing calculators.`);
+  lines.push(`- [Free Marketing Tools](${SITE_URL}/en/free-marketing-tools): Marketing, SaaS and e-commerce calculators (category hub).`);
+  {
+    const byKeyEn = new Map(toolsEn.map((t) => [t.key, t]));
+    for (const cat of catsEn) {
+      lines.push(`- [${cat.name}](${SITE_URL}${cat.path}): ${cat.short}`);
+      for (const key of cat.tools) {
+        const t = byKeyEn.get(key);
+        if (t) lines.push(`  - [${t.name}](${SITE_URL}${t.href}): ${t.description}`);
+      }
+    }
+  }
   lines.push(`- [Blog (EN)](${SITE_URL}/en/blog): English blog index.`);
   lines.push(`- [Contact](${SITE_URL}/en/contact): Contact details.`);
   for (const pair of BLOG_SLUG_PAIRS) {
