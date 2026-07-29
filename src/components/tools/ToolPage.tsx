@@ -55,7 +55,7 @@ export function ToolPage({ toolKey, children }: Props) {
           url: canonical,
           applicationCategory: "BusinessApplication",
           ...(tool.applicationCategory ? { applicationCategory: tool.applicationCategory } : {}),
-          operatingSystem: "Web",
+          operatingSystem: tool.applicationCategory === "FinanceApplication" ? "Any" : "Web",
           offers: { "@type": "Offer", price: "0", priceCurrency: bundle.currency },
           inLanguage: locale === "en" ? "en-US" : "tr-TR",
         })}</script>
