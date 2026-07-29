@@ -17,14 +17,26 @@
 
 ## Ücretsiz Araçlar
 
-- [Ücretsiz Araçlar](https://yusufbayrak.net/ucretsiz-araclar): Pazarlama ve SaaS metriklerini hesaplayan tarayıcı tabanlı araçlar.
+- [Ücretsiz Araçlar](https://yusufbayrak.net/ucretsiz-araclar): Pazarlama, SaaS ve e-ticaret metriklerini hesaplayan tarayıcı tabanlı ücretsiz araçlar (kategori hub sayfası).
+
+### Pazarlama Araçları
+
+- [Pazarlama Araçları](https://yusufbayrak.net/ucretsiz-araclar/pazarlama-araclari): Kampanya takibi, reklam getirisi ve AI görünürlüğü için pratik araçlar.
+- [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli linkler oluşturun.
+- [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.
+- [llms.txt Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu): AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.
+
+### SaaS Araçları
+
+- [SaaS Araçları](https://yusufbayrak.net/ucretsiz-araclar/saas-araclari): Abonelik iş modelinizin büyüme ve elde tutma metriklerini ölçün.
 - [ARR Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/arr-hesaplayici): Yıllık yinelenen gelir (Annual Recurring Revenue) hesaplama aracı.
 - [CAC Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/cac-hesaplayici): Müşteri edinme maliyetini (Customer Acquisition Cost) analiz edin.
-- [Churn Rate Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/churn-rate-hesaplayici): Müşteri kayıp oranınızı ve elde tutma performansınızı ölçün.
 - [LTV Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/ltv-hesaplayici): Müşteri yaşam boyu değerini hesaplayın ve CAC ile karşılaştırın.
-- [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.
-- [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli linkler oluşturun.
-- [llms.txt Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu): AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.
+- [Churn Rate Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/churn-rate-hesaplayici): Müşteri kayıp oranınızı ve elde tutma performansınızı ölçün.
+
+### E-Ticaret Araçları
+
+- [E-Ticaret Araçları](https://yusufbayrak.net/ucretsiz-araclar/e-ticaret-araclari): Ürün ve mağaza bazında gerçek kârlılığınızı hesaplayın.
 - [Brüt Kar Marjı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/brut-kar-marji-hesaplayici): Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.
 - [Net Kar Marjı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/net-kar-marji-hesaplayici): Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.
 
@@ -43,7 +55,19 @@
 - [Home (EN)](https://yusufbayrak.net/en): English homepage.
 - [About](https://yusufbayrak.net/en/about): Background and expertise.
 - [Projects](https://yusufbayrak.net/en/projects): Products and projects.
-- [Free Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools): SaaS & marketing calculators.
+- [Free Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools): Marketing, SaaS and e-commerce calculators (category hub).
+- [Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools/marketing-tools): Campaign tracking, ad return and AI visibility essentials.
+  - [UTM Link Builder](https://yusufbayrak.net/en/free-marketing-tools/utm-builder): Build UTM-tagged links for accurate campaign attribution.
+  - [ROAS Calculator](https://yusufbayrak.net/en/free-marketing-tools/roas-calculator): Measure Return on Ad Spend and campaign profitability.
+  - [llms.txt Generator](https://yusufbayrak.net/en/free-marketing-tools/llms-txt-generator): Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.
+- [SaaS Tools](https://yusufbayrak.net/en/free-marketing-tools/saas-tools): Measure the growth and retention metrics of a subscription business.
+  - [ARR Calculator](https://yusufbayrak.net/en/free-marketing-tools/arr-calculator): Annual Recurring Revenue calculator for subscription products.
+  - [CAC Calculator](https://yusufbayrak.net/en/free-marketing-tools/cac-calculator): Analyse your Customer Acquisition Cost across marketing and sales.
+  - [LTV Calculator](https://yusufbayrak.net/en/free-marketing-tools/ltv-calculator): Calculate customer lifetime value and compare it against CAC.
+  - [Churn Rate Calculator](https://yusufbayrak.net/en/free-marketing-tools/churn-rate-calculator): Measure your customer churn rate and retention performance.
+- [E-Commerce Tools](https://yusufbayrak.net/en/free-marketing-tools/ecommerce-tools): Calculate true profitability per product and per store.
+  - [Gross Profit Margin Calculator](https://yusufbayrak.net/en/free-marketing-tools/gross-profit-margin-calculator): Enter revenue and COGS to see gross margin as a percentage and an amount.
+  - [Net Profit Margin Calculator](https://yusufbayrak.net/en/free-marketing-tools/net-profit-margin-calculator): Include every expense to see the true net profitability of your business.
 - [Blog (EN)](https://yusufbayrak.net/en/blog): English blog index.
 - [Contact](https://yusufbayrak.net/en/contact): Contact details.
 - [How to Design a B2B Lead Generation Funnel: End-to-End Guide](https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design): A practical framework covering ICP definition, channel mix, messaging and CRM integration for qualified B2B lead generation.
