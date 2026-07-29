@@ -25,6 +25,8 @@
 - [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.
 - [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli linkler oluşturun.
 - [llms.txt Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu): AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.
+- [Brüt Kar Marjı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/brut-kar-marji-hesaplayici): Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.
+- [Net Kar Marjı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/net-kar-marji-hesaplayici): Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.
 
 ## Blog
 
