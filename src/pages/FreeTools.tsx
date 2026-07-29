@@ -26,11 +26,22 @@ export default function FreeTools() {
     ],
   };
 
+  const faqJsonLd = p.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: p.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   return (
     <Layout>
       <LocaleMeta path={p.path} locale={locale} title={p.seoTitle} description={p.seoDescription} />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
+        {faqJsonLd && <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>}
       </Helmet>
       <section className="py-20">
         <div className="container">
@@ -69,6 +80,36 @@ export default function FreeTools() {
               );
             })}
           </div>
+
+          {p.sections.length > 0 && (
+            <div className="mt-16 max-w-3xl">
+              <CodeDivider label={ui.guideDivider} />
+              <article className="text-muted-foreground leading-relaxed space-y-5">
+                {p.sections.map((s, i) => (
+                  <div key={i}>
+                    <h2 className="text-foreground text-xl font-semibold mt-8 mb-3">{s.heading}</h2>
+                    <p>{s.body}</p>
+                  </div>
+                ))}
+              </article>
+            </div>
+          )}
+
+          {p.faqs.length > 0 && (
+            <div className="mt-16 max-w-3xl">
+              <CodeDivider label={ui.faqDivider} />
+              <div className="bg-card border border-border rounded-lg px-4 divide-y divide-border">
+                {p.faqs.map((f, i) => (
+                  <details key={i} className="group py-4">
+                    <summary className="cursor-pointer list-none font-mono text-sm text-foreground hover:text-accent transition-colors">
+                      <h3 className="inline">{f.q}</h3>
+                    </summary>
+                    <p className="mt-3 text-muted-foreground leading-relaxed">{f.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </Layout>
