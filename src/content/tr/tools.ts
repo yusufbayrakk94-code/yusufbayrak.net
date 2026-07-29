@@ -205,3 +205,31 @@ export const netMargin: ToolContent = {
   relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
   externalSource: { label: "Kaynak: Investopedia — Net Profit Margin", href: "https://www.investopedia.com/terms/n/net_margin.asp" },
 };
+
+export const conversionRate: ToolContent = {
+  slug: "donusum-orani",
+  path: "/ucretsiz-araclar/donusum-orani-hesaplayici",
+  title: "Dönüşüm Oranı Hesaplayıcı",
+  description:
+    "Web sitenizin veya kampanyanızın dönüşüm oranını saniyeler içinde hesaplayın.",
+  intro:
+    "Toplam ziyaretçi ve dönüşüm sayınızı girin; dönüşüm oranınızı anında görün. Hedef bir oran belirlerseniz aradaki farkı ve hedefe ulaşmak için gereken ek dönüşüm sayısını da hesaplar.",
+  seoParagraphs: [
+    { heading: "Dönüşüm Oranı Nasıl Hesaplanır?", body: "Formül basittir: Dönüşüm Oranı = (Dönüşüm Sayısı / Toplam Ziyaretçi) × 100. Burada 'dönüşüm', sayfada tanımladığınız değerli aksiyondur: satın alma, form doldurma, demo talebi, teklif isteği, uygulama indirme veya newsletter kaydı. Aynı sayfada birden fazla dönüşüm türü varsa her biri için ayrı oran takip edilmelidir; hepsini tek bir sayıda toplamak asıl darboğazı gizler." },
+    { body: "Dönüşüm oranı, trafik ile gelir arasındaki köprüdür. Trafiği artırmadan oranı yükseltmek, aynı reklam bütçesiyle daha fazla müşteri kazanmak demektir; bu nedenle CAC'ı düşürmenin en hızlı yolu genellikle dönüşüm oranı optimizasyonudur (CRO). Kaynak, cihaz ve kampanya kırılımında ölçmek şarttır — mobil ile masaüstü arasında iki kata varan farklar olağandır." },
+    { heading: "Sektöre Göre Referans Aralıkları", body: "Kesin bir hedef yoktur; yönlendirici olarak: e-ticaret sitelerinde %1-4, B2B lead formlarında %2-5, landing page kampanyalarında %5-15, e-posta tıklamasından gelen trafikte ise daha yüksek oranlar görülebilir. Bunlar kaba referanslardır — asıl anlamlı kıyas, kendi geçmiş dönem trendiniz ve aynı kanal içindeki varyant testlerinizdir." },
+  ],
+  faqs: [
+    { q: "İyi bir dönüşüm oranı nedir?", a: "Sektöre ve trafiğin niteliğine göre değişir. Yönlendirici aralıklar: e-ticaret %1-4, B2B form doldurma %2-5, tekil landing page kampanyaları %5-15. Sabit bir eşik kovalamak yerine kendi trendinizi ve kanal bazlı farkları izleyin." },
+    { q: "Dönüşüm oranı nasıl artırılır?", a: "En etkili adımlar: sayfa hızını iyileştirmek, tek ve net bir çağrı-aksiyon (CTA) kullanmak, form alan sayısını azaltmak, mesaj-reklam uyumunu (message match) sağlamak, sosyal kanıt ve güven unsurları eklemek ve düzenli A/B testleri yürütmektir. Değişiklikleri tek tek test edin; aynı anda çok şeyi değiştirmek nedeni gizler." },
+    { q: "Dönüşüm oranı ile CTR arasındaki fark nedir?", a: "CTR (tıklama oranı) reklamı veya bağlantıyı görenlerin yüzde kaçının tıkladığını ölçer; dönüşüm oranı ise siteye gelenlerin yüzde kaçının hedeflenen aksiyonu tamamladığını ölçer. CTR reklam yaratıcısının, dönüşüm oranı ise landing page ve teklifin performansını gösterir." },
+    { q: "Dönüşüm oranı hangi araçlarla ölçülür?", a: "Google Analytics 4 (anahtar etkinlikler), Google Tag Manager, Meta Ads ve Google Ads reklam panelleri, HubSpot gibi CRM'ler ve Hotjar/Microsoft Clarity gibi davranış analizi araçları en yaygın kullanılanlardır. Kaynak bazlı doğru ölçüm için kampanya linklerinizi UTM ile etiketlemeyi unutmayın." },
+  ],
+  relatedTools: [
+    { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam harcaması getirisi" },
+    { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
+    { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu", note: "Kampanya takibi için doğru etiketleme" },
+  ],
+  relatedPost: { label: "Google Ads'te Performansı Katlamanın 7 Yolu", href: "/blog/google-ads-performans-optimizasyonu" },
+  externalSource: { label: "Kaynak: Google Analytics Yardım Merkezi — Dönüşüm oranı", href: "https://support.google.com/analytics/answer/12966437" },
+};
