@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
-import { pickTools } from "@/content";
+import { pickTools, pickFreeTools, pickToolCategories, pickToolCategoriesUi } from "@/content";
 import { SITE_URL } from "@/i18n/routes";
 import type { ToolContent } from "@/content/types";
 
@@ -28,6 +28,24 @@ export function ToolPage({ toolKey, children }: Props) {
   const tool = bundle[toolKey] as ToolContent;
 
   const canonical = `${SITE_URL}${tool.path}`;
+
+  // Breadcrumb: Home > Free Tools > [Category] > [Tool]. The category is
+  // resolved from the tool's card key so it never drifts from the category
+  // pages.
+  const hub = pickFreeTools(locale);
+  const ui = pickToolCategoriesUi(locale);
+  const cardKey = ({ llmsTxt: "llms", grossMargin: "gross", netMargin: "net" } as Record<string, string>)[toolKey as string] ?? (toolKey as string);
+  const category = pickToolCategories(locale).find((c) => c.tools.includes(cardKey));
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: ui.homeLabel, item: `${SITE_URL}${locale === "en" ? "/en" : "/"}` },
+      { "@type": "ListItem", position: 2, name: ui.hubName, item: `${SITE_URL}${hub.path}` },
+      ...(category ? [{ "@type": "ListItem", position: 3, name: category.name, item: `${SITE_URL}${category.path}` }] : []),
+      { "@type": "ListItem", position: category ? 4 : 3, name: tool.title, item: canonical },
+    ],
+  };
   const faqJsonLd = tool.faqs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -59,6 +77,7 @@ export function ToolPage({ toolKey, children }: Props) {
           offers: { "@type": "Offer", price: "0", priceCurrency: bundle.currency },
           inLanguage: locale === "en" ? "en-US" : "tr-TR",
         })}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
         {faqJsonLd && (
           <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         )}
