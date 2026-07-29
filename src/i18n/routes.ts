@@ -33,6 +33,7 @@ export const STATIC_ROUTE_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "/ucretsiz-araclar/llms-txt-olusturucu",     en: "/en/free-marketing-tools/llms-txt-generator" },
   { tr: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", en: "/en/free-marketing-tools/gross-profit-margin-calculator" },
   { tr: "/ucretsiz-araclar/net-kar-marji-hesaplayici",  en: "/en/free-marketing-tools/net-profit-margin-calculator" },
+  { tr: "/ucretsiz-araclar/donusum-orani-hesaplayici",  en: "/en/free-marketing-tools/conversion-rate-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
@@ -106,6 +107,9 @@ export const STATIC_TR_ROUTES = [
   "/ucretsiz-araclar/roas-hesaplayici",
   "/ucretsiz-araclar/utm-link-olusturucu",
   "/ucretsiz-araclar/llms-txt-olusturucu",
+  "/ucretsiz-araclar/brut-kar-marji-hesaplayici",
+  "/ucretsiz-araclar/net-kar-marji-hesaplayici",
+  "/ucretsiz-araclar/donusum-orani-hesaplayici",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -126,6 +130,9 @@ export const STATIC_EN_ROUTES = [
   "/en/free-marketing-tools/roas-calculator",
   "/en/free-marketing-tools/utm-builder",
   "/en/free-marketing-tools/llms-txt-generator",
+  "/en/free-marketing-tools/gross-profit-margin-calculator",
+  "/en/free-marketing-tools/net-profit-margin-calculator",
+  "/en/free-marketing-tools/conversion-rate-calculator",
   "/en/contact",
   "/en/blog",
 ] as const;
