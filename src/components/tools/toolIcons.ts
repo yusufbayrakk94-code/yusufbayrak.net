@@ -1,4 +1,4 @@
-import { TrendingUp, Users, UserMinus, HeartHandshake, Target, Link2, FileText, Percent, PiggyBank, Megaphone, Boxes, ShoppingCart } from "lucide-react";
+import { TrendingUp, Users, UserMinus, HeartHandshake, Target, Link2, FileText, Percent, PiggyBank, Megaphone, Boxes, ShoppingCart, Filter } from "lucide-react";
 
 // Icon per tool card key — shared by the free-tools hub and the category pages
 // so both render the exact same card pattern.
@@ -12,6 +12,7 @@ export const toolIconMap = {
   llms: FileText,
   gross: Percent,
   net: PiggyBank,
+  conversion: Filter,
 } as const;
 
 export const categoryIconMap = {
