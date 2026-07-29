@@ -44,9 +44,9 @@ export function LocaleMeta({
       {/* Lowercase `hreflang` on purpose: react-helmet-async emits the prop
           name verbatim into the prerendered HTML, and crawlers expect the
           lowercase attribute. */}
-      <link rel="alternate" hreflang="tr" href={trHref} />
-      <link rel="alternate" hreflang="en" href={enHref} />
-      <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
+      <link rel="alternate" {...{ hreflang: "tr" }} href={trHref} />
+      <link rel="alternate" {...{ hreflang: "en" }} href={enHref} />
+      <link rel="alternate" {...{ hreflang: "x-default" }} href={`${SITE_URL}/`} />
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
