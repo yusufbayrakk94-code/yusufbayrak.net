@@ -19,6 +19,8 @@ export const STATIC_TR = [
   "/ucretsiz-araclar/roas-hesaplayici",
   "/ucretsiz-araclar/utm-link-olusturucu",
   "/ucretsiz-araclar/llms-txt-olusturucu",
+  "/ucretsiz-araclar/brut-kar-marji-hesaplayici",
+  "/ucretsiz-araclar/net-kar-marji-hesaplayici",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -36,6 +38,8 @@ export const STATIC_EN = [
   "/en/free-marketing-tools/roas-calculator",
   "/en/free-marketing-tools/utm-builder",
   "/en/free-marketing-tools/llms-txt-generator",
+  "/en/free-marketing-tools/gross-profit-margin-calculator",
+  "/en/free-marketing-tools/net-profit-margin-calculator",
   "/en/contact",
   "/en/blog",
 ];
@@ -54,6 +58,8 @@ export const ROUTE_PAIRS = [
   { tr: "/ucretsiz-araclar/roas-hesaplayici",        en: "/en/free-marketing-tools/roas-calculator" },
   { tr: "/ucretsiz-araclar/utm-link-olusturucu",     en: "/en/free-marketing-tools/utm-builder" },
   { tr: "/ucretsiz-araclar/llms-txt-olusturucu",     en: "/en/free-marketing-tools/llms-txt-generator" },
+  { tr: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", en: "/en/free-marketing-tools/gross-profit-margin-calculator" },
+  { tr: "/ucretsiz-araclar/net-kar-marji-hesaplayici",  en: "/en/free-marketing-tools/net-profit-margin-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
