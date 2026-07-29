@@ -205,3 +205,30 @@ export const netMargin: ToolContent = {
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
   externalSource: { label: "Source: Investopedia — Net Profit Margin", href: "https://www.investopedia.com/terms/n/net_margin.asp" },
 };
+
+export const conversionRate: ToolContent = {
+  slug: "conversion-rate",
+  path: "/en/free-marketing-tools/conversion-rate-calculator",
+  title: "Conversion Rate Calculator",
+  description: "Calculate your website or campaign conversion rate instantly.",
+  intro:
+    "Enter your total visitors and conversions to see your conversion rate instantly. Add a target rate and the tool also shows the gap and how many extra conversions you need to hit it.",
+  seoParagraphs: [
+    { heading: "How is conversion rate calculated?", body: "The formula is simple: Conversion Rate = (Conversions / Total Visitors) × 100. A 'conversion' is whatever valuable action you define on the page: a purchase, form submission, demo request, quote request, app install or newsletter signup. If a page carries several conversion types, track a separate rate for each — rolling them into one number hides the real bottleneck." },
+    { body: "Conversion rate is the bridge between traffic and revenue. Lifting the rate without adding traffic means more customers from the same ad budget, which is why conversion rate optimisation (CRO) is usually the fastest way to bring CAC down. Always segment by source, device and campaign — a two-fold gap between mobile and desktop is common." },
+    { heading: "Benchmark ranges by sector", body: "There is no universal target. As orientation: e-commerce sites typically land at 1-4%, B2B lead forms at 2-5%, dedicated landing page campaigns at 5-15%, and email-driven traffic often higher. These are rough references — your own historical trend and in-channel variant tests are the benchmarks that matter." },
+  ],
+  faqs: [
+    { q: "What is a good conversion rate?", a: "It depends on the sector and the quality of the traffic. Rough ranges: e-commerce 1-4%, B2B form fills 2-5%, dedicated landing page campaigns 5-15%. Rather than chasing a fixed threshold, watch your own trend and the differences between channels." },
+    { q: "How do you improve conversion rate?", a: "The highest-impact moves: improve page speed, use a single clear call to action, cut form fields, keep message match between ad and landing page, add social proof and trust signals, and run continuous A/B tests. Test one change at a time so you can attribute the lift." },
+    { q: "What is the difference between conversion rate and CTR?", a: "CTR (click-through rate) measures the share of people who saw an ad or link and clicked it. Conversion rate measures the share of people who arrived on the site and completed the target action. CTR reflects ad creative performance; conversion rate reflects the landing page and the offer." },
+    { q: "Which tools measure conversion rate?", a: "Google Analytics 4 (key events), Google Tag Manager, the Google Ads and Meta Ads dashboards, CRMs such as HubSpot, and behaviour tools like Hotjar or Microsoft Clarity. Tag your campaign links with UTM parameters so source-level attribution stays accurate." },
+  ],
+  relatedTools: [
+    { label: "ROAS Calculator", href: "/en/free-marketing-tools/roas-calculator", note: "Return on ad spend" },
+    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "UTM Link Builder", href: "/en/free-marketing-tools/utm-builder", note: "Accurate campaign tagging" },
+  ],
+  relatedPost: { label: "7 Ways to Multiply Google Ads Performance", href: "/en/blog/google-ads-performance-optimization" },
+  externalSource: { label: "Source: Google Analytics Help — Conversion rate", href: "https://support.google.com/analytics/answer/12966437" },
+};

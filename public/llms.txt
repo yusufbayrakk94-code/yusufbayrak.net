@@ -24,6 +24,7 @@
 - [Pazarlama Araçları](https://yusufbayrak.net/ucretsiz-araclar/pazarlama-araclari): Kampanya takibi, reklam getirisi ve AI görünürlüğü için pratik araçlar.
 - [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli linkler oluşturun.
 - [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.
+- [Dönüşüm Oranı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/donusum-orani-hesaplayici): Ziyaretçi ve dönüşüm sayınızla dönüşüm oranınızı ve hedefe farkı hesaplayın.
 - [llms.txt Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu): AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.
 
 ### SaaS Araçları
@@ -59,6 +60,7 @@
 - [Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools/marketing-tools): Campaign tracking, ad return and AI visibility essentials.
   - [UTM Link Builder](https://yusufbayrak.net/en/free-marketing-tools/utm-builder): Build UTM-tagged links for accurate campaign attribution.
   - [ROAS Calculator](https://yusufbayrak.net/en/free-marketing-tools/roas-calculator): Measure Return on Ad Spend and campaign profitability.
+  - [Conversion Rate Calculator](https://yusufbayrak.net/en/free-marketing-tools/conversion-rate-calculator): Turn visitors and conversions into a conversion rate and a gap to your target.
   - [llms.txt Generator](https://yusufbayrak.net/en/free-marketing-tools/llms-txt-generator): Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.
 - [SaaS Tools](https://yusufbayrak.net/en/free-marketing-tools/saas-tools): Measure the growth and retention metrics of a subscription business.
   - [ARR Calculator](https://yusufbayrak.net/en/free-marketing-tools/arr-calculator): Annual Recurring Revenue calculator for subscription products.
