@@ -15,5 +15,7 @@ export const freeToolsPage = {
     { key: "roas",  name: "ROAS Calculator",       description: "Measure Return on Ad Spend and campaign profitability.",                                href: "/en/free-marketing-tools/roas-calculator" },
     { key: "utm",   name: "UTM Link Builder",      description: "Build UTM-tagged links for accurate campaign attribution.",                             href: "/en/free-marketing-tools/utm-builder" },
     { key: "llms",  name: "llms.txt Generator",    description: "Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.", href: "/en/free-marketing-tools/llms-txt-generator" },
+    { key: "gross", name: "Gross Profit Margin Calculator", description: "Enter revenue and COGS to see gross margin as a percentage and an amount.", href: "/en/free-marketing-tools/gross-profit-margin-calculator" },
+    { key: "net",   name: "Net Profit Margin Calculator",   description: "Include every expense to see the true net profitability of your business.", href: "/en/free-marketing-tools/net-profit-margin-calculator" },
   ],
 };

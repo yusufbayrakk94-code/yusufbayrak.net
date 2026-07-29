@@ -147,3 +147,61 @@ export const llmsTxt: ToolContent = {
 };
 
 export const enTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };
+
+export const grossMargin: ToolContent = {
+  slug: "gross-profit-margin",
+  path: "/en/free-marketing-tools/gross-profit-margin-calculator",
+  title: "Gross Profit Margin Calculator",
+  description:
+    "Calculate your gross profit margin instantly. Enter your revenue and cost of goods sold to see profitability at a glance.",
+  intro:
+    "Gross profit margin shows what share of your revenue is left after the cost of goods sold (COGS). Enter total revenue and COGS to see the result as both a percentage and an absolute amount.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "How is gross profit margin calculated?", body: "The formula is simple: Gross Profit Margin = ((Revenue − COGS) / Revenue) × 100. COGS covers the direct costs of producing or sourcing what you sell — raw materials, production labour, supplier invoices, and shipping or packaging directly attributable to the product. Operating costs such as marketing, rent and management salaries are excluded; those belong in net profit margin." },
+    { body: "Gross margin is the most direct read on your pricing power and sourcing efficiency. When it falls, either your selling price is under pressure or unit costs are rising. Track margin per product or category to separate the two — a blended figure hides the mix of profitable and unprofitable SKUs." },
+    { heading: "Industry reference ranges", body: "There is no universal target; it varies with the business model. As rough guidance: e-commerce and retail typically land in the 20-50% band, services and agencies around 40-60%, and SaaS or digital products in the 70-90% range. Treat these as orientation rather than hard claims — your own period-over-period trend is a more meaningful benchmark than any industry average." },
+  ],
+  faqs: [
+    { q: "What is gross profit margin?", a: "Gross profit margin is the share of revenue left after subtracting the cost of goods sold: ((Revenue − COGS) / Revenue) × 100. It measures the underlying profitability of your product or service, independent of operating expenses." },
+    { q: "What is a good gross profit margin?", a: "It depends on the model. Rough ranges: e-commerce 20-50%, services 40-60%, SaaS 70-90%. Rather than chasing a fixed threshold, watch your own trend — a declining margin signals price pressure or rising unit costs." },
+    { q: "What is included in COGS?", a: "Direct costs of making a product sellable: raw materials, production labour, supplier and contract-manufacturing invoices, plus product-attributable shipping, packaging and payment fees. Rent, marketing budget, management salaries and taxes are not part of COGS." },
+    { q: "What is the difference between gross and net profit margin?", a: "Gross margin subtracts only COGS and measures product-level profitability. Net margin subtracts every cost — operating expenses, marketing, interest and tax — showing the true profitability of the business. Read them together using the Net Profit Margin Calculator." },
+  ],
+  relatedTools: [
+    { label: "Net Profit Margin Calculator", href: "/en/free-marketing-tools/net-profit-margin-calculator", note: "True profitability, all costs included" },
+    { label: "ROAS Calculator", href: "/en/free-marketing-tools/roas-calculator", note: "Return on ad spend" },
+    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
+  ],
+  relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
+  externalSource: { label: "Source: Investopedia — Gross Profit Margin", href: "https://www.investopedia.com/terms/g/gross_profit_margin.asp" },
+};
+
+export const netMargin: ToolContent = {
+  slug: "net-profit-margin",
+  path: "/en/free-marketing-tools/net-profit-margin-calculator",
+  title: "Net Profit Margin Calculator",
+  description:
+    "Calculate your net profit margin instantly. Enter your revenue and total expenses to see your business's true profitability.",
+  intro:
+    "Net profit margin shows what share of revenue you keep after every cost — COGS, operating expenses, interest and tax. Enter total revenue and total expenses to see the result as a percentage and an amount.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "How is net profit margin calculated?", body: "The formula: Net Profit Margin = ((Revenue − Total Expenses) / Revenue) × 100. Unlike gross margin, total expenses cover the entire cost base: COGS, payroll, rent, software subscriptions, marketing and advertising, accounting and consulting, depreciation, loan interest and taxes." },
+    { body: "Net margin is the ultimate efficiency read on a business. A high gross margin paired with a thin net margin says the problem is not production or sourcing but the cost structure — usually bloated marketing spend, an inefficient team shape or financing costs. Reading both margins side by side is far more informative than either alone." },
+    { heading: "Reading the margin carefully", body: "Net margin swings with timing: one-off investments, tax schedules or FX effects can distort a single quarter. Track a 3-12 month rolling average rather than a single month, and where possible strip out one-off items to compute a normalised margin as well." },
+  ],
+  faqs: [
+    { q: "What is net profit margin?", a: "Net profit margin is net profit as a share of revenue after all expenses: ((Revenue − Total Expenses) / Revenue) × 100. It shows how much of every 100 units of revenue the business actually keeps." },
+    { q: "What is a good net profit margin?", a: "It varies by sector. As guidance, 2-10% is common in retail and e-commerce, 10-20% in services and 15-25% in mature SaaS. Growth-stage companies may run negative net margin deliberately; what matters is the direction of travel and the cash runway." },
+    { q: "Why is net profit margin lower than gross profit margin?", a: "Because gross margin subtracts only COGS, while net margin also removes marketing, payroll, rent, software, interest and tax. The gap between the two measures your operating cost load." },
+    { q: "What should be included in total expenses?", a: "Everything: COGS plus payroll and benefits, rent and utilities, software subscriptions, marketing and ad spend, consulting and accounting, depreciation, loan interest and taxes. If you want to isolate direct product cost, use the Gross Profit Margin Calculator." },
+  ],
+  relatedTools: [
+    { label: "Gross Profit Margin Calculator", href: "/en/free-marketing-tools/gross-profit-margin-calculator", note: "Profitability after COGS only" },
+    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "ROAS Calculator", href: "/en/free-marketing-tools/roas-calculator", note: "Return on ad spend" },
+  ],
+  relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
+  externalSource: { label: "Source: Investopedia — Net Profit Margin", href: "https://www.investopedia.com/terms/n/net_margin.asp" },
+};

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import {
@@ -54,7 +54,8 @@ export function ToolPage({ toolKey, children }: Props) {
           description: tool.description,
           url: canonical,
           applicationCategory: "BusinessApplication",
-          operatingSystem: "Web",
+          ...(tool.applicationCategory ? { applicationCategory: tool.applicationCategory } : {}),
+          operatingSystem: tool.applicationCategory === "FinanceApplication" ? "Any" : "Web",
           offers: { "@type": "Offer", price: "0", priceCurrency: bundle.currency },
           inLanguage: locale === "en" ? "en-US" : "tr-TR",
         })}</script>
@@ -109,6 +110,67 @@ export function ToolPage({ toolKey, children }: Props) {
                   </AccordionItem>
                 ))}
               </Accordion>
+            </div>
+          )}
+          {(tool.relatedTools?.length || tool.relatedPost || tool.externalSource) && (
+            <div className="mt-16 opacity-0 animate-fade-in-up stagger-3">
+              <CodeDivider label={locale === "en" ? "Related" : "İlgili"} />
+              <div className="grid gap-6 md:grid-cols-2">
+                {tool.relatedTools && tool.relatedTools.length > 0 && (
+                  <div className="p-5 bg-card border border-border rounded-lg">
+                    <h2 className="font-mono text-sm text-foreground mb-3">
+                      {locale === "en" ? "Related tools" : "İlgili Araçlar"}
+                    </h2>
+                    <ul className="space-y-2">
+                      {tool.relatedTools.map((r) => (
+                        <li key={r.href}>
+                          <Link
+                            to={r.href}
+                            className="group inline-flex items-start gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
+                          >
+                            <ArrowUpRight className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
+                            <span>
+                              <span className="text-foreground group-hover:text-accent transition-colors">{r.label}</span>
+                              {r.note && <span className="block text-xs">{r.note}</span>}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {(tool.relatedPost || tool.externalSource) && (
+                  <div className="p-5 bg-card border border-border rounded-lg">
+                    {tool.relatedPost && (
+                      <>
+                        <h2 className="font-mono text-sm text-foreground mb-3">
+                          {locale === "en" ? "Related post" : "İlgili Yazı"}
+                        </h2>
+                        <Link
+                          to={tool.relatedPost.href}
+                          className="inline-flex items-start gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
+                        >
+                          <ArrowUpRight className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
+                          {tool.relatedPost.label}
+                        </Link>
+                      </>
+                    )}
+                    {tool.externalSource && (
+                      <p className="mt-4 pt-4 border-t border-border">
+                        <a
+                          href={tool.externalSource.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-start gap-2 font-mono text-xs text-muted-foreground hover:text-accent transition-colors"
+                        >
+                          <ExternalLink className="h-3.5 w-3.5 mt-0.5 shrink-0" />
+                          {tool.externalSource.label}
+                        </a>
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
           )}
         </div>

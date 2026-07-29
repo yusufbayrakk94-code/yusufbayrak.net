@@ -147,3 +147,61 @@ export const llmsTxt: ToolContent = {
 };
 
 export const trTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };
+
+export const grossMargin: ToolContent = {
+  slug: "brut-kar-marji",
+  path: "/ucretsiz-araclar/brut-kar-marji-hesaplayici",
+  title: "Brüt Kar Marjı Hesaplayıcı",
+  description:
+    "Brüt kar marjınızı saniyeler içinde hesaplayın. Gelir ve maliyet bilgilerinizi girin, kârlılığınızı anında görün.",
+  intro:
+    "Brüt kar marjı, satılan malın maliyeti (COGS) düşüldükten sonra gelirinizin yüzde kaçının elinizde kaldığını gösterir. Toplam gelirinizi ve COGS'unuzu girin; sonucu hem yüzde hem tutar olarak görün.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "Brüt Kar Marjı Nasıl Hesaplanır?", body: "Formül basittir: Brüt Kar Marjı = ((Gelir − COGS) / Gelir) × 100. COGS (Cost of Goods Sold), ürünü üretmek veya satın almak için doğrudan katlanılan maliyetlerdir — hammadde, üretim işçiliği, tedarikçi faturaları, ürüne doğrudan atfedilebilen kargo ve paketleme. Pazarlama, kira, yönetim maaşları gibi operasyonel giderler bu hesaba girmez; onlar net kar marjında devreye girer." },
+    { body: "Brüt kar marjı, fiyatlandırma gücünüzün ve tedarik verimliliğinizin en doğrudan göstergesidir. Marj düşüyorsa ya satış fiyatı baskı altında ya da birim maliyetler artıyordur. Bu iki nedeni ayırt etmek için marjı ürün/kategori kırılımında takip etmek gerekir; toplam marj, kârlı ve zararlı ürünlerin ortalamasını gizler." },
+    { heading: "Sektöre Göre Referans Aralıkları", body: "Kesin bir hedef yoktur; iş modeline göre büyük farklılık gösterir. Yönlendirici olarak: e-ticaret ve perakendede brüt marj çoğunlukla %20-50 bandında, hizmet/ajans işlerinde %40-60, SaaS ve dijital ürünlerde ise %70-90 aralığında görülür. Bunlar kesin iddia değil, karşılaştırma için kaba referanslardır — kendi geçmiş dönem trendiniz her zaman sektör ortalamasından daha anlamlı bir kıyas noktasıdır." },
+  ],
+  faqs: [
+    { q: "Brüt kar marjı nedir?", a: "Brüt kar marjı, toplam gelirden satılan malın maliyeti (COGS) düşüldükten sonra kalan tutarın gelire oranıdır: ((Gelir − COGS) / Gelir) × 100. Ürün veya hizmetinizin temel kârlılığını, operasyonel giderlerden bağımsız olarak gösterir." },
+    { q: "İyi bir brüt kar marjı nedir?", a: "İş modeline bağlıdır. Yönlendirici aralıklar: e-ticaret %20-50, hizmet işleri %40-60, SaaS %70-90. Sabit bir eşik yerine kendi trendinizi izleyin — marjın dönemler arası düşmesi, fiyat baskısı veya artan birim maliyet sinyalidir." },
+    { q: "COGS'a neler dahildir?", a: "Ürünü üretmek veya satılabilir hale getirmek için katlanılan doğrudan maliyetler: hammadde, üretim işçiliği, tedarikçi ve fason faturaları, ürüne doğrudan atfedilebilen kargo, paketleme ve ödeme komisyonu. Kira, pazarlama bütçesi, yönetim maaşları ve vergi COGS'a girmez." },
+    { q: "Brüt kar marjı ile net kar marjı arasındaki fark nedir?", a: "Brüt kar marjı yalnızca COGS'u düşer ve ürün seviyesindeki kârlılığı ölçer. Net kar marjı ise operasyonel giderler, pazarlama, faiz ve vergi dahil tüm giderleri düşer; işletmenin gerçek kârlılığını gösterir. İkisini birlikte okumak gerekir — Net Kar Marjı Hesaplayıcı ile karşılaştırabilirsiniz." },
+  ],
+  relatedTools: [
+    { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Tüm giderler dahil gerçek kârlılık" },
+    { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam harcaması getirisi" },
+    { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
+  ],
+  relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
+  externalSource: { label: "Kaynak: Investopedia — Gross Profit Margin", href: "https://www.investopedia.com/terms/g/gross_profit_margin.asp" },
+};
+
+export const netMargin: ToolContent = {
+  slug: "net-kar-marji",
+  path: "/ucretsiz-araclar/net-kar-marji-hesaplayici",
+  title: "Net Kar Marjı Hesaplayıcı",
+  description:
+    "Net kar marjınızı saniyeler içinde hesaplayın. Gelir ve tüm giderlerinizi girin, işletmenizin gerçek kârlılığını görün.",
+  intro:
+    "Net kar marjı, tüm giderler (COGS, operasyonel giderler, faiz ve vergi dahil) düşüldükten sonra gelirinizin yüzde kaçının kâr olarak kaldığını gösterir. Toplam gelir ve toplam gideri girin; sonucu yüzde ve tutar olarak görün.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "Net Kar Marjı Nasıl Hesaplanır?", body: "Formül: Net Kar Marjı = ((Gelir − Toplam Giderler) / Gelir) × 100. Toplam giderler kalemi, brüt marjdan farklı olarak yalnızca ürün maliyetini değil işletmenin tüm maliyet yapısını kapsar: COGS, personel, kira, yazılım abonelikleri, pazarlama ve reklam bütçesi, muhasebe/danışmanlık, amortisman, kredi faizi ve vergiler." },
+    { body: "Net kar marjı, işletmenin nihai verimlilik göstergesidir. Yüksek brüt marja rağmen düşük net marj, sorunun üretim veya tedarikte değil gider yapısında olduğunu söyler — genellikle şişmiş pazarlama harcaması, düşük verimli ekip yapısı veya finansman maliyeti. Bu nedenle iki marjı yan yana okumak, tek başına herhangi birini okumaktan çok daha bilgilendiricidir." },
+    { heading: "Marjı Yorumlarken Dikkat Edilecekler", body: "Net marj dönemsel dalgalanmaya açıktır: tek seferlik yatırımlar, vergi zamanlaması veya kur farkı tek bir çeyreği yanıltıcı gösterebilir. Aylık tek ölçüm yerine 3-12 aylık hareketli ortalamayı takip edin ve mümkünse tek seferlik kalemleri ayrıştırarak normalize edilmiş bir marj da hesaplayın." },
+  ],
+  faqs: [
+    { q: "Net kar marjı nedir?", a: "Net kar marjı, tüm giderler düşüldükten sonra kalan net kârın gelire oranıdır: ((Gelir − Toplam Giderler) / Gelir) × 100. İşletmenin her 100 TL gelirden kaç TL'yi gerçekten kâr olarak elde tuttuğunu gösterir." },
+    { q: "İyi bir net kar marjı nedir?", a: "Sektöre göre değişir; yönlendirici olarak perakende ve e-ticarette %2-10, hizmet işlerinde %10-20, olgun SaaS şirketlerinde %15-25 aralığı sağlıklı kabul edilir. Büyüme aşamasındaki şirketlerde negatif net marj bilinçli bir tercih olabilir; kritik olan trendin yönü ve nakit yakma süresidir." },
+    { q: "Net kar marjı neden brüt kar marjından düşük olur?", a: "Çünkü brüt marj yalnızca COGS'u düşer; net marj ise bunun üzerine pazarlama, personel, kira, yazılım, faiz ve vergi gibi tüm dolaylı giderleri de ekler. İki marj arasındaki fark, işletmenizin operasyonel gider yükünü gösterir." },
+    { q: "Toplam giderlere neler dahil edilmeli?", a: "COGS'un yanı sıra tüm operasyonel giderler: personel maaş ve yan hakları, kira ve faturalar, yazılım abonelikleri, pazarlama ve reklam harcaması, danışmanlık ve muhasebe, amortisman, kredi faizi ve vergiler. Yalnızca doğrudan ürün maliyetini ayrı görmek isterseniz Brüt Kar Marjı Hesaplayıcı'yı kullanın." },
+  ],
+  relatedTools: [
+    { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Yalnızca COGS düşülmüş kârlılık" },
+    { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
+    { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam harcaması getirisi" },
+  ],
+  relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
+  externalSource: { label: "Kaynak: Investopedia — Net Profit Margin", href: "https://www.investopedia.com/terms/n/net_margin.asp" },
+};

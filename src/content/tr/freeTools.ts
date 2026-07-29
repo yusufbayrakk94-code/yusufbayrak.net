@@ -15,5 +15,7 @@ export const freeToolsPage = {
     { key: "roas",  name: "ROAS Hesaplayıcı",          description: "Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.",                    href: "/ucretsiz-araclar/roas-hesaplayici" },
     { key: "utm",   name: "UTM Link Oluşturucu",       description: "Kampanya takibi için UTM parametreli linkler oluşturun.",                              href: "/ucretsiz-araclar/utm-link-olusturucu" },
     { key: "llms",  name: "llms.txt Oluşturucu",       description: "AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.", href: "/ucretsiz-araclar/llms-txt-olusturucu" },
+    { key: "gross", name: "Brüt Kar Marjı Hesaplayıcı", description: "Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici" },
+    { key: "net",   name: "Net Kar Marjı Hesaplayıcı",  description: "Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici" },
   ],
 };

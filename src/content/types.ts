@@ -29,4 +29,12 @@ export interface ToolContent {
   intro: string;
   seoParagraphs: Array<{ heading?: string; body: string }>;
   faqs: FaqItem[];
+  /** schema.org applicationCategory override (defaults to BusinessApplication). */
+  applicationCategory?: string;
+  /** Internal links to sibling tools, rendered in the "Related tools" block. */
+  relatedTools?: Array<{ label: string; href: string; note?: string }>;
+  /** Internal link to a related blog post. */
+  relatedPost?: { label: string; href: string };
+  /** Outbound reference link (opens in a new tab). */
+  externalSource?: { label: string; href: string };
 }

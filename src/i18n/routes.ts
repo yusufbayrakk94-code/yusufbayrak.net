@@ -27,6 +27,8 @@ export const STATIC_ROUTE_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "/ucretsiz-araclar/roas-hesaplayici",        en: "/en/free-marketing-tools/roas-calculator" },
   { tr: "/ucretsiz-araclar/utm-link-olusturucu",     en: "/en/free-marketing-tools/utm-builder" },
   { tr: "/ucretsiz-araclar/llms-txt-olusturucu",     en: "/en/free-marketing-tools/llms-txt-generator" },
+  { tr: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", en: "/en/free-marketing-tools/gross-profit-margin-calculator" },
+  { tr: "/ucretsiz-araclar/net-kar-marji-hesaplayici",  en: "/en/free-marketing-tools/net-profit-margin-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
