@@ -45,12 +45,23 @@ export default function ToolCategory({ categoryKey }: { categoryKey: string }) {
     })),
   };
 
+  const faqJsonLd = cat.faqs?.length ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: cat.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   return (
     <Layout>
       <LocaleMeta path={cat.path} locale={locale} title={cat.seoTitle} description={cat.seoDescription} />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
         <script type="application/ld+json">{JSON.stringify(itemList)}</script>
+        {faqJsonLd && <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>}
       </Helmet>
       <section className="py-20">
         <div className="container">
