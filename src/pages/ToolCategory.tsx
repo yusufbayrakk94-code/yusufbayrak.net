@@ -93,6 +93,36 @@ export default function ToolCategory({ categoryKey }: { categoryKey: string }) {
             })}
           </div>
 
+          {cat.sections?.length > 0 && (
+            <div className="mt-16 max-w-3xl">
+              <CodeDivider label={ui.guideDivider} />
+              <article className="text-muted-foreground leading-relaxed space-y-5">
+                {cat.sections.map((s, i) => (
+                  <div key={i}>
+                    <h2 className="text-foreground text-xl font-semibold mt-8 mb-3">{s.heading}</h2>
+                    <p>{s.body}</p>
+                  </div>
+                ))}
+              </article>
+            </div>
+          )}
+
+          {cat.faqs?.length > 0 && (
+            <div className="mt-16 max-w-3xl">
+              <CodeDivider label={ui.faqDivider} />
+              <div className="bg-card border border-border rounded-lg px-4 divide-y divide-border">
+                {cat.faqs.map((f, i) => (
+                  <details key={i} className="group py-4">
+                    <summary className="cursor-pointer list-none font-mono text-sm text-foreground hover:text-accent transition-colors">
+                      <h3 className="inline">{f.q}</h3>
+                    </summary>
+                    <p className="mt-3 text-muted-foreground leading-relaxed">{f.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="mt-16">
             <CodeDivider label={ui.otherDivider} />
             <div className="grid gap-4 md:grid-cols-2">
