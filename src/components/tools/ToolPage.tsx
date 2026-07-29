@@ -34,7 +34,7 @@ export function ToolPage({ toolKey, children }: Props) {
   // pages.
   const hub = pickFreeTools(locale);
   const ui = pickToolCategoriesUi(locale);
-  const cardKey = ({ llmsTxt: "llms", grossMargin: "gross", netMargin: "net" } as Record<string, string>)[toolKey as string] ?? (toolKey as string);
+  const cardKey = ({ llmsTxt: "llms", grossMargin: "gross", netMargin: "net", conversionRate: "conversion" } as Record<string, string>)[toolKey as string] ?? (toolKey as string);
   const category = pickToolCategories(locale).find((c) => c.tools.includes(cardKey));
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
