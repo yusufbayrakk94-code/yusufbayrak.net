@@ -7,6 +7,60 @@ export const freeToolsPage = {
   intro:
     "Practical tools that compute your marketing, SaaS and growth metrics in seconds. All free, all client-side — nothing is sent to a server.",
   divider: "Tools",
+  sections: [
+    {
+      heading: "What do these free marketing and SaaS calculators do?",
+      body:
+        "The tools on this page compute the core metrics a marketing or product team tracks every week — ARR, CAC, LTV, churn, ROAS, conversion rate, gross and net profit margin — without you writing a single spreadsheet formula. Each calculator uses the standard industry definition and returns not just a number but a short reading of what that number means for your business.",
+    },
+    {
+      heading: "Who they are built for: SaaS founders, e-commerce owners and marketers",
+      body:
+        "SaaS founders get the subscription metrics needed for growth modelling and investor reporting. E-commerce owners see true profitability at product and store level. Performance marketers tag campaign links correctly and read ad return alongside conversion rate. The common thread: see the number before you make the decision.",
+    },
+    {
+      heading: "When to use the Marketing Tools category",
+      body:
+        "If your question is \"is this campaign working?\", start with Marketing Tools. The UTM Link Builder separates traffic sources, the Conversion Rate Calculator shows how much of that traffic turns into action, the ROAS Calculator measures the return on every unit spent, and the llms.txt Generator makes your site legible to AI search engines. These are campaign-level, daily-to-weekly decisions.",
+    },
+    {
+      heading: "When to use the SaaS Tools category",
+      body:
+        "If your question is \"is my business model sustainable?\", SaaS Tools is the right place. ARR sizes your recurring revenue, CAC prices the cost of winning a customer, LTV values what that customer returns over the relationship, and churn shows how fast you lose them. These metrics matter on a monthly-to-quarterly cycle, for unit economics and investor reporting.",
+    },
+    {
+      heading: "When to use the E-Commerce Tools category",
+      body:
+        "If your question is \"am I actually making money on this product?\", move to E-Commerce Tools. The Gross Profit Margin Calculator shows what remains after product cost (COGS); the Net Profit Margin Calculator shows what remains after ads, shipping, marketplace fees and operations. Pricing and ad budget decisions are built on these two numbers.",
+    },
+    {
+      heading: "Where does your data go?",
+      body:
+        "Nowhere. Every calculation runs in your browser with JavaScript. The revenue, cost or customer figures you type are never sent to a server, never stored and never shared with third parties. No sign-up, no usage limits.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Do I need an account to use these free tools?",
+      a: "No. Every tool works without sign-up, email or payment. Because the maths runs in your browser, none of the data you enter is transmitted to a server.",
+    },
+    {
+      q: "Which category should I start with?",
+      a: "Start with Marketing Tools if you are measuring campaign performance, SaaS Tools if you are examining the growth and unit economics of a subscription business, and E-Commerce Tools if you are solving product profitability and pricing. Most teams look at conversion rate and ROAS first, then CAC and LTV.",
+    },
+    {
+      q: "Are the formulas used in these calculators reliable?",
+      a: "Yes. Each tool uses the standard industry formula: ROAS = revenue / ad spend, CAC = total sales and marketing cost / new customers, LTV = average revenue × average customer lifetime, churn = customers lost / customers at period start. The formula and its assumptions are written out on every page.",
+    },
+    {
+      q: "Can I use the results in reports or an investor deck?",
+      a: "Yes. The tools follow standard definitions, so the outputs are suitable for investor reporting, budget planning and internal performance tracking. Just make sure your input periods (monthly or annual) are consistent across metrics.",
+    },
+    {
+      q: "Do the tools work on mobile devices?",
+      a: "Yes. Every calculator is built to run in mobile and desktop browsers — no installation, extension or app download required.",
+    },
+  ],
   cards: [
     { key: "arr",   name: "ARR Calculator",        description: "Annual Recurring Revenue calculator for subscription products.",                       href: "/en/free-marketing-tools/arr-calculator" },
     { key: "cac",   name: "CAC Calculator",        description: "Analyse your Customer Acquisition Cost across marketing and sales.",                    href: "/en/free-marketing-tools/cac-calculator" },
