@@ -267,4 +267,6 @@ export const toolCategoriesUi = {
   otherDivider: "Diğer Araç Kategorileri",
   toolCountLabel: (n: number) => `${n} araç`,
   homeLabel: "Ana Sayfa",
+  guideDivider: "Rehber",
+  faqDivider: "Sıkça Sorulan Sorular",
 };

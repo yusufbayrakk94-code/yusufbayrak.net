@@ -266,4 +266,6 @@ export const toolCategoriesUi = {
   otherDivider: "Other tool categories",
   toolCountLabel: (n: number) => `${n} tool${n === 1 ? "" : "s"}`,
   homeLabel: "Home",
+  guideDivider: "Guide",
+  faqDivider: "Frequently Asked Questions",
 };
