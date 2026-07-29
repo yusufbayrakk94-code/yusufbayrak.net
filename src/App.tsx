@@ -15,6 +15,7 @@ import About from "./pages/About";
 import Styleguide from "./pages/Styleguide";
 import Contact from "./pages/Contact";
 import FreeTools from "./pages/FreeTools";
+import ToolCategory from "./pages/ToolCategory";
 import ArrCalculator from "./pages/tools/ArrCalculator";
 import CacCalculator from "./pages/tools/CacCalculator";
 import ChurnCalculator from "./pages/tools/ChurnCalculator";
@@ -41,6 +42,9 @@ export function AppRoutes() {
       <Route path="/projeler" element={<Work />} />
       <Route path="/projeler/:slug" element={<ProjectDetail />} />
       <Route path="/ucretsiz-araclar" element={<FreeTools />} />
+      <Route path="/ucretsiz-araclar/pazarlama-araclari" element={<ToolCategory categoryKey="marketing" />} />
+      <Route path="/ucretsiz-araclar/saas-araclari" element={<ToolCategory categoryKey="saas" />} />
+      <Route path="/ucretsiz-araclar/e-ticaret-araclari" element={<ToolCategory categoryKey="ecommerce" />} />
       <Route path="/ucretsiz-araclar/arr-hesaplayici" element={<ArrCalculator />} />
       <Route path="/ucretsiz-araclar/cac-hesaplayici" element={<CacCalculator />} />
       <Route path="/ucretsiz-araclar/churn-rate-hesaplayici" element={<ChurnCalculator />} />
@@ -61,6 +65,9 @@ export function AppRoutes() {
       <Route path="/en/projects" element={<Work />} />
       <Route path="/en/projects/:slug" element={<ProjectDetail />} />
       <Route path="/en/free-marketing-tools" element={<FreeTools />} />
+      <Route path="/en/free-marketing-tools/marketing-tools" element={<ToolCategory categoryKey="marketing" />} />
+      <Route path="/en/free-marketing-tools/saas-tools" element={<ToolCategory categoryKey="saas" />} />
+      <Route path="/en/free-marketing-tools/ecommerce-tools" element={<ToolCategory categoryKey="ecommerce" />} />
       <Route path="/en/free-marketing-tools/arr-calculator" element={<ArrCalculator />} />
       <Route path="/en/free-marketing-tools/cac-calculator" element={<CacCalculator />} />
       <Route path="/en/free-marketing-tools/churn-rate-calculator" element={<ChurnCalculator />} />
