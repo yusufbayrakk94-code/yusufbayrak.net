@@ -17,6 +17,8 @@ export const contact = {
   submitting: "Sending...",
   toastTitle: "Message sent",
   toastDescription: "Thanks for your message — I'll get back to you shortly.",
+  errorTitle: "Message not sent",
+  errorDescription: "Something went wrong. Please try again or reach me by email.",
   linksDivider: "Links",
   linkedinLabel: "LinkedIn",
   emailLabel: "Email",

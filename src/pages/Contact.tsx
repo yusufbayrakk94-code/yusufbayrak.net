@@ -19,11 +19,38 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     setIsSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1000));
-    toast({ title: c.toastTitle, description: c.toastDescription });
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+    try {
+      const formData = new FormData(form);
+      formData.append("access_key", "fb738921-c491-4be8-8c30-35bed8537da7");
+      formData.append("subject", "yusufbayrak.net — yeni iletişim formu mesajı");
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        toast({ title: c.toastTitle, description: c.toastDescription });
+        form.reset();
+      } else {
+        toast({
+          variant: "destructive",
+          title: c.errorTitle,
+          description: c.errorDescription,
+        });
+      }
+    } catch {
+      toast({
+        variant: "destructive",
+        title: c.errorTitle,
+        description: c.errorDescription,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const socialLinks = [
@@ -44,6 +71,16 @@ export default function Contact() {
             <div>
               <CodeDivider label={c.formDivider} />
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Honeypot spam protection — hidden from users */}
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  className="hidden"
+                  style={{ display: "none" }}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                />
                 <div className="space-y-2">
                   <Label htmlFor="name" className="font-mono text-sm"><span className="text-accent">//</span> {c.labelName}</Label>
                   <Input id="name" name="name" placeholder={c.placeholderName} required className="bg-card border-border font-mono text-sm" />

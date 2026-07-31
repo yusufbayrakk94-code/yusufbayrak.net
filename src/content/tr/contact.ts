@@ -17,6 +17,8 @@ export const contact = {
   submitting: "Gönderiliyor...",
   toastTitle: "Mesaj gönderildi",
   toastDescription: "Mesajınız için teşekkürler. En kısa sürede dönüş yapacağım.",
+  errorTitle: "Mesaj gönderilemedi",
+  errorDescription: "Bir sorun oluştu. Lütfen tekrar deneyin veya e-posta ile ulaşın.",
   linksDivider: "Bağlantılar",
   linkedinLabel: "LinkedIn",
   emailLabel: "E-posta",
