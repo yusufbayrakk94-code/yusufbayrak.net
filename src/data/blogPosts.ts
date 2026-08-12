@@ -417,21 +417,55 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["SaaS", "ARR", "LTV", "CAC", "Churn"],
     sections: [
       {
-        heading: "ARR ve MRR: Büyüklüğün Ölçüsü",
+        heading: "MRR: Tüm Metriklerin Başlangıç Noktası",
+        paragraphs: [
+          "Monthly Recurring Revenue (MRR), yinelenen abonelik gelirinizin aylık toplamıdır. Tek seferlik kurulum ücretleri, danışmanlık gelirleri ve kullanım aşımı faturaları MRR'a dahil edilmez; bunlar tekrar etmediği için büyüme trendini yanıltır. MRR'ı net (yeni + expansion − daralma − churn) olarak takip etmek, büyümenin gerçekte nereden geldiğini gösterir.",
+          "Örnek hesaplama: 120 müşteriniz var, 80'i aylık 1.500 TL, 40'ı aylık 4.000 TL ödüyor. MRR = (80 × 1.500) + (40 × 4.000) = 120.000 + 160.000 = 280.000 TL. Bu ay 8.000 TL yeni abonelik ve 5.000 TL expansion eklendi, 6.000 TL churn oldu; net yeni MRR = 8.000 + 5.000 − 6.000 = 7.000 TL, yani aylık %2,5 büyüme.",
+          "Yıllık faturalanan sözleşmeleri MRR'a dahil ederken 12'ye bölün: 60.000 TL'lik yıllık sözleşme, 5.000 TL MRR demektir. Kendi rakamlarınızı hızlıca görmek için MRR Hesaplayıcı'yı kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "ARR: Büyüklüğün Ölçüsü",
         paragraphs: [
           "Annual Recurring Revenue (ARR), abonelik gelirlerinin yıllıklandırılmış hâlidir. Aylık faturalanan bir SaaS için MRR × 12 formülü kullanılır. Yatırımcılar için ARR; şirketin gerçek büyüklüğünü ve büyüme hızını en net gösteren metriktir.",
+          "Örnek hesaplama: MRR'ınız 280.000 TL ise ARR = 280.000 × 12 = 3.360.000 TL. Aylık %2,5 net büyümeyi 12 ay sürdürürseniz yıl sonu MRR'ı 280.000 × 1,025¹² ≈ 376.000 TL, yani ARR ≈ 4.512.000 TL olur. ARR'ı tek başına değil, büyüme hızıyla birlikte raporlayın; aynı ARR seviyesindeki iki şirketten %60 büyüyeni, %10 büyüyeninin birkaç katı değerlenir.",
+          "ARR'ı yıllık ciroyla karıştırmayın: ciro tek seferlik gelirleri de içerir, ARR yalnızca sözleşmeye bağlı yinelenen kısmı ölçer. Rakamı doğrulamak için ARR Hesaplayıcı'yı kullanın.",
+        ],
+      },
+      {
+        heading: "ARPA: Fiyatlama Sağlığının Göstergesi",
+        paragraphs: [
+          "Average Revenue Per Account (ARPA), müşteri başına ortalama aylık gelirdir ve fiyatlama stratejinizin en hızlı geri bildirim mekanizmasıdır. Formül basit: ARPA = MRR ÷ aktif müşteri sayısı. Yükselen ARPA genelde daha iyi segmentasyon, başarılı upsell veya doğru paketlemenin işaretidir.",
+          "Örnek hesaplama: 280.000 TL MRR ve 120 müşteri ile ARPA = 280.000 ÷ 120 ≈ 2.333 TL. Enterprise segmentinde ARPA 4.000 TL, SMB segmentinde 1.500 TL çıkıyorsa satış ve pazarlama bütçenizin ağırlığını hangi segmente vermeniz gerektiği netleşir. ARPA'yı segment kırılımında izlemeyen ekipler, düşük ARPA'lı müşterilere yüksek CAC harcamaya devam eder.",
+          "ARPA aynı zamanda LTV hesabının girdisidir; küçük bir ARPA artışı, LTV'yi ve dolayısıyla sürdürülebilir CAC tavanınızı doğrudan yükseltir. Segment bazlı rakamlarınızı ARPA Hesaplayıcı ile karşılaştırabilirsiniz.",
         ],
       },
       {
         heading: "CAC ve LTV: Birim Ekonomisi",
         paragraphs: [
-          "Customer Acquisition Cost (CAC), bir müşteriyi kazanmanın toplam pazarlama+satış maliyetidir. Lifetime Value (LTV), müşterinin ömrü boyunca getirdiği net kârdır. Sağlıklı SaaS'ta LTV/CAC oranı en az 3:1 olmalı; CAC geri kazanımı 12 ayı geçmemelidir.",
+          "Customer Acquisition Cost (CAC), bir müşteriyi kazanmanın toplam pazarlama + satış maliyetidir. Lifetime Value (LTV), müşterinin ömrü boyunca getirdiği net kârdır. Sağlıklı SaaS'ta LTV/CAC oranı en az 3:1 olmalı; CAC geri kazanımı 12 ayı geçmemelidir.",
+          "CAC örneği: Bir çeyrekte pazarlamaya 450.000 TL, satış ekibine 300.000 TL harcadınız ve 60 yeni müşteri kazandınız. CAC = (450.000 + 300.000) ÷ 60 = 12.500 TL. Bu hesaba satış ekibinin maaş ve primlerini dahil etmezseniz CAC'ı sistematik olarak olduğundan düşük görürsünüz.",
+          "LTV örneği: ARPA 2.333 TL, brüt marj %80 ve aylık churn %3 ise, ortalama müşteri ömrü 1 ÷ 0,03 ≈ 33 ay. LTV = 2.333 × 0,80 × 33 ≈ 61.600 TL. LTV/CAC = 61.600 ÷ 12.500 ≈ 4,9:1 — sağlıklı bandın üstünde, yani büyümeye daha agresif yatırım yapılabilir. CAC geri kazanımı ise 12.500 ÷ (2.333 × 0,80) ≈ 6,7 ay, hedeflenen 12 ayın altında. Kendi rakamlarınız için CAC Hesaplayıcı ve LTV Hesaplayıcı sayfalarını kullanın.",
         ],
       },
       {
         heading: "Churn ve NRR: Retention Hikayesi",
         paragraphs: [
           "Aylık gross churn %5'in üstündeyse büyüme, kayıp müşterilerin yerini doldurmakla geçer. Net Revenue Retention (NRR) ise upsell/expansion'ı da hesaba katar; %110+ NRR olan SaaS'lar, hiç yeni müşteri kazanmasa bile büyür.",
+          "Churn örneği: Ay başında 120 müşteriniz vardı, ay içinde 4 müşteri ayrıldı. Müşteri churn'ü = 4 ÷ 120 ≈ %3,3. Gelir tarafında ay başı MRR 280.000 TL, kaybedilen MRR 6.000 TL ise gross revenue churn = %2,1. Müşteri churn'ü gelir churn'ünden yüksekse küçük hesapları, tersi durumda büyük hesapları kaybediyorsunuz demektir — aksiyon planı tamamen farklıdır.",
+          "NRR örneği: Ay başı MRR 280.000 TL, expansion 5.000 TL, daralma 1.000 TL, churn 6.000 TL. NRR = (280.000 + 5.000 − 1.000 − 6.000) ÷ 280.000 ≈ %99,3. %100'ün altındaki NRR, mevcut müşteri tabanının küçüldüğünü ve büyümenin tamamen yeni satışa bağımlı olduğunu söyler. Churn senaryolarını Churn Rate Hesaplayıcı ile modelleyebilirsiniz.",
+        ],
+      },
+      {
+        heading: "Bu Metrikleri Birlikte Nasıl Okumalı?",
+        paragraphs: [
+          "Metrikleri tek tek değil, bir zincir olarak okuyun: ARPA fiyatlamayı, MRR momentumu, churn retention'ı, CAC verimliliği, LTV/CAC ise sürdürülebilirliği ölçer. Zincirin bir halkasındaki değişim diğerlerini domino gibi etkiler; örneğin ARPA'daki %10 artış, LTV'yi ve dolayısıyla katlanabileceğiniz CAC tavanını da yaklaşık %10 yükseltir.",
+        ],
+        bullets: [
+          "Haftalık: net yeni MRR, pipeline ve deneme-dönüşüm oranı",
+          "Aylık: ARPA, gross churn, revenue churn ve NRR",
+          "Çeyreklik: CAC, CAC geri kazanım süresi ve LTV/CAC oranı",
+          "Yıllık: ARR, büyüme hızı ve segment bazlı birim ekonomisi",
         ],
       },
     ],
@@ -451,8 +485,26 @@ export const BLOG_POSTS: BlogPost[] = [
         answer:
           "Aktivasyon (ilk değerin hızla yaşanması), müşteri başarısı ekibi ve ürün içi engagement döngüleri en etkili üç kaldıraçtır. Ödeme sorunlarından kaynaklanan involuntary churn için dunning management (Stripe/Chargebee) devreye alınmalıdır.",
       },
+      {
+        question: "ARPA nasıl hesaplanır ve neden önemlidir?",
+        answer:
+          "ARPA = MRR ÷ aktif müşteri sayısı. 280.000 TL MRR ve 120 müşteri için ARPA ≈ 2.333 TL'dir. ARPA, LTV hesabının girdisi olduğu için küçük bir artış bile sürdürülebilir CAC tavanınızı yükseltir; segment bazında izlenmesi gerekir.",
+      },
+      {
+        question: "CAC geri kazanım süresi nasıl bulunur?",
+        answer:
+          "CAC ÷ (ARPA × brüt marj) formülü kullanılır. CAC 12.500 TL, ARPA 2.333 TL ve brüt marj %80 ise geri kazanım ≈ 6,7 aydır. SMB SaaS'ta 12 ayın, enterprise'da 18 ayın altı sağlıklı kabul edilir.",
+      },
     ],
     relatedToolKey: "arr",
+    resources: [
+      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici" },
+      { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici" },
+      { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici" },
+      { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici" },
+      { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici" },
+      { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici" },
+    ],
   },
   {
     slug: "meta-ads-ogrenme-asamasindan-cikma-taktikleri",
@@ -838,26 +890,68 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     tags: ["Google Ads", "PMax", "ROAS", "Performance"],
     sections: [
       {
-        heading: "Get Conversion Tracking Right",
+        heading: "1. Get Conversion Tracking Right",
         paragraphs: [
           "Smart Bidding is only as good as the signal you feed it. Without Enhanced Conversions, GA4 server-side tracking and offline conversion import (closed-won deals fed back from the CRM), tROAS/tCPA bidding won't hit target.",
+          "The most common mistake I see is counting every form submission as a single 'Lead' conversion. When a newsletter signup and a demo request carry the same weight, the algorithm optimizes toward cheap but worthless conversions. Split your conversion actions, mark only commercially meaningful ones as Primary, and assign each a realistic conversion value.",
+          "A simple way to assign B2B values: multiply your average contract value by the historical close rate of that conversion type. If 20% of demo requests close and the average contract is $30,000, the demo conversion is worth $6,000. Fed with that value, tROAS starts optimizing revenue potential instead of raw form counts.",
         ],
       },
       {
-        heading: "Performance Max Asset Group Segmentation",
+        heading: "2. Match the Bid Strategy to Account Maturity",
+        paragraphs: [
+          "Bid strategy selection is a function of data volume. Below roughly 15–30 conversions per month, switching to tROAS or tCPA too early starves the algorithm of samples and spend becomes volatile. Start with Maximize Conversions, accumulate data, then graduate to a targeted strategy.",
+          "Set realistic targets. Entering a tROAS more than 20% above your current average makes the system throttle traffic and lose impression share. Tighten the target gradually (10–15% per week) and allow at least a two-week learning window after every change.",
+          "Differentiate by campaign intent: Maximize Clicks or a low tCPA on brand queries, tCPA on generic category searches, tROAS for e-commerce and PMax. Running different strategies across one account is fine; changing the strategy on the same campaign more than once a week is not.",
+        ],
+      },
+      {
+        heading: "3. Treat Audience Signals as a Real Asset",
+        paragraphs: [
+          "In Performance Max and Demand Gen, the audience signal is not targeting — it's a starting hint that decides who the algorithm tests in the first one to two weeks. A PMax campaign launched with a weak signal burns a large share of its budget learning on irrelevant inventory.",
+          "Rank your signals: closed-won customer lists (Customer Match), high-intent site visitors (pricing/demo pages), high-value CRM segments, then custom segments built from competitor and category queries. Relying only on in-market and affinity audiences keeps the signal generic.",
+        ],
+        bullets: [
+          "Customer Match: closed-won customers and high-LTV accounts (aim for 1,000+ records)",
+          "Site visitors: separate pricing, demo and cart-page segments",
+          "Custom segments: competitor brand queries + category queries + competitor domains",
+          "Exclusions: existing customers, job applicants, resellers and suppliers",
+        ],
+      },
+      {
+        heading: "4. Performance Max Asset Group Segmentation",
         paragraphs: [
           "Instead of one giant asset group, splitting by category, margin or season gives the algorithm cleaner signal. Budget flows to high-margin products and ROAS typically lifts 25–40%.",
+          "When you segment, give each asset group its own audience signal, its own headline set and its own feed filter. Copying the same creatives and copy into every group cancels out the benefit. In e-commerce, splitting the feed into three margin tiers (high, mid, low) alone produces a measurable gain in most accounts.",
         ],
       },
       {
-        heading: "Search Terms Report and Negative Keyword Discipline",
+        heading: "5. Put the Creative Test Loop on a Calendar",
+        paragraphs: [
+          "In Google Ads the performance ceiling is usually set by creative, not bidding. Filling all 15 responsive search ad headlines is not enough; split headlines into four themes — benefit, social proof, price/offer and objection handling — and track which theme earns the 'Best' performance label.",
+          "A loop that works: audit assets every two weeks, replace anything labeled 'Low', and refresh at most 30% of assets per cycle. Swapping everything at once resets learning. On PMax, keep at least 5 images, 2 videos and 3 logo variants per asset group; if you supply no video, Google auto-generates one and quality usually falls below brand standard.",
+          "Move winners across channels. A video with a strong thumb-stop rate on Meta usually performs in Demand Gen too, and headline patterns that convert in Search deserve a test as the landing page H1.",
+        ],
+      },
+      {
+        heading: "6. Allocate Budget as a Portfolio, Not per Campaign",
+        paragraphs: [
+          "Splitting budget evenly across campaigns lowers total account return. Allocate on marginal return instead: whichever campaign produces the highest incremental conversion volume for the next $1,000 should get the shift.",
+          "A practical frame is 70/20/10 — 70% to proven campaigns (brand plus high-ROAS categories), 20% to scaling candidates, 10% to new channel and creative tests. Any campaign with impression share lost (budget) above 10% is budget constrained and is your first candidate for an increase.",
+          "Move in steps: raising a daily budget more than 20–30% at once re-triggers the learning phase. During seasonal peaks, manual per-campaign increases keep more control than shared budgets.",
+        ],
+      },
+      {
+        heading: "7. Search Terms Report and Negative Keyword Discipline",
         paragraphs: [
           "Reviewing the search terms report weekly is critical to cut spend on irrelevant queries. Broad match and PMax especially need a constantly growing negative keyword list.",
+          "Make it durable with account-level shared negative lists and add new terms every week. Even though search term visibility is limited in PMax, account-level negatives now apply — excluding brand traffic from PMax prevents non-incremental conversions from inflating your reporting.",
         ],
         bullets: [
           "Brand protection list",
           "Out-of-industry query list",
           "Informational queries (how to, what is, examples) — filter them out in B2B if they don't convert",
+          "Job-seeker queries (careers, salary, hiring) and free/crack-seeking queries",
         ],
       },
     ],
@@ -871,6 +965,21 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         question: "Does Enhanced Conversions actually make a difference?",
         answer:
           "Yes. Enhanced Conversions offsets post-iOS 14 cookie loss and typically recovers 5–15% of measured conversions, which flows straight into Smart Bidding accuracy.",
+      },
+      {
+        question: "Which bid strategy should I start with?",
+        answer:
+          "Below 15–30 conversions per month, start with Maximize Conversions and build data. Once you pass that threshold move to tCPA, and to tROAS if you can report conversion values. Tighten targets 10–15% per week rather than in one jump.",
+      },
+      {
+        question: "Is an audience signal the same as targeting?",
+        answer:
+          "No. In PMax and Demand Gen the audience signal is a starting hint, not a hard targeting constraint — the system eventually explores beyond it. That's why feeding it Customer Match lists and high-intent site visitors determines how efficient the first weeks are.",
+      },
+      {
+        question: "How often and how much should I raise budgets?",
+        answer:
+          "Increases beyond 20–30% at once re-trigger the learning phase. Prioritize campaigns with impression share lost (budget) above 10%, and wait 7–14 days after each increase before making another change.",
       },
     ],
     relatedToolKey: "roas",
