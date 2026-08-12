@@ -125,7 +125,6 @@ export default function BlogPost() {
         <html lang={locale === "en" ? "en" : "tr"} />
         <title>{`${post.title}${ui.titleSuffix}`}</title>
         <meta name="description" content={post.description} />
-        <meta name="keywords" content={post.tags.join(", ")} />
         <link rel="canonical" href={url} />
         {altHref && (
           <link
