@@ -163,6 +163,8 @@ export default function BlogPost() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.description} />
+        <meta property="og:image" content={`${SITE}/og-image.jpg`} />
+        <meta name="twitter:image" content={`${SITE}/og-image.jpg`} />
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
