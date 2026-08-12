@@ -209,8 +209,9 @@ export const netMargin: ToolContent = {
 export const conversionRate: ToolContent = {
   slug: "conversion-rate",
   path: "/en/free-marketing-tools/conversion-rate-calculator",
-  title: "Conversion Rate Calculator",
-  description: "Calculate your website or campaign conversion rate instantly.",
+  title: "Marketing Conversion Rate Calculator",
+  description:
+    "Calculate your marketing or e-commerce campaign's conversion rate instantly — free online tool for websites, ads, and retail funnels.",
   intro:
     "Enter your total visitors and conversions to see your conversion rate instantly. Add a target rate and the tool also shows the gap and how many extra conversions you need to hit it.",
   seoParagraphs: [
