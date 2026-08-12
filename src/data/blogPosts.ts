@@ -1041,6 +1041,8 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         heading: "Why n8n Beats Zapier",
         paragraphs: [
           "Because n8n can be self-hosted, it wins on data sovereignty and cost. Beyond 400+ native integrations, a custom HTTP node connects to any API. Rich branching (if/switch) and JavaScript nodes make scenarios possible that Zapier cannot handle.",
+          "The cost gap widens with volume. Zapier bills per task, so a five-step flow burns five tasks per lead; n8n prices per execution, and a self-hosted install costs nothing beyond the server. For a B2B team processing thousands of leads a month, the difference is often close to 10x.",
+          "If you handle GDPR-scoped data, self-hosted n8n keeps lead records off a third-party SaaS server entirely. It installs in about 15 minutes with Docker; use Postgres for persistence and basic auth or a reverse proxy for security.",
         ],
       },
       {
@@ -1055,11 +1057,44 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "HubSpot/Pipedrive: enriched data is written to the CRM and an owner is assigned.",
           "Slack: high-scoring leads notify the SDR team in real time.",
         ],
+        image: {
+          src: n8nWorkflowDiagram,
+          alt: "n8n lead enrichment workflow diagram: webhook, Apollo/Clay enrichment, OpenAI ICP scoring, HubSpot CRM and Slack alert steps",
+          caption:
+            "End-to-end n8n lead enrichment flow: webhook → enrichment → LLM scoring → CRM → Slack.",
+          width: 1280,
+          height: 528,
+        },
+      },
+      {
+        heading: "Step-by-Step Setup: Webhook and Data Normalization",
+        paragraphs: [
+          "Create a new workflow in n8n and add a Webhook trigger as the first node. Set the method to POST, copy the generated production URL and paste it into your form tool (Typeform, HubSpot Forms, a custom form). The test URL only works while the editor is open, so switch to the production URL before going live.",
+          "Every tool names its payload fields differently. Add a Set (Edit Fields) node right after the trigger and normalize everything into one schema: email, full_name, company_domain, source, utm_campaign. Skip this and you'll rewrite the whole flow each time a new source is added.",
+          "Finish with an IF node for basic validation: branch off leads with an empty email or a free domain such as gmail or hotmail. Not sending free-domain leads to the enrichment API saves credits and removes bad matches before they enter the pipeline.",
+        ],
+      },
+      {
+        heading: "Step-by-Step Setup: Enrichment and Scoring Nodes",
+        paragraphs: [
+          "For enrichment, call Apollo's people/match endpoint with an HTTP Request node and authenticate through n8n Credentials — never hard-code the API key inside the node. Pull company name, employee count, industry, country and tech stack from the response. If Apollo returns nothing, add a fallback branch that queries a second source such as Clay or Hunter.",
+          "Enrichment APIs enforce rate limits. Turn on 'Retry on Fail' with 2–3 attempts and increasing wait time, and use a Split In Batches node with groups of 10 for bulk imports. That way a 429 response doesn't take the whole workflow down.",
+          "For scoring, send the normalized record to an OpenAI node and request a 0–100 score, a three-bullet rationale and a recommended next step via JSON schema. Validate the model output with a Code node before writing to the CRM; if the shape is unexpected, route the lead into a manual-review branch.",
+        ],
+      },
+      {
+        heading: "Step-by-Step Setup: CRM, Alerts and Error Handling",
+        paragraphs: [
+          "In the HubSpot node use the 'Create or Update Contact' operation with email as the unique key, otherwise every form submission creates a duplicate record. Write the score, the rationale and the enrichment fields into custom properties so sales can filter lists on them.",
+          "Add a Switch node to branch on the score: 70+ posts a rich message to the SDR Slack channel and assigns an owner, 40–69 goes to the nurture list, below 40 is stored in the CRM only. Including the CRM record link in the Slack message noticeably shortens SDR response time.",
+          "Finally, define a separate Error Workflow and attach it in the main workflow's settings. On failure it should alert your ops channel and write the failed payload to a Postgres table or Google Sheet, so no lead disappears silently and you can reprocess records once the issue is fixed.",
+        ],
       },
       {
         heading: "LLM Prompting Tips",
         paragraphs: [
           "Give the model a clean criteria list for ICP fit scoring. Instead of vague questions like 'how well does this company match our ICP?', ask for a score based on industry, employee count and tech. Use structured output (JSON schema) so downstream nodes can process the data without breaking.",
+          "Add two or three few-shot examples to the prompt: one ideal customer, one borderline, one clearly out of scope. Examples keep scores consistent over time. Keep temperature between 0 and 0.2 — you want repeatability, not creativity.",
         ],
       },
     ],
@@ -1087,23 +1122,23 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       steps: [
         {
           name: "Set up a Webhook node",
-          text: "Create a Webhook trigger in n8n and point your form tool (Typeform, HubSpot, custom form) at it so lead payloads land here.",
+          text: "Create a Webhook trigger in n8n, set the method to POST and point your form tool (Typeform, HubSpot, custom form) at the production URL. Then normalize the payload with a Set node into email, full_name, company_domain and utm_campaign. Use an IF node to filter out empty emails and free domains up front.",
         },
         {
           name: "Enrich with Apollo or Clay",
-          text: "Call the Apollo/Clay API by email to pull company name, employee count, industry and tech stack for the lead.",
+          text: "Use an HTTP Request node to call Apollo's match endpoint for company name, employee count, industry and tech stack, storing the API key in n8n Credentials. Add a fallback branch to Clay or Hunter when Apollo returns no match. Enable 'Retry on Fail' and use Split In Batches for bulk runs to survive rate limits.",
         },
         {
           name: "Score ICP fit with OpenAI",
-          text: "Pass the enriched data into an OpenAI node and use structured output (JSON schema) to produce an ICP fit score between 0 and 100.",
+          text: "Send the enriched record to an OpenAI node and request a 0–100 score, a three-bullet rationale and a next step through JSON schema. Include one ideal, one borderline and one out-of-scope example in the prompt to keep scoring consistent. Validate the output with a Code node and route malformed responses to manual review.",
         },
         {
           name: "Write to CRM and assign owner",
-          text: "Use a HubSpot or Pipedrive node to create the enriched contact and auto-assign the right sales owner based on the score.",
+          text: "In HubSpot or Pipedrive use the 'Create or Update' operation with email as the unique key to avoid duplicates. Write score, rationale and enrichment fields into custom properties so sales can filter on them. Automate owner assignment by score band with a Switch node.",
         },
         {
-          name: "Send a Slack notification",
-          text: "If the score is above a threshold (e.g. 70+), post to the SDR Slack channel; drop lower scores into a nurture list.",
+          name: "Add Slack alerts and error handling",
+          text: "If the score clears your threshold (e.g. 70+), post a Slack message containing the CRM link to the SDR channel and send the 40–69 band to nurture. Attach a dedicated Error Workflow so failed executions alert your ops channel. Log failing payloads to a table so they can be reprocessed after a fix.",
         },
       ],
     },
