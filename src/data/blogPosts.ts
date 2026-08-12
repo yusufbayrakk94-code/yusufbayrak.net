@@ -1,3 +1,5 @@
+import n8nWorkflowDiagram from "@/assets/n8n-lead-enrichment-workflow.jpg";
+
 export type BlogCategorySlug =
   | "performans-pazarlama"
   | "b2b-lead-generation"
@@ -19,6 +21,13 @@ export interface BlogSection {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  image?: {
+    src: string;
+    alt: string;
+    caption?: string;
+    width?: number;
+    height?: number;
+  };
 }
 
 export interface BlogHowToStep {
@@ -141,7 +150,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Otomasyon (n8n, Clay, HubSpot) manuel işleri ortadan kaldırır ve lead-to-meeting süresini %40-60 kısaltır.",
     ],
     publishedAt: "2026-07-01",
-    readingMinutes: 9,
+    readingMinutes: 2,
     tags: ["B2B", "Lead Generation", "Outbound", "ABM"],
     sections: [
       {
@@ -207,30 +216,72 @@ export const BLOG_POSTS: BlogPost[] = [
       "Negative keyword ve arama terimi raporu haftalık disipline dönüşmeden bütçe sızıntısı devam eder.",
     ],
     publishedAt: "2026-07-05",
-    readingMinutes: 8,
+    readingMinutes: 5,
     tags: ["Google Ads", "PMax", "ROAS", "Performans"],
     sections: [
       {
-        heading: "Conversion Tracking'i Doğru Kurgulayın",
+        heading: "1. Conversion Tracking'i Doğru Kurgulayın",
         paragraphs: [
-          "Smart Bidding algoritmaları yalnızca aldıkları sinyal kadar iyidir. Enhanced Conversions, GA4 server-side tracking ve offline conversion import (CRM'den kapanan satışların geri beslenmesi) olmadan tIROAS/tCPA teklif stratejileri hedefini tutturamaz.",
+          "Smart Bidding algoritmaları yalnızca aldıkları sinyal kadar iyidir. Enhanced Conversions, GA4 server-side tracking ve offline conversion import (CRM'den kapanan satışların geri beslenmesi) olmadan tROAS/tCPA teklif stratejileri hedefini tutturamaz.",
+          "Pratikte en sık gördüğüm hata, tüm form gönderimlerinin tek bir 'Lead' dönüşümü olarak sayılmasıdır. Newsletter kaydı ile demo talebi aynı ağırlıkta raporlandığında algoritma ucuz ama değersiz dönüşümlere doğru optimize eder. Dönüşüm aksiyonlarını ayırın, yalnızca ticari değeri olanları 'Primary' işaretleyin ve her birine gerçekçi bir dönüşüm değeri atayın.",
+          "B2B'de değer ataması için basit bir yöntem var: ortalama sözleşme değerinizi, o dönüşüm tipinin tarihsel kapanma oranıyla çarpın. Demo talebinin %20'si kapanıyor ve ortalama sözleşme 100.000 TL ise, demo dönüşümünün değeri 20.000 TL'dir. Bu değerle beslenen tROAS, form sayısını değil gelir potansiyelini optimize etmeye başlar.",
         ],
       },
       {
-        heading: "Performance Max Asset Group Segmentasyonu",
+        heading: "2. Teklif Stratejisini Hesabın Olgunluğuna Göre Seçin",
         paragraphs: [
-          "Tek asset grup yerine kategori, marj veya sezon bazında ayrıştırılmış asset group'lar, algoritmaya daha net sinyal verir. Böylece high-margin ürünlere daha fazla bütçe akar ve ROAS ortalama %25-40 artar.",
+          "Teklif stratejisi seçimi, hesabın veri hacmiyle doğrudan ilişkilidir. Aylık 15-30 dönüşümün altındaki kampanyalarda tROAS veya tCPA erken devreye alınırsa algoritma yeterli örneklem bulamaz ve harcama dalgalanır. Bu aşamada Maximize Conversions ile başlayıp veri biriktirmek, ardından hedefli stratejiye geçmek daha sağlıklıdır.",
+          "Hedef değerini gerçekçi belirleyin. Mevcut ortalamanızın %20'sinden fazla agresif bir tROAS hedefi girmek, sistemin trafiği kısmasına ve impression share kaybına yol açar. Hedefi kademeli olarak (haftada %10-15) sıkın ve her değişiklikten sonra en az iki haftalık öğrenme dönemine izin verin.",
+          "Kampanya amacına göre stratejiyi ayrıştırın: marka aramalarında Maximize Clicks veya düşük tCPA, jenerik kategori aramalarında tCPA, e-ticaret ve PMax kampanyalarında tROAS mantıklıdır. Aynı hesapta farklı stratejiler kullanmak sorun değil; sorun, aynı kampanyada stratejiyi haftada birden fazla değiştirmektir.",
         ],
       },
       {
-        heading: "Search Terms Report ve Negative Keyword Disiplini",
+        heading: "3. Audience Signal Kurgusunu Ciddiye Alın",
+        paragraphs: [
+          "Performance Max ve Demand Gen kampanyalarında audience signal, hedefleme değil bir başlangıç ipucudur; algoritmanın ilk 1-2 haftada kimi test edeceğini belirler. Zayıf sinyalle başlayan bir PMax, bütçesinin önemli bir kısmını alakasız envanterde harcayarak öğrenir.",
+          "En güçlü sinyal sırası şudur: kapanan müşteri listeleri (Customer Match), yüksek niyetli site ziyaretçileri (fiyat/demo sayfası), CRM'den gelen high-value segmentler, ardından custom segment olarak rakip marka ve kategori aramaları. Yalnızca in-market ve affinity kitleleri kullanmak, sinyali jenerikleştirir.",
+        ],
+        bullets: [
+          "Customer Match: kapanan müşteriler ve yüksek LTV'li hesaplar (en az 1.000 kayıt hedefleyin)",
+          "Site ziyaretçileri: fiyatlandırma, demo ve sepet sayfası segmentleri ayrı ayrı",
+          "Custom segment: rakip marka sorguları + kategori sorguları + rakip domainleri",
+          "Dışlamalar: mevcut müşteriler, iş başvurusu yapanlar ve bayi/tedarikçi listeleri",
+        ],
+      },
+      {
+        heading: "4. Performance Max Asset Group Segmentasyonu",
+        paragraphs: [
+          "Tek asset grup yerine kategori, marj veya sezon bazında ayrıştırılmış asset group'lar algoritmaya daha net sinyal verir. Böylece high-margin ürünlere daha fazla bütçe akar ve ROAS ortalama %25-40 artar.",
+          "Segmentasyonu yaparken her asset group'a kendi audience signal'ını, kendi başlık setini ve kendi ürün feed filtresini verin. Aynı görsel ve metinleri tüm gruplara kopyalamak, ayrıştırmanın faydasını sıfırlar. E-ticarette feed'i marj bandına göre üç kümeye ayırmak (yüksek, orta, düşük marj) çoğu hesapta tek başına anlamlı bir kazanç üretir.",
+        ],
+      },
+      {
+        heading: "5. Kreatif Test Döngüsünü Takvime Bağlayın",
+        paragraphs: [
+          "Google Ads'te performansın tavanını çoğu zaman teklif değil kreatif belirler. Responsive Search Ads'te 15 başlığın hepsini doldurmak yeterli değildir; başlıkları fayda, sosyal kanıt, fiyat/teklif ve itiraz karşılama olmak üzere dört temaya bölün ve tema bazında hangisinin 'Best' performans etiketi aldığını izleyin.",
+          "İşleyen bir döngü şöyledir: iki haftada bir asset denetimi, 'Low' etiketli varlıkların değiştirilmesi, her turda en fazla %30 varlık yenileme. Hepsini aynı anda değiştirmek öğrenmeyi sıfırlar. PMax tarafında her asset group için en az 5 görsel, 2 video ve 3 logo varyantı bulundurun; video yoksa Google otomatik üretir ve kalite genelde marka standardının altında kalır.",
+          "Kreatif kazananları kanallar arası taşıyın. Meta tarafında yüksek thumb-stop oranı yakalayan bir video, Demand Gen kampanyalarında da genellikle iyi çalışır; tersine Search'te dönüşen başlık kalıpları landing page H1'i olarak test edilmelidir.",
+        ],
+      },
+      {
+        heading: "6. Bütçeyi Kampanya Değil Portföy Mantığıyla Dağıtın",
+        paragraphs: [
+          "Bütçe dağıtımını 'her kampanyaya eşit pay' mantığıyla yapmak, hesabın toplam getirisini düşürür. Bütçeyi marjinal getiriye göre dağıtın: hangi kampanya, ek 1.000 TL'ye en yüksek artımlı dönüşümü üretiyorsa payı oraya kaydırın.",
+          "Pratik bir çerçeve, 70/20/10 dağılımıdır: bütçenin %70'i kanıtlanmış kampanyalara (marka + yüksek ROAS kategori), %20'si ölçeklenmeye aday olanlara, %10'u yeni kanal ve kreatif testlerine. Impression share lost (budget) metriği %10'un üstündeyse o kampanya bütçe kısıtlıdır ve öncelikli artırım adayıdır.",
+          "Değişiklikleri kademeli yapın: günlük bütçeyi bir seferde %20-30'dan fazla artırmak öğrenme aşamasını yeniden tetikler. Sezonluk yoğunluklarda ise portföy bütçesi (shared budget) yerine kampanya bazlı manuel artış, kontrolü elinizde tutmanızı sağlar.",
+        ],
+      },
+      {
+        heading: "7. Search Terms Report ve Negative Keyword Disiplini",
         paragraphs: [
           "Search Terms raporunu haftalık incelemek, alakasız aramalara giden bütçeyi kesmek için kritiktir. Özellikle broad match ve PMax kampanyalarında negative keyword listesi sürekli beslenmelidir.",
+          "Bu işi kalıcı hâle getirmek için hesap seviyesinde paylaşılan negative listeler oluşturun ve her hafta yeni terimleri buraya ekleyin. PMax'te arama terimi görünürlüğü sınırlı olsa da hesap seviyesindeki negative listeler artık uygulanabiliyor; marka trafiğini PMax'ten dışlamak, artımlı olmayan dönüşümlerin raporu şişirmesini engeller.",
         ],
         bullets: [
           "Marka koruma listesi",
           "Sektör dışı arama listesi",
           "Bilgi amaçlı sorgular (how to, nedir, örnek) — B2B'de dönüştürmüyorsa filtrelenmeli",
+          "İş arama sorguları (kariyer, iş ilanı, maaş) ve ücretsiz/crack arayan sorgular",
         ],
       },
     ],
@@ -244,6 +295,21 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "Enhanced Conversions gerçekten fark yaratıyor mu?",
         answer:
           "Evet. iOS 14+ sonrası cookie kaybını telafi eden Enhanced Conversions, tipik olarak ölçülen dönüşüm sayısında %5-15 artış sağlar; bu doğrudan Smart Bidding'in doğruluğuna yansır.",
+      },
+      {
+        question: "Hangi teklif stratejisiyle başlamalıyım?",
+        answer:
+          "Aylık 15-30 dönüşümün altındaysanız Maximize Conversions ile başlayıp veri biriktirin. Bu eşiği geçtikten sonra tCPA'ya, dönüşüm değeri raporlayabiliyorsanız tROAS'a geçin. Hedefleri bir seferde değil, haftada %10-15 sıkarak ilerletin.",
+      },
+      {
+        question: "Audience signal hedefleme mi yapıyor?",
+        answer:
+          "Hayır. PMax ve Demand Gen'de audience signal bir hedefleme kısıtı değil, algoritmaya verilen başlangıç ipucudur. Sistem zamanla sinyalin dışına da çıkar; bu yüzden sinyali Customer Match ve yüksek niyetli site ziyaretçileriyle beslemek ilk haftaların verimini belirler.",
+      },
+      {
+        question: "Bütçeyi ne sıklıkla ve ne kadar artırmalıyım?",
+        answer:
+          "Bir seferde %20-30'dan fazla artış öğrenme aşamasını yeniden tetikler. Impression share lost (budget) %10'un üstündeki kampanyalara öncelik verin ve artıştan sonra en az 7-14 gün ölçüm yapmadan yeni değişiklik yapmayın.",
       },
     ],
     relatedToolKey: "roas",
@@ -261,13 +327,15 @@ export const BLOG_POSTS: BlogPost[] = [
       "Kritik nokta: veri kalitesi. Hatalı enrichment, tüm SDR ekibinin zamanını yakar.",
     ],
     publishedAt: "2026-07-10",
-    readingMinutes: 10,
+    readingMinutes: 5,
     tags: ["n8n", "Otomasyon", "LLM", "Lead Enrichment"],
     sections: [
       {
         heading: "n8n Neden Zapier'den Daha Güçlü?",
         paragraphs: [
           "n8n; self-hosted çalışabildiği için veri egemenliği ve maliyet avantajı sağlar. 400+ native entegrasyon dışında custom HTTP node ile herhangi bir API'ye bağlanabilir. Karmaşık dallanma (if/switch) ve JavaScript node'ları, Zapier'de mümkün olmayan senaryoları çözer.",
+          "Maliyet farkı hacimle birlikte açılır. Zapier adım (task) başına ücretlendirdiği için 5 adımlı bir akış, her lead'de 5 task tüketir; n8n'de fiyatlama execution (çalıştırma) başınadır ve self-hosted kurulumda yalnızca sunucu maliyeti vardır. Aylık binlerce lead işleyen bir B2B ekibinde bu fark genellikle 10 kata kadar çıkar.",
+          "KVKK/GDPR kapsamındaki verilerle çalışıyorsanız self-hosted n8n, lead verisinin üçüncü taraf bir SaaS'ın sunucusundan geçmemesini sağlar. Docker ile 15 dakikada kurulabilir; kalıcılık için Postgres, güvenlik için de basic auth veya reverse proxy önerilir.",
         ],
       },
       {
@@ -282,11 +350,44 @@ export const BLOG_POSTS: BlogPost[] = [
           "HubSpot/Pipedrive: Zenginleştirilmiş veri CRM'e yazılır ve owner atanır.",
           "Slack: Yüksek skorlu leadler SDR ekibine anlık bildirim olarak gider.",
         ],
+        image: {
+          src: n8nWorkflowDiagram,
+          alt: "n8n lead enrichment workflow diyagramı: Webhook, Apollo/Clay zenginleştirme, OpenAI ICP skorlama, HubSpot CRM ve Slack bildirimi adımları",
+          caption:
+            "Uçtan uca n8n lead enrichment akışı: webhook → enrichment → LLM skorlama → CRM → Slack.",
+          width: 1280,
+          height: 528,
+        },
+      },
+      {
+        heading: "Adım Adım Kurulum: Webhook ve Veri Normalizasyonu",
+        paragraphs: [
+          "n8n'de yeni bir workflow açın ve ilk node olarak Webhook trigger ekleyin. Metodu POST seçin, üretilen production URL'ini kopyalayın ve form aracınızın (Typeform, HubSpot Forms, custom form) webhook alanına yapıştırın. Test URL'i yalnızca editör açıkken çalışır; canlıya alırken production URL'ini kullanmayı unutmayın.",
+          "Gelen payload her araçta farklı isimlendirilir. Hemen ardına bir Set (Edit Fields) node'u ekleyip alanları tek bir şemaya normalize edin: email, full_name, company_domain, source, utm_campaign. Bu adımı atlarsanız kaynak eklendikçe akışın tamamını yeniden yazmanız gerekir.",
+          "Son olarak bir IF node ile temel doğrulama yapın: e-posta boşsa veya gmail/hotmail gibi ücretsiz bir domainse akışı ayırın. Ücretsiz domainli leadleri enrichment API'sine göndermemek, hem kredi tasarrufu sağlar hem de hatalı eşleşmeleri baştan eler.",
+        ],
+      },
+      {
+        heading: "Adım Adım Kurulum: Enrichment ve Skorlama Node'ları",
+        paragraphs: [
+          "Enrichment için HTTP Request node'u ile Apollo'nun people/match endpoint'ini çağırın; kimlik doğrulamayı n8n Credentials üzerinden yapın, API anahtarını asla node içine gömmeyin. Yanıttan şirket adı, employee count, sektör, ülke ve teknoloji stack'i alanlarını alın. Apollo boş dönerse ikinci bir kaynağı (Clay veya Hunter) yedek olarak çağıran bir fallback dalı kurun.",
+          "Enrichment API'leri rate limit uygular. HTTP node'un 'Retry on Fail' seçeneğini açın, 2-3 deneme ve artan bekleme süresi tanımlayın; toplu içe aktarımlarda ise Split In Batches node'u ile 10'arlı gruplar hâlinde ilerleyin. Böylece 429 hataları akışı komple düşürmez.",
+          "Skorlama adımında OpenAI node'una normalize edilmiş veriyi gönderin ve JSON schema ile 0-100 arası bir skor, üç maddelik gerekçe ve önerilen sonraki adım isteyin. Model çıktısını doğrudan CRM'e yazmadan önce bir Code node ile şema doğrulaması yapın; beklenmeyen çıktı gelirse lead'i 'manuel inceleme' koluna yönlendirin.",
+        ],
+      },
+      {
+        heading: "Adım Adım Kurulum: CRM, Bildirim ve Hata Yönetimi",
+        paragraphs: [
+          "HubSpot node'unda 'Create or Update Contact' operasyonunu kullanın ve e-postayı benzersiz anahtar olarak seçin; aksi hâlde her form gönderiminde mükerrer kayıt oluşur. Skoru, gerekçeyi ve enrichment alanlarını özel property'lere yazın ki satış ekibi bunları liste filtrelerinde kullanabilsin.",
+          "Skor eşiğine göre dallanma için Switch node'u ekleyin: 70+ ise Slack'te SDR kanalına zengin formatlı bir mesaj gönderin ve owner atayın, 40-69 arası nurture listesine, 40 altı ise yalnızca CRM'e kaydedin. Slack mesajına lead'in CRM linkini eklemek, SDR'ın kayda ulaşma süresini belirgin şekilde kısaltır.",
+          "Son olarak ayrı bir Error Workflow tanımlayın ve ana akışın ayarlarından buna bağlayın. Hata durumunda operasyon kanalına bildirim düşsün, başarısız payload bir Postgres tablosuna veya Google Sheets'e yazılsın; böylece hiçbir lead sessizce kaybolmaz ve sorun çözüldüğünde kayıtları yeniden işleyebilirsiniz.",
+        ],
       },
       {
         heading: "LLM Prompting İpuçları",
         paragraphs: [
           "ICP fit skorlaması için LLM'e temiz bir kriter listesi verin. 'Bu şirket bizim ICP'mize ne kadar uyuyor?' gibi soyut sorular yerine, sektör/employee count/teknoloji üzerinden puanlama isteyin. Structured output (JSON schema) kullanmak, downstream node'ların veriyi kırmadan işlemesini sağlar.",
+          "Prompt'a 2-3 örnek (few-shot) ekleyin: biri ideal müşteri, biri sınırda, biri açıkça uygunsuz. Örnekler skorların zaman içinde tutarlı kalmasını sağlar. Sıcaklığı (temperature) 0-0,2 bandında tutun; yaratıcılık değil tekrarlanabilirlik istiyorsunuz.",
         ],
       },
     ],
@@ -314,23 +415,23 @@ export const BLOG_POSTS: BlogPost[] = [
       steps: [
         {
           name: "Webhook node'u kurun",
-          text: "n8n'de bir Webhook trigger oluşturun ve form aracınızdan (Typeform, HubSpot, custom form) gelen lead payload'unu buraya yönlendirin.",
+          text: "n8n'de bir Webhook trigger oluşturun, metodu POST yapın ve üretilen production URL'ini form aracınıza (Typeform, HubSpot, custom form) tanımlayın. Ardından bir Set node ile alanları email, full_name, company_domain ve utm_campaign şemasına normalize edin. Bir IF node ile boş e-posta ve ücretsiz domainleri baştan ayırın.",
         },
         {
           name: "Apollo veya Clay ile enrichment yapın",
-          text: "Gelen e-posta üzerinden Apollo/Clay API'sini çağırarak şirket adı, employee count, sektör ve teknoloji stack'i bilgilerini çekin.",
+          text: "HTTP Request node'u ile Apollo'nun match endpoint'ini çağırıp şirket adı, employee count, sektör ve teknoloji stack'i bilgilerini çekin; API anahtarını n8n Credentials'ta saklayın. Apollo eşleşme bulamazsa Clay veya Hunter'a düşen bir fallback dalı ekleyin. Rate limit için 'Retry on Fail' ve toplu işlerde Split In Batches kullanın.",
         },
         {
           name: "OpenAI ile ICP fit skorlayın",
-          text: "Zenginleştirilmiş veriyi OpenAI node'una gönderin ve structured output (JSON schema) ile 0-100 arasında ICP fit skoru üretin.",
+          text: "Zenginleştirilmiş veriyi OpenAI node'una gönderin ve JSON schema ile 0-100 arası skor, üç maddelik gerekçe ve önerilen sonraki adımı isteyin. Prompt'a ideal, sınırda ve uygunsuz müşteriden birer örnek ekleyerek skorları tutarlı hâle getirin. Çıktıyı bir Code node ile doğrulayın, şema bozuksa lead'i manuel inceleme koluna yönlendirin.",
         },
         {
           name: "CRM'e yazın ve owner atayın",
-          text: "HubSpot veya Pipedrive node'u ile zenginleştirilmiş kaydı oluşturun, skora göre uygun sales owner'ı otomatik atayın.",
+          text: "HubSpot veya Pipedrive node'unda 'Create or Update' operasyonunu seçip e-postayı benzersiz anahtar yaparak mükerrer kaydı önleyin. Skor, gerekçe ve enrichment alanlarını özel property'lere yazın ki satış ekibi liste filtrelerinde kullanabilsin. Skor bandına göre owner atamasını Switch node ile otomatikleştirin.",
         },
         {
-          name: "Slack bildirimi gönderin",
-          text: "Skor eşiğin (örn. 70+) üstündeyse SDR kanalına Slack mesajı gönderin; düşük skorluları nurture listesine ekleyin.",
+          name: "Slack bildirimi ve hata yönetimi ekleyin",
+          text: "Skor eşiğin (örn. 70+) üstündeyse SDR kanalına CRM linkini içeren bir Slack mesajı gönderin; 40-69 bandını nurture listesine ekleyin. Ana akışa ayrı bir Error Workflow bağlayarak başarısız çalıştırmaları operasyon kanalına bildirin. Hatalı payload'ları bir tabloya yazın ki sorun çözüldüğünde yeniden işleyebilesiniz.",
         },
       ],
     },
@@ -349,25 +450,59 @@ export const BLOG_POSTS: BlogPost[] = [
       "Net Revenue Retention (NRR) %110+ olan SaaS'lar, yeni müşteri olmadan bile büyüyebilir.",
     ],
     publishedAt: "2026-07-15",
-    readingMinutes: 7,
+    readingMinutes: 5,
     tags: ["SaaS", "ARR", "LTV", "CAC", "Churn"],
     sections: [
       {
-        heading: "ARR ve MRR: Büyüklüğün Ölçüsü",
+        heading: "MRR: Tüm Metriklerin Başlangıç Noktası",
+        paragraphs: [
+          "Monthly Recurring Revenue (MRR), yinelenen abonelik gelirinizin aylık toplamıdır. Tek seferlik kurulum ücretleri, danışmanlık gelirleri ve kullanım aşımı faturaları MRR'a dahil edilmez; bunlar tekrar etmediği için büyüme trendini yanıltır. MRR'ı net (yeni + expansion − daralma − churn) olarak takip etmek, büyümenin gerçekte nereden geldiğini gösterir.",
+          "Örnek hesaplama: 120 müşteriniz var, 80'i aylık 1.500 TL, 40'ı aylık 4.000 TL ödüyor. MRR = (80 × 1.500) + (40 × 4.000) = 120.000 + 160.000 = 280.000 TL. Bu ay 8.000 TL yeni abonelik ve 5.000 TL expansion eklendi, 6.000 TL churn oldu; net yeni MRR = 8.000 + 5.000 − 6.000 = 7.000 TL, yani aylık %2,5 büyüme.",
+          "Yıllık faturalanan sözleşmeleri MRR'a dahil ederken 12'ye bölün: 60.000 TL'lik yıllık sözleşme, 5.000 TL MRR demektir. Kendi rakamlarınızı hızlıca görmek için MRR Hesaplayıcı'yı kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "ARR: Büyüklüğün Ölçüsü",
         paragraphs: [
           "Annual Recurring Revenue (ARR), abonelik gelirlerinin yıllıklandırılmış hâlidir. Aylık faturalanan bir SaaS için MRR × 12 formülü kullanılır. Yatırımcılar için ARR; şirketin gerçek büyüklüğünü ve büyüme hızını en net gösteren metriktir.",
+          "Örnek hesaplama: MRR'ınız 280.000 TL ise ARR = 280.000 × 12 = 3.360.000 TL. Aylık %2,5 net büyümeyi 12 ay sürdürürseniz yıl sonu MRR'ı 280.000 × 1,025¹² ≈ 376.000 TL, yani ARR ≈ 4.512.000 TL olur. ARR'ı tek başına değil, büyüme hızıyla birlikte raporlayın; aynı ARR seviyesindeki iki şirketten %60 büyüyeni, %10 büyüyeninin birkaç katı değerlenir.",
+          "ARR'ı yıllık ciroyla karıştırmayın: ciro tek seferlik gelirleri de içerir, ARR yalnızca sözleşmeye bağlı yinelenen kısmı ölçer. Rakamı doğrulamak için ARR Hesaplayıcı'yı kullanın.",
+        ],
+      },
+      {
+        heading: "ARPA: Fiyatlama Sağlığının Göstergesi",
+        paragraphs: [
+          "Average Revenue Per Account (ARPA), müşteri başına ortalama aylık gelirdir ve fiyatlama stratejinizin en hızlı geri bildirim mekanizmasıdır. Formül basit: ARPA = MRR ÷ aktif müşteri sayısı. Yükselen ARPA genelde daha iyi segmentasyon, başarılı upsell veya doğru paketlemenin işaretidir.",
+          "Örnek hesaplama: 280.000 TL MRR ve 120 müşteri ile ARPA = 280.000 ÷ 120 ≈ 2.333 TL. Enterprise segmentinde ARPA 4.000 TL, SMB segmentinde 1.500 TL çıkıyorsa satış ve pazarlama bütçenizin ağırlığını hangi segmente vermeniz gerektiği netleşir. ARPA'yı segment kırılımında izlemeyen ekipler, düşük ARPA'lı müşterilere yüksek CAC harcamaya devam eder.",
+          "ARPA aynı zamanda LTV hesabının girdisidir; küçük bir ARPA artışı, LTV'yi ve dolayısıyla sürdürülebilir CAC tavanınızı doğrudan yükseltir. Segment bazlı rakamlarınızı ARPA Hesaplayıcı ile karşılaştırabilirsiniz.",
         ],
       },
       {
         heading: "CAC ve LTV: Birim Ekonomisi",
         paragraphs: [
-          "Customer Acquisition Cost (CAC), bir müşteriyi kazanmanın toplam pazarlama+satış maliyetidir. Lifetime Value (LTV), müşterinin ömrü boyunca getirdiği net kârdır. Sağlıklı SaaS'ta LTV/CAC oranı en az 3:1 olmalı; CAC geri kazanımı 12 ayı geçmemelidir.",
+          "Customer Acquisition Cost (CAC), bir müşteriyi kazanmanın toplam pazarlama + satış maliyetidir. Lifetime Value (LTV), müşterinin ömrü boyunca getirdiği net kârdır. Sağlıklı SaaS'ta LTV/CAC oranı en az 3:1 olmalı; CAC geri kazanımı 12 ayı geçmemelidir.",
+          "CAC örneği: Bir çeyrekte pazarlamaya 450.000 TL, satış ekibine 300.000 TL harcadınız ve 60 yeni müşteri kazandınız. CAC = (450.000 + 300.000) ÷ 60 = 12.500 TL. Bu hesaba satış ekibinin maaş ve primlerini dahil etmezseniz CAC'ı sistematik olarak olduğundan düşük görürsünüz.",
+          "LTV örneği: ARPA 2.333 TL, brüt marj %80 ve aylık churn %3 ise, ortalama müşteri ömrü 1 ÷ 0,03 ≈ 33 ay. LTV = 2.333 × 0,80 × 33 ≈ 61.600 TL. LTV/CAC = 61.600 ÷ 12.500 ≈ 4,9:1 — sağlıklı bandın üstünde, yani büyümeye daha agresif yatırım yapılabilir. CAC geri kazanımı ise 12.500 ÷ (2.333 × 0,80) ≈ 6,7 ay, hedeflenen 12 ayın altında. Kendi rakamlarınız için CAC Hesaplayıcı ve LTV Hesaplayıcı sayfalarını kullanın.",
         ],
       },
       {
         heading: "Churn ve NRR: Retention Hikayesi",
         paragraphs: [
           "Aylık gross churn %5'in üstündeyse büyüme, kayıp müşterilerin yerini doldurmakla geçer. Net Revenue Retention (NRR) ise upsell/expansion'ı da hesaba katar; %110+ NRR olan SaaS'lar, hiç yeni müşteri kazanmasa bile büyür.",
+          "Churn örneği: Ay başında 120 müşteriniz vardı, ay içinde 4 müşteri ayrıldı. Müşteri churn'ü = 4 ÷ 120 ≈ %3,3. Gelir tarafında ay başı MRR 280.000 TL, kaybedilen MRR 6.000 TL ise gross revenue churn = %2,1. Müşteri churn'ü gelir churn'ünden yüksekse küçük hesapları, tersi durumda büyük hesapları kaybediyorsunuz demektir — aksiyon planı tamamen farklıdır.",
+          "NRR örneği: Ay başı MRR 280.000 TL, expansion 5.000 TL, daralma 1.000 TL, churn 6.000 TL. NRR = (280.000 + 5.000 − 1.000 − 6.000) ÷ 280.000 ≈ %99,3. %100'ün altındaki NRR, mevcut müşteri tabanının küçüldüğünü ve büyümenin tamamen yeni satışa bağımlı olduğunu söyler. Churn senaryolarını Churn Rate Hesaplayıcı ile modelleyebilirsiniz.",
+        ],
+      },
+      {
+        heading: "Bu Metrikleri Birlikte Nasıl Okumalı?",
+        paragraphs: [
+          "Metrikleri tek tek değil, bir zincir olarak okuyun: ARPA fiyatlamayı, MRR momentumu, churn retention'ı, CAC verimliliği, LTV/CAC ise sürdürülebilirliği ölçer. Zincirin bir halkasındaki değişim diğerlerini domino gibi etkiler; örneğin ARPA'daki %10 artış, LTV'yi ve dolayısıyla katlanabileceğiniz CAC tavanını da yaklaşık %10 yükseltir.",
+        ],
+        bullets: [
+          "Haftalık: net yeni MRR, pipeline ve deneme-dönüşüm oranı",
+          "Aylık: ARPA, gross churn, revenue churn ve NRR",
+          "Çeyreklik: CAC, CAC geri kazanım süresi ve LTV/CAC oranı",
+          "Yıllık: ARR, büyüme hızı ve segment bazlı birim ekonomisi",
         ],
       },
     ],
@@ -387,8 +522,26 @@ export const BLOG_POSTS: BlogPost[] = [
         answer:
           "Aktivasyon (ilk değerin hızla yaşanması), müşteri başarısı ekibi ve ürün içi engagement döngüleri en etkili üç kaldıraçtır. Ödeme sorunlarından kaynaklanan involuntary churn için dunning management (Stripe/Chargebee) devreye alınmalıdır.",
       },
+      {
+        question: "ARPA nasıl hesaplanır ve neden önemlidir?",
+        answer:
+          "ARPA = MRR ÷ aktif müşteri sayısı. 280.000 TL MRR ve 120 müşteri için ARPA ≈ 2.333 TL'dir. ARPA, LTV hesabının girdisi olduğu için küçük bir artış bile sürdürülebilir CAC tavanınızı yükseltir; segment bazında izlenmesi gerekir.",
+      },
+      {
+        question: "CAC geri kazanım süresi nasıl bulunur?",
+        answer:
+          "CAC ÷ (ARPA × brüt marj) formülü kullanılır. CAC 12.500 TL, ARPA 2.333 TL ve brüt marj %80 ise geri kazanım ≈ 6,7 aydır. SMB SaaS'ta 12 ayın, enterprise'da 18 ayın altı sağlıklı kabul edilir.",
+      },
     ],
     relatedToolKey: "arr",
+    resources: [
+      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici" },
+      { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici" },
+      { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici" },
+      { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici" },
+      { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici" },
+      { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici" },
+    ],
   },
   {
     slug: "meta-ads-ogrenme-asamasindan-cikma-taktikleri",
@@ -403,7 +556,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "5 taktik: doğru event seçimi, CBO ile bütçe konsolidasyonu, kreatif çeşitliliği, edit disiplini ve Advantage+ testleri.",
     ],
     publishedAt: "2026-07-20",
-    readingMinutes: 8,
+    readingMinutes: 3,
     tags: ["Meta Ads", "Facebook Ads", "Learning Phase", "Performans"],
     sections: [
       {
@@ -504,7 +657,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Bu üç adım, ek reklam bütçesi olmadan CPA'yi %30-50 aralığında düşürebilir.",
     ],
     publishedAt: "2026-07-28",
-    readingMinutes: 10,
+    readingMinutes: 6,
     tags: ["B2B", "Lead Generation", "CAC", "GEO", "Offline Conversion"],
     sections: [
       {
@@ -704,7 +857,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Automation (n8n, Clay, HubSpot) removes manual work and cuts lead-to-meeting time by 40–60%.",
     ],
     publishedAt: "2026-07-01",
-    readingMinutes: 9,
+    readingMinutes: 2,
     tags: ["B2B", "Lead Generation", "Outbound", "ABM"],
     sections: [
       {
@@ -770,30 +923,72 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Without a weekly negative keyword and search terms review, budget keeps leaking.",
     ],
     publishedAt: "2026-07-05",
-    readingMinutes: 8,
+    readingMinutes: 5,
     tags: ["Google Ads", "PMax", "ROAS", "Performance"],
     sections: [
       {
-        heading: "Get Conversion Tracking Right",
+        heading: "1. Get Conversion Tracking Right",
         paragraphs: [
           "Smart Bidding is only as good as the signal you feed it. Without Enhanced Conversions, GA4 server-side tracking and offline conversion import (closed-won deals fed back from the CRM), tROAS/tCPA bidding won't hit target.",
+          "The most common mistake I see is counting every form submission as a single 'Lead' conversion. When a newsletter signup and a demo request carry the same weight, the algorithm optimizes toward cheap but worthless conversions. Split your conversion actions, mark only commercially meaningful ones as Primary, and assign each a realistic conversion value.",
+          "A simple way to assign B2B values: multiply your average contract value by the historical close rate of that conversion type. If 20% of demo requests close and the average contract is $30,000, the demo conversion is worth $6,000. Fed with that value, tROAS starts optimizing revenue potential instead of raw form counts.",
         ],
       },
       {
-        heading: "Performance Max Asset Group Segmentation",
+        heading: "2. Match the Bid Strategy to Account Maturity",
+        paragraphs: [
+          "Bid strategy selection is a function of data volume. Below roughly 15–30 conversions per month, switching to tROAS or tCPA too early starves the algorithm of samples and spend becomes volatile. Start with Maximize Conversions, accumulate data, then graduate to a targeted strategy.",
+          "Set realistic targets. Entering a tROAS more than 20% above your current average makes the system throttle traffic and lose impression share. Tighten the target gradually (10–15% per week) and allow at least a two-week learning window after every change.",
+          "Differentiate by campaign intent: Maximize Clicks or a low tCPA on brand queries, tCPA on generic category searches, tROAS for e-commerce and PMax. Running different strategies across one account is fine; changing the strategy on the same campaign more than once a week is not.",
+        ],
+      },
+      {
+        heading: "3. Treat Audience Signals as a Real Asset",
+        paragraphs: [
+          "In Performance Max and Demand Gen, the audience signal is not targeting — it's a starting hint that decides who the algorithm tests in the first one to two weeks. A PMax campaign launched with a weak signal burns a large share of its budget learning on irrelevant inventory.",
+          "Rank your signals: closed-won customer lists (Customer Match), high-intent site visitors (pricing/demo pages), high-value CRM segments, then custom segments built from competitor and category queries. Relying only on in-market and affinity audiences keeps the signal generic.",
+        ],
+        bullets: [
+          "Customer Match: closed-won customers and high-LTV accounts (aim for 1,000+ records)",
+          "Site visitors: separate pricing, demo and cart-page segments",
+          "Custom segments: competitor brand queries + category queries + competitor domains",
+          "Exclusions: existing customers, job applicants, resellers and suppliers",
+        ],
+      },
+      {
+        heading: "4. Performance Max Asset Group Segmentation",
         paragraphs: [
           "Instead of one giant asset group, splitting by category, margin or season gives the algorithm cleaner signal. Budget flows to high-margin products and ROAS typically lifts 25–40%.",
+          "When you segment, give each asset group its own audience signal, its own headline set and its own feed filter. Copying the same creatives and copy into every group cancels out the benefit. In e-commerce, splitting the feed into three margin tiers (high, mid, low) alone produces a measurable gain in most accounts.",
         ],
       },
       {
-        heading: "Search Terms Report and Negative Keyword Discipline",
+        heading: "5. Put the Creative Test Loop on a Calendar",
+        paragraphs: [
+          "In Google Ads the performance ceiling is usually set by creative, not bidding. Filling all 15 responsive search ad headlines is not enough; split headlines into four themes — benefit, social proof, price/offer and objection handling — and track which theme earns the 'Best' performance label.",
+          "A loop that works: audit assets every two weeks, replace anything labeled 'Low', and refresh at most 30% of assets per cycle. Swapping everything at once resets learning. On PMax, keep at least 5 images, 2 videos and 3 logo variants per asset group; if you supply no video, Google auto-generates one and quality usually falls below brand standard.",
+          "Move winners across channels. A video with a strong thumb-stop rate on Meta usually performs in Demand Gen too, and headline patterns that convert in Search deserve a test as the landing page H1.",
+        ],
+      },
+      {
+        heading: "6. Allocate Budget as a Portfolio, Not per Campaign",
+        paragraphs: [
+          "Splitting budget evenly across campaigns lowers total account return. Allocate on marginal return instead: whichever campaign produces the highest incremental conversion volume for the next $1,000 should get the shift.",
+          "A practical frame is 70/20/10 — 70% to proven campaigns (brand plus high-ROAS categories), 20% to scaling candidates, 10% to new channel and creative tests. Any campaign with impression share lost (budget) above 10% is budget constrained and is your first candidate for an increase.",
+          "Move in steps: raising a daily budget more than 20–30% at once re-triggers the learning phase. During seasonal peaks, manual per-campaign increases keep more control than shared budgets.",
+        ],
+      },
+      {
+        heading: "7. Search Terms Report and Negative Keyword Discipline",
         paragraphs: [
           "Reviewing the search terms report weekly is critical to cut spend on irrelevant queries. Broad match and PMax especially need a constantly growing negative keyword list.",
+          "Make it durable with account-level shared negative lists and add new terms every week. Even though search term visibility is limited in PMax, account-level negatives now apply — excluding brand traffic from PMax prevents non-incremental conversions from inflating your reporting.",
         ],
         bullets: [
           "Brand protection list",
           "Out-of-industry query list",
           "Informational queries (how to, what is, examples) — filter them out in B2B if they don't convert",
+          "Job-seeker queries (careers, salary, hiring) and free/crack-seeking queries",
         ],
       },
     ],
@@ -807,6 +1002,21 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         question: "Does Enhanced Conversions actually make a difference?",
         answer:
           "Yes. Enhanced Conversions offsets post-iOS 14 cookie loss and typically recovers 5–15% of measured conversions, which flows straight into Smart Bidding accuracy.",
+      },
+      {
+        question: "Which bid strategy should I start with?",
+        answer:
+          "Below 15–30 conversions per month, start with Maximize Conversions and build data. Once you pass that threshold move to tCPA, and to tROAS if you can report conversion values. Tighten targets 10–15% per week rather than in one jump.",
+      },
+      {
+        question: "Is an audience signal the same as targeting?",
+        answer:
+          "No. In PMax and Demand Gen the audience signal is a starting hint, not a hard targeting constraint — the system eventually explores beyond it. That's why feeding it Customer Match lists and high-intent site visitors determines how efficient the first weeks are.",
+      },
+      {
+        question: "How often and how much should I raise budgets?",
+        answer:
+          "Increases beyond 20–30% at once re-trigger the learning phase. Prioritize campaigns with impression share lost (budget) above 10%, and wait 7–14 days after each increase before making another change.",
       },
     ],
     relatedToolKey: "roas",
@@ -824,13 +1034,15 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "The critical factor is data quality — bad enrichment burns the entire SDR team's time.",
     ],
     publishedAt: "2026-07-10",
-    readingMinutes: 10,
+    readingMinutes: 6,
     tags: ["n8n", "Automation", "LLM", "Lead Enrichment"],
     sections: [
       {
         heading: "Why n8n Beats Zapier",
         paragraphs: [
           "Because n8n can be self-hosted, it wins on data sovereignty and cost. Beyond 400+ native integrations, a custom HTTP node connects to any API. Rich branching (if/switch) and JavaScript nodes make scenarios possible that Zapier cannot handle.",
+          "The cost gap widens with volume. Zapier bills per task, so a five-step flow burns five tasks per lead; n8n prices per execution, and a self-hosted install costs nothing beyond the server. For a B2B team processing thousands of leads a month, the difference is often close to 10x.",
+          "If you handle GDPR-scoped data, self-hosted n8n keeps lead records off a third-party SaaS server entirely. It installs in about 15 minutes with Docker; use Postgres for persistence and basic auth or a reverse proxy for security.",
         ],
       },
       {
@@ -845,11 +1057,44 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "HubSpot/Pipedrive: enriched data is written to the CRM and an owner is assigned.",
           "Slack: high-scoring leads notify the SDR team in real time.",
         ],
+        image: {
+          src: n8nWorkflowDiagram,
+          alt: "n8n lead enrichment workflow diagram: webhook, Apollo/Clay enrichment, OpenAI ICP scoring, HubSpot CRM and Slack alert steps",
+          caption:
+            "End-to-end n8n lead enrichment flow: webhook → enrichment → LLM scoring → CRM → Slack.",
+          width: 1280,
+          height: 528,
+        },
+      },
+      {
+        heading: "Step-by-Step Setup: Webhook and Data Normalization",
+        paragraphs: [
+          "Create a new workflow in n8n and add a Webhook trigger as the first node. Set the method to POST, copy the generated production URL and paste it into your form tool (Typeform, HubSpot Forms, a custom form). The test URL only works while the editor is open, so switch to the production URL before going live.",
+          "Every tool names its payload fields differently. Add a Set (Edit Fields) node right after the trigger and normalize everything into one schema: email, full_name, company_domain, source, utm_campaign. Skip this and you'll rewrite the whole flow each time a new source is added.",
+          "Finish with an IF node for basic validation: branch off leads with an empty email or a free domain such as gmail or hotmail. Not sending free-domain leads to the enrichment API saves credits and removes bad matches before they enter the pipeline.",
+        ],
+      },
+      {
+        heading: "Step-by-Step Setup: Enrichment and Scoring Nodes",
+        paragraphs: [
+          "For enrichment, call Apollo's people/match endpoint with an HTTP Request node and authenticate through n8n Credentials — never hard-code the API key inside the node. Pull company name, employee count, industry, country and tech stack from the response. If Apollo returns nothing, add a fallback branch that queries a second source such as Clay or Hunter.",
+          "Enrichment APIs enforce rate limits. Turn on 'Retry on Fail' with 2–3 attempts and increasing wait time, and use a Split In Batches node with groups of 10 for bulk imports. That way a 429 response doesn't take the whole workflow down.",
+          "For scoring, send the normalized record to an OpenAI node and request a 0–100 score, a three-bullet rationale and a recommended next step via JSON schema. Validate the model output with a Code node before writing to the CRM; if the shape is unexpected, route the lead into a manual-review branch.",
+        ],
+      },
+      {
+        heading: "Step-by-Step Setup: CRM, Alerts and Error Handling",
+        paragraphs: [
+          "In the HubSpot node use the 'Create or Update Contact' operation with email as the unique key, otherwise every form submission creates a duplicate record. Write the score, the rationale and the enrichment fields into custom properties so sales can filter lists on them.",
+          "Add a Switch node to branch on the score: 70+ posts a rich message to the SDR Slack channel and assigns an owner, 40–69 goes to the nurture list, below 40 is stored in the CRM only. Including the CRM record link in the Slack message noticeably shortens SDR response time.",
+          "Finally, define a separate Error Workflow and attach it in the main workflow's settings. On failure it should alert your ops channel and write the failed payload to a Postgres table or Google Sheet, so no lead disappears silently and you can reprocess records once the issue is fixed.",
+        ],
       },
       {
         heading: "LLM Prompting Tips",
         paragraphs: [
           "Give the model a clean criteria list for ICP fit scoring. Instead of vague questions like 'how well does this company match our ICP?', ask for a score based on industry, employee count and tech. Use structured output (JSON schema) so downstream nodes can process the data without breaking.",
+          "Add two or three few-shot examples to the prompt: one ideal customer, one borderline, one clearly out of scope. Examples keep scores consistent over time. Keep temperature between 0 and 0.2 — you want repeatability, not creativity.",
         ],
       },
     ],
@@ -877,23 +1122,23 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       steps: [
         {
           name: "Set up a Webhook node",
-          text: "Create a Webhook trigger in n8n and point your form tool (Typeform, HubSpot, custom form) at it so lead payloads land here.",
+          text: "Create a Webhook trigger in n8n, set the method to POST and point your form tool (Typeform, HubSpot, custom form) at the production URL. Then normalize the payload with a Set node into email, full_name, company_domain and utm_campaign. Use an IF node to filter out empty emails and free domains up front.",
         },
         {
           name: "Enrich with Apollo or Clay",
-          text: "Call the Apollo/Clay API by email to pull company name, employee count, industry and tech stack for the lead.",
+          text: "Use an HTTP Request node to call Apollo's match endpoint for company name, employee count, industry and tech stack, storing the API key in n8n Credentials. Add a fallback branch to Clay or Hunter when Apollo returns no match. Enable 'Retry on Fail' and use Split In Batches for bulk runs to survive rate limits.",
         },
         {
           name: "Score ICP fit with OpenAI",
-          text: "Pass the enriched data into an OpenAI node and use structured output (JSON schema) to produce an ICP fit score between 0 and 100.",
+          text: "Send the enriched record to an OpenAI node and request a 0–100 score, a three-bullet rationale and a next step through JSON schema. Include one ideal, one borderline and one out-of-scope example in the prompt to keep scoring consistent. Validate the output with a Code node and route malformed responses to manual review.",
         },
         {
           name: "Write to CRM and assign owner",
-          text: "Use a HubSpot or Pipedrive node to create the enriched contact and auto-assign the right sales owner based on the score.",
+          text: "In HubSpot or Pipedrive use the 'Create or Update' operation with email as the unique key to avoid duplicates. Write score, rationale and enrichment fields into custom properties so sales can filter on them. Automate owner assignment by score band with a Switch node.",
         },
         {
-          name: "Send a Slack notification",
-          text: "If the score is above a threshold (e.g. 70+), post to the SDR Slack channel; drop lower scores into a nurture list.",
+          name: "Add Slack alerts and error handling",
+          text: "If the score clears your threshold (e.g. 70+), post a Slack message containing the CRM link to the SDR channel and send the 40–69 band to nurture. Attach a dedicated Error Workflow so failed executions alert your ops channel. Log failing payloads to a table so they can be reprocessed after a fix.",
         },
       ],
     },
@@ -912,25 +1157,59 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "SaaS companies with Net Revenue Retention (NRR) above 110% can grow without any new customers.",
     ],
     publishedAt: "2026-07-15",
-    readingMinutes: 7,
+    readingMinutes: 5,
     tags: ["SaaS", "ARR", "LTV", "CAC", "Churn"],
     sections: [
       {
-        heading: "ARR and MRR: Measuring Size",
+        heading: "MRR: Where Every Other Metric Starts",
+        paragraphs: [
+          "Monthly Recurring Revenue (MRR) is the monthly total of your recurring subscription revenue. One-off setup fees, services revenue and overage invoices don't belong in MRR — they don't repeat, so they distort the growth trend. Tracking MRR on a net basis (new + expansion − contraction − churn) shows where growth actually comes from.",
+          "Worked example: you have 120 customers — 80 paying $150/month and 40 paying $400/month. MRR = (80 × 150) + (40 × 400) = 12,000 + 16,000 = $28,000. This month you added $800 in new subscriptions and $500 in expansion, and lost $600 to churn; net new MRR = 800 + 500 − 600 = $700, i.e. 2.5% monthly growth.",
+          "When folding annual contracts into MRR, divide by 12: a $60,000 annual contract equals $5,000 of MRR. Run your own numbers with the MRR Calculator.",
+        ],
+      },
+      {
+        heading: "ARR: Measuring Size",
         paragraphs: [
           "Annual Recurring Revenue (ARR) is the annualized form of subscription revenue. For monthly-billed SaaS, ARR = MRR × 12. For investors, ARR is the clearest single measure of company size and growth rate.",
+          "Worked example: with $28,000 MRR, ARR = 28,000 × 12 = $336,000. Sustain 2.5% net monthly growth for a year and MRR reaches 28,000 × 1.025¹² ≈ $37,600, so ARR ≈ $451,000. Never report ARR without growth rate — of two companies at the same ARR, the one growing 60% is valued at a multiple of the one growing 10%.",
+          "Don't confuse ARR with annual revenue: revenue includes one-off income, ARR measures only the contracted recurring portion. Validate the number with the ARR Calculator.",
+        ],
+      },
+      {
+        heading: "ARPA: The Health Check on Pricing",
+        paragraphs: [
+          "Average Revenue Per Account (ARPA) is average monthly revenue per customer and the fastest feedback loop on your pricing strategy. The formula is simple: ARPA = MRR ÷ active customers. Rising ARPA usually signals better segmentation, successful upsell or smarter packaging.",
+          "Worked example: $28,000 MRR across 120 customers gives ARPA ≈ $233. If enterprise ARPA is $400 and SMB ARPA is $150, it becomes obvious which segment deserves more sales and marketing budget. Teams that never break ARPA down by segment keep spending high CAC on low-ARPA customers.",
+          "ARPA is also an input to LTV, so a small increase directly raises both LTV and the CAC ceiling you can sustain. Compare your segment numbers with the ARPA Calculator.",
         ],
       },
       {
         heading: "CAC and LTV: Unit Economics",
         paragraphs: [
           "Customer Acquisition Cost (CAC) is the total marketing + sales cost to acquire one customer. Lifetime Value (LTV) is the net profit that customer brings across their tenure. Healthy SaaS runs at an LTV/CAC of at least 3:1 with CAC payback under 12 months.",
+          "CAC example: in one quarter you spent $45,000 on marketing and $30,000 on the sales team, and acquired 60 new customers. CAC = (45,000 + 30,000) ÷ 60 = $1,250. Leave sales salaries and commissions out of that calculation and you'll systematically understate CAC.",
+          "LTV example: with ARPA of $233, 80% gross margin and 3% monthly churn, average customer lifetime is 1 ÷ 0.03 ≈ 33 months. LTV = 233 × 0.80 × 33 ≈ $6,150. LTV/CAC = 6,150 ÷ 1,250 ≈ 4.9:1 — above the healthy band, meaning you can invest more aggressively in growth. CAC payback is 1,250 ÷ (233 × 0.80) ≈ 6.7 months, comfortably under the 12-month target. Use the CAC Calculator and LTV Calculator for your own inputs.",
         ],
       },
       {
         heading: "Churn and NRR: The Retention Story",
         paragraphs: [
           "If monthly gross churn tops 5%, growth is spent filling the leaky bucket. Net Revenue Retention (NRR) also counts upsell/expansion — SaaS companies above 110% NRR grow even without net-new customers.",
+          "Churn example: you started the month with 120 customers and lost 4. Customer churn = 4 ÷ 120 ≈ 3.3%. On the revenue side, starting MRR of $28,000 with $600 of lost MRR gives gross revenue churn of 2.1%. When customer churn exceeds revenue churn you're losing small accounts; the reverse means you're losing large ones — and the action plan is completely different.",
+          "NRR example: starting MRR $28,000, expansion $500, contraction $100, churn $600. NRR = (28,000 + 500 − 100 − 600) ÷ 28,000 ≈ 99.3%. Anything under 100% says your installed base is shrinking and growth depends entirely on new sales. Model scenarios with the Churn Rate Calculator.",
+        ],
+      },
+      {
+        heading: "How to Read These Metrics Together",
+        paragraphs: [
+          "Read the metrics as a chain, not in isolation: ARPA measures pricing, MRR measures momentum, churn measures retention, CAC measures efficiency and LTV/CAC measures sustainability. A change in one link cascades — a 10% lift in ARPA raises LTV, and therefore your affordable CAC ceiling, by roughly 10%.",
+        ],
+        bullets: [
+          "Weekly: net new MRR, pipeline and trial-to-paid conversion",
+          "Monthly: ARPA, gross churn, revenue churn and NRR",
+          "Quarterly: CAC, CAC payback period and LTV/CAC ratio",
+          "Annually: ARR, growth rate and unit economics by segment",
         ],
       },
     ],
@@ -950,8 +1229,26 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         answer:
           "The three most effective levers are activation (fast time-to-value), a customer success team and in-product engagement loops. For involuntary churn from failed payments, deploy dunning management (Stripe/Chargebee).",
       },
+      {
+        question: "How is ARPA calculated and why does it matter?",
+        answer:
+          "ARPA = MRR ÷ active customers. With $28,000 MRR across 120 customers, ARPA ≈ $233. Because ARPA feeds the LTV calculation, even a small increase raises the CAC you can sustainably pay — track it by segment, not just in aggregate.",
+      },
+      {
+        question: "How do I calculate CAC payback period?",
+        answer:
+          "Use CAC ÷ (ARPA × gross margin). With CAC of $1,250, ARPA of $233 and 80% gross margin, payback is ≈ 6.7 months. Under 12 months is healthy for SMB SaaS; under 18 months is acceptable for enterprise.",
+      },
     ],
     relatedToolKey: "arr",
+    resources: [
+      { label: "MRR Calculator", href: "/en/free-marketing-tools/mrr-calculator" },
+      { label: "ARPA Calculator", href: "/en/free-marketing-tools/arpa-calculator" },
+      { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator" },
+      { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator" },
+      { label: "LTV Calculator", href: "/en/free-marketing-tools/ltv-calculator" },
+      { label: "Churn Rate Calculator", href: "/en/free-marketing-tools/churn-rate-calculator" },
+    ],
   },
   {
     slug: "meta-ads-exit-learning-phase-tactics",
@@ -966,7 +1263,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "5 tactics: pick the right event, consolidate budget with CBO, expand creative library, apply edit discipline, and test Advantage+.",
     ],
     publishedAt: "2026-07-20",
-    readingMinutes: 8,
+    readingMinutes: 3,
     tags: ["Meta Ads", "Facebook Ads", "Learning Phase", "Performance"],
     sections: [
       {
@@ -1067,7 +1364,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Together these three steps can cut CPA by 30–50% without increasing ad spend.",
     ],
     publishedAt: "2026-07-28",
-    readingMinutes: 10,
+    readingMinutes: 6,
     tags: ["B2B", "Lead Generation", "CAC", "GEO", "Offline Conversion"],
     sections: [
       {

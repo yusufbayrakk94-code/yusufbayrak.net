@@ -255,6 +255,23 @@ export default function BlogPost() {
                     ))}
                   </ul>
                 )}
+                {sec.image && (
+                  <figure className="mt-6">
+                    <img
+                      src={sec.image.src}
+                      alt={sec.image.alt}
+                      width={sec.image.width ?? 1280}
+                      height={sec.image.height ?? 528}
+                      loading="lazy"
+                      className="w-full rounded-lg border border-border bg-card"
+                    />
+                    {sec.image.caption && (
+                      <figcaption className="mt-2 text-xs font-mono text-muted-foreground">
+                        {sec.image.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                )}
               </section>
             ))}
           </div>
