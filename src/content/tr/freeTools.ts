@@ -71,6 +71,8 @@ export const freeToolsPage = {
     { key: "llms",  name: "llms.txt Oluşturucu",       description: "AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.", href: "/ucretsiz-araclar/llms-txt-olusturucu" },
     { key: "gross", name: "Brüt Kar Marjı Hesaplayıcı", description: "Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici" },
     { key: "net",   name: "Net Kar Marjı Hesaplayıcı",  description: "Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici" },
+    { key: "mrr",   name: "MRR Hesaplayıcı",           description: "Aylık yinelenen gelirinizi (MRR) hesaplayın, ARR karşılığını görün.", href: "/ucretsiz-araclar/mrr-hesaplayici" },
+    { key: "arpa",  name: "ARPA Hesaplayıcı",          description: "Hesap başına ortalama gelirinizi (ARPA) toplam MRR ve hesap sayısıyla hesaplayın.", href: "/ucretsiz-araclar/arpa-hesaplayici" },
     { key: "conversion", name: "Dönüşüm Oranı Hesaplayıcı", description: "Ziyaretçi ve dönüşüm sayınızla dönüşüm oranınızı ve hedefe farkı hesaplayın.", href: "/ucretsiz-araclar/donusum-orani-hesaplayici" },
   ],
 };
@@ -192,7 +194,7 @@ export const toolCategories = [
         a: "Erken aşamada (ürün-pazar uyumu öncesi) churn ve aktivasyon en kritik metriklerdir; CAC ve LTV örneklem küçük olduğu için oynaktır. Büyüme aşamasında CAC, LTV, LTV:CAC oranı ve CAC geri ödeme süresi bütçe dağıtımının temeli olur. Ölçek aşamasında ise ARR büyüme hızı, net gelir tutundurma (NRR) ve kohort bazlı churn öne çıkar.",
       },
     ],
-    tools: ["arr", "cac", "ltv", "churn"],
+    tools: ["arr", "mrr", "arpa", "cac", "ltv", "churn"],
   },
   {
     key: "ecommerce",
