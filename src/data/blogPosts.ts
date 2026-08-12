@@ -334,6 +334,8 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "n8n Neden Zapier'den Daha Güçlü?",
         paragraphs: [
           "n8n; self-hosted çalışabildiği için veri egemenliği ve maliyet avantajı sağlar. 400+ native entegrasyon dışında custom HTTP node ile herhangi bir API'ye bağlanabilir. Karmaşık dallanma (if/switch) ve JavaScript node'ları, Zapier'de mümkün olmayan senaryoları çözer.",
+          "Maliyet farkı hacimle birlikte açılır. Zapier adım (task) başına ücretlendirdiği için 5 adımlı bir akış, her lead'de 5 task tüketir; n8n'de fiyatlama execution (çalıştırma) başınadır ve self-hosted kurulumda yalnızca sunucu maliyeti vardır. Aylık binlerce lead işleyen bir B2B ekibinde bu fark genellikle 10 kata kadar çıkar.",
+          "KVKK/GDPR kapsamındaki verilerle çalışıyorsanız self-hosted n8n, lead verisinin üçüncü taraf bir SaaS'ın sunucusundan geçmemesini sağlar. Docker ile 15 dakikada kurulabilir; kalıcılık için Postgres, güvenlik için de basic auth veya reverse proxy önerilir.",
         ],
       },
       {
@@ -348,11 +350,44 @@ export const BLOG_POSTS: BlogPost[] = [
           "HubSpot/Pipedrive: Zenginleştirilmiş veri CRM'e yazılır ve owner atanır.",
           "Slack: Yüksek skorlu leadler SDR ekibine anlık bildirim olarak gider.",
         ],
+        image: {
+          src: n8nWorkflowDiagram,
+          alt: "n8n lead enrichment workflow diyagramı: Webhook, Apollo/Clay zenginleştirme, OpenAI ICP skorlama, HubSpot CRM ve Slack bildirimi adımları",
+          caption:
+            "Uçtan uca n8n lead enrichment akışı: webhook → enrichment → LLM skorlama → CRM → Slack.",
+          width: 1280,
+          height: 528,
+        },
+      },
+      {
+        heading: "Adım Adım Kurulum: Webhook ve Veri Normalizasyonu",
+        paragraphs: [
+          "n8n'de yeni bir workflow açın ve ilk node olarak Webhook trigger ekleyin. Metodu POST seçin, üretilen production URL'ini kopyalayın ve form aracınızın (Typeform, HubSpot Forms, custom form) webhook alanına yapıştırın. Test URL'i yalnızca editör açıkken çalışır; canlıya alırken production URL'ini kullanmayı unutmayın.",
+          "Gelen payload her araçta farklı isimlendirilir. Hemen ardına bir Set (Edit Fields) node'u ekleyip alanları tek bir şemaya normalize edin: email, full_name, company_domain, source, utm_campaign. Bu adımı atlarsanız kaynak eklendikçe akışın tamamını yeniden yazmanız gerekir.",
+          "Son olarak bir IF node ile temel doğrulama yapın: e-posta boşsa veya gmail/hotmail gibi ücretsiz bir domainse akışı ayırın. Ücretsiz domainli leadleri enrichment API'sine göndermemek, hem kredi tasarrufu sağlar hem de hatalı eşleşmeleri baştan eler.",
+        ],
+      },
+      {
+        heading: "Adım Adım Kurulum: Enrichment ve Skorlama Node'ları",
+        paragraphs: [
+          "Enrichment için HTTP Request node'u ile Apollo'nun people/match endpoint'ini çağırın; kimlik doğrulamayı n8n Credentials üzerinden yapın, API anahtarını asla node içine gömmeyin. Yanıttan şirket adı, employee count, sektör, ülke ve teknoloji stack'i alanlarını alın. Apollo boş dönerse ikinci bir kaynağı (Clay veya Hunter) yedek olarak çağıran bir fallback dalı kurun.",
+          "Enrichment API'leri rate limit uygular. HTTP node'un 'Retry on Fail' seçeneğini açın, 2-3 deneme ve artan bekleme süresi tanımlayın; toplu içe aktarımlarda ise Split In Batches node'u ile 10'arlı gruplar hâlinde ilerleyin. Böylece 429 hataları akışı komple düşürmez.",
+          "Skorlama adımında OpenAI node'una normalize edilmiş veriyi gönderin ve JSON schema ile 0-100 arası bir skor, üç maddelik gerekçe ve önerilen sonraki adım isteyin. Model çıktısını doğrudan CRM'e yazmadan önce bir Code node ile şema doğrulaması yapın; beklenmeyen çıktı gelirse lead'i 'manuel inceleme' koluna yönlendirin.",
+        ],
+      },
+      {
+        heading: "Adım Adım Kurulum: CRM, Bildirim ve Hata Yönetimi",
+        paragraphs: [
+          "HubSpot node'unda 'Create or Update Contact' operasyonunu kullanın ve e-postayı benzersiz anahtar olarak seçin; aksi hâlde her form gönderiminde mükerrer kayıt oluşur. Skoru, gerekçeyi ve enrichment alanlarını özel property'lere yazın ki satış ekibi bunları liste filtrelerinde kullanabilsin.",
+          "Skor eşiğine göre dallanma için Switch node'u ekleyin: 70+ ise Slack'te SDR kanalına zengin formatlı bir mesaj gönderin ve owner atayın, 40-69 arası nurture listesine, 40 altı ise yalnızca CRM'e kaydedin. Slack mesajına lead'in CRM linkini eklemek, SDR'ın kayda ulaşma süresini belirgin şekilde kısaltır.",
+          "Son olarak ayrı bir Error Workflow tanımlayın ve ana akışın ayarlarından buna bağlayın. Hata durumunda operasyon kanalına bildirim düşsün, başarısız payload bir Postgres tablosuna veya Google Sheets'e yazılsın; böylece hiçbir lead sessizce kaybolmaz ve sorun çözüldüğünde kayıtları yeniden işleyebilirsiniz.",
+        ],
       },
       {
         heading: "LLM Prompting İpuçları",
         paragraphs: [
           "ICP fit skorlaması için LLM'e temiz bir kriter listesi verin. 'Bu şirket bizim ICP'mize ne kadar uyuyor?' gibi soyut sorular yerine, sektör/employee count/teknoloji üzerinden puanlama isteyin. Structured output (JSON schema) kullanmak, downstream node'ların veriyi kırmadan işlemesini sağlar.",
+          "Prompt'a 2-3 örnek (few-shot) ekleyin: biri ideal müşteri, biri sınırda, biri açıkça uygunsuz. Örnekler skorların zaman içinde tutarlı kalmasını sağlar. Sıcaklığı (temperature) 0-0,2 bandında tutun; yaratıcılık değil tekrarlanabilirlik istiyorsunuz.",
         ],
       },
     ],
@@ -380,23 +415,23 @@ export const BLOG_POSTS: BlogPost[] = [
       steps: [
         {
           name: "Webhook node'u kurun",
-          text: "n8n'de bir Webhook trigger oluşturun ve form aracınızdan (Typeform, HubSpot, custom form) gelen lead payload'unu buraya yönlendirin.",
+          text: "n8n'de bir Webhook trigger oluşturun, metodu POST yapın ve üretilen production URL'ini form aracınıza (Typeform, HubSpot, custom form) tanımlayın. Ardından bir Set node ile alanları email, full_name, company_domain ve utm_campaign şemasına normalize edin. Bir IF node ile boş e-posta ve ücretsiz domainleri baştan ayırın.",
         },
         {
           name: "Apollo veya Clay ile enrichment yapın",
-          text: "Gelen e-posta üzerinden Apollo/Clay API'sini çağırarak şirket adı, employee count, sektör ve teknoloji stack'i bilgilerini çekin.",
+          text: "HTTP Request node'u ile Apollo'nun match endpoint'ini çağırıp şirket adı, employee count, sektör ve teknoloji stack'i bilgilerini çekin; API anahtarını n8n Credentials'ta saklayın. Apollo eşleşme bulamazsa Clay veya Hunter'a düşen bir fallback dalı ekleyin. Rate limit için 'Retry on Fail' ve toplu işlerde Split In Batches kullanın.",
         },
         {
           name: "OpenAI ile ICP fit skorlayın",
-          text: "Zenginleştirilmiş veriyi OpenAI node'una gönderin ve structured output (JSON schema) ile 0-100 arasında ICP fit skoru üretin.",
+          text: "Zenginleştirilmiş veriyi OpenAI node'una gönderin ve JSON schema ile 0-100 arası skor, üç maddelik gerekçe ve önerilen sonraki adımı isteyin. Prompt'a ideal, sınırda ve uygunsuz müşteriden birer örnek ekleyerek skorları tutarlı hâle getirin. Çıktıyı bir Code node ile doğrulayın, şema bozuksa lead'i manuel inceleme koluna yönlendirin.",
         },
         {
           name: "CRM'e yazın ve owner atayın",
-          text: "HubSpot veya Pipedrive node'u ile zenginleştirilmiş kaydı oluşturun, skora göre uygun sales owner'ı otomatik atayın.",
+          text: "HubSpot veya Pipedrive node'unda 'Create or Update' operasyonunu seçip e-postayı benzersiz anahtar yaparak mükerrer kaydı önleyin. Skor, gerekçe ve enrichment alanlarını özel property'lere yazın ki satış ekibi liste filtrelerinde kullanabilsin. Skor bandına göre owner atamasını Switch node ile otomatikleştirin.",
         },
         {
-          name: "Slack bildirimi gönderin",
-          text: "Skor eşiğin (örn. 70+) üstündeyse SDR kanalına Slack mesajı gönderin; düşük skorluları nurture listesine ekleyin.",
+          name: "Slack bildirimi ve hata yönetimi ekleyin",
+          text: "Skor eşiğin (örn. 70+) üstündeyse SDR kanalına CRM linkini içeren bir Slack mesajı gönderin; 40-69 bandını nurture listesine ekleyin. Ana akışa ayrı bir Error Workflow bağlayarak başarısız çalıştırmaları operasyon kanalına bildirin. Hatalı payload'ları bir tabloya yazın ki sorun çözüldüğünde yeniden işleyebilesiniz.",
         },
       ],
     },
