@@ -1089,21 +1089,55 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     tags: ["SaaS", "ARR", "LTV", "CAC", "Churn"],
     sections: [
       {
-        heading: "ARR and MRR: Measuring Size",
+        heading: "MRR: Where Every Other Metric Starts",
+        paragraphs: [
+          "Monthly Recurring Revenue (MRR) is the monthly total of your recurring subscription revenue. One-off setup fees, services revenue and overage invoices don't belong in MRR — they don't repeat, so they distort the growth trend. Tracking MRR on a net basis (new + expansion − contraction − churn) shows where growth actually comes from.",
+          "Worked example: you have 120 customers — 80 paying $150/month and 40 paying $400/month. MRR = (80 × 150) + (40 × 400) = 12,000 + 16,000 = $28,000. This month you added $800 in new subscriptions and $500 in expansion, and lost $600 to churn; net new MRR = 800 + 500 − 600 = $700, i.e. 2.5% monthly growth.",
+          "When folding annual contracts into MRR, divide by 12: a $60,000 annual contract equals $5,000 of MRR. Run your own numbers with the MRR Calculator.",
+        ],
+      },
+      {
+        heading: "ARR: Measuring Size",
         paragraphs: [
           "Annual Recurring Revenue (ARR) is the annualized form of subscription revenue. For monthly-billed SaaS, ARR = MRR × 12. For investors, ARR is the clearest single measure of company size and growth rate.",
+          "Worked example: with $28,000 MRR, ARR = 28,000 × 12 = $336,000. Sustain 2.5% net monthly growth for a year and MRR reaches 28,000 × 1.025¹² ≈ $37,600, so ARR ≈ $451,000. Never report ARR without growth rate — of two companies at the same ARR, the one growing 60% is valued at a multiple of the one growing 10%.",
+          "Don't confuse ARR with annual revenue: revenue includes one-off income, ARR measures only the contracted recurring portion. Validate the number with the ARR Calculator.",
+        ],
+      },
+      {
+        heading: "ARPA: The Health Check on Pricing",
+        paragraphs: [
+          "Average Revenue Per Account (ARPA) is average monthly revenue per customer and the fastest feedback loop on your pricing strategy. The formula is simple: ARPA = MRR ÷ active customers. Rising ARPA usually signals better segmentation, successful upsell or smarter packaging.",
+          "Worked example: $28,000 MRR across 120 customers gives ARPA ≈ $233. If enterprise ARPA is $400 and SMB ARPA is $150, it becomes obvious which segment deserves more sales and marketing budget. Teams that never break ARPA down by segment keep spending high CAC on low-ARPA customers.",
+          "ARPA is also an input to LTV, so a small increase directly raises both LTV and the CAC ceiling you can sustain. Compare your segment numbers with the ARPA Calculator.",
         ],
       },
       {
         heading: "CAC and LTV: Unit Economics",
         paragraphs: [
           "Customer Acquisition Cost (CAC) is the total marketing + sales cost to acquire one customer. Lifetime Value (LTV) is the net profit that customer brings across their tenure. Healthy SaaS runs at an LTV/CAC of at least 3:1 with CAC payback under 12 months.",
+          "CAC example: in one quarter you spent $45,000 on marketing and $30,000 on the sales team, and acquired 60 new customers. CAC = (45,000 + 30,000) ÷ 60 = $1,250. Leave sales salaries and commissions out of that calculation and you'll systematically understate CAC.",
+          "LTV example: with ARPA of $233, 80% gross margin and 3% monthly churn, average customer lifetime is 1 ÷ 0.03 ≈ 33 months. LTV = 233 × 0.80 × 33 ≈ $6,150. LTV/CAC = 6,150 ÷ 1,250 ≈ 4.9:1 — above the healthy band, meaning you can invest more aggressively in growth. CAC payback is 1,250 ÷ (233 × 0.80) ≈ 6.7 months, comfortably under the 12-month target. Use the CAC Calculator and LTV Calculator for your own inputs.",
         ],
       },
       {
         heading: "Churn and NRR: The Retention Story",
         paragraphs: [
           "If monthly gross churn tops 5%, growth is spent filling the leaky bucket. Net Revenue Retention (NRR) also counts upsell/expansion — SaaS companies above 110% NRR grow even without net-new customers.",
+          "Churn example: you started the month with 120 customers and lost 4. Customer churn = 4 ÷ 120 ≈ 3.3%. On the revenue side, starting MRR of $28,000 with $600 of lost MRR gives gross revenue churn of 2.1%. When customer churn exceeds revenue churn you're losing small accounts; the reverse means you're losing large ones — and the action plan is completely different.",
+          "NRR example: starting MRR $28,000, expansion $500, contraction $100, churn $600. NRR = (28,000 + 500 − 100 − 600) ÷ 28,000 ≈ 99.3%. Anything under 100% says your installed base is shrinking and growth depends entirely on new sales. Model scenarios with the Churn Rate Calculator.",
+        ],
+      },
+      {
+        heading: "How to Read These Metrics Together",
+        paragraphs: [
+          "Read the metrics as a chain, not in isolation: ARPA measures pricing, MRR measures momentum, churn measures retention, CAC measures efficiency and LTV/CAC measures sustainability. A change in one link cascades — a 10% lift in ARPA raises LTV, and therefore your affordable CAC ceiling, by roughly 10%.",
+        ],
+        bullets: [
+          "Weekly: net new MRR, pipeline and trial-to-paid conversion",
+          "Monthly: ARPA, gross churn, revenue churn and NRR",
+          "Quarterly: CAC, CAC payback period and LTV/CAC ratio",
+          "Annually: ARR, growth rate and unit economics by segment",
         ],
       },
     ],
@@ -1123,8 +1157,26 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         answer:
           "The three most effective levers are activation (fast time-to-value), a customer success team and in-product engagement loops. For involuntary churn from failed payments, deploy dunning management (Stripe/Chargebee).",
       },
+      {
+        question: "How is ARPA calculated and why does it matter?",
+        answer:
+          "ARPA = MRR ÷ active customers. With $28,000 MRR across 120 customers, ARPA ≈ $233. Because ARPA feeds the LTV calculation, even a small increase raises the CAC you can sustainably pay — track it by segment, not just in aggregate.",
+      },
+      {
+        question: "How do I calculate CAC payback period?",
+        answer:
+          "Use CAC ÷ (ARPA × gross margin). With CAC of $1,250, ARPA of $233 and 80% gross margin, payback is ≈ 6.7 months. Under 12 months is healthy for SMB SaaS; under 18 months is acceptable for enterprise.",
+      },
     ],
     relatedToolKey: "arr",
+    resources: [
+      { label: "MRR Calculator", href: "/en/free-marketing-tools/mrr-calculator" },
+      { label: "ARPA Calculator", href: "/en/free-marketing-tools/arpa-calculator" },
+      { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator" },
+      { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator" },
+      { label: "LTV Calculator", href: "/en/free-marketing-tools/ltv-calculator" },
+      { label: "Churn Rate Calculator", href: "/en/free-marketing-tools/churn-rate-calculator" },
+    ],
   },
   {
     slug: "meta-ads-exit-learning-phase-tactics",
