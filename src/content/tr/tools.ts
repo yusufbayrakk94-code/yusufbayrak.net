@@ -212,7 +212,7 @@ export const conversionRate: ToolContent = {
   path: "/ucretsiz-araclar/donusum-orani-hesaplayici",
   title: "Dönüşüm Oranı Hesaplayıcı",
   description:
-    "Web sitenizin veya kampanyanızın dönüşüm oranını saniyeler içinde hesaplayın.",
+    "Web sitenizin, kampanyanızın veya e-ticaretinizin dönüşüm oranını ücretsiz olarak saniyeler içinde hesaplayın.",
   intro:
     "Toplam ziyaretçi ve dönüşüm sayınızı girin; dönüşüm oranınızı anında görün. Hedef bir oran belirlerseniz aradaki farkı ve hedefe ulaşmak için gereken ek dönüşüm sayısını da hesaplar.",
   seoParagraphs: [
