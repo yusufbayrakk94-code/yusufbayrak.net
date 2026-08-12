@@ -150,7 +150,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Otomasyon (n8n, Clay, HubSpot) manuel işleri ortadan kaldırır ve lead-to-meeting süresini %40-60 kısaltır.",
     ],
     publishedAt: "2026-07-01",
-    readingMinutes: 9,
+    readingMinutes: 2,
     tags: ["B2B", "Lead Generation", "Outbound", "ABM"],
     sections: [
       {
@@ -216,7 +216,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Negative keyword ve arama terimi raporu haftalık disipline dönüşmeden bütçe sızıntısı devam eder.",
     ],
     publishedAt: "2026-07-05",
-    readingMinutes: 8,
+    readingMinutes: 5,
     tags: ["Google Ads", "PMax", "ROAS", "Performans"],
     sections: [
       {
@@ -327,7 +327,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Kritik nokta: veri kalitesi. Hatalı enrichment, tüm SDR ekibinin zamanını yakar.",
     ],
     publishedAt: "2026-07-10",
-    readingMinutes: 10,
+    readingMinutes: 5,
     tags: ["n8n", "Otomasyon", "LLM", "Lead Enrichment"],
     sections: [
       {
@@ -450,7 +450,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Net Revenue Retention (NRR) %110+ olan SaaS'lar, yeni müşteri olmadan bile büyüyebilir.",
     ],
     publishedAt: "2026-07-15",
-    readingMinutes: 7,
+    readingMinutes: 5,
     tags: ["SaaS", "ARR", "LTV", "CAC", "Churn"],
     sections: [
       {
@@ -556,7 +556,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "5 taktik: doğru event seçimi, CBO ile bütçe konsolidasyonu, kreatif çeşitliliği, edit disiplini ve Advantage+ testleri.",
     ],
     publishedAt: "2026-07-20",
-    readingMinutes: 8,
+    readingMinutes: 3,
     tags: ["Meta Ads", "Facebook Ads", "Learning Phase", "Performans"],
     sections: [
       {
@@ -657,7 +657,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Bu üç adım, ek reklam bütçesi olmadan CPA'yi %30-50 aralığında düşürebilir.",
     ],
     publishedAt: "2026-07-28",
-    readingMinutes: 10,
+    readingMinutes: 6,
     tags: ["B2B", "Lead Generation", "CAC", "GEO", "Offline Conversion"],
     sections: [
       {
@@ -857,7 +857,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Automation (n8n, Clay, HubSpot) removes manual work and cuts lead-to-meeting time by 40–60%.",
     ],
     publishedAt: "2026-07-01",
-    readingMinutes: 9,
+    readingMinutes: 2,
     tags: ["B2B", "Lead Generation", "Outbound", "ABM"],
     sections: [
       {
@@ -923,7 +923,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Without a weekly negative keyword and search terms review, budget keeps leaking.",
     ],
     publishedAt: "2026-07-05",
-    readingMinutes: 8,
+    readingMinutes: 5,
     tags: ["Google Ads", "PMax", "ROAS", "Performance"],
     sections: [
       {
@@ -1034,7 +1034,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "The critical factor is data quality — bad enrichment burns the entire SDR team's time.",
     ],
     publishedAt: "2026-07-10",
-    readingMinutes: 10,
+    readingMinutes: 6,
     tags: ["n8n", "Automation", "LLM", "Lead Enrichment"],
     sections: [
       {
@@ -1157,7 +1157,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "SaaS companies with Net Revenue Retention (NRR) above 110% can grow without any new customers.",
     ],
     publishedAt: "2026-07-15",
-    readingMinutes: 7,
+    readingMinutes: 5,
     tags: ["SaaS", "ARR", "LTV", "CAC", "Churn"],
     sections: [
       {
@@ -1263,7 +1263,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "5 tactics: pick the right event, consolidate budget with CBO, expand creative library, apply edit discipline, and test Advantage+.",
     ],
     publishedAt: "2026-07-20",
-    readingMinutes: 8,
+    readingMinutes: 3,
     tags: ["Meta Ads", "Facebook Ads", "Learning Phase", "Performance"],
     sections: [
       {
@@ -1364,7 +1364,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Together these three steps can cut CPA by 30–50% without increasing ad spend.",
     ],
     publishedAt: "2026-07-28",
-    readingMinutes: 10,
+    readingMinutes: 6,
     tags: ["B2B", "Lead Generation", "CAC", "GEO", "Offline Conversion"],
     sections: [
       {
