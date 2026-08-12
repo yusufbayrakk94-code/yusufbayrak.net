@@ -19,6 +19,13 @@ export interface BlogSection {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  image?: {
+    src: string;
+    alt: string;
+    caption?: string;
+    width?: number;
+    height?: number;
+  };
 }
 
 export interface BlogHowToStep {
