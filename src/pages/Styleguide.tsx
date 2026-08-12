@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { CodeLabel } from "@/components/ui/CodeLabel";
@@ -8,6 +9,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function Styleguide() {
   return (
     <Layout>
+      <Helmet>
+        <title>Styleguide | Yusuf Bayrak</title>
+        <meta name="robots" content="noindex,nofollow" />
+      </Helmet>
       <section className="py-20">
         <div className="container">
           {/* Page Header */}
