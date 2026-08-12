@@ -218,26 +218,68 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["Google Ads", "PMax", "ROAS", "Performans"],
     sections: [
       {
-        heading: "Conversion Tracking'i Doğru Kurgulayın",
+        heading: "1. Conversion Tracking'i Doğru Kurgulayın",
         paragraphs: [
-          "Smart Bidding algoritmaları yalnızca aldıkları sinyal kadar iyidir. Enhanced Conversions, GA4 server-side tracking ve offline conversion import (CRM'den kapanan satışların geri beslenmesi) olmadan tIROAS/tCPA teklif stratejileri hedefini tutturamaz.",
+          "Smart Bidding algoritmaları yalnızca aldıkları sinyal kadar iyidir. Enhanced Conversions, GA4 server-side tracking ve offline conversion import (CRM'den kapanan satışların geri beslenmesi) olmadan tROAS/tCPA teklif stratejileri hedefini tutturamaz.",
+          "Pratikte en sık gördüğüm hata, tüm form gönderimlerinin tek bir 'Lead' dönüşümü olarak sayılmasıdır. Newsletter kaydı ile demo talebi aynı ağırlıkta raporlandığında algoritma ucuz ama değersiz dönüşümlere doğru optimize eder. Dönüşüm aksiyonlarını ayırın, yalnızca ticari değeri olanları 'Primary' işaretleyin ve her birine gerçekçi bir dönüşüm değeri atayın.",
+          "B2B'de değer ataması için basit bir yöntem var: ortalama sözleşme değerinizi, o dönüşüm tipinin tarihsel kapanma oranıyla çarpın. Demo talebinin %20'si kapanıyor ve ortalama sözleşme 100.000 TL ise, demo dönüşümünün değeri 20.000 TL'dir. Bu değerle beslenen tROAS, form sayısını değil gelir potansiyelini optimize etmeye başlar.",
         ],
       },
       {
-        heading: "Performance Max Asset Group Segmentasyonu",
+        heading: "2. Teklif Stratejisini Hesabın Olgunluğuna Göre Seçin",
         paragraphs: [
-          "Tek asset grup yerine kategori, marj veya sezon bazında ayrıştırılmış asset group'lar, algoritmaya daha net sinyal verir. Böylece high-margin ürünlere daha fazla bütçe akar ve ROAS ortalama %25-40 artar.",
+          "Teklif stratejisi seçimi, hesabın veri hacmiyle doğrudan ilişkilidir. Aylık 15-30 dönüşümün altındaki kampanyalarda tROAS veya tCPA erken devreye alınırsa algoritma yeterli örneklem bulamaz ve harcama dalgalanır. Bu aşamada Maximize Conversions ile başlayıp veri biriktirmek, ardından hedefli stratejiye geçmek daha sağlıklıdır.",
+          "Hedef değerini gerçekçi belirleyin. Mevcut ortalamanızın %20'sinden fazla agresif bir tROAS hedefi girmek, sistemin trafiği kısmasına ve impression share kaybına yol açar. Hedefi kademeli olarak (haftada %10-15) sıkın ve her değişiklikten sonra en az iki haftalık öğrenme dönemine izin verin.",
+          "Kampanya amacına göre stratejiyi ayrıştırın: marka aramalarında Maximize Clicks veya düşük tCPA, jenerik kategori aramalarında tCPA, e-ticaret ve PMax kampanyalarında tROAS mantıklıdır. Aynı hesapta farklı stratejiler kullanmak sorun değil; sorun, aynı kampanyada stratejiyi haftada birden fazla değiştirmektir.",
         ],
       },
       {
-        heading: "Search Terms Report ve Negative Keyword Disiplini",
+        heading: "3. Audience Signal Kurgusunu Ciddiye Alın",
+        paragraphs: [
+          "Performance Max ve Demand Gen kampanyalarında audience signal, hedefleme değil bir başlangıç ipucudur; algoritmanın ilk 1-2 haftada kimi test edeceğini belirler. Zayıf sinyalle başlayan bir PMax, bütçesinin önemli bir kısmını alakasız envanterde harcayarak öğrenir.",
+          "En güçlü sinyal sırası şudur: kapanan müşteri listeleri (Customer Match), yüksek niyetli site ziyaretçileri (fiyat/demo sayfası), CRM'den gelen high-value segmentler, ardından custom segment olarak rakip marka ve kategori aramaları. Yalnızca in-market ve affinity kitleleri kullanmak, sinyali jenerikleştirir.",
+        ],
+        bullets: [
+          "Customer Match: kapanan müşteriler ve yüksek LTV'li hesaplar (en az 1.000 kayıt hedefleyin)",
+          "Site ziyaretçileri: fiyatlandırma, demo ve sepet sayfası segmentleri ayrı ayrı",
+          "Custom segment: rakip marka sorguları + kategori sorguları + rakip domainleri",
+          "Dışlamalar: mevcut müşteriler, iş başvurusu yapanlar ve bayi/tedarikçi listeleri",
+        ],
+      },
+      {
+        heading: "4. Performance Max Asset Group Segmentasyonu",
+        paragraphs: [
+          "Tek asset grup yerine kategori, marj veya sezon bazında ayrıştırılmış asset group'lar algoritmaya daha net sinyal verir. Böylece high-margin ürünlere daha fazla bütçe akar ve ROAS ortalama %25-40 artar.",
+          "Segmentasyonu yaparken her asset group'a kendi audience signal'ını, kendi başlık setini ve kendi ürün feed filtresini verin. Aynı görsel ve metinleri tüm gruplara kopyalamak, ayrıştırmanın faydasını sıfırlar. E-ticarette feed'i marj bandına göre üç kümeye ayırmak (yüksek, orta, düşük marj) çoğu hesapta tek başına anlamlı bir kazanç üretir.",
+        ],
+      },
+      {
+        heading: "5. Kreatif Test Döngüsünü Takvime Bağlayın",
+        paragraphs: [
+          "Google Ads'te performansın tavanını çoğu zaman teklif değil kreatif belirler. Responsive Search Ads'te 15 başlığın hepsini doldurmak yeterli değildir; başlıkları fayda, sosyal kanıt, fiyat/teklif ve itiraz karşılama olmak üzere dört temaya bölün ve tema bazında hangisinin 'Best' performans etiketi aldığını izleyin.",
+          "İşleyen bir döngü şöyledir: iki haftada bir asset denetimi, 'Low' etiketli varlıkların değiştirilmesi, her turda en fazla %30 varlık yenileme. Hepsini aynı anda değiştirmek öğrenmeyi sıfırlar. PMax tarafında her asset group için en az 5 görsel, 2 video ve 3 logo varyantı bulundurun; video yoksa Google otomatik üretir ve kalite genelde marka standardının altında kalır.",
+          "Kreatif kazananları kanallar arası taşıyın. Meta tarafında yüksek thumb-stop oranı yakalayan bir video, Demand Gen kampanyalarında da genellikle iyi çalışır; tersine Search'te dönüşen başlık kalıpları landing page H1'i olarak test edilmelidir.",
+        ],
+      },
+      {
+        heading: "6. Bütçeyi Kampanya Değil Portföy Mantığıyla Dağıtın",
+        paragraphs: [
+          "Bütçe dağıtımını 'her kampanyaya eşit pay' mantığıyla yapmak, hesabın toplam getirisini düşürür. Bütçeyi marjinal getiriye göre dağıtın: hangi kampanya, ek 1.000 TL'ye en yüksek artımlı dönüşümü üretiyorsa payı oraya kaydırın.",
+          "Pratik bir çerçeve, 70/20/10 dağılımıdır: bütçenin %70'i kanıtlanmış kampanyalara (marka + yüksek ROAS kategori), %20'si ölçeklenmeye aday olanlara, %10'u yeni kanal ve kreatif testlerine. Impression share lost (budget) metriği %10'un üstündeyse o kampanya bütçe kısıtlıdır ve öncelikli artırım adayıdır.",
+          "Değişiklikleri kademeli yapın: günlük bütçeyi bir seferde %20-30'dan fazla artırmak öğrenme aşamasını yeniden tetikler. Sezonluk yoğunluklarda ise portföy bütçesi (shared budget) yerine kampanya bazlı manuel artış, kontrolü elinizde tutmanızı sağlar.",
+        ],
+      },
+      {
+        heading: "7. Search Terms Report ve Negative Keyword Disiplini",
         paragraphs: [
           "Search Terms raporunu haftalık incelemek, alakasız aramalara giden bütçeyi kesmek için kritiktir. Özellikle broad match ve PMax kampanyalarında negative keyword listesi sürekli beslenmelidir.",
+          "Bu işi kalıcı hâle getirmek için hesap seviyesinde paylaşılan negative listeler oluşturun ve her hafta yeni terimleri buraya ekleyin. PMax'te arama terimi görünürlüğü sınırlı olsa da hesap seviyesindeki negative listeler artık uygulanabiliyor; marka trafiğini PMax'ten dışlamak, artımlı olmayan dönüşümlerin raporu şişirmesini engeller.",
         ],
         bullets: [
           "Marka koruma listesi",
           "Sektör dışı arama listesi",
           "Bilgi amaçlı sorgular (how to, nedir, örnek) — B2B'de dönüştürmüyorsa filtrelenmeli",
+          "İş arama sorguları (kariyer, iş ilanı, maaş) ve ücretsiz/crack arayan sorgular",
         ],
       },
     ],
@@ -251,6 +293,21 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "Enhanced Conversions gerçekten fark yaratıyor mu?",
         answer:
           "Evet. iOS 14+ sonrası cookie kaybını telafi eden Enhanced Conversions, tipik olarak ölçülen dönüşüm sayısında %5-15 artış sağlar; bu doğrudan Smart Bidding'in doğruluğuna yansır.",
+      },
+      {
+        question: "Hangi teklif stratejisiyle başlamalıyım?",
+        answer:
+          "Aylık 15-30 dönüşümün altındaysanız Maximize Conversions ile başlayıp veri biriktirin. Bu eşiği geçtikten sonra tCPA'ya, dönüşüm değeri raporlayabiliyorsanız tROAS'a geçin. Hedefleri bir seferde değil, haftada %10-15 sıkarak ilerletin.",
+      },
+      {
+        question: "Audience signal hedefleme mi yapıyor?",
+        answer:
+          "Hayır. PMax ve Demand Gen'de audience signal bir hedefleme kısıtı değil, algoritmaya verilen başlangıç ipucudur. Sistem zamanla sinyalin dışına da çıkar; bu yüzden sinyali Customer Match ve yüksek niyetli site ziyaretçileriyle beslemek ilk haftaların verimini belirler.",
+      },
+      {
+        question: "Bütçeyi ne sıklıkla ve ne kadar artırmalıyım?",
+        answer:
+          "Bir seferde %20-30'dan fazla artış öğrenme aşamasını yeniden tetikler. Impression share lost (budget) %10'un üstündeki kampanyalara öncelik verin ve artıştan sonra en az 7-14 gün ölçüm yapmadan yeni değişiklik yapmayın.",
       },
     ],
     relatedToolKey: "roas",
