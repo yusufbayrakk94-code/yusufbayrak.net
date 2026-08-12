@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, ExternalLink, ChevronDown } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { CodeDivider } from "@/components/ui/CodeDivider";
-import {
-  Accordion, AccordionContent, AccordionItem, AccordionTrigger,
-} from "@/components/ui/accordion";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
 import { pickTools, pickFreeTools, pickToolCategories, pickToolCategoriesUi } from "@/content";
@@ -117,18 +114,22 @@ export function ToolPage({ toolKey, children }: Props) {
           {tool.faqs.length > 0 && (
             <div className="mt-16 opacity-0 animate-fade-in-up stagger-3">
               <CodeDivider label={bundle.toolFaqDivider} />
-              <Accordion type="single" collapsible className="bg-card border border-border rounded-lg px-4">
+              {/* Native <details> so every answer ships in the prerendered
+                  HTML and matches the FAQPage JSON-LD one-to-one. */}
+              <div className="bg-card border border-border rounded-lg px-4 divide-y divide-border">
                 {tool.faqs.map((f, i) => (
-                  <AccordionItem key={i} value={`item-${i}`} className="border-border last:border-0">
-                    <AccordionTrigger className="text-left font-mono text-sm text-foreground hover:text-accent hover:no-underline">
-                      {f.q}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed">
-                      {f.a}
-                    </AccordionContent>
-                  </AccordionItem>
+                  <details key={i} className="group py-1" open={i === 0}>
+                    <summary className="flex w-full cursor-pointer list-none items-center justify-between gap-4 py-4 text-left font-mono text-sm text-foreground hover:text-accent transition-colors [&::-webkit-details-marker]:hidden">
+                      <h3 className="font-mono text-sm">{f.q}</h3>
+                      <ChevronDown
+                        className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
+                        aria-hidden="true"
+                      />
+                    </summary>
+                    <p className="pb-4 text-muted-foreground leading-relaxed">{f.a}</p>
+                  </details>
                 ))}
-              </Accordion>
+              </div>
             </div>
           )}
           {(tool.relatedTools?.length || tool.relatedPost || tool.externalSource) && (

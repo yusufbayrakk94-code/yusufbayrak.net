@@ -30,6 +30,11 @@ const UI = {
     relatedToolHeading: "İlgili Araç",
     relatedToolCta: "Aracı deneyin",
     resourcesHeading: "Kaynaklar ve İlgili İçerikler",
+    authorHeading: "Yazar",
+    authorBio:
+      "Dijital Pazarlama Uzmanı. B2B ve e-ticaret markaları için web sitesi kurulumu, performans reklam yönetimi ve lead generation kurguları geliştiriyor.",
+    authorLinkedIn: "LinkedIn'de bağlan",
+    authorUpdated: "Son güncelleme",
   },
   en: {
     titleSuffix: " | Yusuf Bayrak",
@@ -47,6 +52,11 @@ const UI = {
     relatedToolHeading: "Related Tool",
     relatedToolCta: "Try the tool",
     resourcesHeading: "Resources & Related Reading",
+    authorHeading: "Author",
+    authorBio:
+      "Digital marketing specialist building websites, performance ad programs and B2B lead generation systems for B2B and e-commerce brands.",
+    authorLinkedIn: "Connect on LinkedIn",
+    authorUpdated: "Last updated",
   },
 } as const;
 
@@ -125,7 +135,6 @@ export default function BlogPost() {
         <html lang={locale === "en" ? "en" : "tr"} />
         <title>{`${post.title}${ui.titleSuffix}`}</title>
         <meta name="description" content={post.description} />
-        <meta name="keywords" content={post.tags.join(", ")} />
         <link rel="canonical" href={url} />
         {altHref && (
           <link
@@ -154,6 +163,8 @@ export default function BlogPost() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.description} />
+        <meta property="og:image" content={`${SITE}/og-image.jpg`} />
+        <meta name="twitter:image" content={`${SITE}/og-image.jpg`} />
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
@@ -317,6 +328,44 @@ export default function BlogPost() {
               </ul>
             </section>
           )}
+
+          <section
+            aria-labelledby="author-heading"
+            className="mt-16 p-6 rounded-lg border border-border bg-card"
+          >
+            <p
+              id="author-heading"
+              className="font-mono text-xs text-muted-foreground uppercase tracking-wider mb-3"
+            >
+              {ui.authorHeading}
+            </p>
+            <Link
+              to={ui.authorPath}
+              className="text-lg font-semibold text-foreground hover:text-accent transition-colors"
+            >
+              {AUTHOR}
+            </Link>
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+              {ui.authorBio}
+            </p>
+            <a
+              href="https://tr.linkedin.com/in/yyusuf-bayrak"
+              target="_blank"
+              rel="noopener noreferrer me"
+              className="mt-4 inline-flex items-center gap-2 font-mono text-sm text-accent hover:underline"
+            >
+              {ui.authorLinkedIn} ↗
+            </a>
+            <p className="mt-4 font-mono text-xs text-muted-foreground">
+              {ui.authorUpdated}:{" "}
+              <time dateTime={post.updatedAt ?? post.publishedAt}>
+                {new Date(post.updatedAt ?? post.publishedAt).toLocaleDateString(
+                  ui.dateLocale,
+                  { day: "2-digit", month: "long", year: "numeric" },
+                )}
+              </time>
+            </p>
+          </section>
 
           <aside
             aria-labelledby="related-tool-heading"

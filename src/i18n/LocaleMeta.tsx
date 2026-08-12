@@ -22,7 +22,7 @@ export function LocaleMeta({
   title,
   description,
   ogType = "website",
-  ogImage,
+  ogImage = `${SITE_URL}/og-image.jpg`,
 }: Props) {
   const canonical = `${SITE_URL}${path}`;
   const trPath = locale === "tr" ? path : getAlternateRoute(path, "tr") ?? "/";
