@@ -216,10 +216,12 @@ export const conversionRate: ToolContent = {
   seoParagraphs: [
     { heading: "How is conversion rate calculated?", body: "The formula is simple: Conversion Rate = (Conversions / Total Visitors) × 100. A 'conversion' is whatever valuable action you define on the page: a purchase, form submission, demo request, quote request, app install or newsletter signup. If a page carries several conversion types, track a separate rate for each — rolling them into one number hides the real bottleneck." },
     { body: "Conversion rate is the bridge between traffic and revenue. Lifting the rate without adding traffic means more customers from the same ad budget, which is why conversion rate optimisation (CRO) is usually the fastest way to bring CAC down. Always segment by source, device and campaign — a two-fold gap between mobile and desktop is common." },
+    { heading: "Measuring conversion rate on an e-commerce site", body: "To measure sales per visitor on your e-commerce site, define the conversion as a completed order and check the rate per unique visitor as well as per session. In retail a single blended rate is misleading: category pages, product detail pages and the cart-to-checkout steps each need their own rate. A typical funnel loses most visitors before the product page, then 60-80% of the people who add to cart drop out during checkout. Late shipping-cost disclosure, forced account creation, limited payment options and a slow mobile experience are the four most common causes. Track mobile and desktop separately, and treat sale periods as their own cohort." },
     { heading: "Benchmark ranges by sector", body: "There is no universal target. As orientation: e-commerce sites typically land at 1-4%, B2B lead forms at 2-5%, dedicated landing page campaigns at 5-15%, and email-driven traffic often higher. These are rough references — your own historical trend and in-channel variant tests are the benchmarks that matter." },
   ],
   faqs: [
     { q: "What is a good conversion rate?", a: "It depends on the sector and the quality of the traffic. Rough ranges: e-commerce 1-4%, B2B form fills 2-5%, dedicated landing page campaigns 5-15%. Rather than chasing a fixed threshold, watch your own trend and the differences between channels." },
+    { q: "What is a good conversion rate for e-commerce?", a: "The common reference range for e-commerce is 1-4%, and 2-3% is considered healthy for most retail stores. It varies widely by category and traffic quality: high-ticket or long-consideration products often sit below 1%, while fast-moving categories with strong repeat purchase can exceed 5%. Branded search traffic converts several times better than generic paid traffic, so watch the channel and device breakdown rather than a single blended number." },
     { q: "How do you improve conversion rate?", a: "The highest-impact moves: improve page speed, use a single clear call to action, cut form fields, keep message match between ad and landing page, add social proof and trust signals, and run continuous A/B tests. Test one change at a time so you can attribute the lift." },
     { q: "What is the difference between conversion rate and CTR?", a: "CTR (click-through rate) measures the share of people who saw an ad or link and clicked it. Conversion rate measures the share of people who arrived on the site and completed the target action. CTR reflects ad creative performance; conversion rate reflects the landing page and the offer." },
     { q: "Which tools measure conversion rate?", a: "Google Analytics 4 (key events), Google Tag Manager, the Google Ads and Meta Ads dashboards, CRMs such as HubSpot, and behaviour tools like Hotjar or Microsoft Clarity. Tag your campaign links with UTM parameters so source-level attribution stays accurate." },
@@ -231,4 +233,60 @@ export const conversionRate: ToolContent = {
   ],
   relatedPost: { label: "7 Ways to Multiply Google Ads Performance", href: "/en/blog/google-ads-performance-optimization" },
   externalSource: { label: "Source: Google Analytics Help — Conversion rate", href: "https://support.google.com/analytics/answer/12966437" },
+};
+
+export const mrr: ToolContent = {
+  slug: "mrr",
+  path: "/en/free-marketing-tools/mrr-calculator",
+  title: "MRR Calculator",
+  description:
+    "Calculate your Monthly Recurring Revenue from customer count and average subscription price in seconds.",
+  intro:
+    "MRR (Monthly Recurring Revenue) is the revenue your subscription business can expect every month. Enter your customer count and average monthly price, or type the monthly total directly — MRR and the matching ARR are calculated instantly.",
+  seoParagraphs: [
+    { heading: "What is MRR and how is it calculated?", body: "MRR (Monthly Recurring Revenue) is the total contracted revenue a subscription business expects to repeat each month. The simplest formula is MRR = Active Customers × Average Monthly Subscription Price (ARPA). Annual plans are normalised by dividing the yearly amount by 12; setup fees, consulting and one-off sales are excluded from MRR." },
+    { heading: "The MRR × 12 = ARR relationship", body: "MRR and ARR are the same revenue on two time scales: ARR = MRR × 12. The monthly view drives operational decisions — campaigns, pricing, team capacity — while the annual view supports planning, budgeting and investor communication. For the relationship to hold, MRR must be normalised so every billing cycle is expressed monthly. Use the ARR Calculator to see the annual side." },
+    { body: "Tracking MRR as a single total is not enough. Breaking it into New MRR, Expansion MRR, Contraction MRR and Churned MRR shows where growth comes from and where it leaks. Net New MRR = New + Expansion − Contraction − Churned is the most honest indicator of growth quality." },
+  ],
+  faqs: [
+    { q: "What is the difference between MRR and ARR?", a: "MRR is monthly recurring revenue, ARR is annual recurring revenue, and ARR = MRR × 12. Monthly tracking supports operating decisions; annual tracking supports planning and investor reporting." },
+    { q: "How do annual subscriptions count towards MRR?", a: "Divide the annual contract value by 12 and add the monthly equivalent to MRR. Booking the full annual amount in the month it was paid inflates the metric and breaks trend analysis." },
+    { q: "Are one-off revenues included in MRR?", a: "No. Setup fees, training, consulting and one-off licence sales are not recurring, so they stay out of MRR. Only contracted, repeating subscription revenue counts." },
+    { q: "What is Net New MRR?", a: "Net New MRR = New MRR + Expansion MRR − Contraction MRR − Churned MRR. It shows how much revenue you actually added in a period; a positive and stable figure is the sign of healthy growth." },
+  ],
+  relatedTools: [
+    { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue via MRR × 12" },
+    { label: "ARPA Calculator", href: "/en/free-marketing-tools/arpa-calculator", note: "Average revenue per account" },
+    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "SaaS Tools", href: "/en/free-marketing-tools/saas-tools", note: "All SaaS metric calculators" },
+  ],
+  relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
+};
+
+export const arpa: ToolContent = {
+  slug: "arpa",
+  path: "/en/free-marketing-tools/arpa-calculator",
+  title: "ARPA Calculator",
+  description:
+    "Calculate average revenue per account from total MRR and active account count in seconds.",
+  intro:
+    "ARPA (Average Revenue Per Account) shows the average monthly revenue each active account brings in. Enter your total MRR and active accounts — ARPA and its annual equivalent are calculated instantly.",
+  seoParagraphs: [
+    { heading: "What is ARPA and how is it calculated?", body: "ARPA (Average Revenue Per Account) is total monthly recurring revenue divided by the number of active accounts: ARPA = Total MRR / Active Accounts. Some teams call the same metric ARPU (Average Revenue Per User); the difference is whether the unit is a user or an account (a company). In B2B SaaS the correct unit is usually the account." },
+    { body: "ARPA mirrors your pricing strategy and customer segment. A rising ARPA means successful upsell, plan upgrades or a shift towards larger customers. A falling ARPA points to discount pressure, a drift towards smaller accounts or contraction. That is why segment- and cohort-level ARPA is far more informative than a single blended average." },
+    { body: "ARPA only becomes meaningful next to CAC and LTV. Using LTV = ARPA × gross margin / churn rate, ARPA directly drives lifetime value: lifting ARPA by 20% improves unit economics markedly at the same CAC. For many SaaS businesses the cheapest growth lever is not a new customer but more revenue per existing account." },
+  ],
+  faqs: [
+    { q: "What is the difference between ARPA and ARPU?", a: "Both measure average revenue; ARPA is per account (company) and ARPU is per user. For B2B SaaS products where one account holds many seats, ARPA is normally the right metric." },
+    { q: "Which revenues belong in ARPA?", a: "Only recurring subscription revenue (MRR). Setup fees, consulting and one-off sales are excluded — including them inflates the average artificially." },
+    { q: "What is a good ARPA?", a: "There is no absolute threshold; it depends on your segment. SMB-focused products often sit at a few hundred per month while enterprise runs into the thousands. The meaningful comparison is your own ARPA trend and its ratio to CAC." },
+    { q: "How do you increase ARPA?", a: "Revisit packaging and price architecture, offer usage-based add-ons, incentivise annual plans, build upsell and cross-sell flows, and reduce focus on the lowest-value segment." },
+  ],
+  relatedTools: [
+    { label: "MRR Calculator", href: "/en/free-marketing-tools/mrr-calculator", note: "Monthly recurring revenue" },
+    { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue" },
+    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "SaaS Tools", href: "/en/free-marketing-tools/saas-tools", note: "All SaaS metric calculators" },
+  ],
+  relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
 };

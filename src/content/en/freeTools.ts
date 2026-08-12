@@ -71,6 +71,8 @@ export const freeToolsPage = {
     { key: "llms",  name: "llms.txt Generator",    description: "Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.", href: "/en/free-marketing-tools/llms-txt-generator" },
     { key: "gross", name: "Gross Profit Margin Calculator", description: "Enter revenue and COGS to see gross margin as a percentage and an amount.", href: "/en/free-marketing-tools/gross-profit-margin-calculator" },
     { key: "net",   name: "Net Profit Margin Calculator",   description: "Include every expense to see the true net profitability of your business.", href: "/en/free-marketing-tools/net-profit-margin-calculator" },
+    { key: "mrr",   name: "MRR Calculator",        description: "Calculate Monthly Recurring Revenue and see the matching ARR.", href: "/en/free-marketing-tools/mrr-calculator" },
+    { key: "arpa",  name: "ARPA Calculator",       description: "Average revenue per account from total MRR and active accounts.", href: "/en/free-marketing-tools/arpa-calculator" },
     { key: "conversion", name: "Conversion Rate Calculator", description: "Turn visitors and conversions into a conversion rate and a gap to your target.", href: "/en/free-marketing-tools/conversion-rate-calculator" },
   ],
 };
@@ -191,7 +193,7 @@ export const toolCategories = [
         a: "Early stage, before product-market fit, churn and activation matter most; CAC and LTV are volatile because the sample is small. In the growth stage, CAC, LTV, the LTV:CAC ratio and CAC payback drive budget allocation. At scale, ARR growth rate, net revenue retention (NRR) and cohort-level churn take over.",
       },
     ],
-    tools: ["arr", "cac", "ltv", "churn"],
+    tools: ["arr", "mrr", "arpa", "cac", "ltv", "churn"],
   },
   {
     key: "ecommerce",

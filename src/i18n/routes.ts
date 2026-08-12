@@ -34,6 +34,8 @@ export const STATIC_ROUTE_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", en: "/en/free-marketing-tools/gross-profit-margin-calculator" },
   { tr: "/ucretsiz-araclar/net-kar-marji-hesaplayici",  en: "/en/free-marketing-tools/net-profit-margin-calculator" },
   { tr: "/ucretsiz-araclar/donusum-orani-hesaplayici",  en: "/en/free-marketing-tools/conversion-rate-calculator" },
+  { tr: "/ucretsiz-araclar/mrr-hesaplayici",           en: "/en/free-marketing-tools/mrr-calculator" },
+  { tr: "/ucretsiz-araclar/arpa-hesaplayici",          en: "/en/free-marketing-tools/arpa-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
@@ -110,6 +112,8 @@ export const STATIC_TR_ROUTES = [
   "/ucretsiz-araclar/brut-kar-marji-hesaplayici",
   "/ucretsiz-araclar/net-kar-marji-hesaplayici",
   "/ucretsiz-araclar/donusum-orani-hesaplayici",
+  "/ucretsiz-araclar/mrr-hesaplayici",
+  "/ucretsiz-araclar/arpa-hesaplayici",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -133,6 +137,8 @@ export const STATIC_EN_ROUTES = [
   "/en/free-marketing-tools/gross-profit-margin-calculator",
   "/en/free-marketing-tools/net-profit-margin-calculator",
   "/en/free-marketing-tools/conversion-rate-calculator",
+  "/en/free-marketing-tools/mrr-calculator",
+  "/en/free-marketing-tools/arpa-calculator",
   "/en/contact",
   "/en/blog",
 ] as const;
