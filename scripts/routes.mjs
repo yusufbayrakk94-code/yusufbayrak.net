@@ -178,11 +178,15 @@ export function sitemapEntries() {
 
     "/iletisim": { changefreq: "yearly", priority: "0.6" },
     "/en/contact": { changefreq: "yearly", priority: "0.6" },
-    "/styleguide": { changefreq: "monthly", priority: "0.5" },
   };
   const defaultMeta = { changefreq: "monthly", priority: "0.7" };
 
+  // Internal design-system reference: prerendered but noindex, so it stays
+  // out of the sitemap.
+  const excluded = new Set(["/styleguide"]);
+
   for (const route of allRoutes()) {
+    if (excluded.has(route)) continue;
     entries.push({
       loc: route,
       ...(meta[route] ?? defaultMeta),
