@@ -233,3 +233,59 @@ export const conversionRate: ToolContent = {
   relatedPost: { label: "Google Ads'te Performansı Katlamanın 7 Yolu", href: "/blog/google-ads-performans-optimizasyonu" },
   externalSource: { label: "Kaynak: Google Analytics Yardım Merkezi — Dönüşüm oranı", href: "https://support.google.com/analytics/answer/12966437" },
 };
+
+export const mrr: ToolContent = {
+  slug: "mrr",
+  path: "/ucretsiz-araclar/mrr-hesaplayici",
+  title: "MRR Hesaplayıcı",
+  description:
+    "Aylık Yinelenen Gelirinizi (MRR) müşteri sayısı ve ortalama abonelik bedeliyle saniyeler içinde hesaplayın.",
+  intro:
+    "MRR (Monthly Recurring Revenue), abonelik iş modelinizin her ay tekrar eden gelirini gösterir. Müşteri sayınız ile ortalama aylık abonelik bedelini girin ya da doğrudan toplam aylık geliri yazın; MRR ve karşılık gelen ARR anında hesaplanır.",
+  seoParagraphs: [
+    { heading: "MRR Nedir ve Nasıl Hesaplanır?", body: "MRR (Monthly Recurring Revenue), abonelik tabanlı bir işletmenin bir ay boyunca tekrar etmesi beklenen sözleşmesel gelirinin toplamıdır. En yalın formülü MRR = Aktif Müşteri Sayısı × Ortalama Aylık Abonelik Bedeli (ARPA) şeklindedir. Yıllık ödenen planlar aylığa bölünerek (yıllık bedel / 12) MRR'ye eklenir; kurulum ücreti, danışmanlık ve tek seferlik satışlar ise MRR'ye dahil edilmez." },
+    { heading: "MRR × 12 = ARR İlişkisi", body: "MRR ile ARR aynı gelirin iki farklı zaman ölçeğidir: ARR = MRR × 12. Aylık ölçek operasyonel karar almak (kampanya, fiyatlama, ekip kapasitesi) için, yıllık ölçek ise planlama, bütçeleme ve yatırımcı iletişimi için kullanılır. Bu ilişkinin doğru kurulabilmesi için MRR'nin normalize edilmiş olması, yani tüm faturalama dönemlerinin aylığa çevrilmiş olması gerekir. ARR tarafını görmek için ARR Hesaplayıcı'yı kullanabilirsiniz." },
+    { body: "MRR'yi tek bir toplam sayı olarak izlemek yeterli değildir. New MRR (yeni müşteriler), Expansion MRR (upsell/cross-sell), Contraction MRR (plan küçültme) ve Churned MRR (iptaller) kırılımı, büyümenin nereden geldiğini ve nerede sızdırdığını gösterir. Net New MRR = New + Expansion − Contraction − Churned formülü, gerçek büyüme kalitesinin en dürüst göstergesidir." },
+  ],
+  faqs: [
+    { q: "MRR ile ARR arasındaki fark nedir?", a: "MRR aylık yinelenen geliri, ARR ise yıllık yinelenen geliri ifade eder. İlişkileri basittir: ARR = MRR × 12. Aylık takip operasyonel kararlar, yıllık takip ise planlama ve yatırımcı raporlaması içindir." },
+    { q: "Yıllık ödenen abonelikler MRR'ye nasıl eklenir?", a: "Yıllık sözleşme bedeli 12'ye bölünerek aylık karşılığı bulunur ve MRR'ye o şekilde eklenir. Tüm yıllık tutarı ödeme yapıldığı ayın MRR'sine yazmak metriği yanıltıcı biçimde şişirir." },
+    { q: "Tek seferlik gelirler MRR'ye dahil edilir mi?", a: "Hayır. Kurulum ücretleri, eğitim, danışmanlık ve tek seferlik lisans satışları yinelenen gelir değildir; MRR dışında tutulur. MRR yalnızca sözleşmesel ve tekrar eden abonelik gelirini içerir." },
+    { q: "Net New MRR nedir?", a: "Net New MRR = Yeni MRR + Genişleme MRR − Daralma MRR − Kayıp (churn) MRR. Bir dönemde gelirin net olarak ne kadar arttığını gösterir; pozitif ve istikrarlı olması sağlıklı büyümenin işaretidir." },
+  ],
+  relatedTools: [
+    { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici", note: "MRR × 12 ile yıllık yinelenen gelir" },
+    { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici", note: "Hesap başına ortalama gelir" },
+    { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
+    { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS metrik hesaplayıcıları" },
+  ],
+  relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
+};
+
+export const arpa: ToolContent = {
+  slug: "arpa",
+  path: "/ucretsiz-araclar/arpa-hesaplayici",
+  title: "ARPA Hesaplayıcı",
+  description:
+    "Hesap başına ortalama gelirinizi (ARPA) toplam MRR ve aktif hesap sayısıyla saniyeler içinde hesaplayın.",
+  intro:
+    "ARPA (Average Revenue Per Account), aktif hesap başına aylık ortalama gelirinizi gösterir. Toplam MRR'nizi ve aktif hesap sayınızı girin; ARPA ve yıllık karşılığı anında hesaplanır.",
+  seoParagraphs: [
+    { heading: "ARPA Nedir ve Nasıl Hesaplanır?", body: "ARPA (Average Revenue Per Account), toplam aylık yinelenen gelirin aktif hesap sayısına bölünmesiyle bulunur: ARPA = Toplam MRR / Aktif Hesap Sayısı. Bazı ekipler aynı metriği ARPU (Average Revenue Per User) olarak adlandırır; fark, birimin kullanıcı mı yoksa hesap (şirket/organizasyon) mı olduğudur. B2B SaaS'ta doğru birim genellikle hesaptır." },
+    { body: "ARPA, fiyatlandırma stratejinizin ve müşteri segmentinizin aynadaki yansımasıdır. Yükselen ARPA; başarılı upsell, daha üst paketlere geçiş veya daha büyük müşterilere kayma anlamına gelir. Düşen ARPA ise indirim baskısı, küçük müşterilere kayma ya da plan küçültmelere (contraction) işaret eder. Bu nedenle ARPA'yı segment ve kohort bazında izlemek, toplam ortalamadan çok daha bilgilendiricidir." },
+    { body: "ARPA tek başına değil, CAC ve LTV ile birlikte anlam kazanır. LTV = ARPA × brüt marj / churn oranı yaklaşımıyla ARPA doğrudan yaşam boyu değeri belirler; ARPA'yı %20 artırmak, aynı CAC ile birim ekonomiyi belirgin biçimde iyileştirir. Bu yüzden birçok SaaS için büyümenin en ucuz kaldıracı yeni müşteri değil, mevcut müşteride ARPA artışıdır." },
+  ],
+  faqs: [
+    { q: "ARPA ile ARPU arasındaki fark nedir?", a: "İkisi de ortalama geliri ölçer; ARPA hesap (şirket) başına, ARPU ise kullanıcı başına hesaplanır. Bir hesapta birden fazla kullanıcı bulunan B2B SaaS ürünlerinde doğru metrik genellikle ARPA'dır." },
+    { q: "ARPA hesaplamasına hangi gelirler dahil edilir?", a: "Yalnızca yinelenen abonelik geliri (MRR) dahil edilir. Kurulum ücreti, danışmanlık ve tek seferlik satışlar hariç tutulur; aksi hâlde ortalama yapay olarak yükselir." },
+    { q: "İyi bir ARPA değeri nedir?", a: "Mutlak bir eşik yoktur; segmentinize bağlıdır. SMB odaklı ürünlerde aylık birkaç yüz birim normalken enterprise'da binlerce birim görülür. Anlamlı kıyas, kendi ARPA trendiniz ve CAC ile oranıdır." },
+    { q: "ARPA nasıl artırılır?", a: "Paket ve fiyat mimarisini gözden geçirmek, kullanım bazlı ek modüller sunmak, yıllık plana geçişi teşvik etmek, upsell/cross-sell akışları kurmak ve düşük değerli segmente odağı azaltmak en etkili yöntemlerdir." },
+  ],
+  relatedTools: [
+    { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
+    { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici", note: "Yıllık yinelenen gelir" },
+    { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
+    { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS metrik hesaplayıcıları" },
+  ],
+  relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
+};
