@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
@@ -17,16 +16,6 @@ export function Footer() {
           <p className="font-mono text-sm text-muted-foreground">
             <span className="text-accent">//</span> © {currentYear} Yusuf Bayrak
           </p>
-
-          {/* Footer Links */}
-          <div className="flex items-center gap-6">
-            <Link
-              to="/styleguide"
-              className="font-mono text-sm text-muted-foreground hover:text-accent transition-colors"
-            >
-              Styleguide
-            </Link>
-          </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
