@@ -327,6 +327,44 @@ export default function BlogPost() {
             </section>
           )}
 
+          <section
+            aria-labelledby="author-heading"
+            className="mt-16 p-6 rounded-lg border border-border bg-card"
+          >
+            <p
+              id="author-heading"
+              className="font-mono text-xs text-muted-foreground uppercase tracking-wider mb-3"
+            >
+              {ui.authorHeading}
+            </p>
+            <Link
+              to={ui.authorPath}
+              className="text-lg font-semibold text-foreground hover:text-accent transition-colors"
+            >
+              {AUTHOR}
+            </Link>
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+              {ui.authorBio}
+            </p>
+            <a
+              href="https://tr.linkedin.com/in/yyusuf-bayrak"
+              target="_blank"
+              rel="noopener noreferrer me"
+              className="mt-4 inline-flex items-center gap-2 font-mono text-sm text-accent hover:underline"
+            >
+              {ui.authorLinkedIn} ↗
+            </a>
+            <p className="mt-4 font-mono text-xs text-muted-foreground">
+              {ui.authorUpdated}:{" "}
+              <time dateTime={post.updatedAt ?? post.publishedAt}>
+                {new Date(post.updatedAt ?? post.publishedAt).toLocaleDateString(
+                  ui.dateLocale,
+                  { day: "2-digit", month: "long", year: "numeric" },
+                )}
+              </time>
+            </p>
+          </section>
+
           <aside
             aria-labelledby="related-tool-heading"
             className="mt-16 p-6 rounded-lg border border-accent/30 bg-accent/5"
