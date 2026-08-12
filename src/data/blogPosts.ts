@@ -1,3 +1,5 @@
+import n8nWorkflowDiagram from "@/assets/n8n-lead-enrichment-workflow.jpg";
+
 export type BlogCategorySlug =
   | "performans-pazarlama"
   | "b2b-lead-generation"
