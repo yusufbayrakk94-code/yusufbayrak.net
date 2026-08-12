@@ -41,24 +41,24 @@ export const freeToolsPage = {
   ],
   faqs: [
     {
-      q: "Bu ücretsiz araçları kullanmak için üye olmam gerekiyor mu?",
-      a: "Hayır. Araçların tamamı üyelik, e-posta veya ödeme gerektirmeden çalışır. Hesaplamalar tarayıcınızda yapıldığı için girdiğiniz veriler hiçbir sunucuya iletilmez.",
+      q: "ARR, CAC, LTV gibi SaaS metriklerini hangi araçla hesaplayabilirim?",
+      a: "SaaS Araçları kategorisindeki ücretsiz hesaplayıcılarla: ARR Hesaplayıcı yıllık yinelenen geliri, MRR Hesaplayıcı aylık geliri, CAC Hesaplayıcı müşteri edinme maliyetini, LTV Hesaplayıcı yaşam boyu değeri, ARPA ve Churn Rate hesaplayıcıları ise hesap başına geliri ve müşteri kaybını verir. Hepsi tarayıcıda çalışır, üyelik gerekmez.",
     },
     {
-      q: "Hangi kategoriden başlamalıyım?",
-      a: "Kampanya performansını ölçüyorsanız Pazarlama Araçları, abonelik iş modelinin büyüme ve birim ekonomisini inceliyorsanız SaaS Araçları, ürün kârlılığını ve fiyatlandırmayı çözüyorsanız E-Ticaret Araçları ile başlayın. Çoğu ekip önce dönüşüm oranı ve ROAS'a, ardından CAC ve LTV'ye bakar.",
+      q: "Ücretsiz kar marjı hesaplama aracı var mı?",
+      a: "Evet. E-Ticaret Araçları kategorisinde iki ücretsiz araç var: Brüt Kar Marjı Hesaplayıcı gelir ve COGS ile ürün seviyesinde marjı, Net Kar Marjı Hesaplayıcı ise reklam, kargo, komisyon ve operasyon giderleri dahil gerçek kârlılığı yüzde ve tutar olarak gösterir.",
     },
     {
-      q: "Hesaplamalarda kullanılan formüller güvenilir mi?",
-      a: "Evet. Her araç sektörde standart kabul edilen formülleri kullanır: ROAS = gelir / reklam harcaması, CAC = toplam satış ve pazarlama gideri / yeni müşteri sayısı, LTV = ortalama gelir × ortalama müşteri ömrü, churn = kaybedilen müşteri / dönem başı müşteri. Her sayfada formül ve varsayımlar açıkça yazılıdır.",
+      q: "UTM link nasıl oluşturulur, hangi araçla yapılır?",
+      a: "Pazarlama Araçları kategorisindeki UTM Link Oluşturucu ile yapılır: hedef URL'yi girip utm_source, utm_medium ve utm_campaign alanlarını doldurduğunuzda etiketli link anında üretilir. Değerleri küçük harf ve tutarlı yazın; Google Analytics 4 bu parametreleri kaynak/medya kırılımı olarak raporlar.",
     },
     {
-      q: "Sonuçları raporlarımda veya yatırımcı sunumumda kullanabilir miyim?",
-      a: "Kullanabilirsiniz. Araçlar standart tanımlara göre hesap yaptığı için çıkan değerler yatırımcı raporlaması, bütçe planlaması ve ekip içi performans takibi için uygundur. Yalnızca girdi dönemlerinizin (aylık/yıllık) tutarlı olmasına dikkat edin.",
+      q: "Dönüşüm oranı hesaplama formülü nedir?",
+      a: "Dönüşüm Oranı = (Dönüşüm Sayısı / Toplam Ziyaretçi) × 100. Örneğin 8.000 ziyaretçi ve 160 satış %2 dönüşüm oranı demektir. Dönüşüm Oranı Hesaplayıcı bu formülü uygular ve hedef oran girdiğinizde aradaki farkı ve gereken ek dönüşüm sayısını da gösterir.",
     },
     {
-      q: "Araçlar mobil cihazlarda çalışıyor mu?",
-      a: "Evet. Tüm hesaplayıcılar mobil ve masaüstü tarayıcılarda çalışacak şekilde tasarlandı; kurulum, eklenti veya uygulama indirmeye gerek yoktur.",
+      q: "SaaS ve e-ticaret için hangi metrikler takip edilmeli?",
+      a: "SaaS tarafında MRR/ARR, ARPA, CAC, LTV ve churn oranı çekirdek settir; LTV:CAC oranının 3:1 üzerinde kalması hedeflenir. E-ticarette ise brüt kar marjı, net kar marjı, ROAS ve dönüşüm oranı birlikte okunur — başabaş ROAS = 1 / brüt marj. Her metriğin hesaplayıcısı bu sayfadaki ilgili kategoride yer alır.",
     },
   ],
   cards: [

@@ -41,24 +41,24 @@ export const freeToolsPage = {
   ],
   faqs: [
     {
-      q: "Do I need an account to use these free tools?",
-      a: "No. Every tool works without sign-up, email or payment. Because the maths runs in your browser, none of the data you enter is transmitted to a server.",
+      q: "What tool can I use to calculate ARR, CAC, and LTV?",
+      a: "Use the free calculators in the SaaS Tools category: the ARR Calculator for annual recurring revenue, the MRR Calculator for monthly revenue, the CAC Calculator for customer acquisition cost, the LTV Calculator for lifetime value, plus ARPA and Churn Rate calculators. Everything runs in the browser with no sign-up.",
     },
     {
-      q: "Which category should I start with?",
-      a: "Start with Marketing Tools if you are measuring campaign performance, SaaS Tools if you are examining the growth and unit economics of a subscription business, and E-Commerce Tools if you are solving product profitability and pricing. Most teams look at conversion rate and ROAS first, then CAC and LTV.",
+      q: "Is there a free profit margin calculator?",
+      a: "Yes. The E-Commerce Tools category has two: the Gross Profit Margin Calculator turns revenue and COGS into product-level margin, and the Net Profit Margin Calculator includes advertising, shipping, marketplace fees and operating costs to show true profitability as both a percentage and an amount.",
     },
     {
-      q: "Are the formulas used in these calculators reliable?",
-      a: "Yes. Each tool uses the standard industry formula: ROAS = revenue / ad spend, CAC = total sales and marketing cost / new customers, LTV = average revenue × average customer lifetime, churn = customers lost / customers at period start. The formula and its assumptions are written out on every page.",
+      q: "How do I create a UTM link and which tool builds it?",
+      a: "Use the UTM Link Builder in the Marketing Tools category: enter the destination URL and fill in utm_source, utm_medium and utm_campaign to generate the tagged link instantly. Keep values lowercase and consistent — GA4 reports these parameters as session source and medium.",
     },
     {
-      q: "Can I use the results in reports or an investor deck?",
-      a: "Yes. The tools follow standard definitions, so the outputs are suitable for investor reporting, budget planning and internal performance tracking. Just make sure your input periods (monthly or annual) are consistent across metrics.",
+      q: "What is the conversion rate formula?",
+      a: "Conversion Rate = (Conversions / Total Visitors) × 100. For example, 8,000 visitors and 160 sales is a 2% conversion rate. The Conversion Rate Calculator applies this formula and, if you enter a target rate, also shows the gap and how many extra conversions you need.",
     },
     {
-      q: "Do the tools work on mobile devices?",
-      a: "Yes. Every calculator is built to run in mobile and desktop browsers — no installation, extension or app download required.",
+      q: "Which metrics should SaaS and e-commerce businesses track?",
+      a: "For SaaS the core set is MRR/ARR, ARPA, CAC, LTV and churn rate, with an LTV:CAC ratio above 3:1 as the healthy benchmark. For e-commerce, read gross profit margin, net profit margin, ROAS and conversion rate together — break-even ROAS = 1 / gross margin. A calculator for each sits in the matching category on this page.",
     },
   ],
   cards: [
