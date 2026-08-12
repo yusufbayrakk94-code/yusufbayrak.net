@@ -30,6 +30,11 @@ const UI = {
     relatedToolHeading: "İlgili Araç",
     relatedToolCta: "Aracı deneyin",
     resourcesHeading: "Kaynaklar ve İlgili İçerikler",
+    authorHeading: "Yazar",
+    authorBio:
+      "Dijital Pazarlama Uzmanı. B2B ve e-ticaret markaları için web sitesi kurulumu, performans reklam yönetimi ve lead generation kurguları geliştiriyor.",
+    authorLinkedIn: "LinkedIn'de bağlan",
+    authorUpdated: "Son güncelleme",
   },
   en: {
     titleSuffix: " | Yusuf Bayrak",
@@ -47,6 +52,11 @@ const UI = {
     relatedToolHeading: "Related Tool",
     relatedToolCta: "Try the tool",
     resourcesHeading: "Resources & Related Reading",
+    authorHeading: "Author",
+    authorBio:
+      "Digital marketing specialist building websites, performance ad programs and B2B lead generation systems for B2B and e-commerce brands.",
+    authorLinkedIn: "Connect on LinkedIn",
+    authorUpdated: "Last updated",
   },
 } as const;
 
