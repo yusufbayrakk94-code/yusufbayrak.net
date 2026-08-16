@@ -27,6 +27,8 @@ export const STATIC_TR = [
   "/ucretsiz-araclar/donusum-orani-hesaplayici",
   "/ucretsiz-araclar/mrr-hesaplayici",
   "/ucretsiz-araclar/arpa-hesaplayici",
+  "/ucretsiz-araclar/nrr-hesaplayici",
+  "/ucretsiz-araclar/rule-of-40-hesaplayici",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -52,6 +54,8 @@ export const STATIC_EN = [
   "/en/free-marketing-tools/conversion-rate-calculator",
   "/en/free-marketing-tools/mrr-calculator",
   "/en/free-marketing-tools/arpa-calculator",
+  "/en/free-marketing-tools/nrr-calculator",
+  "/en/free-marketing-tools/rule-of-40-calculator",
   "/en/contact",
   "/en/blog",
 ];
@@ -78,6 +82,8 @@ export const ROUTE_PAIRS = [
   { tr: "/ucretsiz-araclar/donusum-orani-hesaplayici",  en: "/en/free-marketing-tools/conversion-rate-calculator" },
   { tr: "/ucretsiz-araclar/mrr-hesaplayici",           en: "/en/free-marketing-tools/mrr-calculator" },
   { tr: "/ucretsiz-araclar/arpa-hesaplayici",          en: "/en/free-marketing-tools/arpa-calculator" },
+  { tr: "/ucretsiz-araclar/nrr-hesaplayici",           en: "/en/free-marketing-tools/nrr-calculator" },
+  { tr: "/ucretsiz-araclar/rule-of-40-hesaplayici",    en: "/en/free-marketing-tools/rule-of-40-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 

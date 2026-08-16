@@ -103,7 +103,15 @@ export const roas: ToolContent = {
     { q: "ROAS ile ROI arasındaki fark nedir?", a: "ROAS yalnızca reklam gelirini reklam harcamasına oranlar. ROI ise net kârı (gelir - toplam maliyet) yatırıma böler ve gerçek kârlılığı gösterir. ROAS pazarlama, ROI ise finans metriğidir." },
     { q: "Break-even ROAS nasıl hesaplanır?", a: "Başabaş ROAS = 1 / Brüt Marj. Örneğin %25 brüt marjda başabaş ROAS 4x'tir; bunun altındaki her kampanya zarardır." },
     { q: "ROAS neden POAS ile birlikte takip edilmelidir?", a: "ROAS ciroya bakar; POAS ise kâra bakar. Ürün maliyeti, iade oranı ve kargo dahil edildiğinde iki metrik ciddi şekilde ayrışabilir. Kârlı büyüme için karar POAS ile verilmelidir." },
+    { q: "ROAS nasıl artırılır?", a: "Üç kaldıraç vardır: dönüşüm oranını yükseltmek (landing page, teklif, sayfa hızı), sepet/ortalama sipariş değerini büyütmek (paket, çapraz satış, kargo eşiği) ve tıklama maliyetini düşürmek (arama terimi temizliği, kreatif tazeleme, kitle daraltma). Kampanya bazında hangisinin zayıf olduğunu görmek için önce dönüşüm oranı ve ortalama sipariş değerini ayrı ayrı ölçün." },
+    { q: "ROAS hangi sıklıkla değerlendirilmeli?", a: "Günlük ROAS oynaktır ve yanlış karar aldırır. Anlamlı değerlendirme, dönüşüm gecikmesini (attribution window) kapsayacak şekilde en az 7 günlük hareketli pencerede yapılır; bütçe kaydırma kararları için 14-28 günlük veri daha güvenlidir." },
   ],
+  relatedTools: [
+    { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici", note: "ROAS'ın en güçlü kaldıracı" },
+    { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Başabaş ROAS = 1 / brüt marj" },
+    { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu", note: "Kanal bazlı doğru ölçüm" },
+  ],
+  relatedPost: { label: "Google Ads'te Performansı Katlamanın 7 Yolu", href: "/blog/google-ads-performans-optimizasyonu" },
 };
 
 export const utm: ToolContent = {
@@ -248,16 +256,22 @@ export const mrr: ToolContent = {
     { heading: "MRR Nedir ve Nasıl Hesaplanır?", body: "MRR (Monthly Recurring Revenue), abonelik tabanlı bir işletmenin bir ay boyunca tekrar etmesi beklenen sözleşmesel gelirinin toplamıdır. En yalın formülü MRR = Aktif Müşteri Sayısı × Ortalama Aylık Abonelik Bedeli (ARPA) şeklindedir. Yıllık ödenen planlar aylığa bölünerek (yıllık bedel / 12) MRR'ye eklenir; kurulum ücreti, danışmanlık ve tek seferlik satışlar ise MRR'ye dahil edilmez." },
     { heading: "MRR × 12 = ARR İlişkisi", body: "MRR ile ARR aynı gelirin iki farklı zaman ölçeğidir: ARR = MRR × 12. Aylık ölçek operasyonel karar almak (kampanya, fiyatlama, ekip kapasitesi) için, yıllık ölçek ise planlama, bütçeleme ve yatırımcı iletişimi için kullanılır. Bu ilişkinin doğru kurulabilmesi için MRR'nin normalize edilmiş olması, yani tüm faturalama dönemlerinin aylığa çevrilmiş olması gerekir. ARR tarafını görmek için ARR Hesaplayıcı'yı kullanabilirsiniz." },
     { body: "MRR'yi tek bir toplam sayı olarak izlemek yeterli değildir. New MRR (yeni müşteriler), Expansion MRR (upsell/cross-sell), Contraction MRR (plan küçültme) ve Churned MRR (iptaller) kırılımı, büyümenin nereden geldiğini ve nerede sızdırdığını gösterir. Net New MRR = New + Expansion − Contraction − Churned formülü, gerçek büyüme kalitesinin en dürüst göstergesidir." },
+    { heading: "Örnek Hesaplama: 500 Müşterili Bir SaaS'ta MRR", body: "Diyelim ki ürününüzün 500 aktif müşterisi var. Bunların 400'ü aylık 800 ₺'lik Pro plandan, 100'ü ise yıllık 12.000 ₺ ödenen Business planından. Aylık planların katkısı 400 × 800 = 320.000 ₺. Yıllık planlar normalize edilir: 12.000 / 12 = 1.000 ₺ ve 100 × 1.000 = 100.000 ₺. Toplam MRR = 320.000 + 100.000 = 420.000 ₺, ARR ise 420.000 × 12 = 5.040.000 ₺ olur. Aynı ay 60.000 ₺'lik kurulum ve eğitim geliri faturalandıysa bu tutar MRR'ye eklenmez." },
+    { body: "Aynı örnekte ay içinde 25.000 ₺ yeni MRR, 18.000 ₺ genişleme, 6.000 ₺ daralma ve 14.000 ₺ churn gerçekleştiyse Net New MRR = 25.000 + 18.000 − 6.000 − 14.000 = 23.000 ₺'dir. Yani toplam MRR 420.000 ₺'den 443.000 ₺'ye çıkar; aylık büyüme yaklaşık %5,5 olur. Bu kırılım olmadan yalnızca toplam MRR'ye bakmak, churn'ün yeni satışla maskelendiği durumları görünmez kılar." },
   ],
   faqs: [
     { q: "MRR ile ARR arasındaki fark nedir?", a: "MRR aylık yinelenen geliri, ARR ise yıllık yinelenen geliri ifade eder. İlişkileri basittir: ARR = MRR × 12. Aylık takip operasyonel kararlar, yıllık takip ise planlama ve yatırımcı raporlaması içindir." },
+    { q: "MRR nedir ve nasıl hesaplanır?", a: "MRR (Monthly Recurring Revenue), abonelik modelinde her ay tekrar etmesi beklenen sözleşmesel gelirdir. Formülü MRR = Aktif Müşteri Sayısı × Ortalama Aylık Abonelik Bedeli (ARPA); farklı planlar varsa her planın müşteri sayısı × fiyatı toplanır ve yıllık planlar 12'ye bölünerek eklenir." },
+    { q: "500 müşterili bir SaaS'ta MRR nasıl hesaplanır?", a: "Planları ayrı ayrı toplayın. Örnek: 400 müşteri × 800 ₺ aylık = 320.000 ₺; 100 müşteri × (12.000 ₺ yıllık / 12) = 100.000 ₺. Toplam MRR 420.000 ₺, ARR 5.040.000 ₺'dir. Kurulum ve danışmanlık gibi tek seferlik gelirler bu hesabın dışında kalır." },
     { q: "Yıllık ödenen abonelikler MRR'ye nasıl eklenir?", a: "Yıllık sözleşme bedeli 12'ye bölünerek aylık karşılığı bulunur ve MRR'ye o şekilde eklenir. Tüm yıllık tutarı ödeme yapıldığı ayın MRR'sine yazmak metriği yanıltıcı biçimde şişirir." },
     { q: "Tek seferlik gelirler MRR'ye dahil edilir mi?", a: "Hayır. Kurulum ücretleri, eğitim, danışmanlık ve tek seferlik lisans satışları yinelenen gelir değildir; MRR dışında tutulur. MRR yalnızca sözleşmesel ve tekrar eden abonelik gelirini içerir." },
     { q: "Net New MRR nedir?", a: "Net New MRR = Yeni MRR + Genişleme MRR − Daralma MRR − Kayıp (churn) MRR. Bir dönemde gelirin net olarak ne kadar arttığını gösterir; pozitif ve istikrarlı olması sağlıklı büyümenin işaretidir." },
+    { q: "MRR büyümesi ile NRR arasındaki ilişki nedir?", a: "MRR büyümesi yeni müşteri satışını da içerir; NRR (Net Revenue Retention) ise yalnızca mevcut müşteri tabanından gelen genişleme, daralma ve churn'ü ölçer. Yeni satış durduğunda işinizin ne olacağını NRR söyler; NRR Hesaplayıcı ile ölçebilirsiniz." },
   ],
   relatedTools: [
     { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici", note: "MRR × 12 ile yıllık yinelenen gelir" },
     { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici", note: "Hesap başına ortalama gelir" },
+    { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici", note: "Net gelir tutundurma oranı" },
     { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
     { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS metrik hesaplayıcıları" },
   ],
@@ -276,9 +290,13 @@ export const arpa: ToolContent = {
     { heading: "ARPA Nedir ve Nasıl Hesaplanır?", body: "ARPA (Average Revenue Per Account), toplam aylık yinelenen gelirin aktif hesap sayısına bölünmesiyle bulunur: ARPA = Toplam MRR / Aktif Hesap Sayısı. Bazı ekipler aynı metriği ARPU (Average Revenue Per User) olarak adlandırır; fark, birimin kullanıcı mı yoksa hesap (şirket/organizasyon) mı olduğudur. B2B SaaS'ta doğru birim genellikle hesaptır." },
     { body: "ARPA, fiyatlandırma stratejinizin ve müşteri segmentinizin aynadaki yansımasıdır. Yükselen ARPA; başarılı upsell, daha üst paketlere geçiş veya daha büyük müşterilere kayma anlamına gelir. Düşen ARPA ise indirim baskısı, küçük müşterilere kayma ya da plan küçültmelere (contraction) işaret eder. Bu nedenle ARPA'yı segment ve kohort bazında izlemek, toplam ortalamadan çok daha bilgilendiricidir." },
     { body: "ARPA tek başına değil, CAC ve LTV ile birlikte anlam kazanır. LTV = ARPA × brüt marj / churn oranı yaklaşımıyla ARPA doğrudan yaşam boyu değeri belirler; ARPA'yı %20 artırmak, aynı CAC ile birim ekonomiyi belirgin biçimde iyileştirir. Bu yüzden birçok SaaS için büyümenin en ucuz kaldıracı yeni müşteri değil, mevcut müşteride ARPA artışıdır." },
+    { heading: "Örnek Hesaplama: 500 Hesaplı Bir SaaS'ta ARPA", body: "Toplam MRR'si 420.000 ₺ olan ve 500 aktif hesabı bulunan bir SaaS'ta ARPA = 420.000 / 500 = 840 ₺'dir; yıllık karşılığı 840 × 12 = 10.080 ₺ olur. Aynı şirket bir sonraki çeyrekte 40 hesabı üst pakete taşıyıp MRR'yi 470.000 ₺'ye çıkarır ve hesap sayısı 505'te kalırsa ARPA 930 ₺'ye yükselir — yani gelir artışının kaynağı yeni müşteri değil, mevcut müşteride derinleşmedir." },
+    { body: "Bu ayrımı görmek önemlidir: ARPA sabitken MRR'nin büyümesi hacim büyümesidir, ARPA'nın da büyümesi ise değer büyümesidir. CAC'ı 6.000 ₺ olan bu örnekte ARPA'nın 840'tan 930 ₺'ye çıkması, CAC geri kazanım süresini yaklaşık 7,1 aydan 6,5 aya indirir." },
   ],
   faqs: [
     { q: "ARPA ile ARPU arasındaki fark nedir?", a: "İkisi de ortalama geliri ölçer; ARPA hesap (şirket) başına, ARPU ise kullanıcı başına hesaplanır. Bir hesapta birden fazla kullanıcı bulunan B2B SaaS ürünlerinde doğru metrik genellikle ARPA'dır." },
+    { q: "ARPA nedir ve nasıl hesaplanır?", a: "ARPA (Average Revenue Per Account), aktif hesap başına düşen ortalama aylık yinelenen gelirdir. Formülü ARPA = Toplam MRR / Aktif Hesap Sayısı'dır. Örneğin 420.000 ₺ MRR ve 500 hesapta ARPA 840 ₺ olur." },
+    { q: "ARPA ile MRR arasındaki ilişki nedir?", a: "MRR = ARPA × Aktif Hesap Sayısı. Yani MRR'yi büyütmenin iki yolu vardır: daha fazla hesap kazanmak (hacim) veya hesap başına geliri artırmak (değer). ARPA takibi, büyümenin bu iki kaynağını birbirinden ayırmanızı sağlar." },
     { q: "ARPA hesaplamasına hangi gelirler dahil edilir?", a: "Yalnızca yinelenen abonelik geliri (MRR) dahil edilir. Kurulum ücreti, danışmanlık ve tek seferlik satışlar hariç tutulur; aksi hâlde ortalama yapay olarak yükselir." },
     { q: "İyi bir ARPA değeri nedir?", a: "Mutlak bir eşik yoktur; segmentinize bağlıdır. SMB odaklı ürünlerde aylık birkaç yüz birim normalken enterprise'da binlerce birim görülür. Anlamlı kıyas, kendi ARPA trendiniz ve CAC ile oranıdır." },
     { q: "ARPA nasıl artırılır?", a: "Paket ve fiyat mimarisini gözden geçirmek, kullanım bazlı ek modüller sunmak, yıllık plana geçişi teşvik etmek, upsell/cross-sell akışları kurmak ve düşük değerli segmente odağı azaltmak en etkili yöntemlerdir." },
@@ -286,7 +304,71 @@ export const arpa: ToolContent = {
   relatedTools: [
     { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
     { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici", note: "Yıllık yinelenen gelir" },
+    { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici", note: "Mevcut müşteriden gelen büyüme" },
     { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
+    { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS metrik hesaplayıcıları" },
+  ],
+  relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
+};
+
+export const nrr: ToolContent = {
+  slug: "nrr",
+  path: "/ucretsiz-araclar/nrr-hesaplayici",
+  title: "NRR Hesaplayıcı",
+  description:
+    "Net Revenue Retention (NRR) oranınızı başlangıç, genişleme, daralma ve kayıp MRR değerleriyle ücretsiz hesaplayın.",
+  intro:
+    "NRR (Net Revenue Retention), mevcut müşteri tabanınızın tek başına ne kadar büyüdüğünü gösterir. Dönem başı MRR ile genişleme, daralma ve kayıp MRR değerlerinizi girin; NRR ve brüt tutundurma oranı anında hesaplansın.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "NRR (Net Revenue Retention) Nedir?", body: "NRR, bir dönem başındaki müşteri tabanının aynı dönem sonunda ürettiği gelirin, başlangıç gelirine oranıdır. Formülü NRR = (Başlangıç MRR + Genişleme MRR − Daralma MRR − Kaybedilen MRR) / Başlangıç MRR × 100 şeklindedir. Kritik nokta şudur: hesaba yeni kazanılan müşteriler dahil edilmez. Bu yüzden NRR, satış motorunu kapatsanız bile işletmenizin büyüyüp büyümeyeceğini gösteren tek metriktir." },
+    { heading: "Örnek Hesaplama", body: "Dönem başı MRR'si 400.000 ₺ olan bir SaaS'ta ay içinde 60.000 ₺ genişleme (upsell, koltuk artışı), 15.000 ₺ daralma (plan küçültme) ve 25.000 ₺ churn gerçekleşti. NRR = (400.000 + 60.000 − 15.000 − 25.000) / 400.000 × 100 = %105. Yani hiç yeni müşteri kazanılmasa bile gelir %5 büyümüş olur. Aynı örnekte brüt tutundurma (GRR) = (400.000 − 15.000 − 25.000) / 400.000 × 100 = %90'dır; aradaki 15 puanlık fark tamamen genişlemeden gelir." },
+    { heading: "Sağlıklı NRR Aralıkları", body: "Genel kabul gören referanslar: SMB odaklı SaaS'larda %90-100, mid-market'te %100-110, enterprise ve kullanım bazlı fiyatlayan ürünlerde %120 ve üzeri. %100'ün altı, mevcut tabanın eridiğini ve büyümenin tamamen yeni satışa bağımlı olduğunu gösterir; bu da CAC baskısını sürekli artırır. %120 üzeri NRR ise yatırımcıların en yüksek çarpanı verdiği profildir." },
+    { body: "NRR'yi iyileştirmenin yolu genellikle satıştan değil üründen ve müşteri başarısından geçer: onboarding'i hızlandırmak, kullanım bazlı fiyat basamakları kurmak, koltuk/modül genişlemesini kolaylaştırmak ve risk skoru ile churn'ü erken yakalamak. NRR'yi kohort ve segment kırılımında izlemek, hangi müşteri profilinin gerçekten genişlediğini gösterir." },
+  ],
+  faqs: [
+    { q: "NRR nedir ve nasıl hesaplanır?", a: "NRR (Net Revenue Retention), mevcut müşterilerden gelen gelirin dönem içindeki net değişimidir. Formül: NRR = (Başlangıç MRR + Genişleme MRR − Daralma MRR − Kaybedilen MRR) / Başlangıç MRR × 100. Yeni müşteri geliri bu hesaba girmez." },
+    { q: "İyi bir NRR oranı nedir?", a: "%100 nötr eşiktir: taban ne büyüyor ne küçülüyor demektir. SMB'de %90-100 kabul edilebilir, mid-market'te %100-110 iyi, enterprise ve kullanım bazlı modellerde %120 ve üzeri mükemmel sayılır. %100 altı, büyümenin tamamen yeni satışa bağımlı olduğu anlamına gelir." },
+    { q: "NRR ile GRR arasındaki fark nedir?", a: "GRR (Gross Revenue Retention) yalnızca kayıpları sayar ve asla %100'ü geçemez: (Başlangıç − Daralma − Churn) / Başlangıç. NRR ise genişlemeyi de eklediği için %100'ün üzerine çıkabilir. GRR ürün yapışkanlığını, NRR ise büyüme potansiyelini ölçer." },
+    { q: "NRR neden ARR'dan daha önemli kabul edilir?", a: "ARR gelirin büyüklüğünü söyler, NRR ise o gelirin kalitesini. Yüksek ARR'a rağmen düşük NRR, kovanın deliğini yeni satışla kapattığınız anlamına gelir; yeni satış yavaşladığı anda büyüme durur. Yatırımcıların değerleme çarpanını en çok etkileyen metriklerden biri bu yüzden NRR'dir." },
+    { q: "Negatif churn ne demektir?", a: "Genişleme gelirinin kaybedilen geliri aşması, yani NRR'nin %100'ün üzerinde olması durumudur. Bu profildeki şirketler hiç yeni müşteri kazanmasa bile büyür ve pazarlama bütçesini daha agresif kullanabilir." },
+    { q: "NRR hangi sıklıkla ölçülmelidir?", a: "Aylık MRR üzerinden hesaplanıp 12 aylık kayan pencereyle raporlanması en yaygın pratiktir. Küçük müşteri tabanlarında tek bir büyük hesabın hareketi aylık NRR'yi çok oynatacağı için çeyreklik ölçüm daha güvenilirdir." },
+  ],
+  relatedTools: [
+    { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici", note: "Yıllık yinelenen gelir" },
+    { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici", note: "Kayıp oranı ve retention" },
+    { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
+    { label: "Rule of 40 Hesaplayıcı", href: "/ucretsiz-araclar/rule-of-40-hesaplayici", note: "Büyüme + kârlılık dengesi" },
+  ],
+  relatedPost: { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi" },
+};
+
+export const ruleOf40: ToolContent = {
+  slug: "rule-of-40",
+  path: "/ucretsiz-araclar/rule-of-40-hesaplayici",
+  title: "Rule of 40 Hesaplayıcı",
+  description:
+    "Gelir büyüme oranı ve kâr marjınızı toplayarak SaaS'ınızın Rule of 40 skorunu ve sağlıklı olup olmadığını ücretsiz ölçün.",
+  intro:
+    "Rule of 40, bir SaaS şirketinin büyüme hızı ile kârlılığının toplamının 40'ın üzerinde olması gerektiğini söyleyen basit bir sağlık testidir. Yıllık gelir büyüme oranınızı ve kâr marjınızı girin; skorunuz ve geçti/kaldı durumu anında hesaplansın.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "Rule of 40 Nedir?", body: "Rule of 40, SaaS ve abonelik şirketlerinin sağlığını tek bir sayıya indiren bir başparmak kuralıdır: Yıllık Gelir Büyüme Oranı (%) + Kâr Marjı (%) ≥ 40. Mantığı şudur: hızlı büyüyen bir şirketin kısa vadede zarar etmesi kabul edilebilir, yavaş büyüyen bir şirketin ise kârlı olması beklenir. Toplam 40'ın altına düştüğünde şirket ne yeterince hızlı büyüyor ne de yeterince kârlı çalışıyor demektir." },
+    { heading: "Örnek Hesaplama", body: "Yıllık %55 ARR büyümesi olan ama %20 FCF zararı yazan bir şirketin skoru 55 + (−20) = 35'tir; kuralın altındadır. Buna karşılık %18 büyüyen ve %25 kâr marjıyla çalışan bir şirketin skoru 43 olur ve testi geçer. Aynı skoru üreten iki farklı profil (agresif büyüme veya disiplinli kârlılık) yatırımcı gözünde genellikle eşdeğer kabul edilir." },
+    { heading: "Kâr Marjı Olarak Ne Kullanılmalı?", body: "Pratikte üç ölçü kullanılır: EBITDA marjı, serbest nakit akışı (FCF) marjı veya faaliyet kâr marjı. Hangisini seçerseniz seçin, dönemler arasında tutarlı kalın; ölçüyü değiştirerek skoru güzelleştirmek en sık yapılan hatadır. Büyüme tarafında ise ARR veya yıllıklandırılmış gelir büyümesi kullanılır — aylık büyümeyi doğrudan yazmak skoru yapay biçimde şişirir." },
+    { body: "Rule of 40, tek başına bir strateji değil bir denge testidir. 40'ın üzerinde olmak sürdürülebilir bir birim ekonomiyi garanti etmez; bu yüzden NRR, LTV:CAC oranı ve CAC geri kazanım süresiyle birlikte okunmalıdır. Özellikle erken aşama (ARR < 1M) şirketlerde küçük baz etkisi nedeniyle skor aşırı yüksek çıkabilir ve yanıltıcı olur." },
+  ],
+  faqs: [
+    { q: "Rule of 40 nedir ve nasıl hesaplanır?", a: "Rule of 40 = Yıllık Gelir Büyüme Oranı (%) + Kâr Marjı (%). Toplam 40 veya üzerindeyse şirket sağlıklı bir büyüme-kârlılık dengesinde kabul edilir. Örnek: %30 büyüme + %12 kâr marjı = 42, kuralı geçer." },
+    { q: "Rule of 40'ta hangi kâr marjı kullanılmalı?", a: "En yaygın kullanım EBITDA marjı ve serbest nakit akışı (FCF) marjıdır; faaliyet kâr marjı da kabul edilir. Önemli olan aynı ölçüyü dönemler boyunca tutarlı kullanmaktır, aksi hâlde trend karşılaştırılamaz hâle gelir." },
+    { q: "Rule of 40 hangi aşamadaki şirketler için anlamlıdır?", a: "Genellikle 1 milyon ARR'ı geçmiş ve büyüme oranı stabilize olmaya başlamış şirketler için anlamlıdır. Çok erken aşamada düşük baz nedeniyle büyüme yüzdesi üç haneli çıkar ve skor gerçek sağlığı yansıtmaz." },
+    { q: "Skorum 40'ın altındaysa ne yapmalıyım?", a: "Önce hangi bileşenin zayıf olduğunu belirleyin. Büyüme düşükse fiyatlama, genişleme geliri (NRR) ve satın alma kanalları; kârlılık düşükse brüt marj, altyapı maliyetleri ve satış-pazarlama verimliliği (CAC geri kazanım süresi) üzerinde çalışın. İki bileşeni aynı anda zorlamak genellikle ikisini de bozar." },
+    { q: "Rule of 40 ile NRR arasındaki ilişki nedir?", a: "Yüksek NRR, büyümenin ucuz kaynağıdır: mevcut müşteriden gelen genişleme geliri satış maliyeti yaratmadığı için hem büyüme hem kâr marjı bileşenini aynı anda yukarı çeker. Bu yüzden Rule of 40 skorunu iyileştirmenin en verimli yolu genellikle NRR'yi artırmaktır." },
+  ],
+  relatedTools: [
+    { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici", note: "Net gelir tutundurma" },
+    { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici", note: "Yıllık yinelenen gelir" },
+    { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Kâr marjı bileşeni" },
     { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS metrik hesaplayıcıları" },
   ],
   relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },

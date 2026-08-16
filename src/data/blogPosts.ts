@@ -812,6 +812,520 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "linkedin-reklamlari-turkiye-2026-firsat",
+    title: "Türkiye'de LinkedIn Reklamları Neden Şimdi Ucuz? 2026 Verileriyle Fırsat Penceresi",
+    description:
+      "DataReportal'ın 2026 Türkiye verilerine göre LinkedIn'in reklam erişimi diğer platformlardan hızlı büyüyor. Rekabetin henüz doymadığı bu fırsat penceresini B2B için nasıl kullanacağınızı anlatıyoruz.",
+    category: "performans-pazarlama",
+    tldr: [
+      "DataReportal'ın Kepios ile hazırladığı Türkiye raporuna göre LinkedIn'in reklamla ulaşılabilir kitlesi, olgunlaşmış sosyal platformlardan belirgin biçimde hızlı büyüyor.",
+      "Kullanıcı tarafı büyürken reklamveren tarafı aynı hızda büyümediğinde, açık artırma baskısı geçici olarak düşük kalır — fırsat penceresi tam olarak budur.",
+      "Türkiye'de B2B alıcıların LinkedIn'de bulunabilirliği arttı; ancak çoğu bütçe hâlâ Meta ve Google'da duruyor.",
+      "Pencere kapanmadan yapılacak doğru hamle: kitle listelerini şimdi kurmak, marka bilinirliğini ucuzken biriktirmek ve dönüşümü lead formundan CRM'e bağlamak.",
+    ],
+    publishedAt: "2026-08-16",
+    readingMinutes: 6,
+    tags: ["LinkedIn Ads", "B2B", "Türkiye", "Medya Planlama"],
+    sections: [
+      {
+        heading: "Türkiye'de LinkedIn'in Reklam Erişimi Ne Kadar Büyüdü?",
+        paragraphs: [
+          "DataReportal'ın Kepios ile hazırladığı Türkiye dijital raporuna göre LinkedIn, ülkede reklamla ulaşılabilir kitlesini yıllık bazda en hızlı büyüten platformlardan biri konumunda. Rapordaki tablo şunu gösteriyor: Meta ve YouTube gibi olgunlaşmış platformlar zaten nüfusun büyük bölümüne eriştiği için tek haneli büyüme üretirken, LinkedIn hâlâ çift haneli oranlarda yeni erişim kazanıyor.",
+          "Bu farkın nedeni doygunluk seviyesi. Bir platform hedef kitlesinin neredeyse tamamına ulaştığında büyüme ancak nüfus artışı kadar olur. LinkedIn ise Türkiye'de profesyonel nüfusun tamamına henüz ulaşmış değil; her yıl yeni mezunlar, kariyer değiştirenler ve şirket hesapları platforma katılmaya devam ediyor. Yani büyüme, doygun bir pazarda pay çalmaktan değil, pazarın kendisinin genişlemesinden geliyor.",
+          "Rakamları tek tek ezberlemenin bir anlamı yok; önemli olan yön. Reklamla ulaşılabilir kitlenin büyüme hızı, o platformdaki envanter arzının büyüme hızıdır. Envanter hızla artıyorsa ve talep aynı hızda artmıyorsa, birim maliyet baskı altında kalır.",
+        ],
+      },
+      {
+        heading: "Envanter Büyürken Reklamveren Sayısı Neden Geride Kalıyor?",
+        paragraphs: [
+          "Türkiye'de dijital reklam bütçelerinin ezici çoğunluğu hâlâ Meta ve Google'a akıyor. Bunun sebebi genellikle stratejik bir tercih değil, alışkanlık: ekipler bu panellerde deneyimli, ajanslar bu kanallarda ölçekli, raporlama şablonları buna göre kurulu. LinkedIn ise \"pahalı kanal\" etiketiyle çoğu medya planında en sona bırakılıyor.",
+          "Sonuç ilginç bir asimetri yaratıyor: kullanıcı ve gösterim arzı büyüyor, ama o envantere talip olan reklamveren sayısı aynı oranda artmıyor. Açık artırma tabanlı bir sistemde bu, birim maliyetin baskılanması demek. \"LinkedIn pahalıdır\" cümlesi mutlak CPM üzerinden bakınca doğru olmaya devam ediyor, ama doğru soru bu değil.",
+          "Doğru soru şu: nitelikli bir B2B karar vericisine ulaşmanın toplam maliyeti nedir? Meta'da CPM daha düşüktür ama hedeflediğiniz profil, ilgi alanı tahminleriyle bulunur ve büyük bir kısmı israf olur. LinkedIn'de CPM yüksektir ama unvan, şirket büyüklüğü ve sektör beyan edilmiş veridir. İsraf düştüğünde, yüksek CPM'e rağmen nitelikli temas başına maliyet düşebilir.",
+        ],
+        bullets: [
+          "Mutlak CPM yerine \"nitelikli lead başına maliyet\" ile karşılaştırın; iki kanalı aynı metrikle konuşturmadan karar vermeyin.",
+          "Meta'daki lead formunu dolduranların ne kadarının SQL'e döndüğünü ölçün — çoğu ekipte bu oran beklenenden çok düşük çıkar.",
+          "LinkedIn'i \"ek kanal\" değil, huninin üst ve orta katmanını besleyen ayrı bir sistem olarak kurgulayın.",
+        ],
+      },
+      {
+        heading: "Fırsat Penceresi Ne Kadar Açık Kalır?",
+        paragraphs: [
+          "Bu tür asimetriler kalıcı değildir. Bir kanalın verimi fark edildikçe bütçe oraya kayar, açık artırmadaki rekabet artar ve maliyet avantajı erir. Türkiye'de LinkedIn tarafında bu sürecin başladığını görüyoruz; teknoloji, danışmanlık ve endüstriyel B2B segmentlerinde reklamveren yoğunluğu belirgin şekilde artıyor.",
+          "Pencere kapandığında kaybedilen şey sadece ucuz CPM değil, birikmiş kitle varlığıdır. Bugün oluşturduğunuz site ziyaretçisi, video izleyicisi ve etkileşim tabanlı retargeting listeleri, maliyetler yükseldiğinde en verimli varlığınız olur. Soğuk hedefleme pahalılaşırken, önceden biriktirilmiş sıcak kitleye ulaşmak görece ucuz kalmaya devam eder.",
+          "Yani buradaki fırsat \"şimdi çok satış yap\" fırsatı değil; \"pahalanmadan önce varlık biriktir\" fırsatı. B2B'de karar süreçleri zaten aylar sürüyor, bu yüzden bugün kurulan kitle yarının satışını finanse ediyor.",
+        ],
+      },
+      {
+        heading: "Bu Pencereyi Değerlendirmek İçin Pratik Kurulum",
+        paragraphs: [
+          "Aşağıdaki sıralama, sıfırdan LinkedIn Ads kuran bir B2B ekibinin ilk 60 günde izlemesi gereken yolu özetliyor. Amaç ilk günden dönüşüm kovalamak değil; ölçüm altyapısını kurup kitleyi biriktirmek.",
+        ],
+        bullets: [
+          "Insight Tag'i kurun ve site ziyaretçisi, fiyatlandırma sayfası görüntüleyen, blog okuyan gibi ayrı kitleler tanımlayın.",
+          "Hedeflemeyi unvan yerine iş fonksiyonu + kıdem + şirket büyüklüğü üçlüsüyle kurun; unvan alanı Türkiye'de çok dağınık doldurulur.",
+          "Bütçenin çoğunluğunu karar vericinin bir kademe altındaki araştırmacı profile ayırın; süreci genellikle onlar başlatır.",
+          "İlk 30 günü düşük maliyetli video ve döküman (carousel) reklamlarıyla kitle biriktirmeye ayırın, dönüşümü ikinci aşamada zorlayın.",
+          "Lead Gen Form kullanıyorsanız CRM entegrasyonunu ilk günden kurun; SQL verisi geri beslenmeden optimizasyon kör çalışır.",
+          "Frekansı haftalık takip edin; dar B2B kitlelerinde frekans hızla yükselir ve tıklama maliyetini yukarı çeker.",
+        ],
+      },
+      {
+        heading: "Ölçümü Doğru Kurmadan Bu Fırsat İşe Yaramaz",
+        paragraphs: [
+          "Kanal ucuz olsa bile, form doldurmayı nihai başarı sayan bir ölçüm kurgusu sizi yanlış yöne götürür. LinkedIn'de gelen leadlerin niteliği genellikle yüksektir, ancak bunu kanıtlayamazsanız bütçe tartışmasını kaybedersiniz. Bu yüzden dönüşüm tanımını CRM'deki fırsat aşamasına bağlamak şart.",
+          "Pratik yaklaşım: reklam panelinde \"form gönderimi\" birincil hedef olmaktan çıkarılır, yerine CRM'den geri beslenen \"nitelikli görüşme\" veya \"fırsat oluştu\" olayı konur. Bu bağlantı kurulduktan sonra maliyet karşılaştırmaları anlamlı hale gelir ve LinkedIn'in gerçek maliyeti, panelde görünen CPM'den çok farklı bir yerde durur.",
+          "Huninin tamamını uçtan uca nasıl kuracağınızı adım adım anlattığımız B2B lead generation hunisi rehberi, bu ölçüm zincirinin nasıl kurulacağını da kapsıyor.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Türkiye'de LinkedIn reklamları gerçekten ucuz mu?",
+        answer:
+          "Mutlak CPM olarak hayır — LinkedIn Meta'dan pahalıdır. Ancak nitelikli B2B teması başına maliyete bakıldığında tablo değişir. DataReportal'ın Kepios ile hazırladığı rapora göre platformun Türkiye'deki reklam erişimi hızla büyürken reklamveren yoğunluğu aynı hızda artmadığı için, açık artırma baskısı geçici olarak düşük kalıyor. Fırsat bu asimetride.",
+      },
+      {
+        question: "LinkedIn Ads için Türkiye'de minimum bütçe ne olmalı?",
+        answer:
+          "Anlamlı bir test için aylık bütçenin, hedef kitlenizin büyüklüğüne ve kampanya sayısına göre planlanması gerekir. Pratik kural: tek bir kampanyada günlük bütçe, o kitledeki ortalama tıklama maliyetinin en az 15-20 katı olmalı ki algoritma günlük yeterli veri toplayabilsin. Bütçeyi çok sayıda kampanyaya bölmek, hiçbirinin öğrenememesine yol açar.",
+      },
+      {
+        question: "LinkedIn Ads mi Meta Ads mi B2B için daha uygun?",
+        answer:
+          "İkisi farklı işler yapar. LinkedIn beyan edilmiş firmografik veriyle (unvan, şirket büyüklüğü, sektör) doğrudan karar verici çevresine ulaşmak için uygundur. Meta ise geniş erişim ve düşük CPM ile marka bilinirliği ve retargeting için verimlidir. Çoğu B2B için doğru kurgu, LinkedIn ile hedefleyip Meta ile hatırlatma yapmaktır.",
+      },
+      {
+        question: "Bu fırsat penceresi ne zaman kapanır?",
+        answer:
+          "Kesin bir tarih vermek mümkün değil; kapanma, reklamveren yoğunluğunun erişim büyümesini yakalamasıyla gerçekleşir. Teknoloji ve danışmanlık gibi segmentlerde rekabet şimdiden artıyor. Pratik gösterge kendi hesabınızdaki CPM trendidir: aynı kitlede CPM birkaç ay üst üste yükseliyorsa pencere daralıyor demektir.",
+      },
+      {
+        question: "LinkedIn Lead Gen Form mu landing page mi kullanmalı?",
+        answer:
+          "Lead Gen Form form doldurma oranını belirgin şekilde yükseltir çünkü kullanıcı platformdan ayrılmaz ve alanlar otomatik dolar. Ancak niteliği düşürebilir. Önerilen yaklaşım: üst huni içerik indirmelerinde Lead Gen Form, demo ve fiyat talebi gibi yüksek niyetli aksiyonlarda landing page kullanmak.",
+      },
+    ],
+    relatedToolKey: "cac",
+    resources: [
+      {
+        label: "B2B Lead Generation Hunisi Nasıl Tasarlanır?",
+        href: "/blog/b2b-lead-generation-huni-tasarimi",
+      },
+      {
+        label: "B2B Lead Generation Maliyetleri Nasıl Düşürülür?",
+        href: "/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur",
+      },
+      {
+        label: "Kaynak: DataReportal — Digital 2026: Turkey (Kepios ile hazırlanmıştır)",
+        href: "https://datareportal.com/reports/digital-2026-turkey",
+        external: true,
+      },
+    ],
+  },
+  {
+    slug: "nrr-nedir-saas-buyume-metrigi",
+    title: "NRR (Net Revenue Retention) Nedir? SaaS'ta Neden ARR'dan Daha Önemli?",
+    description:
+      "NRR'nin ARR ve MRR'dan farkı, nasıl hesaplandığı, sağlıklı aralıkları ve yatırımcıların neden değerlemeyi bu metrik üzerinden kurduğu — örnek hesaplamalarla.",
+    category: "saas-buyume",
+    tldr: [
+      "NRR = (Başlangıç MRR + Genişleme − Daralma − Churn) / Başlangıç MRR × 100. Yeni müşteriler hesaba girmez.",
+      "ARR gelirin büyüklüğünü, NRR ise o gelirin kalitesini gösterir; yeni satış durduğunda ne olacağını yalnızca NRR söyler.",
+      "%100 nötr eşiktir. Altı taban erimesi, üstü negatif churn anlamına gelir.",
+      "Yatırımcı değerleme çarpanlarını en çok etkileyen metriklerden biridir; %120+ NRR premium çarpan getirir.",
+    ],
+    publishedAt: "2026-08-16",
+    readingMinutes: 6,
+    tags: ["SaaS", "NRR", "Retention", "Metrikler"],
+    sections: [
+      {
+        heading: "NRR Nedir ve Nasıl Hesaplanır?",
+        paragraphs: [
+          "NRR (Net Revenue Retention), dönem başındaki müşteri tabanının dönem sonunda ürettiği gelirin başlangıç gelirine oranıdır. Formülü basittir: NRR = (Başlangıç MRR + Genişleme MRR − Daralma MRR − Kaybedilen MRR) / Başlangıç MRR × 100.",
+          "Hesabın en kritik detayı, dışarıda bıraktığı şeydir: yeni kazanılan müşterilerin geliri bu formüle girmez. Bu yüzden NRR, pazarlama ve satış motorunu tamamen kapatsanız bile işletmenizin büyüyüp büyümeyeceğini gösteren tek metriktir. Diğer tüm büyüme metrikleri yeni satışla maskelenebilir; NRR maskelenemez.",
+          "Örnek: Dönem başı MRR'si 400.000 ₺ olan bir SaaS'ta ay içinde 60.000 ₺ genişleme (upsell, koltuk artışı), 15.000 ₺ daralma (plan küçültme) ve 25.000 ₺ churn gerçekleşti. NRR = (400.000 + 60.000 − 15.000 − 25.000) / 400.000 × 100 = %105. Yani hiç yeni müşteri gelmese bile gelir %5 büyümüş oldu.",
+        ],
+      },
+      {
+        heading: "NRR ile ARR ve MRR Arasındaki Fark",
+        paragraphs: [
+          "ARR ve MRR birer hacim metriğidir: gelirin ne kadar büyük olduğunu söyler. NRR ise bir kalite metriğidir: o gelirin ne kadar dayanıklı ve genişleyebilir olduğunu söyler. İki şirket aynı 10 milyon ARR'a sahip olabilir, ama biri %85 diğeri %125 NRR ile çalışıyorsa bunlar tamamen farklı iki iştir.",
+          "%85 NRR ile çalışan şirket, sadece yerinde saymak için her yıl gelirinin %15'i kadar yeni satış yapmak zorundadır. Büyümek istiyorsa bunun üzerine çıkması gerekir. Bu, satış ekibine ve reklam bütçesine kalıcı bir bağımlılık yaratır; CAC arttığı anda büyüme durur.",
+          "%125 NRR ile çalışan şirket ise hiç yeni müşteri kazanmasa bile yılda %25 büyür. Yeni satış bunun üzerine eklendiğinde bileşik bir etki oluşur. Bu yüzden aynı ARR'a sahip iki şirket arasında değerleme farkı katlarla ölçülebilir.",
+        ],
+        bullets: [
+          "ARR: gelir ne kadar büyük?",
+          "Büyüme oranı: gelir ne kadar hızlı artıyor?",
+          "NRR: bu artışın ne kadarı mevcut müşteriden geliyor, yani ne kadarı sürdürülebilir?",
+        ],
+      },
+      {
+        heading: "NRR ile GRR Arasındaki Fark Neden Önemli?",
+        paragraphs: [
+          "GRR (Gross Revenue Retention) yalnızca kayıpları sayar: (Başlangıç − Daralma − Churn) / Başlangıç. Genişlemeyi içermediği için asla %100'ü geçemez. Yukarıdaki örnekte GRR = (400.000 − 15.000 − 25.000) / 400.000 = %90'dır.",
+          "NRR %105 ile iyi görünürken GRR %90 olması şunu anlatır: taban aslında eriyor, ancak birkaç büyük hesabın genişlemesi bu erimeyi örtüyor. Bu, kırılgan bir yapıdır — genişleyen o birkaç hesap ayrıldığında tablo hızla bozulur.",
+          "Bu yüzden ciddi bir yatırımcı görüşmesinde ikisi birlikte sorulur. Sağlıklı profil, GRR'nin de yüksek olduğu (enterprise'da %90+, SMB'de %80+) ve NRR'nin genişlemeyle bunun üzerine çıktığı yapıdır.",
+        ],
+      },
+      {
+        heading: "Sağlıklı NRR Aralıkları ve Yatırımcı Bakışı",
+        paragraphs: [
+          "Segmente göre yaygın referanslar: SMB odaklı SaaS'larda %90-100, mid-market'te %100-110, enterprise ve kullanım bazlı fiyatlayan ürünlerde %120 ve üzeri. Kullanım bazlı fiyatlama modelleri doğaları gereği yüksek NRR üretir, çünkü müşteri büyüdükçe fatura otomatik büyür.",
+          "Yatırımcılar NRR'yi iki nedenle önemser. Birincisi, gelecekteki gelirin öngörülebilirliğini gösterir. İkincisi, ürünün gerçekten değer üretip üretmediğinin en dürüst kanıtıdır — müşteri parasını artırıyorsa memnundur, anketler bunu söyleyemez ama fatura söyler.",
+        ],
+      },
+      {
+        heading: "NRR Nasıl Artırılır?",
+        paragraphs: [
+          "NRR'yi iyileştirmek çoğunlukla satışın değil, ürün ve müşteri başarısının işidir. Genişleme geliri, müşterinin üründen aldığı değerin doğal sonucudur; zorla satılmaz.",
+        ],
+        bullets: [
+          "Fiyatlamayı büyümeye bağlayın: koltuk, kullanım hacmi veya işlem sayısı gibi müşteriyle birlikte büyüyen bir eksen seçin.",
+          "Onboarding'i hızlandırın: ilk değerin görüldüğü süre (time-to-value) kısaldıkça hem churn düşer hem genişleme hızlanır.",
+          "Genişlemeyi sürtünmesiz yapın: ek koltuk veya modül almak için satış görüşmesi gerekmemeli.",
+          "Risk skoru kurun: kullanım düşüşü, ana kullanıcının ayrılması, destek talebi artışı gibi sinyalleri churn gerçekleşmeden yakalayın.",
+          "NRR'yi kohort ve segment kırılımında izleyin: hangi müşteri profilinin genişlediğini bilmek, satın alma hedeflemenizi de düzeltir.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "NRR nedir?",
+        answer:
+          "NRR (Net Revenue Retention), mevcut müşteri tabanınızdan gelen gelirin bir dönem içindeki net değişimidir. Formül: (Başlangıç MRR + Genişleme − Daralma − Churn) / Başlangıç MRR × 100. Yeni müşterilerden gelen gelir bu hesaba dahil edilmez.",
+      },
+      {
+        question: "İyi bir NRR oranı nedir?",
+        answer:
+          "%100 nötr eşiktir. SMB odaklı ürünlerde %90-100 kabul edilebilir, mid-market'te %100-110 iyi, enterprise ve kullanım bazlı fiyatlayan SaaS'larda %120 ve üzeri mükemmel sayılır. %100'ün altı, mevcut tabanın eridiğini ve büyümenin tamamen yeni satışa bağımlı olduğunu gösterir.",
+      },
+      {
+        question: "NRR neden ARR'dan daha önemli?",
+        answer:
+          "ARR gelirin büyüklüğünü, NRR ise kalitesini ölçer. Yüksek ARR düşük NRR ile birleştiğinde, yeni satışın sürekli bir kaybı kapattığı anlamına gelir; satış yavaşladığı anda büyüme durur. Yatırımcı değerlemesinde çarpanı en çok etkileyen metriklerden biri bu yüzden NRR'dir.",
+      },
+      {
+        question: "NRR ile GRR arasındaki fark nedir?",
+        answer:
+          "GRR yalnızca daralma ve churn'ü sayar, genişlemeyi içermez ve %100'ü geçemez. NRR genişlemeyi de eklediği için %100'ün üzerine çıkabilir. GRR ürünün yapışkanlığını, NRR ise büyüme potansiyelini ölçer; ikisi birlikte okunmalıdır.",
+      },
+      {
+        question: "NRR nasıl hesaplanır, örnek verir misiniz?",
+        answer:
+          "400.000 ₺ başlangıç MRR, 60.000 ₺ genişleme, 15.000 ₺ daralma ve 25.000 ₺ churn olan bir ayda NRR = (400.000 + 60.000 − 15.000 − 25.000) / 400.000 × 100 = %105'tir. Kendi rakamlarınızla denemek için ücretsiz NRR Hesaplayıcı'yı kullanabilirsiniz.",
+      },
+      {
+        question: "Negatif churn ne demek?",
+        answer:
+          "Mevcut müşterilerden gelen genişleme gelirinin, kaybedilen geliri aşması durumudur — yani NRR'nin %100'ün üzerinde olması. Bu profildeki şirketler yeni müşteri kazanmasa bile büyür.",
+      },
+    ],
+    relatedToolKey: "nrr",
+    resources: [
+      {
+        label: "NRR Hesaplayıcı",
+        href: "/ucretsiz-araclar/nrr-hesaplayici",
+      },
+      {
+        label: "SaaS Metrikleri: ARR, CAC ve LTV",
+        href: "/blog/saas-metrikleri-arr-cac-ltv",
+      },
+      {
+        label: "Rule of 40 Hesaplayıcı",
+        href: "/ucretsiz-araclar/rule-of-40-hesaplayici",
+      },
+    ],
+  },
+  {
+    slug: "linkedin-soguk-mesaj-yanit-orani",
+    title: "LinkedIn'de Soğuk Mesajla Yanıt Alma Oranını Artırma: Şablonlar ve Taktikler",
+    description:
+      "LinkedIn soğuk mesajlarında yanıt oranını yükselten açılış cümleleri, kullanıma hazır şablonlar ve takip mesajı zamanlaması — B2B outbound için pratik rehber.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "Soğuk mesajın işi satış yapmak değil, yanıt almaktır; ilk mesajda satış yapmaya çalışmak yanıt oranını düşürür.",
+      "Açılış cümlesi kişiye özel bir gözlemle başlamalı — şirket adını yazmak kişiselleştirme değildir.",
+      "Mesaj 400-600 karakteri geçmemeli ve tek bir düşük eşikli soru içermeli.",
+      "Takip zinciri 3 mesajı geçmemeli: gün 0, gün 4, gün 11. Her takip yeni bir değer taşımalı.",
+    ],
+    publishedAt: "2026-08-16",
+    readingMinutes: 6,
+    tags: ["LinkedIn", "Outbound", "B2B", "Soğuk Mesaj"],
+    sections: [
+      {
+        heading: "Soğuk Mesajların Çoğu Neden Yanıtsız Kalıyor?",
+        paragraphs: [
+          "Yanıt alamayan mesajların büyük bölümü aynı üç hatayı yapıyor: kendinden başlıyor, çok şey istiyor ve herkese gönderilebilecek kadar genel yazılmış. \"Merhaba, ben X şirketinden Y, size çözümümüzü tanıtmak istiyorum\" cümlesi alıcının zihninde tek bir soru uyandırır: \"beni neden ilgilendirsin?\"",
+          "İkinci yaygın hata, ilk mesajda toplantı istemek. Toplantı talebi alıcı için yüksek eşikli bir aksiyondur: takvim açmak, 30 dakika ayırmak, sonrasında satış baskısına maruz kalmak demektir. Henüz size güvenmeyen birinden bu kadar büyük bir taahhüt istemek, yanıt oranını sistematik olarak düşürür.",
+          "Üçüncüsü uzunluk. LinkedIn mesajları çoğunlukla mobilde okunuyor; ekranı dolduran bir metin bloğu görüldüğü anda \"sonra bakarım\"a düşüyor ve bir daha açılmıyor. Pratik sınır 400-600 karakter, yani 3-4 kısa paragraf.",
+        ],
+      },
+      {
+        heading: "Açılış Cümlesi: İlk 10 Kelime Her Şeyi Belirler",
+        paragraphs: [
+          "LinkedIn bildiriminde mesajın yalnızca ilk satırı görünür. Yani açılış cümleniz, mesajın tamamının okunup okunmayacağını belirleyen tek değişken. İyi bir açılış üç şeyden birini yapar: kişiye özel bir gözlem paylaşır, ortak bir bağlam kurar veya alıcının gündemindeki somut bir soruna değinir.",
+          "Kişiselleştirme derken şirket adını mesaja yerleştirmeyi kastetmiyoruz — bu artık herkesin yaptığı ve otomasyon kokan bir hamle. Gerçek kişiselleştirme, kişinin paylaştığı bir gönderiye, şirketin açtığı bir pozisyona, yeni girdiği bir pazara veya yayınladığı bir vaka çalışmasına dayanır.",
+        ],
+        bullets: [
+          "Zayıf: \"Merhaba Ahmet Bey, X şirketi için harika işler yapıyorsunuz.\"",
+          "Güçlü: \"Ahmet Bey, geçen hafta paylaştığınız enterprise onboarding süreci notu ilgimi çekti — özellikle ilk 14 gün vurgusu.\"",
+          "Güçlü: \"3 kişilik bir growth ekibi ararken aynı anda 2 yeni pazara açılıyorsunuz; bu ikisini aynı çeyrekte yürütmek nasıl gidiyor?\"",
+          "Güçlü: \"Fiyatlandırma sayfanızda kullanım bazlı modele geçmişsiniz — bu geçişte en çok hangi metrik zorladı?\"",
+        ],
+      },
+      {
+        heading: "Kullanıma Hazır Şablonlar",
+        paragraphs: [
+          "Aşağıdaki üç şablon farklı senaryolar için. Hiçbirini olduğu gibi kopyalamayın; köşeli parantezli alanları gerçek araştırmayla doldurun. Şablonun değeri metinde değil, yapısındadır: gözlem → bağlantı → düşük eşikli soru.",
+        ],
+        bullets: [
+          "Şablon 1 — Gözlem odaklı: \"[İsim], [somut gözlem: paylaşım/pozisyon/lansman] dikkatimi çekti. Bizde benzer aşamadaki [segment] ekiplerinde en sık [spesifik sorun] çıkıyor. Sizde de bu bir gündem maddesi mi, yoksa çözülmüş bir konu mu?\"",
+          "Şablon 2 — Veri odaklı: \"[İsim], [sektör] tarafında çalıştığımız ekiplerde [metrik] genelde [aralık] bandında seyrediyor. Sizin tarafta bu sayı nerede duruyor — merak ettim, kıyaslama notlarımı paylaşabilirim.\"",
+          "Şablon 3 — Referans odaklı: \"[İsim], [ortak bağlantı/etkinlik/topluluk] üzerinden denk geldik. [Şirket] tarafında [spesifik konu] üzerinde çalışıyorsunuz sanırım; benzer bir kurulumu [benzer şirket] için yapmıştık. İki cümlelik özetini göndereyim mi?\"",
+          "Ortak nokta: hiçbiri toplantı istemiyor. Hepsi \"evet/hayır\" veya tek cümlelik yanıtla geçilebilecek düşük eşikli bir soruyla bitiyor.",
+        ],
+      },
+      {
+        heading: "Takip Mesajı Zamanlaması",
+        paragraphs: [
+          "Yanıtların önemli bir kısmı ilk mesaja değil, takiplere gelir. Ancak takip, aynı ricayı tekrarlamak değildir; her takip yeni bir değer taşımalıdır. Aksi hâlde \"acaba mesajımı gördünüz mü?\" tarzı mesajlar hem yanıt getirmez hem de marka algısını zedeler.",
+          "Önerilen ritim üç temaslıdır ve toplamda iki haftayı geçmez. Bunun ötesine giden zincirlerde yanıt oranı marjinal olarak artarken, engellenme ve olumsuz algı riski belirgin şekilde yükselir.",
+        ],
+        bullets: [
+          "Gün 0 — İlk mesaj: gözlem + düşük eşikli soru.",
+          "Gün 4 — İkinci temas: soruyu tekrarlamayın; ilgili bir kaynak paylaşın (vaka çalışması, kısa bir veri, ilgili blog yazısı).",
+          "Gün 11 — Üçüncü ve son temas: kapanış mesajı. \"Bu dönem gündeminizde değilse tamamen anlıyorum, konuyu kapatıyorum — ilerde faydalı olursa buradayım.\" Bu mesaj beklenenden yüksek yanıt getirir.",
+          "Salı-Perşembe arası, sabah 09:00-11:00 bandı Türkiye'de en yüksek görülme oranını veren pencere; Pazartesi sabahı ve Cuma öğleden sonrası kaçınılması gereken zamanlar.",
+        ],
+      },
+      {
+        heading: "Ölçüm: Hangi Metriği Takip Etmeli?",
+        paragraphs: [
+          "Gönderim sayısı bir metrik değildir. Takip edilmesi gereken üç sayı var: bağlantı kabul oranı, yanıt oranı ve yanıtların kaç tanesinin nitelikli görüşmeye dönüştüğü. Yalnızca yanıt oranını optimize etmek yanıltıcı olabilir — merak uyandıran ama alakasız mesajlar yanıt alır, görüşmeye dönmez.",
+          "Şablonları A/B test ederken tek değişken değiştirin: bir hafta yalnızca açılış cümlesini, sonraki hafta yalnızca kapanış sorusunu. Aynı anda her şeyi değiştirmek, hangi unsurun işe yaradığını gizler. 100 gönderimden azına bakarak karar vermeyin; örneklem küçükken sonuçlar rastgeledir.",
+        ],
+      },
+    ],
+    howTo: {
+      name: "LinkedIn soğuk mesaj dizisi nasıl kurulur?",
+      description:
+        "Yanıt oranını yükselten üç temaslı LinkedIn outbound dizisinin adım adım kurulumu.",
+      steps: [
+        {
+          name: "ICP ve tetikleyici tanımlayın",
+          text: "Kime yazacağınızı unvan yerine iş fonksiyonu, kıdem ve şirket büyüklüğüyle tanımlayın. Ardından bir tetikleyici seçin: yeni işe alım, yeni pazar, ürün lansmanı veya yatırım haberi.",
+        },
+        {
+          name: "Kişiye özel açılış cümlesini yazın",
+          text: "Kişinin son paylaşımı, şirketin açtığı pozisyon veya yayınladığı içerikten somut bir gözlem çıkarın. Şirket adını yazmak kişiselleştirme sayılmaz.",
+        },
+        {
+          name: "Mesajı 400-600 karakterde tutun",
+          text: "Gözlem, kısa bağlantı cümlesi ve tek bir düşük eşikli soru. İlk mesajda toplantı, demo veya fiyat teklifi istemeyin.",
+        },
+        {
+          name: "Takip ritmini kurun",
+          text: "Gün 4'te yeni bir değer taşıyan kaynak paylaşın, gün 11'de nazik bir kapanış mesajı gönderin. Üç temasın ötesine geçmeyin.",
+        },
+        {
+          name: "Ölçün ve tek değişken test edin",
+          text: "Bağlantı kabul oranı, yanıt oranı ve nitelikli görüşme sayısını ayrı ayrı takip edin. Haftada yalnızca bir unsuru değiştirerek en az 100 gönderimlik örneklemle karşılaştırın.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "LinkedIn soğuk mesajında iyi bir yanıt oranı nedir?",
+        answer:
+          "İyi hedeflenmiş ve gerçekten kişiselleştirilmiş bir dizide çift haneli yanıt oranları ulaşılabilirdir; jenerik toplu gönderimlerde oran tek haneye, çoğu zaman %2-3 bandına düşer. Asıl kıyas mutlak bir eşik değil, kendi şablonlarınız arasındaki farktır.",
+      },
+      {
+        question: "İlk mesajda toplantı istemek doğru mu?",
+        answer:
+          "Genellikle hayır. Toplantı yüksek eşikli bir taahhüttür ve henüz güven kurulmamıştır. İlk mesajın hedefi yanıt almaktır; toplantı talebi, karşı taraf konuya ilgi gösterdikten sonra ikinci veya üçüncü temasa bırakılmalıdır.",
+      },
+      {
+        question: "Bağlantı isteğine not eklemeli miyim?",
+        answer:
+          "Kısa ve bağlam veren bir not kabul oranını artırır; satış içeren bir not ise düşürür. En verimli yaklaşım, notu tek cümlelik bir gözlemle sınırlamak ve satış konusuna bağlantı kabul edildikten sonra girmektir.",
+      },
+      {
+        question: "Kaç takip mesajı göndermeli?",
+        answer:
+          "Üç temas (gün 0, gün 4, gün 11) çoğu B2B senaryosu için yeterlidir. Daha uzun zincirler yanıt oranını marjinal artırırken engellenme ve olumsuz marka algısı riskini belirgin şekilde yükseltir.",
+      },
+      {
+        question: "Otomasyon araçları kullanmak yanıt oranını düşürür mü?",
+        answer:
+          "Araç değil, kişiselleştirme eksikliği düşürür. Araştırmayı ve açılış cümlesini otomatikleştirmeye çalışan kurulumlar jenerik metin üretir. Doğru kullanım, sıralama ve hatırlatmayı otomatikleştirip mesaj içeriğini elde tutmaktır.",
+      },
+    ],
+    relatedToolKey: "cac",
+    resources: [
+      {
+        label: "B2B Lead Generation Hunisi Nasıl Tasarlanır?",
+        href: "/blog/b2b-lead-generation-huni-tasarimi",
+      },
+      {
+        label: "ICP Nasıl Tanımlanır? Şablon + 3 Örnek",
+        href: "/blog/icp-ideal-musteri-profili-sablon",
+      },
+      {
+        label: "Türkiye'de LinkedIn Reklamları Neden Şimdi Ucuz?",
+        href: "/blog/linkedin-reklamlari-turkiye-2026-firsat",
+      },
+    ],
+  },
+  {
+    slug: "icp-ideal-musteri-profili-sablon",
+    title: "ICP (Ideal Customer Profile) Nasıl Tanımlanır? Şablon + 3 Örnek",
+    description:
+      "Doldurulabilir bir ICP şablonu ve SaaS, e-ticaret ve endüstriyel B2B sektörlerinden üç somut örnek — hedefleme, mesajlaşma ve lead skorlamayı aynı tanımdan besleyin.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "ICP bir persona değildir: persona kişiyi, ICP ise satın alan şirketi tanımlar.",
+      "İyi bir ICP firmografik, teknografik, davranışsal ve tetikleyici olmak üzere dört katmandan oluşur.",
+      "ICP'yi hayalden değil, en iyi mevcut müşterilerinizin ortak özelliklerinden çıkarın.",
+      "Negatif ICP (kime satmayacağınız) en az pozitif tanım kadar değerlidir.",
+    ],
+    publishedAt: "2026-08-16",
+    readingMinutes: 7,
+    tags: ["ICP", "B2B", "Lead Generation", "Segmentasyon"],
+    sections: [
+      {
+        heading: "ICP Nedir, Buyer Persona'dan Farkı Ne?",
+        paragraphs: [
+          "ICP (Ideal Customer Profile), sizin için en yüksek değeri üreten şirket tipini tanımlar: hangi büyüklükte, hangi sektörde, hangi olgunluk seviyesinde ve hangi koşullar altında. Buyer persona ise o şirketin içindeki bireyi tanımlar: rolü, sorumluluğu, KPI'ları ve itirazları.",
+          "İkisi karıştırıldığında hedefleme bozulur. \"35-45 yaş arası, teknolojiye meraklı pazarlama müdürü\" bir personadır ve tek başına bir reklam kitlesi kuramaz; \"50-250 çalışanlı, Türkiye'de faaliyet gösteren, HubSpot kullanan B2B SaaS şirketleri\" ise bir ICP'dir ve doğrudan hedeflenebilir.",
+          "Doğru sıra şudur: önce ICP ile hangi şirketlere gideceğinizi belirlersiniz, sonra persona ile o şirketlerde kime ve nasıl konuşacağınıza karar verirsiniz.",
+        ],
+      },
+      {
+        heading: "ICP'yi Nereden Çıkarırsınız? Veriden, Hayalden Değil",
+        paragraphs: [
+          "En yaygın hata, ICP'yi bir toplantı odasında tahminlerle yazmaktır. Doğru yöntem mevcut müşteri tabanınıza bakmaktır. Sıralama şöyle: en yüksek LTV üreten, en hızlı kapanan, en az destek maliyeti çıkaran ve en düşük churn'e sahip müşterilerinizi listeleyin.",
+          "Bu listedeki 10-20 hesabın ortak özelliklerini çıkarın: kaç çalışanı var, hangi sektörde, hangi araçları kullanıyor, satın alma sürecini kim başlattı, hangi olay bu ihtiyacı tetikledi. Ortaya çıkan kalıp sizin gerçek ICP'nizdir — çoğu zaman şirketin \"hedef kitlemiz\" dediği tanımdan belirgin şekilde farklı çıkar.",
+          "Aynı egzersizi tersten de yapın: en hızlı churn eden, en çok destek tüketen ve en çok indirim isteyen müşterilerin ortak özellikleri negatif ICP'nizi verir. Bu liste, satış ekibinin zamanını korumak için pozitif tanım kadar değerlidir.",
+        ],
+      },
+      {
+        heading: "Doldurulabilir ICP Şablonu",
+        paragraphs: [
+          "Aşağıdaki dört katmanı doldurduğunuzda, reklam hedeflemesinden lead skorlamaya kadar her yerde kullanabileceğiniz tek bir kaynak elde edersiniz. Her satırı somut yazın; \"orta ölçekli şirketler\" gibi ifadeler hedeflenebilir değildir.",
+        ],
+        bullets: [
+          "Firmografik: sektör / çalışan sayısı / yıllık ciro / coğrafya / şirket yaşı.",
+          "Teknografik: kullandığı CRM, pazarlama otomasyonu, e-ticaret altyapısı veya rakip ürün.",
+          "Davranışsal: satın alma sürecini kim başlatır, karar komitesinde kaç kişi var, ortalama karar süresi ne kadar.",
+          "Tetikleyici olaylar: yeni yatırım, ilgili pozisyona işe alım, yeni pazara açılma, mevzuat değişikliği, rakip değiştirme sinyali.",
+          "Değer eşiği: bu profilde beklenen ortalama sözleşme büyüklüğü ve hedef LTV:CAC oranı.",
+          "Negatif ICP: hangi büyüklük, sektör veya kurulum kesinlikle hedeflenmez ve nedeni.",
+        ],
+      },
+      {
+        heading: "Örnek 1 — B2B SaaS (Proje Yönetimi Yazılımı)",
+        paragraphs: [
+          "Firmografik: 50-250 çalışanlı, Türkiye ve Körfez bölgesinde faaliyet gösteren teknoloji ve ajans şirketleri; yıllık cirosu orta segmentte. Teknografik: Jira veya Trello kullanıyor, Slack üzerinden çalışıyor, HubSpot veya Pipedrive CRM'e sahip.",
+          "Davranışsal: süreci genellikle bir operasyon veya delivery yöneticisi başlatır, karar komitesinde 3-4 kişi bulunur, ortalama karar süresi 6-10 hafta. Tetikleyici: eş zamanlı proje sayısının artması, yeni bir delivery ekibinin kurulması veya bir kurumsal müşteri sözleşmesinin raporlama şartı getirmesi.",
+          "Negatif ICP: 10 kişinin altındaki ekipler (ücretsiz araçlarla yetiniyor, churn yüksek) ve 1.000+ çalışanlı kurumlar (özelleştirme talebi ürün yol haritasını bozuyor).",
+        ],
+      },
+      {
+        heading: "Örnek 2 — E-Ticaret Hizmet Sağlayıcı (Performans Ajansı)",
+        paragraphs: [
+          "Firmografik: aylık cirosu belirli bir eşiğin üzerinde olan, kendi markasını satan (private label) e-ticaret şirketleri; moda, kozmetik ve ev yaşam kategorileri. Teknografik: Shopify veya İkas altyapısı, Meta ve Google Ads hesapları aktif, GA4 kurulu ama dönüşüm ölçümü eksik.",
+          "Davranışsal: karar kurucu veya pazarlama direktöründe, süreç 2-4 hafta gibi kısa; en büyük itiraz \"ajans değiştirme maliyeti\". Tetikleyici: ROAS'ın üst üste iki ay düşmesi, mevcut ajans sözleşmesinin bitişi, yeni ürün kategorisine giriş veya yurt dışı pazara açılma kararı.",
+          "Negatif ICP: dropshipping modeliyle çalışan, brüt marjı çok düşük mağazalar — reklam bütçesi anlamlı bir kâr üretmiyor ve ilişki birkaç ayda sonlanıyor.",
+        ],
+      },
+      {
+        heading: "Örnek 3 — Endüstriyel B2B (Otomasyon Ekipmanı Üreticisi)",
+        paragraphs: [
+          "Firmografik: 100-1.000 çalışanlı üretim tesisleri; otomotiv yan sanayi, gıda işleme ve ambalaj sektörleri; Marmara ve Ege bölgesinde yoğunlaşmış. Teknografik: ERP olarak SAP veya Logo kullanıyor, üretim hattında kısmi otomasyon mevcut.",
+          "Davranışsal: süreci üretim veya bakım müdürü başlatır, teknik değerlendirme mühendislik ekibinde, imza genel müdür veya yönetim kurulunda; karar süresi 4-9 ay ve mutlaka saha ziyareti içerir. Tetikleyici: kapasite artırım yatırımı, hat duruş maliyetlerinin yükselmesi, iş güvenliği denetimi veya ihracat müşterisinin kalite şartı.",
+          "Negatif ICP: 50 çalışanın altındaki atölyeler — yatırım bütçesi projenin geri dönüş süresini karşılamıyor ve satış döngüsü maliyeti fırsat büyüklüğünü aşıyor.",
+        ],
+      },
+      {
+        heading: "ICP'yi Operasyona Nasıl Bağlarsınız?",
+        paragraphs: [
+          "Bir ICP dokümanı, kullanılmadığı sürece değersizdir. Tanımı üç yere birden bağlayın: reklam hedeflemesi (LinkedIn firmografik filtreleri, Google'da özel segmentler), lead skorlama (ICP kriterlerine uyan her alan puan getirir) ve satış nitelendirme (SDR'ın ilk görüşmede soracağı sorular doğrudan ICP satırlarından çıkar).",
+          "ICP'yi altı ayda bir gözden geçirin. Ürün geliştikçe, fiyat değiştikçe ve pazar olgunlaştıkça ideal müşteri de kayar. En sağlıklı kontrol yöntemi, son iki çeyrekte kapanan anlaşmaların yüzde kaçının mevcut ICP tanımına uyduğuna bakmaktır; oran düşükse tanım eskimiş demektir.",
+        ],
+      },
+    ],
+    howTo: {
+      name: "ICP (Ideal Customer Profile) nasıl tanımlanır?",
+      description:
+        "Mevcut müşteri verisinden yola çıkarak operasyona bağlanabilir bir ICP tanımı oluşturmanın adımları.",
+      steps: [
+        {
+          name: "En iyi müşterilerinizi listeleyin",
+          text: "LTV'si en yüksek, satış döngüsü en kısa, churn'ü en düşük ve destek maliyeti en az olan 10-20 hesabı çıkarın.",
+        },
+        {
+          name: "Ortak kalıpları çıkarın",
+          text: "Bu hesapların çalışan sayısı, sektörü, kullandığı araçlar ve satın almayı tetikleyen olayları arasındaki ortaklıkları not edin.",
+        },
+        {
+          name: "Dört katmanı doldurun",
+          text: "Firmografik, teknografik, davranışsal ve tetikleyici katmanlarını somut değerlerle yazın; belirsiz ifadeler yerine sayı ve isim kullanın.",
+        },
+        {
+          name: "Negatif ICP'yi tanımlayın",
+          text: "En hızlı churn eden ve en çok kaynak tüketen müşterilerin ortak özelliklerini yazarak kime satmayacağınızı netleştirin.",
+        },
+        {
+          name: "Operasyona bağlayın",
+          text: "Tanımı reklam hedeflemesine, lead skorlama kurallarına ve SDR nitelendirme sorularına aktarın; altı ayda bir kapanan anlaşmalarla karşılaştırıp güncelleyin.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "ICP ile buyer persona arasındaki fark nedir?",
+        answer:
+          "ICP satın alan şirketi tanımlar (sektör, büyüklük, coğrafya, teknoloji, tetikleyici olaylar); buyer persona ise o şirketteki bireyi tanımlar (rol, sorumluluk, KPI, itirazlar). Önce ICP ile hangi şirketlere gideceğinizi, sonra persona ile kime nasıl konuşacağınızı belirlersiniz.",
+      },
+      {
+        question: "ICP nasıl tanımlanır?",
+        answer:
+          "En iyi mevcut müşterilerinizden başlayın: en yüksek LTV, en kısa satış döngüsü ve en düşük churn'e sahip 10-20 hesabın ortak özelliklerini çıkarın. Bu ortaklıkları firmografik, teknografik, davranışsal ve tetikleyici olmak üzere dört katmanda somut değerlerle yazın.",
+      },
+      {
+        question: "Kaç tane ICP tanımlamalıyım?",
+        answer:
+          "Başlangıçta bir tane. Birden fazla ICP, mesajlaşmayı ve kaynak dağıtımını böler; erken aşamada odak kaybı en pahalı hatadır. İkinci bir ICP, ilki üzerinde tekrarlanabilir satış kurulduktan sonra eklenmelidir.",
+      },
+      {
+        question: "Negatif ICP neden gerekli?",
+        answer:
+          "Kime satmayacağınızı bilmek, satış ekibinin zamanını ve pazarlama bütçesini korur. Yanlış profildeki müşteriler yalnızca hızlı churn etmez; aynı zamanda destek maliyetini, özelleştirme taleplerini ve ürün yol haritası baskısını da artırır.",
+      },
+      {
+        question: "ICP ne sıklıkla güncellenmeli?",
+        answer:
+          "Altı ayda bir gözden geçirmek yeterlidir. Kontrol yöntemi basittir: son iki çeyrekte kapanan anlaşmaların yüzde kaçı mevcut ICP tanımına uyuyor? Oran düşükse ürün, fiyat veya pazar değişmiş ve tanım eskimiş demektir.",
+      },
+    ],
+    relatedToolKey: "cac",
+    resources: [
+      {
+        label: "B2B Lead Generation Hunisi Nasıl Tasarlanır?",
+        href: "/blog/b2b-lead-generation-huni-tasarimi",
+      },
+      {
+        label: "LinkedIn'de Soğuk Mesajla Yanıt Alma Oranını Artırma",
+        href: "/blog/linkedin-soguk-mesaj-yanit-orani",
+      },
+      {
+        label: "B2B Lead Generation Maliyetleri Nasıl Düşürülür?",
+        href: "/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur",
+      },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {

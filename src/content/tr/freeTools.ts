@@ -73,6 +73,8 @@ export const freeToolsPage = {
     { key: "net",   name: "Net Kar Marjı Hesaplayıcı",  description: "Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici" },
     { key: "mrr",   name: "MRR Hesaplayıcı",           description: "Aylık yinelenen gelirinizi (MRR) hesaplayın, ARR karşılığını görün.", href: "/ucretsiz-araclar/mrr-hesaplayici" },
     { key: "arpa",  name: "ARPA Hesaplayıcı",          description: "Hesap başına ortalama gelirinizi (ARPA) toplam MRR ve hesap sayısıyla hesaplayın.", href: "/ucretsiz-araclar/arpa-hesaplayici" },
+    { key: "nrr",   name: "NRR Hesaplayıcı",           description: "Net gelir tutundurma oranınızı (NRR) genişleme, daralma ve churn MRR ile hesaplayın.", href: "/ucretsiz-araclar/nrr-hesaplayici" },
+    { key: "rule40", name: "Rule of 40 Hesaplayıcı",   description: "Büyüme oranı ve kâr marjınızı toplayarak SaaS sağlık skorunuzu görün.", href: "/ucretsiz-araclar/rule-of-40-hesaplayici" },
     { key: "conversion", name: "Dönüşüm Oranı Hesaplayıcı", description: "Ziyaretçi ve dönüşüm sayınızla dönüşüm oranınızı ve hedefe farkı hesaplayın.", href: "/ucretsiz-araclar/donusum-orani-hesaplayici" },
   ],
 };
@@ -194,7 +196,7 @@ export const toolCategories = [
         a: "Erken aşamada (ürün-pazar uyumu öncesi) churn ve aktivasyon en kritik metriklerdir; CAC ve LTV örneklem küçük olduğu için oynaktır. Büyüme aşamasında CAC, LTV, LTV:CAC oranı ve CAC geri ödeme süresi bütçe dağıtımının temeli olur. Ölçek aşamasında ise ARR büyüme hızı, net gelir tutundurma (NRR) ve kohort bazlı churn öne çıkar.",
       },
     ],
-    tools: ["arr", "mrr", "arpa", "cac", "ltv", "churn"],
+    tools: ["arr", "mrr", "arpa", "nrr", "rule40", "cac", "ltv", "churn"],
   },
   {
     key: "ecommerce",

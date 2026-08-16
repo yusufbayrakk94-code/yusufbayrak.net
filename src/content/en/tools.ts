@@ -103,7 +103,15 @@ export const roas: ToolContent = {
     { q: "ROAS vs. ROI — what's the difference?", a: "ROAS only compares ad revenue to ad spend. ROI divides net profit (revenue - total cost) by investment and shows real profitability. ROAS is a marketing metric; ROI is a finance one." },
     { q: "How do you calculate break-even ROAS?", a: "Break-even ROAS = 1 / Gross Margin. So at 25% gross margin, break-even is 4x; anything below is a loss." },
     { q: "Why track ROAS alongside POAS?", a: "ROAS looks at revenue; POAS looks at profit. Once product cost, refunds and shipping are included, the two can diverge sharply. Profitable growth is decided with POAS." },
+    { q: "How do you improve ROAS?", a: "There are three levers: raise conversion rate (landing page, offer, page speed), grow average order value (bundles, cross-sell, free-shipping threshold) and lower click cost (search-term cleanup, creative refresh, tighter audiences). Measure conversion rate and AOV separately to see which one is holding the campaign back." },
+    { q: "How often should ROAS be reviewed?", a: "Daily ROAS is noisy and drives bad decisions. Evaluate on a rolling window of at least 7 days so the attribution delay is covered; for budget-shifting decisions, 14-28 days of data is far safer." },
   ],
+  relatedTools: [
+    { label: "Conversion Rate Calculator", href: "/en/free-marketing-tools/conversion-rate-calculator", note: "The strongest ROAS lever" },
+    { label: "Gross Profit Margin Calculator", href: "/en/free-marketing-tools/gross-profit-margin-calculator", note: "Break-even ROAS = 1 / gross margin" },
+    { label: "UTM Link Builder", href: "/en/free-marketing-tools/utm-builder", note: "Accurate channel-level measurement" },
+  ],
+  relatedPost: { label: "7 Ways to Multiply Google Ads Performance", href: "/en/blog/google-ads-performance-optimization" },
 };
 
 export const utm: ToolContent = {
@@ -248,16 +256,22 @@ export const mrr: ToolContent = {
     { heading: "What is MRR and how is it calculated?", body: "MRR (Monthly Recurring Revenue) is the total contracted revenue a subscription business expects to repeat each month. The simplest formula is MRR = Active Customers × Average Monthly Subscription Price (ARPA). Annual plans are normalised by dividing the yearly amount by 12; setup fees, consulting and one-off sales are excluded from MRR." },
     { heading: "The MRR × 12 = ARR relationship", body: "MRR and ARR are the same revenue on two time scales: ARR = MRR × 12. The monthly view drives operational decisions — campaigns, pricing, team capacity — while the annual view supports planning, budgeting and investor communication. For the relationship to hold, MRR must be normalised so every billing cycle is expressed monthly. Use the ARR Calculator to see the annual side." },
     { body: "Tracking MRR as a single total is not enough. Breaking it into New MRR, Expansion MRR, Contraction MRR and Churned MRR shows where growth comes from and where it leaks. Net New MRR = New + Expansion − Contraction − Churned is the most honest indicator of growth quality." },
+    { heading: "Worked example: MRR for a SaaS with 500 customers", body: "Say your product has 500 active customers: 400 on an $80/month Pro plan and 100 on a Business plan billed at $1,200 per year. Monthly plans contribute 400 × 80 = $32,000. Annual plans are normalised: 1,200 / 12 = $100, so 100 × 100 = $10,000. Total MRR = $42,000 and ARR = 42,000 × 12 = $504,000. If the same month also produced $6,000 of setup and training revenue, that amount stays out of MRR." },
+    { body: "In the same example, if the month brought $2,500 new MRR, $1,800 expansion, $600 contraction and $1,400 churn, then Net New MRR = 2,500 + 1,800 − 600 − 1,400 = $2,300. MRR moves from $42,000 to $44,300, roughly 5.5% monthly growth. Without that breakdown, a single total hides the months where churn is simply masked by new sales." },
   ],
   faqs: [
     { q: "What is the difference between MRR and ARR?", a: "MRR is monthly recurring revenue, ARR is annual recurring revenue, and ARR = MRR × 12. Monthly tracking supports operating decisions; annual tracking supports planning and investor reporting." },
+    { q: "What is MRR and how is it calculated?", a: "MRR (Monthly Recurring Revenue) is the contracted revenue a subscription business expects to repeat every month. The formula is MRR = Active Customers × Average Monthly Price (ARPA); with multiple plans, sum each plan's customers × price and divide annual plans by 12." },
+    { q: "How do you calculate MRR for a SaaS with 500 customers?", a: "Add the plans separately. Example: 400 customers × $80/month = $32,000; 100 customers × ($1,200 annual / 12) = $10,000. Total MRR is $42,000 and ARR is $504,000. One-off revenue such as setup or consulting is excluded." },
     { q: "How do annual subscriptions count towards MRR?", a: "Divide the annual contract value by 12 and add the monthly equivalent to MRR. Booking the full annual amount in the month it was paid inflates the metric and breaks trend analysis." },
     { q: "Are one-off revenues included in MRR?", a: "No. Setup fees, training, consulting and one-off licence sales are not recurring, so they stay out of MRR. Only contracted, repeating subscription revenue counts." },
     { q: "What is Net New MRR?", a: "Net New MRR = New MRR + Expansion MRR − Contraction MRR − Churned MRR. It shows how much revenue you actually added in a period; a positive and stable figure is the sign of healthy growth." },
+    { q: "How does MRR growth relate to NRR?", a: "MRR growth includes new customer sales; NRR (Net Revenue Retention) measures only expansion, contraction and churn inside the existing base. NRR tells you what happens to the business if new sales stop — the NRR Calculator works it out for you." },
   ],
   relatedTools: [
     { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue via MRR × 12" },
     { label: "ARPA Calculator", href: "/en/free-marketing-tools/arpa-calculator", note: "Average revenue per account" },
+    { label: "NRR Calculator", href: "/en/free-marketing-tools/nrr-calculator", note: "Net revenue retention" },
     { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
     { label: "SaaS Tools", href: "/en/free-marketing-tools/saas-tools", note: "All SaaS metric calculators" },
   ],
@@ -276,9 +290,13 @@ export const arpa: ToolContent = {
     { heading: "What is ARPA and how is it calculated?", body: "ARPA (Average Revenue Per Account) is total monthly recurring revenue divided by the number of active accounts: ARPA = Total MRR / Active Accounts. Some teams call the same metric ARPU (Average Revenue Per User); the difference is whether the unit is a user or an account (a company). In B2B SaaS the correct unit is usually the account." },
     { body: "ARPA mirrors your pricing strategy and customer segment. A rising ARPA means successful upsell, plan upgrades or a shift towards larger customers. A falling ARPA points to discount pressure, a drift towards smaller accounts or contraction. That is why segment- and cohort-level ARPA is far more informative than a single blended average." },
     { body: "ARPA only becomes meaningful next to CAC and LTV. Using LTV = ARPA × gross margin / churn rate, ARPA directly drives lifetime value: lifting ARPA by 20% improves unit economics markedly at the same CAC. For many SaaS businesses the cheapest growth lever is not a new customer but more revenue per existing account." },
+    { heading: "Worked example: ARPA for a SaaS with 500 accounts", body: "A SaaS with $42,000 total MRR across 500 active accounts has ARPA = 42,000 / 500 = $84, or $1,008 per year. If next quarter it upgrades 40 accounts, lifts MRR to $47,000 and account count stays at 505, ARPA rises to $93 — meaning the revenue growth came from going deeper with existing customers, not from new logos." },
+    { body: "That distinction matters: MRR growing while ARPA stays flat is volume growth; MRR and ARPA growing together is value growth. In the same example, with a CAC of $600, moving ARPA from $84 to $93 shortens CAC payback from roughly 7.1 months to 6.5 months." },
   ],
   faqs: [
     { q: "What is the difference between ARPA and ARPU?", a: "Both measure average revenue; ARPA is per account (company) and ARPU is per user. For B2B SaaS products where one account holds many seats, ARPA is normally the right metric." },
+    { q: "What is ARPA and how is it calculated?", a: "ARPA (Average Revenue Per Account) is the average monthly recurring revenue per active account: ARPA = Total MRR / Active Accounts. For example, $42,000 MRR across 500 accounts gives an ARPA of $84." },
+    { q: "How does ARPA relate to MRR?", a: "MRR = ARPA × Active Accounts. So there are two ways to grow MRR: win more accounts (volume) or earn more per account (value). Tracking ARPA separates those two sources of growth." },
     { q: "Which revenues belong in ARPA?", a: "Only recurring subscription revenue (MRR). Setup fees, consulting and one-off sales are excluded — including them inflates the average artificially." },
     { q: "What is a good ARPA?", a: "There is no absolute threshold; it depends on your segment. SMB-focused products often sit at a few hundred per month while enterprise runs into the thousands. The meaningful comparison is your own ARPA trend and its ratio to CAC." },
     { q: "How do you increase ARPA?", a: "Revisit packaging and price architecture, offer usage-based add-ons, incentivise annual plans, build upsell and cross-sell flows, and reduce focus on the lowest-value segment." },
@@ -286,7 +304,71 @@ export const arpa: ToolContent = {
   relatedTools: [
     { label: "MRR Calculator", href: "/en/free-marketing-tools/mrr-calculator", note: "Monthly recurring revenue" },
     { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue" },
+    { label: "NRR Calculator", href: "/en/free-marketing-tools/nrr-calculator", note: "Growth from existing accounts" },
     { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "SaaS Tools", href: "/en/free-marketing-tools/saas-tools", note: "All SaaS metric calculators" },
+  ],
+  relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
+};
+
+export const nrr: ToolContent = {
+  slug: "nrr",
+  path: "/en/free-marketing-tools/nrr-calculator",
+  title: "NRR Calculator",
+  description:
+    "Calculate Net Revenue Retention from starting, expansion, contraction and churned MRR — free, instant, no signup.",
+  intro:
+    "NRR (Net Revenue Retention) shows how much your existing customer base grows on its own. Enter starting MRR plus expansion, contraction and churned MRR — NRR and gross retention are calculated instantly.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "What is Net Revenue Retention (NRR)?", body: "NRR is the revenue produced at the end of a period by the customers you had at the start, divided by their starting revenue. The formula is NRR = (Starting MRR + Expansion MRR − Contraction MRR − Churned MRR) / Starting MRR × 100. The critical detail: newly acquired customers are excluded. That makes NRR the one metric that tells you whether the business would still grow if you switched the sales engine off." },
+    { heading: "Worked example", body: "A SaaS starts the month with $40,000 MRR. During the month it books $6,000 of expansion (upsell, extra seats), $1,500 of contraction (downgrades) and $2,500 of churn. NRR = (40,000 + 6,000 − 1,500 − 2,500) / 40,000 × 100 = 105%. Revenue grew 5% without a single new customer. Gross retention (GRR) in the same period = (40,000 − 1,500 − 2,500) / 40,000 × 100 = 90%; the 15-point gap is pure expansion." },
+    { heading: "Healthy NRR benchmarks", body: "Common reference ranges: 90-100% for SMB-focused SaaS, 100-110% for mid-market, and 120%+ for enterprise or usage-based pricing models. Below 100% the existing base is shrinking and growth depends entirely on new sales, which keeps pushing CAC pressure up. Above 120% is the profile investors reward with the highest multiples." },
+    { body: "Improving NRR usually runs through product and customer success rather than sales: faster onboarding, usage-based pricing tiers, frictionless seat and module expansion, and health scores that surface churn risk early. Tracking NRR by cohort and segment reveals which customer profile actually expands." },
+  ],
+  faqs: [
+    { q: "What is NRR and how is it calculated?", a: "NRR (Net Revenue Retention) is the net change in revenue from your existing customers over a period: NRR = (Starting MRR + Expansion MRR − Contraction MRR − Churned MRR) / Starting MRR × 100. Revenue from new customers is not included." },
+    { q: "What is a good NRR?", a: "100% is the neutral line — the base is neither growing nor shrinking. 90-100% is acceptable in SMB, 100-110% is good in mid-market, and 120%+ is excellent for enterprise and usage-based models. Below 100% means growth depends entirely on new sales." },
+    { q: "What is the difference between NRR and GRR?", a: "GRR (Gross Revenue Retention) counts losses only and can never exceed 100%: (Starting − Contraction − Churn) / Starting. NRR adds expansion, so it can go above 100%. GRR measures product stickiness; NRR measures growth potential." },
+    { q: "Why is NRR considered more important than ARR?", a: "ARR tells you the size of the revenue; NRR tells you its quality. High ARR with low NRR means new sales are covering a leaking bucket — the moment acquisition slows, growth stops. That is why NRR is one of the strongest drivers of SaaS valuation multiples." },
+    { q: "What does negative churn mean?", a: "It means expansion revenue exceeds lost revenue, i.e. NRR is above 100%. Companies in that position grow even with zero new customers and can afford a more aggressive acquisition budget." },
+    { q: "How often should NRR be measured?", a: "The common practice is to compute it monthly on MRR and report it on a trailing 12-month basis. With a small customer base a single large account can swing monthly NRR wildly, so quarterly measurement is more reliable." },
+  ],
+  relatedTools: [
+    { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue" },
+    { label: "Churn Rate Calculator", href: "/en/free-marketing-tools/churn-rate-calculator", note: "Loss rate and retention" },
+    { label: "MRR Calculator", href: "/en/free-marketing-tools/mrr-calculator", note: "Monthly recurring revenue" },
+    { label: "Rule of 40 Calculator", href: "/en/free-marketing-tools/rule-of-40-calculator", note: "Growth vs. profitability balance" },
+  ],
+  relatedPost: { label: "What Is NRR and Why It Beats ARR in SaaS", href: "/en/blog/what-is-nrr-saas-growth-metric" },
+};
+
+export const ruleOf40: ToolContent = {
+  slug: "rule-of-40",
+  path: "/en/free-marketing-tools/rule-of-40-calculator",
+  title: "Rule of 40 Calculator",
+  description:
+    "Add your revenue growth rate and profit margin to score your SaaS against the Rule of 40 — free instant pass/fail check.",
+  intro:
+    "The Rule of 40 says a healthy SaaS company's growth rate plus profit margin should be at least 40. Enter your annual revenue growth rate and profit margin to see your score and whether you pass.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "What is the Rule of 40?", body: "The Rule of 40 compresses SaaS health into one number: Annual Revenue Growth Rate (%) + Profit Margin (%) ≥ 40. The logic is that a fast-growing company is allowed to burn cash in the short term, while a slower-growing company is expected to be profitable. Below 40 the company is neither growing fast enough nor running efficiently enough." },
+    { heading: "Worked example", body: "A company growing ARR 55% while running a −20% free cash flow margin scores 55 + (−20) = 35, which fails the rule. A company growing 18% with a 25% profit margin scores 43 and passes. Investors generally treat those two very different profiles — aggressive growth or disciplined profitability — as equivalent when the score is the same." },
+    { heading: "Which profit margin should you use?", body: "Three measures are common: EBITDA margin, free cash flow (FCF) margin or operating margin. Whichever you pick, stay consistent between periods; switching the measure to flatter the score is the most frequent mistake. On the growth side use ARR or annualised revenue growth — plugging in a monthly growth rate inflates the score artificially." },
+    { body: "The Rule of 40 is a balance test, not a strategy. Scoring above 40 does not guarantee sustainable unit economics, so read it next to NRR, LTV:CAC and CAC payback. In early-stage companies (under $1M ARR) the small base makes growth percentages huge and the score misleading." },
+  ],
+  faqs: [
+    { q: "What is the Rule of 40 and how is it calculated?", a: "Rule of 40 = Annual Revenue Growth Rate (%) + Profit Margin (%). A total of 40 or above is considered a healthy balance of growth and profitability. Example: 30% growth + 12% profit margin = 42, which passes." },
+    { q: "Which profit margin belongs in the Rule of 40?", a: "EBITDA margin and free cash flow margin are the most widely used; operating margin is also accepted. The key is applying the same measure consistently across periods, otherwise the trend is not comparable." },
+    { q: "Which companies is the Rule of 40 meaningful for?", a: "Typically companies past roughly $1M ARR whose growth rate has started to stabilise. Very early stage growth percentages are inflated by a tiny base, so the score does not reflect real health." },
+    { q: "What should I do if my score is below 40?", a: "Identify the weak component first. If growth is low, work on pricing, expansion revenue (NRR) and acquisition channels; if profitability is low, work on gross margin, infrastructure cost and sales efficiency (CAC payback). Pushing both at once usually breaks both." },
+    { q: "How do the Rule of 40 and NRR relate?", a: "High NRR is the cheapest source of growth: expansion revenue from existing accounts carries little acquisition cost, so it lifts the growth and margin components at the same time. Improving NRR is usually the most efficient way to raise a Rule of 40 score." },
+  ],
+  relatedTools: [
+    { label: "NRR Calculator", href: "/en/free-marketing-tools/nrr-calculator", note: "Net revenue retention" },
+    { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue" },
+    { label: "Net Profit Margin Calculator", href: "/en/free-marketing-tools/net-profit-margin-calculator", note: "The margin component" },
     { label: "SaaS Tools", href: "/en/free-marketing-tools/saas-tools", note: "All SaaS metric calculators" },
   ],
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },

@@ -28,6 +28,8 @@ import NetMarginCalculator from "./pages/tools/NetMarginCalculator";
 import ConversionRateCalculator from "./pages/tools/ConversionRateCalculator";
 import MrrCalculator from "./pages/tools/MrrCalculator";
 import ArpaCalculator from "./pages/tools/ArpaCalculator";
+import NrrCalculator from "./pages/tools/NrrCalculator";
+import RuleOf40Calculator from "./pages/tools/RuleOf40Calculator";
 import BlogList from "./pages/blog/BlogList";
 import BlogPost from "./pages/blog/BlogPost";
 import NotFound from "./pages/NotFound";
@@ -60,6 +62,8 @@ export function AppRoutes() {
       <Route path="/ucretsiz-araclar/donusum-orani-hesaplayici" element={<ConversionRateCalculator />} />
       <Route path="/ucretsiz-araclar/mrr-hesaplayici" element={<MrrCalculator />} />
       <Route path="/ucretsiz-araclar/arpa-hesaplayici" element={<ArpaCalculator />} />
+      <Route path="/ucretsiz-araclar/nrr-hesaplayici" element={<NrrCalculator />} />
+      <Route path="/ucretsiz-araclar/rule-of-40-hesaplayici" element={<RuleOf40Calculator />} />
       <Route path="/iletisim" element={<Contact />} />
       <Route path="/blog" element={<BlogList />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
@@ -86,6 +90,8 @@ export function AppRoutes() {
       <Route path="/en/free-marketing-tools/conversion-rate-calculator" element={<ConversionRateCalculator />} />
       <Route path="/en/free-marketing-tools/mrr-calculator" element={<MrrCalculator />} />
       <Route path="/en/free-marketing-tools/arpa-calculator" element={<ArpaCalculator />} />
+      <Route path="/en/free-marketing-tools/nrr-calculator" element={<NrrCalculator />} />
+      <Route path="/en/free-marketing-tools/rule-of-40-calculator" element={<RuleOf40Calculator />} />
       <Route path="/en/contact" element={<Contact />} />
       <Route path="/en/blog" element={<BlogList />} />
       <Route path="/en/blog/:slug" element={<BlogPost />} />
