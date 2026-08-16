@@ -179,7 +179,7 @@ function build() {
   lines.push(`- [Home (EN)](${SITE_URL}/en): English homepage.`);
   lines.push(`- [About](${SITE_URL}/en/about): Background and expertise.`);
   lines.push(`- [Projects](${SITE_URL}/en/projects): Products and projects.`);
-  lines.push(`- [Free Marketing Tools](${SITE_URL}/en/free-marketing-tools): Marketing, SaaS and e-commerce calculators (category hub).`);
+  lines.push(`- [Free Marketing Tools](${SITE_URL}/en/free-tools): Marketing, SaaS and e-commerce calculators (category hub).`);
   {
     const byKeyEn = new Map(toolsEn.map((t) => [t.key, t]));
     for (const cat of catsEn) {

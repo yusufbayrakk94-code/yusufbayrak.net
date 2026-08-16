@@ -1,5 +1,5 @@
 export const freeToolsPage = {
-  path: "/en/free-marketing-tools",
+  path: "/en/free-tools",
   seoTitle: "Free Marketing Tools | Yusuf Bayrak",
   seoDescription:
     "ARR, CAC, Churn, LTV, ROAS calculators and UTM link builder — run your marketing and SaaS metrics in seconds.",
@@ -62,20 +62,20 @@ export const freeToolsPage = {
     },
   ],
   cards: [
-    { key: "arr",   name: "ARR Calculator",        description: "Annual Recurring Revenue calculator for subscription products.",                       href: "/en/free-marketing-tools/arr-calculator" },
-    { key: "cac",   name: "CAC Calculator",        description: "Analyse your Customer Acquisition Cost across marketing and sales.",                    href: "/en/free-marketing-tools/cac-calculator" },
-    { key: "churn", name: "Churn Rate Calculator", description: "Measure your customer churn rate and retention performance.",                           href: "/en/free-marketing-tools/churn-rate-calculator" },
-    { key: "ltv",   name: "LTV Calculator",        description: "Calculate customer lifetime value and compare it against CAC.",                         href: "/en/free-marketing-tools/ltv-calculator" },
-    { key: "roas",  name: "ROAS Calculator",       description: "Measure Return on Ad Spend and campaign profitability.",                                href: "/en/free-marketing-tools/roas-calculator" },
-    { key: "utm",   name: "UTM Link Builder",      description: "Build UTM-tagged links for accurate campaign attribution.",                             href: "/en/free-marketing-tools/utm-builder" },
-    { key: "llms",  name: "llms.txt Generator",    description: "Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.", href: "/en/free-marketing-tools/llms-txt-generator" },
-    { key: "gross", name: "Gross Profit Margin Calculator", description: "Enter revenue and COGS to see gross margin as a percentage and an amount.", href: "/en/free-marketing-tools/gross-profit-margin-calculator" },
-    { key: "net",   name: "Net Profit Margin Calculator",   description: "Include every expense to see the true net profitability of your business.", href: "/en/free-marketing-tools/net-profit-margin-calculator" },
-    { key: "mrr",   name: "MRR Calculator",        description: "Calculate Monthly Recurring Revenue and see the matching ARR.", href: "/en/free-marketing-tools/mrr-calculator" },
-    { key: "arpa",  name: "ARPA Calculator",       description: "Average revenue per account from total MRR and active accounts.", href: "/en/free-marketing-tools/arpa-calculator" },
-    { key: "nrr",   name: "NRR Calculator",        description: "Net revenue retention from expansion, contraction and churned MRR.", href: "/en/free-marketing-tools/nrr-calculator" },
-    { key: "rule40", name: "Rule of 40 Calculator", description: "Add growth rate and profit margin to score your SaaS health.", href: "/en/free-marketing-tools/rule-of-40-calculator" },
-    { key: "conversion", name: "Conversion Rate Calculator", description: "Turn visitors and conversions into a conversion rate and a gap to your target.", href: "/en/free-marketing-tools/conversion-rate-calculator" },
+    { key: "arr",   name: "ARR Calculator",        description: "Annual Recurring Revenue calculator for subscription products.",                       href: "/en/free-tools/arr-calculator" },
+    { key: "cac",   name: "CAC Calculator",        description: "Analyse your Customer Acquisition Cost across marketing and sales.",                    href: "/en/free-tools/cac-calculator" },
+    { key: "churn", name: "Churn Rate Calculator", description: "Measure your customer churn rate and retention performance.",                           href: "/en/free-tools/churn-rate-calculator" },
+    { key: "ltv",   name: "LTV Calculator",        description: "Calculate customer lifetime value and compare it against CAC.",                         href: "/en/free-tools/ltv-calculator" },
+    { key: "roas",  name: "ROAS Calculator",       description: "Measure Return on Ad Spend and campaign profitability.",                                href: "/en/free-tools/roas-calculator" },
+    { key: "utm",   name: "UTM Link Builder",      description: "Build UTM-tagged links for accurate campaign attribution.",                             href: "/en/free-tools/utm-builder" },
+    { key: "llms",  name: "llms.txt Generator",    description: "Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.", href: "/en/free-tools/llms-txt-generator" },
+    { key: "gross", name: "Gross Profit Margin Calculator", description: "Enter revenue and COGS to see gross margin as a percentage and an amount.", href: "/en/free-tools/gross-profit-margin-calculator" },
+    { key: "net",   name: "Net Profit Margin Calculator",   description: "Include every expense to see the true net profitability of your business.", href: "/en/free-tools/net-profit-margin-calculator" },
+    { key: "mrr",   name: "MRR Calculator",        description: "Calculate Monthly Recurring Revenue and see the matching ARR.", href: "/en/free-tools/mrr-calculator" },
+    { key: "arpa",  name: "ARPA Calculator",       description: "Average revenue per account from total MRR and active accounts.", href: "/en/free-tools/arpa-calculator" },
+    { key: "nrr",   name: "NRR Calculator",        description: "Net revenue retention from expansion, contraction and churned MRR.", href: "/en/free-tools/nrr-calculator" },
+    { key: "rule40", name: "Rule of 40 Calculator", description: "Add growth rate and profit margin to score your SaaS health.", href: "/en/free-tools/rule-of-40-calculator" },
+    { key: "conversion", name: "Conversion Rate Calculator", description: "Turn visitors and conversions into a conversion rate and a gap to your target.", href: "/en/free-tools/conversion-rate-calculator" },
   ],
 };
 
@@ -85,7 +85,7 @@ export const freeToolsPage = {
 export const toolCategories = [
   {
     key: "marketing",
-    path: "/en/free-marketing-tools/marketing-tools",
+    path: "/en/free-tools/marketing-tools",
     name: "Marketing Tools",
     short: "Campaign tracking, ad return and AI visibility essentials.",
     seoTitle: "Marketing Tools | Yusuf Bayrak",
@@ -142,7 +142,7 @@ export const toolCategories = [
   },
   {
     key: "saas",
-    path: "/en/free-marketing-tools/saas-tools",
+    path: "/en/free-tools/saas-tools",
     name: "SaaS Tools",
     short: "Measure the growth and retention metrics of a subscription business.",
     seoTitle: "SaaS Tools | Yusuf Bayrak",
@@ -199,7 +199,7 @@ export const toolCategories = [
   },
   {
     key: "ecommerce",
-    path: "/en/free-marketing-tools/ecommerce-tools",
+    path: "/en/free-tools/ecommerce-tools",
     name: "E-Commerce Tools",
     short: "Calculate true profitability per product and per store.",
     seoTitle: "E-Commerce Tools | Yusuf Bayrak",

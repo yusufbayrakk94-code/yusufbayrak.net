@@ -4,7 +4,7 @@ import type { ToolContent } from "../types";
 // so results look native to English-speaking users. Formulas stay identical.
 
 export const toolBackLabel = "Back to Free Tools";
-export const toolBackHref = "/en/free-marketing-tools";
+export const toolBackHref = "/en/free-tools";
 export const toolCalculatorDivider = "Calculator";
 export const toolGuideDivider = "Guide";
 export const toolFaqDivider = "Frequently Asked Questions";
@@ -13,7 +13,7 @@ export const numberLocale = "en-US" as const;
 
 export const arr: ToolContent = {
   slug: "arr",
-  path: "/en/free-marketing-tools/arr-calculator",
+  path: "/en/free-tools/arr-calculator",
   title: "ARR Calculator",
   description: "Calculate Annual Recurring Revenue (ARR) from MRR or from customer count and ARPU in seconds.",
   intro: "ARR (Annual Recurring Revenue) shows the annualised recurring revenue of a subscription business. Enter MRR, or derive it from customer count and average revenue per user.",
@@ -32,7 +32,7 @@ export const arr: ToolContent = {
 
 export const cac: ToolContent = {
   slug: "cac",
-  path: "/en/free-marketing-tools/cac-calculator",
+  path: "/en/free-tools/cac-calculator",
   title: "CAC Calculator",
   description: "Calculate Customer Acquisition Cost (CAC) from marketing and sales spend divided by acquired customers.",
   intro: "CAC (Customer Acquisition Cost) is the average cost to acquire a customer. It's critical for measuring channel efficiency and growth sustainability.",
@@ -51,7 +51,7 @@ export const cac: ToolContent = {
 
 export const churn: ToolContent = {
   slug: "churn",
-  path: "/en/free-marketing-tools/churn-rate-calculator",
+  path: "/en/free-tools/churn-rate-calculator",
   title: "Churn Rate Calculator",
   description: "Calculate your customer churn rate from starting customers and lost customers over a period.",
   intro: "Churn Rate is the percentage of customers you lose in a given period. Low churn is one of the strongest signals of healthy SaaS growth.",
@@ -70,7 +70,7 @@ export const churn: ToolContent = {
 
 export const ltv: ToolContent = {
   slug: "ltv",
-  path: "/en/free-marketing-tools/ltv-calculator",
+  path: "/en/free-tools/ltv-calculator",
   title: "LTV Calculator",
   description: "Calculate customer Lifetime Value (LTV) from ARPU, gross margin and churn — and compare it against CAC.",
   intro: "LTV (Lifetime Value) is the present value of total revenue a customer produces over the length of the relationship. Target an LTV/CAC ratio of 3x or more.",
@@ -89,7 +89,7 @@ export const ltv: ToolContent = {
 
 export const roas: ToolContent = {
   slug: "roas",
-  path: "/en/free-marketing-tools/roas-calculator",
+  path: "/en/free-tools/roas-calculator",
   title: "ROAS Calculator",
   description: "Calculate Return on Ad Spend (ROAS) as ad revenue divided by ad spend.",
   intro: "ROAS (Return on Ad Spend) shows how many units of revenue each unit of ad spend produces. It's the most common metric for judging campaign profitability.",
@@ -107,16 +107,16 @@ export const roas: ToolContent = {
     { q: "How often should ROAS be reviewed?", a: "Daily ROAS is noisy and drives bad decisions. Evaluate on a rolling window of at least 7 days so the attribution delay is covered; for budget-shifting decisions, 14-28 days of data is far safer." },
   ],
   relatedTools: [
-    { label: "Conversion Rate Calculator", href: "/en/free-marketing-tools/conversion-rate-calculator", note: "The strongest ROAS lever" },
-    { label: "Gross Profit Margin Calculator", href: "/en/free-marketing-tools/gross-profit-margin-calculator", note: "Break-even ROAS = 1 / gross margin" },
-    { label: "UTM Link Builder", href: "/en/free-marketing-tools/utm-builder", note: "Accurate channel-level measurement" },
+    { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator", note: "The strongest ROAS lever" },
+    { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Break-even ROAS = 1 / gross margin" },
+    { label: "UTM Link Builder", href: "/en/free-tools/utm-builder", note: "Accurate channel-level measurement" },
   ],
   relatedPost: { label: "7 Ways to Multiply Google Ads Performance", href: "/en/blog/google-ads-performance-optimization" },
 };
 
 export const utm: ToolContent = {
   slug: "utm",
-  path: "/en/free-marketing-tools/utm-builder",
+  path: "/en/free-tools/utm-builder",
   title: "UTM Link Builder",
   description: "Build UTM-tagged links quickly and measure your marketing channels accurately.",
   intro: "UTM parameters let Google Analytics and other tools attribute traffic sources correctly. Fill the fields below to build your campaign link.",
@@ -135,7 +135,7 @@ export const utm: ToolContent = {
 
 export const llmsTxt: ToolContent = {
   slug: "llms-txt",
-  path: "/en/free-marketing-tools/llms-txt-generator",
+  path: "/en/free-tools/llms-txt-generator",
   title: "llms.txt Generator",
   description:
     "Create and download a free llms.txt file to help AI bots (ClaudeBot, GPTBot, Perplexity) understand your website better.",
@@ -158,7 +158,7 @@ export const enTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };
 
 export const grossMargin: ToolContent = {
   slug: "gross-profit-margin",
-  path: "/en/free-marketing-tools/gross-profit-margin-calculator",
+  path: "/en/free-tools/gross-profit-margin-calculator",
   title: "Gross Profit Margin Calculator",
   description:
     "Calculate your gross profit margin instantly. Enter your revenue and cost of goods sold to see profitability at a glance.",
@@ -177,9 +177,9 @@ export const grossMargin: ToolContent = {
     { q: "What is the difference between gross and net profit margin?", a: "Gross margin subtracts only COGS and measures product-level profitability. Net margin subtracts every cost — operating expenses, marketing, interest and tax — showing the true profitability of the business. Read them together using the Net Profit Margin Calculator." },
   ],
   relatedTools: [
-    { label: "Net Profit Margin Calculator", href: "/en/free-marketing-tools/net-profit-margin-calculator", note: "True profitability, all costs included" },
-    { label: "ROAS Calculator", href: "/en/free-marketing-tools/roas-calculator", note: "Return on ad spend" },
-    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "True profitability, all costs included" },
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Return on ad spend" },
+    { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
   ],
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
   externalSource: { label: "Source: Investopedia — Gross Profit Margin", href: "https://www.investopedia.com/terms/g/gross_profit_margin.asp" },
@@ -187,7 +187,7 @@ export const grossMargin: ToolContent = {
 
 export const netMargin: ToolContent = {
   slug: "net-profit-margin",
-  path: "/en/free-marketing-tools/net-profit-margin-calculator",
+  path: "/en/free-tools/net-profit-margin-calculator",
   title: "Net Profit Margin Calculator",
   description:
     "Calculate your net profit margin instantly. Enter your revenue and total expenses to see your business's true profitability.",
@@ -206,9 +206,9 @@ export const netMargin: ToolContent = {
     { q: "What should be included in total expenses?", a: "Everything: COGS plus payroll and benefits, rent and utilities, software subscriptions, marketing and ad spend, consulting and accounting, depreciation, loan interest and taxes. If you want to isolate direct product cost, use the Gross Profit Margin Calculator." },
   ],
   relatedTools: [
-    { label: "Gross Profit Margin Calculator", href: "/en/free-marketing-tools/gross-profit-margin-calculator", note: "Profitability after COGS only" },
-    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
-    { label: "ROAS Calculator", href: "/en/free-marketing-tools/roas-calculator", note: "Return on ad spend" },
+    { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Profitability after COGS only" },
+    { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Return on ad spend" },
   ],
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
   externalSource: { label: "Source: Investopedia — Net Profit Margin", href: "https://www.investopedia.com/terms/n/net_margin.asp" },
@@ -216,7 +216,7 @@ export const netMargin: ToolContent = {
 
 export const conversionRate: ToolContent = {
   slug: "conversion-rate",
-  path: "/en/free-marketing-tools/conversion-rate-calculator",
+  path: "/en/free-tools/conversion-rate-calculator",
   title: "Marketing Conversion Rate Calculator",
   description:
     "Calculate your marketing or e-commerce campaign's conversion rate instantly — free online tool for websites, ads, and retail funnels.",
@@ -236,9 +236,9 @@ export const conversionRate: ToolContent = {
     { q: "Which tools measure conversion rate?", a: "Google Analytics 4 (key events), Google Tag Manager, the Google Ads and Meta Ads dashboards, CRMs such as HubSpot, and behaviour tools like Hotjar or Microsoft Clarity. Tag your campaign links with UTM parameters so source-level attribution stays accurate." },
   ],
   relatedTools: [
-    { label: "ROAS Calculator", href: "/en/free-marketing-tools/roas-calculator", note: "Return on ad spend" },
-    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
-    { label: "UTM Link Builder", href: "/en/free-marketing-tools/utm-builder", note: "Accurate campaign tagging" },
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Return on ad spend" },
+    { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "UTM Link Builder", href: "/en/free-tools/utm-builder", note: "Accurate campaign tagging" },
   ],
   relatedPost: { label: "7 Ways to Multiply Google Ads Performance", href: "/en/blog/google-ads-performance-optimization" },
   externalSource: { label: "Source: Google Analytics Help — Conversion rate", href: "https://support.google.com/analytics/answer/12966437" },
@@ -246,7 +246,7 @@ export const conversionRate: ToolContent = {
 
 export const mrr: ToolContent = {
   slug: "mrr",
-  path: "/en/free-marketing-tools/mrr-calculator",
+  path: "/en/free-tools/mrr-calculator",
   title: "MRR Calculator",
   description:
     "Calculate your Monthly Recurring Revenue from customer count and average subscription price in seconds.",
@@ -269,18 +269,18 @@ export const mrr: ToolContent = {
     { q: "How does MRR growth relate to NRR?", a: "MRR growth includes new customer sales; NRR (Net Revenue Retention) measures only expansion, contraction and churn inside the existing base. NRR tells you what happens to the business if new sales stop — the NRR Calculator works it out for you." },
   ],
   relatedTools: [
-    { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue via MRR × 12" },
-    { label: "ARPA Calculator", href: "/en/free-marketing-tools/arpa-calculator", note: "Average revenue per account" },
-    { label: "NRR Calculator", href: "/en/free-marketing-tools/nrr-calculator", note: "Net revenue retention" },
-    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
-    { label: "SaaS Tools", href: "/en/free-marketing-tools/saas-tools", note: "All SaaS metric calculators" },
+    { label: "ARR Calculator", href: "/en/free-tools/arr-calculator", note: "Annual recurring revenue via MRR × 12" },
+    { label: "ARPA Calculator", href: "/en/free-tools/arpa-calculator", note: "Average revenue per account" },
+    { label: "NRR Calculator", href: "/en/free-tools/nrr-calculator", note: "Net revenue retention" },
+    { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "SaaS Tools", href: "/en/free-tools/saas-tools", note: "All SaaS metric calculators" },
   ],
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
 };
 
 export const arpa: ToolContent = {
   slug: "arpa",
-  path: "/en/free-marketing-tools/arpa-calculator",
+  path: "/en/free-tools/arpa-calculator",
   title: "ARPA Calculator",
   description:
     "Calculate average revenue per account from total MRR and active account count in seconds.",
@@ -302,18 +302,18 @@ export const arpa: ToolContent = {
     { q: "How do you increase ARPA?", a: "Revisit packaging and price architecture, offer usage-based add-ons, incentivise annual plans, build upsell and cross-sell flows, and reduce focus on the lowest-value segment." },
   ],
   relatedTools: [
-    { label: "MRR Calculator", href: "/en/free-marketing-tools/mrr-calculator", note: "Monthly recurring revenue" },
-    { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue" },
-    { label: "NRR Calculator", href: "/en/free-marketing-tools/nrr-calculator", note: "Growth from existing accounts" },
-    { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator", note: "Customer acquisition cost" },
-    { label: "SaaS Tools", href: "/en/free-marketing-tools/saas-tools", note: "All SaaS metric calculators" },
+    { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator", note: "Monthly recurring revenue" },
+    { label: "ARR Calculator", href: "/en/free-tools/arr-calculator", note: "Annual recurring revenue" },
+    { label: "NRR Calculator", href: "/en/free-tools/nrr-calculator", note: "Growth from existing accounts" },
+    { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "SaaS Tools", href: "/en/free-tools/saas-tools", note: "All SaaS metric calculators" },
   ],
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
 };
 
 export const nrr: ToolContent = {
   slug: "nrr",
-  path: "/en/free-marketing-tools/nrr-calculator",
+  path: "/en/free-tools/nrr-calculator",
   title: "NRR Calculator",
   description:
     "Calculate Net Revenue Retention from starting, expansion, contraction and churned MRR — free, instant, no signup.",
@@ -335,17 +335,17 @@ export const nrr: ToolContent = {
     { q: "How often should NRR be measured?", a: "The common practice is to compute it monthly on MRR and report it on a trailing 12-month basis. With a small customer base a single large account can swing monthly NRR wildly, so quarterly measurement is more reliable." },
   ],
   relatedTools: [
-    { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue" },
-    { label: "Churn Rate Calculator", href: "/en/free-marketing-tools/churn-rate-calculator", note: "Loss rate and retention" },
-    { label: "MRR Calculator", href: "/en/free-marketing-tools/mrr-calculator", note: "Monthly recurring revenue" },
-    { label: "Rule of 40 Calculator", href: "/en/free-marketing-tools/rule-of-40-calculator", note: "Growth vs. profitability balance" },
+    { label: "ARR Calculator", href: "/en/free-tools/arr-calculator", note: "Annual recurring revenue" },
+    { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator", note: "Loss rate and retention" },
+    { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator", note: "Monthly recurring revenue" },
+    { label: "Rule of 40 Calculator", href: "/en/free-tools/rule-of-40-calculator", note: "Growth vs. profitability balance" },
   ],
   relatedPost: { label: "What Is NRR and Why It Beats ARR in SaaS", href: "/en/blog/what-is-nrr-saas-growth-metric" },
 };
 
 export const ruleOf40: ToolContent = {
   slug: "rule-of-40",
-  path: "/en/free-marketing-tools/rule-of-40-calculator",
+  path: "/en/free-tools/rule-of-40-calculator",
   title: "Rule of 40 Calculator",
   description:
     "Add your revenue growth rate and profit margin to score your SaaS against the Rule of 40 — free instant pass/fail check.",
@@ -366,10 +366,10 @@ export const ruleOf40: ToolContent = {
     { q: "How do the Rule of 40 and NRR relate?", a: "High NRR is the cheapest source of growth: expansion revenue from existing accounts carries little acquisition cost, so it lifts the growth and margin components at the same time. Improving NRR is usually the most efficient way to raise a Rule of 40 score." },
   ],
   relatedTools: [
-    { label: "NRR Calculator", href: "/en/free-marketing-tools/nrr-calculator", note: "Net revenue retention" },
-    { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator", note: "Annual recurring revenue" },
-    { label: "Net Profit Margin Calculator", href: "/en/free-marketing-tools/net-profit-margin-calculator", note: "The margin component" },
-    { label: "SaaS Tools", href: "/en/free-marketing-tools/saas-tools", note: "All SaaS metric calculators" },
+    { label: "NRR Calculator", href: "/en/free-tools/nrr-calculator", note: "Net revenue retention" },
+    { label: "ARR Calculator", href: "/en/free-tools/arr-calculator", note: "Annual recurring revenue" },
+    { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "The margin component" },
+    { label: "SaaS Tools", href: "/en/free-tools/saas-tools", note: "All SaaS metric calculators" },
   ],
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
 };
