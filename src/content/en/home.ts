@@ -4,7 +4,7 @@ export const home = {
   path: "/en",
   seoTitle: "Yusuf Bayrak — B2B Lead Generation & AI Automation Expert",
   seoDescription:
-    "Digital marketing specialist building end-to-end websites and B2B lead generation systems powered by AI automation.",
+    "Yusuf Bayrak's personal site. B2B performance marketing insights, digital growth systems and free SaaS calculators.",
   heroLabel: "Digital Marketing | Lead Generation | Product Development",
   heroHeading: "Hi, I'm Yusuf Bayrak.",
   heroSubline:
