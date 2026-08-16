@@ -194,6 +194,31 @@
     </script>
     <script>
       (function () {
+        window.addEventListener("message", function (event) {
+          if (event.data && event.data.type === "elevenlabs-convai:client-tool-call") {
+            if (event.data.tool === "navigate_to_page") {
+              var page = (event.data.parameters && event.data.parameters.page) || "/";
+              var cleanPage = String(page)
+                .trim()
+                .replace(/^\/+/, "")
+                .replace(/\s+/g, "-");
+              var path = "/" + (cleanPage || "");
+              try {
+                var target = new URL(path, window.location.origin);
+                if (target.origin !== window.location.origin) {
+                  return;
+                }
+                window.location.assign(target.pathname + target.search + target.hash);
+              } catch (e) {
+                window.location.href = "/" + cleanPage;
+              }
+            }
+          }
+        });
+      })();
+    </script>
+    <script>
+      (function () {
         function hideElevenLabsBranding() {
           try {
             var widget = document.querySelector("elevenlabs-convai");
