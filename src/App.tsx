@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { ElevenLabsAgent } from "@/components/ElevenLabsAgent";
 // Pages are imported statically (not React.lazy) so `renderToString` in the
 // SSG script gets the actual page tree — Suspense would otherwise render the
 // fallback and Helmet would emit empty meta tags.
@@ -130,7 +129,6 @@ const App = () => (
         <Toaster />
         <Sonner />
         <ScrollToTop />
-        <ElevenLabsAgent />
         <AppRoutes />
       </TooltipProvider>
     </QueryClientProvider>
