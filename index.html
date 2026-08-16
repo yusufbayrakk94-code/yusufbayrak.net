@@ -168,16 +168,18 @@
         widget.addEventListener("elevenlabs-convai:call", function (event) {
           event.detail.config.clientTools = {
             navigate_to_page: function (params) {
-              var page = (params && (params.page || params.path || params.url)) || "/";
+              var raw = (params && (params.page || params.path || params.url)) || "/";
+              var page = String(raw).trim().replace(/^\/+/, "").replace(/\s+/g, "-");
+              var path = page ? "/" + page + "/" : "/";
               try {
-                var target = new URL(page, window.location.origin);
+                var target = new URL(path, window.location.origin);
                 if (target.origin !== window.location.origin) {
                   return "Sadece site içi sayfalara yönlendirme yapılabilir.";
                 }
-                window.location.href = target.pathname + target.search + target.hash;
+                window.location.assign(target.pathname + target.search + target.hash);
                 return "Yönlendiriliyor: " + target.pathname;
               } catch (e) {
-                return "Geçersiz sayfa adresi: " + page;
+                return "Geçersiz sayfa adresi: " + raw;
               }
             },
             summarize_site: function () {
