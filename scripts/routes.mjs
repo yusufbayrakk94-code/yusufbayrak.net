@@ -7,6 +7,14 @@ import path from "node:path";
 
 export const SITE_URL = "https://yusufbayrak.net";
 
+// Hosting serves every prerendered route from a directory index and 301s the
+// slash-less form to the slash form. Sitemap/llms.txt must therefore emit the
+// final (slash-terminated) URL so crawlers never hit a redirect.
+export function withSlash(p) {
+  if (!p || p === "/") return "/";
+  return p.endsWith("/") ? p : `${p}/`;
+}
+
 export const STATIC_TR = [
   "/",
   "/hakkimda",
@@ -204,10 +212,13 @@ export function sitemapEntries() {
 
   for (const route of allRoutes()) {
     if (excluded.has(route)) continue;
+    const alt = pairMap.get(route) ?? null;
     entries.push({
-      loc: route,
+      loc: withSlash(route),
       ...(meta[route] ?? defaultMeta),
-      alternates: pairMap.get(route) ?? null,
+      alternates: alt
+        ? { ...alt, self: withSlash(alt.self), alt: withSlash(alt.alt) }
+        : null,
     });
   }
   return entries;

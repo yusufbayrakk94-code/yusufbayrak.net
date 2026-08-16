@@ -12,6 +12,16 @@ export const DEFAULT_LOCALE: Locale = "tr";
 
 export const SITE_URL = "https://yusufbayrak.net";
 
+// Hosting serves prerendered routes from directory indexes and 301s the
+// slash-less form to the slash form. Canonical/hreflang/og:url must use the
+// final (slash-terminated) URL so they match sitemap.xml character for
+// character and never point at a redirect.
+export function withSlash(pathname: string): string {
+  if (!pathname || pathname === "/") return "/";
+  const [p, rest = ""] = pathname.split(/(?=[?#])/, 2);
+  return `${p.endsWith("/") ? p : `${p}/`}${rest}`;
+}
+
 // Static (non-parameterized) route pairs. Path values are absolute.
 export const STATIC_ROUTE_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "/",                       en: "/en" },

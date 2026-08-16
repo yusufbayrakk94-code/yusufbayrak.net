@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { SITE_URL, getAlternateRoute, type Locale, STATIC_ROUTE_PAIRS } from "./routes";
+import { SITE_URL, getAlternateRoute, withSlash, type Locale, STATIC_ROUTE_PAIRS } from "./routes";
 
 // Emits <html lang>, canonical, hreflang alternates and og:locale for the
 // current page. Every page in the app renders this once inside its Helmet
@@ -24,11 +24,11 @@ export function LocaleMeta({
   ogType = "website",
   ogImage = `${SITE_URL}/og-image.jpg`,
 }: Props) {
-  const canonical = `${SITE_URL}${path}`;
+  const canonical = `${SITE_URL}${withSlash(path)}`;
   const trPath = locale === "tr" ? path : getAlternateRoute(path, "tr") ?? "/";
   const enPath = locale === "en" ? path : getAlternateRoute(path, "en") ?? "/en";
-  const trHref = `${SITE_URL}${trPath}`;
-  const enHref = `${SITE_URL}${enPath}`;
+  const trHref = `${SITE_URL}${withSlash(trPath)}`;
+  const enHref = `${SITE_URL}${withSlash(enPath)}`;
 
   const htmlLang = locale === "en" ? "en" : "tr";
   const ogLocale = locale === "en" ? "en_US" : "tr_TR";

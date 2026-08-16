@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
 import { pickProjects, pickProjectsPage } from "@/content";
-import { SITE_URL } from "@/i18n/routes";
+import { SITE_URL, withSlash } from "@/i18n/routes";
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -60,7 +60,7 @@ export default function ProjectDetail() {
           description: project.fullDescription,
           applicationCategory: "BusinessApplication",
           operatingSystem: "Web",
-          url: project.externalUrl || `${SITE_URL}${detailPath}`,
+          url: project.externalUrl || `${SITE_URL}${withSlash(detailPath)}`,
           author: { "@type": "Person", name: "Yusuf Bayrak", url: SITE_URL },
           keywords: project.stack.join(", "),
           inLanguage: locale === "en" ? "en-US" : "tr-TR",
