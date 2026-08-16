@@ -70,11 +70,13 @@ function readToolCategories(locale = "tr") {
   for (const raw of body.split(/\{\s*\n\s*key:\s*"/).slice(1)) {
     const key = (raw.match(/^([^"]+)"/) || [])[1];
     if (!key) continue;
-    const chunk = raw.split(/\n\s*\},/)[0];
-    const path = (chunk.match(/path:\s*"([^"]+)"/) || [])[1];
-    const name = (chunk.match(/name:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || key;
-    const short = (chunk.match(/short:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || "";
-    const toolsRaw = (chunk.match(/tools:\s*\[([^\]]*)\]/) || [])[1] || "";
+    // The category block runs until the next category key; nested faq/section
+    // objects also close with "}," so we read the first match of each field
+    // from the remainder instead of slicing at the first closing brace.
+    const path = (raw.match(/path:\s*"([^"]+)"/) || [])[1];
+    const name = (raw.match(/name:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || key;
+    const short = (raw.match(/short:\s*"((?:[^"\\]|\\.)*)"/) || [])[1] || "";
+    const toolsRaw = (raw.match(/tools:\s*\[([^\]]*)\]/) || [])[1] || "";
     const tools = Array.from(toolsRaw.matchAll(/"([^"]+)"/g)).map((t) => t[1]);
     if (path) cats.push({ key, path, name, short, tools });
   }
@@ -181,11 +183,18 @@ function build() {
   }
   lines.push(`- [Blog (EN)](${SITE_URL}/en/blog): English blog index.`);
   lines.push(`- [Contact](${SITE_URL}/en/contact): Contact details.`);
-  for (const pair of BLOG_SLUG_PAIRS) {
-    const p = postsEnBySlug.get(pair.en);
-    const title = p?.title || pair.en;
-    const desc = p?.description ? `: ${p.description}` : "";
-    lines.push(`- [${title}](${SITE_URL}/en/blog/${pair.en})${desc}`);
+  {
+    // Every EN post, including English-only ones that have no TR counterpart.
+    const enSlugs = [
+      ...BLOG_SLUG_PAIRS.map((p) => p.en),
+      ...postsEn.map((p) => p.slug).filter((s) => !BLOG_SLUG_PAIRS.some((p) => p.en === s)),
+    ];
+    for (const slug of enSlugs) {
+      const p = postsEnBySlug.get(slug);
+      const title = p?.title || slug;
+      const desc = p?.description ? `: ${p.description}` : "";
+      lines.push(`- [${title}](${SITE_URL}/en/blog/${slug})${desc}`);
+    }
   }
   lines.push("");
 
