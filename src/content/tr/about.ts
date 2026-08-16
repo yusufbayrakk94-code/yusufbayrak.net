@@ -4,6 +4,9 @@ export const about = {
   seoDescription:
     "Veri odaklı dijital pazarlama, B2B lead generation ve yapay zeka otomasyonu alanlarında çalışan Yusuf Bayrak'ın profesyonel özgeçmişi.",
   heading: "Hakkımda",
+  whoHeading: "Yusuf Bayrak Kimdir?",
+  whoAnswer:
+    "Yusuf Bayrak, B2B büyüme stratejileri, performans pazarlama ve dijital veri mimarileri üzerine çalışan bir dijital pazarlama uzmanıdır. Sistem Global Danışmanlık bünyesinde B2B ve e-ticaret markaları için web sitesi kurulumu, reklam yönetimi ve yapay zeka destekli lead generation sistemleri geliştirir.",
   paragraphs: [
     "Veri odaklı dijital pazarlama stratejilerini güçlü bir analitik bakış açısıyla harmanlıyorum. Performans pazarlama, B2B lead generation ve dijital altyapı yönetimi temel odak alanlarımı oluşturuyor.",
     "Kapsam sadece reklam yönetimiyle sınırlı değil; web sitesi kurulumundan gelişmiş otomasyon kurgularına kadar markaların dijital ekosistemi uçtan uca inşa ediliyor. Operasyonel yükü hafifleten ve bütçe verimliliği sağlayan yapay zeka araçları sürecin merkezinde yer alıyor.",
