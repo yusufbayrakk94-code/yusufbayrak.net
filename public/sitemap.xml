@@ -259,11 +259,17 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/linkedin-reklamlari-turkiye-2026-firsat</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/linkedin-reklamlari-turkiye-2026-firsat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/linkedin-ads-turkey-2026-opportunity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/nrr-nedir-saas-buyume-metrigi</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/nrr-nedir-saas-buyume-metrigi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -530,6 +536,27 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-reduce-b2b-lead-generation-costs" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/linkedin-ads-turkey-2026-opportunity</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/linkedin-ads-turkey-2026-opportunity" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/linkedin-reklamlari-turkiye-2026-firsat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/nrr-nedir-saas-buyume-metrigi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/arr-vs-mrr-difference</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

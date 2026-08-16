@@ -62,6 +62,8 @@
 - [SaaS Metrics 101: How to Read ARR, CAC, LTV and Churn](https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv): The four core metrics that steer SaaS growth — where healthy bands sit and how to improve each one.
 - [How to Exit Meta Ads Learning Phase Fast: 5 Tactics](https://yusufbayrak.net/en/blog/meta-ads-exit-learning-phase-tactics): Five practical budget, event, audience and creative tactics to finish the Meta Ads Learning Phase within 7 days.
 - [How to Reduce B2B Lead Generation Costs (2026 Guide)](https://yusufbayrak.net/en/blog/how-to-reduce-b2b-lead-generation-costs): Cut B2B cost per lead by 30–50% without extra ad budget: offline conversion tracking, layered targeting, GEO and behavioral email automation.
+- [Why Are LinkedIn Ads Cheaper in Turkey Right Now? The 2026 Opportunity Window](https://yusufbayrak.net/en/blog/linkedin-ads-turkey-2026-opportunity): DataReportal's 2026 Turkey data shows LinkedIn's ad reach growing faster than mature platforms. Here is why that creates an unsaturated auction — and how B2B teams should use it.
+- [What Is NRR (Net Revenue Retention) and Why It Beats ARR in SaaS](https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric): How NRR differs from ARR and MRR, how to calculate it, healthy benchmarks by segment, and why investors build valuation around it — with worked examples.
 
 ## İletişim
 
