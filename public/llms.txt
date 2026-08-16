@@ -22,14 +22,28 @@
 ### Pazarlama Araçları
 
 - [Pazarlama Araçları](https://yusufbayrak.net/ucretsiz-araclar/pazarlama-araclari): Kampanya takibi, reklam getirisi ve AI görünürlüğü için pratik araçlar.
+- [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu): Kampanya takibi için UTM parametreli linkler oluşturun.
+- [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici): Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.
+- [Dönüşüm Oranı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/donusum-orani-hesaplayici): Ziyaretçi ve dönüşüm sayınızla dönüşüm oranınızı ve hedefe farkı hesaplayın.
+- [llms.txt Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu): AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.
 
 ### SaaS Araçları
 
 - [SaaS Araçları](https://yusufbayrak.net/ucretsiz-araclar/saas-araclari): Abonelik iş modelinizin büyüme ve elde tutma metriklerini ölçün.
+- [ARR Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/arr-hesaplayici): Yıllık yinelenen gelir (Annual Recurring Revenue) hesaplama aracı.
+- [MRR Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/mrr-hesaplayici): Aylık yinelenen gelirinizi (MRR) hesaplayın, ARR karşılığını görün.
+- [ARPA Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/arpa-hesaplayici): Hesap başına ortalama gelirinizi (ARPA) toplam MRR ve hesap sayısıyla hesaplayın.
+- [NRR Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/nrr-hesaplayici): Net gelir tutundurma oranınızı (NRR) genişleme, daralma ve churn MRR ile hesaplayın.
+- [Rule of 40 Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/rule-of-40-hesaplayici): Büyüme oranı ve kâr marjınızı toplayarak SaaS sağlık skorunuzu görün.
+- [CAC Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/cac-hesaplayici): Müşteri edinme maliyetini (Customer Acquisition Cost) analiz edin.
+- [LTV Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/ltv-hesaplayici): Müşteri yaşam boyu değerini hesaplayın ve CAC ile karşılaştırın.
+- [Churn Rate Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/churn-rate-hesaplayici): Müşteri kayıp oranınızı ve elde tutma performansınızı ölçün.
 
 ### E-Ticaret Araçları
 
 - [E-Ticaret Araçları](https://yusufbayrak.net/ucretsiz-araclar/e-ticaret-araclari): Ürün ve mağaza bazında gerçek kârlılığınızı hesaplayın.
+- [Brüt Kar Marjı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/brut-kar-marji-hesaplayici): Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.
+- [Net Kar Marjı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/net-kar-marji-hesaplayici): Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.
 
 ## Blog
 
@@ -40,6 +54,10 @@
 - [SaaS Metrikleri 101: ARR, CAC, LTV ve Churn Nasıl Yorumlanır?](https://yusufbayrak.net/blog/saas-metrikleri-arr-cac-ltv): SaaS büyümesini yöneten dört temel metrik; sağlıklı bir işletme için hangi bantlarda olmalı ve nasıl iyileştirilir?
 - [Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır? 5 Taktik](https://yusufbayrak.net/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri): Meta Ads Learning Phase'i 7 gün içinde tamamlamak için bütçe, event, audience ve kreatif odaklı 5 pratik taktik.
 - [B2B Lead Generation Maliyetleri Nasıl Düşürülür? (2026 Rehberi)](https://yusufbayrak.net/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur): Offline conversion tracking, katmanlı hedefleme, GEO ve davranışsal e-posta otomasyonu ile B2B lead başına maliyeti ek bütçe harcamadan %30-50 düşürme rehberi.
+- [Türkiye'de LinkedIn Reklamları Neden Şimdi Ucuz? 2026 Verileriyle Fırsat Penceresi](https://yusufbayrak.net/blog/linkedin-reklamlari-turkiye-2026-firsat): DataReportal'ın 2026 Türkiye verilerine göre LinkedIn'in reklam erişimi diğer platformlardan hızlı büyüyor. Rekabetin henüz doymadığı bu fırsat penceresini B2B için nasıl kullanacağınızı anlatıyoruz.
+- [NRR (Net Revenue Retention) Nedir? SaaS'ta Neden ARR'dan Daha Önemli?](https://yusufbayrak.net/blog/nrr-nedir-saas-buyume-metrigi): NRR'nin ARR ve MRR'dan farkı, nasıl hesaplandığı, sağlıklı aralıkları ve yatırımcıların neden değerlemeyi bu metrik üzerinden kurduğu — örnek hesaplamalarla.
+- [LinkedIn'de Soğuk Mesajla Yanıt Alma Oranını Artırma: Şablonlar ve Taktikler](https://yusufbayrak.net/blog/linkedin-soguk-mesaj-yanit-orani): LinkedIn soğuk mesajlarında yanıt oranını yükselten açılış cümleleri, kullanıma hazır şablonlar ve takip mesajı zamanlaması — B2B outbound için pratik rehber.
+- [ICP (Ideal Customer Profile) Nasıl Tanımlanır? Şablon + 3 Örnek](https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon): Doldurulabilir bir ICP şablonu ve SaaS, e-ticaret ve endüstriyel B2B sektörlerinden üç somut örnek — hedefleme, mesajlaşma ve lead skorlamayı aynı tanımdan besleyin.
 
 ## English
 
@@ -48,8 +66,22 @@
 - [Projects](https://yusufbayrak.net/en/projects): Products and projects.
 - [Free Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools): Marketing, SaaS and e-commerce calculators (category hub).
 - [Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools/marketing-tools): Campaign tracking, ad return and AI visibility essentials.
+  - [UTM Link Builder](https://yusufbayrak.net/en/free-marketing-tools/utm-builder): Build UTM-tagged links for accurate campaign attribution.
+  - [ROAS Calculator](https://yusufbayrak.net/en/free-marketing-tools/roas-calculator): Measure Return on Ad Spend and campaign profitability.
+  - [Conversion Rate Calculator](https://yusufbayrak.net/en/free-marketing-tools/conversion-rate-calculator): Turn visitors and conversions into a conversion rate and a gap to your target.
+  - [llms.txt Generator](https://yusufbayrak.net/en/free-marketing-tools/llms-txt-generator): Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.
 - [SaaS Tools](https://yusufbayrak.net/en/free-marketing-tools/saas-tools): Measure the growth and retention metrics of a subscription business.
+  - [ARR Calculator](https://yusufbayrak.net/en/free-marketing-tools/arr-calculator): Annual Recurring Revenue calculator for subscription products.
+  - [MRR Calculator](https://yusufbayrak.net/en/free-marketing-tools/mrr-calculator): Calculate Monthly Recurring Revenue and see the matching ARR.
+  - [ARPA Calculator](https://yusufbayrak.net/en/free-marketing-tools/arpa-calculator): Average revenue per account from total MRR and active accounts.
+  - [NRR Calculator](https://yusufbayrak.net/en/free-marketing-tools/nrr-calculator): Net revenue retention from expansion, contraction and churned MRR.
+  - [Rule of 40 Calculator](https://yusufbayrak.net/en/free-marketing-tools/rule-of-40-calculator): Add growth rate and profit margin to score your SaaS health.
+  - [CAC Calculator](https://yusufbayrak.net/en/free-marketing-tools/cac-calculator): Analyse your Customer Acquisition Cost across marketing and sales.
+  - [LTV Calculator](https://yusufbayrak.net/en/free-marketing-tools/ltv-calculator): Calculate customer lifetime value and compare it against CAC.
+  - [Churn Rate Calculator](https://yusufbayrak.net/en/free-marketing-tools/churn-rate-calculator): Measure your customer churn rate and retention performance.
 - [E-Commerce Tools](https://yusufbayrak.net/en/free-marketing-tools/ecommerce-tools): Calculate true profitability per product and per store.
+  - [Gross Profit Margin Calculator](https://yusufbayrak.net/en/free-marketing-tools/gross-profit-margin-calculator): Enter revenue and COGS to see gross margin as a percentage and an amount.
+  - [Net Profit Margin Calculator](https://yusufbayrak.net/en/free-marketing-tools/net-profit-margin-calculator): Include every expense to see the true net profitability of your business.
 - [Blog (EN)](https://yusufbayrak.net/en/blog): English blog index.
 - [Contact](https://yusufbayrak.net/en/contact): Contact details.
 - [How to Design a B2B Lead Generation Funnel: End-to-End Guide](https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design): A practical framework covering ICP definition, channel mix, messaging and CRM integration for qualified B2B lead generation.
@@ -58,6 +90,9 @@
 - [SaaS Metrics 101: How to Read ARR, CAC, LTV and Churn](https://yusufbayrak.net/en/blog/saas-metrics-arr-cac-ltv): The four core metrics that steer SaaS growth — where healthy bands sit and how to improve each one.
 - [How to Exit Meta Ads Learning Phase Fast: 5 Tactics](https://yusufbayrak.net/en/blog/meta-ads-exit-learning-phase-tactics): Five practical budget, event, audience and creative tactics to finish the Meta Ads Learning Phase within 7 days.
 - [How to Reduce B2B Lead Generation Costs (2026 Guide)](https://yusufbayrak.net/en/blog/how-to-reduce-b2b-lead-generation-costs): Cut B2B cost per lead by 30–50% without extra ad budget: offline conversion tracking, layered targeting, GEO and behavioral email automation.
+- [Why Are LinkedIn Ads Cheaper in Turkey Right Now? The 2026 Opportunity Window](https://yusufbayrak.net/en/blog/linkedin-ads-turkey-2026-opportunity): DataReportal's 2026 Turkey data shows LinkedIn's ad reach growing faster than mature platforms. Here is why that creates an unsaturated auction — and how B2B teams should use it.
+- [What Is NRR (Net Revenue Retention) and Why It Beats ARR in SaaS](https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric): How NRR differs from ARR and MRR, how to calculate it, healthy benchmarks by segment, and why investors build valuation around it — with worked examples.
+- [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim
 

@@ -27,6 +27,8 @@ export const STATIC_TR = [
   "/ucretsiz-araclar/donusum-orani-hesaplayici",
   "/ucretsiz-araclar/mrr-hesaplayici",
   "/ucretsiz-araclar/arpa-hesaplayici",
+  "/ucretsiz-araclar/nrr-hesaplayici",
+  "/ucretsiz-araclar/rule-of-40-hesaplayici",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -52,6 +54,8 @@ export const STATIC_EN = [
   "/en/free-marketing-tools/conversion-rate-calculator",
   "/en/free-marketing-tools/mrr-calculator",
   "/en/free-marketing-tools/arpa-calculator",
+  "/en/free-marketing-tools/nrr-calculator",
+  "/en/free-marketing-tools/rule-of-40-calculator",
   "/en/contact",
   "/en/blog",
 ];
@@ -78,6 +82,8 @@ export const ROUTE_PAIRS = [
   { tr: "/ucretsiz-araclar/donusum-orani-hesaplayici",  en: "/en/free-marketing-tools/conversion-rate-calculator" },
   { tr: "/ucretsiz-araclar/mrr-hesaplayici",           en: "/en/free-marketing-tools/mrr-calculator" },
   { tr: "/ucretsiz-araclar/arpa-hesaplayici",          en: "/en/free-marketing-tools/arpa-calculator" },
+  { tr: "/ucretsiz-araclar/nrr-hesaplayici",           en: "/en/free-marketing-tools/nrr-calculator" },
+  { tr: "/ucretsiz-araclar/rule-of-40-hesaplayici",    en: "/en/free-marketing-tools/rule-of-40-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
@@ -96,7 +102,12 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
   { tr: "meta-ads-ogrenme-asamasindan-cikma-taktikleri", en: "meta-ads-exit-learning-phase-tactics" },
   { tr: "b2b-lead-generation-maliyetleri-nasil-dusurulur", en: "how-to-reduce-b2b-lead-generation-costs" },
+  { tr: "linkedin-reklamlari-turkiye-2026-firsat", en: "linkedin-ads-turkey-2026-opportunity" },
+  { tr: "nrr-nedir-saas-buyume-metrigi", en: "what-is-nrr-saas-growth-metric" },
 ];
+
+// English-only posts (no TR counterpart). They live solely under /en/blog/.
+export const EN_ONLY_BLOG_SLUGS = ["arr-vs-mrr-difference"];
 
 export function getBlogSlugs() {
   try {
@@ -110,7 +121,10 @@ export function getBlogSlugs() {
       : file.indexOf("blogPosts");
     const source = postsSectionStart > 0 ? file.slice(postsSectionStart) : file;
     const known = ["performans-pazarlama","b2b-lead-generation","yapay-zeka-otomasyon","saas-buyume"];
-    const enSlugs = new Set(BLOG_SLUG_PAIRS.map((p) => p.en));
+    const enSlugs = new Set([
+      ...BLOG_SLUG_PAIRS.map((p) => p.en),
+      ...EN_ONLY_BLOG_SLUGS,
+    ]);
     const all = Array.from(source.matchAll(/^\s*slug:\s*"([^"]+)"/gm)).map((m) => m[1]);
     // Exclude category slugs AND English post slugs — EN posts belong only
     // under /en/blog/<slug>, not the root TR /blog/<slug> tree.
@@ -124,7 +138,10 @@ export function allRoutes() {
   const projectTr = PROJECT_SLUGS.map((s) => `/projeler/${s}`);
   const projectEn = PROJECT_SLUGS.map((s) => `/en/projects/${s}`);
   const blog = getBlogSlugs().map((s) => `/blog/${s}`);
-  const blogEn = BLOG_SLUG_PAIRS.map((p) => `/en/blog/${p.en}`);
+  const blogEn = [
+    ...BLOG_SLUG_PAIRS.map((p) => p.en),
+    ...EN_ONLY_BLOG_SLUGS,
+  ].map((s) => `/en/blog/${s}`);
   return [
     ...STATIC_TR,
     ...projectTr,
