@@ -5,7 +5,16 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { SITE_URL, PROJECT_SLUGS, BLOG_SLUG_PAIRS } from "./routes.mjs";
+import { SITE_URL, PROJECT_SLUGS, BLOG_SLUG_PAIRS, withSlash } from "./routes.mjs";
+
+// Hosting 301s slash-less routes to their slash form, so every emitted link
+// must already be the final URL. File links (sitemap.xml) stay untouched.
+function normalizeLinks(text) {
+  const re = new RegExp(`\\(${SITE_URL.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&")}([^)\\s]*)\\)`, "g");
+  return text.replace(re, (_m, p) =>
+    `(${SITE_URL}${/\.[a-z0-9]+$/i.test(p) ? p : withSlash(p)})`
+  );
+}
 
 const ROOT = process.cwd();
 
@@ -212,7 +221,7 @@ function build() {
   return lines.join("\n");
 }
 
-const out = build();
+const out = normalizeLinks(build());
 const targets = process.argv.slice(2);
 if (targets.length === 0) targets.push("public/llms.txt");
 for (const t of targets) {
