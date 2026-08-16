@@ -190,5 +190,43 @@
         });
       })();
     </script>
+    <script>
+      (function () {
+        function hideElevenLabsBranding() {
+          try {
+            var widget = document.querySelector("elevenlabs-convai");
+            if (!widget) return;
+            var shadow = widget.shadowRoot;
+            if (shadow) {
+              var found = shadow.querySelectorAll('[class*="powered"], [class*="badge"], [class*="elevenlabs"], a[href*="elevenlabs"]');
+              found.forEach(function (el) {
+                el.style.setProperty("display", "none", "important");
+                el.style.setProperty("opacity", "0", "important");
+                el.style.setProperty("visibility", "hidden", "important");
+              });
+            }
+            var all = widget.querySelectorAll('[class*="powered"], [class*="badge"], [class*="elevenlabs"], a[href*="elevenlabs"]');
+            all.forEach(function (el) {
+              el.style.setProperty("display", "none", "important");
+            });
+            var walker = document.createTreeWalker(widget, NodeFilter.SHOW_TEXT, null, false);
+            var node;
+            while ((node = walker.nextNode())) {
+              if (node.nodeValue.toLowerCase().includes("powered by elevenlabs")) {
+                var parent = node.parentElement;
+                if (parent) {
+                  parent.style.setProperty("display", "none", "important");
+                }
+              }
+            }
+          } catch (e) {
+            // no-op
+          }
+        }
+        hideElevenLabsBranding();
+        var interval = setInterval(hideElevenLabsBranding, 500);
+        setTimeout(function () { clearInterval(interval); }, 10000);
+      })();
+    </script>
   </body>
 </html>
