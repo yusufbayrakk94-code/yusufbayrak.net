@@ -194,27 +194,48 @@
     </script>
     <script>
       (function () {
+        function navigateToPage(page) {
+          var raw = page || "/";
+          var cleanPage = String(raw)
+            .trim()
+            .replace(/^\/+/, "")
+            .replace(/\s+/g, "-");
+          var path = "/" + (cleanPage || "");
+          try {
+            var target = new URL(path, window.location.origin);
+            if (target.origin !== window.location.origin) {
+              return "Sadece site içi sayfalara yönlendirme yapılabilir.";
+            }
+            window.location.href = target.pathname + target.search + target.hash;
+            return "Yönlendiriliyor: " + target.pathname;
+          } catch (e) {
+            window.location.href = path;
+            return "Yönlendiriliyor: " + path;
+          }
+        }
+
+        // 1) postMessage tabanlı çağrılar (widget iframe'den gelen mesajlar)
         window.addEventListener("message", function (event) {
           if (event.data && event.data.type === "elevenlabs-convai:client-tool-call") {
             if (event.data.tool === "navigate_to_page") {
-              var page = (event.data.parameters && event.data.parameters.page) || "/";
-              var cleanPage = String(page)
-                .trim()
-                .replace(/^\/+/, "")
-                .replace(/\s+/g, "-");
-              var path = "/" + (cleanPage || "");
-              try {
-                var target = new URL(path, window.location.origin);
-                if (target.origin !== window.location.origin) {
-                  return;
-                }
-                window.location.href = target.pathname + target.search + target.hash;
-              } catch (e) {
-                window.location.href = "/" + cleanPage;
-              }
+              navigateToPage(event.data.parameters && event.data.parameters.page);
             }
           }
         });
+
+        // 2) Custom DOM event tabanlı çağrılar (document veya widget üzerinden)
+        function handleDomEvent(event) {
+          var detail = event.detail || {};
+          var toolCall = detail.toolCall || detail;
+          var tool = toolCall.tool || detail.tool || (event.data && event.data.tool);
+          var params = toolCall.parameters || detail.parameters || (event.data && event.data.parameters) || {};
+
+          if (tool === "navigate_to_page") {
+            navigateToPage(params.page || params.path || params.url);
+          }
+        }
+
+        document.addEventListener("elevenlabs-convai:call", handleDomEvent);
       })();
     </script>
     <script>
