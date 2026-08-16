@@ -154,6 +154,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/ucretsiz-araclar/nrr-hesaplayici</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/nrr-hesaplayici" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-marketing-tools/nrr-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/ucretsiz-araclar/rule-of-40-hesaplayici</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/rule-of-40-hesaplayici" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-marketing-tools/rule-of-40-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/iletisim</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/iletisim" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/contact" />
@@ -238,6 +254,26 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-reduce-b2b-lead-generation-costs" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/linkedin-reklamlari-turkiye-2026-firsat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/nrr-nedir-saas-buyume-metrigi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/linkedin-soguk-mesaj-yanit-orani</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -389,6 +425,22 @@
     <loc>https://yusufbayrak.net/en/free-marketing-tools/arpa-calculator</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-marketing-tools/arpa-calculator" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/arpa-hesaplayici" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/free-marketing-tools/nrr-calculator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-marketing-tools/nrr-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/nrr-hesaplayici" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/free-marketing-tools/rule-of-40-calculator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-marketing-tools/rule-of-40-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/rule-of-40-hesaplayici" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

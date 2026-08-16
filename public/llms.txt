@@ -40,6 +40,10 @@
 - [SaaS Metrikleri 101: ARR, CAC, LTV ve Churn Nasıl Yorumlanır?](https://yusufbayrak.net/blog/saas-metrikleri-arr-cac-ltv): SaaS büyümesini yöneten dört temel metrik; sağlıklı bir işletme için hangi bantlarda olmalı ve nasıl iyileştirilir?
 - [Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır? 5 Taktik](https://yusufbayrak.net/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri): Meta Ads Learning Phase'i 7 gün içinde tamamlamak için bütçe, event, audience ve kreatif odaklı 5 pratik taktik.
 - [B2B Lead Generation Maliyetleri Nasıl Düşürülür? (2026 Rehberi)](https://yusufbayrak.net/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur): Offline conversion tracking, katmanlı hedefleme, GEO ve davranışsal e-posta otomasyonu ile B2B lead başına maliyeti ek bütçe harcamadan %30-50 düşürme rehberi.
+- [Türkiye'de LinkedIn Reklamları Neden Şimdi Ucuz? 2026 Verileriyle Fırsat Penceresi](https://yusufbayrak.net/blog/linkedin-reklamlari-turkiye-2026-firsat): DataReportal'ın 2026 Türkiye verilerine göre LinkedIn'in reklam erişimi diğer platformlardan hızlı büyüyor. Rekabetin henüz doymadığı bu fırsat penceresini B2B için nasıl kullanacağınızı anlatıyoruz.
+- [NRR (Net Revenue Retention) Nedir? SaaS'ta Neden ARR'dan Daha Önemli?](https://yusufbayrak.net/blog/nrr-nedir-saas-buyume-metrigi): NRR'nin ARR ve MRR'dan farkı, nasıl hesaplandığı, sağlıklı aralıkları ve yatırımcıların neden değerlemeyi bu metrik üzerinden kurduğu — örnek hesaplamalarla.
+- [LinkedIn'de Soğuk Mesajla Yanıt Alma Oranını Artırma: Şablonlar ve Taktikler](https://yusufbayrak.net/blog/linkedin-soguk-mesaj-yanit-orani): LinkedIn soğuk mesajlarında yanıt oranını yükselten açılış cümleleri, kullanıma hazır şablonlar ve takip mesajı zamanlaması — B2B outbound için pratik rehber.
+- [ICP (Ideal Customer Profile) Nasıl Tanımlanır? Şablon + 3 Örnek](https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon): Doldurulabilir bir ICP şablonu ve SaaS, e-ticaret ve endüstriyel B2B sektörlerinden üç somut örnek — hedefleme, mesajlaşma ve lead skorlamayı aynı tanımdan besleyin.
 
 ## English
 
