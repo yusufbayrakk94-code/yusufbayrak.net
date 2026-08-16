@@ -48,6 +48,10 @@ export interface BlogResource {
 // value on the post.
 export type RelatedToolKey =
   | "arr"
+  | "mrr"
+  | "arpa"
+  | "nrr"
+  | "rule-of-40"
   | "cac"
   | "churn"
   | "ltv"
@@ -1354,6 +1358,8 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "saas-metrikleri-arr-cac-ltv", en: "saas-metrics-arr-cac-ltv" },
   { tr: "meta-ads-ogrenme-asamasindan-cikma-taktikleri", en: "meta-ads-exit-learning-phase-tactics" },
   { tr: "b2b-lead-generation-maliyetleri-nasil-dusurulur", en: "how-to-reduce-b2b-lead-generation-costs" },
+  { tr: "linkedin-reklamlari-turkiye-2026-firsat", en: "linkedin-ads-turkey-2026-opportunity" },
+  { tr: "nrr-nedir-saas-buyume-metrigi", en: "what-is-nrr-saas-growth-metric" },
 ];
 
 
@@ -2089,6 +2095,54 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       href: "/en/free-marketing-tools/arr-calculator",
       label: "ARR Calculator",
       description: "Compute annual recurring revenue from your MRR instantly.",
+    },
+  },
+  mrr: {
+    tr: {
+      href: "/ucretsiz-araclar/mrr-hesaplayici",
+      label: "MRR Hesaplayıcı",
+      description: "Aylık yinelenen gelirinizi ve ARR karşılığını hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/mrr-calculator",
+      label: "MRR Calculator",
+      description: "Calculate monthly recurring revenue and its ARR equivalent.",
+    },
+  },
+  arpa: {
+    tr: {
+      href: "/ucretsiz-araclar/arpa-hesaplayici",
+      label: "ARPA Hesaplayıcı",
+      description: "Hesap başına ortalama gelirinizi (ARPA) hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/arpa-calculator",
+      label: "ARPA Calculator",
+      description: "Calculate average revenue per account (ARPA).",
+    },
+  },
+  nrr: {
+    tr: {
+      href: "/ucretsiz-araclar/nrr-hesaplayici",
+      label: "NRR Hesaplayıcı",
+      description: "Net gelir tutundurma oranınızı (NRR) hesaplayın.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/nrr-calculator",
+      label: "NRR Calculator",
+      description: "Calculate your net revenue retention (NRR).",
+    },
+  },
+  "rule-of-40": {
+    tr: {
+      href: "/ucretsiz-araclar/rule-of-40-hesaplayici",
+      label: "Rule of 40 Hesaplayıcı",
+      description: "Büyüme ve kârlılık dengenizi tek skorda görün.",
+    },
+    en: {
+      href: "/en/free-marketing-tools/rule-of-40-calculator",
+      label: "Rule of 40 Calculator",
+      description: "Score your growth vs. profitability balance.",
     },
   },
   cac: {
