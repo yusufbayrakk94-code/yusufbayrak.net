@@ -176,7 +176,7 @@
                 if (target.origin !== window.location.origin) {
                   return "Sadece site içi sayfalara yönlendirme yapılabilir.";
                 }
-                window.location.assign(target.pathname + target.search + target.hash);
+                window.location.href = target.pathname + target.search + target.hash;
                 return "Yönlendiriliyor: " + target.pathname;
               } catch (e) {
                 return "Geçersiz sayfa adresi: " + raw;
@@ -208,7 +208,7 @@
                 if (target.origin !== window.location.origin) {
                   return;
                 }
-                window.location.assign(target.pathname + target.search + target.hash);
+                window.location.href = target.pathname + target.search + target.hash;
               } catch (e) {
                 window.location.href = "/" + cleanPage;
               }
