@@ -64,24 +64,24 @@
 - [Home (EN)](https://yusufbayrak.net/en/): English homepage.
 - [About](https://yusufbayrak.net/en/about/): Background and expertise.
 - [Projects](https://yusufbayrak.net/en/projects/): Products and projects.
-- [Free Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools/): Marketing, SaaS and e-commerce calculators (category hub).
-- [Marketing Tools](https://yusufbayrak.net/en/free-marketing-tools/marketing-tools/): Campaign tracking, ad return and AI visibility essentials.
-  - [UTM Link Builder](https://yusufbayrak.net/en/free-marketing-tools/utm-builder/): Build UTM-tagged links for accurate campaign attribution.
-  - [ROAS Calculator](https://yusufbayrak.net/en/free-marketing-tools/roas-calculator/): Measure Return on Ad Spend and campaign profitability.
-  - [Conversion Rate Calculator](https://yusufbayrak.net/en/free-marketing-tools/conversion-rate-calculator/): Turn visitors and conversions into a conversion rate and a gap to your target.
-  - [llms.txt Generator](https://yusufbayrak.net/en/free-marketing-tools/llms-txt-generator/): Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.
-- [SaaS Tools](https://yusufbayrak.net/en/free-marketing-tools/saas-tools/): Measure the growth and retention metrics of a subscription business.
-  - [ARR Calculator](https://yusufbayrak.net/en/free-marketing-tools/arr-calculator/): Annual Recurring Revenue calculator for subscription products.
-  - [MRR Calculator](https://yusufbayrak.net/en/free-marketing-tools/mrr-calculator/): Calculate Monthly Recurring Revenue and see the matching ARR.
-  - [ARPA Calculator](https://yusufbayrak.net/en/free-marketing-tools/arpa-calculator/): Average revenue per account from total MRR and active accounts.
-  - [NRR Calculator](https://yusufbayrak.net/en/free-marketing-tools/nrr-calculator/): Net revenue retention from expansion, contraction and churned MRR.
-  - [Rule of 40 Calculator](https://yusufbayrak.net/en/free-marketing-tools/rule-of-40-calculator/): Add growth rate and profit margin to score your SaaS health.
-  - [CAC Calculator](https://yusufbayrak.net/en/free-marketing-tools/cac-calculator/): Analyse your Customer Acquisition Cost across marketing and sales.
-  - [LTV Calculator](https://yusufbayrak.net/en/free-marketing-tools/ltv-calculator/): Calculate customer lifetime value and compare it against CAC.
-  - [Churn Rate Calculator](https://yusufbayrak.net/en/free-marketing-tools/churn-rate-calculator/): Measure your customer churn rate and retention performance.
-- [E-Commerce Tools](https://yusufbayrak.net/en/free-marketing-tools/ecommerce-tools/): Calculate true profitability per product and per store.
-  - [Gross Profit Margin Calculator](https://yusufbayrak.net/en/free-marketing-tools/gross-profit-margin-calculator/): Enter revenue and COGS to see gross margin as a percentage and an amount.
-  - [Net Profit Margin Calculator](https://yusufbayrak.net/en/free-marketing-tools/net-profit-margin-calculator/): Include every expense to see the true net profitability of your business.
+- [Free Marketing Tools](https://yusufbayrak.net/en/free-tools/): Marketing, SaaS and e-commerce calculators (category hub).
+- [Marketing Tools](https://yusufbayrak.net/en/free-tools/marketing-tools/): Campaign tracking, ad return and AI visibility essentials.
+  - [UTM Link Builder](https://yusufbayrak.net/en/free-tools/utm-builder/): Build UTM-tagged links for accurate campaign attribution.
+  - [ROAS Calculator](https://yusufbayrak.net/en/free-tools/roas-calculator/): Measure Return on Ad Spend and campaign profitability.
+  - [Conversion Rate Calculator](https://yusufbayrak.net/en/free-tools/conversion-rate-calculator/): Turn visitors and conversions into a conversion rate and a gap to your target.
+  - [llms.txt Generator](https://yusufbayrak.net/en/free-tools/llms-txt-generator/): Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.
+- [SaaS Tools](https://yusufbayrak.net/en/free-tools/saas-tools/): Measure the growth and retention metrics of a subscription business.
+  - [ARR Calculator](https://yusufbayrak.net/en/free-tools/arr-calculator/): Annual Recurring Revenue calculator for subscription products.
+  - [MRR Calculator](https://yusufbayrak.net/en/free-tools/mrr-calculator/): Calculate Monthly Recurring Revenue and see the matching ARR.
+  - [ARPA Calculator](https://yusufbayrak.net/en/free-tools/arpa-calculator/): Average revenue per account from total MRR and active accounts.
+  - [NRR Calculator](https://yusufbayrak.net/en/free-tools/nrr-calculator/): Net revenue retention from expansion, contraction and churned MRR.
+  - [Rule of 40 Calculator](https://yusufbayrak.net/en/free-tools/rule-of-40-calculator/): Add growth rate and profit margin to score your SaaS health.
+  - [CAC Calculator](https://yusufbayrak.net/en/free-tools/cac-calculator/): Analyse your Customer Acquisition Cost across marketing and sales.
+  - [LTV Calculator](https://yusufbayrak.net/en/free-tools/ltv-calculator/): Calculate customer lifetime value and compare it against CAC.
+  - [Churn Rate Calculator](https://yusufbayrak.net/en/free-tools/churn-rate-calculator/): Measure your customer churn rate and retention performance.
+- [E-Commerce Tools](https://yusufbayrak.net/en/free-tools/ecommerce-tools/): Calculate true profitability per product and per store.
+  - [Gross Profit Margin Calculator](https://yusufbayrak.net/en/free-tools/gross-profit-margin-calculator/): Enter revenue and COGS to see gross margin as a percentage and an amount.
+  - [Net Profit Margin Calculator](https://yusufbayrak.net/en/free-tools/net-profit-margin-calculator/): Include every expense to see the true net profitability of your business.
 - [Blog (EN)](https://yusufbayrak.net/en/blog/): English blog index.
 - [Contact](https://yusufbayrak.net/en/contact/): Contact details.
 - [How to Design a B2B Lead Generation Funnel: End-to-End Guide](https://yusufbayrak.net/en/blog/b2b-lead-generation-funnel-design/): A practical framework covering ICP definition, channel mix, messaging and CRM integration for qualified B2B lead generation.
