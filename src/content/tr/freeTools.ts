@@ -1,6 +1,6 @@
 export const freeToolsPage = {
   path: "/ucretsiz-araclar",
-  seoTitle: "Ücretsiz Pazarlama Araçları | Yusuf Bayrak",
+  seoTitle: "Ücretsiz Pazarlama ve SaaS Hesaplama Araçları | Yusuf Bayrak",
   seoDescription:
     "ARR, CAC, Churn, LTV, ROAS hesaplayıcıları ve UTM link oluşturucu — pazarlama ve SaaS metriklerinizi hesaplayın.",
   heading: "Ücretsiz Araçlar",
@@ -263,7 +263,7 @@ export const toolCategories = [
 
 export const toolCategoriesUi = {
   hubName: "Ücretsiz Araçlar",
-  hubHeading: "Ücretsiz Araçlar",
+  hubHeading: "Pazarlama, SaaS ve E-Ticaret Hesaplama Araçları",
   hubIntro:
     "Pazarlama, SaaS ve e-ticaret metriklerinizi saniyeler içinde hesaplayan ücretsiz araçlar. Kategori seçerek başlayın — hepsi tarayıcıda çalışır, veri sunucuya gönderilmez.",
   hubDivider: "Kategoriler",

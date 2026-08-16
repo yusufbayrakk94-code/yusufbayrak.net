@@ -1,6 +1,6 @@
 export const freeToolsPage = {
   path: "/en/free-tools",
-  seoTitle: "Free Marketing Tools | Yusuf Bayrak",
+  seoTitle: "Free Marketing & SaaS Calculators | Yusuf Bayrak",
   seoDescription:
     "ARR, CAC, Churn, LTV, ROAS calculators and UTM link builder — run your marketing and SaaS metrics in seconds.",
   heading: "Free Tools",
@@ -262,7 +262,7 @@ export const toolCategories = [
 
 export const toolCategoriesUi = {
   hubName: "Free Tools",
-  hubHeading: "Free Tools",
+  hubHeading: "Marketing, SaaS & E-Commerce Calculators",
   hubIntro:
     "Free tools that compute your marketing, SaaS and e-commerce metrics in seconds. Pick a category to start — everything runs client-side, nothing is sent to a server.",
   hubDivider: "Categories",
