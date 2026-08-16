@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { Helmet } from "react-helmet-async";
 import { CodeDivider } from "@/components/ui/CodeDivider";
 import { TechTag } from "@/components/ui/TechTag";
 import profileAsset from "@/assets/yusuf-bayrak-profil.jpg.asset.json";
@@ -15,10 +16,33 @@ const profileImageSrc = isLovableHost
 export default function About() {
   const locale = useLocale();
   const c = pickAbout(locale);
+  const isTR = locale !== "en";
+  const personLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `https://yusufbayrak.net${c.path}#profilepage`,
+    inLanguage: isTR ? "tr-TR" : "en-US",
+    mainEntity: {
+      "@type": "Person",
+      "@id": "https://yusufbayrak.net/#person",
+      name: "Yusuf Bayrak",
+      jobTitle: isTR ? "Dijital Pazarlama Uzmanı" : "Digital Marketing Specialist",
+      description: c.whoAnswer,
+      url: "https://yusufbayrak.net/",
+      image: "https://yusufbayrak.net/og-image.jpg",
+      email: "mailto:yyusufbayrak@gmail.com",
+      worksFor: { "@type": "Organization", name: "Sistem Global Danışmanlık" },
+      sameAs: ["https://tr.linkedin.com/in/yyusuf-bayrak", "https://x.com/yusuffbayrak"],
+      knowsAbout: c.expertise,
+    },
+  };
 
   return (
     <Layout>
       <LocaleMeta path={c.path} locale={locale} title={c.seoTitle} description={c.seoDescription} ogType="profile" />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(personLd)}</script>
+      </Helmet>
       <section className="py-20">
         <div className="container">
           <div className="max-w-3xl mb-12 opacity-0 animate-fade-in-up">
@@ -26,6 +50,10 @@ export default function About() {
           </div>
           <div className="grid gap-16 lg:grid-cols-3">
             <div className="lg:col-span-2 space-y-6">
+              <div className="opacity-0 animate-fade-in-up stagger-1">
+                <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3">{c.whoHeading}</h2>
+                <p className="text-lg text-foreground leading-relaxed">{c.whoAnswer}</p>
+              </div>
               <div className="mb-8 opacity-0 animate-fade-in-up stagger-1">
                 <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden border-2 border-accent/30 transition-all duration-300 hover:border-accent">
                   <img src={profileImageSrc} alt="Yusuf Bayrak" className="w-full h-full object-cover" />
