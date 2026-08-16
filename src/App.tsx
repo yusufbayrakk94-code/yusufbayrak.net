@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
 // Pages are imported statically (not React.lazy) so `renderToString` in the
 // SSG script gets the actual page tree — Suspense would otherwise render the
@@ -97,6 +97,8 @@ export function AppRoutes() {
       <Route path="/en/blog/:slug" element={<BlogPost />} />
 
       {/* Legacy English aliases kept for existing inbound links */}
+      {/* Old EN tools prefix (/en/free-marketing-tools/*) -> /en/free-tools/* */}
+      <Route path="/en/free-marketing-tools/*" element={<LegacyToolsRedirect />} />
       <Route path="/work" element={<Work />} />
       <Route path="/work/:slug" element={<ProjectDetail />} />
       <Route path="/about" element={<About />} />
