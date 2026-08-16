@@ -38,6 +38,18 @@ const queryClient = new QueryClient();
 
 // The Route tree — router (BrowserRouter or StaticRouter) is provided from the
 // entry (`main.tsx` for client, `entry-server.tsx` for SSG prerender).
+// Legacy EN tools prefix redirect: /en/free-marketing-tools/... ->
+// /en/free-tools/... (static hosts can't 301, so the client mirrors the
+// redirect stubs written by scripts/redirects.mjs).
+function LegacyToolsRedirect() {
+  const { pathname } = useLocation();
+  const target = pathname.replace(
+    /^\/en\/free-marketing-tools/,
+    "/en/free-tools"
+  );
+  return <Navigate to={target} replace />;
+}
+
 export function AppRoutes() {
   return (
     <Routes>
