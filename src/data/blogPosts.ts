@@ -1762,12 +1762,12 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "arr",
     resources: [
-      { label: "MRR Calculator", href: "/en/free-marketing-tools/mrr-calculator" },
-      { label: "ARPA Calculator", href: "/en/free-marketing-tools/arpa-calculator" },
-      { label: "ARR Calculator", href: "/en/free-marketing-tools/arr-calculator" },
-      { label: "CAC Calculator", href: "/en/free-marketing-tools/cac-calculator" },
-      { label: "LTV Calculator", href: "/en/free-marketing-tools/ltv-calculator" },
-      { label: "Churn Rate Calculator", href: "/en/free-marketing-tools/churn-rate-calculator" },
+      { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator" },
+      { label: "ARPA Calculator", href: "/en/free-tools/arpa-calculator" },
+      { label: "ARR Calculator", href: "/en/free-tools/arr-calculator" },
+      { label: "CAC Calculator", href: "/en/free-tools/cac-calculator" },
+      { label: "LTV Calculator", href: "/en/free-tools/ltv-calculator" },
+      { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator" },
     ],
   },
   {
@@ -2021,7 +2021,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         label: "SaaS Metrics: ARR, CAC and LTV",
         href: "/en/blog/saas-metrics-arr-cac-ltv",
       },
-      { label: "LTV Calculator", href: "/en/free-marketing-tools/ltv-calculator" },
+      { label: "LTV Calculator", href: "/en/free-tools/ltv-calculator" },
       {
         label: "Google Ads — Import offline conversions documentation",
         href: "https://support.google.com/google-ads/answer/2998031",
@@ -2253,7 +2253,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     resources: [
       {
         label: "NRR Calculator",
-        href: "/en/free-marketing-tools/nrr-calculator",
+        href: "/en/free-tools/nrr-calculator",
       },
       {
         label: "SaaS Metrics: ARR, CAC and LTV",
@@ -2261,7 +2261,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       },
       {
         label: "Rule of 40 Calculator",
-        href: "/en/free-marketing-tools/rule-of-40-calculator",
+        href: "/en/free-tools/rule-of-40-calculator",
       },
     ],
   },
@@ -2342,11 +2342,11 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     resources: [
       {
         label: "MRR Calculator",
-        href: "/en/free-marketing-tools/mrr-calculator",
+        href: "/en/free-tools/mrr-calculator",
       },
       {
         label: "ARR Calculator",
-        href: "/en/free-marketing-tools/arr-calculator",
+        href: "/en/free-tools/arr-calculator",
       },
       {
         label: "What Is NRR and Why It Beats ARR in SaaS",
@@ -2407,7 +2407,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "MRR'den yıllık yinelenen gelirinizi anında hesaplayın.",
     },
     en: {
-      href: "/en/free-marketing-tools/arr-calculator",
+      href: "/en/free-tools/arr-calculator",
       label: "ARR Calculator",
       description: "Compute annual recurring revenue from your MRR instantly.",
     },
@@ -2419,7 +2419,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Aylık yinelenen gelirinizi ve ARR karşılığını hesaplayın.",
     },
     en: {
-      href: "/en/free-marketing-tools/mrr-calculator",
+      href: "/en/free-tools/mrr-calculator",
       label: "MRR Calculator",
       description: "Calculate monthly recurring revenue and its ARR equivalent.",
     },
@@ -2431,7 +2431,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Hesap başına ortalama gelirinizi (ARPA) hesaplayın.",
     },
     en: {
-      href: "/en/free-marketing-tools/arpa-calculator",
+      href: "/en/free-tools/arpa-calculator",
       label: "ARPA Calculator",
       description: "Calculate average revenue per account (ARPA).",
     },
@@ -2443,7 +2443,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Net gelir tutundurma oranınızı (NRR) hesaplayın.",
     },
     en: {
-      href: "/en/free-marketing-tools/nrr-calculator",
+      href: "/en/free-tools/nrr-calculator",
       label: "NRR Calculator",
       description: "Calculate your net revenue retention (NRR).",
     },
@@ -2455,7 +2455,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Büyüme ve kârlılık dengenizi tek skorda görün.",
     },
     en: {
-      href: "/en/free-marketing-tools/rule-of-40-calculator",
+      href: "/en/free-tools/rule-of-40-calculator",
       label: "Rule of 40 Calculator",
       description: "Score your growth vs. profitability balance.",
     },
@@ -2467,7 +2467,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Müşteri edinme maliyetinizi hızlıca hesaplayın.",
     },
     en: {
-      href: "/en/free-marketing-tools/cac-calculator",
+      href: "/en/free-tools/cac-calculator",
       label: "CAC Calculator",
       description: "Calculate your customer acquisition cost in seconds.",
     },
@@ -2479,7 +2479,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Aylık churn oranınızı ve retention etkisini görün.",
     },
     en: {
-      href: "/en/free-marketing-tools/churn-rate-calculator",
+      href: "/en/free-tools/churn-rate-calculator",
       label: "Churn Rate Calculator",
       description: "See your monthly churn rate and its impact on retention.",
     },
@@ -2491,7 +2491,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Müşteri yaşam boyu değerinizi (LTV) hesaplayın.",
     },
     en: {
-      href: "/en/free-marketing-tools/ltv-calculator",
+      href: "/en/free-tools/ltv-calculator",
       label: "LTV Calculator",
       description: "Estimate customer lifetime value (LTV).",
     },
@@ -2503,7 +2503,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Reklam harcamanızın getirisini (ROAS) hesaplayın.",
     },
     en: {
-      href: "/en/free-marketing-tools/roas-calculator",
+      href: "/en/free-tools/roas-calculator",
       label: "ROAS Calculator",
       description: "Calculate return on ad spend (ROAS) for your campaigns.",
     },
@@ -2515,7 +2515,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Kampanya URL'leriniz için standart UTM etiketleri üretin.",
     },
     en: {
-      href: "/en/free-marketing-tools/utm-builder",
+      href: "/en/free-tools/utm-builder",
       label: "UTM Link Builder",
       description: "Generate standard UTM tags for your campaign URLs.",
     },
@@ -2527,7 +2527,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       description: "Sitenizin AI botları için llms.txt dosyasını üretin.",
     },
     en: {
-      href: "/en/free-marketing-tools/llms-txt-generator",
+      href: "/en/free-tools/llms-txt-generator",
       label: "llms.txt Generator",
       description: "Generate your site's llms.txt file for AI crawlers.",
     },

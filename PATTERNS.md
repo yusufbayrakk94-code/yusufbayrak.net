@@ -28,9 +28,9 @@ eklerken bu kontrol listesinin tamamı tamamlanmadan iş bitmiş sayılmaz.
      `BreadcrumbList`.
 6. **Tutarlı URL kalıbı** —
    - TR araç: `/ucretsiz-araclar/<turkce-slug>`
-   - EN araç: `/en/free-marketing-tools/<english-slug>`
+   - EN araç: `/en/free-tools/<english-slug>`
    - TR kategori: `/ucretsiz-araclar/<kategori-slug>`
-   - EN kategori: `/en/free-marketing-tools/<kategori-slug>`
+   - EN kategori: `/en/free-tools/<kategori-slug>`
    Slug'lar dile göre çevrilir; aynı içerik tek bir canonical URL'de kalır.
 
 ## 2. İçerik yapısı

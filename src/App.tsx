@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
 // Pages are imported statically (not React.lazy) so `renderToString` in the
 // SSG script gets the actual page tree — Suspense would otherwise render the
@@ -38,6 +38,18 @@ const queryClient = new QueryClient();
 
 // The Route tree — router (BrowserRouter or StaticRouter) is provided from the
 // entry (`main.tsx` for client, `entry-server.tsx` for SSG prerender).
+// Legacy EN tools prefix redirect: /en/free-marketing-tools/... ->
+// /en/free-tools/... (static hosts can't 301, so the client mirrors the
+// redirect stubs written by scripts/redirects.mjs).
+function LegacyToolsRedirect() {
+  const { pathname } = useLocation();
+  const target = pathname.replace(
+    /^\/en\/free-marketing-tools/,
+    "/en/free-tools"
+  );
+  return <Navigate to={target} replace />;
+}
+
 export function AppRoutes() {
   return (
     <Routes>
@@ -74,29 +86,31 @@ export function AppRoutes() {
       <Route path="/en/about" element={<About />} />
       <Route path="/en/projects" element={<Work />} />
       <Route path="/en/projects/:slug" element={<ProjectDetail />} />
-      <Route path="/en/free-marketing-tools" element={<FreeTools />} />
-      <Route path="/en/free-marketing-tools/marketing-tools" element={<ToolCategory categoryKey="marketing" />} />
-      <Route path="/en/free-marketing-tools/saas-tools" element={<ToolCategory categoryKey="saas" />} />
-      <Route path="/en/free-marketing-tools/ecommerce-tools" element={<ToolCategory categoryKey="ecommerce" />} />
-      <Route path="/en/free-marketing-tools/arr-calculator" element={<ArrCalculator />} />
-      <Route path="/en/free-marketing-tools/cac-calculator" element={<CacCalculator />} />
-      <Route path="/en/free-marketing-tools/churn-rate-calculator" element={<ChurnCalculator />} />
-      <Route path="/en/free-marketing-tools/ltv-calculator" element={<LtvCalculator />} />
-      <Route path="/en/free-marketing-tools/roas-calculator" element={<RoasCalculator />} />
-      <Route path="/en/free-marketing-tools/utm-builder" element={<UtmBuilder />} />
-      <Route path="/en/free-marketing-tools/llms-txt-generator" element={<LlmsTxtGenerator />} />
-      <Route path="/en/free-marketing-tools/gross-profit-margin-calculator" element={<GrossMarginCalculator />} />
-      <Route path="/en/free-marketing-tools/net-profit-margin-calculator" element={<NetMarginCalculator />} />
-      <Route path="/en/free-marketing-tools/conversion-rate-calculator" element={<ConversionRateCalculator />} />
-      <Route path="/en/free-marketing-tools/mrr-calculator" element={<MrrCalculator />} />
-      <Route path="/en/free-marketing-tools/arpa-calculator" element={<ArpaCalculator />} />
-      <Route path="/en/free-marketing-tools/nrr-calculator" element={<NrrCalculator />} />
-      <Route path="/en/free-marketing-tools/rule-of-40-calculator" element={<RuleOf40Calculator />} />
+      <Route path="/en/free-tools" element={<FreeTools />} />
+      <Route path="/en/free-tools/marketing-tools" element={<ToolCategory categoryKey="marketing" />} />
+      <Route path="/en/free-tools/saas-tools" element={<ToolCategory categoryKey="saas" />} />
+      <Route path="/en/free-tools/ecommerce-tools" element={<ToolCategory categoryKey="ecommerce" />} />
+      <Route path="/en/free-tools/arr-calculator" element={<ArrCalculator />} />
+      <Route path="/en/free-tools/cac-calculator" element={<CacCalculator />} />
+      <Route path="/en/free-tools/churn-rate-calculator" element={<ChurnCalculator />} />
+      <Route path="/en/free-tools/ltv-calculator" element={<LtvCalculator />} />
+      <Route path="/en/free-tools/roas-calculator" element={<RoasCalculator />} />
+      <Route path="/en/free-tools/utm-builder" element={<UtmBuilder />} />
+      <Route path="/en/free-tools/llms-txt-generator" element={<LlmsTxtGenerator />} />
+      <Route path="/en/free-tools/gross-profit-margin-calculator" element={<GrossMarginCalculator />} />
+      <Route path="/en/free-tools/net-profit-margin-calculator" element={<NetMarginCalculator />} />
+      <Route path="/en/free-tools/conversion-rate-calculator" element={<ConversionRateCalculator />} />
+      <Route path="/en/free-tools/mrr-calculator" element={<MrrCalculator />} />
+      <Route path="/en/free-tools/arpa-calculator" element={<ArpaCalculator />} />
+      <Route path="/en/free-tools/nrr-calculator" element={<NrrCalculator />} />
+      <Route path="/en/free-tools/rule-of-40-calculator" element={<RuleOf40Calculator />} />
       <Route path="/en/contact" element={<Contact />} />
       <Route path="/en/blog" element={<BlogList />} />
       <Route path="/en/blog/:slug" element={<BlogPost />} />
 
       {/* Legacy English aliases kept for existing inbound links */}
+      {/* Old EN tools prefix (/en/free-marketing-tools/*) -> /en/free-tools/* */}
+      <Route path="/en/free-marketing-tools/*" element={<LegacyToolsRedirect />} />
       <Route path="/work" element={<Work />} />
       <Route path="/work/:slug" element={<ProjectDetail />} />
       <Route path="/about" element={<About />} />

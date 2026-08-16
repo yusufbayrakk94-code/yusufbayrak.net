@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "build:client": "vite build",
     "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server --emptyOutDir",
-    "build:ssg": "node scripts/ssg.mjs",
+    "build:ssg": "node scripts/ssg.mjs && node scripts/redirects.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs public/sitemap.xml",
     "llms": "node scripts/generate-llms-txt.mjs public/llms.txt"
   },
