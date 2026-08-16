@@ -142,5 +142,38 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- ElevenLabs Conversational AI widget -->
+    <elevenlabs-convai agent-id="agent_1701m05mgeczej4abt84vyhnfmrg"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <script>
+      (function () {
+        var widget = document.querySelector("elevenlabs-convai");
+        if (!widget) return;
+        widget.addEventListener("elevenlabs-convai:call", function (event) {
+          event.detail.config.clientTools = {
+            navigate_to_page: function (params) {
+              var page = (params && (params.page || params.path || params.url)) || "/";
+              try {
+                var target = new URL(page, window.location.origin);
+                if (target.origin !== window.location.origin) {
+                  return "Sadece site içi sayfalara yönlendirme yapılabilir.";
+                }
+                window.location.href = target.pathname + target.search + target.hash;
+                return "Yönlendiriliyor: " + target.pathname;
+              } catch (e) {
+                return "Geçersiz sayfa adresi: " + page;
+              }
+            },
+            summarize_site: function () {
+              var summary =
+                "Yusuf Bayrak — Dijital Pazarlama Uzmanı. Site bölümleri: Ana Sayfa, Hakkımda, Projeler, Ücretsiz Araçlar (ARR, CAC, LTV, Churn, MRR, ARPA, NRR, Rule of 40, ROAS, dönüşüm oranı, kâr marjı, UTM ve llms.txt araçları), Blog ve İletişim.";
+              console.info("[ElevenLabs] summarize_site:", summary);
+              return summary;
+            },
+          };
+        });
+      })();
+    </script>
   </body>
 </html>
