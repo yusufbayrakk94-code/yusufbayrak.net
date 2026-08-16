@@ -8,7 +8,7 @@ import { LocaleMeta } from "@/i18n/LocaleMeta";
 import { pickFreeTools, pickToolCategories, pickToolCategoriesUi, pickTools } from "@/content";
 import { toolIconMap } from "@/components/tools/toolIcons";
 import { ToolCard } from "@/components/tools/ToolCard";
-import { SITE_URL } from "@/i18n/routes";
+import { SITE_URL, withSlash } from "@/i18n/routes";
 
 // One component drives all three category pages (TR + EN). The category key is
 // passed by the route; all copy, SEO meta and tool membership come from the
@@ -27,9 +27,9 @@ export default function ToolCategory({ categoryKey }: { categoryKey: string }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: ui.homeLabel, item: `${SITE_URL}${locale === "en" ? "/en" : "/"}` },
-      { "@type": "ListItem", position: 2, name: ui.hubName, item: `${SITE_URL}${p.path}` },
-      { "@type": "ListItem", position: 3, name: cat.name, item: `${SITE_URL}${cat.path}` },
+      { "@type": "ListItem", position: 1, name: ui.homeLabel, item: `${SITE_URL}${locale === "en" ? "/en/" : "/"}` },
+      { "@type": "ListItem", position: 2, name: ui.hubName, item: `${SITE_URL}${withSlash(p.path)}` },
+      { "@type": "ListItem", position: 3, name: cat.name, item: `${SITE_URL}${withSlash(cat.path)}` },
     ],
   };
 
@@ -41,7 +41,7 @@ export default function ToolCategory({ categoryKey }: { categoryKey: string }) {
       "@type": "ListItem",
       position: i + 1,
       name: cardByKey.get(key)?.name,
-      url: `${SITE_URL}${cardByKey.get(key)?.href}`,
+      url: `${SITE_URL}${withSlash(cardByKey.get(key)?.href ?? "")}`,
     })),
   };
 
