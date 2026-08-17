@@ -93,8 +93,8 @@ export const ROUTE_PAIRS = [
   { tr: "/ucretsiz-araclar/mrr-hesaplayici",           en: "/en/free-tools/mrr-calculator" },
   { tr: "/ucretsiz-araclar/arpa-hesaplayici",          en: "/en/free-tools/arpa-calculator" },
   { tr: "/ucretsiz-araclar/nrr-hesaplayici",           en: "/en/free-tools/nrr-calculator" },
-  { tr: "/ucretsiz-araclar/rule-of-40-hesaplayici",
-  "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici",    en: "/en/free-tools/rule-of-40-calculator" },
+  { tr: "/ucretsiz-araclar/rule-of-40-hesaplayici",    en: "/en/free-tools/rule-of-40-calculator" },
+  { tr: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici", en: "/en/free-tools/cac-payback-period-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
