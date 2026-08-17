@@ -36,6 +36,7 @@
 - [NRR Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/nrr-hesaplayici/): Net gelir tutundurma oranınızı (NRR) genişleme, daralma ve churn MRR ile hesaplayın.
 - [Rule of 40 Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/rule-of-40-hesaplayici/): Büyüme oranı ve kâr marjınızı toplayarak SaaS sağlık skorunuzu görün.
 - [CAC Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/cac-hesaplayici/): Müşteri edinme maliyetini (Customer Acquisition Cost) analiz edin.
+- [CAC Geri Ödeme Süresi Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/): Müşteri edinme maliyetinizin kaç ayda geri döndüğünü brüt marj dahil hesaplayın.
 - [LTV Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/ltv-hesaplayici/): Müşteri yaşam boyu değerini hesaplayın ve CAC ile karşılaştırın.
 - [Churn Rate Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/churn-rate-hesaplayici/): Müşteri kayıp oranınızı ve elde tutma performansınızı ölçün.
 
@@ -58,6 +59,7 @@
 - [NRR (Net Revenue Retention) Nedir? SaaS'ta Neden ARR'dan Daha Önemli?](https://yusufbayrak.net/blog/nrr-nedir-saas-buyume-metrigi/): NRR'nin ARR ve MRR'dan farkı, nasıl hesaplandığı, sağlıklı aralıkları ve yatırımcıların neden değerlemeyi bu metrik üzerinden kurduğu — örnek hesaplamalarla.
 - [LinkedIn'de Soğuk Mesajla Yanıt Alma Oranını Artırma: Şablonlar ve Taktikler](https://yusufbayrak.net/blog/linkedin-soguk-mesaj-yanit-orani/): LinkedIn soğuk mesajlarında yanıt oranını yükselten açılış cümleleri, kullanıma hazır şablonlar ve takip mesajı zamanlaması — B2B outbound için pratik rehber.
 - [ICP (Ideal Customer Profile) Nasıl Tanımlanır? Şablon + 3 Örnek](https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon/): Doldurulabilir bir ICP şablonu ve SaaS, e-ticaret ve endüstriyel B2B sektörlerinden üç somut örnek — hedefleme, mesajlaşma ve lead skorlamayı aynı tanımdan besleyin.
+- [Freemium'dan Ücretliye Geçiş Oranını Artırmanın 6 Yolu](https://yusufbayrak.net/blog/freemium-donusum-orani-artirma/): Freemium dönüşüm oranı nedir, sağlıklı aralığı nedir ve ücretsiz kullanıcıyı ödeyen müşteriye çeviren 6 uygulanabilir taktik — örnek hesaplamalarla.
 
 ## English
 
@@ -77,6 +79,7 @@
   - [NRR Calculator](https://yusufbayrak.net/en/free-tools/nrr-calculator/): Net revenue retention from expansion, contraction and churned MRR.
   - [Rule of 40 Calculator](https://yusufbayrak.net/en/free-tools/rule-of-40-calculator/): Add growth rate and profit margin to score your SaaS health.
   - [CAC Calculator](https://yusufbayrak.net/en/free-tools/cac-calculator/): Analyse your Customer Acquisition Cost across marketing and sales.
+  - [CAC Payback Period Calculator](https://yusufbayrak.net/en/free-tools/cac-payback-period-calculator/): See how many months it takes to recover your customer acquisition cost.
   - [LTV Calculator](https://yusufbayrak.net/en/free-tools/ltv-calculator/): Calculate customer lifetime value and compare it against CAC.
   - [Churn Rate Calculator](https://yusufbayrak.net/en/free-tools/churn-rate-calculator/): Measure your customer churn rate and retention performance.
 - [E-Commerce Tools](https://yusufbayrak.net/en/free-tools/ecommerce-tools/): Calculate true profitability per product and per store.
@@ -92,6 +95,7 @@
 - [How to Reduce B2B Lead Generation Costs (2026 Guide)](https://yusufbayrak.net/en/blog/how-to-reduce-b2b-lead-generation-costs/): Cut B2B cost per lead by 30–50% without extra ad budget: offline conversion tracking, layered targeting, GEO and behavioral email automation.
 - [Why Are LinkedIn Ads Cheaper in Turkey Right Now? The 2026 Opportunity Window](https://yusufbayrak.net/en/blog/linkedin-ads-turkey-2026-opportunity/): DataReportal's 2026 Turkey data shows LinkedIn's ad reach growing faster than mature platforms. Here is why that creates an unsaturated auction — and how B2B teams should use it.
 - [What Is NRR (Net Revenue Retention) and Why It Beats ARR in SaaS](https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric/): How NRR differs from ARR and MRR, how to calculate it, healthy benchmarks by segment, and why investors build valuation around it — with worked examples.
+- [6 Ways to Increase Your Freemium-to-Paid Conversion Rate](https://yusufbayrak.net/en/blog/6-ways-to-increase-freemium-conversion-rate/): What a freemium conversion rate is, what counts as healthy and six practical tactics that turn free users into paying customers — with worked examples.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim

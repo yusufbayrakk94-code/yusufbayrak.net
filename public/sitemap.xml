@@ -170,6 +170,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/cac-payback-period-calculator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/iletisim/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/iletisim/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/contact/" />
@@ -280,6 +288,14 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/freemium-donusum-orani-artirma/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/freemium-donusum-orani-artirma/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/6-ways-to-increase-freemium-conversion-rate/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -452,6 +468,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/en/free-tools/cac-payback-period-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/cac-payback-period-calculator/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/contact/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/contact/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/iletisim/" />
@@ -551,6 +575,14 @@
     <loc>https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/nrr-nedir-saas-buyume-metrigi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/6-ways-to-increase-freemium-conversion-rate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/6-ways-to-increase-freemium-conversion-rate/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/freemium-donusum-orani-artirma/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
