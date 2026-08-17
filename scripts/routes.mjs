@@ -37,6 +37,7 @@ export const STATIC_TR = [
   "/ucretsiz-araclar/arpa-hesaplayici",
   "/ucretsiz-araclar/nrr-hesaplayici",
   "/ucretsiz-araclar/rule-of-40-hesaplayici",
+  "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -64,6 +65,7 @@ export const STATIC_EN = [
   "/en/free-tools/arpa-calculator",
   "/en/free-tools/nrr-calculator",
   "/en/free-tools/rule-of-40-calculator",
+  "/en/free-tools/cac-payback-period-calculator",
   "/en/contact",
   "/en/blog",
 ];
@@ -92,6 +94,7 @@ export const ROUTE_PAIRS = [
   { tr: "/ucretsiz-araclar/arpa-hesaplayici",          en: "/en/free-tools/arpa-calculator" },
   { tr: "/ucretsiz-araclar/nrr-hesaplayici",           en: "/en/free-tools/nrr-calculator" },
   { tr: "/ucretsiz-araclar/rule-of-40-hesaplayici",    en: "/en/free-tools/rule-of-40-calculator" },
+  { tr: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici", en: "/en/free-tools/cac-payback-period-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
@@ -112,6 +115,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "b2b-lead-generation-maliyetleri-nasil-dusurulur", en: "how-to-reduce-b2b-lead-generation-costs" },
   { tr: "linkedin-reklamlari-turkiye-2026-firsat", en: "linkedin-ads-turkey-2026-opportunity" },
   { tr: "nrr-nedir-saas-buyume-metrigi", en: "what-is-nrr-saas-growth-metric" },
+  { tr: "freemium-donusum-orani-artirma", en: "6-ways-to-increase-freemium-conversion-rate" },
 ];
 
 // English-only posts (no TR counterpart). They live solely under /en/blog/.

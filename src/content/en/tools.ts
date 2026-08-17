@@ -373,3 +373,36 @@ export const ruleOf40: ToolContent = {
   ],
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
 };
+
+export const cacPayback: ToolContent = {
+  slug: "cac-payback",
+  path: "/en/free-tools/cac-payback-period-calculator",
+  title: "CAC Payback Period Calculator",
+  description:
+    "Calculate how many months it takes to recover your customer acquisition cost, gross margin included — free instant CAC payback calculator.",
+  intro:
+    "CAC payback period shows how long it takes to earn back what you spent acquiring a customer. Enter your CAC, monthly revenue per customer and gross margin to see the payback in months.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "What is CAC payback period?", body: "CAC payback period measures how many months of gross profit from a customer it takes to recover the sales and marketing cost of acquiring them. The formula is simple: CAC Payback = CAC / (Monthly Revenue per Customer × Gross Margin). Skipping gross margin is the most common mistake — without deducting hosting, support and transaction costs the payback looks far shorter than it really is." },
+    { heading: "Worked example", body: "Say CAC is $1,800, monthly revenue per customer is $200 and gross margin is 75%. Monthly gross profit is 200 × 0.75 = $150. Payback = 1,800 / 150 = 12 months. If the customer churns before month 12, that account loses money; profit only starts from month 13 onward." },
+    { heading: "What is a healthy payback period?", body: "Common benchmarks: 6-12 months for SMB-focused SaaS, 12-18 months for mid-market and 18-24 months for enterprise sales. Ecommerce and subscription-box models usually target under 3 months because churn is much faster. Anything beyond 24 months locks up cash — every new customer accelerates growth while draining the bank account." },
+    { body: "Payback period is a cash-flow metric, while LTV:CAC is a profitability metric. You can have a 4x LTV:CAC ratio and still be in trouble if payback takes 30 months, because growth then has to be financed externally. Read the two together rather than in isolation." },
+    { heading: "How to shorten CAC payback", body: "Three levers: lower CAC (conversion rate optimisation, reallocating channel mix toward efficiency, organic and referral), raise revenue per customer (pricing, packaging, upsell, annual prepay incentives) and improve gross margin (infrastructure cost, support efficiency, self-serve onboarding). Annual upfront billing does not change the accounting payback, but it fixes the cash cycle immediately." },
+  ],
+  faqs: [
+    { q: "How is CAC payback period calculated?", a: "CAC Payback = CAC / (Monthly Revenue per Customer × Gross Margin). With a $1,800 CAC, $200 monthly revenue and 75% gross margin, monthly gross profit is $150 and payback is 12 months." },
+    { q: "What is a good CAC payback period?", a: "6-12 months is healthy for SMB SaaS, 12-18 months for mid-market and 18-24 months for enterprise. Ecommerce usually targets under 3 months. Beyond 24 months you carry a serious cash-flow risk." },
+    { q: "Do I need to include gross margin?", a: "Yes. Without gross margin every dollar of revenue is treated as profit and the payback looks artificially short. Deduct hosting, payment fees, support and fulfilment costs and calculate on gross profit." },
+    { q: "How does payback differ from the LTV:CAC ratio?", a: "LTV:CAC tells you how much profit a customer leaves over their lifetime; payback tells you how quickly that money comes back. A strong LTV:CAC ratio does not compensate for a long payback period." },
+    { q: "Does annual prepayment change the payback?", a: "In cash terms, yes. With annual upfront billing the CAC is effectively recovered in month one, even though the accounting payback stays the same. That is why most SaaS companies discount annual plans." },
+    { q: "How does churn relate to payback period?", a: "Average customer lifetime equals 1 / monthly churn rate. If that lifetime is shorter than your payback period, the model loses money: 5% monthly churn means a 20-month average lifetime, which cannot support a 24-month payback." },
+  ],
+  relatedTools: [
+    { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
+    { label: "LTV Calculator", href: "/en/free-tools/ltv-calculator", note: "Lifetime value" },
+    { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator", note: "Average customer lifetime" },
+    { label: "ARPA Calculator", href: "/en/free-tools/arpa-calculator", note: "Average revenue per account" },
+  ],
+  relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
+};

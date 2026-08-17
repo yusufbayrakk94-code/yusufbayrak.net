@@ -57,6 +57,8 @@ export type RelatedToolKey =
   | "ltv"
   | "roas"
   | "utm"
+  | "conversion"
+  | "cac-payback"
   | "llms-txt";
 
 export interface BlogPost {
@@ -1330,6 +1332,96 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "freemium-donusum-orani-artirma",
+    title: "Freemium'dan Ücretliye Geçiş Oranını Artırmanın 6 Yolu",
+    description:
+      "Freemium dönüşüm oranı nedir, sağlıklı aralığı nedir ve ücretsiz kullanıcıyı ödeyen müşteriye çeviren 6 uygulanabilir taktik — örnek hesaplamalarla.",
+    category: "saas-buyume",
+    tldr: [
+      "Freemium dönüşüm oranı = Ücretliye geçen kullanıcı / Toplam ücretsiz kullanıcı × 100. Self-servis SaaS'ta tipik aralık %2-5.",
+      "Dönüşümü artıran şey daha çok özellik kısıtı değil, doğru 'aktivasyon anı'nı erken yaşatmaktır.",
+      "Limitleri özelliğe değil kullanım hacmine (kayıt, koltuk, gönderim) bağlamak dönüşümü genellikle daha çok artırır.",
+      "Ücretsiz kullanıcı maliyeti CAC'a dahildir; dönüşüm oranı düşükse geri ödeme süresi uzar.",
+    ],
+    publishedAt: "2026-08-17",
+    readingMinutes: 6,
+    tags: ["SaaS", "Freemium", "Dönüşüm Oranı", "Büyüme"],
+    sections: [
+      {
+        heading: "Freemium Dönüşüm Oranı Nedir?",
+        paragraphs: [
+          "Freemium dönüşüm oranı, ücretsiz planı kullanan kişilerin ne kadarının ücretli plana geçtiğini gösterir. Formül basittir: Freemium Dönüşüm Oranı = Ücretliye Geçen Kullanıcı Sayısı / Toplam Ücretsiz Kullanıcı Sayısı × 100.",
+          "Örnek: Ayda 8.000 ücretsiz kayıt alan bir üründe 240 kişi ücretli plana geçiyorsa dönüşüm oranı 240 / 8.000 × 100 = %3'tür. Self-servis SaaS ürünlerinde %2-5 tipik, %6 ve üzeri güçlü kabul edilir; ücretsiz deneme (free trial) modellerinde bu oran doğal olarak çok daha yüksektir (%15-25).",
+          "Kritik nokta: oranı tek başına okumak yanıltıcıdır. Ücretsiz kullanıcı başına altyapı ve destek maliyeti, ARPA ile birlikte değerlendirilmelidir. %2 dönüşüm oranı yüksek ARPA ile kârlıyken, %5 dönüşüm düşük ARPA ve ağır altyapı maliyetiyle zarar yazabilir.",
+        ],
+      },
+      {
+        heading: "6 Yol: Ücretsiz Kullanıcıyı Ödeyen Müşteriye Çevirmek",
+        paragraphs: [
+          "Aşağıdaki altı taktik, etkisi en yüksek olandan başlayarak sıralanmıştır. Hepsini aynı anda uygulamak yerine, her birini ayrı bir A/B testi olarak çalıştırıp dönüşüm oranındaki farkı ölçmek daha sağlıklı sonuç verir.",
+        ],
+        bullets: [
+          "1. Aktivasyon anını öne çekin: Kullanıcının ürünün değerini ilk kez hissettiği eylemi (ilk rapor, ilk entegrasyon, ilk davet) tanımlayın ve onboarding'i tek hedefe indirin. Aktivasyona ulaşan kullanıcıların dönüşüm oranı, ulaşamayanların çoğunlukla 5-10 katıdır.",
+          "2. Limiti özelliğe değil hacme bağlayın: Ana değeri kapatmak yerine kullanım hacmini (proje sayısı, koltuk, aylık gönderim, saklama) sınırlayın. Kullanıcı ürünü sevdikçe limite doğal olarak çarpar; bu, en yüksek niyetli yükseltme anıdır.",
+          "3. Limit uyarılarını zamanında ve bağlamlı gösterin: %80 doluluk uyarısı, limit dolduktan sonra gösterilen bir paywall'dan çok daha iyi çalışır. Uyarı içinde yükseltmenin somut faydasını yazın: 'Bu ay 3 rapor daha üretmek için Pro'ya geçin.'",
+          "4. Ücretli özellikleri gizlemeyin, görünür ama kilitli tutun: Kilitli özelliğin ne işe yaradığını gösteren bir önizleme, o özelliğin varlığından habersiz kullanıcıya kıyasla belirgin şekilde daha fazla yükseltme üretir.",
+          "5. Zaman sınırlı Pro denemesi verin: Kayıttan sonra 14 gün boyunca tüm ücretli özellikleri açın. Deneme bittiğinde kullanıcı kaybettiği şeyi bilir; kayıptan kaçınma etkisi, hiç denemeyen kullanıcıya göre çok daha güçlü bir yükseltme motivasyonu yaratır.",
+          "6. Davranış tetikli e-posta akışları kurun: Kayıt sonrası genel 'hoş geldiniz' serisi yerine, aktivasyona ulaşmayan kullanıcıya farklı, limite yaklaşan kullanıcıya farklı mesaj gönderin. Segment başına ayrı akış, tek tip diziye kıyasla en hızlı kazanımlardan biridir.",
+        ],
+      },
+      {
+        heading: "Dönüşüm Oranını Doğru Ölçmek",
+        paragraphs: [
+          "Ölçümde en sık yapılan hata, aynı ay içinde kayıt olan ve ücretliye geçen kullanıcıları birbirine bölmektir. Freemium'da dönüşüm çoğu zaman haftalar sonra gerçekleşir; bu yüzden kohort bazlı ölçüm şarttır. Ocak ayında kayıt olan kullanıcıların 30, 60 ve 90 gün sonundaki dönüşüm oranını ayrı ayrı takip edin.",
+          "İkinci hata, dönüşümü tek bir ortalamayla yönetmektir. Kanala (organik, reklam, referans), şirket büyüklüğüne ve aktivasyon durumuna göre kırılım aldığınızda oranlar arasında sıklıkla 3-5 kat fark çıkar. Bütçeyi bu kırılıma göre yeniden dağıtmak, dönüşüm oranını hiçbir ürün değişikliği yapmadan yükseltebilir.",
+          "Üçüncüsü, freemium'un CAC üzerindeki etkisini yok saymaktır. Ücretsiz kullanıcıların altyapı ve destek maliyeti fiilen edinme maliyetinin parçasıdır. Dönüşüm oranı düştüğünde efektif CAC yükselir ve geri ödeme süresi uzar; bu yüzden dönüşüm oranını CAC geri ödeme süresiyle birlikte izleyin.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "İyi bir freemium dönüşüm oranı nedir?",
+        answer:
+          "Self-servis SaaS ürünlerinde %2-5 tipik, %6 ve üzeri güçlü kabul edilir. Ücretsiz deneme (free trial) modellerinde oran çok daha yüksektir; kredi kartı istemeyen denemelerde %8-15, kredi kartı isteyenlerde %15-25 aralığı yaygındır.",
+      },
+      {
+        question: "Freemium dönüşüm oranı nasıl hesaplanır?",
+        answer:
+          "Ücretliye geçen kullanıcı sayısını toplam ücretsiz kullanıcı sayısına bölüp 100 ile çarpın. 8.000 ücretsiz kullanıcıdan 240'ı ücretliye geçtiyse oran %3'tür. Doğru sonuç için kohort bazlı, yani aynı dönemde kayıt olan kullanıcıların 30/60/90 günlük dönüşümü olarak ölçün.",
+      },
+      {
+        question: "Freemium mi, ücretsiz deneme mi daha iyi dönüşür?",
+        answer:
+          "Ücretsiz deneme oransal olarak daha yüksek dönüşür ama huniye giren kullanıcı sayısı düşüktür. Freemium daha düşük oranla çok daha büyük bir tabandan besleneceği için mutlak kullanıcı sayısı sıklıkla daha yüksek çıkar. Ürünün değeri hızlı hissediliyorsa deneme, ağ etkisi veya uzun değerlendirme süresi varsa freemium daha uygundur.",
+      },
+      {
+        question: "Ücretsiz plan hangi noktada sınırlandırılmalı?",
+        answer:
+          "Ana değeri kapatmayın; kullanım hacmini sınırlayın. Kullanıcı ürünü değerli buldukça limite çarpar ve yükseltme kararı doğal biçimde oluşur. Değeri baştan kapatan bir ücretsiz plan, kullanıcıyı ürünü hiç denemeden kaybettirir.",
+      },
+      {
+        question: "Freemium dönüşüm oranı CAC'ı nasıl etkiler?",
+        answer:
+          "Ücretsiz kullanıcıların altyapı ve destek maliyeti edinme maliyetinin bir parçasıdır. Dönüşüm oranı düştüğünde ödeyen müşteri başına düşen maliyet artar, efektif CAC yükselir ve CAC geri ödeme süresi uzar.",
+      },
+    ],
+    relatedToolKey: "conversion",
+    resources: [
+      {
+        label: "Dönüşüm Oranı Hesaplayıcı",
+        href: "/ucretsiz-araclar/donusum-orani-hesaplayici",
+      },
+      {
+        label: "CAC Geri Ödeme Süresi Hesaplayıcı",
+        href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici",
+      },
+      {
+        label: "NRR (Net Revenue Retention) Nedir?",
+        href: "/blog/nrr-nedir-saas-buyume-metrigi",
+      },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -1360,6 +1452,7 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "b2b-lead-generation-maliyetleri-nasil-dusurulur", en: "how-to-reduce-b2b-lead-generation-costs" },
   { tr: "linkedin-reklamlari-turkiye-2026-firsat", en: "linkedin-ads-turkey-2026-opportunity" },
   { tr: "nrr-nedir-saas-buyume-metrigi", en: "what-is-nrr-saas-growth-metric" },
+  { tr: "freemium-donusum-orani-artirma", en: "6-ways-to-increase-freemium-conversion-rate" },
 ];
 
 
@@ -2354,6 +2447,96 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "6-ways-to-increase-freemium-conversion-rate",
+    title: "6 Ways to Increase Your Freemium-to-Paid Conversion Rate",
+    description:
+      "What a freemium conversion rate is, what counts as healthy and six practical tactics that turn free users into paying customers — with worked examples.",
+    category: "saas-buyume",
+    tldr: [
+      "Freemium conversion rate = paid upgrades / total free users × 100. Typical self-serve SaaS range is 2-5%.",
+      "Conversion is driven less by hiding features and more by getting users to the activation moment fast.",
+      "Capping usage volume (records, seats, sends) usually converts better than locking core features.",
+      "Free-user cost belongs in CAC: a lower conversion rate directly lengthens CAC payback.",
+    ],
+    publishedAt: "2026-08-17",
+    readingMinutes: 6,
+    tags: ["SaaS", "Freemium", "Conversion Rate", "Growth"],
+    sections: [
+      {
+        heading: "What Is a Freemium Conversion Rate?",
+        paragraphs: [
+          "The freemium conversion rate measures how many of your free users upgrade to a paid plan. The formula is simple: Freemium Conversion Rate = Paid Upgrades / Total Free Users × 100.",
+          "Example: a product that signs up 8,000 free users a month and converts 240 of them runs at 240 / 8,000 × 100 = 3%. In self-serve SaaS, 2-5% is typical and anything above 6% is strong. Free-trial models sit far higher, usually 15-25% when a card is required upfront.",
+          "Reading the rate alone is misleading. Infrastructure and support cost per free user must be weighed against ARPA: a 2% rate can be highly profitable with strong ARPA, while 5% can lose money with low ARPA and heavy infrastructure.",
+        ],
+      },
+      {
+        heading: "Six Ways to Turn Free Users Into Customers",
+        paragraphs: [
+          "The six tactics below are ordered by expected impact. Rather than shipping them all at once, run each as a separate A/B test and measure the delta in conversion rate per cohort.",
+        ],
+        bullets: [
+          "1. Pull the activation moment forward: define the single action where a user first feels the product's value (first report, first integration, first invite) and reduce onboarding to that one goal. Activated users typically convert 5-10x better than non-activated ones.",
+          "2. Cap volume, not features: limit projects, seats, monthly sends or storage instead of locking the core value. The more a user likes the product, the sooner they hit the ceiling — the highest-intent upgrade moment there is.",
+          "3. Warn before the wall: an 80%-of-limit notice converts far better than a paywall shown after the limit is hit. Spell out the concrete benefit inside the warning: \"Upgrade to Pro to run three more reports this month.\"",
+          "4. Keep paid features visible but locked: a preview that shows what a locked feature does drives materially more upgrades than hiding it entirely, because users cannot want what they never see.",
+          "5. Offer a time-boxed Pro trial: unlock every paid feature for 14 days after signup. When the trial ends, the user knows exactly what they lost — loss aversion is a much stronger upgrade motivator than an abstract feature list.",
+          "6. Build behaviour-triggered email flows: replace the generic welcome series with segment-specific sequences — one for users who never activated, another for users approaching their limit. Segmented flows are among the fastest wins available.",
+        ],
+      },
+      {
+        heading: "Measuring the Rate Correctly",
+        paragraphs: [
+          "The most common measurement mistake is dividing this month's upgrades by this month's signups. In freemium, conversion often happens weeks later, so cohort-based measurement is essential: track the 30-, 60- and 90-day conversion of each signup cohort separately.",
+          "The second mistake is managing a single blended average. Break the rate down by channel (organic, paid, referral), company size and activation status and you will routinely find 3-5x differences. Reallocating budget along that breakdown lifts overall conversion without shipping a single product change.",
+          "The third is ignoring what freemium does to CAC. The infrastructure and support cost of free users is effectively part of acquisition cost. When conversion falls, effective CAC rises and payback stretches — so always read conversion rate next to CAC payback period.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What is a good freemium conversion rate?",
+        answer:
+          "2-5% is typical for self-serve SaaS and above 6% is strong. Free-trial models convert much higher: roughly 8-15% without a credit card upfront and 15-25% with one.",
+      },
+      {
+        question: "How do you calculate freemium conversion rate?",
+        answer:
+          "Divide paid upgrades by total free users and multiply by 100. With 240 upgrades out of 8,000 free users the rate is 3%. Measure it by cohort — the 30/60/90-day conversion of users who signed up in the same period — for an accurate figure.",
+      },
+      {
+        question: "Does freemium or free trial convert better?",
+        answer:
+          "Free trials convert at a higher percentage but attract fewer users into the funnel. Freemium converts a lower share of a much larger base, so absolute paid customers are often higher. Choose trials when value is felt quickly, freemium when there are network effects or long evaluation cycles.",
+      },
+      {
+        question: "Where should the free plan be limited?",
+        answer:
+          "Do not lock the core value; limit usage volume instead. Users hit the ceiling precisely because they find the product useful, which makes the upgrade decision feel natural rather than forced.",
+      },
+      {
+        question: "How does freemium conversion affect CAC?",
+        answer:
+          "Free users carry real infrastructure and support cost, which belongs in acquisition cost. A lower conversion rate spreads that cost over fewer paying customers, raising effective CAC and lengthening CAC payback period.",
+      },
+    ],
+    relatedToolKey: "conversion",
+    resources: [
+      {
+        label: "Conversion Rate Calculator",
+        href: "/en/free-tools/conversion-rate-calculator",
+      },
+      {
+        label: "CAC Payback Period Calculator",
+        href: "/en/free-tools/cac-payback-period-calculator",
+      },
+      {
+        label: "What Is NRR and Why It Beats ARR in SaaS",
+        href: "/en/blog/what-is-nrr-saas-growth-metric",
+      },
+    ],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -2400,6 +2583,30 @@ export interface RelatedToolLink {
 type LocalizedToolMeta = Record<BlogLocale, RelatedToolLink>;
 
 const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
+  conversion: {
+    tr: {
+      href: "/ucretsiz-araclar/donusum-orani-hesaplayici",
+      label: "Dönüşüm Oranı Hesaplayıcı",
+      description: "Ziyaretçi ve dönüşüm sayınızla dönüşüm oranınızı anında hesaplayın.",
+    },
+    en: {
+      href: "/en/free-tools/conversion-rate-calculator",
+      label: "Conversion Rate Calculator",
+      description: "Turn visitors and conversions into a conversion rate in seconds.",
+    },
+  },
+  "cac-payback": {
+    tr: {
+      href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici",
+      label: "CAC Geri Ödeme Süresi Hesaplayıcı",
+      description: "CAC'ınızın kaç ayda geri döndüğünü brüt marj dahil hesaplayın.",
+    },
+    en: {
+      href: "/en/free-tools/cac-payback-period-calculator",
+      label: "CAC Payback Period Calculator",
+      description: "See how many months it takes to recover your acquisition cost.",
+    },
+  },
   arr: {
     tr: {
       href: "/ucretsiz-araclar/arr-hesaplayici",

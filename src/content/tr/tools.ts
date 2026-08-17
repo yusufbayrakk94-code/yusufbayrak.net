@@ -373,3 +373,36 @@ export const ruleOf40: ToolContent = {
   ],
   relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
 };
+
+export const cacPayback: ToolContent = {
+  slug: "cac-payback",
+  path: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici",
+  title: "CAC Geri Ödeme Süresi Hesaplayıcı",
+  description:
+    "CAC geri ödeme süresi hesaplama: müşteri edinme maliyetinizin kaç ayda geri döndüğünü brüt marj dahil ücretsiz hesaplayın.",
+  intro:
+    "CAC geri ödeme süresi (payback period), bir müşteriyi kazanmak için harcadığınız paranın kaç ayda geri döndüğünü gösterir. CAC, müşteri başına aylık gelir (ARPA) ve brüt marjınızı girin; geri ödeme süreniz anında hesaplansın.",
+  applicationCategory: "FinanceApplication",
+  seoParagraphs: [
+    { heading: "CAC Geri Ödeme Süresi Nedir?", body: "CAC geri ödeme süresi, bir müşteriyi kazanmak için harcanan toplam pazarlama ve satış maliyetinin, o müşteriden elde edilen brüt kârla kaç ayda geri kazanıldığını ölçen metriktir. Formül basittir: CAC Geri Ödeme Süresi = CAC / (Aylık Müşteri Geliri × Brüt Marj). Brüt marjı hesaba katmamak en sık yapılan hatadır; sunucu, destek ve işlem maliyetleri düşülmeden bulunan süre gerçekte olduğundan kısa görünür." },
+    { heading: "Örnek Hesaplama", body: "Müşteri edinme maliyeti 18.000 ₺, müşteri başına aylık gelir 2.000 ₺ ve brüt marj %75 olsun. Aylık brüt kâr 2.000 × 0,75 = 1.500 ₺'dir. Geri ödeme süresi 18.000 / 1.500 = 12 ay çıkar. Yani müşteri en az 12 ay kalmazsa o müşteri işletmeye net zarar yazdırır; kâr ancak 13. aydan sonra başlar." },
+    { heading: "Sağlıklı Geri Ödeme Süresi Kaç Ay Olmalı?", body: "Genel kabul gören referanslar: SMB odaklı SaaS'larda 6-12 ay, mid-market'te 12-18 ay, enterprise satışta 18-24 ay makul kabul edilir. E-ticaret ve abonelik kutu modellerinde hedef genellikle 3 ayın altıdır, çünkü churn çok daha hızlıdır. 24 ayı aşan süreler nakit akışını kilitler: her yeni müşteri büyümeyi hızlandırırken kasayı boşaltır." },
+    { body: "Geri ödeme süresi, nakit yakma hızıyla doğrudan ilişkilidir. LTV:CAC oranı uzun vadeli kârlılığı gösterirken, payback period kısa vadeli nakit sağlığını gösterir. LTV:CAC oranınız 4x olsa bile geri ödeme 30 ay sürüyorsa büyümeyi finanse edecek nakde ihtiyacınız var demektir. Bu yüzden iki metrik birlikte okunmalıdır." },
+    { heading: "Geri Ödeme Süresi Nasıl Kısaltılır?", body: "Üç kaldıraç vardır: CAC'ı düşürmek (dönüşüm oranı optimizasyonu, kanal karmasını verimliliğe göre yeniden dağıtma, organik ve referans kanalları), müşteri başına geliri artırmak (fiyatlama, paketleme, upsell ve yıllık peşin ödeme teşvikleri) ve brüt marjı iyileştirmek (altyapı maliyeti, destek verimliliği, self-servis onboarding). Yıllık peşin tahsilat, süreyi matematiksel olarak değil ama nakit akışı açısından anında düzelten en hızlı hamledir." },
+  ],
+  faqs: [
+    { q: "CAC geri ödeme süresi nasıl hesaplanır?", a: "CAC Geri Ödeme Süresi = CAC / (Müşteri Başına Aylık Gelir × Brüt Marj). Örneğin CAC 18.000 ₺, aylık gelir 2.000 ₺ ve brüt marj %75 ise aylık brüt kâr 1.500 ₺ olur ve geri ödeme süresi 12 aydır." },
+    { q: "İyi bir CAC geri ödeme süresi kaç aydır?", a: "SMB odaklı SaaS'larda 6-12 ay, mid-market'te 12-18 ay, enterprise satışta 18-24 ay sağlıklı kabul edilir. E-ticarette hedef genellikle 3 ayın altındadır. 24 ayı aşan süreler ciddi bir nakit akışı riski işaret eder." },
+    { q: "Hesaba brüt marjı dahil etmek şart mı?", a: "Evet. Brüt marj dahil edilmediğinde gelirin tamamı kâr sayılır ve süre olduğundan kısa görünür. Sunucu, ödeme komisyonu, destek ve teslimat maliyetleri düşülmüş brüt kâr üzerinden hesaplamak doğru sonucu verir." },
+    { q: "CAC geri ödeme süresi ile LTV:CAC oranı arasındaki fark nedir?", a: "LTV:CAC oranı bir müşterinin ömrü boyunca ne kadar kâr bıraktığını, geri ödeme süresi ise bu paranın ne kadar hızlı geri geldiğini gösterir. Biri kârlılık, diğeri nakit akışı metriğidir; yüksek LTV:CAC oranı uzun bir geri ödeme süresini telafi etmez." },
+    { q: "Yıllık peşin ödeme geri ödeme süresini etkiler mi?", a: "Nakit akışı açısından evet. Yıllık peşin tahsilatta CAC ilk ay itibarıyla fiilen geri kazanılır; muhasebesel geri ödeme süresi aynı kalsa da nakit döngüsü tamamen değişir. Bu nedenle çoğu SaaS yıllık plana indirim uygular." },
+    { q: "Geri ödeme süresi churn ile nasıl ilişkilidir?", a: "Ortalama müşteri ömrü (1 / aylık churn oranı), geri ödeme süresinden kısaysa iş modeli zarar üretiyor demektir. Örneğin aylık %5 churn 20 aylık ortalama ömür anlamına gelir; 24 aylık bir geri ödeme süresi bu durumda sürdürülemez." },
+  ],
+  relatedTools: [
+    { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
+    { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici", note: "Yaşam boyu değer" },
+    { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici", note: "Ortalama müşteri ömrü" },
+    { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici", note: "Hesap başına ortalama gelir" },
+  ],
+  relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
+};
