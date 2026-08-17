@@ -115,6 +115,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "b2b-lead-generation-maliyetleri-nasil-dusurulur", en: "how-to-reduce-b2b-lead-generation-costs" },
   { tr: "linkedin-reklamlari-turkiye-2026-firsat", en: "linkedin-ads-turkey-2026-opportunity" },
   { tr: "nrr-nedir-saas-buyume-metrigi", en: "what-is-nrr-saas-growth-metric" },
+  { tr: "freemium-donusum-orani-artirma", en: "6-ways-to-increase-freemium-conversion-rate" },
 ];
 
 // English-only posts (no TR counterpart). They live solely under /en/blog/.
