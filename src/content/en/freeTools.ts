@@ -76,6 +76,7 @@ export const freeToolsPage = {
     { key: "nrr",   name: "NRR Calculator",        description: "Net revenue retention from expansion, contraction and churned MRR.", href: "/en/free-tools/nrr-calculator" },
     { key: "rule40", name: "Rule of 40 Calculator", description: "Add growth rate and profit margin to score your SaaS health.", href: "/en/free-tools/rule-of-40-calculator" },
     { key: "conversion", name: "Conversion Rate Calculator", description: "Turn visitors and conversions into a conversion rate and a gap to your target.", href: "/en/free-tools/conversion-rate-calculator" },
+    { key: "payback", name: "CAC Payback Period Calculator", description: "See how many months it takes to recover your customer acquisition cost.", href: "/en/free-tools/cac-payback-period-calculator" },
   ],
 };
 
@@ -195,7 +196,7 @@ export const toolCategories = [
         a: "Early stage, before product-market fit, churn and activation matter most; CAC and LTV are volatile because the sample is small. In the growth stage, CAC, LTV, the LTV:CAC ratio and CAC payback drive budget allocation. At scale, ARR growth rate, net revenue retention (NRR) and cohort-level churn take over.",
       },
     ],
-    tools: ["arr", "mrr", "arpa", "nrr", "rule40", "cac", "ltv", "churn"],
+    tools: ["arr", "mrr", "arpa", "nrr", "rule40", "cac", "payback", "ltv", "churn"],
   },
   {
     key: "ecommerce",
