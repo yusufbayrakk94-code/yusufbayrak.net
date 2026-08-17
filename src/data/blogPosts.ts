@@ -1331,6 +1331,7 @@ export const BLOG_POSTS: BlogPost[] = [
         href: "/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur",
       },
     ],
+  },
   {
     slug: "freemium-donusum-orani-artirma",
     title: "Freemium'dan Ücretliye Geçiş Oranını Artırmanın 6 Yolu",
@@ -2445,6 +2446,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         href: "/en/blog/what-is-nrr-saas-growth-metric",
       },
     ],
+  },
   {
     slug: "6-ways-to-increase-freemium-conversion-rate",
     title: "6 Ways to Increase Your Freemium-to-Paid Conversion Rate",
