@@ -2,11 +2,11 @@ export const about = {
   path: "/hakkimda",
   seoTitle: "Hakkımda | Yusuf Bayrak",
   seoDescription:
-    "Veri odaklı dijital pazarlama, B2B lead generation ve yapay zeka otomasyonu alanlarında çalışan Yusuf Bayrak'ın profesyonel özgeçmişi.",
+    "Yusuf Bayrak — B2B büyüme stratejileri, performans pazarlama ve veri odaklı lead generation üzerine çalışan dijital pazarlama uzmanı.",
   heading: "Hakkımda",
   whoHeading: "Yusuf Bayrak Kimdir?",
   whoAnswer:
-    "Yusuf Bayrak, B2B büyüme stratejileri, performans pazarlama ve dijital veri mimarileri üzerine çalışan bir dijital pazarlama uzmanıdır. Sistem Global Danışmanlık bünyesinde B2B ve e-ticaret markaları için web sitesi kurulumu, reklam yönetimi ve yapay zeka destekli lead generation sistemleri geliştirir.",
+    "Yusuf Bayrak; B2B büyüme stratejileri, performans pazarlama ve dijital veri mimarileri alanlarında çalışan bir dijital pazarlama uzmanıdır. Markalar için web altyapısı, reklam yönetimi ve veri odaklı lead generation süreçleri üzerine çalışmalar yürütür.",
   paragraphs: [
     "Veri odaklı dijital pazarlama stratejilerini güçlü bir analitik bakış açısıyla harmanlıyorum. Performans pazarlama, B2B lead generation ve dijital altyapı yönetimi temel odak alanlarımı oluşturuyor.",
     "Kapsam sadece reklam yönetimiyle sınırlı değil; web sitesi kurulumundan gelişmiş otomasyon kurgularına kadar markaların dijital ekosistemi uçtan uca inşa ediliyor. Operasyonel yükü hafifleten ve bütçe verimliliği sağlayan yapay zeka araçları sürecin merkezinde yer alıyor.",

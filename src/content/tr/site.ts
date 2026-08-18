@@ -8,7 +8,7 @@ export const site = {
   profileEmail: "yyusufbayrak@gmail.com",
   profileLinkedIn: "https://tr.linkedin.com/in/yyusuf-bayrak",
   profileDescription:
-    "Dijital Pazarlama Uzmanı. Sistem Global Danışmanlık'ta görev almaktadır. B2B ve e-ticaret markaları için web sitesi kurulumu, performans reklam yönetimi ve lead generation kurguları geliştirir; süreçlerini yapay zeka destekli otomasyonlarla güçlendirir.",
+    "Dijital Pazarlama Uzmanı. B2B ve e-ticaret markaları için web sitesi kurulumu, performans reklam yönetimi ve lead generation kurguları geliştirir; süreçlerini yapay zeka destekli otomasyonlarla güçlendirir.",
   nav: [
     { href: "/", label: "Ana Sayfa" },
     { href: "/hakkimda", label: "Hakkımda" },

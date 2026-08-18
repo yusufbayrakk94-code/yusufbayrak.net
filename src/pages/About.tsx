@@ -31,7 +31,6 @@ export default function About() {
       url: "https://yusufbayrak.net/",
       image: "https://yusufbayrak.net/og-image.jpg",
       email: "mailto:yyusufbayrak@gmail.com",
-      worksFor: { "@type": "Organization", name: "Sistem Global Danışmanlık" },
       sameAs: ["https://www.linkedin.com/in/yyusuf-bayrak/", "https://x.com/yusuffbayrak", "https://www.instagram.com/yusufdijital/"],
       knowsAbout: c.expertise,
     },
