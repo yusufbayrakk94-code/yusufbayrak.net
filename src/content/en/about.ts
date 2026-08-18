@@ -2,11 +2,11 @@ export const about = {
   path: "/en/about",
   seoTitle: "About | Yusuf Bayrak",
   seoDescription:
-    "Professional background of Yusuf Bayrak — data-driven digital marketing, B2B lead generation and AI workflow automation.",
+    "Yusuf Bayrak — digital marketing specialist focused on B2B growth strategy, performance marketing and data-driven lead generation.",
   heading: "About",
   whoHeading: "Who Is Yusuf Bayrak?",
   whoAnswer:
-    "Yusuf Bayrak is a digital marketing specialist working on B2B growth strategy, performance marketing and digital data architecture. At Sistem Global Danışmanlık he builds websites, ad management and AI-powered lead generation systems for B2B and e-commerce brands.",
+    "Yusuf Bayrak is a digital marketing specialist working on B2B growth strategy, performance marketing and digital data architecture. He works with brands on web infrastructure, ad management and data-driven lead generation processes.",
   paragraphs: [
     "I blend data-driven digital marketing strategy with a strong analytical lens. Performance marketing, B2B lead generation and digital infrastructure management are my core focus areas.",
     "The scope is not limited to ad management: from website builds to advanced automation workflows, a brand's digital ecosystem is engineered end-to-end. AI tools that cut operational load and improve budget efficiency sit at the center of the process.",
