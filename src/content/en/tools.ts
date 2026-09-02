@@ -406,3 +406,32 @@ export const cacPayback: ToolContent = {
   ],
   relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
 };
+
+export const channelQuiz: ToolContent = {
+  slug: "marketing-channel-quiz",
+  path: "/en/free-tools/marketing-channel-quiz",
+  title: "Which Marketing Channel Fits Your Business? (Quiz)",
+  description:
+    "Find the right advertising channel for your business in 30 seconds. Get a personalized recommendation across Google, Meta, LinkedIn, and TikTok.",
+  intro:
+    "Answer five short questions and get the advertising channel that best fits your business type, goal, budget, sales cycle, and audience — plus a runner-up worth testing. Everything runs in your browser; no data is stored.",
+  seoParagraphs: [
+    { heading: "How do you choose a marketing channel?", body: "Channel choice is the intersection of four variables: the nature of demand (are you capturing existing demand or creating it), the length of your sales cycle, the click cost your unit economics can absorb, and where your audience actually spends time. Products with real search volume and immediate purchase intent favour Google Ads; visual discovery and impulse buying favour Meta and TikTok; high-ticket B2B sales that require reaching a specific decision maker favour LinkedIn Ads." },
+    { heading: "How budget changes the answer", body: "At small budgets, splitting channels is the most expensive mistake you can make. Under roughly $500-1,000 per month, finishing the learning phase on a single channel almost always beats spreading across three, because algorithms cannot optimise without enough conversion data. As budget grows, a channel mix starts to make sense: paid channels drive short-term sales while SEO and email marketing build compounding assets that lower acquisition cost over time." },
+    { heading: "How to read your result", body: "The primary channel is the one that accumulated the highest weight from your answers; the secondary suggestion is the next best candidate worth testing. Treat the recommendation as a starting hypothesis: run it for four to six weeks with a test budget, measure ROAS and conversion rate, and confirm it with your own data. A quiz narrows the options — measurement makes the decision." },
+  ],
+  faqs: [
+    { q: "Which marketing channel is best for B2B?", a: "LinkedIn Ads is usually the most accurate B2B channel because it targets decision makers by job title, company size, and industry. Click costs are high, but so are deal sizes. The most balanced mix pairs it with Google Ads to capture active search intent and with SEO/content plus email marketing to nurture long sales cycles." },
+    { q: "Which ad platform should you pick on a small budget?", a: "Under a small monthly budget, focus on one channel. If demand already exists and people search for your product, start with Google Ads on a narrow non-brand keyword set. If you have to create demand, start with Meta Ads using a single campaign and broad targeting. In parallel, run SEO and email marketing as compounding channels that do not disappear when you pause spend." },
+    { q: "What is the best advertising channel for e-commerce?", a: "For most e-commerce brands the backbone is Meta Ads (catalog and Advantage+ campaigns) combined with Google Ads (Performance Max and brand search). In visual, trend-driven categories aimed at younger buyers, TikTok Ads is strong at the discovery stage. Where repeat purchase is likely, email marketing is the most profitable channel for lowering blended acquisition cost." },
+    { q: "Why does channel selection matter so much?", a: "Because the wrong channel makes a good product with good creative look unprofitable. The channel determines click cost, the purchase intent of the audience, and the time it takes to convert. Budget spent on the wrong channel costs you learning time as well as money: the conversion data the algorithm needs never accumulates." },
+    { q: "Should you advertise on several channels at once?", a: "Only if each channel can produce roughly 30-50 conversions per month. Below that volume the algorithm cannot learn and you cannot statistically tell which channel worked. Build profitable unit economics on one channel first, then scale into a second." },
+  ],
+  relatedTools: [
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Return on ad spend" },
+    { label: "UTM Builder", href: "/en/free-tools/utm-builder", note: "Channel-level tracking" },
+    { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator", note: "Compare channel performance" },
+    { label: "Marketing Tools", href: "/en/free-tools/marketing-tools", note: "All marketing calculators" },
+  ],
+  relatedPost: { label: "How to Reduce B2B Lead Generation Costs", href: "/en/blog/how-to-reduce-b2b-lead-generation-costs" },
+};

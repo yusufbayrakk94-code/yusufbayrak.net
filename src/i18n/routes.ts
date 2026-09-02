@@ -49,6 +49,7 @@ export const STATIC_ROUTE_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "/ucretsiz-araclar/nrr-hesaplayici",           en: "/en/free-tools/nrr-calculator" },
   { tr: "/ucretsiz-araclar/rule-of-40-hesaplayici",    en: "/en/free-tools/rule-of-40-calculator" },
   { tr: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici", en: "/en/free-tools/cac-payback-period-calculator" },
+  { tr: "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun",       en: "/en/free-tools/marketing-channel-quiz" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
@@ -130,6 +131,7 @@ export const STATIC_TR_ROUTES = [
   "/ucretsiz-araclar/nrr-hesaplayici",
   "/ucretsiz-araclar/rule-of-40-hesaplayici",
   "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici",
+  "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -158,6 +160,7 @@ export const STATIC_EN_ROUTES = [
   "/en/free-tools/nrr-calculator",
   "/en/free-tools/rule-of-40-calculator",
   "/en/free-tools/cac-payback-period-calculator",
+  "/en/free-tools/marketing-channel-quiz",
   "/en/contact",
   "/en/blog",
 ] as const;

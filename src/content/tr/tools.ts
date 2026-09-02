@@ -406,3 +406,32 @@ export const cacPayback: ToolContent = {
   ],
   relatedPost: { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv" },
 };
+
+export const channelQuiz: ToolContent = {
+  slug: "hangi-pazarlama-kanali-uygun",
+  path: "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun",
+  title: "Hangi Pazarlama Kanalı Size Uygun? (Quiz)",
+  description:
+    "30 saniyede işletmeniz için en uygun reklam kanalını bulun. Google Ads, Meta, LinkedIn, TikTok arasından size özel öneri alın.",
+  intro:
+    "5 kısa soruya cevap verin; işletme türünüz, hedefiniz, bütçeniz, satış döngünüz ve hedef kitlenize göre size en uygun pazarlama kanalını ve bir alternatifini önerelim. Hesaplama tamamen tarayıcınızda çalışır, hiçbir veri kaydedilmez.",
+  seoParagraphs: [
+    { heading: "Pazarlama kanalı seçimi neye göre yapılır?", body: "Kanal seçimi bir zevk meselesi değil, dört değişkenin kesişimidir: talebin niteliği (var olan talebi mi yakalıyorsunuz, yoksa talep mi yaratıyorsunuz), satış döngüsünün uzunluğu, birim ekonomisinin taşıyabileceği tıklama maliyeti ve hedef kitlenin nerede vakit geçirdiği. Arama hacmi olan, anlık satın alma niyeti taşıyan ürünlerde Google Ads; görsel keşif ve dürtüsel satın almada Meta ve TikTok; yüksek bilet fiyatlı, karar vericiye ulaşmayı gerektiren B2B satışta ise LinkedIn Ads öne çıkar." },
+    { heading: "Bütçe kanal seçimini nasıl değiştirir?", body: "Düşük bütçelerde kanalı bölmek en pahalı hatadır. 10.000 ₺ altındaki aylık bütçelerde tek kanalda öğrenme aşamasını tamamlamak, üç kanala dağılmaktan neredeyse her zaman daha verimlidir; çünkü algoritmalar yeterli dönüşüm verisi olmadan optimize edemez. Bütçe arttıkça kanal karması anlamlanır: performans kanalları kısa vadeli satışı, SEO ve e-posta pazarlaması ise edinme maliyetini zamanla düşüren birikimli varlıkları üretir." },
+    { heading: "Quiz sonucunu nasıl okumalısınız?", body: "Sonuç ekranındaki birincil kanal, verdiğiniz cevaplara göre en yüksek ağırlığı toplayan kanaldır; ikincil öneri ise test etmeye değer ikinci adaydır. Öneriyi bir başlangıç hipotezi olarak alın: 4-6 haftalık bir test bütçesiyle çalıştırın, ROAS ve dönüşüm oranını ölçün, sonucu kendi verinizle doğrulayın. Kanal kararını kalıcı kılan şey quiz değil, ölçümdür." },
+  ],
+  faqs: [
+    { q: "Hangi pazarlama kanalı B2B için en iyi?", a: "B2B'de karar vericiye ünvan, şirket büyüklüğü ve sektör kırılımıyla ulaşabildiği için LinkedIn Ads genellikle en isabetli kanaldır; tıklama maliyeti yüksektir ama bilet fiyatı da yüksektir. Yanına arama niyetini yakalayan Google Ads ve uzun satış döngüsünü besleyen SEO/içerik ile e-posta pazarlaması eklendiğinde en dengeli karma ortaya çıkar." },
+    { q: "Küçük bütçeyle hangi reklam platformu tercih edilmeli?", a: "Aylık 10.000 ₺ altındaki bütçelerde tek kanala odaklanın. Talep zaten varsa (insanlar ürününüzü arıyorsa) Google Ads marka dışı dar bir anahtar kelime setiyle; talep yaratmanız gerekiyorsa Meta Ads tek kampanya ve geniş hedeflemeyle başlanacak yerdir. Paralel olarak SEO ve e-posta pazarlaması, reklam durduğunda kaybolmayan birikimli kanal olarak çalıştırılmalıdır." },
+    { q: "E-ticaret için en iyi reklam kanalı hangisi?", a: "E-ticarette çoğu markada Meta Ads (katalog ve Advantage+ kampanyaları) ile Google Ads (Performance Max ve marka araması) birlikte omurgayı oluşturur. Görsel ve trend odaklı, genç kitleye satan kategorilerde TikTok Ads keşif tarafında güçlüdür. Tekrar satın alma potansiyeli olan kategorilerde e-posta pazarlaması, edinme maliyetini düşüren en kârlı kanaldır." },
+    { q: "Reklam kanalı seçimi neden önemli?", a: "Çünkü yanlış kanal, iyi bir ürünü ve iyi bir kreatifi bile kârsız gösterir. Kanal; tıklama maliyetini, kitlenin satın alma niyetini ve dönüşüme kadar geçen süreyi belirler. Yanlış kanalda harcanan bütçe yalnızca para değil, öğrenme süresi de kaybettirir: algoritmanın optimize etmesi için gereken dönüşüm verisi hiç birikmez." },
+    { q: "Aynı anda birden fazla kanalda reklam vermeli miyim?", a: "Bütçeniz her kanalda aylık en az 30-50 dönüşüm üretebiliyorsa evet; üretemiyorsa hayır. Kanal başına yeterli dönüşüm hacmi yoksa hem algoritma öğrenemez hem de hangi kanalın işe yaradığını istatistiksel olarak ayırt edemezsiniz. Önce tek kanalda kârlı bir birim ekonomisi kurun, sonra ölçekleyin." },
+  ],
+  relatedTools: [
+    { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam harcaması getirisi" },
+    { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu", note: "Kanal bazlı ölçümleme" },
+    { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici", note: "Kanal performansı karşılaştırma" },
+    { label: "Pazarlama Araçları", href: "/ucretsiz-araclar/pazarlama-araclari", note: "Tüm pazarlama hesaplayıcıları" },
+  ],
+  relatedPost: { label: "B2B Lead Generation Maliyetleri Nasıl Düşürülür?", href: "/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur" },
+};
