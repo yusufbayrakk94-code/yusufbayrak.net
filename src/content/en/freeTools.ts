@@ -76,6 +76,7 @@ export const freeToolsPage = {
     { key: "nrr",   name: "NRR Calculator",        description: "Net revenue retention from expansion, contraction and churned MRR.", href: "/en/free-tools/nrr-calculator" },
     { key: "rule40", name: "Rule of 40 Calculator", description: "Add growth rate and profit margin to score your SaaS health.", href: "/en/free-tools/rule-of-40-calculator" },
     { key: "conversion", name: "Conversion Rate Calculator", description: "Turn visitors and conversions into a conversion rate and a gap to your target.", href: "/en/free-tools/conversion-rate-calculator" },
+    { key: "quiz", name: "Which Marketing Channel Fits Your Business? (Quiz)", description: "Answer 5 questions and find the right ad channel: Google, Meta, LinkedIn, TikTok, SEO or email.", href: "/en/free-tools/marketing-channel-quiz" },
     { key: "payback", name: "CAC Payback Period Calculator", description: "See how many months it takes to recover your customer acquisition cost.", href: "/en/free-tools/cac-payback-period-calculator" },
   ],
 };
@@ -139,7 +140,7 @@ export const toolCategories = [
         a: "Start with measurement integrity: confirm conversion events fire correctly and traffic is separated with UTMs. Then find the page with the highest traffic and lowest conversion, and work on page speed, mobile experience, form field count and a single clear call to action. Validate changes with single-variable A/B tests rather than guesswork.",
       },
     ],
-    tools: ["utm", "roas", "conversion", "llms"],
+    tools: ["utm", "roas", "conversion", "quiz", "llms"],
   },
   {
     key: "saas",

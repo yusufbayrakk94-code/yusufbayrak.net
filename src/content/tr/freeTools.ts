@@ -76,6 +76,7 @@ export const freeToolsPage = {
     { key: "nrr",   name: "NRR Hesaplayıcı",           description: "Net gelir tutundurma oranınızı (NRR) genişleme, daralma ve churn MRR ile hesaplayın.", href: "/ucretsiz-araclar/nrr-hesaplayici" },
     { key: "rule40", name: "Rule of 40 Hesaplayıcı",   description: "Büyüme oranı ve kâr marjınızı toplayarak SaaS sağlık skorunuzu görün.", href: "/ucretsiz-araclar/rule-of-40-hesaplayici" },
     { key: "conversion", name: "Dönüşüm Oranı Hesaplayıcı", description: "Ziyaretçi ve dönüşüm sayınızla dönüşüm oranınızı ve hedefe farkı hesaplayın.", href: "/ucretsiz-araclar/donusum-orani-hesaplayici" },
+    { key: "quiz", name: "Hangi Pazarlama Kanalı Size Uygun? (Quiz)", description: "5 soruda işletmenize en uygun reklam kanalını bulun: Google, Meta, LinkedIn, TikTok, SEO veya e-posta.", href: "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun" },
     { key: "payback", name: "CAC Geri Ödeme Süresi Hesaplayıcı", description: "Müşteri edinme maliyetinizin kaç ayda geri döndüğünü brüt marj dahil hesaplayın.", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici" },
   ],
 };
@@ -140,7 +141,7 @@ export const toolCategories = [
         a: "İlk adım ölçüm doğruluğudur: dönüşüm etkinliklerinin doğru kurulduğundan ve trafiğin UTM ile ayrıştırıldığından emin olun. Ardından en yüksek trafikli ve en düşük dönüşümlü sayfayı belirleyip sayfa hızı, mobil deneyim, form alan sayısı ve tek net bir eylem çağrısı üzerinde çalışın. Tahmin yerine tek değişkenli A/B testi ile ilerleyin.",
       },
     ],
-    tools: ["utm", "roas", "conversion", "llms"],
+    tools: ["utm", "roas", "conversion", "quiz", "llms"],
   },
   {
     key: "saas",

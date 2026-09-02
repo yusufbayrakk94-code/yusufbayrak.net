@@ -31,6 +31,7 @@ import ArpaCalculator from "./pages/tools/ArpaCalculator";
 import NrrCalculator from "./pages/tools/NrrCalculator";
 import RuleOf40Calculator from "./pages/tools/RuleOf40Calculator";
 import CacPaybackCalculator from "./pages/tools/CacPaybackCalculator";
+import MarketingChannelQuiz from "./pages/tools/MarketingChannelQuiz";
 import BlogList from "./pages/blog/BlogList";
 import BlogPost from "./pages/blog/BlogPost";
 import NotFound from "./pages/NotFound";
@@ -78,6 +79,7 @@ export function AppRoutes() {
       <Route path="/ucretsiz-araclar/nrr-hesaplayici" element={<NrrCalculator />} />
       <Route path="/ucretsiz-araclar/rule-of-40-hesaplayici" element={<RuleOf40Calculator />} />
       <Route path="/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici" element={<CacPaybackCalculator />} />
+      <Route path="/ucretsiz-araclar/hangi-pazarlama-kanali-uygun" element={<MarketingChannelQuiz />} />
       <Route path="/iletisim" element={<Contact />} />
       <Route path="/blog" element={<BlogList />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
@@ -107,6 +109,7 @@ export function AppRoutes() {
       <Route path="/en/free-tools/nrr-calculator" element={<NrrCalculator />} />
       <Route path="/en/free-tools/rule-of-40-calculator" element={<RuleOf40Calculator />} />
       <Route path="/en/free-tools/cac-payback-period-calculator" element={<CacPaybackCalculator />} />
+      <Route path="/en/free-tools/marketing-channel-quiz" element={<MarketingChannelQuiz />} />
       <Route path="/en/contact" element={<Contact />} />
       <Route path="/en/blog" element={<BlogList />} />
       <Route path="/en/blog/:slug" element={<BlogPost />} />
