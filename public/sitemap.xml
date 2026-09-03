@@ -178,6 +178,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/ucretsiz-araclar/hangi-pazarlama-kanali-uygun/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/hangi-pazarlama-kanali-uygun/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/marketing-channel-quiz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/iletisim/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/iletisim/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/contact/" />
@@ -471,6 +479,14 @@
     <loc>https://yusufbayrak.net/en/free-tools/cac-payback-period-calculator/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/cac-payback-period-calculator/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/free-tools/marketing-channel-quiz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/marketing-channel-quiz/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/hangi-pazarlama-kanali-uygun/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
