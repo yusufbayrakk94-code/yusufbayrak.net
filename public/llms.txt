@@ -25,6 +25,7 @@
 - [UTM Link Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/utm-link-olusturucu/): Kampanya takibi için UTM parametreli linkler oluşturun.
 - [ROAS Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/roas-hesaplayici/): Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.
 - [Dönüşüm Oranı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/donusum-orani-hesaplayici/): Ziyaretçi ve dönüşüm sayınızla dönüşüm oranınızı ve hedefe farkı hesaplayın.
+- [Hangi Pazarlama Kanalı Size Uygun? (Quiz)](https://yusufbayrak.net/ucretsiz-araclar/hangi-pazarlama-kanali-uygun/): 5 soruda işletmenize en uygun reklam kanalını bulun: Google, Meta, LinkedIn, TikTok, SEO veya e-posta.
 - [llms.txt Oluşturucu](https://yusufbayrak.net/ucretsiz-araclar/llms-txt-olusturucu/): AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.
 
 ### SaaS Araçları
@@ -71,6 +72,7 @@
   - [UTM Link Builder](https://yusufbayrak.net/en/free-tools/utm-builder/): Build UTM-tagged links for accurate campaign attribution.
   - [ROAS Calculator](https://yusufbayrak.net/en/free-tools/roas-calculator/): Measure Return on Ad Spend and campaign profitability.
   - [Conversion Rate Calculator](https://yusufbayrak.net/en/free-tools/conversion-rate-calculator/): Turn visitors and conversions into a conversion rate and a gap to your target.
+  - [Which Marketing Channel Fits Your Business? (Quiz)](https://yusufbayrak.net/en/free-tools/marketing-channel-quiz/): Answer 5 questions and find the right ad channel: Google, Meta, LinkedIn, TikTok, SEO or email.
   - [llms.txt Generator](https://yusufbayrak.net/en/free-tools/llms-txt-generator/): Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.
 - [SaaS Tools](https://yusufbayrak.net/en/free-tools/saas-tools/): Measure the growth and retention metrics of a subscription business.
   - [ARR Calculator](https://yusufbayrak.net/en/free-tools/arr-calculator/): Annual Recurring Revenue calculator for subscription products.

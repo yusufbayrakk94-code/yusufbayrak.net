@@ -64,7 +64,7 @@ export function ToolPage({ toolKey, children }: Props) {
       <Helmet>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "WebApplication",
+          "@type": "SoftwareApplication",
           name: tool.title,
           description: tool.description,
           url: canonical,
