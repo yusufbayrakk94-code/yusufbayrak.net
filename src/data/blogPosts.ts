@@ -3004,3 +3004,21 @@ export function getRelatedToolForPost(
   const key = post.relatedToolKey ?? CATEGORY_DEFAULT_TOOL[post.category];
   return RELATED_TOOLS[key][locale];
 }
+// Reverse lookup used by tool pages: every post that explicitly names this
+// tool via relatedToolKey is linked from the tool page automatically, so new
+// posts strengthen their tool without manual edits. Newest first.
+export function getPostsForToolPath(
+  toolPath: string,
+  locale: BlogLocale
+): Array<{ label: string; href: string }> {
+  const norm = (p: string) => p.replace(/\/+$/, "");
+  const base = locale === "en" ? "/en/blog" : "/blog";
+  return getPostsForLocale(locale)
+    .filter(
+      (p) =>
+        p.relatedToolKey &&
+        norm(RELATED_TOOLS[p.relatedToolKey][locale].href) === norm(toolPath)
+    )
+    .sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1))
+    .map((p) => ({ label: p.title, href: `${base}/${p.slug}/` }));
+}

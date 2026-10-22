@@ -8,6 +8,7 @@ import { LocaleMeta } from "@/i18n/LocaleMeta";
 import { pickTools, pickFreeTools, pickToolCategories, pickToolCategoriesUi } from "@/content";
 import { SITE_URL } from "@/i18n/routes";
 import type { ToolContent } from "@/content/types";
+import { getPostsForToolPath } from "@/data/blogPosts";
 
 // Generic tool page shell. Each calculator page passes its `toolKey`; content
 // (title, intro, SEO copy, FAQs, back-link, dividers, currency) is pulled from
@@ -25,6 +26,16 @@ export function ToolPage({ toolKey, children }: Props) {
   const tool = bundle[toolKey] as ToolContent;
 
   const canonical = `${SITE_URL}${tool.path}`;
+
+  // Related posts: posts that name this tool (newest first), then the manual
+  // relatedPost (deduped, max 4).
+  const norm = (h: string) => h.replace(/\/+$/, "");
+  const relatedPosts = [
+    ...getPostsForToolPath(tool.path, locale),
+    ...(tool.relatedPost ? [tool.relatedPost] : []),
+  ]
+    .filter((p, i, arr) => arr.findIndex((q) => norm(q.href) === norm(p.href)) === i)
+    .slice(0, 4);
 
   // Breadcrumb: Home > Free Tools > [Category] > [Tool]. The category is
   // resolved from the tool's card key so it never drifts from the category
@@ -132,7 +143,7 @@ export function ToolPage({ toolKey, children }: Props) {
               </div>
             </div>
           )}
-          {(tool.relatedTools?.length || tool.relatedPost || tool.externalSource) && (
+          {(tool.relatedTools?.length || relatedPosts.length > 0 || tool.externalSource) && (
             <div className="mt-16 opacity-0 animate-fade-in-up stagger-3">
               <CodeDivider label={locale === "en" ? "Related" : "İlgili"} />
               <div className="grid gap-6 md:grid-cols-2">
@@ -159,20 +170,26 @@ export function ToolPage({ toolKey, children }: Props) {
                     </ul>
                   </div>
                 )}
-                {(tool.relatedPost || tool.externalSource) && (
+                {(relatedPosts.length > 0 || tool.externalSource) && (
                   <div className="p-5 bg-card border border-border rounded-lg">
-                    {tool.relatedPost && (
+                    {relatedPosts.length > 0 && (
                       <>
                         <h2 className="font-mono text-sm text-foreground mb-3">
-                          {locale === "en" ? "Related post" : "İlgili Yazı"}
+                          {locale === "en" ? "Related reading" : "İlgili Yazılar"}
                         </h2>
-                        <Link
-                          to={tool.relatedPost.href}
-                          className="inline-flex items-start gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
-                        >
-                          <ArrowUpRight className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
-                          {tool.relatedPost.label}
-                        </Link>
+                        <ul className="space-y-2">
+                          {relatedPosts.map((p) => (
+                            <li key={p.href}>
+                              <Link
+                                to={p.href}
+                                className="inline-flex items-start gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
+                              >
+                                <ArrowUpRight className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
+                                {p.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
                       </>
                     )}
                     {tool.externalSource && (
