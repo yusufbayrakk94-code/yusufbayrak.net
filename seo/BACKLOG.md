@@ -5,6 +5,8 @@ günceller ve `seo/LOG.md`'ye kayıt düşer. Sıra, etki/çaba oranına göredi
 Search Console verisi geldikçe yeniden önceliklendirilir.
 
 Kural: Connector (MCP bağlantısı) kullanılmaz; veri Search Console (servis hesabı/dışa aktarım), WebSearch ve WebFetch ile toplanır.
+Kural: Blog içerik konuları Grok'tan seo/BRIEFS.md ile gelir; Claude kendi blog konusu seçmez.
+      Aşağıdaki "Destek yazısı" ve "İçerik kümeleri" maddeleri Grok'a önerilecek konulardır.
 Kural: Hiçbir yazı veya sayfa SERP/rakip analizi yapılmadan girilmez. Analiz
 notları `seo/research/<konu>.md` altına kaydedilir.
 
