@@ -77,6 +77,7 @@ export const freeToolsPage = {
     { key: "rule40", name: "Rule of 40 Calculator", description: "Add growth rate and profit margin to score your SaaS health.", href: "/en/free-tools/rule-of-40-calculator" },
     { key: "conversion", name: "Conversion Rate Calculator", description: "Turn visitors and conversions into a conversion rate and a gap to your target.", href: "/en/free-tools/conversion-rate-calculator" },
     { key: "quiz", name: "Which Marketing Channel Fits Your Business? (Quiz)", description: "Answer 5 questions and find the right ad channel: Google, Meta, LinkedIn, TikTok, SEO or email.", href: "/en/free-tools/marketing-channel-quiz" },
+    { key: "marketplace", name: "Trendyol & Hepsiburada Profit Calculator", description: "Net profit per order after commission, shipping, service fee, withholding, returns and ads.", href: "/en/free-tools/marketplace-profit-calculator" },
     { key: "payback", name: "CAC Payback Period Calculator", description: "See how many months it takes to recover your customer acquisition cost.", href: "/en/free-tools/cac-payback-period-calculator" },
   ],
 };
@@ -258,7 +259,7 @@ export const toolCategories = [
         a: "Marketplace commissions usually run 8-20% of the sale and, together with payment processing fees, come straight off revenue. When comparing your own store to a marketplace, model the same product in both scenarios: marketplace traffic looks free, but the commission often costs about as much as paid acquisition.",
       },
     ],
-    tools: ["gross", "net"],
+    tools: ["marketplace", "gross", "net"],
   },
 ] as const;
 

@@ -19,7 +19,9 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Araç ↔ blog otomatik iç link (relatedToolKey ters eşleme) — 2026-10-22
 - [ ] İnce araç sayfalarını derinleştir: CAC, LTV, churn, UTM, ARR
       (analiz: seo/research/arac-serp-analizi.md)
-- [ ] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı
+- [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
+- [ ] Pazaryeri aracı v2: Trendyol vs Hepsiburada yan yana karşılaştırma, desi→kargo yardımcısı, çoklu ürün
+- [ ] Destek yazısı: "Trendyol komisyon oranları ve kâr hesaplama" (aracı besleyen bilgi içeriği)
 - [ ] Yeni araç: Reklam bütçesi planlayıcı (hedef ciro + marj → bütçe, ROAS)
 - [ ] Paylaşılabilir sonuç linki (girdiler URL'de) — tüm araçlar, ToolPage
 - [ ] Sonucu e-postayla/PDF gönder (yumuşak lead yakalama)

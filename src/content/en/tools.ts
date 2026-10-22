@@ -435,3 +435,54 @@ export const channelQuiz: ToolContent = {
   ],
   relatedPost: { label: "How to Reduce B2B Lead Generation Costs", href: "/en/blog/how-to-reduce-b2b-lead-generation-costs" },
 };
+
+export const marketplace: ToolContent = {
+  slug: "marketplace-profit-calculator",
+  path: "/en/free-tools/marketplace-profit-calculator",
+  title: "Trendyol & Hepsiburada Profit Calculator",
+  description:
+    "Net profit per order on Trendyol and Hepsiburada after commission, shipping, service fee, withholding tax, returns and ads — plus your break-even price.",
+  intro:
+    "Enter your sale price, product cost, commission and shipping; the calculator shows net profit per order, profit margin, break-even and target sale price, the maximum ad spend per order and the amount paid out to you. Unlike most calculators it also accounts for returns and advertising. Everything runs in your browser and the result can be shared as a link.",
+  seoParagraphs: [
+    {
+      heading: "How to calculate profit on Trendyol and Hepsiburada",
+      body:
+        "Real marketplace profit is not just sale price minus commission. First strip VAT (KDV) out of the VAT-inclusive price, then deduct commission, shipping, the platform service fee, product cost and packaging. Formula: Net profit = Sale price / (1 + VAT rate) − Commission − Shipping − Service fee − Product cost − Packaging. That is for a single non-returned order; to see the real picture you also need return costs and advertising. The calculator works on a VAT-excluded basis because a VAT-registered seller can deduct input VAT — VAT is passed through to the state, not profit.",
+    },
+    {
+      heading: "Worked example: what does a 599 TL product really earn?",
+      body:
+        "Take a product with 20% VAT sold for 599 TL. Sales excluding VAT are 499.17 TL. With a 15% commission charged on the VAT-inclusive price, commission is 89.85 TL. After 65 TL shipping, a 10.99 TL service fee, 220 TL product cost and 8 TL packaging, a non-returned order makes 105.33 TL net profit — about a 21% margin. Add an 8% return rate and 40 TL ad spend per order and average net profit drops to 45.86 TL per order, a 9.2% margin: returns and ads eat more than half of the paper profit. For this product the break-even price is about 526 TL and the price needed for a 10% net margin is about 606 TL.",
+    },
+    {
+      heading: "Is commission charged on the VAT-inclusive price?",
+      body:
+        "Marketplaces generally calculate commission on the VAT-inclusive price the customer pays and add 20% VAT to the commission invoice. So a '15% commission' is a bigger share of your VAT-excluded revenue — about 18% in the example above. Rates vary by category, seller tier and campaign agreements; take your exact rate from the agreement details in your seller panel.",
+    },
+    {
+      heading: "Does the 1% e-commerce withholding tax reduce profit?",
+      body:
+        "Since 1 January 2025, Turkish marketplaces withhold 1% of the VAT-excluded sale amount from seller payouts as income tax withholding (stopaj). It is a prepaid tax, not a cost: it is offset against the income tax calculated in your returns. The calculator therefore does not deduct it from profit, but does remove it from the payout. Some sellers, such as those taxed under the simplified regime, are exempt — untick the box if that applies to you.",
+    },
+    {
+      heading: "Why returns and ads matter so much",
+      body:
+        "A returned order earns no revenue, but outbound shipping, return shipping and packaging usually stay with the seller. The calculator spreads that loss across orders using your return rate, and shows how much ad spend per order you can afford while keeping your target margin, along with your break-even ROAS. In the example, profit before ads after returns is about 85.86 TL per order, so break-even ROAS is roughly 7 — any campaign below that loses money on this product.",
+    },
+  ],
+  faqs: [
+    { q: "How do I calculate Trendyol profit?", a: "Divide the VAT-inclusive price by (1 + VAT rate) to get sales excluding VAT, then subtract commission (VAT-inclusive price × commission rate), shipping, the platform service fee, product cost and packaging. For real profit, also include return costs and ad spend per order. This calculator does all of it automatically." },
+    { q: "Is the e-commerce withholding tax refundable?", a: "The 1% withholding is a prepaid income tax that is offset against tax calculated on your return; amounts that cannot be offset can generally be reclaimed. Check your situation with your accountant." },
+    { q: "How is parcel size (desi) calculated?", a: "Desi = Width × Length × Height (cm) / 3000. Shipping is billed on the greater of weight and desi, so smaller packaging directly lowers shipping cost." },
+    { q: "How much can I spend on ads per order?", a: "Your profit before ads, after returns, is the ceiling; subtract your target profit to keep your margin. The calculator shows this amount and your break-even ROAS." },
+    { q: "What is a good marketplace profit margin?", a: "It depends on the category, but a net margin below 10% of VAT-excluded sales after returns and ads leaves little room for campaign discounts and currency swings. Enter your target margin and the calculator shows the required price." },
+  ],
+  relatedTools: [
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Measure return on ad spend" },
+    { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
+    { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Store-level profitability" },
+    { label: "E-Commerce Tools", href: "/en/free-tools/ecommerce-tools", note: "All e-commerce calculators" },
+  ],
+  relatedPost: { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+};

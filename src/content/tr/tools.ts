@@ -435,3 +435,73 @@ export const channelQuiz: ToolContent = {
   ],
   relatedPost: { label: "B2B Lead Generation Maliyetleri Nasıl Düşürülür?", href: "/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur" },
 };
+
+export const marketplace: ToolContent = {
+  slug: "trendyol-hepsiburada-kar-hesaplama",
+  path: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama",
+  title: "Trendyol & Hepsiburada Kâr Hesaplama Aracı",
+  description:
+    "Trendyol ve Hepsiburada'da sipariş başı net kârınızı komisyon, kargo, hizmet bedeli, stopaj, iade ve reklam dahil hesaplayın; başabaş fiyatı görün.",
+  intro:
+    "Satış fiyatı, ürün maliyeti, komisyon ve kargo bilgilerini girin; araç sipariş başı net kârınızı, kâr marjınızı, başabaş ve hedef satış fiyatınızı, sipariş başı harcayabileceğiniz maksimum reklam bütçesini ve hesabınıza yatacak tutarı hesaplasın. Diğer hesaplayıcılardan farklı olarak iade oranını ve reklam maliyetini de hesaba katar. Hesap tarayıcınızda çalışır, sonucu link olarak paylaşabilirsiniz.",
+  seoParagraphs: [
+    {
+      heading: "Trendyol ve Hepsiburada'da kâr nasıl hesaplanır?",
+      body:
+        "Pazaryerinde gerçek kâr, satış fiyatından yalnızca komisyonu düşerek bulunmaz. KDV'li satış fiyatından önce KDV ayrılır, ardından komisyon, kargo, platform hizmet bedeli, ürün maliyeti ve paketleme düşülür. Formül: Net kâr = Satış fiyatı / (1 + KDV oranı) − Komisyon − Kargo − Hizmet bedeli − Ürün maliyeti − Paketleme. Bu hesap iade edilmeyen tek bir sipariş içindir; gerçek tabloyu görmek için iade ve reklam maliyetini de eklemek gerekir. Araç tüm tutarları KDV hariç gösterir, çünkü KDV mükellefi bir satıcı alış ve gider faturalarındaki KDV'yi indirebilir; KDV kâr değil, devlete aktarılan bir emanettir.",
+    },
+    {
+      heading: "Örnek hesap: 599 TL'lik bir ürün gerçekte ne kazandırıyor?",
+      body:
+        "%20 KDV'li bir ürünü 599 TL'ye sattığınızı düşünelim. KDV hariç satış 499,17 TL'dir. Komisyon oranı %15 ise ve komisyon KDV dahil fiyat üzerinden hesaplanıyorsa komisyon 89,85 TL olur. Kargo 65 TL, hizmet bedeli 10,99 TL, ürün maliyeti 220 TL ve paketleme 8 TL düşüldüğünde iade edilmeyen bir siparişte net kâr 105,33 TL, marj yaklaşık %21'dir. Şimdi iade oranını %8 ve sipariş başı reklam harcamasını 40 TL olarak ekleyelim: sipariş başı ortalama net kâr 45,86 TL'ye, marj %9,2'ye düşer. Yani iade ve reklam, kâğıt üzerindeki kârın yarısından fazlasını eritir. Aynı üründe başabaş satış fiyatı yaklaşık 526 TL, %10 net marj için gereken fiyat ise yaklaşık 606 TL'dir.",
+    },
+    {
+      heading: "Komisyon KDV dahil fiyattan mı hesaplanır?",
+      body:
+        "Pazaryerleri komisyonu genellikle müşterinin ödediği KDV dahil satış fiyatı üzerinden hesaplar ve komisyon faturasına ayrıca %20 KDV ekler. Bu yüzden 'komisyon oranım %15' demek, KDV hariç satışınızın %15'inden daha fazlasını ödediğiniz anlamına gelir: örnekteki 599 TL'lik üründe komisyon, KDV hariç satışın yaklaşık %18'ine denk gelir. Komisyon oranı kategoriye, satıcı seviyesine ve kampanya anlaşmalarına göre değişir; kesin oranı satıcı panelinizdeki anlaşma bilgilerinden alıp araca girin.",
+    },
+    {
+      heading: "E-ticaret stopajı (%1) kârı etkiler mi?",
+      body:
+        "1 Ocak 2025'ten itibaren pazaryerleri, satıcıya yaptıkları ödemelerden KDV hariç satış tutarının %1'i oranında gelir vergisi stopajı keser. Stopaj bir maliyet değil, peşin ödenmiş vergidir: yıllık veya geçici vergi beyannamesinde hesaplanan vergiden mahsup edilir. Bu nedenle araç stopajı kârdan düşmez, ancak hesabınıza yatan tutarı hesaplarken nakit akışından çıkarır. Basit usulde vergilendirilen ve kazanç vergisinden muaf esnaf gibi bazı satıcılar stopaj kapsamı dışındadır; bu durumdaysanız ilgili kutucuğu kapatın.",
+    },
+    {
+      heading: "Platform hizmet bedeli ve kargo maliyeti",
+      body:
+        "Trendyol ve Hepsiburada, komisyona ek olarak teslim edilen her paket için sabit bir platform hizmet bedeli alır. Araçtaki varsayılan değer kamuya açık kaynaklardan alınmıştır ve sık güncellendiği için düzenlenebilir bırakılmıştır. Kargo maliyeti ise kargo firmasına, paketin desisine (en × boy × yükseklik / 3000) ve sepet tutarına göre değişir; belirli tutarın altındaki siparişlerde pazaryerlerinin barem adı verilen sabit kargo tarifeleri devreye girebilir. Kargo ücretini kendi tarifenizden, KDV hariç olarak girin.",
+    },
+    {
+      heading: "İade oranı kârı neden bu kadar etkiler?",
+      body:
+        "İade edilen bir siparişte satıştan gelir elde etmezsiniz ama gidiş kargosu, dönüş kargosu ve paketleme maliyeti çoğu zaman size kalır. Araç bunu iki kalemle gösterir: iade edilen siparişlerde kaçan kâr ve iade kargo-paketleme maliyeti. Giyim ve ayakkabı gibi kategorilerde iade oranları yüksek olabildiği için aynı fiyat ve komisyonla çalışan iki ürünün gerçek kârlılığı çok farklı çıkabilir. Kendi iade oranınızı satıcı panelinizin raporlarından alın; ürün sayfası, beden tablosu ve görsellerin iyileştirilmesi iade oranını düşürmenin en hızlı yoludur.",
+    },
+    {
+      heading: "Sipariş başı ne kadar reklam harcayabilirim?",
+      body:
+        "Araç, mevcut satış fiyatınızda hedef kâr marjınızı koruyarak sipariş başı harcayabileceğiniz maksimum reklam tutarını ve başabaş ROAS değerini hesaplar. Örnekteki üründe iade düşüldükten sonra reklam öncesi kâr sipariş başı yaklaşık 85,86 TL'dir; bu, başabaş ROAS'ın yaklaşık 7 olduğu anlamına gelir. Pazaryeri reklamlarında (Trendyol veya Hepsiburada reklam panelleri) 7 ROAS'ın altında kalan her kampanya bu ürün için zarar demektir. Bu eşik, pazaryeri dışı Meta veya Google reklamları için de aynı mantıkla geçerlidir.",
+    },
+    {
+      heading: "Trendyol ile Hepsiburada arasında hesap farkı var mı?",
+      body:
+        "Hesap mantığı iki pazaryerinde de aynıdır: KDV, komisyon, kargo, hizmet bedeli, stopaj, iade ve reklam. Fark; kategori bazlı komisyon oranlarında, hizmet bedelinin tutarında, anlaşmalı kargo tarifelerinde ve barem koşullarında ortaya çıkar. Aynı ürünü iki pazaryerinde satıyorsanız, aracı her pazaryeri için kendi komisyon ve kargo değerlerinizle ayrı ayrı çalıştırıp sonuçları linkleriyle karşılaştırabilirsiniz. Kendi web sitenizde satış için 'Diğer' seçeneğini kullanın; komisyon yerine ödeme altyapısı kesintinizi girin.",
+    },
+  ],
+  faqs: [
+    { q: "Trendyol kâr hesaplama nasıl yapılır?", a: "KDV dahil satış fiyatını KDV oranına bölerek KDV hariç satışı bulun, ardından komisyonu (KDV dahil fiyat × komisyon oranı), kargoyu, platform hizmet bedelini, ürün maliyetini ve paketlemeyi düşün. Gerçek kâr için iade maliyetini ve sipariş başı reklam harcamasını da ekleyin. Bu araç tüm adımları otomatik yapar." },
+    { q: "Pazaryeri komisyonu KDV dahil fiyattan mı alınır?", a: "Genellikle evet: komisyon, müşterinin ödediği KDV dahil fiyat üzerinden hesaplanır ve komisyon faturasına ayrıca %20 KDV eklenir. Bu KDV indirilebildiği için kârdan düşülmez, ancak komisyonun kendisi KDV hariç satışınıza oranla, ilan edilen orandan daha yüksek bir paya karşılık gelir." },
+    { q: "E-ticaret stopajı nasıl hesaplanır ve geri alınabilir mi?", a: "Stopaj, KDV hariç satış tutarının %1'idir ve pazaryeri tarafından ödemenizden kesilir. Peşin ödenmiş gelir vergisi olduğu için beyannamede hesaplanan vergiden mahsup edilir; mahsup edilemeyen kısım için iade talep edilebilir. Kesin durumunuz için mali müşavirinize danışın." },
+    { q: "Platform hizmet bedeli ne kadar?", a: "Trendyol ve Hepsiburada teslim edilen paket başına sabit bir hizmet bedeli alır ve bu tutar sık güncellenir. Araçtaki varsayılan değer kamuya açık kaynaklardan derlenmiştir; satıcı panelinizdeki güncel tutarla değiştirebilirsiniz." },
+    { q: "Desi nasıl hesaplanır?", a: "Desi = En × Boy × Yükseklik (cm) / 3000 formülüyle hesaplanır ve kargo ücreti, paketin ağırlığı ile desisinden hangisi büyükse ona göre belirlenir. Paket ölçülerini küçültmek kargo maliyetini doğrudan düşürür." },
+    { q: "İade edilen siparişte komisyon ve kargo ne olur?", a: "Uygulama pazaryerine göre değişmekle birlikte, iade edilen siparişin komisyonu genellikle iade edilir; gidiş ve dönüş kargo ücretleri ise çoğu zaman satıcıya kalır. Araç, iade oranınıza göre bu kargo ve paketleme kaybını sipariş başına dağıtarak gösterir." },
+    { q: "Pazaryerinde iyi bir kâr marjı kaç olmalı?", a: "Kategoriye göre değişir; ancak iade ve reklam düşüldükten sonra KDV hariç satışın %10'unun altında kalan net marj, kampanya indirimleri ve kur dalgalanmalarına karşı çok az pay bırakır. Aracı hedef marjınızı girerek kullanın; gereken satış fiyatını ve maksimum reklam bütçesini otomatik gösterir." },
+    { q: "Sipariş başı ne kadar reklam harcayabilirim?", a: "İade düşüldükten sonra kalan reklam öncesi kârınız, sipariş başı harcayabileceğiniz üst sınırdır; hedef marjınızı korumak için bundan hedef kârınızı çıkarın. Araç bu tutarı ve başabaş ROAS değerini sizin için hesaplar." },
+  ],
+  relatedTools: [
+    { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam getirisini ölçün" },
+    { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Ürün bazında marj" },
+    { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Mağaza geneli kârlılık" },
+    { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret hesaplayıcıları" },
+  ],
+  relatedPost: { label: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+  externalSource: { label: "GİB — 330 Sıra No.lu Gelir Vergisi Genel Tebliği bilgi notu (e-ticaret stopajı)", href: "https://gib.gov.tr/sites/default/files/fileadmin/mevzuatek/mevzuatbilginotu/gelirvergisiteblig330not.pdf" },
+};
