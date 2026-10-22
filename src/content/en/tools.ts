@@ -33,57 +33,69 @@ export const arr: ToolContent = {
 export const cac: ToolContent = {
   slug: "cac",
   path: "/en/free-tools/cac-calculator",
-  title: "CAC Calculator",
-  description: "Calculate Customer Acquisition Cost (CAC) from marketing and sales spend divided by acquired customers.",
+  title: "CAC Calculator: Customer Acquisition Cost",
+  description: "Calculate blended and paid customer acquisition cost (CAC) and your CAC payback period. Formula, worked example and FAQ.",
   intro: "CAC (Customer Acquisition Cost) is the average cost to acquire a customer. It's critical for measuring channel efficiency and growth sustainability.",
   seoParagraphs: [
     { heading: "What is CAC (Customer Acquisition Cost)?", body: "CAC is calculated by dividing total marketing and sales cost in a given period by the number of customers acquired in that period. Ad budget, team salaries, tool licences, agency fees and campaign production costs — every direct and indirect line item — belongs in this calculation." },
     { body: "CAC on its own isn't good or bad; it only becomes meaningful next to LTV (Lifetime Value) and CAC payback period. The widely accepted rule is that LTV / CAC of 3x or higher signals healthy unit economics; a ratio below 1 means every new customer loses money for the business." },
     { body: "The best strategies for optimising CAC are channel-level attribution, conversion rate optimisation, shortening the sales cycle and strengthening organic and referral channels. Alignment between marketing and sales is one of the most decisive operational factors." },
+    { heading: "Worked example: blended CAC, paid CAC and payback", body: "A company spending $5,000 on marketing (of which $3,500 on ads) and $3,000 on sales in a month, winning 100 new customers, has a blended CAC of $80. If 60 of them came from paid ads, paid CAC is $3,500 / 60 ≈ $58. With $15 monthly revenue per customer and a 75% gross margin, each customer contributes $11.25 a month, so CAC pays back in about 7.1 months." },
+    { heading: "CAC in B2B", body: "Because B2B sales cycles span weeks or months, this month's spend often wins next quarter's customers. Lag spend by your average sales cycle or use a 3-month rolling average, and track cost per lead, per SQL and per customer separately to find the bottleneck." },
   ],
   faqs: [
     { q: "What should be included in CAC?", a: "Ad spend, marketing and sales team salaries and bonuses, tool/software licences, agency and third-party fees and campaign production costs all belong in CAC." },
     { q: "What's a good CAC value?", a: "There is no absolute good CAC — it's judged against LTV. Aim for LTV / CAC ≥ 3x and CAC payback under 12 months for B2B SaaS." },
     { q: "How do you lower CAC?", a: "Conversion rate optimisation (CRO), re-balancing channel mix by efficiency, strengthening organic/SEO and referral programmes, and shortening the sales cycle are the highest-impact levers." },
     { q: "Blended CAC vs. Paid CAC — what's the difference?", a: "Blended CAC includes all customers (organic + paid). Paid CAC counts only those acquired through paid channels — better for judging channel efficiency." },
+    { q: "Should salaries be included in CAC?", a: "For fully loaded CAC, yes — include sales and marketing salaries, commission and payroll taxes. For channel efficiency, paid CAC (ad spend only) is more useful. State which version you report." },
+    { q: "How do I calculate CAC payback?", a: "CAC payback = CAC / (Monthly revenue per customer × Gross margin). An $80 CAC with $15 monthly revenue at 75% margin pays back in about 7.1 months." },
   ],
 };
 
 export const churn: ToolContent = {
   slug: "churn",
   path: "/en/free-tools/churn-rate-calculator",
-  title: "Churn Rate Calculator",
-  description: "Calculate your customer churn rate from starting customers and lost customers over a period.",
+  title: "Churn Rate Calculator: Monthly, Annual & Revenue Churn",
+  description: "Calculate monthly churn, compounded annual churn, average customer lifetime and gross/net revenue churn. Formula, example and FAQ.",
   intro: "Churn Rate is the percentage of customers you lose in a given period. Low churn is one of the strongest signals of healthy SaaS growth.",
   seoParagraphs: [
     { heading: "What is Churn Rate and why is it critical?", body: "Churn Rate is the percentage of the customers you had at the start of a period who left during that period. In SaaS and subscription models churn is the silent killer of growth — every lost customer offsets a chunk of new sales and lowers real net growth." },
     { body: "Churn is measured two main ways: Customer Churn on customer count, Revenue Churn on lost MRR/ARR. Enterprise tends to prefer Revenue Churn because it reflects the impact of larger accounts. Healthy SaaS targets monthly churn of 3-5% at SMB, below 1% at enterprise." },
     { body: "The most effective ways to reduce churn are strengthening onboarding, tracking in-product activation metrics, running a proactive customer success motion and using predictive models like churn risk scoring to catch at-risk accounts early." },
+    { heading: "Monthly to annual churn: why not ×12?", body: "Churn compounds because the customer base shrinks each month: Annual churn = 1 − (1 − monthly churn)^12. A 5% monthly churn is about 46% annually, not 60%. Average customer lifetime is roughly 1 / monthly churn — 20 months at 5%." },
+    { heading: "Customer churn vs revenue churn", body: "Gross revenue churn = (Cancelled + Contraction MRR) / Starting MRR. Net revenue churn also subtracts expansion MRR. If net revenue churn is negative, growth from existing customers outweighs losses — the same as NRR above 100%." },
   ],
   faqs: [
     { q: "What is a good monthly churn rate?", a: "For SMB-focused SaaS, 3-5% monthly is acceptable. Mid-market targets 1-2%; enterprise, below 1%. Annually, sub-5-7% is considered good." },
     { q: "Customer Churn vs. Revenue Churn?", a: "Customer Churn measures the number of lost customers; Revenue Churn measures lost MRR/ARR. Because larger accounts have outsized revenue impact, Revenue Churn is usually the more critical view." },
     { q: "What is negative churn?", a: "When upsell and expansion revenue from existing customers exceeds lost revenue. Net revenue retention (NRR) then climbs above 100% and the company grows even without new customers." },
     { q: "First step to reduce churn?", a: "Do a cohort analysis to see when churn happens. Early churn usually points to onboarding; late churn points to gaps in value delivery." },
+    { q: "How do I convert monthly churn to annual churn?", a: "Annual churn = 1 − (1 − monthly churn)^12. 5% monthly is about 46% annually." },
+    { q: "What is negative churn?", a: "When expansion revenue from existing customers exceeds revenue lost to cancellations and downgrades, net revenue churn is negative and you grow even without new customers." },
   ],
 };
 
 export const ltv: ToolContent = {
   slug: "ltv",
   path: "/en/free-tools/ltv-calculator",
-  title: "LTV Calculator",
-  description: "Calculate customer Lifetime Value (LTV) from ARPU, gross margin and churn — and compare it against CAC.",
+  title: "LTV Calculator: Customer Lifetime Value (SaaS & E-commerce)",
+  description: "Calculate margin-based customer lifetime value (LTV) for SaaS or e-commerce and compare it with CAC. Formulas, example and FAQ.",
   intro: "LTV (Lifetime Value) is the present value of total revenue a customer produces over the length of the relationship. Target an LTV/CAC ratio of 3x or more.",
   seoParagraphs: [
     { heading: "What is LTV (Lifetime Value)?", body: "LTV is the present value of the total net revenue a customer generates over their relationship with the company. The most common formula is LTV = (ARPU × Gross Margin) / Churn — a single number that combines how long a customer stays with how profitably they contribute." },
     { body: "LTV becomes most powerful when compared to CAC. LTV / CAC of 3x or higher signals healthy unit economics. Getting close to 1 means growth is unprofitable; above 5 usually means the business is under-investing in growth. CAC payback under 12 months is a critical threshold for cash-flow sustainability." },
     { body: "The most effective ways to grow LTV are lowering churn, expanding ARPU via upsell and cross-sell and improving gross margin. When product, pricing and customer success share LTV as a KPI, growth becomes more sustainable." },
+    { heading: "LTV for e-commerce", body: "Without subscriptions, LTV = Average order value × Orders per year × Customer lifespan (years) × Gross margin. A customer with a $65 AOV ordering 3 times a year for 2 years brings $390 in revenue; at a 40% margin LTV is $156." },
+    { heading: "Always use margin, not revenue", body: "Revenue-based LTV overstates customer value — especially at low margins — and leads to overspending on acquisition. The calculator shows both, but base decisions on margin-based LTV." },
   ],
   faqs: [
     { q: "How is LTV calculated?", a: "The most common formula: LTV = (Monthly ARPU × Gross Margin %) / Monthly Churn. It combines per-customer profitability and expected tenure into one figure." },
     { q: "What is the ideal LTV / CAC ratio?", a: "3x or higher is healthy. 1x-2x means weak unit economics; above 5x usually means you could invest more aggressively in growth." },
     { q: "Why use gross margin in LTV?", a: "Because real profit — not top-line revenue — is what matters. Gross margin after hosting, payment fees and support cost reflects LTV's true financial value." },
     { q: "Fastest way to grow LTV?", a: "Reducing churn is usually the highest-leverage move: cutting monthly churn from 5% to 3% grows LTV by roughly 67%. Growing ARPU via upsell comes next." },
+    { q: "What is the difference between LTV and CLV?", a: "They describe the same concept: the total value a customer brings over the relationship. Some sources reserve CLV for discounted, predictive versions." },
+    { q: "How do I calculate e-commerce LTV?", a: "LTV = AOV × Orders per year × Lifespan in years × Gross margin." },
   ],
 };
 

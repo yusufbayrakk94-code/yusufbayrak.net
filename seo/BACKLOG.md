@@ -17,7 +17,9 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 
 ## Araçlar
 - [x] Araç ↔ blog otomatik iç link (relatedToolKey ters eşleme) — 2026-10-22
-- [ ] İnce araç sayfalarını derinleştir: CAC, LTV, churn, UTM, ARR
+- [x] CAC, LTV, churn sayfaları derinleştirildi + hesaplayıcılar geliştirildi — 2026-10-22
+- [ ] UTM oluşturucu: GA4 kanal eşleme + Unassigned uyarısı, küçük harf, TR şablonları, QR, gclid uyarısı
+- [ ] ARR sayfası: bileşenlerle ARR (yeni/genişleme/daralma/kayıp), CARR (düşük öncelik)
       (analiz: seo/research/arac-serp-analizi.md)
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
 - [ ] Pazaryeri aracı v2: Trendyol vs Hepsiburada yan yana karşılaştırma, desi→kargo yardımcısı, çoklu ürün
