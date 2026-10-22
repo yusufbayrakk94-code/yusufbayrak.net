@@ -1,6 +1,6 @@
-# SEO brief kutusu
+# SEO fikir kutusu (isteğe bağlı)
 
-Buraya yeni fikir/brief eklenir (elle veya Grok'tan kopyalanarak). Günlük SEO
+Aklına gelen konu, rakip, gündem veya araç fikrini buraya ekleyebilirsin; boş kalması sorun değil. Günlük SEO
 görevi her çalışmada önce bu dosyayı okur. Uygun bulduğu brief'i SERP/rakip
 analizinden geçirip uygular ve durumunu günceller.
 
