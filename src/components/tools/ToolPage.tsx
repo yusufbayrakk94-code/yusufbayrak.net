@@ -58,7 +58,7 @@ export function ToolPage({ toolKey, children }: Props) {
       <LocaleMeta
         path={tool.path}
         locale={locale}
-        title={`${tool.title} | Yusuf Bayrak`}
+        title={`${tool.title} | Yusuf Bayrak`.length <= 60 ? `${tool.title} | Yusuf Bayrak` : tool.title}
         description={tool.description}
       />
       <Helmet>

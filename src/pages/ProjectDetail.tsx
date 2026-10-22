@@ -48,7 +48,7 @@ export default function ProjectDetail() {
       <LocaleMeta
         path={detailPath}
         locale={locale}
-        title={`${project.name} | Yusuf Bayrak`}
+        title={`${project.name} — ${project.impact}`.length <= 60 ? `${project.name} — ${project.impact}` : `${project.name} | Yusuf Bayrak`}
         description={project.description}
         ogType="article"
       />

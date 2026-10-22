@@ -1,6 +1,6 @@
 export const about = {
   path: "/hakkimda",
-  seoTitle: "Hakkımda | Yusuf Bayrak",
+  seoTitle: "Hakkımda — Dijital Pazarlama Uzmanı | Yusuf Bayrak",
   seoDescription:
     "Yusuf Bayrak — B2B büyüme stratejileri, performans pazarlama ve veri odaklı lead generation üzerine çalışan dijital pazarlama uzmanı.",
   heading: "Hakkımda",

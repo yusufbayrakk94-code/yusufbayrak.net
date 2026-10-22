@@ -147,6 +147,24 @@ export function getBlogSlugs() {
   } catch { return []; }
 }
 
+// slug -> last modified date (updatedAt ?? publishedAt) for blog posts, used
+// as <lastmod> in the sitemap so crawlers pick up new/updated posts quickly.
+export function getBlogDates() {
+  const out = new Map();
+  try {
+    const file = fs.readFileSync(path.resolve(process.cwd(), "src/data/blogPosts.ts"), "utf-8");
+    const re = /^\s*slug:\s*"([^"]+)",\s*\n([\s\S]*?)(?=^\s*slug:\s*"|$(?![\s\S]))/gm;
+    for (const m of file.matchAll(re)) {
+      const body = m[2];
+      const pub = body.match(/publishedAt:\s*"([^"]+)"/);
+      if (!pub) continue;
+      const upd = body.match(/updatedAt:\s*"([^"]+)"/);
+      out.set(m[1], (upd ?? pub)[1]);
+    }
+  } catch {}
+  return out;
+}
+
 // Full route list for SSG. Project detail slugs appear under both TR and EN;
 // blog stays TR-only for v1.
 export function allRoutes() {
@@ -217,11 +235,20 @@ export function sitemapEntries() {
   // out of the sitemap.
   const excluded = new Set(["/styleguide"]);
 
+  const blogDates = getBlogDates();
+  const latestPost = [...blogDates.values()].sort().at(-1) ?? null;
   for (const route of allRoutes()) {
     if (excluded.has(route)) continue;
     const alt = pairMap.get(route) ?? null;
+    const blogSlug = route.match(/^\/(?:en\/)?blog\/([^/]+)$/)?.[1];
+    const lastmod = blogSlug
+      ? blogDates.get(blogSlug) ?? null
+      : route === "/blog" || route === "/en/blog"
+        ? latestPost
+        : null;
     entries.push({
       loc: withSlash(route),
+      lastmod,
       ...(meta[route] ?? defaultMeta),
       alternates: alt
         ? { ...alt, self: withSlash(alt.self), alt: withSlash(alt.alt) }

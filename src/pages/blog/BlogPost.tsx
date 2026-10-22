@@ -69,11 +69,19 @@ export default function BlogPost() {
   if (!post) return <Navigate to={ui.navigateFallback} replace />;
 
   const category = getCategoryForLocale(post.category, locale);
-  const url = `${SITE}${ui.linkBase}/${post.slug}`;
+  const url = `${SITE}${ui.linkBase}/${post.slug}/`;
   const altSlug = getAlternateBlogSlug(post.slug, locale === "en" ? "tr" : "en");
   const altHref = altSlug
-    ? `${SITE}${locale === "en" ? "/blog" : "/en/blog"}/${altSlug}`
+    ? `${SITE}${locale === "en" ? "/blog" : "/en/blog"}/${altSlug}/`
     : null;
+
+  // x-default points at the TR version (site default language) when one
+  // exists; EN-only posts point at themselves.
+  const trHref = locale === "tr" ? url : altHref ?? url;
+  // Keep <title> within ~60 chars so Google doesn't truncate it: prefer an
+  // explicit seoTitle, otherwise drop the brand suffix when it would overflow.
+  const fullTitle = `${post.title}${ui.titleSuffix}`;
+  const pageTitle = post.seoTitle ?? (fullTitle.length <= 60 ? fullTitle : post.title);
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -89,6 +97,7 @@ export default function BlogPost() {
     articleSection: category.name,
     keywords: post.tags.join(", "),
     inLanguage: ui.inLanguage,
+    image: `${SITE}/og-image.jpg`,
   };
 
   const faqJsonLd = {
@@ -133,18 +142,18 @@ export default function BlogPost() {
     <Layout>
       <Helmet>
         <html lang={locale === "en" ? "en" : "tr"} />
-        <title>{`${post.title}${ui.titleSuffix}`}</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={post.description} />
         <link rel="canonical" href={url} />
         {altHref && (
           <link
             rel="alternate"
-            hrefLang={locale === "en" ? "tr" : "en"}
+            {...{ hreflang: locale === "en" ? "tr" : "en" }}
             href={altHref}
           />
         )}
-        <link rel="alternate" hrefLang={locale} href={url} />
-        <link rel="alternate" hrefLang="x-default" href={`${SITE}/`} />
+        <link rel="alternate" {...{ hreflang: locale }} href={url} />
+        {altHref && <link rel="alternate" {...{ hreflang: "x-default" }} href={trHref} />}
         <meta property="og:type" content="article" />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />

@@ -1,6 +1,6 @@
 export const contact = {
   path: "/iletisim",
-  seoTitle: "İletişim | Yusuf Bayrak",
+  seoTitle: "İletişim — B2B Büyüme Projeleri için | Yusuf Bayrak",
   seoDescription:
     "Ürün, dijital pazarlama ve AI otomasyonu projeleriniz için Yusuf Bayrak ile iletişime geçin.",
   heading: "İletişim",

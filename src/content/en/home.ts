@@ -2,7 +2,7 @@ import type { ProjectSummary } from "../types";
 
 export const home = {
   path: "/en",
-  seoTitle: "Yusuf Bayrak — B2B Lead Generation & AI Automation Expert",
+  seoTitle: "Yusuf Bayrak — B2B Lead Generation & AI Automation",
   seoDescription:
     "Yusuf Bayrak's personal site. B2B performance marketing insights, digital growth systems and free SaaS calculators.",
   heroLabel: "Digital Marketing | Lead Generation | Product Development",

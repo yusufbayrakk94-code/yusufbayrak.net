@@ -1,6 +1,6 @@
 export const about = {
   path: "/en/about",
-  seoTitle: "About | Yusuf Bayrak",
+  seoTitle: "About Yusuf Bayrak — Digital Marketing Specialist",
   seoDescription:
     "Yusuf Bayrak — digital marketing specialist focused on B2B growth strategy, performance marketing and data-driven lead generation.",
   heading: "About",

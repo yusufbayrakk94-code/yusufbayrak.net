@@ -46,7 +46,7 @@ export function LocaleMeta({
           lowercase attribute. */}
       <link rel="alternate" {...{ hreflang: "tr" }} href={trHref} />
       <link rel="alternate" {...{ hreflang: "en" }} href={enHref} />
-      <link rel="alternate" {...{ hreflang: "x-default" }} href={`${SITE_URL}/`} />
+      <link rel="alternate" {...{ hreflang: "x-default" }} href={trHref} />
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

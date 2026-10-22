@@ -2,7 +2,7 @@ import type { ProjectDetail } from "../types";
 
 export const projectsPage = {
   listPath: "/projeler",
-  seoTitle: "Projeler | Yusuf Bayrak",
+  seoTitle: "Projeler — SaaS, MCP ve Otomasyon İşleri | Yusuf Bayrak",
   seoDescription:
     "AdGusto, Brandog & Marka-MCP ve Büyüme & Otomasyon Altyapıları başta olmak üzere geliştirdiğim ürün ve projeler.",
   heading: "Projeler",
@@ -45,7 +45,7 @@ export const projects: ProjectDetail[] = [
   {
     slug: "brandog-marka-mcp",
     name: "Brandog & Marka-MCP",
-    description: "TÜRKPATENT Veritabanına Yapay zeka Model Context Protocol (MCP) altyapısıyla bağlanan, güçlendirilmiş; marka tescil ve süreç yönetimini akıllı, otomatize bir yapıda buluşturan platform çözümü.",
+    description: "TÜRKPATENT veritabanını Model Context Protocol (MCP) ile yapay zekaya bağlayan; marka araştırma, tescil ve süreç yönetimini otomatikleştiren platform.",
     fullDescription: "Brandog & Marka-MCP, TÜRKPATENT veritabanını Yapay Zeka Model Context Protocol (MCP) altyapısıyla güçlendirerek marka tescil araştırma, takip ve süreç yönetimini tek bir platformda birleştiren akıllı bir otomasyon çözümüdür.",
     stack: ["MCP", "Yapay Zeka", "TÜRKPATENT", "Node.js", "PostgreSQL"],
     impact: "Marka tescil süreçlerini otomatize eder",

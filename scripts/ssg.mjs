@@ -54,6 +54,19 @@ async function main() {
       out = out.replace(/<meta\s+property="og:description"[^>]*>\s*/gi, "");
       out = out.replace(/<meta\s+name="twitter:title"[^>]*>\s*/gi, "");
       out = out.replace(/<meta\s+name="twitter:description"[^>]*>\s*/gi, "");
+      // Drop template defaults that the page's Helmet already sets, so each
+      // property appears exactly once (duplicate og:type confuses parsers).
+      for (const [attr, key] of [
+        ["property", "og:type"],
+        ["property", "og:image"],
+        ["name", "twitter:image"],
+        ["name", "twitter:card"],
+      ]) {
+        if (metaTags.includes(`${attr}="${key}"`)) {
+          const esc = key.replace(/[.:]/g, (c) => `\\${c}`);
+          out = out.replace(new RegExp(`<meta\\s+${attr}="${esc}(:[a-z]+)?"[^>]*>\\s*`, "gi"), "");
+        }
+      }
 
       // Inject helmet head just before </head>.
       const headInject = [titleTag, metaTags, linkTags, scriptTags]
@@ -61,10 +74,19 @@ async function main() {
         .join("\n    ");
       out = out.replace("</head>", `    ${headInject}\n  </head>`);
 
+      // Hosting 301s slash-less directory URLs to the slash form, so point
+      // internal links straight at the final URL (no redirect hop for
+      // crawlers). Router links still navigate client-side via their `to`.
+      const body = html.replace(
+        /href="(\/[^"?#]*?)(?<!\/)([?#][^"]*)?"/g,
+        (m, p1, rest = "") =>
+          /\.[a-z0-9]{2,5}$/i.test(p1) ? m : `href="${p1}/${rest}"`
+      );
+
       // Inject rendered app into #root for hydration.
       out = out.replace(
         '<div id="root"></div>',
-        `<div id="root">${html}</div>`
+        `<div id="root">${body}</div>`
       );
 
       // Resolve target file. `/` -> dist/index.html; `/foo` -> dist/foo/index.html.

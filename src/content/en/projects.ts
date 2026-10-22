@@ -2,7 +2,7 @@ import type { ProjectDetail } from "../types";
 
 export const projectsPage = {
   listPath: "/en/projects",
-  seoTitle: "Projects | Yusuf Bayrak",
+  seoTitle: "Projects — SaaS, MCP & Automation Work | Yusuf Bayrak",
   seoDescription:
     "Products and projects I've built, including AdGusto, Brandog & Marka-MCP and Growth & Automation Infrastructure.",
   heading: "Projects",
@@ -45,7 +45,7 @@ export const projects: ProjectDetail[] = [
   {
     slug: "brandog-marka-mcp",
     name: "Brandog & Marka-MCP",
-    description: "A platform that connects the Turkish Patent Office database to AI via Model Context Protocol (MCP), unifying trademark research and case management in an automated, intelligent layer.",
+    description: "A platform connecting the Turkish Patent Office database to AI via Model Context Protocol (MCP) to automate trademark research and case management.",
     fullDescription: "Brandog & Marka-MCP powers trademark research, monitoring and case management on a single platform by connecting the TÜRKPATENT database to AI through Model Context Protocol (MCP).",
     stack: ["MCP", "AI", "TÜRKPATENT", "Node.js", "PostgreSQL"],
     impact: "Automates trademark registration workflows",

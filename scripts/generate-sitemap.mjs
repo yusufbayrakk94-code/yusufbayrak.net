@@ -14,12 +14,13 @@ function build() {
         ? [
             `    <xhtml:link rel="alternate" hreflang="${e.alternates.selfLang}" href="${SITE_URL}${e.alternates.self}" />`,
             `    <xhtml:link rel="alternate" hreflang="${e.alternates.altLang}" href="${SITE_URL}${e.alternates.alt}" />`,
-            `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/" />`,
+            `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${e.alternates.selfLang === "tr" ? e.alternates.self : e.alternates.alt}" />`,
           ].join("\n")
         : null;
       return [
         `  <url>`,
         `    <loc>${SITE_URL}${e.loc}</loc>`,
+        e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>` : null,
         alternates,
         `    <changefreq>${e.changefreq}</changefreq>`,
         `    <priority>${e.priority}</priority>`,

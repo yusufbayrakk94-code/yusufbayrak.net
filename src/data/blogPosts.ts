@@ -64,6 +64,8 @@ export type RelatedToolKey =
 export interface BlogPost {
   slug: string;
   title: string;
+  // Optional <title> override (≤60 chars). Falls back to title + suffix.
+  seoTitle?: string;
   description: string;
   category: BlogCategorySlug;
   tldr: string[];
@@ -145,6 +147,7 @@ export const BLOG_CATEGORIES_EN: BlogCategory[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "b2b-lead-generation-huni-tasarimi",
+    seoTitle: "B2B Lead Generation Hunisi Nasıl Tasarlanır? | Rehber",
     title: "B2B Lead Generation Hunisi Nasıl Tasarlanır? Uçtan Uca Rehber",
     description:
       "Nitelikli B2B lead üretmek için ICP tanımı, kanal seçimi, mesajlaşma ve CRM entegrasyonunu kapsayan pratik bir framework.",
@@ -445,6 +448,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "saas-metrikleri-arr-cac-ltv",
+    seoTitle: "SaaS Metrikleri 101: ARR, CAC, LTV ve Churn Rehberi",
     title: "SaaS Metrikleri 101: ARR, CAC, LTV ve Churn Nasıl Yorumlanır?",
     description:
       "SaaS büyümesini yöneten dört temel metrik; sağlıklı bir işletme için hangi bantlarda olmalı ve nasıl iyileştirilir?",
@@ -551,6 +555,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "meta-ads-ogrenme-asamasindan-cikma-taktikleri",
+    seoTitle: "Meta Ads Öğrenme Aşamasından Hızlı Çıkmanın 5 Yolu",
     title: "Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır? 5 Taktik",
     description:
       "Meta Ads Learning Phase'i 7 gün içinde tamamlamak için bütçe, event, audience ve kreatif odaklı 5 pratik taktik.",
@@ -652,6 +657,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "b2b-lead-generation-maliyetleri-nasil-dusurulur",
+    seoTitle: "B2B Lead Generation Maliyetleri Nasıl Düşürülür? (2026)",
     title: "B2B Lead Generation Maliyetleri Nasıl Düşürülür? (2026 Rehberi)",
     description:
       "Offline conversion tracking, katmanlı hedefleme, GEO ve davranışsal e-posta otomasyonu ile B2B lead başına maliyeti ek bütçe harcamadan %30-50 düşürme rehberi.",
@@ -820,9 +826,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "linkedin-reklamlari-turkiye-2026-firsat",
+    seoTitle: "LinkedIn Reklamları Türkiye 2026: Neden Şimdi Ucuz?",
     title: "Türkiye'de LinkedIn Reklamları Neden Şimdi Ucuz? 2026 Verileriyle Fırsat Penceresi",
     description:
-      "DataReportal'ın 2026 Türkiye verilerine göre LinkedIn'in reklam erişimi diğer platformlardan hızlı büyüyor. Rekabetin henüz doymadığı bu fırsat penceresini B2B için nasıl kullanacağınızı anlatıyoruz.",
+      "DataReportal 2026 verilerine göre LinkedIn'in Türkiye'deki reklam erişimi hızla büyüyor. Rekabet doymadan bu fırsatı B2B'de nasıl kullanacağınızı anlatıyoruz.",
     category: "performans-pazarlama",
     tldr: [
       "DataReportal'ın Kepios ile hazırladığı Türkiye raporuna göre LinkedIn'in reklamla ulaşılabilir kitlesi, olgunlaşmış sosyal platformlardan belirgin biçimde hızlı büyüyor.",
@@ -932,9 +939,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "nrr-nedir-saas-buyume-metrigi",
+    seoTitle: "NRR Nedir? Net Revenue Retention Hesaplama ve Önemi",
     title: "NRR (Net Revenue Retention) Nedir? SaaS'ta Neden ARR'dan Daha Önemli?",
     description:
-      "NRR'nin ARR ve MRR'dan farkı, nasıl hesaplandığı, sağlıklı aralıkları ve yatırımcıların neden değerlemeyi bu metrik üzerinden kurduğu — örnek hesaplamalarla.",
+      "NRR'nin ARR ve MRR'dan farkı, hesaplama formülü, sağlıklı aralıkları ve yatırımcıların neden bu metriğe baktığı — örnek hesaplamalarla.",
     category: "saas-buyume",
     tldr: [
       "NRR = (Başlangıç MRR + Genişleme − Daralma − Churn) / Başlangıç MRR × 100. Yeni müşteriler hesaba girmez.",
@@ -1046,6 +1054,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "linkedin-soguk-mesaj-yanit-orani",
+    seoTitle: "LinkedIn Soğuk Mesaj Yanıt Oranını Artırma (Şablonlar)",
     title: "LinkedIn'de Soğuk Mesajla Yanıt Alma Oranını Artırma: Şablonlar ve Taktikler",
     description:
       "LinkedIn soğuk mesajlarında yanıt oranını yükselten açılış cümleleri, kullanıma hazır şablonlar ve takip mesajı zamanlaması — B2B outbound için pratik rehber.",
@@ -1186,9 +1195,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "icp-ideal-musteri-profili-sablon",
+    seoTitle: "ICP (İdeal Müşteri Profili) Nasıl Tanımlanır? + Şablon",
     title: "ICP (Ideal Customer Profile) Nasıl Tanımlanır? Şablon + 3 Örnek",
     description:
-      "Doldurulabilir bir ICP şablonu ve SaaS, e-ticaret ve endüstriyel B2B sektörlerinden üç somut örnek — hedefleme, mesajlaşma ve lead skorlamayı aynı tanımdan besleyin.",
+      "Doldurulabilir ICP şablonu ve SaaS, e-ticaret, endüstriyel B2B'den üç örnek — hedefleme, mesaj ve lead skorlamayı tek tanımdan besleyin.",
     category: "b2b-lead-generation",
     tldr: [
       "ICP bir persona değildir: persona kişiyi, ICP ise satın alan şirketi tanımlar.",
@@ -2134,9 +2144,10 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "linkedin-ads-turkey-2026-opportunity",
+    seoTitle: "LinkedIn Ads in Turkey 2026: Why They're Cheap Now",
     title: "Why Are LinkedIn Ads Cheaper in Turkey Right Now? The 2026 Opportunity Window",
     description:
-      "DataReportal's 2026 Turkey data shows LinkedIn's ad reach growing faster than mature platforms. Here is why that creates an unsaturated auction — and how B2B teams should use it.",
+      "DataReportal's 2026 Turkey data shows LinkedIn ad reach outpacing mature platforms. Why that means an unsaturated auction — and how B2B teams can use it.",
     category: "performans-pazarlama",
     tldr: [
       "According to the DataReportal report produced with Kepios, LinkedIn's advertising reach in Turkey is growing noticeably faster than mature social platforms.",
@@ -2246,6 +2257,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "what-is-nrr-saas-growth-metric",
+    seoTitle: "What Is NRR? Net Revenue Retention Explained",
     title: "What Is NRR (Net Revenue Retention) and Why It Beats ARR in SaaS",
     description:
       "How NRR differs from ARR and MRR, how to calculate it, healthy benchmarks by segment, and why investors build valuation around it — with worked examples.",

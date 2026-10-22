@@ -19,7 +19,7 @@ import { SITE_URL as SITE } from "@/i18n/routes";
 
 const UI = {
   tr: {
-    title: "Blog — Performans Pazarlama, B2B Lead Gen ve AI | Yusuf Bayrak",
+    title: "Blog: Performans Pazarlama, B2B Lead Gen ve AI Otomasyon",
     description:
       "Performans pazarlama, B2B lead generation, yapay zeka otomasyonları ve SaaS büyümesi üzerine uygulamalı içerikler ve rehberler.",
     ogTitle: "Blog | Yusuf Bayrak",
@@ -42,7 +42,7 @@ const UI = {
     linkBase: "/blog",
   },
   en: {
-    title: "Blog — Performance Marketing, B2B Lead Gen & AI | Yusuf Bayrak",
+    title: "Blog: Performance Marketing, B2B Lead Gen & AI",
     description:
       "Practical guides on performance marketing, B2B lead generation, AI automation and SaaS growth.",
     ogTitle: "Blog | Yusuf Bayrak",
@@ -96,14 +96,18 @@ export default function BlogList() {
     })),
   };
 
-  const path = locale === "en" ? "/en/blog" : "/blog";
+  const path = locale === "en" ? "/en/blog/" : "/blog/";
 
   return (
     <Layout>
       <Helmet>
+        <html lang={locale === "en" ? "en" : "tr"} />
         <title>{ui.title}</title>
         <meta name="description" content={ui.description} />
         <link rel="canonical" href={`${SITE}${path}`} />
+        <link rel="alternate" {...{ hreflang: "tr" }} href={`${SITE}/blog/`} />
+        <link rel="alternate" {...{ hreflang: "en" }} href={`${SITE}/en/blog/`} />
+        <link rel="alternate" {...{ hreflang: "x-default" }} href={`${SITE}/blog/`} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={ui.ogTitle} />
         <meta property="og:description" content={ui.ogDescription} />
