@@ -22,8 +22,9 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
 - [ ] Pazaryeri aracı v2: Trendyol vs Hepsiburada yan yana karşılaştırma, desi→kargo yardımcısı, çoklu ürün
 - [ ] Destek yazısı: "Trendyol komisyon oranları ve kâr hesaplama" (aracı besleyen bilgi içeriği)
-- [ ] Yeni araç: Reklam bütçesi planlayıcı (hedef ciro + marj → bütçe, ROAS)
-- [ ] Paylaşılabilir sonuç linki (girdiler URL'de) — tüm araçlar, ToolPage
+- [x] Yeni araç: Reklam bütçesi planlayıcı (e-ticaret + B2B modu) — 2026-10-22
+- [ ] Destek yazısı: "Reklam bütçesi nasıl belirlenir?" (relatedToolKey: ad-budget)
+- [~] Paylaşılabilir sonuç linki (girdiler URL'de) — yeni 2 araçta var, eski araçlara yayılacak
 - [ ] Sonucu e-postayla/PDF gönder (yumuşak lead yakalama)
 - [ ] Gömülebilir widget + backlink ("Bu aracı sitene ekle")
 - [ ] Araçlar arası akış (brüt marj → başabaş ROAS → bütçe planlayıcı)

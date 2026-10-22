@@ -486,3 +486,43 @@ export const marketplace: ToolContent = {
   ],
   relatedPost: { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
 };
+
+export const adBudget: ToolContent = {
+  slug: "ad-budget-calculator",
+  path: "/en/free-tools/ad-budget-calculator",
+  title: "Ad Budget Calculator",
+  description:
+    "Work backwards from your revenue or customer target to a monthly ad budget, break-even and target ROAS, max CPA and max cost per lead.",
+  intro:
+    "Set your ad budget from your own numbers instead of a 'percent of revenue' rule of thumb. In e-commerce mode, start from a revenue target, average order value, gross margin and conversion rate; in B2B mode, start from a new-customer target and your funnel rates. See the maximum budget that keeps you profitable, the target ROAS to enter in Google Ads and the most you can pay per order or per lead. Share your plan as a link.",
+  seoParagraphs: [
+    {
+      heading: "How to calculate an ad budget",
+      body:
+        "A sound ad budget is calculated backwards from the goal. For e-commerce: Max ad budget = Revenue target × (Gross margin − Target net profit rate). With a 40% margin and a 10% profit target you can spend up to 30% of revenue — $150,000 on a $500,000 monthly target. That is a profitability ceiling, not a spending goal. Then check feasibility: Orders needed = Revenue target / AOV; Clicks needed = Orders / Conversion rate; Estimated budget = Clicks × CPC. If the estimate exceeds the ceiling, the calculator tells you the maximum CPC or minimum conversion rate that would make the plan work.",
+    },
+    {
+      heading: "Break-even ROAS, target ROAS and max CPA",
+      body:
+        "Break-even ROAS = 1 / Gross margin (2.5 at a 40% margin). Target ROAS = 1 / (Gross margin − Target profit rate), about 3.33 in the example — enter 333% in Google Ads' Target ROAS bidding. Max CPA = AOV × (Gross margin − Target profit rate). These three numbers decide which campaigns to cut and which to scale.",
+    },
+    {
+      heading: "Planning a B2B ad budget",
+      body:
+        "In B2B the budget comes from the customer target and the funnel. Ten new customers a month at a 25% lead-to-SQL rate and 20% SQL-to-customer rate requires 50 SQLs and 200 leads; at $90 per lead that is an $18,000 monthly budget and $1,800 ad CAC. The calculator shows the CAC payback period from annual revenue per customer and gross margin, and the maximum cost per lead that keeps payback within 12 months.",
+    },
+  ],
+  faqs: [
+    { q: "How much should I spend on ads per month?", a: "The profitable ceiling is Revenue target × (Gross margin − Target net profit rate). Then check whether that budget can buy the traffic you need at your CPC and conversion rate." },
+    { q: "What percentage of revenue should go to advertising?", a: "It depends on margin. Spending 10% of revenue requires a 10 ROAS and 20% requires a 5 ROAS; the share is right for you if your margin can carry that ROAS." },
+    { q: "How do I set a Target ROAS in Google Ads?", a: "Target ROAS = 1 / (Gross margin − Target profit rate); multiply by 100 and enter it as a percentage. A 40% margin and 10% profit target gives roughly 333%." },
+    { q: "How do I set a B2B ad budget?", a: "Divide the customer target by your SQL-to-customer rate, then by your lead-to-SQL rate to get leads needed, and multiply by cost per lead. Check that CAC pays back within about 12 months of gross profit." },
+  ],
+  relatedTools: [
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Measure actual ROAS" },
+    { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator", note: "Net profit per order" },
+    { label: "CAC Payback Period Calculator", href: "/en/free-tools/cac-payback-period-calculator", note: "B2B payback" },
+    { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator", note: "Conversion targets" },
+  ],
+  relatedPost: { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+};

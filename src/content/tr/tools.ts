@@ -505,3 +505,60 @@ export const marketplace: ToolContent = {
   relatedPost: { label: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
   externalSource: { label: "GİB — 330 Sıra No.lu Gelir Vergisi Genel Tebliği bilgi notu (e-ticaret stopajı)", href: "https://gib.gov.tr/sites/default/files/fileadmin/mevzuatek/mevzuatbilginotu/gelirvergisiteblig330not.pdf" },
 };
+
+export const adBudget: ToolContent = {
+  slug: "reklam-butcesi-hesaplama",
+  path: "/ucretsiz-araclar/reklam-butcesi-hesaplama",
+  title: "Reklam Bütçesi Hesaplama Aracı",
+  description:
+    "Hedef cironuzdan veya müşteri hedefinizden geriye doğru aylık reklam bütçenizi, başabaş ve hedef ROAS'ı, maksimum CPA ve CPL'yi hesaplayın.",
+  intro:
+    "Reklam bütçesini 'cironun yüzde kaçı' gibi kaba bir kuralla değil, kendi rakamlarınızla belirleyin. E-ticaret modunda hedef ciro, sepet tutarı, brüt marj ve dönüşüm oranınızdan; B2B modunda hedef müşteri sayısı ve satış hunisi oranlarınızdan yola çıkarak kârlı kalabileceğiniz maksimum bütçeyi, Google Ads'e girmeniz gereken hedef ROAS'ı ve sipariş ya da lead başı ödeyebileceğiniz üst sınırı görün. Planınızı link olarak paylaşabilirsiniz.",
+  seoParagraphs: [
+    {
+      heading: "Reklam bütçesi nasıl hesaplanır?",
+      body:
+        "Doğru reklam bütçesi, hedeften geriye doğru hesaplanır. E-ticarette formül şudur: Maksimum reklam bütçesi = Hedef ciro × (Brüt kâr marjı − Hedef net kâr oranı). Brüt marjınız %40 ve reklam sonrası %10 kâr bırakmak istiyorsanız, cironun %30'una kadarını reklama ayırabilirsiniz; 500.000 TL'lik aylık ciro hedefi için bu 150.000 TL demektir. Bu tutar bir harcama hedefi değil, kârlılığın üst sınırıdır. İkinci adım, bu bütçeyle hedefe ulaşıp ulaşamayacağınızı kontrol etmektir: Gereken sipariş = Hedef ciro / Ortalama sepet, Gereken tıklama = Gereken sipariş / Dönüşüm oranı, Tahmini bütçe = Gereken tıklama × TBM.",
+    },
+    {
+      heading: "Örnek: 500.000 TL ciro hedefi için ne kadar reklam gerekir?",
+      body:
+        "Ortalama sepeti 750 TL, brüt marjı %40 ve dönüşüm oranı %1,5 olan bir mağaza, aylık 500.000 TL ciro için yaklaşık 667 siparişe ve 44.445 tıklamaya ihtiyaç duyar. Ortalama TBM 4 TL ise bu trafik yaklaşık 177.800 TL'ye mal olur; oysa %10 net kâr hedefiyle ayrılabilecek üst sınır 150.000 TL'dir. Yani bu varsayımlarla hedef kâr tutmaz. Araç burada iki çıkış yolunu sayısal olarak gösterir: TBM'yi en fazla yaklaşık 3,38 TL'ye indirmek ya da dönüşüm oranını en az %1,78'e çıkarmak. Bütçe kararını 'daha çok harcayalım' yerine 'hangi kaldıracı oynatmalıyız' sorusuna çevirmek, aracın asıl değeridir.",
+    },
+    {
+      heading: "Başabaş ROAS ve hedef ROAS",
+      body:
+        "Başabaş ROAS = 1 / Brüt kâr marjı formülüyle bulunur; %40 marjda 2,5'tir ve bunun altındaki her kampanya zarar ettirir. Hedef ROAS ise kâr hedefinizi de içerir: Hedef ROAS = 1 / (Brüt marj − Hedef net kâr oranı). Örnekte 1 / 0,30 ≈ 3,33'tür; Google Ads'te Hedef ROAS teklif stratejisine girilecek değer %333'tür. Sipariş başı ödeyebileceğiniz maksimum edinme maliyeti (CPA) ise Ortalama sepet × (Brüt marj − Hedef kâr) formülüyle 225 TL'dir. Bu üç sayı, kampanya optimizasyonunda hangi reklam setini kapatıp hangisini ölçekleyeceğinizi belirler.",
+    },
+    {
+      heading: "Reklam bütçesi cironun yüzde kaçı olmalı?",
+      body:
+        "Sık duyulan '%5-15' gibi aralıklar ancak bir başlangıç fikri olabilir; çünkü doğru oran tamamen marjınıza bağlıdır. Araçtaki senaryo tablosu, cironun %5, %10, %15 ve %20'si kadar bütçe ayırdığınızda her senaryonun gerektirdiği ROAS'ı ve reklam sonrası kalan brüt kârı gösterir. Örneğin cironun %20'sini reklama ayırmak 5 ROAS gerektirir; %40 marjlı bir mağazada bu senaryo hâlâ kârlıdır, %20 marjlı bir mağazada ise reklam sonrası kâr sıfırlanır. Büyüme döneminde bütçe payını bilinçli olarak artırmak mümkündür, ancak bunun müşteri yaşam boyu değeriyle (LTV) desteklenmesi gerekir.",
+    },
+    {
+      heading: "B2B'de reklam bütçesi nasıl planlanır?",
+      body:
+        "B2B'de satış haftalar sürdüğü için bütçe, ciro yerine müşteri hedefinden ve satış hunisinden hesaplanır. Ayda 10 yeni müşteri hedefleyen, lead'lerinin %25'ini nitelikli fırsata (SQL) ve SQL'lerinin %20'sini müşteriye çeviren bir şirket, 50 SQL ve 200 lead'e ihtiyaç duyar. Lead başı maliyet 900 TL ise aylık bütçe 180.000 TL, müşteri başı reklam maliyeti (CAC) 18.000 TL olur. Müşteri başı yıllık gelir 120.000 TL ve brüt marj %70 ise bu CAC yaklaşık 2,6 ayda geri döner. Araç ayrıca 12 aylık geri ödeme sınırını korumak için ödeyebileceğiniz maksimum lead maliyetini hesaplar; LinkedIn gibi yüksek CPL'li kanalların sizin için mantıklı olup olmadığını bu sayıya bakarak karar verebilirsiniz.",
+    },
+    {
+      heading: "Kur, sezon ve öğrenme aşaması",
+      body:
+        "Türkiye'de reklam platformlarının bir kısmı maliyetleri döviz bazlı fiyatlar; kur hareketleri TBM'yi TL cinsinden doğrudan artırır, bu yüzden planı aylık olarak güncellemek gerekir. Efsane Kasım ve Black Friday gibi dönemlerde tıklama maliyetleri belirgin şekilde yükselir; bu dönemler için TBM varsayımını ayrıca artırarak ayrı bir senaryo çalıştırın. Son olarak, yeni kampanyalar öğrenme aşamasında hedef ROAS'ın altında performans gösterebilir; ilk iki-üç haftanın verisine göre bütçeyi kesmek yerine, aracın verdiği başabaş eşiğini ve yeterli dönüşüm hacmini birlikte izleyin.",
+    },
+  ],
+  faqs: [
+    { q: "Aylık reklam bütçesi ne kadar olmalı?", a: "Kârlılığı koruyan üst sınır, Hedef ciro × (Brüt kâr marjı − Hedef net kâr oranı) formülüyle bulunur. %40 marj ve %10 kâr hedefiyle cironun %30'una kadarı reklama ayrılabilir. Ardından TBM ve dönüşüm oranınızla bu bütçenin hedefe yetip yetmediğini kontrol edin." },
+    { q: "Reklam bütçesi cironun yüzde kaçı olmalı?", a: "Sabit bir oran yoktur; marjınıza bağlıdır. Cironun %10'unu reklama ayırmak 10 ROAS, %20'sini ayırmak 5 ROAS gerektirir. Marjınız bu ROAS'ı taşıyabiliyorsa oran sizin için uygundur." },
+    { q: "Başabaş ROAS nasıl hesaplanır?", a: "Başabaş ROAS = 1 / Brüt kâr marjı. %40 marjda 2,5, %25 marjda 4'tür. Bu değerin altındaki kampanyalar ürün maliyetini ve reklam harcamasını karşılamaz." },
+    { q: "Maksimum CPA nasıl bulunur?", a: "Maksimum CPA = Ortalama sepet tutarı × (Brüt marj − Hedef net kâr oranı). 750 TL sepet, %40 marj ve %10 kâr hedefinde sipariş başı 225 TL'ye kadar edinme maliyeti ödeyebilirsiniz." },
+    { q: "B2B'de reklam bütçesi nasıl belirlenir?", a: "Hedef müşteri sayısını SQL → müşteri oranına, çıkan SQL sayısını lead → SQL oranına bölerek gereken lead sayısını bulun; bunu lead başı maliyetle çarpın. Sonra CAC'ın brüt kârla kaç ayda geri döndüğünü kontrol edin; 12 ayın altı sağlıklı kabul edilir." },
+    { q: "Google Ads hedef ROAS değerini nasıl belirlemeliyim?", a: "Hedef ROAS = 1 / (Brüt marj − Hedef net kâr oranı) ile hesaplayın ve sonucu 100 ile çarparak yüzde olarak girin. %40 marj ve %10 kâr hedefi için değer yaklaşık %333'tür." },
+  ],
+  relatedTools: [
+    { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Gerçekleşen ROAS'ı ölçün" },
+    { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Sipariş başı net kâr" },
+    { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici", note: "B2B geri ödeme" },
+    { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici", note: "Dönüşüm hedefi" },
+  ],
+  relatedPost: { label: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+};

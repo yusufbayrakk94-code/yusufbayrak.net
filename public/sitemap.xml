@@ -194,6 +194,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/ucretsiz-araclar/reklam-butcesi-hesaplama/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/reklam-butcesi-hesaplama/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/ad-budget-calculator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/ucretsiz-araclar/reklam-butcesi-hesaplama/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/iletisim/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/iletisim/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/contact/" />
@@ -525,6 +533,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/marketplace-profit-calculator/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/free-tools/ad-budget-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/ad-budget-calculator/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/reklam-butcesi-hesaplama/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/ucretsiz-araclar/reklam-butcesi-hesaplama/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

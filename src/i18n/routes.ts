@@ -51,6 +51,7 @@ export const STATIC_ROUTE_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici", en: "/en/free-tools/cac-payback-period-calculator" },
   { tr: "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun",       en: "/en/free-tools/marketing-channel-quiz" },
   { tr: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", en: "/en/free-tools/marketplace-profit-calculator" },
+  { tr: "/ucretsiz-araclar/reklam-butcesi-hesaplama", en: "/en/free-tools/ad-budget-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
 
@@ -134,6 +135,7 @@ export const STATIC_TR_ROUTES = [
   "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici",
   "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun",
   "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama",
+  "/ucretsiz-araclar/reklam-butcesi-hesaplama",
   "/iletisim",
   "/blog",
   "/styleguide",
@@ -164,6 +166,7 @@ export const STATIC_EN_ROUTES = [
   "/en/free-tools/cac-payback-period-calculator",
   "/en/free-tools/marketing-channel-quiz",
   "/en/free-tools/marketplace-profit-calculator",
+  "/en/free-tools/ad-budget-calculator",
   "/en/contact",
   "/en/blog",
 ] as const;

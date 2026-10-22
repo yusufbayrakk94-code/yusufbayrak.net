@@ -22,6 +22,7 @@ import ChurnCalculator from "./pages/tools/ChurnCalculator";
 import LtvCalculator from "./pages/tools/LtvCalculator";
 import RoasCalculator from "./pages/tools/RoasCalculator";
 import MarketplaceProfitCalculator from "./pages/tools/MarketplaceProfitCalculator";
+import AdBudgetCalculator from "./pages/tools/AdBudgetCalculator";
 import UtmBuilder from "./pages/tools/UtmBuilder";
 import LlmsTxtGenerator from "./pages/tools/LlmsTxtGenerator";
 import GrossMarginCalculator from "./pages/tools/GrossMarginCalculator";
@@ -71,6 +72,7 @@ export function AppRoutes() {
       <Route path="/ucretsiz-araclar/ltv-hesaplayici" element={<LtvCalculator />} />
       <Route path="/ucretsiz-araclar/roas-hesaplayici" element={<RoasCalculator />} />
       <Route path="/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama" element={<MarketplaceProfitCalculator />} />
+      <Route path="/ucretsiz-araclar/reklam-butcesi-hesaplama" element={<AdBudgetCalculator />} />
       <Route path="/ucretsiz-araclar/utm-link-olusturucu" element={<UtmBuilder />} />
       <Route path="/ucretsiz-araclar/llms-txt-olusturucu" element={<LlmsTxtGenerator />} />
       <Route path="/ucretsiz-araclar/brut-kar-marji-hesaplayici" element={<GrossMarginCalculator />} />
@@ -102,6 +104,7 @@ export function AppRoutes() {
       <Route path="/en/free-tools/ltv-calculator" element={<LtvCalculator />} />
       <Route path="/en/free-tools/roas-calculator" element={<RoasCalculator />} />
       <Route path="/en/free-tools/marketplace-profit-calculator" element={<MarketplaceProfitCalculator />} />
+      <Route path="/en/free-tools/ad-budget-calculator" element={<AdBudgetCalculator />} />
       <Route path="/en/free-tools/utm-builder" element={<UtmBuilder />} />
       <Route path="/en/free-tools/llms-txt-generator" element={<LlmsTxtGenerator />} />
       <Route path="/en/free-tools/gross-profit-margin-calculator" element={<GrossMarginCalculator />} />

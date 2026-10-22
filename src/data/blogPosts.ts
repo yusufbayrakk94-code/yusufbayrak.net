@@ -59,7 +59,9 @@ export type RelatedToolKey =
   | "utm"
   | "conversion"
   | "cac-payback"
-  | "llms-txt";
+  | "llms-txt"
+  | "marketplace"
+  | "ad-budget";
 
 export interface BlogPost {
   slug: string;
@@ -2986,6 +2988,30 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       href: "/en/free-tools/llms-txt-generator",
       label: "llms.txt Generator",
       description: "Generate your site's llms.txt file for AI crawlers.",
+    },
+  },
+  marketplace: {
+    tr: {
+      href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama",
+      label: "Trendyol & Hepsiburada Kâr Hesaplama",
+      description: "Komisyon, kargo, stopaj, iade ve reklam dahil sipariş başı net kârınızı görün.",
+    },
+    en: {
+      href: "/en/free-tools/marketplace-profit-calculator",
+      label: "Trendyol & Hepsiburada Profit Calculator",
+      description: "Net profit per order after commission, shipping, returns and ads.",
+    },
+  },
+  "ad-budget": {
+    tr: {
+      href: "/ucretsiz-araclar/reklam-butcesi-hesaplama",
+      label: "Reklam Bütçesi Hesaplama",
+      description: "Hedef cirodan bütçe, başabaş/hedef ROAS ve maks. CPA hesaplayın.",
+    },
+    en: {
+      href: "/en/free-tools/ad-budget-calculator",
+      label: "Ad Budget Calculator",
+      description: "Budget, break-even/target ROAS and max CPA from your revenue target.",
     },
   },
 };
