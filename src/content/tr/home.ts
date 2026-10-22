@@ -15,7 +15,7 @@ export const home = {
   viewAll: "Tüm projeleri gör",
   viewAllHref: "/projeler",
   featured: [
-    { slug: "adgusto", name: "AdGusto", description: "Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS projesi.", stack: ["SaaS", "Meta Ads", "Kreatif Yönetimi"], impact: "Rakip analizi ve kreatif yönetimini hızlandırır" },
+    { slug: "adgusto", name: "AdGusto", description: "Meta, Instagram, Google ve Linkedin reklam yönetimi tek panelde. Yapay zeka gerekçeli öneriler verir, siz onaylarsınız; gelen müşteri adaylarını sesli asistan arar.", stack: ["Yapay Zekâ", "Meta Ads", "Google Ads"], impact: "Reklam yönetimini tek panelde toplar" },
     { slug: "brandog-marka-mcp", name: "Brandog & Marka-MCP", description: "TÜRKPATENT Veritabanına Yapay zeka Model Context Protocol (MCP) altyapısıyla bağlanan, güçlendirilmiş; marka tescil ve süreç yönetimini akıllı, otomatize bir yapıda buluşturan platform çözümü.", stack: ["MCP", "Yapay Zeka", "TÜRKPATENT"], impact: "Marka tescil süreçlerini otomatize eder" },
     { slug: "buyume-otomasyon-altyapilari", name: "Büyüme & Otomasyon Altyapıları", description: "Modern low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle markalar için kurguladığım sürdürülebilir büyüme motorları.", stack: ["Low-code", "Otomasyon", "Veri Stratejisi"], impact: "Sürdürülebilir büyüme motorları kurar" },
   ] satisfies ProjectSummary[],

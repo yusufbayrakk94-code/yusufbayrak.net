@@ -11,7 +11,7 @@
 
 ## Projeler
 
-- [AdGusto](https://yusufbayrak.net/projeler/adgusto/): Meta Ads kütüphane entegrasyonuyla rakip analizini ve kreatif yönetimini hızlandıran SaaS projesi. Canlı: https://www.adgusto.app
+- [AdGusto](https://yusufbayrak.net/projeler/adgusto/): Meta, Instagram, Google ve Linkedin reklam yönetimi tek panelde. Yapay zeka gerekçeli öneriler verir, siz onaylarsınız; gelen müşteri adaylarını sesli asistan arar. Canlı: https://adgusto.app
 - [Brandog & Marka-MCP](https://yusufbayrak.net/projeler/brandog-marka-mcp/): TÜRKPATENT veritabanını Model Context Protocol (MCP) ile yapay zekaya bağlayan; marka araştırma, tescil ve süreç yönetimini otomatikleştiren platform. Canlı: https://brandog.lovable.app
 - [Büyüme & Otomasyon Altyapıları](https://yusufbayrak.net/projeler/buyume-otomasyon-altyapilari/): Modern low-code araçlar, otomasyon sistemleri ve veri odaklı stratejilerle markalar için kurguladığım sürdürülebilir büyüme motorları.
 
