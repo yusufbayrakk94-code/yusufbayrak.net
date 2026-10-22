@@ -941,10 +941,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "nrr-nedir-saas-buyume-metrigi",
-    seoTitle: "NRR Nedir? Net Revenue Retention Hesaplama ve Önemi",
+    seoTitle: "NRR Nedir? Net Gelir Tutundurma Hesaplama + Örnek",
     title: "NRR (Net Revenue Retention) Nedir? SaaS'ta Neden ARR'dan Daha Önemli?",
     description:
-      "NRR'nin ARR ve MRR'dan farkı, hesaplama formülü, sağlıklı aralıkları ve yatırımcıların neden bu metriğe baktığı — örnek hesaplamalarla.",
+      "NRR, mevcut müşterilerden bir yıl sonra elde tutulan gelirin oranıdır. Formül, örnek hesap, iyi NRR kaç olmalı ve ARR/MRR'dan farkı.",
     category: "saas-buyume",
     tldr: [
       "NRR = (Başlangıç MRR + Genişleme − Daralma − Churn) / Başlangıç MRR × 100. Yeni müşteriler hesaba girmez.",

@@ -290,6 +290,7 @@ export default function BlogPost() {
               <Link
                 key={t}
                 to={`${ui.linkBase}?tag=${encodeURIComponent(t)}`}
+                          rel="nofollow"
                 className="text-xs font-mono px-2 py-1 rounded bg-secondary text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
               >
                 #{t}

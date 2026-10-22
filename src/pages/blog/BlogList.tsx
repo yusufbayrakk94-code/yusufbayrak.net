@@ -102,6 +102,8 @@ export default function BlogList() {
     <Layout>
       <Helmet>
         <html lang={locale === "en" ? "en" : "tr"} />
+        {/* Tag-filtered views are thin duplicates of the list: keep them out of the index. */}
+        {activeTag && <meta name="robots" content="noindex,follow" />}
         <title>{ui.title}</title>
         <meta name="description" content={ui.description} />
         <link rel="canonical" href={`${SITE}${path}`} />
@@ -215,6 +217,7 @@ export default function BlogList() {
                         <Link
                           key={t}
                           to={`${ui.linkBase}?tag=${encodeURIComponent(t)}`}
+                          rel="nofollow"
                           className="relative z-10 text-[10px] font-mono px-2 py-0.5 rounded bg-secondary text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                         >
                           {t}

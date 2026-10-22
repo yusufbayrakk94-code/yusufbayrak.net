@@ -12,8 +12,10 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] yapılacak · [~] devam ediyor · [x] tamamlandı · [!] engelli (sebebiyle)
 
 ## Altyapı / veri
-- [!] Search Console verisi — CTR analizi için gerekli. Kullanıcıdan erişim
-      bekleniyor (servis hesabı, dışa aktarım veya masaüstü tarayıcı).
+- [x] Search Console erişimi: kullanıcının masaüstü uygulamasındaki tarayıcı üzerinden (2026-10-22)
+- [ ] 'Keşfedildi - dizine eklenmedi' 11 sayfa + yeni araçlar için dizine ekleme isteği (kullanıcı onayıyla)
+- [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
+- [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
 
 ## Araçlar
 - [x] Araç ↔ blog otomatik iç link (relatedToolKey ters eşleme) — 2026-10-22
