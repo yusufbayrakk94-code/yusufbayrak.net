@@ -1432,6 +1432,124 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "roas-nedir-nasil-hesaplanir",
+    seoTitle: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır?",
+    title: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır? (Başabaş Formülüyle)",
+    description:
+      "ROAS formülü, başabaş ROAS hesaplama, hedef ROAS belirleme ve platform ROAS'ının neden yanıltıcı olabildiği — örnek hesaplamalarla adım adım rehber.",
+    category: "performans-pazarlama",
+    tldr: [
+      "ROAS = Reklamdan gelen gelir / Reklam harcaması. 1.000 TL harcayıp 4.000 TL ciro elde ettiyseniz ROAS 4'tür (veya %400).",
+      "'İyi ROAS' diye evrensel bir sayı yoktur; eşik brüt kâr marjınıza bağlıdır: Başabaş ROAS = 1 / Brüt kâr marjı.",
+      "%40 marjlı bir işletme için başabaş ROAS 2,5'tir; 3 ROAS kârlı, 2 ROAS ise her satışta zarar demektir.",
+      "Kararları reklam paneli ROAS'ına değil, tüm kanalları kapsayan MER (toplam ciro / toplam pazarlama harcaması) ile doğrulayın.",
+    ],
+    publishedAt: "2026-10-22",
+    readingMinutes: 7,
+    tags: ["ROAS", "Performans Pazarlama", "Google Ads", "Meta Ads", "E-ticaret"],
+    sections: [
+      {
+        heading: "ROAS Nedir?",
+        paragraphs: [
+          "ROAS (Return on Ad Spend — reklam harcamasının getirisi), reklama harcadığınız her 1 TL'nin karşılığında ne kadar ciro elde ettiğinizi gösteren metriktir. Performans pazarlamasında kampanya, reklam seti ve kreatif düzeyinde verim karşılaştırmanın en yaygın yoludur.",
+          "ROAS bir ciro metriğidir, kârlılık metriği değildir. Bu ayrım, metriği doğru okumanın anahtarıdır: aynı 4 ROAS, %70 marjlı bir dijital üründe çok kârlıyken %20 marjlı bir elektronik mağazasında zarar anlamına gelebilir.",
+        ],
+      },
+      {
+        heading: "ROAS Nasıl Hesaplanır?",
+        paragraphs: [
+          "Formül: ROAS = Reklamdan elde edilen gelir / Reklam harcaması. Sonuç ya oran (4,0) ya da yüzde (%400) olarak ifade edilir; ikisi aynı şeyi söyler.",
+          "Örnek: Bir e-ticaret markası Meta Ads'e ayda 50.000 TL harcıyor ve bu reklamlara atfedilen satışlardan 210.000 TL ciro elde ediyor. ROAS = 210.000 / 50.000 = 4,2.",
+          "Türkiye'deki işletmeler için kritik bir not: Gelir rakamını KDV hariç ve iadeler düşülmüş olarak kullanın. Reklam panelleri genellikle KDV dahil sepet tutarını ve iade edilen siparişleri de sayar; bu da ROAS'ı olduğundan %20-30 yüksek gösterebilir.",
+        ],
+      },
+      {
+        heading: "Başabaş ROAS: 'İyi ROAS Kaçtır?' Sorusunun Gerçek Cevabı",
+        paragraphs: [
+          "Bir kampanyanın kâr ettirip ettirmediğini anlamak için önce başabaş ROAS'ınızı bilmeniz gerekir. En basit hâliyle: Başabaş ROAS = 1 / Brüt kâr marjı.",
+          "Örnek: Ürünlerinizin ortalama brüt kâr marjı %40 ise başabaş ROAS = 1 / 0,40 = 2,5'tir. Bu kampanya 2,5 ROAS'ın altında kalırsa her satış reklam maliyetini karşılamıyor demektir. Marj %25 ise eşik 4'e, %60 ise yaklaşık 1,67'ye çıkar ya da iner.",
+          "Daha gerçekçi bir eşik için kargo, ödeme komisyonu ve paketleme gibi sipariş başı değişken maliyetleri de marjdan düşün. Brüt marj %40, değişken maliyetler cironun %10'u ise katkı marjı %30 olur ve başabaş ROAS 1 / 0,30 ≈ 3,33'e yükselir.",
+        ],
+        bullets: [
+          "Brüt marj %60 → başabaş ROAS ≈ 1,67",
+          "Brüt marj %40 → başabaş ROAS = 2,5",
+          "Brüt marj %30 → başabaş ROAS ≈ 3,33",
+          "Brüt marj %20 → başabaş ROAS = 5",
+        ],
+      },
+      {
+        heading: "Hedef ROAS Nasıl Belirlenir?",
+        paragraphs: [
+          "Başabaş noktası, zarar etmemek için gereken minimumdur; hedef ROAS ise istediğiniz kârı da içerir. Formül: Hedef ROAS = 1 / (Katkı marjı − Hedef net kâr oranı).",
+          "Örnek: Katkı marjınız %30 ve reklam sonrası cironun %10'unu kâr olarak bırakmak istiyorsanız hedef ROAS = 1 / (0,30 − 0,10) = 5'tir. Google Ads'te Hedef ROAS (tROAS) teklif stratejisine gireceğiniz değer de bu hesaptan gelmelidir; rastgele seçilmiş bir '%400' değil.",
+          "Yeni müşteri kazanımına odaklanan büyüme aşamasındaki markalar, ilk siparişte başabaşın altında bir ROAS'ı bilinçli olarak kabul edebilir — yeter ki müşteri yaşam boyu değeri (LTV) bu açığı kapatsın. Bu durumda karar metriği ilk sipariş ROAS'ı değil, LTV / CAC oranıdır.",
+        ],
+      },
+      {
+        heading: "Platform ROAS'ı Neden Yanıltıcı Olabilir?",
+        paragraphs: [
+          "Google Ads ve Meta Ads, kendi atıf modelleriyle raporlar. Aynı satışı iki platform da kendine yazabilir; Meta'nın görüntüleme bazlı atfı, Google'ın marka aramalarından gelen dönüşümler gibi etkiler toplam ROAS'ı şişirir. Panellerdeki ROAS'ları toplayıp gerçek sonuç sanmak, en sık yapılan bütçe hatasıdır.",
+          "Bunun panzehiri MER'dir (Marketing Efficiency Ratio): Toplam ciro / Toplam pazarlama harcaması. MER atıf tartışmasını devre dışı bırakır; panel ROAS'ı yükselirken MER düşüyorsa reklamlar yeni talep yaratmıyor, var olan talebi kendine yazıyor olabilir.",
+          "Pratik yaklaşım: Kreatif ve kampanya optimizasyonunu panel ROAS'ıyla, bütçe kararlarını MER ve başabaş eşiğiyle yönetin. Marka araması kampanyalarını da genel ROAS ortalamasından ayrı raporlayın; aksi hâlde zaten sizi arayan kullanıcıdan gelen yüksek ROAS, zayıf kampanyaları gizler.",
+        ],
+      },
+      {
+        heading: "B2B'de ROAS Kullanılır mı?",
+        paragraphs: [
+          "Satış döngüsü haftalar ya da aylar süren B2B işlerinde reklam günü ile gelir günü arasında büyük fark olduğundan klasik ROAS çoğu zaman sıfıra yakın görünür. Burada daha anlamlı olan, CRM'deki fırsat değerine göre hesaplanan pipeline ROAS'ı (Oluşan pipeline değeri / Reklam harcaması) ve CAC geri ödeme süresidir.",
+          "Kural olarak: Tek seferlik e-ticaret satışlarında ROAS, tekrarlayan gelirli SaaS ve B2B modellerinde CAC, LTV ve geri ödeme süresi ana karar metrikleridir.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "ROAS nedir?",
+        answer:
+          "ROAS (Return on Ad Spend), reklam harcamasının getirisidir: reklamlardan elde edilen cironun reklam harcamasına oranıdır. 10.000 TL harcamayla 40.000 TL ciro elde edildiyse ROAS 4 (veya %400) olur.",
+      },
+      {
+        question: "İyi bir ROAS kaçtır?",
+        answer:
+          "Evrensel bir 'iyi ROAS' yoktur; eşik brüt kâr marjınıza bağlıdır. Başabaş ROAS = 1 / Brüt kâr marjı formülüyle hesaplanır. %40 marjda başabaş 2,5'tir, bunun üzeri kârlı sayılır. Düşük marjlı sektörlerde 5 ve üzeri gerekebilirken yüksek marjlı dijital ürünlerde 2 bile kârlı olabilir.",
+      },
+      {
+        question: "ROAS ile ROI arasındaki fark nedir?",
+        answer:
+          "ROAS ciroyu reklam harcamasına böler ve maliyetleri hesaba katmaz. ROI ise (Kâr − Yatırım) / Yatırım formülüyle net kârlılığı ölçer. Yüksek ROAS her zaman yüksek ROI anlamına gelmez; düşük marjlı bir üründe 4 ROAS zarar ettirebilir.",
+      },
+      {
+        question: "Başabaş ROAS nasıl hesaplanır?",
+        answer:
+          "Başabaş ROAS = 1 / Brüt kâr marjı. Daha doğru sonuç için kargo, ödeme komisyonu gibi sipariş başı değişken maliyetleri de düşerek katkı marjını kullanın. Örneğin katkı marjı %30 ise başabaş ROAS 1 / 0,30 ≈ 3,33'tür.",
+      },
+      {
+        question: "ROAS hesaplarken KDV dahil edilmeli mi?",
+        answer:
+          "Hayır. Doğru ROAS için KDV hariç ve iadeler düşülmüş net ciro kullanılmalıdır. Reklam panelleri çoğu zaman KDV dahil sepet tutarını raporladığından panel ROAS'ı gerçek değerden yüksek görünür.",
+      },
+    ],
+    howTo: {
+      name: "Başabaş ve hedef ROAS nasıl hesaplanır?",
+      description:
+        "Brüt kâr marjından yola çıkarak kampanyalarınız için başabaş ve hedef ROAS eşiğini belirleyin.",
+      steps: [
+        { name: "Brüt kâr marjını bulun", text: "Ortalama sipariş için (Satış fiyatı − Ürün maliyeti) / Satış fiyatı hesabıyla brüt kâr marjını çıkarın." },
+        { name: "Değişken maliyetleri düşün", text: "Kargo, ödeme komisyonu ve paketleme gibi sipariş başı maliyetleri cironun yüzdesi olarak marjdan çıkarıp katkı marjını bulun." },
+        { name: "Başabaş ROAS'ı hesaplayın", text: "1'i katkı marjına bölün. %30 katkı marjında başabaş ROAS ≈ 3,33'tür." },
+        { name: "Hedef kârı ekleyin", text: "Hedef ROAS = 1 / (Katkı marjı − Hedef net kâr oranı) formülüyle teklif stratejinize gireceğiniz hedef değeri belirleyin." },
+        { name: "MER ile doğrulayın", text: "Aylık toplam ciroyu toplam pazarlama harcamasına bölün ve panel ROAS'ının gerçek iş sonucuyla uyumlu olup olmadığını kontrol edin." },
+      ],
+    },
+    relatedToolKey: "roas",
+    resources: [
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Brüt Kâr Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Google Ads'te Performansı Katlamanın 7 Data-Driven Yolu", href: "/blog/google-ads-performans-optimizasyonu/" },
+      { label: "Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır?", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
+      { label: "Google Ads Yardım: Hedef ROAS teklif stratejisi", href: "https://support.google.com/google-ads/answer/6268637", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -1463,6 +1581,7 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "linkedin-reklamlari-turkiye-2026-firsat", en: "linkedin-ads-turkey-2026-opportunity" },
   { tr: "nrr-nedir-saas-buyume-metrigi", en: "what-is-nrr-saas-growth-metric" },
   { tr: "freemium-donusum-orani-artirma", en: "6-ways-to-increase-freemium-conversion-rate" },
+  { tr: "roas-nedir-nasil-hesaplanir", en: "what-is-roas-how-to-calculate" },
 ];
 
 
@@ -2547,6 +2666,124 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         label: "What Is NRR and Why It Beats ARR in SaaS",
         href: "/en/blog/what-is-nrr-saas-growth-metric",
       },
+    ],
+  },
+  {
+    slug: "what-is-roas-how-to-calculate",
+    seoTitle: "What Is ROAS & How to Calculate It? What's a Good ROAS?",
+    title: "What Is ROAS, How Do You Calculate It, and What's a Good ROAS? (With Break-Even Formula)",
+    description:
+      "The ROAS formula, how to calculate break-even and target ROAS, and why in-platform ROAS can mislead you — a step-by-step guide with worked examples.",
+    category: "performans-pazarlama",
+    tldr: [
+      "ROAS = Revenue from ads / Ad spend. Spend $1,000 and generate $4,000 in revenue and your ROAS is 4 (or 400%).",
+      "There is no universal 'good ROAS' — the threshold depends on your gross margin: Break-even ROAS = 1 / Gross margin.",
+      "At a 40% margin, break-even ROAS is 2.5; a 3 ROAS is profitable, a 2 ROAS loses money on every sale.",
+      "Validate decisions with MER (total revenue / total marketing spend), not just the ROAS shown in ad platforms.",
+    ],
+    publishedAt: "2026-10-22",
+    readingMinutes: 7,
+    tags: ["ROAS", "Performance Marketing", "Google Ads", "Meta Ads", "E-commerce"],
+    sections: [
+      {
+        heading: "What Is ROAS?",
+        paragraphs: [
+          "ROAS (Return on Ad Spend) tells you how much revenue you generate for every dollar spent on advertising. It is the most common way to compare efficiency across campaigns, ad sets and creatives in performance marketing.",
+          "ROAS is a revenue metric, not a profitability metric. That distinction is the key to reading it correctly: the same 4 ROAS can be highly profitable for a 70%-margin digital product and a loss for a 20%-margin electronics store.",
+        ],
+      },
+      {
+        heading: "How to Calculate ROAS",
+        paragraphs: [
+          "Formula: ROAS = Revenue attributed to ads / Ad spend. The result is expressed either as a ratio (4.0) or a percentage (400%); both say the same thing.",
+          "Example: An e-commerce brand spends $12,000 a month on Meta Ads and generates $50,400 in revenue attributed to those ads. ROAS = 50,400 / 12,000 = 4.2.",
+          "Use net revenue: exclude sales tax or VAT and subtract refunds and returns. Ad platforms typically count gross cart value and returned orders, which can inflate ROAS by 20-30% versus reality.",
+        ],
+      },
+      {
+        heading: "Break-Even ROAS: The Real Answer to 'What's a Good ROAS?'",
+        paragraphs: [
+          "To know whether a campaign actually makes money, you first need your break-even ROAS. In its simplest form: Break-even ROAS = 1 / Gross margin.",
+          "Example: If your average gross margin is 40%, break-even ROAS = 1 / 0.40 = 2.5. Any campaign below 2.5 ROAS isn't covering its ad cost. At a 25% margin the threshold rises to 4; at 60% it drops to roughly 1.67.",
+          "For a more realistic threshold, also subtract per-order variable costs such as shipping, payment fees and packaging. With a 40% gross margin and variable costs equal to 10% of revenue, contribution margin is 30% and break-even ROAS rises to 1 / 0.30 ≈ 3.33.",
+        ],
+        bullets: [
+          "60% gross margin → break-even ROAS ≈ 1.67",
+          "40% gross margin → break-even ROAS = 2.5",
+          "30% gross margin → break-even ROAS ≈ 3.33",
+          "20% gross margin → break-even ROAS = 5",
+        ],
+      },
+      {
+        heading: "How to Set a Target ROAS",
+        paragraphs: [
+          "Break-even is the minimum to avoid losing money; target ROAS also builds in the profit you want. Formula: Target ROAS = 1 / (Contribution margin − Target net profit rate).",
+          "Example: With a 30% contribution margin and a goal of keeping 10% of revenue as profit after ads, target ROAS = 1 / (0.30 − 0.10) = 5. The value you enter into Google Ads' Target ROAS (tROAS) bid strategy should come from this math — not an arbitrary '400%'.",
+          "Growth-stage brands focused on acquiring new customers may deliberately accept a first-order ROAS below break-even, as long as customer lifetime value (LTV) closes the gap. In that case the decision metric is LTV / CAC, not first-order ROAS.",
+        ],
+      },
+      {
+        heading: "Why In-Platform ROAS Can Mislead You",
+        paragraphs: [
+          "Google Ads and Meta Ads each report using their own attribution models. Both platforms can claim the same sale, and effects such as Meta's view-through attribution or Google's branded-search conversions inflate combined ROAS. Adding up platform ROAS figures and treating the total as real performance is one of the most common budgeting mistakes.",
+          "The antidote is MER (Marketing Efficiency Ratio): Total revenue / Total marketing spend. MER sidesteps the attribution debate; if platform ROAS rises while MER falls, your ads may be claiming existing demand rather than creating new demand.",
+          "A practical split: optimize creatives and campaigns on platform ROAS, but make budget decisions on MER and your break-even threshold. Report branded-search campaigns separately too — otherwise the high ROAS from people already searching for you hides weak campaigns.",
+        ],
+      },
+      {
+        heading: "Does ROAS Work for B2B?",
+        paragraphs: [
+          "In B2B, where sales cycles run weeks or months, the gap between ad day and revenue day makes classic ROAS look close to zero. More meaningful here are pipeline ROAS (Pipeline value created / Ad spend) based on CRM opportunity values, and CAC payback period.",
+          "Rule of thumb: ROAS is the core decision metric for one-off e-commerce sales; for recurring-revenue SaaS and B2B models, CAC, LTV and payback period take its place.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What is ROAS?",
+        answer:
+          "ROAS (Return on Ad Spend) is the ratio of revenue generated by ads to the amount spent on those ads. If $10,000 in spend produced $40,000 in revenue, ROAS is 4 (or 400%).",
+      },
+      {
+        question: "What is a good ROAS?",
+        answer:
+          "There is no universal 'good ROAS'; the threshold depends on your gross margin. Break-even ROAS = 1 / Gross margin. At a 40% margin break-even is 2.5, and anything above it is profitable. Low-margin categories may need 5 or more, while high-margin digital products can be profitable at 2.",
+      },
+      {
+        question: "What's the difference between ROAS and ROI?",
+        answer:
+          "ROAS divides revenue by ad spend and ignores costs. ROI measures net profitability with (Profit − Investment) / Investment. A high ROAS doesn't guarantee a high ROI; a 4 ROAS can lose money on a low-margin product.",
+      },
+      {
+        question: "How do you calculate break-even ROAS?",
+        answer:
+          "Break-even ROAS = 1 / Gross margin. For a more accurate number, use contribution margin by also subtracting per-order variable costs like shipping and payment fees. With a 30% contribution margin, break-even ROAS is 1 / 0.30 ≈ 3.33.",
+      },
+      {
+        question: "Should sales tax or VAT be included when calculating ROAS?",
+        answer:
+          "No. Use net revenue that excludes sales tax or VAT and subtracts refunds. Ad platforms often report gross cart value, so in-platform ROAS usually looks higher than the true figure.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate break-even and target ROAS",
+      description:
+        "Start from your gross margin to set break-even and target ROAS thresholds for your campaigns.",
+      steps: [
+        { name: "Find your gross margin", text: "For the average order, calculate (Price − Cost of goods) / Price." },
+        { name: "Subtract variable costs", text: "Deduct per-order costs such as shipping, payment fees and packaging, as a percentage of revenue, to get contribution margin." },
+        { name: "Calculate break-even ROAS", text: "Divide 1 by contribution margin. At a 30% contribution margin, break-even ROAS ≈ 3.33." },
+        { name: "Add your profit target", text: "Use Target ROAS = 1 / (Contribution margin − Target net profit rate) to set the value for your bid strategy." },
+        { name: "Validate with MER", text: "Divide monthly total revenue by total marketing spend and check that platform ROAS matches real business results." },
+      ],
+    },
+    relatedToolKey: "roas",
+    resources: [
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "7 Data-Driven Ways to Multiply Your Google Ads Performance", href: "/en/blog/google-ads-performance-optimization/" },
+      { label: "How to Exit Meta Ads Learning Phase Fast", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
+      { label: "Google Ads Help: About Target ROAS bidding", href: "https://support.google.com/google-ads/answer/6268637", external: true },
     ],
   },
 ];

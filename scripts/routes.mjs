@@ -119,6 +119,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "linkedin-reklamlari-turkiye-2026-firsat", en: "linkedin-ads-turkey-2026-opportunity" },
   { tr: "nrr-nedir-saas-buyume-metrigi", en: "what-is-nrr-saas-growth-metric" },
   { tr: "freemium-donusum-orani-artirma", en: "6-ways-to-increase-freemium-conversion-rate" },
+  { tr: "roas-nedir-nasil-hesaplanir", en: "what-is-roas-how-to-calculate" },
 ];
 
 // English-only posts (no TR counterpart). They live solely under /en/blog/.
