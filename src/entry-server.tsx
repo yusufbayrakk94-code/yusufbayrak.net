@@ -2,6 +2,9 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
+import { preloadAllPages, usedPageIds } from "@/lib/lazyPage";
+
+export { preloadAllPages };
 import "./index.css";
 
 // Server entry used by scripts/ssg.mjs to prerender each route into a real
@@ -12,7 +15,8 @@ import "./index.css";
 // Shape of the object react-helmet-async writes onto the context after render.
 // Typed loosely since the library doesn't export FilledContext in v3.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function render(url: string): { html: string; helmet: any } {
+export function render(url: string): { html: string; helmet: any; pages: string[] } {
+  usedPageIds.clear();
   const helmetContext: Record<string, unknown> = {};
   const html = renderToString(
     <HelmetProvider context={helmetContext as never}>
@@ -22,5 +26,5 @@ export function render(url: string): { html: string; helmet: any } {
     </HelmetProvider>
   );
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return { html, helmet: (helmetContext as any).helmet };
+  return { html, helmet: (helmetContext as any).helmet, pages: [...usedPageIds] };
 }

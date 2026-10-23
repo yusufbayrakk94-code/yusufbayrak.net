@@ -23,8 +23,9 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 ## Teknik (rapor: seo/seo-technical-audit.md)
 - [x] dist/server (SSR paketi + kopya sitemap/robots/llms) yayından çıkarıldı — 2026-10-23
 - [x] Markalı, noindex'li 404.html — 2026-10-23
-- [ ] Kullanıcı: Search Console'da başarısız doğrulamaları yeniden başlat (Yönlendirmeli sayfa, Yeniden yönlendirme hatası, Alternatif sayfa)
-- [ ] Rota bazlı kod bölme (JS ~300 KB gzip) + Lighthouse önce/sonra ölçümü
+- [x] Rota bazlı kod bölme — 2026-10-23 (ana sayfa JS ~295 → ~126 KB gzip)
+- [ ] Kod bölme v2: araç metinlerini (tr/en tools.ts) araç bazında böl; araç sayfaları için hafif blog-araç dizini (blogPosts yüklenmesin)
+- [ ] Kullanıcı/izin: Search Console doğrulamalarını yeniden başlat
 - [ ] n8n diyagramını WebP'ye çevir
 
 ## Araçlar

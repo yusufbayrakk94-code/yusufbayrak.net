@@ -63,11 +63,11 @@ export const PROJECT_SLUGS = [
 ] as const;
 
 // Blog TR<->EN slug pairs. Re-exported from the single source of truth in
-// src/data/blogPosts.ts so new posts automatically show up in the language
+// src/data/blogSlugPairs.ts so new posts automatically show up in the language
 // switcher and hreflang without a second manual edit. blogPosts.ts does not
 // import from this module, so no circular dependency is introduced.
-export { BLOG_SLUG_PAIRS } from "@/data/blogPosts";
-import { BLOG_SLUG_PAIRS } from "@/data/blogPosts";
+export { BLOG_SLUG_PAIRS } from "@/data/blogSlugPairs";
+import { BLOG_SLUG_PAIRS } from "@/data/blogSlugPairs";
 
 // Given a pathname, detect locale from URL prefix (/en or /en/*).
 export function getLocaleFromPath(pathname: string): Locale {

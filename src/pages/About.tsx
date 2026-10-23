@@ -5,7 +5,7 @@ import { TechTag } from "@/components/ui/TechTag";
 import profileAsset from "@/assets/yusuf-bayrak-profil.jpg.asset.json";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
-import { pickAbout } from "@/content";
+import { pickAbout } from "@/content/pickSite";
 
 const isLovableHost =
   typeof window !== "undefined" && /lovable\.(app|dev)$/.test(window.location.hostname);

@@ -114,7 +114,7 @@ export const PROJECT_SLUGS = [
 ];
 
 // Blog TR<->EN slug pairs. Mirror of BLOG_SLUG_PAIRS in
-// src/data/blogPosts.ts (kept manually in sync — no TS import from Node).
+// src/data/blogSlugPairs.ts (kept manually in sync — no TS import from Node).
 export const BLOG_SLUG_PAIRS = [
   { tr: "b2b-lead-generation-huni-tasarimi", en: "b2b-lead-generation-funnel-design" },
   { tr: "google-ads-performans-optimizasyonu", en: "google-ads-performance-optimization" },

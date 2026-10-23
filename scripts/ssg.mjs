@@ -20,7 +20,36 @@ async function main() {
     process.exit(1);
   }
   const template = fs.readFileSync(TEMPLATE_PATH, "utf-8");
-  const { render } = await import(pathToFileURL(SERVER_ENTRY).href);
+  const { render, preloadAllPages } = await import(pathToFileURL(SERVER_ENTRY).href);
+  // Resolve every code-split page module so renderToString is synchronous.
+  await preloadAllPages();
+
+  // Client build manifest → modulepreload links for each route's page chunks.
+  const MANIFEST_PATH = path.join(DIST, ".vite", "manifest.json");
+  const manifest = fs.existsSync(MANIFEST_PATH)
+    ? JSON.parse(fs.readFileSync(MANIFEST_PATH, "utf-8"))
+    : {};
+  const entryKey = Object.keys(manifest).find((k) => manifest[k].isEntry);
+  const entryFiles = new Set();
+  (function walk(k) {
+    if (!k || !manifest[k] || entryFiles.has(manifest[k].file)) return;
+    entryFiles.add(manifest[k].file);
+    (manifest[k].imports || []).forEach(walk);
+  })(entryKey);
+  const preloadLinks = (pageIds) => {
+    const files = new Set();
+    const walk = (k) => {
+      const m = manifest[k];
+      if (!m || files.has(m.file) || entryFiles.has(m.file)) return;
+      files.add(m.file);
+      (m.imports || []).forEach(walk);
+    };
+    // "../pages/Home.tsx" (relative to src/lib) -> "src/pages/Home.tsx"
+    pageIds.forEach((id) => walk(id.replace(/^\.\.\//, "src/")));
+    return [...files]
+      .map((f) => `<link rel="modulepreload" crossorigin href="/${f}">`)
+      .join("\n    ");
+  };
 
   const routes = allRoutes();
   console.log(`[ssg] prerendering ${routes.length} routes`);
@@ -30,7 +59,7 @@ async function main() {
   const NOT_FOUND = "/__not-found__";
   for (const route of [...routes, NOT_FOUND]) {
     try {
-      const { html, helmet } = render(route);
+      const { html, helmet, pages } = render(route);
 
       // Splice Helmet output into the base template.
       const htmlAttrs = helmet.htmlAttributes.toString(); // e.g. lang="en"
@@ -72,7 +101,7 @@ async function main() {
       }
 
       // Inject helmet head just before </head>.
-      const headInject = [titleTag, metaTags, linkTags, scriptTags]
+      const headInject = [titleTag, metaTags, linkTags, scriptTags, preloadLinks(pages)]
         .filter(Boolean)
         .join("\n    ");
       out = out.replace("</head>", `    ${headInject}\n  </head>`);

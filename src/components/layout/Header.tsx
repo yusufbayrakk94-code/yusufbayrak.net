@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { useTheme } from "@/components/ui/ThemeProvider";
 import { useLocale } from "@/i18n/useLocale";
-import { pickSite } from "@/content";
+import { pickSite } from "@/content/pickSite";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 function ThemeToggle() {

@@ -7,7 +7,7 @@ import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
-import { pickProjects, pickProjectsPage } from "@/content";
+import { pickProjects, pickProjectsPage } from "@/content/pickSite";
 import { SITE_URL, withSlash } from "@/i18n/routes";
 
 export default function ProjectDetail() {

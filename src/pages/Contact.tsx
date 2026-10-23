@@ -9,7 +9,7 @@ import { Linkedin, Mail, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
-import { pickContact } from "@/content";
+import { pickContact } from "@/content/pickSite";
 
 export default function Contact() {
   const { toast } = useToast();

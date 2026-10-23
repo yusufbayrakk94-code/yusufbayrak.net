@@ -49,6 +49,9 @@ export default defineConfig(({ mode }) => ({
     // The server build uses --ssr src/entry-server.tsx from the npm script.
     outDir: "dist",
     emptyOutDir: true,
+    // Manifest lets scripts/ssg.mjs emit <link rel="modulepreload"> for the
+    // page chunk(s) each route needs (removed from dist after SSG).
+    manifest: true,
   },
   ssr: {
     // Bundle these into the server build so Node can execute them without

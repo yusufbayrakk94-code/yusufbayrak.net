@@ -8,7 +8,7 @@ import { TypingCursor } from "@/components/ui/TypingCursor";
 import { ArrowRight } from "lucide-react";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
-import { pickHome, pickProjectsPage } from "@/content";
+import { pickHome, pickProjectsPage } from "@/content/pickSite";
 
 export default function Home() {
   const locale = useLocale();

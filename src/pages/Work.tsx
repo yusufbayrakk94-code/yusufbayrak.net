@@ -3,7 +3,7 @@ import { CodeDivider } from "@/components/ui/CodeDivider";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
-import { pickProjects, pickProjectsPage } from "@/content";
+import { pickProjects, pickProjectsPage } from "@/content/pickSite";
 
 export default function Work() {
   const locale = useLocale();

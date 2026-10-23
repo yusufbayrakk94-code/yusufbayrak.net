@@ -40,5 +40,5 @@ Yok.
 1. [x] dist/server'ı yayından çıkar (2026-10-23)
 2. [x] Markalı, noindex'li 404.html (2026-10-23)
 3. [ ] Kullanıcı: Search Console'da üç başarısız doğrulamayı yeniden başlat
-4. [ ] Rota bazlı kod bölme + Lighthouse ölçümü (ayrı PR/iş)
+4. [x] Rota bazlı kod bölme (2026-10-23): sayfa başına JS (gzip) ana sayfa ~295 → ~126 KB, blog ~295 → ~197 KB, araçlar ~295 → ~261 KB. Sonraki adım: araç metinlerini dil/araç bazında bölmek ve araç sayfalarının blog verisini yüklemesini önlemek (hafif yazı-araç dizini).
 5. [ ] Görsel optimizasyonu, dateModified
