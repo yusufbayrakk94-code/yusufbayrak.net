@@ -20,6 +20,13 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
 
+## Teknik (rapor: seo/seo-technical-audit.md)
+- [x] dist/server (SSR paketi + kopya sitemap/robots/llms) yayından çıkarıldı — 2026-10-23
+- [x] Markalı, noindex'li 404.html — 2026-10-23
+- [ ] Kullanıcı: Search Console'da başarısız doğrulamaları yeniden başlat (Yönlendirmeli sayfa, Yeniden yönlendirme hatası, Alternatif sayfa)
+- [ ] Rota bazlı kod bölme (JS ~300 KB gzip) + Lighthouse önce/sonra ölçümü
+- [ ] n8n diyagramını WebP'ye çevir
+
 ## Araçlar
 - [x] Araç ↔ blog otomatik iç link (relatedToolKey ters eşleme) — 2026-10-22
 - [x] CAC, LTV, churn sayfaları derinleştirildi + hesaplayıcılar geliştirildi — 2026-10-22

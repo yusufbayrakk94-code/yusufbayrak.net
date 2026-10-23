@@ -25,7 +25,10 @@ async function main() {
   const routes = allRoutes();
   console.log(`[ssg] prerendering ${routes.length} routes`);
 
-  for (const route of routes) {
+  // The extra not-found route is written to dist/404.html, which GitHub Pages
+  // serves (with a real 404 status) for any unknown URL.
+  const NOT_FOUND = "/__not-found__";
+  for (const route of [...routes, NOT_FOUND]) {
     try {
       const { html, helmet } = render(route);
 
@@ -73,6 +76,10 @@ async function main() {
         .filter(Boolean)
         .join("\n    ");
       out = out.replace("</head>", `    ${headInject}\n  </head>`);
+      if (route === NOT_FOUND) {
+        out = out.replace("</head>", `    <meta name="robots" content="noindex" />\n  </head>`);
+        out = out.replace(/<title[^>]*><\/title>/, "<title>Sayfa bulunamadı | Yusuf Bayrak</title>");
+      }
 
       // Hosting 301s slash-less directory URLs to the slash form, so point
       // internal links straight at the final URL (no redirect hop for
@@ -91,7 +98,9 @@ async function main() {
 
       // Resolve target file. `/` -> dist/index.html; `/foo` -> dist/foo/index.html.
       const target =
-        route === "/"
+        route === NOT_FOUND
+          ? path.join(DIST, "404.html")
+          : route === "/"
           ? path.join(DIST, "index.html")
           : path.join(DIST, route.replace(/^\//, ""), "index.html");
       fs.mkdirSync(path.dirname(target), { recursive: true });
