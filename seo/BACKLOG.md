@@ -15,6 +15,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 ## Altyapı / veri
 - [x] Search Console erişimi: kullanıcının masaüstü uygulamasındaki tarayıcı üzerinden (2026-10-22)
 - [x] Dizine ekleme isteği gönderildi (10 URL: 2 yeni araç, ROAS yazısı/aracı, llms.txt, kanal quiz, AdGusto, CAC, LTV, churn, NRR) — 2026-10-22
+- [ ] Dizine ekleme isteği: /blog/reklam-butcesi-nasil-belirlenir/ ve /en/blog/how-to-set-advertising-budget/ (2026-10-23 kota aşıldı, yarın tekrar dene)
 - [ ] Kalan: /projeler/brandog-marka-mcp/ ve EN araç sayfaları için dizine ekleme isteği
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
