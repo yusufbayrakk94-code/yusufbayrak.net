@@ -27,9 +27,9 @@ notları `seo/research/<konu>.md` altına kaydedilir.
       (analiz: seo/research/arac-serp-analizi.md)
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
 - [ ] Pazaryeri aracı v2: Trendyol vs Hepsiburada yan yana karşılaştırma, desi→kargo yardımcısı, çoklu ürün
-- [ ] Destek yazısı: "Trendyol komisyon oranları ve kâr hesaplama" (aracı besleyen bilgi içeriği)
+- [ ] Destek yazısı: "Trendyol komisyon oranları ve kâr hesaplama" (aracı besleyen bilgi içeriği) — not: SERP çok kalabalık (ikas, Paraşüt, Sentos, Dopigo + 10+ araç sitesi); "kâr hesaplama örnekleri / iade ve reklam dahil net kâr" gibi uzun kuyruk açıyla gir
 - [x] Yeni araç: Reklam bütçesi planlayıcı (e-ticaret + B2B modu) — 2026-10-22
-- [ ] Destek yazısı: "Reklam bütçesi nasıl belirlenir?" (relatedToolKey: ad-budget)
+- [x] Destek yazısı: "Reklam bütçesi nasıl belirlenir?" (relatedToolKey: ad-budget) — 2026-10-23
 - [~] Paylaşılabilir sonuç linki (girdiler URL'de) — yeni 2 araçta var, eski araçlara yayılacak
 - [ ] Sonucu e-postayla/PDF gönder (yumuşak lead yakalama)
 - [ ] Gömülebilir widget + backlink ("Bu aracı sitene ekle")
@@ -49,6 +49,8 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] CAC geri ödeme süresi nedir
 - [ ] Rule of 40 nedir
 - [ ] llms.txt nedir (GEO)
+
+- [ ] Kasım sonrası: reklam bütçesi yazısındaki Black Friday bölümünü Aralık başında güncelle (evergreen kalmalı)
 
 ## Otorite / dağıtım
 - [ ] Türkiye B2B/e-ticaret reklam maliyetleri raporu (veri çalışması)

@@ -1552,6 +1552,167 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Yardım: Hedef ROAS teklif stratejisi", href: "https://support.google.com/google-ads/answer/6268637", external: true },
     ],
   },
+  {
+    slug: "reklam-butcesi-nasil-belirlenir",
+    seoTitle: "Reklam Bütçesi Nasıl Belirlenir? Hedeften Geriye Hesap",
+    title: "Reklam Bütçesi Nasıl Belirlenir? Hedeften Geriye 5 Adımlı Hesap (Kasım Dönemi Notlarıyla)",
+    description:
+      "Reklam bütçesini cironun yüzdesiyle değil, hedef ciro, katkı marjı ve maks. CPA'dan geriye hesaplayın. Örnek hesap, test bütçesi, B2B modu ve Kasım planı.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Reklam bütçesi hedeften geriye hesaplanır: Bütçe = Hedef ciro / Hedef ROAS ya da Hedef sipariş (veya müşteri) sayısı × Maksimum CPA.",
+      "Hedef ROAS ve maks. CPA katkı marjınızdan gelir: %35 katkı marjı ve %10 hedef kârda hedef ROAS 4, 1.200 TL'lik siparişte maks. CPA 300 TL'dir.",
+      "Planı uygulamadan önce fizibiliteyi kontrol edin: Gerçek CPA ≈ TBM / Dönüşüm oranı. 6 TL TBM ve %1,5 dönüşümde CPA 400 TL olur ve plan tutmaz.",
+      "İndirim dönemlerinde (11.11, Black Friday 27 Kasım 2026) indirim marjı düşürür; %20 indirim başabaş ROAS'ı 2,86'dan yaklaşık 4,7'ye çıkarabilir.",
+    ],
+    publishedAt: "2026-10-23",
+    readingMinutes: 9,
+    tags: ["Reklam Bütçesi", "Performans Pazarlama", "ROAS", "CPA", "Google Ads", "Meta Ads", "E-ticaret"],
+    sections: [
+      {
+        heading: "Kısa Cevap: Reklam Bütçesi Hedeften Geriye Hesaplanır",
+        paragraphs: [
+          "Reklam bütçesini belirlemenin en sağlam yolu, ulaşmak istediğiniz sonuçtan geriye doğru hesap yapmaktır: önce kaç sipariş, ne kadar ciro veya kaç yeni müşteri istediğinizi, sonra bir satış için en fazla ne kadar ödeyebileceğinizi (maksimum CPA) belirlersiniz. Bütçe bu ikisinin çarpımıdır: Bütçe = Hedef sipariş sayısı × Maksimum CPA ya da Bütçe = Hedef ciro / Hedef ROAS.",
+          "Bu yaklaşım, bütçeyi 'cironun yüzde kaçı' sorusundan kurtarır ve her lirayı kârlılık eşiğine bağlar. Aşağıdaki adımları kendi rakamlarınızla uygulamak için ücretsiz Reklam Bütçesi Hesaplama aracını kullanabilirsiniz; araç aynı formülleri ve fizibilite kontrolünü otomatik yapar.",
+        ],
+      },
+      {
+        heading: "Bütçe Belirlemenin 3 Yöntemi: Hangisi Ne Zaman İşe Yarar?",
+        paragraphs: [
+          "Türkçe kaynakların çoğu bütçeyi cironun belli bir yüzdesi olarak önerir ve sık geçen aralık %5-15'tir. Bu kural pratik bir başlangıç noktasıdır ama dayanağı yoktur: %60 marjlı bir kozmetik markası ile %15 marjlı bir elektronik satıcısı için aynı yüzde, tamamen farklı sonuçlar doğurur.",
+          "İkinci yöntem rakip paritesidir: rakiplerin görünürlüğüne bakarak harcamayı ayarlamak. Pazar payı savaşında bilgi verir ama rakibin marjını, LTV'sini ve zarar etmeye ne kadar dayanabileceğini bilmediğiniz için tek başına karar aracı olamaz.",
+          "Üçüncüsü ve en güvenilir olanı hedef-görev (birim ekonomisi) yöntemidir: hedef sonuç × izin verilen birim maliyet. Diğer iki yöntemi yalnızca bu hesabı doğrulamak için kullanın.",
+        ],
+        bullets: [
+          "Ciro yüzdesi → hızlı tahmin; marjı ve hedefi hesaba katmaz.",
+          "Rakip paritesi → rekabet sinyali; rakibin ekonomisini bilmezsiniz.",
+          "Hedeften geriye (birim ekonomisi) → kârlılığa bağlı, ölçülebilir ve savunulabilir bütçe.",
+        ],
+      },
+      {
+        heading: "Adım 1: Katkı Marjını, Başabaş ROAS'ı ve Maksimum CPA'yı Bulun",
+        paragraphs: [
+          "Önce bir siparişin reklamdan önce size ne bıraktığını bilmeniz gerekir. Katkı marjı = Brüt kâr marjı − sipariş başı değişken maliyetler (kargo, ödeme komisyonu, paketleme, pazaryeri komisyonu) / ciro. Brüt marjı %45, değişken maliyetleri cironun %10'u olan bir mağazanın katkı marjı %35'tir.",
+          "Başabaş ROAS = 1 / Katkı marjı = 1 / 0,35 ≈ 2,86. Başabaş CPA = Ortalama sipariş tutarı × Katkı marjı; 1.200 TL'lik ortalama siparişte 420 TL. Bu iki sayı, reklamın zarar ettirmeye başladığı sınırdır. Konunun ayrıntısı için ROAS Nedir, Nasıl Hesaplanır? yazısına bakabilirsiniz.",
+          "Kâr da istiyorsanız hedef net kâr oranını marjdan düşün: Hedef ROAS = 1 / (Katkı marjı − Hedef kâr oranı). %10 kâr hedefiyle 1 / 0,25 = 4. Maksimum CPA = 1.200 × 0,25 = 300 TL. Tüm hesaplarda KDV hariç ve iadeler düşülmüş ciro kullanın.",
+        ],
+      },
+      {
+        heading: "Adım 2: Hedeften Bütçeye — Uçtan Uca Örnek",
+        paragraphs: [
+          "Örnek mağaza Kasım ayında reklamdan 600.000 TL net ciro hedefliyor. Ortalama sipariş 1.200 TL olduğuna göre hedef 500 sipariştir. Hedef ROAS 4 olduğundan bütçe = 600.000 / 4 = 150.000 TL; sağlaması: 500 sipariş × 300 TL maks. CPA = 150.000 TL.",
+          "Bu planın reklam sonrası katkısı 600.000 × 0,35 − 150.000 = 60.000 TL'dir. Bütçeyi günlük tutara çevirirken Google Ads'in işleyişini hesaba katın: Google, ortalama günlük bütçenin bir günde 2 katına kadar harcanabileceğini, ancak aylık faturanın ortalama günlük bütçenin yaklaşık 30,4 katını geçmeyeceğini belirtir. 150.000 TL'lik aylık plan için ortalama günlük bütçe yaklaşık 4.930 TL'dir.",
+        ],
+        bullets: [
+          "Hedef ciro: 600.000 TL (KDV hariç, iade sonrası)",
+          "Ortalama sipariş: 1.200 TL → hedef 500 sipariş",
+          "Katkı marjı %35 → başabaş ROAS 2,86 · başabaş CPA 420 TL",
+          "Hedef kâr %10 → hedef ROAS 4 · maks. CPA 300 TL",
+          "Bütçe: 150.000 TL/ay ≈ 4.930 TL ortalama günlük bütçe",
+        ],
+      },
+      {
+        heading: "Adım 3: Fizibilite Kontrolü — Plan Gerçekçi mi?",
+        paragraphs: [
+          "Kâğıt üzerindeki bütçe, ancak gerçek tıklama maliyeti ve dönüşüm oranınız izin veriyorsa çalışır. Gerçek CPA ≈ TBM (tıklama başı maliyet) / Dönüşüm oranı. Örnek mağazanın geçmiş verisinde TBM 6 TL, dönüşüm oranı %1,5 ise gerçek CPA 6 / 0,015 = 400 TL'dir; hedeflenen 300 TL'nin üzerindedir.",
+          "Bu durumda 500 sipariş için 200.000 TL gerekir ve reklam sonrası katkı 600.000 × 0,35 − 200.000 = 10.000 TL'ye düşer. Planı kurtarmanın üç yolu vardır: dönüşüm oranını %2'ye çıkarmak (6 / 0,02 = 300 TL), TBM'yi 4,5 TL'ye indirmek ya da sepet tutarını büyütmek. Hiçbiri mümkün değilse ciro hedefini değil, kâr beklentisini veya ürün karmasını yeniden ele alın.",
+          "Fizibilite kontrolü, rakip içeriklerin neredeyse hiç değinmediği ama bütçe kararını asıl belirleyen adımdır: bütçe, hedefin değil, ölçülmüş birim maliyetlerin çarpımıdır.",
+        ],
+      },
+      {
+        heading: "Adım 4: Minimum Test Bütçesi ve Öğrenme Aşaması",
+        paragraphs: [
+          "Algoritmalar öğrenmek için veri ister. Meta reklamlarında sık kullanılan pratik kural, bir reklam setinin öğrenme aşamasından çıkması için haftada yaklaşık 50 optimizasyon olayı gerektiğidir. Haftalık minimum bütçe ≈ 50 × Hedef CPA; 300 TL CPA ile reklam seti başına haftada 15.000 TL, günde yaklaşık 2.150 TL.",
+          "Bu tutar bütçenizi aşıyorsa reklam seti sayısını azaltın, kampanya bütçesini tek sette toplayın ya da geçici olarak daha sık gerçekleşen bir olaya (sepete ekleme, ödeme başlatma) optimize edin. Bütçeyi çok sayıda küçük sete bölmek, hiçbirinin öğrenememesine yol açar. Ayrıntılar için Meta Ads öğrenme aşaması yazısına bakın.",
+          "Yeni bir kanalı test ederken bütçenin yaklaşık %10'unu deneylere, %20'sini ölçeklenmekte olan kampanyalara, %70'ini kanıtlanmış kampanyalara ayırmak yaygın ve kullanışlı bir başlangıç kuralıdır; oranları kendi sonuçlarınıza göre güncelleyin.",
+        ],
+      },
+      {
+        heading: "Adım 5: B2B ve SaaS İçin Huni Üzerinden Bütçe",
+        paragraphs: [
+          "Satış döngüsü uzun işlerde hedef sipariş değil yeni müşteridir ve hesap huniden geriye yapılır. Örnek: Ayda 6 yeni müşteri hedefi, SQL'den müşteriye %25 dönüşüm → 24 SQL; lead'den SQL'e %30 dönüşüm → 80 lead. Lead başı maliyet (CPL) 750 TL ise aylık reklam bütçesi 80 × 750 = 60.000 TL'dir.",
+          "Kontrol metriği CAC'tır: 60.000 / 6 = 10.000 TL reklam CAC'ı. Müşteri başı brüt kâr bazlı LTV 45.000 TL ise LTV:CAC oranı 4,5'tir ve 3'ün üzerinde olduğu için plan sağlıklıdır. Satış ekibi maliyetlerini de eklediğiniz tam CAC ile ayrıca kontrol edin.",
+        ],
+      },
+      {
+        heading: "Kasım Dönemi (11.11 ve Black Friday) İçin Bütçe Planı",
+        paragraphs: [
+          "2026'da Black Friday 27 Kasım'a denk geliyor ve Kasım, Türkiye'de de 11.11 ile başlayan büyük indirim kampanyalarının yoğunlaştığı ay. Bu dönemde en sık yapılan hata, normal ayın hedef ROAS'ını indirimli fiyatlara uygulamaktır. İndirim katkı marjını düşürür: örnek mağazada 1.200 TL'lik ürünü %20 indirimle 960 TL'ye satarsanız ürün maliyeti (660 TL) aynı kalır, değişken maliyet 96 TL olur ve katkı 204 TL'ye, katkı marjı %21,25'e iner. Başabaş ROAS 2,86'dan yaklaşık 4,7'ye çıkar.",
+          "Yani kampanya döneminde daha yüksek dönüşüm oranı, daha düşük marjı telafi etmek zorundadır. Bütçeyi bu yeni eşiğe göre hesaplayın ve indirimli ürünlerle tam fiyatlı ürünleri ayrı kampanyalarda raporlayın.",
+          "Zamanlama: Kampanyaları yoğun günlerden 1-2 hafta önce başlatıp öğrenme aşamasını kampanya dönemine taşımayın. Google Ads'te akıllı teklif kullanıyorsanız, dönüşüm oranında büyük sıçrama beklediğiniz kısa etkinlikler için dönemlik ayarlamaları (seasonality adjustments) kullanabilirsiniz; Google bunları 1-7 günlük etkinlikler için önerir ve 14 günü aşan dönemlerde iyi çalışmayabileceğini belirtir. Aralık ve Ocak'taki iadeleri hesaba katmak için Kasım ROAS'ını iade süresi dolduktan sonra yeniden hesaplayın.",
+        ],
+      },
+      {
+        heading: "Bütçe Ne Zaman Artırılır, Ne Zaman Kısılır?",
+        paragraphs: [
+          "Bütçe kararını ortalama ROAS'a göre değil marjinal ROAS'a göre verin: son eklenen 10.000 TL'nin getirdiği ek ciro / 10.000. Ortalama ROAS 4 iken son eklenen bütçe 2 ROAS getiriyorsa, %35 katkı marjında bu ek harcama zarar ettiriyordur.",
+          "Artırımı kademeli yapın ve her adımdan sonra birkaç gün sonuçları izleyin; büyük ve ani bütçe değişiklikleri algoritmanın yeniden öğrenmesine yol açabilir. Kısma kararında da günlük oynaklığa değil, dönüşüm gecikmesini kapsayan 7-14 günlük pencereye bakın.",
+        ],
+      },
+      {
+        heading: "Reklam Bütçesi Belirlerken Yapılan 6 Yaygın Hata",
+        paragraphs: [
+          "Aşağıdaki hatalar, bütçe ne kadar büyük olursa olsun kârsız büyümeye yol açar:",
+        ],
+        bullets: [
+          "KDV dahil ve iadeler düşülmemiş ciroyla ROAS hesaplamak.",
+          "Brüt marj yerine katkı marjını (kargo, komisyon, ödeme maliyetleri dahil) kullanmamak.",
+          "Hedefi fizibilite kontrolü yapmadan, yani gerçek TBM ve dönüşüm oranına bakmadan bütçelemek.",
+          "Bütçeyi öğrenme için yetersiz kalan çok sayıda küçük reklam setine bölmek.",
+          "İndirim dönemlerinde normal ayın hedef ROAS'ını kullanmak.",
+          "Platform panellerindeki ROAS'ları toplayıp MER (toplam ciro / toplam pazarlama harcaması) ile doğrulamamak.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Reklam bütçesi nasıl belirlenir?",
+        answer:
+          "Hedeften geriye: önce hedef sipariş veya müşteri sayısını, sonra katkı marjınızdan maksimum CPA'yı bulun. Bütçe = Hedef sipariş × Maks. CPA veya Hedef ciro / Hedef ROAS. Ardından gerçek TBM ve dönüşüm oranınızla planın uygulanabilir olup olmadığını kontrol edin.",
+      },
+      {
+        question: "Reklam bütçesi cironun yüzde kaçı olmalı?",
+        answer:
+          "Sık önerilen %5-15 aralığı yalnızca kaba bir başlangıçtır; marjınızı ve hedefinizi hesaba katmaz. Doğru oran, hedef ROAS'ınızın tersidir: hedef ROAS 4 ise reklamdan gelen cironun %25'ini reklama harcayabilirsiniz.",
+      },
+      {
+        question: "Maksimum CPA nasıl hesaplanır?",
+        answer:
+          "Maks. CPA = Ortalama sipariş tutarı × (Katkı marjı − Hedef kâr oranı). 1.200 TL sipariş, %35 katkı marjı ve %10 kâr hedefiyle maks. CPA 300 TL'dir. Kâr hedefi olmadan hesaplanan değer (420 TL) başabaş CPA'dır.",
+      },
+      {
+        question: "Yeni başlayan bir işletme için minimum reklam bütçesi ne kadar olmalı?",
+        answer:
+          "Algoritmanın öğrenebileceği kadar. Meta için yaygın pratik kural, reklam seti başına haftada yaklaşık 50 dönüşümdür; haftalık minimum bütçe ≈ 50 × hedef CPA. Bu tutar yüksekse tek reklam setiyle başlayın veya sepete ekleme gibi daha sık bir olaya optimize edin.",
+      },
+      {
+        question: "Black Friday döneminde reklam bütçesi nasıl planlanır?",
+        answer:
+          "İndirimli fiyatla katkı marjını yeniden hesaplayın; %20 indirim başabaş ROAS'ı belirgin şekilde yükseltir. Bütçeyi bu yeni eşiğe göre kurun, kampanyaları 1-2 hafta önce başlatın ve Google Ads'te kısa yoğun günler için dönemlik ayarlamaları değerlendirin.",
+      },
+    ],
+    howTo: {
+      name: "Reklam bütçesi hedeften geriye nasıl hesaplanır?",
+      description:
+        "Hedef ciro ve katkı marjından yola çıkarak aylık reklam bütçesini, hedef ROAS'ı ve maksimum CPA'yı belirleyin.",
+      steps: [
+        { name: "Hedefi belirleyin", text: "Dönem için hedef net ciroyu (KDV hariç, iade sonrası) ve ortalama sipariş tutarına bölerek hedef sipariş sayısını bulun." },
+        { name: "Katkı marjını hesaplayın", text: "Brüt kâr marjından kargo, komisyon, ödeme ve paketleme gibi sipariş başı değişken maliyetleri düşün." },
+        { name: "Hedef ROAS ve maks. CPA'yı bulun", text: "Hedef ROAS = 1 / (Katkı marjı − Hedef kâr oranı); Maks. CPA = Ortalama sipariş × (Katkı marjı − Hedef kâr oranı)." },
+        { name: "Bütçeyi hesaplayın", text: "Bütçe = Hedef ciro / Hedef ROAS = Hedef sipariş × Maks. CPA. Aylık tutarı günlük bütçeye çevirin." },
+        { name: "Fizibiliteyi kontrol edin", text: "Gerçek CPA ≈ TBM / Dönüşüm oranı. Gerçek CPA maks. CPA'nın üzerindeyse dönüşüm oranını, TBM'yi veya hedefi yeniden ele alın." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır?", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
+      { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Google Ads Yardım: Bütçelere genel bakış", href: "https://support.google.com/google-ads/answer/10486536", external: true },
+      { label: "Google Ads Yardım: Dönemlik ayarlamalar", href: "https://support.google.com/google-ads/answer/10369906", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -1584,6 +1745,7 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "nrr-nedir-saas-buyume-metrigi", en: "what-is-nrr-saas-growth-metric" },
   { tr: "freemium-donusum-orani-artirma", en: "6-ways-to-increase-freemium-conversion-rate" },
   { tr: "roas-nedir-nasil-hesaplanir", en: "what-is-roas-how-to-calculate" },
+  { tr: "reklam-butcesi-nasil-belirlenir", en: "how-to-set-advertising-budget" },
 ];
 
 
@@ -2786,6 +2948,163 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "7 Data-Driven Ways to Multiply Your Google Ads Performance", href: "/en/blog/google-ads-performance-optimization/" },
       { label: "How to Exit Meta Ads Learning Phase Fast", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
       { label: "Google Ads Help: About Target ROAS bidding", href: "https://support.google.com/google-ads/answer/6268637", external: true },
+    ],
+  },
+  {
+    slug: "how-to-set-advertising-budget",
+    seoTitle: "How to Set an Advertising Budget: Work Back From Goals",
+    title: "How to Set an Advertising Budget: A 5-Step Work-Backward Method (With Black Friday Notes)",
+    description:
+      "Set your ad budget from target revenue, contribution margin and max CPA instead of a % of sales. Worked example, test budget, B2B funnel and Q4 planning.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Work backward from the goal: Budget = Target revenue / Target ROAS, or Target orders (or customers) × Maximum CPA.",
+      "Target ROAS and max CPA come from contribution margin: with a 35% margin and a 10% profit target, target ROAS is 4 and max CPA on a $120 order is $30.",
+      "Check feasibility before you commit: Real CPA ≈ CPC / Conversion rate. A $0.60 CPC at 1.5% conversion means a $40 CPA, and the plan fails.",
+      "Discounts cut margin: a 20% Black Friday discount (November 27, 2026) can lift break-even ROAS from 2.86 to about 4.7.",
+    ],
+    publishedAt: "2026-10-23",
+    readingMinutes: 9,
+    tags: ["Ad Budget", "Performance Marketing", "ROAS", "CPA", "Google Ads", "Meta Ads", "E-commerce"],
+    sections: [
+      {
+        heading: "Short Answer: Calculate Your Ad Budget Backward From the Goal",
+        paragraphs: [
+          "The most reliable way to set an advertising budget is to start from the result you want and work backward: decide how many orders, how much revenue or how many new customers you need, then how much you can afford to pay for each one (maximum CPA). The budget is the product of the two: Budget = Target orders × Max CPA, or Budget = Target revenue / Target ROAS.",
+          "This replaces the vague 'what percentage of revenue' question and ties every dollar to a profitability threshold. You can run the steps below with your own numbers in the free Ad Budget Calculator, which applies the same formulas and the feasibility check automatically.",
+        ],
+      },
+      {
+        heading: "Three Ways to Set a Budget — and When Each Works",
+        paragraphs: [
+          "Many guides suggest spending a fixed share of revenue, often 5-15%. It is a quick starting point but has no real basis: the same percentage means something completely different for a 60%-margin cosmetics brand and a 15%-margin electronics reseller.",
+          "The second method is competitive parity — matching what rivals appear to spend. It is a useful market signal, but you don't know their margins, LTV or how long they can tolerate losses.",
+          "The third, and most reliable, is the objective-and-task (unit economics) method: target outcome × allowable unit cost. Use the other two only to sanity-check it.",
+        ],
+        bullets: [
+          "Percent of revenue → fast estimate; ignores margin and goals.",
+          "Competitive parity → market signal; you can't see rivals' economics.",
+          "Work backward (unit economics) → tied to profit, measurable and defensible.",
+        ],
+      },
+      {
+        heading: "Step 1: Find Contribution Margin, Break-Even ROAS and Max CPA",
+        paragraphs: [
+          "First, know what an order leaves you before advertising. Contribution margin = Gross margin − per-order variable costs (shipping, payment fees, packaging, marketplace commission) as a share of revenue. A store with a 45% gross margin and variable costs equal to 10% of revenue has a 35% contribution margin.",
+          "Break-even ROAS = 1 / Contribution margin = 1 / 0.35 ≈ 2.86. Break-even CPA = Average order value × Contribution margin; on a $120 order that is $42. These are the points where ads start losing money. See What Is ROAS and How Do You Calculate It? for more detail.",
+          "If you also want profit, subtract your target net margin: Target ROAS = 1 / (Contribution margin − Target profit rate). With a 10% target, 1 / 0.25 = 4, and max CPA = $120 × 0.25 = $30. Use revenue net of sales tax and returns throughout.",
+        ],
+      },
+      {
+        heading: "Step 2: From Goal to Budget — A Worked Example",
+        paragraphs: [
+          "The example store wants $60,000 in net ad-driven revenue in November. With a $120 average order, that is 500 orders. At a target ROAS of 4, budget = $60,000 / 4 = $15,000; check: 500 orders × $30 max CPA = $15,000.",
+          "The plan's contribution after ad spend is $60,000 × 0.35 − $15,000 = $6,000. When converting to a daily budget, remember how Google Ads paces spend: Google says it can spend up to 2× your average daily budget on a given day, but you won't be billed more than about 30.4× the average daily budget in a month. For a $15,000 monthly plan, that is an average daily budget of roughly $493.",
+        ],
+        bullets: [
+          "Target revenue: $60,000 (net of tax and returns)",
+          "Average order: $120 → 500 orders",
+          "Contribution margin 35% → break-even ROAS 2.86 · break-even CPA $42",
+          "Profit target 10% → target ROAS 4 · max CPA $30",
+          "Budget: $15,000/month ≈ $493 average daily budget",
+        ],
+      },
+      {
+        heading: "Step 3: Feasibility Check — Is the Plan Realistic?",
+        paragraphs: [
+          "A budget on paper only works if your actual click costs and conversion rate allow it. Real CPA ≈ CPC / Conversion rate. If the store's history shows a $0.60 CPC and 1.5% conversion, real CPA is $0.60 / 0.015 = $40 — above the $30 target.",
+          "In that case 500 orders cost $20,000 and contribution after ads falls to $60,000 × 0.35 − $20,000 = $1,000. Three levers can rescue the plan: lift conversion to 2% ($0.60 / 0.02 = $30), cut CPC to $0.45, or grow basket size. If none is possible, revisit the profit expectation or product mix rather than the revenue goal.",
+          "This step is rarely covered in budgeting guides, yet it is the one that actually decides the budget: a budget is the product of measured unit costs, not of the goal alone.",
+        ],
+      },
+      {
+        heading: "Step 4: Minimum Test Budget and the Learning Phase",
+        paragraphs: [
+          "Algorithms need data to learn. A widely used rule of thumb for Meta ads is that an ad set needs about 50 optimization events per week to exit the learning phase. Minimum weekly budget ≈ 50 × target CPA; with a $30 CPA that is $1,500 per ad set per week, or about $215 per day.",
+          "If that exceeds your budget, run fewer ad sets, consolidate into one, or temporarily optimize for a more frequent event (add to cart, initiate checkout). Splitting spend across many small ad sets means none of them learns. See our guide to exiting the Meta Ads learning phase for more.",
+          "When testing new channels, a common and practical starting split is roughly 70% to proven campaigns, 20% to scaling ones and 10% to experiments; adjust the ratios to your own results.",
+        ],
+      },
+      {
+        heading: "Step 5: Budgeting Through the Funnel for B2B and SaaS",
+        paragraphs: [
+          "With long sales cycles, the goal is new customers, not orders, and you work backward through the funnel. Example: 6 new customers a month, 25% SQL-to-customer → 24 SQLs; 30% lead-to-SQL → 80 leads. At a $75 cost per lead, the monthly ad budget is 80 × $75 = $6,000.",
+          "The control metric is CAC: $6,000 / 6 = $1,000 paid CAC. If gross-profit LTV per customer is $4,500, LTV:CAC is 4.5 — above 3, so the plan is healthy. Check fully loaded CAC including sales costs separately.",
+        ],
+      },
+      {
+        heading: "Budgeting for Black Friday and November Sales",
+        paragraphs: [
+          "Black Friday falls on November 27 in 2026. The most common mistake is applying a normal month's target ROAS to discounted prices. Discounts shrink contribution margin: sell the $120 product at 20% off for $96 and the product cost ($66) stays the same, variable costs become $9.60, contribution drops to $20.40 and the contribution margin to 21.25%. Break-even ROAS rises from 2.86 to about 4.7.",
+          "So during the sale, a higher conversion rate has to make up for the thinner margin. Budget against that new threshold and report discounted and full-price products in separate campaigns.",
+          "Timing: launch campaigns 1-2 weeks before peak days so the learning phase doesn't overlap the sale. If you use Smart Bidding in Google Ads, consider seasonality adjustments for short events where you expect a big jump in conversion rate; Google recommends them for 1-7 day events and notes they may not work as well beyond 14 days. Recalculate November ROAS after the return window closes.",
+        ],
+      },
+      {
+        heading: "When to Increase or Cut the Budget",
+        paragraphs: [
+          "Decide on marginal ROAS, not average ROAS: extra revenue from the last $1,000 added / $1,000. If average ROAS is 4 but the last increment returns 2, that extra spend loses money at a 35% contribution margin.",
+          "Scale gradually and watch results for a few days after each step; large, sudden budget changes can push the algorithm back into learning. When cutting, look at a 7-14 day window that covers conversion lag rather than daily noise.",
+        ],
+      },
+      {
+        heading: "6 Common Ad Budgeting Mistakes",
+        paragraphs: ["These mistakes lead to unprofitable growth no matter how large the budget is:"],
+        bullets: [
+          "Calculating ROAS on revenue that includes tax and returns.",
+          "Using gross margin instead of contribution margin (shipping, fees, payment costs).",
+          "Budgeting a goal without a feasibility check against real CPC and conversion rate.",
+          "Splitting spend across too many small ad sets to learn.",
+          "Using a normal month's target ROAS during discount periods.",
+          "Adding up platform-reported ROAS without validating against MER (total revenue / total marketing spend).",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How do you set an advertising budget?",
+        answer:
+          "Work backward: set target orders or customers, derive max CPA from your contribution margin, then Budget = Target orders × Max CPA or Target revenue / Target ROAS. Finally, check the plan against your real CPC and conversion rate.",
+      },
+      {
+        question: "What percentage of revenue should go to advertising?",
+        answer:
+          "The often-quoted 5-15% is only a rough start and ignores margin and goals. The right share is the inverse of your target ROAS: at a target ROAS of 4 you can spend 25% of ad-driven revenue on ads.",
+      },
+      {
+        question: "How do you calculate maximum CPA?",
+        answer:
+          "Max CPA = Average order value × (Contribution margin − Target profit rate). A $120 order with a 35% contribution margin and a 10% profit target gives a $30 max CPA. Without a profit target ($42) it is your break-even CPA.",
+      },
+      {
+        question: "What is a minimum ad budget for a new business?",
+        answer:
+          "Enough for the algorithm to learn. A common rule of thumb for Meta is about 50 conversions per ad set per week, so minimum weekly budget ≈ 50 × target CPA. If that is too high, start with one ad set or optimize for a more frequent event such as add to cart.",
+      },
+      {
+        question: "How should you plan an ad budget for Black Friday?",
+        answer:
+          "Recalculate contribution margin at the discounted price — a 20% discount raises break-even ROAS sharply. Build the budget on that new threshold, launch 1-2 weeks early and consider Google Ads seasonality adjustments for short peak days.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate an ad budget backward from your goal",
+      description: "Use target revenue and contribution margin to set your monthly ad budget, target ROAS and maximum CPA.",
+      steps: [
+        { name: "Set the goal", text: "Define target net revenue (excluding tax and returns) and divide by average order value to get target orders." },
+        { name: "Calculate contribution margin", text: "Subtract per-order variable costs such as shipping, fees, payment and packaging from gross margin." },
+        { name: "Find target ROAS and max CPA", text: "Target ROAS = 1 / (Contribution margin − Target profit rate); Max CPA = Average order × (Contribution margin − Target profit rate)." },
+        { name: "Calculate the budget", text: "Budget = Target revenue / Target ROAS = Target orders × Max CPA. Convert the monthly figure to a daily budget." },
+        { name: "Check feasibility", text: "Real CPA ≈ CPC / Conversion rate. If real CPA exceeds max CPA, revisit conversion rate, CPC or the goal." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "What Is ROAS and How Do You Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "How to Exit the Meta Ads Learning Phase Faster", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
+      { label: "Google Ads Help: About budgets", href: "https://support.google.com/google-ads/answer/10486536", external: true },
+      { label: "Google Ads Help: About seasonality adjustments", href: "https://support.google.com/google-ads/answer/10369906", external: true },
     ],
   },
 ];

@@ -64,6 +64,7 @@
 - [ICP (Ideal Customer Profile) Nasıl Tanımlanır? Şablon + 3 Örnek](https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon/): Doldurulabilir ICP şablonu ve SaaS, e-ticaret, endüstriyel B2B'den üç örnek — hedefleme, mesaj ve lead skorlamayı tek tanımdan besleyin.
 - [Freemium'dan Ücretliye Geçiş Oranını Artırmanın 6 Yolu](https://yusufbayrak.net/blog/freemium-donusum-orani-artirma/): Freemium dönüşüm oranı nedir, sağlıklı aralığı nedir ve ücretsiz kullanıcıyı ödeyen müşteriye çeviren 6 uygulanabilir taktik — örnek hesaplamalarla.
 - [ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır? (Başabaş Formülüyle)](https://yusufbayrak.net/blog/roas-nedir-nasil-hesaplanir/): ROAS formülü, başabaş ROAS hesaplama, hedef ROAS belirleme ve platform ROAS'ının neden yanıltıcı olabildiği — örnek hesaplamalarla adım adım rehber.
+- [Reklam Bütçesi Nasıl Belirlenir? Hedeften Geriye 5 Adımlı Hesap (Kasım Dönemi Notlarıyla)](https://yusufbayrak.net/blog/reklam-butcesi-nasil-belirlenir/): Reklam bütçesini cironun yüzdesiyle değil, hedef ciro, katkı marjı ve maks. CPA'dan geriye hesaplayın. Örnek hesap, test bütçesi, B2B modu ve Kasım planı.
 
 ## English
 
@@ -104,6 +105,7 @@
 - [What Is NRR (Net Revenue Retention) and Why It Beats ARR in SaaS](https://yusufbayrak.net/en/blog/what-is-nrr-saas-growth-metric/): How NRR differs from ARR and MRR, how to calculate it, healthy benchmarks by segment, and why investors build valuation around it — with worked examples.
 - [6 Ways to Increase Your Freemium-to-Paid Conversion Rate](https://yusufbayrak.net/en/blog/6-ways-to-increase-freemium-conversion-rate/): What a freemium conversion rate is, what counts as healthy and six practical tactics that turn free users into paying customers — with worked examples.
 - [What Is ROAS, How Do You Calculate It, and What's a Good ROAS? (With Break-Even Formula)](https://yusufbayrak.net/en/blog/what-is-roas-how-to-calculate/): The ROAS formula, how to calculate break-even and target ROAS, and why in-platform ROAS can mislead you — a step-by-step guide with worked examples.
+- [How to Set an Advertising Budget: A 5-Step Work-Backward Method (With Black Friday Notes)](https://yusufbayrak.net/en/blog/how-to-set-advertising-budget/): Set your ad budget from target revenue, contribution margin and max CPA instead of a % of sales. Worked example, test budget, B2B funnel and Q4 planning.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim
