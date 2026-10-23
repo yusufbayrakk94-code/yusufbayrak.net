@@ -14,6 +14,7 @@ Marka dışı organik trafik + araçlardan/iletişim formundan gelen lead.
 | H4 | Sitemap'teki önemli sayfaların **tamamı dizinde** ("Keşfedildi - dizine eklenmedi" = 0) | Search Console › Sayfa sayısı |
 | H5 | Haftada ~2 kaliteli yeni sayfa (yazı/araç) — 3 ayda ~24 | seo/LOG.md |
 | H6 | Lead ölçümü çalışıyor ve aylık lead trendi raporlanıyor | GA4: generate_lead, form_start, contact_click, tool_use |
+| H7 | **10-15 kaliteli yönlendiren alan adı** (ücretli link yok) | Search Console › Bağlantılar |
 
 ## 6 aylık hedef (30 Nisan 2027)
 - Son 28 günde **500+ organik tıklama**; hedef sorguların çoğunda ilk 5.

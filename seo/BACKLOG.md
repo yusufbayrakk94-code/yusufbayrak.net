@@ -73,6 +73,16 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [-] AdGusto/Brandog altbilgisinden yusufbayrak.net linki — kullanıcı istemedi (2026-10-23)
 - [ ] Çeyreklik AI görünürlük testi (Ocak 2027)
 
+## Backlink planı (hedef: 31.01.2027'ye kadar 10-15 kaliteli yönlendiren alan adı; ücretli link/PBN YOK)
+- [ ] Linklenebilir varlık 1: Gömülebilir araç widget'ı ("Bu aracı sitene ekle" + yusufbayrak.net atfı) — ROAS, reklam bütçesi, Trendyol kâr
+- [ ] Linklenebilir varlık 2: "Türkiye'de B2B ve e-ticaret reklam maliyetleri 2026" özgün veri çalışması (metodoloji açık, alıntılanabilir tablolar)
+- [ ] Linklenebilir varlık 3: İndirilebilir şablonlar (UTM takip tablosu, kampanya brief'i, ICP şablonu)
+- [ ] Konuk yazı / uzman görüşü hedef listesi: Türkçe pazarlama ve e-ticaret yayınları (taslak yazıları Claude hazırlar, kullanıcı gönderir)
+- [ ] Araç dizinleri ve listeler: ücretsiz pazarlama aracı derleme sayfaları, "free tools" listeleri (hedef listesi + başvuru metinleri)
+- [ ] Topluluk: soru-cevap ve topluluklarda (LinkedIn, Reddit r/PPC, Indie Hackers) gerçekten faydalı cevaplarla araç linki — spam yok
+- [ ] Yeni yazıların LinkedIn'de özetle paylaşımı (kullanıcı)
+- [ ] Ölçüm: Search Console › Bağlantılar raporu (aylık)
+
 ## Otorite / dağıtım
 - [ ] Türkiye B2B/e-ticaret reklam maliyetleri raporu (veri çalışması)
 - [ ] İndirilebilir şablonlar (ICP, kampanya brief, UTM takip tablosu)
