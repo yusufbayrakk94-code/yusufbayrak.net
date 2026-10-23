@@ -25,7 +25,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Markalı, noindex'li 404.html — 2026-10-23
 - [x] Rota bazlı kod bölme — 2026-10-23 (ana sayfa JS ~295 → ~126 KB gzip)
 - [ ] Kod bölme v2: araç metinlerini (tr/en tools.ts) araç bazında böl; araç sayfaları için hafif blog-araç dizini (blogPosts yüklenmesin)
-- [ ] Kullanıcı/izin: Search Console doğrulamalarını yeniden başlat
+- [x] Search Console "Yeniden yönlendirme hatası" doğrulaması yeniden başlatıldı (9 URL beklemede) — 2026-10-23. Yönlendirmeli sayfa / Alternatif sayfa beklenen durum, doğrulama başlatılmadı.
 - [ ] n8n diyagramını WebP'ye çevir
 
 ## Araçlar
