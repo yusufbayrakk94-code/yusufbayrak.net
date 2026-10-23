@@ -12,7 +12,7 @@ Marka dışı organik trafik + araçlardan/iletişim formundan gelen lead.
 | H2 | Son 28 günde **3.000+ gösterim** | Search Console › Performans |
 | H3 | Aşağıdaki 10 hedef sorgunun **en az 5'inde ilk 10** | Search Console › Sorgular (ortalama konum) |
 | H4 | Sitemap'teki önemli sayfaların **tamamı dizinde** ("Keşfedildi - dizine eklenmedi" = 0) | Search Console › Sayfa sayısı |
-| H5 | Haftada ~2 kaliteli yeni sayfa (yazı/araç) — 3 ayda ~24 | seo/LOG.md |
+| H5 | **Her gün en az 1 yeni sayfa** (TR + EN yazı/araç; uygun konu yoksa kapsamlı güncelleme) | seo/LOG.md |
 | H6 | Lead ölçümü çalışıyor ve aylık lead trendi raporlanıyor | GA4: generate_lead, form_start, contact_click, tool_use |
 | H7 | **10-15 kaliteli yönlendiren alan adı** (ücretli link yok) | Search Console › Bağlantılar |
 
