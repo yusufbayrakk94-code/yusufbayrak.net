@@ -63,7 +63,7 @@ AI ürünlerine doğrudan sorgu atılamadı; vekil olarak web arama sonuçları 
 
 ### Katman 5 — Varlık sinyalleri (en zayıf halka — kullanıcı aksiyonu gerekiyor)
 - LinkedIn, X ve Instagram profillerinin "web sitesi" alanında yusufbayrak.net olsun.
-- adgusto.app ve Brandog sitelerinin altbilgisinde "Yusuf Bayrak tarafından geliştirildi → yusufbayrak.net" linki.
+- (AdGusto/Brandog altbilgi linki kullanıcı kararıyla kapsam dışı — 2026-10-23.)
 - Yeni yazıları LinkedIn'de özetleyip linklemek (marka anılması + dağıtım).
 - Türkçe pazarlama topluluklarında / konuk yazılarda araçlara atıf.
 - Wikipedia/Wikidata: kayda değerlik şartı oluşmadan zorlanmaz.
@@ -74,7 +74,7 @@ AI ürünlerine doğrudan sorgu atılamadı; vekil olarak web arama sonuçları 
 |---|---|
 | Bu hafta | Şema düzeltmeleri (yapıldı) · UTM/GA4 Unassigned Türkçe destek yazısı · NRR yazısında cevap-önce kontrolü |
 | 2 hafta | Araç sayfası metin yenilemeleri (ROAS, dönüşüm, marj) · araçlara görünür güncelleme tarihi |
-| 1 ay | Person şemasını genişletme · AdGusto/Brandog karşılıklı linkler (kullanıcı) · profil linkleri (kullanıcı) |
+| 1 ay | Person şemasını genişletme · profil linkleri (kullanıcı) |
 | 1-2 ay | Özgün veri çalışması (reklam maliyetleri) |
 
 ## 6. Yeniden test takvimi
