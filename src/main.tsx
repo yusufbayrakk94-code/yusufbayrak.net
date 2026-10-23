@@ -3,6 +3,9 @@ import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter } from "react-router-dom";
 import App, { preloadRoute } from "./App.tsx";
 import "./index.css";
+import { installClickTracking } from "@/lib/analytics";
+
+installClickTracking();
 
 const container = document.getElementById("root")!;
 const tree = (

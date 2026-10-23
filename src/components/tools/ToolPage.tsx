@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { track } from "@/lib/analytics";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ArrowUpRight, ExternalLink, ChevronDown } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -24,6 +26,13 @@ export function ToolPage({ toolKey, children }: Props) {
   const locale = useLocale();
   const bundle = pickTools(locale);
   const tool = bundle[toolKey] as ToolContent;
+  // GA4: one tool_use event per page view, on the first real interaction.
+  const usedRef = useRef(false);
+  const markUsed = () => {
+    if (usedRef.current) return;
+    usedRef.current = true;
+    track("tool_use", { tool_name: String(toolKey) });
+  };
 
   const canonical = `${SITE_URL}${withSlash(tool.path)}`;
 
@@ -108,7 +117,11 @@ export function ToolPage({ toolKey, children }: Props) {
           <div className="opacity-0 animate-fade-in-up stagger-2">
             <CodeDivider label={bundle.toolCalculatorDivider} />
           </div>
-          <div className="p-6 bg-card border border-border rounded-lg opacity-0 animate-fade-in-up stagger-3">
+          <div
+            className="p-6 bg-card border border-border rounded-lg opacity-0 animate-fade-in-up stagger-3"
+            onInputCapture={markUsed}
+            onClickCapture={(e) => { if ((e.target as Element).closest("button")) markUsed(); }}
+          >
             {children}
           </div>
           {tool.seoParagraphs.length > 0 && (

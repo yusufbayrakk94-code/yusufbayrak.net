@@ -10,12 +10,14 @@ import { useToast } from "@/hooks/use-toast";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
 import { pickContact } from "@/content/pickSite";
+import { track } from "@/lib/analytics";
 
 export default function Contact() {
   const { toast } = useToast();
   const locale = useLocale();
   const c = pickContact(locale);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [started, setStarted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -33,6 +35,7 @@ export default function Contact() {
       const data = await res.json();
 
       if (res.ok && data.success) {
+        track("generate_lead", { method: "contact_form" });
         toast({ title: c.toastTitle, description: c.toastDescription });
         form.reset();
       } else {
@@ -70,7 +73,11 @@ export default function Contact() {
           <div className="grid gap-16 lg:grid-cols-2">
             <div>
               <CodeDivider label={c.formDivider} />
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                onSubmit={handleSubmit}
+                onFocusCapture={() => { if (!started) { setStarted(true); track("form_start", { form_id: "contact" }); } }}
+                className="space-y-6"
+              >
                 {/* Honeypot spam protection — hidden from users */}
                 <input
                   type="checkbox"
