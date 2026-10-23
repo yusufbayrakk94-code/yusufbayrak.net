@@ -55,6 +55,15 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 
 - [ ] Kasım sonrası: reklam bütçesi yazısındaki Black Friday bölümünü Aralık başında güncelle (evergreen kalmalı)
 
+## AEO / GEO (plan: seo/aeo-geo-strategy.md)
+- [x] JSON-LD URL tutarlılığı (sondaki "/"), BlogPosting/araç author-publisher → #person, profil görseli — 2026-10-23
+- [ ] Destek yazısı: "GA4 Unassigned trafik nedir, nasıl düzeltilir" (Türkçe SERP'te hiç Türkçe sonuç yok) — UTM destek yazısıyla birleştir
+- [ ] Araç sayfası metinlerini cevap-önce + soru başlığı standardına getir (ROAS, dönüşüm, brüt/net marj, MRR, ARPA)
+- [ ] Araç sayfalarına görünür "Son güncelleme" + dateModified
+- [ ] Person şeması: worksFor/founder (AdGusto, Brandog)
+- [ ] Kullanıcı aksiyonu: sosyal profillerde ve adgusto.app/Brandog'da yusufbayrak.net linki
+- [ ] Çeyreklik AI görünürlük testi (Ocak 2027)
+
 ## Otorite / dağıtım
 - [ ] Türkiye B2B/e-ticaret reklam maliyetleri raporu (veri çalışması)
 - [ ] İndirilebilir şablonlar (ICP, kampanya brief, UTM takip tablosu)

@@ -6,7 +6,7 @@ import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
 import { pickFreeTools, pickToolCategories, pickToolCategoriesUi } from "@/content";
 import { categoryIconMap } from "@/components/tools/toolIcons";
-import { SITE_URL } from "@/i18n/routes";
+import { SITE_URL, withSlash } from "@/i18n/routes";
 
 // Hub page: routes visitors into the three tool categories instead of listing
 // every calculator flat. Each category card previews the tools it contains.
@@ -21,8 +21,8 @@ export default function FreeTools() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: ui.homeLabel, item: `${SITE_URL}${locale === "en" ? "/en" : "/"}` },
-      { "@type": "ListItem", position: 2, name: ui.hubName, item: `${SITE_URL}${p.path}` },
+      { "@type": "ListItem", position: 1, name: ui.homeLabel, item: `${SITE_URL}${locale === "en" ? "/en/" : "/"}` },
+      { "@type": "ListItem", position: 2, name: ui.hubName, item: `${SITE_URL}${withSlash(p.path)}` },
     ],
   };
 

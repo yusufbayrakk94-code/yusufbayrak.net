@@ -6,7 +6,7 @@ import { CodeDivider } from "@/components/ui/CodeDivider";
 import { useLocale } from "@/i18n/useLocale";
 import { LocaleMeta } from "@/i18n/LocaleMeta";
 import { pickTools, pickFreeTools, pickToolCategories, pickToolCategoriesUi } from "@/content";
-import { SITE_URL } from "@/i18n/routes";
+import { SITE_URL, withSlash } from "@/i18n/routes";
 import type { ToolContent } from "@/content/types";
 import { getPostsForToolPath } from "@/data/blogPosts";
 
@@ -25,7 +25,7 @@ export function ToolPage({ toolKey, children }: Props) {
   const bundle = pickTools(locale);
   const tool = bundle[toolKey] as ToolContent;
 
-  const canonical = `${SITE_URL}${tool.path}`;
+  const canonical = `${SITE_URL}${withSlash(tool.path)}`;
 
   // Related posts: posts that name this tool (newest first), then the manual
   // relatedPost (deduped, max 4).
@@ -48,9 +48,9 @@ export function ToolPage({ toolKey, children }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: ui.homeLabel, item: `${SITE_URL}${locale === "en" ? "/en" : "/"}` },
-      { "@type": "ListItem", position: 2, name: ui.hubName, item: `${SITE_URL}${hub.path}` },
-      ...(category ? [{ "@type": "ListItem", position: 3, name: category.name, item: `${SITE_URL}${category.path}` }] : []),
+      { "@type": "ListItem", position: 1, name: ui.homeLabel, item: `${SITE_URL}${locale === "en" ? "/en/" : "/"}` },
+      { "@type": "ListItem", position: 2, name: ui.hubName, item: `${SITE_URL}${withSlash(hub.path)}` },
+      ...(category ? [{ "@type": "ListItem", position: 3, name: category.name, item: `${SITE_URL}${withSlash(category.path)}` }] : []),
       { "@type": "ListItem", position: category ? 4 : 3, name: tool.title, item: canonical },
     ],
   };
@@ -84,6 +84,8 @@ export function ToolPage({ toolKey, children }: Props) {
           operatingSystem: tool.applicationCategory === "FinanceApplication" ? "Any" : "Web",
           offers: { "@type": "Offer", price: "0", priceCurrency: bundle.currency },
           inLanguage: locale === "en" ? "en-US" : "tr-TR",
+          publisher: { "@id": `${SITE_URL}/#person` },
+          author: { "@id": `${SITE_URL}/#person` },
         })}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
         {faqJsonLd && (

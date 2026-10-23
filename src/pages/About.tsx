@@ -20,7 +20,7 @@ export default function About() {
   const personLd = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "@id": `https://yusufbayrak.net${c.path}#profilepage`,
+    "@id": `https://yusufbayrak.net${c.path}/#profilepage`.replace("//#","/#"),
     inLanguage: isTR ? "tr-TR" : "en-US",
     mainEntity: {
       "@type": "Person",
@@ -29,7 +29,7 @@ export default function About() {
       jobTitle: isTR ? "Dijital Pazarlama Uzmanı" : "Digital Marketing Specialist",
       description: c.whoAnswer,
       url: "https://yusufbayrak.net/",
-      image: "https://yusufbayrak.net/og-image.jpg",
+      image: "https://yusufbayrak.net/yusuf-bayrak-profil.jpg",
       email: "mailto:yyusufbayrak@gmail.com",
       sameAs: ["https://www.linkedin.com/in/yyusuf-bayrak/", "https://x.com/yusuffbayrak", "https://www.instagram.com/yusufdijital/"],
       knowsAbout: c.expertise,

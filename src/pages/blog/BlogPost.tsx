@@ -92,8 +92,9 @@ export default function BlogPost() {
     url,
     datePublished: post.publishedAt,
     dateModified: post.updatedAt ?? post.publishedAt,
-    author: { "@type": "Person", name: AUTHOR, url: `${SITE}${ui.authorPath}` },
-    publisher: { "@type": "Person", name: AUTHOR, url: SITE },
+    author: { "@type": "Person", "@id": `${SITE}/#person`, name: AUTHOR, url: `${SITE}${ui.authorPath}/` },
+    publisher: { "@id": `${SITE}/#person` },
+    isPartOf: { "@id": `${SITE}/#website` },
     articleSection: category.name,
     keywords: post.tags.join(", "),
     inLanguage: ui.inLanguage,
@@ -114,8 +115,8 @@ export default function BlogPost() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: ui.breadcrumbHome, item: `${SITE}${locale === "en" ? "/en" : "/"}` },
-      { "@type": "ListItem", position: 2, name: ui.breadcrumbBlog, item: `${SITE}${ui.linkBase}` },
+      { "@type": "ListItem", position: 1, name: ui.breadcrumbHome, item: `${SITE}${locale === "en" ? "/en/" : "/"}` },
+      { "@type": "ListItem", position: 2, name: ui.breadcrumbBlog, item: `${SITE}${ui.linkBase}/` },
       { "@type": "ListItem", position: 3, name: post.title, item: url },
     ],
   };
