@@ -69,7 +69,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Araç sayfası metinlerini cevap-önce + soru başlığı standardına getir (ROAS, dönüşüm, brüt/net marj, MRR, ARPA)
 - [ ] Araç sayfalarına görünür "Son güncelleme" + dateModified
 - [ ] Person şeması: worksFor/founder (AdGusto, Brandog)
-- [ ] Kullanıcı aksiyonu: sosyal profillerde yusufbayrak.net linki
+- [x] Sosyal profillerde (LinkedIn, X) yusufbayrak.net linki zaten ekli — kullanıcı teyidi, 2026-10-23
 - [-] AdGusto/Brandog altbilgisinden yusufbayrak.net linki — kullanıcı istemedi (2026-10-23)
 - [ ] Çeyreklik AI görünürlük testi (Ocak 2027)
 
