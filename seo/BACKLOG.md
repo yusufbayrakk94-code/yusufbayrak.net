@@ -15,7 +15,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 ## Altyapı / veri
 - [x] Search Console erişimi: kullanıcının masaüstü uygulamasındaki tarayıcı üzerinden (2026-10-22)
 - [x] Dizine ekleme isteği gönderildi (10 URL: 2 yeni araç, ROAS yazısı/aracı, llms.txt, kanal quiz, AdGusto, CAC, LTV, churn, NRR) — 2026-10-22
-- [ ] Dizine ekleme isteği (kota açılınca): /blog/reklam-butcesi-nasil-belirlenir/, /ucretsiz-araclar/utm-link-olusturucu/, /en/blog/how-to-set-advertising-budget/, /en/free-tools/utm-builder/ (2026-10-23 kota aşıldı)
+- [ ] Dizine ekleme isteği (kota açılınca): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /ucretsiz-araclar/utm-link-olusturucu/, /en/blog/how-to-set-advertising-budget/, /en/free-tools/utm-builder/ (2026-10-23 kota aşıldı)
 - [ ] Kalan: /projeler/brandog-marka-mcp/ ve EN araç sayfaları için dizine ekleme isteği
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
@@ -33,7 +33,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] CAC, LTV, churn sayfaları derinleştirildi + hesaplayıcılar geliştirildi — 2026-10-22
 - [x] UTM oluşturucu: GA4 kanal tahmini + Unassigned uyarısı, küçük harf/ASCII, 12 hazır şablon, gclid uyarısı — 2026-10-23
 - [ ] UTM v2: QR kod üretimi (harici servis/kütüphane gerektirir, kullanıcıya sor), toplu UTM (CSV), paylaşılabilir link
-- [ ] Destek yazısı: "UTM parametreleri nedir, GA4 Unassigned nasıl düzelir" (relatedToolKey: utm)
+- [~] Destek yazısı: UTM — GA4 Unassigned yazısı yayında; ayrı "UTM parametreleri nedir" yazısı gerekirse SERP analiziyle değerlendir
 - [ ] ARR sayfası: bileşenlerle ARR (yeni/genişleme/daralma/kayıp), CARR (düşük öncelik)
       (analiz: seo/research/arac-serp-analizi.md)
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
@@ -65,7 +65,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 
 ## AEO / GEO (plan: seo/aeo-geo-strategy.md)
 - [x] JSON-LD URL tutarlılığı (sondaki "/"), BlogPosting/araç author-publisher → #person, profil görseli — 2026-10-23
-- [ ] Destek yazısı: "GA4 Unassigned trafik nedir, nasıl düzeltilir" (Türkçe SERP'te hiç Türkçe sonuç yok) — UTM destek yazısıyla birleştir
+- [x] Destek yazısı: "GA4 Unassigned trafik nedir, nasıl düzeltilir" — 2026-10-23 (/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/)
 - [ ] Araç sayfası metinlerini cevap-önce + soru başlığı standardına getir (ROAS, dönüşüm, brüt/net marj, MRR, ARPA)
 - [ ] Araç sayfalarına görünür "Son güncelleme" + dateModified
 - [ ] Person şeması: worksFor/founder (AdGusto, Brandog)

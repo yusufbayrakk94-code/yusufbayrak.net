@@ -1713,6 +1713,141 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Yardım: Dönemlik ayarlamalar", href: "https://support.google.com/google-ads/answer/10369906", external: true },
     ],
   },
+  {
+    slug: "ga4-unassigned-trafik-nedir-nasil-duzeltilir",
+    seoTitle: "GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir?",
+    title: "GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir? (Yanlış ve Doğru UTM Tablosuyla)",
+    description:
+      "GA4'te Unassigned trafik, kaynak/aracı hiçbir kanal kuralına uymadığında oluşur. 5 dakikalık teşhis, yanlış-doğru UTM tablosu ve kalıcı çözüm adımları.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Unassigned, GA4'ün bir oturumun kaynak/aracı (source/medium) ikilisini varsayılan kanal kurallarının hiçbirine eşleyemediği trafiktir; trafik kaybolmaz, yanlış kutuya düşer.",
+      "En sık sebep standart dışı utm_medium değerleridir: story, bio, offline, whatsapp gibi değerler tanınmaz; paid_social, cpc, social, email, referral, affiliate tanınır.",
+      "Teşhis: Trafik edinme raporunda birincil boyutu 'Oturum kaynağı/aracı' yapın ve kanal = Unassigned satırlarını inceleyin.",
+      "Çözüm: UTM'leri standarda çekin; offline/QR gibi kendi kanallarınız için GA4'te özel kanal grubu tanımlayın; (not set) sorunlarında etiket kurulumunu kontrol edin.",
+    ],
+    publishedAt: "2026-10-23",
+    readingMinutes: 7,
+    tags: ["GA4", "Google Analytics", "UTM", "Unassigned", "Ölçümleme", "Performans Pazarlama"],
+    sections: [
+      {
+        heading: "GA4'te Unassigned Trafik Nedir?",
+        paragraphs: [
+          "Unassigned (atanmamış) trafik, GA4'ün bir oturumun kaynak ve aracı (source/medium) bilgisini varsayılan kanal grubundaki kuralların hiçbirine eşleyemediği oturumlardır. Ziyaret ölçülür ama Paid Social, Email, Organic Search gibi bir kanala yazılamaz; bu yüzden kanal bazlı bütçe kararlarında görünmez olur.",
+          "GA4, kanalı belirlerken Google'ın yayımladığı kuralları sırayla dener. Örneğin aracı 'paid' ile başlayan ya da 'cp' içeren bir oturum ücretli kanallara, aracı 'email' olan oturum Email kanalına, aracı 'referral' olan oturum Referral kanalına gider. Hiçbir kurala uymayan kombinasyon Unassigned olur.",
+        ],
+      },
+      {
+        heading: "Unassigned, (not set) ve Direct Arasındaki Fark",
+        paragraphs: [
+          "Üçü sık karıştırılır ama sebepleri farklıdır. Doğru teşhis için önce hangisiyle uğraştığınızı ayırın.",
+        ],
+        bullets: [
+          "Unassigned: Kaynak/aracı bilgisi VAR ama hiçbir kanal kuralına uymuyor. Çoğunlukla UTM isimlendirme sorunudur.",
+          "(not set): Kaynak/aracı bilgisi HİÇ YOK. Genellikle etiket kurulumu sorunudur: oturum başlangıcı (session_start) olmadan gelen olaylar, çift gtag kurulumu, Google etiketinden önce tetiklenen olaylar veya yanlış client_id/session_id ile gönderilen Measurement Protocol olayları.",
+          "Direct: Kaynak gerçekten '(direct)', aracı '(none)'. Adres çubuğuna yazma, yer imi ya da yönlendiren bilgisinin kaybolduğu geçişler.",
+        ],
+      },
+      {
+        heading: "5 Dakikalık Teşhis: Unassigned Trafiğin Kaynağını Bulun",
+        paragraphs: [
+          "Raporlar › Edinme › Trafik edinme raporunu açın. Tablonun birincil boyutunu 'Oturumla ilişkilendirilen birincil kanal grubu' yerine 'Oturum kaynağı/aracı' yapın ve 'Oturumla ilişkilendirilen birincil kanal grubu = Unassigned' filtresi ekleyin.",
+          "Karşınıza çıkan satırlar sorunun kendisidir: 'instagram / story', 'bulten / newsletter', 'qr / offline' gibi ikililer hangi kampanya linklerinin düzeltilmesi gerektiğini doğrudan gösterir. En çok oturum getiren satırdan başlayın; çoğu sitede Unassigned'ın büyük kısmı birkaç kampanya linkinden gelir.",
+          "Satırlarda '(not set)' görüyorsanız sorun UTM değil, etiket kurulumudur; bir sonraki bölümdeki (not set) kontrol listesine geçin.",
+        ],
+      },
+      {
+        heading: "Yanlış ve Doğru UTM Tablosu",
+        paragraphs: [
+          "Kural basit: platform adı utm_source'a, kanal türü utm_medium'a yazılır ve aracı olarak GA4'ün tanıdığı değerler kullanılır. Aşağıdaki eşleştirmeler Google'ın varsayılan kanal kurallarına dayanır.",
+        ],
+        bullets: [
+          "Instagram hikâye reklamı: medium=story ✗ → source=instagram, medium=paid_social ✓ (Paid Social)",
+          "Instagram profil linki: medium=bio ✗ → source=instagram, medium=social ✓ (Organic Social)",
+          "E-posta bülteni: medium=newsletter ✗ → source=newsletter, medium=email ✓ (Email)",
+          "WhatsApp paylaşımı: source=kampanya, medium=whatsapp ✗ → source=whatsapp, medium=social ✓ (Organic Social)",
+          "SMS kampanyası: medium=mesaj ✗ → source=sms, medium=sms ✓ (SMS)",
+          "Influencer: medium=influencer ✗ → source=influencer-adi, medium=affiliate ✓ (Affiliates)",
+          "QR kodlu broşür: medium=offline ✗ → source=qr, medium=referral ✓ (Referral) — ya da özel kanal grubu",
+          "Banner/display: medium=reklam ✗ → medium=display veya cpm ✓ (Display)",
+        ],
+      },
+      {
+        heading: "Unassigned Trafik Kalıcı Olarak Nasıl Düzeltilir?",
+        paragraphs: [
+          "1) UTM'leri standarda çekin: Ekipte tek bir kaynak/aracı listesi kullanın, tüm değerleri küçük harf ve Türkçe karakter olmadan yazın. Ücretsiz UTM Link Oluşturucu aracımız, linki oluştururken GA4'te hangi kanala düşeceğini gösterir ve Unassigned riskinde uyarır.",
+          "2) Kendi kanallarınız için özel kanal grubu tanımlayın: Offline, QR, etkinlik gibi Google'ın varsayılan listesinde olmayan kanallarınız varsa GA4'te Yönetici › Veri görüntüleme › Kanal grupları bölümünden yeni bir kanal grubu oluşturup bu aracı değerlerini kendi kanalınıza eşleyin. Özel kanal grupları geçmiş verilere de uygulanır.",
+          "3) Google Ads'te otomatik etiketlemeyi kullanın: Google'a göre gclid ve manuel UTM birlikte bulunduğunda kaynak/aracı için otomatik değerler kullanılır; Google Ads linklerine ayrıca UTM eklemek gereksizdir.",
+          "4) Yönlendirmelerin UTM'leri koruduğunu doğrulayın: Link kısaltıcılar ve http→https, www→kök alan adı gibi yönlendirmeler parametreleri düşürmemeli. Linki tarayıcıda açıp son adreste utm_ parametrelerinin durduğunu kontrol edin.",
+        ],
+      },
+      {
+        heading: "(not set) Görüyorsanız: Etiket Kurulumu Kontrol Listesi",
+        paragraphs: [
+          "(not set), kaynak bilgisinin hiç taşınmadığı oturumlardır ve UTM düzeltmesiyle geçmez. En yaygın sebepler:",
+        ],
+        bullets: [
+          "Sayfada iki kez gtag/Google etiketi kurulu (ör. hem doğrudan kod hem Google Tag Manager, ya da eklenti + tema kodu).",
+          "Olay etiketleri Google etiketinden önce tetikleniyor; GTM'de Google etiketinin 'Initialization' tetikleyicisinde olduğundan emin olun.",
+          "Measurement Protocol ile gönderilen olaylarda (iade, offline satış) orijinal client_id ve session_id kullanılmıyor.",
+          "Sunucu taraflı etiketlemeye geçişte olayların bir kısmı sunucudan, bir kısmı doğrudan GA4'e gidiyor.",
+          "Rıza (consent) kurulumu hatalı ve reddedilen oturum oranı yüksek.",
+        ],
+      },
+      {
+        heading: "Ne Kadar Unassigned Trafik Normaldir?",
+        paragraphs: [
+          "Sıfıra indirmek her zaman mümkün değildir: reklam engelleyiciler, kısa oturumlar ve uygulama içi tarayıcılar küçük bir pay bırakabilir. Önemli olan payın küçük ve açıklanabilir olmasıdır. Unassigned payı ayda ayda artıyorsa ya da tek bir kaynak/aracı satırı öne çıkıyorsa bu bir isimlendirme hatasıdır ve düzeltilmelidir. Teşhisi aylık rutininize ekleyin; yeni kampanya linklerini yayına almadan önce kanal tahminini kontrol edin.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "GA4'te Unassigned ne demek?",
+        answer:
+          "Oturumun kaynak/aracı bilgisi var ama GA4'ün varsayılan kanal kurallarının hiçbirine uymuyor demektir. Trafik ölçülür ancak Paid Social, Email gibi bir kanala yazılamadığı için 'Unassigned' satırında toplanır.",
+      },
+      {
+        question: "Unassigned trafik nasıl düzeltilir?",
+        answer:
+          "Trafik edinme raporunda boyutu 'Oturum kaynağı/aracı' yapıp Unassigned satırlarını bulun; bu linklerde utm_medium'u paid_social, cpc, social, email, referral, affiliate gibi tanınan değerlere çevirin. Kendi offline kanallarınız için özel kanal grubu tanımlayın.",
+      },
+      {
+        question: "Unassigned ile (not set) arasındaki fark nedir?",
+        answer:
+          "Unassigned'da kaynak/aracı bilgisi vardır ama bir kanala eşlenemez; çoğunlukla UTM sorunudur. (not set)'te kaynak bilgisi hiç yoktur; çift gtag kurulumu, oturum başlangıcı olmadan gelen olaylar veya Measurement Protocol hataları gibi etiket sorunlarından kaynaklanır.",
+      },
+      {
+        question: "WhatsApp ve QR kod trafiği neden Unassigned görünüyor?",
+        answer:
+          "Genellikle utm_medium'a 'whatsapp' veya 'offline' gibi tanınmayan değerler yazıldığı için. WhatsApp için source=whatsapp, medium=social; QR için source=qr, medium=referral kullanın ya da bu kanallar için GA4'te özel kanal grubu oluşturun.",
+      },
+      {
+        question: "Özel kanal grubu geçmiş verileri de düzeltir mi?",
+        answer:
+          "Evet. GA4'te oluşturduğunuz özel kanal grupları raporlarda geçmiş verilere de uygulanır. Ancak varsayılan kanal grubu değişmez; raporlarda boyutu özel kanal grubunuzla değiştirmeniz gerekir.",
+      },
+    ],
+    howTo: {
+      name: "GA4'te Unassigned trafik nasıl düzeltilir?",
+      description: "Unassigned trafiğin kaynağını bulup UTM'leri ve kanal gruplarını düzeltin.",
+      steps: [
+        { name: "Raporu açın", text: "Raporlar › Edinme › Trafik edinme raporunu açın." },
+        { name: "Boyutu değiştirin", text: "Birincil boyutu 'Oturum kaynağı/aracı' yapın ve kanal grubu = Unassigned filtresi ekleyin." },
+        { name: "Satırları sınıflandırın", text: "Gerçek kaynak/aracı değerleri varsa UTM sorunudur; (not set) görüyorsanız etiket kurulumunu kontrol edin." },
+        { name: "UTM'leri düzeltin", text: "Kampanya linklerinde utm_medium'u GA4'ün tanıdığı değerlere çevirin; yeni linkleri bir UTM aracıyla oluşturun." },
+        { name: "Özel kanal grubu ekleyin", text: "Offline/QR gibi kendi kanallarınız için Yönetici › Veri görüntüleme › Kanal grupları'ndan özel grup tanımlayın." },
+      ],
+    },
+    relatedToolKey: "utm",
+    resources: [
+      { label: "UTM Link Oluşturucu (GA4 kanal tahminli)", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Google Analytics Yardım: Varsayılan kanal grubu kuralları", href: "https://support.google.com/analytics/answer/9756891", external: true },
+      { label: "Google Analytics Yardım: Google Ads otomatik etiketleme", href: "https://support.google.com/analytics/answer/10723328", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -3096,6 +3231,114 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "How to Exit the Meta Ads Learning Phase Faster", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
       { label: "Google Ads Help: About budgets", href: "https://support.google.com/google-ads/answer/10486536", external: true },
       { label: "Google Ads Help: About seasonality adjustments", href: "https://support.google.com/google-ads/answer/10369906", external: true },
+    ],
+  },
+  {
+    slug: "ga4-unassigned-traffic-how-to-fix",
+    seoTitle: "GA4 Unassigned Traffic: What It Is and How to Fix It",
+    title: "GA4 Unassigned Traffic: What It Is and How to Fix It (With a Wrong vs Right UTM Table)",
+    description:
+      "GA4 Unassigned traffic happens when source/medium matches no channel rule. A 5-minute diagnosis, a wrong-vs-right UTM table and permanent fixes.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Unassigned is traffic whose source/medium pair matches none of GA4's default channel rules; the visit is measured but lands in the wrong bucket.",
+      "The usual cause is a non-standard utm_medium: values like story, bio, offline or whatsapp aren't recognised; paid_social, cpc, social, email, referral and affiliate are.",
+      "Diagnose it: in Traffic acquisition, switch the primary dimension to 'Session source / medium' and filter for channel = Unassigned.",
+      "Fix it: standardise UTMs, create a custom channel group for your own offline/QR channels, and check your tag setup if you see (not set).",
+    ],
+    publishedAt: "2026-10-23",
+    readingMinutes: 7,
+    tags: ["GA4", "Google Analytics", "UTM", "Unassigned", "Measurement", "Performance Marketing"],
+    sections: [
+      {
+        heading: "What Is Unassigned Traffic in GA4?",
+        paragraphs: [
+          "Unassigned traffic is made up of sessions whose source and medium GA4 can't map to any rule in the default channel group. The visit is recorded, but it can't be credited to Paid Social, Email, Organic Search or any other channel, so it disappears from channel-level budget decisions.",
+          "GA4 tries the rules Google publishes in order. A session whose medium starts with 'paid' or contains 'cp' goes to a paid channel, medium 'email' goes to Email, medium 'referral' goes to Referral. A combination that matches nothing becomes Unassigned.",
+        ],
+      },
+      {
+        heading: "Unassigned vs (not set) vs Direct",
+        paragraphs: ["These three are often confused, but their causes differ. Identify which one you have first."],
+        bullets: [
+          "Unassigned: source/medium EXISTS but matches no channel rule. Usually a UTM naming problem.",
+          "(not set): there is NO source information. Usually a tagging problem: events without a session_start, a duplicate gtag install, events firing before the Google tag, or Measurement Protocol events sent with the wrong client_id/session_id.",
+          "Direct: source is genuinely '(direct)' and medium '(none)' — typed URLs, bookmarks or hops that lose the referrer.",
+        ],
+      },
+      {
+        heading: "A 5-Minute Diagnosis",
+        paragraphs: [
+          "Open Reports › Acquisition › Traffic acquisition. Change the table's primary dimension from 'Session primary channel group' to 'Session source / medium' and add a filter for 'Session primary channel group = Unassigned'.",
+          "The rows you see are the problem: pairs like 'instagram / story', 'digest / newsletter' or 'qr / offline' tell you exactly which campaign links to fix. Start with the row that brings the most sessions; on most sites a handful of links account for most Unassigned traffic.",
+          "If the rows show '(not set)', the issue isn't UTMs but your tag setup — jump to the (not set) checklist below.",
+        ],
+      },
+      {
+        heading: "Wrong vs Right UTM Table",
+        paragraphs: ["The rule: platform goes in utm_source, channel type in utm_medium, using mediums GA4 recognises. These mappings follow Google's default channel rules."],
+        bullets: [
+          "Instagram story ad: medium=story ✗ → source=instagram, medium=paid_social ✓ (Paid Social)",
+          "Instagram bio link: medium=bio ✗ → source=instagram, medium=social ✓ (Organic Social)",
+          "Email newsletter: medium=newsletter ✗ → source=newsletter, medium=email ✓ (Email)",
+          "WhatsApp share: source=campaign, medium=whatsapp ✗ → source=whatsapp, medium=social ✓ (Organic Social)",
+          "SMS campaign: medium=text ✗ → source=sms, medium=sms ✓ (SMS)",
+          "Influencer: medium=influencer ✗ → source=creator-name, medium=affiliate ✓ (Affiliates)",
+          "QR code on a flyer: medium=offline ✗ → source=qr, medium=referral ✓ (Referral) — or a custom channel group",
+          "Banner/display: medium=ads ✗ → medium=display or cpm ✓ (Display)",
+        ],
+      },
+      {
+        heading: "How to Fix Unassigned Traffic for Good",
+        paragraphs: [
+          "1) Standardise UTMs: use one source/medium list across the team, lowercase only, no accented characters. Our free UTM Builder shows which GA4 channel a link will land in and warns about Unassigned before you share it.",
+          "2) Create a custom channel group for your own channels: if you run offline, QR or event campaigns that Google's default list doesn't cover, go to Admin › Data display › Channel groups, create a new group and map those mediums to your own channel. Custom channel groups also apply to historical data.",
+          "3) Use auto-tagging for Google Ads: according to Google, when gclid and manual UTMs are both present, source/medium use the auto-tagged values, so adding UTMs to Google Ads links is unnecessary.",
+          "4) Make sure redirects keep your UTMs: link shorteners and http→https or www→apex redirects must not strip parameters. Open the link and check the utm_ parameters survive to the final URL.",
+        ],
+      },
+      {
+        heading: "Seeing (not set)? Tag Setup Checklist",
+        paragraphs: ["(not set) sessions carry no source information at all, and UTM fixes won't help. Common causes:"],
+        bullets: [
+          "The gtag/Google tag is installed twice (e.g. hard-coded and via Google Tag Manager, or a plugin plus theme code).",
+          "Event tags fire before the Google tag; in GTM make sure the Google tag uses the Initialization trigger.",
+          "Measurement Protocol events (refunds, offline sales) don't reuse the original client_id and session_id.",
+          "During a server-side migration some events go through the server container and others directly to GA4.",
+          "Consent setup is broken and the share of denied sessions is high.",
+        ],
+      },
+      {
+        heading: "How Much Unassigned Traffic Is Normal?",
+        paragraphs: [
+          "You can't always reach zero: ad blockers, very short sessions and in-app browsers can leave a small share. What matters is that the share is small and explainable. If Unassigned grows month over month, or one source/medium row dominates, it's a naming error to fix. Add the diagnosis to your monthly routine and check the channel prediction before launching new campaign links.",
+        ],
+      },
+    ],
+    faq: [
+      { question: "What does Unassigned mean in GA4?", answer: "The session has a source/medium, but it matches none of GA4's default channel rules. The traffic is measured but grouped under 'Unassigned' instead of a channel like Paid Social or Email." },
+      { question: "How do I fix Unassigned traffic?", answer: "Switch Traffic acquisition to 'Session source / medium', find the Unassigned rows and change utm_medium on those links to a recognised value such as paid_social, cpc, social, email, referral or affiliate. Create a custom channel group for your own offline channels." },
+      { question: "What's the difference between Unassigned and (not set)?", answer: "Unassigned has a source/medium that can't be mapped to a channel — usually a UTM issue. (not set) has no source information at all and comes from tagging issues like duplicate gtag installs, events without a session start or Measurement Protocol errors." },
+      { question: "Why do WhatsApp and QR code visits show as Unassigned?", answer: "Usually because utm_medium is set to an unrecognised value such as 'whatsapp' or 'offline'. Use source=whatsapp, medium=social for WhatsApp and source=qr, medium=referral for QR codes, or create a custom channel group for them." },
+      { question: "Do custom channel groups fix historical data?", answer: "Yes. Custom channel groups in GA4 apply to historical data in reports. The default channel group doesn't change, so switch the report dimension to your custom group." },
+    ],
+    howTo: {
+      name: "How to fix Unassigned traffic in GA4",
+      description: "Find the source of Unassigned traffic and fix your UTMs and channel groups.",
+      steps: [
+        { name: "Open the report", text: "Go to Reports › Acquisition › Traffic acquisition." },
+        { name: "Change the dimension", text: "Set the primary dimension to 'Session source / medium' and filter for channel group = Unassigned." },
+        { name: "Classify the rows", text: "Real source/medium values point to UTM issues; (not set) points to your tag setup." },
+        { name: "Fix the UTMs", text: "Change utm_medium on those campaign links to values GA4 recognises; build new links with a UTM tool." },
+        { name: "Add a custom channel group", text: "For your own offline/QR channels, create a custom group under Admin › Data display › Channel groups." },
+      ],
+    },
+    relatedToolKey: "utm",
+    resources: [
+      { label: "UTM Builder (with GA4 channel check)", href: "/en/free-tools/utm-builder/" },
+      { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "Google Analytics Help: Default channel group rules", href: "https://support.google.com/analytics/answer/9756891", external: true },
+      { label: "Google Analytics Help: Google Ads auto-tagging", href: "https://support.google.com/analytics/answer/10723328", external: true },
     ],
   },
 ];

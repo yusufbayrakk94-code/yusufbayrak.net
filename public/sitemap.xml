@@ -354,6 +354,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/ga4-unassigned-traffic-how-to-fix/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -690,6 +699,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-set-advertising-budget/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/reklam-butcesi-nasil-belirlenir/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/reklam-butcesi-nasil-belirlenir/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/ga4-unassigned-traffic-how-to-fix/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/ga4-unassigned-traffic-how-to-fix/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

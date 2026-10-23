@@ -127,6 +127,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "freemium-donusum-orani-artirma", en: "6-ways-to-increase-freemium-conversion-rate" },
   { tr: "roas-nedir-nasil-hesaplanir", en: "what-is-roas-how-to-calculate" },
   { tr: "reklam-butcesi-nasil-belirlenir", en: "how-to-set-advertising-budget" },
+  { tr: "ga4-unassigned-trafik-nedir-nasil-duzeltilir", en: "ga4-unassigned-traffic-how-to-fix" },
 ];
 
 // English-only posts (no TR counterpart). They live solely under /en/blog/.
