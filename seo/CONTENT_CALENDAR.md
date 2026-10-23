@@ -4,6 +4,15 @@ Hazırlandı: 2026-10-23. Günlük SEO görevi her gün bu listeden o günün i�
 Her gün yayından önce o konunun tam SERP/rakip analizi yapılır (seo/research/). Analizde gerçek boşluk çıkmazsa
 konu "Yedek" listesinden biriyle değiştirilir ve bu dosyada not düşülür. Yapılan iş [x] + link ile işaretlenir.
 
+## ⚠ Arama hacmi kuralı (kullanıcı kararı, 23.10.2026)
+Hacmi olmayan konuda üretim yapılmaz. Kaynak: Google Ads Anahtar Kelime Planlayıcı — YALNIZCA AdGusto Google Ads
+hesabı, yalnızca okuma (kampanya/ayar değişikliği yok), konum Türkiye, dil Türkçe.
+- 24.10.2026 çalışmasının ilk işi: aşağıdaki tüm konuların ana ve ikincil sorgularının aylık hacmini topla, takvimi
+  hacme (ve rakip zayıflığına) göre yeniden sırala; hacim aralığı "0–10" olan konuları takvimden çıkar ve yerine hacmi olan
+  konular ekle (kümeye uygun, SERP analizi yapılmış). Ham hacim rakamları bu dosyaya yazılabilir (Search Console verisi değil).
+- Uyarı: A grubundaki "Türkçe kaynak yok" konular düşük hacim de işaret edebilir; hacim doğrulanmadan yazılmaz.
+- Keyword Planner'a erişilemezse: Search Console'da gösterim alan sorgular ve Türkçe rakip yoğunluğu (B grubu) öne alınır.
+
 ## Konu seçim mantığı (23.10.2026 SERP taraması)
 - **A — Türkçe kaynak yok** (Türkçe aramada ilk sonuçların tamamı İngilizce): en hızlı sıralama fırsatı ve
   yapay zekâ asistanları Türkçe cevap verirken alıntılayacak Türkçe kaynak bulamıyor → AI görünürlüğü için de en iyi fırsat.
