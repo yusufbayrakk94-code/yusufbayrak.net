@@ -67,7 +67,7 @@ export const freeToolsPage = {
     { key: "churn", name: "Churn Rate Calculator", description: "Measure your customer churn rate and retention performance.",                           href: "/en/free-tools/churn-rate-calculator" },
     { key: "ltv",   name: "LTV Calculator",        description: "Calculate customer lifetime value and compare it against CAC.",                         href: "/en/free-tools/ltv-calculator" },
     { key: "roas",  name: "ROAS Calculator",       description: "Measure Return on Ad Spend and campaign profitability.",                                href: "/en/free-tools/roas-calculator" },
-    { key: "utm",   name: "UTM Link Builder",      description: "Build UTM-tagged links for accurate campaign attribution.",                             href: "/en/free-tools/utm-builder" },
+    { key: "utm",   name: "UTM Link Builder",      description: "Build UTM links and preview the GA4 channel group and Unassigned risk.",                             href: "/en/free-tools/utm-builder" },
     { key: "llms",  name: "llms.txt Generator",    description: "Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.", href: "/en/free-tools/llms-txt-generator" },
     { key: "gross", name: "Gross Profit Margin Calculator", description: "Enter revenue and COGS to see gross margin as a percentage and an amount.", href: "/en/free-tools/gross-profit-margin-calculator" },
     { key: "net",   name: "Net Profit Margin Calculator",   description: "Include every expense to see the true net profitability of your business.", href: "/en/free-tools/net-profit-margin-calculator" },

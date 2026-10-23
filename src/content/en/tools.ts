@@ -129,20 +129,31 @@ export const roas: ToolContent = {
 export const utm: ToolContent = {
   slug: "utm",
   path: "/en/free-tools/utm-builder",
-  title: "UTM Link Builder",
-  description: "Build UTM-tagged links quickly and measure your marketing channels accurately.",
-  intro: "UTM parameters let Google Analytics and other tools attribute traffic sources correctly. Fill the fields below to build your campaign link.",
+  title: "UTM Builder: Create UTM Links With GA4 Channel Check",
+  description: "Build UTM links and see which GA4 channel (Paid Social, Email, Unassigned…) they'll land in before you share them. Presets plus lowercase and accent clean-up.",
+  intro: "Enter your URL and campaign details or pick a preset. The tool lowercases and cleans your values, predicts which GA4 default channel group the traffic will be reported in, and flags mistakes that cause 'Unassigned' traffic before you share the link.",
   seoParagraphs: [
-    { heading: "What are UTM parameters?", body: "UTM parameters are tags appended to a URL that tell analytics tools which source, channel and campaign the traffic came from. GA4, Mixpanel, Amplitude and HubSpot all pick them up automatically and use them as the basis for channel attribution." },
-    { body: "There are five core parameters: utm_source (traffic source — e.g. google, newsletter), utm_medium (channel type — e.g. cpc, email, social), utm_campaign (campaign name), utm_term (paid search keyword) and utm_content (differentiates creatives within the same campaign). Source, medium and campaign should always be set; term and content are optional for A/B tests and variants." },
-    { body: "Without UTM discipline, marketing reports lose credibility. A consistent naming standard (lowercase, hyphen separators, fixed abbreviations) prevents fragmented reporting caused by capitalisation and spelling drift." },
+    { heading: "What are UTM parameters?", body: "UTM parameters are tags appended to a URL that tell analytics tools which source, channel type and campaign a visitor came from. There are five: utm_source (facebook, newsletter), utm_medium (channel type: paid_social, email, cpc), utm_campaign (campaign name), utm_term (paid search keyword) and utm_content (ad or creative variant). Always set source, medium and campaign together; a missing parameter shows up as (not set) in GA4 reports." },
+    { heading: "How does GA4 map UTMs to channels?", body: "GA4 assigns each session's source and medium to default channel groups (Paid Social, Paid Search, Email, Organic Social, Referral and so on) using rules Google publishes. utm_medium usually decides: mediums starting with 'paid' or containing 'cp' (cpc, cpm, paid_social) go to paid channels, 'email' to Email, 'social' to Organic Social, 'referral' to Referral and 'affiliate' to Affiliates. Source matters for paid splits: facebook + paid_social lands in Paid Social, google + cpc in Paid Search. Combinations that match no rule (e.g. source=march-digest with medium=story, or source=trade-show with medium=offline) are reported as 'Unassigned' and disappear from budget decisions. This tool predicts the channel instantly using Google's rules." },
+    { heading: "How to avoid Unassigned traffic", body: "The most common cause is a non-standard medium (story, bio, influencer, offline) combined with a source GA4 doesn't recognise. The rule is simple: platform in utm_source, channel type in utm_medium, using mediums GA4 recognises (paid_social, cpc, social, email, referral, affiliate, sms): source=instagram and medium=paid_social for an Instagram ad, source=whatsapp and medium=social for a WhatsApp share. For QR codes on printed material, a recognised medium such as referral keeps the traffic out of Unassigned; create a custom channel group in GA4 if you want to track offline separately." },
+    { heading: "A UTM naming convention", body: "GA4 treats UTM values as case-sensitive: 'Facebook' and 'facebook' are reported as two sources. Use one standard across the team: lowercase only, hyphens between words, ASCII instead of accented characters and a fixed list of sources. Add the period to campaign names (black-friday-2026) so you can compare year over year, and keep utm_content short and consistent for creative tests (video-a, video-b)." },
+    { heading: "Google Ads: UTMs or auto-tagging?", body: "With auto-tagging on, Google Ads appends a gclid parameter to ad clicks. According to Google's GA4 help, when gclid and manual UTMs are both present, source, medium and other traffic-classification dimensions use the auto-tagged values, while manual utm_term and utm_content still populate separate 'manual' dimensions. For Google Ads, keep auto-tagging on and link GA4 to your Ads account; use manual UTMs for Meta, LinkedIn, TikTok, email, influencers and SMS." },
+    { heading: "Where not to use UTMs", body: "Don't add UTMs to internal links on your own site: reading new campaign data mid-visit overwrites the visitor's original source and breaks attribution. Don't expose UTM URLs to organic search either; canonical tags should point to the clean URL. If long UTM links look messy on social, use a link shortener — it keeps the parameters through the redirect." },
   ],
   faqs: [
-    { q: "Which UTM parameters are required?", a: "For GA to attribute correctly, at minimum utm_source, utm_medium and utm_campaign must be set. utm_term and utm_content are optional and typically used for A/B tests or creative-level analysis." },
-    { q: "Is UTM case-sensitive?", a: "Yes — Google Analytics treats UTM values case-sensitively. 'Facebook' and 'facebook' report as two different sources. Standardise on lowercase across the whole team." },
-    { q: "Should I add UTMs to internal links?", a: "No. Adding UTMs to same-domain links resets the session and breaks attribution. Use UTMs only on external inbound traffic (ads, email, social)." },
-    { q: "Do UTM links hurt SEO?", a: "There's no direct penalty, but using UTMs on organic search links can create duplicate content and rel=canonical issues. Don't use UTMs on organic traffic." },
+    { q: "How do you create a UTM link?", a: "Append ?utm_source=...&utm_medium=...&utm_campaign=... to the page URL. In this tool, enter the URL and fill in source, medium and campaign or pick a preset; the link is built automatically and copied with one click." },
+    { q: "Which UTM parameters are required?", a: "For accurate reporting set utm_source, utm_medium and utm_campaign together. utm_term and utm_content are optional and used for keywords and creative/variant splits." },
+    { q: "Why does GA4 show Unassigned traffic?", a: "A session is reported as Unassigned when its source/medium combination matches none of GA4's default channel rules. The usual cause is a non-standard value in utm_medium (story, bio, offline). Switch to a recognised medium such as email, social, paid_social, cpc, referral or affiliate." },
+    { q: "What UTMs should I use for Meta (Facebook/Instagram) ads?", a: "Use facebook or instagram as the source and paid_social as the medium; GA4 assigns this to Paid Social. You can fill utm_campaign and utm_content automatically with Meta's dynamic URL parameters." },
+    { q: "Are UTM tags case-sensitive?", a: "Yes. GA4 reports 'Facebook' and 'facebook' as different sources. The tool lowercases all values and converts accented characters to ASCII by default." },
+    { q: "Should I add UTMs to Google Ads links?", a: "If auto-tagging (gclid) is on, GA4 uses auto-tagged values for source and medium and ignores manual UTMs for those dimensions. Keep auto-tagging on and link GA4 to Google Ads; use manual UTMs for other channels." },
   ],
+  relatedTools: [
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/", note: "Return by channel" },
+    { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/", note: "Plan channel budgets" },
+    { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/", note: "Campaign conversions" },
+  ],
+  externalSource: { label: "Google Analytics Help: Default channel group rules", href: "https://support.google.com/analytics/answer/9756891" },
 };
 
 export const llmsTxt: ToolContent = {

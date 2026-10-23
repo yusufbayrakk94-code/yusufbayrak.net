@@ -15,7 +15,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 ## Altyapı / veri
 - [x] Search Console erişimi: kullanıcının masaüstü uygulamasındaki tarayıcı üzerinden (2026-10-22)
 - [x] Dizine ekleme isteği gönderildi (10 URL: 2 yeni araç, ROAS yazısı/aracı, llms.txt, kanal quiz, AdGusto, CAC, LTV, churn, NRR) — 2026-10-22
-- [ ] Dizine ekleme isteği: /blog/reklam-butcesi-nasil-belirlenir/ ve /en/blog/how-to-set-advertising-budget/ (2026-10-23 kota aşıldı, yarın tekrar dene)
+- [ ] Dizine ekleme isteği (kota açılınca): /blog/reklam-butcesi-nasil-belirlenir/, /ucretsiz-araclar/utm-link-olusturucu/, /en/blog/how-to-set-advertising-budget/, /en/free-tools/utm-builder/ (2026-10-23 kota aşıldı)
 - [ ] Kalan: /projeler/brandog-marka-mcp/ ve EN araç sayfaları için dizine ekleme isteği
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
@@ -23,7 +23,9 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 ## Araçlar
 - [x] Araç ↔ blog otomatik iç link (relatedToolKey ters eşleme) — 2026-10-22
 - [x] CAC, LTV, churn sayfaları derinleştirildi + hesaplayıcılar geliştirildi — 2026-10-22
-- [ ] UTM oluşturucu: GA4 kanal eşleme + Unassigned uyarısı, küçük harf, TR şablonları, QR, gclid uyarısı
+- [x] UTM oluşturucu: GA4 kanal tahmini + Unassigned uyarısı, küçük harf/ASCII, 12 hazır şablon, gclid uyarısı — 2026-10-23
+- [ ] UTM v2: QR kod üretimi (harici servis/kütüphane gerektirir, kullanıcıya sor), toplu UTM (CSV), paylaşılabilir link
+- [ ] Destek yazısı: "UTM parametreleri nedir, GA4 Unassigned nasıl düzelir" (relatedToolKey: utm)
 - [ ] ARR sayfası: bileşenlerle ARR (yeni/genişleme/daralma/kayıp), CARR (düşük öncelik)
       (analiz: seo/research/arac-serp-analizi.md)
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
