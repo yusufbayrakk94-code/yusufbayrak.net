@@ -20,7 +20,7 @@ Marka dışı organik trafik + araçlardan/iletişim formundan gelen lead.
 - Son 28 günde **500+ organik tıklama**; hedef sorguların çoğunda ilk 5.
 
 ## İçerik kısıtı (kullanıcı kararı, 2026-10-24)
-Kullanıcı bir vergi danışmanlığı firmasında çalışıyor: vergi konulu içerik (vergi danışmanlığı, KDV/stopaj/gelir vergisi hesapları ve yorumları) ÜRETİLMEZ, mevcut yazılara vergi bölümü EKLENMEZ.
+Vergi konulu içerik (vergi danışmanlığı, KDV/stopaj/gelir vergisi hesapları ve yorumları) ÜRETİLMEZ, mevcut yazılara vergi bölümü EKLENMEZ.
 
 ## Hedef sorgular
 1. reklam bütçesi hesaplama / reklam bütçesi nasıl belirlenir
