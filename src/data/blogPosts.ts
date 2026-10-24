@@ -1857,7 +1857,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "performans-pazarlama",
     tldr: [
       "Black Friday 2026, 27 Kasım Cuma; Cyber Monday 30 Kasım. Reklam hazırlığına en geç 5 hafta önce, Ekim sonunda başlayın.",
-      "İndirim marjı eritir: %35 katkı marjlı bir üründe %20 indirim başabaş ROAS'ı 2,86'dan 4,71'e, %30 indirim 8,75'e çıkarır; %40 indirimde reklamsız bile zarar edilir (KDV hariç; KDV dahil raporlayan panellerde eşik 1,2 kat).",
+      "İndirim marjı eritir: %35 katkı marjlı bir üründe %20 indirim başabaş ROAS'ı 2,86'dan 4,71'e, %30 indirim 8,75'e çıkarır; %40 indirimde reklamsız bile zarar edilir.",
       "Bütçeyi indirimli fiyattaki katkı marjından hesaplayın ve kampanyaları yoğun günlerden 1-2 hafta önce açıp öğrenme aşamasını erken bitirin.",
       "Türkiye'de indirim reklamlarında 'indirimden önceki fiyat' olarak son 30 gündeki en düşük fiyat gösterilmelidir.",
     ],
@@ -1891,8 +1891,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "İndirim Marjınızı Ne Kadar Eritir? (Başabaş ROAS Tablosu)",
         paragraphs: [
           "Black Friday'deki en pahalı hata, normal ayın hedef ROAS'ını indirimli fiyatlara uygulamaktır. İndirim satış fiyatını düşürür ama ürün maliyeti aynı kalır; bu yüzden katkı marjı indirim oranından çok daha hızlı erir.",
-          "Örnek: KDV hariç 1.200 TL'ye satılan, maliyeti 660 TL olan ve sipariş başı değişken maliyetleri (kargo, ödeme, paketleme) satış fiyatının %10'u olan bir ürün düşünün. Normal fiyatta katkı marjı %35, başabaş ROAS 2,86'dır. Tablodaki tüm tutarlar KDV hariçtir.",
-          "KDV'ye dikkat: Reklam panelleri ciroyu çoğunlukla KDV dahil raporlar. %20 KDV'li bir üründe panelde görmeniz gereken başabaş ROAS, tablodakinin 1,2 katıdır: normal fiyatta 3,43, %20 indirimde 5,65, %30 indirimde 10,5. Panel ROAS'ını KDV hariç eşikle karşılaştırırsanız zarar eden kampanyayı kârlı sanırsınız.",
+          "Örnek: 1.200 TL'ye satılan, maliyeti 660 TL olan ve sipariş başı değişken maliyetleri (kargo, ödeme, paketleme) satış fiyatının %10'u olan bir ürün düşünün. Normal fiyatta katkı marjı %35, başabaş ROAS 2,86'dır.",
         ],
         bullets: [
           "İndirim yok — 1.200 TL: katkı 420 TL (%35) → başabaş ROAS 2,86",
@@ -3499,8 +3498,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         heading: "How Much Does a Discount Eat Your Margin? (Break-Even ROAS Table)",
         paragraphs: [
           "The most expensive Black Friday mistake is applying a normal month's target ROAS to discounted prices. A discount lowers the price but not the product cost, so contribution margin shrinks much faster than the discount rate.",
-          "Example: a product sold at $120 excluding tax, with a $66 product cost and per-order variable costs (shipping, payment, packaging) of 10% of price. At full price, contribution margin is 35% and break-even ROAS is 2.86. All figures in the table exclude VAT/sales tax.",
-          "Watch the tax: ad platforms often report tax-inclusive revenue. With 20% VAT, the break-even ROAS you should look for in the platform is 1.2× the table value: 3.43 at full price, 5.65 at 20% off, 10.5 at 30% off. Comparing platform ROAS with a tax-exclusive threshold makes losing campaigns look profitable.",
+          "Example: a product sold at $120 with a $66 product cost and per-order variable costs (shipping, payment, packaging) of 10% of price. At full price, contribution margin is 35% and break-even ROAS is 2.86.",
         ],
         bullets: [
           "No discount — $120: contribution $42 (35%) → break-even ROAS 2.86",
