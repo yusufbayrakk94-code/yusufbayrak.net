@@ -13,4 +13,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "roas-nedir-nasil-hesaplanir", en: "what-is-roas-how-to-calculate" },
   { tr: "reklam-butcesi-nasil-belirlenir", en: "how-to-set-advertising-budget" },
   { tr: "ga4-unassigned-trafik-nedir-nasil-duzeltilir", en: "ga4-unassigned-traffic-how-to-fix" },
+  { tr: "black-friday-2026-reklam-plani", en: "black-friday-2026-ad-plan" },
 ];

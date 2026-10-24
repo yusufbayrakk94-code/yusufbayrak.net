@@ -2,6 +2,10 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-10-24
+- Zamanlanmış görev 08:37'de çalışmadı: bilgisayar çevrimdışı olduğu için sistem görevi askıya aldı (device_absent). Görev yeniden etkinleştirildi; bugünkü iş elle yapıldı.
+- YENİ YAZI: "Black Friday 2026 Reklam Planı" (/blog/black-friday-2026-reklam-plani/ + EN /en/blog/black-friday-2026-ad-plan/). Keyword Planner'a erişilemediği için takvimin POAS konusu (hacmi doğrulanmamış) ertelendi; talebi kanıtlı (6+ Türkçe rakip) ve zamanlı Black Friday konusu öne alındı. Rakiplerde olmayan: 2026 tarihli hafta hafta takvim, indirim oranının başabaş ROAS'a etkisi tablosu, indirimli maks. CPA ve gerekli dönüşüm oranı, 30 gün en düşük fiyat kuralı. Analiz: seo/research/black-friday-reklam-plani.md.
+
 ## 2026-10-23
 - Search Console (son 28 gün, tarayıcı): veri hâlâ çok az (gösterimlerin çoğu marka/AdGusto sorgularında); dizine ekleme raporu dünle aynı, düzeltmelerin doğrulaması sürüyor. Acil CTR sorunu yok → içerik günü.
 - YENİ YAZI: "Reklam Bütçesi Nasıl Belirlenir? Hedeften Geriye 5 Adımlı Hesap" (/blog/reklam-butcesi-nasil-belirlenir/ + EN /en/blog/how-to-set-advertising-budget/). Neden: dünkü Reklam Bütçesi aracının destek içeriği yoktu; SERP'teki ilk 3 (ikas, Ticimax ×2) formülsüz, örneksiz; hedeften geriye hesap, başabaş/maks. CPA, fizibilite (TBM ÷ dönüşüm oranı), test bütçesi ve indirim döneminde marj düşüşü hiçbirinde yok. Gündem açısı: Kasım indirimleri / Black Friday 27 Kasım 2026. Analiz: seo/research/reklam-butcesi-nasil-belirlenir.md. Trendyol komisyon yazısı ertelendi (SERP çok kalabalık). Ölçüm: 'reklam bütçesi nasıl belirlenir', 'reklam bütçesi ne kadar olmalı' gösterim/sıra; araç sayfasına yazıdan gelen iç trafik.

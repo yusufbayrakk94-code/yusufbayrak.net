@@ -26,11 +26,11 @@ hesabı, yalnızca okuma (kampanya/ayar değişikliği yok), konum Türkiye, dil
 ## Takvim
 | Tarih | Sayfa (TR + EN) | Hedef sorgu | Grup | Neden / fırsat | Bağlanacak araç |
 |---|---|---|---|---|---|
-| [ ] 24 Eki Cmt | POAS nedir, nasıl hesaplanır? (ROAS'tan farkı) | poas nedir | A | Türkçe kaynak yok; ROAS kümesini güçlendirir | ROAS, Brüt Marj |
+| [ ] 24 Eki Cmt → hacim doğrulanınca | POAS nedir, nasıl hesaplanır? (ROAS'tan farkı) | poas nedir | A | Türkçe kaynak yok; ROAS kümesini güçlendirir | ROAS, Brüt Marj |
 | [ ] 25 Eki Paz | Hedef ROAS (tROAS) nasıl belirlenir? Google Ads için adım adım | hedef roas | A | TR'de yalnızca Google yardım sayfası; hedef sorgu #3 | ROAS, Reklam Bütçesi |
 | [ ] 26 Eki Pzt | LTV:CAC oranı nedir, kaç olmalı? | ltv cac oranı | A | Türkçe kaynak yok; hedef sorgu #5-6 | LTV, CAC |
 | [ ] 27 Eki Sal | CAC geri ödeme süresi nedir, nasıl hesaplanır? | cac geri ödeme süresi | A | Türkçe kaynak yok; araç var, yazı yok | CAC Payback |
-| [ ] 28 Eki Çar | Black Friday 2026 reklam planı: bütçe, marj ve takvim | black friday reklam stratejisi | B (zamanlı) | 27 Kasım'a 4 hafta; rakipler jenerik, hesap yok | Reklam Bütçesi, ROAS |
+| [x] 28 Eki Çar → 24 Eki'de yayınlandı ([TR](https://yusufbayrak.net/blog/black-friday-2026-reklam-plani/) · [EN](https://yusufbayrak.net/en/blog/black-friday-2026-ad-plan/)); öne alındı: Keyword Planner erişimi yoktu, talebi kanıtlı ve zamanlı konu seçildi | Black Friday 2026 reklam planı: bütçe, marj ve takvim | black friday reklam stratejisi | B (zamanlı) | 27 Kasım'a 4 hafta; rakipler jenerik, hesap yok | Reklam Bütçesi, ROAS |
 | [ ] 29 Eki Per | MER nedir? Pazarlama verimlilik oranı ve ROAS farkı | mer nedir | A | Türkçe kaynak yok | ROAS |
 | [ ] 30 Eki Cum | Rule of 40 nedir, nasıl hesaplanır? | rule of 40 nedir | A | Türkçe kaynak yok; hedef sorgu #10 | Rule of 40 |
 | [ ] 31 Eki Cmt | GRR (brüt gelir tutma) nedir? NRR ile farkı | grr nedir | A | Türkçe kaynak yok; NRR kümesi (NRR gösterim alıyor) | NRR, Churn |

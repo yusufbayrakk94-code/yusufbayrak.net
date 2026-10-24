@@ -1848,6 +1848,122 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Analytics Yardım: Google Ads otomatik etiketleme", href: "https://support.google.com/analytics/answer/10723328", external: true },
     ],
   },
+  {
+    slug: "black-friday-2026-reklam-plani",
+    seoTitle: "Black Friday 2026 Reklam Planı: Takvim, Bütçe ve Marj",
+    title: "Black Friday 2026 Reklam Planı: 5 Haftalık Takvim, İndirim Marjı Hesabı ve Bütçe",
+    description:
+      "Black Friday 27 Kasım 2026'da. Hafta hafta reklam takvimi, indirimin başabaş ROAS'a etkisi, bütçe hesabı ve 30 gün en düşük fiyat kuralı tek rehberde.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Black Friday 2026, 27 Kasım Cuma; Cyber Monday 30 Kasım. Reklam hazırlığına en geç 5 hafta önce, Ekim sonunda başlayın.",
+      "İndirim marjı eritir: %35 katkı marjlı bir üründe %20 indirim başabaş ROAS'ı 2,86'dan 4,71'e, %30 indirim 8,75'e çıkarır; %40 indirimde reklamsız bile zarar edilir.",
+      "Bütçeyi indirimli fiyattaki katkı marjından hesaplayın ve kampanyaları yoğun günlerden 1-2 hafta önce açıp öğrenme aşamasını erken bitirin.",
+      "Türkiye'de indirim reklamlarında 'indirimden önceki fiyat' olarak son 30 gündeki en düşük fiyat gösterilmelidir.",
+    ],
+    publishedAt: "2026-10-24",
+    readingMinutes: 9,
+    tags: ["Black Friday", "Kasım İndirimleri", "Reklam Bütçesi", "ROAS", "E-ticaret", "Google Ads", "Meta Ads"],
+    sections: [
+      {
+        heading: "Black Friday 2026 Ne Zaman, Hazırlığa Ne Zaman Başlanmalı?",
+        paragraphs: [
+          "Black Friday 2026, 27 Kasım Cuma gününe denk geliyor; Cyber Monday ise 30 Kasım Pazartesi. Türkiye'de Kasım boyunca 11.11 ile başlayan uzun bir indirim dönemi yaşandığı için reklam hazırlığına en geç Ekim sonunda, yani yoğun günlerden yaklaşık 5 hafta önce başlamak gerekir.",
+          "Erken başlamanın üç sebebi var: indirimli fiyatla kârlılığı önceden hesaplamak, reklam algoritmalarının öğrenme aşamasını kampanya günlerinden önce bitirmek ve yeniden pazarlama için yeterli kitleyi toplamak. Aşağıdaki takvim bu üçünü hafta hafta sıraya koyar.",
+        ],
+      },
+      {
+        heading: "Hafta Hafta Black Friday Reklam Takvimi",
+        paragraphs: [
+          "Takvim, 27 Kasım'dan geriye sayılarak hazırlandı. Her haftanın tek bir ana işi var; bir hafta gecikirse bir sonraki haftanın işi sıkışır.",
+        ],
+        bullets: [
+          "26 Ekim – 1 Kasım: Hedef ve marj. Kampanyaya girecek ürünleri seçin, indirimli fiyatla katkı marjını ve başabaş ROAS'ı hesaplayın, stokları kontrol edin, kampanya linkleri için UTM standardını belirleyin.",
+          "2 – 8 Kasım: Kitle ve kreatif. E-posta/SMS izinli listeye 'erken haber al' kaydı açın, kreatifleri (video, statik, ürün kataloğu) ve kampanya sayfasını hazırlayın.",
+          "9 – 15 Kasım: Test ve öğrenme. Black Friday kampanyalarını düşük bütçeyle açın; 11.11'i küçük ölçekli bir test olarak kullanın. Amaç, algoritmanın öğrenme aşamasını yoğun günlerden önce bitirmek.",
+          "16 – 22 Kasım: Ön lansman. Kayıtlı listeye erken erişim verin, site ziyaretçilerinden ve sepeti terk edenlerden yeniden pazarlama kitleleri oluşturun.",
+          "23 – 26 Kasım: Kademeli artış. Bütçeyi birkaç adımda yükseltin; Google Ads akıllı teklifte kısa yoğun günler için dönemlik ayarlamaları değerlendirin.",
+          "27 – 30 Kasım: Black Friday ve Cyber Monday. Saatlik değil günlük karar verin; marjinal ROAS, stok ve iade riskini birlikte izleyin.",
+          "1 – 14 Aralık: Gerçek sonuç. İade süresi dolunca kampanya ROAS'ını yeniden hesaplayın ve yeni müşterileri tekrar satın almaya yönlendirin.",
+        ],
+      },
+      {
+        heading: "İndirim Marjınızı Ne Kadar Eritir? (Başabaş ROAS Tablosu)",
+        paragraphs: [
+          "Black Friday'deki en pahalı hata, normal ayın hedef ROAS'ını indirimli fiyatlara uygulamaktır. İndirim satış fiyatını düşürür ama ürün maliyeti aynı kalır; bu yüzden katkı marjı indirim oranından çok daha hızlı erir.",
+          "Örnek: 1.200 TL'ye satılan, maliyeti 660 TL olan ve sipariş başı değişken maliyetleri (kargo, ödeme, paketleme) satış fiyatının %10'u olan bir ürün düşünün. Normal fiyatta katkı marjı %35, başabaş ROAS 2,86'dır.",
+        ],
+        bullets: [
+          "İndirim yok — 1.200 TL: katkı 420 TL (%35) → başabaş ROAS 2,86",
+          "%20 indirim — 960 TL: katkı 204 TL (%21,25) → başabaş ROAS 4,71",
+          "%30 indirim — 840 TL: katkı 96 TL (%11,43) → başabaş ROAS 8,75",
+          "%40 indirim — 720 TL: katkı −12 TL → reklam olmadan bile her satış zarar",
+        ],
+      },
+      {
+        heading: "Black Friday Reklam Bütçesi Nasıl Hesaplanır?",
+        paragraphs: [
+          "Bütçeyi indirimli fiyattaki katkı marjından geriye hesaplayın: Maksimum CPA = İndirimli fiyat × (Katkı marjı − Hedef kâr oranı). Örnekteki %20 indirimli üründe kâr hedefi olmadan maksimum CPA 204 TL'dir; normal dönemde bu sınır 420 TL'ydi.",
+          "Ardından planın gerçekçi olup olmadığına bakın: Gerekli dönüşüm oranı = Tıklama başı maliyet / Maksimum CPA. Tıklama başı maliyet 6 TL ise normal dönemde %1,43 dönüşüm oranı yeterken, %20 indirimde en az %2,94 gerekir. Kampanya döneminde dönüşüm oranınız bu kadar artmıyorsa indirimi küçültün, sepet tutarını büyütün (paket, ücretsiz kargo eşiği) ya da bütçeyi yüksek marjlı ürünlere kaydırın.",
+          "Hedeften geriye bütçe hesabının tamamı ve fizibilite kontrolü için Reklam Bütçesi Nasıl Belirlenir? yazısına ve Reklam Bütçesi Hesaplama aracına bakabilirsiniz.",
+        ],
+      },
+      {
+        heading: "İndirim Reklamlarında 30 Gün Kuralı",
+        paragraphs: [
+          "Türkiye'de Ticari Reklam ve Haksız Ticari Uygulamalar Yönetmeliği'nde 2022'de yapılan değişiklikle, indirim duyurularında 'indirimden önceki fiyat' olarak indirimin uygulandığı tarihten önceki 30 gün içindeki en düşük fiyatın esas alınması gerekiyor. Meyve-sebze gibi çabuk bozulan ürünler için farklı bir hesaplama öngörülüyor.",
+          "Pratikte bu, Kasım başında fiyatı yükseltip Black Friday'de 'büyük indirim' göstermenin işe yaramayacağı ve yaptırım riski taşıdığı anlamına gelir. Reklam kreatiflerindeki indirim oranlarını ve üstü çizili fiyatları bu kurala göre hesaplayın; emin olmadığınız durumlarda hukuk danışmanınıza başvurun.",
+        ],
+      },
+      {
+        heading: "Kampanya Ölçümünü Black Friday'den Önce Kurun",
+        paragraphs: [
+          "Yoğun dönemde hangi kanalın gerçekten kâr getirdiğini görmek için ölçüm kampanyadan önce hazır olmalı. Tüm e-posta, SMS, influencer ve sosyal medya linklerini standart UTM'lerle oluşturun; aksi hâlde trafiğin önemli bir kısmı GA4'te 'Unassigned' olarak görünür.",
+          "Black Friday kampanyalarını normal kampanyalardan ayrı adlandırın (ör. utm_campaign=black-friday-2026) ve indirimli ürünlerle tam fiyatlı ürünleri ayrı raporlayın. Kampanya bitiminde panel ROAS'ının yanında toplam ciro / toplam pazarlama harcaması (MER) oranına da bakın.",
+        ],
+      },
+      {
+        heading: "En Sık Yapılan 5 Black Friday Reklam Hatası",
+        paragraphs: ["Bu hatalar kampanyanın ciro getirip kâr getirmemesinin en yaygın sebepleridir:"],
+        bullets: [
+          "Normal ayın hedef ROAS'ını indirimli fiyatlara uygulamak.",
+          "Kampanyaları Black Friday sabahı açıp öğrenme aşamasını en pahalı günlere denk getirmek.",
+          "Tüm ürünlerde aynı indirim oranını uygulamak; düşük marjlı ürünlerde zarar etmek.",
+          "Son 30 gündeki en düşük fiyatı hesaba katmadan indirim oranı göstermek.",
+          "Kampanya ROAS'ını iade süresi dolmadan nihai sonuç saymak.",
+        ],
+      },
+    ],
+    faq: [
+      { question: "Black Friday 2026 hangi gün?", answer: "Black Friday 2026, 27 Kasım Cuma gününe denk geliyor. Cyber Monday ise 30 Kasım Pazartesi. Türkiye'de birçok marka indirimleri Kasım boyunca ve 11.11 ile başlatıyor." },
+      { question: "Black Friday reklamlarına ne zaman başlamalı?", answer: "Hazırlığa en geç 5 hafta önce başlayın; kampanyaları yoğun günlerden 1-2 hafta önce düşük bütçeyle açarak algoritmanın öğrenme aşamasını erken tamamlayın, bütçeyi son haftada kademeli artırın." },
+      { question: "Black Friday'de indirim oranı nasıl belirlenir?", answer: "İndirimli fiyattaki katkı marjını hesaplayın. %35 katkı marjlı bir üründe %20 indirim başabaş ROAS'ı 4,71'e çıkarır, %40 indirim ise reklamsız bile zarar ettirir. Düşük marjlı ürünlerde indirimi küçük tutun ya da paket ve kargo eşiğiyle sepeti büyütün." },
+      { question: "İndirimden önceki fiyat nasıl gösterilmeli?", answer: "Türkiye'deki düzenlemeye göre indirim duyurularında indirimden önceki son 30 gün içindeki en düşük fiyat referans alınmalıdır. Kasım başında fiyat artırıp indirim göstermek bu kurala aykırıdır." },
+      { question: "Black Friday bütçesi ne kadar olmalı?", answer: "Bütçeyi hedeften geriye hesaplayın: hedef sipariş sayısı × indirimli fiyattaki maksimum CPA. Ardından tıklama maliyeti ve beklenen dönüşüm oranıyla gerçek CPA'nın bu sınırın altında kalıp kalmadığını kontrol edin." },
+    ],
+    howTo: {
+      name: "Black Friday reklam planı nasıl hazırlanır?",
+      description: "5 haftalık takvimle Black Friday reklamlarını kârlı şekilde planlayın.",
+      steps: [
+        { name: "Marjı hesaplayın", text: "Kampanyaya girecek ürünlerde indirimli fiyatla katkı marjını ve başabaş ROAS'ı hesaplayın." },
+        { name: "Bütçeyi belirleyin", text: "Hedef sipariş × indirimli maksimum CPA formülüyle bütçeyi bulun; gerekli dönüşüm oranını kontrol edin." },
+        { name: "Ölçümü kurun", text: "Tüm kampanya linklerini standart UTM'lerle oluşturun ve Black Friday kampanyalarını ayrı adlandırın." },
+        { name: "Erken açın", text: "Kampanyaları yoğun günlerden 1-2 hafta önce düşük bütçeyle açıp öğrenme aşamasını tamamlayın." },
+        { name: "Kademeli ölçekleyin", text: "Son haftada bütçeyi adım adım artırın, kampanya günlerinde marjinal ROAS ve stoku günlük izleyin." },
+        { name: "İade sonrası değerlendirin", text: "İade süresi dolunca gerçek ROAS ve MER'i hesaplayın, yeni müşterileri tekrar satın almaya yönlendirin." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir?", href: "/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "Ekonomist: İndirimli satışlarda 30 gün şartı", href: "https://www.ekonomist.com.tr/haberler/indirimli-satislarda-yeni-donem-30-gun-sarti-getirildi-28813", external: true },
+      { label: "Google Ads Yardım: Dönemlik ayarlamalar", href: "https://support.google.com/google-ads/answer/10369906", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -3339,6 +3455,118 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
       { label: "Google Analytics Help: Default channel group rules", href: "https://support.google.com/analytics/answer/9756891", external: true },
       { label: "Google Analytics Help: Google Ads auto-tagging", href: "https://support.google.com/analytics/answer/10723328", external: true },
+    ],
+  },
+  {
+    slug: "black-friday-2026-ad-plan",
+    seoTitle: "Black Friday 2026 Ad Plan: Timeline, Budget and Margin",
+    title: "Black Friday 2026 Ad Plan: A 5-Week Timeline, Discount Margin Math and Budget",
+    description:
+      "Black Friday is November 27, 2026. A week-by-week ad timeline, how discounts change break-even ROAS, budget math and the 30-day lowest price rule in Turkey.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Black Friday 2026 is Friday, November 27; Cyber Monday is November 30. Start ad preparation at least five weeks out, in late October.",
+      "Discounts eat margin: on a 35% contribution-margin product, a 20% discount lifts break-even ROAS from 2.86 to 4.71 and 30% to 8.75; at 40% you lose money even without ads.",
+      "Budget from the contribution margin at the discounted price, and launch campaigns 1-2 weeks before peak days so the learning phase ends early.",
+      "In Turkey, discount ads must use the lowest price of the previous 30 days as the 'price before discount'.",
+    ],
+    publishedAt: "2026-10-24",
+    readingMinutes: 9,
+    tags: ["Black Friday", "Holiday Sales", "Ad Budget", "ROAS", "E-commerce", "Google Ads", "Meta Ads"],
+    sections: [
+      {
+        heading: "When Is Black Friday 2026, and When Should You Start?",
+        paragraphs: [
+          "Black Friday 2026 falls on Friday, November 27, and Cyber Monday on Monday, November 30. With a long discount season running through November, ad preparation should start by late October — about five weeks before peak days.",
+          "Starting early does three things: it lets you work out profitability at discounted prices, finish the ad algorithms' learning phase before the expensive days, and build enough audience for retargeting. The timeline below sequences all three.",
+        ],
+      },
+      {
+        heading: "Week-by-Week Black Friday Ad Timeline",
+        paragraphs: ["The timeline counts back from November 27. Each week has one main job; if a week slips, the next one gets squeezed."],
+        bullets: [
+          "Oct 26 – Nov 1: Goals and margin. Choose the products, calculate contribution margin and break-even ROAS at the discounted price, check stock and set a UTM standard.",
+          "Nov 2 – 8: Audience and creative. Open an opt-in 'early access' list for email/SMS, produce creatives (video, static, catalog) and the campaign landing page.",
+          "Nov 9 – 15: Test and learn. Launch Black Friday campaigns on a low budget so the learning phase finishes before peak days; use Singles' Day (11.11) as a small test.",
+          "Nov 16 – 22: Pre-launch. Give the list early access; build retargeting audiences from visitors and cart abandoners.",
+          "Nov 23 – 26: Gradual scaling. Raise budgets in steps; consider Google Ads seasonality adjustments for short peak days.",
+          "Nov 27 – 30: Black Friday and Cyber Monday. Decide daily, not hourly; watch marginal ROAS, stock and return risk together.",
+          "Dec 1 – 14: True results. Recalculate campaign ROAS after the return window and move new customers toward a second purchase.",
+        ],
+      },
+      {
+        heading: "How Much Does a Discount Eat Your Margin? (Break-Even ROAS Table)",
+        paragraphs: [
+          "The most expensive Black Friday mistake is applying a normal month's target ROAS to discounted prices. A discount lowers the price but not the product cost, so contribution margin shrinks much faster than the discount rate.",
+          "Example: a product sold at $120 with a $66 product cost and per-order variable costs (shipping, payment, packaging) of 10% of price. At full price, contribution margin is 35% and break-even ROAS is 2.86.",
+        ],
+        bullets: [
+          "No discount — $120: contribution $42 (35%) → break-even ROAS 2.86",
+          "20% off — $96: contribution $20.40 (21.25%) → break-even ROAS 4.71",
+          "30% off — $84: contribution $9.60 (11.43%) → break-even ROAS 8.75",
+          "40% off — $72: contribution −$1.20 → every sale loses money even without ads",
+        ],
+      },
+      {
+        heading: "How to Calculate a Black Friday Ad Budget",
+        paragraphs: [
+          "Work backward from the contribution margin at the discounted price: Max CPA = Discounted price × (Contribution margin − Target profit rate). For the 20%-off product with no profit target, max CPA is $20.40, versus $42 at full price.",
+          "Then check feasibility: Required conversion rate = Cost per click / Max CPA. At a $0.60 CPC, 1.43% conversion is enough at full price, but at 20% off you need at least 2.94%. If your conversion rate won't rise that much during the sale, shrink the discount, grow basket size (bundles, free-shipping threshold) or shift budget to higher-margin products.",
+          "For the full work-backward method and feasibility check, see How to Set an Advertising Budget and the Ad Budget Calculator.",
+        ],
+      },
+      {
+        heading: "The 30-Day Rule for Discount Ads in Turkey",
+        paragraphs: [
+          "Under a 2022 amendment to Turkey's Regulation on Commercial Advertising and Unfair Commercial Practices, discount announcements must use the lowest price applied in the 30 days before the discount as the 'price before discount'. Perishable goods such as fruit and vegetables are treated differently.",
+          "In practice, raising prices in early November to show a 'big discount' on Black Friday doesn't work and carries enforcement risk. Calculate the discount rates and strike-through prices in your creatives accordingly, and check with legal counsel when in doubt.",
+        ],
+      },
+      {
+        heading: "Set Up Measurement Before Black Friday",
+        paragraphs: [
+          "To see which channel actually makes money during the peak, measurement must be ready before the campaign. Build every email, SMS, influencer and social link with standard UTMs; otherwise much of the traffic shows up as 'Unassigned' in GA4.",
+          "Name Black Friday campaigns separately (e.g. utm_campaign=black-friday-2026) and report discounted and full-price products apart. When the sale ends, look at total revenue / total marketing spend (MER) alongside platform ROAS.",
+        ],
+      },
+      {
+        heading: "5 Common Black Friday Ad Mistakes",
+        paragraphs: ["These are the most common reasons a campaign brings revenue but no profit:"],
+        bullets: [
+          "Applying a normal month's target ROAS to discounted prices.",
+          "Launching on Black Friday morning, so the learning phase lands on the most expensive days.",
+          "Using the same discount on every product and losing money on low-margin items.",
+          "Showing discount rates without accounting for the lowest price of the previous 30 days.",
+          "Treating campaign ROAS as final before the return window closes.",
+        ],
+      },
+    ],
+    faq: [
+      { question: "When is Black Friday 2026?", answer: "Black Friday 2026 is Friday, November 27. Cyber Monday is Monday, November 30." },
+      { question: "When should Black Friday ads start?", answer: "Start preparing at least five weeks out; launch campaigns on a low budget 1-2 weeks before peak days so the learning phase finishes early, then scale budgets gradually in the final week." },
+      { question: "How should I choose the discount rate?", answer: "Calculate contribution margin at the discounted price. On a 35% contribution-margin product, 20% off lifts break-even ROAS to 4.71 and 40% off loses money even without ads. Keep discounts small on low-margin products or grow basket size with bundles and shipping thresholds." },
+      { question: "How should the pre-discount price be shown in Turkey?", answer: "Under Turkish regulation, discount announcements must use the lowest price of the 30 days before the discount as the reference price. Raising prices in early November to show a discount breaks this rule." },
+      { question: "How big should a Black Friday budget be?", answer: "Work backward: target orders × max CPA at the discounted price. Then check that real CPA (CPC / conversion rate) stays under that limit." },
+    ],
+    howTo: {
+      name: "How to build a Black Friday ad plan",
+      description: "Plan profitable Black Friday ads with a five-week timeline.",
+      steps: [
+        { name: "Calculate margin", text: "Calculate contribution margin and break-even ROAS at the discounted price for each campaign product." },
+        { name: "Set the budget", text: "Budget = target orders × max CPA at the discounted price; check the required conversion rate." },
+        { name: "Set up measurement", text: "Build every campaign link with standard UTMs and name Black Friday campaigns separately." },
+        { name: "Launch early", text: "Open campaigns on a low budget 1-2 weeks before peak days to finish the learning phase." },
+        { name: "Scale gradually", text: "Raise budgets step by step in the final week; monitor marginal ROAS and stock daily during the sale." },
+        { name: "Review after returns", text: "After the return window, recalculate true ROAS and MER and move new customers toward a second purchase." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "GA4 Unassigned Traffic: What It Is and How to Fix It", href: "/en/blog/ga4-unassigned-traffic-how-to-fix/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "Google Ads Help: Seasonality adjustments", href: "https://support.google.com/google-ads/answer/10369906", external: true },
     ],
   },
 ];
