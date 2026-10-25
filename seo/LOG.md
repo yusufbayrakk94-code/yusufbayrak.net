@@ -2,6 +2,11 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-10-25
+- YENİ YAZI: "Hedef ROAS Nasıl Belirlenir? Google Ads tROAS Rehberi" (/blog/hedef-roas-nasil-belirlenir/ + EN /en/blog/how-to-set-target-roas-google-ads/). Takvimin bugünkü konusu. Hacim takvimde henüz yoktu; talep kuralı sağlandı (4 farklı Türkçe site konuya sayfa ayırmış). Bekleyen POAS (24 Eki) Türkçe kaynak olmadığından talep kuralını sağlamadı → hacim gelene kadar bekletiliyor.
+- Rakip bulgusu: Türkçe SERP'te Google Yardım (resmî ama hesap/örnek yok), sanalyonetmen (2025, "Adwords" terimi, sayısal örnek yok, formül tanımı ters), erdiduman/digitalup (ROAS sözlüğü + kısa tROAS). Hiçbirinde yok: marjdan hedef formülü, iade düzeltmesi, geçmiş ROAS'tan kademeli geçiş, "en yüksek ROAS ≠ en çok kâr" senaryo tablosu ve marjinal ROAS, ciro yerine kâr gönderme (POAS), sorun giderme listesi, Haziran 2026 ad değişikliği ve 17 Ağustos 2026 teklif güncellemesi. Analiz: seo/research/hedef-roas-nasil-belirlenir.md.
+- İç link: ROAS yazısının (TR+EN) hedef ROAS bölümü/kaynakları yeni yazıya bağlandı; yeni yazı ROAS aracı (relatedToolKey), brüt marj ve bütçe araçları, Black Friday yazısına link veriyor. Ölçüm: 'hedef roas', 'hedef roas nasıl belirlenir', 'troas' gösterim/sıra; ROAS aracına yazıdan iç trafik.
+
 ## 2026-10-24
 - Zamanlanmış görev 08:37'de çalışmadı: bilgisayar çevrimdışı olduğu için sistem görevi askıya aldı (device_absent). Görev yeniden etkinleştirildi; bugünkü iş elle yapıldı.
 - YENİ YAZI: "Black Friday 2026 Reklam Planı" (/blog/black-friday-2026-reklam-plani/ + EN /en/blog/black-friday-2026-ad-plan/). Keyword Planner'a erişilemediği için takvimin POAS konusu (hacmi doğrulanmamış) ertelendi; talebi kanıtlı (6+ Türkçe rakip) ve zamanlı Black Friday konusu öne alındı. Rakiplerde olmayan: 2026 tarihli hafta hafta takvim, indirim oranının başabaş ROAS'a etkisi tablosu, indirimli maks. CPA ve gerekli dönüşüm oranı, 30 gün en düşük fiyat kuralı. Analiz: seo/research/black-friday-reklam-plani.md.

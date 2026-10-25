@@ -129,6 +129,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "reklam-butcesi-nasil-belirlenir", en: "how-to-set-advertising-budget" },
   { tr: "ga4-unassigned-trafik-nedir-nasil-duzeltilir", en: "ga4-unassigned-traffic-how-to-fix" },
   { tr: "black-friday-2026-reklam-plani", en: "black-friday-2026-ad-plan" },
+  { tr: "hedef-roas-nasil-belirlenir", en: "how-to-set-target-roas-google-ads" },
 ];
 
 // English-only posts (no TR counterpart). They live solely under /en/blog/.

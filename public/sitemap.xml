@@ -211,7 +211,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -368,6 +368,15 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/black-friday-2026-reklam-plani/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/black-friday-2026-ad-plan/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/black-friday-2026-reklam-plani/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/hedef-roas-nasil-belirlenir/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/hedef-roas-nasil-belirlenir/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-set-target-roas-google-ads/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/hedef-roas-nasil-belirlenir/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -581,7 +590,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/en/blog/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -726,6 +735,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/black-friday-2026-ad-plan/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/black-friday-2026-reklam-plani/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/black-friday-2026-reklam-plani/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/how-to-set-target-roas-google-ads/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-set-target-roas-google-ads/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/hedef-roas-nasil-belirlenir/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/hedef-roas-nasil-belirlenir/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

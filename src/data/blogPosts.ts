@@ -1485,6 +1485,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Başabaş noktası, zarar etmemek için gereken minimumdur; hedef ROAS ise istediğiniz kârı da içerir. Formül: Hedef ROAS = 1 / (Katkı marjı − Hedef net kâr oranı).",
           "Örnek: Katkı marjınız %30 ve reklam sonrası cironun %10'unu kâr olarak bırakmak istiyorsanız hedef ROAS = 1 / (0,30 − 0,10) = 5'tir. Google Ads'te Hedef ROAS (tROAS) teklif stratejisine gireceğiniz değer de bu hesaptan gelmelidir; rastgele seçilmiş bir '%400' değil.",
+          "Hedefi Google Ads'e nasıl gireceğinizi, iade düzeltmesini, başlangıç değerini ve kârı en yükseğe çıkaran hedefi bulmayı 'Hedef ROAS Nasıl Belirlenir?' rehberinde adım adım anlattık (bağlantı yazının sonundaki kaynaklarda).",
           "Yeni müşteri kazanımına odaklanan büyüme aşamasındaki markalar, ilk siparişte başabaşın altında bir ROAS'ı bilinçli olarak kabul edebilir — yeter ki müşteri yaşam boyu değeri (LTV) bu açığı kapatsın. Bu durumda karar metriği ilk sipariş ROAS'ı değil, LTV / CAC oranıdır.",
         ],
       },
@@ -1547,6 +1548,7 @@ export const BLOG_POSTS: BlogPost[] = [
     resources: [
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Brüt Kâr Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Hedef ROAS Nasıl Belirlenir? Google Ads tROAS Rehberi", href: "/blog/hedef-roas-nasil-belirlenir/" },
       { label: "Google Ads'te Performansı Katlamanın 7 Data-Driven Yolu", href: "/blog/google-ads-performans-optimizasyonu/" },
       { label: "Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır?", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
       { label: "Google Ads Yardım: Hedef ROAS teklif stratejisi", href: "https://support.google.com/google-ads/answer/6268637", external: true },
@@ -1962,6 +1964,189 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
       { label: "Ekonomist: İndirimli satışlarda 30 gün şartı", href: "https://www.ekonomist.com.tr/haberler/indirimli-satislarda-yeni-donem-30-gun-sarti-getirildi-28813", external: true },
       { label: "Google Ads Yardım: Dönemlik ayarlamalar", href: "https://support.google.com/google-ads/answer/10369906", external: true },
+    ],
+  },
+  {
+    slug: "hedef-roas-nasil-belirlenir",
+    seoTitle: "Hedef ROAS Nasıl Belirlenir? Google Ads tROAS Rehberi",
+    title: "Hedef ROAS Nasıl Belirlenir? Google Ads'te tROAS'ı Marjdan Hesaplama Rehberi",
+    description:
+      "Google Ads hedef ROAS değerini marjınızdan hesaplayın: formül, iade düzeltmesi, başlangıç değeri, kademeli değişiklik ve kârı en yüksek hedefi bulma örnekleri.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Hedef ROAS (%) = 100 / (Katkı marjı − Hedef kâr oranı). %35 katkı marjı ve %10 kâr hedefiyle Google Ads'e girilecek değer %400'dür.",
+      "Panel değeri iadeleri de saydığı için hedefi (1 − iade oranı) ile bölün: %15 iadede %400 → yaklaşık %470.",
+      "Başlangıçta geçmiş ROAS'ınızın (son 4 hafta veya 3 dönüşüm döngüsü) yakınından başlayın, hedefi kademeli değiştirin ve her adımdan sonra 1-2 dönüşüm döngüsü bekleyin.",
+      "En yüksek ROAS en çok kâr demek değildir: hedefi yükseltmek harcamayı ve satışı da düşürür. Doğru hedef, son eklenen harcamanın başabaşın üzerinde kaldığı noktadır.",
+    ],
+    publishedAt: "2026-10-25",
+    readingMinutes: 9,
+    tags: ["Hedef ROAS", "tROAS", "Google Ads", "Akıllı Teklif", "ROAS", "E-ticaret"],
+    sections: [
+      {
+        heading: "Hedef ROAS nasıl belirlenir? (Kısa cevap)",
+        paragraphs: [
+          "Hedef ROAS'ı reklam panelindeki ortalamadan ya da 'sektörde %400 iyidir' gibi genel bir sayıdan değil, kendi katkı marjınızdan hesaplayın. Formül: Hedef ROAS (%) = 100 / (Katkı marjı − Hedef kâr oranı).",
+          "Örnek: Siparişlerinizde ürün maliyeti, kargo, ödeme komisyonu ve paketleme düşüldükten sonra cironun %35'i kalıyor (katkı marjı) ve reklamdan sonra cironun %10'unu kâr olarak bırakmak istiyorsunuz. Hedef ROAS = 100 / (0,35 − 0,10) = %400. Google Ads'te hedef ROAS alanına 400 yazarsınız; bu, reklama harcanan her 1 TL için ortalama 4 TL dönüşüm değeri hedeflendiği anlamına gelir.",
+          "Ardından bu sayıyı üç düzeltmeden geçirin: iade oranı, geçmiş ROAS'ınızla arasındaki fark (başlangıç değeri) ve kârı en yükseğe çıkaran hedef. Aşağıdaki bölümler bu üç adımı örneklerle anlatıyor.",
+        ],
+      },
+      {
+        heading: "Hedef ROAS (tROAS) teklif stratejisi nedir, nasıl çalışır?",
+        paragraphs: [
+          "Hedef ROAS, Google Ads'in değer odaklı akıllı teklif stratejisidir. Her açık artırmada olası dönüşümün değerini tahmin eder ve ortalama dönüşüm değeri / maliyet oranını sizin belirlediğiniz hedefe yakın tutarken toplam dönüşüm değerini artıracak şekilde teklif verir. Cihaz, konum, günün saati ve yeniden pazarlama listeleri gibi sinyalleri kullanır; değerli görünen aramalarda daha yüksek, düşük değerlilerde daha düşük teklif verir.",
+          "İki noktayı bilmek önemli. Birincisi, hedef bir ortalamadır: tek tek günlerde ya da kampanyalarda gerçekleşen ROAS hedefin üstünde veya altında kalabilir. İkincisi, Google Haziran 2026'da strateji adlarını sadeleştirdi: 'Hedef ROAS ile dönüşüm değerini en üst düzeye çıkarma' artık doğrudan 'Hedef ROAS' olarak görünüyor; Google'a göre teklif davranışı değişmedi.",
+          "Strateji yalnızca dönüşüm değeri gönderen hesaplarda anlamlıdır. Değeri 0 olan dönüşümler hesaba katılmaz; bu yüzden önce satın alma etiketinin sipariş tutarını doğru gönderdiğinden emin olun.",
+        ],
+      },
+      {
+        heading: "Hedef ROAS kullanmak için kaç dönüşüm gerekir?",
+        paragraphs: [
+          "Google Ads Yardım'daki güncel eşikler kampanya türüne göre değişir. Bu eşiklerin altında strateji açılabilir ama algoritmanın öğreneceği veri azdır ve sonuçlar dalgalı olur.",
+        ],
+        bullets: [
+          "Arama ve Alışveriş: son 30 günde en az 15 dönüşüm (dönüşüm izleme düzeyinde)",
+          "Görüntülü Reklam Ağı: kampanyalar genelinde son 30 günde değer içeren en az 15 dönüşüm",
+          "Demand Gen: son 35 günde 50 dönüşüm (10'u son 7 günde) veya hesaptaki tüm Demand Gen kampanyalarında 100",
+          "Video işlem kampanyaları: son 30 günde en az 30 dönüşüm",
+          "Hedef belirlemeden önce: en az 4 hafta veya 3 dönüşüm döngüsü (hangisi uzunsa) boyunca değer raporlanmış olmalı",
+        ],
+      },
+      {
+        heading: "Adım 1: Katkı marjından hedef ROAS'ı hesaplayın",
+        paragraphs: [
+          "Katkı marjı = (Satış fiyatı − Ürün maliyeti − Sipariş başı değişken maliyetler) / Satış fiyatı. Değişken maliyetlere kargo, ödeme komisyonu, paketleme ve varsa pazaryeri komisyonu girer. Brüt marjı kullanırsanız hedefi olması gerekenden düşük koyar, kâr ettiğinizi sanırken zarar edebilirsiniz.",
+          "Başabaş ROAS (%) = 100 / Katkı marjı. %35 katkı marjında başabaş %286'dır; hedefiniz bunun altına inerse reklam her satışta para kaybettirir.",
+          "Hedef ROAS (%) = 100 / (Katkı marjı − Hedef kâr oranı). Hedef kâr oranı, reklam maliyeti düşüldükten sonra cironun ne kadarını kâr olarak bırakmak istediğinizdir. Sabit giderleri (kira, maaş, yazılım) bu orana dahil etmek isteyip istemediğinize işletme olarak siz karar verirsiniz.",
+        ],
+        bullets: [
+          "Katkı marjı %50, kâr hedefi %10 → hedef ROAS %250",
+          "Katkı marjı %35, kâr hedefi %10 → hedef ROAS %400",
+          "Katkı marjı %30, kâr hedefi %10 → hedef ROAS %500",
+          "Katkı marjı %25, kâr hedefi %5 → hedef ROAS %500",
+          "Katkı marjı %20, kâr hedefi %5 → hedef ROAS ≈ %667",
+        ],
+      },
+      {
+        heading: "Adım 2: İade oranına göre hedefi düzeltin",
+        paragraphs: [
+          "Google Ads'teki dönüşüm değeri sipariş anında gönderilir; sonradan iade edilen siparişler panelde değer olarak kalır. İade oranı yüksek kategorilerde (giyim, ayakkabı gibi) panel ROAS'ı gerçek ROAS'tan belirgin şekilde yüksek görünür.",
+          "Yaklaşık düzeltme: Panelde kullanılacak hedef ROAS = Hesapladığınız hedef ROAS / (1 − İade oranı). %15 iade oranında %400 / 0,85 ≈ %470; %30 iade oranında %400 / 0,70 ≈ %571. Daha temiz bir yol, iadeleri çevrimdışı dönüşüm düzeltmeleriyle Google Ads'e geri bildirmek ya da kategori bazında farklı değer göndermektir; o durumda bu düzeltmeye gerek kalmaz.",
+        ],
+      },
+      {
+        heading: "Adım 3: Başlangıç değerini geçmiş ROAS'ınıza göre seçin",
+        paragraphs: [
+          "Hesapladığınız hedef doğru olsa bile kampanyanın bugün ürettiği ROAS'tan çok uzaksa doğrudan girmeyin. Google'ın önerisi, hedefi iş hedeflerinize ve geçmiş performansa göre belirlemek; gerçekçi olmayan bir başlangıç hedefi düşük performansa ya da ölçeğin sınırlanmasına yol açabilir.",
+          "Geçmiş ROAS'ı bulmak için Google Ads'te Dönüşümler altındaki 'Dönş. değeri/maliyet' sütununu ekleyin ve 100 ile çarpın. Son birkaç günü (dönüşüm gecikmesi süresini) analize katmayın; o günlerin dönüşümleri henüz tamamlanmamıştır.",
+          "Kural olarak hedefi kademeli değiştirin ve her değişiklikten sonra 1-2 dönüşüm döngüsü bekleyin (dönüşüm döngüsü: tıklamadan satın almaya kadar geçen tipik süre). Google belirli bir yüzde vermiyor; biz pratikte her adımda %10-15'lik değişiklikle çalışıyoruz.",
+        ],
+        bullets: [
+          "Geçmiş ROAS %380, hedef %470 → %380 → %420 → %470 (her adım 1-2 döngü sonra). Hedefi bir anda %470'e çekmek harcamayı sert düşürebilir.",
+          "Geçmiş ROAS %560, hedef %470 → %520 → %470. Hedefi düşürmek daha fazla açık artırmaya girmeyi ve hacmi artırır; ROAS'ın hedefin altına sarkıp sarkmadığını izleyin.",
+          "Yeni kampanya, geçmiş yok → önce dönüşüm değerini en üst düzeye çıkarma (hedefsiz) ya da hedef EBM ile 2-4 hafta veri toplayın, sonra hedef ROAS'a geçin.",
+        ],
+      },
+      {
+        heading: "En yüksek ROAS neden en çok kârı getirmez?",
+        paragraphs: [
+          "Hedef ROAS'ı yükselttikçe Google yalnızca en değerli açık artırmalara girer: ROAS artar ama harcama ve satış düşer. Bir noktadan sonra kaybedilen satışların katkısı, tasarruf edilen reklam harcamasından büyük olur. Aşağıdaki tablo %35 katkı marjlı bir mağaza için varsayımsal bir örnektir (rakamlar örnek tutarlardır, gerçek hesap verisi değildir).",
+          "Kâr = Ciro × Katkı marjı − Reklam harcaması formülüyle hesaplanmıştır (reklam sonrası katkı kârı, sabit giderler hariç).",
+        ],
+        bullets: [
+          "Hedef %300 → harcama 100.000 TL, ciro 300.000 TL, kâr 5.000 TL",
+          "Hedef %400 → harcama 60.000 TL, ciro 240.000 TL, kâr 24.000 TL",
+          "Hedef %500 → harcama 35.000 TL, ciro 175.000 TL, kâr 26.250 TL",
+          "Hedef %600 → harcama 20.000 TL, ciro 120.000 TL, kâr 22.000 TL",
+        ],
+      },
+      {
+        heading: "Marjinal ROAS ile doğru hedefi nasıl bulursunuz?",
+        paragraphs: [
+          "Karar için ortalama ROAS'a değil, iki hedef arasında eklenen ya da çıkarılan harcamanın getirisine (marjinal ROAS) bakın. Marjinal ROAS = Ciro farkı / Harcama farkı. Bu değer başabaş ROAS'ın (örnekte 100 / 35 ≈ 2,86) üzerindeyse eklenen harcama kâr ettirir.",
+          "Örnekte %400'den %300'e inmek 40.000 TL ek harcamayla 60.000 TL ek ciro getiriyor: marjinal ROAS 1,5, başabaşın çok altında → zarar. %500'den %400'e inmek 25.000 TL'ye 65.000 TL getiriyor: 2,6, başabaşın hemen altında → kârı bir miktar düşürüyor. %600'den %500'e inmek 15.000 TL'ye 55.000 TL getiriyor: yaklaşık 3,67 → kârlı. Bu örnekte kârı en yükseğe çıkaran hedef %500'dür.",
+          "Formülün verdiği %400, '%10 kârla mümkün olduğunca büyü' kararıdır; %500 ise 'bugünkü kârı en yükseğe çıkar' kararıdır. Yeni müşteri kazanımı ve tekrar satın alma (LTV) sizin için önemliyse daha düşük hedef bilinçli bir tercih olabilir. Önemli olan, bu farkı bilerek seçmektir.",
+        ],
+      },
+      {
+        heading: "Dönüşüm değeri olarak ciro mu, kâr mı göndermeli?",
+        paragraphs: [
+          "Varsayılan kurulum sipariş tutarını (ciro) gönderir. Bu durumda ürünler arasındaki marj farkı algoritmaya görünmez: %60 marjlı bir ürünle %15 marjlı bir ürünün 1.000 TL'lik satışı aynı değerdedir.",
+          "Alternatif, dönüşüm değeri olarak sipariş başına katkı kârını göndermektir (POAS — reklam harcamasının kâr getirisi yaklaşımı). Bu kurulumda başabaş hedef %100 olur: %130 hedef, her 1 TL reklamda ortalama 0,30 TL katkı kârı demektir. Kurulum için ürün maliyetinin sunucu tarafında ya da veri katmanında hesaplanması gerekir; ürün maliyetlerinin tarayıcıda görünür olmaması için sunucu tarafı etiketleme tercih edilir.",
+          "Tam kurulum yapamıyorsanız ara çözüm: düşük marjlı kategorileri ayrı kampanyalara ayırıp her birine kendi hedefini verin ya da Google Ads dönüşüm değeri kurallarıyla belirli konum, cihaz veya kitle segmentlerinin değerini çarpanla ayarlayın.",
+        ],
+      },
+      {
+        heading: "Hedef ROAS'ta sık sorunlar ve çözümleri",
+        paragraphs: [
+          "Sorunların çoğu hedefin gerçekçi olmamasından, yetersiz veriden ya da değişikliğin ardından yeterince beklenmemesinden kaynaklanır.",
+        ],
+        bullets: [
+          "Harcama birden düştü → hedef geçmiş ROAS'ın çok üzerinde. Hedefi %10-15 düşürün, 1-2 döngü bekleyin.",
+          "ROAS hedefin altında kalıyor → önce dönüşüm gecikmesini kontrol edin (son günler eksik görünür). Sorun sürerse veri azdır ya da hedef düşüktür; ürün grubu veya kampanyaları birleştirip veriyi artırın.",
+          "Kampanya 'bütçe ile sınırlı' ve ROAS hedefin üzerinde → kârlı açık artırmalar kaçıyor. Bütçeyi artırın; artıramıyorsanız hedefi düşürmeyin, çünkü düşük hedef aynı bütçeyi daha düşük getirili tıklamalara harcatır.",
+          "Her gün hedef değiştiriliyor → algoritma her değişiklikte yeniden uyum sağlar. Haftada bir değerlendirin.",
+          "Reklam grubu düzeyinde ayrı hedefler → Google bunu önermiyor; akıllı teklifin esnekliğini kısıtlar. Hedefi kampanya ya da portföy düzeyinde verin.",
+          "Kısa kampanya dönemi (Black Friday gibi) → dönüşüm oranında beklenen sıçrama için 1-7 günlük dönemlik ayarlama kullanın; 14 günü aşan dönemler için önerilmez.",
+        ],
+      },
+      {
+        heading: "Performance Max ve Alışveriş kampanyalarında hedef ROAS",
+        paragraphs: [
+          "Performance Max ve Alışveriş kampanyalarında aynı formül geçerlidir; fark, marjı farklı ürünlerin tek kampanyada toplanmasıdır. Ortalama marjla tek bir hedef vermek düşük marjlı ürünleri sübvanse eder. Ürünleri marj aralığına göre özel etiketle (custom label) gruplayıp her gruba ayrı kampanya ve hedef vermek, marj verisini algoritmaya taşımanın en basit yoludur.",
+          "Google'ın 17 Ağustos 2026'da devreye aldığı teklif sistemi güncellemesi, özellikle bütçesi sınırlı hedef EBM ve hedef ROAS kampanyalarında geçici dalgalanmalara yol açabilir. Bu dönemde gördüğünüz kısa süreli sapmalara hemen hedef değişikliğiyle tepki vermeyin.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Hedef ROAS ne olmalı?",
+        answer:
+          "Herkes için doğru bir sayı yoktur. Hedef ROAS (%) = 100 / (Katkı marjı − Hedef kâr oranı) formülüyle kendi marjınızdan hesaplayın. %35 katkı marjı ve %10 kâr hedefinde %400, %25 marj ve %5 kâr hedefinde %500 çıkar. Tekrar satın almaya (LTV) dayalı bilinçli bir büyüme kararı yoksa hedef, başabaş ROAS'ın (100 / katkı marjı) altına inmemelidir.",
+      },
+      {
+        question: "Hedef ROAS %400 ne demek?",
+        answer:
+          "Reklama harcanan her 1 TL için ortalama 4 TL dönüşüm değeri hedeflendiği anlamına gelir. Google Ads hedefi yüzde olarak ister: 4 kat getiri = %400. Bu bir ortalamadır; günlük ve kampanya bazında gerçekleşen ROAS hedefin üstünde ya da altında olabilir.",
+      },
+      {
+        question: "Hedef ROAS'ı ne sıklıkla değiştirmeliyim?",
+        answer:
+          "Değişikliklerin arasında en az 1-2 dönüşüm döngüsü bekleyin; Google da hedefe ulaşmak için bu süreyi öneriyor. Pratikte haftada bir değerlendirip %10-15'lik adımlarla değiştirmek, hem öğrenmeyi bozmamak hem de sonucu okuyabilmek için yeterlidir.",
+      },
+      {
+        question: "Hedef ROAS'ı yükseltince neden satışlar düşüyor?",
+        answer:
+          "Yüksek hedef, Google'ın yalnızca en değerli görünen açık artırmalara girmesine yol açar; daha az trafik ve daha az dönüşüm gelir. ROAS yükselir ama toplam ciro ve çoğu zaman toplam kâr düşer. Hacim istiyorsanız hedefi kademeli olarak düşürün.",
+      },
+      {
+        question: "Hedef ROAS için kaç dönüşüm gerekir?",
+        answer:
+          "Google Ads Yardım'a göre Arama ve Alışveriş kampanyalarında son 30 günde en az 15 dönüşüm, Demand Gen'de son 35 günde 50 dönüşüm, video işlem kampanyalarında son 30 günde 30 dönüşüm gerekir. Hedef belirlemeden önce en az 4 hafta veya 3 dönüşüm döngüsü boyunca değer raporlanmış olmalıdır.",
+      },
+    ],
+    howTo: {
+      name: "Google Ads'te hedef ROAS nasıl belirlenir?",
+      description: "Katkı marjından Google Ads'e girilecek hedef ROAS değerini hesaplayın ve kampanyaya kademeli uygulayın.",
+      steps: [
+        { name: "Katkı marjını hesaplayın", text: "Satış fiyatından ürün maliyeti, kargo, ödeme komisyonu ve paketlemeyi düşüp satış fiyatına bölün." },
+        { name: "Hedef ROAS'ı bulun", text: "Hedef ROAS (%) = 100 / (Katkı marjı − Hedef kâr oranı). %35 marj ve %10 kâr hedefinde %400." },
+        { name: "İade düzeltmesi yapın", text: "Hedefi (1 − iade oranı) ile bölün. %15 iadede %400 yaklaşık %470 olur." },
+        { name: "Geçmiş ROAS'ı kontrol edin", text: "Dönş. değeri/maliyet sütununu 100 ile çarpın; son günlerin dönüşüm gecikmesini analizden çıkarın." },
+        { name: "Kademeli uygulayın", text: "Geçmiş ROAS'tan hedefe %10-15'lik adımlarla gidin ve her adımdan sonra 1-2 dönüşüm döngüsü bekleyin." },
+        { name: "Marjinal ROAS ile ince ayar yapın", text: "Hedef değişikliklerinin ciro farkını harcama farkına bölün; sonuç başabaş ROAS'ın altındaysa hedefi geri alın." },
+      ],
+    },
+    relatedToolKey: "roas",
+    resources: [
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Brüt Kâr Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+      { label: "Google Ads'te Performansı Katlamanın 7 Data-Driven Yolu", href: "/blog/google-ads-performans-optimizasyonu/" },
+      { label: "Google Ads Yardım: Hedef ROAS teklifi hakkında", href: "https://support.google.com/google-ads/answer/6268637?hl=tr", external: true },
+      { label: "Google Ads Yardım: Dönemlik ayarlamalar", href: "https://support.google.com/google-ads/answer/10369906?hl=tr", external: true },
     ],
   },
 ];
@@ -3187,6 +3372,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     resources: [
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
       { label: "7 Data-Driven Ways to Multiply Your Google Ads Performance", href: "/en/blog/google-ads-performance-optimization/" },
       { label: "How to Exit Meta Ads Learning Phase Fast", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
       { label: "Google Ads Help: About Target ROAS bidding", href: "https://support.google.com/google-ads/answer/6268637", external: true },
@@ -3566,6 +3752,189 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
       { label: "GA4 Unassigned Traffic: What It Is and How to Fix It", href: "/en/blog/ga4-unassigned-traffic-how-to-fix/" },
       { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "Google Ads Help: Seasonality adjustments", href: "https://support.google.com/google-ads/answer/10369906", external: true },
+    ],
+  },
+  {
+    slug: "how-to-set-target-roas-google-ads",
+    seoTitle: "How to Set Target ROAS in Google Ads (From Your Margin)",
+    title: "How to Set Target ROAS in Google Ads: Calculate tROAS From Your Margin",
+    description:
+      "Calculate Google Ads target ROAS from your contribution margin: formula, returns adjustment, starting value, step changes and the most profitable target.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Target ROAS (%) = 100 / (Contribution margin − Target profit rate). With a 35% contribution margin and a 10% profit goal, you enter 400% in Google Ads.",
+      "Platform conversion value includes orders that are later returned, so divide the target by (1 − return rate): at 15% returns, 400% becomes about 470%.",
+      "Start close to your historical ROAS (last 4 weeks or 3 conversion cycles), change the target in steps and wait 1–2 conversion cycles after each change.",
+      "The highest ROAS is not the highest profit: raising the target also cuts spend and sales. The right target is where the last dollar of spend still clears break-even.",
+    ],
+    publishedAt: "2026-10-25",
+    readingMinutes: 9,
+    tags: ["Target ROAS", "tROAS", "Google Ads", "Smart Bidding", "ROAS", "Ecommerce"],
+    sections: [
+      {
+        heading: "How do you set a target ROAS? (Short answer)",
+        paragraphs: [
+          "Derive target ROAS from your own contribution margin, not from the account average or a rule of thumb like '400% is good'. Formula: Target ROAS (%) = 100 / (Contribution margin − Target profit rate).",
+          "Example: after product cost, shipping, payment fees and packaging, 35% of revenue is left on each order (contribution margin), and you want to keep 10% of revenue as profit after ads. Target ROAS = 100 / (0.35 − 0.10) = 400%. You enter 400 in Google Ads, meaning an average of $4 of conversion value for every $1 of ad spend.",
+          "Then run that number through three adjustments: returns, the gap to your historical ROAS (the starting value) and the target that maximizes profit. The sections below walk through each with examples.",
+        ],
+      },
+      {
+        heading: "What is the Target ROAS (tROAS) bid strategy and how does it work?",
+        paragraphs: [
+          "Target ROAS is Google Ads' value-based Smart Bidding strategy. At each auction it predicts the value of a potential conversion and bids to grow total conversion value while keeping the average conversion value / cost close to your target. It uses signals such as device, location, time of day and remarketing lists, bidding higher on searches that look valuable and lower on those that don't.",
+          "Two things to know. First, the target is an average: individual days or campaigns can land above or below it. Second, Google simplified strategy names in June 2026: 'Maximize conversion value with a Target ROAS' now shows simply as 'Target ROAS'; Google says bidding behavior did not change.",
+          "The strategy only makes sense if your account sends conversion values. Conversions with a value of 0 don't count, so first make sure the purchase tag passes the correct order value.",
+        ],
+      },
+      {
+        heading: "How many conversions does Target ROAS need?",
+        paragraphs: [
+          "Google Ads Help lists minimums by campaign type. Below these, you can still turn the strategy on, but the algorithm has little to learn from and results swing.",
+        ],
+        bullets: [
+          "Search and Shopping: at least 15 conversions in the past 30 days (at the conversion tracking level)",
+          "Display: at least 15 conversions with values across campaigns in the past 30 days",
+          "Demand Gen: 50 conversions in the past 35 days (10 in the last 7) or 100 across all Demand Gen campaigns in the account",
+          "Video action campaigns: at least 30 conversions in the past 30 days",
+          "Before setting a target: values reported for at least 4 weeks or 3 conversion cycles, whichever is longer",
+        ],
+      },
+      {
+        heading: "Step 1: Calculate target ROAS from contribution margin",
+        paragraphs: [
+          "Contribution margin = (Price − Product cost − Variable cost per order) / Price. Variable costs include shipping, payment fees, packaging and any marketplace commission. Using gross margin instead sets the target too low, so you can lose money while thinking you are profitable.",
+          "Break-even ROAS (%) = 100 / Contribution margin. At a 35% contribution margin, break-even is 286%; below that, ads lose money on every sale.",
+          "Target ROAS (%) = 100 / (Contribution margin − Target profit rate). The target profit rate is the share of revenue you want to keep after ad costs. Whether fixed costs (rent, salaries, software) belong in that rate is a business decision.",
+        ],
+        bullets: [
+          "50% margin, 10% profit goal → 250% target ROAS",
+          "35% margin, 10% profit goal → 400% target ROAS",
+          "30% margin, 10% profit goal → 500% target ROAS",
+          "25% margin, 5% profit goal → 500% target ROAS",
+          "20% margin, 5% profit goal → ≈ 667% target ROAS",
+        ],
+      },
+      {
+        heading: "Step 2: Adjust the target for returns",
+        paragraphs: [
+          "Google Ads records conversion value when the order is placed; orders returned later stay in the reported value. In high-return categories such as apparel and footwear, platform ROAS looks noticeably better than real ROAS.",
+          "Approximate fix: Target ROAS to enter = Calculated target / (1 − Return rate). At 15% returns, 400% / 0.85 ≈ 470%; at 30% returns, 400% / 0.70 ≈ 571%. A cleaner route is to send returns back to Google Ads as conversion adjustments or to send different values by category, in which case this correction isn't needed.",
+        ],
+      },
+      {
+        heading: "Step 3: Pick a starting value based on historical ROAS",
+        paragraphs: [
+          "Even if your calculated target is right, don't enter it directly if it is far from what the campaign delivers today. Google recommends setting the target from business goals and past performance, and warns that an unrealistic starting target can lead to poor performance or limited scale.",
+          "To find historical ROAS, add the 'Conv. value / cost' column under Conversions and multiply by 100. Leave out the most recent days (your conversion lag); their conversions aren't complete yet.",
+          "Change the target in steps and wait 1–2 conversion cycles after each change (a conversion cycle is the typical time from click to purchase). Google doesn't specify a percentage; in practice we work with 10–15% steps.",
+        ],
+        bullets: [
+          "Historical ROAS 380%, target 470% → 380% → 420% → 470% (each step after 1–2 cycles). Jumping straight to 470% can cut spend sharply.",
+          "Historical ROAS 560%, target 470% → 520% → 470%. Lowering the target enters more auctions and adds volume; watch whether ROAS slips below target.",
+          "New campaign, no history → collect 2–4 weeks of data with Maximize conversion value (no target) or Target CPA, then move to Target ROAS.",
+        ],
+      },
+      {
+        heading: "Why doesn't the highest ROAS bring the most profit?",
+        paragraphs: [
+          "As you raise target ROAS, Google enters only the most valuable auctions: ROAS rises, but spend and sales fall. Past a certain point, the contribution lost from missed sales is larger than the ad spend saved. The table below is a hypothetical example for a store with a 35% contribution margin (illustrative amounts, not real account data).",
+          "Profit = Revenue × Contribution margin − Ad spend (contribution profit after ads, before fixed costs).",
+        ],
+        bullets: [
+          "Target 300% → spend $100,000, revenue $300,000, profit $5,000",
+          "Target 400% → spend $60,000, revenue $240,000, profit $24,000",
+          "Target 500% → spend $35,000, revenue $175,000, profit $26,250",
+          "Target 600% → spend $20,000, revenue $120,000, profit $22,000",
+        ],
+      },
+      {
+        heading: "How do you find the right target with marginal ROAS?",
+        paragraphs: [
+          "Decide on marginal ROAS, not average ROAS: the return on the spend added or removed between two targets. Marginal ROAS = Revenue difference / Spend difference. If it is above break-even ROAS (here 100 / 35 ≈ 2.86), the extra spend is profitable.",
+          "In the example, going from 400% to 300% adds $40,000 of spend for $60,000 of revenue: marginal ROAS 1.5, far below break-even → loss. Going from 500% to 400% adds $25,000 for $65,000: 2.6, just below break-even → profit dips slightly. Going from 600% to 500% adds $15,000 for $55,000: about 3.67 → profitable. In this example the profit-maximizing target is 500%.",
+          "The formula's 400% is a 'grow as much as possible at 10% profit' decision; 500% is a 'maximize today's profit' decision. If new-customer acquisition and repeat purchases (LTV) matter to you, a lower target can be a deliberate choice. What matters is choosing it knowingly.",
+        ],
+      },
+      {
+        heading: "Should you send revenue or profit as conversion value?",
+        paragraphs: [
+          "The default setup sends order value (revenue). The algorithm then can't see margin differences: a $1,000 sale of a 60%-margin product and of a 15%-margin product look identical.",
+          "The alternative is to send contribution profit per order as conversion value (the POAS, profit on ad spend, approach). Break-even then becomes 100%: a 130% target means $0.30 of contribution profit per $1 of ad spend on average. It requires calculating product cost server-side or in the data layer; server-side tagging is preferred so product costs aren't exposed in the browser.",
+          "If a full setup isn't possible, split low-margin categories into separate campaigns with their own targets, or use conversion value rules to adjust value by location, device or audience segment.",
+        ],
+      },
+      {
+        heading: "Common Target ROAS problems and fixes",
+        paragraphs: [
+          "Most problems come from an unrealistic target, too little data or not waiting long enough after a change.",
+        ],
+        bullets: [
+          "Spend suddenly dropped → the target is far above historical ROAS. Lower it 10–15% and wait 1–2 cycles.",
+          "ROAS stays below target → check conversion lag first (recent days look incomplete). If it persists, data is thin or the target too low; consolidate product groups or campaigns.",
+          "Campaign is 'Limited by budget' with ROAS above target → profitable auctions are being missed. Raise the budget; if you can't, don't lower the target, because a lower target spends the same budget on lower-return clicks.",
+          "The target changes daily → the algorithm readjusts every time. Review weekly.",
+          "Separate ad group targets → Google doesn't recommend them; they limit Smart Bidding. Set targets at campaign or portfolio level.",
+          "Short promotions (like Black Friday) → use a 1–7 day seasonality adjustment for the expected conversion-rate jump; it isn't recommended for periods over 14 days.",
+        ],
+      },
+      {
+        heading: "Target ROAS in Performance Max and Shopping",
+        paragraphs: [
+          "The same formula applies to Performance Max and Shopping; the difference is that products with different margins sit in one campaign. One target based on average margin subsidizes low-margin products. Grouping products by margin band with custom labels, then giving each group its own campaign and target, is the simplest way to pass margin information to the algorithm.",
+          "Google's bidding update from August 17, 2026 may cause temporary fluctuations, especially in budget-limited Target CPA and Target ROAS campaigns. Don't react to short-term swings in that period with immediate target changes.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What should my target ROAS be?",
+        answer:
+          "There's no universal number. Calculate it from your margin: Target ROAS (%) = 100 / (Contribution margin − Target profit rate). A 35% margin with a 10% profit goal gives 400%; a 25% margin with a 5% goal gives 500%. Unless you are deliberately investing in repeat purchases (LTV), keep the target above break-even ROAS (100 / contribution margin).",
+      },
+      {
+        question: "What does a 400% target ROAS mean?",
+        answer:
+          "It means an average of $4 of conversion value for every $1 of ad spend. Google Ads takes the target as a percentage: a 4x return = 400%. It's an average, so daily and campaign-level ROAS can be above or below it.",
+      },
+      {
+        question: "How often should I change target ROAS?",
+        answer:
+          "Wait at least 1–2 conversion cycles between changes; Google suggests that time for the bidder to reach a new target. In practice, reviewing weekly and changing in 10–15% steps keeps learning stable and makes results readable.",
+      },
+      {
+        question: "Why do sales drop when I raise target ROAS?",
+        answer:
+          "A higher target makes Google bid only in the auctions that look most valuable, so you get less traffic and fewer conversions. ROAS rises, but total revenue and often total profit fall. If you want volume, lower the target gradually.",
+      },
+      {
+        question: "How many conversions do I need for Target ROAS?",
+        answer:
+          "According to Google Ads Help: at least 15 conversions in the past 30 days for Search and Shopping, 50 in the past 35 days for Demand Gen and 30 in the past 30 days for video action campaigns. Values should be reported for at least 4 weeks or 3 conversion cycles before you set a target.",
+      },
+    ],
+    howTo: {
+      name: "How to set target ROAS in Google Ads",
+      description: "Calculate the target ROAS to enter in Google Ads from your contribution margin and apply it in steps.",
+      steps: [
+        { name: "Calculate contribution margin", text: "Subtract product cost, shipping, payment fees and packaging from the price and divide by the price." },
+        { name: "Find target ROAS", text: "Target ROAS (%) = 100 / (Contribution margin − Target profit rate). 35% margin and a 10% profit goal give 400%." },
+        { name: "Adjust for returns", text: "Divide the target by (1 − return rate). At 15% returns, 400% becomes about 470%." },
+        { name: "Check historical ROAS", text: "Multiply the Conv. value / cost column by 100 and leave out the days still inside your conversion lag." },
+        { name: "Apply in steps", text: "Move from historical ROAS toward the target in 10–15% steps and wait 1–2 conversion cycles after each one." },
+        { name: "Fine-tune with marginal ROAS", text: "Divide the revenue difference by the spend difference between targets; if it falls below break-even ROAS, roll the change back." },
+      ],
+    },
+    relatedToolKey: "roas",
+    resources: [
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
+      { label: "Google Ads Performance Optimization", href: "/en/blog/google-ads-performance-optimization/" },
+      { label: "Google Ads Help: About Target ROAS bidding", href: "https://support.google.com/google-ads/answer/6268637", external: true },
       { label: "Google Ads Help: Seasonality adjustments", href: "https://support.google.com/google-ads/answer/10369906", external: true },
     ],
   },
