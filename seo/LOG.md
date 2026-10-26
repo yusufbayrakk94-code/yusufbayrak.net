@@ -2,6 +2,14 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-10-26 (içerik görevi)
+- YENİ YAZI: "LTV Nedir, Nasıl Hesaplanır? LTV:CAC Oranı Kaç Olmalı?" (/blog/ltv-nedir-ltv-cac-orani/ + EN /en/blog/what-is-ltv-ltv-cac-ratio/). Takvimin (hacme göre yeniden sıralanmış) bugünkü konusu; hacim: 'ltv nedir' 210, 'ltv cac' 30.
+- Süreç notu: çalışma başladığında takvimde hacim yoktu; eski konu (LTV:CAC) talep kuralını sağlamadığı için talebi kanıtlı "katkı marjı" hazırlandı. Push öncesi bilgisayar görevinin hacim çalışması geldi ve "katkı marjı" 0–10 çıktı → hacim kuralı gereği yayınlanmadı, takvimin yeni 26 Eki konusu yazıldı.
+- Rakip bulgusu: brandaft (~2.700 kelime; ciro LTV'nin yanıltıcı olduğunu söyleyip bütçeyi ciro LTV'den hesaplıyor), moyduz (~700 kelime; kaynaksız sektör tablosu, müşteri ömrü tanımsız), Yotpo TR (yarısı ürün tanıtımı; %25 churn → 4 yıl deyip örnekte 3 yıl). Hiçbirinde yok: baştan katkı marjlı LTV ve ciro LTV ile sayısal fark, kohort LTV adım adım, LTV:CAC'ı geri ödeme süresiyle okuma (aynı LTV, iki CAC), LTV'den maks. CAC → ilk sipariş ROAS hedefi (4 politika), SaaS formül LTV'si vs 36 ay sınırlı LTV. SERP notu: 'ltv nedir' kısmen kredi/teminat (loan-to-value) anlamında → başlık "müşteri yaşam boyu değeri" bağlamını SSS'te ayırıyor. Analiz: seo/research/ltv-nedir.md.
+- Yamyamlaşma: LTV aracı (/ucretsiz-araclar/ltv-hesaplayici/) hesaplama niyetinde; yazı farklı örnek rakamlar ve kohort/geri ödeme/reklam kararı açısıyla bilgi niyetini hedefliyor; relatedToolKey=ltv ile araç sayfası yazıya otomatik link veriyor.
+- İç link: SaaS Metrikleri 101 (TR+EN) kaynaklarından yeni yazıya; yeni yazı LTV, CAC, CAC geri ödeme, churn, kar marjı, ROAS araçlarına ve hedef ROAS, reklam bütçesi, NRR yazılarına link veriyor. Ölçüm: 'ltv nedir', 'ltv cac', 'müşteri yaşam boyu değeri' gösterim/sıra.
+- Haftalık otorite işi (widget, seo/widget-plan.md): yeni rota türü ve araç arayüzü değişikliği içerdiği için kullanıcı onayı bekliyor; bugün ilerletilmedi.
+
 ## 2026-10-26 (veri görevi)
 - Search Console (son 28 gün, veri 24.10'a kadar): tıklama ve gösterim başlangıca göre çok az arttı; trafiğin çoğu hâlâ marka/AdGusto sorgularında. Hedef sorgulardan yalnızca 'roas hesaplama' görünüyor (ilk 50'nin dışında). Dizin raporu değişmedi (dizinde sayfa sayısı ve "Keşfedildi" sayısı aynı); 'Yeniden yönlendirme hatası' doğrulaması sürüyor.
 - URL Denetimi: 23.10 kuyruğundaki 5 TR/EN URL zaten dizinde (BF, GA4 Unassigned, Reklam bütçesi TR+EN, UTM aracı TR). Dizine ekleme isteği (5/5): hedef ROAS TR+EN, Brandog projesi, BF EN, UTM aracı EN.

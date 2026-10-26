@@ -17,6 +17,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi (10 URL: 2 yeni araç, ROAS yazısı/aracı, llms.txt, kanal quiz, AdGusto, CAC, LTV, churn, NRR) — 2026-10-22
 - [x] 2026-10-23 kuyruğu: BF TR, GA4 Unassigned TR, Reklam bütçesi TR, UTM aracı TR, Reklam bütçesi EN zaten dizinde (26.10 URL Denetimi); /en/free-tools/utm-builder/ için istek gönderildi — 2026-10-26
 - [x] Dizine ekleme isteği gönderildi: /blog/hedef-roas-nasil-belirlenir/, /en/blog/how-to-set-target-roas-google-ads/, /projeler/brandog-marka-mcp/, /en/blog/black-friday-2026-ad-plan/, /en/free-tools/utm-builder/ — 2026-10-26 (5/5)
+- [ ] Dizine ekleme isteği (2026-10-26 yeni): /blog/ltv-nedir-ltv-cac-orani/, /en/blog/what-is-ltv-ltv-cac-ratio/
 - [ ] Kalan: EN araç sayfaları (önce URL Denetimi ile dizinde mi kontrol et) + her gün yeni yayınlanan TR/EN yazılar
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
@@ -55,7 +56,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] ROAS nedir, nasıl hesaplanır — 2026-10-22
 - [x] NRR nedir (mevcut)
 - [ ] CAC nedir, nasıl hesaplanır
-- [ ] LTV nedir, nasıl hesaplanır
+- [x] LTV nedir, nasıl hesaplanır — 2026-10-26 (/blog/ltv-nedir-ltv-cac-orani/)
 - [ ] Churn rate nedir, nasıl hesaplanır
 - [ ] UTM parametreleri nedir, nasıl kullanılır
 - [ ] Brüt kâr marjı / net kâr marjı hesaplama

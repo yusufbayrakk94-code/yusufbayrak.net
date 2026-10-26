@@ -552,6 +552,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici" },
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici" },
       { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici" },
+      { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici" },
     ],
   },
@@ -2149,6 +2150,184 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Yardım: Dönemlik ayarlamalar", href: "https://support.google.com/google-ads/answer/10369906?hl=tr", external: true },
     ],
   },
+  {
+    slug: "ltv-nedir-ltv-cac-orani",
+    seoTitle: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı? Örnekli Rehber",
+    title: "LTV Nedir, Nasıl Hesaplanır? LTV:CAC Oranı Kaç Olmalı? (Kohort ve Reklam Örnekleriyle)",
+    description:
+      "LTV (müşteri yaşam boyu değeri) nedir, marjla nasıl hesaplanır? Kohort LTV örneği, LTV:CAC oranı yorumu, geri ödeme süresi ve LTV'den reklam CPA hedefi.",
+    category: "saas-buyume",
+    tldr: [
+      "LTV (müşteri yaşam boyu değeri), bir müşterinin sizinle kaldığı süre boyunca bıraktığı toplam kârdır. Ciroyla değil marjla hesaplanır: ortalama sepeti 600 TL, katkı marjı %35 olan ve 24 ayda ortalama 2,3 sipariş veren müşterinin LTV'si 483 TL'dir (ciro LTV'si 1.380 TL).",
+      "En güvenilir yöntem kohort LTV'sidir: aynı ay kazanılan müşterilerin birikimli siparişlerini izleyip katkı marjıyla çarparsınız; formüldeki 'müşteri ömrü' varsayımına gerek kalmaz.",
+      "LTV:CAC oranı için yaygın başparmak kuralı en az 3'tür; ama oranı mutlaka CAC geri ödeme süresiyle birlikte okuyun. Aynı 483 TL LTV, 160 TL CAC ile ilk siparişte, 300 TL CAC ile yaklaşık 7. ayda geri döner.",
+      "LTV'yi reklam hedefine çevirin: Maks. CAC = LTV / Hedef oran. Örnekte 3:1 hedefi 161 TL CAC ve ilk siparişte yaklaşık 3,73 ROAS demektir; tekrar satın alma düşükse 3:1 kuralı ilk siparişte kâr etmeyi gerektirir.",
+    ],
+    publishedAt: "2026-10-26",
+    readingMinutes: 9,
+    tags: ["LTV", "LTV:CAC", "Müşteri Yaşam Boyu Değeri", "Kohort Analizi", "CAC", "Birim Ekonomisi"],
+    sections: [
+      {
+        heading: "LTV nedir? (Kısa cevap)",
+        paragraphs: [
+          "LTV (Lifetime Value, müşteri yaşam boyu değeri; CLV ya da CLTV olarak da geçer), bir müşterinin işletmenizle ilişkisi boyunca bıraktığı toplam kârdır. Bir müşteriyi kazanmak için en fazla ne kadar harcayabileceğinizi belirlediği için CAC (müşteri edinme maliyeti) ile birlikte kullanılır.",
+          "En basit e-ticaret formülü: LTV = Ortalama sipariş tutarı × Müşteri başı sipariş sayısı × Katkı marjı. Örnek: ortalama sepeti 600 TL olan bir mağazada müşteri 24 ayda ortalama 2,3 sipariş veriyor ve her siparişte ürün, kargo, ödeme komisyonu ve iade düşüldükten sonra cironun %35'i kalıyor. LTV = 600 × 2,3 × 0,35 = 483 TL.",
+          "Aynı müşterinin ciro LTV'si 600 × 2,3 = 1.380 TL'dir. Rakip rehberlerin çoğu bu ciro rakamını kullanır; oysa reklam bütçesini 1.380 TL'ye göre planlamak, müşteri başına kazanabileceğinizin neredeyse üç katını harcamaya izin vermek demektir. (Yazıdaki tüm tutarlar örnek tutarlardır.)",
+        ],
+      },
+      {
+        heading: "LTV nasıl hesaplanır? Üç formül",
+        paragraphs: [
+          "Hangi formülü kullanacağınız iş modelinize ve ne kadar veriniz olduğuna bağlıdır. Üçünde de son çarpan marjdır; e-ticarette katkı marjı (ürün maliyeti + kargo + komisyon + iade düşülmüş), SaaS'ta brüt marj yaygın kullanılır.",
+        ],
+        bullets: [
+          "E-ticaret (tekrar satın alma): LTV = Ortalama sipariş tutarı × Yıllık sipariş sayısı × Aktif kalma süresi (yıl) × Katkı marjı",
+          "Abonelik / SaaS: LTV = Aylık müşteri başı gelir (ARPA) × Brüt marj / Aylık churn oranı (1 / churn = ortalama müşteri ömrü, ay)",
+          "Kohort (gerçekleşen) LTV: LTV(n. ay) = Kohortun n. aya kadar birikimli geliri / Kohorttaki müşteri sayısı × Marj",
+          "LTV:CAC oranı = LTV / CAC; CAC geri ödeme süresi (ay) = CAC / Aylık müşteri başı marj katkısı",
+        ],
+      },
+      {
+        heading: "LTV neden ciroyla değil marjla hesaplanır?",
+        paragraphs: [
+          "LTV'nin işi 'bu müşteri için ne kadar harcayabilirim?' sorusunu cevaplamaktır. Müşterinin ödediği tutarın ürün maliyeti, kargo ve komisyon kısmı zaten size ait değildir; reklama ayrılabilecek para yalnızca geriye kalan katkıdır.",
+          "Örnekteki mağaza ciro LTV'siyle (1.380 TL) LTV:CAC = 3 hedeflerse CAC'ı 460 TL'ye kadar çıkarabileceğini düşünür. Marjlı LTV 483 TL olduğu için bu, her yeni müşteriyle 24 ay sonunda bile yaklaşık başabaşta kalmak demektir. Marjlı hesapta aynı hedef 161 TL'lik CAC'a izin verir.",
+          "E-ticarette brüt marj yerine katkı marjı kullanmak bir adım daha iyidir: iade oranı yüksek kategorilerde (giyim, ayakkabı) brüt marjla hesaplanan LTV gerçekte olduğundan belirgin biçimde yüksek çıkar.",
+        ],
+      },
+      {
+        heading: "Kohort LTV nasıl hesaplanır? Adım adım örnek",
+        paragraphs: [
+          "Formüldeki 'müşteri ömrü' ve 'yıllık sipariş sayısı' çoğu zaman tahmindir. Kohort yöntemi tahmini gerçekleşen veriyle değiştirir: aynı ay ilk siparişini veren müşterileri bir grup (kohort) olarak alır, sonraki aylarda verdikleri tüm siparişleri birikimli olarak toplarsınız.",
+          "Örnek: Ocak'ta ilk siparişini veren 1.000 müşterinin sonraki siparişleri izleniyor. Müşteri başı birikimli sipariş sayısı aşağıdaki gibi; her sipariş 600 TL ve %35 katkı marjıyla 210 TL katkı bırakıyor.",
+          "Eğrinin yavaşladığı yer (örnekte 12. aydan sonra) LTV için makul zaman ufkunu gösterir. Birkaç kohortu (farklı aylar, farklı kanallar) yan yana koyduğunuzda hangi kanalın daha sadık müşteri getirdiğini de görürsünüz; bir kanalın CAC'ı yüksek ama kohort eğrisi dik olabilir.",
+        ],
+        bullets: [
+          "İlk sipariş (0. ay): 1,00 sipariş → 600 TL ciro → 210 TL katkı",
+          "3. ay: 1,15 sipariş → 690 TL ciro → 241,5 TL katkı",
+          "6. ay: 1,35 sipariş → 810 TL ciro → 283,5 TL katkı",
+          "12. ay: 1,80 sipariş → 1.080 TL ciro → 378 TL katkı",
+          "24. ay: 2,30 sipariş → 1.380 TL ciro → 483 TL katkı (24 aylık LTV)",
+        ],
+      },
+      {
+        heading: "LTV:CAC oranı nedir, kaç olmalı?",
+        paragraphs: [
+          "LTV:CAC oranı, bir müşteriden beklenen marj katkısının onu kazanma maliyetine oranıdır. SaaS ve girişim dünyasında yaygın kullanılan başparmak kuralı oranın en az 3 olmasıdır. Bu bilimsel bir eşik değil, CAC'ın ötesindeki genel giderleri ve tahmin hatasını karşılayacak bir güvenlik payıdır.",
+          "Oranı yorumlarken LTV'nin nasıl hesaplandığını mutlaka kontrol edin: ciro LTV'siyle bulunan 3:1, marjlı hesapta 1:1'e kadar inebilir.",
+        ],
+        bullets: [
+          "1'in altı: her yeni müşteri, hesaplanan süre sonunda bile zarar ettiriyor. Edinmeyi büyütmeden önce fiyat, marj ya da tutundurma düzeltilmeli",
+          "1–3 arası: edinme maliyetini geri kazanıyorsunuz ama sabit giderlere ve büyümeye az pay kalıyor; geri ödeme süresi kısa ise kabul edilebilir",
+          "3–5 arası: çoğu iş için sağlıklı bölge",
+          "5'in çok üzeri: edinmeye yeterince yatırım yapmıyor olabilirsiniz; daha pahalı kanallarda ölçek denenebilir",
+        ],
+      },
+      {
+        heading: "LTV:CAC neden tek başına yetmez? Geri ödeme süresi",
+        paragraphs: [
+          "LTV:CAC paranın ne kadar döndüğünü söyler, ne zaman döndüğünü söylemez. Nakit akışı için asıl soru, CAC'ın kaçıncı ayda geri kazanıldığıdır. Kohort tablosuyla bu doğrudan okunur: birikimli katkının CAC'ı geçtiği ay geri ödeme ayıdır.",
+          "Aynı kohortta iki senaryo: CAC 160 TL ise ilk sipariş katkısı (210 TL) CAC'ı hemen karşılar ve 24 aylık LTV:CAC yaklaşık 3,0 olur. CAC 300 TL ise 6. ayda birikimli katkı 283,5 TL ile hâlâ CAC'ın altındadır, CAC yaklaşık 7. ayda geri döner ve oran 1,61'e düşer. İkinci senaryoda büyüdükçe kasada daha uzun süre nakit bağlanır.",
+          "Pratik bir çerçeve: e-ticarette CAC'ın ilk siparişte ya da birkaç ay içinde geri dönmesi, B2B SaaS'ta 12 ayın altında kalması hedeflenir. Geri ödeme süresini aylık müşteri başı katkıyla hesaplamak için CAC Geri Ödeme Süresi aracını kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "LTV'ye göre reklamda ne kadar harcanabilir?",
+        paragraphs: [
+          "LTV'den reklam hedefine iki adımda gidilir. Önce politika seçin: Maks. CAC = LTV / Hedef LTV:CAC oranı ya da 'CAC'ı X ay içinde geri kazan' kuralı. Sonra bunu kampanyanın ilk sipariş metriğine çevirin: İlk sipariş ROAS hedefi = Ortalama sipariş tutarı / Maks. CAC.",
+          "Örnek kohortta (600 TL sepet, 210 TL ilk sipariş katkısı, 24 aylık LTV 483 TL) farklı politikalar şu sınırları verir:",
+          "Dikkat: CAC yalnızca reklam harcaması değildir; ajans, ekip ve araç maliyetlerini de içerir. Reklam paneline girdiğiniz CPA sınırı bu yüzden maks. CAC'ın biraz altında olmalıdır. Ayrıca bu örnekte tekrar satın alma düşük olduğu için (24 ayda 2,3 sipariş) 3:1 hedefi, ilk siparişte başabaştan bile sıkı bir ROAS istiyor; sık tekrar alınan ürünlerde (kozmetik, takviye, pet mama) tablo tersine döner ve LTV ilk siparişte zarar etmeyi haklı kılabilir.",
+        ],
+        bullets: [
+          "İlk siparişte başabaş: maks. CAC 210 TL → ilk sipariş ROAS hedefi ≈ 2,86",
+          "12 ayda geri ödeme: maks. CAC 378 TL → ROAS ≈ 1,59",
+          "24 aylık LTV:CAC = 3: maks. CAC 161 TL → ROAS ≈ 3,73",
+          "24 aylık LTV'nin tamamı (başabaş, önerilmez): maks. CAC 483 TL → ROAS ≈ 1,24",
+        ],
+      },
+      {
+        heading: "SaaS'ta LTV: formül LTV'si ve zaman sınırı",
+        paragraphs: [
+          "Abonelik formülü LTV = ARPA × Brüt marj / Aylık churn, churn sabit kaldığında müşterinin sonsuza kadar kalabileceğini varsayar. Düşük churn'de bu, LTV'yi çok uzun ve belirsiz bir geleceğe dayandırır. Bu yüzden birçok ekip LTV'yi 24–36 ayla sınırlar.",
+          "Örnek: ARPA aylık 1.500 TL, brüt marj %80, aylık churn %3. Aylık müşteri başı brüt kâr 1.200 TL; formül LTV'si 1.200 / 0,03 = 40.000 TL. 36 ayla sınırlandığında: 1.200 × (1 − 0,97^36) / 0,03 ≈ 26.640 TL. 12.000 TL CAC ile oran formülde 3,33, sınırlı hesapta yaklaşık 2,22 çıkar; geri ödeme süresi 12.000 / 1.200 = 10 aydır.",
+          "Fark büyükse kararınızı sınırlı LTV'ye ve geri ödeme süresine göre verin. Yüksek enflasyon döneminde bugün harcanan CAC'ın gelecekte parça parça dönen kârdan daha değerli olduğunu da hesaba katın; uzun ufuklu LTV'yi reel (enflasyondan arındırılmış) değerlerle düşünmek daha güvenlidir.",
+        ],
+      },
+      {
+        heading: "LTV hesaplamada sık yapılan hatalar",
+        paragraphs: [
+          "LTV hataları genellikle tek yöne gider: LTV'yi olduğundan yüksek gösterir ve edinme harcamasını şişirir.",
+        ],
+        bullets: [
+          "Ciro LTV'siyle LTV:CAC hesaplamak → oran olduğundan 2-3 kat iyi görünür",
+          "Tüm müşterilerin ortalamasını almak → kanal ve kohort bazında hesaplayın; indirim kampanyasıyla gelen müşteriler genellikle daha az tekrar alır",
+          "Müşteri ömrünü varsaymak → kohort verisiyle kontrol edin; formüldeki 1 / churn, ilk aylardaki yüksek kaybı gizleyebilir",
+          "İade, indirim ve ücretsiz kargoyu düşmemek → LTV'yi katkı marjıyla hesaplayın",
+          "Sınırsız zaman ufku → 24–36 ay ile sınırlayın ve geri ödeme süresine de bakın",
+          "Organik tekrar siparişleri reklama yazmak → LTV:CAC'ı kanal bazında hesaplarken o kanalın CAC'ını ve o kanaldan gelen kohortu eşleştirin",
+        ],
+      },
+      {
+        heading: "LTV nasıl artırılır?",
+        paragraphs: [
+          "LTV'nin üç kaldıracı vardır: sipariş başı katkı, sipariş sıklığı ve aktif kalma süresi. Kohort eğrisi hangisinde zayıf olduğunuzu gösterir: 3. ayda eğri düzleşiyorsa ikinci siparişi tetikleyen akışlar (e-posta, yeniden pazarlama, abonelik seçeneği), sepet küçükse paket ve çapraz satış, marj düşükse fiyat ve kargo politikası öncelikli iştir.",
+          "SaaS'ta en büyük etki churn'den gelir; churn formülün paydasında olduğu için aylık churn'ü %3'ten %2,5'e indirmek, diğer her şey sabitken formül LTV'sini %20 artırır. Genişleme gelirini (üst paket, koltuk artışı) izlemek için NRR'a da bakın.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "LTV ile CLV aynı şey mi?",
+        answer:
+          "Evet. LTV (Lifetime Value), CLV ve CLTV (Customer Lifetime Value) aynı metriği anlatır: bir müşterinin ilişki boyunca bıraktığı toplam değer. Türkçede 'müşteri yaşam boyu değeri' ya da 'müşteri ömür boyu değeri' denir. Finans dilindeki LTV (loan-to-value, kredi/teminat oranı) ise farklı bir kavramdır.",
+      },
+      {
+        question: "LTV:CAC oranı 3 ne demek?",
+        answer:
+          "Bir müşteriden beklenen marj katkısının, onu kazanma maliyetinin 3 katı olduğu anlamına gelir. Örneğin 483 TL marjlı LTV'ye karşılık 161 TL CAC. Yaygın bir başparmak kuralıdır; oranın marjla hesaplandığından emin olun ve CAC geri ödeme süresiyle birlikte değerlendirin.",
+      },
+      {
+        question: "İyi bir LTV kaç olmalı?",
+        answer:
+          "LTV'nin tek başına iyi ya da kötü bir değeri yoktur; 500 TL LTV, 100 TL CAC'la çok iyi, 400 TL CAC'la zayıftır. LTV'yi her zaman CAC'a (LTV:CAC) ve geri ödeme süresine göre değerlendirin.",
+      },
+      {
+        question: "LTV kaç aylık hesaplanmalı?",
+        answer:
+          "E-ticarette 12 ve 24 aylık LTV'yi birlikte izlemek pratiktir; kohort eğrisinin düzleştiği nokta makul ufku gösterir. SaaS'ta formül LTV'si yerine 24–36 ayla sınırlanmış LTV daha temkinli bir karar verir.",
+      },
+      {
+        question: "Yeni bir işletmede veri yoksa LTV nasıl tahmin edilir?",
+        answer:
+          "İlk siparişin katkısıyla başlayın ve reklamı ilk siparişte başabaşa göre yönetin. 3–6 ay sonra ilk kohortların tekrar sipariş oranıyla LTV'yi güncelleyin. Rakip ya da sektör ortalamalarını LTV yerine koymayın; marj ve müşteri davranışı işten işe çok farklıdır.",
+      },
+    ],
+    howTo: {
+      name: "Kohort LTV ve LTV:CAC nasıl hesaplanır?",
+      description: "Aynı ay kazanılan müşterilerin verisiyle marjlı LTV'yi, LTV:CAC oranını ve geri ödeme ayını bulun.",
+      steps: [
+        { name: "Kohortu seçin", text: "Belirli bir ayda (tercihen tek kanaldan) ilk siparişini veren müşterileri bir grup olarak alın." },
+        { name: "Birikimli siparişleri toplayın", text: "Bu müşterilerin 3., 6., 12. ve 24. aya kadar verdikleri tüm siparişleri ve ciroyu müşteri başına hesaplayın." },
+        { name: "Marjla çarpın", text: "Birikimli ciroyu katkı marjıyla (SaaS'ta brüt marjla) çarparak her ay için marjlı LTV'yi bulun." },
+        { name: "CAC ile karşılaştırın", text: "Aynı kohortun CAC'ına bölün. 24 aylık LTV 483 TL ve CAC 161 TL ise LTV:CAC = 3." },
+        { name: "Geri ödeme ayını okuyun", text: "Birikimli katkının CAC'ı geçtiği ay CAC geri ödeme süresidir; reklam hedefini bu süreye ve hedef orana göre belirleyin." },
+      ],
+    },
+    relatedToolKey: "ltv",
+    resources: [
+      { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici/" },
+      { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
+      { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" },
+      { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "NRR Nedir? SaaS Büyüme Metriği", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
+      { label: "SaaS Metrikleri 101: ARR, CAC, LTV ve Churn", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
+      { label: "Stripe: Customer lifetime value (İngilizce)", href: "https://stripe.com/gb/resources/more/customer-lifetime-value", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -2580,6 +2759,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "ARR Calculator", href: "/en/free-tools/arr-calculator" },
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator" },
       { label: "LTV Calculator", href: "/en/free-tools/ltv-calculator" },
+      { label: "What Is LTV? LTV:CAC Ratio", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
       { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator" },
     ],
   },
@@ -3936,6 +4116,184 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google Ads Performance Optimization", href: "/en/blog/google-ads-performance-optimization/" },
       { label: "Google Ads Help: About Target ROAS bidding", href: "https://support.google.com/google-ads/answer/6268637", external: true },
       { label: "Google Ads Help: Seasonality adjustments", href: "https://support.google.com/google-ads/answer/10369906", external: true },
+    ],
+  },
+  {
+    slug: "what-is-ltv-ltv-cac-ratio",
+    seoTitle: "What Is LTV? LTV:CAC Ratio, Formula and Examples",
+    title: "What Is LTV and How to Calculate It? What Should Your LTV:CAC Ratio Be? (Cohort and Ad Examples)",
+    description:
+      "What customer lifetime value (LTV) is and how to calculate it on margin: a cohort LTV example, reading LTV:CAC, CAC payback and turning LTV into a CPA target.",
+    category: "saas-buyume",
+    tldr: [
+      "LTV (customer lifetime value) is the total profit a customer leaves over the relationship. Calculate it on margin, not revenue: a customer with a $60 average order, 35% contribution margin and 2.3 orders in 24 months has an LTV of $48.30 (revenue LTV: $138).",
+      "The most reliable method is cohort LTV: track cumulative orders of customers acquired in the same month and multiply by contribution margin — no 'customer lifetime' assumption needed.",
+      "A common rule of thumb is an LTV:CAC of at least 3, but always read it together with CAC payback. The same $48.30 LTV pays back on the first order at a $16 CAC and around month 7 at a $30 CAC.",
+      "Turn LTV into an ad target: Max CAC = LTV / Target ratio. In the example, a 3:1 target means a $16.10 CAC and about 3.73 first-order ROAS; when repeat purchase is low, 3:1 requires profit on the first order.",
+    ],
+    publishedAt: "2026-10-26",
+    readingMinutes: 9,
+    tags: ["LTV", "LTV:CAC", "Customer Lifetime Value", "Cohort Analysis", "CAC", "Unit Economics"],
+    sections: [
+      {
+        heading: "What is LTV? (Short answer)",
+        paragraphs: [
+          "LTV (lifetime value, also CLV or CLTV) is the total profit a customer leaves over their relationship with your business. It sets the most you can spend to acquire a customer, which is why it is used alongside CAC (customer acquisition cost).",
+          "The simplest ecommerce formula: LTV = Average order value × Orders per customer × Contribution margin. Example: a store with a $60 average order where customers place 2.3 orders in 24 months and 35% of revenue is left after product cost, shipping, payment fees and returns. LTV = $60 × 2.3 × 0.35 = $48.30.",
+          "The same customer's revenue LTV is $60 × 2.3 = $138. Many guides use that revenue figure; planning ad spend around $138 lets you spend almost three times what a customer can actually earn you. (All amounts are illustrative.)",
+        ],
+      },
+      {
+        heading: "How do you calculate LTV? Three formulas",
+        paragraphs: [
+          "Which formula you use depends on your business model and how much data you have. All three end with a margin multiplier: contribution margin (product, shipping, fees and returns deducted) is common in ecommerce, gross margin in SaaS.",
+        ],
+        bullets: [
+          "Ecommerce (repeat purchase): LTV = Average order value × Orders per year × Active years × Contribution margin",
+          "Subscription / SaaS: LTV = Monthly revenue per account (ARPA) × Gross margin / Monthly churn rate (1 / churn = average lifetime in months)",
+          "Cohort (realised) LTV: LTV(month n) = Cohort's cumulative revenue to month n / Customers in cohort × Margin",
+          "LTV:CAC = LTV / CAC; CAC payback (months) = CAC / Monthly margin contribution per customer",
+        ],
+      },
+      {
+        heading: "Why is LTV calculated on margin, not revenue?",
+        paragraphs: [
+          "LTV exists to answer 'how much can I spend on this customer?'. The product cost, shipping and fees inside what the customer pays were never yours; only the remaining contribution can fund acquisition.",
+          "If the example store targets LTV:CAC = 3 on revenue LTV ($138), it thinks it can spend up to $46 per customer. With a margin-based LTV of $48.30, that means roughly breaking even even after 24 months. On margin, the same target allows a $16.10 CAC.",
+          "In ecommerce, contribution margin is a step better than gross margin: in high-return categories (apparel, footwear), a gross-margin LTV comes out noticeably higher than reality.",
+        ],
+      },
+      {
+        heading: "How do you calculate cohort LTV? A step-by-step example",
+        paragraphs: [
+          "'Customer lifetime' and 'orders per year' in the formulas are usually estimates. The cohort method replaces them with realised data: take customers who placed their first order in the same month as one group (cohort) and add up all their later orders cumulatively.",
+          "Example: 1,000 customers who first ordered in January are tracked. Cumulative orders per customer are shown below; each order is $60 and leaves $21 of contribution at a 35% margin.",
+          "Where the curve flattens (after month 12 here) indicates a sensible LTV horizon. Put several cohorts side by side (different months, different channels) and you also see which channel brings more loyal customers; a channel can have a high CAC but a steep cohort curve.",
+        ],
+        bullets: [
+          "First order (month 0): 1.00 orders → $60 revenue → $21 contribution",
+          "Month 3: 1.15 orders → $69 revenue → $24.15 contribution",
+          "Month 6: 1.35 orders → $81 revenue → $28.35 contribution",
+          "Month 12: 1.80 orders → $108 revenue → $37.80 contribution",
+          "Month 24: 2.30 orders → $138 revenue → $48.30 contribution (24-month LTV)",
+        ],
+      },
+      {
+        heading: "What is the LTV:CAC ratio and what should it be?",
+        paragraphs: [
+          "LTV:CAC is the expected margin contribution from a customer divided by the cost of acquiring them. The rule of thumb widely used in SaaS and startups is at least 3. It is not a scientific threshold but a safety buffer for overheads beyond CAC and for estimation error.",
+          "Always check how LTV was calculated: a 3:1 on revenue LTV can fall to 1:1 on margin.",
+        ],
+        bullets: [
+          "Below 1: each new customer loses money even over the full horizon. Fix price, margin or retention before scaling acquisition",
+          "1–3: you recover acquisition cost but leave little for overheads and growth; acceptable if payback is short",
+          "3–5: healthy for most businesses",
+          "Well above 5: you may be under-investing in acquisition; try scaling into more expensive channels",
+        ],
+      },
+      {
+        heading: "Why is LTV:CAC not enough on its own? CAC payback",
+        paragraphs: [
+          "LTV:CAC tells you how much comes back, not when. For cash flow, the real question is in which month CAC is recovered. A cohort table shows it directly: payback is the month cumulative contribution passes CAC.",
+          "Two scenarios on the same cohort: at a $16 CAC, first-order contribution ($21) covers CAC immediately and 24-month LTV:CAC is about 3.0. At a $30 CAC, cumulative contribution is still below CAC at month 6 ($28.35), CAC pays back around month 7 and the ratio drops to 1.61. In the second scenario, growth ties up cash for longer.",
+          "A practical frame: in ecommerce, aim to recover CAC on the first order or within a few months; in B2B SaaS, under 12 months. Use the CAC Payback Period calculator to work it out from monthly contribution per customer.",
+        ],
+      },
+      {
+        heading: "How much can you spend on ads based on LTV?",
+        paragraphs: [
+          "Getting from LTV to an ad target takes two steps. First choose a policy: Max CAC = LTV / Target LTV:CAC, or 'recover CAC within X months'. Then translate it into the campaign's first-order metric: First-order ROAS target = Average order value / Max CAC.",
+          "For the example cohort ($60 order, $21 first-order contribution, $48.30 24-month LTV), different policies give these limits:",
+          "Note: CAC is not only ad spend; it includes agency, team and tool costs. The CPA limit you put in the ad platform should therefore sit a little below max CAC. And because repeat purchase is low here (2.3 orders in 24 months), the 3:1 target demands a stricter ROAS than first-order break-even; for frequently repurchased products (cosmetics, supplements, pet food) the picture flips and LTV can justify losing money on the first order.",
+        ],
+        bullets: [
+          "Break even on the first order: max CAC $21 → first-order ROAS target ≈ 2.86",
+          "Pay back within 12 months: max CAC $37.80 → ROAS ≈ 1.59",
+          "24-month LTV:CAC = 3: max CAC $16.10 → ROAS ≈ 3.73",
+          "Spend the full 24-month LTV (break-even, not recommended): max CAC $48.30 → ROAS ≈ 1.24",
+        ],
+      },
+      {
+        heading: "LTV in SaaS: formula LTV and a time cap",
+        paragraphs: [
+          "The subscription formula LTV = ARPA × Gross margin / Monthly churn assumes that, with constant churn, a customer could stay forever. At low churn that pins LTV on a long, uncertain future, so many teams cap LTV at 24–36 months.",
+          "Example: ARPA $150 per month, 80% gross margin, 3% monthly churn. Monthly gross profit per customer is $120; formula LTV is $120 / 0.03 = $4,000. Capped at 36 months: $120 × (1 − 0.97^36) / 0.03 ≈ $2,664. With a $1,200 CAC the ratio is 3.33 on the formula and about 2.22 capped; payback is $1,200 / $120 = 10 months.",
+          "If the gap is large, decide on capped LTV and payback. Also remember that CAC spent today is worth more than profit that trickles back over years, especially with high inflation; thinking about long-horizon LTV in real terms is safer.",
+        ],
+      },
+      {
+        heading: "Common LTV calculation mistakes",
+        paragraphs: [
+          "LTV mistakes usually point the same way: they inflate LTV and over-fund acquisition.",
+        ],
+        bullets: [
+          "Calculating LTV:CAC on revenue LTV → the ratio looks 2–3 times better than it is",
+          "Averaging all customers → calculate by channel and cohort; customers acquired through discounts usually repurchase less",
+          "Assuming customer lifetime → check against cohort data; 1 / churn can hide heavy early losses",
+          "Ignoring returns, discounts and free shipping → calculate LTV on contribution margin",
+          "Unlimited time horizon → cap at 24–36 months and check payback too",
+          "Crediting organic repeat orders to ads → when calculating LTV:CAC per channel, match that channel's CAC with that channel's cohort",
+        ],
+      },
+      {
+        heading: "How do you increase LTV?",
+        paragraphs: [
+          "LTV has three levers: contribution per order, order frequency and active lifetime. The cohort curve shows where you are weak: if it flattens by month 3, flows that trigger the second order (email, remarketing, a subscription option) come first; if baskets are small, bundles and cross-sells; if margin is low, pricing and shipping policy.",
+          "In SaaS the biggest effect comes from churn; because churn is the denominator, cutting monthly churn from 3% to 2.5% raises formula LTV by 20% with everything else equal. Track NRR to see expansion revenue (upgrades, seat growth) too.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is LTV the same as CLV?",
+        answer:
+          "Yes. LTV (lifetime value), CLV and CLTV (customer lifetime value) describe the same metric: the total value a customer leaves over the relationship. LTV in finance (loan-to-value) is a different concept.",
+      },
+      {
+        question: "What does an LTV:CAC ratio of 3 mean?",
+        answer:
+          "Expected margin contribution from a customer is three times the cost of acquiring them — for example, a $48.30 margin-based LTV against a $16.10 CAC. It is a common rule of thumb; make sure the ratio uses margin and read it alongside CAC payback.",
+      },
+      {
+        question: "What is a good LTV?",
+        answer:
+          "LTV has no good or bad value on its own; a $50 LTV is excellent with a $10 CAC and weak with a $40 CAC. Always judge LTV against CAC (LTV:CAC) and payback period.",
+      },
+      {
+        question: "Over how many months should LTV be calculated?",
+        answer:
+          "In ecommerce, tracking 12- and 24-month LTV together is practical; where the cohort curve flattens shows a sensible horizon. In SaaS, LTV capped at 24–36 months supports more cautious decisions than formula LTV.",
+      },
+      {
+        question: "How do you estimate LTV for a new business with no data?",
+        answer:
+          "Start with first-order contribution and manage ads to first-order break-even. After 3–6 months, update LTV with your first cohorts' repeat rates. Do not plug competitor or industry averages in as your LTV; margins and customer behaviour vary widely.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate cohort LTV and LTV:CAC",
+      description: "Use data from customers acquired in the same month to find margin-based LTV, LTV:CAC and the payback month.",
+      steps: [
+        { name: "Pick a cohort", text: "Take customers who placed their first order in a given month (ideally from one channel) as a group." },
+        { name: "Add up cumulative orders", text: "Calculate each customer's average orders and revenue up to months 3, 6, 12 and 24." },
+        { name: "Multiply by margin", text: "Multiply cumulative revenue by contribution margin (gross margin in SaaS) to get margin-based LTV for each month." },
+        { name: "Compare with CAC", text: "Divide by the same cohort's CAC. With a $48.30 24-month LTV and $16.10 CAC, LTV:CAC = 3." },
+        { name: "Read the payback month", text: "The month cumulative contribution passes CAC is your CAC payback; set the ad target from that period and your target ratio." },
+      ],
+    },
+    relatedToolKey: "ltv",
+    resources: [
+      { label: "LTV Calculator", href: "/en/free-tools/ltv-calculator/" },
+      { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
+      { label: "CAC Payback Period Calculator", href: "/en/free-tools/cac-payback-period-calculator/" },
+      { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "What Is NRR? SaaS Growth Metric", href: "/en/blog/what-is-nrr-saas-growth-metric/" },
+      { label: "SaaS Metrics: ARR, CAC, LTV", href: "/en/blog/saas-metrics-arr-cac-ltv/" },
+      { label: "Stripe: Customer lifetime value", href: "https://stripe.com/gb/resources/more/customer-lifetime-value", external: true },
     ],
   },
 ];

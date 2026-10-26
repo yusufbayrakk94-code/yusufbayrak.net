@@ -68,6 +68,7 @@
 - [GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir? (Yanlış ve Doğru UTM Tablosuyla)](https://yusufbayrak.net/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/): GA4'te Unassigned trafik, kaynak/aracı hiçbir kanal kuralına uymadığında oluşur. 5 dakikalık teşhis, yanlış-doğru UTM tablosu ve kalıcı çözüm adımları.
 - [Black Friday 2026 Reklam Planı: 5 Haftalık Takvim, İndirim Marjı Hesabı ve Bütçe](https://yusufbayrak.net/blog/black-friday-2026-reklam-plani/): Black Friday 27 Kasım 2026'da. Hafta hafta reklam takvimi, indirimin başabaş ROAS'a etkisi, bütçe hesabı ve 30 gün en düşük fiyat kuralı tek rehberde.
 - [Hedef ROAS Nasıl Belirlenir? Google Ads'te tROAS'ı Marjdan Hesaplama Rehberi](https://yusufbayrak.net/blog/hedef-roas-nasil-belirlenir/): Google Ads hedef ROAS değerini marjınızdan hesaplayın: formül, iade düzeltmesi, başlangıç değeri, kademeli değişiklik ve kârı en yüksek hedefi bulma örnekleri.
+- [LTV Nedir, Nasıl Hesaplanır? LTV:CAC Oranı Kaç Olmalı? (Kohort ve Reklam Örnekleriyle)](https://yusufbayrak.net/blog/ltv-nedir-ltv-cac-orani/): LTV (müşteri yaşam boyu değeri) nedir, marjla nasıl hesaplanır? Kohort LTV örneği, LTV:CAC oranı yorumu, geri ödeme süresi ve LTV'den reklam CPA hedefi.
 
 ## English
 
@@ -112,6 +113,7 @@
 - [GA4 Unassigned Traffic: What It Is and How to Fix It (With a Wrong vs Right UTM Table)](https://yusufbayrak.net/en/blog/ga4-unassigned-traffic-how-to-fix/): GA4 Unassigned traffic happens when source/medium matches no channel rule. A 5-minute diagnosis, a wrong-vs-right UTM table and permanent fixes.
 - [Black Friday 2026 Ad Plan: A 5-Week Timeline, Discount Margin Math and Budget](https://yusufbayrak.net/en/blog/black-friday-2026-ad-plan/): Black Friday is November 27, 2026. A week-by-week ad timeline, how discounts change break-even ROAS, budget math and the 30-day lowest price rule in Turkey.
 - [How to Set Target ROAS in Google Ads: Calculate tROAS From Your Margin](https://yusufbayrak.net/en/blog/how-to-set-target-roas-google-ads/): Calculate Google Ads target ROAS from your contribution margin: formula, returns adjustment, starting value, step changes and the most profitable target.
+- [What Is LTV and How to Calculate It? What Should Your LTV:CAC Ratio Be? (Cohort and Ad Examples)](https://yusufbayrak.net/en/blog/what-is-ltv-ltv-cac-ratio/): What customer lifetime value (LTV) is and how to calculate it on margin: a cohort LTV example, reading LTV:CAC, CAC payback and turning LTV into a CPA target.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim
