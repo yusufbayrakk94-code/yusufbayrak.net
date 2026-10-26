@@ -203,9 +203,9 @@ export const trTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };
 export const grossMargin: ToolContent = {
   slug: "brut-kar-marji",
   path: "/ucretsiz-araclar/brut-kar-marji-hesaplayici",
-  title: "Brüt Kar Marjı Hesaplayıcı",
+  title: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı",
   description:
-    "Brüt kar marjınızı saniyeler içinde hesaplayın. Gelir ve maliyet bilgilerinizi girin, kârlılığınızı anında görün.",
+    "Kar marjı hesaplama: gelir ve ürün maliyetini (COGS) girin, brüt kar marjınızı yüzde ve tutar olarak saniyeler içinde görün. Formül ve sektör aralıkları.",
   intro:
     "Brüt kar marjı, satılan malın maliyeti (COGS) düşüldükten sonra gelirinizin yüzde kaçının elinizde kaldığını gösterir. Toplam gelirinizi ve COGS'unuzu girin; sonucu hem yüzde hem tutar olarak görün.",
   applicationCategory: "FinanceApplication",
@@ -216,6 +216,7 @@ export const grossMargin: ToolContent = {
     { heading: "Sektöre Göre Referans Aralıkları", body: "Kesin bir hedef yoktur; iş modeline göre büyük farklılık gösterir. Yönlendirici olarak: e-ticaret ve perakendede brüt marj çoğunlukla %20-50 bandında, hizmet/ajans işlerinde %40-60, SaaS ve dijital ürünlerde ise %70-90 aralığında görülür. Bunlar kesin iddia değil, karşılaştırma için kaba referanslardır — kendi geçmiş dönem trendiniz her zaman sektör ortalamasından daha anlamlı bir kıyas noktasıdır." },
   ],
   faqs: [
+    { q: "Kar marjı nasıl hesaplanır?", a: "Kar marjı = (Satış fiyatı − Maliyet) / Satış fiyatı × 100. Örnek: 1.000 TL'ye satılan ve 600 TL'ye mal olan üründe kar marjı (1.000 − 600) / 1.000 = %40'tır. Maliyete göre hesaplanan oran ise kar oranıdır (markup): (1.000 − 600) / 600 = %66,7. İkisi sık karıştırılır; fiyatlandırma ve reklam hesaplarında (başabaş ROAS gibi) satış fiyatına göre olan kar marjı kullanılır." },
     { q: "Brüt kar marjı nedir?", a: "Brüt kar marjı, toplam gelirden satılan malın maliyeti (COGS) düşüldükten sonra kalan tutarın gelire oranıdır: ((Gelir − COGS) / Gelir) × 100. Ürün veya hizmetinizin temel kârlılığını, operasyonel giderlerden bağımsız olarak gösterir." },
     { q: "İyi bir brüt kar marjı nedir?", a: "İş modeline bağlıdır. Yönlendirici aralıklar: e-ticaret %20-50, hizmet işleri %40-60, SaaS %70-90. Sabit bir eşik yerine kendi trendinizi izleyin — marjın dönemler arası düşmesi, fiyat baskısı veya artan birim maliyet sinyalidir." },
     { q: "COGS'a neler dahildir?", a: "Ürünü üretmek veya satılabilir hale getirmek için katlanılan doğrudan maliyetler: hammadde, üretim işçiliği, tedarikçi ve fason faturaları, ürüne doğrudan atfedilebilen kargo, paketleme ve ödeme komisyonu. Kira, pazarlama bütçesi, yönetim maaşları ve vergi COGS'a girmez." },
@@ -483,9 +484,9 @@ export const channelQuiz: ToolContent = {
 export const marketplace: ToolContent = {
   slug: "trendyol-hepsiburada-kar-hesaplama",
   path: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama",
-  title: "Trendyol & Hepsiburada Kâr Hesaplama Aracı",
+  title: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)",
   description:
-    "Trendyol ve Hepsiburada'da sipariş başı net kârınızı komisyon, kargo, hizmet bedeli, stopaj, iade ve reklam dahil hesaplayın; başabaş fiyatı görün.",
+    "Trendyol komisyon ve kâr hesaplama: komisyon, kargo, hizmet bedeli, iade ve reklam dahil sipariş başı net kârınızı ve başabaş fiyatı görün. Hepsiburada da var.",
   intro:
     "Satış fiyatı, ürün maliyeti, komisyon ve kargo bilgilerini girin; araç sipariş başı net kârınızı, kâr marjınızı, başabaş ve hedef satış fiyatınızı, sipariş başı harcayabileceğiniz maksimum reklam bütçesini ve hesabınıza yatacak tutarı hesaplasın. Diğer hesaplayıcılardan farklı olarak iade oranını ve reklam maliyetini de hesaba katar. Hesap tarayıcınızda çalışır, sonucu link olarak paylaşabilirsiniz.",
   seoParagraphs: [

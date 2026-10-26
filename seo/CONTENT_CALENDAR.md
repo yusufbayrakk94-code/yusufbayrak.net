@@ -7,7 +7,7 @@ konu "Yedek" listesinden biriyle değiştirilir ve bu dosyada not düşülür. Y
 ## ⚠ Arama hacmi kuralı (kullanıcı kararı, 23.10.2026)
 Hacmi olmayan konuda üretim yapılmaz. Kaynak: Google Ads Anahtar Kelime Planlayıcı — YALNIZCA AdGusto Google Ads
 hesabı, yalnızca okuma (kampanya/ayar değişikliği yok), konum Türkiye, dil Türkçe.
-- 24.10.2026 çalışmasının ilk işi: aşağıdaki tüm konuların ana ve ikincil sorgularının aylık hacmini topla, takvimi
+- [x] 26.10.2026'da yapıldı (aşağıdaki "Hacim çalışması"). Kural: aşağıdaki tüm konuların ana ve ikincil sorgularının aylık hacmini topla, takvimi
   hacme (ve rakip zayıflığına) göre yeniden sırala; hacim aralığı "0–10" olan konuları takvimden çıkar ve yerine hacmi olan
   konular ekle (kümeye uygun, SERP analizi yapılmış). Ham hacim rakamları bu dosyaya yazılabilir (Search Console verisi değil).
 - Uyarı: A grubundaki "Türkçe kaynak yok" konular düşük hacim de işaret edebilir; hacim doğrulanmadan yazılmaz.
@@ -21,41 +21,76 @@ hesabı, yalnızca okuma (kampanya/ayar değişikliği yok), konum Türkiye, dil
   CAC nedir, churn nedir, katkı marjı, UTM nedir, Black Friday reklam planı, llms.txt, GEO.
 - **C — Kalabalık** (Trendyol komisyon/kâr: 10+ araç sitesi): yalnızca uzun kuyruk açılarla girilir.
 - Her yazı bir araca bağlanır (araç ↔ yazı iç link kümesi) ve hedef sorgulardan birini (GOALS.md) besler.
-- Not: Arama hacmi verisi yok (connector kullanılmıyor); öncelik SERP zayıflığı + Search Console sinyali + hedef sorguya katkıyla belirlendi.
+- 26.10.2026: Keyword Planner hacimleri alındı (aşağıda); öncelik artık hacim + rakip zayıflığı + hedef sorguya katkı.
 
-## Takvim
-| Tarih | Sayfa (TR + EN) | Hedef sorgu | Grup | Neden / fırsat | Bağlanacak araç |
+## Hacim çalışması (26.10.2026, Keyword Planner — AdGusto hesabı, Türkiye, son 12 ay ortalaması)
+Not: Hacim tablosunda dil filtresi arayüzde değiştirilemedi ("Tüm diller"); Türkçe sorgularda fark ihmal edilebilir.
+Keşif önerileri (Türkçe) ayrıca çalıştırıldı. "—" = Planner veri vermedi (≈0). Rakam aralık değil, Planner ortalamasıdır.
+
+| Sorgu | Aylık | | Sorgu | Aylık |
+|---|---|---|---|---|
+| trendyol komisyon hesaplama | 18.100 | | utm nedir | 390 |
+| desi hesaplama | 14.800 | | hepsiburada kar hesaplama | 390 |
+| trendyol kar hesaplama | 6.600 | | cac nedir | 320 |
+| roas | 6.600 | | arr nedir | 260 |
+| meta reklam | 4.400 | | ltv nedir / churn nedir | 210 / 210 |
+| trendyol komisyon oranları | 2.900 | | roas hesaplama | 170 |
+| google ads nedir | 1.900 | | cpl nedir / arpu nedir | 170 / 170 |
+| kargo desi hesaplama | 1.600 | | influencer reklamları | 140 |
+| google ads reklam verme | 1.300 | | marj hesaplama | 140 |
+| kar marjı hesaplama | 1.000 | | mer nedir / llms txt nedir | 110 / 110 |
+| geo nedir | 1.000 | | churn rate nedir | 90 |
+| roas nedir | 880 | | net kar marjı hesaplama | 70 |
+| meta reklam verme | 590 | | dönüşüm oranı hesaplama | 50 |
+| trendyol reklam | 590 | | nrr nedir / freemium nedir | 40 / 40 |
+| llms txt | 480 | | brüt kar marjı hesaplama | 40 |
+| mrr nedir | 390 | | rule of 40 / ltv cac / utm oluşturucu | 30 / 30 / 30 |
+| | | | poas nedir / hedef roas nedir / lead scoring | 20 / 20 / 20 |
+
+0–10 veya veri yok (takvimden çıkarıldı): cac geri ödeme süresi (—), cac payback (10), grr nedir (10),
+meta reklam günlük bütçe (—), katkı marjı (—/10), trendyol iade oranı (—), trendyol reklam maliyeti (—), poas hesaplama (—),
+lead scoring nedir (—), black friday roas (—), black friday reklam stratejisi (—), ltv cac oranı (—), arr hesaplama (—),
+cac hesaplama (—), churn rate hesaplama (—), ltv hesaplama (10), ga4 unassigned (10), reklam bütçesi hesaplama (10).
+Not: hedef sorgulardan "cac/ltv/churn hesaplama" ve "ga4 unassigned" hacimsiz çıktı → bu kümelerde "X nedir" sorguları hedeflenir.
+Belirsiz: "arpa nedir" (1.000) büyük ölçüde tahıl anlamında → ARPU açısıyla girilir.
+
+## Takvim (26.10.2026'da hacme göre yeniden sıralandı)
+| Tarih | Sayfa (TR + EN) | Hedef sorgu (aylık) | Grup | Neden / fırsat | Bağlanacak araç |
 |---|---|---|---|---|---|
-| [ ] 24 Eki Cmt → hacim doğrulanınca | POAS nedir, nasıl hesaplanır? (ROAS'tan farkı) | poas nedir | A | Türkçe kaynak yok; ROAS kümesini güçlendirir | ROAS, Brüt Marj |
-| [x] 25 Eki Paz → yayınlandı ([TR](https://yusufbayrak.net/blog/hedef-roas-nasil-belirlenir/) · [EN](https://yusufbayrak.net/en/blog/how-to-set-target-roas-google-ads/)); hacim henüz yazılmamıştı, talep kanıtı: 4 farklı Türkçe site konuya sayfa ayırmış (Google Ads Yardım TR, erdiduman.com, digitalup.solutions, sanalyonetmen.com) — seo/research/hedef-roas-nasil-belirlenir.md. POAS (24 Eki) Türkçe kaynak olmadığı için talep kuralını sağlamadı, hacim gelene kadar bekliyor | Hedef ROAS (tROAS) nasıl belirlenir? Google Ads için adım adım | hedef roas | A | TR'de yalnızca Google yardım sayfası; hedef sorgu #3 | ROAS, Reklam Bütçesi |
-| [ ] 26 Eki Pzt | LTV:CAC oranı nedir, kaç olmalı? | ltv cac oranı | A | Türkçe kaynak yok; hedef sorgu #5-6 | LTV, CAC |
-| [ ] 27 Eki Sal | CAC geri ödeme süresi nedir, nasıl hesaplanır? | cac geri ödeme süresi | A | Türkçe kaynak yok; araç var, yazı yok | CAC Payback |
-| [x] 28 Eki Çar → 24 Eki'de yayınlandı ([TR](https://yusufbayrak.net/blog/black-friday-2026-reklam-plani/) · [EN](https://yusufbayrak.net/en/blog/black-friday-2026-ad-plan/)); öne alındı: Keyword Planner erişimi yoktu, talebi kanıtlı ve zamanlı konu seçildi | Black Friday 2026 reklam planı: bütçe, marj ve takvim | black friday reklam stratejisi | B (zamanlı) | 27 Kasım'a 4 hafta; rakipler jenerik, hesap yok | Reklam Bütçesi, ROAS |
-| [ ] 29 Eki Per | MER nedir? Pazarlama verimlilik oranı ve ROAS farkı | mer nedir | A | Türkçe kaynak yok | ROAS |
-| [ ] 30 Eki Cum | Rule of 40 nedir, nasıl hesaplanır? | rule of 40 nedir | A | Türkçe kaynak yok; hedef sorgu #10 | Rule of 40 |
-| [ ] 31 Eki Cmt | GRR (brüt gelir tutma) nedir? NRR ile farkı | grr nedir | A | Türkçe kaynak yok; NRR kümesi (NRR gösterim alıyor) | NRR, Churn |
-| [ ] 1 Kas Paz | Meta reklamlarında günlük bütçe ne kadar olmalı? | meta reklam günlük bütçe | A | Türkçe kaynak yok | Reklam Bütçesi |
-| [ ] 2 Kas Pzt | YENİ ARAÇ: POAS / kâr bazlı ROAS hesaplayıcı | poas hesaplama | A | Türkçe araç yok; 24 Eki yazısını besler | — |
-| [ ] 3 Kas Sal | CAC nedir, nasıl hesaplanır? (paid CAC, blended CAC) | cac hesaplama | B | Rakipler sözlük düzeyinde; hedef sorgu #5 | CAC |
-| [ ] 4 Kas Çar | Churn rate nedir? Aylık–yıllık churn ve azaltma yolları | churn rate hesaplama | B | ikas/IdeaSoft jenerik; bileşik churn yok; hedef sorgu #7 | Churn |
-| [ ] 5 Kas Per | Katkı marjı nedir? Brüt marjdan farkı ve reklam kararları | katkı marjı nedir | B | Reklam bütçesi/ROAS yazılarının temeli | Brüt Marj, ROAS |
-| [ ] 6 Kas Cum | LTV nasıl hesaplanır? SaaS ve e-ticaret örnekleri | ltv hesaplama | B | Araç var, yazı yok; hedef sorgu #6 | LTV |
-| [ ] 7 Kas Cmt | Pazaryerinde iade oranı kârı nasıl etkiler? | trendyol iade oranı kâr | C (uzun kuyruk) | Kalabalık kümede boş açı; hedef sorgu #2 | Trendyol Kâr |
-| [ ] 8 Kas Paz | UTM parametreleri nedir? GA4 kanal eşleşmeli rehber | utm nedir | B | Rakiplerde GA4 kanal kuralları yok; hedef sorgu #8 | UTM |
-| [ ] 9 Kas Pzt | GEO nedir? ChatGPT ve AI aramalarında nasıl görünür olunur | geo nedir | B | Az sayıda Türkçe kaynak; AI kümesi | llms.txt |
-| [ ] 10 Kas Sal | llms.txt nedir, nasıl oluşturulur? | llms.txt nedir | B | Araç var, yazı yok | llms.txt |
-| [ ] 11 Kas Çar | Trendyol reklamları kârlı mı? Sipariş başı reklam maliyeti hesabı | trendyol reklam maliyeti | C (uzun kuyruk) | Hesap örneği veren yok | Trendyol Kâr, ROAS |
-| [ ] 12 Kas Per | Net kâr marjı nasıl hesaplanır? (e-ticaret örneği) | net kar marjı hesaplama | B | Araç var, yazı yok | Net Marj |
-| [ ] 13 Kas Cum | Dönüşüm oranı nasıl hesaplanır ve artırılır? | dönüşüm oranı hesaplama | B | Araç var, yazı yok | Dönüşüm Oranı |
-| [ ] 14 Kas Cmt | ARR nasıl hesaplanır? (yeni/genişleme/kayıp bileşenleri) | arr hesaplama | B | Backlog'daki ARR açığı | ARR, MRR |
-| [ ] 15 Kas Paz | B2B'de lead başı maliyet (CPL) nasıl hesaplanır, nasıl düşer? | cpl nedir | B | B2B kümesi; bütçe yazısındaki huni hesabını besler | Reklam Bütçesi (B2B) |
-| [ ] 16 Kas Pzt | YENİ ARAÇ: B2B lead skor kartı / ICP testi | lead scoring | B | Backlog'da; lead üretimine doğrudan katkı | — |
-| [ ] 17 Kas Sal | Lead scoring nedir? B2B'de puanlama modeli | lead scoring nedir | B | 16 Kas aracını besler | Lead skor kartı |
-| [ ] 18 Kas Çar | MRR nedir, nasıl hesaplanır? | mrr nedir | B | Araç var, yazı yok | MRR |
-| [ ] 19 Kas Per | ARPA / ARPU nedir, farkı ne? | arpa nedir | B | Araç var, yazı yok | ARPA |
-| [ ] 20 Kas Cum | Black Friday sonrası: kampanya ROAS'ı iade sonrası nasıl hesaplanır | black friday roas | B (zamanlı) | Dönem sonu analizi; 28 Eki yazısının devamı | ROAS |
-| [ ] 21 Kas Cmt | Freemium mi deneme sürümü mü? SaaS dönüşüm karşılaştırması | freemium vs free trial | B | Freemium yazısıyla küme | — |
-| [ ] 22 Kas Paz | Aylık değerlendirme: Search Console verisine göre en iyi 3 sayfanın kapsamlı güncellenmesi | — | — | Takvimin ilk ayının sonuçlarına göre | — |
+| [x] 24 Eki → Black Friday 2026 reklam planı ([TR](https://yusufbayrak.net/blog/black-friday-2026-reklam-plani/) · [EN](https://yusufbayrak.net/en/blog/black-friday-2026-ad-plan/)) | Black Friday 2026 reklam planı | black friday reklam stratejisi (—) | B (zamanlı) | Yayında; hacim sonradan "—" çıktı | Reklam Bütçesi, ROAS |
+| [x] 25 Eki → Hedef ROAS ([TR](https://yusufbayrak.net/blog/hedef-roas-nasil-belirlenir/) · [EN](https://yusufbayrak.net/en/blog/how-to-set-target-roas-google-ads/)) | Hedef ROAS (tROAS) nasıl belirlenir? | hedef roas nedir (20) | A | Yayında | ROAS, Reklam Bütçesi |
+| [ ] 26 Eki Pzt | LTV nedir? LTV:CAC oranı kaç olmalı? (eski konu "LTV:CAC oranı"; LTV nedir ile birleştirildi) | ltv nedir (210), ltv cac (30) | B | "ltv cac oranı" tek başına hacimsiz; LTV nedir sorgusunu ana hedef yap | LTV, CAC |
+| [ ] 27 Eki Sal | UTM parametreleri nedir? GA4 kanal eşleşmeli rehber | utm nedir (390) | B | Hedef sorgu #8; rakiplerde GA4 kanal kuralları yok | UTM |
+| [ ] 28 Eki Çar | YENİ ARAÇ: Desi hesaplama (kargo desisi + pazaryeri desi, PTT/Aras/Yurtiçi formülü) | desi hesaplama (14.800), kargo desi hesaplama (1.600) | C | En yüksek hacim; kargo firması sayfaları tek firmalı, pazaryeri kâr hesabına bağlanmıyor | Trendyol Kâr |
+| [ ] 29 Eki Per | CAC nedir? Paid / blended CAC ve hesap örneği | cac nedir (320) | B | Hedef sorgu #5 (hesaplama sorgusu hacimsiz) | CAC |
+| [ ] 30 Eki Cum | Kar marjı nasıl hesaplanır? Kar marjı vs kar oranı (markup) | kar marjı hesaplama (1.000), marj hesaplama (140), net kar marjı hesaplama (70) | B | Yüksek hacim, araçlar hazır; ROAS kümesinin temeli | Brüt Marj, Net Marj, ROAS |
+| [ ] 31 Eki Cmt | MRR nedir, nasıl hesaplanır? | mrr nedir (390) | B | Araç var, yazı yok | MRR |
+| [ ] 1 Kas Paz | llms.txt nedir, nasıl oluşturulur? | llms txt (480), llms txt nedir (110) | B | Araç var, yazı yok; AI kümesi | llms.txt |
+| [ ] 2 Kas Pzt | Churn nedir? Churn rate nasıl hesaplanır ve düşürülür | churn nedir (210), churn rate nedir (90) | B | Hedef sorgu #7 | Churn |
+| [ ] 3 Kas Sal | Meta reklam verme rehberi: bütçe, kitle, öğrenme aşaması | meta reklam verme (590), meta reklam (4.400) | B | Mevcut Meta öğrenme aşaması yazısıyla küme | Reklam Bütçesi, ROAS |
+| [ ] 4 Kas Çar | ARR nedir? Yeni / genişleme / kayıp bileşenleri | arr nedir (260) | B | "arr hesaplama" hacimsiz → "nedir" açısı | ARR, MRR |
+| [ ] 5 Kas Per | GEO nedir? ChatGPT ve AI aramalarında görünürlük | geo nedir (1.000) | B | Hacim yüksek ama sorgu kısmen belirsiz; SERP niyetini kontrol et | llms.txt |
+| [ ] 6 Kas Cum | Trendyol komisyon oranları 2026 ve komisyon hesabı (kategori örnekli) | trendyol komisyon oranları (2.900), komisyon hesaplama trendyol (480) | C (uzun kuyruk) | Kalabalık ama aracı doğrudan besler; güncel oranlar resmî kaynaktan | Trendyol Kâr |
+| [ ] 7 Kas Cmt | Google Ads nedir, nasıl çalışır? (teklif, kalite puanı, ROAS) | google ads nedir (1.900) | B | ROAS/tROAS kümesinin üst sayfası | ROAS, Reklam Bütçesi |
+| [ ] 8 Kas Paz | Trendyol reklamları nasıl verilir, kârlı mı? Sipariş başı reklam maliyeti | trendyol reklam (590) | C (uzun kuyruk) | Hesap örneği veren yok | Trendyol Kâr, ROAS |
+| [ ] 9 Kas Pzt | CPL nedir? B2B'de lead başı maliyet nasıl düşer | cpl nedir (170) | B | B2B kümesi | Reklam Bütçesi (B2B) |
+| [ ] 10 Kas Sal | ARPU / ARPA nedir, farkı ne? | arpu nedir (170) | B | Araç var, yazı yok | ARPA |
+| [ ] 11 Kas Çar | Influencer reklamları: maliyet ve ROAS nasıl ölçülür | influencer reklamları (140) | B | Ölçüm açısı (UTM, kod) rakiplerde zayıf | UTM, ROAS |
+| [ ] 12 Kas Per | MER nedir? Pazarlama verimlilik oranı ve ROAS farkı | mer nedir (110) | A | Türkçe kaynak yok; sorgu belirsizliğini SERP'te kontrol et | ROAS |
+| [ ] 13 Kas Cum | Hepsiburada kâr hesaplama: komisyon, kargo ve örnek hesap | hepsiburada kar hesaplama (390) | C | Aracı besler; Trendyol'a göre daha az rakip | Trendyol Kâr |
+| [ ] 14 Kas Cmt | Google Ads reklam verme adım adım (ilk kampanya) | google ads reklam verme (1.300) | B | 7 Kas yazısıyla küme | Reklam Bütçesi |
+| [ ] 15 Kas Paz | Dönüşüm oranı nasıl hesaplanır ve artırılır? | dönüşüm oranı hesaplama (50), dönüşüm oranı nedir (50) | B | Araç var, yazı yok | Dönüşüm Oranı |
+| [ ] 16 Kas Pzt | Rule of 40 nedir, nasıl hesaplanır? | rule of 40 (30) | A | Hedef sorgu #10; Türkçe kaynak yok | Rule of 40 |
+| [ ] 17 Kas Sal | Kargo desi ücretleri: firmaların desi kuralları karşılaştırması | ptt / aras / yurtiçi kargo desi hesaplama (590 / 480 / 390) | C | 28 Eki aracını besler; fiyat değil kural karşılaştırması | Desi aracı |
+| [ ] 18 Kas Çar | POAS nedir? Kâr bazlı ROAS | poas nedir (20) | A | Düşük hacim ama Türkçe kaynak yok; ROAS kümesi | ROAS, Brüt Marj |
+| [ ] 19 Kas Per | Freemium mi deneme sürümü mü? SaaS dönüşüm karşılaştırması | freemium nedir (40) | B | Freemium yazısıyla küme | — |
+| [ ] 20 Kas Cum | FAVÖK marjı nedir, nasıl hesaplanır? (vergi yorumu yok) | favök marjı (90) | B | Marj kümesini tamamlar | Net Marj |
+| [ ] 21 Kas Cmt | Dijital pazarlama stratejisi nasıl hazırlanır? (KOBİ şablonu) | dijital pazarlama stratejisi (170) | B | Lead üretimine yakın niyet | — |
+| [ ] 22 Kas Paz | Aylık değerlendirme + sonraki 30 günün hacim çalışması | — | — | Search Console + Keyword Planner | — |
+
+Takvimden çıkarılanlar (hacim 0–10): CAC geri ödeme süresi yazısı, GRR nedir, Meta günlük bütçe, POAS aracı, Katkı marjı,
+Trendyol iade oranı, Lead skor kartı aracı + lead scoring yazısı, Black Friday sonrası ROAS. (CAC geri ödeme ve lead skor kartı
+lead değeri yüksekse ileride araç güncellemesi olarak değerlendirilebilir.)
 
 ## Yedek konular (gün içi SERP analizinde boşluk çıkmazsa)
 - Google Ads Performance Max bütçesi nasıl ayarlanır
