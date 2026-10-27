@@ -27,6 +27,7 @@ const ChurnCalculator = lazyPage("../pages/tools/ChurnCalculator.tsx");
 const LtvCalculator = lazyPage("../pages/tools/LtvCalculator.tsx");
 const RoasCalculator = lazyPage("../pages/tools/RoasCalculator.tsx");
 const MarketplaceProfitCalculator = lazyPage("../pages/tools/MarketplaceProfitCalculator.tsx");
+const DesiCalculator = lazyPage("../pages/tools/DesiCalculator.tsx");
 const AdBudgetCalculator = lazyPage("../pages/tools/AdBudgetCalculator.tsx");
 const UtmBuilder = lazyPage("../pages/tools/UtmBuilder.tsx");
 const LlmsTxtGenerator = lazyPage("../pages/tools/LlmsTxtGenerator.tsx");
@@ -76,6 +77,7 @@ export const ROUTES: RouteObject[] = [
   { path: "/ucretsiz-araclar/ltv-hesaplayici", element: <LtvCalculator /> },
   { path: "/ucretsiz-araclar/roas-hesaplayici", element: <RoasCalculator /> },
   { path: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", element: <MarketplaceProfitCalculator /> },
+  { path: "/ucretsiz-araclar/desi-hesaplama", element: <DesiCalculator /> },
   { path: "/ucretsiz-araclar/reklam-butcesi-hesaplama", element: <AdBudgetCalculator /> },
   { path: "/ucretsiz-araclar/utm-link-olusturucu", element: <UtmBuilder /> },
   { path: "/ucretsiz-araclar/llms-txt-olusturucu", element: <LlmsTxtGenerator /> },
@@ -106,6 +108,7 @@ export const ROUTES: RouteObject[] = [
   { path: "/en/free-tools/ltv-calculator", element: <LtvCalculator /> },
   { path: "/en/free-tools/roas-calculator", element: <RoasCalculator /> },
   { path: "/en/free-tools/marketplace-profit-calculator", element: <MarketplaceProfitCalculator /> },
+  { path: "/en/free-tools/dimensional-weight-calculator", element: <DesiCalculator /> },
   { path: "/en/free-tools/ad-budget-calculator", element: <AdBudgetCalculator /> },
   { path: "/en/free-tools/utm-builder", element: <UtmBuilder /> },
   { path: "/en/free-tools/llms-txt-generator", element: <LlmsTxtGenerator /> },

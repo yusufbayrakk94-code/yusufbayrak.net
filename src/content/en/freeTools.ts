@@ -79,6 +79,7 @@ export const freeToolsPage = {
     { key: "quiz", name: "Which Marketing Channel Fits Your Business? (Quiz)", description: "Answer 5 questions and find the right ad channel: Google, Meta, LinkedIn, TikTok, SEO or email.", href: "/en/free-tools/marketing-channel-quiz" },
     { key: "adBudget", name: "Ad Budget Calculator", description: "Monthly budget, break-even/target ROAS and max CPA from your revenue or customer target.", href: "/en/free-tools/ad-budget-calculator" },
     { key: "marketplace", name: "Trendyol & Hepsiburada Profit Calculator", description: "Net profit per order after commission, shipping, service fee, withholding, returns and ads.", href: "/en/free-tools/marketplace-profit-calculator" },
+    { key: "desi", name: "Dimensional Weight (Desi) Calculator", description: "Dimensional weight vs actual weight, chargeable weight and estimated shipping cost for one or many boxes.", href: "/en/free-tools/dimensional-weight-calculator" },
     { key: "payback", name: "CAC Payback Period Calculator", description: "See how many months it takes to recover your customer acquisition cost.", href: "/en/free-tools/cac-payback-period-calculator" },
   ],
 };
@@ -260,7 +261,7 @@ export const toolCategories = [
         a: "Marketplace commissions usually run 8-20% of the sale and, together with payment processing fees, come straight off revenue. When comparing your own store to a marketplace, model the same product in both scenarios: marketplace traffic looks free, but the commission often costs about as much as paid acquisition.",
       },
     ],
-    tools: ["marketplace", "gross", "net"],
+    tools: ["marketplace", "desi", "gross", "net"],
   },
 ] as const;
 

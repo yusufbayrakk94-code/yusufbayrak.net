@@ -46,6 +46,7 @@
 
 - [E-Ticaret Araçları](https://yusufbayrak.net/ucretsiz-araclar/e-ticaret-araclari/): Ürün ve mağaza bazında gerçek kârlılığınızı hesaplayın.
 - [Trendyol & Hepsiburada Kâr Hesaplama](https://yusufbayrak.net/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/): Komisyon, kargo, hizmet bedeli, stopaj, iade ve reklam dahil sipariş başı net kârınızı hesaplayın.
+- [Desi Hesaplama](https://yusufbayrak.net/ucretsiz-araclar/desi-hesaplama/): Kargo desisini, ağırlıkla karşılaştırıp ücrete esas desiyi ve tahmini kargo ücretini hesaplayın; çoklu koli destekli.
 - [Brüt Kar Marjı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/brut-kar-marji-hesaplayici/): Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.
 - [Net Kar Marjı Hesaplayıcı](https://yusufbayrak.net/ucretsiz-araclar/net-kar-marji-hesaplayici/): Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.
 
@@ -96,6 +97,7 @@
   - [Churn Rate Calculator](https://yusufbayrak.net/en/free-tools/churn-rate-calculator/): Measure your customer churn rate and retention performance.
 - [E-Commerce Tools](https://yusufbayrak.net/en/free-tools/ecommerce-tools/): Calculate true profitability per product and per store.
   - [Trendyol & Hepsiburada Profit Calculator](https://yusufbayrak.net/en/free-tools/marketplace-profit-calculator/): Net profit per order after commission, shipping, service fee, withholding, returns and ads.
+  - [Dimensional Weight (Desi) Calculator](https://yusufbayrak.net/en/free-tools/dimensional-weight-calculator/): Dimensional weight vs actual weight, chargeable weight and estimated shipping cost for one or many boxes.
   - [Gross Profit Margin Calculator](https://yusufbayrak.net/en/free-tools/gross-profit-margin-calculator/): Enter revenue and COGS to see gross margin as a percentage and an amount.
   - [Net Profit Margin Calculator](https://yusufbayrak.net/en/free-tools/net-profit-margin-calculator/): Include every expense to see the true net profitability of your business.
 - [Blog (EN)](https://yusufbayrak.net/en/blog/): English blog index.

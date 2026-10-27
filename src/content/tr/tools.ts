@@ -536,12 +536,13 @@ export const marketplace: ToolContent = {
     { q: "Pazaryeri komisyonu KDV dahil fiyattan mı alınır?", a: "Genellikle evet: komisyon, müşterinin ödediği KDV dahil fiyat üzerinden hesaplanır ve komisyon faturasına ayrıca %20 KDV eklenir. Bu KDV indirilebildiği için kârdan düşülmez, ancak komisyonun kendisi KDV hariç satışınıza oranla, ilan edilen orandan daha yüksek bir paya karşılık gelir." },
     { q: "E-ticaret stopajı nasıl hesaplanır ve geri alınabilir mi?", a: "Stopaj, KDV hariç satış tutarının %1'idir ve pazaryeri tarafından ödemenizden kesilir. Peşin ödenmiş gelir vergisi olduğu için beyannamede hesaplanan vergiden mahsup edilir; mahsup edilemeyen kısım için iade talep edilebilir. Kesin durumunuz için mali müşavirinize danışın." },
     { q: "Platform hizmet bedeli ne kadar?", a: "Trendyol ve Hepsiburada teslim edilen paket başına sabit bir hizmet bedeli alır ve bu tutar sık güncellenir. Araçtaki varsayılan değer kamuya açık kaynaklardan derlenmiştir; satıcı panelinizdeki güncel tutarla değiştirebilirsiniz." },
-    { q: "Desi nasıl hesaplanır?", a: "Desi = En × Boy × Yükseklik (cm) / 3000 formülüyle hesaplanır ve kargo ücreti, paketin ağırlığı ile desisinden hangisi büyükse ona göre belirlenir. Paket ölçülerini küçültmek kargo maliyetini doğrudan düşürür." },
+    { q: "Desi nasıl hesaplanır?", a: "Desi = En × Boy × Yükseklik (cm) / 3000 formülüyle hesaplanır ve kargo ücreti, paketin ağırlığı ile desisinden hangisi büyükse ona göre belirlenir. Paket ölçülerini küçültmek kargo maliyetini doğrudan düşürür; çoklu koli ve kutu küçültme senaryoları için Desi Hesaplama aracını kullanabilirsiniz." },
     { q: "İade edilen siparişte komisyon ve kargo ne olur?", a: "Uygulama pazaryerine göre değişmekle birlikte, iade edilen siparişin komisyonu genellikle iade edilir; gidiş ve dönüş kargo ücretleri ise çoğu zaman satıcıya kalır. Araç, iade oranınıza göre bu kargo ve paketleme kaybını sipariş başına dağıtarak gösterir." },
     { q: "Pazaryerinde iyi bir kâr marjı kaç olmalı?", a: "Kategoriye göre değişir; ancak iade ve reklam düşüldükten sonra KDV hariç satışın %10'unun altında kalan net marj, kampanya indirimleri ve kur dalgalanmalarına karşı çok az pay bırakır. Aracı hedef marjınızı girerek kullanın; gereken satış fiyatını ve maksimum reklam bütçesini otomatik gösterir." },
     { q: "Sipariş başı ne kadar reklam harcayabilirim?", a: "İade düşüldükten sonra kalan reklam öncesi kârınız, sipariş başı harcayabileceğiniz üst sınırdır; hedef marjınızı korumak için bundan hedef kârınızı çıkarın. Araç bu tutarı ve başabaş ROAS değerini sizin için hesaplar." },
   ],
   relatedTools: [
+    { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama", note: "Kargo desisi ve ücreti" },
     { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam getirisini ölçün" },
     { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Ürün bazında marj" },
     { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Mağaza geneli kârlılık" },
@@ -606,4 +607,67 @@ export const adBudget: ToolContent = {
     { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici", note: "Dönüşüm hedefi" },
   ],
   relatedPost: { label: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+};
+
+export const desi: ToolContent = {
+  slug: "desi-hesaplama",
+  path: "/ucretsiz-araclar/desi-hesaplama",
+  title: "Desi Hesaplama: Kargo Desi Hesaplama Aracı (Çoklu Koli)",
+  description:
+    "Desi hesaplama: en × boy × yükseklik / 3000 ile kargo desisini, ağırlıkla karşılaştırıp ücrete esas desiyi ve tahmini kargo ücretini bulun. Çoklu koli destekli.",
+  intro:
+    "Kolinin en, boy ve yükseklik ölçülerini girin; araç desiyi hesaplar, gerçek ağırlıkla karşılaştırır ve kargo firmasının ücretlendireceği değeri (ücrete esas desi/kg) gösterir. Birden fazla koli ekleyebilir, bölen (3000, 5000…) ve yuvarlama kuralını sözleşmenize göre seçebilir, desi başı fiyatınızı girerek tahmini kargo ücretini görebilirsiniz. Ayrıca kutuyu birkaç santim küçültmenin kaç desi kazandıracağını hesaplar. Hesap tarayıcınızda çalışır, sonucu link olarak paylaşabilirsiniz.",
+  seoParagraphs: [
+    {
+      heading: "Desi nedir?",
+      body:
+        "Desi, bir kolinin kapladığı hacmin ağırlık karşılığıdır (hacimsel ağırlık). Kargo araçlarında yer hacimle dolduğu için, hafif ama büyük bir paket taşıma kapasitesini ağır bir paket kadar kullanır. Kargo firmaları bu yüzden paketin gerçek ağırlığını (kg) ve desisini birlikte ölçer ve ücreti hangisi büyükse ona göre belirler. Türkiye'de yurt içi gönderilerde 1 desi, 3000 cm³ hacme karşılık gelir; örneğin 30 × 20 × 5 cm'lik bir kutu 1 desidir.",
+    },
+    {
+      heading: "Desi nasıl hesaplanır? Formül ve örnekler",
+      body:
+        "Formül: Desi = En (cm) × Boy (cm) × Yükseklik (cm) / 3000. Örnek 1: 40 × 30 × 20 cm'lik bir koli 24.000 cm³'tür; 24.000 / 3000 = 8 desi. Ağırlığı 3 kg ise ücrete esas değer 8 desidir, çünkü hacim ağırlıktan büyüktür. Örnek 2: 60 × 40 × 40 cm'lik bir koli 32 desidir; ama içinde 35 kg'lık bir ürün varsa ücrete esas değer 35 kg olur. Örnek 3: 30 × 20 × 10 cm'lik bir koli tam 2 desidir; ağırlığı 2,4 kg ise ağırlık belirler ve kesirli değerler genellikle yukarı yuvarlandığı için 3 desi/kg üzerinden ücretlendirilir. Ölçüler her zaman kolinin dış ölçüleridir ve en uzun noktadan alınır; içerideki boşluk desiyi değiştirmez.",
+    },
+    {
+      heading: "Desi mi kg mı? Kargo ücreti hangisine göre belirlenir?",
+      body:
+        "Kargo ücreti, desi ile gerçek ağırlıktan büyük olanına göre belirlenir; buna ücrete esas ağırlık denir. Yastık, tekstil veya plastik ev eşyası gibi hafif ama hacimli ürünlerde desi belirler; kitap, metal parça veya sıvı gibi küçük ama ağır ürünlerde ağırlık belirler. Bu ayrım önemlidir: desinin belirlediği ürünlerde kutuyu küçültmek ücreti doğrudan düşürür, ağırlığın belirlediği ürünlerde ise kutu küçültmek hiçbir şey kazandırmaz. Araç her koli için hangisinin belirlediğini gösterir.",
+    },
+    {
+      heading: "Birden fazla koli gönderirken desi nasıl hesaplanır?",
+      body:
+        "Kargo firmaları genellikle her koliyi ayrı ölçer ve ayrı yuvarlar, sonra toplar. Bu yüzden çoklu koli gönderide toplam hacmi tek seferde 3000'e bölmek ücreti olduğundan düşük gösterebilir. Örnek: 25 × 20 × 13 cm'lik 3 koli. Her biri 6.500 cm³ ve 2,17 desidir; ayrı ayrı yukarı yuvarlandığında her koli 3, toplam 9 desi olur. Toplam hacimden hesaplasaydınız 19.500 / 3000 = 6,5, yuvarlanınca 7 desi bulurdunuz. Aradaki 2 desilik fark, her gönderide tekrar eden bir maliyettir. Araçta koli ekleyerek her koliyi ayrı hesaplayabilir ve adet girebilirsiniz.",
+    },
+    {
+      heading: "3000 mü 5000 mi? Yurt içi ve yurt dışı desi böleni",
+      body:
+        "Türkiye'de yurt içi kargoda yaygın bölen 3000'dir. Uluslararası hava kargoda DHL, UPS ve FedEx gibi ekspres taşıyıcılar genellikle 5000 bölenini kullanır; bazı ekonomi ve kara-deniz hizmetlerinde 6000'e kadar çıkan bölenler görülür. Bölen büyüdükçe aynı kolinin desisi düşer: 40 × 30 × 20 cm'lik koli 3000 ile 8, 5000 ile 4,8 (yuvarlanınca 5) desidir. Anlaşmalı tarifelerde bölen ve yuvarlama kuralı sözleşmeye göre değişebilir; araçta kendi böleninizi ve yuvarlama kuralınızı seçin.",
+    },
+    {
+      heading: "Kutuyu küçültmek kargo maliyetini ne kadar düşürür?",
+      body:
+        "Desinin belirlediği ürünlerde birkaç santim, kargo faturasında doğrudan karşılık bulur. 40 × 30 × 20 cm'lik 8 desilik koliyi her ölçüden 2 cm küçültüp 38 × 28 × 18 cm yaptığınızda hacim 19.152 cm³'e, desi 6,38'e iner ve yukarı yuvarlanınca 7 desi olur; 3 cm küçültmede 6 desiye düşer. Aynı koliyi 8'den 7 desiye indirmek için en ve boy sabitken yüksekliğin en fazla 17,5 cm olması yeterlidir. Ayda binlerce gönderi yapan bir satıcı için koli başına 1-2 desi, kargo bütçesinin önemli bir kısmıdır. Araç, ilk koli için bu senaryoları ve 1 desi düşürmek için gereken yüksekliği otomatik hesaplar.",
+    },
+    {
+      heading: "Pazaryerinde desi ve kâr ilişkisi",
+      body:
+        "Trendyol ve Hepsiburada gibi pazaryerlerinde anlaşmalı kargo ücretleri desi kademelerine göre fiyatlanır ve sipariş başına satıcının kârından düşer. Bu yüzden desi, ürünün fiyatlandırmasını ve reklamla ne kadar büyüyebileceğini doğrudan etkiler: düşük marjlı bir üründe bir desi kademesi atlamak, sipariş başı kârın önemli bir kısmını götürebilir. Bu araçla bulduğunuz kargo ücretini, Trendyol & Hepsiburada Kâr Hesaplama aracına girerek komisyon, iade ve reklam dahil gerçek kârınızı görebilirsiniz.",
+    },
+  ],
+  faqs: [
+    { q: "Desi nasıl hesaplanır?", a: "Kolinin dış ölçüleri santimetre cinsinden çarpılır ve 3000'e bölünür: Desi = En × Boy × Yükseklik / 3000. Örneğin 40 × 30 × 20 cm'lik bir koli 8 desidir. Kargo ücreti, bu değer ile kolinin gerçek ağırlığından (kg) hangisi büyükse ona göre belirlenir." },
+    { q: "1 desi kaç kg?", a: "Desi bir ağırlık birimi değil, hacmin ağırlık karşılığıdır; yurt içi kargoda 1 desi 3000 cm³ hacme denk gelir. Ücretlendirmede 1 desi, 1 kg ile aynı kefeye konur: koli 5 desi ve 3 kg ise 5, koli 2 desi ve 4 kg ise 4 üzerinden ücretlendirilir." },
+    { q: "Desi hesaplamada neden 3000'e bölünür?", a: "3000, kargo sektöründe hacmi ağırlığa çeviren katsayıdır (1 kg = 3000 cm³ kabulü). Yurt içi kargoda yaygın olan budur; uluslararası hava kargoda genellikle 5000 kullanılır. Anlaşmalı tarifelerde farklı bir katsayı olabilir; sözleşmenizi kontrol edin." },
+    { q: "Desi küsuratlı çıkarsa ne olur?", a: "Kesirli değerler genellikle bir üst tam sayıya yuvarlanır: 3,2 desi 4 desi olarak ücretlendirilir. Bazı anlaşmalarda 0,5'lik kademelere yuvarlama yapılır. Araçta yuvarlama kuralını seçebilirsiniz." },
+    { q: "Birden fazla koliyi tek desi olarak mı hesaplamalıyım?", a: "Hayır; kargo firmaları genellikle her koliyi ayrı ölçer ve ayrı yuvarlar. 25 × 20 × 13 cm'lik 3 koli ayrı ayrı 9 desi tutarken, toplam hacimden hesaplanınca 7 desi çıkar. Araca her koliyi ayrı ekleyin veya adet girin." },
+    { q: "Kargo firmasının ölçtüğü desi neden benim hesabımdan farklı?", a: "Kargo şubesi kolinin dış ölçüsünü en çıkıntılı noktalardan alır; şişkin koliler, bant ve köpük taşmaları ölçüyü büyütür. Ayrıca firma, sizin kullandığınızdan farklı bir bölen veya yuvarlama uygulayabilir. Kendi ölçünüzü de dış ölçüden ve en uzun noktadan alın." },
+    { q: "Desi ile kargo ücreti nasıl hesaplanır?", a: "Önce her koli için ücrete esas değeri (desi ile kg'dan büyük olanı) bulun, ardından kargo firmanızın desi tarifesindeki fiyatla çarpın. Kademeli tarifelerde ilgili kademenin fiyatını kullanın. Araca desi başı fiyatınızı girerseniz tahmini ücreti otomatik hesaplar." },
+    { q: "Yurt dışı gönderide desi nasıl hesaplanır?", a: "Formül aynıdır ancak bölen genellikle 5000'dir: Desi = En × Boy × Yükseklik / 5000. 40 × 30 × 20 cm'lik bir koli yurt dışı hava kargoda yaklaşık 5 desi, yurt içinde 8 desidir. Araçta bölen olarak 5000'i seçin." },
+  ],
+  relatedTools: [
+    { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Kargo dahil sipariş başı kâr" },
+    { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Ürün bazında marj" },
+    { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Kargo dahil kârlılık" },
+    { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret hesaplayıcıları" },
+  ],
 };

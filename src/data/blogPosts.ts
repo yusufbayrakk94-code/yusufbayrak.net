@@ -61,7 +61,8 @@ export type RelatedToolKey =
   | "cac-payback"
   | "llms-txt"
   | "marketplace"
-  | "ad-budget";
+  | "ad-budget"
+  | "desi";
 
 export interface BlogPost {
   slug: string;
@@ -4889,6 +4890,18 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       href: "/en/free-tools/ad-budget-calculator",
       label: "Ad Budget Calculator",
       description: "Budget, break-even/target ROAS and max CPA from your revenue target.",
+    },
+  },
+  desi: {
+    tr: {
+      href: "/ucretsiz-araclar/desi-hesaplama",
+      label: "Desi Hesaplama",
+      description: "Kargo desisini ve ücrete esas desi/kg değerini çoklu koli ile hesaplayın.",
+    },
+    en: {
+      href: "/en/free-tools/dimensional-weight-calculator",
+      label: "Dimensional Weight (Desi) Calculator",
+      description: "Dimensional vs actual weight and chargeable weight for one or many boxes.",
     },
   },
 };

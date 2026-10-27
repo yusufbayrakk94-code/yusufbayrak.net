@@ -22,17 +22,22 @@ Marka dışı organik trafik + araçlardan/iletişim formundan gelen lead.
 ## İçerik kısıtı (kullanıcı kararı, 2026-10-24)
 Vergi konulu içerik (vergi danışmanlığı, KDV/stopaj/gelir vergisi hesapları ve yorumları) ÜRETİLMEZ, mevcut yazılara vergi bölümü EKLENMEZ.
 
-## Hedef sorgular
-1. reklam bütçesi hesaplama / reklam bütçesi nasıl belirlenir
-2. trendyol kar hesaplama
-3. roas hesaplama / başabaş roas
-4. nrr nedir
-5. cac hesaplama
-6. ltv hesaplama
-7. churn rate hesaplama
-8. utm oluşturucu
-9. ga4 unassigned
-10. rule of 40 nedir
+## Hedef sorgular (27.10.2026'da hacme göre güncellendi — kullanıcı: "agresifleştir")
+Eski listedeki hacimsiz sorgular (cac/ltv/churn hesaplama, ga4 unassigned, reklam bütçesi hesaplama; Keyword Planner 0–10)
+çıkarıldı: ilk 10'a girseler de tıklama getirmezler. Yeni liste trafik hedefiyle (H1/H2) aynı yöne çalışır.
+Aylık TR hacmi: Keyword Planner, 26.10.2026.
+1. desi hesaplama (14.800) / kargo desi hesaplama (1.600) — Desi aracı
+2. trendyol komisyon hesaplama (18.100) / trendyol kar hesaplama (6.600) — Trendyol aracı
+3. kar marjı hesaplama (1.000) / marj hesaplama (140) — Brüt marj aracı + yazı
+4. roas nedir (880) / roas hesaplama (170) / başabaş roas — ROAS yazısı + aracı
+5. utm nedir (390) / utm oluşturucu (30) — UTM yazısı + aracı
+6. mrr nedir (390)
+7. cac nedir (320)
+8. llms txt (480) / llms txt nedir (110)
+9. ltv nedir (210)
+10. churn nedir (210) / churn rate nedir (90)
+
+Destek sorguları (hacim düşük, eski listeden; ölçülmeye devam): nrr nedir (40), rule of 40 (30), reklam bütçesi nasıl belirlenir, ga4 unassigned.
 
 ## Ara kilometre taşları
 | Tarih | Beklenen |

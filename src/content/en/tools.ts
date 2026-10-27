@@ -502,6 +502,7 @@ export const marketplace: ToolContent = {
     { q: "What is a good marketplace profit margin?", a: "It depends on the category, but a net margin below 10% of VAT-excluded sales after returns and ads leaves little room for campaign discounts and currency swings. Enter your target margin and the calculator shows the required price." },
   ],
   relatedTools: [
+    { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator", note: "Shipping desi and cost" },
     { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Measure return on ad spend" },
     { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
     { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Store-level profitability" },
@@ -548,4 +549,53 @@ export const adBudget: ToolContent = {
     { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator", note: "Conversion targets" },
   ],
   relatedPost: { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+};
+
+export const desi: ToolContent = {
+  slug: "dimensional-weight-calculator",
+  path: "/en/free-tools/dimensional-weight-calculator",
+  title: "Dimensional Weight (Desi) Calculator — Multi-Box",
+  description:
+    "Calculate dimensional weight (desi): L × W × H / 3000 or 5000, compare with actual weight, get the chargeable weight and estimated shipping cost for one or many boxes.",
+  intro:
+    "Enter your box dimensions and the calculator returns its dimensional (volumetric) weight, compares it with the actual weight and shows the chargeable weight your carrier will bill. Add multiple boxes, pick the divisor (3000 for Turkish domestic shipping, 5000 for international air express) and rounding rule from your contract, and enter your rate to estimate the cost. It also shows how much shrinking the box by a few centimetres saves. Everything runs in your browser and the result can be shared as a link.",
+  seoParagraphs: [
+    {
+      heading: "What is desi (dimensional weight)?",
+      body:
+        "Desi is the Turkish shipping term for dimensional or volumetric weight: the weight equivalent of the space a parcel occupies. Because vans and aircraft fill up by volume, a light but bulky parcel uses as much capacity as a heavy one. Carriers therefore measure both actual weight and dimensional weight and bill whichever is greater. In Turkish domestic shipping one desi equals 3,000 cm³ — a 30 × 20 × 5 cm box is exactly 1 desi.",
+    },
+    {
+      heading: "How to calculate desi: formula and examples",
+      body:
+        "Formula: Desi = Length (cm) × Width (cm) × Height (cm) / 3000. Example 1: a 40 × 30 × 20 cm box is 24,000 cm³; 24,000 / 3000 = 8 desi. If it weighs 3 kg, the chargeable weight is 8 because volume is larger. Example 2: a 60 × 40 × 40 cm box is 32 desi, but if the product inside weighs 35 kg the chargeable weight is 35. Example 3: a 30 × 20 × 10 cm box is exactly 2 desi; at 2.4 kg the weight decides and, since fractions are usually rounded up, it is billed as 3. Always measure the outer box at its widest points; empty space inside does not change the result.",
+    },
+    {
+      heading: "Multiple boxes: why per-box rounding matters",
+      body:
+        "Carriers usually measure and round each box separately, then add them up. Dividing the total volume once can understate the charge. Example: three 25 × 20 × 13 cm boxes are 6,500 cm³ or 2.17 desi each; rounded individually that is 3 each, 9 in total. Calculated from total volume it would be 19,500 / 3000 = 6.5, rounded to 7. The 2-desi gap repeats on every shipment.",
+    },
+    {
+      heading: "3000 or 5000? Domestic vs international divisors",
+      body:
+        "3000 is the common divisor for domestic shipping in Turkey. International air express carriers such as DHL, UPS and FedEx generally use 5000, and some economy or road-sea services use up to 6000. A larger divisor lowers the result: the same 40 × 30 × 20 cm box is 8 desi with 3000 but 4.8 (rounded to 5) with 5000. Negotiated contracts may use different divisors and rounding, so select yours in the calculator.",
+    },
+    {
+      heading: "How much does a smaller box save?",
+      body:
+        "When volume decides, every centimetre shows up on the invoice. Reducing a 40 × 30 × 20 cm box (8 desi) by 2 cm on every dimension to 38 × 28 × 18 cm gives 6.38 desi, rounded to 7; 3 cm brings it to 6. Keeping length and width, a height of 17.5 cm or less is enough to drop it to 7 desi. The calculator runs these scenarios for your first box automatically.",
+    },
+  ],
+  faqs: [
+    { q: "How is desi calculated?", a: "Multiply the outer length, width and height in centimetres and divide by 3000: Desi = L × W × H / 3000. A 40 × 30 × 20 cm box is 8 desi. Carriers bill whichever is greater: desi or actual weight in kg." },
+    { q: "Is 1 desi equal to 1 kg?", a: "Desi is not a weight unit but the weight equivalent of volume (3,000 cm³ domestically). For billing, 1 desi is compared one-to-one with 1 kg: a 5-desi, 3 kg box is billed at 5; a 2-desi, 4 kg box is billed at 4." },
+    { q: "Why divide by 3000 or 5000?", a: "The divisor converts volume into weight. 3000 is common in Turkish domestic shipping; international air express usually uses 5000. Check your contract for the exact divisor." },
+    { q: "How are fractions rounded?", a: "Usually up to the next whole number (3.2 → 4). Some contracts round up to the next 0.5. You can choose the rule in the calculator." },
+    { q: "Should multiple boxes be calculated as one?", a: "No. Carriers typically measure and round each box separately, which can add up to more than the total-volume figure. Add each box separately or set a quantity." },
+  ],
+  relatedTools: [
+    { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator", note: "Per-order profit incl. shipping" },
+    { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
+    { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Profitability incl. shipping" },
+  ],
 };
