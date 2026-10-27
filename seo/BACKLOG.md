@@ -17,9 +17,11 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi (10 URL: 2 yeni araç, ROAS yazısı/aracı, llms.txt, kanal quiz, AdGusto, CAC, LTV, churn, NRR) — 2026-10-22
 - [x] 2026-10-23 kuyruğu: BF TR, GA4 Unassigned TR, Reklam bütçesi TR, UTM aracı TR, Reklam bütçesi EN zaten dizinde (26.10 URL Denetimi); /en/free-tools/utm-builder/ için istek gönderildi — 2026-10-26
 - [x] Dizine ekleme isteği gönderildi: /blog/hedef-roas-nasil-belirlenir/, /en/blog/how-to-set-target-roas-google-ads/, /projeler/brandog-marka-mcp/, /en/blog/black-friday-2026-ad-plan/, /en/free-tools/utm-builder/ — 2026-10-26 (5/5)
-- [ ] Dizine ekleme isteği (2026-10-26 yeni): /blog/ltv-nedir-ltv-cac-orani/, /en/blog/what-is-ltv-ltv-cac-ratio/
-- [ ] Dizine ekleme isteği (2026-10-27 yeni): /blog/utm-nedir-utm-parametreleri/, /en/blog/what-are-utm-parameters/
-- [ ] Kalan: EN araç sayfaları (önce URL Denetimi ile dizinde mi kontrol et) + her gün yeni yayınlanan TR/EN yazılar
+- [x] Dizine ekleme isteği gönderildi: /blog/ltv-nedir-ltv-cac-orani/, /en/blog/what-is-ltv-ltv-cac-ratio/, /blog/utm-nedir-utm-parametreleri/, /en/blog/what-are-utm-parameters/, /en/free-tools/ltv-calculator/ — 2026-10-27 (5/5)
+- [ ] Dizine ekleme isteği (27.10 itibarıyla "Keşfedildi" listesinde kalan EN araçlar): /en/free-tools/conversion-rate-calculator/, /en/free-tools/llms-txt-generator/, /en/free-tools/marketing-channel-quiz/, /en/free-tools/net-profit-margin-calculator/, /en/free-tools/saas-tools/ (utm-builder ve brandog projesi 26.10'da istendi; tarama bekleniyor)
+- [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
+- [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
+- [ ] Keyword Planner: takvimin 23 Kas – 22 Ara bölümü için keşif + hacim turu (22.11'den önce; tüm mevcut konuların hacmi 26.10'da alındı)
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
 

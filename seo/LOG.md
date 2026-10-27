@@ -2,6 +2,14 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-10-27 (veri görevi)
+- Search Console (son 28 gün, veri 25.10'a kadar): tıklama ve gösterim başlangıca göre hafif arttı; trafiğin çoğu hâlâ marka/AdGusto sorgularında. Hedef sorgulardan 'roas hesaplama' ve 'başabaş roas' görünüyor ama ilk 50'nin dışında. Marka dışı 8-20. sırada sorgu yok → iç link fırsatı çıkmadı.
+- Dizin: dizindeki sayfa sayısı arttı, "Keşfedildi - dizine eklenmedi" azaldı; listede kalanların tamamı EN araç sayfaları + Brandog projesi (TR araçlar ve yazılar listeden çıktı). Yeni bulgu: GA4 Unassigned TR, Reklam bütçesi yazısı TR ve ROAS EN yazısı 24.10 taramasında "Tarandı - şu anda dizine eklenmemiş" görünüyor (rapor gecikmeli olabilir; 26.10 URL Denetimi bunların ikisini dizinde gösteriyordu) → izlemeye alındı. 'Yeniden yönlendirme hatası' doğrulaması sürüyor.
+- Dizine ekleme isteği (5/5): LTV yazısı TR+EN, UTM nedir TR+EN, /en/free-tools/ltv-calculator/.
+- GA4 (son 28 gün, 26.10'a kadar): oturumlar başlangıçla aynı düzeyde; organik arama payı biraz arttı. Lead olayları (generate_lead, form_start, contact_click) ve tool_use raporda henüz yok (26.10'daki test olayı raporlara düşmemiş; yarın tekrar kontrol).
+- CTR: tek uygulanabilir aday EN Meta öğrenme aşaması yazısı (ilk 10'da, tıklamasız) → seoTitle "Meta Ads Learning Phase: Exit Fast & Fix Learning Limited" + soru/sorun odaklı açıklama. NRR TR (ilk 10, tıklamasız) 22.10 başlık değişikliğinin sonucu bekleniyor. Ölçüm: iki sayfanın TO'su.
+- Keyword Planner: takvimdeki tüm konuların hacmi 26.10'da alınmıştı; bugün yeni hacim turu gerekmedi. Search Console'da sayfası olmayan yeni sorgu yok ('gross/profit roas', 'roas formula' EN ROAS yazısına gidiyor). Sonraki 30 günlük tur 22.11'den önce.
+
 ## 2026-10-27 (içerik görevi)
 - YENİ YAZI: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?" (/blog/utm-nedir-utm-parametreleri/ + EN /en/blog/what-are-utm-parameters/). Takvimin bugünkü konusu; hacim: 'utm nedir' 390/ay (Keyword Planner, 26.10). Ayrıca 5+ Türkçe site konuya sayfa ayırmış.
 - Rakip bulgusu: IdeaSoft (~2.000 kelime; tam örnek link yok, medium örneği olarak "organic" veriyor), ikas (~5.000 kelime, 18.09.2026 güncel ama "Universal Analytics kullanıyorsanız" bölümü ve kaynaksız "UTM link değerini düşürür" iddiası), Ticimax (~1.100 kelime; örnek, SSS, GA4 rapor yolu yok). Hiçbirinde yok: GA4'ün 9 parametresi (utm_id, utm_source_platform; creative_format/marketing_tactic'in raporlanmadığı), parametre → GA4 boyutu eşlemesi, otomatik etiketleme + manuel UTM önceliği (Google kaynaklı), Meta dinamik parametre şablonu, kanal kurallarına uyumlu değer listesi, kampanya adı şablonu, UTM'lerin "Sayfa yolu + sorgu dizesi"nde görünmemesi. Analiz: seo/research/utm-nedir.md.

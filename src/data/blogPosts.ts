@@ -2950,8 +2950,9 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   {
     slug: "meta-ads-exit-learning-phase-tactics",
     title: "How to Exit Meta Ads Learning Phase Fast: 5 Tactics",
+    seoTitle: "Meta Ads Learning Phase: Exit Fast & Fix Learning Limited",
     description:
-      "Five practical budget, event, audience and creative tactics to finish the Meta Ads Learning Phase within 7 days.",
+      "How to exit the Meta Ads learning phase faster and fix Learning Limited: 5 tactics for event choice, budget, CBO, creatives and edit discipline.",
     category: "performans-pazarlama",
     tldr: [
       "Meta Ads Learning Phase completes when an ad set collects 50 optimization events within 7 days — otherwise CPA stays volatile.",
