@@ -18,6 +18,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] 2026-10-23 kuyruğu: BF TR, GA4 Unassigned TR, Reklam bütçesi TR, UTM aracı TR, Reklam bütçesi EN zaten dizinde (26.10 URL Denetimi); /en/free-tools/utm-builder/ için istek gönderildi — 2026-10-26
 - [x] Dizine ekleme isteği gönderildi: /blog/hedef-roas-nasil-belirlenir/, /en/blog/how-to-set-target-roas-google-ads/, /projeler/brandog-marka-mcp/, /en/blog/black-friday-2026-ad-plan/, /en/free-tools/utm-builder/ — 2026-10-26 (5/5)
 - [ ] Dizine ekleme isteği (2026-10-26 yeni): /blog/ltv-nedir-ltv-cac-orani/, /en/blog/what-is-ltv-ltv-cac-ratio/
+- [ ] Dizine ekleme isteği (2026-10-27 yeni): /blog/utm-nedir-utm-parametreleri/, /en/blog/what-are-utm-parameters/
 - [ ] Kalan: EN araç sayfaları (önce URL Denetimi ile dizinde mi kontrol et) + her gün yeni yayınlanan TR/EN yazılar
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
@@ -35,7 +36,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] CAC, LTV, churn sayfaları derinleştirildi + hesaplayıcılar geliştirildi — 2026-10-22
 - [x] UTM oluşturucu: GA4 kanal tahmini + Unassigned uyarısı, küçük harf/ASCII, 12 hazır şablon, gclid uyarısı — 2026-10-23
 - [ ] UTM v2: QR kod üretimi (harici servis/kütüphane gerektirir, kullanıcıya sor), toplu UTM (CSV), paylaşılabilir link
-- [~] Destek yazısı: UTM — GA4 Unassigned yazısı yayında; ayrı "UTM parametreleri nedir" yazısı gerekirse SERP analiziyle değerlendir
+- [x] Destek yazısı: UTM — GA4 Unassigned yazısı + "UTM nedir" yazısı (/blog/utm-nedir-utm-parametreleri/) — 2026-10-27
 - [ ] ARR sayfası: bileşenlerle ARR (yeni/genişleme/daralma/kayıp), CARR (düşük öncelik)
       (analiz: seo/research/arac-serp-analizi.md)
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
@@ -58,7 +59,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] CAC nedir, nasıl hesaplanır
 - [x] LTV nedir, nasıl hesaplanır — 2026-10-26 (/blog/ltv-nedir-ltv-cac-orani/)
 - [ ] Churn rate nedir, nasıl hesaplanır
-- [ ] UTM parametreleri nedir, nasıl kullanılır
+- [x] UTM parametreleri nedir, nasıl kullanılır — 2026-10-27 (/blog/utm-nedir-utm-parametreleri/)
 - [ ] Brüt kâr marjı / net kâr marjı hesaplama
 - [ ] CAC geri ödeme süresi nedir
 - [ ] Rule of 40 nedir

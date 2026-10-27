@@ -2,6 +2,13 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-10-27 (içerik görevi)
+- YENİ YAZI: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?" (/blog/utm-nedir-utm-parametreleri/ + EN /en/blog/what-are-utm-parameters/). Takvimin bugünkü konusu; hacim: 'utm nedir' 390/ay (Keyword Planner, 26.10). Ayrıca 5+ Türkçe site konuya sayfa ayırmış.
+- Rakip bulgusu: IdeaSoft (~2.000 kelime; tam örnek link yok, medium örneği olarak "organic" veriyor), ikas (~5.000 kelime, 18.09.2026 güncel ama "Universal Analytics kullanıyorsanız" bölümü ve kaynaksız "UTM link değerini düşürür" iddiası), Ticimax (~1.100 kelime; örnek, SSS, GA4 rapor yolu yok). Hiçbirinde yok: GA4'ün 9 parametresi (utm_id, utm_source_platform; creative_format/marketing_tactic'in raporlanmadığı), parametre → GA4 boyutu eşlemesi, otomatik etiketleme + manuel UTM önceliği (Google kaynaklı), Meta dinamik parametre şablonu, kanal kurallarına uyumlu değer listesi, kampanya adı şablonu, UTM'lerin "Sayfa yolu + sorgu dizesi"nde görünmemesi. Analiz: seo/research/utm-nedir.md.
+- Yamyamlaşma: UTM aracı (işlem niyeti) ve GA4 Unassigned yazısı (sorun çözme) ile ayrıştırıldı; yazı kanal kurallarını kısa tutup Unassigned yazısına, relatedToolKey=utm ile araç yazıya link veriyor. GA4 Unassigned yazısı (TR+EN) kaynaklarına yeni yazı eklendi.
+- Haftalık otorite işi (widget, seo/widget-plan.md): yeni rota türü + araç arayüzü değişikliği olduğu için hâlâ kullanıcı onayı bekliyor; bugün ilerletilmedi.
+- Ölçüm: 'utm nedir', 'utm parametreleri', 'utm kodu nedir' gösterim/sıra; UTM aracına yazıdan iç trafik.
+
 ## 2026-10-26 (içerik görevi)
 - YENİ YAZI: "LTV Nedir, Nasıl Hesaplanır? LTV:CAC Oranı Kaç Olmalı?" (/blog/ltv-nedir-ltv-cac-orani/ + EN /en/blog/what-is-ltv-ltv-cac-ratio/). Takvimin (hacme göre yeniden sıralanmış) bugünkü konusu; hacim: 'ltv nedir' 210, 'ltv cac' 30.
 - Süreç notu: çalışma başladığında takvimde hacim yoktu; eski konu (LTV:CAC) talep kuralını sağlamadığı için talebi kanıtlı "katkı marjı" hazırlandı. Push öncesi bilgisayar görevinin hacim çalışması geldi ve "katkı marjı" 0–10 çıktı → hacim kuralı gereği yayınlanmadı, takvimin yeni 26 Eki konusu yazıldı.

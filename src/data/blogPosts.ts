@@ -1845,6 +1845,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "utm",
     resources: [
       { label: "UTM Link Oluşturucu (GA4 kanal tahminli)", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "UTM Nedir? UTM Parametreleri Rehberi", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
       { label: "Google Analytics Yardım: Varsayılan kanal grubu kuralları", href: "https://support.google.com/analytics/answer/9756891", external: true },
@@ -2326,6 +2327,189 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "NRR Nedir? SaaS Büyüme Metriği", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
       { label: "SaaS Metrikleri 101: ARR, CAC, LTV ve Churn", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
       { label: "Stripe: Customer lifetime value (İngilizce)", href: "https://stripe.com/gb/resources/more/customer-lifetime-value", external: true },
+    ],
+  },
+  {
+    slug: "utm-nedir-utm-parametreleri",
+    seoTitle: "UTM Nedir? UTM Parametreleri ve GA4 Kullanım Rehberi",
+    title: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır? (GA4, Google Ads ve Meta Örnekleriyle)",
+    description:
+      "UTM nedir, UTM parametreleri ne işe yarar? 9 parametre, örnek linkler, GA4'te nerede görülür, Google Ads ve Meta'da doğru kullanım ve isimlendirme kuralları.",
+    category: "performans-pazarlama",
+    tldr: [
+      "UTM, bir linkin sonuna eklenen ve ziyaretçinin hangi kaynaktan, hangi kanaldan ve hangi kampanyadan geldiğini Google Analytics'e söyleyen etiketlerdir: ?utm_source=instagram&utm_medium=social&utm_campaign=kasim-indirimi gibi.",
+      "Her linkte üç parametre olmalı: utm_source (platform), utm_medium (kanal türü), utm_campaign (kampanya). utm_content, utm_term ve utm_id isteğe bağlıdır; GA4'ün desteklediği 9 parametreden ikisi (utm_creative_format, utm_marketing_tactic) şu an raporlanmıyor.",
+      "Değerler büyük/küçük harfe duyarlıdır: Instagram ile instagram GA4'te iki ayrı kaynaktır. Küçük harf, Türkçe karaktersiz ve GA4'ün tanıdığı medium değerleri (cpc, paid_social, social, email, referral, affiliate) kullanın; yoksa trafik Unassigned olur.",
+      "Google Ads'te manuel UTM yerine otomatik etiketlemeyi açık tutun; Meta'da dinamik parametrelerle ({{campaign.name}}, {{ad.name}}) tek şablon kullanın. Sitenizin kendi iç linklerine asla UTM eklemeyin.",
+    ],
+    publishedAt: "2026-10-27",
+    readingMinutes: 9,
+    tags: ["UTM", "UTM Parametreleri", "GA4", "Kampanya Takibi", "Google Analytics", "Ölçümleme"],
+    sections: [
+      {
+        heading: "UTM nedir? (Kısa cevap)",
+        paragraphs: [
+          "UTM (Urchin Tracking Module), bir web adresinin sonuna eklenen ve o linke tıklayan ziyaretçinin nereden geldiğini analiz aracınıza bildiren etiketlerdir. Adını, Google'ın 2005'te satın alıp Google Analytics'e dönüştürdüğü Urchin yazılımından alır.",
+          "UTM'siz bir Instagram hikâyesi linki GA4'te çoğu zaman yalnızca 'instagram.com / referral' ya da hiç kaynak bilgisi olmadan görünür; hangi kampanyadan, hangi görselden geldiği kaybolur. Aynı link UTM'le paylaşıldığında GA4 kaynağı, kanalı ve kampanyayı ayrı ayrı kaydeder, satışları da bu kampanyaya bağlayabilirsiniz.",
+          "Örnek: https://site.com/kasim-indirimi/?utm_source=instagram&utm_medium=social&utm_campaign=kasim-indirimi-2026&utm_content=hikaye-1",
+        ],
+      },
+      {
+        heading: "UTM'li bir link nasıl okunur?",
+        paragraphs: [
+          "Bir UTM linki üç parçadan oluşur: asıl sayfa adresi, soru işareti (?) ve & ile birbirine bağlanan parametre=değer çiftleri. Sayfa adresinde zaten bir soru işareti varsa (ör. ?renk=siyah) UTM'ler & ile devam eder; ikinci bir soru işareti kullanılmaz.",
+          "Parametrelerin sırası önemli değildir; GA4 hepsini aynı şekilde okur. Değerlerde boşluk kullanırsanız tarayıcı bunları %20 ya da + olarak kodlar ve raporlarda tutarsızlık çıkar; boşluk yerine tire (-) ya da alt çizgi (_) kullanın.",
+        ],
+        bullets: [
+          "https://site.com/urun/ → asıl adres (UTM'ler sayfanın içeriğini değiştirmez)",
+          "?utm_source=newsletter → kaynak: trafiği gönderen yer",
+          "&utm_medium=email → aracı: kanal türü (GA4 kanal grubunu bu belirler)",
+          "&utm_campaign=kasim-bulteni-2026 → kampanya adı",
+          "&utm_content=ust-buton → aynı kampanyadaki farklı link ya da kreatif",
+        ],
+      },
+      {
+        heading: "UTM parametreleri nelerdir? 9 parametre ve GA4 karşılıkları",
+        paragraphs: [
+          "Çoğu kaynak beş parametreden bahseder, ancak Google Analytics 4'ün URL oluşturucusu dokuz parametreyi destekler. Google'ın önerisi: source, medium ve campaign her linkte bulunsun; birini kullandığınızda ilgili diğerlerini de doldurun, eksik kalanlar raporlarda '(not set)' olarak görünür.",
+        ],
+        bullets: [
+          "utm_source (zorunlu): Trafiği gönderen platform ya da yer → google, instagram, newsletter, influencer-adi. GA4: Oturum kaynağı (Session source)",
+          "utm_medium (zorunlu): Kanal türü → cpc, paid_social, social, email, affiliate, referral. GA4: Oturum aracısı; varsayılan kanal grubunu belirleyen asıl parametre",
+          "utm_campaign (zorunlu): Kampanya adı → kasim-indirimi-2026. GA4: Oturum kampanyası (Session campaign)",
+          "utm_content (isteğe bağlı): Aynı kampanyada farklı kreatif ya da link → video-a, ust-buton. GA4: Manuel reklam içeriği (Manual ad content)",
+          "utm_term (isteğe bağlı): Ücretli anahtar kelime ya da hedef kitle → kosu-ayakkabisi. GA4: Manuel terim (Manual term)",
+          "utm_id (isteğe bağlı): Kampanya kimliği → bf26-001. GA4'e maliyet/kampanya verisi yüklüyorsanız eşleştirme anahtarıdır",
+          "utm_source_platform (isteğe bağlı): Trafiği yönlendiren satın alma platformu → Search Ads 360, Display & Video 360 gibi",
+          "utm_creative_format (isteğe bağlı): Kreatif türü → video, native, display. Google'a göre şu an GA4'te raporlanmıyor",
+          "utm_marketing_tactic (isteğe bağlı): Hedefleme taktiği → remarketing, prospecting. Google'a göre şu an GA4'te raporlanmıyor",
+        ],
+      },
+      {
+        heading: "Hangi kanalda hangi değerler yazılmalı?",
+        paragraphs: [
+          "GA4, oturumu bir kanala (Paid Social, Organic Social, Email, Affiliates vb.) atarken Google'ın yayımladığı kuralları kullanır ve bu kurallar büyük ölçüde utm_medium değerine bakar. 'story', 'bio', 'whatsapp' ya da 'influencer' gibi kural listesinde olmayan medium değerleri trafiği Unassigned kanalına düşürür. Aşağıdaki kombinasyonlar varsayılan kanal kurallarıyla uyumludur:",
+          "Unassigned trafiğiniz zaten varsa sebebini ve düzeltme adımlarını GA4 Unassigned yazımızda ayrıntılı anlattık; UTM Link Oluşturucu aracımız ise linki oluştururken GA4'te hangi kanala düşeceğini gösterir.",
+        ],
+        bullets: [
+          "Instagram / Facebook reklamı: source=instagram veya facebook, medium=paid_social → Paid Social",
+          "Instagram profil linki, organik paylaşım: source=instagram, medium=social → Organic Social",
+          "E-posta bülteni: source=newsletter, medium=email → Email",
+          "Influencer ya da ortaklık: source=influencer-adi, medium=affiliate → Affiliates",
+          "WhatsApp paylaşımı: source=whatsapp, medium=social → Organic Social",
+          "SMS: source=sms, medium=sms → SMS",
+          "QR kodlu broşür, ambalaj, etkinlik: source=qr, medium=referral → Referral (ya da GA4'te kendi 'Offline' kanal grubunuz)",
+          "Başka bir sitedeki banner: source=site-adi, medium=display veya cpm → Display",
+        ],
+      },
+      {
+        heading: "Google Ads'te UTM kullanılır mı?",
+        paragraphs: [
+          "Google Ads ile GA4 bağlıysa kısa cevap: kaynak ve kampanya ölçümü için manuel UTM'ye gerek yok, otomatik etiketlemeyi (auto-tagging) açık tutun. Otomatik etiketleme her tıklamaya bir gclid parametresi ekler ve GA4 kampanya, reklam grubu, anahtar kelime ve maliyet verisini bu kimlikten alır.",
+          "Google'ın açıklamasına göre otomatik etiketleme ve manuel UTM aynı linkte bulunduğunda GA4 kaynak, aracı ve diğer trafik sınıflandırma boyutlarında otomatik değerleri kullanır. Manuel olarak eklediğiniz utm_content ve utm_term ise 'Manuel reklam içeriği' ve 'Manuel terim' boyutlarına yine yazılır; reklam metni testlerini ayırmak için yalnızca bu ikisini kullanmak işe yarar.",
+          "Manuel UTM'yi Google Ads'te yalnızca GA4 dışındaki bir araç (CRM, başka bir analiz aracı) gclid'i okuyamıyorsa düşünün; bu durumda da UTM'leri tek tek reklamlara değil, hesap düzeyindeki son ek (final URL suffix) alanına ekleyin ki tutarlı kalsın.",
+        ],
+      },
+      {
+        heading: "Meta (Facebook, Instagram) reklamlarında UTM nasıl eklenir?",
+        paragraphs: [
+          "Meta'da her reklama elle UTM yazmak yerine Reklam Yöneticisi'ndeki 'URL parametreleri' alanına dinamik parametreli tek bir şablon girin. Meta, reklam gösterildiğinde süslü parantez içindeki değişkenleri kampanya, reklam seti ve reklamın gerçek adıyla doldurur.",
+          "Önerilen şablon: utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}&utm_id={{campaign.id}}",
+          "Dikkat edilecek iki nokta: Birincisi, GA4'e giden değer kampanya adınızın kendisi olduğu için Reklam Yöneticisi'ndeki adları da küçük harf, Türkçe karaktersiz ve boşluksuz bir standarda göre verin. İkincisi, kampanyayı yayından sonra yeniden adlandırırsanız parametreye eski ad gitmeye devam edebilir; adı yayından önce kesinleştirin, eşleştirme için değişmeyen {{campaign.id}} değerini utm_id'de taşıyın. Reklamın Facebook mu Instagram mı Messenger mı olduğunu ayırmak isterseniz {{site_source_name}} ya da {{placement}} değişkenini utm_content'e ekleyebilirsiniz.",
+        ],
+      },
+      {
+        heading: "UTM isimlendirme kuralları: ekip standardı nasıl kurulur?",
+        paragraphs: [
+          "UTM verisinin değeri tutarlılığındadır. Üç kişinin aynı kampanyaya 'Kasim', 'kasım-indirim' ve 'KASIM_2026' yazdığı bir hesapta rapor üç ayrı kampanya gösterir. Bunu önlemek için kampanyalar başlamadan önce kısa bir kural seti belirleyin ve tek bir tabloda tutun:",
+        ],
+        bullets: [
+          "Hep küçük harf: utm değerleri büyük/küçük harfe duyarlıdır, Google da küçük harfi önerir",
+          "Türkçe karakter yok: ş, ı, ğ, ü, ö, ç yerine s, i, g, u, o, c (kodlanmış %C5%9F gibi değerler raporu okunmaz hale getirir)",
+          "Boşluk yok; kelimeleri tek bir ayırıcıyla bağlayın: ekipçe ya tire (kasim-indirimi) ya alt çizgi (kasim_indirimi) seçin ve karıştırmayın",
+          "Kampanya adı şablonu: yıl-ay_amaç_ürün-veya-teklif_ülke → 2026-11_satis_black-friday_tr. Rapor alfabetik sıralandığında kampanyalar tarih sırasıyla dizilir",
+          "Kaynak ve aracı için kapalı liste: ekip yalnızca tablodaki değerleri kullanır (instagram, facebook, newsletter, whatsapp / cpc, paid_social, social, email, affiliate, referral)",
+          "Her yeni linki tabloya kaydedin: tarih, kampanya, tam link, sorumlu. Böylece aylar sonra hangi linkin nerede kullanıldığını bulursunuz",
+        ],
+      },
+      {
+        heading: "UTM verileri GA4'te nerede görülür?",
+        paragraphs: [
+          "Raporlar › Edinme › Trafik edinme raporunu açın ve tablonun birincil boyutunu 'Oturum kaynağı/aracı' ya da 'Oturum kampanyası' yapın. utm_content ve utm_term değerleri için tabloya ikincil boyut olarak 'Oturum manuel reklam içeriği' ve 'Oturum manuel terimi'ni ekleyin ya da Keşifler bölümünde serbest biçimli bir rapor oluşturun.",
+          "UTM parametreleri 'Sayfa yolu + sorgu dizesi' ve 'Açılış sayfası + sorgu dizesi' boyutlarında görünmez; Google bunları bu boyutlardan çıkarır. Linkin tam adresini görmek isterseniz 'Sayfa konumu' boyutunu kullanın.",
+          "Kampanyayı yayına almadan önce linki kendi tarayıcınızda açıp GA4'te Raporlar › Gerçek zamanlı ekranında kaynak ve kampanyanın doğru göründüğünü kontrol edin. Standart raporlara verinin düşmesi 24-48 saat sürebilir.",
+        ],
+      },
+      {
+        heading: "UTM kullanırken en sık yapılan hatalar",
+        paragraphs: [
+          "UTM hataları çoğu zaman rapor açıldığında değil, haftalar sonra bütçe kararı verilirken fark edilir. Şu hatalardan kaçının:",
+        ],
+        bullets: [
+          "Sitenin kendi iç linklerine UTM eklemek: ana sayfadaki bir banner'a utm_campaign eklemek, dönüşüm ilişkilendirmesinde gerçek kaynağın (ör. Google Ads) yerine sizin iç kampanyanızı gösterir. İç tanıtımları GA4 olaylarıyla ölçün",
+          "Organik aramaya ya da kendiliğinden gelen referanslara UTM eklemeye çalışmak: Google arama sonuçlarındaki linki siz kontrol etmezsiniz; organik trafik GA4'te kendiliğinden 'google / organic' olarak görünür",
+          "Google Ads'te otomatik etiketlemeyi kapatıp manuel UTM'ye geçmek: maliyet, anahtar kelime ve reklam grubu verisi GA4'e gelmez",
+          "Yönlendirmede parametre kaybı: link kısaltıcı, http→https ya da www yönlendirmesi UTM'leri düşürebilir. Linki açtıktan sonra adres çubuğunda utm_ parametrelerinin durduğunu kontrol edin",
+          "Kanal kurallarına uymayan medium: 'story', 'bio', 'qr', 'whatsapp' gibi değerler trafiği Unassigned yapar",
+          "UTM'li linki herkese açık bir yerde kalıcı olarak kullanmak: başkaları linki kopyalayıp paylaştıkça farklı kaynaklardan gelen trafik aynı kampanyaya yazılır. Uzun ömürlü paylaşımlarda (ör. bir forum imzası) kaynağı buna göre adlandırın",
+        ],
+      },
+      {
+        heading: "UTM'ler SEO'ya zarar verir mi?",
+        paragraphs: [
+          "Doğru kurulmuş bir sitede hayır. UTM'li adres teknik olarak ayrı bir URL'dir ama sayfa aynı içeriği gösterir; sayfanızda parametresiz adresi gösteren bir canonical etiketi varsa Google sinyalleri asıl adrese toplar. Sorun, UTM'li linkleri sitenin kendi menüsünde ya da site haritasında kullanmaktan doğar: bu durumda Google parametreli kopyaları taramaya başlayabilir. Kural basit: UTM yalnızca site dışındaki paylaşımlarda kullanılır, canonical etiketi her sayfada parametresiz adresi gösterir.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "UTM'nin açılımı nedir?",
+        answer:
+          "UTM, Urchin Tracking Module'ün kısaltmasıdır. Adını Google'ın 2005'te satın aldığı ve Google Analytics'in temelini oluşturan Urchin analiz yazılımından alır. Bugün GA4 başta olmak üzere çoğu analiz ve CRM aracı UTM parametrelerini okur.",
+      },
+      {
+        question: "Hangi UTM parametreleri zorunlu?",
+        answer:
+          "Teknik olarak tek bir parametre bile GA4'e veri gönderir, ancak Google her linkte utm_source, utm_medium ve utm_campaign kullanılmasını önerir. Eksik bırakılan parametreler raporlarda '(not set)' olarak görünür ve kanal ataması bozulabilir.",
+      },
+      {
+        question: "UTM ile gclid birlikte kullanılırsa ne olur?",
+        answer:
+          "GA4 kaynak, aracı ve kampanya gibi trafik sınıflandırma boyutlarında otomatik etiketleme (gclid) değerlerini kullanır; manuel utm_source ve utm_medium yok sayılır. Manuel utm_content ve utm_term ise Manuel reklam içeriği ve Manuel terim boyutlarına yazılmaya devam eder.",
+      },
+      {
+        question: "UTM linki nasıl oluşturulur?",
+        answer:
+          "Sayfa adresinin sonuna ? ekleyip parametreleri & ile birleştirerek elle yazabilirsiniz; ama hata riskini azaltmak için bir UTM oluşturucu kullanmak daha güvenlidir. Ücretsiz UTM Link Oluşturucu aracımız değerleri otomatik küçük harfe ve Türkçe karaktersiz hale çevirir ve linkin GA4'te hangi kanala düşeceğini gösterir.",
+      },
+      {
+        question: "WhatsApp ve QR kod linklerinde UTM nasıl yazılır?",
+        answer:
+          "WhatsApp için utm_source=whatsapp ve utm_medium=social (Organic Social kanalına düşer); QR kodlu basılı materyal için utm_source=qr ve utm_medium=referral kullanabilirsiniz. Offline kanalları ayrı görmek istiyorsanız GA4'te özel bir kanal grubu tanımlayıp medium değerinizi o kanala eşleyin.",
+      },
+    ],
+    howTo: {
+      name: "UTM'li kampanya linki nasıl oluşturulur ve test edilir?",
+      description: "Kampanya linkine doğru UTM parametrelerini ekleyip GA4'te kontrol edin.",
+      steps: [
+        { name: "Hedef sayfayı seçin", text: "Ziyaretçinin ineceği sayfanın parametresiz tam adresini alın (ör. https://site.com/kasim-indirimi/)." },
+        { name: "Kaynak ve aracıyı belirleyin", text: "Ekip tablonuzdaki listeden platformu utm_source'a, kanal türünü utm_medium'a yazın; medium için GA4'ün tanıdığı değerleri (cpc, paid_social, social, email, affiliate, referral) kullanın." },
+        { name: "Kampanya adını şablona göre yazın", text: "Küçük harf, Türkçe karaktersiz ve boşluksuz bir ad verin (ör. 2026-11_satis_black-friday_tr); kreatifleri ayırmak için utm_content ekleyin." },
+        { name: "Linki oluşturun", text: "Parametreleri ? ve & ile birleştirin ya da bir UTM oluşturucu kullanın; Google Ads için manuel UTM yerine otomatik etiketlemeyi açık bırakın." },
+        { name: "Yayından önce test edin", text: "Linki tarayıcıda açın, adres çubuğunda utm_ parametrelerinin kaldığını ve GA4 Gerçek zamanlı raporunda kaynak/kampanyanın doğru göründüğünü kontrol edin; linki ekip tablosuna kaydedin." },
+      ],
+    },
+    relatedToolKey: "utm",
+    resources: [
+      { label: "UTM Link Oluşturucu (GA4 kanal tahminli)", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir?", href: "/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+      { label: "Meta Ads Öğrenme Aşamasından Çıkma Taktikleri", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
+      { label: "Hangi Pazarlama Kanalı Size Uygun? (Test)", href: "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun/" },
+      { label: "Google Analytics: URL oluşturucularla kampanya verisi toplama", href: "https://support.google.com/analytics/answer/10917952?hl=tr", external: true },
+      { label: "Google Analytics: Varsayılan kanal grubu kuralları", href: "https://support.google.com/analytics/answer/9756891?hl=tr", external: true },
+      { label: "Google Analytics: Google Ads otomatik etiketlemenin avantajları", href: "https://support.google.com/analytics/answer/10723328?hl=tr", external: true },
     ],
   },
 ];
@@ -3818,6 +4002,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     relatedToolKey: "utm",
     resources: [
       { label: "UTM Builder (with GA4 channel check)", href: "/en/free-tools/utm-builder/" },
+      { label: "What Are UTM Parameters? Guide", href: "/en/blog/what-are-utm-parameters/" },
       { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
       { label: "Google Analytics Help: Default channel group rules", href: "https://support.google.com/analytics/answer/9756891", external: true },
       { label: "Google Analytics Help: Google Ads auto-tagging", href: "https://support.google.com/analytics/answer/10723328", external: true },
@@ -4294,6 +4479,189 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "What Is NRR? SaaS Growth Metric", href: "/en/blog/what-is-nrr-saas-growth-metric/" },
       { label: "SaaS Metrics: ARR, CAC, LTV", href: "/en/blog/saas-metrics-arr-cac-ltv/" },
       { label: "Stripe: Customer lifetime value", href: "https://stripe.com/gb/resources/more/customer-lifetime-value", external: true },
+    ],
+  },
+  {
+    slug: "what-are-utm-parameters",
+    seoTitle: "What Are UTM Parameters? GA4 Guide With Examples",
+    title: "What Are UTM Parameters and How Do You Use Them? (GA4, Google Ads and Meta Examples)",
+    description:
+      "What are UTM parameters? All 9 GA4 parameters, example links, where to find them in GA4, how to use them with Google Ads and Meta, and naming rules.",
+    category: "performans-pazarlama",
+    tldr: [
+      "UTM parameters are tags added to the end of a link that tell Google Analytics which source, channel and campaign a visitor came from, e.g. ?utm_source=instagram&utm_medium=social&utm_campaign=november-sale.",
+      "Every link needs three: utm_source (platform), utm_medium (channel type), utm_campaign (campaign). utm_content, utm_term and utm_id are optional; two of GA4's nine parameters (utm_creative_format, utm_marketing_tactic) are not currently reported.",
+      "Values are case-sensitive: Instagram and instagram are two sources in GA4. Use lowercase and medium values GA4 recognizes (cpc, paid_social, social, email, referral, affiliate), or traffic lands in Unassigned.",
+      "In Google Ads, keep auto-tagging on instead of manual UTMs; in Meta, use one template with dynamic parameters ({{campaign.name}}, {{ad.name}}). Never add UTMs to your own internal links.",
+    ],
+    publishedAt: "2026-10-27",
+    readingMinutes: 9,
+    tags: ["UTM", "UTM Parameters", "GA4", "Campaign Tracking", "Google Analytics", "Measurement"],
+    sections: [
+      {
+        heading: "What are UTM parameters? (Short answer)",
+        paragraphs: [
+          "UTM (Urchin Tracking Module) parameters are tags appended to a URL that tell your analytics tool where the person who clicked came from. The name comes from Urchin, the analytics software Google acquired in 2005 and turned into Google Analytics.",
+          "An untagged Instagram Story link often shows up in GA4 as just 'instagram.com / referral' or with no source at all; which campaign or creative drove the visit is lost. Share the same link with UTMs and GA4 records the source, channel and campaign separately, so you can tie sales back to that campaign.",
+          "Example: https://site.com/november-sale/?utm_source=instagram&utm_medium=social&utm_campaign=november-sale-2026&utm_content=story-1",
+        ],
+      },
+      {
+        heading: "How do you read a UTM link?",
+        paragraphs: [
+          "A UTM link has three parts: the page URL, a question mark (?) and parameter=value pairs joined with &. If the URL already contains a question mark (e.g. ?color=black), the UTMs continue with &; never add a second question mark.",
+          "Parameter order doesn't matter; GA4 reads them the same way. Spaces in values get encoded as %20 or +, which creates inconsistent reports, so use a hyphen (-) or underscore (_) instead.",
+        ],
+        bullets: [
+          "https://site.com/product/ → the page URL (UTMs don't change the page content)",
+          "?utm_source=newsletter → source: where the traffic comes from",
+          "&utm_medium=email → medium: the channel type (this drives the GA4 channel group)",
+          "&utm_campaign=november-newsletter-2026 → campaign name",
+          "&utm_content=top-button → a specific link or creative within the campaign",
+        ],
+      },
+      {
+        heading: "What are the UTM parameters? All 9 and their GA4 dimensions",
+        paragraphs: [
+          "Most guides cover five parameters, but the Google Analytics 4 URL builder supports nine. Google's advice: always include source, medium and campaign, and when you use one parameter, fill in the related ones too; missing ones show as '(not set)' in reports.",
+        ],
+        bullets: [
+          "utm_source (required): the platform or place sending traffic → google, instagram, newsletter, creator-name. GA4: Session source",
+          "utm_medium (required): channel type → cpc, paid_social, social, email, affiliate, referral. GA4: Session medium; the main input for the default channel group",
+          "utm_campaign (required): campaign name → black-friday-2026. GA4: Session campaign",
+          "utm_content (optional): different creatives or links in one campaign → video-a, top-button. GA4: Manual ad content",
+          "utm_term (optional): paid keyword or audience → running-shoes. GA4: Manual term",
+          "utm_id (optional): campaign ID → bf26-001. The join key when you import cost or campaign data into GA4",
+          "utm_source_platform (optional): the buying platform directing traffic → e.g. Search Ads 360, Display & Video 360",
+          "utm_creative_format (optional): creative type → video, native, display. Per Google, not currently reported in GA4",
+          "utm_marketing_tactic (optional): targeting tactic → remarketing, prospecting. Per Google, not currently reported in GA4",
+        ],
+      },
+      {
+        heading: "Which values should you use for each channel?",
+        paragraphs: [
+          "When GA4 assigns a session to a channel (Paid Social, Organic Social, Email, Affiliates and so on), it applies Google's published rules, which mostly look at utm_medium. Medium values that aren't on the list, such as 'story', 'bio', 'whatsapp' or 'influencer', push traffic into Unassigned. These combinations match the default channel rules:",
+          "If you already have Unassigned traffic, our GA4 Unassigned guide covers the causes and fixes; our UTM Builder shows which GA4 channel a link will land in as you build it.",
+        ],
+        bullets: [
+          "Instagram / Facebook ads: source=instagram or facebook, medium=paid_social → Paid Social",
+          "Instagram bio link or organic post: source=instagram, medium=social → Organic Social",
+          "Email newsletter: source=newsletter, medium=email → Email",
+          "Creator or partnership: source=creator-name, medium=affiliate → Affiliates",
+          "WhatsApp share: source=whatsapp, medium=social → Organic Social",
+          "SMS: source=sms, medium=sms → SMS",
+          "QR code on print, packaging or events: source=qr, medium=referral → Referral (or your own 'Offline' custom channel group)",
+          "Banner on another site: source=site-name, medium=display or cpm → Display",
+        ],
+      },
+      {
+        heading: "Should you use UTMs in Google Ads?",
+        paragraphs: [
+          "If Google Ads is linked to GA4, the short answer is no for source and campaign tracking: keep auto-tagging on. Auto-tagging adds a gclid parameter to each click, and GA4 pulls campaign, ad group, keyword and cost data from it.",
+          "According to Google, when auto-tagging and manual UTMs are both present, GA4 uses the auto-tagged values for source, medium and other traffic-classification dimensions. Manual utm_content and utm_term still populate the 'Manual ad content' and 'Manual term' dimensions, so those two are the only useful ones for separating ad-copy tests.",
+          "Consider manual UTMs in Google Ads only when a tool outside GA4 (a CRM or another analytics tool) can't read gclid; even then, add them once at account level in the final URL suffix rather than ad by ad, so they stay consistent.",
+        ],
+      },
+      {
+        heading: "How do you add UTMs to Meta (Facebook, Instagram) ads?",
+        paragraphs: [
+          "Instead of hand-writing UTMs for every Meta ad, enter one template with dynamic parameters in the 'URL parameters' field in Ads Manager. When the ad is served, Meta fills the variables in curly braces with the real campaign, ad set and ad names.",
+          "Suggested template: utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}&utm_id={{campaign.id}}",
+          "Two things to watch: first, because the value sent to GA4 is your campaign name itself, name campaigns in Ads Manager by the same lowercase, no-spaces standard. Second, if you rename a campaign after launch, the old name may keep being passed; finalize names before launch and carry the stable {{campaign.id}} in utm_id for matching. To separate Facebook, Instagram and Messenger delivery, add {{site_source_name}} or {{placement}} to utm_content.",
+        ],
+      },
+      {
+        heading: "UTM naming conventions: how to set a team standard",
+        paragraphs: [
+          "UTM data is only as valuable as it is consistent. If three people tag the same campaign 'November', 'nov-sale' and 'NOV_2026', the report shows three campaigns. Agree on a short rule set before campaigns start and keep it in one sheet:",
+        ],
+        bullets: [
+          "Always lowercase: UTM values are case-sensitive, and Google recommends lowercase",
+          "Plain ASCII only: avoid accented characters, which get encoded (e.g. %C3%A9) and make reports hard to read",
+          "No spaces; join words with one separator: pick either hyphens (november-sale) or underscores (november_sale) as a team and don't mix them",
+          "Campaign name template: year-month_goal_product-or-offer_country → 2026-11_sales_black-friday_us. Sorted alphabetically, campaigns line up by date",
+          "A closed list for source and medium: the team only uses values from the sheet (instagram, facebook, newsletter, whatsapp / cpc, paid_social, social, email, affiliate, referral)",
+          "Log every new link: date, campaign, full URL, owner. Months later you'll still know where each link was used",
+        ],
+      },
+      {
+        heading: "Where do you see UTM data in GA4?",
+        paragraphs: [
+          "Open Reports › Acquisition › Traffic acquisition and set the table's primary dimension to 'Session source / medium' or 'Session campaign'. For utm_content and utm_term, add 'Session manual ad content' and 'Session manual term' as a secondary dimension, or build a free-form report in Explore.",
+          "UTM parameters don't appear in the 'Page path + query string' and 'Landing page + query string' dimensions; Google strips them there. Use the 'Page location' dimension to see the full tagged URL.",
+          "Before launching, open the link in your own browser and check in Reports › Realtime that the source and campaign appear correctly. Data can take 24-48 hours to reach standard reports.",
+        ],
+      },
+      {
+        heading: "The most common UTM mistakes",
+        paragraphs: [
+          "UTM mistakes are usually noticed weeks later, when budget decisions are being made. Avoid these:",
+        ],
+        bullets: [
+          "Adding UTMs to your own internal links: a utm_campaign on a homepage banner makes conversion attribution credit your internal campaign instead of the real source (e.g. Google Ads). Measure internal promotions with GA4 events",
+          "Trying to tag organic search or natural referrals: you don't control the link in Google's results; organic traffic shows up as 'google / organic' on its own",
+          "Turning off Google Ads auto-tagging for manual UTMs: cost, keyword and ad group data stop flowing into GA4",
+          "Parameters lost in redirects: link shorteners, http→https or www redirects can drop UTMs. Open the link and confirm utm_ parameters remain in the address bar",
+          "Medium values outside the channel rules: 'story', 'bio', 'qr', 'whatsapp' send traffic to Unassigned",
+          "Leaving a tagged link permanently in a public place: as others copy and share it, traffic from many sources gets attributed to one campaign. Name the source accordingly for long-lived placements (e.g. a forum signature)",
+        ],
+      },
+      {
+        heading: "Do UTM parameters hurt SEO?",
+        paragraphs: [
+          "Not on a properly set up site. A tagged URL is technically a separate URL, but it shows the same content; if your page has a canonical tag pointing to the clean URL, Google consolidates signals there. Problems start when tagged links are used in your own navigation or sitemap, because Google may then crawl the parameterized copies. The rule is simple: use UTMs only for off-site placements, and keep a canonical tag pointing to the parameter-free URL on every page.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does UTM stand for?",
+        answer:
+          "UTM stands for Urchin Tracking Module. It's named after Urchin, the analytics software Google acquired in 2005 that became the basis of Google Analytics. Today GA4 and most analytics and CRM tools read UTM parameters.",
+      },
+      {
+        question: "Which UTM parameters are required?",
+        answer:
+          "Technically a single parameter sends data to GA4, but Google recommends using utm_source, utm_medium and utm_campaign on every link. Missing parameters show as '(not set)' in reports and can break channel assignment.",
+      },
+      {
+        question: "What happens if UTMs and gclid are used together?",
+        answer:
+          "GA4 uses the auto-tagging (gclid) values for traffic-classification dimensions such as source, medium and campaign; manual utm_source and utm_medium are ignored. Manual utm_content and utm_term still populate the Manual ad content and Manual term dimensions.",
+      },
+      {
+        question: "How do I create a UTM link?",
+        answer:
+          "You can write it by hand by adding ? after the URL and joining parameters with &, but a UTM builder reduces errors. Our free UTM Builder lowercases values automatically and shows which GA4 channel the link will land in.",
+      },
+      {
+        question: "How should I tag WhatsApp and QR code links?",
+        answer:
+          "For WhatsApp, use utm_source=whatsapp and utm_medium=social (lands in Organic Social); for printed QR codes, use utm_source=qr and utm_medium=referral. To see offline channels separately, create a custom channel group in GA4 and map your medium value to it.",
+      },
+    ],
+    howTo: {
+      name: "How to build and test a UTM-tagged campaign link",
+      description: "Add the right UTM parameters to a campaign link and verify them in GA4.",
+      steps: [
+        { name: "Pick the landing page", text: "Copy the full, parameter-free URL visitors should land on (e.g. https://site.com/november-sale/)." },
+        { name: "Choose source and medium", text: "From your team sheet, put the platform in utm_source and the channel type in utm_medium; use medium values GA4 recognizes (cpc, paid_social, social, email, affiliate, referral)." },
+        { name: "Name the campaign by template", text: "Use a lowercase, no-spaces name (e.g. 2026-11_sales_black-friday_us); add utm_content to separate creatives." },
+        { name: "Build the link", text: "Join parameters with ? and &, or use a UTM builder; for Google Ads, leave auto-tagging on instead of manual UTMs." },
+        { name: "Test before launch", text: "Open the link, confirm the utm_ parameters stay in the address bar and that source and campaign show correctly in GA4 Realtime; log the link in your team sheet." },
+      ],
+    },
+    relatedToolKey: "utm",
+    resources: [
+      { label: "UTM Builder (with GA4 channel check)", href: "/en/free-tools/utm-builder/" },
+      { label: "GA4 Unassigned Traffic: What It Is and How to Fix It", href: "/en/blog/ga4-unassigned-traffic-how-to-fix/" },
+      { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
+      { label: "Meta Ads: Tactics to Exit the Learning Phase", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
+      { label: "Which Marketing Channel Fits You? (Quiz)", href: "/en/free-tools/marketing-channel-quiz/" },
+      { label: "Google Analytics: Collect campaign data with custom URLs", href: "https://support.google.com/analytics/answer/10917952?hl=en", external: true },
+      { label: "Google Analytics: Default channel group rules", href: "https://support.google.com/analytics/answer/9756891?hl=en", external: true },
+      { label: "Google Analytics: Benefits of Google Ads auto-tagging", href: "https://support.google.com/analytics/answer/10723328?hl=en", external: true },
     ],
   },
 ];
