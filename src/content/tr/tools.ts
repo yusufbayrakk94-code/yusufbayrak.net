@@ -123,10 +123,13 @@ export const ltv: ToolContent = {
 export const roas: ToolContent = {
   slug: "roas",
   path: "/ucretsiz-araclar/roas-hesaplayici",
-  title: "ROAS Hesaplayıcı",
-  description: "Reklam harcaması getiri oranınızı (ROAS) reklam gelirini reklam harcamasına oranlayarak hesaplayın.",
-  intro: "ROAS (Return on Ad Spend), reklam harcamalarınızın kaç katı gelir ürettiğini gösterir. Kampanya karlılığını ölçmek için en yaygın kullanılan performans metriğidir.",
+  title: "ROAS Hesaplama: ROAS ve Başabaş ROAS Hesaplayıcı",
+  description: "ROAS hesaplama: reklam gelirini harcamaya bölün, marjınızla başabaş ROAS'ı, reklam sonrası kârı, POAS'ı ve hedef kâr için gereken ROAS'ı anında görün.",
+  intro: "Reklam gelirinizi ve harcamanızı girin, ROAS'ı hesaplayın. Brüt veya katkı marjınızı da eklerseniz araç başabaş ROAS'ı, kampanyanın kârda mı zararda mı olduğunu, reklam sonrası kârı, POAS'ı ve hedef kâr payınız için gereken ROAS'ı gösterir. Çoğu ROAS hesaplayıcısı yalnızca oranı verir; kârlılık kararı ise başabaş eşiğiyle verilir.",
   seoParagraphs: [
+    { heading: "ROAS nasıl hesaplanır? Formül ve örnek", body: "ROAS = Reklamdan gelen gelir / Reklam harcaması. Örnek: Bir ayda Meta reklamlarına 25.000 TL harcadınız ve bu reklamlardan KDV hariç 100.000 TL satış geldi. ROAS = 100.000 / 25.000 = 4, yani harcanan her 1 TL 4 TL ciro getirdi. Hesapta KDV hariç ve iadeler düşülmüş geliri kullanın: reklam panelleri genellikle KDV dahil sepet tutarını ve sonradan iade edilen siparişleri de sayar, bu yüzden panel ROAS'ı gerçekten yüksek görünür." },
+    { heading: "Başabaş ROAS nasıl hesaplanır?", body: "Başabaş ROAS = 1 / Marj. Brüt marjınız %40 ise başabaş ROAS 1 / 0,40 = 2,5'tir; 2,5'in altındaki her kampanya reklam maliyetini karşılamıyor demektir. Marj ile eşik ters orantılıdır: %60 marjda başabaş ROAS 1,67, %30'da 3,33, %25'te 4, %20'de 5'tir. Daha gerçekçi bir eşik için brüt marjdan kargo, ödeme kesintisi, paketleme ve pazaryeri komisyonu gibi sipariş başı giderleri düşerek katkı marjını kullanın: %40 brüt marj ve cironun %10'u kadar değişken giderle katkı marjı %30, başabaş ROAS 3,33 olur. Yukarıdaki örnekte ROAS 4 ve marj %30 ise reklam sonrası kâr 100.000 × 0,30 − 25.000 = 5.000 TL'dir." },
+    { heading: "Hedef ROAS nasıl belirlenir?", body: "Başabaş ROAS sıfır kârı gösterir; hedef ROAS ise istediğiniz kâr payını içerir: Hedef ROAS = 1 / (Marj − Hedef kâr payı). %30 katkı marjıyla cironun %10'u kadar kâr istiyorsanız hedef ROAS 1 / (0,30 − 0,10) = 5 olur. Hedef kâr payı marja eşit veya büyükse bu marjla reklamdan kâr etmek mümkün değildir; önce fiyatı, ürün maliyetini veya sipariş başı giderleri iyileştirmek gerekir. Google Ads'te tROAS teklif stratejisi kullanıyorsanız ayrıntılı yöntem için Hedef ROAS rehberine bakın." },
     { heading: "ROAS Nedir ve Nasıl Yorumlanır?", body: "ROAS (Return on Ad Spend), reklam yatırımının doğrudan getirisini ölçen bir performans pazarlaması metriğidir. Formül basittir: ROAS = Reklam Geliri / Reklam Harcaması. 4x ROAS, harcanan her 1₺'nin 4₺ gelir ürettiği anlamına gelir. Meta Ads, Google Ads ve LinkedIn Ads gibi platformlarda kampanya optimizasyonunun temel hedef değişkenidir." },
     { body: "ROAS ciro üzerinden ölçüldüğü için tek başına kârlılığı garanti etmez. Ürün maliyeti, kargo, iade oranı ve operasyonel giderler dikkate alındığında break-even ROAS her işletme için farklıdır. Örneğin brüt marjı %30 olan bir e-ticaret markası için başabaş ROAS yaklaşık 3.33x'tir; bu eşiğin altındaki her kampanya para kaybettiriyor demektir. Bu nedenle ROAS'ın POAS (Profit on Ad Spend) ile birlikte takip edilmesi önerilir." },
     { body: "ROAS'ı iyileştirmek için hedef kitleyi daraltmak, yaratıcı (creative) rotasyonunu hızlandırmak, landing page dönüşüm oranını artırmak ve teklif stratejilerini değer bazlı (value-based bidding) modellere geçirmek en etkili yöntemlerdir." },
@@ -134,7 +137,9 @@ export const roas: ToolContent = {
   faqs: [
     { q: "İyi bir ROAS değeri nedir?", a: "Sektöre ve marja göre değişir. E-ticaret için genel kabul 4x civarıdır; ancak brüt marj düşükse 5-6x, yüksek marjlı dijital ürünlerde ise 2-3x bile kârlı olabilir. Doğru referans, işletmenizin başabaş ROAS'ıdır." },
     { q: "ROAS ile ROI arasındaki fark nedir?", a: "ROAS yalnızca reklam gelirini reklam harcamasına oranlar. ROI ise net kârı (gelir - toplam maliyet) yatırıma böler ve gerçek kârlılığı gösterir. ROAS pazarlama, ROI ise finans metriğidir." },
-    { q: "Break-even ROAS nasıl hesaplanır?", a: "Başabaş ROAS = 1 / Brüt Marj. Örneğin %25 brüt marjda başabaş ROAS 4x'tir; bunun altındaki her kampanya zarardır." },
+    { q: "ROAS nasıl hesaplanır?", a: "ROAS = Reklamdan gelen gelir / Reklam harcaması. 25.000 TL harcamayla 100.000 TL gelir elde ettiyseniz ROAS 4'tür. Geliri KDV hariç ve iadeler düşülmüş olarak kullanın." },
+    { q: "Başabaş ROAS nasıl hesaplanır?", a: "Başabaş ROAS = 1 / Marj. Örneğin %25 brüt marjda başabaş ROAS 4x'tir; bunun altındaki her kampanya zarardır. Kargo ve komisyon gibi sipariş başı giderleri de düşen katkı marjını kullanmak daha doğru eşik verir." },
+    { q: "ROAS 1'in altındaysa ne demek?", a: "Reklamdan gelen ciro reklam harcamasından azdır; ürün maliyeti hiç hesaba katılmadan bile zarar edilir. ROAS 1'in üzerinde olsa da başabaş ROAS'ın altındaysa yine zarar vardır." },
     { q: "ROAS neden POAS ile birlikte takip edilmelidir?", a: "ROAS ciroya bakar; POAS ise kâra bakar. Ürün maliyeti, iade oranı ve kargo dahil edildiğinde iki metrik ciddi şekilde ayrışabilir. Kârlı büyüme için karar POAS ile verilmelidir." },
     { q: "ROAS nasıl artırılır?", a: "Üç kaldıraç vardır: dönüşüm oranını yükseltmek (landing page, teklif, sayfa hızı), sepet/ortalama sipariş değerini büyütmek (paket, çapraz satış, kargo eşiği) ve tıklama maliyetini düşürmek (arama terimi temizliği, kreatif tazeleme, kitle daraltma). Kampanya bazında hangisinin zayıf olduğunu görmek için önce dönüşüm oranı ve ortalama sipariş değerini ayrı ayrı ölçün." },
     { q: "ROAS hangi sıklıkla değerlendirilmeli?", a: "Günlük ROAS oynaktır ve yanlış karar aldırır. Anlamlı değerlendirme, dönüşüm gecikmesini (attribution window) kapsayacak şekilde en az 7 günlük hareketli pencerede yapılır; bütçe kaydırma kararları için 14-28 günlük veri daha güvenlidir." },
@@ -144,7 +149,7 @@ export const roas: ToolContent = {
     { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Başabaş ROAS = 1 / brüt marj" },
     { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu", note: "Kanal bazlı doğru ölçüm" },
   ],
-  relatedPost: { label: "Google Ads'te Performansı Katlamanın 7 Yolu", href: "/blog/google-ads-performans-optimizasyonu" },
+  relatedPost: { label: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
 };
 
 export const utm: ToolContent = {
