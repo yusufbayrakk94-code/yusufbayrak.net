@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { track } from "@/lib/analytics";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ArrowUpRight, ExternalLink, ChevronDown } from "lucide-react";
@@ -22,17 +22,45 @@ interface Props {
   children: React.ReactNode;
 }
 
+// Tools that other sites may embed via iframe (backlink asset, seo/widget-plan.md).
+// Embed URL = tool path with /ucretsiz-araclar/ → /embed/ and /en/free-tools/ → /en/embed/.
+export const EMBEDDABLE_TOOLS = ["roas", "adBudget", "marketplace", "desi"] as const;
+export const embedPathFor = (toolPath: string) =>
+  toolPath.replace(/^\/ucretsiz-araclar\//, "/embed/").replace(/^\/en\/free-tools\//, "/en/embed/");
+
+const EMBED_UI = {
+  tr: {
+    heading: "Bu aracı sitene ekle",
+    text: "Aracı kendi sitenizde ücretsiz kullanabilirsiniz. Aşağıdaki kodu sayfanıza yapıştırın; araç güncellendikçe sizin sayfanızda da güncellenir.",
+    copy: "Kodu kopyala",
+    copied: "Kopyalandı",
+    poweredBy: "yusufbayrak.net ile hesaplandı",
+    credit: "Araç",
+  },
+  en: {
+    heading: "Add this tool to your site",
+    text: "You can use this calculator on your own site for free. Paste the code below into your page; it stays up to date automatically.",
+    copy: "Copy code",
+    copied: "Copied",
+    poweredBy: "Calculated with yusufbayrak.net",
+    credit: "Tool",
+  },
+};
+
 export function ToolPage({ toolKey, children }: Props) {
   const locale = useLocale();
   const bundle = pickTools(locale);
   const tool = bundle[toolKey] as ToolContent;
   // GA4: one tool_use event per page view, on the first real interaction.
+  const { pathname } = useLocation();
+  const isEmbed = /^\/(en\/)?embed\//.test(pathname);
   const usedRef = useRef(false);
   const markUsed = () => {
     if (usedRef.current) return;
     usedRef.current = true;
-    track("tool_use", { tool_name: String(toolKey) });
+    track("tool_use", { tool_name: String(toolKey), ...(isEmbed ? { embed: true, embed_referrer: typeof document !== "undefined" ? document.referrer.slice(0, 100) : "" } : {}) });
   };
+  const [embedCopied, setEmbedCopied] = useState(false);
 
   const canonical = `${SITE_URL}${withSlash(tool.path)}`;
 
@@ -72,6 +100,51 @@ export function ToolPage({ toolKey, children }: Props) {
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
   } : null;
+
+  const eui = EMBED_UI[locale === "en" ? "en" : "tr"];
+  const canEmbed = (EMBEDDABLE_TOOLS as readonly string[]).includes(String(toolKey));
+  const embedUrl = `${SITE_URL}${withSlash(embedPathFor(tool.path))}`;
+  const embedCode = `<iframe src="${embedUrl}" width="100%" height="720" style="border:0;max-width:760px" loading="lazy" title="${tool.title}"></iframe>\n<p style="font-size:12px">${eui.credit}: <a href="${canonical}">${tool.title} – Yusuf Bayrak</a></p>`;
+  const copyEmbed = async () => {
+    try {
+      await navigator.clipboard.writeText(embedCode);
+      setEmbedCopied(true);
+      setTimeout(() => setEmbedCopied(false), 2000);
+    } catch {
+      /* ignore */
+    }
+  };
+
+  if (isEmbed) {
+    return (
+      <div className="min-h-screen bg-background p-4">
+        <Helmet>
+          <html lang={locale === "en" ? "en" : "tr"} />
+          <title>{tool.title}</title>
+          <meta name="robots" content="noindex,follow" />
+          <link rel="canonical" href={canonical} />
+        </Helmet>
+        <h1 className="font-mono text-base font-semibold text-foreground mb-3">{tool.title}</h1>
+        <div
+          className="p-4 bg-card border border-border rounded-lg"
+          onInputCapture={markUsed}
+          onClickCapture={(e) => { if ((e.target as Element).closest("button")) markUsed(); }}
+        >
+          {children}
+        </div>
+        <p className="mt-3 font-mono text-[11px] text-muted-foreground">
+          <a
+            href={`${canonical}?utm_source=embed&utm_medium=referral&utm_campaign=tool_widget`}
+            target="_blank"
+            rel="noopener"
+            className="hover:text-accent underline"
+          >
+            {eui.poweredBy}
+          </a>
+        </p>
+      </div>
+    );
+  }
 
   return (
     <Layout>
@@ -124,6 +197,27 @@ export function ToolPage({ toolKey, children }: Props) {
           >
             {children}
           </div>
+          {canEmbed && (
+            <details className="mt-6 p-4 bg-card border border-border rounded-lg">
+              <summary className="cursor-pointer font-mono text-sm text-foreground hover:text-accent">{eui.heading}</summary>
+              <p className="mt-3 text-sm text-muted-foreground">{eui.text}</p>
+              <textarea
+                readOnly
+                value={embedCode}
+                rows={4}
+                onFocus={(e) => e.currentTarget.select()}
+                className="mt-3 w-full p-3 bg-background border border-border rounded-md font-mono text-xs text-foreground"
+                aria-label={eui.heading}
+              />
+              <button
+                type="button"
+                onClick={copyEmbed}
+                className="mt-2 h-9 px-4 rounded-md border border-accent text-accent font-mono text-xs hover:bg-accent/10 transition-colors"
+              >
+                {embedCopied ? eui.copied : eui.copy}
+              </button>
+            </details>
+          )}
           {tool.seoParagraphs.length > 0 && (
             <div className="mt-16 opacity-0 animate-fade-in-up stagger-3">
               <CodeDivider label={bundle.toolGuideDivider} />

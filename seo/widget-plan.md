@@ -1,6 +1,8 @@
 # Gömülebilir araç widget'ı — uygulama planı (haftalık otorite işi, 24–30 Eki)
 
-Durum: plan (2026-10-25). Amaç: başka sitelerin araçlarımızı sayfalarına eklemesi ve doğal atıf linki vermesi.
+Durum: YAYINDA (2026-10-27; kullanıcı "agresifleştir" diyerek onayladı). Araçlar: ROAS, Reklam Bütçesi, Trendyol Kâr, Desi (TR + EN). Uygulama: ToolPage embed modu (/embed/<slug>/, /en/embed/<slug>/), EMBED_ROUTES (scripts/routes.mjs; sitemap/llms dışı), tool_use olayına embed=true + embed_referrer. Sonraki adım: dağıtım (araç dizinleri, e-ticaret/pazaryeri blogları, konuk yazılar).
+
+İlk plan (2026-10-25): Amaç: başka sitelerin araçlarımızı sayfalarına eklemesi ve doğal atıf linki vermesi.
 Ücretli link yok; atıf linki takip edilebilir (dofollow) ama zorunlu tutulmaz, yalnızca varsayılan kodda bulunur.
 
 ## Kapsam (ilk sürüm)

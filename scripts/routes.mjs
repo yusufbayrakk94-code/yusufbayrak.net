@@ -137,6 +137,19 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "utm-nedir-utm-parametreleri", en: "what-are-utm-parameters" },
 ];
 
+// Embeddable widget routes: prerendered (iframe targets) but noindex, so they
+// stay out of the sitemap and llms.txt.
+export const EMBED_ROUTES = [
+  "/embed/roas-hesaplayici",
+  "/embed/reklam-butcesi-hesaplama",
+  "/embed/trendyol-hepsiburada-kar-hesaplama",
+  "/embed/desi-hesaplama",
+  "/en/embed/roas-calculator",
+  "/en/embed/ad-budget-calculator",
+  "/en/embed/marketplace-profit-calculator",
+  "/en/embed/dimensional-weight-calculator",
+];
+
 // English-only posts (no TR counterpart). They live solely under /en/blog/.
 export const EN_ONLY_BLOG_SLUGS = ["arr-vs-mrr-difference"];
 
@@ -198,6 +211,7 @@ export function allRoutes() {
     ...STATIC_EN,
     ...projectEn,
     ...blogEn,
+    ...EMBED_ROUTES,
   ];
 }
 
@@ -249,7 +263,7 @@ export function sitemapEntries() {
 
   // Internal design-system reference: prerendered but noindex, so it stays
   // out of the sitemap.
-  const excluded = new Set(["/styleguide"]);
+  const excluded = new Set(["/styleguide", ...EMBED_ROUTES]);
 
   const blogDates = getBlogDates();
   const latestPost = [...blogDates.values()].sort().at(-1) ?? null;

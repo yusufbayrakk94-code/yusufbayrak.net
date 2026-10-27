@@ -129,6 +129,15 @@ export const ROUTES: RouteObject[] = [
   { path: "/work/:slug", element: <ProjectDetail /> },
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
+  // Embeddable widget versions (noindex, canonical → tool page; seo/widget-plan.md)
+  { path: "/embed/roas-hesaplayici", element: <RoasCalculator /> },
+  { path: "/embed/reklam-butcesi-hesaplama", element: <AdBudgetCalculator /> },
+  { path: "/embed/trendyol-hepsiburada-kar-hesaplama", element: <MarketplaceProfitCalculator /> },
+  { path: "/embed/desi-hesaplama", element: <DesiCalculator /> },
+  { path: "/en/embed/roas-calculator", element: <RoasCalculator /> },
+  { path: "/en/embed/ad-budget-calculator", element: <AdBudgetCalculator /> },
+  { path: "/en/embed/marketplace-profit-calculator", element: <MarketplaceProfitCalculator /> },
+  { path: "/en/embed/dimensional-weight-calculator", element: <DesiCalculator /> },
   { path: "*", element: <NotFound /> },
 ];
 

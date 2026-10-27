@@ -19,6 +19,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi: /blog/hedef-roas-nasil-belirlenir/, /en/blog/how-to-set-target-roas-google-ads/, /projeler/brandog-marka-mcp/, /en/blog/black-friday-2026-ad-plan/, /en/free-tools/utm-builder/ — 2026-10-26 (5/5)
 - [x] Dizine ekleme isteği gönderildi: /blog/ltv-nedir-ltv-cac-orani/, /en/blog/what-is-ltv-ltv-cac-ratio/, /blog/utm-nedir-utm-parametreleri/, /en/blog/what-are-utm-parameters/, /en/free-tools/ltv-calculator/ — 2026-10-27 (5/5)
 - [ ] Dizine ekleme isteği (27.10 itibarıyla "Keşfedildi" listesinde kalan EN araçlar): /en/free-tools/conversion-rate-calculator/, /en/free-tools/llms-txt-generator/, /en/free-tools/marketing-channel-quiz/, /en/free-tools/net-profit-margin-calculator/, /en/free-tools/saas-tools/ (utm-builder ve brandog projesi 26.10'da istendi; tarama bekleniyor)
+- [ ] Dizine ekleme isteği (2026-10-27 yeni, ÖNCELİKLİ): /ucretsiz-araclar/desi-hesaplama/, /ucretsiz-araclar/roas-hesaplayici/ (yeniden yazıldı), /en/free-tools/dimensional-weight-calculator/, /en/free-tools/roas-calculator/, /en/blog/what-is-roas-how-to-calculate/ (güncellendi)
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [ ] Keyword Planner: takvimin 23 Kas – 22 Ara bölümü için keşif + hacim turu (22.11'den önce; tüm mevcut konuların hacmi 26.10'da alındı)
@@ -49,7 +50,8 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Destek yazısı: "Reklam bütçesi nasıl belirlenir?" (relatedToolKey: ad-budget) — 2026-10-23
 - [~] Paylaşılabilir sonuç linki (girdiler URL'de) — yeni 2 araçta var, eski araçlara yayılacak
 - [ ] Sonucu e-postayla/PDF gönder (yumuşak lead yakalama)
-- [ ] Gömülebilir widget + backlink ("Bu aracı sitene ekle")
+- [x] Gömülebilir widget + backlink ("Bu aracı sitene ekle") — 2026-10-27 (ROAS, Reklam Bütçesi, Trendyol Kâr, Desi; TR + EN)
+- [ ] Widget dağıtımı: e-ticaret/pazaryeri blogları, araç dizinleri, ajans kaynak sayfaları hedef listesi + teklif metni (kullanıcı gönderir)
 - [ ] Araçlar arası akış (brüt marj → başabaş ROAS → bütçe planlayıcı)
 - [ ] Yeni araç: Otomasyon ROI hesaplayıcı
 - [ ] Yeni araçlar (GEO): AI crawler robots.txt kontrolü, FAQ/Schema JSON-LD oluşturucu
@@ -80,7 +82,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Çeyreklik AI görünürlük testi (Ocak 2027)
 
 ## Backlink planı (hedef: 31.01.2027'ye kadar 10-15 kaliteli yönlendiren alan adı; ücretli link/PBN YOK)
-- [ ] Linklenebilir varlık 1: Gömülebilir araç widget'ı ("Bu aracı sitene ekle" + yusufbayrak.net atfı) — ROAS, reklam bütçesi, Trendyol kâr
+- [x] Linklenebilir varlık 1 (2026-10-27): Gömülebilir araç widget'ı ("Bu aracı sitene ekle" + yusufbayrak.net atfı) — ROAS, reklam bütçesi, Trendyol kâr
 - [ ] Linklenebilir varlık 2: "Türkiye'de B2B ve e-ticaret reklam maliyetleri 2026" özgün veri çalışması (metodoloji açık, alıntılanabilir tablolar)
 - [ ] Linklenebilir varlık 3: İndirilebilir şablonlar (UTM takip tablosu, kampanya brief'i, ICP şablonu)
 - [ ] Konuk yazı / uzman görüşü hedef listesi: Türkçe pazarlama ve e-ticaret yayınları (taslak yazıları Claude hazırlar, kullanıcı gönderir)

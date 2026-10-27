@@ -2,6 +2,14 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-10-27 (agresif tempo — kullanıcı: "son 24 saatte sıfır tıklama, agresifleştir")
+- Teşhis: trafik neredeyse tamamen marka sorgularından; hedef sorguların yarısı hacimsizdi (cac/ltv/churn hesaplama, ga4 unassigned, reklam bütçesi hesaplama 0–10) → ilk 10'a girseler de tıklama getirmezler. Backlink yok.
+- Hedef sorgular hacme göre yeniden yazıldı (seo/GOALS.md): desi hesaplama 14.800, trendyol komisyon/kar hesaplama 18.100/6.600, kar marjı hesaplama 1.000, roas nedir 880, utm nedir 390, mrr nedir 390, cac nedir 320, llms txt 480, ltv nedir 210, churn nedir 210.
+- YENİ ARAÇ (takvimden 1 gün öne alındı): Desi Hesaplama (/ucretsiz-araclar/desi-hesaplama/ + EN /en/free-tools/dimensional-weight-calculator/). Rakiplerde (ikas, takvim.com.tr, Ticimax) olmayan: gerçek ağırlıkla karşılaştırma, çoklu koli (koli bazında yuvarlama), bölen ve yuvarlama seçimi, kutu küçültme senaryosu + 1 desi düşürmek için maks. yükseklik, desi başı ücretle tahmini maliyet, paylaşılabilir link. Analiz: seo/research/desi-hesaplama.md.
+- ROAS kümesi (gösterim alan ama 60–80. sırada kalan 'roas hesaplama', 'başabaş roas', 'roas formula', 'gross/profit roas'): ROAS aracı başabaş ROAS, kâr/zarar durumu, reklam sonrası kâr, POAS ve hedef ROAS hesaplayan araca dönüştürüldü (eski "net kâr = gelir − harcama" yanıltıcı çıktısı kaldırıldı); başlık "ROAS Hesaplama: ROAS ve Başabaş ROAS Hesaplayıcı", 3 yeni rehber bölümü + 2 SSS; EN araç ve EN ROAS yazısına "Gross vs Net vs Profit ROAS (POAS)" bölümü.
+- BACKLINK: gömülebilir araç widget'ı yayında (ROAS, Reklam Bütçesi, Trendyol Kâr, Desi; TR + EN). Araç sayfalarında "Bu aracı sitene ekle" kutusu; iframe sayfaları noindex + canonical asıl araca, atıf linki varsayılan kodda. Ölçüm: tool_use (embed=true), Search Console › Bağlantılar.
+- Ölçüm: 'desi hesaplama', 'kargo desi hesaplama', 'roas hesaplama', 'başabaş roas' gösterim/sıra; yönlendiren alan adı sayısı.
+
 ## 2026-10-27 (veri görevi)
 - Search Console (son 28 gün, veri 25.10'a kadar): tıklama ve gösterim başlangıca göre hafif arttı; trafiğin çoğu hâlâ marka/AdGusto sorgularında. Hedef sorgulardan 'roas hesaplama' ve 'başabaş roas' görünüyor ama ilk 50'nin dışında. Marka dışı 8-20. sırada sorgu yok → iç link fırsatı çıkmadı.
 - Dizin: dizindeki sayfa sayısı arttı, "Keşfedildi - dizine eklenmedi" azaldı; listede kalanların tamamı EN araç sayfaları + Brandog projesi (TR araçlar ve yazılar listeden çıktı). Yeni bulgu: GA4 Unassigned TR, Reklam bütçesi yazısı TR ve ROAS EN yazısı 24.10 taramasında "Tarandı - şu anda dizine eklenmemiş" görünüyor (rapor gecikmeli olabilir; 26.10 URL Denetimi bunların ikisini dizinde gösteriyordu) → izlemeye alındı. 'Yeniden yönlendirme hatası' doğrulaması sürüyor.
