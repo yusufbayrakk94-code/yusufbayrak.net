@@ -208,7 +208,7 @@ export const grossMargin: ToolContent = {
     { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Return on ad spend" },
     { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
   ],
-  relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
+  relatedPost: { label: "How to Calculate Profit Margin (Margin vs Markup)", href: "/en/blog/how-to-calculate-profit-margin/" },
   externalSource: { label: "Source: Investopedia — Gross Profit Margin", href: "https://www.investopedia.com/terms/g/gross_profit_margin.asp" },
 };
 
@@ -237,7 +237,7 @@ export const netMargin: ToolContent = {
     { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
     { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Return on ad spend" },
   ],
-  relatedPost: { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv" },
+  relatedPost: { label: "How to Calculate Profit Margin (Margin vs Markup)", href: "/en/blog/how-to-calculate-profit-margin/" },
   externalSource: { label: "Source: Investopedia — Net Profit Margin", href: "https://www.investopedia.com/terms/n/net_margin.asp" },
 };
 

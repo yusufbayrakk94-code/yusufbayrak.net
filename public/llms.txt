@@ -72,6 +72,7 @@
 - [LTV Nedir, Nasıl Hesaplanır? LTV:CAC Oranı Kaç Olmalı? (Kohort ve Reklam Örnekleriyle)](https://yusufbayrak.net/blog/ltv-nedir-ltv-cac-orani/): LTV (müşteri yaşam boyu değeri) nedir, marjla nasıl hesaplanır? Kohort LTV örneği, LTV:CAC oranı yorumu, geri ödeme süresi ve LTV'den reklam CPA hedefi.
 - [UTM Nedir? UTM Parametreleri Nasıl Kullanılır? (GA4, Google Ads ve Meta Örnekleriyle)](https://yusufbayrak.net/blog/utm-nedir-utm-parametreleri/): UTM nedir, UTM parametreleri ne işe yarar? 9 parametre, örnek linkler, GA4'te nerede görülür, Google Ads ve Meta'da doğru kullanım ve isimlendirme kuralları.
 - [CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır? (Blended, Paid ve Kanal Bazında Örnekler)](https://yusufbayrak.net/blog/cac-nedir-musteri-edinme-maliyeti/): CAC (müşteri edinme maliyeti) nedir, nasıl hesaplanır? Blended, paid ve tam yüklü CAC farkı, kanal bazında örnek, CAC ile CPA farkı ve CAC'tan reklam hedefi.
+- [Kar Marjı Nasıl Hesaplanır? Kar Marjı ile Kar Oranı (Markup) Farkı, Dönüşüm Tablosu ve E-Ticaret Örneği](https://yusufbayrak.net/blog/kar-marji-nasil-hesaplanir/): Kar marjı nasıl hesaplanır? Formül, örnek, kar oranı (markup) farkı ve dönüşüm tablosu, hedef marjdan satış fiyatı, indirimin marja etkisi ve başabaş ROAS.
 
 ## English
 
@@ -120,6 +121,7 @@
 - [What Is LTV and How to Calculate It? What Should Your LTV:CAC Ratio Be? (Cohort and Ad Examples)](https://yusufbayrak.net/en/blog/what-is-ltv-ltv-cac-ratio/): What customer lifetime value (LTV) is and how to calculate it on margin: a cohort LTV example, reading LTV:CAC, CAC payback and turning LTV into a CPA target.
 - [What Are UTM Parameters and How Do You Use Them? (GA4, Google Ads and Meta Examples)](https://yusufbayrak.net/en/blog/what-are-utm-parameters/): What are UTM parameters? All 9 GA4 parameters, example links, where to find them in GA4, how to use them with Google Ads and Meta, and naming rules.
 - [What Is CAC? How to Calculate Customer Acquisition Cost (Blended, Paid and Per-Channel Examples)](https://yusufbayrak.net/en/blog/what-is-cac-customer-acquisition-cost/): What is CAC and how do you calculate it? Blended vs paid vs fully loaded CAC, a per-channel example, CAC vs CPA, and how to turn CAC into an ad target.
+- [How to Calculate Profit Margin: Margin vs Markup, a Conversion Table and an E-commerce Example](https://yusufbayrak.net/en/blog/how-to-calculate-profit-margin/): How to calculate profit margin: formula, worked example, margin vs markup with a conversion table, pricing from a target margin, discounts and break-even ROAS.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim

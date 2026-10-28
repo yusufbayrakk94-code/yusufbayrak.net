@@ -62,7 +62,8 @@ export type RelatedToolKey =
   | "llms-txt"
   | "marketplace"
   | "ad-budget"
-  | "desi";
+  | "desi"
+  | "gross-margin";
 
 export interface BlogPost {
   slug: string;
@@ -1549,6 +1550,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Brüt Kâr Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "Hedef ROAS Nasıl Belirlenir? Google Ads tROAS Rehberi", href: "/blog/hedef-roas-nasil-belirlenir/" },
@@ -2143,6 +2145,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Brüt Kâr Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
@@ -2697,6 +2700,168 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "B2B Lead Generation Maliyetleri Nasıl Düşürülür?", href: "/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur/" },
       { label: "SaaS Metrikleri 101: ARR, CAC, LTV ve Churn", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
       { label: "Google Ads Yardım: Müşteri yaşam döngüsü hedefleri (yeni müşteri edinme)", href: "https://support.google.com/google-ads/answer/12080169?hl=tr", external: true },
+    ],
+  },
+  {
+    slug: "kar-marji-nasil-hesaplanir",
+    seoTitle: "Kar Marjı Nasıl Hesaplanır? Formül ve Kar Oranı Farkı",
+    title: "Kar Marjı Nasıl Hesaplanır? Kar Marjı ile Kar Oranı (Markup) Farkı, Dönüşüm Tablosu ve E-Ticaret Örneği",
+    description:
+      "Kar marjı nasıl hesaplanır? Formül, örnek, kar oranı (markup) farkı ve dönüşüm tablosu, hedef marjdan satış fiyatı, indirimin marja etkisi ve başabaş ROAS.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Kar marjı, kârın satış fiyatına oranıdır: Kar marjı = (Satış fiyatı − Maliyet) / Satış fiyatı × 100. 1.000 TL'ye satılan, 550 TL'ye mal olan üründe kar marjı %45'tir.",
+      "Kar oranı (markup) ise kârın maliyete oranıdır: 450 / 550 = %81,8. İkisi sık karıştırılır; %50 markup yalnızca %33,3 marj demektir. Dönüşüm: Marj = Markup / (1 + Markup), Markup = Marj / (1 − Marj).",
+      "Hedef marjdan fiyat bulmak için maliyeti (1 − hedef marj) ile bölün: 600 TL maliyet ve %40 hedef marj için fiyat 600 / 0,60 = 1.000 TL'dir. 'Maliyete %40 ekle' (840 TL) yalnızca %28,6 marj bırakır.",
+      "E-ticarette asıl karar marjı katkı marjıdır: aynı ürün kargo, ödeme komisyonu, paketleme ve iade sonrası %31 bırakır; başabaş ROAS = 1 / 0,31 ≈ 3,23. %20 indirim brüt marjı %45'ten %31,25'e düşürür ve aynı brüt kârı korumak için %80 daha fazla satış gerekir.",
+    ],
+    publishedAt: "2026-10-28",
+    readingMinutes: 8,
+    tags: ["Kar Marjı", "Kar Marjı Hesaplama", "Kar Oranı", "Markup", "Brüt Kar Marjı", "Katkı Marjı", "Fiyatlandırma"],
+    sections: [
+      {
+        heading: "Kar marjı nasıl hesaplanır? (Kısa cevap)",
+        paragraphs: [
+          "Kar marjı, sattığınız her 100 TL'nin kaç TL'sinin kâr olarak kaldığını gösterir. Formül: Kar marjı (%) = (Satış fiyatı − Maliyet) / Satış fiyatı × 100.",
+          "Örnek: 1.000 TL'ye sattığınız bir ürünü tedarikçiden 550 TL'ye alıyorsanız ürün başı kâr 450 TL, kar marjı 450 / 1.000 = %45'tir. Aynı formül toplam rakamlarla da çalışır: ay boyunca 500.000 TL satış yapıp satılan malın maliyeti 275.000 TL ise brüt kar marjı yine %45'tir. (Yazıdaki tüm tutarlar örnek tutarlardır ve vergi hesabı içermez.)",
+          "Hangi maliyeti düştüğünüz, hangi marjı bulduğunuzu belirler: yalnızca ürün maliyetini düşerseniz brüt marj, satış başına değişken giderleri de düşerseniz katkı marjı, işletme giderlerini de düşerseniz faaliyet marjı elde edersiniz. Aşağıda dördünü aynı ürün üzerinde gösteriyorum.",
+        ],
+      },
+      {
+        heading: "Kar marjı ile kar oranı (markup) arasındaki fark nedir?",
+        paragraphs: [
+          "Kar marjı kârı satış fiyatına, kar oranı (markup, maliyet üzerine kâr oranı) kârı maliyete böler. Aynı 450 TL kâr, 1.000 TL'lik satış fiyatına göre %45, 550 TL'lik maliyete göre %81,8'dir. İkisi de doğrudur ama farklı soruları cevaplar: markup 'maliyete ne kadar ekledim?', marj 'satıştan ne kadar kaldı?' sorusunu.",
+          "Karışıklık pahalıdır: tedarikçiniz '%50 kârla satıyorum' derken markup'ı, siz bütçe planında %50 marjı düşünüyorsanız gerçekte elinizde satışın yalnızca üçte biri kalır. Reklam ve fiyatlandırma hesaplarında (başabaş ROAS, maks. CPA, indirim kararı) her zaman satış fiyatına göre olan kar marjı kullanılır.",
+        ],
+        bullets: [
+          "Kar marjı = Kâr / Satış fiyatı",
+          "Kar oranı (markup) = Kâr / Maliyet",
+          "Markup'tan marja: Marj = Markup / (1 + Markup) → %50 markup = 0,5 / 1,5 = %33,3 marj",
+          "Marjdan markup'a: Markup = Marj / (1 − Marj) → %40 marj = 0,4 / 0,6 = %66,7 markup",
+          "Marj hiçbir zaman %100'e ulaşamaz; markup %100'ü rahatça geçebilir",
+        ],
+      },
+      {
+        heading: "Kar oranı ve kar marjı dönüşüm tablosu",
+        paragraphs: [
+          "Sık kullanılan markup değerlerinin marj karşılıkları aşağıda. Tedarikçi fiyat listeleri ve toptan satış görüşmelerinde markup, finansal raporlarda ve reklam hesaplarında marj konuşulur; tabloyu iki dil arasında çeviri için kullanın.",
+        ],
+        bullets: [
+          "%25 markup = %20 marj",
+          "%33,3 markup = %25 marj",
+          "%50 markup = %33,3 marj",
+          "%66,7 markup = %40 marj",
+          "%100 markup (maliyetin iki katına satış) = %50 marj",
+          "%150 markup = %60 marj",
+          "%200 markup (maliyetin üç katına satış) = %66,7 marj",
+        ],
+      },
+      {
+        heading: "Hedef kar marjına göre satış fiyatı nasıl belirlenir?",
+        paragraphs: [
+          "Hedef marjdan fiyata giden formül: Satış fiyatı = Maliyet / (1 − Hedef marj). 600 TL'ye mal olan bir üründe %40 marj istiyorsanız fiyat 600 / 0,60 = 1.000 TL olmalıdır; kâr 400 TL, marj 400 / 1.000 = %40.",
+          "En yaygın hata maliyetin üzerine hedef yüzdeyi eklemektir: 600 × 1,40 = 840 TL. Bu fiyatta kâr 240 TL, marj ise 240 / 840 = %28,6'dır; hedefin yaklaşık 11 puan altında kalırsınız. Kampanya fiyatı, toptan fiyat ya da pazaryeri fiyatı belirlerken bu formülü maliyete her değişken gideri ekledikten sonra uygulayın.",
+        ],
+      },
+      {
+        heading: "Brüt, katkı, faaliyet ve net kar marjı: aynı üründe dört marj",
+        paragraphs: [
+          "'Kar marjı' tek bir sayı değildir; hangi maliyetleri düştüğünüze göre merdivenin farklı basamaklarında durursunuz. Örnek e-ticaret ürünü: satış fiyatı 1.000 TL, ürün maliyeti 550 TL; sipariş başına kargo 70 TL, ödeme komisyonu 30 TL, paketleme 15 TL, iade payı 25 TL; sipariş başı reklam 120 TL; mağaza ayda 1.000 sipariş alıyor ve kira, maaş, yazılım gibi işletme giderleri aylık 150.000 TL (sipariş başı 150 TL).",
+          "Brüt marj (%45) fiyatlandırma ve tedarik gücünü, katkı marjı (%31) bir siparişin reklama ve sabit giderlere bıraktığı parayı gösterir. Reklam sonrası %19 kalıyor ve işletme giderlerinden sonra faaliyet marjı %4'e iniyor. Brüt marja bakıp 'kârlıyız' diyen birçok mağaza bu merdivenin alt basamaklarında zarar eder. Net kar marjı ise faaliyet kârından finansman giderleri gibi kalemler de düşüldükten sonra kalan oranı ifade eder; bu yazıda o hesaba girmiyorum.",
+        ],
+        bullets: [
+          "Brüt kar marjı = (1.000 − 550) / 1.000 = %45",
+          "Katkı marjı = (1.000 − 550 − 70 − 30 − 15 − 25) / 1.000 = 310 / 1.000 = %31",
+          "Reklam sonrası katkı = (310 − 120) / 1.000 = %19",
+          "Faaliyet kar marjı = (190 − 150) / 1.000 = %4",
+        ],
+      },
+      {
+        heading: "Pazaryerinde kar marjı nasıl hesaplanır?",
+        paragraphs: [
+          "Pazaryerinde satış fiyatından komisyon ve kargo kesildiği için brüt marjla katkı marjı arasındaki fark büyür. Aynı ürünü pazaryerinde 1.000 TL'ye, örnek olarak %20 komisyon ve 90 TL kargo bedeliyle sattığınızı düşünün: 1.000 − 550 − 200 − 90 = 160 TL katkı, yani %16 katkı marjı. Kendi sitenizdeki %31'in yarısıdır.",
+          "Kargo bedeli ürünün desisine göre değişir; kutuyu birkaç santim küçültmek desiyi ve dolayısıyla marjı değiştirebilir. Komisyon oranı kategoriye göre farklıdır; güncel oranı pazaryerinin satıcı panelinden kontrol edin. Komisyon, kargo, iade ve reklam dahil sipariş başı net kârı Trendyol & Hepsiburada kâr hesaplama aracıyla, kargo desisini desi hesaplama aracıyla bulabilirsiniz.",
+        ],
+      },
+      {
+        heading: "İndirim kar marjını nasıl etkiler?",
+        paragraphs: [
+          "İndirim yüzdesi doğrudan marjdan düşer, ama kârı çok daha sert keser. 1.000 TL'lik, 550 TL maliyetli üründe %20 indirimle fiyat 800 TL olur: brüt kâr 450 TL'den 250 TL'ye (%44 düşüş), brüt marj %45'ten %31,25'e iner.",
+          "Aynı toplam brüt kârı korumak için gereken satış artışı: Gerekli satış çarpanı = Marj / (Marj − İndirim). Örnekte 0,45 / (0,45 − 0,20) = 1,8; yani indirimle %80 daha fazla adet satmanız gerekir. İndirim oranı marja yaklaştıkça çarpan hızla büyür; %40 indirimde 9 kat satış gerekir. Kampanya döneminde katkı marjı daha düşük olduğu için hesabı katkı marjıyla yapmak daha güvenlidir.",
+        ],
+      },
+      {
+        heading: "Kar marjı ile ROAS arasındaki bağlantı: başabaş ROAS",
+        paragraphs: [
+          "Reklamda zarar etmeden harcayabileceğiniz tutar katkı marjıyla sınırlıdır. Başabaş ROAS = 1 / Katkı marjı. Örnek üründe katkı marjı %31 olduğu için başabaş ROAS 1 / 0,31 ≈ 3,23'tür: 1.000 TL'lik satış için en fazla 310 TL reklam harcanabilir.",
+          "Örnekteki 120 TL'lik sipariş başı reklam 1.000 / 120 ≈ 8,3 ROAS demektir ve başabaşın rahatça üzerindedir. Marjı %31'den %20'ye düşüren bir indirim kampanyasında başabaş ROAS 5'e çıkar; reklam panelindeki hedefi buna göre güncellemezseniz kampanya ciro getirirken zarar ettirir. Başabaş ve hedef ROAS'ı ROAS hesaplama aracıyla birlikte görebilirsiniz.",
+        ],
+      },
+      {
+        heading: "Kar marjı Excel'de nasıl hesaplanır?",
+        paragraphs: [
+          "Satış fiyatı B sütununda, maliyet C sütununda ise D2 hücresine =(B2-C2)/B2 yazıp hücreyi yüzde biçimine getirin. Markup için =(B2-C2)/C2, hedef marjdan fiyat için (hedef marj E2'deyse) =C2/(1-E2) kullanın.",
+          "Ürün listesinde maliyete kargo, komisyon ve iade payını da ayrı sütunlar olarak ekleyip katkı marjını hesaplamak, hangi ürünlerin reklama dayanabileceğini tek bakışta gösterir. Toplam marj kârlı ve zararlı ürünlerin ortalamasını gizler; kararları ürün ya da kategori bazında verin.",
+        ],
+      },
+      {
+        heading: "Kar marjı yüzde kaç olmalı?",
+        paragraphs: [
+          "Herkese uyan bir oran yoktur; doğru soru 'marjım giderlerimi taşıyor mu?' sorusudur. Asgari katkı marjı, sipariş başı reklam maliyetiyle sipariş başı işletme giderinin toplamını karşılamalıdır. Örnekte bu toplam 120 + 150 = 270 TL, yani satışın %27'si; %31 katkı marjı bunu ancak 4 puanla aşıyor.",
+          "Marjı yükseltmenin dört yolu vardır: fiyatı artırmak, ürün maliyetini düşürmek (tedarikçi, sipariş adedi), sipariş başı değişken giderleri düşürmek (kargo desisi, iade oranı, ödeme komisyonu) ve sepet tutarını büyütmek (kargo gibi sabit kalemler büyük sepette daha küçük bir paya düşer). Hangisinin en hızlı etki edeceğini katkı marjı merdiveni gösterir.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Kar marjı hesaplama formülü nedir?",
+        answer:
+          "Kar marjı (%) = (Satış fiyatı − Maliyet) / Satış fiyatı × 100. 1.000 TL'ye satılan ve 550 TL'ye mal olan üründe (1.000 − 550) / 1.000 = %45'tir.",
+      },
+      {
+        question: "Kar marjı ile kar oranı aynı şey mi?",
+        answer:
+          "Hayır. Kar marjı kârı satış fiyatına, kar oranı (markup) kârı maliyete böler. 550 TL'ye alınıp 1.000 TL'ye satılan üründe marj %45, kar oranı %81,8'dir. Dönüşüm: Marj = Markup / (1 + Markup).",
+      },
+      {
+        question: "%30 kar marjı için satış fiyatı nasıl hesaplanır?",
+        answer:
+          "Satış fiyatı = Maliyet / (1 − 0,30). 700 TL maliyetli bir ürün için 700 / 0,70 = 1.000 TL. Maliyete %30 eklemek (910 TL) yalnızca yaklaşık %23 marj bırakır.",
+      },
+      {
+        question: "Brüt kar marjı ile net kar marjı arasındaki fark nedir?",
+        answer:
+          "Brüt kar marjı yalnızca satılan malın maliyetini düşer ve ürün düzeyindeki kârlılığı gösterir. Net kar marjı tüm işletme giderleri ve diğer kalemler düşüldükten sonra kalan oranı gösterir. E-ticarette ikisinin arasında, kargo, komisyon ve iade sonrası katkı marjına bakmak reklam kararları için en kullanışlısıdır.",
+      },
+      {
+        question: "Kar marjı negatif çıkarsa ne anlama gelir?",
+        answer:
+          "Satış fiyatının, düştüğünüz maliyetlerin altında kaldığını gösterir. Brüt marj negatifse ürün maliyetinin altında satılıyordur; katkı marjı negatifse kargo, komisyon ve iade sonrası her sipariş zarar ettiriyordur. Fiyat, maliyet ya da kargo/komisyon yapısı gözden geçirilmelidir.",
+      },
+    ],
+    howTo: {
+      name: "Kar marjı nasıl hesaplanır?",
+      description: "Satış fiyatı ve maliyetle kar marjını, kar oranını ve hedef marja göre satış fiyatını bulun.",
+      steps: [
+        { name: "Satış fiyatını ve maliyeti belirleyin", text: "Ürünün satış fiyatını ve hangi marjı hesaplayacaksanız ona uygun maliyeti alın (brüt marj için ürün maliyeti, katkı marjı için kargo, komisyon ve iade dahil)." },
+        { name: "Kârı bulun", text: "Satış fiyatından maliyeti çıkarın: 1.000 − 550 = 450 TL." },
+        { name: "Satış fiyatına bölün", text: "Kârı satış fiyatına bölüp 100 ile çarpın: 450 / 1.000 × 100 = %45 kar marjı." },
+        { name: "Gerekirse kar oranına çevirin", text: "Kârı maliyete bölerek markup'ı bulun: 450 / 550 = %81,8; ya da Markup = Marj / (1 − Marj) formülünü kullanın." },
+        { name: "Hedef marjdan fiyat belirleyin", text: "Satış fiyatı = Maliyet / (1 − Hedef marj). 600 TL maliyet ve %40 hedef marj için 1.000 TL." },
+      ],
+    },
+    relatedToolKey: "gross-margin",
+    resources: [
+      { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici/" },
+      { label: "ROAS Hesaplama: ROAS ve Başabaş ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Desi Hesaplama: Kargo Desi Hesaplama Aracı", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "Penn State Extension: Markup ile kâr arasındaki fark (İngilizce)", href: "https://extension.psu.edu/whats-the-difference-between-markup-and-profit", external: true },
     ],
   },
 ];
@@ -3932,6 +4097,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "How to Calculate Profit Margin (Margin vs Markup)", href: "/en/blog/how-to-calculate-profit-margin/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
@@ -5047,6 +5213,168 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google Ads Help: About customer lifecycle goals", href: "https://support.google.com/google-ads/answer/12080169?hl=en", external: true },
     ],
   },
+  {
+    slug: "how-to-calculate-profit-margin",
+    seoTitle: "How to Calculate Profit Margin: Formula vs Markup",
+    title: "How to Calculate Profit Margin: Margin vs Markup, a Conversion Table and an E-commerce Example",
+    description:
+      "How to calculate profit margin: formula, worked example, margin vs markup with a conversion table, pricing from a target margin, discounts and break-even ROAS.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Profit margin is profit divided by selling price: Margin = (Price − Cost) / Price × 100. A product sold for $100 that costs $55 has a 45% margin.",
+      "Markup is profit divided by cost: $45 / $55 = 81.8%. The two are often confused; a 50% markup is only a 33.3% margin. Convert with Margin = Markup / (1 + Markup) and Markup = Margin / (1 − Margin).",
+      "To price from a target margin, divide cost by (1 − target margin): a $60 cost and 40% target margin give $60 / 0.60 = $100. 'Add 40% to cost' ($84) leaves only a 28.6% margin.",
+      "In e-commerce the margin that drives decisions is contribution margin: the same product keeps 31% after shipping, payment fees, packaging and returns, so break-even ROAS = 1 / 0.31 ≈ 3.23. A 20% discount cuts gross margin from 45% to 31.25%, and you need 80% more unit sales to keep the same gross profit.",
+    ],
+    publishedAt: "2026-10-28",
+    readingMinutes: 8,
+    tags: ["Profit Margin", "Margin vs Markup", "Gross Margin", "Contribution Margin", "Pricing", "Break-even ROAS"],
+    sections: [
+      {
+        heading: "How do you calculate profit margin? (Short answer)",
+        paragraphs: [
+          "Profit margin shows how many dollars of every $100 in sales you keep as profit. Formula: Profit margin (%) = (Selling price − Cost) / Selling price × 100.",
+          "Example: if you sell a product for $100 and buy it for $55, profit per unit is $45 and the margin is $45 / $100 = 45%. The same formula works on totals: $50,000 of monthly sales with $27,500 cost of goods sold is also a 45% gross margin. (All figures are illustrative.)",
+          "Which costs you subtract decides which margin you get: product cost only gives gross margin, adding per-order variable costs gives contribution margin, and adding operating expenses gives operating margin. Below I show all of them on one product.",
+        ],
+      },
+      {
+        heading: "What's the difference between margin and markup?",
+        paragraphs: [
+          "Margin divides profit by selling price; markup divides profit by cost. The same $45 profit is 45% of the $100 price and 81.8% of the $55 cost. Both are correct but answer different questions: markup asks 'how much did I add to cost?', margin asks 'how much of the sale did I keep?'",
+          "Mixing them up is expensive: if a supplier means markup when they say '50% profit' and your budget assumes a 50% margin, you actually keep only a third of each sale. Advertising and pricing math (break-even ROAS, max CPA, discount decisions) always uses margin on selling price.",
+        ],
+        bullets: [
+          "Profit margin = Profit / Selling price",
+          "Markup = Profit / Cost",
+          "Markup to margin: Margin = Markup / (1 + Markup) → 50% markup = 0.5 / 1.5 = 33.3% margin",
+          "Margin to markup: Markup = Margin / (1 − Margin) → 40% margin = 0.4 / 0.6 = 66.7% markup",
+          "Margin can never reach 100%; markup easily exceeds 100%",
+        ],
+      },
+      {
+        heading: "Markup to margin conversion table",
+        paragraphs: [
+          "Common markups and their margin equivalents are below. Supplier price lists and wholesale talks use markup; financial reports and ad math use margin. Use the table to translate between the two.",
+        ],
+        bullets: [
+          "25% markup = 20% margin",
+          "33.3% markup = 25% margin",
+          "50% markup = 33.3% margin",
+          "66.7% markup = 40% margin",
+          "100% markup (selling at 2× cost) = 50% margin",
+          "150% markup = 60% margin",
+          "200% markup (selling at 3× cost) = 66.7% margin",
+        ],
+      },
+      {
+        heading: "How do you set a price from a target profit margin?",
+        paragraphs: [
+          "From target margin to price: Selling price = Cost / (1 − Target margin). For a product costing $60 with a 40% target margin, the price is $60 / 0.60 = $100; profit $40, margin $40 / $100 = 40%.",
+          "The most common mistake is adding the target percentage to cost: $60 × 1.40 = $84. At that price profit is $24 and margin is $24 / $84 = 28.6%, about 11 points below target. When setting campaign, wholesale or marketplace prices, apply the formula after adding every variable cost to the product cost.",
+        ],
+      },
+      {
+        heading: "Gross, contribution, operating and net margin: four margins on one product",
+        paragraphs: [
+          "'Profit margin' isn't a single number; you stop at different steps of a ladder depending on which costs you subtract. Example product: price $100, product cost $55; per order shipping $7, payment fee $3, packaging $1.50, returns allowance $2.50; ad cost per order $12; the store gets 1,000 orders a month and has $15,000 of monthly operating expenses such as rent, salaries and software ($15 per order).",
+          "Gross margin (45%) shows pricing and sourcing power; contribution margin (31%) shows what each order leaves for ads and fixed costs. After ads 19% remains, and after operating expenses operating margin falls to 4%. Many stores look at gross margin, call themselves profitable and lose money further down the ladder. Net margin is what remains after items such as financing costs are also deducted; I don't go into that calculation here.",
+        ],
+        bullets: [
+          "Gross margin = ($100 − $55) / $100 = 45%",
+          "Contribution margin = ($100 − $55 − $7 − $3 − $1.50 − $2.50) / $100 = $31 / $100 = 31%",
+          "Contribution after ads = ($31 − $12) / $100 = 19%",
+          "Operating margin = ($19 − $15) / $100 = 4%",
+        ],
+      },
+      {
+        heading: "How do you calculate profit margin on a marketplace?",
+        paragraphs: [
+          "On a marketplace, commission and shipping come out of the selling price, so the gap between gross and contribution margin widens. Say you sell the same product on a marketplace for $100 with an example 20% commission and $9 shipping: $100 − $55 − $20 − $9 = $16 contribution, a 16% contribution margin, about half of the 31% on your own store.",
+          "Shipping cost depends on dimensional weight; shaving a few centimetres off the box can change the chargeable weight and therefore your margin. Commission rates vary by category, so check the current rate in the marketplace's seller panel. You can work out net profit per order after commission, shipping, returns and ads with the marketplace profit calculator, and chargeable weight with the dimensional weight calculator.",
+        ],
+      },
+      {
+        heading: "How does a discount affect profit margin?",
+        paragraphs: [
+          "A discount comes straight off margin but cuts profit much harder. On the $100 product costing $55, a 20% discount makes the price $80: gross profit falls from $45 to $25 (−44%), and gross margin drops from 45% to 31.25%.",
+          "Sales lift needed to keep the same total gross profit: Required sales multiple = Margin / (Margin − Discount). Here 0.45 / (0.45 − 0.20) = 1.8, so you need to sell 80% more units. As the discount approaches the margin the multiple explodes; a 40% discount needs 9× the sales. Since contribution margin is lower than gross margin, running this check on contribution margin is safer during promotions.",
+        ],
+      },
+      {
+        heading: "How profit margin links to ROAS: break-even ROAS",
+        paragraphs: [
+          "What you can spend on ads without losing money is capped by contribution margin. Break-even ROAS = 1 / Contribution margin. With a 31% contribution margin, break-even ROAS is 1 / 0.31 ≈ 3.23: at most $31 of ad spend per $100 of sales.",
+          "The example's $12 ad cost per order equals a ROAS of $100 / $12 ≈ 8.3, comfortably above break-even. A discount that drops contribution margin from 31% to 20% pushes break-even ROAS to 5; if you don't update the target in your ad platform, the campaign brings revenue while losing money. You can see break-even and target ROAS together with the ROAS calculator.",
+        ],
+      },
+      {
+        heading: "How do you calculate profit margin in Excel?",
+        paragraphs: [
+          "With selling price in column B and cost in column C, type =(B2-C2)/B2 into D2 and format it as a percentage. For markup use =(B2-C2)/C2; for price from a target margin (target in E2) use =C2/(1-E2).",
+          "Adding shipping, commission and returns as separate cost columns and calculating contribution margin shows at a glance which products can carry advertising. A total margin hides the average of profitable and unprofitable products; make decisions per product or category.",
+        ],
+      },
+      {
+        heading: "What profit margin should you aim for?",
+        paragraphs: [
+          "There's no one-size-fits-all number; the right question is 'does my margin carry my costs?' Minimum contribution margin must cover ad cost per order plus operating cost per order. In the example that's $12 + $15 = $27, or 27% of sales; a 31% contribution margin clears it by only 4 points.",
+          "There are four ways to raise margin: raise the price, lower product cost (supplier, order quantity), lower per-order variable costs (box size, return rate, payment fees) and grow basket size (fixed per-order items such as shipping become a smaller share of a bigger basket). The contribution margin ladder shows which one will move fastest.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What is the profit margin formula?",
+        answer:
+          "Profit margin (%) = (Selling price − Cost) / Selling price × 100. A product sold for $100 that costs $55 has a margin of ($100 − $55) / $100 = 45%.",
+      },
+      {
+        question: "Is margin the same as markup?",
+        answer:
+          "No. Margin divides profit by selling price; markup divides profit by cost. A product bought for $55 and sold for $100 has a 45% margin and an 81.8% markup. Convert with Margin = Markup / (1 + Markup).",
+      },
+      {
+        question: "How do I price a product for a 30% margin?",
+        answer:
+          "Selling price = Cost / (1 − 0.30). For a $70 cost, $70 / 0.70 = $100. Adding 30% to cost ($91) leaves only about a 23% margin.",
+      },
+      {
+        question: "What's the difference between gross and net profit margin?",
+        answer:
+          "Gross margin subtracts only cost of goods sold and shows product-level profitability. Net margin shows what remains after all operating expenses and other items. In e-commerce, contribution margin (after shipping, fees and returns) sits between them and is the most useful for ad decisions.",
+      },
+      {
+        question: "What does a negative profit margin mean?",
+        answer:
+          "Your selling price is below the costs you subtracted. A negative gross margin means selling below product cost; a negative contribution margin means every order loses money after shipping, fees and returns. Revisit price, product cost or your shipping and commission structure.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate profit margin",
+      description: "Find profit margin, markup and the price for a target margin from selling price and cost.",
+      steps: [
+        { name: "Get price and cost", text: "Take the selling price and the cost matching the margin you want (product cost for gross margin; add shipping, fees and returns for contribution margin)." },
+        { name: "Find the profit", text: "Subtract cost from price: $100 − $55 = $45." },
+        { name: "Divide by price", text: "Divide profit by selling price and multiply by 100: $45 / $100 × 100 = 45% margin." },
+        { name: "Convert to markup if needed", text: "Divide profit by cost for markup: $45 / $55 = 81.8%, or use Markup = Margin / (1 − Margin)." },
+        { name: "Price from a target margin", text: "Selling price = Cost / (1 − Target margin). A $60 cost and 40% target margin give $100." },
+      ],
+    },
+    relatedToolKey: "gross-margin",
+    resources: [
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator/" },
+      { label: "ROAS Calculator (break-even ROAS)", href: "/en/free-tools/roas-calculator/" },
+      { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
+      { label: "What Is CAC? Customer Acquisition Cost Explained", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
+      { label: "Penn State Extension: What's the difference between markup and profit?", href: "https://extension.psu.edu/whats-the-difference-between-markup-and-profit", external: true },
+    ],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -5283,6 +5611,18 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       href: "/en/free-tools/dimensional-weight-calculator",
       label: "Dimensional Weight (Desi) Calculator",
       description: "Dimensional vs actual weight and chargeable weight for one or many boxes.",
+    },
+  },
+  "gross-margin": {
+    tr: {
+      href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici",
+      label: "Kar Marjı Hesaplama",
+      description: "Satış fiyatı ve maliyetle brüt kar marjınızı yüzde ve tutar olarak hesaplayın.",
+    },
+    en: {
+      href: "/en/free-tools/gross-profit-margin-calculator",
+      label: "Gross Profit Margin Calculator",
+      description: "Turn revenue and cost of goods into gross margin in seconds.",
     },
   },
 };
