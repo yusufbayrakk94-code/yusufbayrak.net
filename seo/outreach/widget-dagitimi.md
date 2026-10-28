@@ -94,3 +94,6 @@ Yusuf Bayrak — yusufbayrak.net
 ## Takip
 | Tarih | Site | Kanal | Durum | Link |
 |---|---|---|---|---|
+| 2026-10-28 | eticaretmerkezim.com (info@) | E-posta (kullanıcı onayıyla, Gmail) | Gönderildi — Desi + ROAS; hatırlatma 04.11 | — |
+| 2026-10-28 | zunapro.com (destek@) | E-posta (kullanıcı onayıyla, Gmail) | Gönderildi — Desi; hatırlatma 04.11 | — |
+| — | basariustasi.com | — | E-posta adresi bulunamadı; site formu/sosyal medya kullanıcıda | — |
