@@ -25,3 +25,9 @@ Formül + 3 örnek (doğru aritmetik), ağırlık vs desi, yuvarlama, çoklu kol
 ile kargo tasarrufu, pazaryerinde desi ve kâr ilişkisi. Firma bazlı fiyat/kural İDDİA EDİLMEZ (doğrulanabilir resmî
 kaynak bulunamadı) → "sözleşmenizdeki bölen ve yuvarlama kuralını girin" yaklaşımı.
 Yamyamlaşma: Trendyol kâr aracı (kâr niyeti) ile ayrışık; kâr aracındaki desi SSS'i bu araca link verir.
+
+## 2026-10-28 güçlendirme (veri görevi)
+- Keyword Planner keşfi: 'kargo ücreti hesaplama' 10B–100B, 'kargo fiyat hesaplama' 1B–10B, firma bazlı 'ptt/aras/yurtiçi/sürat kargo desi/ücret hesaplama' 100–1B ve 1B–10B.
+- ikas kargo-ucreti-hesaplama: yalnızca en/boy/yükseklik; kg, firma, kademe, tarih yok.
+- Eklenen: koli başı sabit ücret alanı (Ücret = Koli × sabit + Esas desi × desi başı), koli başı ortalama ücret; "Kargo ücreti nasıl hesaplanır? Adım adım" (çalışılmış örnek 204 TL), "Kargo ücretini neler belirler?", "PTT, Aras, Yurtiçi, MNG ve Sürat Kargo desi hesaplama" bölümleri + 3 SSS. Firma fiyat listesi bilerek verilmedi (sık değişir).
+- Başlık: "Desi Hesaplama: Kargo Desi ve Kargo Ücreti Hesaplama".

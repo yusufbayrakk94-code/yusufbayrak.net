@@ -21,7 +21,7 @@ export const freeToolsPage = {
     {
       heading: "When to use the Marketing Tools category",
       body:
-        "If your question is \"is this campaign working?\", start with Marketing Tools. The UTM Link Builder separates traffic sources, the Conversion Rate Calculator shows how much of that traffic turns into action, the ROAS Calculator measures the return on every unit spent, and the llms.txt Generator makes your site legible to AI search engines. These are campaign-level, daily-to-weekly decisions.",
+        "If your question is \"is this campaign working?\", start with Marketing Tools. The UTM Link Builder separates traffic sources, the Conversion Rate Calculator shows how much of that traffic turns into action, the ROAS Calculator measures the return on every unit spent, and the llms.txt Generator gives AI agents a short guide to your key pages. These are campaign-level, daily-to-weekly decisions.",
     },
     {
       heading: "When to use the SaaS Tools category",
@@ -68,7 +68,7 @@ export const freeToolsPage = {
     { key: "ltv",   name: "LTV Calculator",        description: "Calculate customer lifetime value and compare it against CAC.",                         href: "/en/free-tools/ltv-calculator" },
     { key: "roas",  name: "ROAS Calculator",       description: "Measure Return on Ad Spend and campaign profitability.",                                href: "/en/free-tools/roas-calculator" },
     { key: "utm",   name: "UTM Link Builder",      description: "Build UTM links and preview the GA4 channel group and Unassigned risk.",                             href: "/en/free-tools/utm-builder" },
-    { key: "llms",  name: "llms.txt Generator",    description: "Create a free llms.txt so AI bots (ClaudeBot, GPTBot, Perplexity) understand your site.", href: "/en/free-tools/llms-txt-generator" },
+    { key: "llms",  name: "llms.txt Generator",    description: "Build an llms.txt file in the llmstxt.org format, with a format check and an example file.", href: "/en/free-tools/llms-txt-generator" },
     { key: "gross", name: "Gross Profit Margin Calculator", description: "Enter revenue and COGS to see gross margin as a percentage and an amount.", href: "/en/free-tools/gross-profit-margin-calculator" },
     { key: "net",   name: "Net Profit Margin Calculator",   description: "Include every expense to see the true net profitability of your business.", href: "/en/free-tools/net-profit-margin-calculator" },
     { key: "mrr",   name: "MRR Calculator",        description: "Calculate Monthly Recurring Revenue and see the matching ARR.", href: "/en/free-tools/mrr-calculator" },
@@ -122,7 +122,7 @@ export const toolCategories = [
       {
         heading: "AI search visibility with llms.txt",
         body:
-          "A growing share of search traffic now originates in generative engines such as ChatGPT, Perplexity and Claude. The llms.txt Generator produces a standard file that declares which pages you want these bots to read. Added alongside classic SEO, it raises the chance that your brand information is represented accurately in AI answers.",
+          "A growing share of search traffic now originates in generative engines such as ChatGPT, Perplexity and Claude. The llms.txt Generator produces a short file (the llmstxt.org proposal) that introduces your key pages to AI agents and tools. Google Search does not use it and no major provider officially supports it, so treat it as a cheap complementary step — real visibility still comes from crawlable pages, clear answers and structured data.",
       },
     ],
     faqs: [

@@ -42,7 +42,9 @@ const T = {
     add: "+ Koli ekle",
     remove: "Kaldır",
     rate: "Desi/kg başı kargo ücreti (opsiyonel)",
-    rateNote: "Anlaşmanızdaki desi başı fiyatı girerseniz tahmini kargo maliyeti de hesaplanır. Kademeli tarifelerde ortalama birim fiyatı kullanın.",
+    rateNote: "Anlaşmanızdaki desi başı fiyatı ve varsa koli başı sabit ücreti girerseniz tahmini kargo ücreti hesaplanır: Ücret = Koli sayısı × sabit ücret + Ücrete esas desi × desi başı fiyat. Kademeli tarifelerde ilgili kademenin fiyatını veya ortalama birim fiyatı kullanın.",
+    base: "Koli başı sabit ücret (opsiyonel)",
+    perParcel: "Koli başı ortalama ücret",
     desi: "Toplam desi",
     desiHint: "Yuvarlama öncesi hacimsel ağırlık",
     chargeable: "Ücrete esas ağırlık (desi/kg)",
@@ -84,7 +86,9 @@ const T = {
     add: "+ Add box",
     remove: "Remove",
     rate: "Rate per desi/kg (optional)",
-    rateNote: "Enter your contracted rate per desi/kg to also estimate the shipping cost. For tiered price lists use your average unit rate.",
+    rateNote: "Enter your contracted rate per desi/kg and, if any, a fixed fee per parcel to estimate the shipping cost: Cost = Parcels × fixed fee + Chargeable desi × rate. For tiered price lists use the rate of the relevant tier or your average unit rate.",
+    base: "Fixed fee per parcel (optional)",
+    perParcel: "Average cost per parcel",
     desi: "Total desi (volumetric weight)",
     desiHint: "Before rounding",
     chargeable: "Chargeable weight (desi/kg)",
@@ -130,6 +134,7 @@ export default function DesiCalculator() {
   const [rounding, setRounding] = useState<Rounding>("ceil");
   const [pkgs, setPkgs] = useState<Pkg[]>([{ ...EMPTY }]);
   const [rate, setRate] = useState("");
+  const [base, setBase] = useState("");
   const [copied, setCopied] = useState(false);
 
   // Restore from URL: p=L-W-H-KG-Q_L-W-H-KG-Q, d, cd, r, u, pr
@@ -146,6 +151,8 @@ export default function DesiCalculator() {
       if (r === "ceil" || r === "half" || r === "none") setRounding(r);
       const pr = q.get("pr");
       if (pr) setRate(pr);
+      const pb = q.get("pb");
+      if (pb) setBase(pb);
       const p = q.get("p");
       if (p) {
         const parsed = p.split("_").slice(0, 20).map((chunk) => {
@@ -169,12 +176,13 @@ export default function DesiCalculator() {
       if (div === "custom" && customDiv) q.set("cd", customDiv);
       if (rounding !== "ceil") q.set("r", rounding);
       if (rate) q.set("pr", rate);
+      if (base) q.set("pb", base);
       const qs = q.toString();
       window.history.replaceState(null, "", qs ? `${window.location.pathname}?${qs}` : window.location.pathname);
     } catch {
       /* ignore */
     }
-  }, [pkgs, unit, div, customDiv, rounding, rate]);
+  }, [pkgs, unit, div, customDiv, rounding, rate, base]);
 
   const toCm = unit === "mm" ? 0.1 : unit === "in" ? 2.54 : 1;
   const divisor = div === "custom" ? num(customDiv) : num(div);
@@ -193,6 +201,9 @@ export default function DesiCalculator() {
     const totalDesi = rows.reduce((a, x) => a + x.desi * x.qty, 0);
     const totalCharge = rows.reduce((a, x) => a + x.total, 0);
     const price = num(rate);
+    const baseFee = num(base);
+    const parcels = rows.reduce((a, x) => a + (x.vol > 0 || x.kg > 0 ? x.qty : 0), 0);
+    const cost = totalCharge * price + parcels * baseFee;
     const first = rows[0];
     const opt = first && first.vol > 0
       ? [1, 2, 3, 5].map((c) => {
@@ -207,8 +218,8 @@ export default function DesiCalculator() {
     const maxH = first && !first.byKg && first.l > 0 && first.w > 0 && target > first.kg && target > 0
       ? (target * divisor) / (first.l * first.w)
       : NaN;
-    return { rows, ready, totalDesi, totalCharge, price, cost: totalCharge * price, opt, maxH, first };
-  }, [pkgs, toCm, divisor, rounding, rate]);
+    return { rows, ready, totalDesi, totalCharge, price, baseFee, parcels, cost, opt, maxH, first };
+  }, [pkgs, toCm, divisor, rounding, rate, base]);
 
   const update = (i: number, key: keyof Pkg, v: string) =>
     setPkgs((prev) => prev.map((p, j) => (j === i ? { ...p, [key]: v } : p)));
@@ -288,6 +299,7 @@ export default function DesiCalculator() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Field label={s.rate} value={rate} onChange={setRate} suffix="₺" placeholder="12" />
+          <Field label={s.base} value={base} onChange={setBase} suffix="₺" placeholder="0" />
         </div>
         <p className="font-mono text-xs text-muted-foreground">{s.rateNote}</p>
 
@@ -300,7 +312,8 @@ export default function DesiCalculator() {
                 value={nf(r.totalCharge)}
                 hint={r.rows.length === 1 && r.first ? `${s.chargeableHint} · ${r.first.byKg ? s.by.kg : s.by.desi}` : s.chargeableHint}
               />
-              {r.price > 0 && <Result label={s.cost} value={fmtMoney(r.cost)} />}
+              {(r.price > 0 || r.baseFee > 0) && <Result label={s.cost} value={fmtMoney(r.cost)} />}
+              {(r.price > 0 || r.baseFee > 0) && r.parcels > 1 && <Result label={s.perParcel} value={fmtMoney(r.cost / r.parcels)} />}
             </div>
 
             <div className="border border-border rounded-lg overflow-x-auto">

@@ -21,7 +21,7 @@ export const freeToolsPage = {
     {
       heading: "Pazarlama Araçları hangi durumda kullanılır?",
       body:
-        "Sorunuz \"bu kampanya işe yarıyor mu?\" ise Pazarlama Araçları kategorisine bakın. UTM Link Oluşturucu trafik kaynaklarını ayrıştırır, Dönüşüm Oranı Hesaplayıcı trafiğin ne kadarının aksiyona dönüştüğünü gösterir, ROAS Hesaplayıcı harcanan her birimin geri dönüşünü ölçer, llms.txt Oluşturucu ise sitenizi AI arama motorlarına tanıtır. Bu araçlar kampanya seviyesinde, günlük-haftalık kararlar içindir.",
+        "Sorunuz \"bu kampanya işe yarıyor mu?\" ise Pazarlama Araçları kategorisine bakın. UTM Link Oluşturucu trafik kaynaklarını ayrıştırır, Dönüşüm Oranı Hesaplayıcı trafiğin ne kadarının aksiyona dönüştüğünü gösterir, ROAS Hesaplayıcı harcanan her birimin geri dönüşünü ölçer, llms.txt Oluşturucu ise yapay zekâ ajanlarına önemli sayfalarınızı tanıtan kısa bir dosya üretir. Bu araçlar kampanya seviyesinde, günlük-haftalık kararlar içindir.",
     },
     {
       heading: "SaaS Araçları hangi durumda kullanılır?",
@@ -68,7 +68,7 @@ export const freeToolsPage = {
     { key: "ltv",   name: "LTV Hesaplayıcı",           description: "Müşteri yaşam boyu değerini hesaplayın ve CAC ile karşılaştırın.",                    href: "/ucretsiz-araclar/ltv-hesaplayici" },
     { key: "roas",  name: "ROAS Hesaplayıcı",          description: "Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.",                    href: "/ucretsiz-araclar/roas-hesaplayici" },
     { key: "utm",   name: "UTM Link Oluşturucu",       description: "UTM linki oluşturun, GA4 kanal grubunu ve Unassigned riskini önceden görün.",                              href: "/ucretsiz-araclar/utm-link-olusturucu" },
-    { key: "llms",  name: "llms.txt Oluşturucu",       description: "AI botları (ClaudeBot, GPTBot, Perplexity) için ücretsiz llms.txt dosyası oluşturun.", href: "/ucretsiz-araclar/llms-txt-olusturucu" },
+    { key: "llms",  name: "llms.txt Oluşturucu",       description: "llmstxt.org formatında llms.txt dosyası oluşturun; format kontrolü ve örnek dosyayla.", href: "/ucretsiz-araclar/llms-txt-olusturucu" },
     { key: "gross", name: "Brüt Kar Marjı Hesaplayıcı", description: "Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici" },
     { key: "net",   name: "Net Kar Marjı Hesaplayıcı",  description: "Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici" },
     { key: "mrr",   name: "MRR Hesaplayıcı",           description: "Aylık yinelenen gelirinizi (MRR) hesaplayın, ARR karşılığını görün.", href: "/ucretsiz-araclar/mrr-hesaplayici" },
@@ -123,7 +123,7 @@ export const toolCategories = [
       {
         heading: "AI arama görünürlüğü: llms.txt",
         body:
-          "Arama trafiğinin bir kısmı artık ChatGPT, Perplexity ve Claude gibi üretken arama motorlarından geliyor. llms.txt Oluşturucu, sitenizin hangi sayfalarının bu botlar tarafından okunmasını istediğinizi tanımlayan standart bir dosya üretir. Klasik SEO'nun yanına eklenen bu adım, marka bilgilerinizin AI cevaplarında doğru aktarılma ihtimalini artırır.",
+          "Arama trafiğinin bir kısmı artık ChatGPT, Perplexity ve Claude gibi üretken arama motorlarından geliyor. llms.txt Oluşturucu, yapay zekâ ajanlarına ve araçlarına sitenizin önemli sayfalarını tanıtan kısa bir dosya (llmstxt.org önerisi) üretir. Google Arama bu dosyayı kullanmaz ve büyük sağlayıcılardan resmî destek yoktur; bu yüzden düşük maliyetli bir tamamlayıcı adım olarak görün, asıl görünürlük taranabilir sayfalar, net cevap veren içerik ve yapılandırılmış veriden gelir.",
       },
     ],
     faqs: [

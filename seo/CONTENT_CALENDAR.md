@@ -65,7 +65,7 @@ Belirsiz: "arpa nedir" (1.000) büyük ölçüde tahıl anlamında → ARPU aç�
 | [x] 29 Eki Per → 28 Eki öne alındı, yayınlandı ([TR](https://yusufbayrak.net/blog/cac-nedir-musteri-edinme-maliyeti/) · [EN](https://yusufbayrak.net/en/blog/what-is-cac-customer-acquisition-cost/)); hacim: cac nedir 320 — seo/research/cac-nedir.md | CAC nedir? Paid / blended CAC ve hesap örneği | cac nedir (320) | B | Hedef sorgu #5 (hesaplama sorgusu hacimsiz) | CAC |
 | [x] 30 Eki Cum → 28 Eki öne alındı, yayınlandı ([TR](https://yusufbayrak.net/blog/kar-marji-nasil-hesaplanir/) · [EN](https://yusufbayrak.net/en/blog/how-to-calculate-profit-margin/)); hacim: kar marjı hesaplama 1.000, marj hesaplama 140 — seo/research/kar-marji-nasil-hesaplanir.md | Kar marjı nasıl hesaplanır? Kar marjı vs kar oranı (markup) | kar marjı hesaplama (1.000), marj hesaplama (140), net kar marjı hesaplama (70) | B | Yüksek hacim, araçlar hazır; ROAS kümesinin temeli | Brüt Marj, Net Marj, ROAS |
 | [ ] 31 Eki Cmt | MRR nedir, nasıl hesaplanır? | mrr nedir (390) | B | Araç var, yazı yok | MRR |
-| [ ] 1 Kas Paz | llms.txt nedir, nasıl oluşturulur? | llms txt (480), llms txt nedir (110) | B | Araç var, yazı yok; AI kümesi | llms.txt |
+| [ ] 1 Kas Paz | llms.txt nedir, işe yarıyor mu? (kanıt + log ölçümü) | llms txt (480), llms txt nedir (110) | B | Araç sayfası 28.10'da format/örnek/yükleme/kanıt bölümleriyle güçlendirildi → yazı yamyamlaşmasın: "kim okuyor, nasıl ölçülür (sunucu logu), robots.txt ile AI bot yönetimi, GEO'da asıl sinyaller" açısıyla gir; araç sayfasına link | llms.txt |
 | [ ] 2 Kas Pzt | Churn nedir? Churn rate nasıl hesaplanır ve düşürülür | churn nedir (210), churn rate nedir (90) | B | Hedef sorgu #7 | Churn |
 | [ ] 3 Kas Sal | Meta reklam verme rehberi: bütçe, kitle, öğrenme aşaması | meta reklam verme (590), meta reklam (4.400) | B | Mevcut Meta öğrenme aşaması yazısıyla küme | Reklam Bütçesi, ROAS |
 | [ ] 4 Kas Çar | ARR nedir? Yeni / genişleme / kayıp bileşenleri | arr nedir (260) | B | "arr hesaplama" hacimsiz → "nedir" açısı | ARR, MRR |
@@ -91,6 +91,36 @@ Belirsiz: "arpa nedir" (1.000) büyük ölçüde tahıl anlamında → ARPU aç�
 Takvimden çıkarılanlar (hacim 0–10): CAC geri ödeme süresi yazısı, GRR nedir, Meta günlük bütçe, POAS aracı, Katkı marjı,
 Trendyol iade oranı, Lead skor kartı aracı + lead scoring yazısı, Black Friday sonrası ROAS. (CAC geri ödeme ve lead skor kartı
 lead değeri yüksekse ileride araç güncellemesi olarak değerlendirilebilir.)
+
+## Hacim keşfi turu 2 (28.10.2026, Keyword Planner — AdGusto hesabı, Türkiye, Türkçe; "Yeni anahtar kelimeler keşfedin")
+Tohumlar: trendyol satıcı, e-ticaret kar hesaplama, kargo ücreti hesaplama, google ads, meta reklam, e-ticaret pazarlama, dijital pazarlama,
+pazaryeri, seo nedir, reklam maliyeti (1.717 fikir) + cpc/ctr nedir, e-ihracat, hepsiburada satıcı, google analytics, yapay zeka seo, saas,
+b2b pazarlama, linkedin reklam, e-ticaret sitesi (~600 fikir tarandı). Not: keşif ekranı yalnızca aralık veriyor (B = bin);
+tam hacim gerekiyorsa "Arama hacmi ve tahminleri" ile doğrulanır. Planner yine otomatik taslak plan oluşturdu; plana kelime eklenmedi.
+Bulgular: kargo kümesi çok büyük (kargo ücreti hesaplama 10B–100B; ptt/aras/yurtiçi/mng/sürat kargo ücret/desi hesaplama 100–1B veya 1B–10B);
+SEO temel kümesi (seo nedir 1B–10B; backlink, serp, search console nedir 100–1B) GEO/llms.txt kümesini besler.
+Marka/navigasyon sorguları (trendyol satıcı paneli, hepsiburada satıcı girişi, google analytics giriş) hedeflenmez.
+
+## Takvim — 23 Kas – 8 Ara (28.10.2026'da keşif turu 2 ile eklendi; sıra: hacim + rakip zayıflığı)
+| Tarih | Sayfa (TR + EN) | Hedef sorgu (aylık aralık) | Grup | Neden / fırsat | Bağlanacak araç |
+|---|---|---|---|---|---|
+| [ ] 23 Kas Pzt | YENİ ARAÇ veya araç modülü: Kargo ücreti hesaplama (desi × tarife kademesi, koli başı sabit ücret, ek hizmetler) | kargo ücreti hesaplama (10B–100B), kargo fiyat hesaplama (1B–10B) | C | En büyük yeni hacim; ikas aracı yalnızca ölçü alıyor (kg, kademe, firma yok). Firma fiyat listesi YAZMA (sık değişir); kullanıcı tarifesiyle hesap. Desi aracıyla yamyamlaşma kontrolü: desi aracı "desi", yeni araç "ücret" niyeti | Desi, Trendyol Kâr |
+| [ ] 23 Kas Pzt | SEO nedir? Nasıl yapılır (2026, AI aramaları dahil) | seo nedir (1B–10B), seo nedir nasıl yapılır (100–1B), seo çalışması nasıl yapılır (100–1B) | C | Kalabalık ama site AI/GEO kümesinin üst sayfası yok; "AI Overviews + llms.txt gerçeği" açısı | llms.txt |
+| [ ] 24 Kas Sal | Yurtdışı kargo ücreti ve desi (5000 böleni, e-ihracat) | yurtdışı kargo ücreti hesaplama (100–1B), ptt yurtdışı kargo hesaplama (100–1B) | C | Desi aracındaki 5000 böleni bilgisini derinleştirir | Desi |
+| [ ] 24 Kas Sal | Backlink nedir, nasıl alınır? (ücretsiz, güvenli yöntemler) | backlink nedir (100–1B), backlink nasıl alınır (10–100) | B | Kendi widget/backlink deneyimimizle özgün örnek | — |
+| [ ] 25 Kas Çar | Hepsiburada'da satıcı olmak: gerekenler, komisyon ve kâr hesabı | hepsiburada satıcı olmak (100–1B), hepsiburada satıcı olmak için gerekenler (100–1B) | C | 13 Kas Hepsiburada kâr yazısıyla küme; kâr aracına bağlanır (vergi yorumu yok) | Trendyol Kâr |
+| [ ] 25 Kas Çar | CTR nedir? Reklamda ve SEO'da iyi CTR kaç? | ctr nedir (100–1B), ctr ne demek (100–1B) | B | Reklam metrikleri kümesi (ROAS, CPL) | ROAS |
+| [ ] 26 Kas Per | CPC nedir? Tıklama başı maliyet nasıl düşer | cpc nedir / cost per click nedir (100–1B) | B | Reklam metrikleri kümesi; Google Ads nedir yazısıyla | Reklam Bütçesi |
+| [ ] 26 Kas Per | Search Console nedir, nasıl kullanılır? (adım adım) | google search console nasıl kullanılır (100–1B), search console nedir (100–1B) | B | Kendi kurulum/ölçüm deneyimimizle (URL Denetimi, dizin raporu) | — |
+| [ ] 27 Kas Cum | E-ticaret sitesi kurmak için gerekenler (kontrol listesi + maliyet kalemleri) | eticaret sitesi kurmak için gerekenler (100–1B), e ticaret kurma (100–1B) | C | Platform siteleri baskın; bağımsız kontrol listesi + kâr/kargo araçları açısı | Kar marjı, Desi |
+| [ ] 27 Kas Cum | SERP nedir? Arama sonuç sayfası özellikleri ve AI Overviews | serp nedir (100–1B), snippets nedir (100–1B) | B | SEO kümesi | — |
+| [ ] 28 Kas Cmt | E-ihracat nedir, nasıl başlanır? (pazaryeri, kargo, reklam) | e ihracat (100–1B) | B | Yurtdışı kargo yazısıyla küme; destek/teşvik detayına girme | Desi, ROAS |
+| [ ] 28 Kas Cmt | Influencer pazarlaması: ölçüm, maliyet ve ROAS | influencer pazarlaması (100–1B) | B | 11 Kas "influencer reklamları" yazısıyla birleştirilebilir; o gün yazıldıysa bu satırı güncelleme olarak yap | UTM, ROAS |
+| [ ] 29 Kas Paz | Semrush mi Ahrefs mi? Ücretsiz alternatiflerle karşılaştırma | semrush nedir (100–1B), ahrefs nedir (100–1B) | B | Karşılaştırma niyeti; kendi ücretsiz araçlarımıza link | — |
+| [ ] 29 Kas Paz | LinkedIn reklamları nasıl verilir? (TR B2B bütçe ve hedefleme) | linkedin reklamları (100–1B), linkedin reklam (100–1B) | B | Mevcut "LinkedIn Türkiye 2026 fırsat" yazısı ilk 10'da; nasıl-yapılır yazısı kümeyi tamamlar | Reklam Bütçesi (B2B) |
+| [ ] 30 Kas Pzt | Yapay zeka ile SEO: AI aramalarında görünürlük (GEO uygulama) | yapay zeka seo (100–1B) | B | 5 Kas GEO nedir yazısıyla küme; uygulama/kontrol listesi açısı | llms.txt |
+| [ ] 30 Kas Pzt | Dijital pazarlama fiyatları ve ajans/danışman maliyeti nasıl hesaplanır | dijital pazarlama fiyatları (10–100), reklam maliyeti (10–100) | B | Lead niyetine en yakın; düşük hacim ama dönüşüm değeri yüksek | Reklam Bütçesi |
+Sonraki tur: 30 Kas'tan önce 1–22 Ara için keşif turu 3 (tohumlar: amazon satıcı, n11, pinterest reklam, tiktok reklam, google analytics 4 rehberi, e-posta pazarlama).
 
 ## Yedek konular (gün içi SERP analizinde boşluk çıkmazsa)
 - Google Ads Performance Max bütçesi nasıl ayarlanır
