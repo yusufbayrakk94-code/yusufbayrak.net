@@ -52,7 +52,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [~] Paylaşılabilir sonuç linki (girdiler URL'de) — yeni 2 araçta var, eski araçlara yayılacak
 - [ ] Sonucu e-postayla/PDF gönder (yumuşak lead yakalama)
 - [x] Gömülebilir widget + backlink ("Bu aracı sitene ekle") — 2026-10-27 (ROAS, Reklam Bütçesi, Trendyol Kâr, Desi; TR + EN)
-- [ ] Widget dağıtımı: e-ticaret/pazaryeri blogları, araç dizinleri, ajans kaynak sayfaları hedef listesi + teklif metni (kullanıcı gönderir)
+- [~] Widget dağıtımı: 1. dalga hedef listesi (9 TR e-ticaret/pazaryeri blogu) + 3 teklif metni hazır — seo/outreach/widget-dagitimi.md (2026-10-28; kullanıcı gönderir). Sıradaki: 4–9 numaralı adayların yazı/araç kontrolü, EN araç dizinleri (14–20 Kas)
 - [ ] Araçlar arası akış (brüt marj → başabaş ROAS → bütçe planlayıcı)
 - [ ] Yeni araç: Otomasyon ROI hesaplayıcı
 - [ ] Yeni araçlar (GEO): AI crawler robots.txt kontrolü, FAQ/Schema JSON-LD oluşturucu
