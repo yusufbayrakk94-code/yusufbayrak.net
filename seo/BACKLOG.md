@@ -20,6 +20,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi: /blog/ltv-nedir-ltv-cac-orani/, /en/blog/what-is-ltv-ltv-cac-ratio/, /blog/utm-nedir-utm-parametreleri/, /en/blog/what-are-utm-parameters/, /en/free-tools/ltv-calculator/ — 2026-10-27 (5/5)
 - [ ] Dizine ekleme isteği (27.10 itibarıyla "Keşfedildi" listesinde kalan EN araçlar): /en/free-tools/conversion-rate-calculator/, /en/free-tools/llms-txt-generator/, /en/free-tools/marketing-channel-quiz/, /en/free-tools/net-profit-margin-calculator/, /en/free-tools/saas-tools/ (utm-builder ve brandog projesi 26.10'da istendi; tarama bekleniyor)
 - [ ] Dizine ekleme isteği (2026-10-27 yeni, ÖNCELİKLİ): /ucretsiz-araclar/desi-hesaplama/, /ucretsiz-araclar/roas-hesaplayici/ (yeniden yazıldı), /en/free-tools/dimensional-weight-calculator/, /en/free-tools/roas-calculator/, /en/blog/what-is-roas-how-to-calculate/ (güncellendi)
+- [ ] Dizine ekleme isteği (2026-10-28 yeni): /blog/cac-nedir-musteri-edinme-maliyeti/, /en/blog/what-is-cac-customer-acquisition-cost/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [ ] Keyword Planner: takvimin 23 Kas – 22 Ara bölümü için keşif + hacim turu (22.11'den önce; tüm mevcut konuların hacmi 26.10'da alındı)
@@ -60,7 +61,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 ## İçerik kümeleri (her araca bir "X nedir / nasıl hesaplanır" yazısı)
 - [x] ROAS nedir, nasıl hesaplanır — 2026-10-22
 - [x] NRR nedir (mevcut)
-- [ ] CAC nedir, nasıl hesaplanır
+- [x] CAC nedir, nasıl hesaplanır — 2026-10-28 (/blog/cac-nedir-musteri-edinme-maliyeti/)
 - [x] LTV nedir, nasıl hesaplanır — 2026-10-26 (/blog/ltv-nedir-ltv-cac-orani/)
 - [ ] Churn rate nedir, nasıl hesaplanır
 - [x] UTM parametreleri nedir, nasıl kullanılır — 2026-10-27 (/blog/utm-nedir-utm-parametreleri/)

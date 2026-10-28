@@ -554,6 +554,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici" },
       { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici" },
       { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici" },
     ],
   },
@@ -2319,6 +2320,7 @@ export const BLOG_POSTS: BlogPost[] = [
     resources: [
       { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici/" },
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -2511,6 +2513,190 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Analytics: URL oluşturucularla kampanya verisi toplama", href: "https://support.google.com/analytics/answer/10917952?hl=tr", external: true },
       { label: "Google Analytics: Varsayılan kanal grubu kuralları", href: "https://support.google.com/analytics/answer/9756891?hl=tr", external: true },
       { label: "Google Analytics: Google Ads otomatik etiketlemenin avantajları", href: "https://support.google.com/analytics/answer/10723328?hl=tr", external: true },
+    ],
+  },
+  {
+    slug: "cac-nedir-musteri-edinme-maliyeti",
+    seoTitle: "CAC Nedir? Müşteri Edinme Maliyeti ve Hesap Örneği",
+    title: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır? (Blended, Paid ve Kanal Bazında Örnekler)",
+    description:
+      "CAC (müşteri edinme maliyeti) nedir, nasıl hesaplanır? Blended, paid ve tam yüklü CAC farkı, kanal bazında örnek, CAC ile CPA farkı ve CAC'tan reklam hedefi.",
+    category: "saas-buyume",
+    tldr: [
+      "CAC (Customer Acquisition Cost, müşteri edinme maliyeti), bir dönemde yeni müşteri kazanmak için harcanan toplam pazarlama ve satış maliyetinin o dönemde kazanılan yeni müşteri sayısına bölünmesidir: 310.000 TL ÷ 1.000 yeni müşteri = 310 TL.",
+      "Aynı veriden üç farklı CAC çıkar: tam yüklü blended CAC 310 TL, yalnızca reklam harcamasıyla 'medya CAC' 230 TL, reklamdan gelen müşterilere göre paid CAC ≈ 329 TL. Bütçe kararını paid ve kanal bazlı CAC ile verin; blended CAC organik müşterilerle ücretli kanalları olduğundan ucuz gösterir.",
+      "Reklam panelindeki CPA, CAC değildir: panel mevcut müşterilerin tekrar siparişlerini de dönüşüm sayar. Örnekte Meta paneli 240 TL CPA gösterirken yeni müşteri başına maliyet 300 TL'dir.",
+      "CAC tek başına iyi ya da kötü değildir; ilk sipariş katkısı, LTV ve geri ödeme süresiyle okunur. 900 TL sepet ve %30 katkı marjıyla ilk sipariş 270 TL bırakır; 329 TL'lik paid CAC her yeni müşteride ilk siparişte 59 TL açık demektir.",
+    ],
+    publishedAt: "2026-10-28",
+    readingMinutes: 9,
+    tags: ["CAC", "Müşteri Edinme Maliyeti", "Paid CAC", "Blended CAC", "Birim Ekonomisi", "LTV:CAC"],
+    sections: [
+      {
+        heading: "CAC nedir? (Kısa cevap)",
+        paragraphs: [
+          "CAC (Customer Acquisition Cost), Türkçesiyle müşteri edinme maliyeti, bir yeni müşteriyi kazanmak için ortalama ne kadar harcadığınızı gösterir. Formülü: CAC = (Pazarlama giderleri + Satış giderleri) / Aynı dönemde kazanılan yeni müşteri sayısı.",
+          "Örnek: Ekim ayında reklam, ajans, ekip ve araçlar dahil 310.000 TL harcayan ve bu ay ilk siparişini veren 1.000 yeni müşteri kazanan bir e-ticaret markasının CAC'ı 310.000 / 1.000 = 310 TL'dir. (Yazıdaki tüm tutarlar örnek tutarlardır.)",
+          "CAC'ın değeri, bir müşterinin size bıraktığı kârla karşılaştırıldığında ortaya çıkar. Bu yüzden CAC'ı her zaman ilk sipariş katkısı, LTV (müşteri yaşam boyu değeri) ve CAC geri ödeme süresiyle birlikte okuyun.",
+        ],
+      },
+      {
+        heading: "CAC nasıl hesaplanır? Adım adım",
+        paragraphs: [
+          "Hesabın kendisi bir bölme işlemidir; hatalar neredeyse her zaman pay ve paydanın tanımında yapılır. Aşağıdaki dört adımı her ay aynı şekilde uygulamak, CAC'ı dönemler arasında karşılaştırılabilir kılar.",
+        ],
+        bullets: [
+          "1. Dönemi seçin: genellikle takvim ayı. B2B'de satış döngüsü uzunsa 3 aylık dönem ya da hareketli ortalama kullanın",
+          "2. 'Yeni müşteri'yi tanımlayın: e-ticarette ilk siparişini veren (ve iade etmeyen) müşteri, SaaS'ta ilk ödemeyi yapan hesap. Deneme kullanıcıları ve lead'ler müşteri değildir",
+          "3. Maliyetleri toplayın: reklam harcaması, ajans/freelancer, içerik ve kreatif prodüksiyon, influencer, pazarlama ve satış ekibinin edinmeye ayrılan maaş payı, prim, pazarlama/satış yazılımları",
+          "4. Bölün ve sürümü yazın: CAC = Toplam maliyet / Yeni müşteri. Raporda hangi sürümü (blended, paid, tam yüklü) kullandığınızı belirtin",
+        ],
+      },
+      {
+        heading: "CAC'a hangi maliyetler dahil edilir, hangileri edilmez?",
+        paragraphs: [
+          "CAC yalnızca yeni müşteri kazanmaya giden parayı ölçer. Ürün maliyeti ya da mevcut müşteriyi elde tutma harcaması CAC'a eklendiğinde metrik şişer ve hangi kanalın pahalı olduğunu artık göstermez.",
+          "Ortak giderlerde (örneğin hem yeni hem mevcut müşteriye giden e-posta pazarlaması ya da hem satış hem destek yapan ekip) basit bir dağıtım anahtarı belirleyin ve her ay aynısını kullanın; kusursuz dağıtımdan daha önemlisi tutarlılıktır.",
+        ],
+        bullets: [
+          "Dahil: reklam harcaması (Meta, Google, TikTok, pazaryeri reklamları), ajans ve freelancer ücretleri, kreatif ve içerik prodüksiyonu, influencer ücretleri ve kod indirimleri",
+          "Dahil (tam yüklü CAC'ta): pazarlama ve satış ekibinin edinmeye ayrılan maaş, prim ve yan hak maliyeti; CRM, e-posta, analitik gibi araçların payı; fuar ve etkinlikler",
+          "Dahil değil: ürün maliyeti, kargo ve paketleme (bunlar katkı marjında), iade maliyeti, müşteri hizmetleri, mevcut müşterilere yönelik sadakat ve yeniden satın alma kampanyaları",
+          "Dikkat: ilk siparişe özel indirim kuponları CAC'a eklenebilir ya da marjdan düşülebilir; ikisini birden yapmayın, hangisini seçtiğinizi not edin",
+        ],
+      },
+      {
+        heading: "Blended CAC, paid CAC ve tam yüklü CAC farkı nedir?",
+        paragraphs: [
+          "Aynı ayın verisiyle üç farklı CAC hesaplanabilir ve üçü de doğrudur; yanlış olan, birini diğerinin yerine kullanmaktır. Örnek markanın Ekim verisi: reklam harcaması 230.000 TL (Meta 120.000, Google 80.000, influencer 30.000), ajans 25.000 TL, pazarlama ekibinin edinme payı 45.000 TL, araçlar 10.000 TL; toplam 310.000 TL. 1.000 yeni müşterinin 700'ü reklamdan (Meta 400, Google 250, influencer kodu 50), 300'ü organik arama, doğrudan trafik ve tavsiyeden geldi.",
+          "Blended CAC, şirketin genel edinme verimliliğini gösterir ve yatırımcı ya da yönetim raporu için uygundur. Ama 300 organik müşteri paydayı büyüttüğü için ücretli kanalları olduğundan ucuz gösterir. Reklam bütçesini artırıp artırmama kararı paid CAC ile verilir: bir sonraki 10.000 TL'lik reklam harcaması organik müşteri getirmez.",
+        ],
+        bullets: [
+          "Tam yüklü blended CAC = 310.000 / 1.000 = 310 TL (tüm maliyetler, tüm yeni müşteriler)",
+          "Medya CAC = 230.000 / 1.000 = 230 TL (yalnızca reklam, tüm yeni müşteriler; en iyimser ve en yanıltıcı sürüm)",
+          "Paid CAC = 230.000 / 700 ≈ 329 TL (yalnızca reklam, yalnızca reklamdan gelen müşteriler)",
+          "Kural: blended CAC düşerken paid CAC yükseliyorsa iyileşme organik kanaldan geliyordur; reklam verimliliği aslında kötüleşiyordur",
+        ],
+      },
+      {
+        heading: "Kanal bazında CAC nasıl hesaplanır?",
+        paragraphs: [
+          "Paid CAC'ı kanallara bölmek, bütçenin nereye kayması gerektiğini gösterir. Her kanal için o kanalın harcamasını o kanaldan gelen yeni müşteri sayısına bölün. Müşterinin hangi kanaldan geldiğini doğru eşleştirmek için kampanya linklerinde tutarlı UTM parametreleri ve influencer'lara özel indirim kodları kullanın.",
+          "Örnekte Meta ve Google birbirine yakın, influencer kanalı ise iki katı pahalı görünüyor. Bu tablo tek başına 'influencer'ı kapat' demez: kod kullanmadan gelen müşteriler bu kanala yazılmadığı için kanal CAC'ı olduğundan yüksek görünebilir. Karar vermeden önce kanalın getirdiği müşterilerin ikinci sipariş oranına (kohort LTV'si) bakın; pahalı ama sadık müşteri getiren bir kanal uzun vadede daha kârlı olabilir.",
+        ],
+        bullets: [
+          "Meta: 120.000 / 400 = 300 TL",
+          "Google Ads: 80.000 / 250 = 320 TL",
+          "Influencer (kod ile): 30.000 / 50 = 600 TL",
+          "Organik arama / doğrudan / tavsiye: medya maliyeti yok; SEO ve içerik harcamanız varsa ayrı bir 'organik CAC' olarak izleyin",
+        ],
+      },
+      {
+        heading: "CAC ile CPA ve CPL arasındaki fark nedir?",
+        paragraphs: [
+          "CPA (Cost per Acquisition / dönüşüm başı maliyet), reklam panelinin gösterdiği, bir kampanyanın tanımlı dönüşüm başına maliyetidir. Dönüşüm bir satın alma, kayıt ya da form olabilir ve mevcut müşterinin tekrar siparişini de kapsar. CPL (Cost per Lead), lead başı maliyettir. CAC ise tüm edinme maliyetini yalnızca gerçek yeni müşterilere böler.",
+          "Örnekte Meta paneli Ekim'de 500 satın alma raporluyor; bunların 100'ü mevcut müşterilerin tekrar siparişi. Panel CPA'sı 120.000 / 500 = 240 TL görünürken yeni müşteri başına maliyet 120.000 / 400 = 300 TL'dir. Yeni müşteri edinmeyi hedefleyen bir kampanyayı panel CPA'sıyla yönetmek, maliyeti %25 düşük görmek demektir. Meta ve Google'da yeni müşteri hedefleme/raporlama seçeneklerini açmak ya da sipariş verisini kendi tarafınızda yeni/mevcut olarak ayırmak bu farkı görünür kılar.",
+          "B2B'de zincir uzar: 180.000 TL reklamla 500 lead (CPL 360 TL) ve %5 lead-müşteri dönüşümüyle 25 müşteri kazanılırsa medya CAC'ı 180.000 / 25 = 7.200 TL'dir; yani CAC = CPL / Lead→müşteri dönüşüm oranı. CPL'yi yarıya indiren ama dönüşümü üçte birine düşüren bir kampanya CAC'ı artırır.",
+        ],
+      },
+      {
+        heading: "İyi bir CAC kaç olmalı? İlk sipariş, LTV ve geri ödeme",
+        paragraphs: [
+          "Evrensel bir 'iyi CAC' tutarı yoktur; 300 TL, 150 TL'lik tek seferlik bir ürün için çok yüksek, yıllık sözleşmeli bir B2B hizmeti için çok düşüktür. CAC'ı üç ölçüyle değerlendirin.",
+          "Örnek markada ortalama sepet 900 TL, katkı marjı (ürün, kargo, ödeme komisyonu ve iade düşüldükten sonra kalan) %30; ilk sipariş 270 TL katkı bırakıyor. 329 TL'lik paid CAC ile her yeni müşteri ilk siparişte 59 TL açık veriyor; açık ikinci siparişle kapanıyorsa sorun yok, kapanmıyorsa reklam büyüdükçe zarar büyür. Kanal bazında Meta (300 TL) sınıra yakın, influencer (600 TL) ancak yüksek tekrar satın almayla savunulabilir.",
+        ],
+        bullets: [
+          "İlk sipariş katkısı: CAC ≤ İlk sipariş katkısı ise müşteri ilk siparişte kendini öder (tekrar satın almanın az olduğu kategorilerde şart)",
+          "LTV:CAC oranı: marjla hesaplanmış LTV / CAC; yaygın başparmak kuralı en az 3'tür. LTV'nin nasıl hesaplanacağını LTV yazısında ayrıntılı anlattım",
+          "CAC geri ödeme süresi: CAC / Aylık müşteri başı marj katkısı; B2B SaaS'ta 12 ayın altı yaygın hedeftir",
+        ],
+      },
+      {
+        heading: "B2B ve SaaS'ta CAC nasıl hesaplanır? Zaman kayması örneği",
+        paragraphs: [
+          "Satış döngüsü 1–3 ay süren işlerde bu ayın harcaması gelecek ayların müşterisini getirir. Aynı ayın harcamasını aynı ayın müşterisine bölmek CAC'ı dalgalı gösterir. Örnek: bir B2B SaaS şirketi her ay 250.000 TL (reklam, pazarlama ve satış ekibi, araçlar dahil) harcıyor; Temmuz, Ağustos ve Eylül'de sırasıyla 5, 12 ve 8 yeni müşteri kazanıyor.",
+          "Aylık CAC 50.000 TL, yaklaşık 20.833 TL ve 31.250 TL çıkıyor; hiçbir şey değişmediği halde CAC iki buçuk kat oynuyor gibi görünüyor. Çeyreklik hesap daha sağlıklıdır: 750.000 / 25 = 30.000 TL. Aylık müşteri başı gelir (ARPA) 3.000 TL ve brüt marj %80 ise müşteri ayda 2.400 TL bırakır; CAC 30.000 / 2.400 = 12,5 ayda geri döner.",
+          "B2B'de satış ekibinin maliyeti çoğu zaman reklamdan büyüktür; bu yüzden tam yüklü CAC'ı izlemek ve huniyi lead başı, SQL başı ve müşteri başı maliyet olarak ayrı ayrı görmek, darboğazın reklamda mı satışta mı olduğunu gösterir.",
+        ],
+      },
+      {
+        heading: "CAC'tan reklam hedefi nasıl belirlenir?",
+        paragraphs: [
+          "Önce maksimum CAC'ı bir politikayla belirleyin, sonra reklam paneline girilecek hedefe çevirin. Paneldeki hedef, CAC'ın reklam dışı kısmını (ajans, ekip, araçlar) karşılayacak kadar düşük olmalıdır.",
+          "Örnek markada tam yüklü maliyetin %74'ü (230.000 / 310.000) reklamdır. İlk siparişte başabaş politikasıyla maks. tam yüklü CAC 270 TL ise reklam payı 270 × 0,74 ≈ 200 TL olur. Her yeni müşteri ilk siparişte 900 TL ciro getirdiği için bu, yeni müşteri kampanyalarında yaklaşık 900 / 200 = 4,5 ROAS hedefi demektir. Hedefi gerçekçi bulmuyorsanız tekrar satın alma verisiyle (12 aylık geri ödeme gibi) politikayı gevşetin; kanıtsız gevşetmek bütçeyi zarara çevirir.",
+        ],
+        bullets: [
+          "İlk siparişte başabaş: Maks. CAC = İlk sipariş katkısı",
+          "Geri ödeme süresi politikası: Maks. CAC = Aylık müşteri başı katkı × Hedef ay",
+          "Oran politikası: Maks. CAC = LTV / Hedef LTV:CAC oranı",
+          "Panel hedefi: Maks. CPA ≈ Maks. CAC × (Reklam harcaması / Toplam edinme maliyeti); hedef ROAS ≈ İlk sipariş tutarı / Maks. CPA",
+        ],
+      },
+      {
+        heading: "CAC nasıl düşürülür?",
+        paragraphs: [
+          "CAC'ın iki tarafı vardır: maliyeti düşürmek ya da aynı maliyetle daha çok müşteri kazanmak. Pratikte ikincisi daha hızlı sonuç verir.",
+        ],
+        bullets: [
+          "Dönüşüm oranı: açılış sayfası hızı, teklif netliği, kargo ücretinin erken gösterilmesi ve kısa ödeme adımları aynı harcamayla daha fazla müşteri getirir",
+          "Kanal karması: kanal bazında paid CAC'ı izleyip bütçeyi verimli kanallara kaydırın; blended CAC'a bakarak karar vermeyin",
+          "Yeni müşteri hedefleme: panelde mevcut müşterileri hariç tutun ya da yeni müşteri hedefi kullanın; aksi halde bütçenin bir kısmı zaten gelecek siparişleri satın alır",
+          "Birikimli kanallar: SEO, içerik, e-posta listesi ve tavsiye programı zamanla blended CAC'ı aşağı çeker",
+          "B2B'de ICP: satış ekibinin zamanını kapanma olasılığı yüksek hesaplara ayırmak tam yüklü CAC'ı en çok düşüren adımdır",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "CAC açılımı nedir, Türkçesi ne?",
+        answer:
+          "CAC, Customer Acquisition Cost'un kısaltmasıdır; Türkçede müşteri edinme maliyeti ya da müşteri kazanım maliyeti denir. Bir yeni müşteri kazanmak için harcanan ortalama pazarlama ve satış maliyetini gösterir.",
+      },
+      {
+        question: "CAC nasıl hesaplanır?",
+        answer:
+          "CAC = (Pazarlama giderleri + Satış giderleri) / Aynı dönemde kazanılan yeni müşteri sayısı. 310.000 TL toplam edinme maliyeti ve 1.000 yeni müşteri için CAC 310 TL'dir. Yalnızca reklam harcamasını reklamdan gelen müşterilere bölerseniz paid CAC'ı bulursunuz.",
+      },
+      {
+        question: "CAC ile CPA aynı şey mi?",
+        answer:
+          "Hayır. CPA reklam panelinin gösterdiği dönüşüm başı maliyettir ve mevcut müşterilerin tekrar siparişlerini de sayar. CAC tüm edinme maliyetini yalnızca yeni müşterilere böler; bu yüzden genellikle panel CPA'sından yüksektir.",
+      },
+      {
+        question: "CAC hesabına maaşlar dahil edilir mi?",
+        answer:
+          "Tam yüklü CAC'ta evet: pazarlama ve satış ekibinin yeni müşteri kazanmaya ayrılan maaş ve prim payı eklenir. Kanal verimliliğini ölçen paid CAC'ta ise yalnızca reklam harcaması kullanılır. Hangi sürümü kullandığınızı raporda belirtin.",
+      },
+      {
+        question: "CAC yüksek mi, nasıl anlarım?",
+        answer:
+          "CAC'ı ilk sipariş katkısıyla, LTV ile ve geri ödeme süresiyle karşılaştırın. CAC ilk sipariş katkısını aşıyor ve tekrar satın alma bu farkı kapatmıyorsa ya da LTV:CAC 1'in altındaysa CAC sizin işiniz için yüksektir; sektör ortalamaları bu kıyasın yerini tutmaz.",
+      },
+    ],
+    howTo: {
+      name: "CAC nasıl hesaplanır?",
+      description: "Bir dönemin pazarlama ve satış maliyetiyle blended, paid ve kanal bazında müşteri edinme maliyetini bulun.",
+      steps: [
+        { name: "Dönemi ve yeni müşteri tanımını belirleyin", text: "Takvim ayını (B2B'de çeyreği) seçin; yeni müşteriyi ilk siparişini veren ya da ilk ödemeyi yapan müşteri olarak tanımlayın." },
+        { name: "Edinme maliyetlerini toplayın", text: "Reklam, ajans, kreatif, influencer, ekip payı ve araç maliyetlerini toplayın; ürün maliyeti ve elde tutma harcamalarını dışarıda bırakın." },
+        { name: "Blended CAC'ı hesaplayın", text: "Toplam edinme maliyetini tüm yeni müşterilere bölün. 310.000 TL / 1.000 = 310 TL." },
+        { name: "Paid ve kanal CAC'ını hesaplayın", text: "Reklam harcamasını reklamdan gelen müşterilere, her kanalın harcamasını o kanalın müşterilerine bölün. 230.000 TL / 700 ≈ 329 TL." },
+        { name: "Marj ve LTV ile karşılaştırın", text: "CAC'ı ilk sipariş katkısı, LTV:CAC oranı ve geri ödeme süresiyle değerlendirip maksimum CAC ve reklam hedefini belirleyin." },
+      ],
+    },
+    relatedToolKey: "cac",
+    resources: [
+      { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
+      { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" },
+      { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "ROAS Hesaplama: ROAS ve Başabaş ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "B2B Lead Generation Maliyetleri Nasıl Düşürülür?", href: "/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur/" },
+      { label: "SaaS Metrikleri 101: ARR, CAC, LTV ve Churn", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
+      { label: "Google Ads Yardım: Müşteri yaşam döngüsü hedefleri (yeni müşteri edinme)", href: "https://support.google.com/google-ads/answer/12080169?hl=tr", external: true },
     ],
   },
 ];
@@ -2945,6 +3131,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator" },
       { label: "LTV Calculator", href: "/en/free-tools/ltv-calculator" },
       { label: "What Is LTV? LTV:CAC Ratio", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
+      { label: "What Is CAC? Customer Acquisition Cost Explained", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
       { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator" },
     ],
   },
@@ -4480,6 +4667,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     relatedToolKey: "ltv",
     resources: [
       { label: "LTV Calculator", href: "/en/free-tools/ltv-calculator/" },
+      { label: "What Is CAC? Customer Acquisition Cost Explained", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
       { label: "CAC Payback Period Calculator", href: "/en/free-tools/cac-payback-period-calculator/" },
       { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator/" },
@@ -4673,6 +4861,190 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google Analytics: Collect campaign data with custom URLs", href: "https://support.google.com/analytics/answer/10917952?hl=en", external: true },
       { label: "Google Analytics: Default channel group rules", href: "https://support.google.com/analytics/answer/9756891?hl=en", external: true },
       { label: "Google Analytics: Benefits of Google Ads auto-tagging", href: "https://support.google.com/analytics/answer/10723328?hl=en", external: true },
+    ],
+  },
+  {
+    slug: "what-is-cac-customer-acquisition-cost",
+    seoTitle: "What Is CAC? Customer Acquisition Cost With Examples",
+    title: "What Is CAC? How to Calculate Customer Acquisition Cost (Blended, Paid and Per-Channel Examples)",
+    description:
+      "What is CAC and how do you calculate it? Blended vs paid vs fully loaded CAC, a per-channel example, CAC vs CPA, and how to turn CAC into an ad target.",
+    category: "saas-buyume",
+    tldr: [
+      "CAC (customer acquisition cost) is total sales and marketing spend in a period divided by the number of new customers won in that period: $31,000 ÷ 1,000 new customers = $31.",
+      "The same data gives three different CACs: fully loaded blended CAC $31, ad-spend-only 'media CAC' $23, and paid CAC (ad spend ÷ customers from ads) ≈ $32.90. Make budget decisions with paid and per-channel CAC; blended CAC makes paid channels look cheaper because organic customers dilute it.",
+      "The CPA in your ad platform is not CAC: platforms also count repeat orders from existing customers. In the example, Meta reports a $24 CPA while the cost per new customer is $30.",
+      "CAC is never good or bad on its own. Read it against first-order contribution, LTV and payback. With a $90 basket and 30% contribution margin, the first order leaves $27, so a ~$32.90 paid CAC means a $5.90 gap on every new customer's first order.",
+    ],
+    publishedAt: "2026-10-28",
+    readingMinutes: 9,
+    tags: ["CAC", "Customer Acquisition Cost", "Paid CAC", "Blended CAC", "Unit Economics", "LTV:CAC"],
+    sections: [
+      {
+        heading: "What is CAC? (Short answer)",
+        paragraphs: [
+          "CAC (customer acquisition cost) tells you how much you spend, on average, to win one new customer. Formula: CAC = (Marketing costs + Sales costs) / New customers acquired in the same period.",
+          "Example: an online store spends $31,000 in October on ads, agency, team and tools and wins 1,000 customers placing their first order that month. CAC = $31,000 / 1,000 = $31. (All figures in this article are illustrative.)",
+          "CAC only means something next to the profit a customer brings in. Always read it together with first-order contribution, LTV (customer lifetime value) and CAC payback period.",
+        ],
+      },
+      {
+        heading: "How do you calculate CAC? Step by step",
+        paragraphs: [
+          "The math is a single division; the mistakes are almost always in how the numerator and denominator are defined. Apply these four steps the same way every month so CAC stays comparable over time.",
+        ],
+        bullets: [
+          "1. Pick the period: usually a calendar month. In B2B with long sales cycles, use a quarter or a rolling average",
+          "2. Define 'new customer': in e-commerce, a customer placing (and not returning) a first order; in SaaS, an account making its first payment. Trial users and leads are not customers",
+          "3. Add up the costs: ad spend, agency/freelancers, content and creative production, influencers, the acquisition share of marketing and sales salaries, commissions, marketing/sales software",
+          "4. Divide and label it: CAC = Total cost / New customers. State which version (blended, paid, fully loaded) the report uses",
+        ],
+      },
+      {
+        heading: "What costs belong in CAC, and what doesn't?",
+        paragraphs: [
+          "CAC measures only the money spent winning new customers. Adding product cost or retention spend inflates it and hides which channel is actually expensive.",
+          "For shared costs (email marketing that reaches both new and existing customers, or a team that both sells and supports), pick a simple allocation key and keep it every month; consistency matters more than a perfect split.",
+        ],
+        bullets: [
+          "Include: ad spend (Meta, Google, TikTok, marketplace ads), agency and freelancer fees, creative and content production, influencer fees and code discounts",
+          "Include (fully loaded CAC): the acquisition share of marketing and sales salaries, commissions and benefits; CRM, email and analytics tools; trade shows and events",
+          "Exclude: product cost, shipping and packaging (they belong in contribution margin), returns, customer support, loyalty and repeat-purchase campaigns aimed at existing customers",
+          "Watch out: first-order discount codes can go into CAC or be deducted from margin; never both. Note which one you chose",
+        ],
+      },
+      {
+        heading: "Blended vs paid vs fully loaded CAC: what's the difference?",
+        paragraphs: [
+          "One month of data can produce three CACs, and all three are correct; the error is using one in place of another. The example store's October: ad spend $23,000 (Meta $12,000, Google $8,000, influencers $3,000), agency $2,500, acquisition share of the marketing team $4,500, tools $1,000; total $31,000. Of the 1,000 new customers, 700 came from ads (Meta 400, Google 250, influencer codes 50) and 300 from organic search, direct and referrals.",
+          "Blended CAC shows company-wide acquisition efficiency and suits investor or board reporting. But the 300 organic customers inflate the denominator, so paid channels look cheaper than they are. Decide whether to scale ad budget with paid CAC: the next $1,000 of ad spend will not bring organic customers with it.",
+        ],
+        bullets: [
+          "Fully loaded blended CAC = $31,000 / 1,000 = $31 (all costs, all new customers)",
+          "Media CAC = $23,000 / 1,000 = $23 (ads only, all new customers; the most optimistic and most misleading version)",
+          "Paid CAC = $23,000 / 700 ≈ $32.90 (ads only, customers from ads only)",
+          "Rule: if blended CAC falls while paid CAC rises, the improvement is coming from organic; ad efficiency is actually getting worse",
+        ],
+      },
+      {
+        heading: "How do you calculate CAC by channel?",
+        paragraphs: [
+          "Splitting paid CAC by channel shows where budget should move. For each channel, divide its spend by the new customers it brought in. To match customers to channels reliably, use consistent UTM parameters on campaign links and unique discount codes for influencers.",
+          "In the example, Meta and Google are close while influencers look twice as expensive. That alone doesn't mean 'cut influencers': customers who bought without the code aren't credited to the channel, so its CAC can look inflated. Before deciding, check the second-order rate of each channel's customers (cohort LTV); a pricey channel that brings loyal customers can be the more profitable one over time.",
+        ],
+        bullets: [
+          "Meta: $12,000 / 400 = $30",
+          "Google Ads: $8,000 / 250 = $32",
+          "Influencers (with code): $3,000 / 50 = $60",
+          "Organic search / direct / referral: no media cost; if you invest in SEO and content, track a separate 'organic CAC'",
+        ],
+      },
+      {
+        heading: "CAC vs CPA vs CPL: what's the difference?",
+        paragraphs: [
+          "CPA (cost per acquisition) is the cost per defined conversion your ad platform shows for a campaign. The conversion can be a purchase, sign-up or form, and it includes repeat orders from existing customers. CPL is cost per lead. CAC divides all acquisition cost by genuinely new customers only.",
+          "In the example, Meta reports 500 purchases in October, 100 of them repeat orders from existing customers. The platform CPA is $12,000 / 500 = $24, while the cost per new customer is $12,000 / 400 = $30. Managing a new-customer campaign on platform CPA means seeing costs 25% lower than they are. Turning on new-customer goals/reporting in Meta and Google, or splitting your own order data into new vs returning, makes the gap visible.",
+          "In B2B the chain gets longer: $18,000 of ads producing 500 leads (CPL $36) at a 5% lead-to-customer rate gives 25 customers and a media CAC of $18,000 / 25 = $720. In other words, CAC = CPL / Lead-to-customer rate. A campaign that halves CPL but cuts conversion to a third raises CAC.",
+        ],
+      },
+      {
+        heading: "What is a good CAC? First order, LTV and payback",
+        paragraphs: [
+          "There is no universal 'good CAC'; $30 is far too high for a $15 one-off product and very low for an annual B2B contract. Judge CAC with three measures.",
+          "The example store has a $90 average basket and a 30% contribution margin (after product, shipping, payment fees and returns), so the first order leaves $27. With a ~$32.90 paid CAC, every new customer is $5.90 short on the first order. If the second order closes the gap, fine; if not, losses grow as ads scale. By channel, Meta ($30) is near the line, and influencers ($60) only make sense with strong repeat purchase.",
+        ],
+        bullets: [
+          "First-order contribution: if CAC ≤ first-order contribution, the customer pays for themselves on the first order (essential where repeat purchase is low)",
+          "LTV:CAC ratio: margin-based LTV / CAC; the common rule of thumb is at least 3. I cover how to calculate LTV in the LTV article",
+          "CAC payback period: CAC / Monthly contribution per customer; under 12 months is a common B2B SaaS target",
+        ],
+      },
+      {
+        heading: "How do you calculate CAC in B2B and SaaS? The time-lag example",
+        paragraphs: [
+          "When sales cycles run one to three months, this month's spend brings next months' customers. Dividing a month's spend by that month's customers makes CAC swing. Example: a B2B SaaS company spends $25,000 every month (ads, marketing and sales team, tools) and wins 5, 12 and 8 new customers in July, August and September.",
+          "Monthly CAC comes out at $5,000, about $2,083 and $3,125; nothing changed, yet CAC seems to move 2.5×. A quarterly view is healthier: $75,000 / 25 = $3,000. With $300 monthly revenue per account (ARPA) and an 80% gross margin, each customer contributes $240 a month, so CAC pays back in $3,000 / $240 = 12.5 months.",
+          "In B2B the sales team often costs more than ads, so track fully loaded CAC and look at cost per lead, per SQL and per customer separately to see whether the bottleneck is marketing or sales.",
+        ],
+      },
+      {
+        heading: "How do you turn CAC into an ad target?",
+        paragraphs: [
+          "First set a maximum CAC with a policy, then translate it into the target you enter in the ad platform. The platform target must be low enough to cover the non-ad part of CAC (agency, team, tools).",
+          "In the example, ads are 74% of fully loaded cost ($23,000 / $31,000). With a break-even-on-first-order policy, the maximum fully loaded CAC is $27, so the ad share is $27 × 0.74 ≈ $20. Each new customer brings $90 on the first order, which means a target ROAS of about $90 / $20 = 4.5 for new-customer campaigns. If that's unrealistic, loosen the policy with real repeat-purchase data (a 12-month payback, say); loosening without evidence turns budget into losses.",
+        ],
+        bullets: [
+          "Break even on the first order: Max CAC = First-order contribution",
+          "Payback policy: Max CAC = Monthly contribution per customer × Target months",
+          "Ratio policy: Max CAC = LTV / Target LTV:CAC",
+          "Platform target: Max CPA ≈ Max CAC × (Ad spend / Total acquisition cost); target ROAS ≈ First-order value / Max CPA",
+        ],
+      },
+      {
+        heading: "How do you lower CAC?",
+        paragraphs: [
+          "CAC has two sides: spend less, or win more customers for the same spend. In practice the second works faster.",
+        ],
+        bullets: [
+          "Conversion rate: landing page speed, a clear offer, showing shipping costs early and a short checkout bring more customers for the same spend",
+          "Channel mix: track paid CAC by channel and shift budget to efficient channels; don't decide on blended CAC",
+          "New-customer targeting: exclude existing customers or use new-customer goals; otherwise part of the budget buys orders that were coming anyway",
+          "Compounding channels: SEO, content, an email list and referral programs pull blended CAC down over time",
+          "ICP in B2B: focusing sales time on accounts likely to close is the single biggest lever on fully loaded CAC",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does CAC stand for?",
+        answer:
+          "CAC stands for customer acquisition cost: the average marketing and sales cost of winning one new customer.",
+      },
+      {
+        question: "How do you calculate CAC?",
+        answer:
+          "CAC = (Marketing costs + Sales costs) / New customers acquired in the same period. $31,000 of acquisition cost and 1,000 new customers give a $31 CAC. Divide ad spend only by customers from ads and you get paid CAC.",
+      },
+      {
+        question: "Is CAC the same as CPA?",
+        answer:
+          "No. CPA is the cost per conversion your ad platform reports, and it counts repeat orders from existing customers. CAC divides all acquisition cost by new customers only, so it's usually higher than platform CPA.",
+      },
+      {
+        question: "Should salaries be included in CAC?",
+        answer:
+          "In fully loaded CAC, yes: add the acquisition share of marketing and sales salaries and commissions. Paid CAC, which measures channel efficiency, uses ad spend only. State which version you report.",
+      },
+      {
+        question: "How do I know if my CAC is too high?",
+        answer:
+          "Compare CAC with first-order contribution, LTV and payback. If CAC exceeds first-order contribution and repeat purchases don't close the gap, or LTV:CAC is below 1, CAC is too high for your business; industry averages can't replace that check.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate CAC",
+      description: "Find blended, paid and per-channel customer acquisition cost from a period's marketing and sales costs.",
+      steps: [
+        { name: "Set the period and the new-customer definition", text: "Use a calendar month (a quarter in B2B); define a new customer as one placing a first order or making a first payment." },
+        { name: "Add up acquisition costs", text: "Sum ads, agency, creative, influencers, team share and tools; leave out product cost and retention spend." },
+        { name: "Calculate blended CAC", text: "Divide total acquisition cost by all new customers. $31,000 / 1,000 = $31." },
+        { name: "Calculate paid and per-channel CAC", text: "Divide ad spend by customers from ads, and each channel's spend by its customers. $23,000 / 700 ≈ $32.90." },
+        { name: "Compare with margin and LTV", text: "Judge CAC against first-order contribution, LTV:CAC and payback, then set a max CAC and ad target." },
+      ],
+    },
+    relatedToolKey: "cac",
+    resources: [
+      { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
+      { label: "CAC Payback Period Calculator", href: "/en/free-tools/cac-payback-period-calculator/" },
+      { label: "What Is LTV? What Should Your LTV:CAC Ratio Be?", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
+      { label: "ROAS Calculator (break-even ROAS)", href: "/en/free-tools/roas-calculator/" },
+      { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "How to Reduce B2B Lead Generation Costs", href: "/en/blog/how-to-reduce-b2b-lead-generation-costs/" },
+      { label: "SaaS Metrics 101: ARR, CAC, LTV and Churn", href: "/en/blog/saas-metrics-arr-cac-ltv/" },
+      { label: "Google Ads Help: About customer lifecycle goals", href: "https://support.google.com/google-ads/answer/12080169?hl=en", external: true },
     ],
   },
 ];

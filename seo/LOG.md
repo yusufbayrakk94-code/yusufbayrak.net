@@ -2,6 +2,11 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-10-28 (içerik görevi)
+- YENİ YAZI 1: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?" (/blog/cac-nedir-musteri-edinme-maliyeti/ + EN /en/blog/what-is-cac-customer-acquisition-cost/). Takvimin 29 Eki satırı 1 gün öne alındı (28 Eki satırı Desi aracıyla 27.10'da yapılmıştı). Hacim: 'cac nedir' 320/ay (Keyword Planner, 26.10); hedef sorgu #7.
+- Rakip bulgusu: ikas (2024, tek örnek, SSS yok; üretim maliyetini ve fiyatlamayı CAC bileşeni sayıyor, "churn düşerse CAC düşer" hatası), Yotpo TR (AI çeviri, bozuk cümleler, LTV ciroyla), Popupsmart (aslında edinme süreci yazısı, çalışılmış örnek yok). Hiçbirinde yok: aynı veriyle blended / medya / paid CAC, kanal bazında CAC, panel CPA'sı ile yeni müşteri CAC'ı farkı (tekrar siparişler), CAC = CPL / dönüşüm, B2B zaman kayması (aylık vs çeyreklik), CAC'tan panel CPA ve ROAS hedefine geçiş. Analiz: seo/research/cac-nedir.md.
+- İç link: yeni yazı → CAC, CAC geri ödeme, ROAS, Trendyol kâr, kar marjı araçları + LTV, reklam bütçesi, UTM, B2B lead maliyetleri yazıları. Yeni yazıya → CAC aracı (relatedToolKey ile otomatik), LTV yazısı TR+EN, SaaS Metrikleri 101 TR+EN. Ölçüm: 'cac nedir', 'müşteri edinme maliyeti', 'blended cac' gösterim/sıra.
+
 ## 2026-10-27 (agresif tempo — kullanıcı: "son 24 saatte sıfır tıklama, agresifleştir")
 - Teşhis: trafik neredeyse tamamen marka sorgularından; hedef sorguların yarısı hacimsizdi (cac/ltv/churn hesaplama, ga4 unassigned, reklam bütçesi hesaplama 0–10) → ilk 10'a girseler de tıklama getirmezler. Backlink yok.
 - Hedef sorgular hacme göre yeniden yazıldı (seo/GOALS.md): desi hesaplama 14.800, trendyol komisyon/kar hesaplama 18.100/6.600, kar marjı hesaplama 1.000, roas nedir 880, utm nedir 390, mrr nedir 390, cac nedir 320, llms txt 480, ltv nedir 210, churn nedir 210.

@@ -17,4 +17,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "hedef-roas-nasil-belirlenir", en: "how-to-set-target-roas-google-ads" },
   { tr: "ltv-nedir-ltv-cac-orani", en: "what-is-ltv-ltv-cac-ratio" },
   { tr: "utm-nedir-utm-parametreleri", en: "what-are-utm-parameters" },
+  { tr: "cac-nedir-musteri-edinme-maliyeti", en: "what-is-cac-customer-acquisition-cost" },
 ];
