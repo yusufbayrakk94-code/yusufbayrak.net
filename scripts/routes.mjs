@@ -137,6 +137,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "utm-nedir-utm-parametreleri", en: "what-are-utm-parameters" },
   { tr: "cac-nedir-musteri-edinme-maliyeti", en: "what-is-cac-customer-acquisition-cost" },
   { tr: "kar-marji-nasil-hesaplanir", en: "how-to-calculate-profit-margin" },
+  { tr: "mrr-nedir-nasil-hesaplanir", en: "what-is-mrr-how-to-calculate" },
 ];
 
 // Embeddable widget routes: prerendered (iframe targets) but noindex, so they

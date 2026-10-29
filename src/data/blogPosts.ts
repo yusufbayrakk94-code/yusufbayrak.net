@@ -549,6 +549,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "arr",
     resources: [
+      { label: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
       { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici" },
       { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici" },
       { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici" },
@@ -1044,6 +1045,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "nrr",
     resources: [
+      { label: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
       {
         label: "NRR Hesaplayıcı",
         href: "/ucretsiz-araclar/nrr-hesaplayici",
@@ -2864,6 +2866,202 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Penn State Extension: Markup ile kâr arasındaki fark (İngilizce)", href: "https://extension.psu.edu/whats-the-difference-between-markup-and-profit", external: true },
     ],
   },
+  {
+    slug: "mrr-nedir-nasil-hesaplanir",
+    seoTitle: "MRR Nedir? Aylık Yinelenen Gelir Nasıl Hesaplanır?",
+    title: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir, MRR Hareketleri ve Örnek Hesap",
+    description:
+      "MRR (aylık yinelenen gelir) nedir, nasıl hesaplanır? Yıllık plan, indirim ve kur etkisi, yeni/genişleme/kayıp MRR köprüsü, Quick Ratio ve adım adım örnek.",
+    category: "saas-buyume",
+    tldr: [
+      "MRR (Monthly Recurring Revenue, aylık yinelenen gelir), abonelik müşterilerinden her ay düzenli olarak tekrar etmesi beklenen gelirin aylık karşılığıdır. Formül: MRR = Σ (her planın aylık fiyatı × o plandaki aktif hesap). Örnek şirkette 90.000 + 48.000 + 22.500 = 160.500 TL.",
+      "Yıllık planlar 12'ye, 3 aylık planlar 3'e bölünür; haftalık plan × 52 / 12 ile aylığa çevrilir. Kurulum, eğitim ve danışmanlık gibi tek seferlik gelirler ile tahsil edilen yıllık peşin ödemenin tamamı MRR'ye yazılmaz.",
+      "Toplam MRR'yi değil, hareketlerini izleyin: Net yeni MRR = Yeni + Genişleme + Yeniden aktivasyon − Daralma − Kayıp. Örnekte 12.400 + 4.500 + 1.200 − 2.700 − 6.200 = 9.200 TL; MRR %5,7 büyüdü.",
+      "Aynı ay SaaS Quick Ratio yalnızca 2,0 (kaynaklar 4'ü güçlü kabul ediyor) ve brüt MRR churn %5,5: büyüme var ama kova sızdırıyor. Fiyatı dolar olan SaaS'ta MRR'yi sabit kurla da raporlayın; yoksa kur artışı büyüme gibi görünür.",
+    ],
+    publishedAt: "2026-10-29",
+    readingMinutes: 9,
+    tags: ["MRR", "Aylık Yinelenen Gelir", "SaaS Metrikleri", "Net Yeni MRR", "Quick Ratio", "ARR"],
+    sections: [
+      {
+        heading: "MRR nedir? (Kısa cevap)",
+        paragraphs: [
+          "MRR (Monthly Recurring Revenue), Türkçesiyle aylık yinelenen (tekrarlayan) gelir, abonelik modelinde çalışan bir işletmenin aktif aboneliklerinden her ay düzenli olarak elde etmeyi beklediği gelirin aylık karşılığıdır. SaaS şirketleri, mobil uygulamalar, üyelik siteleri ve abonelik kutusu satan e-ticaret markaları için temel büyüme metriğidir.",
+          "Formül: MRR = Σ (Planın aylık fiyatı × O plandaki aktif hesap sayısı). Tek plan varsa MRR = Aktif hesap × ARPA (hesap başına ortalama aylık gelir). MRR bir ayın faturası ya da kasaya giren para değildir; o anki abonelik tabanının aylık gelir gücünü gösteren bir fotoğraftır.",
+          "MRR'nin yıllık karşılığı ARR'dir: ARR = MRR × 12. Bu yazıdaki tüm tutarlar örnek tutarlardır ve hesaplar tek bir örnek şirket üzerinden ilerler; kendi rakamlarınızla denemek için MRR Hesaplayıcı'yı kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "MRR nasıl hesaplanır? Adım adım örnek",
+        paragraphs: [
+          "Örnek şirket Türkiye'de satış yapan bir B2B SaaS. Ekim başında 215 aktif hesabı var ve üç planı bulunuyor. Hesap her planın aylık karşılığını o plandaki hesap sayısıyla çarpıp toplamaktır.",
+          "Toplam: 90.000 + 48.000 + 22.500 = 160.500 TL MRR. Hesap başına ortalama gelir (ARPA) 160.500 / 215 ≈ 747 TL, ARR ise 160.500 × 12 = 1.926.000 TL'dir. Aynı ay 15.000 TL kurulum ve eğitim ücreti faturalandı; bu tutar tekrar etmediği için MRR'ye eklenmez.",
+        ],
+        bullets: [
+          "Başlangıç planı (aylık 600 TL): 150 hesap × 600 = 90.000 TL",
+          "Pro plan (aylık 900 TL ya da yıllık peşin 9.600 TL; Ekim başında 60 hesabın tamamı yıllık → aylık karşılığı 9.600 / 12 = 800 TL): 60 hesap × 800 = 48.000 TL",
+          "Kurumsal plan (aylık 4.500 TL sözleşme): 5 hesap × 4.500 = 22.500 TL",
+          "Tek seferlik kurulum/eğitim (15.000 TL): MRR'ye dahil değil",
+        ],
+      },
+      {
+        heading: "MRR'ye neler dahil edilir, neler edilmez?",
+        paragraphs: [
+          "Kural basittir: müşteri hiçbir şey yapmasa da gelecek ay tekrar edecek, sözleşmeye bağlı gelir MRR'dir. Bir kez olan ya da miktarı her ay belirsiz olan gelir MRR değildir.",
+        ],
+        bullets: [
+          "Dahil: aylık abonelik ücretleri; yıllık, 6 aylık ve 3 aylık planların aylık karşılığı; sürekli faturalanan ek modüller ve ek kullanıcı paketleri",
+          "Dahil (ödenen fiyattan): indirimli abonelikler — liste fiyatı değil, müşterinin gerçekten ödediği aylık tutar yazılır",
+          "Dahil değil: kurulum, eğitim, danışmanlık, entegrasyon gibi tek seferlik hizmetler; tek seferlik ürün satışları",
+          "Dahil değil: ücretsiz deneme kullanıcıları (ilk ödemeyle yeni MRR olurlar) ve ücretsiz (freemium) plan",
+          "Ayrı izleyin: kullanım bazlı (aşım) ücretler — sözleşmedeki sabit taban ücret MRR'ye, değişken kullanım ayrı satıra",
+          "Dikkat: iptal talebi gelmiş ama dönem sonuna kadar ödenmiş abonelik, iptalin geçerli olduğu aya kadar MRR'de kalır; o ay kayıp (churn) MRR olarak düşülür",
+        ],
+      },
+      {
+        heading: "Yıllık, 3 aylık ve haftalık planlar MRR'ye nasıl çevrilir?",
+        paragraphs: [
+          "MRR'nin anlamlı olması için her faturalama dönemi aylığa normalize edilmelidir. Yıllık peşin ödenen bir planın tamamını ödeme ayının MRR'sine yazmak, o ay MRR'yi sıçratır ve sonraki 11 ay düşüyormuş gibi gösterir.",
+          "Örnek şirkette Ekim'de 8 Pro hesap yıllık yenilemesini yaptı ve kasaya 8 × 9.600 = 76.800 TL girdi. Bu hesaplar zaten MRR'deydi; MRR'ye katkıları değişmedi (8 × 800 = 6.400 TL). Tahsilat raporu Ekim'i parlak gösterir, MRR ise doğru olarak 'değişiklik yok' der.",
+        ],
+        bullets: [
+          "Yıllık plan: Aylık karşılık = Yıllık bedel / 12 (9.600 TL → 800 TL)",
+          "6 aylık plan: Bedel / 6; 3 aylık plan: Bedel / 3",
+          "Haftalık plan: Haftalık fiyat × 52 / 12 (49 TL/hafta ≈ 212 TL/ay). Haftayı 4 ile çarpmak MRR'yi yaklaşık %8 düşük gösterir",
+          "Çok yıllı sözleşme: yıllık değeri 12'ye bölün; peşin alınan 2–3 yıllık tutarı tek ayda göstermeyin",
+        ],
+      },
+      {
+        heading: "MRR hareketleri nelerdir? Yeni, genişleme, daralma ve kayıp MRR",
+        paragraphs: [
+          "Toplam MRR tek başına büyümenin nereden geldiğini ve nereden sızdığını göstermez. Bu yüzden her ay MRR'deki değişim beş harekete ayrılır ve bir 'MRR köprüsü' kurulur.",
+          "Örnek şirketin Ekim hareketleri: 18 yeni Başlangıç hesabı (18 × 600 = 10.800 TL) ve 2 yeni Pro hesabı (2 × 800 = 1.600 TL) ile yeni MRR 12.400 TL. 10 hesap Başlangıç'tan aylık 900 TL'lik Pro'ya geçti (10 × 300 = 3.000 TL) ve bir kurumsal müşteri ek kullanıcı paketi aldı (1.500 TL): genişleme 4.500 TL. Daha önce ayrılmış 2 Başlangıç hesabı geri döndü: yeniden aktivasyon 1.200 TL. Bir kurumsal müşteri sözleşmesini 4.500 TL'den 3.000 TL'ye indirdi (1.500 TL) ve 6 hesap kullanıcı sayısını azalttı (6 × 200 = 1.200 TL): daralma 2.700 TL. 9 Başlangıç hesabı iptal etti (5.400 TL) ve 1 Pro hesap yenilemedi (800 TL): kayıp 6.200 TL.",
+        ],
+        bullets: [
+          "Yeni MRR (New): ilk kez ödeme yapan hesaplardan gelen MRR — 12.400 TL",
+          "Genişleme MRR (Expansion): mevcut hesapların üst plana geçişi, ek kullanıcı/modül alımı — 4.500 TL",
+          "Yeniden aktivasyon MRR (Reactivation): daha önce ayrılıp geri dönen hesaplar — 1.200 TL",
+          "Daralma MRR (Contraction): mevcut hesapların alt plana geçişi, kullanıcı azaltması — 2.700 TL",
+          "Kayıp MRR (Churned): iptal eden ya da yenilemeyen hesapların MRR'si — 6.200 TL",
+        ],
+      },
+      {
+        heading: "Net yeni MRR ve MRR büyüme oranı nasıl hesaplanır?",
+        paragraphs: [
+          "Net yeni MRR = Yeni + Genişleme + Yeniden aktivasyon − Daralma − Kayıp. Örnekte 12.400 + 4.500 + 1.200 − 2.700 − 6.200 = 9.200 TL. Köprü şöyle kapanır: Başlangıç MRR 160.500 TL + 9.200 TL = Bitiş MRR 169.700 TL. Ay sonunda 227 aktif hesap var (215 + 20 yeni + 2 geri dönen − 10 ayrılan); ARPA ≈ 748 TL, ARR 169.700 × 12 = 2.036.400 TL.",
+          "Aylık MRR büyüme oranı = Net yeni MRR / Başlangıç MRR = 9.200 / 160.500 ≈ %5,7. Birkaç aylık dönemde tek tek ayların ortalaması yerine bileşik aylık büyüme oranı (CMGR) daha doğrudur: CMGR = (Son MRR / İlk MRR)^(1 / ay sayısı) − 1. Nisan sonunda 120.000 TL olan MRR Ekim sonunda 169.700 TL'ye çıktıysa 6 aylık CMGR (169.700 / 120.000)^(1/6) − 1 ≈ %5,9'dur.",
+        ],
+      },
+      {
+        heading: "MRR büyümesi sağlıklı mı? Quick Ratio, MRR churn ve NRR",
+        paragraphs: [
+          "Aylık %5,7 büyüme iyi görünür; ama büyümenin kalitesini anlamak için aynı köprüden üç oran daha çıkarılır. Bu oranlar, yeni satışın churn'ü maskelediği durumları ortaya çıkarır.",
+          "Örnek şirkette büyüme yeni satıştan geliyor; mevcut müşteri tabanı ise her ay küçülüyor (aylık NRR %100'ün altında). Yeni satış yavaşladığı ay MRR de düşmeye başlar. Öncelik kayıp ve daralmanın nedenlerini (ilk 90 gün aktivasyonu, Başlangıç planındaki ayrılma) bulmaktır. Churn oranını ve gelir kaybını ayrıca Churn Rate Hesaplayıcı ile, NRR'yi NRR Hesaplayıcı ile izleyebilirsiniz.",
+        ],
+        bullets: [
+          "SaaS Quick Ratio = (Yeni + Genişleme + Yeniden aktivasyon) / (Daralma + Kayıp) = 18.100 / 8.900 ≈ 2,0. Yatırımcı Mamoon Hamid'in yaygınlaştırdığı bu oranda 4 ve üzeri verimli büyüme kabul edilir; 1'in altı küçülme demektir",
+          "Brüt MRR churn = (Daralma + Kayıp) / Başlangıç MRR = 8.900 / 160.500 ≈ %5,5 (aylık)",
+          "Net MRR churn = (Daralma + Kayıp − Genişleme) / Başlangıç MRR = 4.400 / 160.500 ≈ %2,7; genişleme kaybı aşarsa negatif churn olur",
+          "Aylık NRR = (Başlangıç + Genişleme − Daralma − Kayıp) / Başlangıç = 156.100 / 160.500 ≈ %97,3",
+          "Logo (müşteri) churn = Ayrılan hesap / Başlangıç hesap = 10 / 215 ≈ %4,7; gelir churn'ünden farklıdır, ikisini birlikte izleyin",
+        ],
+      },
+      {
+        heading: "İndirim, deneme sürümü ve kur farkı MRR'yi nasıl etkiler?",
+        paragraphs: [
+          "İndirim: 3 ay boyunca %25 indirimle 450 TL ödeyen 20 Başlangıç hesabı MRR'ye 20 × 450 = 9.000 TL yazılır, 12.000 TL değil. İndirim bittiğinde 3.000 TL'lik artış hareket raporunda genişleme gibi görünür; gerçek upsell ile karıştırmamak için 'indirim bitişi' olarak ayrı etiketleyin.",
+          "Deneme: ücretsiz deneme sürecindeki hesaplar MRR'ye girmez; ilk ödemeyle yeni MRR olur. Deneme sayısını MRR yerine deneme→ücretli dönüşüm oranıyla izleyin. İade: iade edilen bir abonelik, iadenin yapıldığı ay kayıp MRR olarak düşülür; geçmiş ayları geriye dönük değiştiren araçlar da vardır, hangi yöntemi kullandığınızı not edin.",
+          "Kur: fiyatı dolar olan ve TL'ye çevrilerek raporlanan bir SaaS'ta kur değişimi MRR'yi yeni müşteri olmadan oynatır. 2.000 USD MRR, örnek kur 40'tan 42'ye çıktığında TL karşılığı 80.000 TL'den 84.000 TL'ye yükselir; bu %5'lik 'büyüme' tek bir satış yapılmadan gelir. Çözüm: MRR'yi hem fatura para biriminde hem de dönem başı (sabit) kurla raporlayın ve kur etkisini ayrı satır olarak gösterin.",
+        ],
+      },
+      {
+        heading: "E-ticaret abonelik modelinde MRR nasıl hesaplanır?",
+        paragraphs: [
+          "MRR yalnızca SaaS'a özgü değildir. Kahve, mama ya da kozmetik aboneliği satan bir e-ticaret markasında da formül aynıdır: MRR = Σ (aktif abonelik sayısı × aylık karşılık). Aylık 450 TL'lik kutuya 800 abone ve 3 ayda bir gönderilen 1.200 TL'lik pakete 300 abone varsa MRR = 800 × 450 + 300 × (1.200 / 3) = 360.000 + 120.000 = 480.000 TL olur.",
+          "E-ticarette iki fark vardır. Birincisi, aboneliğini 'duraklatan' müşteriler duraklama süresince MRR'den çıkarılır ve döndüklerinde yeniden aktivasyon olarak eklenir. İkincisi, MRR gelir metriğidir, kâr değil: ürün, kargo ve paketleme maliyeti yüksek abonelik modellerinde kararları katkı marjıyla verin.",
+        ],
+      },
+      {
+        heading: "MRR ile ARR, ciro ve nakit arasındaki fark nedir?",
+        paragraphs: [
+          "Dört kavram sık karıştırılır ve aynı ay için dört farklı rakam üretir. Örnek şirkette Ekim'de bitiş MRR 169.700 TL iken kasaya yıllık yenilemeler ve kurulum ücretleriyle çok daha fazla para girmiştir.",
+        ],
+        bullets: [
+          "MRR: abonelik tabanının aylık gelir gücü (normalize edilmiş, tek seferlikler hariç) — 169.700 TL",
+          "ARR: MRR × 12 — 2.036.400 TL. Planlama ve yatırımcı raporu için; ayrıntı için ARR ile MRR farkı yazısına bakın",
+          "Ciro (muhasebe geliri): yinelenen ve tek seferlik tüm gelirler; yıllık peşin ödemeler muhasebede dönemlere yayılır",
+          "Nakit tahsilat: kasaya o ay giren para; yıllık peşin ödemeler ve kurulum ücretleri yüzünden MRR'den çok farklı olabilir",
+        ],
+      },
+      {
+        heading: "MRR hesaplarken en sık yapılan hatalar",
+        paragraphs: [
+          "MRR'yi bozan hatalar genellikle formülde değil tanımlardadır. Ekip içinde bir kez yazılı tanım yapıp her ay aynısını uygulamak, rakamın güvenilirliğini sağlar.",
+        ],
+        bullets: [
+          "Yıllık peşin ödemenin tamamını ödeme ayının MRR'sine yazmak",
+          "Kurulum, eğitim, danışmanlık ya da tek seferlik ürün satışını MRR'ye eklemek",
+          "İndirimli hesapları liste fiyatından saymak",
+          "Deneme kullanıcılarını ya da ödeme alınamayan (başarısız tahsilat) hesapları süresiz aktif saymak",
+          "Kur etkisini büyüme sanmak; sabit kurla karşılaştırma yapmamak",
+          "Yalnızca toplam MRR'ye bakıp yeni / genişleme / daralma / kayıp kırılımını izlememek",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "MRR açılımı nedir, Türkçesi ne?",
+        answer:
+          "MRR, Monthly Recurring Revenue'nun kısaltmasıdır; Türkçede aylık yinelenen gelir ya da aylık tekrarlayan gelir denir. Abonelik müşterilerinden her ay düzenli olarak tekrar etmesi beklenen gelirin aylık karşılığını gösterir.",
+      },
+      {
+        question: "MRR nasıl hesaplanır?",
+        answer:
+          "Her planın aylık fiyatını o plandaki aktif hesap sayısıyla çarpıp toplayın; yıllık planları 12'ye, 3 aylık planları 3'e bölerek ekleyin. Örnek: 150 × 600 + 60 × (9.600 / 12) + 5 × 4.500 = 160.500 TL. Tek seferlik gelirler hesaba katılmaz.",
+      },
+      {
+        question: "Net yeni MRR nedir?",
+        answer:
+          "Bir ayda MRR'nin net değişimidir: Yeni + Genişleme + Yeniden aktivasyon − Daralma − Kayıp MRR. Örnekte 12.400 + 4.500 + 1.200 − 2.700 − 6.200 = 9.200 TL'dir; başlangıç MRR'ye eklendiğinde bitiş MRR'yi verir.",
+      },
+      {
+        question: "MRR ile ARR arasındaki fark nedir?",
+        answer:
+          "ARR, MRR'nin yıllık karşılığıdır: ARR = MRR × 12. MRR aylık operasyon kararları (fiyat, kampanya, churn) için, ARR planlama, bütçe ve yatırımcı raporlaması için kullanılır. İkisi de tek seferlik gelirleri içermez.",
+      },
+      {
+        question: "İyi bir MRR büyüme oranı kaç olmalı?",
+        answer:
+          "Herkes için geçerli tek bir oran yoktur; şirketin büyüklüğüne ve aşamasına göre değişir. Oranın yanında büyümenin kalitesine bakın: SaaS Quick Ratio 4 ve üzeri, brüt MRR churn düşük ve NRR %100'ün üzerindeyse büyüme sağlıklıdır.",
+      },
+    ],
+    howTo: {
+      name: "MRR nasıl hesaplanır?",
+      description: "Planları aylığa normalize edip MRR'yi bulun, ardından aylık MRR hareketleriyle net yeni MRR'yi ve büyüme oranını hesaplayın.",
+      steps: [
+        { name: "Aktif hesapları plana göre listeleyin", text: "Ay başında ödeme yapan aktif hesapları planlara ayırın; deneme ve ücretsiz plan kullanıcılarını dışarıda bırakın." },
+        { name: "Her planı aylığa çevirin", text: "Yıllık bedeli 12'ye, 3 aylık bedeli 3'e bölün, haftalık fiyatı 52/12 ile çarpın; indirimli hesaplarda ödenen tutarı kullanın." },
+        { name: "MRR'yi toplayın", text: "Her planın aylık karşılığını hesap sayısıyla çarpıp toplayın. 90.000 + 48.000 + 22.500 = 160.500 TL." },
+        { name: "Ay içindeki hareketleri ayırın", text: "Yeni, genişleme, yeniden aktivasyon, daralma ve kayıp MRR'yi ayrı ayrı toplayın." },
+        { name: "Net yeni MRR ve oranları hesaplayın", text: "Net yeni MRR'yi başlangıç MRR'ye ekleyip bitiş MRR'yi bulun; büyüme oranı, Quick Ratio ve MRR churn'ü hesaplayın." },
+      ],
+    },
+    relatedToolKey: "mrr",
+    resources: [
+      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
+      { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici/" },
+      { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici/" },
+      { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
+      { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
+      { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
+      { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "ChartMogul: SaaS Quick Ratio (İngilizce)", href: "https://chartmogul.com/blog/saas-quick-ratio/", external: true },
+      { label: "Tomasz Tunguz: Quick Ratio ne gizliyor? (İngilizce)", href: "https://tomtunguz.com/what-is-quick-ratio-hiding/", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -3290,6 +3488,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "arr",
     resources: [
+      { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator" },
       { label: "ARPA Calculator", href: "/en/free-tools/arpa-calculator" },
       { label: "ARR Calculator", href: "/en/free-tools/arr-calculator" },
@@ -3784,6 +3983,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "nrr",
     resources: [
+      { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       {
         label: "NRR Calculator",
         href: "/en/free-tools/nrr-calculator",
@@ -3873,6 +4073,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "mrr",
     resources: [
+      { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       {
         label: "MRR Calculator",
         href: "/en/free-tools/mrr-calculator",
@@ -5373,6 +5574,202 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
       { label: "What Is CAC? Customer Acquisition Cost Explained", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
       { label: "Penn State Extension: What's the difference between markup and profit?", href: "https://extension.psu.edu/whats-the-difference-between-markup-and-profit", external: true },
+    ],
+  },
+  {
+    slug: "what-is-mrr-how-to-calculate",
+    seoTitle: "What Is MRR? How to Calculate Monthly Recurring Revenue",
+    title: "What Is MRR and How Do You Calculate It? Monthly Recurring Revenue, MRR Movements and a Worked Example",
+    description:
+      "What is MRR and how do you calculate it? Annual plans, discounts and FX, the new/expansion/churn MRR bridge, SaaS Quick Ratio and a full worked example.",
+    category: "saas-buyume",
+    tldr: [
+      "MRR (Monthly Recurring Revenue) is the monthly value of the subscription revenue you expect to repeat every month. Formula: MRR = Σ (each plan's monthly price × active accounts on it). In the example: $7,350 + $3,600 + $2,000 = $12,950.",
+      "Divide annual plans by 12 and quarterly plans by 3; convert weekly plans with × 52 / 12. One-off setup, training and consulting fees — and the full amount of an annual prepayment — never go into MRR.",
+      "Track the movements, not just the total: Net new MRR = New + Expansion + Reactivation − Contraction − Churn. In the example $1,002 + $350 + $98 − $240 − $501 = $709, so MRR grew 5.5%.",
+      "The same month's SaaS Quick Ratio is only 2.0 (4+ is usually considered strong) and gross MRR churn is 5.7%: the business is growing, but the bucket leaks. If you bill in several currencies, report MRR at a constant exchange rate too.",
+    ],
+    publishedAt: "2026-10-29",
+    readingMinutes: 9,
+    tags: ["MRR", "Monthly Recurring Revenue", "SaaS Metrics", "Net New MRR", "Quick Ratio", "ARR"],
+    sections: [
+      {
+        heading: "What is MRR? (Short answer)",
+        paragraphs: [
+          "MRR (Monthly Recurring Revenue) is the monthly value of the revenue a subscription business expects to collect again every month from its active subscriptions. It is the core growth metric for SaaS companies, mobile apps, membership sites and e-commerce brands that sell subscription boxes.",
+          "Formula: MRR = Σ (Plan's monthly price × Active accounts on that plan). With a single plan, MRR = Active accounts × ARPA (average revenue per account). MRR is not an invoice total or the cash you collected this month; it is a snapshot of the monthly revenue power of your current subscriber base.",
+          "The annual equivalent of MRR is ARR: ARR = MRR × 12. All figures in this article are illustrative and follow one example company; to try your own numbers, use the MRR Calculator.",
+        ],
+      },
+      {
+        heading: "How to calculate MRR: a step-by-step example",
+        paragraphs: [
+          "The example company is a B2B SaaS with 215 active accounts at the start of October and three plans. The calculation is simply each plan's monthly value multiplied by its account count, then summed.",
+          "Total: $7,350 + $3,600 + $2,000 = $12,950 MRR. ARPA is $12,950 / 215 ≈ $60 and ARR is $12,950 × 12 = $155,400. The same month the company invoiced $500 in setup and training fees; because they do not repeat, they stay out of MRR.",
+        ],
+        bullets: [
+          "Starter plan ($49/month): 150 accounts × $49 = $7,350",
+          "Pro plan ($69/month or $720/year prepaid; all 60 Pro accounts are on annual billing → monthly value $720 / 12 = $60): 60 × $60 = $3,600",
+          "Enterprise plan ($400/month contract): 5 accounts × $400 = $2,000",
+          "One-off setup/training ($500): not included in MRR",
+        ],
+      },
+      {
+        heading: "What counts toward MRR, and what doesn't?",
+        paragraphs: [
+          "The rule is simple: contracted revenue that will repeat next month even if the customer does nothing is MRR. Revenue that happens once, or whose amount is uncertain every month, is not.",
+        ],
+        bullets: [
+          "Included: monthly subscription fees; the monthly value of annual, semi-annual and quarterly plans; recurring add-ons and extra seat packs",
+          "Included (at the price paid): discounted subscriptions — record what the customer actually pays, not the list price",
+          "Excluded: setup, onboarding, training, consulting and other one-off services; one-off product sales",
+          "Excluded: free-trial users (they become new MRR on their first payment) and free plans",
+          "Track separately: usage-based overage — the contracted base fee goes into MRR, variable usage on its own line",
+          "Note: a cancellation that is paid through the end of the term stays in MRR until it takes effect, then leaves as churned MRR",
+        ],
+      },
+      {
+        heading: "How do annual, quarterly and weekly plans convert to MRR?",
+        paragraphs: [
+          "MRR only makes sense when every billing period is normalised to a month. Booking the full value of an annual prepayment in the month it was paid makes MRR spike, then appear to fall for the next 11 months.",
+          "In October, 8 Pro accounts renewed annually and $5,760 (8 × $720) hit the bank. Those accounts were already in MRR, so their contribution did not change (8 × $60 = $480). The cash report makes October look great; MRR correctly says 'no change'.",
+        ],
+        bullets: [
+          "Annual plan: Monthly value = Annual price / 12 ($720 → $60)",
+          "Semi-annual plan: price / 6; quarterly plan: price / 3",
+          "Weekly plan: Weekly price × 52 / 12 ($12/week ≈ $52/month). Multiplying a week by 4 understates MRR by about 8%",
+          "Multi-year contract: divide the annual value by 12; never show a 2–3 year prepayment in one month",
+        ],
+      },
+      {
+        heading: "What are MRR movements? New, expansion, contraction and churned MRR",
+        paragraphs: [
+          "Total MRR alone does not show where growth comes from or where revenue leaks. That is why each month's change is split into five movements to build an 'MRR bridge'.",
+          "The example company's October movements: 18 new Starter accounts (18 × $49 = $882) and 2 new Pro accounts (2 × $60 = $120) give new MRR of $1,002. Ten accounts upgraded from Starter to monthly Pro (10 × $20 = $200) and one enterprise customer bought an extra seat pack ($150): expansion $350. Two previously churned Starter accounts came back: reactivation $98. One enterprise customer renegotiated from $400 to $250 ($150) and 6 accounts removed seats (6 × $15 = $90): contraction $240. Nine Starter accounts cancelled ($441) and one Pro account did not renew ($60): churn $501.",
+        ],
+        bullets: [
+          "New MRR: MRR from accounts paying for the first time — $1,002",
+          "Expansion MRR: upgrades, extra seats or modules from existing accounts — $350",
+          "Reactivation MRR: previously churned accounts that return — $98",
+          "Contraction MRR: downgrades and seat reductions from existing accounts — $240",
+          "Churned MRR: MRR from accounts that cancelled or did not renew — $501",
+        ],
+      },
+      {
+        heading: "How do you calculate net new MRR and MRR growth rate?",
+        paragraphs: [
+          "Net new MRR = New + Expansion + Reactivation − Contraction − Churn. In the example: $1,002 + $350 + $98 − $240 − $501 = $709. The bridge closes like this: starting MRR $12,950 + $709 = ending MRR $13,659. The month ends with 227 active accounts (215 + 20 new + 2 returning − 10 churned); ARPA ≈ $60 and ARR is $13,659 × 12 = $163,908.",
+          "Monthly MRR growth rate = Net new MRR / Starting MRR = $709 / $12,950 ≈ 5.5%. Over several months, use compound monthly growth rate (CMGR) instead of averaging individual months: CMGR = (Ending MRR / Starting MRR)^(1 / months) − 1. If MRR was $9,700 at the end of April and $13,659 at the end of October, the 6-month CMGR is ($13,659 / $9,700)^(1/6) − 1 ≈ 5.9%.",
+        ],
+      },
+      {
+        heading: "Is your MRR growth healthy? Quick Ratio, MRR churn and NRR",
+        paragraphs: [
+          "5.5% monthly growth looks good, but three more ratios from the same bridge reveal its quality — and expose months where new sales are masking churn.",
+          "In the example, growth comes from new sales while the existing base shrinks every month (monthly NRR below 100%). The month new sales slow down, MRR starts to fall. The priority is to find the causes of churn and contraction — first-90-day activation and Starter-plan churn. You can track churn with the Churn Rate Calculator and NRR with the NRR Calculator.",
+        ],
+        bullets: [
+          "SaaS Quick Ratio = (New + Expansion + Reactivation) / (Contraction + Churn) = $1,450 / $741 ≈ 2.0. In this ratio, popularised by investor Mamoon Hamid, 4 or above is usually considered efficient growth; below 1 means shrinking",
+          "Gross MRR churn = (Contraction + Churn) / Starting MRR = $741 / $12,950 ≈ 5.7% (monthly)",
+          "Net MRR churn = (Contraction + Churn − Expansion) / Starting MRR = $391 / $12,950 ≈ 3.0%; when expansion exceeds losses you have negative churn",
+          "Monthly NRR = (Starting + Expansion − Contraction − Churn) / Starting = $12,559 / $12,950 ≈ 97.0%",
+          "Logo (customer) churn = Churned accounts / Starting accounts = 10 / 215 ≈ 4.7%; it differs from revenue churn, so track both",
+        ],
+      },
+      {
+        heading: "How do discounts, free trials and exchange rates affect MRR?",
+        paragraphs: [
+          "Discounts: 20 Starter accounts paying 25% less for 3 months add 20 × $36.75 = $735 to MRR, not $980. When the discount ends, the $245 increase shows up as expansion in movement reports; label it 'discount ended' so it is not confused with a real upsell.",
+          "Trials: accounts on a free trial are not in MRR; they become new MRR on their first payment. Track trials with trial-to-paid conversion rate instead. Refunds: a refunded subscription leaves as churned MRR in the month of the refund; some tools rewrite past months instead, so document which method you use.",
+          "Exchange rates: if you bill in several currencies and report in one, FX moves MRR without a single new customer. €5,000 of MRR is $5,400 at an illustrative rate of 1.08 and $5,600 at 1.12 — a 3.7% 'growth' with no new sales. Report MRR in billing currency and at a constant (start-of-period) rate, and show the FX effect on its own line.",
+        ],
+      },
+      {
+        heading: "How do you calculate MRR for an e-commerce subscription?",
+        paragraphs: [
+          "MRR is not SaaS-only. A brand selling coffee, pet food or beauty subscriptions uses the same formula: MRR = Σ (active subscriptions × monthly value). With 800 subscribers on a $15 monthly box and 300 on a $40 box shipped every 3 months, MRR = 800 × $15 + 300 × ($40 / 3) = $12,000 + $4,000 = $16,000.",
+          "Two differences apply in e-commerce. First, customers who 'pause' their subscription leave MRR during the pause and return as reactivation. Second, MRR is a revenue metric, not profit: in subscription models with high product, shipping and packaging costs, make decisions on contribution margin.",
+        ],
+      },
+      {
+        heading: "What's the difference between MRR, ARR, revenue and cash?",
+        paragraphs: [
+          "These four are often confused and produce four different numbers for the same month. In the example, ending MRR is $13,659 while far more cash came in through annual renewals and setup fees.",
+        ],
+        bullets: [
+          "MRR: the monthly revenue power of the subscriber base (normalised, one-offs excluded) — $13,659",
+          "ARR: MRR × 12 — $163,908. Used for planning and investor reporting; see ARR vs MRR for the details",
+          "Revenue (accounting): all recurring and one-off revenue; annual prepayments are recognised over the service period",
+          "Cash collected: money that hit the bank this month; annual prepayments and setup fees can make it very different from MRR",
+        ],
+      },
+      {
+        heading: "The most common MRR mistakes",
+        paragraphs: [
+          "MRR errors usually come from definitions, not the formula. Writing the definitions down once and applying them the same way every month is what makes the number trustworthy.",
+        ],
+        bullets: [
+          "Booking the full annual prepayment in the month it was paid",
+          "Adding setup, training, consulting or one-off product sales to MRR",
+          "Counting discounted accounts at list price",
+          "Counting trial users or accounts with failed payments as active indefinitely",
+          "Mistaking FX movements for growth; not comparing at a constant rate",
+          "Watching only total MRR instead of the new / expansion / contraction / churn breakdown",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does MRR stand for?",
+        answer:
+          "MRR stands for Monthly Recurring Revenue: the monthly value of the subscription revenue you expect to repeat every month from your active customers.",
+      },
+      {
+        question: "How do you calculate MRR?",
+        answer:
+          "Multiply each plan's monthly price by its number of active accounts and add them up; divide annual plans by 12 and quarterly plans by 3 first. Example: 150 × $49 + 60 × ($720 / 12) + 5 × $400 = $12,950. One-off revenue is excluded.",
+      },
+      {
+        question: "What is net new MRR?",
+        answer:
+          "It is the net change in MRR over a month: New + Expansion + Reactivation − Contraction − Churned MRR. In the example $1,002 + $350 + $98 − $240 − $501 = $709; added to starting MRR it gives ending MRR.",
+      },
+      {
+        question: "What is the difference between MRR and ARR?",
+        answer:
+          "ARR is the annual equivalent of MRR: ARR = MRR × 12. MRR drives monthly operating decisions (pricing, campaigns, churn); ARR is used for planning, budgeting and investor reporting. Neither includes one-off revenue.",
+      },
+      {
+        question: "What is a good MRR growth rate?",
+        answer:
+          "There is no single number for everyone; it depends on company size and stage. Look at growth quality alongside the rate: a SaaS Quick Ratio of 4 or more, low gross MRR churn and NRR above 100% indicate healthy growth.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate MRR",
+      description: "Normalise every plan to a monthly value to get MRR, then use the month's MRR movements to calculate net new MRR and growth rate.",
+      steps: [
+        { name: "List active accounts by plan", text: "Split paying accounts at the start of the month by plan; leave out trial and free-plan users." },
+        { name: "Convert every plan to a monthly value", text: "Divide annual prices by 12 and quarterly prices by 3, multiply weekly prices by 52/12; use the price actually paid for discounted accounts." },
+        { name: "Add up MRR", text: "Multiply each plan's monthly value by its account count and sum. $7,350 + $3,600 + $2,000 = $12,950." },
+        { name: "Split the month's movements", text: "Total new, expansion, reactivation, contraction and churned MRR separately." },
+        { name: "Calculate net new MRR and ratios", text: "Add net new MRR to starting MRR to get ending MRR; calculate growth rate, Quick Ratio and MRR churn." },
+      ],
+    },
+    relatedToolKey: "mrr",
+    resources: [
+      { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator/" },
+      { label: "ARR Calculator", href: "/en/free-tools/arr-calculator/" },
+      { label: "ARPA Calculator", href: "/en/free-tools/arpa-calculator/" },
+      { label: "NRR Calculator", href: "/en/free-tools/nrr-calculator/" },
+      { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator/" },
+      { label: "ARR vs MRR: What's the Difference?", href: "/en/blog/arr-vs-mrr-difference/" },
+      { label: "What Is NRR? The SaaS Growth Metric", href: "/en/blog/what-is-nrr-saas-growth-metric/" },
+      { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv/" },
+      { label: "What Is CAC? Customer Acquisition Cost Explained", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
+      { label: "What Is LTV? LTV:CAC Ratio Explained", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
+      { label: "ChartMogul: SaaS Quick Ratio", href: "https://chartmogul.com/blog/saas-quick-ratio/", external: true },
+      { label: "Tomasz Tunguz: What is the Quick Ratio hiding?", href: "https://tomtunguz.com/what-is-quick-ratio-hiding/", external: true },
     ],
   },
 ];
