@@ -449,6 +449,9 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
     relatedToolKey: "llms-txt",
+    resources: [
+      { label: "llms.txt Nedir, İşe Yarıyor mu? (2026 verileriyle)", href: "/blog/llms-txt-nedir-ise-yariyor-mu/" },
+    ],
   },
   {
     slug: "saas-metrikleri-arr-cac-ltv",
@@ -3062,6 +3065,179 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Tomasz Tunguz: Quick Ratio ne gizliyor? (İngilizce)", href: "https://tomtunguz.com/what-is-quick-ratio-hiding/", external: true },
     ],
   },
+  {
+    slug: "llms-txt-nedir-ise-yariyor-mu",
+    seoTitle: "llms.txt Nedir, İşe Yarıyor mu? 2026 Verileriyle",
+    title: "llms.txt Nedir, İşe Yarıyor mu? Kim Okuyor, Nasıl Ölçülür ve AI Botları robots.txt ile Nasıl Yönetilir?",
+    description:
+      "llms.txt nedir, işe yarıyor mu? Ahrefs ve SE Ranking verileri, Google'ın 2026 açıklamaları, sunucu logunda ölçüm ve AI botlarını robots.txt ile yönetme.",
+    category: "yapay-zeka-otomasyon",
+    tldr: [
+      "llms.txt, sitenin kök dizinine konan ve yapay zekâ araçlarına sitenin en önemli sayfalarını Markdown biçiminde listeleyen bir dosyadır. Jeremy Howard (Answer.AI) Eylül 2024'te önerdi; onaylanmış bir standart değil, bir öneridir.",
+      "Bugünkü veriler net: Ahrefs'in Mayıs 2026'da 137 bin alan adını incelediği çalışmada llms.txt dosyalarının %97'si ay boyunca tek bir istek almadı; SE Ranking'in yaklaşık 300 bin alan adlık analizinde dosya ile AI alıntısı arasında ilişki çıkmadı.",
+      "Google, AI Overviews ve AI Mode'da görünmek için llms.txt gerekmediğini söylüyor; John Mueller Haziran 2026'da 'şimdilik tamamen spekülatif' dedi. Dosyayı en çok kodlama ajanları (Claude Code gibi) ve SEO araçları istiyor.",
+      "Karar: geliştirici dokümanı, API ya da SaaS ürününüz varsa 30 dakikalık iş olarak ekleyin; e-ticaret ve yerel işletmede öncelik değil. Asıl iş, AI arama botlarını robots.txt'de engellememek, sayfaların dizinde olması ve sunucu logundan gerçekten kimin geldiğini ölçmektir.",
+    ],
+    publishedAt: "2026-10-29",
+    readingMinutes: 9,
+    tags: ["llms.txt", "GEO", "AI Arama", "robots.txt", "AI Botları", "Teknik SEO"],
+    sections: [
+      {
+        heading: "llms.txt nedir? (Kısa cevap)",
+        paragraphs: [
+          "llms.txt, sitenizin kök dizininde (örneğin siteadi.com/llms.txt) duran, büyük dil modellerine (LLM) ve yapay zekâ araçlarına 'bu sitede en önemli içerikler bunlar' diyen düz metin bir dosyadır. Markdown ile yazılır: bir H1 başlık (site ya da proje adı), bir cümlelik özet ve H2 bölümler altında açıklamalı bağlantı listeleri.",
+          "Fikri Answer.AI'dan Jeremy Howard Eylül 2024'te llmstxt.org'da önerdi. Amaç, reklam, menü ve JavaScript'le dolu HTML sayfaları yerine yapay zekâya temiz ve kısa bir içerik haritası sunmaktı. Önemli ayrıntı: llms.txt bir W3C ya da IETF standardı değildir; hiçbir AI şirketi dosyayı okumayı resmî olarak taahhüt etmemiştir.",
+          "Dosyanın formatı, örnek bir llms.txt ve hangi sayfaların girmesi gerektiği llms.txt Oluşturucu sayfasında ayrıntılı anlatılıyor; bu yazı 'işe yarıyor mu, kim okuyor, nasıl ölçülür' sorularına odaklanıyor.",
+        ],
+      },
+      {
+        heading: "llms.txt işe yarıyor mu? 2026 verileri ne diyor?",
+        paragraphs: [
+          "Bugüne kadarki en büyük iki çalışma aynı sonuca varıyor: llms.txt, AI aramalarında görünürlüğü ölçülebilir biçimde artırmıyor ve dosyayı AI arama botlarının çok küçük bir kısmı istiyor.",
+          "Ahrefs (Haziran 2026), Mayıs 2026'da trafik alan 137.210 alan adının sunucu loglarını inceledi. Alan adlarının yaklaşık %28'i llms.txt yayınlıyordu (Ahrefs kullanıcıları teknik bir kitle olduğu için bunu üst sınır olarak niteliyor). Bu dosyaların %97'si ay boyunca hiç istek almadı; tüm dosyalara gelen yaklaşık 22 bin isteğin %96'sı botlardan geliyordu ve bu botların %77'si yapay zekâ aracı değil, SEO denetim araçları, genel tarayıcılar ve teknoloji profilleme botlarıydı.",
+          "SE Ranking (Kasım 2025) yaklaşık 300 bin alan adında llms.txt varlığı ile büyük dil modellerinin yanıtlarında alıntılanma sıklığını karşılaştırdı. Alan adlarının %10,13'ünde dosya vardı ve iki değişken arasında ilişki bulunmadı; llms.txt değişkenini modelden çıkarmak tahmin doğruluğunu artırdı.",
+        ],
+        bullets: [
+          "Ahrefs'te AI ile ilgili tüm kategoriler (ajanlar, eğitim botları, asistanlar, arama botları) toplam isteklerin %19,5'i; yazarlar bunu 'en cömert okuma' olarak tanımlıyor, çünkü dosyanın istenmesi okunduğu anlamına gelmiyor",
+          "AI botları içinde en çok isteyen GPTBot (%4,51); ClaudeBot %0,8, ChatGPT aramasının botu OAI-SearchBot %0,74; PerplexityBot llms.txt'yi Slack'in bağlantı önizleme botundan daha az istedi",
+          "Dikkat çeken istisna: Claude Code adlı kodlama ajanı, GPTBot dışındaki tüm AI arama, asistan ve eğitim botlarından daha fazla istek yaptı — llms.txt'nin bugünkü gerçek okuru geliştirici araçları",
+          "Var olmayan llms.txt dosyalarına (404) gelen isteklerin %98'i insanlardan, sıfırı AI botlarından geliyordu: dosya yoksa AI botları onu aramıyor bile",
+        ],
+      },
+      {
+        heading: "Google llms.txt hakkında ne diyor?",
+        paragraphs: [
+          "Google Arama tarafının tutumu açık: Mayıs 2026'da yayımlanan AI arama optimizasyon rehberi, AI Overviews ve AI Mode'da görünmek için llms.txt, yapay zekâya özel metin dosyaları, özel şema ya da içeriği küçük parçalara bölmek gibi işlemlerin gerekmediğini söylüyor. John Mueller, Haziran 2026'da Reddit'te llms.txt için 'şimdilik tamamen spekülatif' dedi ve çoğu site için asıl sorunun ajanları engellemek olacağını ekledi. Daha önce de dosyayı anahtar kelime meta etiketine benzetmişti.",
+          "Kafa karıştıran nokta Chrome tarafı: Lighthouse 13.3 (Mayıs 2026) deneysel 'Agentic Browsing' kategorisine bir llms.txt denetimi ekledi ve dosyayı 'gelişmekte olan bir gelenek' olarak tanımlıyor. Bu, tarayıcı ajanlarının geleceğine yönelik deneysel bir kontroldür; Google Arama'da sıralama ya da AI Overviews sinyali değildir. Lighthouse'ta bu uyarıyı görmeniz, sitenizin aramada geri kaldığı anlamına gelmez.",
+        ],
+      },
+      {
+        heading: "llms.txt eklemeli miyim? Karar listesi",
+        paragraphs: [
+          "llms.txt'nin maliyeti düşük, getirisi bugün belirsiz. Bu yüzden karar 'herkes eklesin' ya da 'tamamen gereksiz' değil, sitenin kimin için olduğuna göre verilmelidir.",
+          "Riskleri de unutmayın: dosya güncellenmezse kaldırılmış sayfalara yönlendirir; Ahrefs, dosyanın yapay zekâ araçlarına talimat gibi okunabilecek metin içerebileceği için (prompt injection) kod gibi yönetilmesini, yani değişikliklerin gözden geçirilmesini öneriyor.",
+        ],
+        bullets: [
+          "Ekleyin (öncelikli): API ya da geliştirici dokümanı, SaaS ürün dokümanı, açık kaynak proje — Claude Code ve benzeri ajanlar bu sitelerin gerçek ziyaretçisi",
+          "Ekleyebilirsiniz (30 dakikalık iş, beklenti düşük): içerik ağırlıklı B2B siteleri, danışmanlık ve hizmet siteleri; araçlar ve rehberler gibi derli toplu bir sayfa listeniz varsa",
+          "Öncelik değil: e-ticaret ve yerel işletme siteleri — burada ürün verisi (Merchant Center), Google İşletme Profili, dizine eklenme ve sayfa hızı çok daha etkili",
+          "Yapmayın: llms.txt'yi robots.txt'nin yerine erişim kontrolü sanmak, botlar için ayrı Markdown sayfalar üretip asıl sayfaları ihmal etmek, dosyaya her URL'yi doldurmak",
+        ],
+      },
+      {
+        heading: "llms.txt, robots.txt ve sitemap.xml arasındaki fark nedir?",
+        paragraphs: [
+          "Üç dosya da kök dizinde durur ama farklı işler yapar ve birbirinin yerini tutmaz. AI botlarına erişim izni vermek ya da kısıtlamak llms.txt ile değil, robots.txt ile yapılır.",
+        ],
+        bullets: [
+          "robots.txt: hangi botun hangi yolları tarayabileceğini söyler (erişim kuralı). Arama ve AI botlarının büyük çoğunluğu uyar",
+          "sitemap.xml: arama motorlarına dizine eklenecek URL'lerin tam listesini ve güncelleme tarihlerini verir (keşif)",
+          "llms.txt: insanların ve yapay zekânın okuyabileceği kısa, açıklamalı bir 'en önemli sayfalar' özeti sunar (bağlam). Hiçbir bot buna uymak zorunda değildir",
+        ],
+      },
+      {
+        heading: "AI botları robots.txt ile nasıl yönetilir?",
+        paragraphs: [
+          "AI şirketleri farklı işler için farklı botlar kullanır ve her biri robots.txt'de ayrı ayrı yönetilir. En önemli ayrım: model eğitimi için tarayan botlar, AI arama sonuçları için tarayan botlar ve bir kullanıcının sorusu üzerine o an sayfayı açan botlar. OpenAI belgelerine göre bu ayarlar birbirinden bağımsızdır; eğitimi kapatıp aramada görünmeye devam edebilirsiniz.",
+          "Önce politikanızı seçin, sonra robots.txt'ye uygun blokları ekleyin. Değişikliklerin etkisi zaman alır (OpenAI arama için yaklaşık 24 saat diyor). Kullanıcı isteğiyle çalışan botlar (ChatGPT-User, Perplexity-User) robots.txt'ye uymayabilir; içeriği gerçekten kapatmak gerekiyorsa tek çözüm sayfayı herkese açık olmaktan çıkarmaktır.",
+        ],
+        bullets: [
+          "Eğitim botları: GPTBot (OpenAI), ClaudeBot (Anthropic), Google-Extended (Gemini uygulamaları ve Vertex AI; Google, bu tokenin Google Arama'da dahil edilmeyi ve sıralamayı etkilemediğini belirtiyor)",
+          "AI arama botları: OAI-SearchBot (ChatGPT arama), Claude-SearchBot (Claude arama), PerplexityBot (Perplexity arama). Bunları engellemek ilgili AI aramada görünürlüğünüzü azaltır",
+          "Kullanıcı isteği botları: ChatGPT-User, Claude-User, Perplexity-User — bir kullanıcı sorduğunda sayfayı o an açar; Anthropic, Claude-User'ı engellemenin kullanıcı yönlendirmeli aramada görünürlüğü azaltabileceğini söylüyor",
+          "Politika 1 — Hepsine açık (çoğu işletme sitesi için önerilen): ek kural gerekmez; 'User-agent: *' ve 'Allow: /' yeterlidir",
+          "Politika 2 — AI aramada görün, eğitime kapat: 'User-agent: GPTBot', 'User-agent: ClaudeBot' ve 'User-agent: Google-Extended' satırlarının her birinin altına 'Disallow: /' yazın; OAI-SearchBot, Claude-SearchBot ve PerplexityBot'a dokunmayın",
+          "Politika 3 — Tüm AI botlarına kapat: yukarıdaki eğitim ve arama botlarının hepsine 'Disallow: /' verin; AI aramalarında kaynak olarak görünme şansınızdan da vazgeçtiğinizi bilerek",
+        ],
+      },
+      {
+        heading: "llms.txt okunuyor mu? Sunucu logunda nasıl ölçülür?",
+        paragraphs: [
+          "Ahrefs'in tavsiyesi de bu: karar vermeden önce kendi loglarınıza bakın. Aşağıdaki adımlar bir ay içinde dosyanızı kimin istediğini gösterir. Not: GitHub Pages gibi statik barındırma hizmetleri erişim logu vermez; bu durumda sitenizin önündeki CDN'in bot raporlarını ya da logu tutulan bir barındırmayı kullanmanız gerekir.",
+          "Sonucu doğru okuyun: bir botun llms.txt'yi istemesi, içeriği kullandığı ya da sizi alıntılayacağı anlamına gelmez. Anlamlı soru şudur: llms.txt'yi isteyen AI botları, ardından dosyadaki sayfaları da ziyaret ediyor mu? Aynı log üzerinde bu sayfalara gelen OAI-SearchBot, Claude-SearchBot ve PerplexityBot isteklerini dosya eklenmeden önceki ayla karşılaştırın.",
+        ],
+        bullets: [
+          "1. Son 30 günün erişim logunu indirin (Nginx/Apache 'access.log' ya da barındırma panelindeki ham loglar)",
+          "2. llms.txt isteklerini kullanıcı ajanına göre sayın: grep \"llms.txt\" access.log | awk -F'\"' '{print $6}' | sort | uniq -c | sort -rn",
+          "3. Sahte botları ayıklayın: kullanıcı ajanı kolayca taklit edilir. OpenAI ve Google botlarının IP aralıklarını yayımlar; IP'leri bu listelerle ya da ters DNS sorgusuyla doğrulayın",
+          "4. Durum kodlarına bakın: 200 dönen istekler dosyanın sunulduğunu, 404'ler dosyanın olmadığını gösterir; sunucu hataları (5xx) Lighthouse denetiminde de uyarı üretir",
+          "5. Karşılaştırın: aynı dönemde robots.txt'yi ve asıl sayfalarınızı isteyen AI botlarını sayın; llms.txt'yi isteyen bot sayısı bunun küçük bir kesriyse dosya şu an sizin için bir 'okuma kanalı' değildir",
+        ],
+      },
+      {
+        heading: "AI aramalarında görünmek için asıl ne işe yarar?",
+        paragraphs: [
+          "Google'ın AI arama rehberi, üretken AI özellikleri için yapılacak işin ayrı bir disiplin değil SEO'nun parçası olduğunu söylüyor. AI Overviews ve AI Mode'da kaynak gösterilmenin ön koşulu, sayfanın dizinde ve snippet'e uygun olmasıdır. Diğer AI aramalarında da ortak payda aynıdır: botun sayfaya erişebilmesi ve sayfada alıntılanmaya değer, özgün bir bilgi bulunması.",
+          "Bu sitede uyguladığımız sıra şöyle: önce sayfaların derleme sırasında üretilmiş tam HTML olarak yayınlanması ve dizine girmesi, sonra her yazının ilk bölümünde sorunun doğrudan cevabı ve kendi hesap örnekleri, en son llms.txt gibi düşük maliyetli ekler.",
+        ],
+        bullets: [
+          "Erişim: robots.txt'de AI arama botlarını (OAI-SearchBot, Claude-SearchBot, PerplexityBot) ve Googlebot'u engellemeyin; güvenlik duvarı ya da bot koruması ayarlarının bu botları kesmediğini kontrol edin",
+          "Dizin: önemli sayfalar Google'da dizinde olmalı; Search Console'da 'Keşfedildi – dizine eklenmedi' listesini düzenli temizleyin",
+          "Okunabilir HTML: içeriğin JavaScript çalışmadan da HTML'de bulunması (sunucu tarafı ya da statik üretim) birçok AI botu için önemlidir",
+          "Özgün içerik: Google'ın ifadesiyle 'sıradan olmayan' içerik — kendi verileriniz, hesap örnekleriniz, deneyiminiz. Herkesin yazdığı tanımı tekrarlamak alıntı getirmez",
+          "Cevap önce yapı: soru biçimli başlıklar ve her bölümün ilk cümlesinde net cevap, hem okur hem de AI özetleri için en kolay alıntılanan biçimdir",
+        ],
+      },
+      {
+        heading: "llms.txt nasıl oluşturulur? (Kısa yol)",
+        paragraphs: [
+          "Eklemeye karar verdiyseniz iş yarım saati geçmez: H1'e site adını, altına tek cümlelik özeti yazın, en önemli 20–50 sayfanızı 'Araçlar', 'Rehberler', 'Hizmetler' gibi H2 bölümler altında açıklamalı bağlantılar olarak listeleyin ve dosyayı kök dizine yükleyin. Ardından tarayıcıda siteadi.com/llms.txt adresini açarak düz metin olarak göründüğünü kontrol edin.",
+          "llms.txt Oluşturucu bu adımları formla yapar, örnek dosyayla başlamanızı sağlar ve H1, özet, bağlantı biçimi, göreli ya da http bağlantı ve tekrar eden URL hatalarını kontrol eder. Statik site üreticisi kullanıyorsanız dosyayı derleme sırasında sayfa envanterinden otomatik üretmek, eski bağlantı riskini ortadan kaldırır; bu sitede de llms.txt her derlemede yeniden üretiliyor.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "llms.txt ne işe yarar?",
+        answer:
+          "Yapay zekâ araçlarına sitenin en önemli sayfalarını kısa, açıklamalı bir Markdown listesi olarak sunar. Bugün en çok kodlama ajanları ve SEO araçları tarafından isteniyor; AI arama botlarının çok küçük bir kısmı dosyayı istiyor ve AI alıntılarına etkisi ölçülemedi.",
+      },
+      {
+        question: "llms.txt SEO'ya etki eder mi?",
+        answer:
+          "Google Arama'da hayır: Google, AI Overviews ve AI Mode dahil arama sonuçları için llms.txt'yi kullanmadığını ve gerekmediğini söylüyor. SE Ranking'in yaklaşık 300 bin alan adlık analizinde de dosya ile AI alıntısı arasında ilişki bulunmadı.",
+      },
+      {
+        question: "ChatGPT ve Claude llms.txt okuyor mu?",
+        answer:
+          "Ahrefs'in Mayıs 2026 verisinde OpenAI'ın GPTBot'u ve Anthropic'in ClaudeBot'u llms.txt'yi az sayıda istedi; ChatGPT aramasının botu OAI-SearchBot'un payı %1'in altındaydı. En dikkat çekici okur Anthropic'in kodlama ajanı Claude Code'du. Dosyanın istenmesi, içeriğin yanıtlarda kullanıldığı anlamına gelmez.",
+      },
+      {
+        question: "llms.txt ile robots.txt aynı şey mi?",
+        answer:
+          "Hayır. robots.txt botların hangi sayfaları tarayabileceğini belirleyen erişim kuralıdır ve botların çoğu ona uyar. llms.txt yalnızca önemli sayfaların bir özetidir; erişimi kısıtlamaz ve hiçbir bot ona uymak zorunda değildir.",
+      },
+      {
+        question: "AI botlarını engellemeli miyim?",
+        answer:
+          "AI aramalarında kaynak olarak görünmek istiyorsanız arama botlarını (OAI-SearchBot, Claude-SearchBot, PerplexityBot) engellemeyin. İçeriğinizin model eğitiminde kullanılmasını istemiyorsanız yalnızca eğitim botlarını (GPTBot, ClaudeBot, Google-Extended) robots.txt'de kapatabilirsiniz; bu ayarlar birbirinden bağımsızdır.",
+      },
+    ],
+    howTo: {
+      name: "llms.txt'nin okunup okunmadığı sunucu logunda nasıl ölçülür?",
+      description: "Erişim loglarıyla llms.txt'yi hangi botların istediğini bulun, sahte botları ayıklayın ve sonucu asıl sayfalara gelen AI bot trafiğiyle karşılaştırın.",
+      steps: [
+        { name: "Erişim logunu indirin", text: "Son 30 günün sunucu ya da CDN erişim logunu alın; statik barındırmada CDN bot raporlarını kullanın." },
+        { name: "llms.txt isteklerini sayın", text: "Logda llms.txt geçen satırları kullanıcı ajanına göre gruplayıp sayın." },
+        { name: "Botları doğrulayın", text: "Kullanıcı ajanı taklit edilebildiği için IP adreslerini şirketlerin yayımladığı aralıklarla ya da ters DNS ile doğrulayın." },
+        { name: "Durum kodlarını kontrol edin", text: "200, 404 ve 5xx yanıtlarını ayırın; dosyanın düzgün sunulduğundan emin olun." },
+        { name: "Asıl sayfalarla karşılaştırın", text: "Aynı dönemde robots.txt'yi ve içerik sayfalarınızı isteyen AI botlarını sayın; llms.txt'nin payına göre karar verin." },
+      ],
+    },
+    relatedToolKey: "llms-txt",
+    resources: [
+      { label: "llms.txt Oluşturucu: Örnek Dosya ve Format Kontrolü", href: "/ucretsiz-araclar/llms-txt-olusturucu/" },
+      { label: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir?", href: "/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" },
+      { label: "n8n ile Lead Enrichment Otomasyonu", href: "/blog/n8n-ile-lead-enrichment-otomasyonu/" },
+      { label: "Ahrefs: 137 bin site analizi, llms.txt dosyalarının %97'si okunmuyor (İngilizce)", href: "https://ahrefs.com/blog/llmstxt-study/", external: true },
+      { label: "Search Engine Journal: SE Ranking, llms.txt'nin AI alıntılarına etkisi (İngilizce)", href: "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/", external: true },
+      { label: "Search Engine Journal: Google'ın AI arama rehberi (İngilizce)", href: "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/", external: true },
+      { label: "OpenAI: Tarayıcılara genel bakış (İngilizce)", href: "https://developers.openai.com/api/docs/bots", external: true },
+      { label: "Anthropic: Claude tarayıcıları (İngilizce)", href: "https://support.claude.com/en/articles/8896518", external: true },
+      { label: "Perplexity: Tarayıcılar (İngilizce)", href: "https://docs.perplexity.ai/guides/bots", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -3389,6 +3565,9 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       ],
     },
     relatedToolKey: "llms-txt",
+    resources: [
+      { label: "What Is llms.txt and Does It Work? (2026 data)", href: "/en/blog/what-is-llms-txt-does-it-work/" },
+    ],
   },
   {
     slug: "saas-metrics-arr-cac-ltv",
@@ -5770,6 +5949,179 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "What Is LTV? LTV:CAC Ratio Explained", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
       { label: "ChartMogul: SaaS Quick Ratio", href: "https://chartmogul.com/blog/saas-quick-ratio/", external: true },
       { label: "Tomasz Tunguz: What is the Quick Ratio hiding?", href: "https://tomtunguz.com/what-is-quick-ratio-hiding/", external: true },
+    ],
+  },
+  {
+    slug: "what-is-llms-txt-does-it-work",
+    seoTitle: "What Is llms.txt and Does It Work? 2026 Data",
+    title: "What Is llms.txt and Does It Work? Who Reads It, How to Measure It and How to Manage AI Bots with robots.txt",
+    description:
+      "What is llms.txt and does it work? Ahrefs and SE Ranking data, Google's 2026 statements, measuring it in server logs and managing AI bots with robots.txt.",
+    category: "yapay-zeka-otomasyon",
+    tldr: [
+      "llms.txt is a Markdown file placed at your site's root that lists your most important pages for AI tools. Jeremy Howard (Answer.AI) proposed it in September 2024; it is a proposal, not a ratified standard.",
+      "Today's data is clear: in Ahrefs' study of 137K domains in May 2026, 97% of llms.txt files received zero requests all month; SE Ranking's analysis of about 300K domains found no relationship between the file and AI citations.",
+      "Google says llms.txt is not needed to appear in AI Overviews or AI Mode; John Mueller called it 'purely speculative for now' in June 2026. The file is requested mostly by coding agents (such as Claude Code) and SEO tools.",
+      "Verdict: add it as a 30-minute job if you run developer docs, an API or a SaaS product; for e-commerce and local businesses it is not a priority. The real work is not blocking AI search bots in robots.txt, getting pages indexed and measuring who actually visits in your server logs.",
+    ],
+    publishedAt: "2026-10-29",
+    readingMinutes: 9,
+    tags: ["llms.txt", "GEO", "AI Search", "robots.txt", "AI Bots", "Technical SEO"],
+    sections: [
+      {
+        heading: "What is llms.txt? (Short answer)",
+        paragraphs: [
+          "llms.txt is a plain-text file at your site's root (for example yoursite.com/llms.txt) that tells large language models (LLMs) and AI tools 'these are the most important pages on this site'. It is written in Markdown: an H1 title (site or project name), a one-sentence summary and annotated link lists under H2 sections.",
+          "Jeremy Howard of Answer.AI proposed the idea on llmstxt.org in September 2024. The goal was to give AI a clean, short content map instead of HTML pages full of ads, menus and JavaScript. One important detail: llms.txt is not a W3C or IETF standard, and no AI company has formally committed to reading it.",
+          "The format, an example file and which pages to include are covered in detail on the llms.txt Generator page; this article focuses on whether it works, who reads it and how to measure it.",
+        ],
+      },
+      {
+        heading: "Does llms.txt work? What does the 2026 data say?",
+        paragraphs: [
+          "The two largest studies so far reach the same conclusion: llms.txt does not measurably increase visibility in AI search, and only a tiny share of AI search bots even request it.",
+          "Ahrefs (June 2026) analysed server logs for 137,210 domains that received traffic in May 2026. About 28% published an llms.txt file (Ahrefs calls this an upper bound because its users skew technical). 97% of those files received no requests during the month; of roughly 22K requests to all files, 96% came from bots — and 77% of those bots were not AI tools but SEO audit tools, general crawlers and tech-profiling bots.",
+          "SE Ranking (November 2025) compared llms.txt presence with how often about 300K domains are cited in LLM answers. 10.13% of domains had the file and there was no relationship between the two; removing the llms.txt variable actually improved the model's accuracy.",
+        ],
+        bullets: [
+          "In the Ahrefs data, all AI-related categories combined (agents, training crawlers, assistants, retrieval bots) made up 19.5% of requests — which the authors call 'the most generous possible reading', because fetching a file is not the same as reading it",
+          "Among AI bots, GPTBot requested the file most (4.51%); ClaudeBot 0.8% and OAI-SearchBot, ChatGPT search's crawler, 0.74%. PerplexityBot requested llms.txt less often than Slack's link-preview bot",
+          "The notable exception: Claude Code, a coding agent, made more requests than every AI retrieval, assistant and training bot except GPTBot — today's real readers of llms.txt are developer tools",
+          "98% of requests for missing llms.txt files (404s) came from humans and none from AI bots: if the file isn't there, AI bots don't even look for it",
+        ],
+      },
+      {
+        heading: "What does Google say about llms.txt?",
+        paragraphs: [
+          "Google Search's position is clear: its AI search optimisation guide, published in May 2026, says you don't need llms.txt, AI-specific text files, special schema or content chunking to appear in AI Overviews and AI Mode. In June 2026 John Mueller called llms.txt 'purely speculative for now' on Reddit and added that, for most sites, the bigger issue will be blocking agents. He had earlier compared the file to the keywords meta tag.",
+          "The confusing part is on the Chrome side: Lighthouse 13.3 (May 2026) added an llms.txt audit to its experimental 'Agentic Browsing' category and describes the file as an 'emerging convention'. It is an experimental check aimed at future browser agents, not a ranking or AI Overviews signal in Google Search. Seeing that warning in Lighthouse does not mean your site is falling behind in search.",
+        ],
+      },
+      {
+        heading: "Should you add llms.txt? A decision checklist",
+        paragraphs: [
+          "llms.txt costs little and its return is uncertain today. So the decision should not be 'everyone add it' or 'completely useless' — it depends on who your site is for.",
+          "Don't ignore the risks either: an unmaintained file points to removed pages, and Ahrefs recommends treating the file like code — reviewing changes — because it can contain text that AI tools might read as instructions (prompt injection).",
+        ],
+        bullets: [
+          "Add it (priority): API or developer documentation, SaaS product docs, open-source projects — Claude Code and similar agents are real visitors of these sites",
+          "Optional (a 30-minute job, low expectations): content-led B2B sites, consulting and service sites, especially if you have a tidy list of tools and guides",
+          "Not a priority: e-commerce and local business sites — product feeds (Merchant Center), Google Business Profile, indexing and page speed matter far more",
+          "Don't: treat llms.txt as access control instead of robots.txt, build separate Markdown pages for bots while neglecting your real pages, or stuff every URL into the file",
+        ],
+      },
+      {
+        heading: "What's the difference between llms.txt, robots.txt and sitemap.xml?",
+        paragraphs: [
+          "All three live at the root but do different jobs and don't replace each other. Granting or restricting AI bot access is done with robots.txt, not llms.txt.",
+        ],
+        bullets: [
+          "robots.txt: tells each bot which paths it may crawl (access rules). Most search and AI bots follow it",
+          "sitemap.xml: gives search engines the full list of URLs to index and their update dates (discovery)",
+          "llms.txt: offers a short, annotated 'most important pages' summary for people and AI (context). No bot is obliged to follow it",
+        ],
+      },
+      {
+        heading: "How do you manage AI bots with robots.txt?",
+        paragraphs: [
+          "AI companies use different bots for different jobs, and each is managed separately in robots.txt. The key split: bots that crawl for model training, bots that crawl for AI search results, and bots that open a page on demand when a user asks a question. According to OpenAI's documentation these settings are independent — you can block training and still appear in search.",
+          "Pick your policy first, then add the matching blocks to robots.txt. Changes take time to apply (OpenAI says about 24 hours for search). User-initiated fetchers (ChatGPT-User, Perplexity-User) may not follow robots.txt; if content truly must stay private, the only fix is to take it off the public web.",
+        ],
+        bullets: [
+          "Training bots: GPTBot (OpenAI), ClaudeBot (Anthropic), Google-Extended (Gemini Apps and Vertex AI; Google states this token does not affect inclusion or ranking in Google Search)",
+          "AI search bots: OAI-SearchBot (ChatGPT search), Claude-SearchBot (Claude search), PerplexityBot (Perplexity search). Blocking them reduces your visibility in that AI search",
+          "User-initiated bots: ChatGPT-User, Claude-User, Perplexity-User — they open the page when a user asks; Anthropic notes that blocking Claude-User may reduce visibility for user-directed web search",
+          "Policy 1 — Open to all (recommended for most business sites): no extra rules; 'User-agent: *' with 'Allow: /' is enough",
+          "Policy 2 — Visible in AI search, closed to training: add 'Disallow: /' under each of 'User-agent: GPTBot', 'User-agent: ClaudeBot' and 'User-agent: Google-Extended'; leave OAI-SearchBot, Claude-SearchBot and PerplexityBot alone",
+          "Policy 3 — Closed to all AI bots: give 'Disallow: /' to all training and search bots above, knowing you also give up appearing as a source in AI search",
+        ],
+      },
+      {
+        heading: "Is your llms.txt being read? How to measure it in server logs",
+        paragraphs: [
+          "This is Ahrefs' own advice: check your logs before deciding. The steps below show who requested your file over a month. Note: static hosts such as GitHub Pages don't provide access logs; you'll need your CDN's bot reports or hosting that keeps logs.",
+          "Read the result carefully: a bot requesting llms.txt does not mean it uses the content or will cite you. The meaningful question is whether AI bots that fetch llms.txt then visit the pages listed in it. In the same logs, compare OAI-SearchBot, Claude-SearchBot and PerplexityBot requests to those pages with the month before you added the file.",
+        ],
+        bullets: [
+          "1. Download the last 30 days of access logs (Nginx/Apache access.log or raw logs from your hosting panel)",
+          "2. Count llms.txt requests by user agent: grep \"llms.txt\" access.log | awk -F'\"' '{print $6}' | sort | uniq -c | sort -rn",
+          "3. Filter out fake bots: user agents are easy to spoof. OpenAI and Google publish their bots' IP ranges; verify IPs against those lists or with a reverse DNS lookup",
+          "4. Check status codes: 200 means the file was served, 404 means it doesn't exist; server errors (5xx) also trigger a warning in the Lighthouse audit",
+          "5. Compare: count AI bots requesting robots.txt and your actual pages in the same period; if llms.txt requests are a small fraction of that, the file is not a reading channel for you right now",
+        ],
+      },
+      {
+        heading: "What actually helps you appear in AI search?",
+        paragraphs: [
+          "Google's AI search guide says optimising for generative AI features is part of SEO, not a separate discipline. Being indexed and eligible for snippets is a prerequisite for being cited in AI Overviews and AI Mode. Across other AI search products the common denominator is the same: the bot must be able to reach the page, and the page must contain original information worth citing.",
+          "The order we follow on this site: first, publish pages as full HTML generated at build time and get them indexed; then put a direct answer and our own worked examples in the first section of every article; low-cost extras like llms.txt come last.",
+        ],
+        bullets: [
+          "Access: don't block AI search bots (OAI-SearchBot, Claude-SearchBot, PerplexityBot) or Googlebot in robots.txt; check that firewall or bot-protection settings don't cut them off",
+          "Indexing: important pages must be indexed in Google; regularly clear the 'Discovered – currently not indexed' list in Search Console",
+          "Readable HTML: content that exists in the HTML without running JavaScript (server-side or static generation) matters for many AI bots",
+          "Original content: what Google calls 'non-commodity' content — your own data, worked examples and experience. Repeating the definition everyone writes doesn't earn citations",
+          "Answer-first structure: question-style headings with a clear answer in the first sentence of each section is the easiest format to cite, for readers and AI summaries alike",
+        ],
+      },
+      {
+        heading: "How do you create llms.txt? (The short version)",
+        paragraphs: [
+          "If you decide to add it, the job takes under half an hour: put your site name in the H1 and a one-sentence summary below it, list your 20–50 most important pages as annotated links under H2 sections such as 'Tools', 'Guides' and 'Services', and upload the file to the root. Then open yoursite.com/llms.txt in a browser and check it displays as plain text.",
+          "The llms.txt Generator does these steps with a form, lets you start from an example file and checks the H1, summary, link format, relative or http links and duplicate URLs. If you use a static site generator, generating the file from your page inventory at build time removes the stale-link risk; on this site llms.txt is regenerated on every build.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What is llms.txt used for?",
+        answer:
+          "It gives AI tools a short, annotated Markdown list of a site's most important pages. Today it is requested mostly by coding agents and SEO tools; only a tiny share of AI search bots request it, and no effect on AI citations has been measured.",
+      },
+      {
+        question: "Does llms.txt affect SEO?",
+        answer:
+          "Not in Google Search: Google says it does not use llms.txt and that it is not needed for search results, including AI Overviews and AI Mode. SE Ranking's analysis of about 300K domains also found no relationship between the file and AI citations.",
+      },
+      {
+        question: "Do ChatGPT and Claude read llms.txt?",
+        answer:
+          "In Ahrefs' May 2026 data, OpenAI's GPTBot and Anthropic's ClaudeBot requested llms.txt only occasionally, and ChatGPT search's OAI-SearchBot accounted for less than 1% of requests. The most notable reader was Anthropic's coding agent, Claude Code. Fetching the file doesn't mean its content is used in answers.",
+      },
+      {
+        question: "Is llms.txt the same as robots.txt?",
+        answer:
+          "No. robots.txt is an access rule that tells bots which pages they may crawl, and most bots follow it. llms.txt is only a summary of important pages; it doesn't restrict access and no bot is obliged to follow it.",
+      },
+      {
+        question: "Should I block AI bots?",
+        answer:
+          "If you want to appear as a source in AI search, don't block search bots (OAI-SearchBot, Claude-SearchBot, PerplexityBot). If you don't want your content used for model training, you can block only training bots (GPTBot, ClaudeBot, Google-Extended) in robots.txt; these settings are independent.",
+      },
+    ],
+    howTo: {
+      name: "How to check whether llms.txt is read, using server logs",
+      description: "Use access logs to find which bots request llms.txt, filter out fake bots and compare the result with AI bot traffic to your real pages.",
+      steps: [
+        { name: "Download your access logs", text: "Get the last 30 days of server or CDN access logs; on static hosting, use your CDN's bot reports." },
+        { name: "Count llms.txt requests", text: "Group the log lines that contain llms.txt by user agent and count them." },
+        { name: "Verify the bots", text: "User agents can be spoofed, so verify IP addresses against the ranges companies publish or with reverse DNS." },
+        { name: "Check status codes", text: "Separate 200, 404 and 5xx responses; make sure the file is served correctly." },
+        { name: "Compare with your real pages", text: "Count AI bots requesting robots.txt and your content pages in the same period; decide based on llms.txt's share." },
+      ],
+    },
+    relatedToolKey: "llms-txt",
+    resources: [
+      { label: "llms.txt Generator: Example File and Format Check", href: "/en/free-tools/llms-txt-generator/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "GA4 Unassigned Traffic: How to Fix It", href: "/en/blog/ga4-unassigned-traffic-how-to-fix/" },
+      { label: "n8n Lead Enrichment Automation", href: "/en/blog/n8n-lead-enrichment-automation/" },
+      { label: "Ahrefs: We analyzed 137K sites — 97% of llms.txt files never get read", href: "https://ahrefs.com/blog/llmstxt-study/", external: true },
+      { label: "Search Engine Journal: SE Ranking on llms.txt and AI citations", href: "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/", external: true },
+      { label: "Search Engine Journal: Google's new AI search guide", href: "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/", external: true },
+      { label: "OpenAI: Overview of OpenAI crawlers", href: "https://developers.openai.com/api/docs/bots", external: true },
+      { label: "Anthropic: Claude's crawlers", href: "https://support.claude.com/en/articles/8896518", external: true },
+      { label: "Perplexity: Perplexity crawlers", href: "https://docs.perplexity.ai/guides/bots", external: true },
     ],
   },
 ];

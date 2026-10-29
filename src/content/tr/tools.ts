@@ -215,6 +215,7 @@ export const llmsTxt: ToolContent = {
     { label: "Pazarlama Kanalı Testi", href: "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun/", note: "Hangi kanala odaklanmalı" },
   ],
   externalSource: { label: "llmstxt.org: llms.txt önerisi", href: "https://llmstxt.org/" },
+  relatedPost: { label: "llms.txt Nedir, İşe Yarıyor mu? (2026 verileriyle)", href: "/blog/llms-txt-nedir-ise-yariyor-mu/" },
 };
 
 export const trTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };

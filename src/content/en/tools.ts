@@ -193,6 +193,7 @@ export const llmsTxt: ToolContent = {
     { label: "Marketing Channel Quiz", href: "/en/free-tools/marketing-channel-quiz/", note: "Which channel to focus on" },
   ],
   externalSource: { label: "llmstxt.org: the llms.txt proposal", href: "https://llmstxt.org/" },
+  relatedPost: { label: "What Is llms.txt and Does It Work? (2026 data)", href: "/en/blog/what-is-llms-txt-does-it-work/" },
 };
 
 export const enTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };

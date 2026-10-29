@@ -138,6 +138,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "cac-nedir-musteri-edinme-maliyeti", en: "what-is-cac-customer-acquisition-cost" },
   { tr: "kar-marji-nasil-hesaplanir", en: "how-to-calculate-profit-margin" },
   { tr: "mrr-nedir-nasil-hesaplanir", en: "what-is-mrr-how-to-calculate" },
+  { tr: "llms-txt-nedir-ise-yariyor-mu", en: "what-is-llms-txt-does-it-work" },
 ];
 
 // Embeddable widget routes: prerendered (iframe targets) but noindex, so they
