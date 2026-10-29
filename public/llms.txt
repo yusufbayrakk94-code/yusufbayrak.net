@@ -73,6 +73,7 @@
 - [UTM Nedir? UTM Parametreleri Nasıl Kullanılır? (GA4, Google Ads ve Meta Örnekleriyle)](https://yusufbayrak.net/blog/utm-nedir-utm-parametreleri/): UTM nedir, UTM parametreleri ne işe yarar? 9 parametre, örnek linkler, GA4'te nerede görülür, Google Ads ve Meta'da doğru kullanım ve isimlendirme kuralları.
 - [CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır? (Blended, Paid ve Kanal Bazında Örnekler)](https://yusufbayrak.net/blog/cac-nedir-musteri-edinme-maliyeti/): CAC (müşteri edinme maliyeti) nedir, nasıl hesaplanır? Blended, paid ve tam yüklü CAC farkı, kanal bazında örnek, CAC ile CPA farkı ve CAC'tan reklam hedefi.
 - [Kar Marjı Nasıl Hesaplanır? Kar Marjı ile Kar Oranı (Markup) Farkı, Dönüşüm Tablosu ve E-Ticaret Örneği](https://yusufbayrak.net/blog/kar-marji-nasil-hesaplanir/): Kar marjı nasıl hesaplanır? Formül, örnek, kar oranı (markup) farkı ve dönüşüm tablosu, hedef marjdan satış fiyatı, indirimin marja etkisi ve başabaş ROAS.
+- [MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir, MRR Hareketleri ve Örnek Hesap](https://yusufbayrak.net/blog/mrr-nedir-nasil-hesaplanir/): MRR (aylık yinelenen gelir) nedir, nasıl hesaplanır? Yıllık plan, indirim ve kur etkisi, yeni/genişleme/kayıp MRR köprüsü, Quick Ratio ve adım adım örnek.
 
 ## English
 
@@ -122,6 +123,7 @@
 - [What Are UTM Parameters and How Do You Use Them? (GA4, Google Ads and Meta Examples)](https://yusufbayrak.net/en/blog/what-are-utm-parameters/): What are UTM parameters? All 9 GA4 parameters, example links, where to find them in GA4, how to use them with Google Ads and Meta, and naming rules.
 - [What Is CAC? How to Calculate Customer Acquisition Cost (Blended, Paid and Per-Channel Examples)](https://yusufbayrak.net/en/blog/what-is-cac-customer-acquisition-cost/): What is CAC and how do you calculate it? Blended vs paid vs fully loaded CAC, a per-channel example, CAC vs CPA, and how to turn CAC into an ad target.
 - [How to Calculate Profit Margin: Margin vs Markup, a Conversion Table and an E-commerce Example](https://yusufbayrak.net/en/blog/how-to-calculate-profit-margin/): How to calculate profit margin: formula, worked example, margin vs markup with a conversion table, pricing from a target margin, discounts and break-even ROAS.
+- [What Is MRR and How Do You Calculate It? Monthly Recurring Revenue, MRR Movements and a Worked Example](https://yusufbayrak.net/en/blog/what-is-mrr-how-to-calculate/): What is MRR and how do you calculate it? Annual plans, discounts and FX, the new/expansion/churn MRR bridge, SaaS Quick Ratio and a full worked example.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim

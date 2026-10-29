@@ -219,7 +219,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -421,6 +421,15 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/kar-marji-nasil-hesaplanir/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-calculate-profit-margin/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/kar-marji-nasil-hesaplanir/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/mrr-nedir-nasil-hesaplanir/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/mrr-nedir-nasil-hesaplanir/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-mrr-how-to-calculate/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/mrr-nedir-nasil-hesaplanir/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -642,7 +651,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/en/blog/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -832,6 +841,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-calculate-profit-margin/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/kar-marji-nasil-hesaplanir/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/kar-marji-nasil-hesaplanir/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/what-is-mrr-how-to-calculate/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-mrr-how-to-calculate/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/mrr-nedir-nasil-hesaplanir/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/mrr-nedir-nasil-hesaplanir/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
