@@ -24,6 +24,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi: /blog/cac-nedir-musteri-edinme-maliyeti/, /blog/kar-marji-nasil-hesaplanir/ — 2026-10-28 (5/5 tamam)
 - [ ] Dizine ekleme isteği (2026-10-28 kalan): /en/blog/what-is-cac-customer-acquisition-cost/, /en/blog/how-to-calculate-profit-margin/
 - [ ] Dizine ekleme isteği (2026-10-28 güçlendirildi): /ucretsiz-araclar/llms-txt-olusturucu/ (TR, önce), /en/free-tools/llms-txt-generator/ ("Keşfedildi" listesinde)
+- [ ] Dizine ekleme isteği (2026-10-29, TR önce): /blog/mrr-nedir-nasil-hesaplanir/, /blog/llms-txt-nedir-ise-yariyor-mu/, /en/blog/what-is-mrr-how-to-calculate/, /en/blog/what-is-llms-txt-does-it-work/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
@@ -73,7 +74,8 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Kar marjı nasıl hesaplanır (brüt/katkı/faaliyet, markup) — 2026-10-28 (/blog/kar-marji-nasil-hesaplanir/)
 - [ ] CAC geri ödeme süresi nedir
 - [ ] Rule of 40 nedir
-- [ ] llms.txt nedir (GEO)
+- [x] llms.txt nedir (GEO) — 2026-10-29 (/blog/llms-txt-nedir-ise-yariyor-mu/)
+- [x] MRR nedir, nasıl hesaplanır — 2026-10-29 (/blog/mrr-nedir-nasil-hesaplanir/)
 
 - [ ] Kasım sonrası: reklam bütçesi yazısındaki Black Friday bölümünü Aralık başında güncelle (evergreen kalmalı)
 
@@ -91,7 +93,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Linklenebilir varlık 1 (2026-10-27): Gömülebilir araç widget'ı ("Bu aracı sitene ekle" + yusufbayrak.net atfı) — ROAS, reklam bütçesi, Trendyol kâr
 - [ ] Linklenebilir varlık 2: "Türkiye'de B2B ve e-ticaret reklam maliyetleri 2026" özgün veri çalışması (metodoloji açık, alıntılanabilir tablolar)
 - [ ] Linklenebilir varlık 3: İndirilebilir şablonlar (UTM takip tablosu, kampanya brief'i, ICP şablonu)
-- [ ] Konuk yazı / uzman görüşü hedef listesi: Türkçe pazarlama ve e-ticaret yayınları (taslak yazıları Claude hazırlar, kullanıcı gönderir)
+- [~] Konuk yazı / uzman görüşü hedef listesi: Türkçe pazarlama ve e-ticaret yayınları — 29.10: 5 satırlık hedef listesi + Taslak 1 ("Pazaryerinde reklam: bütçe açmadan önce 3 sayı", eticaretmerkezim için) seo/outreach/konuk-yazi.md; kullanıcı gönderir. Sıradaki: Taslak 2 (SaaS MRR köprüsü, webrazzi konuk yazar koşulları uygunsa)
 - [ ] Araç dizinleri ve listeler: ücretsiz pazarlama aracı derleme sayfaları, "free tools" listeleri (hedef listesi + başvuru metinleri)
 - [ ] Topluluk: soru-cevap ve topluluklarda (LinkedIn, Reddit r/PPC, Indie Hackers) gerçekten faydalı cevaplarla araç linki — spam yok
 - [ ] Yeni yazıların LinkedIn'de özetle paylaşımı (kullanıcı)
