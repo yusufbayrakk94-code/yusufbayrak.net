@@ -13,7 +13,7 @@ Amaç: GOALS.md H7 (31.01.2027'ye kadar 10-15 kaliteli yönlendiren alan adı). 
 | # | Yayın | Tür | Dayanak | Uygun taslak | Durum |
 |---|---|---|---|---|---|
 | 1 | eticaretmerkezim.com/blog/ | E-ticaret ajansı blogu | 28.10'da widget teklifi gönderildi; Trendyol reklam ve kârlılık yazıları var | Taslak 1 (pazaryeri reklam kârlılığı) | 04.11 hatırlatma e-postasına "isterseniz bu konuda size özel bir yazı da hazırlayabilirim" cümlesi eklenebilir |
-| 2 | webrazzi.com (konuk yazar) | Teknoloji/girişim yayını | Aramada webrazzi.com/konuk-yazar/ sayfası çıkıyor (içerik WebFetch ile okunamadı) | Taslak 2 (SaaS metrikleri — MRR köprüsü/Quick Ratio, girişim kitlesi) | Kullanıcı sayfadaki koşulları okuyup karar versin; ücretli yayın ise geçin |
+| 2 | webrazzi.com (konuk yazar) | Teknoloji/girişim yayını | Aramada webrazzi.com/konuk-yazar/ sayfası çıkıyor (içerik WebFetch ile okunamadı) | Taslak 2 (SaaS metrikleri — MRR köprüsü/Quick Ratio, girişim kitlesi) — 30.10: taslak hazır (aşağıda) | Kullanıcı sayfadaki koşulları okuyup karar versin; ücretli yayın ise geçin. 30.10: sayfa yine WebFetch ile açılamadı (site hatası). Webrazzi uygun değilse alternatif: girişim/SaaS bültenleri ve ajans blogları (aynı taslak tek yere) |
 | 3 | marketingturkiye.com.tr | Pazarlama yayını | Aramada konuk yazar içerikleri listeleniyor | Taslak 1 veya B2B reklam bütçesi açısı | Yazı gönderme yolu (editör e-postası) sitede kontrol edilmeli |
 | 4 | basariustasi.com/blog.html | Trendyol/Hepsiburada danışmanlığı | Widget listesinde (#2); Kasım reklam stratejisi yazısı var | Taslak 1 | Önce widget teklifi; konuk yazı ikinci adım |
 | 5 | Entegratör blogları (eentegre, entegrasyo) ve pazaryeri ajansları (foxs.digital, threepointdigital, solofor, balpdijital) | Ajans/entegratör | widget-dagitimi.md 4–9 | Taslak 1 | 29.10'da sayfalar WebFetch ile açılamadı (izin/site hatası); kullanıcı göndermeden önce blogda ilgili yazı ve mevcut araç kontrolü gerekli |
@@ -65,3 +65,41 @@ Bu hesabı ürün ürün yapmak için ücretsiz bir hesaplayıcı da kullanabili
 
 ## Taslak 2 — (sıradaki gün) SaaS girişimleri için MRR köprüsü ve Quick Ratio
 Hedef: webrazzi konuk yazar (koşullar uygunsa). Sitedeki MRR yazısından farklı örnek ve 'yatırımcı sunumunda MRR nasıl gösterilir' açısıyla yazılacak.
+
+
+---
+
+## Taslak 2 — SaaS'ta büyüme yanılsaması: MRR artarken şirket neden küçülüyor olabilir?
+Hedef: girişim/teknoloji yayını (öncelik #2 webrazzi konuk yazar; uygun değilse SaaS/girişim bülteni). ~850 kelime. Tutarlar örnektir; vergi konusuna girilmez.
+Sitemizdeki MRR ve churn yazılarının kopyası değildir: farklı örnek şirket (500.000 TL MRR), farklı açı (yatırımcı/kurucu panosu, "yeni satış yarıya inerse" stres testi). Hesaplar Python ile doğrulandı (30.10.2026).
+Bağlam linki (yazı içinde en fazla 1): https://yusufbayrak.net/blog/churn-nedir-churn-rate-nasil-hesaplanir/ — biyografide: https://yusufbayrak.net/
+
+**Başlık önerisi:** MRR'niz Büyüyor, Peki Şirketiniz? Kurucuların Aylık Panoya Eklemesi Gereken 4 Sayı
+
+Bir SaaS kurucusunun ay sonu raporu çoğu zaman tek satırdır: "MRR 500.000 TL'den 530.000 TL'ye çıktı, %6 büyüdük." Yatırımcı da, ekip de bu satıra bakar ve rahatlar. Oysa aynı satırın arkasında çok farklı iki şirket olabilir: biri mevcut müşterilerinden para kazanarak büyüyen, diğeri her ay tabanının önemli bir kısmını kaybedip bunu yeni satışla örten. İkincisi, satış ekibi bir ay yavaşladığında küçülmeye başlar. Farkı görmek için toplam MRR'nin yanına dört sayı eklemek yeterli.
+
+**Örnek şirket.** Ay başı MRR 500.000 TL. Ay içinde yeni müşterilerden 60.000 TL, üst pakete geçenlerden 10.000 TL eklendi; alt pakete geçenler 8.000 TL, iptal edenler 32.000 TL götürdü. Net değişim: 60.000 + 10.000 − 8.000 − 32.000 = +30.000 TL. Ay sonu MRR 530.000 TL. Rapor doğru; ama eksik.
+
+**1. Brüt MRR churn: Kova ne kadar sızdırıyor?**
+Brüt MRR churn = (İptal + Daralma) / Ay başı MRR = (32.000 + 8.000) / 500.000 = %8. Bu şirket her ay, hiçbir şey olmasa da gelirinin %8'ini kaybediyor. Aylık %8, bileşik olarak yılda gelirin yarıdan fazlasını yenilemek zorunda olmak demektir. Büyüme raporunda bu satır yoksa, satış ekibinin aslında ne kadar koştuğu görünmez.
+
+**2. Aylık net gelir tutma (NRR): Yeni satış dursa ne olur?**
+Mevcut müşterilerden kalan gelir: 500.000 + 10.000 − 8.000 − 32.000 = 470.000 TL. Aylık NRR = 470.000 / 500.000 = %94. Bu oran bir yıl sürerse, bugünkü müşteri tabanından gelen gelir yılsonunda kabaca yarıya iner (0,94^12 ≈ 0,48). NRR, "yarın satış ekibi işi bıraksa şirket ne olur?" sorusunun cevabıdır.
+
+**3. Quick Ratio: Büyümenin kalitesi**
+SaaS Quick Ratio = (Yeni + Genişleme) / (Daralma + İptal) = (60.000 + 10.000) / (8.000 + 32.000) = 1,75. Kaybedilen her 1 TL'ye karşılık 1,75 TL eklenmiş. Sektörde sık alıntılanan yorum 4 ve üzerini güçlü kabul eder; 1'e yaklaştıkça şirket yerinde sayar. Bu oran özellikle büyüme hızının aynı kaldığı ama altındaki motorun değiştiği dönemleri yakalar.
+
+**4. Stres testi: Yeni satış yarıya inerse?**
+Aynı ay yeni satış 30.000 TL olsaydı: 30.000 + 10.000 − 8.000 − 32.000 = 0. MRR yerinde sayardı. Yani bu şirketin "%6 büyüme"si tamamen yeni satışın sürmesine bağlı. Reklam maliyeti artarsa, sezon düşerse ya da bir satış temsilcisi ayrılırsa büyüme bir anda durur. Kurucu için asıl soru "nasıl daha çok satarım" değil, "kaybettiğim 40.000 TL'nin ne kadarını tutabilirim" olur.
+
+**Nereden başlanır?**
+- İptalleri gönüllü ve gönülsüz diye ayırın. Örnekte 32.000 TL'lik iptalin 9.000 TL'si kart reddi ve başarısız tahsilattan geliyorsa, bunun bir kısmı otomatik tekrar deneme ve kart güncelleme hatırlatmalarıyla geri kazanılabilir; müşteri zaten ayrılmak istememişti.
+- İlk 60 günde ayrılan müşterileri ayrı izleyin. Kaybın çoğu ilk aylardaysa sorun ürün değil, ilk değeri hissettirme sürecidir.
+- İptal akışına tek soruluk bir neden listesi ekleyin ve her ay dağılımı panoya koyun.
+- Reklam kanallarını CAC'a göre değil, o kanaldan gelen müşterilerin 3. ay tutma oranına göre de karşılaştırın; ucuz ama hızlı ayrılan müşteri pahalıdır.
+
+**Panoya eklenecek satırlar:** Ay başı MRR · Yeni · Genişleme · Daralma · İptal (gönüllü / gönülsüz) · Ay sonu MRR · Brüt MRR churn · Aylık NRR · Quick Ratio. Bu dokuz satır, "büyüdük" cümlesini "nasıl büyüdük" sorusuna çevirir. (Churn'ün doğru hesaplanması ve gönülsüz churn için ayrıntılı rehber: [bağlam linki])
+
+**Yazar biyografisi (öneri):** Yusuf Bayrak — B2B ve e-ticaret şirketlerine performans pazarlaması ve büyüme metrikleri üzerine danışmanlık veriyor; yusufbayrak.net'te ücretsiz SaaS ve reklam hesaplayıcıları yayımlıyor.
+
+**Gönderim notu (kullanıcı):** webrazzi.com/konuk-yazar/ sayfasındaki koşulları okuyun; ücret/sponsorlu yayın şartı varsa göndermeyin ve taslağı bir sonraki hedefe kaydırın. Göndermeden önce kendi deneyiminizden 1–2 cümlelik gerçek bir gözlem eklemek kabul şansını artırır.
