@@ -74,6 +74,7 @@ export const churn: ToolContent = {
     { q: "How do I convert monthly churn to annual churn?", a: "Annual churn = 1 − (1 − monthly churn)^12. 5% monthly is about 46% annually." },
     { q: "What is negative churn?", a: "When expansion revenue from existing customers exceeds revenue lost to cancellations and downgrades, net revenue churn is negative and you grow even without new customers." },
   ],
+  relatedPost: { label: "What Is Churn Rate? How to Calculate and Reduce It", href: "/en/blog/what-is-churn-rate/" },
 };
 
 export const ltv: ToolContent = {

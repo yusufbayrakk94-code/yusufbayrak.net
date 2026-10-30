@@ -88,6 +88,7 @@ export const churn: ToolContent = {
     { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
     { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS hesaplayıcıları" },
   ],
+  relatedPost: { label: "Churn Nedir? Churn Rate Nasıl Hesaplanır ve Düşürülür?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
 };
 
 export const ltv: ToolContent = {

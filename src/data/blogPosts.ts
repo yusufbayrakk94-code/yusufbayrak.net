@@ -2331,6 +2331,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
+      { label: "Churn Nedir? Churn Rate Nasıl Hesaplanır?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
@@ -3056,6 +3057,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici/" },
       { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
+      { label: "Churn Nedir? Churn Rate Nasıl Hesaplanır?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
       { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
       { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
@@ -3236,6 +3238,189 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "OpenAI: Tarayıcılara genel bakış (İngilizce)", href: "https://developers.openai.com/api/docs/bots", external: true },
       { label: "Anthropic: Claude tarayıcıları (İngilizce)", href: "https://support.claude.com/en/articles/8896518", external: true },
       { label: "Perplexity: Tarayıcılar (İngilizce)", href: "https://docs.perplexity.ai/guides/bots", external: true },
+    ],
+  },
+  {
+    slug: "churn-nedir-churn-rate-nasil-hesaplanir",
+    seoTitle: "Churn Nedir? Churn Rate Nasıl Hesaplanır ve Düşürülür?",
+    title: "Churn Nedir? Churn Rate Nasıl Hesaplanır, İyi Churn Oranı Kaç ve Nasıl Düşürülür?",
+    description:
+      "Churn nedir, churn rate nasıl hesaplanır? Doğru formül, sık yapılan payda hatası, gönüllü ve gönülsüz churn, gelir churn'ü, kohort analizi ve düşürme planı.",
+    category: "saas-buyume",
+    tldr: [
+      "Churn (müşteri kaybı), bir dönemde müşterilerin aboneliği bırakması ya da işletmeyle çalışmayı bırakmasıdır. Churn rate = Dönemde kaybedilen müşteri / Dönem başındaki müşteri × 100. Ay başında 800 abone ve ay içinde 40 iptal → aylık churn %5.",
+      "Paydaya dönem içinde kazanılan yeni müşterileri ya da dönem sonu sayısını koymak churn'ü olduğundan düşük gösterir (aynı örnekte %4,6–4,8). Aylık churn 12 ile çarpılmaz: %5 aylık churn ≈ %46 yıllık churn, ortalama müşteri ömrü ≈ 20 ay.",
+      "Churn ikiye ayrılır: müşterinin karar verdiği gönüllü churn ve kart reddi/başarısız ödeme yüzünden oluşan gönülsüz churn. Örnekte 40 kaybın 12'si ödeme hatası; bunun yarısını kurtarmak churn'ü %4,25'e indirir ve müşteri başı LTV'yi 7.200 TL'den ≈8.470 TL'ye çıkarır.",
+      "Müşteri churn'ünün yanında gelir churn'ünü (brüt ve net) ve kohort churn'ünü izleyin: ilk ay churn'ü yüksek, sonraki aylar düşükse sorun ürün değil onboarding'dir. Kaynaksız 'iyi churn oranı' eşikleri yerine kendi kohortlarınızın eğilimiyle kıyaslayın.",
+    ],
+    publishedAt: "2026-10-30",
+    readingMinutes: 9,
+    tags: ["Churn", "Churn Rate", "Müşteri Kaybı", "SaaS Metrikleri", "Gelir Churn'ü", "Kohort Analizi"],
+    sections: [
+      {
+        heading: "Churn nedir? (Kısa cevap)",
+        paragraphs: [
+          "Churn, Türkçede müşteri kaybı ya da müşteri terki demektir: bir dönemde müşterilerin aboneliğini iptal etmesi, yenilememesi ya da işletmeden alışveriş yapmayı bırakmasıdır. Churn rate (churn oranı, müşteri kayıp oranı) bu kaybın dönem başındaki müşteri tabanına oranıdır.",
+          "Formül: Churn rate = (Dönem içinde kaybedilen müşteri / Dönem başındaki müşteri) × 100. Ekim'e 800 aktif aboneyle başlayan ve ay içinde 40 abonesi ayrılan bir SaaS şirketinin aylık churn'ü 40 / 800 = %5'tir. Tersi elde tutma (retention) oranıdır: %95.",
+          "Kavram SaaS ve abonelik işlerinde, telekomda (hat iptali, numara taşıma), bankacılıkta (hesap kapatma) ve tekrar satın almanın önemli olduğu e-ticarette kullanılır. Bu yazıdaki tutarlar örnek tutarlardır; kendi rakamlarınızla denemek için Churn Rate Hesaplayıcı'yı kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Churn rate nasıl hesaplanır? Adım adım örnek",
+        paragraphs: [
+          "Örnek şirket aylık aboneliği olan bir B2B SaaS. Ekim başında 800 aktif abone var, hesap başına ortalama aylık gelir (ARPA) 450 TL, yani MRR 360.000 TL. Ekim'de 70 yeni müşteri geldi, 40 müşteri ayrıldı; ay sonunda 830 abone var.",
+          "Doğru hesap: 40 / 800 = %5. Yeni gelen 70 müşteri bu hesaba girmez; onların kaybını ölçmek isterseniz kohort analizi yapılır (aşağıda). Aboneliklerin ay içine dağıldığı ve tabanın hızlı değiştiği işlerde bazı ekipler paydaya ortalama müşteri sayısını koyar: 40 / ((800 + 830) / 2) = 40 / 815 ≈ %4,9. Hangi yöntemi seçerseniz seçin, her ay aynısını kullanın.",
+        ],
+        bullets: [
+          "Adım 1 — Dönemi seçin: aylık abonelikte ay, yıllık sözleşmede yıl ya da çeyrek",
+          "Adım 2 — Dönem başındaki aktif müşteriyi sayın (deneme ve ücretsiz plan kullanıcıları hariç): 800",
+          "Adım 3 — Bu müşterilerden dönem içinde ayrılanları sayın (iptal + yenilememe + ödeme alınamadığı için kapanan): 40",
+          "Adım 4 — Bölün ve 100 ile çarpın: 40 / 800 × 100 = %5",
+          "Adım 5 — Kaybı türüne göre ayırın: 28 gönüllü iptal (%3,5) + 12 başarısız ödeme (%1,5)",
+        ],
+      },
+      {
+        heading: "Churn hesaplarken en sık yapılan hata nedir?",
+        paragraphs: [
+          "En sık hata paydadır. Kayıp aynı kalsa da paydaya ne koyduğunuz sonucu değiştirir ve hızlı büyüyen şirketlerde churn'ü olduğundan düşük gösterir. Aynı Ekim verisiyle üç farklı sonuç:",
+        ],
+        bullets: [
+          "Doğru: 40 / 800 (dönem başı) = %5,0",
+          "Yanlış: 40 / 830 (dönem sonu) = %4,8 — ay içinde gelen yeni müşteriler paydaya girmiş olur",
+          "Yanlış: 40 / 870 (dönem başı + yeni müşteriler) = %4,6 — yeni müşteriler 'kaybedilemeyecek' kadar yeni olmasına rağmen tabanı şişirir",
+          "Diğer hatalar: deneme kullanıcılarını müşteri saymak, ödeme alınamayan hesapları aylarca aktif bırakmak, aynı müşterinin plan değiştirmesini iptal + yeni kayıt olarak saymak",
+        ],
+      },
+      {
+        heading: "Aylık churn yıllık churn'e nasıl çevrilir?",
+        paragraphs: [
+          "Aylık churn 12 ile çarpılmaz, çünkü her ay kalan taban küçülür ve kayıp bileşik işler. Yıllık churn = 1 − (1 − aylık churn)^12. %5 aylık churn ≈ %46 yıllık churn demektir (×12 ile bulunacak %60 değil). Yeni müşteri gelmeseydi 800 aboneden 12 ay sonra yaklaşık 432'si kalırdı.",
+          "Ortalama müşteri ömrü ≈ 1 / aylık churn = 1 / 0,05 = 20 aydır. Bu varsayım churn'ün zaman içinde sabit kaldığını kabul eder; gerçekte churn genellikle ilk aylarda yüksek, sonra düşüktür, bu yüzden kohort verisiyle kontrol edin.",
+        ],
+      },
+      {
+        heading: "Gönüllü ve gönülsüz churn arasındaki fark nedir?",
+        paragraphs: [
+          "Gönüllü (voluntary) churn, müşterinin bilerek iptal etmesidir: fiyat, eksik özellik, rakip, ihtiyacın bitmesi. Gönülsüz (involuntary) churn ise müşteri ayrılmak istemediği hâlde ödemenin alınamamasıdır: süresi dolmuş ya da limiti yetersiz kart, banka reddi, güncellenmemiş ödeme bilgisi.",
+          "Gönülsüz churn çoğu zaman en ucuz kazanılan churn'dür, çünkü müşteri ürünü bırakmak istememiştir. Ödeme altyapıları başarısız tahsilatları otomatik tekrar deneyebilir; örneğin Stripe'ın belgelerinde Smart Retries için önerilen varsayılan ayar 2 hafta içinde 8 denemedir. Kartın çalındı/kayıp gibi kesin red kodlarıyla reddedildiği durumlarda ise tekrar deneme işe yaramaz, müşteriden yeni ödeme yöntemi istenir.",
+          "Örnekte 12 başarısız ödemenin 6'sını tekrar deneme ve e-posta/SMS hatırlatmasıyla kurtardığınızı varsayalım: kayıp 34'e, churn 34 / 800 = %4,25'e iner. Yıllık churn ≈ %46'dan ≈ %41'e düşer; yeni müşteri olmasa 12 ay sonra 432 yerine yaklaşık 475 abone kalır.",
+        ],
+        bullets: [
+          "Kart son kullanma tarihinden önce müşteriye hatırlatma gönderin",
+          "Başarısız tahsilatı tek denemede iptal etmeyin; birkaç gün aralıklı tekrar deneme kurun",
+          "Ödeme hatasında müşteriyi ödeme bilgisi güncelleme sayfasına tek tıkla götüren e-posta ve uygulama içi uyarı gösterin",
+          "Ödeme alınamayan hesabı hemen silmek yerine kısa bir ek süre (grace period) verin ve bu süredeki hesapları ayrı raporlayın",
+        ],
+      },
+      {
+        heading: "Müşteri churn'ü ile gelir churn'ü farkı nedir?",
+        paragraphs: [
+          "Müşteri (logo) churn'ü kaç müşteri kaybettiğinizi, gelir churn'ü ne kadar aylık gelir (MRR) kaybettiğinizi ölçer. Ekim'de ayrılan 40 müşterinin toplam MRR'si 16.200 TL; ayrıca bazı müşteriler alt pakete geçerek 2.700 TL daralma yarattı, bazıları ise üst pakete geçip 7.200 TL genişleme getirdi.",
+          "Brüt gelir churn'ü = (Kayıp MRR + Daralma MRR) / Dönem başı MRR = (16.200 + 2.700) / 360.000 = %5,25. Net gelir churn'ü genişlemeyi de hesaba katar: (16.200 + 2.700 − 7.200) / 360.000 = %3,25. Genişleme, kayıp ve daralmadan büyük olursa net gelir churn'ü eksiye düşer; buna negatif churn denir ve NRR'nin %100'ün üzerinde olmasıyla aynı anlama gelir.",
+          "Dikkat: yeni müşteri sayısının kaybedilen müşteriden fazla olması negatif churn değildir; bu yalnızca net müşteri artışıdır. Negatif churn yalnızca mevcut müşterilerin gelirine bakılarak ölçülür.",
+        ],
+      },
+      {
+        heading: "Kohort analiziyle churn nasıl okunur?",
+        paragraphs: [
+          "Tek bir aylık churn rakamı, eski ve sadık müşterilerle yeni ve kararsız müşterileri karıştırır. Kohort analizinde aynı ay kaydolan müşteriler bir grup olarak izlenir ve her ay kaçının kaldığına bakılır.",
+          "Örnek: Mayıs'ta kaydolan 100 müşteriden Haziran sonunda 82, Temmuz'da 74, Ağustos'ta 70, Eylül'de 67, Ekim'de 65'i aktif. Ay ay churn: %18, %9,8, %5,4, %4,3 ve %3,0. Kaybın büyük kısmı ilk ayda; bu tablo ürünün değil, ilk değeri hissettirme (onboarding) sürecinin sorunlu olduğunu söyler. Yeni kohortların ilk ay churn'ü eskilerden düşükse yaptığınız iyileştirme çalışıyor demektir.",
+        ],
+      },
+      {
+        heading: "Churn neden önemlidir? LTV ve büyümeye etkisi",
+        paragraphs: [
+          "Churn, müşteri yaşam boyu değerinin (LTV) paydasındadır: LTV = Aylık müşteri başı brüt kâr / Aylık churn. ARPA 450 TL ve brüt marj %80 ise müşteri başı aylık brüt kâr 360 TL'dir. %5 churn ile LTV 360 / 0,05 = 7.200 TL; %4,25 ile ≈ 8.470 TL; %4 ile 9.000 TL. Churn'deki 1 puanlık düşüş, aynı müşteri için harcayabileceğiniz edinme maliyetini (CAC) %25 artırır.",
+          "Büyüme tarafında da aynı mantık işler: her ay tabanın %5'ini kaybeden şirket, yalnızca yerinde saymak için her ay tabanın %5'i kadar yeni müşteri kazanmak zorundadır. Bu yüzden churn'ü düşürmek çoğu zaman reklam bütçesini artırmaktan daha ucuz bir büyüme kaldıracıdır.",
+        ],
+      },
+      {
+        heading: "Churn'ü önceden haber veren sinyaller nelerdir?",
+        paragraphs: [
+          "Churn oranı geriye dönük bir sonuçtur; müşteri ayrıldıktan sonra görünür. Ayrılmadan önce davranışta iz bırakan sinyalleri izlemek, müdahale için zaman kazandırır.",
+        ],
+        bullets: [
+          "Kullanım düşüşü: giriş sıklığında, temel özelliğin kullanımında ya da aktif kullanıcı (koltuk) sayısında haftalık düşüş",
+          "Kurulumu tamamlamamak: ilk 14 günde ürünün temel değerini veren adımı (entegrasyon, ilk rapor, ilk sipariş) yapmamış hesaplar",
+          "Destek sinyalleri: çözülmemiş talepler, art arda şikâyet, düşen memnuniyet puanı",
+          "Ödeme sinyalleri: kartın son kullanma tarihi yaklaşması, başarısız tahsilat, alt pakete geçiş",
+          "Ticari sinyaller: projeyi yöneten kişinin şirketten ayrılması, sözleşme yenilemeye 60–90 gün kalması",
+        ],
+      },
+      {
+        heading: "Churn nasıl düşürülür? Türüne göre plan",
+        paragraphs: [
+          "Önce iptal nedenini ölçün: iptal akışına zorunlu olmayan tek soruluk bir neden listesi (fiyat, eksik özellik, kullanmıyorum, rakibe geçtim, işletme kapandı, ödeme sorunu) ekleyin ve her ay nedenlere göre dağılımı raporlayın. Sonra her nedene uygun müdahaleyi seçin:",
+        ],
+        bullets: [
+          "Erken churn (ilk 1–2 ay): onboarding'i kısaltın, ilk değeri ilk oturumda gösterin, kurulumu tamamlamayan hesaplara ekip içinden kişisel destek verin",
+          "'Kullanmıyorum': kullanım düşüşü uyarısıyla müşteri başarısı araması, kullanım raporu e-postaları, duraklatma (pause) seçeneği",
+          "Fiyat: iptal yerine alt pakete geçiş, yıllık ödemede indirim, kullanım bazlı daha küçük plan",
+          "Eksik özellik / rakip: iptal nedenlerini ürün yol haritasına bağlayın; aynı nedenin aylık payını izleyin",
+          "Gönülsüz churn: otomatik tekrar deneme, kart güncelleme hatırlatmaları, ek süre",
+          "Yanlış müşteri: churn'ü yüksek segmentleri (kanal, paket, sektör) bulun ve reklamı bu segmentlerden çekin; düşük CAC'lı ama hızlı ayrılan müşteri pahalıdır",
+        ],
+      },
+      {
+        heading: "E-ticarette churn nasıl ölçülür?",
+        paragraphs: [
+          "Abonelik olmayan e-ticarette müşteri iptal etmez, yalnızca bir daha alışveriş yapmaz. Bu yüzden önce bir pencere tanımlanır: ürününüzün doğal yeniden satın alma süresine göre 90, 180 ya da 365 gün. Bu süre boyunca tekrar sipariş vermeyen müşteri kaybedilmiş sayılır.",
+          "Örnek: 1. çeyrekte alışveriş yapan 2.000 müşteriden 1.300'ü sonraki 180 günde tekrar sipariş vermediyse 180 günlük churn %65, tekrar satın alma oranı %35'tir. E-ticarette bu oranı izlemek, ilk siparişte ne kadar reklam maliyetine katlanabileceğinizi belirler; hesap için kar marjı ve ROAS araçlarını birlikte kullanın.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Churn ne demek, Türkçesi nedir?",
+        answer:
+          "Churn, müşteri kaybı ya da müşteri terki anlamına gelir. Churn rate (churn oranı) ise bir dönemde kaybedilen müşterilerin dönem başındaki müşterilere oranıdır. SaaS, abonelik, telekom, bankacılık ve e-ticarette kullanılır.",
+      },
+      {
+        question: "Churn rate nasıl hesaplanır?",
+        answer:
+          "Churn rate = Dönemde kaybedilen müşteri / Dönem başındaki müşteri × 100. 800 aboneyle başlayıp 40 abone kaybeden bir şirketin aylık churn'ü %5'tir. Dönem içinde kazanılan yeni müşteriler paydaya eklenmez.",
+      },
+      {
+        question: "İyi bir churn oranı kaçtır?",
+        answer:
+          "Herkes için geçerli tek bir oran yoktur: küçük işletmelere aylık abonelik satan ürünlerde churn doğal olarak yüksek, yıllık sözleşmeli kurumsal ürünlerde düşüktür. Kaynağı belirsiz eşikler yerine kendi kohortlarınızın eğilimine bakın; yeni kohortların churn'ü eskilerden düşükse doğru yoldasınız.",
+      },
+      {
+        question: "Gönülsüz churn nedir?",
+        answer:
+          "Müşteri ayrılmak istemediği hâlde ödemenin alınamaması (kart süresi dolması, limit, banka reddi) nedeniyle oluşan kayıptır. Otomatik tekrar deneme, kart güncelleme hatırlatmaları ve kısa bir ek süre ile önemli bölümü geri kazanılabilir.",
+      },
+      {
+        question: "Negatif churn ne demek?",
+        answer:
+          "Mevcut müşterilerden gelen genişleme gelirinin, iptal ve alt pakete geçişten kaybedilen geliri aşmasıdır; net gelir churn'ü eksiye düşer ve NRR %100'ün üzerine çıkar. Yeni müşteri sayısının kaybedilenden fazla olması negatif churn değildir.",
+      },
+    ],
+    howTo: {
+      name: "Churn rate nasıl hesaplanır?",
+      description: "Dönem başı müşteri tabanından aylık churn'ü hesaplayın, yıllığa çevirin ve kaybı türüne göre ayırın.",
+      steps: [
+        { name: "Dönemi seçin", text: "Aylık abonelikte ayı, yıllık sözleşmede yılı ya da çeyreği ölçüm dönemi olarak belirleyin." },
+        { name: "Dönem başı müşteriyi sayın", text: "Dönemin ilk günündeki ödeme yapan aktif müşterileri sayın; deneme ve ücretsiz plan kullanıcılarını dahil etmeyin. Örnek: 800." },
+        { name: "Kaybedilen müşteriyi sayın", text: "Bu müşterilerden dönem içinde iptal eden, yenilemeyen ya da ödemesi alınamadığı için kapananları sayın. Örnek: 40." },
+        { name: "Oranı hesaplayın", text: "Kaybı dönem başı müşteriye bölüp 100 ile çarpın: 40 / 800 × 100 = %5. Yıllık churn için 1 − (1 − 0,05)^12 ≈ %46 kullanın." },
+        { name: "Kaybı ayırın ve gelir churn'üne bakın", text: "Gönüllü ve gönülsüz churn'ü ayrı raporlayın; kayıp ve daralma MRR'sini dönem başı MRR'ye bölerek brüt gelir churn'ünü hesaplayın." },
+      ],
+    },
+    relatedToolKey: "churn",
+    resources: [
+      { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
+      { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici/" },
+      { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
+      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+      { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "Freemium Dönüşüm Oranı Nasıl Artırılır?", href: "/blog/freemium-donusum-orani-artirma/" },
+      { label: "Stripe: Başarısız ödemeleri otomatik tekrar deneme (İngilizce)", href: "https://docs.stripe.com/billing/revenue-recovery/smart-retries", external: true },
+      { label: "Wikipedia: Churn rate (İngilizce)", href: "https://en.wikipedia.org/wiki/Churn_rate", external: true },
     ],
   },
 ];
@@ -5217,6 +5402,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
       { label: "CAC Payback Period Calculator", href: "/en/free-tools/cac-payback-period-calculator/" },
       { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator/" },
+      { label: "What Is Churn Rate? How to Calculate and Reduce It", href: "/en/blog/what-is-churn-rate/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
@@ -5942,6 +6128,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "ARPA Calculator", href: "/en/free-tools/arpa-calculator/" },
       { label: "NRR Calculator", href: "/en/free-tools/nrr-calculator/" },
       { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator/" },
+      { label: "What Is Churn Rate? How to Calculate and Reduce It", href: "/en/blog/what-is-churn-rate/" },
       { label: "ARR vs MRR: What's the Difference?", href: "/en/blog/arr-vs-mrr-difference/" },
       { label: "What Is NRR? The SaaS Growth Metric", href: "/en/blog/what-is-nrr-saas-growth-metric/" },
       { label: "SaaS Metrics: ARR, CAC and LTV", href: "/en/blog/saas-metrics-arr-cac-ltv/" },
@@ -6122,6 +6309,188 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "OpenAI: Overview of OpenAI crawlers", href: "https://developers.openai.com/api/docs/bots", external: true },
       { label: "Anthropic: Claude's crawlers", href: "https://support.claude.com/en/articles/8896518", external: true },
       { label: "Perplexity: Perplexity crawlers", href: "https://docs.perplexity.ai/guides/bots", external: true },
+    ],
+  },
+  {
+    slug: "what-is-churn-rate",
+    seoTitle: "What Is Churn Rate? How to Calculate and Reduce It",
+    title: "What Is Churn Rate? How to Calculate It, What a Good Rate Is and How to Reduce It",
+    description:
+      "What is churn rate and how do you calculate it? The right formula, the common denominator mistake, voluntary vs involuntary churn, revenue churn and cohorts.",
+    category: "saas-buyume",
+    tldr: [
+      "Churn is the loss of customers in a period: subscriptions cancelled, not renewed, or customers who stop buying. Churn rate = Customers lost in the period / Customers at the start of the period × 100. 800 subscribers at the start of the month and 40 cancellations → 5% monthly churn.",
+      "Putting new customers or the end-of-period count in the denominator understates churn (4.6–4.8% on the same data). Monthly churn is not multiplied by 12: 5% monthly ≈ 46% annual churn, and average customer lifetime ≈ 20 months.",
+      "Split churn into voluntary (the customer decides) and involuntary (declined cards, failed payments). In the example 12 of 40 losses are failed payments; recovering half of them cuts churn to 4.25% and lifts LTV per customer from $720 to about $847.",
+      "Track revenue churn (gross and net) and cohort churn next to customer churn: high first-month churn with low churn afterwards points to onboarding, not the product. Compare against your own cohorts rather than unsourced 'good churn' benchmarks.",
+    ],
+    publishedAt: "2026-10-30",
+    readingMinutes: 9,
+    tags: ["Churn", "Churn Rate", "Customer Retention", "SaaS Metrics", "Revenue Churn", "Cohort Analysis"],
+    sections: [
+      {
+        heading: "What is churn? (Short answer)",
+        paragraphs: [
+          "Churn is customer loss: customers cancelling or not renewing a subscription, or simply no longer buying from a business. Churn rate (customer churn rate, attrition rate) is that loss as a share of the customer base at the start of the period.",
+          "Formula: Churn rate = (Customers lost during the period / Customers at the start of the period) × 100. A SaaS company that starts October with 800 active subscribers and loses 40 during the month has a 40 / 800 = 5% monthly churn rate. The flip side is retention: 95%.",
+          "The term is used in SaaS and subscriptions, telecom (cancelled lines, number porting), banking (closed accounts) and in e-commerce where repeat purchases matter. All amounts in this article are example figures; to try your own numbers, use the Churn Rate Calculator.",
+        ],
+      },
+      {
+        heading: "How do you calculate churn rate? Step-by-step example",
+        paragraphs: [
+          "The example company is a B2B SaaS with monthly plans. It starts October with 800 active subscribers and an average revenue per account (ARPA) of $45, so MRR is $36,000. In October it adds 70 new customers and loses 40, ending the month with 830.",
+          "Correct calculation: 40 / 800 = 5%. The 70 new customers are not part of this calculation; to measure their losses, use cohort analysis (below). Where subscriptions start throughout the month and the base changes quickly, some teams use the average customer count instead: 40 / ((800 + 830) / 2) = 40 / 815 ≈ 4.9%. Whichever method you choose, use the same one every month.",
+        ],
+        bullets: [
+          "Step 1 — Pick the period: a month for monthly plans; a year or quarter for annual contracts",
+          "Step 2 — Count active paying customers at the start (excluding trials and free plans): 800",
+          "Step 3 — Count how many of them left during the period (cancelled + not renewed + closed for non-payment): 40",
+          "Step 4 — Divide and multiply by 100: 40 / 800 × 100 = 5%",
+          "Step 5 — Split losses by type: 28 voluntary cancellations (3.5%) + 12 failed payments (1.5%)",
+        ],
+      },
+      {
+        heading: "What is the most common churn calculation mistake?",
+        paragraphs: [
+          "The denominator. Even with the same number of lost customers, what you divide by changes the result and makes churn look lower at fast-growing companies. Three results from the same October data:",
+        ],
+        bullets: [
+          "Correct: 40 / 800 (start of period) = 5.0%",
+          "Wrong: 40 / 830 (end of period) = 4.8% — customers acquired during the month sneak into the denominator",
+          "Wrong: 40 / 870 (start + new customers) = 4.6% — brand-new customers inflate the base before they could realistically churn",
+          "Other mistakes: counting trial users as customers, keeping accounts with failed payments 'active' for months, counting a plan change as a cancellation plus a new signup",
+        ],
+      },
+      {
+        heading: "How do you convert monthly churn to annual churn?",
+        paragraphs: [
+          "Don't multiply monthly churn by 12: the remaining base shrinks every month, so losses compound. Annual churn = 1 − (1 − monthly churn)^12. 5% monthly churn ≈ 46% annual churn (not the 60% you get from ×12). Without new customers, about 432 of the 800 subscribers would remain after 12 months.",
+          "Average customer lifetime ≈ 1 / monthly churn = 1 / 0.05 = 20 months. This assumes churn stays constant; in practice churn is usually high in the first months and lower later, so check it against cohort data.",
+        ],
+      },
+      {
+        heading: "What is the difference between voluntary and involuntary churn?",
+        paragraphs: [
+          "Voluntary churn is a deliberate cancellation: price, a missing feature, a competitor, the need going away. Involuntary churn happens when the customer did not intend to leave but the payment could not be collected: an expired or maxed-out card, a bank decline, outdated billing details.",
+          "Involuntary churn is often the cheapest churn to win back, because the customer never decided to leave. Billing platforms can retry failed charges automatically; Stripe's documentation, for example, lists 8 tries within 2 weeks as the recommended default for Smart Retries. When a card is declined with a hard decline code such as lost or stolen card, retries will not help and the customer needs to add a new payment method.",
+          "Suppose retries plus email/SMS reminders recover 6 of the 12 failed payments: losses fall to 34 and churn to 34 / 800 = 4.25%. Annual churn drops from about 46% to about 41%; with no new customers, about 475 subscribers would remain after 12 months instead of 432.",
+        ],
+        bullets: [
+          "Remind customers before their card expires",
+          "Don't cancel after one failed charge; schedule several retries a few days apart",
+          "On a payment failure, send an email and in-app notice with a one-click link to update billing details",
+          "Give accounts with failed payments a short grace period instead of deleting them immediately, and report them separately",
+        ],
+      },
+      {
+        heading: "What is the difference between customer churn and revenue churn?",
+        paragraphs: [
+          "Customer (logo) churn counts how many customers you lost; revenue churn measures how much monthly recurring revenue (MRR) you lost. The 40 customers who left in October had $1,620 of MRR; some customers downgraded for $270 of contraction, while others upgraded for $720 of expansion.",
+          "Gross revenue churn = (Churned MRR + Contraction MRR) / Starting MRR = ($1,620 + $270) / $36,000 = 5.25%. Net revenue churn also counts expansion: ($1,620 + $270 − $720) / $36,000 = 3.25%. When expansion exceeds churn and contraction, net revenue churn goes below zero; this is negative churn, the same thing as NRR above 100%.",
+          "Note: acquiring more new customers than you lose is not negative churn; it is just net customer growth. Negative churn is measured only on revenue from existing customers.",
+        ],
+      },
+      {
+        heading: "How do you read churn with cohort analysis?",
+        paragraphs: [
+          "A single monthly churn number mixes loyal long-time customers with new, undecided ones. Cohort analysis tracks customers who signed up in the same month as one group and checks how many remain each month.",
+          "Example: of 100 customers who signed up in May, 82 are still active at the end of June, 74 in July, 70 in August, 67 in September and 65 in October. Month-by-month churn: 18%, 9.8%, 5.4%, 4.3% and 3.0%. Most of the loss happens in the first month, which points to onboarding rather than the product. If newer cohorts show lower first-month churn than older ones, your fixes are working.",
+        ],
+      },
+      {
+        heading: "Why does churn matter? Its effect on LTV and growth",
+        paragraphs: [
+          "Churn sits in the denominator of customer lifetime value (LTV): LTV = Monthly gross profit per customer / Monthly churn. With an ARPA of $45 and an 80% gross margin, monthly gross profit per customer is $36. At 5% churn LTV is $36 / 0.05 = $720; at 4.25% about $847; at 4% $900. A one-point drop in churn raises the acquisition cost (CAC) you can afford for the same customer by 25%.",
+          "The same logic applies to growth: a company that loses 5% of its base every month has to win 5% of its base in new customers every month just to stand still. That is why reducing churn is often a cheaper growth lever than increasing ad spend.",
+        ],
+      },
+      {
+        heading: "What signals warn you about churn early?",
+        paragraphs: [
+          "Churn rate is a lagging metric; it shows up after the customer has left. Tracking behaviour that changes before a customer leaves buys you time to act.",
+        ],
+        bullets: [
+          "Usage decline: weekly drops in logins, core feature usage or active seats",
+          "Incomplete setup: accounts that have not completed the step that delivers core value (integration, first report, first order) within 14 days",
+          "Support signals: unresolved tickets, repeated complaints, falling satisfaction scores",
+          "Payment signals: card expiring soon, failed charges, downgrades",
+          "Commercial signals: your champion leaving the company, renewal coming up in 60–90 days",
+        ],
+      },
+      {
+        heading: "How do you reduce churn? A plan by churn type",
+        paragraphs: [
+          "First measure why customers cancel: add an optional one-question reason list to the cancellation flow (price, missing feature, not using it, switched to a competitor, business closed, payment issue) and report the mix every month. Then match each reason with an intervention:",
+        ],
+        bullets: [
+          "Early churn (first 1–2 months): shorten onboarding, show first value in the first session, give personal help to accounts that haven't finished setup",
+          "'Not using it': usage-drop alerts that trigger a customer success call, usage report emails, a pause option",
+          "Price: offer a downgrade instead of cancellation, an annual-plan discount, a smaller usage-based plan",
+          "Missing feature / competitor: tie cancellation reasons to the product roadmap and track each reason's monthly share",
+          "Involuntary churn: automatic retries, card-update reminders, a grace period",
+          "Wrong customers: find high-churn segments (channel, plan, industry) and pull ad spend from them; a low-CAC customer who leaves fast is expensive",
+        ],
+      },
+      {
+        heading: "How do you measure churn in e-commerce?",
+        paragraphs: [
+          "Outside subscriptions, e-commerce customers don't cancel; they just stop buying. So you first define a window based on your product's natural repurchase cycle: 90, 180 or 365 days. A customer who hasn't ordered again within that window counts as churned.",
+          "Example: if 1,300 of the 2,000 customers who bought in Q1 did not order again in the next 180 days, 180-day churn is 65% and the repeat purchase rate is 35%. This number determines how much ad cost you can accept on the first order; combine it with the profit margin and ROAS calculators.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does churn mean?",
+        answer:
+          "Churn means customer loss or attrition. Churn rate is the share of customers at the start of a period who are lost during that period. It is used in SaaS, subscriptions, telecom, banking and e-commerce.",
+      },
+      {
+        question: "How do you calculate churn rate?",
+        answer:
+          "Churn rate = Customers lost in the period / Customers at the start of the period × 100. A company that starts with 800 subscribers and loses 40 has a 5% monthly churn rate. New customers acquired during the period are not added to the denominator.",
+      },
+      {
+        question: "What is a good churn rate?",
+        answer:
+          "There is no single number for everyone: churn is naturally higher for monthly plans sold to small businesses and lower for enterprise products on annual contracts. Instead of benchmarks with unclear sources, look at your own cohorts; if newer cohorts churn less than older ones, you're on the right track.",
+      },
+      {
+        question: "What is involuntary churn?",
+        answer:
+          "Customer loss caused by failed payments (expired cards, limits, bank declines) even though the customer did not intend to leave. Automatic retries, card-update reminders and a short grace period can win back a large part of it.",
+      },
+      {
+        question: "What is negative churn?",
+        answer:
+          "When expansion revenue from existing customers exceeds the revenue lost to cancellations and downgrades, net revenue churn goes below zero and NRR rises above 100%. Acquiring more new customers than you lose is not negative churn.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate churn rate",
+      description: "Calculate monthly churn from the starting customer base, convert it to annual churn and split losses by type.",
+      steps: [
+        { name: "Pick the period", text: "Use a month for monthly plans, or a year or quarter for annual contracts." },
+        { name: "Count starting customers", text: "Count active paying customers on the first day of the period, excluding trial and free-plan users. Example: 800." },
+        { name: "Count lost customers", text: "Count how many of those customers cancelled, didn't renew or were closed for non-payment during the period. Example: 40." },
+        { name: "Calculate the rate", text: "Divide losses by starting customers and multiply by 100: 40 / 800 × 100 = 5%. For annual churn use 1 − (1 − 0.05)^12 ≈ 46%." },
+        { name: "Split losses and check revenue churn", text: "Report voluntary and involuntary churn separately, and divide churned plus contraction MRR by starting MRR for gross revenue churn." },
+      ],
+    },
+    relatedToolKey: "churn",
+    resources: [
+      { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator/" },
+      { label: "LTV Calculator", href: "/en/free-tools/ltv-calculator/" },
+      { label: "NRR Calculator", href: "/en/free-tools/nrr-calculator/" },
+      { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator/" },
+      { label: "Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "What Is MRR and How Do You Calculate It?", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+      { label: "What Is LTV? What Should the LTV:CAC Ratio Be?", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
+      { label: "What Is NRR? Why It Matters More Than ARR", href: "/en/blog/what-is-nrr-saas-growth-metric/" },
+      { label: "What Is CAC? How to Calculate Customer Acquisition Cost", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
+      { label: "Stripe: Automate payment retries", href: "https://docs.stripe.com/billing/revenue-recovery/smart-retries", external: true },
+      { label: "Wikipedia: Churn rate", href: "https://en.wikipedia.org/wiki/Churn_rate", external: true },
     ],
   },
 ];
