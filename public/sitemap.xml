@@ -452,6 +452,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-run-meta-ads-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -886,6 +895,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-churn-rate/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/churn-nedir-churn-rate-nasil-hesaplanir/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/churn-nedir-churn-rate-nasil-hesaplanir/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/how-to-run-meta-ads-guide/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-run-meta-ads-guide/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

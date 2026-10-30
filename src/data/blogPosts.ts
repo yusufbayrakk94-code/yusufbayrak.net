@@ -664,6 +664,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     relatedToolKey: "roas",
+    resources: [
+      { label: "Meta Reklam Verme Rehberi: Bütçe, Kitle ve Öğrenme Aşaması", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+    ],
   },
   {
     slug: "b2b-lead-generation-maliyetleri-nasil-dusurulur",
@@ -1717,6 +1722,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Meta Reklam Verme Rehberi: Bütçe, Kitle ve Öğrenme Aşaması", href: "/blog/meta-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
       { label: "Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır?", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
@@ -3423,6 +3429,195 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Wikipedia: Churn rate (İngilizce)", href: "https://en.wikipedia.org/wiki/Churn_rate", external: true },
     ],
   },
+  {
+    slug: "meta-reklam-verme-rehberi",
+    seoTitle: "Meta Reklam Verme Rehberi: Bütçe, Kitle, Öğrenme (2026)",
+    title: "Meta Reklam Verme Rehberi (2026): Facebook ve Instagram Reklamı Adım Adım, Bütçe Hesabı ve Öğrenme Aşaması",
+    description:
+      "Meta reklam nasıl verilir? Reklam Yöneticisi kurulumu, piksel ve Dönüşümler API, 6 kampanya amacı, Advantage+, kitle ve hedeften geriye bütçe hesabı örneği.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Meta reklamı (Facebook, Instagram, Messenger, WhatsApp) Reklam Yöneticisi'nden verilir: işletme portföyü ve reklam hesabı → ödeme yöntemi → Meta pikseli + Dönüşümler API → kampanya amacı → reklam seti (kitle, bütçe, yerleşim) → reklam (kreatif, metin, bağlantı).",
+      "Bütçeyi tahminle değil hedeften geriye kurun: ortalama sipariş 1.200 TL ve reklam öncesi katkı marjı %40 ise başabaş ROAS 2,5, başabaş CPA 480 TL'dir. Sipariş başı %10 kâr isteniyorsa hedef CPA 360 TL, hedef ROAS ≈ 3,3 olur.",
+      "Meta, bir reklam setinin öğrenme aşamasından çıkması için son önemli düzenlemeden sonra 7 günde yaklaşık 50 optimizasyon olayı bekler. 360 TL CPA ile bu, reklam seti başına günde ≈ 2.571 TL demektir; 700 TL/gün bütçe haftada ≈ 14 satın alma getirir, yetmez.",
+      "Bütçe yetmiyorsa reklam setlerini birleştirin ya da daha sık gerçekleşen bir olayı (ör. ödeme başlatma, ≈90 TL → haftada ≈54 olay) optimize edin. Advantage+ kampanya bütçesi + Advantage+ kitle + Advantage+ yerleşimler 2025'ten beri satış ve uygulama kampanyalarında varsayılan kurulum.",
+    ],
+    publishedAt: "2026-10-30",
+    readingMinutes: 10,
+    tags: ["Meta Reklam", "Facebook Reklamı", "Instagram Reklamı", "Reklam Yöneticisi", "Advantage+", "Reklam Bütçesi"],
+    sections: [
+      {
+        heading: "Meta reklam nasıl verilir? (Kısa cevap)",
+        paragraphs: [
+          "Meta reklamı, Facebook, Instagram, Messenger ve WhatsApp'ta (ve Audience Network'te) gösterilen reklamların tek panelden, Meta Reklam Yöneticisi'nden (Ads Manager) kurulmasıdır. Sıra: işletme portföyü ve reklam hesabı açın, ödeme yöntemi ekleyin, sitenize Meta pikselini ve mümkünse Dönüşümler API'yi kurun, kampanya amacını seçin, reklam setinde kitle-bütçe-yerleşimi belirleyin, reklamda kreatif ve metni yükleyip yayına alın.",
+          "Instagram veya Facebook sayfasındaki 'Öne çıkar' (boost) düğmesi hızlıdır ama amaç, ölçüm ve kitle seçenekleri sınırlıdır; satış ya da potansiyel müşteri hedefleyen işletmeler için Reklam Yöneticisi doğru yerdir. Bu yazıdaki tutarlar örnek tutarlardır; kendi rakamlarınız için Reklam Bütçesi Hesaplama aracını kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Meta reklam vermeden önce ne hazırlanmalı?",
+        paragraphs: [
+          "Reklamın kendisi 15 dakikada kurulur; asıl zaman alan altyapıdır. Bunlar eksikse algoritma yanlış olayı öğrenir ve sonuçlar ölçülemez.",
+        ],
+        bullets: [
+          "Facebook sayfası ve Instagram profesyonel hesabı (işletme veya içerik üreticisi), ikisi birbirine bağlı",
+          "Meta Business Suite'te bir işletme portföyü (eski adıyla Business Manager) ve içinde reklam hesabı; reklam hesabının para birimi ve saat dilimini ilk kurulumda doğru seçin, sonradan değiştirmek zahmetlidir",
+          "Ödeme yöntemi (kart ya da hesabınızda sunulan diğer yöntemler) ve fatura bilgileri; muhasebe işlemleri için mali müşavirinize danışın",
+          "Alan adı doğrulaması ve Meta pikseli: sitede satın alma, sepete ekleme, ödeme başlatma, form gönderme gibi olaylar doğru tetikleniyor mu, Olay Yöneticisi'nde test edin",
+          "Dönüşümler API (CAPI): olayları tarayıcıya ek olarak sunucudan da gönderir; reklam engelleyici ve çerez kısıtlarında kaybolan olayları azaltır",
+          "UTM şablonu: GA4'te Meta trafiğini doğru kanalda görmek için reklam bağlantılarına tutarlı UTM parametreleri",
+        ],
+      },
+      {
+        heading: "Meta pikseli ve Dönüşümler API neden birlikte kurulmalı?",
+        paragraphs: [
+          "Meta'nın geliştirici belgeleri, Dönüşümler API'nin Meta pikseliyle birlikte kullanılmasını öneriyor. Piksel tarayıcıdan, CAPI sunucudan olay gönderir; biri kaçırdığında diğeri yakalar. İkisi aynı olayı gönderdiğinde çift sayım olmaması için tekilleştirme gerekir: piksel tarafındaki eventID ile CAPI tarafındaki event_id ve olay adı eşleşirse Meta, ilk olaydan sonraki 48 saat içinde gelen kopyayı atar.",
+          "Pratik kontrol: Olay Yöneticisi'nde her olay için hem tarayıcı hem sunucu kaynağı görünmeli ve tekilleştirme uyarısı olmamalı. Shopify, ikas, Ticimax, IdeaSoft gibi altyapıların çoğu piksel ve CAPI entegrasyonu sunar; kurulumdan sonra bir test siparişiyle satın alma olayının değeri ve para birimini doğrulayın.",
+        ],
+      },
+      {
+        heading: "Meta kampanya amacı nasıl seçilir? 6 amaç",
+        paragraphs: [
+          "Meta'da kampanya amacı, algoritmanın kimi bulmaya çalışacağını belirler: 'Trafik' seçerseniz tıklamaya yatkın kişileri, 'Satışlar' seçerseniz satın almaya yatkın kişileri arar. Amaç, ölçmek istediğiniz iş sonucuyla aynı olmalıdır.",
+        ],
+        bullets: [
+          "Bilinirlik: erişim ve hatırlanma; yeni marka, yerel işletme, lansman",
+          "Trafik: siteye, uygulamaya ya da profile ziyaret; içerik ve blog dağıtımı. Satış için kullanmayın, tıklayan ama almayan kitle bulur",
+          "Etkileşim: video izlenmesi, mesaj, gönderi etkileşimi, etkinlik yanıtı; WhatsApp/Instagram DM ile satış yapan işletmeler için mesaj hedefi",
+          "Potansiyel müşteriler: anında form, Messenger/WhatsApp ya da sitedeki form; B2B ve hizmet işletmeleri",
+          "Uygulama tanıtımı: uygulama yüklemesi ve uygulama içi olaylar",
+          "Satışlar: e-ticaret satın alma, sepete ekleme, katalog reklamları; piksel ve satın alma olayı şart",
+        ],
+      },
+      {
+        heading: "Advantage+ kampanya nedir, ne zaman kullanılır?",
+        paragraphs: [
+          "Advantage+, Meta'nın bütçe, kitle ve yerleşim kararlarını yapay zekâya bırakan otomasyon katmanıdır. Meta for Developers'ın 3 Haziran 2025 tarihli duyurusuna göre 29 Mayıs 2025'ten itibaren satış ve uygulama kampanyalarında Advantage+ ayrı bir kampanya türü olmaktan çıkıp normal kampanya akışına katıldı. Kampanyanın 'Advantage+ açık' sayılması için üç kaldıraç kullanılır: Advantage+ kampanya bütçesi (bütçeyi reklam setleri arasında otomatik dağıtır), Advantage+ kitle (verdiğiniz kitle bilgisini öneri olarak kullanıp daha geniş arar) ve Advantage+ yerleşimler (en verimli yerleşimleri seçer).",
+          "Meta, eski Advantage+ alışveriş kampanyası (ASC) akışını API'de 2026'nın ilk çeyreğinde (v25.0) kaldıracağını duyurdu ve mevcut kampanyalar için taşıma yolları yayımladı; yeni kampanyaları doğrudan yeni yapıda kurun. Pratik karar: piksel ve satın alma olayı sağlıklıysa ve haftada onlarca dönüşüm varsa Advantage+ ile başlayın. Dönüşüm verisi çok azsa, yeni bir hesapsanız ya da kesin kitle kısıtınız varsa (yalnızca belirli şehir, B2B meslek grubu) manuel ayarlarla daha kontrollü başlayıp veri biriktirin.",
+        ],
+      },
+      {
+        heading: "Meta reklam bütçesi nasıl belirlenir? Hedeften geriye hesap",
+        paragraphs: [
+          "Bütçeyi 'günde 500 TL deneyelim' diye değil, kârlılık hedefinden geriye hesaplayın. Örnek: ortalama sipariş tutarı 1.200 TL, ürün maliyeti + kargo + komisyon + paketleme sonrası reklam öncesi katkı marjı %40. Sipariş başı katkı 1.200 × 0,40 = 480 TL'dir.",
+          "Başabaş CPA 480 TL, başabaş ROAS 1 / 0,40 = 2,5'tir. Sipariş başına cironun %10'u kadar kâr kalsın istiyorsanız reklama ayırabileceğiniz tutar 1.200 × (0,40 − 0,10) = 360 TL'dir: hedef CPA 360 TL, hedef ROAS 1.200 / 360 ≈ 3,33. Bu hedefleri Meta'da maliyet hedefi ya da ROAS hedefi teklifi olarak da kullanabilirsiniz; ilk haftalarda sadece izleme eşiği olarak tutmak daha güvenlidir.",
+          "Sonra öğrenme aşaması kısıtını ekleyin: Meta, reklam setinin teslimatı oturtması için son önemli düzenlemeden sonraki 7 günde yaklaşık 50 optimizasyon olayı bekler. 360 TL CPA ile haftada 50 satın alma 18.000 TL, yani reklam seti başına günde ≈ 2.571 TL bütçe ister.",
+        ],
+        bullets: [
+          "Bütçeniz günde 700 TL ise: 700 × 7 / 360 ≈ 13,6 satın alma/hafta → reklam seti büyük olasılıkla 'Öğrenme sınırlı' kalır",
+          "Çözüm 1 — Birleştirin: aynı amaçlı 3–4 küçük reklam seti yerine tek reklam seti ve kampanya bütçesi; olaylar tek yerde toplanır",
+          "Çözüm 2 — Olayı yukarı taşıyın: ödeme başlatma olayının maliyeti ≈ 90 TL ise 700 × 7 / 90 ≈ 54 olay/hafta; satın alma hacmi büyüyünce satın almaya geçin",
+          "Çözüm 3 — Bütçeyi artırın ya da testi daha az ürüne/kitleye odaklayın",
+          "B2B / potansiyel müşteri: müşteri başı brüt kâr 24.000 TL, bunun yarısını edinmeye ayırıyorsanız (12.000 TL) ve lead'lerin %5'i müşteriye dönüyorsa maks. lead başı maliyet 12.000 × 0,05 = 600 TL",
+        ],
+      },
+      {
+        heading: "Meta'da hedef kitle nasıl seçilir?",
+        paragraphs: [
+          "Meta'nın güncel yapısında ayrıntılı ilgi alanı hedeflemesi çoğu kampanyada kesin bir sınır değil, algoritmaya verilen bir öneri gibi çalışıyor; asıl hedeflemeyi kreatif ve dönüşüm verisi yapıyor. Bu yüzden kitleyi dar ilgi alanı kombinasyonlarıyla parçalamak yerine birkaç net kitle tipiyle çalışın:",
+        ],
+        bullets: [
+          "Geniş kitle: yalnızca ülke/şehir, yaş ve dil; satış kampanyasında piksel verisi güçlüyse çoğu zaman en verimli başlangıç",
+          "Özel hedef kitleler: son 30–180 gün site ziyaretçileri, sepete ekleyip almayanlar, Instagram/Facebook etkileşimi, müşteri listesi (KVKK'ya uygun izinle toplanmış veri)",
+          "Benzer hedef kitleler: en değerli müşteri listenizden; liste ne kadar temiz ve değerliyse o kadar iyi",
+          "Hariç tutma: mevcut müşterilere yeni müşteri teklifi göstermemek için müşteri listesini ya da son satın alanları hariç tutun",
+          "Konum: kargo/hizmet verebildiğiniz bölgeyle sınırlayın; yerel işletmede yarıçap kullanın",
+        ],
+      },
+      {
+        heading: "Meta reklam kreatifi nasıl hazırlanır?",
+        paragraphs: [
+          "Geniş kitle kullanıldığında doğru kişiyi bulan şey kreatiftir: ilk 2–3 saniyede kime hitap ettiğini ve hangi sorunu çözdüğünü söyleyen görsel ya da video, algoritmanın doğru kişiyi seçmesine yardım eder. Tek kreatifle başlamak yerine aynı reklam setine birbirinden belirgin biçimde farklı birkaç açı yükleyin.",
+        ],
+        bullets: [
+          "Formatlar: dikey video (Reels/Hikâye 9:16), kare veya 4:5 görsel (akış), katalog/carousel (çok ürün)",
+          "Açılar: sorun–çözüm, ürün kullanım videosu, müşteri yorumu (gerçek ve izinli), karşılaştırma, kampanya/teklif",
+          "Metin: ilk satırda fayda ve teklif; fiyat ya da kargo avantajı varsa açıkça yazın; harekete geçirici mesaj amaca uygun olsun",
+          "Rakip incelemesi: Meta Reklam Kütüphanesi'nde rakiplerin uzun süredir yayında tuttuğu reklamlar, işe yarayan açıları gösterir",
+          "Yorgunluk: frekans artıp tıklama oranı düşüyor ve CPA yükseliyorsa yeni açı ekleyin; kazananı silmeyin",
+        ],
+      },
+      {
+        heading: "Reklam yayına girdikten sonra ilk 14 gün ne yapılmalı?",
+        paragraphs: [
+          "En sık hata, ilk günlerde sonuç dalgalanırken bütçe, kitle ve kreatifi sürekli değiştirmektir. Bütçe, teklif, hedefleme, optimizasyon olayı ve kreatif değişiklikleri önemli düzenleme sayılabilir ve öğrenmeyi yeniden başlatabilir; ayrıntılar için Meta öğrenme aşaması yazımıza bakın.",
+        ],
+        bullets: [
+          "1–3. gün: reklam onayı, teslimat, piksel olaylarının gelmesi, bağlantı ve UTM kontrolü; performans kararı vermeyin",
+          "4–7. gün: CPA ve ROAS'ı başabaş değerlerle karşılaştırın; açıkça kötü bir kreatifi durdurmak serbest, yapıyı değiştirmeyin",
+          "8–14. gün: öğrenme bittiyse bütçeyi kademeli artırın (büyük sıçramalar yerine birkaç günde bir küçük artışlar); 'Öğrenme sınırlı' ise birleştirme veya olay değişikliği yapın",
+          "Her hafta: Meta'nın raporladığı dönüşümleri GA4 ve sipariş paneliyle karşılaştırın; Meta görüntüleme sonrası dönüşümleri de sayabildiği için rakamlar farklı olur, kararı kendi kâr verinize göre verin",
+        ],
+      },
+      {
+        heading: "Meta reklamlarında en sık yapılan hatalar",
+        paragraphs: [
+          "Hataların çoğu algoritmaya yanlış sinyal vermekten ya da ölçümsüz harcamaktan gelir:",
+        ],
+        bullets: [
+          "Satış istenirken 'Trafik' ya da 'Etkileşim' amacı seçmek",
+          "Piksel olaylarını test etmeden yayına girmek; satın alma değerini göndermemek",
+          "Küçük bütçeyi çok sayıda reklam setine bölmek ve hiçbirinin öğrenmeyi bitirememesi",
+          "Başabaş ROAS'ı bilmeden 'ROAS 3 iyi mi?' diye karar vermek; ciro ROAS'ını kâr sanmak",
+          "Mevcut müşterileri hariç tutmadan yeni müşteri kampanyası yürütmek",
+          "UTM'siz bağlantılar yüzünden GA4'te Meta trafiğini 'Unassigned' ya da 'Referral' görmek",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Meta reklamı nasıl verilir?",
+        answer:
+          "Meta Reklam Yöneticisi'nde reklam hesabı açın, ödeme yöntemi ekleyin, sitenize Meta pikselini kurun, kampanya amacını (ör. Satışlar) seçin, reklam setinde kitle, bütçe ve yerleşimi belirleyin, reklamda kreatif ve metni yükleyip yayınlayın. Reklam onaylandıktan sonra yayına girer.",
+      },
+      {
+        question: "Meta reklam bütçesi ne kadar olmalı?",
+        answer:
+          "Bütçe hedeften geriye hesaplanır: hedef CPA × haftada gereken yaklaşık 50 optimizasyon olayı ÷ 7 = reklam seti başına günlük bütçe. Hedef CPA 360 TL ise günde ≈ 2.571 TL gerekir; daha azıyla reklam setlerini birleştirin ya da daha sık gerçekleşen bir olayı optimize edin.",
+      },
+      {
+        question: "Instagram'da 'Öne çıkar' ile Reklam Yöneticisi arasındaki fark nedir?",
+        answer:
+          "'Öne çıkar' mevcut bir gönderiyi hızlıca reklama çevirir ama amaç, ölçüm ve kitle seçenekleri sınırlıdır. Reklam Yöneticisi'nde tüm kampanya amaçları, piksel olaylarına göre optimizasyon, özel ve benzer kitleler, A/B testleri ve ayrıntılı raporlama vardır.",
+      },
+      {
+        question: "Advantage+ kullanmalı mıyım?",
+        answer:
+          "Pikseliniz sağlıklıysa ve haftada onlarca dönüşüm alıyorsanız Advantage+ (kampanya bütçesi, kitle ve yerleşimler) iyi bir başlangıçtır. Dönüşüm verisi çok azsa ya da kesin bir kitle kısıtınız varsa manuel ayarlarla veri biriktirip sonra geçin.",
+      },
+      {
+        question: "Meta reklamında öğrenme aşaması ne kadar sürer?",
+        answer:
+          "Meta, bir reklam setinin son önemli düzenlemeden sonraki 7 günde yaklaşık 50 optimizasyon olayı toplamasını bekler. Bu hacme ulaşamayan reklam setleri 'Öğrenme sınırlı' olarak görünür; bütçeyi artırmak, reklam setlerini birleştirmek ya da daha sık gerçekleşen bir olayı seçmek çözümdür.",
+      },
+    ],
+    howTo: {
+      name: "Meta reklamı adım adım nasıl verilir?",
+      description: "Reklam hesabından yayına kadar Facebook ve Instagram reklamı kurulumu.",
+      steps: [
+        { name: "Hesapları hazırlayın", text: "Facebook sayfası ve Instagram profesyonel hesabını bağlayın; Meta Business Suite'te işletme portföyü ve reklam hesabı açın, ödeme yöntemi ekleyin." },
+        { name: "Ölçümü kurun", text: "Alan adını doğrulayın, Meta pikseli ve Dönüşümler API'yi kurun, satın alma ve form olaylarını Olay Yöneticisi'nde test edin." },
+        { name: "Hedefleri hesaplayın", text: "Katkı marjından başabaş ROAS ve hedef CPA'yı bulun; öğrenme için reklam seti başına haftada yaklaşık 50 olay gerektiren bütçeyi hesaplayın." },
+        { name: "Kampanyayı kurun", text: "Amacı seçin (ör. Satışlar), Advantage+ ya da manuel ayarları belirleyin, reklam setinde konum, kitle ve bütçeyi girin." },
+        { name: "Kreatifi yükleyin ve yayınlayın", text: "Farklı açılardan birkaç görsel/video, metin ve UTM'li bağlantı ekleyin; onaydan sonra ilk 7 günde yapıyı değiştirmeden izleyin." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Hesaplama: ROAS ve Başabaş ROAS", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır?", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+      { label: "Meta for Developers: Satış ve uygulama kampanyalarında Advantage+ (İngilizce)", href: "https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/", external: true },
+      { label: "Meta for Developers: Piksel ve Dönüşümler API olaylarının tekilleştirilmesi (İngilizce)", href: "https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events", external: true },
+      { label: "Meta İşletme Yardım Merkezi: Öğrenme aşaması", href: "https://www.facebook.com/business/help/112167992830700/", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -3964,6 +4159,11 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       },
     ],
     relatedToolKey: "roas",
+    resources: [
+      { label: "How to Run Meta Ads: Budget, Audience & Learning Phase", href: "/en/blog/how-to-run-meta-ads-guide/" },
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+    ],
   },
   {
     slug: "how-to-reduce-b2b-lead-generation-costs",
@@ -4821,6 +5021,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run Meta Ads: Budget, Audience & Learning Phase", href: "/en/blog/how-to-run-meta-ads-guide/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "What Is ROAS and How Do You Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
       { label: "How to Exit the Meta Ads Learning Phase Faster", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
@@ -6491,6 +6692,194 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "What Is CAC? How to Calculate Customer Acquisition Cost", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
       { label: "Stripe: Automate payment retries", href: "https://docs.stripe.com/billing/revenue-recovery/smart-retries", external: true },
       { label: "Wikipedia: Churn rate", href: "https://en.wikipedia.org/wiki/Churn_rate", external: true },
+    ],
+  },
+  {
+    slug: "how-to-run-meta-ads-guide",
+    seoTitle: "How to Run Meta Ads: Budget, Audience & Learning Phase",
+    title: "How to Run Meta Ads (2026): Facebook and Instagram Ads Step by Step, Budget Math and the Learning Phase",
+    description:
+      "How to run Meta ads: Ads Manager setup, Pixel and Conversions API, the 6 campaign objectives, Advantage+, audiences and a worked budget-from-target example.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Meta ads (Facebook, Instagram, Messenger, WhatsApp) are built in Ads Manager: business portfolio and ad account → payment method → Meta Pixel + Conversions API → campaign objective → ad set (audience, budget, placements) → ad (creative, copy, link).",
+      "Build the budget backwards from your targets: with a $120 average order and a 40% pre-ad contribution margin, break-even ROAS is 2.5 and break-even CPA is $48. If you want 10% profit per order, target CPA is $36 and target ROAS ≈ 3.3.",
+      "Meta expects an ad set to get roughly 50 optimization events in the 7 days after the last significant edit to leave the learning phase. At a $36 CPA that is ≈ $257 per day per ad set; $70/day brings ≈ 14 purchases a week, which is not enough.",
+      "If the budget falls short, consolidate ad sets or optimize for a more frequent event (e.g. initiate checkout at ≈ $9 → ≈ 54 events/week). Advantage+ campaign budget + Advantage+ audience + Advantage+ placements have been the default setup for sales and app campaigns since 2025.",
+    ],
+    publishedAt: "2026-10-30",
+    readingMinutes: 10,
+    tags: ["Meta Ads", "Facebook Ads", "Instagram Ads", "Ads Manager", "Advantage+", "Ad Budget"],
+    sections: [
+      {
+        heading: "How do you run Meta ads? (Short answer)",
+        paragraphs: [
+          "Meta ads are ads shown on Facebook, Instagram, Messenger and WhatsApp (and the Audience Network), all set up from one place: Meta Ads Manager. The order: create a business portfolio and ad account, add a payment method, install the Meta Pixel and ideally the Conversions API on your site, choose a campaign objective, set audience, budget and placements in the ad set, then upload creative and copy in the ad and publish.",
+          "The 'Boost' button on an Instagram or Facebook post is quick, but objectives, measurement and audience options are limited; businesses that want sales or leads should use Ads Manager. All amounts in this article are example figures; for your own numbers use the Ad Budget Calculator.",
+        ],
+      },
+      {
+        heading: "What do you need before running Meta ads?",
+        paragraphs: [
+          "The ad itself takes 15 minutes; the setup underneath it takes longer. If it is missing, the algorithm learns from the wrong events and results can't be measured.",
+        ],
+        bullets: [
+          "A Facebook Page and an Instagram professional account (business or creator), connected to each other",
+          "A business portfolio in Meta Business Suite (formerly Business Manager) with an ad account; pick the ad account's currency and time zone carefully at setup, as changing them later is a hassle",
+          "A payment method (card or the other options available for your account) and billing details",
+          "Domain verification and the Meta Pixel: test in Events Manager that purchase, add to cart, initiate checkout and form submit events fire correctly",
+          "Conversions API (CAPI): sends events from your server as well as the browser, reducing events lost to ad blockers and cookie restrictions",
+          "A UTM template: consistent UTM parameters on ad links so Meta traffic lands in the right channel in GA4",
+        ],
+      },
+      {
+        heading: "Why should the Meta Pixel and Conversions API run together?",
+        paragraphs: [
+          "Meta's developer documentation recommends implementing the Conversions API alongside the Meta Pixel. The Pixel sends events from the browser and CAPI from the server; when one misses an event, the other catches it. When both send the same event, deduplication prevents double counting: if the Pixel's eventID matches CAPI's event_id and the event names match, Meta discards copies received within 48 hours of the first event.",
+          "Practical check: in Events Manager each event should show both browser and server sources with no deduplication warning. Most platforms such as Shopify and WooCommerce offer Pixel and CAPI integrations; after setup, place a test order and confirm the purchase value and currency.",
+        ],
+      },
+      {
+        heading: "How do you choose a Meta campaign objective? The 6 objectives",
+        paragraphs: [
+          "The campaign objective tells the algorithm whom to look for: choose Traffic and it finds people likely to click; choose Sales and it finds people likely to buy. Your objective should match the business result you want to measure.",
+        ],
+        bullets: [
+          "Awareness: reach and recall; new brands, local businesses, launches",
+          "Traffic: visits to a website, app or profile; content and blog distribution. Don't use it for sales: it finds people who click but don't buy",
+          "Engagement: video views, messages, post engagement, event responses; the messaging goal suits businesses that sell via WhatsApp or Instagram DMs",
+          "Leads: instant forms, Messenger/WhatsApp or website forms; B2B and service businesses",
+          "App promotion: app installs and in-app events",
+          "Sales: e-commerce purchases, add to cart, catalog ads; requires a Pixel and a purchase event",
+        ],
+      },
+      {
+        heading: "What are Advantage+ campaigns and when should you use them?",
+        paragraphs: [
+          "Advantage+ is Meta's automation layer that hands budget, audience and placement decisions to AI. According to Meta for Developers' announcement of June 3, 2025, from May 29, 2025 Advantage+ stopped being a separate campaign type for sales and app campaigns and became part of the standard campaign flow. A campaign counts as 'Advantage+ on' when it uses three levers: Advantage+ campaign budget (distributes budget across ad sets automatically), Advantage+ audience (treats your audience inputs as suggestions and searches more broadly) and Advantage+ placements (picks the most efficient placements).",
+          "Meta announced that the legacy Advantage+ shopping campaign (ASC) flow would be removed from the API in Q1 2026 (v25.0) and published migration paths for existing campaigns; build new campaigns directly in the new structure. Practical rule: if your Pixel and purchase event are healthy and you get dozens of conversions a week, start with Advantage+. If conversion data is thin, the account is new, or you have hard audience constraints (a single city, a B2B job function), start with manual settings for more control while you build data.",
+        ],
+      },
+      {
+        heading: "How do you set a Meta ads budget? Work backwards from targets",
+        paragraphs: [
+          "Don't set the budget as 'let's try $50 a day'; calculate it backwards from your profit target. Example: average order value $120 and a pre-ad contribution margin of 40% after product cost, shipping, fees and packaging. Contribution per order is $120 × 0.40 = $48.",
+          "Break-even CPA is $48 and break-even ROAS is 1 / 0.40 = 2.5. If you want 10% of revenue left as profit per order, you can spend $120 × (0.40 − 0.10) = $36 on ads: target CPA $36, target ROAS $120 / $36 ≈ 3.33. You can use these as a cost-per-result goal or ROAS goal bid in Meta; in the first weeks it is safer to treat them as monitoring thresholds.",
+          "Then add the learning-phase constraint: Meta expects an ad set to collect roughly 50 optimization events in the 7 days after the last significant edit to stabilize delivery. At a $36 CPA, 50 purchases a week cost $1,800, i.e. ≈ $257 per day per ad set.",
+        ],
+        bullets: [
+          "With $70 a day: 70 × 7 / 36 ≈ 13.6 purchases/week → the ad set will likely stay 'Learning limited'",
+          "Fix 1 — Consolidate: one ad set with campaign budget instead of 3–4 small ad sets with the same goal, so events pool in one place",
+          "Fix 2 — Move the event up the funnel: if initiate checkout costs ≈ $9, 70 × 7 / 9 ≈ 54 events/week; switch to purchase once volume grows",
+          "Fix 3 — Increase the budget or focus the test on fewer products/audiences",
+          "B2B / leads: with $2,400 gross profit per customer, half of it allowed for acquisition ($1,200) and 5% of leads becoming customers, maximum cost per lead is $1,200 × 0.05 = $60",
+        ],
+      },
+      {
+        heading: "How do you choose a target audience on Meta?",
+        paragraphs: [
+          "In Meta's current setup, detailed interest targeting works more like a suggestion to the algorithm than a hard limit in most campaigns; creative and conversion data do most of the targeting. So instead of slicing audiences into narrow interest combinations, work with a few clear audience types:",
+        ],
+        bullets: [
+          "Broad: only country/city, age and language; often the most efficient start for sales campaigns with strong Pixel data",
+          "Custom audiences: site visitors in the last 30–180 days, add-to-cart non-buyers, Instagram/Facebook engagers, customer lists (collected with proper consent under applicable privacy law)",
+          "Lookalike audiences: built from your most valuable customer list; the cleaner and more valuable the list, the better",
+          "Exclusions: exclude your customer list or recent purchasers so existing customers don't see new-customer offers",
+          "Location: limit to where you can ship or serve; use a radius for local businesses",
+        ],
+      },
+      {
+        heading: "How do you prepare Meta ad creative?",
+        paragraphs: [
+          "With broad audiences, creative is what finds the right people: an image or video that says in the first 2–3 seconds who it is for and what problem it solves helps the algorithm pick the right viewers. Instead of starting with one creative, load several clearly different angles into the same ad set.",
+        ],
+        bullets: [
+          "Formats: vertical video (Reels/Stories 9:16), square or 4:5 images (feed), catalog/carousel (multiple products)",
+          "Angles: problem–solution, product-in-use video, customer review (real and with permission), comparison, offer",
+          "Copy: lead with the benefit and offer; state price or shipping advantages clearly; match the call to action to the objective",
+          "Competitor research: ads competitors have kept running for a long time in the Meta Ad Library show angles that work",
+          "Fatigue: if frequency rises, click-through rate falls and CPA climbs, add new angles; don't delete the winner",
+        ],
+      },
+      {
+        heading: "What should you do in the first 14 days after launch?",
+        paragraphs: [
+          "The most common mistake is changing budget, audience and creative constantly while early results fluctuate. Changes to budget, bid, targeting, optimization event and creative can count as significant edits and restart learning; see our Meta learning phase article for details.",
+        ],
+        bullets: [
+          "Days 1–3: check ad approval, delivery, incoming Pixel events, links and UTMs; don't make performance calls",
+          "Days 4–7: compare CPA and ROAS to break-even; pausing a clearly bad creative is fine, but don't change the structure",
+          "Days 8–14: if learning has ended, raise the budget gradually (small increases every few days rather than big jumps); if 'Learning limited', consolidate or change the event",
+          "Weekly: compare conversions reported by Meta with GA4 and your order system; Meta can also count view-through conversions, so the numbers will differ; decide based on your own profit data",
+        ],
+      },
+      {
+        heading: "The most common Meta ads mistakes",
+        paragraphs: [
+          "Most mistakes come from sending the algorithm the wrong signal or spending without measurement:",
+        ],
+        bullets: [
+          "Choosing Traffic or Engagement when you want sales",
+          "Launching without testing Pixel events, or without sending the purchase value",
+          "Splitting a small budget across many ad sets so none of them finishes learning",
+          "Judging 'is a ROAS of 3 good?' without knowing break-even ROAS; mistaking revenue ROAS for profit",
+          "Running new-customer campaigns without excluding existing customers",
+          "Missing UTMs, so Meta traffic shows up as 'Unassigned' or 'Referral' in GA4",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How do you run a Meta ad?",
+        answer:
+          "In Meta Ads Manager, create an ad account, add a payment method, install the Meta Pixel on your site, choose a campaign objective (e.g. Sales), set audience, budget and placements in the ad set, upload creative and copy in the ad and publish. The ad goes live once approved.",
+      },
+      {
+        question: "How much should I spend on Meta ads?",
+        answer:
+          "Work backwards: target CPA × roughly 50 optimization events a week ÷ 7 = daily budget per ad set. With a $36 target CPA you need ≈ $257 a day; with less, consolidate ad sets or optimize for a more frequent event.",
+      },
+      {
+        question: "What is the difference between Boost and Ads Manager?",
+        answer:
+          "Boost turns an existing post into an ad quickly, but objectives, measurement and audience options are limited. Ads Manager offers all campaign objectives, optimization for Pixel events, custom and lookalike audiences, A/B tests and detailed reporting.",
+      },
+      {
+        question: "Should I use Advantage+?",
+        answer:
+          "If your Pixel is healthy and you get dozens of conversions a week, Advantage+ (campaign budget, audience and placements) is a good start. If conversion data is thin or you have a hard audience constraint, build data with manual settings first.",
+      },
+      {
+        question: "How long does the Meta learning phase last?",
+        answer:
+          "Meta expects an ad set to collect roughly 50 optimization events in the 7 days after the last significant edit. Ad sets that don't reach that volume show as 'Learning limited'; the fixes are a bigger budget, fewer ad sets or a more frequent optimization event.",
+      },
+    ],
+    howTo: {
+      name: "How to run Meta ads step by step",
+      description: "Setting up Facebook and Instagram ads from ad account to launch.",
+      steps: [
+        { name: "Prepare the accounts", text: "Connect your Facebook Page and Instagram professional account; create a business portfolio and ad account in Meta Business Suite and add a payment method." },
+        { name: "Set up measurement", text: "Verify your domain, install the Meta Pixel and Conversions API, and test purchase and form events in Events Manager." },
+        { name: "Calculate targets", text: "Derive break-even ROAS and target CPA from contribution margin; calculate the budget needed for roughly 50 events per ad set per week." },
+        { name: "Build the campaign", text: "Choose the objective (e.g. Sales), decide on Advantage+ or manual settings, and enter location, audience and budget in the ad set." },
+        { name: "Upload creative and launch", text: "Add several images/videos with different angles, copy and UTM-tagged links; after approval, monitor for 7 days without changing the structure." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "How to Exit the Meta Ads Learning Phase Faster", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
+      { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "What Is ROAS and How Do You Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "Meta for Developers: Advantage+ campaign experience for sales and app", href: "https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/", external: true },
+      { label: "Meta for Developers: Deduplicating Pixel and Conversions API events", href: "https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events", external: true },
+      { label: "Meta Business Help Center: About the learning phase", href: "https://www.facebook.com/business/help/112167992830700/", external: true },
     ],
   },
 ];
