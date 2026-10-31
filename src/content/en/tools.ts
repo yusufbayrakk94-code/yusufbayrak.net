@@ -28,6 +28,7 @@ export const arr: ToolContent = {
     { q: "What is a healthy ARR growth rate?", a: "Early-stage SaaS targets 100%+ annual ARR growth; scale-ups treat 40-60% as good. It varies with sector, TAM and customer segment." },
     { q: "What is Net New ARR?", a: "New ARR added in a period plus expansion ARR from existing customers, minus churn and contraction ARR. It shows the true quality of growth." },
   ],
+  relatedPost: { label: "What Is ARR? Annual Recurring Revenue & the ARR Bridge", href: "/en/blog/what-is-arr-annual-recurring-revenue/" },
 };
 
 export const cac: ToolContent = {

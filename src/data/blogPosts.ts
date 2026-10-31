@@ -3060,6 +3060,7 @@ export const BLOG_POSTS: BlogPost[] = [
     resources: [
       { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
       { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici/" },
+      { label: "ARR Nedir? Yıllık Yinelenen Gelir ve ARR Köprüsü", href: "/blog/arr-nedir-yillik-yinelenen-gelir/" },
       { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici/" },
       { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
@@ -3616,6 +3617,188 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Meta for Developers: Satış ve uygulama kampanyalarında Advantage+ (İngilizce)", href: "https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/", external: true },
       { label: "Meta for Developers: Piksel ve Dönüşümler API olaylarının tekilleştirilmesi (İngilizce)", href: "https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events", external: true },
       { label: "Meta İşletme Yardım Merkezi: Öğrenme aşaması", href: "https://www.facebook.com/business/help/112167992830700/", external: true },
+    ],
+  },
+  {
+    slug: "arr-nedir-yillik-yinelenen-gelir",
+    seoTitle: "ARR Nedir? Yıllık Yinelenen Gelir ve ARR Köprüsü",
+    title: "ARR Nedir? Yıllık Yinelenen Gelir Nasıl Hesaplanır? ARR Köprüsü, CARR ve Booking Farkı",
+    description:
+      "ARR (yıllık yinelenen gelir) nedir, nasıl hesaplanır? Çok yıllı sözleşme, yeni/genişleme/kayıp ARR köprüsü, NRR-GRR, CARR, booking ve ciro farkı örnekle.",
+    category: "saas-buyume",
+    tldr: [
+      "ARR (Annual Recurring Revenue, yıllık yinelenen gelir), belirli bir tarihte aktif olan aboneliklerin ve sözleşmelerin yıllık karşılığıdır. Bir yıl boyunca kazanılan gelirin toplamı değil, o günün fotoğrafıdır. Örnek şirkette 31 Aralık ARR'si 3.024.000 + 3.976.000 + 1.400.000 = 8.400.000 TL.",
+      "Aylık planlar × 12, yıllık sözleşmeler yıllık bedelle girer; kademeli çok yıllı sözleşmede o yılın bedeli kullanılır. 3 yıllık 540.000 TL'lik kademeli sözleşmeyi 3'e bölmek (180.000) ilk yılın gerçek bedelini (140.000) aşar ve ARR'yi örnekte 400.000 TL şişirir.",
+      "Yıllık ARR köprüsü: Başlangıç 6.000.000 + Yeni 2.280.000 + Genişleme 1.020.000 − Daralma 240.000 − Kayıp 660.000 = Bitiş 8.400.000 TL. ARR %40 büyüdü; aynı köprüden NRR %102, GRR %85 çıkar.",
+      "Aynı şirket için beş farklı rakam vardır: ARR 8,40 milyon, CARR 8,67 milyon, run-rate gelir 9,42 milyon, yılın booking'i (TCV) 6,28 milyon ve yıl içinde tanınan abonelik geliri ≈7,2 milyon TL. Hangisini raporladığınızı yazın; karıştırmak en sık yapılan hatadır.",
+    ],
+    publishedAt: "2026-10-31",
+    readingMinutes: 9,
+    tags: ["ARR", "Yıllık Yinelenen Gelir", "SaaS Metrikleri", "Net Yeni ARR", "CARR", "NRR"],
+    sections: [
+      {
+        heading: "ARR nedir? (Kısa cevap)",
+        paragraphs: [
+          "ARR (Annual Recurring Revenue), Türkçesiyle yıllık yinelenen (tekrarlayan) gelir, abonelik ya da yıllık sözleşmeyle çalışan bir işletmenin belirli bir tarihte aktif olan tüm yinelenen sözleşmelerinin yıllık karşılığıdır. B2B SaaS şirketleri, kurumsal yazılım satıcıları ve yıllık lisans modeliyle çalışan işletmeler büyüklüklerini ve büyümelerini ARR ile ifade eder.",
+          "Formül: ARR = Σ (Her aktif sözleşmenin yıllık yinelenen bedeli). Tüm müşteriler aylık plandaysa ARR = MRR × 12 olur. Kritik nokta şudur: ARR bir yıl içinde kasaya giren paranın ya da muhasebe gelirinin toplamı değildir; 'bugünkü müşteri tabanı hiçbir şey değişmezse önümüzdeki 12 ayda ne kadar yinelenen gelir üretir?' sorusunun cevabıdır.",
+          "Bu yazıdaki tüm tutarlar örnek tutarlardır ve tek bir örnek B2B SaaS şirketi üzerinden ilerler. Aylık hareketler (yeni, genişleme, kayıp MRR) ve Quick Ratio için MRR yazısına, kendi rakamlarınız için ARR Hesaplayıcı'ya bakabilirsiniz.",
+        ],
+      },
+      {
+        heading: "ARR nasıl hesaplanır? Sözleşme bazlı adım adım örnek",
+        paragraphs: [
+          "Örnek şirketin 31 Aralık 2026 itibarıyla 144 aktif müşterisi var ve üç tür sözleşmesi bulunuyor. ARR her sözleşmenin yıllık yinelenen bedeli toplanarak bulunur; tek seferlik kalemler ve kullanım aşımları dışarıda kalır.",
+          "Toplam: 3.024.000 + 3.976.000 + 1.400.000 = 8.400.000 TL ARR. Müşteri başına ortalama ARR (ortalama yıllık sözleşme değeri, ACV) 8.400.000 / 144 ≈ 58.333 TL'dir. Bu ARR'nin aylık karşılığı (MRR) 8.400.000 / 12 = 700.000 TL'dir.",
+        ],
+        bullets: [
+          "Aylık plan (ayda 3.000 TL): 84 müşteri × 3.000 × 12 = 3.024.000 TL",
+          "Yıllık sözleşmeler: 50 müşteri, yıllık bedellerin toplamı 3.976.000 TL (ortalama ≈ 79.520 TL)",
+          "3 yıllık kademeli sözleşmeler (yıllık 140.000 → 180.000 → 220.000 TL; şu an 1. yılda): 10 müşteri × 140.000 = 1.400.000 TL",
+          "Dahil değil: aynı yıl faturalanan 450.000 TL kurulum/entegrasyon ücreti ve Aralık'taki 25.000 TL kullanım aşımı",
+        ],
+      },
+      {
+        heading: "ARR'ye neler dahil edilir, neler edilmez?",
+        paragraphs: [
+          "Kural MRR ile aynıdır: müşteri hiçbir şey yapmasa da sözleşme gereği tekrar edecek gelir ARR'dir. Bir kez olan ya da miktarı belirsiz gelir ARR değildir. Fark, ARR'de yıllık ve çok yıllı sözleşmelerin çok daha büyük yer tutmasıdır; hataların çoğu da burada yapılır.",
+        ],
+        bullets: [
+          "Dahil: aylık planların yıllık karşılığı; yıllık sözleşmelerin yıllık bedeli; sürekli faturalanan ek modül ve kullanıcı paketleri",
+          "Dahil (gerçek bedelden): indirimli sözleşmeler — liste fiyatı değil, müşterinin ödediği yıllık tutar",
+          "Dahil (taahhüt kadar): kullanım bazlı fiyatlamada sözleşmedeki minimum yıllık taahhüt",
+          "Dahil değil: kurulum, eğitim, danışmanlık, entegrasyon gibi tek seferlik hizmetler; tek seferlik lisans satışları",
+          "Dahil değil: taahhüt üstü kullanım (aşım) gelirleri — ayrı bir 'kullanım run-rate'i' satırında izlenir",
+          "Dahil değil: ücretsiz deneme ve freemium kullanıcıları; imzalanmış ama henüz başlamamış sözleşmeler (bunlar CARR'a girer)",
+        ],
+      },
+      {
+        heading: "Çok yıllı ve kademeli (ramp) sözleşmelerde ARR nasıl hesaplanır?",
+        paragraphs: [
+          "Çok yıllı sözleşmede toplam sözleşme değerini (TCV) tek yılın ARR'sine yazmak en kaba hatadır: 3 yıllık 540.000 TL'lik bir sözleşme ARR'ye 540.000 TL olarak girmez. Daha az fark edilen hata ise TCV'yi yıl sayısına bölmektir.",
+          "Örnekteki kademeli sözleşmeler ilk yıl 140.000, ikinci yıl 180.000, üçüncü yıl 220.000 TL. TCV / 3 = 180.000 TL kullanılırsa 10 sözleşme ARR'ye 1.800.000 TL yazılır; oysa müşteriler bugün yıllık 140.000 TL ödüyor. Fark 400.000 TL'dir ve henüz kazanılmamış ikinci-üçüncü yıl artışını bugüne çeker. Daha muhafazakâr ve yaygın yöntem, o an geçerli olan yılın bedelini kullanmak ve kademe yükseldiğinde artışı genişleme ARR'si olarak göstermektir.",
+        ],
+        bullets: [
+          "Eşit bedelli çok yıllı sözleşme: ARR = yıllık bedel (TCV / yıl sayısı ile aynı sonuç)",
+          "Kademeli sözleşme: ARR = içinde bulunulan yılın bedeli; kademe artışı geldiği yıl genişleme olarak yazılır",
+          "İlk yıl indirimli sözleşme: ARR = indirimli bedel; indirim bitince fark genişleme değil 'indirim bitişi' etiketiyle izlenir",
+          "Peşin tahsil edilen çok yıllı bedel: nakitte büyük görünür, ARR'yi değiştirmez",
+        ],
+      },
+      {
+        heading: "ARR köprüsü nedir? Yeni, genişleme, daralma ve kayıp ARR",
+        paragraphs: [
+          "Toplam ARR büyümenin nereden geldiğini göstermez. Bu yüzden yıl (ya da çeyrek) başı ve sonu arasındaki fark dört harekete ayrılır; buna ARR köprüsü (ARR bridge, ARR waterfall) denir. Örnek şirket 2026'ya 120 müşteri ve 6.000.000 TL ARR ile başladı.",
+          "Köprü: 6.000.000 + 2.280.000 + 1.020.000 − 240.000 − 660.000 = 8.400.000 TL. Net yeni ARR = Yeni + Genişleme − Daralma − Kayıp = 2.400.000 TL; yıllık ARR büyümesi 2.400.000 / 6.000.000 = %40. Müşteri sayısı 120 + 38 − 14 = 144.",
+        ],
+        bullets: [
+          "Yeni ARR: yıl içinde ilk kez sözleşme imzalayıp başlayan 38 müşteri — 2.280.000 TL (10 kademeli sözleşme × 140.000 = 1.400.000 TL dahil)",
+          "Genişleme ARR: mevcut müşterilerin üst plana geçişi, ek kullanıcı/modül ve fiyat artışı — 1.020.000 TL",
+          "Daralma ARR: alt plana geçiş, kullanıcı azaltma, yenilemede indirim — 240.000 TL",
+          "Kayıp (churn) ARR: yenilemeyen ya da iptal eden 14 müşterinin ARR'si — 660.000 TL",
+        ],
+      },
+      {
+        heading: "ARR büyümesi sağlıklı mı? Köprüden NRR ve GRR hesaplama",
+        paragraphs: [
+          "Aynı köprü, büyümenin yeni satıştan mı yoksa mevcut müşteri tabanından mı geldiğini gösteren iki oranı verir. İkisi de yalnızca yıl başında var olan müşterilerle hesaplanır; yeni müşteriler dahil edilmez.",
+          "Yorum: örnek şirketin mevcut müşteri tabanı yıl içinde küçülmedi, hafifçe büyüdü (NRR %102). Ancak GRR %85 demek, yıl başındaki gelirin %15'inin daralma ve kayıpla gittiği anlamına gelir; genişleme bu sızıntıyı ancak kapatıyor. Net yeni ARR'nin %95'i (2.280.000 / 2.400.000) yeni satıştan geldiği için yeni satış yavaşladığı yıl büyüme de hızla düşer. Büyümenin kârlılıkla dengesini Rule of 40 ile, birim ekonomisini CAC ve LTV ile birlikte okuyun.",
+        ],
+        bullets: [
+          "NRR (net gelir tutundurma) = (Başlangıç + Genişleme − Daralma − Kayıp) / Başlangıç = 6.120.000 / 6.000.000 = %102",
+          "GRR (brüt gelir tutundurma) = (Başlangıç − Daralma − Kayıp) / Başlangıç = 5.100.000 / 6.000.000 = %85; genişleme dahil edilmediği için %100'ü geçemez",
+          "Yıllık logo churn = Kaybedilen müşteri / Başlangıç müşteri = 14 / 120 ≈ %11,7",
+          "Yeni satış payı = Yeni ARR / (Yeni + Genişleme) = 2.280.000 / 3.300.000 ≈ %69",
+        ],
+      },
+      {
+        heading: "ARR, CARR, run-rate, booking ve ciro arasındaki fark nedir?",
+        paragraphs: [
+          "Yönetim kurulu sunumlarında ve yatırımcı görüşmelerinde en çok karışan beş kavram aynı şirket için beş farklı rakam üretir. Örnek şirketin 31 Aralık 2026 rakamları aşağıda; hangisini raporladığınızı tanımıyla birlikte yazmak güveni korur.",
+          "Run-rate gelir ARR'den yüksek çıktı çünkü Aralık'ta faturalanan 60.000 TL kurulum ücreti ve 25.000 TL kullanım aşımı da 12 ile çarpıldı: (700.000 + 60.000 + 25.000) × 12 = 9.420.000 TL. Tek seferlik bir ayı yıllıklandırmak yanıltıcıdır; bu yüzden ARR yalnızca yinelenen kısmı alır.",
+        ],
+        bullets: [
+          "ARR: 31 Aralık'ta aktif yinelenen sözleşmelerin yıllık karşılığı — 8.400.000 TL",
+          "CARR (sözleşmeli ARR): ARR + imzalanmış ama henüz başlamamış sözleşmeler (Şubat'ta başlayacak 3 müşteri, 420.000 TL) − iptal/yenilememe bildirimi gelmiş sözleşmeler (2 müşteri, 150.000 TL) = 8.670.000 TL",
+          "Run-rate gelir: son ayın toplam gelirinin × 12'si (tek seferlikler dahil) — 9.420.000 TL",
+          "Booking (TCV): yıl içinde imzalanan sözleşmelerin toplam değeri; 10 kademeli sözleşmenin 3 yılı (5.400.000) dahil — 6.280.000 TL",
+          "Yıl içinde tanınan abonelik geliri: ARR yıl boyunca 6,0'dan 8,4 milyona doğrusal arttı varsayımıyla ≈ 7.200.000 TL; muhasebe kayıtlarındaki gerçek rakam faturalama tarihlerine göre değişir",
+        ],
+      },
+      {
+        heading: "Döviz fiyatlı SaaS'ta ARR nasıl raporlanır?",
+        paragraphs: [
+          "Fiyatı dolar ya da avro olan ve TL'ye çevrilerek raporlanan bir SaaS'ta kur değişimi tek bir satış yapılmadan ARR'yi oynatır. 100.000 USD ARR örnek kur 40'tan 44'e çıktığında 4.000.000 TL'den 4.400.000 TL'ye yükselir; bu %10'luk 'büyüme' tamamen kurdandır.",
+          "Çözüm: ARR'yi fatura para biriminde ve dönem başı sabit kurla raporlayın, kur etkisini köprüde ayrı bir satır olarak gösterin. TL fiyatlı şirketlerde ise yüksek enflasyon döneminde yapılan fiyat artışlarını genişleme ARR'sinde 'fiyat artışı' alt kırılımıyla ayırın; aksi hâlde ürün benimsenmesi kaynaklı genişleme olduğundan büyük görünür.",
+        ],
+      },
+      {
+        heading: "ARR hesaplarken en sık yapılan hatalar",
+        paragraphs: [
+          "Rakiplerin ve birçok sunumun ortak hataları formülde değil tanımdadır. Tanımı bir kez yazılı hâle getirip her dönem aynısını uygulamak ARR'yi karşılaştırılabilir kılar.",
+        ],
+        bullets: [
+          "ARR'yi yıl içinde kazanılan gelirlerin toplamı sanmak (ARR bir tarihteki fotoğraftır)",
+          "Çok yıllı sözleşmenin TCV'sini tek yılın ARR'sine yazmak ya da kademeli sözleşmede TCV / yıl ortalamasını kullanmak",
+          "Kurulum, danışmanlık ve kullanım aşımlarını ARR'ye eklemek; tek seferlik gelirli bir ayı × 12 ile yıllıklandırmak",
+          "İmzalanmış ama başlamamış sözleşmeleri ARR'ye koymak (bunlar CARR'dır)",
+          "Yalnızca toplam ARR'yi raporlayıp yeni / genişleme / daralma / kayıp köprüsünü göstermemek",
+          "Kur ve enflasyon kaynaklı fiyat artışını büyüme gibi göstermek",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "ARR açılımı nedir, Türkçesi ne?",
+        answer:
+          "ARR, Annual Recurring Revenue'nun kısaltmasıdır; Türkçede yıllık yinelenen gelir ya da yıllık tekrarlayan gelir denir. Belirli bir tarihte aktif olan abonelik ve sözleşmelerin yıllık karşılığını gösterir. Finans derslerinde aynı kısaltma 'muhasebe getiri oranı' (Accounting Rate of Return) için de kullanılır; o, yatırım değerlemesinde kullanılan farklı bir orandır.",
+      },
+      {
+        question: "ARR nasıl hesaplanır?",
+        answer:
+          "Aktif her sözleşmenin yıllık yinelenen bedelini toplayın: aylık planlar × 12, yıllık sözleşmeler yıllık bedelle, kademeli çok yıllı sözleşmeler o yılın bedeliyle girer. Örnek: 84 × 3.000 × 12 + 3.976.000 + 10 × 140.000 = 8.400.000 TL. Tüm müşteriler aylık plandaysa ARR = MRR × 12'dir.",
+      },
+      {
+        question: "Net yeni ARR nedir?",
+        answer:
+          "Bir dönemde ARR'deki net değişimdir: Yeni + Genişleme − Daralma − Kayıp ARR. Örnekte 2.280.000 + 1.020.000 − 240.000 − 660.000 = 2.400.000 TL'dir; başlangıç ARR'sine eklendiğinde bitiş ARR'sini verir.",
+      },
+      {
+        question: "ARR ile ciro aynı şey mi?",
+        answer:
+          "Hayır. Ciro (muhasebe geliri) bir dönem içinde tanınan tüm gelirlerdir ve tek seferlik satışları da içerir. ARR ise bir tarihteki yinelenen sözleşmelerin yıllık karşılığıdır. Yıl içinde büyüyen bir şirkette yılın abonelik geliri yıl sonu ARR'sinden düşük çıkar.",
+      },
+      {
+        question: "CARR nedir, ARR'den farkı ne?",
+        answer:
+          "CARR (Contracted ARR, sözleşmeli ARR), ARR'ye imzalanmış ama henüz başlamamış sözleşmeleri ekler ve iptal ya da yenilememe bildirimi gelmiş sözleşmeleri düşer. Satış döngüsü uzun, başlangıcı ileri tarihli kurumsal sözleşmelerde ARR'nin önünde giden bir göstergedir.",
+      },
+    ],
+    howTo: {
+      name: "ARR nasıl hesaplanır?",
+      description: "Aktif sözleşmeleri yıllıklandırıp ARR'yi bulun, ardından yıllık ARR köprüsüyle net yeni ARR'yi, NRR ve GRR'yi hesaplayın.",
+      steps: [
+        { name: "Aktif sözleşmeleri listeleyin", text: "Hesaplama tarihinde aktif olan tüm abonelik ve sözleşmeleri müşteri bazında çıkarın; deneme, freemium ve başlamamış sözleşmeleri ayırın." },
+        { name: "Her sözleşmeyi yıllıklandırın", text: "Aylık planı 12 ile çarpın, yıllık sözleşmede yıllık bedeli, kademeli çok yıllı sözleşmede içinde bulunulan yılın bedelini kullanın." },
+        { name: "Tek seferlik ve değişken kalemleri çıkarın", text: "Kurulum, eğitim, danışmanlık ve taahhüt üstü kullanım gelirlerini ARR dışında bırakın." },
+        { name: "ARR'yi toplayın", text: "Yıllıklandırılmış bedelleri toplayın: 3.024.000 + 3.976.000 + 1.400.000 = 8.400.000 TL." },
+        { name: "ARR köprüsünü kurun", text: "Dönem başı ARR'ye yeni ve genişleme ARR'yi ekleyip daralma ve kayıp ARR'yi düşün; net yeni ARR, büyüme oranı, NRR ve GRR'yi hesaplayın." },
+      ],
+    },
+    relatedToolKey: "arr",
+    resources: [
+      { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici/" },
+      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
+      { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
+      { label: "Rule of 40 Hesaplayıcı", href: "/ucretsiz-araclar/rule-of-40-hesaplayici/" },
+      { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "MRR Nedir, Nasıl Hesaplanır?", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+      { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
+      { label: "Churn Nedir? Churn Rate Nasıl Hesaplanır?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
+      { label: "Stripe: Yıllık yinelenen gelir (ARR) rehberi (İngilizce)", href: "https://stripe.com/in/resources/more/what-is-annual-recurring-revenue-a-guide-for-saas-businesses", external: true },
     ],
   },
 ];
@@ -4637,6 +4820,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "mrr",
     resources: [
+      { label: "What Is ARR? Annual Recurring Revenue & the ARR Bridge", href: "/en/blog/what-is-arr-annual-recurring-revenue/" },
       { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       {
         label: "MRR Calculator",
@@ -6880,6 +7064,187 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Meta for Developers: Advantage+ campaign experience for sales and app", href: "https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/", external: true },
       { label: "Meta for Developers: Deduplicating Pixel and Conversions API events", href: "https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events", external: true },
       { label: "Meta Business Help Center: About the learning phase", href: "https://www.facebook.com/business/help/112167992830700/", external: true },
+    ],
+  },
+  {
+    slug: "what-is-arr-annual-recurring-revenue",
+    seoTitle: "What Is ARR? Annual Recurring Revenue & the ARR Bridge",
+    title: "What Is ARR? How to Calculate Annual Recurring Revenue — ARR Bridge, CARR and Bookings Explained",
+    description:
+      "What is ARR and how do you calculate it? Multi-year and ramp contracts, the new/expansion/churn ARR bridge, NRR and GRR, CARR, bookings vs revenue, examples.",
+    category: "saas-buyume",
+    tldr: [
+      "ARR (Annual Recurring Revenue) is the annualised value of every recurring subscription and contract that is active on a given date. It is a snapshot, not the revenue earned over a year. In the example company, ARR on 31 December is $302,400 + $397,600 + $140,000 = $840,000.",
+      "Monthly plans count × 12, annual contracts at their annual value, and ramped multi-year deals at the current year's value. Dividing a $54,000 three-year ramp deal by 3 ($18,000) overstates the real first-year price ($14,000) and inflates ARR by $40,000 in the example.",
+      "Annual ARR bridge: Opening $600,000 + New $228,000 + Expansion $102,000 − Contraction $24,000 − Churn $66,000 = Closing $840,000. ARR grew 40%; the same bridge gives NRR of 102% and GRR of 85%.",
+      "One company, five different numbers: ARR $840k, CARR $867k, run-rate revenue $942k, bookings (TCV) $628k and recognised subscription revenue ≈ $720k. State which one you report — mixing them is the most common mistake.",
+    ],
+    publishedAt: "2026-10-31",
+    readingMinutes: 8,
+    tags: ["ARR", "Annual Recurring Revenue", "SaaS Metrics", "Net New ARR", "CARR", "NRR"],
+    sections: [
+      {
+        heading: "What is ARR? (Short answer)",
+        paragraphs: [
+          "ARR (Annual Recurring Revenue) is the annualised value of all recurring subscriptions and contracts that are active on a specific date. B2B SaaS companies, enterprise software vendors and any business selling annual licences describe their size and growth in ARR.",
+          "Formula: ARR = Σ (annual recurring value of every active contract). If every customer is on a monthly plan, ARR = MRR × 12. The key point: ARR is not the cash collected or the revenue booked over a year. It answers 'if nothing changed in today's customer base, how much recurring revenue would it produce over the next 12 months?'.",
+          "All amounts in this article are example figures for one fictional B2B SaaS company. For monthly movements and the Quick Ratio, see the MRR guide; for the short comparison, see ARR vs MRR; to run your own numbers, use the ARR Calculator.",
+        ],
+      },
+      {
+        heading: "How to calculate ARR: a contract-by-contract example",
+        paragraphs: [
+          "On 31 December 2026 the example company has 144 active customers on three contract types. ARR is the sum of each contract's annual recurring value; one-off items and usage overages stay out.",
+          "Total: $302,400 + $397,600 + $140,000 = $840,000 ARR. Average ARR per customer (average contract value, ACV) is $840,000 / 144 ≈ $5,833. The monthly equivalent (MRR) is $840,000 / 12 = $70,000.",
+        ],
+        bullets: [
+          "Monthly plan ($300/month): 84 customers × $300 × 12 = $302,400",
+          "Annual contracts: 50 customers, annual values totalling $397,600 (average ≈ $7,952)",
+          "Three-year ramp contracts ($14,000 → $18,000 → $22,000 per year; currently in year 1): 10 × $14,000 = $140,000",
+          "Excluded: $45,000 of setup/integration fees invoiced this year and $2,500 of December usage overage",
+        ],
+      },
+      {
+        heading: "What counts toward ARR — and what doesn't?",
+        paragraphs: [
+          "The rule mirrors MRR: revenue that will repeat under contract even if the customer does nothing is ARR; anything one-off or uncertain is not. The difference is that annual and multi-year contracts carry far more weight in ARR, and that is where most mistakes happen.",
+        ],
+        bullets: [
+          "Include: monthly plans annualised; annual contracts at their annual value; continuously billed add-ons and seat packs",
+          "Include at the price actually paid: discounted contracts (not list price)",
+          "Include up to the commitment: the committed annual minimum in usage-based contracts",
+          "Exclude: setup, training, consulting and integration fees; one-off licence sales",
+          "Exclude: usage above the commitment — track it separately as usage run-rate",
+          "Exclude: free trials and freemium users; signed contracts that have not started yet (those belong in CARR)",
+        ],
+      },
+      {
+        heading: "How do multi-year and ramp contracts affect ARR?",
+        paragraphs: [
+          "Booking a multi-year deal's total contract value (TCV) into one year's ARR is the crudest error: a $54,000 three-year contract does not add $54,000 of ARR. A subtler error is dividing TCV by the number of years.",
+          "The example ramp contracts are $14,000 in year one, $18,000 in year two and $22,000 in year three. Using TCV / 3 = $18,000 puts 10 contracts into ARR at $180,000, while customers actually pay $14,000 a year today. The $40,000 gap pulls future price steps into the present. The more conservative and common approach is to use the current year's value and record each step-up as expansion ARR when it takes effect.",
+        ],
+        bullets: [
+          "Flat multi-year contract: ARR = annual value (same as TCV / years)",
+          "Ramp contract: ARR = the current year's value; step-ups are expansion in the year they start",
+          "First-year discount: ARR = discounted value; when the discount ends, tag the uplift as 'discount roll-off', not upsell",
+          "Multi-year amount paid upfront: large in cash, no change to ARR",
+        ],
+      },
+      {
+        heading: "What is an ARR bridge? New, expansion, contraction and churned ARR",
+        paragraphs: [
+          "Total ARR doesn't show where growth came from. So the difference between the opening and closing balance of a year (or quarter) is split into four movements — the ARR bridge or ARR waterfall. The example company started 2026 with 120 customers and $600,000 ARR.",
+          "Bridge: $600,000 + $228,000 + $102,000 − $24,000 − $66,000 = $840,000. Net new ARR = New + Expansion − Contraction − Churn = $240,000; annual ARR growth = $240,000 / $600,000 = 40%. Customers: 120 + 38 − 14 = 144.",
+        ],
+        bullets: [
+          "New ARR: 38 customers who signed and started during the year — $228,000 (including 10 ramp deals × $14,000 = $140,000)",
+          "Expansion ARR: upgrades, extra seats/modules and price increases from existing customers — $102,000",
+          "Contraction ARR: downgrades, fewer seats, discounts at renewal — $24,000",
+          "Churned ARR: ARR of the 14 customers who cancelled or did not renew — $66,000",
+        ],
+      },
+      {
+        heading: "Is ARR growth healthy? NRR and GRR from the bridge",
+        paragraphs: [
+          "The same bridge produces two ratios that show whether growth comes from new sales or from the existing base. Both use only customers present at the start of the period; new customers are excluded.",
+          "Reading: the existing base didn't shrink — it grew slightly (NRR 102%). But GRR of 85% means 15% of opening revenue leaked through contraction and churn, and expansion only just covers it. With 95% of net new ARR ($228,000 / $240,000) coming from new logos, growth will drop quickly in any year new sales slow. Read growth against profitability with the Rule of 40, and unit economics with CAC and LTV.",
+        ],
+        bullets: [
+          "NRR = (Opening + Expansion − Contraction − Churn) / Opening = $612,000 / $600,000 = 102%",
+          "GRR = (Opening − Contraction − Churn) / Opening = $510,000 / $600,000 = 85%; it can never exceed 100% because expansion is excluded",
+          "Annual logo churn = Churned customers / Opening customers = 14 / 120 ≈ 11.7%",
+          "New-logo share of gross adds = New / (New + Expansion) = $228,000 / $330,000 ≈ 69%",
+        ],
+      },
+      {
+        heading: "ARR vs CARR vs run-rate vs bookings vs revenue",
+        paragraphs: [
+          "These five terms are the most frequently mixed up in board decks and investor calls, and they produce five different numbers for the same company. Here are the example company's figures on 31 December 2026; always state which one you report and how it is defined.",
+          "Run-rate revenue is higher than ARR because December's $6,000 setup fees and $2,500 usage overage were also multiplied by 12: ($70,000 + $6,000 + $2,500) × 12 = $942,000. Annualising a month that contains one-off items is misleading, which is why ARR only takes the recurring part.",
+        ],
+        bullets: [
+          "ARR: annualised value of recurring contracts active on 31 December — $840,000",
+          "CARR (contracted ARR): ARR + signed contracts not yet live (3 customers starting in February, $42,000) − contracts with a cancellation/non-renewal notice (2 customers, $15,000) = $867,000",
+          "Run-rate revenue: the last month's total revenue × 12, one-offs included — $942,000",
+          "Bookings (TCV): total value of contracts signed during the year, including all three years of the 10 ramp deals ($540,000) — $628,000",
+          "Recognised subscription revenue for the year: assuming ARR rose linearly from $600k to $840k, ≈ $720,000; the actual accounting figure depends on billing and start dates",
+        ],
+      },
+      {
+        heading: "How should ARR be reported across currencies?",
+        paragraphs: [
+          "If you price in one currency and report in another, exchange-rate moves change ARR without a single sale. €400,000 of ARR is $440,000 at an example rate of 1.10 and $480,000 at 1.20 — a 9% 'increase' that is purely FX.",
+          "Fix: report ARR in the billing currency and at a constant (period-opening) rate, and show the FX effect as its own line in the bridge. In high-inflation markets, also tag price increases separately inside expansion ARR, otherwise expansion looks like product adoption.",
+        ],
+      },
+      {
+        heading: "The most common ARR mistakes",
+        paragraphs: [
+          "Most broken ARR reporting fails on definitions, not arithmetic. Write the definition down once and apply it every period so the numbers stay comparable.",
+        ],
+        bullets: [
+          "Treating ARR as the sum of revenue earned during the year (ARR is a point-in-time snapshot)",
+          "Booking a multi-year TCV into one year, or averaging a ramp deal as TCV / years",
+          "Adding setup, consulting or usage overage, or annualising a month that contains one-off revenue",
+          "Counting signed-but-not-started contracts as ARR (that's CARR)",
+          "Reporting only the total and never showing the new / expansion / contraction / churn bridge",
+          "Presenting FX or inflation-driven price changes as growth",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does ARR stand for?",
+        answer:
+          "ARR stands for Annual Recurring Revenue: the annualised value of active subscriptions and contracts on a given date. In corporate finance the same abbreviation is also used for Accounting Rate of Return, an unrelated ratio used to evaluate investments.",
+      },
+      {
+        question: "How do you calculate ARR?",
+        answer:
+          "Add up the annual recurring value of every active contract: monthly plans × 12, annual contracts at their annual value, and ramped multi-year contracts at the current year's value. Example: 84 × $300 × 12 + $397,600 + 10 × $14,000 = $840,000. If every customer is monthly, ARR = MRR × 12.",
+      },
+      {
+        question: "What is net new ARR?",
+        answer:
+          "The net change in ARR over a period: New + Expansion − Contraction − Churned ARR. In the example it is $228,000 + $102,000 − $24,000 − $66,000 = $240,000; add it to opening ARR to get closing ARR.",
+      },
+      {
+        question: "Is ARR the same as revenue?",
+        answer:
+          "No. Revenue is everything recognised during a period, including one-off sales. ARR is the annualised value of recurring contracts on a specific date. In a growing company, the year's subscription revenue is lower than year-end ARR.",
+      },
+      {
+        question: "What is CARR and how is it different from ARR?",
+        answer:
+          "CARR (Contracted ARR) adds signed contracts that have not started yet and subtracts contracts with a cancellation or non-renewal notice. For enterprise deals with long sales cycles and future start dates, it is a leading indicator of ARR.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate ARR",
+      description: "Annualise active contracts to get ARR, then build an annual ARR bridge to find net new ARR, NRR and GRR.",
+      steps: [
+        { name: "List active contracts", text: "Export every subscription and contract active on the calculation date by customer; separate trials, freemium and not-yet-started contracts." },
+        { name: "Annualise each contract", text: "Multiply monthly plans by 12, use the annual value for annual contracts and the current year's value for ramped multi-year contracts." },
+        { name: "Remove one-off and variable items", text: "Leave setup, training, consulting and usage above the commitment out of ARR." },
+        { name: "Sum ARR", text: "Add the annualised values: $302,400 + $397,600 + $140,000 = $840,000." },
+        { name: "Build the ARR bridge", text: "Add new and expansion ARR to opening ARR, subtract contraction and churn, then calculate net new ARR, growth rate, NRR and GRR." },
+      ],
+    },
+    relatedToolKey: "arr",
+    resources: [
+      { label: "ARR Calculator", href: "/en/free-tools/arr-calculator/" },
+      { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator/" },
+      { label: "NRR Calculator", href: "/en/free-tools/nrr-calculator/" },
+      { label: "Rule of 40 Calculator", href: "/en/free-tools/rule-of-40-calculator/" },
+      { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator/" },
+      { label: "ARR vs MRR: What's the Difference?", href: "/en/blog/arr-vs-mrr-difference/" },
+      { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+      { label: "What Is NRR and Why It Beats ARR in SaaS", href: "/en/blog/what-is-nrr-saas-growth-metric/" },
+      { label: "What Is Churn Rate?", href: "/en/blog/what-is-churn-rate/" },
+      { label: "What Is CAC?", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
+      { label: "What Is LTV? LTV:CAC Ratio", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
+      { label: "Stripe: What is annual recurring revenue (ARR)?", href: "https://stripe.com/in/resources/more/what-is-annual-recurring-revenue-a-guide-for-saas-businesses", external: true },
     ],
   },
 ];

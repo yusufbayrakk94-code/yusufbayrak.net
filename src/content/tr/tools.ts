@@ -28,6 +28,7 @@ export const arr: ToolContent = {
     { q: "Sağlıklı bir ARR büyüme oranı nedir?", a: "Erken aşama SaaS şirketleri için %100+ yıllık ARR büyümesi hedef alınır; ölçekleşen şirketlerde %40-60 aralığı 'iyi' kabul edilir. Sektör, pazar büyüklüğü ve müşteri segmentine göre değişkenlik gösterir." },
     { q: "Net New ARR nedir?", a: "Bir dönemde eklenen yeni ARR ile mevcut müşterilerden gelen genişleme (expansion) ARR'nin toplamından, churn ve daralma (contraction) ARR'nin çıkarılmasıyla bulunur. Gerçek büyüme kalitesini gösterir." },
   ],
+  relatedPost: { label: "ARR Nedir? Yıllık Yinelenen Gelir ve ARR Köprüsü", href: "/blog/arr-nedir-yillik-yinelenen-gelir/" },
 };
 
 export const cac: ToolContent = {

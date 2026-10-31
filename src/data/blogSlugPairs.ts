@@ -23,4 +23,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "llms-txt-nedir-ise-yariyor-mu", en: "what-is-llms-txt-does-it-work" },
   { tr: "churn-nedir-churn-rate-nasil-hesaplanir", en: "what-is-churn-rate" },
   { tr: "meta-reklam-verme-rehberi", en: "how-to-run-meta-ads-guide" },
+  { tr: "arr-nedir-yillik-yinelenen-gelir", en: "what-is-arr-annual-recurring-revenue" },
 ];
