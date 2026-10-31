@@ -3236,6 +3236,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "llms-txt",
     resources: [
       { label: "llms.txt Oluşturucu: Örnek Dosya ve Format Kontrolü", href: "/ucretsiz-araclar/llms-txt-olusturucu/" },
+      { label: "GEO Nedir? Yapay Zekâ Aramalarında Görünürlük Rehberi", href: "/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/" },
       { label: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir?", href: "/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" },
       { label: "n8n ile Lead Enrichment Otomasyonu", href: "/blog/n8n-ile-lead-enrichment-otomasyonu/" },
@@ -3799,6 +3800,191 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
       { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
       { label: "Stripe: Yıllık yinelenen gelir (ARR) rehberi (İngilizce)", href: "https://stripe.com/in/resources/more/what-is-annual-recurring-revenue-a-guide-for-saas-businesses", external: true },
+    ],
+  },
+  {
+    slug: "geo-nedir-yapay-zeka-arama-optimizasyonu",
+    seoTitle: "GEO Nedir? Yapay Zekâ Aramalarında Görünürlük Rehberi",
+    title: "GEO Nedir? ChatGPT, Gemini ve AI Overviews'ta Kaynak Gösterilmek: Kanıtlar, Uygulama ve Ölçüm",
+    description:
+      "GEO (üretken motor optimizasyonu) nedir, SEO'dan farkı ne? Kanıtlanmış yöntemler, AI görünürlüğünü ölçme formülü, GA4 kurulumu ve 30 günlük uygulama planı.",
+    category: "yapay-zeka-otomasyon",
+    tldr: [
+      "GEO (Generative Engine Optimization, üretken motor optimizasyonu), içeriğinizin ChatGPT, Gemini, Perplexity, Copilot ve Google AI Overviews gibi yapay zekâ cevaplarında kaynak gösterilmesi ve doğru anılması için yapılan çalışmadır. Terim 2023'te Princeton ve ortaklarının araştırmasıyla yaygınlaştı.",
+      "GEO, SEO'nun yerini almaz; üstüne kurulur. Google, AI Overviews ve AI Mode için ek gereksinim olmadığını, yeni bir 'AI metin dosyası' ya da özel şema gerekmediğini söylüyor: sayfa dizinde ve snippet'e uygun olmalı. AI cevapları kaynaklarını çoğunlukla arama sonuçlarından seçer.",
+      "Araştırmada en çok işe yarayanlar alıntı, istatistik ve kaynak eklemekti (görünürlükte %40'a varan artış); anahtar kelime doldurma ise sonucu kötüleştirdi. Pratikte: soruya ilk cümlede cevap, kendi verileriniz ve hesap örnekleriniz, kaynaklı iddialar.",
+      "Ölçüm: 20 soru × 3 motor × 2 tekrar = 120 cevaplık bir panelde sitenizin alıntılandığı cevap sayısı / 120 = alıntılanma oranı. Örnekte 9 / 120 = %7,5. GA4'te AI asistanları için ayrı kanal kurun; Google AI Overviews tıklamaları Search Console'da 'Web' içinde ayrılmadan görünür.",
+    ],
+    publishedAt: "2026-10-31",
+    readingMinutes: 10,
+    tags: ["GEO", "Yapay Zekâ SEO", "AI Overviews", "ChatGPT", "AEO", "Generative Engine Optimization"],
+    sections: [
+      {
+        heading: "GEO nedir? (Kısa cevap)",
+        paragraphs: [
+          "GEO (Generative Engine Optimization), Türkçesiyle üretken motor optimizasyonu, bir markanın ya da sayfanın yapay zekâ destekli cevap motorlarında (ChatGPT arama, Google AI Overviews ve AI Mode, Gemini, Perplexity, Microsoft Copilot, Claude) kaynak olarak gösterilmesi, adının doğru bağlamda anılması ve bu cevaplardan tıklama alması için yapılan içerik ve teknik çalışmalardır.",
+          "SEO'nun hedefi arama sonuçlarındaki mavi linklerde üst sıralara çıkmaktır; GEO'nun hedefi ise kullanıcıya tek bir sentezlenmiş cevap veren sistemin o cevabı oluştururken sizin sayfanızı kullanması ve göstermesidir. Ölçü birimi sıralama değil, alıntılanma (citation) ve anılmadır (mention).",
+          "Terim, Princeton, Georgia Tech, Allen Institute for AI ve IIT Delhi araştırmacılarının 2023'te yayımlayıp KDD 2024'te sunduğu 'GEO: Generative Engine Optimization' makalesiyle yaygınlaştı. Not: 'GEO' pazarlamada coğrafi hedefleme (geo-targeting) anlamında da kullanılır; bu yazı yapay zekâ aramalarındaki anlamı anlatır.",
+        ],
+      },
+      {
+        heading: "GEO ile SEO ve AEO arasındaki fark nedir?",
+        paragraphs: [
+          "Üç kavram birbirinin rakibi değil, iç içe katmanlardır. Google'ın 2026'daki AI arama rehberi de AEO ve GEO'yu ayrı bir disiplin değil SEO'nun parçası olarak tanımlıyor. Farkı en iyi, neyi hedeflediklerine ve nasıl ölçüldüklerine bakarak görürsünüz.",
+          "Pratik sonuç: GEO'ya SEO temeli olmadan başlanmaz. Dizinde olmayan, yavaş açılan ya da içeriği yalnızca JavaScript çalışınca beliren bir sayfa ne mavi linklerde ne de AI cevaplarında kaynak olur.",
+        ],
+        bullets: [
+          "SEO: arama motorunda sıralama ve tıklama. Ölçü: gösterim, ortalama konum, tıklama (Search Console)",
+          "AEO (Answer Engine Optimization): öne çıkan snippet, 'Diğer kullanıcılar şunları da sordu' ve sesli asistanlarda tek cevap olarak seçilmek. Ölçü: snippet sahipliği",
+          "GEO: üretken AI cevaplarında kaynak gösterilmek ve doğru anılmak. Ölçü: alıntılanma oranı, alıntı payı, AI asistanlarından gelen trafik",
+          "Ortak zemin: taranabilir ve dizinde sayfa, soruya doğrudan cevap veren yapı, özgün bilgi, güvenilir yazar ve marka sinyalleri",
+        ],
+      },
+      {
+        heading: "Yapay zekâ cevap motorları kaynaklarını nasıl seçer?",
+        paragraphs: [
+          "Çoğu AI arama ürünü cevabı modelin hafızasından değil, o anda yaptığı aramalardan derler: soruyu alt sorulara böler, her biri için arama yapar, bulduğu sayfalardan pasajlar çeker ve bunları sentezleyip kaynak linkleriyle sunar. Google bu yönteme 'query fan-out' diyor ve AI Overviews ile AI Mode'un klasik aramaya göre daha geniş bir destekleyici link seti gösterebildiğini belirtiyor.",
+          "Bunun iki sonucu var. Birincisi, kaynak havuzu büyük ölçüde arama indeksidir; dizinde ve üst sıralarda olmak AI'da görünmenin de ön koşuludur. İkincisi, seçilen birim sayfa değil pasajdır: tek başına okunduğunda anlamlı, net cevap veren bir paragraf, uzun bir girişin içine gömülmüş bilgiden çok daha kolay alıntılanır.",
+        ],
+        bullets: [
+          "Google AI Overviews / AI Mode: Google indeksi; ek gereksinim yok, sayfa dizinde ve snippet'e uygun olmalı",
+          "ChatGPT arama: OpenAI'ın OAI-SearchBot tarayıcısı; bu botu engelleyen site ChatGPT arama cevaplarında görünmez (GPTBot ise model eğitimi içindir, ayrı yönetilir)",
+          "Microsoft Copilot ve Bing AI özetleri: Bing indeksi; Bing Webmaster Tools'taki AI Performance raporu (Şubat 2026'dan beri önizleme) alıntı sayısını gösteriyor",
+          "Perplexity ve Claude: kendi arama tarayıcıları (PerplexityBot, Claude-SearchBot); robots.txt ayarları için llms.txt yazısındaki bot tablosuna bakın",
+        ],
+      },
+      {
+        heading: "GEO'da ne kanıtlandı, ne kanıtlanmadı?",
+        paragraphs: [
+          "GEO alanında iddia çok, kanıt az. Karar verirken kaynakları üç düzeye ayırmak işe yarar: platformun kendi resmî dokümanı, kontrollü araştırma ve henüz ölçülmemiş saha iddiaları.",
+          "Princeton makalesinin sınırını da bilin: deneyler büyük ölçüde araştırmacıların kurduğu bir test ortamında, o dönemin bir dil modeliyle yapıldı ve yazarlar yöntemlerin etkisinin konu alanına göre değiştiğini vurguluyor. Yani 'alıntı ekle, %40 artsın' bir garanti değil; ama 'anahtar kelime doldurma işe yaramaz, kaynaklı ve somut içerik işe yarar' yönü hem araştırmayla hem de platform rehberleriyle tutarlı.",
+        ],
+        bullets: [
+          "Resmî (Google): AI Overviews ve AI Mode için ek teknik gereksinim, yeni makine okunur dosya, 'AI metin dosyası' ya da özel schema.org işaretlemesi gerekmiyor; görünmeyi sınırlamak için nosnippet, data-nosnippet, max-snippet ve noindex kullanılıyor",
+          "Resmî (OpenAI): ChatGPT arama görünürlüğünü OAI-SearchBot belirler; GPTBot'u engellemek arama görünürlüğünü etkilemez",
+          "Araştırma (Aggarwal vd., KDD 2024): alıntı ekleme, istatistik ekleme ve kaynak gösterme en etkili yöntemlerdi; görünürlükte %40'a varan artış, gerçek bir üründe (Perplexity) %37'ye varan artış ölçüldü; anahtar kelime doldurma temel düzeyin altında kaldı",
+          "Kanıtlanmadı: llms.txt'nin AI alıntısını artırdığı (büyük log çalışmalarında etkisi görülmedi), FAQ/şema işaretlemesinin tek başına alıntı getirdiği, 'AI'a özel' içerik sürümlerinin işe yaradığı",
+        ],
+      },
+      {
+        heading: "GEO nasıl yapılır? Sayfa düzeyinde 8 uygulama",
+        paragraphs: [
+          "Aşağıdaki liste, öncelik sırasına göre dizildi: önce erişim ve dizin, sonra içerik biçimi, en son dış sinyaller. İlk üç madde yapılmadan diğerleri boşa çalışır.",
+        ],
+        bullets: [
+          "1. Erişim: robots.txt, güvenlik duvarı ve bot korumasının Googlebot, Bingbot ve AI arama botlarını (OAI-SearchBot, PerplexityBot, Claude-SearchBot) engellemediğini kontrol edin",
+          "2. Dizin: önemli sayfalar Google ve Bing'de dizinde olsun; Search Console'daki 'Keşfedildi – dizine eklenmedi' listesini temizleyin, Bing Webmaster Tools'a site haritası gönderin",
+          "3. HTML'de içerik: metin JavaScript çalışmadan da kaynak kodda bulunsun (sunucu tarafı ya da statik üretim)",
+          "4. Cevap önce: her soru biçimli başlığın altındaki ilk cümle, başlıktaki soruyu tek başına cevaplasın; tanım + formül + sayı aynı paragrafta olsun",
+          "5. Özgün bilgi: kendi hesap örnekleriniz, verileriniz, deneyiminiz ve ekran görüntüleriniz; herkesin yazdığı tanımı tekrar etmek alıntı getirmez",
+          "6. Kaynaklı iddialar: istatistik ve iddiaları birincil kaynağa (resmî doküman, araştırma) bağlayın, tarih verin; kaynaksız rakam kullanmayın",
+          "7. Güncellik ve yazar: görünür yayın/güncelleme tarihi, gerçek yazar sayfası ve Person/Organization yapısal verisi",
+          "8. Dış anılma: sektör yayınlarında, topluluklarda ve listelerde markanızın konuyla birlikte anılması; AI cevapları yalnızca sizin sitenize değil, sizin hakkınızda yazılanlara da bakar",
+        ],
+      },
+      {
+        heading: "Alıntılanabilir paragraf nasıl yazılır? Önce / sonra örneği",
+        paragraphs: [
+          "AI cevapları sayfanızdan bir pasaj seçer; o pasaj bağlamından koparıldığında da doğru ve eksiksiz olmalıdır. En sık hata, cevabın girişin üçüncü paragrafına saklanması ve 'bu', 'yukarıda bahsettiğimiz' gibi önceki metne dayanan ifadelerdir.",
+          "Önce: 'Reklam dünyasında birçok metrik var ve bunların en önemlilerinden biri de ROAS'tır. Peki bu metrik ne işe yarar? Gelin birlikte bakalım.' Bu paragraf hiçbir soruyu cevaplamıyor.",
+          "Sonra: 'ROAS (reklam harcamasının getirisi), reklamdan elde edilen gelirin reklam harcamasına oranıdır: ROAS = Reklam geliri / Reklam harcaması. 10.000 TL harcamayla 40.000 TL satış yapan kampanyanın ROAS'ı 4'tür.' Tanım, formül ve sayısal örnek tek pasajda; tek başına alıntılandığında da eksiksiz.",
+        ],
+      },
+      {
+        heading: "Türkçe aramalarda GEO fırsatı neden büyük?",
+        paragraphs: [
+          "AI cevap motorları Türkçe bir soruya Türkçe cevap verirken Türkçe kaynak bulamazsa İngilizce kaynakları çevirip kullanır. Bu sitenin 23 Ekim 2026'da yaptığı görünürlük taramasında 'NRR nedir' ve 'GA4 unassigned trafik nasıl düzeltilir' gibi pazarlama sorularında Türkçe aramanın ilk sonuçlarının tamamı İngilizce kaynaktı.",
+          "Bu boşluk iki fırsat yaratır. Birincisi, niş ama değerli sorularda ilk kapsamlı Türkçe kaynak olmak, hem klasik sıralamada hem AI alıntısında az rakiple yarışmak demektir. İkincisi, Türkçe pazara özgü bilgi (TL fiyatlı örnekler, yerel pazaryeri ve kargo kuralları, Türkiye'deki reklam maliyeti verileri) çeviriyle üretilemeyeceği için AI motorlarının sizi kaynak göstermesini zorunlu kılar.",
+          "Kendi konu listenizi çıkarmak için: müşterilerinizin sorduğu 20 soruyu Türkçe aratın; ilk 10 sonucun çoğu İngilizce, eski ya da formülsüzse o soru GEO için önceliklidir.",
+        ],
+      },
+      {
+        heading: "GEO başarısı nasıl ölçülür? Alıntılanma oranı formülü",
+        paragraphs: [
+          "AI cevapları her sorguda değişir; tek bir deneme ölçüm değildir. Bu yüzden sabit bir soru paneli kurulur, her soru birden fazla motorda ve birden fazla kez sorulur, sonuçlar aynı yöntemle her ay tekrarlanır.",
+          "Örnek panel: 20 hedef soru × 3 motor (ChatGPT arama, Gemini, Perplexity) × 2 tekrar = 120 cevap. Siteniz 9 cevapta link olarak kaynak gösterildi, 6 cevapta ise linksiz anıldı. Alıntılanma oranı = 9 / 120 = %7,5; görünürlük oranı (alıntı + anılma) = 15 / 120 = %12,5. Aynı panelde iki rakip 30 ve 21 cevapta kaynak gösterildiyse alıntı payınız 9 / (9 + 30 + 21) = %15'tir.",
+          "Panel sonuçlarını trafik verisiyle birlikte okuyun. Alıntı oranı artarken AI asistanlarından gelen oturumlar ve bu oturumların dönüşümü de artıyorsa çalışma işe yarıyordur.",
+        ],
+        bullets: [
+          "Alıntılanma oranı = Sitenizin link olarak kaynak gösterildiği cevap / Toplam cevap",
+          "Görünürlük oranı = (Kaynak gösterildiği + linksiz anıldığı cevap) / Toplam cevap",
+          "Alıntı payı = Sizin alıntı sayınız / (Sizin + izlenen rakiplerin alıntı sayısı)",
+          "Doğruluk kontrolü: markanız anıldığında bilgi doğru mu (fiyat, hizmet, kurucu)? Yanlışsa kaynağı bulup o sayfayı düzeltin",
+          "Bing Webmaster Tools › AI Performance: Copilot ve Bing AI özetlerinde alıntı sayısı ve alıntılanan sayfalar",
+        ],
+      },
+      {
+        heading: "GA4'te ChatGPT ve AI asistanı trafiği nasıl ayrılır?",
+        paragraphs: [
+          "ChatGPT, Perplexity, Gemini, Copilot ve Claude'dan gelen ziyaretler GA4'te çoğunlukla 'Referral' kanalında, kaynağı chatgpt.com ya da perplexity.ai gibi görünür. Bunları tek grupta görmek için Yönetici › Veri görünümü › Kanal grupları altında varsayılan grubu kopyalayıp 'AI asistanları' adlı yeni bir kanal ekleyin; koşul: Kaynak, normal ifadeyle eşleşir.",
+          "Örnek ifade: ^(chatgpt\\.com|chat\\.openai\\.com|(www\\.)?perplexity\\.ai|gemini\\.google\\.com|copilot\\.microsoft\\.com|claude\\.ai)$. Baştaki ^ ve sondaki $ yalnızca bu alan adlarını yakalar. Kanalı listede 'Referral'ın üstüne taşıyın; GA4 kuralları sırayla uygular ve ilk eşleşen kanal kazanır. Yeni AI ürünleri çıktıkça listeyi güncelleyin.",
+          "İki sınır var. Google AI Overviews ve AI Mode tıklamaları Google organik trafiği olarak gelir ve Search Console'da 'Web' arama türünün içinde, ayrılmadan raporlanır. Bazı mobil uygulamalar yönlendiren bilgisini göndermediği için o ziyaretler 'Direct' görünebilir. Kendi paylaştığınız linklerde UTM kullanmak bu kaybı azaltır.",
+        ],
+      },
+      {
+        heading: "30 günlük GEO uygulama planı",
+        paragraphs: [
+          "Küçük bir ekip ya da tek kişilik bir işletme için gerçekçi bir başlangıç planı aşağıda. Her hafta bir öncekinin üzerine kurulur; 30. günün sonunda ilk ölçümü tekrarlayıp karşılaştırırsınız.",
+        ],
+        bullets: [
+          "1. hafta — Temel: 20 soruluk paneli yazın, 3 motorda 2'şer kez sorup başlangıç alıntılanma oranını kaydedin; robots.txt ve bot korumasını kontrol edin; GA4'te AI asistanları kanalını kurun",
+          "2. hafta — Dizin: panel sorularına cevap veren sayfalarınızın Google ve Bing'de dizinde olduğunu doğrulayın; eksik olanlar için dizine ekleme isteği gönderin",
+          "3. hafta — İçerik: alıntılanmayan 5 sayfanın ilk paragrafını cevap önce biçimine çevirin; her birine kendi hesap örneğinizi ve birincil kaynak linkini ekleyin",
+          "4. hafta — Dış sinyal ve ölçüm: bir sektör yayınına uzman görüşü ya da konuk yazı gönderin; paneli aynı yöntemle tekrarlayın ve oranları karşılaştırın",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "GEO ne demek, açılımı nedir?",
+        answer:
+          "GEO, Generative Engine Optimization'ın kısaltmasıdır; Türkçede üretken motor optimizasyonu ya da yapay zekâ arama optimizasyonu denir. İçeriğin ChatGPT, Gemini, Perplexity ve Google AI Overviews gibi AI cevaplarında kaynak gösterilmesini hedefler. Pazarlamada 'geo' ayrıca coğrafi hedefleme anlamında da kullanılır.",
+      },
+      {
+        question: "GEO, SEO'nun yerini alacak mı?",
+        answer:
+          "Hayır. AI cevap motorları kaynaklarını büyük ölçüde arama indekslerinden seçtiği için GEO, SEO temeli üzerine kurulur. Google da AI Overviews ve AI Mode için ayrı bir gereksinim olmadığını, sayfanın dizinde ve snippet'e uygun olmasının yeterli olduğunu söylüyor.",
+      },
+      {
+        question: "ChatGPT'de sitemin kaynak gösterilmesi için ne yapmalıyım?",
+        answer:
+          "Önce robots.txt'de OAI-SearchBot'u engellemediğinizden emin olun; ChatGPT arama görünürlüğünü bu bot belirler. Ardından hedef sorulara ilk cümlede cevap veren, kendi örnekleri ve kaynaklı rakamları olan sayfalar yazın ve bu sayfaların arama motorlarında dizinde olmasını sağlayın.",
+      },
+      {
+        question: "llms.txt GEO için gerekli mi?",
+        answer:
+          "Gerekli değil. Google AI özellikleri için yeni bir 'AI metin dosyası' gerekmediğini söylüyor; büyük log çalışmalarında da llms.txt'nin AI alıntısını artırdığı görülmedi. Düşük maliyetli bir ek olarak eklenebilir ama erişim, dizin ve içerik kalitesinin yerini tutmaz.",
+      },
+      {
+        question: "GEO sonuçları ne zaman görülür?",
+        answer:
+          "Tek bir süre yoktur. Değişikliğin önce taranması ve dizine yansıması gerekir; AI cevapları da sorgudan sorguya değiştiği için etkiyi aylık panel ölçümüyle izleyin. Yeni ve dizine girmemiş sayfalarda süre, dizine girme süresine bağlıdır.",
+      },
+    ],
+    howTo: {
+      name: "GEO nasıl yapılır?",
+      description: "Yapay zekâ cevaplarında kaynak gösterilmek için erişim, dizin, içerik ve ölçüm adımlarını sırayla uygulayın.",
+      steps: [
+        { name: "Soru panelini kurun", text: "Müşterilerinizin sorduğu 20 soruyu yazın, ChatGPT, Gemini ve Perplexity'de ikişer kez sorup alıntılanma oranını kaydedin." },
+        { name: "Erişimi kontrol edin", text: "robots.txt, güvenlik duvarı ve bot korumasının Googlebot, Bingbot ve AI arama botlarını engellemediğini doğrulayın." },
+        { name: "Dizini doğrulayın", text: "Panel sorularına cevap veren sayfaların Google ve Bing'de dizinde olduğunu kontrol edin, eksikler için dizine ekleme isteği gönderin." },
+        { name: "İçeriği cevap önce biçime getirin", text: "Her soru başlığının ilk cümlesinde net cevap, formül ve kendi sayısal örneğinizi verin; iddiaları birincil kaynağa bağlayın." },
+        { name: "Ölçümü tekrarlayın", text: "GA4'te AI asistanları kanalını izleyin ve 30 gün sonra paneli aynı yöntemle tekrarlayıp oranları karşılaştırın." },
+      ],
+    },
+    relatedToolKey: "llms-txt",
+    resources: [
+      { label: "llms.txt Nedir, İşe Yarıyor mu? (2026 verileriyle)", href: "/blog/llms-txt-nedir-ise-yariyor-mu/" },
+      { label: "llms.txt Oluşturucu", href: "/ucretsiz-araclar/llms-txt-olusturucu/" },
+      { label: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir?", href: "/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Google Search Central: AI özellikleri ve web siteniz (İngilizce)", href: "https://developers.google.com/search/docs/appearance/ai-features", external: true },
+      { label: "Aggarwal vd.: GEO: Generative Engine Optimization (arXiv, İngilizce)", href: "https://arxiv.org/abs/2311.09735", external: true },
+      { label: "OpenAI: Tarayıcılara genel bakış (İngilizce)", href: "https://developers.openai.com/api/docs/bots", external: true },
+      { label: "Bing Webmaster Blog: AI Performance önizlemesi (İngilizce)", href: "https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview", external: true },
+      { label: "Search Engine Journal: Google'ın AI arama rehberi (İngilizce)", href: "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/", external: true },
     ],
   },
 ];
@@ -6685,6 +6871,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     relatedToolKey: "llms-txt",
     resources: [
       { label: "llms.txt Generator: Example File and Format Check", href: "/en/free-tools/llms-txt-generator/" },
+      { label: "What Is GEO? Generative Engine Optimization Guide", href: "/en/blog/what-is-geo-generative-engine-optimization/" },
       { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
       { label: "GA4 Unassigned Traffic: How to Fix It", href: "/en/blog/ga4-unassigned-traffic-how-to-fix/" },
       { label: "n8n Lead Enrichment Automation", href: "/en/blog/n8n-lead-enrichment-automation/" },
@@ -7245,6 +7432,191 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "What Is CAC?", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
       { label: "What Is LTV? LTV:CAC Ratio", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
       { label: "Stripe: What is annual recurring revenue (ARR)?", href: "https://stripe.com/in/resources/more/what-is-annual-recurring-revenue-a-guide-for-saas-businesses", external: true },
+    ],
+  },
+  {
+    slug: "what-is-geo-generative-engine-optimization",
+    seoTitle: "What Is GEO? Generative Engine Optimization Guide (2026)",
+    title: "What Is GEO? Getting Cited in ChatGPT, Gemini and AI Overviews — Evidence, Tactics and Measurement",
+    description:
+      "What is GEO (generative engine optimization) and how is it different from SEO? What's proven, a citation-rate formula, GA4 setup and a 30-day action plan.",
+    category: "yapay-zeka-otomasyon",
+    tldr: [
+      "GEO (Generative Engine Optimization) is the work of getting your content cited and correctly mentioned in AI answers from ChatGPT search, Gemini, Perplexity, Copilot and Google AI Overviews. The term spread through a 2023 paper by Princeton and partner researchers.",
+      "GEO builds on SEO rather than replacing it. Google says there are no additional requirements for AI Overviews or AI Mode — no new 'AI text file' and no special schema: the page must be indexed and eligible for a snippet. AI answers mostly pick sources from search results.",
+      "In the research, adding quotations, statistics and source citations worked best (up to 40% higher visibility), while keyword stuffing made results worse. In practice: answer in the first sentence, use your own data and worked examples, and source your claims.",
+      "Measurement: in a 120-answer panel (20 questions × 3 engines × 2 runs), citation rate = answers citing your site / 120. In the example, 9 / 120 = 7.5%. Create a separate GA4 channel for AI assistants; Google AI Overviews clicks sit inside 'Web' in Search Console and can't be split out.",
+    ],
+    publishedAt: "2026-10-31",
+    readingMinutes: 9,
+    tags: ["GEO", "AI SEO", "AI Overviews", "ChatGPT", "AEO", "Generative Engine Optimization"],
+    sections: [
+      {
+        heading: "What is GEO? (Short answer)",
+        paragraphs: [
+          "GEO (Generative Engine Optimization) is the set of content and technical work that gets a brand or page cited as a source, mentioned in the right context, and clicked from AI-powered answer engines: ChatGPT search, Google AI Overviews and AI Mode, Gemini, Perplexity, Microsoft Copilot and Claude.",
+          "SEO aims for higher positions among the blue links; GEO aims for the system that writes one synthesised answer to use — and show — your page while writing it. The unit of success is not ranking but citation and mention.",
+          "The term spread through 'GEO: Generative Engine Optimization', published in 2023 by researchers from Princeton, Georgia Tech, the Allen Institute for AI and IIT Delhi and presented at KDD 2024. Note: in marketing, 'geo' also means geographic targeting; this article covers the AI-search meaning.",
+        ],
+      },
+      {
+        heading: "How is GEO different from SEO and AEO?",
+        paragraphs: [
+          "The three are nested layers, not rivals. Google's 2026 AI search guidance also frames AEO and GEO as part of SEO rather than a separate discipline. The difference is clearest when you look at what each targets and how it is measured.",
+          "The practical consequence: GEO never starts without an SEO foundation. A page that isn't indexed, loads slowly or only renders its text after JavaScript runs will be cited neither in the blue links nor in AI answers.",
+        ],
+        bullets: [
+          "SEO: rankings and clicks in search. Measured by impressions, average position and clicks (Search Console)",
+          "AEO (Answer Engine Optimization): being chosen as the single answer in featured snippets, People Also Ask and voice assistants. Measured by snippet ownership",
+          "GEO: being cited and correctly mentioned in generative AI answers. Measured by citation rate, citation share and AI-assistant traffic",
+          "Shared base: crawlable, indexed pages; answer-first structure; original information; credible author and brand signals",
+        ],
+      },
+      {
+        heading: "How do AI answer engines choose their sources?",
+        paragraphs: [
+          "Most AI search products don't answer from model memory; they assemble the answer from searches run at that moment. They split the question into sub-questions, search for each, pull passages from the pages they find and synthesise them with source links. Google calls this 'query fan-out' and says it lets AI Overviews and AI Mode show a wider set of supporting links than classic search.",
+          "Two consequences follow. First, the source pool is largely the search index, so being indexed and ranking well is a precondition for AI visibility. Second, the unit that gets selected is the passage, not the page: a paragraph that makes sense on its own and answers clearly is far easier to cite than information buried in a long introduction.",
+        ],
+        bullets: [
+          "Google AI Overviews / AI Mode: Google's index; no extra requirements beyond being indexed and snippet-eligible",
+          "ChatGPT search: OpenAI's OAI-SearchBot crawler; sites that block it don't appear in ChatGPT search answers (GPTBot is for model training and is controlled separately)",
+          "Microsoft Copilot and Bing AI summaries: Bing's index; the AI Performance report in Bing Webmaster Tools (public preview since February 2026) shows citation counts",
+          "Perplexity and Claude: their own search crawlers (PerplexityBot, Claude-SearchBot); see the bot table in the llms.txt article for robots.txt settings",
+        ],
+      },
+      {
+        heading: "What's proven in GEO — and what isn't?",
+        paragraphs: [
+          "GEO has plenty of claims and little evidence. When deciding, it helps to sort sources into three tiers: the platform's own official documentation, controlled research, and untested field claims.",
+          "Know the limits of the Princeton paper too: most experiments ran in a test environment the researchers built, using a language model of that time, and the authors stress that effectiveness varies by domain. 'Add quotes and gain 40%' is not a guarantee, but the direction — keyword stuffing doesn't work, sourced and specific content does — is consistent across the research and the platform guidance.",
+        ],
+        bullets: [
+          "Official (Google): no additional technical requirements, new machine-readable files, 'AI text files' or special schema.org markup for AI Overviews and AI Mode; nosnippet, data-nosnippet, max-snippet and noindex limit what is shown",
+          "Official (OpenAI): ChatGPT search visibility is governed by OAI-SearchBot; blocking GPTBot does not affect it",
+          "Research (Aggarwal et al., KDD 2024): adding quotations, statistics and source citations were the most effective methods — up to 40% higher visibility, and up to 37% on a real product (Perplexity); keyword stuffing scored below the baseline",
+          "Not proven: that llms.txt increases AI citations (large log studies saw no effect), that FAQ/schema markup alone earns citations, or that 'AI-only' versions of content help",
+        ],
+      },
+      {
+        heading: "How to do GEO: 8 page-level actions",
+        paragraphs: [
+          "The list is ordered by priority: access and indexing first, then content format, then off-site signals. Without the first three, the rest is wasted effort.",
+        ],
+        bullets: [
+          "1. Access: check that robots.txt, your firewall and bot protection don't block Googlebot, Bingbot or AI search bots (OAI-SearchBot, PerplexityBot, Claude-SearchBot)",
+          "2. Indexing: make sure key pages are indexed in Google and Bing; clear the 'Discovered – currently not indexed' list in Search Console and submit your sitemap to Bing Webmaster Tools",
+          "3. Content in HTML: text should be in the page source without JavaScript (server-side or static rendering)",
+          "4. Answer first: the first sentence under each question-style heading answers the heading on its own; put definition + formula + number in the same paragraph",
+          "5. Original information: your own worked examples, data, experience and screenshots; repeating the definition everyone else wrote earns no citations",
+          "6. Sourced claims: tie statistics and claims to a primary source (official documentation, research) with a date; never use unsourced numbers",
+          "7. Freshness and authorship: visible published/updated dates, a real author page and Person/Organization structured data",
+          "8. Off-site mentions: your brand discussed alongside the topic in industry publications, communities and lists; AI answers look not only at your site but at what others write about you",
+        ],
+      },
+      {
+        heading: "How to write a citable paragraph: before / after",
+        paragraphs: [
+          "AI answers lift one passage from your page, and that passage must stay correct and complete out of context. The most common failures are hiding the answer in the third paragraph of an intro and relying on phrases like 'this' or 'as mentioned above'.",
+          "Before: 'There are many metrics in advertising and ROAS is one of the most important. So what is it for? Let's take a look together.' This paragraph answers nothing.",
+          "After: 'ROAS (return on ad spend) is revenue from advertising divided by ad spend: ROAS = Ad revenue / Ad spend. A campaign that spends $1,000 and drives $4,000 in sales has a ROAS of 4.' Definition, formula and a number in one passage — complete even when quoted alone.",
+        ],
+      },
+      {
+        heading: "Why non-English markets are a GEO opportunity",
+        paragraphs: [
+          "When an AI engine answers in a local language and finds no strong local-language source, it translates and uses English ones. In this site's visibility check on 23 October 2026, Turkish searches for marketing questions such as 'what is NRR' and 'how to fix GA4 unassigned traffic' returned only English sources at the top.",
+          "That gap creates two openings. First, becoming the first thorough local-language source on niche but valuable questions means competing with few rivals both in classic rankings and in AI citations. Second, market-specific information — local-currency examples, local marketplace and shipping rules, local ad-cost data — can't be produced by translation, so AI engines have to cite you for it.",
+          "To build your own list: search the 20 questions your customers ask in their language; if most of the top 10 results are English, outdated or formula-free, that question is a GEO priority.",
+        ],
+      },
+      {
+        heading: "How do you measure GEO? The citation-rate formula",
+        paragraphs: [
+          "AI answers change from query to query, so a single try is not a measurement. Build a fixed question panel, ask each question in several engines and several times, and repeat the same method every month.",
+          "Example panel: 20 target questions × 3 engines (ChatGPT search, Gemini, Perplexity) × 2 runs = 120 answers. Your site was cited with a link in 9 answers and mentioned without a link in 6. Citation rate = 9 / 120 = 7.5%; visibility rate (cited + mentioned) = 15 / 120 = 12.5%. If two competitors were cited in 30 and 21 answers on the same panel, your citation share is 9 / (9 + 30 + 21) = 15%.",
+          "Read panel results alongside traffic. If the citation rate rises while sessions from AI assistants — and their conversions — rise too, the work is paying off.",
+        ],
+        bullets: [
+          "Citation rate = Answers citing your site with a link / Total answers",
+          "Visibility rate = (Cited + mentioned without link) / Total answers",
+          "Citation share = Your citations / (Your + tracked competitors' citations)",
+          "Accuracy check: when your brand is mentioned, is the information right (pricing, services, founder)? If not, find the source and fix that page",
+          "Bing Webmaster Tools › AI Performance: citation counts and cited pages in Copilot and Bing AI summaries",
+        ],
+      },
+      {
+        heading: "How do you separate ChatGPT and AI-assistant traffic in GA4?",
+        paragraphs: [
+          "Visits from ChatGPT, Perplexity, Gemini, Copilot and Claude usually land in GA4's 'Referral' channel with sources such as chatgpt.com or perplexity.ai. To see them as one group, go to Admin › Data display › Channel groups, copy the default group and add a new channel called 'AI assistants' with the condition Source matches regex.",
+          "Example expression: ^(chatgpt\\.com|chat\\.openai\\.com|(www\\.)?perplexity\\.ai|gemini\\.google\\.com|copilot\\.microsoft\\.com|claude\\.ai)$. The ^ and $ anchors match only these domains. Move the channel above 'Referral' — GA4 applies rules in order and the first match wins. Update the list as new AI products launch.",
+          "Two limits remain. Google AI Overviews and AI Mode clicks arrive as Google organic traffic and are reported inside the 'Web' search type in Search Console, without a separate breakdown. Some mobile apps don't pass a referrer, so those visits may appear as 'Direct'. Using UTM parameters on links you share yourself reduces that loss.",
+        ],
+      },
+      {
+        heading: "A 30-day GEO action plan",
+        paragraphs: [
+          "A realistic starting plan for a small team or a solo business is below. Each week builds on the previous one; at day 30 you repeat the first measurement and compare.",
+        ],
+        bullets: [
+          "Week 1 — Baseline: write the 20-question panel, ask each question twice in 3 engines and record the starting citation rate; check robots.txt and bot protection; set up the AI-assistants channel in GA4",
+          "Week 2 — Indexing: confirm that pages answering the panel questions are indexed in Google and Bing; request indexing for any that are missing",
+          "Week 3 — Content: rewrite the opening paragraph of 5 uncited pages in answer-first form; add your own worked example and a primary-source link to each",
+          "Week 4 — Off-site and measurement: pitch an expert comment or guest post to one industry publication; rerun the panel with the same method and compare the ratios",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does GEO stand for?",
+        answer:
+          "GEO stands for Generative Engine Optimization: optimising content so it is cited as a source in AI answers from ChatGPT, Gemini, Perplexity and Google AI Overviews. In marketing, 'geo' is also used for geographic targeting, which is unrelated.",
+      },
+      {
+        question: "Will GEO replace SEO?",
+        answer:
+          "No. AI answer engines largely pick their sources from search indexes, so GEO builds on an SEO foundation. Google also says AI Overviews and AI Mode have no separate requirements beyond the page being indexed and eligible for a snippet.",
+      },
+      {
+        question: "How do I get my site cited in ChatGPT?",
+        answer:
+          "First make sure robots.txt doesn't block OAI-SearchBot, the crawler that governs ChatGPT search visibility. Then publish pages that answer target questions in the first sentence, with your own examples and sourced numbers, and make sure those pages are indexed by search engines.",
+      },
+      {
+        question: "Is llms.txt required for GEO?",
+        answer:
+          "No. Google says no new 'AI text file' is needed for its AI features, and large log studies haven't shown llms.txt increasing AI citations. It's a low-cost extra, but it doesn't replace access, indexing and content quality.",
+      },
+      {
+        question: "How long does GEO take to show results?",
+        answer:
+          "There's no fixed timeline. Changes must be crawled and reflected in the index first, and AI answers vary from query to query, so track the effect with a monthly panel. For new pages that aren't indexed yet, the timeline depends on indexing.",
+      },
+    ],
+    howTo: {
+      name: "How to do GEO",
+      description: "Work through access, indexing, content and measurement in order to get cited in AI answers.",
+      steps: [
+        { name: "Build a question panel", text: "Write the 20 questions your customers ask, ask each twice in ChatGPT, Gemini and Perplexity and record your citation rate." },
+        { name: "Check access", text: "Confirm that robots.txt, firewall and bot protection don't block Googlebot, Bingbot or AI search bots." },
+        { name: "Verify indexing", text: "Check that pages answering the panel questions are indexed in Google and Bing, and request indexing for missing ones." },
+        { name: "Rewrite content answer-first", text: "Give a clear answer, formula and your own numeric example in the first sentence under each question heading; tie claims to primary sources." },
+        { name: "Repeat the measurement", text: "Track the AI-assistants channel in GA4 and rerun the panel after 30 days with the same method to compare." },
+      ],
+    },
+    relatedToolKey: "llms-txt",
+    resources: [
+      { label: "What Is llms.txt and Does It Work? (2026 data)", href: "/en/blog/what-is-llms-txt-does-it-work/" },
+      { label: "llms.txt Generator", href: "/en/free-tools/llms-txt-generator/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "GA4 Unassigned Traffic: How to Fix It", href: "/en/blog/ga4-unassigned-traffic-how-to-fix/" },
+      { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "Google Search Central: AI features and your website", href: "https://developers.google.com/search/docs/appearance/ai-features", external: true },
+      { label: "Aggarwal et al.: GEO: Generative Engine Optimization (arXiv)", href: "https://arxiv.org/abs/2311.09735", external: true },
+      { label: "OpenAI: Overview of OpenAI crawlers", href: "https://developers.openai.com/api/docs/bots", external: true },
+      { label: "Bing Webmaster Blog: Introducing AI Performance (public preview)", href: "https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview", external: true },
+      { label: "Search Engine Journal: Google's AI search guide calls AEO and GEO still SEO", href: "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/", external: true },
     ],
   },
 ];

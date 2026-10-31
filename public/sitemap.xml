@@ -470,6 +470,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-geo-generative-engine-optimization/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -922,6 +931,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-arr-annual-recurring-revenue/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/arr-nedir-yillik-yinelenen-gelir/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/arr-nedir-yillik-yinelenen-gelir/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/what-is-geo-generative-engine-optimization/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-geo-generative-engine-optimization/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

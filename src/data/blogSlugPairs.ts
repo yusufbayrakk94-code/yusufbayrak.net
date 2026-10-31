@@ -24,4 +24,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "churn-nedir-churn-rate-nasil-hesaplanir", en: "what-is-churn-rate" },
   { tr: "meta-reklam-verme-rehberi", en: "how-to-run-meta-ads-guide" },
   { tr: "arr-nedir-yillik-yinelenen-gelir", en: "what-is-arr-annual-recurring-revenue" },
+  { tr: "geo-nedir-yapay-zeka-arama-optimizasyonu", en: "what-is-geo-generative-engine-optimization" },
 ];

@@ -78,6 +78,7 @@
 - [Churn Nedir? Churn Rate Nasıl Hesaplanır, İyi Churn Oranı Kaç ve Nasıl Düşürülür?](https://yusufbayrak.net/blog/churn-nedir-churn-rate-nasil-hesaplanir/): Churn nedir, churn rate nasıl hesaplanır? Doğru formül, sık yapılan payda hatası, gönüllü ve gönülsüz churn, gelir churn'ü, kohort analizi ve düşürme planı.
 - [Meta Reklam Verme Rehberi (2026): Facebook ve Instagram Reklamı Adım Adım, Bütçe Hesabı ve Öğrenme Aşaması](https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/): Meta reklam nasıl verilir? Reklam Yöneticisi kurulumu, piksel ve Dönüşümler API, 6 kampanya amacı, Advantage+, kitle ve hedeften geriye bütçe hesabı örneği.
 - [ARR Nedir? Yıllık Yinelenen Gelir Nasıl Hesaplanır? ARR Köprüsü, CARR ve Booking Farkı](https://yusufbayrak.net/blog/arr-nedir-yillik-yinelenen-gelir/): ARR (yıllık yinelenen gelir) nedir, nasıl hesaplanır? Çok yıllı sözleşme, yeni/genişleme/kayıp ARR köprüsü, NRR-GRR, CARR, booking ve ciro farkı örnekle.
+- [GEO Nedir? ChatGPT, Gemini ve AI Overviews'ta Kaynak Gösterilmek: Kanıtlar, Uygulama ve Ölçüm](https://yusufbayrak.net/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/): GEO (üretken motor optimizasyonu) nedir, SEO'dan farkı ne? Kanıtlanmış yöntemler, AI görünürlüğünü ölçme formülü, GA4 kurulumu ve 30 günlük uygulama planı.
 
 ## English
 
@@ -132,6 +133,7 @@
 - [What Is Churn Rate? How to Calculate It, What a Good Rate Is and How to Reduce It](https://yusufbayrak.net/en/blog/what-is-churn-rate/): What is churn rate and how do you calculate it? The right formula, the common denominator mistake, voluntary vs involuntary churn, revenue churn and cohorts.
 - [How to Run Meta Ads (2026): Facebook and Instagram Ads Step by Step, Budget Math and the Learning Phase](https://yusufbayrak.net/en/blog/how-to-run-meta-ads-guide/): How to run Meta ads: Ads Manager setup, Pixel and Conversions API, the 6 campaign objectives, Advantage+, audiences and a worked budget-from-target example.
 - [What Is ARR? How to Calculate Annual Recurring Revenue — ARR Bridge, CARR and Bookings Explained](https://yusufbayrak.net/en/blog/what-is-arr-annual-recurring-revenue/): What is ARR and how do you calculate it? Multi-year and ramp contracts, the new/expansion/churn ARR bridge, NRR and GRR, CARR, bookings vs revenue, examples.
+- [What Is GEO? Getting Cited in ChatGPT, Gemini and AI Overviews — Evidence, Tactics and Measurement](https://yusufbayrak.net/en/blog/what-is-geo-generative-engine-optimization/): What is GEO (generative engine optimization) and how is it different from SEO? What's proven, a citation-rate formula, GA4 setup and a 30-day action plan.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim
