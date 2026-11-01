@@ -80,6 +80,7 @@
 - [ARR Nedir? Yıllık Yinelenen Gelir Nasıl Hesaplanır? ARR Köprüsü, CARR ve Booking Farkı](https://yusufbayrak.net/blog/arr-nedir-yillik-yinelenen-gelir/): ARR (yıllık yinelenen gelir) nedir, nasıl hesaplanır? Çok yıllı sözleşme, yeni/genişleme/kayıp ARR köprüsü, NRR-GRR, CARR, booking ve ciro farkı örnekle.
 - [GEO Nedir? ChatGPT, Gemini ve AI Overviews'ta Kaynak Gösterilmek: Kanıtlar, Uygulama ve Ölçüm](https://yusufbayrak.net/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/): GEO (üretken motor optimizasyonu) nedir, SEO'dan farkı ne? Kanıtlanmış yöntemler, AI görünürlüğünü ölçme formülü, GA4 kurulumu ve 30 günlük uygulama planı.
 - [Trendyol Komisyon Oranları 2026: Komisyon Nasıl Hesaplanır, Barem ve Kampanya Tuzakları (Örnek Hesaplı)](https://yusufbayrak.net/blog/trendyol-komisyon-oranlari-hesaplama/): Trendyol komisyon oranları 2026: kategori aralıkları, komisyon hesaplama formülü, kargo baremi ve hizmet bedeli dahil kesinti, başabaş fiyat ve kampanya örneği.
+- [Google Ads Nedir, Nasıl Çalışır? Açık Artırma, Kalite Puanı, Maliyet ve Kampanya Türleri (2026)](https://yusufbayrak.net/blog/google-ads-nedir-nasil-calisir/): Google Ads nedir, nasıl çalışır? Açık artırma ve gerçek TBM, kalite puanı, bütçe kuralları, 2026 kampanya türleri, teklif stratejileri ve TL ile maliyet örneği.
 
 ## English
 
@@ -136,6 +137,7 @@
 - [What Is ARR? How to Calculate Annual Recurring Revenue — ARR Bridge, CARR and Bookings Explained](https://yusufbayrak.net/en/blog/what-is-arr-annual-recurring-revenue/): What is ARR and how do you calculate it? Multi-year and ramp contracts, the new/expansion/churn ARR bridge, NRR and GRR, CARR, bookings vs revenue, examples.
 - [What Is GEO? Getting Cited in ChatGPT, Gemini and AI Overviews — Evidence, Tactics and Measurement](https://yusufbayrak.net/en/blog/what-is-geo-generative-engine-optimization/): What is GEO (generative engine optimization) and how is it different from SEO? What's proven, a citation-rate formula, GA4 setup and a 30-day action plan.
 - [Trendyol Commission Rates 2026: How Fees Are Calculated, Shipping Thresholds and Campaign Traps (With Examples)](https://yusufbayrak.net/en/blog/trendyol-commission-rates/): Trendyol commission rates in 2026: category ranges, the commission formula, shipping thresholds and service fee, break-even price and a campaign offer example.
+- [What Is Google Ads and How Does It Work? Auction, Quality Score, Costs and Campaign Types (2026)](https://yusufbayrak.net/en/blog/what-is-google-ads-how-it-works/): What is Google Ads and how does it work? The auction and actual CPC, Quality Score, budget rules, 2026 campaign types, bid strategies and a worked cost example.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim

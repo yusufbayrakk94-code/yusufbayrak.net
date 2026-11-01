@@ -26,4 +26,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "arr-nedir-yillik-yinelenen-gelir", en: "what-is-arr-annual-recurring-revenue" },
   { tr: "geo-nedir-yapay-zeka-arama-optimizasyonu", en: "what-is-geo-generative-engine-optimization" },
   { tr: "trendyol-komisyon-oranlari-hesaplama", en: "trendyol-commission-rates" },
+  { tr: "google-ads-nedir-nasil-calisir", en: "what-is-google-ads-how-it-works" },
 ];

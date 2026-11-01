@@ -325,6 +325,9 @@ export const BLOG_POSTS: BlogPost[] = [
           "Bir seferde %20-30'dan fazla artış öğrenme aşamasını yeniden tetikler. Impression share lost (budget) %10'un üstündeki kampanyalara öncelik verin ve artıştan sonra en az 7-14 gün ölçüm yapmadan yeni değişiklik yapmayın.",
       },
     ],
+    resources: [
+      { label: "Google Ads Nedir, Nasıl Çalışır? Maliyet ve Örnek Hesap", href: "/blog/google-ads-nedir-nasil-calisir/" },
+    ],
     relatedToolKey: "roas",
   },
   {
@@ -1722,6 +1725,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Google Ads Nedir, Nasıl Çalışır? Maliyet ve Örnek Hesap", href: "/blog/google-ads-nedir-nasil-calisir/" },
       { label: "Meta Reklam Verme Rehberi: Bütçe, Kitle ve Öğrenme Aşaması", href: "/blog/meta-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
@@ -2156,6 +2160,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "Google Ads Nedir, Nasıl Çalışır? Maliyet ve Örnek Hesap", href: "/blog/google-ads-nedir-nasil-calisir/" },
       { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Brüt Kâr Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -4169,6 +4174,179 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Trendyol Satıcı Bilgi Merkezi: Kargo Baremi Uygulaması", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/kargo-baremi-uygulamasi", external: true },
     ],
   },
+  {
+    slug: "google-ads-nedir-nasil-calisir",
+    seoTitle: "Google Ads Nedir, Nasıl Çalışır? Maliyet ve Örnek Hesap",
+    title: "Google Ads Nedir, Nasıl Çalışır? Açık Artırma, Kalite Puanı, Maliyet ve Kampanya Türleri (2026)",
+    description:
+      "Google Ads nedir, nasıl çalışır? Açık artırma ve gerçek TBM, kalite puanı, bütçe kuralları, 2026 kampanya türleri, teklif stratejileri ve TL ile maliyet örneği.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Google Ads, Google'ın reklam platformudur: Google Arama, YouTube, Gmail, Discover, Haritalar ve Google'ın iş ortağı sitelerinde reklam göstermenizi sağlar. Arama reklamlarında çoğunlukla tıklama başına ödersiniz (TBM).",
+      "Her aramada bir açık artırma yapılır. Reklamınızın yeri teklifiniz, reklam ve açılış sayfası kalitesi ve arama bağlamından oluşan Reklam Sıralaması ile belirlenir. Ödediğiniz gerçek TBM, genellikle maksimum teklifinizden düşüktür: altınızdaki rakibi ve eşiği geçmeye yetecek kadar ödersiniz.",
+      "Kalite Puanı (1–10) açık artırmaya giren bir değer değil, teşhis aracıdır; ama bileşenleri (beklenen TO, reklam alaka düzeyi, açılış sayfası deneyimi) Reklam Sıralamasını etkiler.",
+      "Maliyet hesabı: EBM = TBM / Dönüşüm oranı. 8 TL TBM ve %2 dönüşüm oranıyla satış başı maliyet 400 TL'dir; %40 marjlı 1.200 TL'lik siparişte başabaş EBM 480 TL olduğu için kampanya kârlıdır. Günlük 500 TL bütçe ayda en fazla 15.200 TL harcar.",
+    ],
+    publishedAt: "2026-11-01",
+    readingMinutes: 9,
+    tags: ["Google Ads", "Google Reklam", "TBM", "Kalite Puanı", "Performans Pazarlama", "PPC"],
+    sections: [
+      {
+        heading: "Google Ads nedir? (Kısa cevap)",
+        paragraphs: [
+          "Google Ads, işletmelerin Google Arama sonuçlarında, YouTube'da, Gmail'de, Discover akışında, Google Haritalar'da ve Google'ın iş ortağı web sitelerinde ve uygulamalarında reklam göstermesini sağlayan ücretli reklam platformudur. 2018'e kadarki adı Google AdWords'tü.",
+          "En bilinen kullanımı arama reklamlarıdır: biri 'kargo desi hesaplama' ya da 'muhasebe programı' gibi bir sorgu aradığında, o sorgu için teklif veren reklamverenler arasından seçilen reklamlar sonuçların üstünde ve altında 'Sponsorlu' etiketiyle görünür. Reklamveren reklam gösterildiği için değil, çoğunlukla tıklandığında öder; buna tıklama başına maliyet (TBM) denir.",
+          "Google Ads'in diğer reklam kanallarından farkı niyettir: arama reklamı, kullanıcı ihtiyacını kendisi yazdığı anda gösterilir. Bu yüzden talebi zaten var olan ürün ve hizmetlerde genellikle en hızlı dönüşüm getiren kanaldır; talebin henüz oluşmadığı yeni bir kategoride ise Meta ve YouTube gibi talep yaratan kanallarla birlikte düşünülmelidir.",
+        ],
+      },
+      {
+        heading: "Google Ads nasıl çalışır? Açık artırma ve Reklam Sıralaması",
+        paragraphs: [
+          "Her arama yapıldığında, o sorguya uygun reklamverenler arasında milisaniyeler içinde bir açık artırma yapılır. Açık artırma yalnızca en yüksek teklifi verenin kazandığı bir yarış değildir; Google her reklam için bir Reklam Sıralaması (Ad Rank) hesaplar ve reklamların gösterilip gösterilmeyeceğini ve hangi sırada çıkacağını buna göre belirler.",
+          "Google'ın Yardım Merkezi'ne göre Reklam Sıralaması şu unsurlardan oluşur: maksimum TBM teklifiniz, beklenen tıklama oranı, reklamın aramayla alaka düzeyi, açılış sayfası deneyimi, açık artırmanın rekabet düzeyi, aramanın bağlamı (konum, cihaz, saat, arama terimi) ve reklam öğelerinin (site bağlantıları, telefon, görseller) beklenen etkisi. Bu yüzden daha alakalı bir reklam ve daha iyi bir açılış sayfası, daha düşük teklifle daha üst sırada çıkabilir.",
+          "Reklamın görünebilmesi için Reklam Sıralamasının bir eşiği de geçmesi gerekir. Sonuçların üstündeki konumların eşiği, altındakilerden yüksektir; bu yüzden üst konumlarda ödenen TBM genellikle daha yüksektir.",
+        ],
+      },
+      {
+        heading: "Gerçek TBM nasıl belirlenir? Google'ın örneği",
+        paragraphs: [
+          "Ödediğiniz tutar maksimum teklifiniz değildir. Gerçek TBM, Reklam Sıralamanızı korumak için gereken minimum tutardır: hemen altınızdaki reklamverenin Reklam Sıralamasını ve ilgili eşiği geçmeye yetecek kadar ödersiniz. Altınızda uygun bir rakip yoksa yalnızca eşiği geçecek tutarı ödersiniz. Akıllı teklif stratejileri ve teklif ayarlamaları kullanmıyorsanız maksimum TBM'nizden fazlasını ödemezsiniz.",
+          "Google'ın kendi örneği: beş reklamverenin Reklam Sıralaması 80, 50, 30, 10 ve 5; sonuçların üstü için eşik 40, altı için 8. 80 ve 50 üst konumlara çıkar; 80'li reklamveren 50'yi geçecek kadar, 50'li reklamveren ise altında 40'ı geçen kimse olmadığı için 40 eşiğini geçecek kadar öder. 30 ve 10 alt konumlara çıkar ve aynı mantıkla öder. 5, alt eşiği de geçemediği için hiç gösterilmez.",
+          "Pratik sonuç: teklifi artırmak tek yol değildir. Reklam metnini aranan kelimeyle eşleştirmek ve açılış sayfasını aynı vaatle açmak, aynı konum için daha az ödemenizi sağlayabilir.",
+        ],
+      },
+      {
+        heading: "Kalite Puanı nedir, açık artırmayı etkiler mi?",
+        paragraphs: [
+          "Kalite Puanı, anahtar kelime düzeyinde 1–10 arası bir ölçektir ve üç bileşenden oluşur: beklenen tıklama oranı, reklam alaka düzeyi ve açılış sayfası deneyimi. Her bileşen, son 90 günde aynı aramada reklam gösteren diğer reklamverenlere göre 'Ortalamanın üzerinde', 'Ortalama' ya da 'Ortalamanın altında' diye derecelendirilir.",
+          "Türkçe rehberlerde sık yapılan bir hata, Kalite Puanının açık artırmada doğrudan kullanıldığını söylemektir. Google açıkça 'Kalite Puanı, reklam açık artırmasına bir giriş değildir' der; o bir teşhis aracıdır. Açık artırmada gerçek zamanlı olarak değerlendirilen şey, aynı üç bileşenin o aramaya özgü tahminleridir. Yani Kalite Puanının kendisini yükseltmeye çalışmak yerine, puanın gösterdiği zayıf bileşeni düzeltin.",
+        ],
+        bullets: [
+          "Beklenen TO düşükse: başlıkta aranan ifadeyi ve somut bir fayda kullanın, alakasız aramaları negatif kelimeyle kesin",
+          "Reklam alaka düzeyi düşükse: farklı niyetteki kelimeleri ayrı reklam gruplarına ayırın",
+          "Açılış sayfası deneyimi düşükse: reklamdaki vaadi ilk ekranda karşılayın, mobilde hızlı açılan bir sayfa kullanın",
+        ],
+      },
+      {
+        heading: "Google Ads maliyeti nasıl hesaplanır? TL ile örnek",
+        paragraphs: [
+          "Google Ads'te sabit bir fiyat yoktur; tıklama maliyeti sektöre, kelimenin niyetine, rekabete, konuma ve sezona göre değişir. Bu yüzden 'Google reklamı ne kadar?' sorusunun doğru cevabı bir rakam değil, kendi kârlılık eşiğinizi hesaplayan bir formüldür.",
+          "Örnek (örnek tutarlar): ortalama sipariş 1.200 TL, brüt kâr marjı %40. Sipariş başı brüt kâr 480 TL'dir; bu, bir satış için ödeyebileceğiniz maksimum maliyettir (başabaş EBM) ve başabaş ROAS 1.200 / 480 = 2,5 demektir. Kelimelerinizde ortalama TBM 8 TL, sitenizin dönüşüm oranı %2 ise satış başı maliyet 8 / 0,02 = 400 TL olur. 400 TL, 480 TL'lik eşiğin altında olduğu için kampanya sipariş başına 80 TL brüt kâr bırakır; ROAS 1.200 / 400 = 3'tür.",
+          "Aynı hesabı tersten yapınca ödeyebileceğiniz en yüksek TBM'yi bulursunuz: Maks. TBM = Başabaş EBM × Dönüşüm oranı = 480 × 0,02 = 9,60 TL. Planlayıcıda kelimelerinizin TBM tahmini bunun çok üstündeyse önce dönüşüm oranını ya da sipariş değerini artırmanız gerekir. B2B'de aynı formül lead için çalışır: 15 TL TBM ve %5 form dönüşümüyle lead başı maliyet 300 TL'dir.",
+        ],
+        bullets: [
+          "EBM (satış/lead başı maliyet) = TBM / Dönüşüm oranı",
+          "Başabaş EBM = Sipariş başı brüt kâr = Sipariş değeri × Brüt marj",
+          "Maks. TBM = Başabaş EBM × Dönüşüm oranı",
+          "ROAS = Reklam geliri / Reklam harcaması; başabaş ROAS = 1 / Brüt marj",
+        ],
+      },
+      {
+        heading: "Günlük bütçe nasıl çalışır? Aylık harcama sınırı",
+        paragraphs: [
+          "Google Ads'te kampanya başına ortalama günlük bütçe belirlersiniz. Google, aramaların yoğun olduğu günlerde günlük bütçenin 2 katına kadar harcayabilir; ancak bir ayda ödeyeceğiniz tutar, günlük bütçenin ayın ortalama gün sayısıyla (30,4) çarpımını geçmez.",
+          "Örnekle devam edelim: günlük 500 TL bütçe, bazı günler 1.000 TL'ye kadar harcayabilir ama ay boyunca en fazla 500 × 30,4 = 15.200 TL harcanır. 8 TL TBM ile bu, ayda yaklaşık 1.900 tıklama; %2 dönüşüm oranıyla yaklaşık 38 satış, 45.600 TL gelir ve 3.040 TL reklam sonrası brüt kâr demektir (günde ortalama 62 tıklama, 1,25 satış).",
+          "Günde 1–2 satış, akıllı teklif stratejilerinin öğrenmesi için azdır. Bütçe küçükse kampanyayı az sayıda yüksek niyetli kelimeye odaklayın ya da teklif stratejisini, daha sık gerçekleşen bir dönüşüm olayı (örneğin sepete ekleme değil, ödeme başlatma) üzerinden kurmayı değerlendirin; asıl satış ölçümünü her zaman ayrıca izleyin.",
+        ],
+      },
+      {
+        heading: "Google Ads kampanya türleri nelerdir? (2026)",
+        paragraphs: [
+          "Kampanya türü, reklamınızın nerede ve hangi biçimde gösterileceğini belirler. Rakip rehberlerde yeniden pazarlama (remarketing) bir kampanya türü gibi anlatılır; aslında o bir kitle hedeflemesidir ve birçok kampanya türünde kullanılır.",
+        ],
+        bullets: [
+          "Arama: Google Arama sonuçlarında metin reklamları; talebi var olan ürün ve hizmetler için başlangıç noktası",
+          "Performance Max: tek kampanyayla Arama, YouTube, Görüntülü Reklam Ağı, Discover, Gmail ve Haritalar envanteri; dönüşüm hedefine göre yapay zekâ dağıtır. Dönüşüm ölçümü sağlam olmadan başlatılmamalı",
+          "Alışveriş: ürün görseli ve fiyatıyla ürün reklamları; Google Merchant Center ürün feed'i gerektirir",
+          "Demand Gen (eski adıyla Discovery): YouTube, Discover ve Gmail'de görsel ve video reklamlarla talep yaratma",
+          "Video: YouTube'da video reklamlar; bilinirlik ve değerlendirme aşaması",
+          "Görüntülü Reklam Ağı: iş ortağı sitelerde ve uygulamalarda banner reklamlar; düşük maliyetli erişim, düşük niyet",
+          "Uygulama: uygulama yükleme ve uygulama içi işlemler için",
+        ],
+      },
+      {
+        heading: "Hangi teklif stratejisi seçilmeli?",
+        paragraphs: [
+          "Teklif stratejisi, Google'ın açık artırmada sizin adınıza ne kadar teklif vereceğini belirler. Akıllı teklif stratejileri her açık artırmada cihaz, konum, saat ve kitle sinyallerini kullanır; ama doğru çalışmaları için doğru dönüşüm verisine ihtiyaç duyarlar.",
+        ],
+        bullets: [
+          "Manuel TBM: teklifleri siz belirlersiniz; az veriyle kontrol isteyenler için, ama ölçeklenmesi zahmetli",
+          "Tıklamaları en üst düzeye çıkarma: bütçeyle en çok tıklama; dönüşüm ölçümü yokken trafik toplamak için, satışa optimize etmez",
+          "Dönüşümleri en üst düzeye çıkarma (isteğe bağlı hedef EBM): bütçeyle en çok dönüşüm; dönüşüm ölçümü kurulu yeni kampanyalar için iyi başlangıç",
+          "Dönüşüm değerini en üst düzeye çıkarma (isteğe bağlı hedef ROAS): satış tutarı ölçülen e-ticarette gelire optimize eder; hedefi marjınızdan hesaplayın",
+          "Hedef gösterim payı: belirli bir konumda görünme oranı; çoğunlukla marka koruma için",
+        ],
+      },
+      {
+        heading: "Anahtar kelime eşleme türleri ve negatif kelimeler",
+        paragraphs: [
+          "Arama kampanyasında anahtar kelimeler hangi aramalarda görünebileceğinizi belirler. Eşleme türü bu aralığı genişletir ya da daraltır; negatif anahtar kelimeler ise istemediğiniz aramaları dışarıda bırakır.",
+          "Kampanyayı başlattıktan sonra Arama terimleri raporunu haftalık okuyun: 'ücretsiz', 'nedir', 'iş ilanı' gibi satın alma niyeti taşımayan aramaları negatif listeye eklemek, bütçe sızıntısını durdurmanın en ucuz yoludur.",
+        ],
+        bullets: [
+          "Geniş eşleme: anlamca ilişkili aramalarda da gösterilir; akıllı teklif ve iyi negatif listeyle kullanılmalı",
+          "Sıralı eşleme: aramanın anlamı anahtar kelimenizin anlamını içerdiğinde gösterilir",
+          "Tam eşleme: arama, anahtar kelimenizle aynı anlamı taşıdığında gösterilir; en dar ve en kontrollü",
+        ],
+      },
+      {
+        heading: "Google Ads'te başarı nasıl ölçülür?",
+        paragraphs: [
+          "Dönüşüm ölçümü kurulmadan Google Ads'in işe yarayıp yaramadığını bilemezsiniz; akıllı teklif stratejileri de neyi optimize edeceğini öğrenemez. Önce satın alma, form gönderimi ya da arama gibi asıl hedefinizi Google etiketiyle veya GA4'ten içe aktararak dönüşüm olarak tanımlayın; e-ticarette sipariş tutarını da gönderin.",
+          "Otomatik etiketlemeyi (gclid) açık tutun; Google Ads trafiğinin GA4'te doğru kanala düşmesi için bu yeterlidir. Diğer kanallardaki linklerinizde UTM kullanın. Haftalık takip edeceğiniz metrikler: TBM, tıklama oranı, dönüşüm oranı, EBM ve ROAS; kararları ise her zaman başabaş EBM ve başabaş ROAS eşiğine göre verin.",
+        ],
+      },
+      {
+        heading: "Google Ads mı, Meta reklamları mı?",
+        paragraphs: [
+          "İkisi aynı işi yapmaz. Google Ads (özellikle Arama) var olan talebi yakalar: kullanıcı ürünü zaten arıyordur. Meta reklamları (Facebook, Instagram) talep yaratır: kullanıcı akışta gezinirken ürününüzle karşılaşır. Aranan bir ürün ya da hizmet satıyorsanız Arama ile başlamak genellikle daha hızlı sonuç verir; görsel, dürtüsel ya da yeni bir ürün satıyorsanız Meta daha geniş kitleye daha düşük maliyetle ulaşabilir.",
+          "Hangisinden başlarsanız başlayın, bütçeyi aynı kârlılık eşiğiyle yönetin. İki kanalı birlikte kullanırken her kanalın kendi raporundaki dönüşümleri toplamayın; aynı satış iki platformda da sayılabilir.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Google Ads ücretli mi, en az ne kadar bütçe gerekir?",
+        answer:
+          "Hesap açmak ücretsizdir; yalnızca reklamlarınız için ödeme yaparsınız. Zorunlu bir minimum bütçe yoktur, ama bütçe öğrenme için yeterli tıklama ve dönüşüm getirecek kadar olmalıdır. Kendi eşiğinizi EBM = TBM / Dönüşüm oranı formülüyle hesaplayın.",
+      },
+      {
+        question: "Google Ads'te tıklama başı maliyet neden değişiyor?",
+        answer:
+          "Çünkü her arama ayrı bir açık artırmadır. Gerçek TBM; rakiplerin teklifine ve kalitesine, reklamınızın ve açılış sayfanızın alaka düzeyine, konuma, cihaza, saate ve sezona göre değişir. Altınızdaki rakibi ve eşiği geçecek kadar ödersiniz.",
+      },
+      {
+        question: "Google Ads ile Google AdSense arasındaki fark nedir?",
+        answer:
+          "Google Ads reklam vermek için, AdSense ise kendi sitenizde reklam göstererek gelir elde etmek içindir. Reklamverenler Google Ads'te para harcar; site sahipleri AdSense ile bu reklamlardan pay alır.",
+      },
+      {
+        question: "Kalite puanı kaç olmalı?",
+        answer:
+          "Kalite Puanı 1–10 arasıdır ve bir teşhis aracıdır, hedef değildir. Puanı düşük kelimelerde hangi bileşenin (beklenen TO, reklam alaka düzeyi, açılış sayfası deneyimi) 'ortalamanın altında' olduğuna bakıp onu düzeltin.",
+      },
+      {
+        question: "Günlük bütçemi aşar mı?",
+        answer:
+          "Google yoğun günlerde günlük bütçenin 2 katına kadar harcayabilir, ancak aylık toplam harcama günlük bütçe × 30,4'ü geçmez. Günlük 500 TL bütçe ayda en fazla 15.200 TL harcar.",
+      },
+    ],
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Hedef ROAS Nasıl Belirlenir? Google Ads tROAS Rehberi", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "Google Ads'te Performansı Katlamanın 7 Data-Driven Yolu", href: "/blog/google-ads-performans-optimizasyonu/" },
+      { label: "Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "Google Ads Yardım: Gerçek tıklama başı maliyet (TBM)", href: "https://support.google.com/google-ads/answer/6297?hl=tr", external: true },
+      { label: "Google Ads Yardım: Arama Ağı kampanyaları için kalite puanı", href: "https://support.google.com/google-ads/answer/6167118?hl=tr", external: true },
+      { label: "Google: Google reklamlarının maliyeti ne kadar?", href: "https://business.google.com/tr/resources/articles/google-ads-cost/", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -4371,6 +4549,9 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         answer:
           "Increases beyond 20–30% at once re-trigger the learning phase. Prioritize campaigns with impression share lost (budget) above 10%, and wait 7–14 days after each increase before making another change.",
       },
+    ],
+    resources: [
+      { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
     ],
     relatedToolKey: "roas",
   },
@@ -5573,6 +5754,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
       { label: "How to Run Meta Ads: Budget, Audience & Learning Phase", href: "/en/blog/how-to-run-meta-ads-guide/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "What Is ROAS and How Do You Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
@@ -5975,6 +6157,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
@@ -7964,6 +8147,161 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
       { label: "Trendyol Seller Information Center: Platform Service Fee (Turkish)", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/platform-hizmet-bedeli", external: true },
       { label: "Trendyol Seller Information Center: Commissions (Turkish)", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/trendyol-komisyonlari", external: true },
+    ],
+  },
+  {
+    slug: "what-is-google-ads-how-it-works",
+    seoTitle: "What Is Google Ads and How Does It Work? Costs Explained",
+    title: "What Is Google Ads and How Does It Work? Auction, Quality Score, Costs and Campaign Types (2026)",
+    description:
+      "What is Google Ads and how does it work? The auction and actual CPC, Quality Score, budget rules, 2026 campaign types, bid strategies and a worked cost example.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Google Ads is Google's advertising platform: it shows your ads on Google Search, YouTube, Gmail, Discover, Maps and Google's partner sites. On Search you mostly pay per click (CPC).",
+      "Every search runs an auction. Your position depends on Ad Rank, built from your bid, ad and landing page quality and the search context. Your actual CPC is usually below your max bid: you pay just enough to beat the advertiser below you and the threshold.",
+      "Quality Score (1–10) is not an input to the auction; it is a diagnostic tool. Its components (expected CTR, ad relevance, landing page experience) do affect Ad Rank.",
+      "Cost math: CPA = CPC / Conversion rate. With a $1.20 CPC and a 2% conversion rate, each sale costs $60; on a $180 order at 40% margin, break-even CPA is $72, so the campaign is profitable. A $75 daily budget spends at most $2,280 a month.",
+    ],
+    publishedAt: "2026-11-01",
+    readingMinutes: 8,
+    tags: ["Google Ads", "PPC", "CPC", "Quality Score", "Performance Marketing"],
+    sections: [
+      {
+        heading: "What is Google Ads? (Short answer)",
+        paragraphs: [
+          "Google Ads is the paid advertising platform that lets businesses show ads in Google Search results, on YouTube, Gmail, Discover, Google Maps and Google's partner websites and apps. Until 2018 it was called Google AdWords.",
+          "Its best-known format is the search ad: when someone searches for 'accounting software' or 'shipping cost calculator', ads from advertisers bidding on that query appear above and below the results with a 'Sponsored' label. Advertisers mostly pay when the ad is clicked, not when it is shown: cost per click (CPC).",
+          "What sets Google Ads apart is intent: a search ad appears the moment the user types their need. That makes it usually the fastest-converting channel for products and services people already search for, while new categories with no search demand usually need demand-creating channels such as Meta and YouTube as well.",
+        ],
+      },
+      {
+        heading: "How does Google Ads work? The auction and Ad Rank",
+        paragraphs: [
+          "Every search triggers an auction among eligible advertisers, decided in milliseconds. It is not a pure highest-bid-wins contest: Google calculates an Ad Rank for each ad and uses it to decide whether the ad shows and in which position.",
+          "According to Google's Help Center, Ad Rank combines your max CPC bid, expected clickthrough rate, ad relevance, landing page experience, auction competitiveness, search context (location, device, time, search terms) and the expected impact of assets such as sitelinks and images. A more relevant ad with a better landing page can rank higher on a lower bid.",
+          "Ad Rank must also clear a threshold to show at all. Thresholds above the results are higher than below them, which is why top positions usually cost more per click.",
+        ],
+      },
+      {
+        heading: "How is actual CPC set? Google's example",
+        paragraphs: [
+          "You don't pay your max bid. Actual CPC is the minimum needed to hold your position: just enough to beat the Ad Rank of the advertiser directly below you and the relevant threshold. With nobody eligible below you, you pay what clears the threshold. Without Smart Bidding or bid adjustments you never pay more than your max CPC.",
+          "Google's example: five advertisers with Ad Ranks of 80, 50, 30, 10 and 5; the threshold is 40 above the results and 8 below. 80 and 50 show on top: 80 pays just enough to beat 50, and 50 pays just enough to clear 40 because nobody above 40 sits below it. 30 and 10 show below the results on the same logic. 5 clears no threshold and doesn't show.",
+        ],
+      },
+      {
+        heading: "What is Quality Score, and does it affect the auction?",
+        paragraphs: [
+          "Quality Score is a keyword-level rating from 1 to 10, built from expected CTR, ad relevance and landing page experience, each rated 'Above average', 'Average' or 'Below average' against other advertisers on the same searches over the last 90 days.",
+          "A common mistake is to say Quality Score is used in the auction. Google states that Quality Score is not an input to the ad auction; it is a diagnostic tool. The auction uses real-time estimates of the same three components for each search. So instead of chasing the score, fix the component it flags.",
+        ],
+        bullets: [
+          "Low expected CTR: put the searched phrase and a concrete benefit in the headline; block irrelevant searches with negatives",
+          "Low ad relevance: split keywords with different intent into separate ad groups",
+          "Low landing page experience: deliver the ad's promise above the fold on a fast mobile page",
+        ],
+      },
+      {
+        heading: "How much does Google Ads cost? A worked example",
+        paragraphs: [
+          "There is no fixed price; CPC depends on industry, keyword intent, competition, location and season. The useful answer to 'how much does Google Ads cost?' is not a number but a formula for your own profitability threshold.",
+          "Example: average order $180, gross margin 40%. Gross profit per order is $72, the most you can pay per sale (break-even CPA); break-even ROAS is 180 / 72 = 2.5. With a $1.20 average CPC and a 2% conversion rate, cost per sale is 1.20 / 0.02 = $60. That is below $72, so each sale leaves $12 of gross profit and ROAS is 180 / 60 = 3.",
+          "Reverse it to find your max affordable CPC: Max CPC = Break-even CPA × Conversion rate = 72 × 0.02 = $1.44. If Keyword Planner estimates are well above that, improve conversion rate or order value first. In B2B the same formula works for leads: a $2.50 CPC with a 5% form conversion rate means $50 per lead.",
+        ],
+        bullets: [
+          "CPA (cost per sale/lead) = CPC / Conversion rate",
+          "Break-even CPA = Gross profit per order = Order value × Gross margin",
+          "Max CPC = Break-even CPA × Conversion rate",
+          "ROAS = Ad revenue / Ad spend; break-even ROAS = 1 / Gross margin",
+        ],
+      },
+      {
+        heading: "How do daily budgets work? The monthly cap",
+        paragraphs: [
+          "You set an average daily budget per campaign. On high-traffic days Google may spend up to 2× that amount, but your monthly charge won't exceed the daily budget times the average number of days in a month (30.4).",
+          "Continuing the example: a $75 daily budget can spend up to $150 on a busy day, but at most 75 × 30.4 = $2,280 a month. At a $1.20 CPC that is about 1,900 clicks; at 2% about 38 sales, $6,840 revenue and $456 gross profit after ads (about 62 clicks and 1.25 sales a day). One or two sales a day is thin data for Smart Bidding, so keep small budgets focused on few high-intent keywords.",
+        ],
+      },
+      {
+        heading: "What are the Google Ads campaign types? (2026)",
+        paragraphs: [
+          "Campaign type decides where and in what format your ads appear. Remarketing is often listed as a campaign type; it is actually an audience targeting option used across several campaign types.",
+        ],
+        bullets: [
+          "Search: text ads in Google Search; the starting point for products with existing demand",
+          "Performance Max: one campaign across Search, YouTube, Display, Discover, Gmail and Maps inventory, allocated by AI toward your conversion goal; don't launch without solid conversion tracking",
+          "Shopping: product ads with image and price; requires a Google Merchant Center feed",
+          "Demand Gen (formerly Discovery): image and video ads on YouTube, Discover and Gmail to create demand",
+          "Video: YouTube video ads for awareness and consideration",
+          "Display: banner ads on partner sites and apps; cheap reach, low intent",
+          "App: app installs and in-app actions",
+        ],
+      },
+      {
+        heading: "Which bid strategy should you choose?",
+        paragraphs: [
+          "Your bid strategy decides how Google bids for you in each auction. Smart Bidding strategies use device, location, time and audience signals per auction, but only work well with accurate conversion data.",
+        ],
+        bullets: [
+          "Manual CPC: you set bids; control with little data, but hard to scale",
+          "Maximize clicks: most clicks for the budget; for gathering traffic before conversion tracking exists, not for sales",
+          "Maximize conversions (optional target CPA): most conversions for the budget; a good start for new campaigns with tracking in place",
+          "Maximize conversion value (optional target ROAS): optimizes for revenue when order value is tracked; set the target from your margin",
+          "Target impression share: visibility in a chosen position, mostly for brand defense",
+        ],
+      },
+      {
+        heading: "Keyword match types, negatives and measurement",
+        paragraphs: [
+          "Broad match shows ads on searches related in meaning and should be paired with Smart Bidding and a good negative list; phrase match shows when the search includes your keyword's meaning; exact match shows when the search has the same meaning as your keyword. Review the Search terms report weekly and add non-buying searches ('free', 'what is', 'jobs') as negatives.",
+          "Set up conversion tracking before you judge results: define purchases, form submissions or calls as conversions via the Google tag or GA4 import, and send order value in ecommerce. Keep auto-tagging (gclid) on and use UTM parameters on other channels. Track CPC, CTR, conversion rate, CPA and ROAS weekly, and make decisions against your break-even CPA and ROAS.",
+        ],
+      },
+      {
+        heading: "Google Ads or Meta ads?",
+        paragraphs: [
+          "They do different jobs. Google Ads, especially Search, captures existing demand; Meta ads (Facebook, Instagram) create demand by reaching people as they scroll. If people already search for what you sell, Search usually delivers results faster; for visual, impulse or brand-new products, Meta can reach a wider audience at lower cost. Whichever you start with, manage budget against the same profit threshold, and don't add up conversions across platform reports: the same sale can be counted twice.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is Google Ads paid, and what is the minimum budget?",
+        answer:
+          "Opening an account is free; you pay only for your ads. There is no required minimum, but the budget should buy enough clicks and conversions to learn from. Work out your threshold with CPA = CPC / Conversion rate.",
+      },
+      {
+        question: "Why does cost per click change?",
+        answer:
+          "Each search is a separate auction. Actual CPC depends on competitors' bids and quality, your ad and landing page relevance, location, device, time and season. You pay just enough to beat the advertiser below you and the threshold.",
+      },
+      {
+        question: "What is the difference between Google Ads and AdSense?",
+        answer:
+          "Google Ads is for buying ads; AdSense is for earning money by showing ads on your own site. Advertisers spend in Google Ads; publishers earn a share through AdSense.",
+      },
+      {
+        question: "What is a good Quality Score?",
+        answer:
+          "Quality Score runs 1–10 and is a diagnostic, not a target. On low-scoring keywords, check which component (expected CTR, ad relevance, landing page experience) is 'Below average' and fix that.",
+      },
+      {
+        question: "Can Google Ads overspend my daily budget?",
+        answer:
+          "Google can spend up to 2× your daily budget on busy days, but monthly spend won't exceed daily budget × 30.4. A $75 daily budget spends at most $2,280 a month.",
+      },
+    ],
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Advertising Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "How to Set Your Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "7 Data-Driven Ways to Multiply Your Google Ads Performance", href: "/en/blog/google-ads-performance-optimization/" },
+      { label: "How to Run Meta Ads: A Practical Guide", href: "/en/blog/how-to-run-meta-ads-guide/" },
+      { label: "Google Ads Help: Actual cost-per-click (CPC)", href: "https://support.google.com/google-ads/answer/6297?hl=en", external: true },
+      { label: "Google Ads Help: About Quality Score for Search campaigns", href: "https://support.google.com/google-ads/answer/6167118?hl=en", external: true },
     ],
   },
 ];
