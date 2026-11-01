@@ -27,6 +27,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-10-29, TR önce): /blog/mrr-nedir-nasil-hesaplanir/, /blog/llms-txt-nedir-ise-yariyor-mu/, /en/blog/what-is-mrr-how-to-calculate/, /en/blog/what-is-llms-txt-does-it-work/
 - [ ] Dizine ekleme isteği (2026-10-30, TR önce): /blog/churn-nedir-churn-rate-nasil-hesaplanir/, /blog/meta-reklam-verme-rehberi/, /en/blog/what-is-churn-rate/, /en/blog/how-to-run-meta-ads-guide/
 - [ ] Dizine ekleme isteği (2026-10-31, TR önce): /blog/geo-nedir-yapay-zeka-arama-optimizasyonu/, /blog/arr-nedir-yillik-yinelenen-gelir/, /en/blog/what-is-geo-generative-engine-optimization/, /en/blog/what-is-arr-annual-recurring-revenue/
+- [ ] Dizine ekleme isteği (2026-11-01, TR önce): /blog/trendyol-komisyon-oranlari-hesaplama/, /blog/google-ads-nedir-nasil-calisir/, /en/blog/trendyol-commission-rates/, /en/blog/what-is-google-ads-how-it-works/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
@@ -54,7 +55,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
 - [ ] Pazaryeri aracı v2: Trendyol vs Hepsiburada yan yana karşılaştırma, çoklu ürün (desi → takvimde ayrı araç, 28 Eki; "desi hesaplama" 14.800/ay)
 - [x] Hacme göre başlık: Trendyol aracı "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)" ("trendyol komisyon hesaplama" 18.100/ay); Brüt marj aracı "Kar Marjı Hesaplama: ..." ("kar marjı hesaplama" 1.000/ay) + kar marjı/markup SSS — 2026-10-26
-- [ ] Destek yazısı: "Trendyol komisyon oranları ve kâr hesaplama" (aracı besleyen bilgi içeriği) — not: SERP çok kalabalık (ikas, Paraşüt, Sentos, Dopigo + 10+ araç sitesi); "kâr hesaplama örnekleri / iade ve reklam dahil net kâr" gibi uzun kuyruk açıyla gir
+- [x] Destek yazısı: "Trendyol komisyon oranları 2026 ve komisyon hesaplama" — 2026-11-01 (/blog/trendyol-komisyon-oranlari-hesaplama/; barem eşiği, başabaş fiyat, kampanya teklifi, iade açılarıyla). Trendyol aracının ilgili yazısı artık bu yazı
 - [x] Yeni araç: Reklam bütçesi planlayıcı (e-ticaret + B2B modu) — 2026-10-22
 - [x] Destek yazısı: "Reklam bütçesi nasıl belirlenir?" (relatedToolKey: ad-budget) — 2026-10-23
 - [~] Paylaşılabilir sonuç linki (girdiler URL'de) — yeni 2 araçta var, eski araçlara yayılacak
@@ -80,6 +81,8 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] llms.txt nedir (GEO) — 2026-10-29 (/blog/llms-txt-nedir-ise-yariyor-mu/)
 - [x] GEO nedir — 2026-10-31 (/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/)
 - [x] ARR nedir — 2026-10-31 (/blog/arr-nedir-yillik-yinelenen-gelir/)
+- [x] Trendyol komisyon oranları — 2026-11-01 (/blog/trendyol-komisyon-oranlari-hesaplama/)
+- [x] Google Ads nedir, nasıl çalışır — 2026-11-01 (/blog/google-ads-nedir-nasil-calisir/)
 - [x] MRR nedir, nasıl hesaplanır — 2026-10-29 (/blog/mrr-nedir-nasil-hesaplanir/)
 
 - [ ] Kasım sonrası: reklam bütçesi yazısındaki Black Friday bölümünü Aralık başında güncelle (evergreen kalmalı)
@@ -99,7 +102,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [~] Linklenebilir varlık 2: "Türkiye'de B2B ve e-ticaret reklam maliyetleri 2026" özgün veri çalışması — 31.10: yöntem planı hazır (seo/outreach/veri-calismasi-reklam-maliyetleri.md; kaynak yalnızca Keyword Planner teklif aralıkları, 10 sektör × 20 kelime). Sıradaki: kullanıcı onayı → bilgisayar görevi veriyi toplar (seo/data/google-ads-tbm-2026.csv) → içerik görevi yazı + CSV
 - [ ] Linklenebilir varlık 3: İndirilebilir şablonlar (UTM takip tablosu, kampanya brief'i, ICP şablonu)
 - [~] Konuk yazı / uzman görüşü hedef listesi: Türkçe pazarlama ve e-ticaret yayınları — 29.10: 5 satırlık hedef listesi + Taslak 1 ("Pazaryerinde reklam: bütçe açmadan önce 3 sayı", eticaretmerkezim için) seo/outreach/konuk-yazi.md; kullanıcı gönderir. 30.10: Taslak 2 ("MRR'niz büyüyor, peki şirketiniz?" — brüt MRR churn, aylık NRR, Quick Ratio, stres testi) hazır; kullanıcı gönderir. Sıradaki: linklenebilir varlık 2 (reklam maliyetleri veri çalışması) yöntem planı
-- [ ] Araç dizinleri ve listeler: ücretsiz pazarlama aracı derleme sayfaları, "free tools" listeleri (hedef listesi + başvuru metinleri)
+- [~] Araç dizinleri ve listeler — 01.11: hedef listesi + başvuru metinleri hazır (seo/outreach/arac-dizinleri.md: TripleDart formu, llmstxt.site PR, AlternativeTo/SaaSHub; ücretli/toplu dizinler elendi). Kullanıcı gönderir. Türkçe editoryal araç derlemesi bulunamadı
 - [ ] Topluluk: soru-cevap ve topluluklarda (LinkedIn, Reddit r/PPC, Indie Hackers) gerçekten faydalı cevaplarla araç linki — spam yok
 - [ ] Yeni yazıların LinkedIn'de özetle paylaşımı (kullanıcı)
 - [ ] Ölçüm: Search Console › Bağlantılar raporu (aylık)
