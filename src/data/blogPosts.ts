@@ -2864,6 +2864,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
       { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici/" },
       { label: "ROAS Hesaplama: ROAS ve Başabaş ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -3985,6 +3986,187 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "OpenAI: Tarayıcılara genel bakış (İngilizce)", href: "https://developers.openai.com/api/docs/bots", external: true },
       { label: "Bing Webmaster Blog: AI Performance önizlemesi (İngilizce)", href: "https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview", external: true },
       { label: "Search Engine Journal: Google'ın AI arama rehberi (İngilizce)", href: "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/", external: true },
+    ],
+  },
+  {
+    slug: "trendyol-komisyon-oranlari-hesaplama",
+    seoTitle: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama",
+    title: "Trendyol Komisyon Oranları 2026: Komisyon Nasıl Hesaplanır, Barem ve Kampanya Tuzakları (Örnek Hesaplı)",
+    description:
+      "Trendyol komisyon oranları 2026: kategori aralıkları, komisyon hesaplama formülü, kargo baremi ve hizmet bedeli dahil kesinti, başabaş fiyat ve kampanya örneği.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Trendyol komisyonu kategoriye, markaya, satıcıya ve kampanyaya göre değişir; kamuya açık derlemelerde çoğu kategori %5 ile %27 arasında görünür (telefon %5–7, kozmetik %15–20, giyim ve ayakkabı %18–23). Bağlayıcı oran, satıcı panelinizdeki komisyon tablosunda yazan orandır.",
+      "Komisyon = Satış fiyatı × Komisyon oranı. 600 TL'lik bir üründe %20 oranla komisyon 120 TL'dir. Ancak toplam kesinti komisyondan büyüktür: Kesinti = Komisyon + Kargo + Platform hizmet bedeli.",
+      "Düşük fiyatlı üründe sabit kesintiler komisyonu geçer: 300 TL'lik tişörtte kesinti fiyatın %48'i, 15.000 TL'lik telefonda %6,6'sıdır (örnek tutarlar).",
+      "Kargo baremi eşikleri (200 ve 350 TL) fiyatı küçük bir oynatmayla kârı değiştirir: 205 TL'den 199,90 TL'ye inen bir üründe sipariş başı kâr 0,55 TL'den 28,19 TL'ye çıkıyor.",
+    ],
+    publishedAt: "2026-11-01",
+    readingMinutes: 9,
+    tags: ["Trendyol", "Trendyol Komisyon", "Pazaryeri", "E-Ticaret", "Kargo Baremi", "Kâr Hesaplama"],
+    sections: [
+      {
+        heading: "Trendyol komisyon oranları 2026'da ne kadar? (Kısa cevap)",
+        paragraphs: [
+          "Trendyol'da tek bir komisyon oranı yoktur: oran ürünün kategorisine (ve alt kategorisine), markaya, satıcı seviyesine, satıcıya özel anlaşmalara ve katıldığınız kampanyaya göre değişir. 2026'da yayımlanan kamuya açık derlemelerde çoğu kategori %5 ile %27 arasında görünüyor: cep telefonu ve bilgisayar gibi yüksek fiyatlı elektronikte tek haneli oranlar, kozmetikte %15–20, giyim, ayakkabı, çanta ve aksesuarda %18–23, telefon yedek parçasında %25–27.",
+          "Bu aralıklar fikir vermek içindir. Kendi ürününüzün bağlayıcı oranı, satıcı panelinizdeki ticari şartlar bölümünde yer alan komisyon tablosunda (komisyon ve vade tablosu) yazar; ürün yüklerken de kategoriye göre gösterilir. Hesaplarınızı her zaman bu orana göre yapın.",
+          "Mağaza açmak ve ürün listelemek ücretsizdir; komisyon yalnızca gerçekleşen satıştan alınır. Ama satıcının hakedişinden düşen tek kalem komisyon değildir: kargo ve sipariş başı sabit bir platform hizmet bedeli de kesilir. Bu yazı üçünü birlikte hesaplar.",
+        ],
+      },
+      {
+        heading: "Neden her sitede farklı Trendyol komisyon oranı yazıyor?",
+        paragraphs: [
+          "Türkçe aramada ilk sıralardaki rehberleri yan yana koyduğumuzda aynı kategori için farklı rakamlar çıkıyor; hatta tek bir yazının içinde bile giyim için üç farklı aralık verildiğini gördük. Nedeni üç tanedir: (1) rakamlar farklı tarihlerde derlenmiş (Ocak ile Temmuz 2026 arası), (2) bazı listeler oranı farklı esasla (vergi dahil/hariç) yazıyor, (3) oran alt kategoriye ve satıcıya göre değiştiği için her liste bir 'ortalama' seçiyor.",
+          "Aşağıdaki karşılaştırma resmî bir tablo değil; üç yaygın Türkçe kaynağın 2026 değerleridir ve bir oranı neden panelden doğrulamanız gerektiğini gösterir.",
+        ],
+        bullets: [
+          "Giyim / ayakkabı / çanta: Paraşüt (Ocak 2026) %21,5–22,5 · BirFatura (Temmuz 2026) %21,36 · Fikri (Temmuz 2026) %18",
+          "Kozmetik ve kişisel bakım: Paraşüt %17–20 · BirFatura %17–20 · Fikri %15",
+          "Cep telefonu: Paraşüt %5–6 · BirFatura %5–7 · Fikri %7",
+          "Beyaz eşya: Paraşüt %9–11 · BirFatura %9–11",
+          "Mobilya: Paraşüt %20–22 · BirFatura %20–22",
+          "Süpermarket / gıda: Paraşüt %10–15 · BirFatura %10–15",
+          "Oyuncak: Paraşüt %20–22 · BirFatura %16,5",
+          "Telefon yedek parça: Paraşüt %25–27 · BirFatura %25–27",
+        ],
+      },
+      {
+        heading: "Trendyol komisyonu nasıl hesaplanır? (Formül)",
+        paragraphs: [
+          "Komisyon, ürünün müşteriye satıldığı fiyat üzerinden hesaplanır: Komisyon = Satış fiyatı × Komisyon oranı. Kampanyada ürünü indirimli satıyorsanız komisyon indirimli fiyat üzerinden alınır; 1.000 TL'lik ürünü 900 TL'ye sattığınızda oran 900 TL'ye uygulanır.",
+          "Örnek: 600 TL'ye satılan, komisyon oranı %20 olan bir üründe komisyon 600 × 0,20 = 120 TL'dir. Satıcının hesabına geçen tutarı bulmak için buna kargo ve platform hizmet bedelini eklemeniz gerekir.",
+          "Bu yazıdaki tüm hesaplar vergiyi dışarıda bırakan örnek tutarlarla yapılmıştır; amaç kesintilerin birbirine göre büyüklüğünü göstermektir. Vergi dahil eksiksiz hesap için Trendyol Komisyon ve Kâr Hesaplama aracını kullanabilirsiniz.",
+        ],
+        bullets: [
+          "Komisyon = Satış fiyatı × Komisyon oranı",
+          "Toplam kesinti = Komisyon + Kargo ücreti + Platform hizmet bedeli",
+          "Hakediş (hesabınıza geçen) = Satış fiyatı − Toplam kesinti",
+          "Sipariş başı kâr = Hakediş − Ürün maliyeti − Paketleme − (iade ve reklam payı)",
+        ],
+      },
+      {
+        heading: "Komisyon dışında hangi kesintiler var?",
+        paragraphs: [
+          "Platform hizmet bedeli: teslim edilen her gönderi için alınan sabit bir tutardır; iade paketlerinde alınmaz. Ekim 2026 itibarıyla kamuya açık kaynaklarda gönderi başına 10,99 TL olarak geçiyor; Haziran 2026'da 'Bugün Kargoda' etiketli ve aynı gün kargoya verilen paketler için daha düşük bir tutar duyuruldu. Tutar yıl içinde birkaç kez değiştiği için Satıcı Bilgi Merkezi'nden güncelini kontrol edin.",
+          "Kargo: Trendyol'un anlaşmalı kargo modelinde ücret iki şekilde belirlenir. Sepet tutarı 350 TL'nin altındaysa barem denen sabit tarife uygulanır (26 Mart 2026'dan beri eşikler 200 ve 350 TL); 350 TL ve üzerinde ise ücret paketin desisine göre hesaplanır (desi = en × boy × yükseklik / 3000, ağırlıkla karşılaştırılıp büyük olan alınır).",
+          "10 Ağustos 2026 tarifesinden örnek tutarlar (Trendyol Express, 1 günde kargoya verme): 0–199,99 TL sepette 38,74 TL, 200–349,99 TL sepette 70,41 TL; 350 TL ve üzerinde 0–2 desi 81,95 TL, 5 desi 114,10 TL, 10 desi 164,18 TL. Standart termin, farklı kargo firması ve barem koşulları (desi sınırı, kargoya verme süresi) tutarı değiştirir; kendi tarifenizi panelden alın.",
+        ],
+      },
+      {
+        heading: "Kategori örnekleriyle Trendyol kesinti hesabı",
+        paragraphs: [
+          "Komisyon oranı yüksek görünen ürün her zaman en çok kesintiye uğrayan ürün değildir. Kargo ve hizmet bedeli sabit olduğu için düşük fiyatlı ürünlerde toplam kesintinin fiyata oranı hızla büyür. Aşağıdaki üç örnekte hizmet bedeli 10,99 TL, kargo yukarıdaki örnek tarifedir (tutarlar örnek tutarlardır).",
+          "Sonuç: 300 TL'lik bir tişörtü satan satıcı, ürün maliyetini ödemeden önce fiyatın neredeyse yarısını kesintiye bırakıyor. Bu yüzden düşük fiyatlı kategorilerde komisyon pazarlığından çok sepet tutarını büyütmek (çoklu paket, set ürün) ve barem kademesini yönetmek kâra daha çok etki eder.",
+        ],
+        bullets: [
+          "Giyim, 300 TL tişört, örnek oran %21, barem 200–349,99 TL: komisyon 63 TL + kargo 70,41 TL + hizmet 10,99 TL = 144,40 TL kesinti (fiyatın %48,1'i); hakediş 155,60 TL",
+          "Kozmetik, 450 TL ürün, örnek oran %17, 1 desi: komisyon 76,50 TL + kargo 81,95 TL + hizmet 10,99 TL = 169,44 TL kesinti (%37,7); hakediş 280,56 TL",
+          "Cep telefonu, 15.000 TL, örnek oran %6, 2 desi: komisyon 900 TL + kargo 81,95 TL + hizmet 10,99 TL = 992,94 TL kesinti (%6,6); hakediş 14.007,06 TL",
+        ],
+      },
+      {
+        heading: "Kargo baremi eşiği kârı nasıl değiştirir?",
+        paragraphs: [
+          "Barem eşiklerinin hemen üstünde fiyatlanan ürünler, birkaç liralık fiyat farkı için kargoda onlarca lira fazla öder. Rakip rehberler bu etkiden söz ediyor ama hesaplamıyor; iki örnekle bakalım (örnek oran %21 ve %17, hizmet bedeli 10,99 TL, ürün maliyeti 80 TL).",
+          "Alt eşik (200 TL): 205 TL'ye satılan ürün 200–349,99 TL baremine düşer. Kesinti 43,05 + 70,41 + 10,99 = 124,45 TL, hakediş 80,55 TL; 80 TL maliyetle sipariş başı kâr 0,55 TL. Aynı ürün 199,90 TL'ye inerse kesinti 41,98 + 38,74 + 10,99 = 91,71 TL, hakediş 108,19 TL ve kâr 28,19 TL olur. Fiyatı 5,10 TL düşürmek kârı 27,64 TL artırıyor.",
+          "Üst eşik (350 TL): 5 desilik bir ürün 345 TL'de barem tarifesiyle 70,41 TL kargo öder ve hakediş 204,95 TL olur. Fiyat 355 TL'ye çıkarsa sepet desi tarifesine geçer (5 desi 114,10 TL) ve hakediş 169,56 TL'ye düşer: 10 TL daha pahalı satıp 35,39 TL daha az kazanırsınız. Fiyat değiştirmeden önce ürünün hangi kargo kademesine düştüğünü mutlaka kontrol edin.",
+        ],
+      },
+      {
+        heading: "Trendyol'da başabaş satış fiyatı nasıl bulunur?",
+        paragraphs: [
+          "Komisyon fiyatla birlikte büyüdüğü için başabaş fiyatı 'maliyet + kesintiler' diye toplayarak bulamazsınız. Doğru formül: Başabaş fiyat = (Ürün maliyeti + Kargo + Hizmet bedeli + Paketleme) / (1 − Komisyon oranı). Hedef bir kâr marjı istiyorsanız paydaya onu da ekleyin: Hedef fiyat = (Maliyet + Kargo + Hizmet + Paketleme) / (1 − Komisyon oranı − Hedef marj).",
+          "Örnek: 90 TL maliyetli, 5 TL paketlemeli bir tişört, %21 komisyon, 70,41 TL barem kargosu ve 10,99 TL hizmet bedeliyle başabaş fiyat (90 + 70,41 + 10,99 + 5) / 0,79 = 223,29 TL'dir. Satıştan %15 kâr payı istiyorsanız fiyat (176,40) / 0,64 = 275,63 TL olmalıdır. İki fiyat da 200–349,99 TL baremi içinde kaldığı için hesap tutarlıdır; sonuç başka bir kademeye düşerse kargoyu o kademeyle değiştirip yeniden hesaplayın.",
+          "Bu hesaba iade ve reklam payı eklenmedi. İade oranı yüksek kategorilerde ve reklam verdiğiniz ürünlerde gerçek başabaş fiyat daha yüksektir; aşağıdaki iki bölüm bunları ekler.",
+        ],
+      },
+      {
+        heading: "Komisyon indirimli kampanya teklifi kârlı mı?",
+        paragraphs: [
+          "Pazaryerleri bazı kampanyalarda fiyatı düşürmeniz karşılığında daha düşük komisyon önerebilir. Teklif cazip görünse de sipariş başı kâr genellikle düşer; kampanyanın kârlı olması için satış adedinin yeterince artması gerekir.",
+          "Örnek: 300 TL maliyetli, 81,95 TL kargolu bir ürün 600 TL'de %20 komisyonla satılırken sipariş başı kâr 600 − 120 − 81,95 − 10,99 − 300 = 87,06 TL'dir. Teklif 540 TL fiyat ve %16 komisyon ise kâr 540 − 86,40 − 81,95 − 10,99 − 300 = 60,66 TL'ye iner. Aynı toplam kârı yakalamak için satış adedinin 87,06 / 60,66 = 1,435 kat, yani en az %43,5 artması gerekir.",
+          "Karar kuralı: Gerekli satış artışı = Mevcut sipariş başı kâr / Kampanyalı sipariş başı kâr − 1. Ürünün geçmiş kampanyalarda bu artışı gerçekten yakalayıp yakalamadığına bakın; yakalamıyorsa teklif hacim getirir ama kâr götürür.",
+        ],
+      },
+      {
+        heading: "İade edilen siparişte komisyon ve kargo ne olur?",
+        paragraphs: [
+          "Kamuya açık satıcı rehberlerine göre iade edilen siparişin komisyonu satıcıya iade edilir (sonraki faturada mahsup edilir). Ancak gidiş kargosu, çoğu durumda dönüş kargosu ve paketleme satıcıya kalır. Yani iade 'sıfır' değil, kargo kadar zarardır.",
+          "Sipariş başına dağıtılmış iade maliyeti = İade oranı × (Gidiş kargo + Dönüş kargo + Paketleme). Örnek: %10 iade oranı, 81,95 TL gidiş, 81,95 TL dönüş (örnek) ve 5 TL paketlemeyle her siparişe 0,10 × 168,90 = 16,89 TL iade maliyeti biner. Giyim ve ayakkabı gibi iade oranı yüksek kategorilerde bu kalem komisyon farkından daha büyük olabilir.",
+        ],
+      },
+      {
+        heading: "Trendyol reklamıyla birlikte ne kadar harcayabilirim?",
+        paragraphs: [
+          "Kesintiler ve iade payı düşüldükten sonra kalan tutar, sipariş başı harcayabileceğiniz reklam bütçesinin üst sınırıdır. Kozmetik örneğinde 280,56 TL hakedişten 150 TL ürün maliyeti, 5 TL paketleme ve 16,89 TL iade payı düşülürse reklam öncesi kâr 108,67 TL kalır. Başabaş ROAS = Satış fiyatı / Reklam öncesi kâr = 450 / 108,67 ≈ 4,1: Trendyol reklamlarında ya da Meta ve Google'da bu ürün için 4,1'in altındaki her ROAS zarar demektir.",
+          "Hedef ROAS'ı belirlerken bu eşiğin üstünde bir kâr payı bırakın. ROAS'ın marjla ilişkisini ROAS nedir yazısında, hedef ROAS'ı marjdan hesaplamayı hedef ROAS rehberinde anlattık.",
+        ],
+      },
+      {
+        heading: "Trendyol komisyonunu düşürmenin yolları",
+        paragraphs: [
+          "Komisyon oranını doğrudan pazarlık etmek çoğu satıcı için mümkün değildir; ama ödediğiniz toplam kesintiyi azaltmanın birkaç yolu vardır. Program koşulları ve oranlar sık değiştiği için her maddeyi satıcı panelinden doğrulayın.",
+        ],
+        bullets: [
+          "Doğru kategori: ürünü en uygun alt kategoride listeleyin; yanlış kategori hem farklı oran hem görünürlük kaybı demektir",
+          "Yeni satıcı dönemi ve programlar: kamuya açık kaynaklar yeni satıcılara belirli bir süre özel oran ve kadın girişimci programında daha düşük oranlar uygulandığını belirtiyor; koşullar panelde",
+          "Satıcı seviyesi: performans puanı ve seviye yükseldikçe bazı kampanya ve oran avantajlarına erişim artar",
+          "Kampanya tekliflerini hesapla seçin: yukarıdaki formülle gerekli satış artışını hesaplamadan kabul etmeyin",
+          "Komisyon dışı kesintileri yönetin: barem eşiği, desi (kutu küçültme), aynı gün kargoya verme ve iade oranı çoğu üründe komisyon farkından daha fazla kâr kazandırır",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Trendyol komisyon oranları kaç?",
+        answer:
+          "Kategoriye, markaya, satıcıya ve kampanyaya göre değişir; 2026'daki kamuya açık derlemelerde çoğu kategori %5–27 aralığında görünür (telefon %5–7, kozmetik %15–20, giyim ve ayakkabı %18–23). Kendi ürününüzün bağlayıcı oranı satıcı panelindeki komisyon tablosunda yazar.",
+      },
+      {
+        question: "Trendyol komisyonu nasıl hesaplanır?",
+        answer:
+          "Komisyon = Satış fiyatı × Komisyon oranı. 600 TL'lik bir üründe %20 oranla komisyon 120 TL'dir. Hesabınıza geçecek tutar için kargo ücretini ve sipariş başı platform hizmet bedelini de düşün; indirimli satışta komisyon indirimli fiyattan alınır.",
+      },
+      {
+        question: "Trendyol'da kargo ücretini kim öder?",
+        answer:
+          "Anlaşmalı kargo modelinde kargo ücreti satıcının hakedişinden düşülür. 350 TL altındaki sepetlerde barem denen sabit tarifeler (200 ve 350 TL eşikleriyle), 350 TL ve üzerinde desiye göre ücret uygulanır. Güncel tutarları satıcı panelinden kontrol edin.",
+      },
+      {
+        question: "Trendyol platform hizmet bedeli ne kadar?",
+        answer:
+          "Teslim edilen her gönderi için alınan sabit bir tutardır; Ekim 2026 itibarıyla kamuya açık kaynaklarda 10,99 TL olarak geçiyor ve iade paketlerinde alınmıyor. 'Bugün Kargoda' koşulunu sağlayan gönderilerde daha düşük tutar uygulanıyor. Tutar sık güncellendiği için Satıcı Bilgi Merkezi'nden doğrulayın.",
+      },
+      {
+        question: "Trendyol'da mağaza açmak ücretli mi?",
+        answer:
+          "Hayır, mağaza açmak ve ürün listelemek ücretsizdir; aylık abonelik yoktur. Komisyon, kargo ve hizmet bedeli yalnızca gerçekleşen satışlardan kesilir.",
+      },
+    ],
+    howTo: {
+      name: "Trendyol komisyonu ve sipariş başı kâr nasıl hesaplanır?",
+      description: "Komisyon, kargo ve hizmet bedelini düşerek hakedişi, ardından maliyet, iade ve reklam payıyla gerçek kârı bulun.",
+      steps: [
+        { name: "Komisyon oranını panelden alın", text: "Satıcı panelindeki komisyon tablosundan ürününüzün alt kategorisine ve kampanyasına ait oranı bulun." },
+        { name: "Komisyonu hesaplayın", text: "Satış fiyatını komisyon oranıyla çarpın; indirimli satışta indirimli fiyatı kullanın." },
+        { name: "Kargo kademesini belirleyin", text: "Sepet tutarı 350 TL'nin altındaysa ilgili barem tutarını, üstündeyse paketin desisine karşılık gelen tarifeyi kullanın." },
+        { name: "Hakedişi bulun", text: "Satış fiyatından komisyon, kargo ve platform hizmet bedelini düşün." },
+        { name: "Gerçek kârı hesaplayın", text: "Hakedişten ürün maliyeti, paketleme ve sipariş başına dağıtılmış iade maliyetini düşün; kalan tutar reklam için üst sınırınızdır." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Desi Hesaplama: Kargo Desi ve Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+      { label: "Trendyol Satıcı Bilgi Merkezi: Platform Hizmet Bedeli", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/platform-hizmet-bedeli", external: true },
+      { label: "Trendyol Satıcı Bilgi Merkezi: Trendyol Komisyonları", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/trendyol-komisyonlari", external: true },
+      { label: "Trendyol Satıcı Bilgi Merkezi: Kargo Baremi Uygulaması", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/kargo-baremi-uygulamasi", external: true },
     ],
   },
 ];
@@ -6500,6 +6682,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "Trendyol Commission Rates 2026 & How to Calculate Fees", href: "/en/blog/trendyol-commission-rates/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator/" },
       { label: "ROAS Calculator (break-even ROAS)", href: "/en/free-tools/roas-calculator/" },
@@ -7617,6 +7800,170 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "OpenAI: Overview of OpenAI crawlers", href: "https://developers.openai.com/api/docs/bots", external: true },
       { label: "Bing Webmaster Blog: Introducing AI Performance (public preview)", href: "https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview", external: true },
       { label: "Search Engine Journal: Google's AI search guide calls AEO and GEO still SEO", href: "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/", external: true },
+    ],
+  },
+  {
+    slug: "trendyol-commission-rates",
+    seoTitle: "Trendyol Commission Rates 2026 & How to Calculate Fees",
+    title: "Trendyol Commission Rates 2026: How Fees Are Calculated, Shipping Thresholds and Campaign Traps (With Examples)",
+    description:
+      "Trendyol commission rates in 2026: category ranges, the commission formula, shipping thresholds and service fee, break-even price and a campaign offer example.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Trendyol's commission depends on category, brand, seller and campaign; public 2026 compilations put most categories between 5% and 27% (phones 5–7%, cosmetics 15–20%, apparel and footwear 18–23%). The binding rate is the one in your seller panel's commission table.",
+      "Commission = Sale price × Commission rate. On a TRY 600 product at 20%, the commission is TRY 120. Total deductions are larger: Deductions = Commission + Shipping + Platform service fee.",
+      "On cheap products fixed fees outweigh commission: deductions are 48% of a TRY 300 T-shirt but 6.6% of a TRY 15,000 phone (illustrative amounts).",
+      "Shipping thresholds (TRY 200 and 350) make small price changes swing profit: moving a product from TRY 205 to TRY 199.90 lifts profit per order from TRY 0.55 to TRY 28.19.",
+    ],
+    publishedAt: "2026-11-01",
+    readingMinutes: 8,
+    tags: ["Trendyol", "Marketplace Fees", "Ecommerce", "Turkey", "Profit Calculation"],
+    sections: [
+      {
+        heading: "What are Trendyol's commission rates in 2026? (Short answer)",
+        paragraphs: [
+          "Trendyol, Turkey's largest online marketplace, has no single commission rate. The rate depends on the product's category and subcategory, the brand, the seller's level, seller-specific agreements and any campaign you join. Public Turkish compilations from 2026 put most categories between 5% and 27%: single digits for phones and computers, 15–20% for cosmetics, 18–23% for apparel, footwear, bags and accessories, and 25–27% for phone spare parts.",
+          "Treat these ranges as orientation only. The binding rate for your product is shown in the commission table under the commercial terms section of your seller panel, and per category when you list a product. Amounts in this guide are in Turkish lira (TRY), because that is how Trendyol charges sellers.",
+          "Opening a store and listing products is free; commission is charged only on completed sales. But commission is not the only deduction from your payout: shipping and a fixed platform service fee per order are deducted too. This guide calculates all three together.",
+        ],
+      },
+      {
+        heading: "Why does every site list different Trendyol commission rates?",
+        paragraphs: [
+          "When we compared the top Turkish guides side by side, the same category had different numbers, and one guide even gave three different apparel ranges in different sections. There are three reasons: the figures were compiled at different times (January to July 2026), some lists state rates on a different basis (with or without taxes), and because rates vary by subcategory and seller, each list picks its own 'average'.",
+        ],
+        bullets: [
+          "Apparel / footwear / bags: Paraşüt (Jan 2026) 21.5–22.5% · BirFatura (Jul 2026) 21.36% · Fikri (Jul 2026) 18%",
+          "Cosmetics and personal care: 17–20% · 17–20% · 15%",
+          "Mobile phones: 5–6% · 5–7% · 7%",
+          "White goods: 9–11% (Paraşüt and BirFatura)",
+          "Toys: Paraşüt 20–22% · BirFatura 16.5%",
+          "Phone spare parts: 25–27% (Paraşüt and BirFatura)",
+        ],
+      },
+      {
+        heading: "How is the Trendyol commission calculated?",
+        paragraphs: [
+          "Commission is charged on the price the customer pays: Commission = Sale price × Commission rate. If you sell at a discount during a campaign, the commission applies to the discounted price, so a TRY 1,000 item sold for TRY 900 pays commission on TRY 900.",
+          "Example: a TRY 600 product with a 20% rate pays 600 × 0.20 = TRY 120 in commission. To find what reaches your account, add shipping and the platform service fee. All calculations here use illustrative amounts and leave taxes out; the Trendyol Profit Calculator handles the full calculation.",
+        ],
+        bullets: [
+          "Commission = Sale price × Commission rate",
+          "Total deductions = Commission + Shipping + Platform service fee",
+          "Payout = Sale price − Total deductions",
+          "Profit per order = Payout − Product cost − Packaging − (share of returns and ads)",
+        ],
+      },
+      {
+        heading: "What other fees does Trendyol charge?",
+        paragraphs: [
+          "Platform service fee: a fixed amount per delivered shipment, not charged on return parcels. As of October 2026 public sources list it at TRY 10.99, and in June 2026 a lower fee was announced for parcels tagged 'Bugün Kargoda' (shipped today) and handed to the carrier the same day. It has changed several times this year, so check the Seller Information Center.",
+          "Shipping: under Trendyol's contracted shipping model, baskets below TRY 350 pay a fixed 'barem' rate (thresholds at TRY 200 and 350 since 26 March 2026); from TRY 350 the fee depends on the parcel's volumetric weight (desi = length × width × height / 3000, compared with actual weight).",
+          "Illustrative amounts from the 10 August 2026 tariff (Trendyol Express, shipped within 1 day): TRY 38.74 for baskets up to 199.99, TRY 70.41 for 200–349.99; from TRY 350, 0–2 desi TRY 81.95, 5 desi TRY 114.10, 10 desi TRY 164.18. Standard handling time, other carriers and barem conditions change these amounts.",
+        ],
+      },
+      {
+        heading: "Deductions by category: three examples",
+        paragraphs: [
+          "Because shipping and the service fee are fixed, total deductions as a share of price rise quickly on cheap products. Service fee TRY 10.99 and the sample tariff above (illustrative amounts):",
+          "A seller of TRY 300 T-shirts leaves almost half the price in deductions before paying for the product. In low-price categories, growing basket size (bundles, multipacks) and managing the shipping tier move profit more than negotiating commission.",
+        ],
+        bullets: [
+          "Apparel, TRY 300 T-shirt, sample rate 21%, 200–349.99 tier: 63 + 70.41 + 10.99 = TRY 144.40 deductions (48.1% of price); payout TRY 155.60",
+          "Cosmetics, TRY 450 product, sample rate 17%, 1 desi: 76.50 + 81.95 + 10.99 = TRY 169.44 (37.7%); payout TRY 280.56",
+          "Mobile phone, TRY 15,000, sample rate 6%, 2 desi: 900 + 81.95 + 10.99 = TRY 992.94 (6.6%); payout TRY 14,007.06",
+        ],
+      },
+      {
+        heading: "How do shipping thresholds change your profit?",
+        paragraphs: [
+          "Lower threshold (TRY 200): at TRY 205 with a 21% rate and TRY 80 product cost, deductions are 43.05 + 70.41 + 10.99 = TRY 124.45, payout TRY 80.55, profit TRY 0.55. At TRY 199.90 deductions fall to 41.98 + 38.74 + 10.99 = TRY 91.71, payout TRY 108.19, profit TRY 28.19. Cutting the price by TRY 5.10 adds TRY 27.64 of profit.",
+          "Upper threshold (TRY 350): a 5-desi product at TRY 345 pays TRY 70.41 barem shipping and nets TRY 204.95 at a 17% rate. At TRY 355 it moves to the desi tariff (TRY 114.10) and nets TRY 169.56: you charge TRY 10 more and keep TRY 35.39 less. Check the shipping tier before any price change.",
+        ],
+      },
+      {
+        heading: "How do you find the break-even price on Trendyol?",
+        paragraphs: [
+          "Since commission grows with price, break-even is not just 'cost + fees'. Break-even price = (Product cost + Shipping + Service fee + Packaging) / (1 − Commission rate). For a target margin: Target price = (Cost + Shipping + Service fee + Packaging) / (1 − Commission rate − Target margin).",
+          "Example: a T-shirt costing TRY 90 with TRY 5 packaging, 21% commission, TRY 70.41 shipping and TRY 10.99 fee breaks even at (90 + 70.41 + 10.99 + 5) / 0.79 = TRY 223.29. For a 15% margin on sales the price is 176.40 / 0.64 = TRY 275.63. Both stay in the 200–349.99 tier; if a result lands in another tier, swap in that tier's shipping and recalculate.",
+        ],
+      },
+      {
+        heading: "Is a reduced-commission campaign offer profitable?",
+        paragraphs: [
+          "Marketplaces sometimes offer a lower commission in exchange for a lower price. Profit per order usually falls, so the campaign pays only if volume rises enough.",
+          "Example: a product costing TRY 300 with TRY 81.95 shipping earns 600 − 120 − 81.95 − 10.99 − 300 = TRY 87.06 per order at TRY 600 and 20%. At TRY 540 and 16% it earns 540 − 86.40 − 81.95 − 10.99 − 300 = TRY 60.66. To match total profit, unit sales must rise 87.06 / 60.66 = 1.435×, at least 43.5%. Rule: Required sales lift = Current profit per order / Campaign profit per order − 1.",
+        ],
+      },
+      {
+        heading: "What happens to commission and shipping on returns?",
+        paragraphs: [
+          "According to public seller guides, the commission on a returned order is refunded (offset on a later invoice), but outbound shipping, usually return shipping and packaging stay with the seller. Return cost per order = Return rate × (Outbound + Return shipping + Packaging). With a 10% return rate, TRY 81.95 each way and TRY 5 packaging, every order carries 0.10 × 168.90 = TRY 16.89 of return cost.",
+          "That leaves the ad budget: in the cosmetics example, 280.56 − 150 cost − 5 packaging − 16.89 returns = TRY 108.67 before ads, so break-even ROAS = 450 / 108.67 ≈ 4.1. Any Trendyol, Meta or Google campaign below 4.1 ROAS loses money on this product.",
+        ],
+      },
+      {
+        heading: "How can you lower your Trendyol fees?",
+        paragraphs: [
+          "Most sellers cannot negotiate the commission rate directly, but they can reduce total deductions. Programs and rates change often, so verify each item in the seller panel.",
+        ],
+        bullets: [
+          "List in the right subcategory: the wrong category means a different rate and lost visibility",
+          "New-seller period and programs: public sources mention a special rate for new sellers for a limited time and lower rates in the women entrepreneur program",
+          "Seller level: higher performance levels unlock more campaign and rate options",
+          "Accept campaign offers only after calculating the required sales lift",
+          "Manage non-commission costs: the shipping tier, desi (smaller boxes), same-day dispatch and return rate often add more profit than a commission cut",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What are Trendyol's commission rates?",
+        answer:
+          "They vary by category, brand, seller and campaign; public 2026 compilations show most categories at 5–27% (phones 5–7%, cosmetics 15–20%, apparel and footwear 18–23%). Your binding rate is in the seller panel's commission table.",
+      },
+      {
+        question: "How is the Trendyol commission calculated?",
+        answer:
+          "Commission = Sale price × Commission rate. A TRY 600 product at 20% pays TRY 120. Deduct shipping and the per-order platform service fee to get your payout; discounted sales pay commission on the discounted price.",
+      },
+      {
+        question: "Who pays shipping on Trendyol?",
+        answer:
+          "Under the contracted shipping model, shipping is deducted from the seller's payout: fixed 'barem' rates below TRY 350 (thresholds at 200 and 350), and desi-based rates from TRY 350. Check current amounts in the seller panel.",
+      },
+      {
+        question: "How much is the Trendyol platform service fee?",
+        answer:
+          "A fixed amount per delivered shipment; public sources list TRY 10.99 as of October 2026, not charged on returns, with a lower amount for parcels meeting the 'Bugün Kargoda' same-day condition. Verify the current amount in the Seller Information Center.",
+      },
+      {
+        question: "Does it cost money to open a Trendyol store?",
+        answer:
+          "No. Opening a store and listing products is free, with no monthly subscription; commission, shipping and the service fee are deducted only from completed sales.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate Trendyol commission and profit per order",
+      description: "Deduct commission, shipping and the service fee to get the payout, then subtract cost, returns and ads for true profit.",
+      steps: [
+        { name: "Get the rate from your panel", text: "Find your subcategory and campaign rate in the seller panel's commission table." },
+        { name: "Calculate the commission", text: "Multiply the sale price by the commission rate; use the discounted price for discounted sales." },
+        { name: "Pick the shipping tier", text: "Below TRY 350 use the matching barem rate; from TRY 350 use the tariff for the parcel's desi." },
+        { name: "Find the payout", text: "Subtract commission, shipping and the platform service fee from the sale price." },
+        { name: "Calculate true profit", text: "Subtract product cost, packaging and per-order return cost; what remains is your ad budget ceiling." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
+      { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "Trendyol Seller Information Center: Platform Service Fee (Turkish)", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/platform-hizmet-bedeli", external: true },
+      { label: "Trendyol Seller Information Center: Commissions (Turkish)", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/trendyol-komisyonlari", external: true },
     ],
   },
 ];

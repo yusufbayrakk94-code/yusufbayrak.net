@@ -529,7 +529,7 @@ export const marketplace: ToolContent = {
     { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Store-level profitability" },
     { label: "E-Commerce Tools", href: "/en/free-tools/ecommerce-tools", note: "All e-commerce calculators" },
   ],
-  relatedPost: { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+  relatedPost: { label: "Trendyol Commission Rates 2026 & How to Calculate Fees", href: "/en/blog/trendyol-commission-rates/" },
 };
 
 export const adBudget: ToolContent = {

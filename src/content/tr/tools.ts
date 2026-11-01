@@ -570,7 +570,7 @@ export const marketplace: ToolContent = {
     { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Mağaza geneli kârlılık" },
     { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret hesaplayıcıları" },
   ],
-  relatedPost: { label: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+  relatedPost: { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
   externalSource: { label: "GİB — 330 Sıra No.lu Gelir Vergisi Genel Tebliği bilgi notu (e-ticaret stopajı)", href: "https://gib.gov.tr/sites/default/files/fileadmin/mevzuatek/mevzuatbilginotu/gelirvergisiteblig330not.pdf" },
 };
 
