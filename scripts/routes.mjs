@@ -145,6 +145,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "geo-nedir-yapay-zeka-arama-optimizasyonu", en: "what-is-geo-generative-engine-optimization" },
   { tr: "trendyol-komisyon-oranlari-hesaplama", en: "trendyol-commission-rates" },
   { tr: "google-ads-nedir-nasil-calisir", en: "what-is-google-ads-how-it-works" },
+  { tr: "trendyol-reklam-nasil-verilir", en: "how-to-advertise-on-trendyol" },
 ];
 
 // Embeddable widget routes: prerendered (iframe targets) but noindex, so they

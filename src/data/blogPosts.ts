@@ -1565,6 +1565,7 @@ export const BLOG_POSTS: BlogPost[] = [
     resources: [
       { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
       { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Brüt Kâr Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -1985,6 +1986,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "ad-budget",
     resources: [
       { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
@@ -4210,6 +4212,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Desi Hesaplama: Kargo Desi ve Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
@@ -4395,6 +4398,215 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Yardım: Gerçek tıklama başı maliyet (TBM)", href: "https://support.google.com/google-ads/answer/6297?hl=tr", external: true },
       { label: "Google Ads Yardım: Arama Ağı kampanyaları için kalite puanı", href: "https://support.google.com/google-ads/answer/6167118?hl=tr", external: true },
       { label: "Google: Google reklamlarının maliyeti ne kadar?", href: "https://business.google.com/tr/resources/articles/google-ads-cost/", external: true },
+    ],
+  },
+  {
+    slug: "trendyol-reklam-nasil-verilir",
+    seoTitle: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı",
+    title: "Trendyol Reklam Nasıl Verilir? Reklam Türleri, Maliyet, Başabaş ROAS ve Kârlılık Hesabı (2026)",
+    description:
+      "Trendyol reklam nasıl verilir: reklam türleri, panel adımları, sipariş başı reklam maliyeti, iade dahil başabaş ROAS, maksimum TBM ve artımlı satış testi.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Trendyol reklamı Satıcı Paneli'ndeki Reklam Yönetimi bölümünden verilir: reklam tipini seçin, bütçe ve tarihleri girin, ürünleri ekleyin, bakiyeyi hak edişten aktarın ya da kartla yükleyin. Ürün reklamında tıklama başına ödediğiniz üst sınırı (TBM) siz belirlersiniz veya Otomatik TBM'e bırakırsınız.",
+      "Sipariş başı reklam maliyeti = TBM / Dönüşüm oranı. 4 TL TBM ve %2 dönüşüm, sipariş başına 200 TL reklam demektir; 800 TL'lik üründe panelde ROAS 4,0 görünür.",
+      "Kârlılık eşiği iade oranına bağlıdır. Aynı üründe iade yokmuş gibi hesaplanınca başabaş ROAS 3,5 çıkarken %8 iadeyle 4,1 olur; ROAS 4,0'da panel iyi görünür ama sipariş başına 3,18 TL zarar edersiniz (örnek tutarlar).",
+      "Panel ROAS'ı, reklam olmasa da gelecek siparişleri de sayabilir. Asıl soru için artımlı ROAS'a bakın: panelde 5,3 görünen bir kampanyanın gerçek katkısı 3,0 olabilir.",
+    ],
+    publishedAt: "2026-11-02",
+    readingMinutes: 10,
+    tags: ["Trendyol", "Trendyol Reklam", "Pazaryeri", "E-Ticaret", "ROAS", "Reklam Maliyeti"],
+    sections: [
+      {
+        heading: "Trendyol'da reklam nasıl verilir? (Kısa cevap)",
+        paragraphs: [
+          "Trendyol'da reklam, Satıcı Paneli'ndeki Reklam Yönetimi bölümünden verilir. Yeni reklam oluşturup reklam tipini seçer, günlük ya da toplam bütçeyi ve tarihleri belirler, ürünleri ekler ve yayına alırsınız. Reklam bakiyesini hak edişlerinizden aktarabilir veya kredi kartıyla yükleyebilirsiniz.",
+          "Kurulum birkaç dakika sürer; zor olan kısım reklamın kârlı olup olmadığını bilmektir. Bu yüzden yazının büyük bölümü panelin size göstermediği hesaba ayrıldı: sipariş başı reklam maliyeti, iadeyi de sayan başabaş ROAS, ödeyebileceğiniz maksimum TBM ve reklamın gerçekten ek satış getirip getirmediğini ölçen test.",
+          "Yazıdaki kârlılık hesapları örnek tutarlarla yapılmıştır; amaç mantığı göstermektir. Kendi ürününüzün rakamlarını Trendyol Komisyon ve Kâr Hesaplama aracındaki sipariş başı reklam alanına girerek görebilirsiniz.",
+        ],
+      },
+      {
+        heading: "Trendyol reklam türleri nelerdir?",
+        paragraphs: [
+          "Trendyol'un reklam sitesi (ads.trendyol.com) satıcılara sunulan formatları şöyle sıralıyor. Hangi formatın size açık olduğu mağazanın durumuna göre değişebilir; kesin liste panelinizdedir.",
+        ],
+        bullets: [
+          "Ürün Reklamları: ürünleri ana sayfada, arama sonuçlarında, ürün listelerinde ve favori alanlarında öne çıkarır. Çoğu satıcının başlaması gereken format budur; zaten arayan kişiye görünür",
+          "Mağaza Reklamları: banner ve video ile mağazayı tanıtır; arama sonuçlarından Marka Günü'ne kadar farklı yerleşimleri vardır. Trendyol bu formatta Buybox şartı olmadığını belirtiyor",
+          "Komisyonlu Influencer Reklamları: ödeme, gerçekleşen net satış üzerinden belirlediğiniz komisyon oranıyla yapılır; yani peşin bütçe yerine satışa bağlı bir maliyettir",
+          "Meta Reklamları: Trendyol'daki potansiyel alıcıları Instagram ve Facebook tarafında yeniden hedefler; stoğu 4'ün üzerinde olan aktif ürünler kataloğa otomatik eklenir",
+          "Tanıtım Reklamları ve Display: sitede listeleniyor ama ayrıntı verilmiyor; koşulları panelden kontrol edin",
+        ],
+      },
+      {
+        heading: "Trendyol reklam verme adımları",
+        paragraphs: [
+          "Menü adları zaman zaman değişse de kamuya açık satıcı rehberlerinde akış aynıdır. Aşağıdaki sıra ürün reklamı içindir.",
+          "Bakiye kurallarını da baştan bilin: kamuya açık rehberlere göre reklam bakiyesi bölümü mağaza açıldıktan yaklaşık bir ay sonra aktif olur, tek seferde aktarılabilecek tutar sınırlıdır (Ocak 2026 tarihli bir rehberde 50.000 TL) ve yüklenen bakiye nakit olarak iade edilmez. Bu nedenle deneme aşamasında büyük tutar yüklemeyin; güncel koşulları panelden doğrulayın.",
+        ],
+        bullets: [
+          "1. Satıcı Paneli'nde Reklam Yönetimi'ne girin ve Yeni Reklam Oluştur'u seçin",
+          "2. Reklam tipi olarak ürün reklamını seçin, reklama ürün grubunu anlatan bir ad verin",
+          "3. Başlangıç ve bitiş tarihini, ardından günlük ya da toplam bütçeyi girin",
+          "4. Ürünleri seçin. Trendyol aynı kategoriden en az 5 benzer ürün seçmeyi öneriyor; Buybox'ı kaybettiğiniz ve stoğu az olan ürünleri eklemeyin",
+          "5. Teklifi belirleyin: elle TBM üst sınırı girin (aşağıdaki maksimum TBM hesabıyla) ya da Otomatik TBM'i seçin",
+          "6. Bakiyeyi yükleyin ve yayına alın; ilk haftada günlük olarak harcama ve siparişi izleyin",
+        ],
+      },
+      {
+        heading: "Trendyol reklamı ne kadar? Neden tek bir fiyat yok",
+        paragraphs: [
+          "Ürün reklamında sabit bir tarife yoktur. Trendyol TBM'yi, her tıklama için ödemeyi kabul ettiğiniz üst sınır olarak tanımlıyor. Gerçek maliyet kategoriye, rekabete, sezona ve ürünün performansına göre değişir; Efsane Kasım gibi dönemlerde yükselmesi beklenir.",
+          "Türkçe rehberlerdeki rakamlar birbirini tutmuyor: bir rehber tıklama için 0,24–1,87 TL aralığı verirken (aynı metinde kuruş ve TL karışık), bir başkası kategoriye göre 1,20–3,50 TL gibi kaynaksız aralıklar yazıyor; asgari bütçe için de ürün başına günlük 10 TL'den günlük 20–25 TL'ye uzanan farklı değerler geçiyor. Reklam modeli bile tartışmalı: aynı format için bir yazıda gösterim başı (BGBM), diğerinde tıklama başı deniyor. Resmî sitede ürün reklamı teklifi TBM olarak anlatılıyor.",
+          "Bu nedenle başkasının ortalamasını planlama rakamı yapmayın. Panelin önerdiği teklif aralığı ve ilk testinizin gerçek TBM'si, herhangi bir blog tablosundan daha değerlidir. Bu yazıda TBM rakamları yalnızca hesabı göstermek için kullanılan örneklerdir.",
+        ],
+      },
+      {
+        heading: "Sipariş başı reklam maliyeti nasıl hesaplanır?",
+        paragraphs: [
+          "Satıcının asıl bakması gereken sayı TBM değil, bir siparişe düşen reklam maliyetidir. Üç formül aynı sonucu verir; hangisinin verisi elinizdeyse onu kullanın.",
+          "Örnek: 800 TL'lik bir üründe TBM 4 TL, dönüşüm oranı %2 ise sipariş başı reklam 4 / 0,02 = 200 TL'dir. Bu durumda panelde ROAS 800 / 200 = 4,0 görünür. TBM 3 TL'ye inerse maliyet 150 TL'ye ve ROAS 5,3'e döner. Aynı etkiyi dönüşüm oranını yükselterek de alabilirsiniz; görseller, yorumlar, fiyat ve kargo süresi TBM kadar reklam maliyetini belirler.",
+        ],
+        bullets: [
+          "Sipariş başı reklam = Toplam reklam harcaması / Reklamdan gelen sipariş",
+          "Sipariş başı reklam = TBM / Dönüşüm oranı",
+          "Sipariş başı reklam = Ortalama sipariş tutarı / ROAS",
+        ],
+      },
+      {
+        heading: "Trendyol'da başabaş ROAS kaç? (İade dahil hesap)",
+        paragraphs: [
+          "ROAS tek başına iyi ya da kötü değildir; ürünün reklam öncesi bıraktığı kâra göre okunur. Komisyon, kargo ve hizmet bedeli kesintilerini Trendyol komisyon oranları yazısında ayrıntılı anlattık. Reklam kararında çoğu hesabın atladığı nokta iadedir: iade edilen siparişte ciro ve komisyon geri döner, ama gidiş kargosu, dönüş kargosu ve paketleme satıcıda kalır. Üstelik reklam tıklaması için ödediğiniz para da geri gelmez.",
+          "Bu yüzden 'kesintileri topla, fiyattan çıkar' yöntemi eşiği olduğundan düşük gösterir. Doğru hesap, siparişin iade edilme ihtimalini de içerir: Reklam öncesi beklenen kâr = (1 − İade oranı) × (Fiyat − Komisyon − Hizmet bedeli − Ürün maliyeti) − Gidiş kargo − Paketleme − İade oranı × Dönüş kargo. Başabaş ROAS = Fiyat / Reklam öncesi beklenen kâr.",
+          "Örnek: 800 TL fiyat, %21 komisyon (168 TL), 10,99 TL hizmet bedeli, 300 TL ürün maliyeti, 81,95 TL gidiş ve aynı tutarda dönüş kargosu, 10 TL paketleme, %8 iade (tutarlar örnektir). Beklenen kâr 0,92 × 321,01 − 81,95 − 10 − 6,56 = 196,82 TL, başabaş ROAS 800 / 196,82 = 4,06 olur. İade yokmuş gibi hesaplarsanız kâr 229,06 TL ve eşik 3,49 çıkar. Fark küçük görünür ama panelde 3,5 ile 4,1 arasındaki her kampanya kârlı sanılırken zarar yazar.",
+          "Aşağıdaki liste aynı ürünü farklı panel ROAS'larında gösterir. Satış fiyatının %8'ini (64 TL) kâr olarak bırakmak istiyorsanız hedef ROAS 800 / (196,82 − 64) = 6,02'dir. Trendyol'un tanıtım sayfasındaki 'reklam harcaması getirisinin 12 katına kadar' ifadesi bir üst sınır pazarlama cümlesidir; sizin için önemli olan bu eşiği geçip geçmediğinizdir.",
+        ],
+        bullets: [
+          "ROAS 3,0: sipariş başı reklam 266,67 TL → sipariş başı sonuç −69,84 TL",
+          "ROAS 4,0: reklam 200,00 TL → −3,18 TL",
+          "ROAS 5,0: reklam 160,00 TL → +36,82 TL",
+          "ROAS 6,0: reklam 133,33 TL → +63,49 TL",
+          "ROAS 8,0: reklam 100,00 TL → +96,82 TL",
+        ],
+      },
+      {
+        heading: "Trendyol'da en fazla kaç TL TBM ödeyebilirim?",
+        paragraphs: [
+          "Başabaş ROAS'ı teklife çevirmek için sipariş başına ayırabileceğiniz tutarı dönüşüm oranıyla çarpın: Maksimum TBM = Sipariş başı izin verilen reklam × Dönüşüm oranı.",
+          "Örnek üründe %2 dönüşümle başabaş TBM 196,82 × 0,02 = 3,94 TL'dir. %8 kâr payını korumak istiyorsanız izin verilen reklam 132,82 TL'ye, TBM üst sınırı 2,66 TL'ye iner. Otomatik TBM kullanıyorsanız bu sayılar teklif olarak girilmez ama sonucu denetlemek için kullanılır: raporlardaki ortalama tıklama maliyeti başabaş TBM'nin üzerindeyse kampanya sizin yerinize zarar yazıyordur.",
+          "Dönüşüm oranı ürün bazında farklıdır. Yeni ve yorumsuz bir ürünle uzun süredir satan ürün için aynı teklifi kullanmak, birinde bütçeyi yakıp diğerinde satış kaçırmak demektir.",
+        ],
+      },
+      {
+        heading: "Trendyol reklamı her ürün için kârlı mı?",
+        paragraphs: [
+          "Hayır. Başabaş ROAS ürünün fiyatına ve marjına göre çok değişir. Aynı %8 iade varsayımıyla üç örnek, reklamın neden her ürüne açılmaması gerektiğini gösterir.",
+          "Pratik sonuç: bir ürün listesini reklama koymadan önce başabaş ROAS'a göre sıralayın. Eşiği 6'nın altında kalanlar adaydır; eşiği çok yüksek ürünleri reklamla tek başına satmak yerine set veya çoklu paket yapıp sepeti büyütmek, ya da reklamı yalnızca kârlı komşu ürünlere trafik getirmesi için kullanmak daha mantıklıdır.",
+        ],
+        bullets: [
+          "199,90 TL'lik düşük fiyatlı ürün (80 TL maliyet, 38,74 TL barem kargosu, 5 TL paketleme): beklenen kâr 14,74 TL, başabaş ROAS 13,6. Reklamla kârlı olması neredeyse imkânsız",
+          "800 TL'lik orta fiyatlı ürün (yukarıdaki örnek): başabaş ROAS 4,06. Reklam için iyi aday",
+          "15.000 TL'lik telefon (13.500 TL maliyet, %6 komisyon, %3 iade): beklenen kâr 476,93 TL, başabaş ROAS 31,5. Ciro büyük, reklam payı dar",
+        ],
+      },
+      {
+        heading: "Panel ROAS'ı gerçek satışı mı gösteriyor? Artımlı ROAS testi",
+        paragraphs: [
+          "Reklam raporu reklamla ilişkilendirilen siparişi sayar; ama o siparişlerin bir kısmı reklam olmasa da organik sonuçlardan gelecekti. Özellikle markanızı ya da ürününüzü zaten arayan kişilere gösterilen reklamlarda bu pay büyüyebilir. Bu sipariş için ödediğiniz para ek satış getirmez.",
+          "Basit bir test: kampanya takvimine ve fiyata denk gelmeyen iki hafta seçin. İlk hafta seçili ürünlerde reklam kapalı, ikinci hafta açık olsun; fiyat ve stok aynı kalsın. Artımlı ROAS = (Reklamlı dönem toplam ciro − Reklamsız dönem toplam ciro) / Reklam harcaması.",
+          "Örnek: 800 TL'lik üründe reklamsız haftada 120 sipariş var. Reklamlı haftada 12.000 TL harcıyorsunuz, panel 80 siparişi reklama yazıyor (ROAS 5,3) ve toplam sipariş 165 oluyor. Gerçek artış 45 sipariştir: artımlı ROAS 45 × 800 / 12.000 = 3,0. Sipariş başına gerçek reklam maliyeti 150 değil 266,67 TL olur ve başabaş eşiğinin altında kalırsınız.",
+          "Bu test kusursuz değildir; talep haftadan haftaya değişir ve tek bir kıyas kesin sonuç vermez. Testi iki kez tekrarlamak ve mümkünse benzer ürünlerden bir grubu reklamsız bırakıp karşılaştırmak sonucu güçlendirir. Ama panel rakamını sorgusuz kabul etmekten çok daha iyi bir yaklaşımdır.",
+          "Bir de reklamın organik sıralamayı yükselttiği sık söylenir. Satış geçmişi arttıkça görünürlüğün artması mantıklıdır, ancak Trendyol'un bu etkiyi rakamla açıkladığı resmî bir kaynak bulamadık. Bu etkiyi bütçe gerekçesi yapmak yerine reklamı kapattıktan sonraki haftaların organik satışına bakarak kendiniz ölçün.",
+        ],
+      },
+      {
+        heading: "Trendyol reklam bütçesi ne kadar olmalı?",
+        paragraphs: [
+          "Bütçeyi 'günlük kaç lira' diye değil, karar vermeye yetecek veri olarak düşünün. Pratik bir kural: bir ürün grubu için en az 10 sipariş görmeden karar vermeyin. %2 dönüşümde bu 500 tıklama demektir; 3 TL TBM ile test bütçesi 1.500 TL'dir ve 14 güne yayılırsa günlük yaklaşık 107 TL eder. Bu bir istatistik garantisi değil, panikle erken kapatmayı önleyen bir eşiktir.",
+          "Testten sonra bütçeyi artırırken adım adım gidin ve sipariş başı reklam maliyetini izleyin. Eşik aşıldığı anda bütçeyi artırmak yerine ürünü, görseli veya teklifi düzeltin. Toplam reklam bütçesini hedef ciro ve marjdan hesaplamak için Reklam Bütçesi Hesaplama aracını kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Kampanya döneminde Trendyol reklamı nasıl yönetilir?",
+        paragraphs: [
+          "İndirim, başabaş ROAS'ı reklam maliyetinden daha sert değiştirir. Örnek ürünü %15 indirimle 680 TL'ye sattığınızda beklenen kâr 196,82 TL'den 109,61 TL'ye iner ve başabaş ROAS 4,06'dan 6,20'ye çıkar. Yani normal günde kârlı olan ROAS 5 kampanyası, indirim döneminde zarar eder.",
+          "Tıklama maliyetleri de yoğun dönemlerde yükselme eğilimindedir. Efsane Kasım ve benzeri kampanyalara girmeden önce kampanya fiyatıyla eşiği yeniden hesaplayın, TBM üst sınırlarını güncelleyin ve bütçeyi yalnızca indirimden sonra da kâr bırakan ürünlere ayırın. Hafta hafta plan için Black Friday 2026 Reklam Planı yazısına bakabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Influencer ve Meta reklamlarını nasıl değerlendirmeli?",
+        paragraphs: [
+          "Komisyonlu influencer reklamında maliyet satış gerçekleşince oluşur, dolayısıyla ROAS yerine komisyon oranı üst sınırına bakılır. Başabaş influencer komisyonu = Reklam öncesi beklenen kâr / (Fiyat × (1 − İade oranı)). Örnek üründe 196,82 / 736 = %26,7'dir; kâr payı bırakmak için teklifiniz bunun belirgin biçimde altında olmalıdır.",
+          "Meta reklamlarında hesap aynı başabaş ROAS'la yapılır, ancak kişi ürünü aramıyor, daha önce gördüğü için hatırlatma alıyor olabilir. Bu nedenle artımlılık sorusu burada daha da önemlidir. Kendi sitenizde Meta reklamı açıyorsanız Meta reklam verme rehberindeki kurulum ve bütçe adımları geçerlidir; Trendyol'un Meta formatı ise panelden yönetilir.",
+        ],
+      },
+      {
+        heading: "En sık yapılan Trendyol reklam hataları",
+        paragraphs: [
+          "Rakip rehberlerde sıkça geçen ipuçlarının çoğu kurulumla ilgili. Bütçeyi asıl eritenler ise genellikle hesap hatalarıdır.",
+        ],
+        bullets: [
+          "Panel ROAS'ını kâr sanmak: panel cironun nereye gittiğini bilmez; eşik ürünün marjından gelir",
+          "İadeyi hesaptan çıkarmak: giyim gibi iade oranı yüksek kategorilerde başabaş eşiğini belirgin yükseltir",
+          "Düşük fiyatlı ürüne reklam açmak: barem kargosu ve hizmet bedeli reklam payını baştan yer",
+          "Buybox'ta olmayan ya da stoğu tükenmek üzere olan ürüne bütçe ayırmak: tıklama parası ödersiniz, satışı başkası alabilir",
+          "Tek kampanyada tüm ürünleri aynı teklifle çalıştırmak: her ürünün başabaş TBM'si farklıdır",
+          "Kampanya fiyatıyla eşiği yeniden hesaplamamak",
+          "İki gün sonra karar vermek: yeterli sipariş verisi oluşmadan kapatmak ya da bütçe artırmak",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Trendyol'da reklam vermek için ne gerekir?",
+        answer:
+          "Aktif bir satıcı hesabı, reklama uygun ürünler ve reklam bakiyesi gerekir. Reklamlar Satıcı Paneli'ndeki Reklam Yönetimi'nden oluşturulur. Kamuya açık rehberlere göre bakiye bölümü mağaza açıldıktan yaklaşık bir ay sonra aktif olur; bazı formatlar için ek koşullar panelde belirtilir.",
+      },
+      {
+        question: "Trendyol reklamı günlük ne kadar?",
+        answer:
+          "Sabit bir ücret yoktur; bütçeyi siz belirlersiniz ve ürün reklamında tıklama başına ödediğiniz üst sınırı (TBM) seçersiniz. Rehberlerde geçen asgari tutarlar birbirini tutmadığı için paneldeki güncel sınıra bakın. Test için tutarı, en az 10 sipariş görecek kadar tıklama alacak şekilde hesaplayın.",
+      },
+      {
+        question: "Trendyol reklamında iyi ROAS kaç?",
+        answer:
+          "Herkese uyan bir ROAS yoktur. İyi ROAS, ürününüzün başabaş ROAS'ının üzerinde kalan değerdir: Başabaş ROAS = Fiyat / Reklam öncesi beklenen kâr. Örnek bir 800 TL'lik üründe eşik 4,06 iken 199,90 TL'lik bir üründe 13,6'dır.",
+      },
+      {
+        question: "Trendyol reklamı kârlı mı?",
+        answer:
+          "Ürüne bağlıdır. Marjı yeterli, iadesi kontrollü ve dönüşüm oranı iyi ürünlerde kârlı olabilir; düşük fiyatlı ve dar marjlı ürünlerde sipariş başı reklam maliyeti kârı aşar. Karar için sipariş başı reklam maliyetini iade dahil beklenen kârla karşılaştırın, ardından artımlı satış testi yapın.",
+      },
+      {
+        question: "Otomatik TBM mi elle teklif mi kullanmalıyım?",
+        answer:
+          "Otomatik TBM'de sistem her ürün için tıklama maliyetini kendisi belirler; yeni başlayanlar için kurulumu kolaylaştırır. Elle teklif ise başabaş TBM'nizi doğrudan uygulamanızı sağlar. Hangisini seçerseniz seçin, ortalama tıklama maliyetini ürünün başabaş TBM'siyle karşılaştırarak denetleyin.",
+      },
+    ],
+    howTo: {
+      name: "Trendyol reklamının kârlılığı nasıl hesaplanır?",
+      description: "Reklam açmadan önce iade dahil başabaş ROAS'ı ve maksimum TBM'yi bulun, yayından sonra artımlı katkıyı ölçün.",
+      steps: [
+        { name: "Reklam öncesi kârı bulun", text: "Fiyattan komisyon, hizmet bedeli ve ürün maliyetini çıkarın; sonucu teslim kalma oranıyla (1 − iade oranı) çarpın, kargo, paketleme ve iade kargosu payını düşün." },
+        { name: "Başabaş ROAS'ı hesaplayın", text: "Satış fiyatını reklam öncesi beklenen kâra bölün. Bu eşiğin altında kalan panel ROAS'ı zarar demektir." },
+        { name: "Maksimum TBM'yi belirleyin", text: "Sipariş başına ayırabileceğiniz reklam tutarını ürünün dönüşüm oranıyla çarpın." },
+        { name: "Test bütçesini ayırın", text: "En az 10 sipariş görecek kadar tıklamayı hesaplayın, bütçeyi iki haftaya yayın ve aynı kategoriden benzer ürünlerle başlayın." },
+        { name: "Artımlı katkıyı ölçün", text: "Reklamlı ve reklamsız dönemin toplam cirosunu karşılaştırın; farkı reklam harcamasına bölerek artımlı ROAS'ı bulun." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "Desi Hesaplama: Kargo Desi ve Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+      { label: "Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "Trendyol Reklam Çözümleri (resmî site)", href: "https://ads.trendyol.com/", external: true },
     ],
   },
 ];
@@ -5645,6 +5857,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "How to Calculate Profit Margin (Margin vs Markup)", href: "/en/blog/how-to-calculate-profit-margin/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
@@ -6027,6 +6240,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
       { label: "GA4 Unassigned Traffic: What It Is and How to Fix It", href: "/en/blog/ga4-unassigned-traffic-how-to-fix/" },
@@ -8189,6 +8403,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
       { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
       { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
@@ -8352,6 +8567,206 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "How to Run Meta Ads: A Practical Guide", href: "/en/blog/how-to-run-meta-ads-guide/" },
       { label: "Google Ads Help: Actual cost-per-click (CPC)", href: "https://support.google.com/google-ads/answer/6297?hl=en", external: true },
       { label: "Google Ads Help: About Quality Score for Search campaigns", href: "https://support.google.com/google-ads/answer/6167118?hl=en", external: true },
+    ],
+  },
+  {
+    slug: "how-to-advertise-on-trendyol",
+    seoTitle: "How to Advertise on Trendyol: Ad Types, Costs & Profit",
+    title: "How to Advertise on Trendyol: Ad Types, Cost per Order, Break-Even ROAS and Profit (2026)",
+    description:
+      "How to advertise on Trendyol: ad types, seller panel steps, ad cost per order, break-even ROAS including returns, maximum CPC and an incrementality test.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Trendyol ads are created under Ad Management in the seller panel: pick the ad type, set budget and dates, add products, and fund the balance from your earnings or by card. For product ads you set a maximum cost per click (CPC) or use Automatic CPC.",
+      "Ad cost per order = CPC / Conversion rate. A TRY 4 CPC at 2% conversion means TRY 200 of ads per order; on a TRY 800 product the panel shows a ROAS of 4.0.",
+      "The profit threshold depends on returns. Ignoring returns gives a break-even ROAS of 3.5 for this product; with 8% returns it is 4.1, so a ROAS of 4.0 looks fine in the panel but loses TRY 3.18 per order (illustrative amounts).",
+      "Panel ROAS can include orders you would have received anyway. Check incremental ROAS: a campaign showing 5.3 in the panel may really contribute 3.0.",
+    ],
+    publishedAt: "2026-11-02",
+    readingMinutes: 9,
+    tags: ["Trendyol", "Trendyol Ads", "Marketplace", "Ecommerce", "ROAS", "Turkey"],
+    sections: [
+      {
+        heading: "How do you advertise on Trendyol? (Short answer)",
+        paragraphs: [
+          "Advertising on Trendyol, Turkey's largest marketplace, happens in the Ad Management section of the seller panel. You create a new ad, choose the type, set a daily or total budget and dates, add products and publish. You can fund the ad balance from your earnings or by credit card.",
+          "Setup takes minutes; knowing whether the ad makes money is the hard part. Most of this guide covers what the panel does not show you: ad cost per order, a break-even ROAS that includes returns, the highest CPC you can afford, and a test for whether ads create extra sales. Amounts are illustrative and in Turkish lira, since that is what Trendyol sellers work with.",
+        ],
+      },
+      {
+        heading: "What ad types does Trendyol offer?",
+        paragraphs: [
+          "Trendyol's ad site (ads.trendyol.com) lists the following formats for sellers. Availability varies by store, so treat your panel as the final word.",
+        ],
+        bullets: [
+          "Product Ads: promote products on the home page, in search results, product lists and favorites. This is where most sellers should start, because it reaches people already shopping",
+          "Store Ads: banner and video placements for your store. Trendyol says there is no Buybox requirement for this format",
+          "Commission-based Influencer Ads: you pay a commission on realized net sales instead of an upfront budget",
+          "Meta Ads: retarget Trendyol shoppers on Instagram and Facebook; active products with stock above 4 enter the catalog automatically",
+          "Promotional Ads and Display: listed on the site without details, so check conditions in the panel",
+        ],
+      },
+      {
+        heading: "How to set up a Trendyol product ad",
+        paragraphs: [
+          "Menu names change now and then, but public seller guides describe the same flow. Also note the balance rules reported in those guides: the balance section activates about a month after the store opens, a single transfer is capped (TRY 50,000 in a January 2026 guide), and loaded balance is not refunded as cash. Confirm current terms in the panel and avoid loading large amounts while testing.",
+        ],
+        bullets: [
+          "1. Open Ad Management in the seller panel and choose to create a new ad",
+          "2. Select product ads and name the ad after the product group",
+          "3. Set the start and end dates, then a daily or total budget",
+          "4. Choose products. Trendyol suggests at least 5 similar products from one category; skip items where you lost the Buybox or stock is low",
+          "5. Set the bid: enter a maximum CPC (see the calculation below) or choose Automatic CPC",
+          "6. Fund the balance, publish, and check spend and orders daily in the first week",
+        ],
+      },
+      {
+        heading: "How much do Trendyol ads cost?",
+        paragraphs: [
+          "Product ads have no fixed price list. Trendyol defines CPC as the maximum you agree to pay per click; the actual cost moves with category, competition, season and product performance. Turkish guides disagree widely: one quotes TRY 0.24–1.87 per click while mixing kuruş and lira, another gives unsourced category ranges such as TRY 1.20–3.50, and minimum budgets range from TRY 10 per product per day to TRY 20–25 per day. Some even describe the same format as pay-per-impression while the official site describes bids as CPC.",
+          "So do not plan on someone else's average. The bid range in your panel and the real CPC from your first test are worth more than any blog table. CPC figures below only demonstrate the math.",
+        ],
+      },
+      {
+        heading: "How do you calculate ad cost per order?",
+        paragraphs: [
+          "CPC is not the number that matters most; ad cost per order is. Three formulas give the same answer, so use whichever data you have.",
+          "Example: on a TRY 800 product with a TRY 4 CPC and 2% conversion, ad cost per order is 4 / 0.02 = TRY 200, and the panel shows a ROAS of 800 / 200 = 4.0. If CPC falls to TRY 3, cost drops to TRY 150 and ROAS rises to 5.3. Improving conversion through images, reviews, price or delivery speed has the same effect.",
+        ],
+        bullets: [
+          "Ad cost per order = Total ad spend / Orders from ads",
+          "Ad cost per order = CPC / Conversion rate",
+          "Ad cost per order = Average order value / ROAS",
+        ],
+      },
+      {
+        heading: "What is the break-even ROAS on Trendyol, including returns?",
+        paragraphs: [
+          "ROAS is only good or bad relative to the profit a product leaves before ads. Commission, shipping and the service fee are covered in our Trendyol commission rates guide. What most calculations skip is returns: on a returned order, revenue and commission come back, but outbound shipping, return shipping and packaging stay with the seller, and so does the money paid for the click.",
+          "Subtracting fees from price therefore understates the threshold. The correct version weights each order by its chance of being kept: Expected pre-ad profit = (1 − Return rate) × (Price − Commission − Service fee − Product cost) − Outbound shipping − Packaging − Return rate × Return shipping. Break-even ROAS = Price / Expected pre-ad profit.",
+          "Example: TRY 800 price, 21% commission (TRY 168), TRY 10.99 service fee, TRY 300 product cost, TRY 81.95 shipping each way, TRY 10 packaging, 8% returns (illustrative). Expected profit is 0.92 × 321.01 − 81.95 − 10 − 6.56 = TRY 196.82, so break-even ROAS is 800 / 196.82 = 4.06. Ignoring returns gives TRY 229.06 and a threshold of 3.49, and every campaign between 3.5 and 4.1 looks profitable while losing money.",
+          "To keep 8% of the sale price (TRY 64) as profit, target ROAS is 800 / (196.82 − 64) = 6.02. Trendyol's marketing line about returns of 'up to 12 times ad spend' is a ceiling, not a benchmark; what matters is whether you clear your own threshold.",
+        ],
+        bullets: [
+          "ROAS 3.0: ad cost per order TRY 266.67 → result per order −TRY 69.84",
+          "ROAS 4.0: TRY 200.00 → −TRY 3.18",
+          "ROAS 5.0: TRY 160.00 → +TRY 36.82",
+          "ROAS 6.0: TRY 133.33 → +TRY 63.49",
+          "ROAS 8.0: TRY 100.00 → +TRY 96.82",
+        ],
+      },
+      {
+        heading: "What is the highest CPC you can afford?",
+        paragraphs: [
+          "Maximum CPC = Allowed ad cost per order × Conversion rate. In the example, at 2% conversion the break-even CPC is 196.82 × 0.02 = TRY 3.94. To protect an 8% margin, the allowed ad cost falls to TRY 132.82 and the CPC cap to TRY 2.66. With Automatic CPC you cannot enter this number, but you can audit against it: if average CPC stays above break-even, the campaign is losing money on your behalf.",
+          "Conversion varies by product, so a new listing without reviews should not share a bid with a proven seller.",
+        ],
+      },
+      {
+        heading: "Are Trendyol ads profitable for every product?",
+        paragraphs: [
+          "No. With the same 8% return assumption, break-even ROAS swings widely. Rank your catalog by break-even ROAS before advertising. Products with very high thresholds are better sold through bundles that raise basket size.",
+        ],
+        bullets: [
+          "TRY 199.90 product (TRY 80 cost, TRY 38.74 flat shipping, TRY 5 packaging): expected profit TRY 14.74, break-even ROAS 13.6",
+          "TRY 800 product (example above): break-even ROAS 4.06, a good candidate",
+          "TRY 15,000 phone (TRY 13,500 cost, 6% commission, 3% returns): expected profit TRY 476.93, break-even ROAS 31.5",
+        ],
+      },
+      {
+        heading: "Does panel ROAS show real sales? The incrementality test",
+        paragraphs: [
+          "Ad reports count orders attributed to ads, but some of those orders would have come through organic results anyway, especially from shoppers already searching for your brand or product. Paying for them adds no sales.",
+          "A simple test: pick two weeks away from campaigns and price changes. Keep ads off the first week and on the second, with price and stock unchanged. Incremental ROAS = (Revenue with ads − Revenue without ads) / Ad spend.",
+          "Example: a TRY 800 product sells 120 units in the week without ads. In the ad week you spend TRY 12,000, the panel credits 80 orders (ROAS 5.3) and total orders reach 165. Real growth is 45 orders: incremental ROAS is 45 × 800 / 12,000 = 3.0, which sits below this product's break-even.",
+          "This test is imperfect because demand shifts week to week, so repeat it and, if you can, hold back a similar product group. It still beats accepting the panel number. As for the common claim that ads lift organic rank, we found no official Trendyol source that quantifies it, so measure organic sales in the weeks after you pause ads instead of budgeting on it.",
+        ],
+      },
+      {
+        heading: "How much budget should you start with?",
+        paragraphs: [
+          "Think in data rather than daily lira. A practical rule is to see at least 10 orders for a product group before deciding. At 2% conversion that is 500 clicks; at a TRY 3 CPC the test costs TRY 1,500, or about TRY 107 per day over 14 days. This is not a statistical guarantee, just a floor that prevents panicked early decisions.",
+          "Scale in steps while watching ad cost per order. Our Ad Budget Calculator works out a total budget from revenue targets and margin.",
+        ],
+      },
+      {
+        heading: "How do discounts change the math?",
+        paragraphs: [
+          "Discounts move break-even ROAS more than ad costs do. Selling the example product at 15% off (TRY 680) cuts expected profit from TRY 196.82 to TRY 109.61 and lifts break-even ROAS from 4.06 to 6.20. A ROAS of 5 that made money last week now loses it. Recalculate at campaign prices, update CPC caps, and fund only products that still earn after the discount. Our Black Friday 2026 ad plan has a week-by-week schedule.",
+        ],
+      },
+      {
+        heading: "How should you judge influencer and Meta ads?",
+        paragraphs: [
+          "Commission-based influencer ads cost money only when a sale happens, so watch the commission cap rather than ROAS. Break-even influencer commission = Expected pre-ad profit / (Price × (1 − Return rate)). In the example that is 196.82 / 736 = 26.7%; bid clearly below it to keep a margin.",
+          "Meta ads use the same break-even ROAS, but the shopper is being reminded rather than searching, so the incrementality question matters even more.",
+        ],
+      },
+      {
+        heading: "Common Trendyol advertising mistakes",
+        paragraphs: [
+          "Most guides focus on setup tips, but calculation errors usually burn more budget.",
+        ],
+        bullets: [
+          "Treating panel ROAS as profit",
+          "Leaving returns out of the threshold, especially in apparel",
+          "Advertising low-priced products where flat shipping and fees consume the margin",
+          "Spending on products without the Buybox or with low stock",
+          "Using one bid for every product even though each has its own break-even CPC",
+          "Not recalculating thresholds at campaign prices",
+          "Deciding after two days, before enough orders exist",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What do you need to advertise on Trendyol?",
+        answer:
+          "An active seller account, eligible products and an ad balance. Ads are created under Ad Management in the seller panel. Public guides say the balance section activates about a month after the store opens; some formats have extra conditions listed in the panel.",
+      },
+      {
+        question: "How much do Trendyol ads cost per day?",
+        answer:
+          "There is no fixed fee. You set the budget and, for product ads, a maximum cost per click. Published minimums disagree, so check the current limit in your panel and size your test to reach at least 10 orders.",
+      },
+      {
+        question: "What is a good ROAS on Trendyol?",
+        answer:
+          "A good ROAS is any value above your product's break-even ROAS, which is price divided by expected pre-ad profit. In our examples the threshold is 4.06 for a TRY 800 product and 13.6 for a TRY 199.90 product.",
+      },
+      {
+        question: "Are Trendyol ads worth it?",
+        answer:
+          "It depends on the product. They can pay off with healthy margins, controlled returns and strong conversion, while low-priced, thin-margin items usually spend more on ads than they earn. Compare ad cost per order with expected profit, then run an incrementality test.",
+      },
+      {
+        question: "Should I use Automatic CPC or manual bids?",
+        answer:
+          "Automatic CPC lets the system set click costs per product and is easier to start with. Manual bids let you apply your break-even CPC directly. Either way, audit average CPC against each product's break-even CPC.",
+      },
+    ],
+    howTo: {
+      name: "How to work out whether a Trendyol ad is profitable",
+      description: "Find break-even ROAS and maximum CPC including returns before launch, then measure incremental impact.",
+      steps: [
+        { name: "Find pre-ad profit", text: "Subtract commission, service fee and product cost from price, multiply by one minus the return rate, then deduct shipping, packaging and the expected return shipping." },
+        { name: "Calculate break-even ROAS", text: "Divide the sale price by expected pre-ad profit. Panel ROAS below this level means a loss." },
+        { name: "Set a maximum CPC", text: "Multiply the ad cost you can allow per order by the product's conversion rate." },
+        { name: "Fund a test", text: "Budget enough clicks to see at least 10 orders, spread over two weeks, starting with similar products from one category." },
+        { name: "Measure incremental impact", text: "Compare total revenue with and without ads and divide the difference by ad spend." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Trendyol Commission Rates 2026", href: "/en/blog/trendyol-commission-rates/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
+      { label: "Trendyol ad solutions (official site)", href: "https://ads.trendyol.com/", external: true },
     ],
   },
 ];
