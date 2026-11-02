@@ -565,6 +565,7 @@ export const marketplace: ToolContent = {
   ],
   relatedTools: [
     { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama", note: "Kargo desisi ve ücreti" },
+    { label: "İndirim Hesaplama", href: "/ucretsiz-araclar/indirim-hesaplama", note: "İndirim sonrası kâr ve gerekli satış artışı" },
     { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam getirisini ölçün" },
     { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Ürün bazında marj" },
     { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Mağaza geneli kârlılık" },
@@ -710,4 +711,83 @@ export const desi: ToolContent = {
     { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Kargo dahil kârlılık" },
     { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret hesaplayıcıları" },
   ],
+};
+
+export const discount: ToolContent = {
+  slug: "indirim-hesaplama",
+  path: "/ucretsiz-araclar/indirim-hesaplama",
+  title: "İndirim Hesaplama: Yüzde İndirim ve İndirimli Fiyat",
+  description:
+    "İndirim hesaplama: indirimli fiyatı, indirim oranını ve eski fiyatı bulun. Üst üste indirim, 3 al 2 öde ve satıcılar için indirim sonrası kâr hesabı.",
+  intro:
+    "Fiyatı ve indirim oranını girin, indirimli fiyatı ve kaç lira kazandığınızı anında görün. İki fiyat arasındaki indirim yüzdesini, indirimli fiyattan eski fiyatı, sepette ek indirimli toplam oranı ve 3 al 2 öde kampanyalarını da hesaplayabilirsiniz. Satıcıysanız birim maliyetinizi ekleyin; araç indirimin kârınızı ne kadar düşürdüğünü ve aynı kâr için kaç adet daha satmanız gerektiğini gösterir.",
+  seoParagraphs: [
+    {
+      heading: "İndirim nasıl hesaplanır?",
+      body:
+        "İndirimli fiyat = Normal fiyat × (1 − İndirim oranı / 100). İndirim tutarı = Normal fiyat × İndirim oranı / 100. Örnek: 1.200 TL'lik ürüne %25 indirim uygulanırsa indirim tutarı 1.200 × 0,25 = 300 TL, indirimli fiyat 1.200 × 0,75 = 900 TL olur. Hızlı yol: fiyatı, ödeyeceğiniz yüzdeyle çarpın. %25 indirimde fiyatın %75'ini, %40 indirimde %60'ını ödersiniz.",
+    },
+    {
+      heading: "İndirim oranı nasıl bulunur? İki fiyat arasındaki yüzde",
+      body:
+        "İndirim oranı = (Normal fiyat − İndirimli fiyat) / Normal fiyat × 100. Örnek: 750 TL'lik ürün 600 TL'ye düştüyse fark 150 TL'dir; 150 / 750 = 0,20, yani %20 indirim. Paydada her zaman eski fiyat olmalıdır. Farkı yeni fiyata bölerseniz %25 bulursunuz ve indirimi olduğundan büyük görürsünüz.",
+    },
+    {
+      heading: "İndirimli fiyattan eski fiyat nasıl bulunur?",
+      body:
+        "Eski fiyat = İndirimli fiyat / (1 − İndirim oranı / 100). Örnek: %20 indirimle 600 TL'ye satılan ürünün eski fiyatı 600 / 0,80 = 750 TL'dir. Sık yapılan hata, indirimli fiyata %20 eklemektir; 600 + 120 = 720 TL çıkar ve yanlıştır, çünkü %20 indirim 600 TL'den değil 750 TL'den hesaplanmıştır. Aynı nedenle %20 indirimi geri almak için %20 değil %25 zam gerekir.",
+    },
+    {
+      heading: "Pratik yüzde indirim hesapları",
+      body:
+        "%10 indirimde virgülü bir basamak sola kaydırın: 850 TL'nin %10'u 85 TL, indirimli fiyat 765 TL. %5 için bu sonucun yarısını alın: 42,50 TL. %20 için %10'un iki katını, %30 için üç katını alın. %25 fiyatın dörtte biri, %50 yarısı, %75 ise dörtte üçüdür. Örnek olarak 1.000 TL'lik bir üründe %10 indirim 900 TL, %15 indirim 850 TL, %20 indirim 800 TL, %25 indirim 750 TL, %30 indirim 700 TL, %40 indirim 600 TL, %50 indirim 500 TL, %70 indirim 300 TL eder.",
+    },
+    {
+      heading: "Üst üste indirim nasıl hesaplanır? %20 + %10 neden %30 değil?",
+      body:
+        "İkinci indirim ilk indirimden kalan fiyata uygulanır, bu yüzden oranlar toplanmaz, çarpılır: Toplam indirim = 1 − (1 − İndirim 1) × (1 − İndirim 2). 1.000 TL'lik üründe %20 indirim fiyatı 800 TL'ye, sepette ek %10 ise 720 TL'ye indirir. Toplam indirim %30 değil %28'dir. İndirimlerin sırası sonucu değiştirmez: önce %10 sonra %20 de 720 TL verir. Sabit tutarlı kuponlarda ise sıra önemli olabilir, çünkü 100 TL'lik kupon yüzdeden önce düşülürse sonuç farklı çıkar. Yukarıdaki araca iki ek indirime kadar girebilirsiniz.",
+    },
+    {
+      heading: "3 al 2 öde kaç yüzde indirim demek?",
+      body:
+        "X al Y öde kampanyasında etkin indirim 1 − Y / X formülüyle bulunur. 3 al 2 öde %33,3, 4 al 3 öde %25, 5 al 4 öde %20 indirimdir. 'İkincisi %50 indirimli' kampanyası ise iki ürün için toplamda %25 indirime denk gelir. Aynı oranlı tek ürün indiriminden farkı şudur: indirimi almak için daha fazla ürün almanız gerekir. Tek ürün ihtiyacınız varsa bu indirim sizin için geçerli değildir.",
+    },
+    {
+      heading: "İndirim gerçek mi? Önceki fiyat nasıl kontrol edilir?",
+      body:
+        "Türkiye'de Ticari Reklam ve Haksız Ticari Uygulamalar Yönetmeliği'nde 2022'de yapılan değişikliğe göre indirim duyurularında 'indirimden önceki fiyat', indirimin başladığı tarihten önceki 30 gündeki en düşük fiyat olmalıdır (çabuk bozulan ürünlerde farklı hesap öngörülür). Yani üstü çizili fiyat sizi şüphelendiriyorsa ürünün son haftalardaki fiyatını kontrol edin. Black Friday gibi dönemlerde yüzdeye değil ödeyeceğiniz tutara bakmak daha sağlıklıdır; kargo ücreti ve sepet koşulları dahil son fiyatı karşılaştırın.",
+    },
+    {
+      heading: "Satıcılar için: indirim kârı nasıl etkiler?",
+      body:
+        "İndirim fiyatı düşürür ama maliyeti düşürmez, bu yüzden kâr indirimden çok daha hızlı erir. 1.000 TL'ye satılan, 600 TL maliyetli bir üründe birim kâr 400 TL'dir. %20 indirimle fiyat 800 TL'ye iner ama birim kâr 200 TL'ye, yani yarıya düşer. Aynı toplam kârı korumak için satışların iki katına çıkması gerekir. Formül: Gerekli satış artışı = İndirim öncesi birim kâr / İndirim sonrası birim kâr − 1. Marj %30 iken %10 indirim %50, %20 indirim %200 satış artışı ister. Marj %40 iken %10 indirim %33, %20 indirim %100, %30 indirim %300 artış ister. Marj %50 iken bu oranlar %25, %67 ve %150'dir. Çoğu rakip araç yalnızca yüzdeyi hesaplar; bu tablo kampanyaya girmeden önceki asıl karardır.",
+    },
+    {
+      heading: "En fazla ne kadar indirim yapabilirim?",
+      body:
+        "Zarar etmeden yapabileceğiniz en yüksek indirim, komisyon yoksa marjınıza eşittir: %40 marjlı üründe %40 indirimde kâr sıfırdır. Komisyon indirimli fiyattan alındığı için formül şöyledir: Başabaş indirim = 1 − Birim maliyet / (Normal fiyat × (1 − Komisyon oranı)). 1.000 TL'lik, 500 TL maliyetli, %20 komisyonlu üründe başabaş indirim 1 − 500 / 800 = %37,5'tir. Bu sınır reklamsız durumdur; reklam veriyorsanız indirimli fiyatta başabaş ROAS da yükselir. Yukarıdaki örnekte 1.000 TL / 400 TL = 2,5 olan eşik, %20 indirimle 800 TL / 200 TL = 4,0'a çıkar. Trendyol ve Hepsiburada satıcıları kargo ve hizmet bedelini de Trendyol Komisyon ve Kâr Hesaplama aracında ekleyebilir.",
+    },
+    {
+      heading: "İskonto ile indirim aynı şey mi?",
+      body:
+        "Günlük kullanımda aynı anlama gelir; iskonto daha çok ticarette, satıcılar ve toptancılar arasında kullanılan terimdir. Hesap da aynıdır: 2.000 TL'lik faturaya %15 iskonto 300 TL indirim demektir ve 1.700 TL ödenir. Ticarette sık görülen %20 + %5 gibi zincirleme iskontolar da üst üste indirim gibi hesaplanır: 2.000 × 0,80 × 0,95 = 1.520 TL, toplam iskonto %24.",
+    },
+  ],
+  faqs: [
+    { q: "Yüzde indirim nasıl hesaplanır?", a: "Fiyatı (1 − indirim oranı / 100) ile çarpın. 500 TL'lik ürüne %20 indirim 500 × 0,80 = 400 TL eder; indirim tutarı 100 TL'dir." },
+    { q: "100 TL'nin %20 indirimi kaç TL?", a: "100 TL'nin %20'si 20 TL'dir, indirimli fiyat 80 TL olur." },
+    { q: "İndirim oranı nasıl hesaplanır?", a: "(Eski fiyat − Yeni fiyat) / Eski fiyat × 100. 750 TL'den 600 TL'ye düşen ürünün indirim oranı 150 / 750 = %20'dir." },
+    { q: "%20 ve %10 indirim üst üste kaç yapar?", a: "Toplam %28 yapar, %30 değil. İkinci indirim kalan fiyata uygulandığı için 1 − 0,80 × 0,90 = 0,28 olur. 1.000 TL'lik ürün 720 TL'ye düşer." },
+    { q: "İndirimli fiyattan eski fiyat nasıl bulunur?", a: "İndirimli fiyatı (1 − indirim oranı / 100) sayısına bölün. %20 indirimle 600 TL olan ürünün eski fiyatı 600 / 0,80 = 750 TL'dir." },
+    { q: "3 al 2 öde yüzde kaç indirim?", a: "%33,3 indirimdir: üç ürün alıp ikisinin parasını ödersiniz. Formül 1 − Y / X'tir; 4 al 3 öde %25 indirime denk gelir." },
+    { q: "Satıcı olarak ne kadar indirim yapabilirim?", a: "Komisyonsuz durumda en fazla marjınız kadar: %40 marjda %40 indirimde kâr sıfırdır. Kârı korumak için satış adedinin de artması gerekir; %40 marjlı üründe %20 indirim satışların iki katına çıkmasını ister. Araçta birim maliyetinizi girerek kendi oranlarınızı görebilirsiniz." },
+  ],
+  relatedTools: [
+    { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Komisyon, kargo ve iade dahil net kâr" },
+    { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Brüt kar marjı" },
+    { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "İndirimli fiyatta başabaş ROAS" },
+    { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama", note: "Kampanya bütçesi" },
+    { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret araçları" },
+  ],
+  relatedPost: { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
 };

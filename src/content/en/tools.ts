@@ -524,6 +524,7 @@ export const marketplace: ToolContent = {
   ],
   relatedTools: [
     { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator", note: "Shipping desi and cost" },
+    { label: "Discount Calculator", href: "/en/free-tools/discount-calculator", note: "Profit after a discount and sales uplift needed" },
     { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Measure return on ad spend" },
     { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
     { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Store-level profitability" },
@@ -620,4 +621,66 @@ export const desi: ToolContent = {
     { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
     { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Profitability incl. shipping" },
   ],
+};
+
+export const discount: ToolContent = {
+  slug: "discount-calculator",
+  path: "/en/free-tools/discount-calculator",
+  title: "Discount Calculator: Percent Off and Sale Price",
+  description:
+    "Free discount calculator: find the sale price, percent off and original price, stack discounts, check buy X pay Y deals and see the profit impact for sellers.",
+  intro:
+    "Enter a price and a discount to see the sale price and how much you save. You can also find the percent off between two prices, work back to the original price, stack an extra cart discount and check buy-X-pay-Y deals. If you are a seller, add your unit cost: the calculator shows how far the discount cuts your profit and how many more units you need to sell to stay even.",
+  seoParagraphs: [
+    {
+      heading: "How do you calculate a discount?",
+      body:
+        "Sale price = Original price × (1 − Discount / 100). Amount saved = Original price × Discount / 100. Example: 25% off $120 saves $30 and leaves $90. A quick shortcut is to multiply by the percentage you actually pay: at 25% off you pay 75%, at 40% off you pay 60%.",
+    },
+    {
+      heading: "How do you find the percent off between two prices?",
+      body:
+        "Discount = (Original price − Sale price) / Original price × 100. If a $75 item drops to $60, the difference is $15 and 15 / 75 = 20% off. Always divide by the original price; dividing by the new price gives 25% and overstates the deal.",
+    },
+    {
+      heading: "How do you find the original price from a sale price?",
+      body:
+        "Original price = Sale price / (1 − Discount / 100). An item at $60 after 20% off originally cost 60 / 0.80 = $75. Adding 20% to the sale price gives $72, which is wrong because the discount was taken from $75. For the same reason, undoing a 20% discount takes a 25% price rise.",
+    },
+    {
+      heading: "How do stacked discounts work? Why 20% + 10% is not 30%",
+      body:
+        "The second discount applies to what is left after the first, so rates multiply: Total discount = 1 − (1 − First) × (1 − Second). On $100, 20% off gives $80 and a further 10% gives $72, which is 28% off in total. The order does not matter for percentages, though it can for fixed-amount coupons.",
+    },
+    {
+      heading: "What percent off is buy 3 pay 2?",
+      body:
+        "The effective discount in a buy-X-pay-Y deal is 1 − Y / X. Buy 3 pay 2 is 33.3% off, buy 4 pay 3 is 25%, and 'second item half price' equals 25% across two items. The catch is that you only get that rate if you actually need the extra units.",
+    },
+    {
+      heading: "For sellers: how does a discount affect profit?",
+      body:
+        "A discount lowers price but not cost, so profit falls much faster than the percentage suggests. A $100 product costing $60 earns $40 per unit. At 20% off, the price is $80 and profit halves to $20, so you need twice the sales to earn the same total. Required sales uplift = Profit before / Profit after − 1. At a 30% margin, 10% off needs 50% more sales and 20% off needs 200%. At 40%, the figures for 10%, 20% and 30% off are 33%, 100% and 300%. At 50% they are 25%, 67% and 150%.",
+    },
+    {
+      heading: "What is the deepest discount you can afford?",
+      body:
+        "Without fees, the break-even discount equals your margin. Marketplace commission is charged on the discounted price, so the full formula is: Break-even discount = 1 − Unit cost / (Original price × (1 − Commission rate)). A $100 product with $50 cost and 20% commission breaks even at 1 − 50 / 80 = 37.5%. That is before advertising. Break-even ROAS rises as well: in the earlier example it moves from 100 / 40 = 2.5 to 80 / 20 = 4.0 at 20% off.",
+    },
+  ],
+  faqs: [
+    { q: "How do I calculate percent off?", a: "Multiply the price by (1 − discount / 100). 20% off $50 is 50 × 0.80 = $40, saving $10." },
+    { q: "How do I work out the discount between two prices?", a: "(Original − Sale) / Original × 100. Going from $75 to $60 is 15 / 75 = 20% off." },
+    { q: "Do 20% and 10% discounts add up to 30%?", a: "No, they make 28%. The second applies to the reduced price: 1 − 0.80 × 0.90 = 0.28." },
+    { q: "How do I find the original price before a discount?", a: "Divide the sale price by (1 − discount / 100). $60 after 20% off was 60 / 0.80 = $75." },
+    { q: "What discount is buy 3 pay 2?", a: "33.3%. The formula is 1 − Y / X, so buy 4 pay 3 is 25%." },
+    { q: "How much discount can a seller afford?", a: "Without fees, up to your margin: at a 40% margin, profit is zero at 40% off. To keep total profit, sales must rise too; 20% off at a 40% margin needs double the sales." },
+  ],
+  relatedTools: [
+    { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator", note: "Net profit with fees, shipping and returns" },
+    { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Gross margin" },
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Break-even ROAS at the sale price" },
+    { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator", note: "Campaign budget" },
+  ],
+  relatedPost: { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
 };

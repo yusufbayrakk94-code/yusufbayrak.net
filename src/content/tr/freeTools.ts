@@ -80,6 +80,7 @@ export const freeToolsPage = {
     { key: "adBudget", name: "Reklam Bütçesi Hesaplama", description: "Hedef ciro veya müşteri hedefinden aylık bütçe, başabaş/hedef ROAS ve maks. CPA hesaplayın.", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama" },
     { key: "marketplace", name: "Trendyol & Hepsiburada Kâr Hesaplama", description: "Komisyon, kargo, hizmet bedeli, stopaj, iade ve reklam dahil sipariş başı net kârınızı hesaplayın.", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama" },
     { key: "desi", name: "Desi Hesaplama", description: "Kargo desisini, ağırlıkla karşılaştırıp ücrete esas desiyi ve tahmini kargo ücretini hesaplayın; çoklu koli destekli.", href: "/ucretsiz-araclar/desi-hesaplama" },
+    { key: "discount", name: "İndirim Hesaplama", description: "İndirimli fiyatı, indirim oranını ve eski fiyatı bulun; üst üste indirim ve satıcılar için indirim sonrası kâr.", href: "/ucretsiz-araclar/indirim-hesaplama" },
     { key: "payback", name: "CAC Geri Ödeme Süresi Hesaplayıcı", description: "Müşteri edinme maliyetinizin kaç ayda geri döndüğünü brüt marj dahil hesaplayın.", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici" },
   ],
 };
@@ -262,7 +263,7 @@ export const toolCategories = [
         a: "Pazaryeri komisyonları genellikle satış tutarının %8-20'si arasındadır ve ödeme altyapısı kesintisiyle birlikte doğrudan gelirden düşer. Kendi sitenizle pazaryerini karşılaştırırken aynı ürünü iki ayrı senaryoda hesaplayın: pazaryeri trafiği bedava görünse de komisyon çoğu zaman reklam maliyetine yakın bir yük oluşturur.",
       },
     ],
-    tools: ["marketplace", "desi", "gross", "net"],
+    tools: ["marketplace", "desi", "discount", "gross", "net"],
   },
 ] as const;
 

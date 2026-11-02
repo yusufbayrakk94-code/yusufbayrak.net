@@ -63,6 +63,7 @@ export type RelatedToolKey =
   | "marketplace"
   | "ad-budget"
   | "desi"
+  | "discount"
   | "gross-margin";
 
 export interface BlogPost {
@@ -1985,6 +1986,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
@@ -2919,6 +2921,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
       { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici/" },
@@ -4212,6 +4215,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Desi Hesaplama: Kargo Desi ve Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
@@ -4596,6 +4600,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -6240,6 +6245,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Discount Calculator: Sale Price and Profit Impact", href: "/en/free-tools/discount-calculator/" },
       { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
@@ -7129,6 +7135,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "Discount Calculator: Sale Price and Profit Impact", href: "/en/free-tools/discount-calculator/" },
       { label: "Trendyol Commission Rates 2026 & How to Calculate Fees", href: "/en/blog/trendyol-commission-rates/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator/" },
@@ -8758,6 +8765,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "Discount Calculator: Sale Price and Profit Impact", href: "/en/free-tools/discount-calculator/" },
       { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
       { label: "Trendyol Commission Rates 2026", href: "/en/blog/trendyol-commission-rates/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
@@ -8993,6 +9001,18 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       href: "/en/free-tools/ad-budget-calculator",
       label: "Ad Budget Calculator",
       description: "Budget, break-even/target ROAS and max CPA from your revenue target.",
+    },
+  },
+  discount: {
+    tr: {
+      href: "/ucretsiz-araclar/indirim-hesaplama",
+      label: "İndirim Hesaplama",
+      description: "İndirimli fiyatı, indirim oranını ve indirimin kârınıza etkisini hesaplayın.",
+    },
+    en: {
+      href: "/en/free-tools/discount-calculator",
+      label: "Discount Calculator",
+      description: "Sale price, percent off and the profit impact of a discount.",
     },
   },
   desi: {

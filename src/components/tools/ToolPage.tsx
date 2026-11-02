@@ -24,7 +24,7 @@ interface Props {
 
 // Tools that other sites may embed via iframe (backlink asset, seo/widget-plan.md).
 // Embed URL = tool path with /ucretsiz-araclar/ → /embed/ and /en/free-tools/ → /en/embed/.
-export const EMBEDDABLE_TOOLS = ["roas", "adBudget", "marketplace", "desi"] as const;
+export const EMBEDDABLE_TOOLS = ["roas", "adBudget", "marketplace", "desi", "discount"] as const;
 export const embedPathFor = (toolPath: string) =>
   toolPath.replace(/^\/ucretsiz-araclar\//, "/embed/").replace(/^\/en\/free-tools\//, "/en/embed/");
 

@@ -202,6 +202,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/ucretsiz-araclar/indirim-hesaplama/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/indirim-hesaplama/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/discount-calculator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/ucretsiz-araclar/indirim-hesaplama/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/ucretsiz-araclar/reklam-butcesi-hesaplama/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/reklam-butcesi-hesaplama/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/ad-budget-calculator/" />
@@ -702,6 +710,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/dimensional-weight-calculator/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/desi-hesaplama/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/ucretsiz-araclar/desi-hesaplama/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/free-tools/discount-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/free-tools/discount-calculator/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/ucretsiz-araclar/indirim-hesaplama/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/ucretsiz-araclar/indirim-hesaplama/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

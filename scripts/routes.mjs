@@ -41,6 +41,7 @@ export const STATIC_TR = [
   "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun",
   "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama",
   "/ucretsiz-araclar/desi-hesaplama",
+  "/ucretsiz-araclar/indirim-hesaplama",
   "/ucretsiz-araclar/reklam-butcesi-hesaplama",
   "/iletisim",
   "/blog",
@@ -73,6 +74,7 @@ export const STATIC_EN = [
   "/en/free-tools/marketing-channel-quiz",
   "/en/free-tools/marketplace-profit-calculator",
   "/en/free-tools/dimensional-weight-calculator",
+  "/en/free-tools/discount-calculator",
   "/en/free-tools/ad-budget-calculator",
   "/en/contact",
   "/en/blog",
@@ -106,6 +108,7 @@ export const ROUTE_PAIRS = [
   { tr: "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun",      en: "/en/free-tools/marketing-channel-quiz" },
   { tr: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", en: "/en/free-tools/marketplace-profit-calculator" },
   { tr: "/ucretsiz-araclar/desi-hesaplama", en: "/en/free-tools/dimensional-weight-calculator" },
+  { tr: "/ucretsiz-araclar/indirim-hesaplama", en: "/en/free-tools/discount-calculator" },
   { tr: "/ucretsiz-araclar/reklam-butcesi-hesaplama", en: "/en/free-tools/ad-budget-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
@@ -155,10 +158,12 @@ export const EMBED_ROUTES = [
   "/embed/reklam-butcesi-hesaplama",
   "/embed/trendyol-hepsiburada-kar-hesaplama",
   "/embed/desi-hesaplama",
+  "/embed/indirim-hesaplama",
   "/en/embed/roas-calculator",
   "/en/embed/ad-budget-calculator",
   "/en/embed/marketplace-profit-calculator",
   "/en/embed/dimensional-weight-calculator",
+  "/en/embed/discount-calculator",
 ];
 
 // English-only posts (no TR counterpart). They live solely under /en/blog/.
