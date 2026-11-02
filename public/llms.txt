@@ -83,6 +83,7 @@
 - [Trendyol Komisyon Oranları 2026: Komisyon Nasıl Hesaplanır, Barem ve Kampanya Tuzakları (Örnek Hesaplı)](https://yusufbayrak.net/blog/trendyol-komisyon-oranlari-hesaplama/): Trendyol komisyon oranları 2026: kategori aralıkları, komisyon hesaplama formülü, kargo baremi ve hizmet bedeli dahil kesinti, başabaş fiyat ve kampanya örneği.
 - [Google Ads Nedir, Nasıl Çalışır? Açık Artırma, Kalite Puanı, Maliyet ve Kampanya Türleri (2026)](https://yusufbayrak.net/blog/google-ads-nedir-nasil-calisir/): Google Ads nedir, nasıl çalışır? Açık artırma ve gerçek TBM, kalite puanı, bütçe kuralları, 2026 kampanya türleri, teklif stratejileri ve TL ile maliyet örneği.
 - [Trendyol Reklam Nasıl Verilir? Reklam Türleri, Maliyet, Başabaş ROAS ve Kârlılık Hesabı (2026)](https://yusufbayrak.net/blog/trendyol-reklam-nasil-verilir/): Trendyol reklam nasıl verilir: reklam türleri, panel adımları, sipariş başı reklam maliyeti, iade dahil başabaş ROAS, maksimum TBM ve artımlı satış testi.
+- [CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır, İyi CPL Kaç ve B2B'de Nasıl Düşürülür?](https://yusufbayrak.net/blog/cpl-nedir-lead-basi-maliyet/): CPL nedir: lead başı maliyet formülü, tam maliyetli CPL, MQL ve SQL maliyeti, kendi maksimum CPL'nizi bulma yöntemi ve CPL'yi kaliteyi bozmadan düşürme.
 
 ## English
 
@@ -142,6 +143,7 @@
 - [Trendyol Commission Rates 2026: How Fees Are Calculated, Shipping Thresholds and Campaign Traps (With Examples)](https://yusufbayrak.net/en/blog/trendyol-commission-rates/): Trendyol commission rates in 2026: category ranges, the commission formula, shipping thresholds and service fee, break-even price and a campaign offer example.
 - [What Is Google Ads and How Does It Work? Auction, Quality Score, Costs and Campaign Types (2026)](https://yusufbayrak.net/en/blog/what-is-google-ads-how-it-works/): What is Google Ads and how does it work? The auction and actual CPC, Quality Score, budget rules, 2026 campaign types, bid strategies and a worked cost example.
 - [How to Advertise on Trendyol: Ad Types, Cost per Order, Break-Even ROAS and Profit (2026)](https://yusufbayrak.net/en/blog/how-to-advertise-on-trendyol/): How to advertise on Trendyol: ad types, seller panel steps, ad cost per order, break-even ROAS including returns, maximum CPC and an incrementality test.
+- [What Is CPL? How to Calculate Cost Per Lead, What a Good CPL Is and How to Lower It in B2B](https://yusufbayrak.net/en/blog/what-is-cpl-cost-per-lead/): What is CPL: the cost per lead formula, fully loaded CPL, cost per MQL and SQL, how to find your own maximum CPL and how to lower it without hurting quality.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim

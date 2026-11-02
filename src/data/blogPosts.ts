@@ -813,6 +813,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "cac",
     resources: [
+      { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       {
         label: "B2B Lead Generation Hunisi Nasıl Tasarlanır? Uçtan Uca Rehber",
         href: "/blog/b2b-lead-generation-huni-tasarimi",
@@ -1729,6 +1730,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "LTV Nedir? Müşteri Yaşam Boyu Değeri Hesaplama", href: "/blog/ltv-nedir-ltv-cac-orani/" },
       { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
@@ -2427,6 +2429,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Tek seferlik bir link için elle yazmak yeterlidir; ama en sık hata da burada çıkar: büyük harf, Türkçe karakter, boşluk ya da GA4'ün tanımadığı bir medium değeri trafiği Unassigned'a düşürebilir. UTM oluşturucu araçlar birleştirmeyi yapar, ancak çoğu değerlerin doğruluğunu denetlemez. UTM Link Oluşturucu aracımız değerleri küçük harfe ve ASCII'ye çevirir, linkin GA4'te hangi kanala düşeceğini tahmin eder ve Unassigned riskinde uyarır.",
           "Ayda onlarca link üreten ekipler için en sağlam yöntem, ortak bir tablo tutmaktır: her satırda hedef adres, kaynak, medium, kampanya ve içerik sütunları ve bunları birleştiren bir formül. Excel ya da Google E-Tablolar'da =A2&\"?utm_source=\"&B2&\"&utm_medium=\"&C2&\"&utm_campaign=\"&D2 formülü yeterlidir; böylece kampanya adları tek listeden seçilir ve aynı kanal iki farklı adla yazılmaz.",
+          "Hazır bir tablo isterseniz ücretsiz UTM Takip Şablonu'nu (Excel) kaynaklar bölümünden indirebilirsiniz: son linki kendisi birleştirir, GA4 kanalını tahmin eder ve büyük harf, Türkçe karakter, boşluk ya da eksik alan olduğunda satırı uyarır.",
         ],
       },
       {
@@ -2562,6 +2565,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "utm",
     resources: [
+      { label: "UTM Takip Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/utm-takip-sablonu.xlsx", external: true },
       { label: "UTM Link Oluşturucu (GA4 kanal tahminli)", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
       { label: "GA4 Unassigned Trafik Nedir, Nasıl Düzeltilir?", href: "/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
@@ -2758,6 +2762,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "cac",
     resources: [
+      { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
       { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" },
       { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
@@ -4614,6 +4619,166 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Trendyol Reklam Çözümleri (resmî site)", href: "https://ads.trendyol.com/", external: true },
     ],
   },
+  {
+    slug: "cpl-nedir-lead-basi-maliyet",
+    seoTitle: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?",
+    title: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır, İyi CPL Kaç ve B2B'de Nasıl Düşürülür?",
+    description:
+      "CPL nedir: lead başı maliyet formülü, tam maliyetli CPL, MQL ve SQL maliyeti, kendi maksimum CPL'nizi bulma yöntemi ve CPL'yi kaliteyi bozmadan düşürme.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "CPL (Cost Per Lead), bir potansiyel müşteri kaydını kazanmak için harcanan ortalama tutardır: CPL = Toplam pazarlama harcaması / Geçerli lead sayısı. 40.000 TL ile 80 lead aldıysanız CPL 500 TL'dir.",
+      "Herkese uyan bir 'iyi CPL' yoktur. Sınırı kendi rakamlarınız belirler: Maksimum CPL = Reklama ayrılan maksimum CAC × Lead'den müşteriye dönüşüm oranı. Örnek şirkette bu sınır 2.000 TL'dir, yani 500 TL'lik CPL pahalı değil, artırılabilir.",
+      "Düşük CPL iyi kampanya demek değildir: 200 TL CPL'li kampanya müşteri başına 30.000 TL'ye, 750 TL CPL'li kampanya 10.000 TL'ye gelebilir.",
+      "CPL iki kolla düşer: CPL = Tıklama başı maliyet / Lead dönüşüm oranı. Dönüşümü %6'dan %8'e çıkarmak CPL'yi %25 düşürür; ama kalite ölçülmüyorsa düşen CPL kötü lead anlamına gelebilir.",
+    ],
+    publishedAt: "2026-11-02",
+    readingMinutes: 8,
+    tags: ["CPL", "Lead Maliyeti", "B2B", "Lead Generation", "CAC", "Reklam Metrikleri"],
+    sections: [
+      {
+        heading: "CPL nedir? (Kısa cevap)",
+        paragraphs: [
+          "CPL (Cost Per Lead), Türkçesiyle lead başı maliyet veya potansiyel müşteri başına maliyet, pazarlama harcamanızın kazandığınız her potansiyel müşteri kaydına ortalama kaça geldiğini gösteren metriktir. Lead; form dolduran, demo isteyen, arayan ya da içerik indirirken iletişim bilgisini bırakan kişidir.",
+          "Formül: CPL = Toplam harcama / Geçerli lead sayısı. Örnek: bir ayda 40.000 TL reklam harcayıp 80 geçerli lead aldıysanız CPL 40.000 / 80 = 500 TL'dir.",
+          "CPL özellikle satışın sitede değil, sonradan satış ekibiyle kapandığı işlerde kullanılır: B2B yazılım ve hizmetler, eğitim, sağlık, emlak, sigorta gibi. E-ticarette satış doğrudan ölçülebildiği için ROAS ve sipariş başı maliyet daha anlamlıdır.",
+        ],
+      },
+      {
+        heading: "CPL nasıl hesaplanır? Hangi lead sayılır, hangi maliyet girer?",
+        paragraphs: [
+          "Formül basit olduğu için asıl hata pay ve paydanın tanımında yapılır. Aynı kampanyanın CPL'si, kimin hesapladığına göre iki katı değişebilir. Karşılaştırma yapmadan önce iki kararı yazılı hale getirin.",
+          "Payda: reklam panelinin saydığı dönüşüm ile CRM'e giren geçerli kayıt aynı şey değildir. Tekrar eden formları, spam ve sahte kayıtları, mevcut müşterileri ve iş arayanları çıkarın. Panelde 100 dönüşüm görünen kampanyada 80 geçerli lead varsa CPL 400 değil 500 TL'dir.",
+          "Pay: yalnızca reklam harcamasıyla hesaplanan CPL kanal kıyası için yeterlidir. Bütçe kararı için tam maliyetli CPL gerekir: Tam maliyetli CPL = (Reklam + Ajans/danışman + Araçlar + İçerik ve kreatif üretimi) / Geçerli lead. Örnekte 40.000 TL reklama 12.000 TL ajans ve 4.000 TL araç eklenirse 56.000 / 80 = 700 TL olur. İkisini de raporlayın ve hangisi olduğunu her yerde belirtin.",
+          "Dönem: harcama ile lead aynı dönemden gelmelidir. LinkedIn veya içerik gibi geç dönen kanallarda aylık kıyas yanıltabilir; birkaç ayın toplamına bakın.",
+        ],
+      },
+      {
+        heading: "CPL, CPC, CPA ve CAC arasındaki fark nedir?",
+        paragraphs: [
+          "Bu metrikler hunide farklı noktaları ölçer ve birbirine bağlıdır: CPL = CPC / Tıklamadan lead'e dönüşüm oranı. Tıklama başı maliyetiniz 30 TL, formu dolduranların oranı %6 ise CPL 30 / 0,06 = 500 TL'dir.",
+          "Bir de karıştırılan bir kullanım var: 'CPL modeli' bazen bir satın alma modelini anlatır; yayıncıya veya lead tedarikçisine her lead için sabit ücret ödersiniz. Metrik olarak CPL ise hangi modelle aldığınızdan bağımsız, gerçekleşen ortalama maliyettir.",
+        ],
+        bullets: [
+          "CPC: tıklama başı maliyet. Trafiğin fiyatını ölçer",
+          "CPL: lead başı maliyet. Kaydın fiyatını ölçer, kalitesini ölçmez",
+          "CPA: tanımladığınız bir eylemin maliyeti. Eylem lead de olabilir satış da, bu yüzden tanımı belirtilmelidir",
+          "CAC: yeni müşteri başı maliyet. Satış maliyetlerini de içerir ve kararın gerçek ölçüsüdür",
+        ],
+      },
+      {
+        heading: "Lead'den müşteriye: MQL ve SQL başı maliyet",
+        paragraphs: [
+          "CPL hunide ilk durak olduğu için tek başına yanıltır. Her aşamanın maliyetini ayrı hesaplarsanız sorunun nerede olduğunu görürsünüz. Örnek şirkette 40.000 TL ile 80 lead alınıyor; bunların yarısı pazarlama kriterlerini geçiyor (MQL), MQL'lerin %40'ı satış ekibince kabul ediliyor (SQL), SQL'lerin dörtte biri müşteri oluyor.",
+          "Bu aşamalı hesap, 'lead pahalı' tartışmasını 'hangi geçiş bozuk' sorusuna çevirir. CPL kabul edilebilir ama SQL oranı düşükse sorun hedefleme ya da teklif uyumudur; SQL oranı iyi ama kapanış düşükse satış sürecine bakılır.",
+        ],
+        bullets: [
+          "CPL: 40.000 / 80 lead = 500 TL",
+          "MQL başı maliyet: 40.000 / 40 = 1.000 TL",
+          "SQL başı maliyet: 40.000 / 16 = 2.500 TL",
+          "Reklam kaynaklı müşteri başı maliyet: 40.000 / 4 = 10.000 TL",
+        ],
+      },
+      {
+        heading: "İyi CPL kaç? Kendi maksimum CPL'nizi nasıl bulursunuz?",
+        paragraphs: [
+          "Türkçe rehberlerdeki 'iyi CPL' tabloları birbirini tutmuyor: bir yazı B2B için 200 TL'ye kadar 'makul' derken başka bir yazı 1.500–4.000 TL ve üstünü gösteriyor; ikisi de kaynak ya da yöntem vermiyor. Enflasyon altındaki TL tutarları da hızla eskir. Dolar bazında yayımlanmış bir kıyas olarak LocaliQ'nun 2026 arama reklamı verileri tüm sektörlerde ortalama 66,69 $, iş hizmetlerinde 93,69 $ lead maliyeti gösteriyor. Bu rakamlar ABD ağırlıklı müşteri kampanyalarından gelir, telefon ve sohbet gibi iletişimleri de lead sayar; Türkiye için hedef değil, yalnızca bir mertebe bilgisidir.",
+          "Daha sağlam yol, sınırı kendi ekonominizden hesaplamaktır. Maksimum CPL = Reklama ayrılan maksimum CAC × Lead'den müşteriye dönüşüm oranı. Reklama ayrılan maksimum CAC = (Müşteri brüt kâr LTV'si / Hedef LTV:CAC oranı) − Müşteri başı satış maliyeti.",
+          "Örnek: müşterinin ömür boyu brüt kârı 180.000 TL, hedef LTV:CAC oranı 3. Müşteri başına toplam 60.000 TL harcayabilirsiniz; bunun 20.000 TL'si satış ekibinin maliyetiyse reklama 40.000 TL kalır. Lead'lerin %5'i müşteri oluyorsa maksimum CPL 40.000 × 0,05 = 2.000 TL'dir.",
+          "Sonuç şaşırtıcı olabilir: bu şirket 500 TL CPL'den şikâyet ederken sınırının dörtte birinde çalışıyordur. Bütçeyi kısmak yerine artırmak daha kârlı olabilir. Tersine, %1 lead-müşteri oranı olan aynı şirkette sınır 400 TL'ye iner ve 500 TL CPL zarar demektir. Bu nedenle CPL'yi hiçbir zaman dönüşüm oranından bağımsız yorumlamayın.",
+        ],
+      },
+      {
+        heading: "Düşük CPL neden tuzak olabilir?",
+        paragraphs: [
+          "Reklam algoritmaları ona verdiğiniz hedefi optimize eder. Hedef 'form' ise en ucuz formu getirir; o formu dolduranın satın alıp almayacağını bilmez. İki kampanyayı aynı bütçeyle karşılaştıralım.",
+          "A kampanyası raporda kazanan görünür, ama B'nin üç katı müşteri başı maliyete sahiptir. A kampanyasını ölçeklemek, CPL'yi düşürürken CAC'ı yükseltir ve satış ekibinin zamanını yer. Lead'in kalitesini reklam paneline geri besleme yöntemlerini B2B lead maliyetleri yazımızda ayrıntılı anlattık.",
+        ],
+        bullets: [
+          "Kampanya A (30.000 TL): 150 lead, CPL 200 TL → 6 SQL (SQL başı 5.000 TL) → 1 müşteri (müşteri başı 30.000 TL)",
+          "Kampanya B (30.000 TL): 40 lead, CPL 750 TL → 12 SQL (SQL başı 2.500 TL) → 3 müşteri (müşteri başı 10.000 TL)",
+        ],
+      },
+      {
+        heading: "CPL nasıl düşürülür?",
+        paragraphs: [
+          "CPL iki sayının oranı olduğu için iki kol vardır. 30 TL tıklama ve %6 dönüşümde CPL 500 TL'dir. Tıklama maliyetini %20 düşürüp 24 TL'ye indirmek CPL'yi 400 TL'ye, dönüşümü %8'e çıkarmak 375 TL'ye indirir. Tıklama maliyeti rekabete bağlıdır; dönüşüm oranı ise büyük ölçüde sizin kontrolünüzdedir, bu yüzden önce oradan başlamak genellikle daha hızlı sonuç verir.",
+          "Sırayla uygulayın ve her adımda lead kalitesini de izleyin. CPL düşerken SQL oranı da düşüyorsa kazanç gerçek değildir.",
+        ],
+        bullets: [
+          "Teklifi netleştirin: 'Bize ulaşın' yerine somut bir değer verin (fiyat aralığı, ücretsiz denetim, örnek rapor)",
+          "Formu sadeleştirin, ama nitelik alanlarını korumayı deneyin: şirket büyüklüğü gibi bir alan lead sayısını azaltırken SQL oranını artırabilir",
+          "Niyet düşük sorguları kesin: arama terimleri raporundan iş arayan, ücretsiz arayan ve öğrenci aramalarını hariç tutun",
+          "Reklam ile açılış sayfası mesajını eşleştirin",
+          "Yeniden pazarlamayla siteye gelip form doldurmayanlara ikinci teklif gösterin",
+          "Sahte kayıtları filtreleyin: bot koruması ve e-posta doğrulaması olmadan raporlanan CPL gerçek değildir",
+          "Kanalı bütçeye göre seçin: 'Hangi Pazarlama Kanalı Size Uygun?' aracı başlangıç için yön verir",
+        ],
+      },
+      {
+        heading: "CPL doğru nasıl ölçülür?",
+        paragraphs: [
+          "Ölçüm üç parçadan oluşur. Birincisi kaynak: her reklam linkini UTM ile etiketleyin ve formda gizli alanlarla CRM'e yazın. Böylece lead'in kampanyasını satış sonuçlarına kadar takip edebilirsiniz.",
+          "İkincisi kalite durumu: CRM'de lead, MQL, SQL ve müşteri aşamalarını ortak tanımlarla işaretleyin. Satış ve pazarlamanın aynı tanımı kullanmadığı yerde hiçbir CPL raporu güvenilir değildir.",
+          "Üçüncüsü geri besleme: Google Ads çevrimdışı dönüşüm içe aktarmada, formla birlikte tıklama kimliğini (GCLID) saklarsınız ve lead sözleşmeye dönüştüğünde bunu Google'a gönderirsiniz. Google'ın lead'ler için gelişmiş dönüşümleri ise formdaki e-posta gibi verileri karmalanmış olarak eşleştirerek bu işi güçlendirir ve Google tarafından önerilen yoldur; 15 Haziran 2026'dan itibaren yüklemeler Data Manager API tarafına taşındı. Kişisel veri işlediğiniz için kurulumdan önce aydınlatma metni ve açık rıza gerekliliklerini hukuk danışmanınızla kontrol edin.",
+          "Pratik bir haftalık rapor için kanal başına şu sütunlar yeter: harcama, geçerli lead, CPL, SQL, SQL başı maliyet, müşteri, CAC. Kapanış süreniz uzunsa son satırları kohort olarak (lead'in geldiği aya göre) okuyun.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "CPL nedir, ne demek?",
+        answer:
+          "CPL, Cost Per Lead'in kısaltmasıdır ve lead başı maliyet anlamına gelir. Toplam pazarlama harcamasının geçerli potansiyel müşteri sayısına bölünmesiyle bulunur: 40.000 TL ile 80 lead aldıysanız CPL 500 TL'dir.",
+      },
+      {
+        question: "CPL nasıl hesaplanır?",
+        answer:
+          "CPL = Toplam harcama / Geçerli lead sayısı. Tıklama verisiyle de bulunabilir: CPL = CPC / Lead dönüşüm oranı. 30 TL tıklama ve %6 dönüşümde CPL 500 TL olur. Tekrar eden ve sahte kayıtları paydadan çıkarın.",
+      },
+      {
+        question: "İyi bir CPL değeri kaçtır?",
+        answer:
+          "Sektörden bağımsız bir eşik yoktur. Kendi sınırınızı hesaplayın: Maksimum CPL = Reklama ayrılan maksimum CAC × Lead'den müşteriye oran. Reklama 40.000 TL ayırabilen ve lead'lerinin %5'i müşteri olan şirkette sınır 2.000 TL'dir.",
+      },
+      {
+        question: "CPL ile CPA arasındaki fark nedir?",
+        answer:
+          "CPL yalnızca lead kazanmanın maliyetidir. CPA, tanımladığınız herhangi bir eylemin maliyetidir; eylem satış, deneme ya da lead olabilir. Lead hedefli kampanyada ikisi aynı sayıya denk gelebilir, bu yüzden CPA'nın neyi saydığını belirtmek gerekir.",
+      },
+      {
+        question: "CPL düşükse kampanya iyi midir?",
+        answer:
+          "Tek başına söylenemez. Ucuz lead'ler satışa dönmüyorsa CAC yükselir. Karar için CPL'yi SQL başı maliyet ve müşteri başı maliyetle birlikte okuyun; aynı bütçede daha pahalı lead getiren kampanya daha çok müşteri getirebilir.",
+      },
+    ],
+    howTo: {
+      name: "Maksimum CPL nasıl hesaplanır?",
+      description: "Müşteri değerinden ve dönüşüm oranından geriye giderek ödeyebileceğiniz en yüksek lead maliyetini bulun.",
+      steps: [
+        { name: "Müşteri değerini bulun", text: "Bir müşterinin ömür boyu brüt kârını (LTV) hesaplayın." },
+        { name: "Toplam CAC sınırını koyun", text: "LTV'yi hedef LTV:CAC oranına bölün." },
+        { name: "Satış maliyetini düşün", text: "Müşteri başına satış ekibi ve demo maliyetini çıkarın; kalan tutar reklama ayrılabilecek CAC'tır." },
+        { name: "Lead-müşteri oranıyla çarpın", text: "Son dönem geçerli lead'lerinin yüzde kaçının müşteri olduğunu bulun ve reklam CAC'ı ile çarpın." },
+        { name: "Mevcut CPL ile kıyaslayın", text: "CPL sınırın altındaysa bütçeyi test ederek artırın; üstündeyse önce dönüşüm ve lead kalitesini düzeltin." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama (B2B modu)", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "B2B Lead Generation Maliyetleri Nasıl Düşürülür?", href: "/blog/b2b-lead-generation-maliyetleri-nasil-dusurulur/" },
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "Hangi Pazarlama Kanalı Size Uygun? (Quiz)", href: "/ucretsiz-araclar/hangi-pazarlama-kanali-uygun/" },
+      { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "Google Ads Nedir, Nasıl Çalışır?", href: "/blog/google-ads-nedir-nasil-calisir/" },
+      { label: "Google Ads Yardım: Çevrimdışı dönüşüm içe aktarma", href: "https://support.google.com/google-ads/answer/2998031", external: true },
+      { label: "Google Ads Yardım: Lead'ler için gelişmiş dönüşümler", href: "https://support.google.com/google-ads/answer/15713840", external: true },
+      { label: "LocaliQ: Search Advertising Benchmarks", href: "https://localiq.com/blog/search-advertising-benchmarks/", external: true },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -5302,6 +5467,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "cac",
     resources: [
+      { label: "What Is CPL? Cost Per Lead Formula", href: "/en/blog/what-is-cpl-cost-per-lead/" },
       {
         label: "How to Design a B2B Lead Generation Funnel: End-to-End Guide",
         href: "/en/blog/b2b-lead-generation-funnel-design",
@@ -6022,6 +6188,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is CPL? Cost Per Lead Formula", href: "/en/blog/what-is-cpl-cost-per-lead/" },
       { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
       { label: "How to Run Meta Ads: Budget, Audience & Learning Phase", href: "/en/blog/how-to-run-meta-ads-guide/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
@@ -6972,6 +7139,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "cac",
     resources: [
+      { label: "What Is CPL? Cost Per Lead Formula", href: "/en/blog/what-is-cpl-cost-per-lead/" },
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
       { label: "CAC Payback Period Calculator", href: "/en/free-tools/cac-payback-period-calculator/" },
       { label: "What Is LTV? What Should Your LTV:CAC Ratio Be?", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
@@ -8775,6 +8943,154 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
       { label: "Trendyol ad solutions (official site)", href: "https://ads.trendyol.com/", external: true },
+    ],
+  },
+  {
+    slug: "what-is-cpl-cost-per-lead",
+    seoTitle: "What Is CPL? Cost Per Lead Formula and Benchmarks",
+    title: "What Is CPL? How to Calculate Cost Per Lead, What a Good CPL Is and How to Lower It in B2B",
+    description:
+      "What is CPL: the cost per lead formula, fully loaded CPL, cost per MQL and SQL, how to find your own maximum CPL and how to lower it without hurting quality.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "CPL (cost per lead) is the average spend needed to win one lead: CPL = Total marketing spend / Valid leads. $4,000 and 80 leads gives a CPL of $50.",
+      "There is no universal good CPL. Your own numbers set the limit: Maximum CPL = Maximum ad CAC × Lead-to-customer rate. In our example that limit is $200, so a $50 CPL is not expensive at all.",
+      "A low CPL is not a good campaign: a $20 CPL can end at $3,000 per customer while a $75 CPL ends at $1,000.",
+      "CPL has two levers: CPL = CPC / Lead conversion rate. Raising conversion from 6% to 8% cuts CPL by 25%, but without quality tracking a falling CPL may just mean worse leads.",
+    ],
+    publishedAt: "2026-11-02",
+    readingMinutes: 7,
+    tags: ["CPL", "Cost Per Lead", "B2B", "Lead Generation", "CAC", "Ad Metrics"],
+    sections: [
+      {
+        heading: "What is CPL? (Short answer)",
+        paragraphs: [
+          "CPL (cost per lead) shows what your marketing spend pays, on average, for each potential customer record. A lead is someone who fills in a form, requests a demo, calls, or leaves contact details to download content.",
+          "Formula: CPL = Total spend / Valid leads. If you spend $4,000 in a month and get 80 valid leads, CPL is 4,000 / 80 = $50.",
+          "CPL matters most when the sale closes later with a sales team: B2B software and services, education, healthcare, real estate, insurance. In ecommerce, where the sale is measured directly, ROAS and cost per order are more useful.",
+        ],
+      },
+      {
+        heading: "How do you calculate CPL? Which leads and costs count?",
+        paragraphs: [
+          "The formula is simple, so the mistakes live in the definitions. Agree on two things in writing before comparing numbers.",
+          "Denominator: a conversion in the ad panel is not the same as a valid CRM record. Remove duplicates, spam, existing customers and job seekers. If the panel shows 100 conversions but 80 are valid, CPL is $50, not $40.",
+          "Numerator: ad-only CPL is fine for comparing channels, but budget decisions need fully loaded CPL = (Ads + Agency + Tools + Content and creative) / Valid leads. Adding $1,200 of agency fees and $400 of tools to the example gives 5,600 / 80 = $70. Report both and label them clearly.",
+          "Period: match spend and leads. For slow channels such as LinkedIn or content, look at several months together.",
+        ],
+      },
+      {
+        heading: "How do CPL, CPC, CPA and CAC differ?",
+        paragraphs: [
+          "These metrics measure different points in the funnel and connect to each other: CPL = CPC / Click-to-lead conversion rate. A $3 CPC at 6% conversion gives a $50 CPL.",
+          "Note that 'CPL model' sometimes describes a buying model, where you pay a publisher a fixed fee per lead. As a metric, CPL is the actual average cost however you bought the lead.",
+        ],
+        bullets: [
+          "CPC: cost per click, the price of traffic",
+          "CPL: cost per lead, the price of a record, not its quality",
+          "CPA: cost of a defined action, which may be a lead or a sale, so always define it",
+          "CAC: cost per new customer, including sales costs, the real decision metric",
+        ],
+      },
+      {
+        heading: "From lead to customer: cost per MQL and SQL",
+        paragraphs: [
+          "CPL is the first stop in the funnel, so on its own it misleads. Take $4,000 and 80 leads: half pass marketing criteria (MQL), 40% of MQLs are accepted by sales (SQL), and a quarter of SQLs become customers. This turns 'leads are expensive' into 'which stage is broken'.",
+        ],
+        bullets: [
+          "CPL: 4,000 / 80 = $50",
+          "Cost per MQL: 4,000 / 40 = $100",
+          "Cost per SQL: 4,000 / 16 = $250",
+          "Ad cost per customer: 4,000 / 4 = $1,000",
+        ],
+      },
+      {
+        heading: "What is a good CPL? How to find your maximum",
+        paragraphs: [
+          "As a published reference, LocaliQ's 2026 search advertising data shows an average cost per lead of $66.69 across industries and $93.69 for business services. These come from its client campaigns and count calls and chats as leads, so treat them as an order of magnitude, not a target.",
+          "A sturdier approach is to derive the limit. Maximum CPL = Maximum ad CAC × Lead-to-customer rate, where Maximum ad CAC = (Gross profit LTV / Target LTV:CAC ratio) − Sales cost per customer.",
+          "Example: lifetime gross profit of $18,000 with a target ratio of 3 allows $6,000 per customer. If sales costs take $2,000, ads get $4,000. With 5% of leads becoming customers, maximum CPL is 4,000 × 0.05 = $200.",
+          "A team complaining about a $50 CPL may be at a quarter of its limit, and spending more could be the profitable move. At a 1% lead-to-customer rate, the same limit falls to $40 and a $50 CPL loses money. Never read CPL apart from conversion.",
+        ],
+      },
+      {
+        heading: "Why can a low CPL be a trap?",
+        paragraphs: [
+          "Ad algorithms optimize for the goal you give them. If the goal is a form fill, they find the cheapest form fill. Campaign A wins the report but costs three times as much per customer. Scaling it lowers CPL while raising CAC and draining the sales team. We cover feeding lead quality back to ad platforms in our guide to reducing B2B lead costs.",
+        ],
+        bullets: [
+          "Campaign A ($3,000): 150 leads, CPL $20 → 6 SQLs ($500 each) → 1 customer ($3,000)",
+          "Campaign B ($3,000): 40 leads, CPL $75 → 12 SQLs ($250 each) → 3 customers ($1,000 each)",
+        ],
+      },
+      {
+        heading: "How do you lower CPL?",
+        paragraphs: [
+          "At a $3 CPC and 6% conversion, CPL is $50. Cutting CPC by 20% to $2.40 gives $40; raising conversion to 8% gives $37.50. CPC depends on competition while conversion is largely in your hands, so it is usually the faster lever. Track lead quality at every step: if SQL rate falls with CPL, the win is not real.",
+        ],
+        bullets: [
+          "Make the offer concrete: a price range, a free audit or a sample report rather than 'contact us'",
+          "Simplify forms but test keeping a qualifying field, which can lower lead volume and raise SQL rate",
+          "Exclude low-intent searches such as job and free-tool queries",
+          "Match ad and landing page messages",
+          "Retarget visitors who did not convert with a second offer",
+          "Filter fake records with bot protection and email validation",
+        ],
+      },
+      {
+        heading: "How do you measure CPL correctly?",
+        paragraphs: [
+          "Tag every ad link with UTMs and pass them through hidden form fields into your CRM, then mark lead, MQL, SQL and customer stages with shared definitions.",
+          "Finally, feed outcomes back. With Google Ads offline conversion imports, you store the click ID (GCLID) with the lead and send it back when the deal closes. Enhanced conversions for leads strengthens this by matching hashed form data and is Google's recommended path; since 15 June 2026 these uploads have moved to the Data Manager API. Check consent requirements with your legal adviser first.",
+          "A weekly report needs only spend, valid leads, CPL, SQLs, cost per SQL, customers and CAC per channel. With long sales cycles, read the last rows as cohorts by lead month.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does CPL mean?",
+        answer: "CPL stands for cost per lead: total marketing spend divided by valid leads. $4,000 and 80 leads gives a $50 CPL.",
+      },
+      {
+        question: "How do you calculate cost per lead?",
+        answer: "CPL = Total spend / Valid leads, or CPL = CPC / Lead conversion rate. A $3 CPC at 6% conversion gives $50. Remove duplicates and fake records from the denominator.",
+      },
+      {
+        question: "What is a good cost per lead?",
+        answer: "There is no universal threshold. Calculate your own: Maximum CPL = Maximum ad CAC × Lead-to-customer rate. With $4,000 for ads per customer and a 5% rate, the limit is $200.",
+      },
+      {
+        question: "What is the difference between CPL and CPA?",
+        answer: "CPL is the cost of winning a lead. CPA is the cost of whatever action you define, such as a sale or a trial. In a lead campaign they can match, so always state what CPA counts.",
+      },
+      {
+        question: "Is a low CPL always good?",
+        answer: "No. Cheap leads that never buy raise CAC. Read CPL together with cost per SQL and cost per customer; a pricier lead source can produce more customers on the same budget.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate your maximum CPL",
+      description: "Work back from customer value and conversion to the highest lead cost you can afford.",
+      steps: [
+        { name: "Find customer value", text: "Calculate lifetime gross profit per customer (LTV)." },
+        { name: "Set a total CAC cap", text: "Divide LTV by your target LTV:CAC ratio." },
+        { name: "Subtract sales cost", text: "Remove sales team and demo cost per customer to get the CAC available for ads." },
+        { name: "Multiply by the lead-to-customer rate", text: "Find the share of recent valid leads that became customers and multiply by ad CAC." },
+        { name: "Compare with current CPL", text: "Below the cap, test more budget. Above it, fix conversion and lead quality first." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator (B2B mode)", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
+      { label: "What Is CAC?", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
+      { label: "What Is LTV? LTV:CAC Ratio", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
+      { label: "How to Reduce B2B Lead Generation Costs", href: "/en/blog/how-to-reduce-b2b-lead-generation-costs/" },
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "Google Ads Help: Offline conversion imports", href: "https://support.google.com/google-ads/answer/2998031", external: true },
+      { label: "Google Ads Help: Enhanced conversions for leads", href: "https://support.google.com/google-ads/answer/15713840", external: true },
+      { label: "LocaliQ: Search Advertising Benchmarks", href: "https://localiq.com/blog/search-advertising-benchmarks/", external: true },
     ],
   },
 ];
