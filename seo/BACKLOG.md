@@ -24,14 +24,16 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi: /blog/cac-nedir-musteri-edinme-maliyeti/, /blog/kar-marji-nasil-hesaplanir/ — 2026-10-28 (5/5 tamam)
 - [ ] Dizine ekleme isteği (2026-10-28 kalan): /en/blog/what-is-cac-customer-acquisition-cost/, /en/blog/how-to-calculate-profit-margin/
 - [ ] Dizine ekleme isteği (2026-10-28 güçlendirildi): /ucretsiz-araclar/llms-txt-olusturucu/ (TR, önce), /en/free-tools/llms-txt-generator/ ("Keşfedildi" listesinde)
-- [ ] Dizine ekleme isteği (2026-10-29, TR önce): /blog/mrr-nedir-nasil-hesaplanir/, /blog/llms-txt-nedir-ise-yariyor-mu/, /en/blog/what-is-mrr-how-to-calculate/, /en/blog/what-is-llms-txt-does-it-work/
-- [ ] Dizine ekleme isteği (2026-10-30, TR önce): /blog/churn-nedir-churn-rate-nasil-hesaplanir/, /blog/meta-reklam-verme-rehberi/, /en/blog/what-is-churn-rate/, /en/blog/how-to-run-meta-ads-guide/
-- [ ] Dizine ekleme isteği (2026-10-31, TR önce): /blog/geo-nedir-yapay-zeka-arama-optimizasyonu/, /blog/arr-nedir-yillik-yinelenen-gelir/, /en/blog/what-is-geo-generative-engine-optimization/, /en/blog/what-is-arr-annual-recurring-revenue/
-- [ ] Dizine ekleme isteği (2026-11-01, TR önce): /blog/trendyol-komisyon-oranlari-hesaplama/, /blog/google-ads-nedir-nasil-calisir/, /en/blog/trendyol-commission-rates/, /en/blog/what-is-google-ads-how-it-works/
+- [ ] Dizine ekleme isteği (2026-10-29, TR önce; MRR TR 02.11'de zaten dizinde): /blog/llms-txt-nedir-ise-yariyor-mu/, /en/blog/what-is-mrr-how-to-calculate/, /en/blog/what-is-llms-txt-does-it-work/
+- [ ] Dizine ekleme isteği (2026-10-30 kalan): /en/blog/what-is-churn-rate/, /en/blog/how-to-run-meta-ads-guide/
+- [ ] Dizine ekleme isteği (2026-10-31 kalan, TR önce): /blog/arr-nedir-yillik-yinelenen-gelir/, /en/blog/what-is-geo-generative-engine-optimization/, /en/blog/what-is-arr-annual-recurring-revenue/
+- [x] Dizine ekleme isteği gönderildi: /blog/trendyol-komisyon-oranlari-hesaplama/, /blog/google-ads-nedir-nasil-calisir/, /blog/geo-nedir-yapay-zeka-arama-optimizasyonu/, /blog/meta-reklam-verme-rehberi/, /blog/churn-nedir-churn-rate-nasil-hesaplanir/ — 2026-11-02 (5/5; hepsi "URL Google'da yok" idi, öncelik hacme göre)
+- [ ] Dizine ekleme isteği (2026-11-01 kalan): /en/blog/trendyol-commission-rates/, /en/blog/what-is-google-ads-how-it-works/
+- [ ] Dizine ekleme isteği (2026-11-02 güçlendirildi, TR önce): /blog/utm-nedir-utm-parametreleri/, /blog/cac-nedir-musteri-edinme-maliyeti/, /blog/ltv-nedir-ltv-cac-orani/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
-- [ ] Keyword Planner keşif turu 3: 1–22 Ara (30 Kas'tan önce); turu 2 konularının tam hacmini "Arama hacmi ve tahminleri" ile doğrula
+- [x] Keyword Planner keşif turu 3 + turu 2 konularının tam hacmi: açık konular tek listede yeniden sıralandı (44 konu) — 2026-11-02. Sonraki tur: açık konu 14'ün altına inince
 - [ ] GA4: tool_use / lead olayları raporda yok. Yerleşik tarayıcıda gtag.js çalışmıyor (google_tag_manager yok, g/collect isteği yok) → önceki 'test olayı' GA'ya ulaşmamıştı; kodda olay çağrısı doğru (dataLayer'a düşüyor). Kullanıcı kendi tarayıcısında bir araç kullanıp GA4 › Gerçek zamanlı'da tool_use görürse ölçüm doğrulanır
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
@@ -53,6 +55,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [~] ARR sayfası: bileşenlerle ARR (yeni/genişleme/daralma/kayıp), CARR — 31.10: destek yazısı yayında (/blog/arr-nedir-yillik-yinelenen-gelir/, köprü + CARR örnekli); araca köprü modu eklemek düşük öncelik
       (analiz: seo/research/arac-serp-analizi.md)
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
+- [ ] Kar Marjı aracına "kâr oranı (markup)" modu: kar oranı hesaplama 880/ay (02.11 hacim); yazı var, araç yalnızca marj hesaplıyor
 - [ ] Pazaryeri aracı v2: Trendyol vs Hepsiburada yan yana karşılaştırma, çoklu ürün (desi → takvimde ayrı araç, 28 Eki; "desi hesaplama" 14.800/ay)
 - [x] Hacme göre başlık: Trendyol aracı "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)" ("trendyol komisyon hesaplama" 18.100/ay); Brüt marj aracı "Kar Marjı Hesaplama: ..." ("kar marjı hesaplama" 1.000/ay) + kar marjı/markup SSS — 2026-10-26
 - [x] Destek yazısı: "Trendyol komisyon oranları 2026 ve komisyon hesaplama" — 2026-11-01 (/blog/trendyol-komisyon-oranlari-hesaplama/; barem eşiği, başabaş fiyat, kampanya teklifi, iade açılarıyla). Trendyol aracının ilgili yazısı artık bu yazı
@@ -74,6 +77,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] LTV nedir, nasıl hesaplanır — 2026-10-26 (/blog/ltv-nedir-ltv-cac-orani/)
 - [x] Churn nedir, churn rate nasıl hesaplanır — 2026-10-30 (/blog/churn-nedir-churn-rate-nasil-hesaplanir/)
 - [x] Meta reklam verme rehberi — 2026-10-30 (/blog/meta-reklam-verme-rehberi/)
+- [ ] Meta reklam verme rehberine "Facebook reklam verme" bölümü (facebook reklam verme 480/ay; yeni yazı değil, güçlendirme; Instagram yazısı yayınlanınca yap)
 - [x] UTM parametreleri nedir, nasıl kullanılır — 2026-10-27 (/blog/utm-nedir-utm-parametreleri/)
 - [x] Kar marjı nasıl hesaplanır (brüt/katkı/faaliyet, markup) — 2026-10-28 (/blog/kar-marji-nasil-hesaplanir/)
 - [ ] CAC geri ödeme süresi nedir

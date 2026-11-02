@@ -1563,6 +1563,8 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Brüt Kâr Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -1725,6 +1727,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "LTV Nedir? Müşteri Yaşam Boyu Değeri Hesaplama", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "Google Ads Nedir, Nasıl Çalışır? Maliyet ve Örnek Hesap", href: "/blog/google-ads-nedir-nasil-calisir/" },
       { label: "Meta Reklam Verme Rehberi: Bütçe, Kitle ve Öğrenme Aşaması", href: "/blog/meta-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
@@ -1959,6 +1964,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faq: [
       { question: "Black Friday 2026 hangi gün?", answer: "Black Friday 2026, 27 Kasım Cuma gününe denk geliyor. Cyber Monday ise 30 Kasım Pazartesi. Türkiye'de birçok marka indirimleri Kasım boyunca ve 11.11 ile başlatıyor." },
+      { question: "Black Friday 2026 ne zaman?", answer: "Black Friday 2026, 27 Kasım Cuma günüdür; Cyber Monday ise 30 Kasım Pazartesi. Türkiye'de markalar ve pazaryerleri indirimleri genellikle tek güne sıkıştırmaz, Kasım boyunca 'Efsane Kasım' ya da 'Kasım İndirimleri' gibi adlarla yayar. Bu yüzden reklam planını 27 Kasım'dan birkaç hafta önce başlatın." },
       { question: "Black Friday reklamlarına ne zaman başlamalı?", answer: "Hazırlığa en geç 5 hafta önce başlayın; kampanyaları yoğun günlerden 1-2 hafta önce düşük bütçeyle açarak algoritmanın öğrenme aşamasını erken tamamlayın, bütçeyi son haftada kademeli artırın." },
       { question: "Black Friday'de indirim oranı nasıl belirlenir?", answer: "İndirimli fiyattaki katkı marjını hesaplayın. %35 katkı marjlı bir üründe %20 indirim başabaş ROAS'ı 4,71'e çıkarır, %40 indirim ise reklamsız bile zarar ettirir. Düşük marjlı ürünlerde indirimi küçük tutun ya da paket ve kargo eşiğiyle sepeti büyütün." },
       { question: "İndirimden önceki fiyat nasıl gösterilmeli?", answer: "Türkiye'deki düzenlemeye göre indirim duyurularında indirimden önceki son 30 gün içindeki en düşük fiyat referans alınmalıdır. Kasım başında fiyat artırıp indirim göstermek bu kurala aykırıdır." },
@@ -1978,6 +1984,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
@@ -2160,6 +2167,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "LTV Nedir? Müşteri Yaşam Boyu Değeri Hesaplama", href: "/blog/ltv-nedir-ltv-cac-orani/" },
       { label: "Google Ads Nedir, Nasıl Çalışır? Maliyet ve Örnek Hesap", href: "/blog/google-ads-nedir-nasil-calisir/" },
       { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -2174,10 +2182,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ltv-nedir-ltv-cac-orani",
-    seoTitle: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı? Örnekli Rehber",
+    seoTitle: "LTV Nedir? Müşteri Yaşam Boyu Değeri Hesaplama (Örnekli)",
     title: "LTV Nedir, Nasıl Hesaplanır? LTV:CAC Oranı Kaç Olmalı? (Kohort ve Reklam Örnekleriyle)",
     description:
-      "LTV (müşteri yaşam boyu değeri) nedir, marjla nasıl hesaplanır? Kohort LTV örneği, LTV:CAC oranı yorumu, geri ödeme süresi ve LTV'den reklam CPA hedefi.",
+      "LTV, bir müşterinin size bıraktığı toplam kârdır. 483 TL'lik örnekle LTV hesaplama, kohort yöntemi, LTV:CAC oranı kaç olmalı ve reklama ne kadar harcanır?",
     category: "saas-buyume",
     tldr: [
       "LTV (müşteri yaşam boyu değeri), bir müşterinin sizinle kaldığı süre boyunca bıraktığı toplam kârdır. Ciroyla değil marjla hesaplanır: ortalama sepeti 600 TL, katkı marjı %35 olan ve 24 ayda ortalama 2,3 sipariş veren müşterinin LTV'si 483 TL'dir (ciro LTV'si 1.380 TL).",
@@ -2186,6 +2194,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "LTV'yi reklam hedefine çevirin: Maks. CAC = LTV / Hedef oran. Örnekte 3:1 hedefi 161 TL CAC ve ilk siparişte yaklaşık 3,73 ROAS demektir; tekrar satın alma düşükse 3:1 kuralı ilk siparişte kâr etmeyi gerektirir.",
     ],
     publishedAt: "2026-10-26",
+    updatedAt: "2026-11-02",
     readingMinutes: 9,
     tags: ["LTV", "LTV:CAC", "Müşteri Yaşam Boyu Değeri", "Kohort Analizi", "CAC", "Birim Ekonomisi"],
     sections: [
@@ -2299,6 +2308,11 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faq: [
       {
+        question: "LTV ne demek? Kredideki LTV ile aynı şey mi?",
+        answer:
+          "Pazarlama ve e-ticarette LTV, Lifetime Value yani müşteri yaşam boyu değeri demektir: bir müşterinin ilişki boyunca bıraktığı toplam kâr. Bankacılık ve kripto kredilerinde geçen LTV ise Loan-to-Value'dur, yani kredi tutarının teminat değerine oranıdır. İkisinin kısaltması aynı, anlamı tamamen farklıdır; bu yazı müşteri yaşam boyu değerini anlatır.",
+      },
+      {
         question: "LTV ile CLV aynı şey mi?",
         answer:
           "Evet. LTV (Lifetime Value), CLV ve CLTV (Customer Lifetime Value) aynı metriği anlatır: bir müşterinin ilişki boyunca bıraktığı toplam değer. Türkçede 'müşteri yaşam boyu değeri' ya da 'müşteri ömür boyu değeri' denir. Finans dilindeki LTV (loan-to-value, kredi/teminat oranı) ise farklı bir kavramdır.",
@@ -2354,10 +2368,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "utm-nedir-utm-parametreleri",
-    seoTitle: "UTM Nedir? UTM Parametreleri ve GA4 Kullanım Rehberi",
+    seoTitle: "UTM Nedir? UTM Kodu Nasıl Oluşturulur? GA4 Rehberi",
     title: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır? (GA4, Google Ads ve Meta Örnekleriyle)",
     description:
-      "UTM nedir, UTM parametreleri ne işe yarar? 9 parametre, örnek linkler, GA4'te nerede görülür, Google Ads ve Meta'da doğru kullanım ve isimlendirme kuralları.",
+      "UTM nedir, UTM kodu nasıl oluşturulur? 4 adımda link oluşturma, 9 parametre, örnek linkler, GA4'te nerede görülür, Google Ads ve Meta'da doğru kullanım.",
     category: "performans-pazarlama",
     tldr: [
       "UTM, bir linkin sonuna eklenen ve ziyaretçinin hangi kaynaktan, hangi kanaldan ve hangi kampanyadan geldiğini Google Analytics'e söyleyen etiketlerdir: ?utm_source=instagram&utm_medium=social&utm_campaign=kasim-indirimi gibi.",
@@ -2366,13 +2380,14 @@ export const BLOG_POSTS: BlogPost[] = [
       "Google Ads'te manuel UTM yerine otomatik etiketlemeyi açık tutun; Meta'da dinamik parametrelerle ({{campaign.name}}, {{ad.name}}) tek şablon kullanın. Sitenizin kendi iç linklerine asla UTM eklemeyin.",
     ],
     publishedAt: "2026-10-27",
-    readingMinutes: 9,
-    tags: ["UTM", "UTM Parametreleri", "GA4", "Kampanya Takibi", "Google Analytics", "Ölçümleme"],
+    updatedAt: "2026-11-02",
+    readingMinutes: 10,
+    tags: ["UTM", "UTM Kodu", "UTM Parametreleri", "GA4", "Kampanya Takibi", "Google Analytics", "Ölçümleme"],
     sections: [
       {
         heading: "UTM nedir? (Kısa cevap)",
         paragraphs: [
-          "UTM (Urchin Tracking Module), bir web adresinin sonuna eklenen ve o linke tıklayan ziyaretçinin nereden geldiğini analiz aracınıza bildiren etiketlerdir. Adını, Google'ın 2005'te satın alıp Google Analytics'e dönüştürdüğü Urchin yazılımından alır.",
+          "UTM (Urchin Tracking Module), bir web adresinin sonuna eklenen ve o linke tıklayan ziyaretçinin nereden geldiğini analiz aracınıza bildiren etiketlerdir; UTM kodu, UTM etiketi ya da UTM linki olarak da geçer. Adını, Google'ın 2005'te satın alıp Google Analytics'e dönüştürdüğü Urchin yazılımından alır.",
           "UTM'siz bir Instagram hikâyesi linki GA4'te çoğu zaman yalnızca 'instagram.com / referral' ya da hiç kaynak bilgisi olmadan görünür; hangi kampanyadan, hangi görselden geldiği kaybolur. Aynı link UTM'le paylaşıldığında GA4 kaynağı, kanalı ve kampanyayı ayrı ayrı kaydeder, satışları da bu kampanyaya bağlayabilirsiniz.",
           "Örnek: https://site.com/kasim-indirimi/?utm_source=instagram&utm_medium=social&utm_campaign=kasim-indirimi-2026&utm_content=hikaye-1",
         ],
@@ -2389,6 +2404,25 @@ export const BLOG_POSTS: BlogPost[] = [
           "&utm_medium=email → aracı: kanal türü (GA4 kanal grubunu bu belirler)",
           "&utm_campaign=kasim-bulteni-2026 → kampanya adı",
           "&utm_content=ust-buton → aynı kampanyadaki farklı link ya da kreatif",
+        ],
+      },
+      {
+        heading: "UTM kodu nasıl oluşturulur? 4 adımda",
+        paragraphs: [
+          "UTM kodu oluşturmak için bir program kurmanız ya da kod yazmanız gerekmez; yapmanız gereken, sayfa adresinin sonuna üç zorunlu parametreyi eklemektir. Aşağıda Instagram hikâyesinde paylaşılacak bir Kasım indirimi linki adım adım oluşturuluyor.",
+        ],
+        bullets: [
+          "1. Hedef adresi alın: https://site.com/kasim-indirimi/",
+          "2. Kaynağı ve kanal türünü yazın: utm_source=instagram (platform), utm_medium=social (kanal türü). Ücretli reklamda medium olarak paid_social ya da cpc kullanın",
+          "3. Kampanyayı ve gerekiyorsa kreatifi ekleyin: utm_campaign=kasim-indirimi-2026, utm_content=hikaye-1. Küçük harf kullanın, Türkçe karakter ve boşluk kullanmayın",
+          "4. Parçaları birleştirin ve test edin: adresin sonuna ? koyup parametreleri & ile bağlayın: https://site.com/kasim-indirimi/?utm_source=instagram&utm_medium=social&utm_campaign=kasim-indirimi-2026&utm_content=hikaye-1. Linki açıp GA4 Gerçek zamanlı raporunda kaynağı kontrol edin",
+        ],
+      },
+      {
+        heading: "UTM oluşturucu mu, elle yazmak mı, Excel mi?",
+        paragraphs: [
+          "Tek seferlik bir link için elle yazmak yeterlidir; ama en sık hata da burada çıkar: büyük harf, Türkçe karakter, boşluk ya da GA4'ün tanımadığı bir medium değeri trafiği Unassigned'a düşürebilir. UTM oluşturucu araçlar birleştirmeyi yapar, ancak çoğu değerlerin doğruluğunu denetlemez. UTM Link Oluşturucu aracımız değerleri küçük harfe ve ASCII'ye çevirir, linkin GA4'te hangi kanala düşeceğini tahmin eder ve Unassigned riskinde uyarır.",
+          "Ayda onlarca link üreten ekipler için en sağlam yöntem, ortak bir tablo tutmaktır: her satırda hedef adres, kaynak, medium, kampanya ve içerik sütunları ve bunları birleştiren bir formül. Excel ya da Google E-Tablolar'da =A2&\"?utm_source=\"&B2&\"&utm_medium=\"&C2&\"&utm_campaign=\"&D2 formülü yeterlidir; böylece kampanya adları tek listeden seçilir ve aynı kanal iki farklı adla yazılmaz.",
         ],
       },
       {
@@ -2501,7 +2535,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "GA4 kaynak, aracı ve kampanya gibi trafik sınıflandırma boyutlarında otomatik etiketleme (gclid) değerlerini kullanır; manuel utm_source ve utm_medium yok sayılır. Manuel utm_content ve utm_term ise Manuel reklam içeriği ve Manuel terim boyutlarına yazılmaya devam eder.",
       },
       {
-        question: "UTM linki nasıl oluşturulur?",
+        question: "UTM kodu (UTM linki) nasıl oluşturulur?",
         answer:
           "Sayfa adresinin sonuna ? ekleyip parametreleri & ile birleştirerek elle yazabilirsiniz; ama hata riskini azaltmak için bir UTM oluşturucu kullanmak daha güvenlidir. Ücretsiz UTM Link Oluşturucu aracımız değerleri otomatik küçük harfe ve Türkçe karaktersiz hale çevirir ve linkin GA4'te hangi kanala düşeceğini gösterir.",
       },
@@ -2537,10 +2571,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cac-nedir-musteri-edinme-maliyeti",
-    seoTitle: "CAC Nedir? Müşteri Edinme Maliyeti ve Hesap Örneği",
+    seoTitle: "CAC Nedir, Ne Demek? Müşteri Edinme Maliyeti Hesaplama",
     title: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır? (Blended, Paid ve Kanal Bazında Örnekler)",
     description:
-      "CAC (müşteri edinme maliyeti) nedir, nasıl hesaplanır? Blended, paid ve tam yüklü CAC farkı, kanal bazında örnek, CAC ile CPA farkı ve CAC'tan reklam hedefi.",
+      "CAC ne demek? Müşteri edinme maliyeti, bir yeni müşteri için harcanan ortalama tutardır. Formül, örnek hesap, paid/blended CAC, CAC ile ROAS ve CPA farkı.",
     category: "saas-buyume",
     tldr: [
       "CAC (Customer Acquisition Cost, müşteri edinme maliyeti), bir dönemde yeni müşteri kazanmak için harcanan toplam pazarlama ve satış maliyetinin o dönemde kazanılan yeni müşteri sayısına bölünmesidir: 310.000 TL ÷ 1.000 yeni müşteri = 310 TL.",
@@ -2549,13 +2583,14 @@ export const BLOG_POSTS: BlogPost[] = [
       "CAC tek başına iyi ya da kötü değildir; ilk sipariş katkısı, LTV ve geri ödeme süresiyle okunur. 900 TL sepet ve %30 katkı marjıyla ilk sipariş 270 TL bırakır; 329 TL'lik paid CAC her yeni müşteride ilk siparişte 59 TL açık demektir.",
     ],
     publishedAt: "2026-10-28",
-    readingMinutes: 9,
+    updatedAt: "2026-11-02",
+    readingMinutes: 10,
     tags: ["CAC", "Müşteri Edinme Maliyeti", "Paid CAC", "Blended CAC", "Birim Ekonomisi", "LTV:CAC"],
     sections: [
       {
-        heading: "CAC nedir? (Kısa cevap)",
+        heading: "CAC nedir, ne demek? (Kısa cevap)",
         paragraphs: [
-          "CAC (Customer Acquisition Cost), Türkçesiyle müşteri edinme maliyeti, bir yeni müşteriyi kazanmak için ortalama ne kadar harcadığınızı gösterir. Formülü: CAC = (Pazarlama giderleri + Satış giderleri) / Aynı dönemde kazanılan yeni müşteri sayısı.",
+          "CAC ne demek? CAC (Customer Acquisition Cost), Türkçesiyle müşteri edinme maliyeti, bir yeni müşteriyi kazanmak için ortalama ne kadar harcadığınızı gösterir. Formülü: CAC = (Pazarlama giderleri + Satış giderleri) / Aynı dönemde kazanılan yeni müşteri sayısı.",
           "Örnek: Ekim ayında reklam, ajans, ekip ve araçlar dahil 310.000 TL harcayan ve bu ay ilk siparişini veren 1.000 yeni müşteri kazanan bir e-ticaret markasının CAC'ı 310.000 / 1.000 = 310 TL'dir. (Yazıdaki tüm tutarlar örnek tutarlardır.)",
           "CAC'ın değeri, bir müşterinin size bıraktığı kârla karşılaştırıldığında ortaya çıkar. Bu yüzden CAC'ı her zaman ilk sipariş katkısı, LTV (müşteri yaşam boyu değeri) ve CAC geri ödeme süresiyle birlikte okuyun.",
         ],
@@ -2620,6 +2655,14 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        heading: "CAC ile ROAS arasındaki fark nedir?",
+        paragraphs: [
+          "ROAS, reklamın getirdiği ciroyu reklam harcamasına böler ve kime satıldığına bakmaz; CAC ise harcamayı yalnızca yeni müşterilere böler. İkisi aynı kampanyada farklı sonuç verebilir, çünkü panel ROAS'ı mevcut müşterilerin tekrar siparişlerini de sayar.",
+          "Yukarıdaki Meta örneğinde sepetin her siparişte 900 TL olduğunu varsayalım. Panel ROAS'ı (500 × 900) / 120.000 = 3,75 görünür. Yalnızca 400 yeni müşteriye bakarsanız yeni müşteri ROAS'ı 900 / 300 = 3,0'dır; bu da 300 TL'lik CAC'ın karşılığıdır (ROAS = İlk sipariş tutarı / Medya CAC'ı).",
+          "%30 katkı marjında başabaş ROAS 1 / 0,30 ≈ 3,33'tür. Panel 3,75 ile kârlı görünürken yeni müşteri ROAS'ı 3,0 ile başabaşın altındadır: her yeni müşteri ilk siparişte 270 TL bırakıp 300 TL'ye gelir, yani 30 TL açık verir. Kampanya bu nedenle ancak tekrar siparişlerle kâra geçer. Bu kararı vermek için iki rakamı birlikte izleyin; marjınıza göre başabaş noktasını ROAS aracıyla, CAC'ı CAC Hesaplayıcı ile bulabilirsiniz.",
+        ],
+      },
+      {
         heading: "İyi bir CAC kaç olmalı? İlk sipariş, LTV ve geri ödeme",
         paragraphs: [
           "Evrensel bir 'iyi CAC' tutarı yoktur; 300 TL, 150 TL'lik tek seferlik bir ürün için çok yüksek, yıllık sözleşmeli bir B2B hizmeti için çok düşüktür. CAC'ı üç ölçüyle değerlendirin.",
@@ -2668,7 +2711,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faq: [
       {
-        question: "CAC açılımı nedir, Türkçesi ne?",
+        question: "CAC ne demek, açılımı nedir?",
         answer:
           "CAC, Customer Acquisition Cost'un kısaltmasıdır; Türkçede müşteri edinme maliyeti ya da müşteri kazanım maliyeti denir. Bir yeni müşteri kazanmak için harcanan ortalama pazarlama ve satış maliyetini gösterir.",
       },
@@ -2676,6 +2719,11 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "CAC nasıl hesaplanır?",
         answer:
           "CAC = (Pazarlama giderleri + Satış giderleri) / Aynı dönemde kazanılan yeni müşteri sayısı. 310.000 TL toplam edinme maliyeti ve 1.000 yeni müşteri için CAC 310 TL'dir. Yalnızca reklam harcamasını reklamdan gelen müşterilere bölerseniz paid CAC'ı bulursunuz.",
+      },
+      {
+        question: "CAC ile ROAS arasındaki fark nedir?",
+        answer:
+          "ROAS tüm reklam cirosunu harcamaya böler, CAC harcamayı yalnızca yeni müşterilere böler. 120.000 TL reklamla 500 sipariş (100'ü tekrar) ve 900 TL sepette panel ROAS'ı 3,75 görünür; 400 yeni müşteri için CAC 300 TL, yeni müşteri ROAS'ı 3,0'dır.",
       },
       {
         question: "CAC ile CPA aynı şey mi?",
@@ -3611,6 +3659,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplama: ROAS ve Başabaş ROAS", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -4333,6 +4382,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
