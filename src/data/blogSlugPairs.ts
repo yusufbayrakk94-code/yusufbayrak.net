@@ -29,4 +29,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "google-ads-nedir-nasil-calisir", en: "what-is-google-ads-how-it-works" },
   { tr: "trendyol-reklam-nasil-verilir", en: "how-to-advertise-on-trendyol" },
   { tr: "cpl-nedir-lead-basi-maliyet", en: "what-is-cpl-cost-per-lead" },
+  { tr: "instagram-reklam-verme-rehberi", en: "how-to-run-instagram-ads" },
 ];

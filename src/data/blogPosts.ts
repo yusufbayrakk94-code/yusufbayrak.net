@@ -670,6 +670,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "roas",
     resources: [
+      { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
       { label: "Meta Reklam Verme Rehberi: Bütçe, Kitle ve Öğrenme Aşaması", href: "/blog/meta-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -1566,6 +1567,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
       { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
@@ -1731,6 +1733,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
       { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "LTV Nedir? Müşteri Yaşam Boyu Değeri Hesaplama", href: "/blog/ltv-nedir-ltv-cac-orani/" },
@@ -3511,7 +3514,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "Bütçe yetmiyorsa reklam setlerini birleştirin ya da daha sık gerçekleşen bir olayı (ör. ödeme başlatma, ≈90 TL → haftada ≈54 olay) optimize edin. Advantage+ kampanya bütçesi + Advantage+ kitle + Advantage+ yerleşimler 2025'ten beri satış ve uygulama kampanyalarında varsayılan kurulum.",
     ],
     publishedAt: "2026-10-30",
-    readingMinutes: 10,
+    updatedAt: "2026-11-03",
+    readingMinutes: 11,
     tags: ["Meta Reklam", "Facebook Reklamı", "Instagram Reklamı", "Reklam Yöneticisi", "Advantage+", "Reklam Bütçesi"],
     sections: [
       {
@@ -3617,6 +3621,13 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        heading: "Facebook reklam verme nasıl yapılır?",
+        paragraphs: [
+          "Facebook reklamı da aynı panelden verilir: Reklam Yöneticisi'nde kampanyayı kurun, reklam setinde 'Manuel yerleşimler'i seçip yalnızca Facebook satırlarını (akış, Reels, Marketplace, video akışları) bırakın, reklam düzeyinde kimlik olarak Facebook sayfanızı seçin. Hızlı yol, sayfadaki gönderide 'Gönderiyi Öne Çıkar' düğmesidir; Instagram'daki gibi amaç ve ölçüm seçenekleri sınırlıdır.",
+          "Kitle farkı önemlidir. DataReportal'ın Digital 2026 Türkiye raporuna göre Meta'nın reklam araçları 2025 sonunda Türkiye'de Facebook için 34,7 milyon, Instagram için 62,3 milyon erişim gösteriyor ve Facebook'ta yetişkin kitlenin %64,4'ü erkek. Bu rakamlar aktif kullanıcı sayısı değil, reklam kitlesi tahminidir. Bu yüzden önce Advantage+ yerleşimleriyle başlayıp raporda yerleşim kırılımına bakmak, Facebook'u tek başına seçmekten genellikle daha sağlıklıdır. Instagram'a özgü adımlar, ölçüler ve TL bütçe örneği için Instagram Reklam Verme Rehberi'ne bakın.",
+        ],
+      },
+      {
         heading: "Meta reklamlarında en sık yapılan hatalar",
         paragraphs: [
           "Hataların çoğu algoritmaya yanlış sinyal vermekten ya da ölçümsüz harcamaktan gelir:",
@@ -3671,6 +3682,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplama: ROAS ve Başabaş ROAS", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -4783,6 +4795,253 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "LocaliQ: Search Advertising Benchmarks", href: "https://localiq.com/blog/search-advertising-benchmarks/", external: true },
     ],
   },
+  {
+    slug: "instagram-reklam-verme-rehberi",
+    seoTitle: "Instagram Reklam Verme: Bütçe, Fiyat ve Adım Adım (2026)",
+    title: "Instagram Reklam Verme Rehberi (2026): Fiyatlar, TL Bütçe Hesabı, Öne Çıkar ve Reklam Yöneticisi Adımları",
+    description:
+      "Instagram'da reklam nasıl verilir, fiyatı ne kadar? Öne Çıkar ve Reklam Yöneticisi adımları, yerleşim ölçüleri, DM reklamı ölçümü ve TL bütçe hesabı örneği.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Instagram'da reklam iki yoldan verilir: uygulamadaki 'Öne Çıkar' düğmesi (profil ziyareti, web sitesi ziyareti veya mesaj için hızlı yol) ya da Meta Reklam Yöneticisi (satış ve lead için tam yol). Satış ölçecekseniz ikincisini kullanın.",
+      "Instagram reklamının sabit fiyatı yoktur: bütçeyi siz belirlersiniz, birim maliyet açık artırmada oluşur. Türkçe sayfalardaki CPM ve TBM aralıkları birbirini tutmuyor ve yöntemleri açıklanmıyor; onları yalnızca başlangıç varsayımı sayın.",
+      "Örnek: günde 300 TL (ayda 9.000 TL), BGBM 80 TL, tıklama oranı %1, dönüşüm oranı %1,5 → 1.125 tıklama, ≈17 sipariş, sipariş başı reklam ≈533 TL. 1.200 TL sepet ve %40 marjda başabaş 480 TL olduğu için bu kurulum ayda ≈900 TL zarar eder.",
+      "Aynı hesapta tıklama oranı %1,5'e çıkarsa sipariş başı maliyet ≈356 TL'ye iner. Bu yüzden ilk iş bütçe artırmak değil, ilk 2 saniyesi güçlü 9:16 kreatif test etmektir.",
+    ],
+    publishedAt: "2026-11-03",
+    readingMinutes: 10,
+    tags: ["Instagram Reklam", "Instagram Reklam Fiyatları", "Meta Reklam", "Reels Reklamı", "Reklam Bütçesi", "Öne Çıkar"],
+    sections: [
+      {
+        heading: "Instagram'da reklam nasıl verilir? (Kısa cevap)",
+        paragraphs: [
+          "Instagram'da reklam vermek için önce hesabınızı profesyonel hesaba (işletme veya içerik üreticisi) geçirin. Sonra iki yoldan birini seçin: mevcut bir gönderiyi uygulamadaki 'Öne Çıkar' düğmesiyle reklama çevirin ya da Meta Reklam Yöneticisi'nde kampanya kurup yerleşimleri Instagram ile sınırlayın. Hedefi, kitleyi, günlük bütçeyi ve süreyi seçer, ödeme yöntemi ekler ve reklamı incelemeye gönderirsiniz.",
+          "Bu yazı Instagram'a özgü kararları anlatır: fiyatın nasıl oluştuğu, TL ile bütçe hesabı, hangi yerleşimde hangi ölçünün kullanılacağı, DM reklamının nasıl ölçüleceği. Piksel, Dönüşümler API, kampanya amaçları, Advantage+ ve öğrenme aşaması için Meta Reklam Verme Rehberi'ne bakın. Yazıdaki tüm tutarlar örnek tutarlardır.",
+        ],
+      },
+      {
+        heading: "Instagram'da neden reklam verilir? Türkiye'de erişim",
+        paragraphs: [
+          "DataReportal'ın Digital 2026 Türkiye raporuna göre Meta'nın reklam araçları 2025 sonunda Instagram'da Türkiye'de 62,3 milyon, Facebook'ta 34,7 milyon kişilik reklam erişimi gösteriyordu. Instagram erişimi 18 yaş üstü nüfusun %92,1'ine denk geliyor ve yetişkin kitlenin %53,5'i erkek, %46,5'i kadın olarak görünüyor. Facebook'ta ise yetişkin kitlenin %64,4'ü erkek.",
+          "Bu rakamlar aylık aktif kullanıcı sayısı değil, Meta'nın reklam kitlesi tahminidir ve zaman zaman düzeltilir. Pratik sonuç şu: Türkiye'de tüketiciye satan bir işletme için Instagram, Facebook'tan daha geniş ve cinsiyet açısından daha dengeli bir kitle sunuyor. Bu da Instagram'ı yalnızca görsel ürünler için değil, hizmet işletmeleri için de değerlendirmeye değer kılıyor.",
+        ],
+      },
+      {
+        heading: "Instagram reklam fiyatları ne kadar?",
+        paragraphs: [
+          "Instagram reklamının sabit bir fiyat listesi yoktur. Meta reklam alanını açık artırmayla satar: siz bütçeyi belirlersiniz, sistem bu bütçeyi hedefinize göre harcar ve bin gösterim başı maliyet (BGBM/CPM) ile tıklama başı maliyet (TBM/CPC) her hesapta farklı oluşur. Bu yüzden 'Instagram reklamı kaç TL?' sorusunun cevabı bir tutar değil, bir hesaptır.",
+          "Türkçe sayfalarda dolaşan aralıklara temkinli yaklaşın. İncelediğimiz sayfalarda BGBM 40–120 TL, TBM ise bir sayfada 1,5–6 TL, diğerinde 2–25 TL görünüyor; bu rakamların hiçbirinde örneklem, dönem ve yöntem açıklanmıyor, bir kısmı açıkça yurt dışı verilerinden 'uyarlanmış'. Yabancı kıyas tablolarının büyük bölümü de ABD ağırlıklıdır ve Türkiye'ye taşınamaz. Bu aralıkları kendi hesabınızın ilk haftasındaki gerçek rakamlar gelene kadar varsayım olarak kullanın.",
+          "Maliyet üç bileşenden oluşur: Sipariş başı reklam maliyeti = BGBM / (1.000 × Tıklama oranı × Dönüşüm oranı). Bir bileşen yarıya inerse maliyet iki katına çıkar. Rekabet, sezon ve kitle BGBM'yi; kreatif tıklama oranını; site ve teklif dönüşüm oranını belirler. Kontrolünüz en çok son ikisindedir.",
+        ],
+        bullets: [
+          "Günlük bütçe: uygulamada ve Reklam Yöneticisi'nde siz girersiniz; süreyi ya da toplam tutarı da siz sınırlarsınız",
+          "Minimum bütçe: sabit bir TL rakamı yerine hesabın para birimine ve optimizasyon olayına göre değişir; kurulum ekranı geçerli alt sınırı gösterir",
+          "BGBM'yi artıranlar: sezon ve indirim dönemleri, dar kitle, aynı kitleye reklam veren rakipler",
+          "Tıklama oranını belirleyen: ilk 2 saniye, teklifin netliği, kreatifin yerleşime uygunluğu",
+        ],
+      },
+      {
+        heading: "Instagram reklam bütçesi nasıl hesaplanır? TL örneği",
+        paragraphs: [
+          "Örnek: 1.200 TL sepet, reklam öncesi %40 katkı marjı. Sipariş başı reklama ayrılabilecek en yüksek tutar 480 TL'dir (başabaş), başabaş ROAS 2,5'tir. Günde 300 TL, yani ayda 9.000 TL ayırıyorsunuz. Varsayımlar: BGBM 80 TL, tıklama oranı %1, sitede dönüşüm oranı %1,5.",
+          "9.000 / 80 × 1.000 = 112.500 gösterim. %1 tıklama oranıyla 1.125 tıklama, tıklama başı 8 TL. %1,5 dönüşümle 16,9 sipariş. Sipariş başı reklam maliyeti 9.000 / 16,9 = 533 TL, ciro 20.250 TL, ROAS 2,25. Siparişlerin reklam öncesi katkısı 8.100 TL olduğu için ay 900 TL zararla kapanır.",
+          "Başabaşa dönmek için tek bir kaldıraç yeterlidir: tıklama başı maliyeti 7,20 TL'ye indirmek (aynı BGBM'de tıklama oranı %1,11) ya da dönüşüm oranını %1,67'ye çıkarmak. Aşağıdaki senaryolar aynı 9.000 TL ile ne kadar farklı sonuç alınabileceğini gösterir:",
+        ],
+        bullets: [
+          "BGBM 60 TL, tıklama oranı %1: 1.500 tıklama, 22,5 sipariş, sipariş başı 400 TL, ROAS 3,00 → kârlı",
+          "BGBM 80 TL, tıklama oranı %1: 1.125 tıklama, 16,9 sipariş, sipariş başı 533 TL, ROAS 2,25 → zarar",
+          "BGBM 120 TL, tıklama oranı %1: 750 tıklama, 11,3 sipariş, sipariş başı 800 TL, ROAS 1,50 → ağır zarar (yoğun sezon)",
+          "BGBM 80 TL, tıklama oranı %1,5: 1.688 tıklama, 25,3 sipariş, sipariş başı 356 TL, ROAS 3,38 → kârlı (daha iyi kreatif)",
+        ],
+      },
+      {
+        heading: "Günde ne kadar bütçeyle başlanmalı?",
+        paragraphs: [
+          "İki sınır vardır. Alt sınır, sonucu okuyabilecek kadar veri toplamaktır. Satın alma için optimize ediyorsanız Meta, reklam setinin son önemli düzenlemeden sonraki 7 günde yaklaşık 50 olay toplamasını bekler: 360 TL hedef maliyetle bu, günde yaklaşık 2.571 TL demektir. Küçük bütçede bu sayıya ulaşılmaz.",
+          "Bu yüzden günde 300 TL ile satın alma optimizasyonu kurmak yerine daha sık gerçekleşen bir olayı (ödeme başlatma, sepete ekleme) ya da DM hedefini seçin, tek reklam seti kullanın ve 7 gün dokunmayın. Üst sınır ise ay sonunda kaybetmeyi göze alabileceğiniz test tutarıdır. Hedef ciro ve marjdan geriye kesin tutarı Reklam Bütçesi Hesaplama aracıyla bulabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Öne Çıkar mı, Reklam Yöneticisi mi?",
+        paragraphs: [
+          "İkisi aynı reklam sistemini kullanır; fark, kontrol ve ölçümdedir. Öne Çıkar, iyi performans gösteren organik bir gönderiyi birkaç dokunuşla kitleye taşımak için uygundur. Reklam Yöneticisi ise amaç, olay, kitle ve kreatif testini yönetmek içindir.",
+        ],
+        bullets: [
+          "Öne Çıkar'ı seçin: tek gönderiyi daha çok kişiye göstermek, profil ziyareti veya mesaj almak, yerel işletme duyurusu, küçük bütçeli hızlı deneme",
+          "Reklam Yöneticisi'ni seçin: e-ticaret satışı, form ile lead, piksel olayına göre optimizasyon, yeniden pazarlama, A/B testi, katalog reklamları",
+          "Pratik yol: organikte en iyi çalışan gönderileri Öne Çıkar ile hızlı test edin, kazanan açıyı Reklam Yöneticisi'nde satış kampanyasına taşıyın",
+        ],
+      },
+      {
+        heading: "Instagram uygulamasından reklam nasıl verilir?",
+        paragraphs: [
+          "Öne Çıkar akışı telefonda birkaç dakikada tamamlanır. Menü adları uygulama sürümüne göre küçük farklılıklar gösterebilir.",
+        ],
+        bullets: [
+          "Hesabı profesyonel hesaba geçirin: Ayarlar › Hesap türü ve araçlar; ücretsizdir",
+          "Öne çıkaracağınız gönderi, Reels veya hikâyeyi açıp 'Öne Çıkar'a dokunun",
+          "Hedefi seçin: profil ziyaretleri, web sitesi ziyaretleri veya mesajlar; web sitesi seçiyorsanız UTM'li bağlantı kullanın",
+          "Kitleyi seçin: otomatik kitle ya da konum, yaş ve ilgi alanıyla kendi kitleniz",
+          "Günlük bütçeyi ve süreyi girin; ekrandaki tahmini erişim bir tahmindir, garanti değildir",
+          "Ödeme yöntemini ekleyin, önizlemeyi kontrol edip gönderin; reklam incelemeden sonra yayına girer",
+        ],
+      },
+      {
+        heading: "Reklam Yöneticisi'nden yalnızca Instagram'a reklam nasıl verilir?",
+        paragraphs: [
+          "Hesap, piksel ve ödeme kurulumu Meta rehberindeki gibidir. Instagram'a özgü adımlar şunlardır:",
+        ],
+        bullets: [
+          "Kampanya amacını iş sonucuna göre seçin: satış için Satışlar, form için Potansiyel Müşteriler, DM için Etkileşim veya mesaj hedefli amaç",
+          "Reklam setinde 'Manuel yerleşimler'i seçin, Facebook, Messenger, Threads ve Audience Network işaretlerini kaldırın, yalnızca Instagram satırlarını bırakın",
+          "Reklam düzeyinde kimlik olarak Instagram hesabınızı seçin; yorumlar ve profil ziyaretleri bu hesapta birikir",
+          "Yerleşim başına ayrı kreatif yükleyin: 9:16 video Reels ve Hikâyeler'e, 4:5 görsel akışa",
+          "Bağlantıya UTM ekleyin: utm_source=instagram, utm_medium=paid_social",
+        ],
+      },
+      {
+        heading: "Yalnızca Instagram seçmek mantıklı mı?",
+        paragraphs: [
+          "Her zaman değil. Yerleşimi daraltmak sisteme gösterim satın alabileceği daha az alan bırakır, bu yüzden Meta genellikle Advantage+ yerleşimlerini önerir. Ama kreatifiniz yalnızca Reels için çekildiyse, kitleniz Instagram'daysa ya da marka bilinirliği için görünürlüğü kontrol etmek istiyorsanız manuel seçim anlamlıdır. Sağlıklı yöntem ikisini A/B testiyle karşılaştırmak ve kararı BGBM'ye değil sipariş başı maliyete göre vermektir.",
+        ],
+      },
+      {
+        heading: "Instagram reklam ölçüleri ve yerleşimleri",
+        paragraphs: [
+          "Instagram reklamları akış, profil akışı, Hikâyeler, Reels, Keşfet ve arama sonuçlarında görünebilir. Aşağıdaki değerler 2026'da yaygın kullanılan ölçülerdir; Meta belirli aralıklarda güncellediği için yayın öncesi Reklam Yöneticisi önizlemesinden ve Meta Ads Guide'dan kontrol edin.",
+        ],
+        bullets: [
+          "Akış: 4:5 (1080 × 1350) önerilir, 1:1 (1080 × 1080) da kullanılır; birincil metnin ilk ≈125 karakteri görünür",
+          "Hikâyeler: 9:16 (1080 × 1920); üstte ≈%14, altta ≈%20 alanı boş bırakın",
+          "Reels: 9:16 (1080 × 1920); üstte ≈%14, altta ≈%35, sağda ≈%12 alanı arayüz kaplar, metin ve logoyu bu alanların dışına koyun",
+          "Keşfet: 1:1 veya 4:5",
+          "Carousel: 2–10 kart; kartlar aynı oranda olmalı",
+          "Dosya: JPG/PNG görsel 30 MB'a, MP4/MOV video 4 GB'a kadar",
+        ],
+      },
+      {
+        heading: "Instagram'da hangi kreatif işe yarar?",
+        paragraphs: [
+          "Yukarıdaki hesapta en güçlü kaldıraç tıklama oranıydı: %1'den %1,5'e çıkmak, sipariş başı maliyeti 533 TL'den 356 TL'ye indirdi. Instagram'da kreatif, profesyonel prodüksiyon değil, akışa uyum meselesidir. Banner gibi görünen reklam kaydırılır; telefonla çekilmiş ürün kullanımı çoğu zaman daha doğal görünür.",
+        ],
+        bullets: [
+          "İlk 2 saniyede sorun ya da sonuç gösterin; logo ile başlamayın",
+          "Sessiz izlenecek gibi tasarlayın: altyazı veya ekranda kısa metin",
+          "Aynı teklifi 3 açıyla test edin: sorun–çözüm, kullanım anı, müşteri deneyimi (gerçek ve izinli)",
+          "Fiyatı ve kargo avantajını saklamayın; tıklayıp vazgeçen kitle bütçeyi yer",
+          "Müzik: reklamda telif sorunu olmayan ses kullanın; lisanssız müzik Öne Çıkar'ı engeller",
+        ],
+      },
+      {
+        heading: "Instagram DM reklamı nasıl ölçülür?",
+        paragraphs: [
+          "Türkiye'de birçok küçük işletme satışı DM'den kapatır. Mesaj hedefli reklam bu akışa uygundur, ama satış sitede gerçekleşmediği için piksel görmez ve panel yalnızca başlatılan konuşmayı gösterir. Ölçümü elle kurmazsanız 'çok mesaj geliyor' hissiyle bütçe yanarsınız.",
+          "Örnek: 3.000 TL harcama, 60 konuşma (konuşma başı 50 TL). Kayıtlara göre konuşmaların %15'i siparişe dönüyor: 9 sipariş, sipariş başı reklam 333 TL. Marjınız 480 TL bırakıyorsa kârlısınız; aynı işletmede dönüşüm %8'e düşerse sipariş başı 625 TL olur. Karar için konuşma başı maliyeti değil, sipariş başı maliyeti izleyin.",
+        ],
+        bullets: [
+          "Hazır yanıt ve sabit bir ilk mesajla reklamdan geleni ayırın (ör. reklamdaki kod)",
+          "Her hafta konuşma, sipariş ve iptal sayısını tabloya yazın",
+          "Yanıt süresini izleyin: geç cevaplanan DM satışa dönmez, reklam bütçesi boşa gider",
+          "Hazır sorularla (fiyat, kargo, beden) satın alma niyeti olanı ayırın",
+        ],
+      },
+      {
+        heading: "İş ortaklığı reklamları nedir, işe yarar mı?",
+        paragraphs: [
+          "İş ortaklığı reklamları (partnership ads), bir içerik üreticisinin gönderisini ya da onun adıyla birlikte oluşturulan reklamı hem üreticinin hem markanın kimliğiyle yayınlamanızı sağlar. Bu nedenle sıradan bir marka reklamından daha doğal görünür.",
+          "Meta'nın Ekim 2026'da yayımladığı içerik üretici raporunda, EMEA'da 20 dönüşüm artışı (lift) çalışmasında varlıkların en az %30'unu iş ortaklığı reklamına ayıran reklamverenlerde artımlı satın alma başı medyan maliyetin %45 düştüğü belirtiliyor. Rakam dikkate değer ama temkinli okunmalı: veri platformun kendi araçlarıyla ölçülmüş, Ocak–Haziran 2025 dönemini kapsıyor ve %92 güven düzeyinde raporlanmış. En sağlıklısı kendi hesabınızda aynı teklifle marka reklamına karşı test etmektir.",
+        ],
+      },
+      {
+        heading: "Instagram reklamı neden yayınlanmaz veya öne çıkarılamaz?",
+        paragraphs: [
+          "Reklam reddi çoğu zaman politika, hesap ya da teknik bir sebepten kaynaklanır. Sık görülen nedenler:",
+        ],
+        bullets: [
+          "Hesap kişisel hesap: profesyonel hesaba geçin",
+          "Hesap çok yeni: Hootsuite'in derlemesine göre 30 günden yeni hesaplar öne çıkaramayabilir",
+          "Telifli müzik: uygun bir sesle değiştirin ya da sesi kaldırın",
+          "Bağlı Facebook sayfasında yönetici yetkiniz yok",
+          "Ölçü uyumsuz: Reels için 9:16 kullanın",
+          "Bazı etkileşimli çıkartmalar: gönderide engel oluşturuyorsa kaldırın",
+          "Hesap kısıtı veya ödeme sorunu: Hesap Kalitesi ekranından nedeni görün, reddedilen reklam için inceleme isteyin",
+          "Reklam politikası: sağlık vaatleri, önce–sonra görselleri, kişisel özelliklere doğrudan hitap eden metinler sık reddedilir",
+        ],
+      },
+      {
+        heading: "Instagram reklamında en sık yapılan hatalar",
+        paragraphs: [
+          "Hataların çoğu ölçmeden para harcamaktan gelir:",
+        ],
+        bullets: [
+          "Satış isterken beğeni veya profil ziyareti hedeflemek",
+          "Takipçi sayısını sonuç saymak; takipçi sipariş değildir",
+          "Başabaş maliyeti bilmeden 'pahalı' ya da 'ucuz' demek",
+          "Kreatifi yerleşime uyarlamamak: 1:1 görseli Reels'te kırpılmış göstermek",
+          "UTM kullanmamak ve GA4'te trafiği yanlış kanalda görmek",
+          "İlk 3 günde durdurmak ya da her gün bütçe ve kitle değiştirmek",
+          "Mobilde yavaş açılan açılış sayfasına trafik göndermek; reklamın nerede olduğu kadar tıklamanın nereye gittiği önemlidir",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Instagram'da reklam vermek ne kadar?",
+        answer:
+          "Sabit fiyat yoktur; bütçeyi siz belirlersiniz. Birim maliyet açık artırmada oluşur ve sektöre, sezona ve kreatife göre değişir. Sipariş başı maliyet = BGBM / (1.000 × Tıklama oranı × Dönüşüm oranı). Örnek: BGBM 80 TL, tıklama %1, dönüşüm %1,5 ise sipariş başı reklam ≈533 TL olur.",
+      },
+      {
+        question: "Instagram reklamı için günde kaç TL yeterli?",
+        answer:
+          "Tek bir doğru tutar yok; alt sınır kurulum ekranında görünür. Satın alma optimizasyonu için haftada yaklaşık 50 olay hedefi vardır: hedef maliyet × 50 / 7. Bu tutarın altındaysanız daha sık gerçekleşen bir olayı ya da mesaj hedefini seçin ve tek reklam seti kullanın.",
+      },
+      {
+        question: "Instagram'da reklam vermek için işletme hesabı gerekir mi?",
+        answer:
+          "Evet, öne çıkarmak için profesyonel hesap (işletme veya içerik üreticisi) gerekir. Geçiş ücretsizdir ve uygulama ayarlarından birkaç dokunuşla yapılır.",
+      },
+      {
+        question: "Öne çıkar mı, Reklam Yöneticisi mi daha iyi?",
+        answer:
+          "Tek gönderiyi hızlıca daha çok kişiye göstermek için Öne Çıkar yeterlidir. Satış, lead, yeniden pazarlama ve test için Reklam Yöneticisi gerekir; çünkü optimizasyon olayını, kitleyi ve kreatif varyasyonlarını burada yönetirsiniz.",
+      },
+      {
+        question: "Instagram reklam ölçüleri nedir?",
+        answer:
+          "Yaygın ölçüler: akış 4:5 (1080 × 1350), Hikâyeler ve Reels 9:16 (1080 × 1920), Keşfet 1:1 veya 4:5. Reels'te altta yaklaşık %35 ve üstte %14'lük alanı metinsiz bırakın; yayın öncesi Reklam Yöneticisi önizlemesini kontrol edin.",
+      },
+      {
+        question: "Instagram reklamı takipçi kazandırır mı?",
+        answer:
+          "Profil ziyareti hedefi takipçi getirebilir, ama amaç satışsa doğru ölçü takipçi değil sipariş başı maliyettir. Takipçiyi yalnızca yeniden pazarlama kitlesi olarak değerliyse hedefleyin.",
+      },
+    ],
+    howTo: {
+      name: "Instagram'da reklam adım adım nasıl verilir?",
+      description: "Profesyonel hesaptan yayına kadar Instagram reklamı kurulumu.",
+      steps: [
+        { name: "Hesabı hazırlayın", text: "Instagram hesabınızı profesyonel hesaba geçirin; satış ölçecekseniz reklam hesabı, ödeme yöntemi ve Meta pikselini kurun." },
+        { name: "Bütçeyi hesaplayın", text: "Sepet ve marjdan başabaş sipariş maliyetini bulun, BGBM, tıklama oranı ve dönüşüm oranı varsayımıyla ay sonu sonucunu hesaplayın." },
+        { name: "Yolu seçin", text: "Hızlı duyuru ve mesaj için Öne Çıkar'ı, satış ve lead için Reklam Yöneticisi'ni kullanın." },
+        { name: "Hedefi, kitleyi ve yerleşimi belirleyin", text: "İş sonucuna uygun hedefi seçin; kitleyi konum ve yaşla sınırlayın, yerleşimlere uygun ölçüde kreatif yükleyin." },
+        { name: "Yayınlayın ve ölçün", text: "UTM'li bağlantıyla yayınlayın, ilk 7 günde yapıyı değiştirmeyin; kararı sipariş başı maliyet ve kendi sipariş verinize göre verin." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "Meta Ads Öğrenme Aşamasından Çıkma", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "DataReportal: Digital 2026 Türkiye", href: "https://datareportal.com/reports/digital-2026-turkey" },
+      { label: "PPC Land: Meta iş ortaklığı reklamları raporu", href: "https://ppc.land/meta-says-partnership-ads-cut-incremental-purchase-costs-45-in-emea-tests/" },
+      { label: "Hootsuite: Instagram'da neden öne çıkarılamıyor?", href: "https://blog.hootsuite.com/cannot-boost-on-instagram" },
+    ],
+  },
 ];
 
 export function getPostsByCategory(slug: BlogCategorySlug | "all") {
@@ -5328,6 +5587,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "roas",
     resources: [
+      { label: "How to Run Instagram Ads: Cost and Budget", href: "/en/blog/how-to-run-instagram-ads/" },
       { label: "How to Run Meta Ads: Budget, Audience & Learning Phase", href: "/en/blog/how-to-run-meta-ads-guide/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
@@ -6032,6 +6292,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "How to Run Instagram Ads: Cost and Budget", href: "/en/blog/how-to-run-instagram-ads/" },
       { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "How to Calculate Profit Margin (Margin vs Markup)", href: "/en/blog/how-to-calculate-profit-margin/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
@@ -6192,6 +6453,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run Instagram Ads: Cost and Budget", href: "/en/blog/how-to-run-instagram-ads/" },
       { label: "What Is CPL? Cost Per Lead Formula", href: "/en/blog/what-is-cpl-cost-per-lead/" },
       { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
       { label: "How to Run Meta Ads: Budget, Audience & Learning Phase", href: "/en/blog/how-to-run-meta-ads-guide/" },
@@ -8049,6 +8311,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run Instagram Ads: Cost and Budget", href: "/en/blog/how-to-run-instagram-ads/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
@@ -9098,6 +9361,210 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google Ads Help: Offline conversion imports", href: "https://support.google.com/google-ads/answer/2998031", external: true },
       { label: "Google Ads Help: Enhanced conversions for leads", href: "https://support.google.com/google-ads/answer/15713840", external: true },
       { label: "LocaliQ: Search Advertising Benchmarks", href: "https://localiq.com/blog/search-advertising-benchmarks/", external: true },
+    ],
+  },
+  {
+    slug: "how-to-run-instagram-ads",
+    seoTitle: "How to Run Instagram Ads: Cost, Budget and Steps (2026)",
+    title: "How to Run Instagram Ads (2026): Costs, Budget Math, Boost vs Ads Manager and Ad Specs",
+    description:
+      "How to run Instagram ads and what they cost: Boost and Ads Manager steps, placement sizes, DM ad measurement and a worked budget example with real math.",
+    category: "performans-pazarlama",
+    tldr: [
+      "There are two ways to run Instagram ads: the in-app Boost button (quick, for profile visits, website visits or messages) and Meta Ads Manager (full control, for sales and leads). If you measure sales, use Ads Manager.",
+      "Instagram has no fixed price. You set the budget and unit costs form in the auction, so treat any published CPM or CPC range as a starting assumption until your own first week of data arrives.",
+      "Example: $10 a day ($300 a month), CPM $8, CTR 1%, conversion rate 1.5% gives 375 clicks, about 5.6 orders and an ad cost of about $53 per order. With a $120 basket and 40% margin, break-even is $48, so this setup loses about $30 a month.",
+      "Raise CTR to 1.5% in the same math and cost per order falls to about $36. That is why the first move is testing strong 9:16 creative, not raising the budget.",
+    ],
+    publishedAt: "2026-11-03",
+    readingMinutes: 9,
+    tags: ["Instagram Ads", "Instagram Ad Cost", "Meta Ads", "Reels Ads", "Ad Budget", "Boost"],
+    sections: [
+      {
+        heading: "How do you run Instagram ads? (Short answer)",
+        paragraphs: [
+          "Switch your account to a professional account (business or creator). Then either tap 'Boost' on an existing post in the app, or build a campaign in Meta Ads Manager and limit placements to Instagram. Pick the goal, audience, daily budget and duration, add a payment method and submit the ad for review.",
+          "This guide covers the Instagram-specific decisions: how cost forms, the budget math, which size fits each placement and how to measure DM ads. For the pixel, Conversions API, objectives, Advantage+ and the learning phase, see the Meta ads guide. All amounts here are illustrative.",
+        ],
+      },
+      {
+        heading: "How much do Instagram ads cost?",
+        paragraphs: [
+          "There is no price list. Meta sells ad space by auction: you set the budget, the system spends it against your goal, and CPM and CPC differ for every account. So the honest answer to 'how much?' is a calculation, not a number.",
+          "Benchmarks vary widely and are mostly US-weighted. One 2026 roundup puts published average CPC at $1.01–$1.73 and CPM at $8.16–$10.81, and its figures can't be traced to a single source. Use such ranges as placeholders until your own first week of data arrives.",
+          "Three parts make up the cost: Ad cost per order = CPM / (1,000 × CTR × Conversion rate). Halve any one and the cost doubles. Competition, season and audience drive CPM; creative drives CTR; your site and offer drive conversion rate. You control the last two most.",
+        ],
+        bullets: [
+          "Daily budget: you set it in the app or Ads Manager",
+          "Minimum budget: varies with account currency and optimisation event; the setup screen shows the current floor",
+          "What raises CPM: peak seasons, narrow audiences, rivals targeting the same people",
+          "What sets CTR: the first 2 seconds, a clear offer, creative made for the placement",
+        ],
+      },
+      {
+        heading: "How do you calculate an Instagram ad budget?",
+        paragraphs: [
+          "Example: $120 basket, 40% contribution margin before ads. The most you can spend per order is $48 (break-even), a break-even ROAS of 2.5. You allocate $10 a day, $300 a month. Assumptions: CPM $8, CTR 1%, site conversion rate 1.5%.",
+          "$300 / $8 × 1,000 = 37,500 impressions. At 1% CTR that is 375 clicks at $0.80. At 1.5% conversion, 5.6 orders. Ad cost per order is $53, revenue $675, ROAS 2.25. Orders contribute $270 before ads, so the month ends $30 down.",
+          "One lever is enough to break even: bring CPC to $0.72 (CTR 1.11% at the same CPM) or lift conversion rate to 1.67%. The same $300 can produce very different results:",
+        ],
+        bullets: [
+          "CPM $6, CTR 1%: 500 clicks, 7.5 orders, $40 per order, ROAS 3.00 → profitable",
+          "CPM $8, CTR 1%: 375 clicks, 5.6 orders, $53 per order, ROAS 2.25 → loss",
+          "CPM $12, CTR 1%: 250 clicks, 3.8 orders, $80 per order, ROAS 1.50 → heavy loss (peak season)",
+          "CPM $8, CTR 1.5%: 563 clicks, 8.4 orders, $36 per order, ROAS 3.38 → profitable (better creative)",
+        ],
+      },
+      {
+        heading: "How much should you start with per day?",
+        paragraphs: [
+          "If you optimise for purchases, Meta expects about 50 events per ad set in the 7 days after the last significant edit. At a $36 target cost that is about $257 a day, which a small budget won't reach.",
+          "So on $10 a day, pick a more frequent event (initiate checkout, add to cart) or a messaging goal, use one ad set and leave it alone for 7 days. Your ceiling is what you can afford to lose on a test. The Ad Budget Calculator works out the exact figure from your revenue target and margin.",
+        ],
+      },
+      {
+        heading: "Boost or Ads Manager?",
+        paragraphs: [
+          "Both use the same ad system; the difference is control and measurement.",
+        ],
+        bullets: [
+          "Choose Boost for: showing one post to more people, profile visits or messages, local announcements, a quick small test",
+          "Choose Ads Manager for: ecommerce sales, lead forms, optimising to a pixel event, retargeting, A/B tests, catalogue ads",
+          "A practical route: test your best organic posts with Boost, then move the winning angle into a sales campaign in Ads Manager",
+        ],
+      },
+      {
+        heading: "How do you run ads from the Instagram app?",
+        paragraphs: [
+          "Boosting takes a few minutes on your phone. Menu names can vary a little by app version.",
+        ],
+        bullets: [
+          "Switch to a professional account in settings; it's free",
+          "Open a post, Reel or story and tap 'Boost'",
+          "Pick a goal: profile visits, website visits or messages; use a UTM-tagged link for website visits",
+          "Pick an audience: automatic, or your own by location, age and interests",
+          "Set daily budget and duration; the estimated reach on screen is an estimate, not a promise",
+          "Add payment, check the preview and submit; the ad goes live after review",
+        ],
+      },
+      {
+        heading: "How do you run Instagram-only ads in Ads Manager?",
+        paragraphs: [
+          "Account, pixel and payment setup follow the Meta guide. The Instagram-specific steps:",
+        ],
+        bullets: [
+          "Choose the objective by business result: Sales, Leads, or a messaging goal for DMs",
+          "At ad set level choose Manual placements, untick Facebook, Messenger, Threads and Audience Network, and keep only Instagram",
+          "At ad level pick your Instagram account as the identity",
+          "Upload creative per placement: 9:16 video for Reels and Stories, 4:5 image for feed",
+          "Add UTMs: utm_source=instagram, utm_medium=paid_social",
+        ],
+      },
+      {
+        heading: "Should you limit ads to Instagram only?",
+        paragraphs: [
+          "Not always. Narrow placements leave the system less inventory to buy, which is why Meta generally recommends Advantage+ placements. Manual selection makes sense if the creative was shot only for Reels or your audience lives on Instagram. The sound method is an A/B test, judged on cost per order rather than CPM.",
+        ],
+      },
+      {
+        heading: "Instagram ad sizes and placements",
+        paragraphs: [
+          "Ads can appear in feed, profile feed, Stories, Reels, Explore and search results. These are common 2026 sizes; Meta updates them, so check the Ads Manager preview and Meta's Ads Guide before launch.",
+        ],
+        bullets: [
+          "Feed: 4:5 (1080 × 1350) recommended, 1:1 (1080 × 1080) also used; about the first 125 characters of primary text show",
+          "Stories: 9:16 (1080 × 1920); leave about 14% clear at the top and 20% at the bottom",
+          "Reels: 9:16 (1080 × 1920); interface covers about 14% top, 35% bottom and 12% right",
+          "Explore: 1:1 or 4:5",
+          "Carousel: 2–10 cards at the same ratio",
+          "Files: JPG/PNG up to 30 MB, MP4/MOV up to 4 GB",
+        ],
+      },
+      {
+        heading: "How do you measure Instagram DM ads?",
+        paragraphs: [
+          "Message-goal ads suit businesses that close sales in DMs, but the pixel can't see those sales and the dashboard shows only conversations started. Without manual tracking, 'lots of messages' feels like success while the budget burns.",
+          "Example: $300 spent, 60 conversations ($5 each). Your records show 15% become orders: 9 orders at about $33 each. With a $48 ceiling you're profitable; at 8% conversion the cost is $62.50 per order and you aren't. Track cost per order, not cost per conversation.",
+        ],
+        bullets: [
+          "Use a preset first message or code to separate ad traffic",
+          "Log conversations, orders and cancellations weekly",
+          "Watch reply time; a DM answered late rarely converts",
+        ],
+      },
+      {
+        heading: "Do partnership ads work?",
+        paragraphs: [
+          "Partnership ads run a creator's post, or a co-branded ad, under both the creator's and the brand's identity, so they look more natural than a standard brand ad.",
+          "Meta's October 2026 creator paper says that across 20 EMEA conversion lift studies, advertisers with at least 30% of assets in partnership ads saw a 45% lower median cost per incremental purchase. Read it with care: the platform measured itself, the data covers January–June 2025 and it's reported at 92% confidence. Test it on your own account against brand ads with the same offer.",
+        ],
+      },
+      {
+        heading: "Why won't an Instagram ad run or boost?",
+        paragraphs: [
+          "Common reasons:",
+        ],
+        bullets: [
+          "Personal account: switch to professional",
+          "Very new account: per Hootsuite's roundup, accounts under 30 days old may not be able to boost",
+          "Copyrighted music: swap or remove it",
+          "No admin rights on the linked Facebook Page",
+          "Wrong size: use 9:16 for Reels",
+          "Account restriction or payment issue: check Account Quality and request a review",
+          "Ad policy: health claims, before-and-after images and copy that calls out personal attributes are often rejected",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How much does it cost to advertise on Instagram?",
+        answer:
+          "There is no fixed price; you set the budget and unit costs form in the auction. Ad cost per order = CPM / (1,000 × CTR × Conversion rate). With a $8 CPM, 1% CTR and 1.5% conversion rate, that's about $53 per order.",
+      },
+      {
+        question: "How much should I spend per day on Instagram ads?",
+        answer:
+          "There is no universal figure. For purchase optimisation, Meta expects about 50 events a week: target cost × 50 / 7. Below that, choose a more frequent event or a messaging goal and use one ad set.",
+      },
+      {
+        question: "Do I need a business account to advertise on Instagram?",
+        answer:
+          "To boost, you need a professional account (business or creator). Switching is free and takes a few taps in settings.",
+      },
+      {
+        question: "Is Boost or Ads Manager better?",
+        answer:
+          "Boost is enough to show one post to more people. Sales, leads, retargeting and testing need Ads Manager, where you control the optimisation event, audience and creative variations.",
+      },
+      {
+        question: "What size are Instagram ads?",
+        answer:
+          "Common sizes: feed 4:5 (1080 × 1350), Stories and Reels 9:16 (1080 × 1920), Explore 1:1 or 4:5. On Reels, keep about the bottom 35% and top 14% free of text.",
+      },
+    ],
+    howTo: {
+      name: "How to run Instagram ads step by step",
+      description: "From professional account to live Instagram ad.",
+      steps: [
+        { name: "Prepare the account", text: "Switch to a professional account; for sales, set up an ad account, payment and the Meta pixel." },
+        { name: "Do the budget math", text: "Find break-even cost per order from basket and margin, then estimate the month using CPM, CTR and conversion rate." },
+        { name: "Choose the route", text: "Use Boost for quick reach and messages; use Ads Manager for sales and leads." },
+        { name: "Set goal, audience and placement", text: "Pick the goal that matches the business result and upload creative sized for each placement." },
+        { name: "Launch and measure", text: "Launch with a UTM-tagged link, leave the structure alone for 7 days and decide on cost per order." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "How to Run Meta Ads", href: "/en/blog/how-to-run-meta-ads-guide/" },
+      { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "PPC Land: Meta partnership ads paper", href: "https://ppc.land/meta-says-partnership-ads-cut-incremental-purchase-costs-45-in-emea-tests/" },
+      { label: "Hootsuite: Why you can't boost on Instagram", href: "https://blog.hootsuite.com/cannot-boost-on-instagram" },
+      { label: "Cropink: Instagram advertising cost", href: "https://www.cropink.com/instagram-advertising-cost" },
     ],
   },
 ];

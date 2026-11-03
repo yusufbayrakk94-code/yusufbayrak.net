@@ -235,7 +235,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -469,7 +469,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-run-meta-ads-guide/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/meta-reklam-verme-rehberi/" />
@@ -527,6 +527,15 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/cpl-nedir-lead-basi-maliyet/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-cpl-cost-per-lead/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/cpl-nedir-lead-basi-maliyet/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/blog/instagram-reklam-verme-rehberi/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/instagram-reklam-verme-rehberi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-run-instagram-ads/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/instagram-reklam-verme-rehberi/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -764,7 +773,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/en/blog/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -1044,6 +1053,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-cpl-cost-per-lead/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/cpl-nedir-lead-basi-maliyet/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/cpl-nedir-lead-basi-maliyet/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/how-to-run-instagram-ads/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-run-instagram-ads/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/instagram-reklam-verme-rehberi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/instagram-reklam-verme-rehberi/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
