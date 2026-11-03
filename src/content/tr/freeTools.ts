@@ -69,7 +69,7 @@ export const freeToolsPage = {
     { key: "roas",  name: "ROAS Hesaplayıcı",          description: "Reklam harcaması getiri oranınızı ve kampanya kârlılığını ölçün.",                    href: "/ucretsiz-araclar/roas-hesaplayici" },
     { key: "utm",   name: "UTM Link Oluşturucu",       description: "UTM linki oluşturun, GA4 kanal grubunu ve Unassigned riskini önceden görün.",                              href: "/ucretsiz-araclar/utm-link-olusturucu" },
     { key: "llms",  name: "llms.txt Oluşturucu",       description: "llmstxt.org formatında llms.txt dosyası oluşturun; format kontrolü ve örnek dosyayla.", href: "/ucretsiz-araclar/llms-txt-olusturucu" },
-    { key: "gross", name: "Brüt Kar Marjı Hesaplayıcı", description: "Gelir ve COGS girerek brüt kar marjınızı yüzde ve tutar olarak hesaplayın.", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici" },
+    { key: "gross", name: "Kar Marjı ve Kar Oranı Hesaplama", description: "Kar marjı ve kar oranını (markup) hesaplayın, hedef marjdan satış fiyatını bulun.", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici" },
     { key: "net",   name: "Net Kar Marjı Hesaplayıcı",  description: "Tüm giderler dahil net kar marjınızı hesaplayın, gerçek kârlılığınızı görün.", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici" },
     { key: "mrr",   name: "MRR Hesaplayıcı",           description: "Aylık yinelenen gelirinizi (MRR) hesaplayın, ARR karşılığını görün.", href: "/ucretsiz-araclar/mrr-hesaplayici" },
     { key: "arpa",  name: "ARPA Hesaplayıcı",          description: "Hesap başına ortalama gelirinizi (ARPA) toplam MRR ve hesap sayısıyla hesaplayın.", href: "/ucretsiz-araclar/arpa-hesaplayici" },

@@ -203,18 +203,24 @@ export const enTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };
 export const grossMargin: ToolContent = {
   slug: "gross-profit-margin",
   path: "/en/free-tools/gross-profit-margin-calculator",
-  title: "Gross Profit Margin Calculator",
+  title: "Profit Margin & Markup Calculator: Find Selling Price",
   description:
-    "Calculate your gross profit margin instantly. Enter your revenue and cost of goods sold to see profitability at a glance.",
+    "Calculate gross profit margin and markup from price and cost, or find the selling price from a markup or target margin. Conversion table and formulas.",
   intro:
-    "Gross profit margin shows what share of your revenue is left after the cost of goods sold (COGS). Enter total revenue and COGS to see the result as both a percentage and an absolute amount.",
+    "Profit margin shows what share of the selling price you keep; markup shows how much you add on top of cost. Get both from price and cost, or start from cost and find the right selling price for a markup or a target margin.",
   applicationCategory: "FinanceApplication",
   seoParagraphs: [
     { heading: "How is gross profit margin calculated?", body: "The formula is simple: Gross Profit Margin = ((Revenue − COGS) / Revenue) × 100. COGS covers the direct costs of producing or sourcing what you sell — raw materials, production labour, supplier invoices, and shipping or packaging directly attributable to the product. Operating costs such as marketing, rent and management salaries are excluded; those belong in net profit margin." },
     { body: "Gross margin is the most direct read on your pricing power and sourcing efficiency. When it falls, either your selling price is under pressure or unit costs are rising. Track margin per product or category to separate the two — a blended figure hides the mix of profitable and unprofitable SKUs." },
+    { heading: "How is markup calculated?", body: "Markup divides profit by cost: Markup = (Selling price − Cost) / Cost × 100. A product costing $600 and selling for $1,000 earns $400, which is a 66.7% markup (400 / 600) and a 40% margin (400 / 1,000). Markup is always higher than margin because its denominator, cost, is smaller than the selling price." },
+    { heading: "How to find the selling price from a target margin", body: "The correct formula is Selling price = Cost / (1 − Target margin). For a $600 cost and a 40% margin, the price is 600 / 0.60 = $1,000. The classic mistake is adding 40% to cost: 600 × 1.40 = $840, which yields a 28.6% margin, about $160 less per unit than planned. The \"Price from target margin\" tab shows the right price and what the mistake would cost you." },
+    { heading: "Converting margin to markup", body: "Markup = Margin / (1 − Margin) and Margin = Markup / (1 + Markup). So a 20% margin equals a 25% markup, 25% equals 33.3%, and 50% equals 100%. The table above lists common values and, once you enter a cost, the selling price for each row." },
+    { heading: "How margin sets your break-even ROAS", body: "If you run ads, your margin is also your threshold: Break-even ROAS = 1 / Margin. At a 40% margin, ads must return at least 2.5 times their cost in revenue; at 20% the bar rises to 5. Subtract shipping and marketplace fees and it climbs further. Use the ROAS Calculator for the full picture." },
     { heading: "Industry reference ranges", body: "There is no universal target; it varies with the business model. As rough guidance: e-commerce and retail typically land in the 20-50% band, services and agencies around 40-60%, and SaaS or digital products in the 70-90% range. Treat these as orientation rather than hard claims — your own period-over-period trend is a more meaningful benchmark than any industry average." },
   ],
   faqs: [
+    { q: "How do you calculate markup?", a: "Markup = (Selling price − Cost) / Cost × 100. A product bought for $600 and sold for $900 has a 50% markup (300 / 600) and a 33.3% margin (300 / 900)." },
+    { q: "What is the difference between margin and markup?", a: "Margin divides profit by the selling price; markup divides it by cost. On a $1,000 sale with a $600 cost, margin is 40% and markup is 66.7%. A 50% margin and a 50% markup give very different prices, so always say which one you mean." },
     { q: "What is gross profit margin?", a: "Gross profit margin is the share of revenue left after subtracting the cost of goods sold: ((Revenue − COGS) / Revenue) × 100. It measures the underlying profitability of your product or service, independent of operating expenses." },
     { q: "What is a good gross profit margin?", a: "It depends on the model. Rough ranges: e-commerce 20-50%, services 40-60%, SaaS 70-90%. Rather than chasing a fixed threshold, watch your own trend — a declining margin signals price pressure or rising unit costs." },
     { q: "What is included in COGS?", a: "Direct costs of making a product sellable: raw materials, production labour, supplier and contract-manufacturing invoices, plus product-attributable shipping, packaging and payment fees. Rent, marketing budget, management salaries and taxes are not part of COGS." },
@@ -222,7 +228,8 @@ export const grossMargin: ToolContent = {
   ],
   relatedTools: [
     { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "True profitability, all costs included" },
-    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Return on ad spend" },
+    { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Break-even ROAS and profit after ads" },
+    { label: "Discount Calculator", href: "/en/free-tools/discount-calculator", note: "How a discount hits your margin" },
     { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
   ],
   relatedPost: { label: "How to Calculate Profit Margin (Margin vs Markup)", href: "/en/blog/how-to-calculate-profit-margin/" },

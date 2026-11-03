@@ -226,20 +226,26 @@ export const trTools = { arr, cac, churn, ltv, roas, utm, llmsTxt };
 export const grossMargin: ToolContent = {
   slug: "brut-kar-marji",
   path: "/ucretsiz-araclar/brut-kar-marji-hesaplayici",
-  title: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı",
+  title: "Kar Marjı ve Kar Oranı Hesaplama: Satış Fiyatı Bulma",
   description:
-    "Kar marjı hesaplama: gelir ve ürün maliyetini (COGS) girin, brüt kar marjınızı yüzde ve tutar olarak saniyeler içinde görün. Formül ve sektör aralıkları.",
+    "Kar marjı ve kar oranı (markup) hesaplama: maliyet ve fiyattan marjı bulun, kar oranı veya hedef marjdan satış fiyatı çıkarın. Dönüşüm tablosu ve formül.",
   intro:
-    "Brüt kar marjı, satılan malın maliyeti (COGS) düşüldükten sonra gelirinizin yüzde kaçının elinizde kaldığını gösterir. Toplam gelirinizi ve COGS'unuzu girin; sonucu hem yüzde hem tutar olarak görün.",
+    "Kar marjı, satış fiyatının yüzde kaçının elinizde kaldığını; kar oranı (markup) ise maliyetin üzerine yüzde kaç eklediğinizi gösterir. Fiyat ve maliyetten ikisini birden hesaplayın ya da maliyetten yola çıkıp kar oranı veya hedef marjla doğru satış fiyatını bulun.",
   applicationCategory: "FinanceApplication",
   seoParagraphs: [
     { heading: "Brüt Kar Marjı Nasıl Hesaplanır?", body: "Formül basittir: Brüt Kar Marjı = ((Gelir − COGS) / Gelir) × 100. COGS (Cost of Goods Sold), ürünü üretmek veya satın almak için doğrudan katlanılan maliyetlerdir — hammadde, üretim işçiliği, tedarikçi faturaları, ürüne doğrudan atfedilebilen kargo ve paketleme. Pazarlama, kira, yönetim maaşları gibi operasyonel giderler bu hesaba girmez; onlar net kar marjında devreye girer." },
     { body: "Brüt kar marjı, fiyatlandırma gücünüzün ve tedarik verimliliğinizin en doğrudan göstergesidir. Marj düşüyorsa ya satış fiyatı baskı altında ya da birim maliyetler artıyordur. Bu iki nedeni ayırt etmek için marjı ürün/kategori kırılımında takip etmek gerekir; toplam marj, kârlı ve zararlı ürünlerin ortalamasını gizler." },
-    { heading: "E-Ticaret Sitenizde Dönüşüm Oranını Ölçmek", body: "E-ticaret sitenizde ziyaretçi başına satış oranını ölçmek için dönüşümü \"tamamlanmış sipariş\" olarak tanımlayın ve oranı oturum değil, tekil ziyaretçi bazında da kontrol edin. Retail senaryosunda tek bir toplam oran yanıltıcıdır: kategori sayfası, ürün detay sayfası ve sepet-ödeme adımları ayrı ayrı ölçülmelidir. Tipik huni şöyle işler — ziyaretçilerin bir kısmı ürün sayfasına iner, bunların bir kısmı sepete ekler, sepete ekleyenlerin ortalama %60-80'i ödeme adımında kaybedilir. Kargo ücretinin geç gösterilmesi, zorunlu üyelik, sınırlı ödeme seçeneği ve yavaş mobil deneyim bu kaybın en yaygın dört nedenidir. Mobil ve masaüstü oranlarını ayrı izlemek, sezon ve kampanya dönemlerini ayrı kohort saymak e-ticarette şarttır." },
+    { heading: "Kar Oranı Nasıl Hesaplanır?", body: "Kar oranı (markup) kârı maliyete böler: Kar Oranı = (Satış fiyatı − Maliyet) / Maliyet × 100. 600 TL'ye mal olan ürünü 1.000 TL'ye satıyorsanız kâr 400 TL'dir; kar oranı 400 / 600 = %66,7, kar marjı ise 400 / 1.000 = %40'tır. Aynı kâr iki farklı yüzdeyle anlatılır. Kar oranı her zaman marjdan yüksek çıkar, çünkü payda (maliyet) satış fiyatından küçüktür. Tedarikçiyle konuşurken kar oranı, kârlılık ve reklam hesabı yaparken kar marjı kullanmak karışıklığı önler." },
+    { heading: "Hedef Marjdan Satış Fiyatı Nasıl Bulunur?", body: "Doğru formül: Satış Fiyatı = Maliyet / (1 − Hedef marj). 600 TL maliyetli üründe %40 marj için fiyat 600 / 0,60 = 1.000 TL'dir. En sık yapılan hata maliyete %40 eklemektir: 600 × 1,40 = 840 TL fiyat çıkar ve marj %40 değil %28,6 kalır. Her üründe yaklaşık 160 TL eksik fiyat yazılmış olur. Yukarıdaki \"Hedef marjla fiyat\" sekmesi doğru fiyatı ve bu hatanın size neye mal olacağını birlikte gösterir." },
+    { heading: "Kar Marjını Kar Oranına Çevirme", body: "İki oran birbirine dönüşür: Kar oranı = Marj / (1 − Marj) ve Marj = Kar oranı / (1 + Kar oranı). Yani %20 marj %25 kar oranına, %25 marj %33,3 kar oranına, %50 marj %100 kar oranına eşittir. Yukarıdaki tablo sık kullanılan değerleri hazır verir; maliyet girdiğinizde her satırın satış fiyatını da gösterir." },
+    { heading: "Kar Marjı Reklam Bütçesini Nasıl Belirler?", body: "Reklam yapıyorsanız kar marjı aynı zamanda eşiğinizdir: Başabaş ROAS = 1 / Kar marjı. %40 marjda reklamın en az 2,5 katı ciro getirmesi gerekir; %20 marjda bu eşik 5'e çıkar. Kargo, pazaryeri komisyonu ve paketleme gibi sipariş başı giderleri de düşerseniz eşik daha da yükselir. Bu yüzden araç sonucunda başabaş ROAS'ı da görürsünüz; tam hesap için ROAS Hesaplama aracına geçebilirsiniz." },
     { heading: "Sektöre Göre Referans Aralıkları", body: "Kesin bir hedef yoktur; iş modeline göre büyük farklılık gösterir. Yönlendirici olarak: e-ticaret ve perakendede brüt marj çoğunlukla %20-50 bandında, hizmet/ajans işlerinde %40-60, SaaS ve dijital ürünlerde ise %70-90 aralığında görülür. Bunlar kesin iddia değil, karşılaştırma için kaba referanslardır — kendi geçmiş dönem trendiniz her zaman sektör ortalamasından daha anlamlı bir kıyas noktasıdır." },
   ],
   faqs: [
     { q: "Kar marjı nasıl hesaplanır?", a: "Kar marjı = (Satış fiyatı − Maliyet) / Satış fiyatı × 100. Örnek: 1.000 TL'ye satılan ve 600 TL'ye mal olan üründe kar marjı (1.000 − 600) / 1.000 = %40'tır. Maliyete göre hesaplanan oran ise kar oranıdır (markup): (1.000 − 600) / 600 = %66,7. İkisi sık karıştırılır; fiyatlandırma ve reklam hesaplarında (başabaş ROAS gibi) satış fiyatına göre olan kar marjı kullanılır." },
+    { q: "Kar oranı nasıl hesaplanır?", a: "Kar oranı = (Satış fiyatı − Maliyet) / Maliyet × 100. 600 TL'ye alınıp 900 TL'ye satılan üründe kar oranı 300 / 600 = %50'dir. Aynı üründe kar marjı 300 / 900 = %33,3'tür." },
+    { q: "Kar marjı ile kar oranı arasındaki fark nedir?", a: "Kar marjı kârı satış fiyatına, kar oranı (markup) maliyete böler. Bu yüzden aynı satışta kar oranı daha yüksek görünür: 1.000 TL'lik satışta 600 TL maliyet için marj %40, kar oranı %66,7'dir. Fiyatlama hedefini söylerken hangisini kastettiğinizi belirtin; %50 marj ile %50 kar oranı çok farklı fiyatlar verir." },
+    { q: "%30 kar için satış fiyatı nasıl hesaplanır?", a: "Önce %30'un marj mı kar oranı mı olduğunu netleştirin. 100 TL maliyette %30 kar oranı için fiyat 100 × 1,30 = 130 TL'dir (marj %23,1). %30 kar marjı için fiyat 100 / 0,70 ≈ 142,86 TL'dir. Fark ürün başına yaklaşık 12,86 TL'dir." },
     { q: "Brüt kar marjı nedir?", a: "Brüt kar marjı, toplam gelirden satılan malın maliyeti (COGS) düşüldükten sonra kalan tutarın gelire oranıdır: ((Gelir − COGS) / Gelir) × 100. Ürün veya hizmetinizin temel kârlılığını, operasyonel giderlerden bağımsız olarak gösterir." },
     { q: "İyi bir brüt kar marjı nedir?", a: "İş modeline bağlıdır. Yönlendirici aralıklar: e-ticaret %20-50, hizmet işleri %40-60, SaaS %70-90. Sabit bir eşik yerine kendi trendinizi izleyin — marjın dönemler arası düşmesi, fiyat baskısı veya artan birim maliyet sinyalidir." },
     { q: "COGS'a neler dahildir?", a: "Ürünü üretmek veya satılabilir hale getirmek için katlanılan doğrudan maliyetler: hammadde, üretim işçiliği, tedarikçi ve fason faturaları, ürüne doğrudan atfedilebilen kargo, paketleme ve ödeme komisyonu. Kira, pazarlama bütçesi, yönetim maaşları ve vergi COGS'a girmez." },
@@ -247,7 +253,9 @@ export const grossMargin: ToolContent = {
   ],
   relatedTools: [
     { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Tüm giderler dahil gerçek kârlılık" },
-    { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam harcaması getirisi" },
+    { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Başabaş ROAS ve reklam sonrası kâr" },
+    { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Komisyon ve kargo sonrası marj" },
+    { label: "İndirim Hesaplama", href: "/ucretsiz-araclar/indirim-hesaplama", note: "İndirimin marja etkisi" },
     { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
   ],
   relatedPost: { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },

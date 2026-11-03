@@ -69,7 +69,7 @@ export const freeToolsPage = {
     { key: "roas",  name: "ROAS Calculator",       description: "Measure Return on Ad Spend and campaign profitability.",                                href: "/en/free-tools/roas-calculator" },
     { key: "utm",   name: "UTM Link Builder",      description: "Build UTM links and preview the GA4 channel group and Unassigned risk.",                             href: "/en/free-tools/utm-builder" },
     { key: "llms",  name: "llms.txt Generator",    description: "Build an llms.txt file in the llmstxt.org format, with a format check and an example file.", href: "/en/free-tools/llms-txt-generator" },
-    { key: "gross", name: "Gross Profit Margin Calculator", description: "Enter revenue and COGS to see gross margin as a percentage and an amount.", href: "/en/free-tools/gross-profit-margin-calculator" },
+    { key: "gross", name: "Profit Margin & Markup Calculator", description: "Calculate margin and markup, and find the selling price from a target margin.", href: "/en/free-tools/gross-profit-margin-calculator" },
     { key: "net",   name: "Net Profit Margin Calculator",   description: "Include every expense to see the true net profitability of your business.", href: "/en/free-tools/net-profit-margin-calculator" },
     { key: "mrr",   name: "MRR Calculator",        description: "Calculate Monthly Recurring Revenue and see the matching ARR.", href: "/en/free-tools/mrr-calculator" },
     { key: "arpa",  name: "ARPA Calculator",       description: "Average revenue per account from total MRR and active accounts.", href: "/en/free-tools/arpa-calculator" },
