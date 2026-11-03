@@ -34,6 +34,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-11-02 kalan, TR önce): /blog/cpl-nedir-lead-basi-maliyet/, /en/free-tools/discount-calculator/, /en/blog/how-to-advertise-on-trendyol/, /en/blog/what-is-cpl-cost-per-lead/
 - [ ] Dizine ekleme isteği (2026-11-03, TR önce; güçlendirildi veya yeni): /ucretsiz-araclar/brut-kar-marji-hesaplayici/, /blog/roas-nedir-nasil-hesaplanir/, /en/free-tools/shipping-cost-calculator/, /en/blog/how-to-run-instagram-ads/, /en/free-tools/gross-profit-margin-calculator/
 - [!] Site haritası 30.10'dan beri okunmamış, yeni sayfalar Google'da bilinmiyor. Yeniden gönderme onaylı işlemler dışında; kullanıcı onayı bekleniyor (2026-11-03)
+- [ ] Dizine ekleme isteği (2026-11-03 başlık/bölüm değişti, TR): /ucretsiz-araclar/desi-hesaplama/ (başlık ayrıştırıldı), /blog/meta-reklam-verme-rehberi/ (Facebook bölümü)
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
@@ -68,8 +69,10 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [~] Paylaşılabilir sonuç linki (girdiler URL'de) — yeni 2 araçta var, eski araçlara yayılacak
 - [ ] Sonucu e-postayla/PDF gönder (yumuşak lead yakalama)
 - [x] Gömülebilir widget + backlink ("Bu aracı sitene ekle") — 2026-10-27 (ROAS, Reklam Bütçesi, Trendyol Kâr, Desi; TR + EN)
-- [~] Widget dağıtımı: 1. dalga hedef listesi (9 TR e-ticaret/pazaryeri blogu) + 3 teklif metni hazır — seo/outreach/widget-dagitimi.md (2026-10-28; kullanıcı gönderir). Sıradaki: 4–9 numaralı adayların yazı/araç kontrolü, EN araç dizinleri (14–20 Kas)
+- [~] Widget dağıtımı: 1. dalga hedef listesi + teklif metinleri — seo/outreach/widget-dagitimi.md. 03.11: 4–9 kontrolü bitti (foxs, solofor uygun; threepoint elendi; balpdijital doğrulanamadı; birfatura eklendi), gönderime hazır 3 metin + 04.11 için 2 hatırlatma metni hazır (kullanıcı gönderir). Sıradaki: yanıtları takip tablosuna yazmak, EN araç dizinleri
 - [x] Yeni araç: İndirim hesaplama (fiyat/oran/eski fiyat/X al Y öde + satıcı kâr bloğu, gömülebilir) — 2026-11-02
+- [x] Yeni araç: Kargo ücreti hesaplama (kademeli tarife, 3 teklif, kademe analizi, ücretsiz kargo eşiği, gömülebilir) — 2026-11-03
+- [ ] Kargo ücreti aracı → Trendyol kâr aracına kargo tutarını URL ile taşıma (araçlar arası akış; Search Console kullanımı görülünce)
 - [ ] Araçlar arası akış (brüt marj → başabaş ROAS → bütçe planlayıcı)
 - [ ] Yeni araç: Otomasyon ROI hesaplayıcı
 - [ ] Yeni araçlar (GEO): AI crawler robots.txt kontrolü, FAQ/Schema JSON-LD oluşturucu
@@ -83,6 +86,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Churn nedir, churn rate nasıl hesaplanır — 2026-10-30 (/blog/churn-nedir-churn-rate-nasil-hesaplanir/)
 - [x] Meta reklam verme rehberi — 2026-10-30 (/blog/meta-reklam-verme-rehberi/)
 - [x] Meta reklam verme rehberine "Facebook reklam verme" bölümü — 2026-11-03 (Instagram yazısıyla yayınlandı)
+- [x] Instagram reklam verme rehberi — 2026-11-03 (/blog/instagram-reklam-verme-rehberi/)
 - [x] UTM parametreleri nedir, nasıl kullanılır — 2026-10-27 (/blog/utm-nedir-utm-parametreleri/)
 - [x] Kar marjı nasıl hesaplanır (brüt/katkı/faaliyet, markup) — 2026-10-28 (/blog/kar-marji-nasil-hesaplanir/)
 - [ ] CAC geri ödeme süresi nedir
