@@ -53,6 +53,7 @@ export const STATIC_ROUTE_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", en: "/en/free-tools/marketplace-profit-calculator" },
   { tr: "/ucretsiz-araclar/desi-hesaplama", en: "/en/free-tools/dimensional-weight-calculator" },
   { tr: "/ucretsiz-araclar/indirim-hesaplama", en: "/en/free-tools/discount-calculator" },
+  { tr: "/ucretsiz-araclar/kargo-ucreti-hesaplama", en: "/en/free-tools/shipping-cost-calculator" },
   { tr: "/ucretsiz-araclar/reklam-butcesi-hesaplama", en: "/en/free-tools/ad-budget-calculator" },
   { tr: "/blog",                    en: "/en/blog" },
 ];
@@ -139,6 +140,7 @@ export const STATIC_TR_ROUTES = [
   "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama",
   "/ucretsiz-araclar/desi-hesaplama",
   "/ucretsiz-araclar/indirim-hesaplama",
+  "/ucretsiz-araclar/kargo-ucreti-hesaplama",
   "/ucretsiz-araclar/reklam-butcesi-hesaplama",
   "/iletisim",
   "/blog",
@@ -172,6 +174,7 @@ export const STATIC_EN_ROUTES = [
   "/en/free-tools/marketplace-profit-calculator",
   "/en/free-tools/dimensional-weight-calculator",
   "/en/free-tools/discount-calculator",
+  "/en/free-tools/shipping-cost-calculator",
   "/en/free-tools/ad-budget-calculator",
   "/en/contact",
   "/en/blog",

@@ -64,6 +64,7 @@ export type RelatedToolKey =
   | "ad-budget"
   | "desi"
   | "discount"
+  | "shipping-cost"
   | "gross-margin";
 
 export interface BlogPost {
@@ -2932,6 +2933,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici/" },
       { label: "ROAS Hesaplama: ROAS ve Başabaş ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama: Tarifeyle Koli Başı Fiyat", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
       { label: "Desi Hesaplama: Kargo Desi Hesaplama Aracı", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
       { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
@@ -4223,7 +4225,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
-      { label: "Desi Hesaplama: Kargo Desi ve Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama: Tarifeyle Koli Başı Fiyat", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "Desi Hesaplama: Kargo Desi Hesaplama Aracı", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kar Marjı Nasıl Hesaplanır? Kar Oranı (Markup) Farkı", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
@@ -4611,7 +4614,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
       { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
-      { label: "Desi Hesaplama: Kargo Desi ve Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama: Tarifeyle Koli Başı Fiyat", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "Desi Hesaplama: Kargo Desi Hesaplama Aracı", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
@@ -7309,6 +7313,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator/" },
       { label: "ROAS Calculator (break-even ROAS)", href: "/en/free-tools/roas-calculator/" },
       { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
       { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
       { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
       { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
@@ -8580,6 +8585,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     resources: [
       { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
       { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
       { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
       { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
@@ -8939,6 +8945,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
       { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
       { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
@@ -9317,6 +9324,18 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
       href: "/en/free-tools/ad-budget-calculator",
       label: "Ad Budget Calculator",
       description: "Budget, break-even/target ROAS and max CPA from your revenue target.",
+    },
+  },
+  "shipping-cost": {
+    tr: {
+      href: "/ucretsiz-araclar/kargo-ucreti-hesaplama",
+      label: "Kargo Ücreti Hesaplama",
+      description: "Tarifenizle koli başı kargo ücretini ve ücretsiz kargo eşiğini hesaplayın.",
+    },
+    en: {
+      href: "/en/free-tools/shipping-cost-calculator",
+      label: "Shipping Cost Calculator",
+      description: "Cost per parcel from your rate card, plus the free shipping threshold.",
     },
   },
   discount: {

@@ -81,6 +81,7 @@ export const freeToolsPage = {
     { key: "marketplace", name: "Trendyol & Hepsiburada Profit Calculator", description: "Net profit per order after commission, shipping, service fee, withholding, returns and ads.", href: "/en/free-tools/marketplace-profit-calculator" },
     { key: "desi", name: "Dimensional Weight (Desi) Calculator", description: "Dimensional weight vs actual weight, chargeable weight and estimated shipping cost for one or many boxes.", href: "/en/free-tools/dimensional-weight-calculator" },
     { key: "discount", name: "Discount Calculator", description: "Sale price, percent off and original price, stacked discounts and the profit impact for sellers.", href: "/en/free-tools/discount-calculator" },
+    { key: "shippingCost", name: "Shipping Cost Calculator", description: "Enter your rate card to get the tier, cost per parcel and free shipping threshold, and compare three quotes.", href: "/en/free-tools/shipping-cost-calculator" },
     { key: "payback", name: "CAC Payback Period Calculator", description: "See how many months it takes to recover your customer acquisition cost.", href: "/en/free-tools/cac-payback-period-calculator" },
   ],
 };
@@ -262,7 +263,7 @@ export const toolCategories = [
         a: "Marketplace commissions usually run 8-20% of the sale and, together with payment processing fees, come straight off revenue. When comparing your own store to a marketplace, model the same product in both scenarios: marketplace traffic looks free, but the commission often costs about as much as paid acquisition.",
       },
     ],
-    tools: ["marketplace", "desi", "discount", "gross", "net"],
+    tools: ["marketplace", "desi", "shippingCost", "discount", "gross", "net"],
   },
 ] as const;
 

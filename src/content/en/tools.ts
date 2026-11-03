@@ -523,7 +523,8 @@ export const marketplace: ToolContent = {
     { q: "What is a good marketplace profit margin?", a: "It depends on the category, but a net margin below 10% of VAT-excluded sales after returns and ads leaves little room for campaign discounts and currency swings. Enter your target margin and the calculator shows the required price." },
   ],
   relatedTools: [
-    { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator", note: "Shipping desi and cost" },
+    { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator", note: "Shipping desi" },
+    { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator", note: "Rate cards and free shipping threshold" },
     { label: "Discount Calculator", href: "/en/free-tools/discount-calculator", note: "Profit after a discount and sales uplift needed" },
     { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Measure return on ad spend" },
     { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
@@ -617,6 +618,7 @@ export const desi: ToolContent = {
     { q: "Should multiple boxes be calculated as one?", a: "No. Carriers typically measure and round each box separately, which can add up to more than the total-volume figure. Add each box separately or set a quantity." },
   ],
   relatedTools: [
+    { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator", note: "Rate cards, quote comparison, free shipping threshold" },
     { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator", note: "Per-order profit incl. shipping" },
     { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
     { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Profitability incl. shipping" },
@@ -683,4 +685,66 @@ export const discount: ToolContent = {
     { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator", note: "Campaign budget" },
   ],
   relatedPost: { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
+};
+
+export const shippingCost: ToolContent = {
+  slug: "shipping-cost-calculator",
+  path: "/en/free-tools/shipping-cost-calculator",
+  title: "Shipping Cost Calculator: Rate Cards, Tiers, Free Shipping",
+  description:
+    "Work out shipping cost from dimensions, weight and your own rate card. Compare three quotes, see tier jumps and find your free shipping threshold.",
+  intro:
+    "Enter the parcel's dimensions and weight. The calculator finds the chargeable weight, places it in your rate card's tier and returns the cost per parcel. Put up to three rate cards or quotes side by side, add extras and percentage surcharges and, if you sell online, see how much of the order profit shipping takes and where your free shipping threshold sits. Columns A and B are sample figures; enter your own price list for a real result. Everything runs in your browser and no data is sent.",
+  seoParagraphs: [
+    {
+      heading: "How is shipping cost calculated?",
+      body:
+        "Four steps. 1) Dimensional weight (desi): Length × Width × Height (cm) / divisor. 2) Take the larger of that and actual weight; this is the chargeable weight. 3) Read the price of the tier it falls in. 4) Add extras and percentage surcharges. Formula: Cost per parcel = (Tier price + Extras) × (1 + Surcharge / 100). For several parcels, multiply by the parcel count; carriers measure and price each parcel separately.",
+    },
+    {
+      heading: "Worked example",
+      body:
+        "Take a 40 × 30 × 20 cm parcel weighing 3 kg with a divisor of 3000. Volume is 24,000 cm³, dimensional weight is 8, and since 8 beats 3 kg the chargeable weight is 8. On sample rate card A the up-to-10 tier is $12, extras are $0.50 and the surcharge is 5%: (12 + 0.50) × 1.05 = $13.13. On sample card B the same tier is $11 with no extras: 11 × 1.05 = $11.55. The same parcel differs by about $1.60. These are illustrative figures, not any carrier's prices.",
+    },
+    {
+      heading: "Why does one extra unit cost so much on a tiered rate card?",
+      body:
+        "Tiered prices climb in steps, not in proportion. On sample card A an up-to-5 parcel costs $9 and a 6-unit parcel costs $12, while everything from 6 to 10 costs the same. Two practical results follow. Just above a tier, shaving the box pays: for a 40 × 30 cm base at divisor 3000, staying within 5 units means a height of at most 12.5 cm. With room below a tier limit, a bigger, safer box costs nothing extra. The tier analysis shows the saving and the height you need.",
+    },
+    {
+      heading: "What surcharges get added on top?",
+      body:
+        "The list price is rarely the final price. Common items are pickup and home delivery, SMS or phone notifications, heavy-item fees above a size or weight limit, remote-area delivery, cash-on-delivery handling and returns of undelivered parcels. International express carriers such as FedEx also list fuel surcharges, remote-area delivery and address correction fees. In Turkey, Yurtiçi Kargo's guide says 2.35% of the final cost is added as a postal service charge on items within the limits of Law 6475. Put per-parcel items in the extras row and proportional ones in the surcharge row.",
+    },
+    {
+      heading: "Which carrier is cheapest? It depends on the parcel",
+      body:
+        "There is no single cheapest carrier; it depends on your product mix. With the sample cards, the 8-unit parcel is cheaper on B ($11.55 vs $13.13), but a 15-unit parcel is cheaper on A: (20 + 0.50) × 1.05 = $21.53 against 22 × 1.05 = $23.10. Don't compare quotes on the first tier alone. Group last month's parcels by chargeable weight, enter the busiest tiers and compare totals. At 500 parcels a month, that gap is about $790.",
+    },
+    {
+      heading: "How do you set a free shipping threshold?",
+      body:
+        "It is the lowest order value that protects your target profit while you pay the shipping. Threshold = (Shipping cost + Target profit per order) / Margin before shipping. With $11.55 shipping, a 30% margin and a $5 target, the threshold is (11.55 + 5) / 0.30 = $55.17. On a $40 order, pre-shipping profit is $12; shipping takes 96.3% of it and $0.45 remains. Setting the threshold a little above your average order lifts basket size, but setting it below this figure loses profit on each order. The formula assumes shipping stays in the same tier as the basket grows; if added items push the parcel up a tier, the threshold rises too.",
+    },
+    {
+      heading: "How is this different from the dimensional weight calculator?",
+      body:
+        "The Dimensional Weight Calculator handles several different boxes, units and box-shrinking scenarios: it answers 'what is the chargeable weight?'. This calculator places that weight on a tiered rate card: 'what will it cost, which quote is better and where should free shipping start?'. For one box size this tool is enough; for mixed box sizes, find the weights in the other tool first.",
+    },
+  ],
+  faqs: [
+    { q: "How is shipping cost calculated?", a: "Find dimensional weight (L × W × H / divisor), compare it with actual weight and take the larger, read the price of that tier and add extras. Cost per parcel = (Tier price + Extras) × (1 + Surcharge / 100)." },
+    { q: "Why aren't carriers' current prices built in?", a: "Rates change often and depend on contract, route and volume, so a fixed list goes stale quickly. The calculator works with your own price list. Columns A and B are samples and represent no real carrier." },
+    { q: "How is a parcel above the last tier priced?", a: "Rate cards usually give a price per extra unit: last tier price + (chargeable weight − last tier limit) × rate per extra unit. Enter it in the 'above last break' row. If it is blank, the result shows 'price missing'." },
+    { q: "How do I set a free shipping threshold?", a: "Threshold = (Shipping cost + Target profit per order) / Margin before shipping. With $9 shipping, a 30% margin and a $6 target, the threshold is $50." },
+    { q: "Which divisor should I use?", a: "3000 is common for domestic shipping in Turkey and 5000 for international air express; some economy services use 6000. Your contract decides, so check it before comparing quotes." },
+  ],
+  relatedTools: [
+    { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator", note: "Multiple boxes and box shrinking" },
+    { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator", note: "Order profit including shipping" },
+    { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Find your margin before shipping" },
+    { label: "Discount Calculator", href: "/en/free-tools/discount-calculator", note: "Profit impact of a promotion" },
+  ],
+  relatedPost: { label: "Trendyol Commission Rates 2026 & How to Calculate Fees", href: "/en/blog/trendyol-commission-rates/" },
+  externalSource: { label: "FedEx: What extra charges can be added?", href: "https://www.fedex.com/tr-tr/how-to/calculate-costs/what-extra-charges-can-be-added.html" },
 };

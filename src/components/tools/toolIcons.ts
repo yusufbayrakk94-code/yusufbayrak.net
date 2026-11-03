@@ -1,4 +1,4 @@
-import { TrendingUp, Users, UserMinus, HeartHandshake, Target, Link2, FileText, Percent, PiggyBank, Megaphone, Boxes, ShoppingCart, Filter, CalendarClock, Wallet, Repeat, Gauge, Timer, Compass, Store, Calculator, Package, Tag } from "lucide-react";
+import { TrendingUp, Users, UserMinus, HeartHandshake, Target, Link2, FileText, Percent, PiggyBank, Megaphone, Boxes, ShoppingCart, Filter, CalendarClock, Wallet, Repeat, Gauge, Timer, Compass, Store, Calculator, Package, Tag, Truck } from "lucide-react";
 
 // Icon per tool card key — shared by the free-tools hub and the category pages
 // so both render the exact same card pattern.
@@ -23,6 +23,7 @@ export const toolIconMap = {
   adBudget: Calculator,
   desi: Package,
   discount: Tag,
+  shippingCost: Truck,
 } as const;
 
 export const categoryIconMap = {

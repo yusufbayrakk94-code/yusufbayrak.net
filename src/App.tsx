@@ -29,6 +29,7 @@ const RoasCalculator = lazyPage("../pages/tools/RoasCalculator.tsx");
 const MarketplaceProfitCalculator = lazyPage("../pages/tools/MarketplaceProfitCalculator.tsx");
 const DesiCalculator = lazyPage("../pages/tools/DesiCalculator.tsx");
 const DiscountCalculator = lazyPage("../pages/tools/DiscountCalculator.tsx");
+const ShippingCostCalculator = lazyPage("../pages/tools/ShippingCostCalculator.tsx");
 const AdBudgetCalculator = lazyPage("../pages/tools/AdBudgetCalculator.tsx");
 const UtmBuilder = lazyPage("../pages/tools/UtmBuilder.tsx");
 const LlmsTxtGenerator = lazyPage("../pages/tools/LlmsTxtGenerator.tsx");
@@ -80,6 +81,7 @@ export const ROUTES: RouteObject[] = [
   { path: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", element: <MarketplaceProfitCalculator /> },
   { path: "/ucretsiz-araclar/desi-hesaplama", element: <DesiCalculator /> },
   { path: "/ucretsiz-araclar/indirim-hesaplama", element: <DiscountCalculator /> },
+  { path: "/ucretsiz-araclar/kargo-ucreti-hesaplama", element: <ShippingCostCalculator /> },
   { path: "/ucretsiz-araclar/reklam-butcesi-hesaplama", element: <AdBudgetCalculator /> },
   { path: "/ucretsiz-araclar/utm-link-olusturucu", element: <UtmBuilder /> },
   { path: "/ucretsiz-araclar/llms-txt-olusturucu", element: <LlmsTxtGenerator /> },
@@ -112,6 +114,7 @@ export const ROUTES: RouteObject[] = [
   { path: "/en/free-tools/marketplace-profit-calculator", element: <MarketplaceProfitCalculator /> },
   { path: "/en/free-tools/dimensional-weight-calculator", element: <DesiCalculator /> },
   { path: "/en/free-tools/discount-calculator", element: <DiscountCalculator /> },
+  { path: "/en/free-tools/shipping-cost-calculator", element: <ShippingCostCalculator /> },
   { path: "/en/free-tools/ad-budget-calculator", element: <AdBudgetCalculator /> },
   { path: "/en/free-tools/utm-builder", element: <UtmBuilder /> },
   { path: "/en/free-tools/llms-txt-generator", element: <LlmsTxtGenerator /> },
@@ -138,11 +141,13 @@ export const ROUTES: RouteObject[] = [
   { path: "/embed/trendyol-hepsiburada-kar-hesaplama", element: <MarketplaceProfitCalculator /> },
   { path: "/embed/desi-hesaplama", element: <DesiCalculator /> },
   { path: "/embed/indirim-hesaplama", element: <DiscountCalculator /> },
+  { path: "/embed/kargo-ucreti-hesaplama", element: <ShippingCostCalculator /> },
   { path: "/en/embed/roas-calculator", element: <RoasCalculator /> },
   { path: "/en/embed/ad-budget-calculator", element: <AdBudgetCalculator /> },
   { path: "/en/embed/marketplace-profit-calculator", element: <MarketplaceProfitCalculator /> },
   { path: "/en/embed/dimensional-weight-calculator", element: <DesiCalculator /> },
   { path: "/en/embed/discount-calculator", element: <DiscountCalculator /> },
+  { path: "/en/embed/shipping-cost-calculator", element: <ShippingCostCalculator /> },
   { path: "*", element: <NotFound /> },
 ];
 

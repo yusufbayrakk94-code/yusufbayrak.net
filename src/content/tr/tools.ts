@@ -565,7 +565,8 @@ export const marketplace: ToolContent = {
     { q: "Sipariş başı ne kadar reklam harcayabilirim?", a: "İade düşüldükten sonra kalan reklam öncesi kârınız, sipariş başı harcayabileceğiniz üst sınırdır; hedef marjınızı korumak için bundan hedef kârınızı çıkarın. Araç bu tutarı ve başabaş ROAS değerini sizin için hesaplar." },
   ],
   relatedTools: [
-    { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama", note: "Kargo desisi ve ücreti" },
+    { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama", note: "Kargo desisi" },
+    { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama", note: "Tarifeyle koli başı ücret ve ücretsiz kargo eşiği" },
     { label: "İndirim Hesaplama", href: "/ucretsiz-araclar/indirim-hesaplama", note: "İndirim sonrası kâr ve gerekli satış artışı" },
     { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Reklam getirisini ölçün" },
     { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Ürün bazında marj" },
@@ -636,9 +637,9 @@ export const adBudget: ToolContent = {
 export const desi: ToolContent = {
   slug: "desi-hesaplama",
   path: "/ucretsiz-araclar/desi-hesaplama",
-  title: "Desi Hesaplama: Kargo Desi ve Kargo Ücreti Hesaplama",
+  title: "Desi Hesaplama: Kargo Desi Hesaplama Aracı",
   description:
-    "Desi ve kargo ücreti hesaplama: en × boy × yükseklik / 3000 ile desiyi, ücrete esas desi/kg'ı ve tahmini kargo ücretini bulun. Çoklu koli, tüm firmalar.",
+    "Desi hesaplama: en × boy × yükseklik / 3000 ile kargo desisini, ücrete esas desi/kg'ı ve tahmini ücreti bulun. Çoklu koli destekli, tüm kargo firmaları için.",
   intro:
     "Kolinin en, boy ve yükseklik ölçülerini girin; araç desiyi hesaplar, gerçek ağırlıkla karşılaştırır ve kargo firmasının ücretlendireceği değeri (ücrete esas desi/kg) gösterir. Birden fazla koli ekleyebilir, bölen (3000, 5000…) ve yuvarlama kuralını sözleşmenize göre seçebilir, desi başı fiyatınızı girerek tahmini kargo ücretini görebilirsiniz. Ayrıca kutuyu birkaç santim küçültmenin kaç desi kazandıracağını hesaplar. Hesap tarayıcınızda çalışır, sonucu link olarak paylaşabilirsiniz.",
   seoParagraphs: [
@@ -707,6 +708,7 @@ export const desi: ToolContent = {
     { q: "Neden kargo firmalarının fiyat listesini vermiyorsunuz?", a: "Kargo tarifeleri sık güncellenir ve anlaşma hacmine, bölgeye, hizmet tipine göre değişir; sabit bir liste kısa sürede yanlış hâle gelir. Güncel fiyatı kargo firmanızın sayfasından veya sözleşmenizden alıp desi başı fiyat ve koli başı sabit ücret alanlarına girmeniz en doğru sonucu verir." },
   ],
   relatedTools: [
+    { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama", note: "Kademeli tarife, teklif karşılaştırma, ücretsiz kargo eşiği" },
     { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Kargo dahil sipariş başı kâr" },
     { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Ürün bazında marj" },
     { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Kargo dahil kârlılık" },
@@ -791,4 +793,80 @@ export const discount: ToolContent = {
     { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret araçları" },
   ],
   relatedPost: { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+};
+
+export const shippingCost: ToolContent = {
+  slug: "kargo-ucreti-hesaplama",
+  path: "/ucretsiz-araclar/kargo-ucreti-hesaplama",
+  title: "Kargo Ücreti Hesaplama: Desi ve Tarifeyle Kargo Fiyatı",
+  description:
+    "Kargo ücreti hesaplama: ölçü ve kilodan desiyi bulun, kendi tarifenizle koli başı fiyatı hesaplayın, üç teklifi karşılaştırın, ücretsiz kargo eşiğini görün.",
+  intro:
+    "Kolinin ölçülerini ve ağırlığını girin; araç ücrete esas desiyi bulur, tarifenizdeki kademeye oturtur ve koli başı kargo ücretini hesaplar. Üç ayrı tarifeyi ya da teklifi yan yana koyabilir, ek hizmet ve yüzdesel bedelleri ekleyebilir, satıcıysanız kargonun sipariş kârından ne kadar götürdüğünü ve ücretsiz kargo eşiğinizi görebilirsiniz. Tablodaki A ve B örnek tutarlardır; gerçek sonuç için kendi fiyat listenizi yazın. Hesap tarayıcınızda çalışır, veri gönderilmez.",
+  seoParagraphs: [
+    {
+      heading: "Kargo ücreti nasıl hesaplanır?",
+      body:
+        "Kargo ücreti dört adımda bulunur. 1) Desiyi hesaplayın: En × Boy × Yükseklik (cm) / 3000. 2) Desi ile gerçek ağırlıktan büyük olanı alın; bu ücrete esas ağırlıktır. 3) Tarifede bu değerin düştüğü kademenin fiyatını okuyun. 4) Ek hizmetleri ve yüzdesel bedelleri ekleyin. Formül: Koli başı ücret = (Kademe fiyatı + Ek hizmetler) × (1 + Yüzdesel bedel / 100). Birden fazla koli varsa bu tutar koli sayısıyla çarpılır; firmalar her koliyi ayrı ölçüp ayrı fiyatlar.",
+    },
+    {
+      heading: "Örnek kargo ücreti hesabı",
+      body:
+        "40 × 30 × 20 cm ölçülerinde, 3 kg'lık bir koli alalım. Hacim 24.000 cm³, desi 24.000 / 3000 = 8'dir; 8, 3 kg'dan büyük olduğu için ücrete esas ağırlık 8 olur. Araçtaki örnek Tarife A'da 10 desiye kadar kademe 175 TL, koli başı ek hizmet 10 TL, yüzdesel bedel %2,35'tir: (175 + 10) × 1,0235 = 189,35 TL. Örnek Tarife B'de aynı kademe 165 TL ve ek hizmet yoktur: 165 × 1,0235 = 168,88 TL. Aynı koli için aradaki fark 20,47 TL'dir. Bu rakamlar yöntemi göstermek için seçilmiş örnek tutarlardır, herhangi bir firmanın fiyatı değildir.",
+    },
+    {
+      heading: "Kargo fiyatı mesafeye göre nasıl değişir?",
+      body:
+        "Birçok firma aynı desi için mesafeye göre farklı fiyat uygular. Yurtiçi Kargo'nun ücret hesaplama rehberi yurt içinde şehir içi dışında dört hat tanımlar: 1–200 km yakın, 201–600 km kısa, 601–1000 km orta, 1000 km üzeri uzun hat. Mesafe şehirler arası kara yolu uzaklığıdır. Bu yüzden fiyat listesi tek sütun değil, bir tablodur: önce satırı (desi), sonra sütunu (hat) okursunuz. Araca, en çok gönderdiğiniz hattın sütununu girin. Müşterileriniz farklı hatlara dağılıyorsa her hat için ayrı hesap yapıp gönderi payınıza göre ağırlıklı ortalama alın. Hat tanımı firmaya ve sözleşmeye göre değişebilir.",
+    },
+    {
+      heading: "Kademeli tarifede 1 desi neden pahalıya gelir?",
+      body:
+        "Kademeli tarifede ücret, desiyle orantılı artmaz; basamak basamak çıkar. Örnek Tarife A'da 5 desi 125 TL, 6 desi 175 TL'dir: tek desilik fark 50 TL ekler, buna karşılık 6 ile 10 desi arası aynı fiyattır. Pratik sonuç iki yönlüdür. Bir kademenin hemen üstündeyseniz kutuyu biraz küçültmek ciddi tasarruf sağlar: 40 × 30 cm tabanlı koli için 5 desinin sınırı yükseklikte 12,5 cm'dir. Bir kademenin altında boş yeriniz varsa daha büyük ve korumalı bir kutu kullanmak ücreti değiştirmez. Araçtaki kademe analizi bir alt kademeye inince ne kadar kazanacağınızı ve gereken yüksekliği gösterir.",
+    },
+    {
+      heading: "Kargo ücretine hangi ek bedeller eklenir?",
+      body:
+        "Fiyat listesindeki rakam çoğu zaman son tutar değildir. Yurtiçi Kargo rehberi, 6475 sayılı Kanun kapsamındaki ağırlık ve hacim sınırlarına uyan gönderilerde son tutarın %2,35'inin posta hizmet bedeli olarak eklendiğini belirtir. Bunun dışında sık görülen kalemler: adresten alım ve adrese teslim, alıcıya SMS veya telefonla bilgilendirme, tek parçada belirli ağırlık ya da hacmi aşan gönderiler için ağır gönderi bedeli, dağıtım alanı dışındaki mobil veya kırsal bölgeler, kapıda ödeme tahsilat komisyonu ve teslim edilemeyen gönderinin iadesi. Yurt dışı gönderilerde yakıt ek ücreti ve uzak bölge teslimatı gibi kalemler eklenebilir. Koli başına sabit olanları ek hizmet alanına, orana bağlı olanları yüzdesel bedel alanına girin. Tutarları güncel fiyat listenizden ya da sözleşmenizden alın.",
+    },
+    {
+      heading: "Hangi kargo firması daha ucuz? Desiye göre değişir",
+      body:
+        "En ucuz firma tek bir cevap değildir, ürün karmanıza bağlıdır. Örnek tarifelerde 8 desilik koli B'de ucuzdur (168,88 TL'ye karşı 189,35 TL), ama 15 desilik koli A'da ucuzdur: A (290 + 10) × 1,0235 = 307,05 TL, B 310 × 1,0235 = 317,29 TL. Küçük paket satan bir mağaza için B, hacimli ürün satan için A daha doğru olabilir. Teklif karşılaştırırken yalnızca 1 desi fiyatına bakmayın: geçen ayın gönderilerini desiye göre gruplayın, en yoğun iki üç kademeyi araca girin ve toplamı karşılaştırın. Örnek: ayda 500 koli için 20,47 TL'lik fark 10.235 TL eder.",
+    },
+    {
+      heading: "Ücretsiz kargo eşiği nasıl belirlenir?",
+      body:
+        "Ücretsiz kargo eşiği, kargoyu siz öderken hedef kârınızı koruyan en düşük sepet tutarıdır. Formül: Eşik = (Kargo ücreti + Sipariş başı hedef kâr) / Kargo öncesi marj. Kargo öncesi marj, ürün maliyeti ve komisyon gibi kalemler düştükten sonra sepetten kalan paydır. Örnek: kargo 168,88 TL, marj %30, hedef kâr 60 TL ise eşik (168,88 + 60) / 0,30 = 762,93 TL'dir. 600 TL'lik sepette kargo öncesi kâr 180 TL'dir; kargo bunun %93,8'ini götürür ve geriye 11,12 TL kalır. Eşiği ortalama sepetinizin biraz üstüne koymak sepeti büyütmeye yarar, ama hesabın altına koymak her siparişte kâr kaybı demektir. Eşik hesabı, sepet büyüse de kargonun aynı kademede kaldığını varsayar; ürün eklendikçe desi artıyorsa eşik de yükselir.",
+    },
+    {
+      heading: "Bireysel, anlaşmalı ve pazaryeri kargo fiyatı farkı nedir?",
+      body:
+        "Şubeden tek gönderi yapan kişi liste fiyatı öder. Düzenli gönderi yapan işletmeler firmayla sözleşme yapar; fiyat aylık hacme, ortalama desiye ve hatlara göre belirlenir, bu yüzden aynı koli iki satıcıya farklı fiyatlanır. Pazaryerlerinde ise anlaşmalı kargo tarifesi pazaryeri tarafından yayımlanır ve tutar çoğunlukla hakedişten düşülür. Trendyol'da 350 TL altındaki sepetlerde barem denen sabit tutarlar, üzerinde desi tarifesi geçerlidir; ayrıntısı Trendyol komisyon oranları yazısında. Araca hangi fiyat size geçerliyse onu girin.",
+    },
+    {
+      heading: "Bu araç ile Desi Hesaplama aracının farkı nedir?",
+      body:
+        "Desi Hesaplama aracı birden fazla farklı koliyi, ölçü birimlerini ve kutu küçültme senaryolarını ele alır; asıl sorusu 'bu gönderi kaç desi?' sorusudur. Kargo Ücreti Hesaplama aracı ise desiyi kademeli tarifeye oturtur: 'bu gönderi kaç lira tutar, hangi teklif daha iyi, ücretsiz kargoyu nereden başlatmalıyım?' sorularını cevaplar. Tek tip koli için bu araç yeterlidir; farklı ölçülerde kolileriniz varsa önce desileri diğer araçta bulun.",
+    },
+  ],
+  faqs: [
+    { q: "Kargo ücreti nasıl hesaplanır?", a: "En × Boy × Yükseklik / 3000 ile desiyi bulun, gerçek ağırlıkla karşılaştırıp büyük olanı alın, tarifede bu değerin kademesindeki fiyatı okuyun ve ek hizmetleri ekleyin. Koli başı ücret = (Kademe fiyatı + Ek hizmetler) × (1 + Yüzdesel bedel / 100)." },
+    { q: "Kargo ücretini neler etkiler?", a: "Ücrete esas ağırlık (desi veya kg), mesafe veya hat, anlaşma türü ve gönderi hacmi, teslimat şekli ile SMS, adrese teslim, kapıda ödeme gibi ek hizmetler. Aynı koli için bireysel liste fiyatı ile e-ticaret anlaşması arasında belirgin fark olabilir." },
+    { q: "Neden kargo firmalarının güncel fiyatları araçta yok?", a: "Tarifeler sık güncellenir ve sözleşmeye, hatta ve hacme göre değişir; sabit bir liste kısa sürede yanlış hâle gelir. Araç bu yüzden kendi fiyat listenizle çalışır. A ve B sütunları yalnızca örnektir, gerçek bir firmayı temsil etmez." },
+    { q: "Mesafe kargo fiyatını değiştirir mi?", a: "Birçok firmada evet. Örneğin Yurtiçi Kargo şehir içi dışında yakın (1–200 km), kısa (201–600 km), orta (601–1000 km) ve uzun (1000 km üzeri) hat ayrımı yapar. Araca gönderinizin hattına ait fiyatı girin." },
+    { q: "Son kademeyi aşan gönderi nasıl hesaplanır?", a: "Tarifeler çoğunlukla son satırdan sonrası için ek birim fiyatı verir: son kademe fiyatı + (ücrete esas ağırlık − son kademe) × ek birim fiyatı. Araçta bunu 'son kademe üstü' satırına girin; boş bırakırsanız sonuç 'fiyat eksik' görünür." },
+    { q: "Kesirli desi nasıl yuvarlanır?", a: "Firmaya göre değişir. Yaygın uygulama yukarı tam sayıya yuvarlamaktır. Yurtiçi Kargo rehberinde ise 0,10–0,49 arası küsurat atılır, 0,50 ve üstü yukarı yuvarlanır. Araçta yuvarlama kuralını seçebilirsiniz; bu seçim kademe atlamasını değiştirebilir." },
+    { q: "Ücretsiz kargo için kaç TL sınır koymalıyım?", a: "Eşik = (Kargo ücreti + Sipariş başı hedef kâr) / Kargo öncesi marj. Kargo 90 TL, marj %30, hedef kâr 60 TL ise eşik 500 TL'dir. Bu tutarın altında kargoyu siz öderseniz hedef kârın altına düşersiniz." },
+    { q: "Yurt dışı kargo ücreti de hesaplanır mı?", a: "Evet, bölen olarak 5000'i seçip yurt dışı tarifenizi girin. Yurt dışında fiyat ülke bölgesine göre değiştiği için gönderinizin bölgesindeki satırları kullanın; yakıt gibi oransal ek ücretleri yüzdesel bedel alanına yazın. Gümrük masrafları hesaba dahil değildir." },
+  ],
+  relatedTools: [
+    { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama", note: "Çoklu koli ve kutu küçültme" },
+    { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Kargo dahil sipariş başı kâr" },
+    { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Kargo öncesi marjı bulun" },
+    { label: "İndirim Hesaplama", href: "/ucretsiz-araclar/indirim-hesaplama", note: "Kampanyanın kâr etkisi" },
+    { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret araçları" },
+  ],
+  relatedPost: { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+  externalSource: { label: "Yurtiçi Kargo: Ücret nasıl hesaplanır?", href: "https://www.yurticikargo.com/en/shipping-guides/how-is-the-shipping-cost-calculated" },
 };
