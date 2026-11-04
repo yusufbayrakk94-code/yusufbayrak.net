@@ -86,6 +86,7 @@
 - [Trendyol Reklam Nasıl Verilir? Reklam Türleri, Maliyet, Başabaş ROAS ve Kârlılık Hesabı (2026)](https://yusufbayrak.net/blog/trendyol-reklam-nasil-verilir/): Trendyol reklam nasıl verilir: reklam türleri, panel adımları, sipariş başı reklam maliyeti, iade dahil başabaş ROAS, maksimum TBM ve artımlı satış testi.
 - [CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır, İyi CPL Kaç ve B2B'de Nasıl Düşürülür?](https://yusufbayrak.net/blog/cpl-nedir-lead-basi-maliyet/): CPL nedir: lead başı maliyet formülü, tam maliyetli CPL, MQL ve SQL maliyeti, kendi maksimum CPL'nizi bulma yöntemi ve CPL'yi kaliteyi bozmadan düşürme.
 - [Instagram Reklam Verme Rehberi (2026): Fiyatlar, TL Bütçe Hesabı, Öne Çıkar ve Reklam Yöneticisi Adımları](https://yusufbayrak.net/blog/instagram-reklam-verme-rehberi/): Instagram'da reklam nasıl verilir, fiyatı ne kadar? Öne Çıkar ve Reklam Yöneticisi adımları, yerleşim ölçüleri, DM reklamı ölçümü ve TL bütçe hesabı örneği.
+- [SEO Nedir, Nasıl Yapılır? Google'ın İşleyişi, 7 Adımlı Uygulama, AI Aramaları ve Kendini Ödeme Hesabı (2026)](https://yusufbayrak.net/blog/seo-nedir-nasil-yapilir/): SEO, sitenizi Google'ın ücretsiz sonuçlarında öne çıkarma işidir. 7 adımlı uygulama, AI Overviews etkisi, SEO efsaneleri ve kendini ödeme hesabı bu rehberde.
 
 ## English
 
@@ -148,6 +149,7 @@
 - [How to Advertise on Trendyol: Ad Types, Cost per Order, Break-Even ROAS and Profit (2026)](https://yusufbayrak.net/en/blog/how-to-advertise-on-trendyol/): How to advertise on Trendyol: ad types, seller panel steps, ad cost per order, break-even ROAS including returns, maximum CPC and an incrementality test.
 - [What Is CPL? How to Calculate Cost Per Lead, What a Good CPL Is and How to Lower It in B2B](https://yusufbayrak.net/en/blog/what-is-cpl-cost-per-lead/): What is CPL: the cost per lead formula, fully loaded CPL, cost per MQL and SQL, how to find your own maximum CPL and how to lower it without hurting quality.
 - [How to Run Instagram Ads (2026): Costs, Budget Math, Boost vs Ads Manager and Ad Specs](https://yusufbayrak.net/en/blog/how-to-run-instagram-ads/): How to run Instagram ads and what they cost: Boost and Ads Manager steps, placement sizes, DM ad measurement and a worked budget example with real math.
+- [What Is SEO and How Do You Do It? How Google Works, a 7-Step Process, AI Search and the Payback Math (2026)](https://yusufbayrak.net/en/blog/what-is-seo-how-to-do-it/): SEO earns your site visibility in Google's unpaid results. Learn the 7-step process, the real effect of AI Overviews, common myths and when SEO pays for itself.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim

@@ -3372,6 +3372,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "llms-txt",
     resources: [
+      { label: "SEO Nedir, Nasıl Yapılır? 2026 Rehberi", href: "/blog/seo-nedir-nasil-yapilir/" },
       { label: "llms.txt Oluşturucu: Örnek Dosya ve Format Kontrolü", href: "/ucretsiz-araclar/llms-txt-olusturucu/" },
       { label: "GEO Nedir? Yapay Zekâ Aramalarında Görünürlük Rehberi", href: "/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/" },
       { label: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?", href: "/blog/utm-nedir-utm-parametreleri/" },
@@ -4121,6 +4122,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "llms-txt",
     resources: [
+      { label: "SEO Nedir, Nasıl Yapılır? 2026 Rehberi", href: "/blog/seo-nedir-nasil-yapilir/" },
       { label: "llms.txt Nedir, İşe Yarıyor mu? (2026 verileriyle)", href: "/blog/llms-txt-nedir-ise-yariyor-mu/" },
       { label: "llms.txt Oluşturucu", href: "/ucretsiz-araclar/llms-txt-olusturucu/" },
       { label: "UTM Nedir? UTM Parametreleri Nasıl Kullanılır?", href: "/blog/utm-nedir-utm-parametreleri/" },
@@ -4477,6 +4479,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "SEO Nedir, Nasıl Yapılır? (reklamla karşılaştırma hesabı)", href: "/blog/seo-nedir-nasil-yapilir/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -5108,6 +5111,237 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "DataReportal: Digital 2026 Türkiye", href: "https://datareportal.com/reports/digital-2026-turkey" },
       { label: "PPC Land: Meta iş ortaklığı reklamları raporu", href: "https://ppc.land/meta-says-partnership-ads-cut-incremental-purchase-costs-45-in-emea-tests/" },
       { label: "Hootsuite: Instagram'da neden öne çıkarılamıyor?", href: "https://blog.hootsuite.com/cannot-boost-on-instagram" },
+    ],
+  },
+  {
+    slug: "seo-nedir-nasil-yapilir",
+    seoTitle: "SEO Nedir, Nasıl Yapılır? 2026 Adım Adım Rehber",
+    title: "SEO Nedir, Nasıl Yapılır? Google'ın İşleyişi, 7 Adımlı Uygulama, AI Aramaları ve Kendini Ödeme Hesabı (2026)",
+    description:
+      "SEO, sitenizi Google'ın ücretsiz sonuçlarında öne çıkarma işidir. 7 adımlı uygulama, AI Overviews etkisi, SEO efsaneleri ve kendini ödeme hesabı bu rehberde.",
+    category: "performans-pazarlama",
+    tldr: [
+      "SEO (arama motoru optimizasyonu), sitenizin Google gibi arama motorlarının ücretsiz sonuçlarında insanların aradığı sorgular için daha görünür olmasını sağlayan teknik, içerik ve otorite çalışmasıdır. Reklamdan farkı: tıklama başına ödeme yapmazsınız, ama sonuç aylara yayılır ve hiçbir sıra garanti edilemez.",
+      "Google üç aşamada çalışır: tarama, dizine ekleme, sonuç sunma. İşe sorunun hangi aşamada olduğunu bularak başlayın; dizinde olmayan sayfanın başlığını düzeltmek hiçbir şey değiştirmez.",
+      "SEO 7 adımda yapılır: ölçümü kurun, talebi olan sorguları seçin, niyeti SERP'te doğrulayın, sorudan daha iyi bir sayfa yazın, sayfa içi öğeleri düzenleyin, iç link verin, sonra otorite kazanın ve ölçün.",
+      "AI Overviews SEO'yu bitirmedi ama tıklamayı azalttı: Ahrefs, özet çıkan sorgularda ilk sıranın tıklama oranını tahmine göre yaklaşık %58 düşük buldu (masaüstü, korelasyon). Google ise bu özetlerde görünmek için ek bir gereksinim olmadığını söylüyor.",
+      "Karar hesabı: Gerekli aylık ziyaret = Aylık SEO gideri / (Dönüşüm oranı × Sipariş başı katkı). Örnek tutarlarla 15.000 TL, %1,5 ve 480 TL için ayda 2.083 organik ziyaret gerekir. Bu rakamı hedef sorgularınızın hacmiyle karşılaştırmadan bütçe ayırmayın.",
+    ],
+    publishedAt: "2026-11-04",
+    readingMinutes: 12,
+    tags: ["SEO", "SEO Nedir", "Arama Motoru Optimizasyonu", "Teknik SEO", "Anahtar Kelime", "AI Overviews"],
+    sections: [
+      {
+        heading: "SEO nedir? (Kısa cevap)",
+        paragraphs: [
+          "SEO (Search Engine Optimization, arama motoru optimizasyonu), bir web sitesinin Google ve Bing gibi arama motorlarının reklam dışı (organik) sonuçlarında, hedef kitlesinin aradığı sorgular için daha üst sıralarda ve daha sık görünmesini sağlayan çalışmaların tümüdür. Üç işten oluşur: arama motorunun sayfanızı bulup okuyabilmesi (teknik), sayfanın sorguya en iyi cevabı vermesi (içerik) ve başka sitelerin sizi kaynak göstermesi (otorite).",
+          "SEO'nun iki sınırını baştan bilin. Birincisi, organik sonuçlar için Google'a para ödenmez ve reklam vermek organik sıranızı değiştirmez; Google bu ayrımı resmî dokümanında açıkça yazıyor. İkincisi, kimse birinci sıra garantisi veremez. Google, sıralama garantisi veren ya da Google ile 'özel ilişkisi' olduğunu söyleyen SEO hizmetlerine karşı uyarıyor.",
+          "Bu rehber, kendi sitemizde sıfırdan yürüttüğümüz SEO çalışmasından çıkan kararlarla yazıldı. Çalışmanın arama hacmi tablosu ve günlük kayıtları herkese açık depoda duruyor; aşağıdaki örneklerin bir kısmı oradan geliyor.",
+        ],
+      },
+      {
+        heading: "Google nasıl çalışır? Tarama, dizine ekleme, sonuç sunma",
+        paragraphs: [
+          "Google bir sayfayı üç aşamadan geçirir ve her sayfa üçünü de tamamlamaz. Tarama: Googlebot sayfayı linkler, site haritası ve bilinen URL'ler üzerinden bulur, indirir ve JavaScript'i işler. Dizine ekleme: içeriği analiz eder, benzer sayfaları gruplar ve grubu temsil edecek standart (canonical) sayfayı seçer. Sonuç sunma: kullanıcı arama yaptığında dizindeki sayfalar arasından konum, dil ve cihaza göre en alakalı olanları gösterir.",
+          "Bu ayrımın pratik değeri teşhistir. 'SEO'm çalışmıyor' cümlesi üç farklı soruna karşılık gelebilir ve çözümleri tamamen farklıdır. Search Console'un URL Denetimi aracı sayfanın hangi aşamada kaldığını söyler:",
+        ],
+        bullets: [
+          "'URL Google'da yok': Google sayfayı henüz bilmiyor. Çözüm içerik değil keşiftir: iç link, güncel site haritası, gerekiyorsa dizine ekleme isteği",
+          "'Keşfedildi, şu anda dizine eklenmedi': Google adresi biliyor ama taramayı ertelemiş. Genelde site otoritesi ve iç link azlığına işaret eder",
+          "'Tarandı, şu anda dizine eklenmedi': sayfa okundu ama dizine değer görülmedi. İçeriği benzerlerinden ayırın, güçlü sayfalardan iç link verin",
+          "Dizinde ama gösterim yok: sayfa sorguyla eşleşmiyor ya da otorite yetmiyor. Başlığı, niyeti ve rakipleri kontrol edin",
+          "Gösterim var, tıklama yok: başlık ve açıklama cevap vaat etmiyor ya da sıra çok geride. Sırayı 8-20 bandına taşıyan sayfalara öncelik verin",
+        ],
+      },
+      {
+        heading: "SEO türleri nelerdir?",
+        paragraphs: [
+          "SEO dört alana ayrılır. Hepsi aynı anda değil, sırayla ele alınır: teknik sorun varsa içerik üretmek yavaş ilerler, içerik yoksa link almak için neden kalmaz.",
+        ],
+        bullets: [
+          "Teknik SEO: taranabilirlik, dizine eklenebilirlik, hız, mobil uyum, yönlendirmeler, canonical, yapılandırılmış veri",
+          "Sayfa içi SEO: başlık (title), açıklama, H1 ve alt başlıklar, URL, görsel alternatif metni, iç linkler",
+          "İçerik SEO'su: hangi sorguya hangi sayfanın cevap vereceği, konu kümeleri, güncelleme",
+          "Site dışı SEO: başka sitelerden alınan linkler (backlink), marka anılmaları, dijital PR",
+          "Yerel SEO: fiziksel işletmeler için Google İşletme Profili, yorumlar ve yerel sorgular. Tek şubeli bir işletme için çoğu zaman ilk iştir",
+        ],
+      },
+      {
+        heading: "SEO nasıl yapılır? 7 adımda uygulama",
+        paragraphs: [
+          "Aşağıdaki sıra, yeni ya da küçük bir site için en az boşa giden yoldur. Her adım bir öncekinin çıktısını kullanır.",
+        ],
+        bullets: [
+          "1. Ölçümü kurun: Search Console ve GA4'ü bağlayın, site haritasını gönderin. Başlangıç değerlerini not edin; karşılaştırma için ilk gün lazım",
+          "2. Talebi olan sorguları seçin: Keyword Planner gibi bir araçla hacmi doğrulayın, hacmi olmayan konuyu listeden çıkarın",
+          "3. Niyeti SERP'te doğrulayın: sorguyu arayın, ilk 5-8 sonucun türüne (rehber, araç, ürün, liste) bakın. Google'ın gösterdiği tür, kullanıcının istediği türdür",
+          "4. İlk üç sonucu okuyup eksiklerini listeleyin: hesap örneği, güncellik, resmî kaynak, deneyim. Yazmaya bu listeden başlayın",
+          "5. Sayfayı yazın ve sayfa içi öğeleri düzenleyin: ilk paragrafta doğrudan cevap, soru biçimli alt başlıklar, benzersiz başlık ve açıklama",
+          "6. İç link verin: yeni sayfaya en az iki güçlü sayfadan link, yeni sayfadan ilgili sayfalara link. Google yeni sayfaların çoğunu linkler üzerinden buluyor",
+          "7. Ölçün ve güncelleyin: birkaç hafta bekleyin, Search Console'da sorgu ve sırayı okuyun, gösterim alan ama tıklanmayan sayfaları güçlendirin. Sonra otorite (link) işine geçin",
+        ],
+      },
+      {
+        heading: "Anahtar kelime nasıl seçilir? Hacim ve niyet örnekleri",
+        paragraphs: [
+          "En pahalı SEO hatası, kimsenin aramadığı konuya iyi yazı yazmaktır. Sezgi burada yanıltır. Kendi çalışmamızdan bir örnek: 'cac hesaplama', 'ltv hesaplama' ve 'churn rate hesaplama' sorgularını hedef almıştık. Keyword Planner'da (Türkiye, son 12 ay ortalaması, Ekim 2026) üçü de 0-10 bandında kaldı ya da hiç veri vermedi; aynı konularda 'cac nedir' 320, 'ltv nedir' 210, 'churn nedir' 210 arama alıyordu. Hedef listesi tek bir tabloyla değişti.",
+          "Hacim yetmez, niyeti de kontrol edin. 'ltv nedir' sonuçlarının bir kısmı müşteri değerini değil kredi/teminat oranını (loan-to-value) anlatıyor; 'arpa nedir' aramalarının çoğu tahıl içindir. Google'ın ilk sayfasında ne gördüğünüz, sorguyu kimin aradığını size söyler.",
+          "Sıralama fırsatını da tahmin edin: Aylık tıklama ≈ Aylık hacim × Tıklama oranı. Ahrefs'in toplulaştırılmış masaüstü verisinde (Aralık 2025) birinci sıranın tıklama oranı AI Overview çıkmayan bilgi sorgularında %3,9, AI Overview çıkan sorgularda %1,6. 'seo nedir' (5.400 arama/ay) için bu, birinci sırada bile ayda yaklaşık 86-211 tıklama demektir. Yüksek hacim, yüksek trafik anlamına gelmez; hesap yapmadan beklenti kurmayın.",
+        ],
+        bullets: [
+          "Bilgi niyeti ('roas nedir'): rehber yazı. Çoğu zaman AI Overview çıkar, tıklama düşer ama marka güveni kazandırır",
+          "Araç niyeti ('desi hesaplama', 14.800 arama/ay): çalışan hesaplayıcı. Özet hesabı yapamadığı için tıklamanın daha iyi korunması beklenir",
+          "İşlem niyeti ('seo danışmanı'): hizmet sayfası. Hacim düşük olsa da lead değeri yüksektir",
+          "Marka ve navigasyon ('trendyol satıcı paneli'): hedeflemeyin, kullanıcı zaten belli bir siteye gidiyor",
+        ],
+      },
+      {
+        heading: "Sayfa içi SEO kontrol listesi",
+        paragraphs: [
+          "Yayından önce her sayfada aynı listeyi geçin. Bu maddeler sıralamayı tek başına yükseltmez ama eksik olduklarında iyi içeriği de geride tutar.",
+        ],
+        bullets: [
+          "Title: sayfaya özgü, net, yaklaşık 60 karakter; ana sorgu başta. Google başlığı değiştirebilir ama çoğunlukla sizin yazdığınızdan üretir",
+          "Meta açıklama: 120-160 karakter; sorunun cevabını ya da sayfadaki farkı söyleyin. Sıralamaya değil tıklamaya hizmet eder",
+          "Tek H1 ve mantıklı alt başlıklar: hiyerarşi okur içindir; Google başlık sırasının aramayı etkilemediğini yazıyor",
+          "İlk paragraf: sorunun doğrudan cevabı. Hem okur hem öne çıkan snippet hem de AI özetleri için en değerli yer",
+          "URL: kısa ve okunur (/blog/seo-nedir-nasil-yapilir/). Anahtar kelimenin URL'deki etkisi çok küçüktür, yayındaki URL'yi bunun için değiştirmeyin",
+          "Görseller: ne gösterdiğini anlatan alternatif metin, sıkıştırılmış dosya",
+          "Yapılandırılmış veri: görünür içerikle eşleşen Article, FAQPage, BreadcrumbList, Product. İçerikte olmayanı işaretlemeyin",
+        ],
+      },
+      {
+        heading: "Teknik SEO'da önce neye bakılır?",
+        paragraphs: [
+          "Küçük sitelerde teknik SEO çoğunlukla birkaç temel sorundan ibarettir. Tam denetimden önce şu kontrolleri yapın.",
+          "İçerik JavaScript ile sonradan yükleniyorsa dikkat edin: Google JavaScript'i işleyebilir ama bazı AI tarayıcıları çalıştırmayabilir ve Google'da da işleme ek süre alır. Tek sayfalık uygulamalarda sunucu tarafı ya da statik çıktı (SSG) en güvenli yoldur. Bu site de React ile yazıldı ama her sayfa önceden HTML olarak üretiliyor.",
+        ],
+        bullets: [
+          "Robots.txt önemli sayfaları engellemiyor; sayfalarda yanlışlıkla noindex yok",
+          "Site haritası güncel ve Search Console'da okunuyor: son okunma tarihini takip edin. Bizim sitede bu tarih geride kaldığında yeni sayfalar günlerce 'URL Google'da yok' görünmeye devam etti",
+          "Tek adres kuralı: http/https, www ve sondaki '/' tek bir canonical sürüme 301 ile gidiyor",
+          "Mobilde sorunsuz: Google siteyi mobil sürümünden değerlendirir",
+          "Önemli Web Verileri: LCP en fazla 2,5 saniye, INP en fazla 200 ms, CLS en fazla 0,1. Bu eşikler iyi deneyim hedefidir; tek başına sıra getirmez",
+          "Çok dilli sitelerde hreflang karşılıklı ve her sürüm kendi canonical'ında",
+          "Kırık iç link ve yönlendirme zinciri yok",
+        ],
+      },
+      {
+        heading: "Backlink nedir, nasıl kazanılır?",
+        paragraphs: [
+          "Backlink, başka bir sitenin sizin sayfanıza verdiği linktir. Google linkleri hem yeni sayfaları bulmak hem de önemi anlamak için kullanır; ama PageRank birçok sinyalden yalnızca biridir. Bir ilgili ve gerçek sitenin yazı içi linki, yüzlerce dizin linkinden daha değerlidir.",
+          "Sıralama amacıyla link almak ya da satmak Google'ın spam politikalarına aykırıdır. Ücretli sponsorluk linkleri rel='sponsored' veya rel='nofollow' ile işaretlenmelidir. Bu nedenle kalıcı yol, link verilmeye değer bir şey üretmektir.",
+        ],
+        bullets: [
+          "Araç: başka sitelerin yazılarına ekleyebileceği gömülebilir hesaplayıcılar (bizim Desi ve ROAS araçlarımızda 'Bu aracı sitene ekle' kutusu bu yüzden var)",
+          "Şablon: kayıtsız indirilebilen Excel dosyaları",
+          "Özgün veri: kendi ölçümünüzle ürettiğiniz, başkasının alıntılayabileceği rakamlar",
+          "Konuk yazı: yalnızca konusu size uyan yayınlarda, gerçekten faydalı bir yazıyla",
+          "Marka anılması: linksiz bahsedilen yerlerden kibarca link istemek",
+        ],
+      },
+      {
+        heading: "AI Overviews SEO'yu bitirdi mi?",
+        paragraphs: [
+          "Hayır, ama tıklama hesabını değiştirdi. Ahrefs'in 300.000 anahtar kelimelik çalışmasına göre AI Overview çıkan sorgularda birinci sıranın masaüstü tıklama oranı, özet olmasaydı beklenen değerin yaklaşık %58 altında kaldı (Aralık 2025). Bu bir korelasyondur ve aynı dönemde öne çıkan snippet gibi başka özellikler de tıklamayı etkiliyor; yine de bilgi sorgularında 'birinci sıra = bol trafik' varsayımı artık geçerli değil.",
+          "Google'ın resmî tutumu nettir: AI Overviews ve AI Mode'da görünmek için ek gereksinim yok; sayfanın dizinde ve snippet'e uygun olması yeterli, yeni bir AI metin dosyası ya da özel şema gerekmiyor. Yani önce SEO temeli. Bu özetlerden gelen trafik de ayrı değil, Search Console'da 'Web' arama türünün içinde raporlanıyor. Bu yüzden llms.txt gibi dosyaları Google sıralaması için değil, diğer AI araçları için düşük maliyetli bir ek olarak görün.",
+          "Pratikte üç değişiklik yapın: hesap, araç ve özgün veri içeren sayfalara ağırlık verin (özet bunları tam karşılayamaz); her bölümü tek başına anlaşılır, kaynaklı bir cevapla açın; başarıyı yalnızca tıklamayla değil marka aramalarının artışıyla da ölçün. Ayrıntılar GEO rehberimizde.",
+        ],
+      },
+      {
+        heading: "SEO'da hangi bilgiler yanlış ya da eski?",
+        paragraphs: [
+          "Türkçe rehberlerin önemli bir kısmı kaynak göstermeden aynı iddiaları tekrarlıyor. İncelediğimiz güncel bir sayfada aynı anda '%1-2 kelime yoğunluğu' ile bu orana uymayan tekrar sayısı öneriliyordu. Google'ın kendi dokümanına göre durum şöyle:",
+        ],
+        bullets: [
+          "'Meta keywords etiketi gerekli': Google Arama bu etiketi kullanmıyor",
+          "'Doğru anahtar kelime yoğunluğu %1-2': Google'da böyle bir oran yok; aşırı tekrar ise spam politikasına aykırı",
+          "'Yazı en az 2.000 kelime olmalı': Google, sihirli bir kelime sayısı, alt ya da üst sınır olmadığını yazıyor",
+          "'Alan adında anahtar kelime olmalı': Google'a göre etkisi, sonuçtaki URL yolunda görünmenin ötesinde neredeyse yok",
+          "'E-E-A-T bir sıralama faktörüdür': Google doğrudan 'hayır' diyor; güven sinyalleri içerik kalitesini anlatan bir çerçeve",
+          "'Kopya içerik cezası': Kopya içerik cezalandırılmaz, ama tarama kaynağını boşa harcar",
+          "'AI ile yazılan içerik yasak': yöntem değil sonuç önemli. Yasak olan, kullanıcıya değer katmadan yapay zekâyla toplu sayfa üretmektir",
+          "'SEO bir kere yapılır': algoritma, rakipler ve sorgular değişir. Google 2026'da yalnızca Kasım başına kadar iki çekirdek güncelleme (Mart, Mayıs) ve dört spam güncellemesi yayınladı",
+        ],
+      },
+      {
+        heading: "SEO ne kadar sürede sonuç verir?",
+        paragraphs: [
+          "Tek bir süre yoktur. Google, değişikliklerin bazısının birkaç saatte, bazısının birkaç ayda etkisini gösterebileceğini ve değerlendirme için birkaç hafta beklemek gerektiğini yazıyor. Süreyi belirleyen şey sitenin geçmişi, rekabet ve Google'ın sayfayı ne kadar çabuk bulduğudur.",
+          "Yeni bir sitede ilk işaret tıklama değil, gösterimdir. Bizim çalışmamızda sıra şöyle ilerledi: önce sayfalar dizine girdi, sonra gösterimler 60-90. sıralardan başladı, ardından düşük rekabetli 'nedir' sorguları ilk 20'ye yaklaştı. Bu aşamada ortalama sıra düşebilir; yeni sayfalar derinden girdiği için bu kötü işaret değildir. Yüksek rekabetli sorgularda (desi, Trendyol hesaplama) gösterim daha geç gelir.",
+        ],
+      },
+      {
+        heading: "SEO kendini ne zaman öder? Hesap örneği",
+        paragraphs: [
+          "SEO bedava değildir: ajans, danışman ya da kendi zamanınız bir maliyettir. Bütçe ayırmadan önce başabaş trafiği hesaplayın. Formül: Gerekli aylık ziyaret = Aylık SEO gideri / (Dönüşüm oranı × Sipariş başı katkı).",
+          "Örnek tutarlar: aylık SEO gideri 15.000 TL, organik dönüşüm oranı %1,5, sipariş başı reklam öncesi katkı 480 TL. Bir ziyaretin değeri 0,015 × 480 = 7,20 TL'dir. Gerekli ziyaret 15.000 / 7,20 = 2.083. Ortalama %2 tıklama oranıyla bu, sıralandığınız sorgularda toplam yaklaşık 104.000 aylık arama demektir.",
+          "Aynı trafiği reklamla almanın karşılığına da bakın: tıklama başı 8 TL ile 2.083 tıklama 16.667 TL eder. Yani bu örnekte SEO, başabaşa ulaştıktan sonra reklama göre avantajlı olur; ama oraya gelene kadar geçen aylarda sonuç vermez. Kısa vadede nakit gerekiyorsa önce reklam, paralelde SEO daha mantıklıdır. B2B'de tek müşterinin değeri yüksek olduğundan çok daha düşük hacim yeterli olabilir.",
+        ],
+        bullets: [
+          "Pazarınızın toplam hacmi hedefin altındaysa SEO tek başına yetmez; başka kanal gerekir",
+          "Sipariş başı katkıyı Kar Marjı aracıyla, dönüşüm oranınızı Dönüşüm Oranı aracıyla bulun",
+          "Google Ads ile aynı sorguda verdiğiniz TBM, o sorgunun SEO değerini gösteren en iyi göstergedir",
+        ],
+      },
+      {
+        heading: "SEO nasıl ölçülür?",
+        paragraphs: [
+          "Sıralama takibi tek başına yeterli değildir. Search Console'da sorguları marka ve marka dışı diye ayırın; çoğu sitede erken trafiğin büyük kısmı zaten sizi tanıyanlardan gelir ve büyüme yanılsaması yaratır. Asıl metrik, marka dışı sorgulardan gelen tıklama ve bunun GA4'teki dönüşüme katkısıdır.",
+        ],
+        bullets: [
+          "Search Console › Performans: gösterim, tıklama, tıklama oranı, ortalama konum (sorgu ve sayfa bazında)",
+          "Search Console › Sayfa sayısı: dizindeki sayfalar ve dışarıda kalma nedenleri",
+          "GA4: Organic Search oturumları, dönüşüm, lead ve gelir",
+          "Search Console › Bağlantılar: yönlendiren alan adları",
+          "Ölçüm ritmi: dizin haftalık, sorgu ve sıra 2-4 haftalık, trafik ve dönüşüm aylık",
+        ],
+      },
+      {
+        heading: "SEO danışmanı seçerken nelere bakılmalı?",
+        paragraphs: [
+          "Google'ın SEO danışmanı rehberindeki sorular iyi bir başlangıçtır. Önceki işlerden örnek isteyin, Google yönergelerine uyup uymadığını sorun, ne kadar sürede nasıl sonuç beklediğini ve başarıyı nasıl ölçtüğünü yazılı alın. Denetim için Search Console'a yalnızca okuma erişimi verin.",
+          "Üç işaret sizi uzaklaştırmalı: 'ilk sıra garantisi', sayısı belirtilen paket backlink satışı ve yapılacak işi açıklamayan aylık rapor. Google'a 'öncelikli gönderim' diye bir hizmet yoktur.",
+        ],
+      },
+    ],
+    faq: [
+      { question: "SEO kısaca nedir?", answer: "SEO, bir web sitesinin Google gibi arama motorlarının ücretsiz sonuçlarında ilgili sorgularda daha üstte görünmesi için yapılan teknik, içerik ve otorite çalışmasıdır. Tıklama için ödeme yapılmaz, ama sonuç aylar içinde gelir." },
+      { question: "SEO'yu kendim yapabilir miyim?", answer: "Evet. Search Console, Keyword Planner ve PageSpeed Insights ücretsizdir; küçük bir site için temel adımlar teknik uzmanlık gerektirmez. Rekabetin yüksek olduğu pazarlarda ve büyük site taşımalarında uzman desteği değer kazanır." },
+      { question: "SEO mu Google Ads mi daha iyi?", answer: "Rakip değil tamamlayıcıdırlar. Reklam hemen tıklama getirir ama bütçe bitince durur; SEO geç başlar ama birikir. Kısa vadeli satış gerekiyorsa reklamla başlayın, reklamda kârlı çalışan sorgular için organik sayfa hazırlayın." },
+      { question: "SEO için yapay zekâ ile içerik yazılabilir mi?", answer: "Evet, Google yönteme değil değere bakar. Sorun, kullanıcıya değer katmadan çok sayıda sayfa üretmektir; bu ölçekli içerik kötüye kullanımı sayılır. Yapay zekâyı taslak için kullanın, gerçek deneyim, doğrulanmış kaynak ve özgün hesap ekleyin." },
+      { question: "AI Overviews'ta görünmek için ne yapmalıyım?", answer: "Google'a göre özel bir şey gerekmiyor: sayfa dizinde ve snippet'e uygun olmalı. Pratikte soruya ilk cümlede cevap veren, kaynaklı ve özgün bilgi içeren sayfalar daha kolay alıntılanır." },
+    ],
+    howTo: {
+      name: "SEO adım adım nasıl yapılır?",
+      description: "Yeni ya da küçük bir sitede sıfırdan SEO çalışması başlatma.",
+      steps: [
+        { name: "Ölçümü kurun", text: "Search Console ve GA4'ü bağlayın, site haritasını gönderin, başlangıç değerlerini not edin." },
+        { name: "Talebi olan sorguları seçin", text: "Keyword Planner ile aylık hacmi doğrulayın, hacmi olmayan konuları listeden çıkarın." },
+        { name: "Niyeti doğrulayın", text: "Sorguyu arayın, ilk 5-8 sonucun türüne bakın ve ilk üç sonucun eksiklerini listeleyin." },
+        { name: "Sayfayı yazın", text: "İlk paragrafta doğrudan cevap verin, soru biçimli alt başlıklar, örnek ve kaynak kullanın." },
+        { name: "Sayfa içi öğeleri düzenleyin", text: "Benzersiz başlık, açıklama, tek H1, okunur URL ve uygun yapılandırılmış veri ekleyin." },
+        { name: "İç link verin", text: "Yeni sayfaya güçlü sayfalardan, yeni sayfadan ilgili sayfalara link verin." },
+        { name: "Ölçün ve otorite kazanın", text: "Birkaç hafta sonra sorgu ve sırayı okuyun, sayfaları güçlendirin, link verilmeye değer varlıklar üretin." },
+      ],
+    },
+    relatedToolKey: "llms-txt",
+    resources: [
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "llms.txt Oluşturucu", href: "/ucretsiz-araclar/llms-txt-olusturucu/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "GEO Nedir? Yapay Zekâ Aramalarında Görünürlük", href: "/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/" },
+      { label: "llms.txt Nedir, İşe Yarıyor mu?", href: "/blog/llms-txt-nedir-ise-yariyor-mu/" },
+      { label: "Google Ads Nedir, Nasıl Çalışır?", href: "/blog/google-ads-nedir-nasil-calisir/" },
+      { label: "UTM Nedir?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "Google: SEO Başlangıç Kılavuzu", href: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide", external: true },
+      { label: "Google: Arama nasıl çalışır?", href: "https://developers.google.com/search/docs/fundamentals/how-search-works", external: true },
+      { label: "Google: SEO'ya ihtiyacınız var mı?", href: "https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=tr", external: true },
+      { label: "Google: Yapay zekâ özellikleri ve siteniz", href: "https://developers.google.com/search/docs/appearance/ai-features", external: true },
+      { label: "Google: Spam politikaları", href: "https://developers.google.com/search/docs/essentials/spam-policies", external: true },
+      { label: "Google Search Status Dashboard: sıralama güncellemeleri", href: "https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history", external: true },
+      { label: "Ahrefs: AI Overviews tıklamayı %58 azaltıyor (güncelleme)", href: "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update", external: true },
     ],
   },
 ];
@@ -8075,6 +8309,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "llms-txt",
     resources: [
+      { label: "What Is SEO and How Do You Do It?", href: "/en/blog/what-is-seo-how-to-do-it/" },
       { label: "llms.txt Generator: Example File and Format Check", href: "/en/free-tools/llms-txt-generator/" },
       { label: "What Is GEO? Generative Engine Optimization Guide", href: "/en/blog/what-is-geo-generative-engine-optimization/" },
       { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
@@ -8812,6 +9047,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "llms-txt",
     resources: [
+      { label: "What Is SEO and How Do You Do It?", href: "/en/blog/what-is-seo-how-to-do-it/" },
       { label: "What Is llms.txt and Does It Work? (2026 data)", href: "/en/blog/what-is-llms-txt-does-it-work/" },
       { label: "llms.txt Generator", href: "/en/free-tools/llms-txt-generator/" },
       { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
@@ -9135,6 +9371,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is SEO and How Do You Do It? (ads comparison math)", href: "/en/blog/what-is-seo-how-to-do-it/" },
       { label: "Advertising Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
@@ -9698,6 +9935,237 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "PPC Land: Meta partnership ads paper", href: "https://ppc.land/meta-says-partnership-ads-cut-incremental-purchase-costs-45-in-emea-tests/" },
       { label: "Hootsuite: Why you can't boost on Instagram", href: "https://blog.hootsuite.com/cannot-boost-on-instagram" },
       { label: "Cropink: Instagram advertising cost", href: "https://www.cropink.com/instagram-advertising-cost" },
+    ],
+  },
+  {
+    slug: "what-is-seo-how-to-do-it",
+    seoTitle: "What Is SEO and How Do You Do It? A 2026 Guide",
+    title: "What Is SEO and How Do You Do It? How Google Works, a 7-Step Process, AI Search and the Payback Math (2026)",
+    description:
+      "SEO earns your site visibility in Google's unpaid results. Learn the 7-step process, the real effect of AI Overviews, common myths and when SEO pays for itself.",
+    category: "performans-pazarlama",
+    tldr: [
+      "SEO (search engine optimization) is the technical, content and authority work that makes a site more visible in the unpaid results of search engines like Google for what people actually search. Unlike ads you pay nothing per click, but results take months and no ranking can be guaranteed.",
+      "Google works in three stages: crawling, indexing and serving. Start by finding which stage is failing; rewriting the title of a page that is not indexed changes nothing.",
+      "SEO has seven steps: set up measurement, pick queries with real demand, confirm intent on the results page, write something better than the top results, tune on-page elements, add internal links, then earn authority and measure.",
+      "AI Overviews did not kill SEO, but they cut clicks: Ahrefs found the top result's CTR about 58% below forecast on queries showing an overview (desktop, correlation). Google says there are no extra requirements to appear in them.",
+      "The decision math: Required monthly visits = Monthly SEO cost / (Conversion rate × Contribution per order). With $1,500, 1.5% and $48 you need 2,083 organic visits a month. Compare that with the search volume of your target queries before you commit a budget.",
+    ],
+    publishedAt: "2026-11-04",
+    readingMinutes: 11,
+    tags: ["SEO", "What Is SEO", "Search Engine Optimization", "Technical SEO", "Keyword Research", "AI Overviews"],
+    sections: [
+      {
+        heading: "What is SEO? (Short answer)",
+        paragraphs: [
+          "SEO (search engine optimization) is all the work that helps a website appear higher and more often in the unpaid (organic) results of search engines like Google and Bing for the queries its audience uses. It comes down to three jobs: letting the search engine find and read your pages (technical), giving the best answer to the query (content), and getting other sites to reference you (authority).",
+          "Two limits are worth knowing up front. First, nobody pays Google for organic results, and advertising does not change your organic position; Google states this in its documentation. Second, no one can promise the number one spot. Google warns against SEO providers who guarantee rankings or claim a special relationship with Google.",
+          "This guide comes from an SEO program we run from scratch on this site. The search volume table and daily log are in a public repository, and several examples below come from there.",
+        ],
+      },
+      {
+        heading: "How does Google work? Crawling, indexing, serving",
+        paragraphs: [
+          "Google takes a page through three stages, and not every page finishes all three. Crawling: Googlebot finds the page through links, sitemaps and known URLs, downloads it and renders JavaScript. Indexing: it analyzes the content, clusters similar pages and picks a canonical page for each cluster. Serving: when someone searches, it returns the indexed pages that are most relevant for their location, language and device.",
+          "The value of this split is diagnosis. 'My SEO isn't working' can mean three different problems with entirely different fixes. The URL Inspection tool in Search Console tells you which stage a page is stuck at:",
+        ],
+        bullets: [
+          "'URL is not on Google': Google doesn't know the page yet. The fix is discovery, not content: internal links, a fresh sitemap, an indexing request if needed",
+          "'Discovered, currently not indexed': Google knows the address but postponed crawling. This usually points to low site authority and few internal links",
+          "'Crawled, currently not indexed': the page was read but not judged worth indexing. Differentiate it and link to it from strong pages",
+          "Indexed but no impressions: the page doesn't match the query or lacks authority. Check the title, intent and competitors",
+          "Impressions but no clicks: the snippet promises no answer, or the position is too low. Prioritize pages that can move into positions 8 to 20",
+        ],
+      },
+      {
+        heading: "What are the types of SEO?",
+        paragraphs: [
+          "SEO divides into a few areas. Tackle them in order rather than all at once: technical problems slow content down, and without content there is nothing worth linking to.",
+        ],
+        bullets: [
+          "Technical SEO: crawlability, indexability, speed, mobile, redirects, canonicals, structured data",
+          "On-page SEO: title, description, H1 and subheadings, URL, image alt text, internal links",
+          "Content SEO: which page answers which query, topic clusters, updates",
+          "Off-page SEO: backlinks from other sites, brand mentions, digital PR",
+          "Local SEO: Google Business Profile, reviews and local queries. Often the first job for a single-location business",
+        ],
+      },
+      {
+        heading: "How do you do SEO? 7 steps",
+        paragraphs: [
+          "This order wastes the least effort on a new or small site. Each step uses the output of the one before it.",
+        ],
+        bullets: [
+          "1. Set up measurement: connect Search Console and GA4, submit your sitemap, record your starting numbers",
+          "2. Pick queries with demand: confirm volume in a tool like Keyword Planner and drop topics with none",
+          "3. Confirm intent on the results page: search the query and note the type of the top 5 to 8 results (guide, tool, product, list). What Google shows is what users want",
+          "4. Read the top three and list what's missing: worked examples, freshness, official sources, experience. Start writing from that list",
+          "5. Write the page and tune on-page elements: a direct answer in the first paragraph, question-style subheadings, a unique title and description",
+          "6. Add internal links: link to the new page from at least two strong pages, and out to related pages. Google finds most new pages through links",
+          "7. Measure and update: wait a few weeks, read queries and positions in Search Console, strengthen pages with impressions but no clicks. Then move to authority work",
+        ],
+      },
+      {
+        heading: "How do you choose keywords? Volume and intent examples",
+        paragraphs: [
+          "The most expensive SEO mistake is writing a great page nobody searches for, and intuition fails here. An example from our own program in Turkey: we targeted the Turkish equivalents of 'CAC calculator', 'LTV calculator' and 'churn rate calculator'. Keyword Planner showed all three at 0-10 monthly searches or no data, while 'what is CAC' drew 320 and 'what is LTV' 210. One table changed the target list.",
+          "Volume isn't enough; check intent too. 'LTV' results partly explain loan-to-value rather than customer lifetime value. What you see on page one tells you who is really searching.",
+          "Estimate the opportunity as well: Monthly clicks ≈ Monthly volume × CTR. In Ahrefs' aggregated desktop data (December 2025), position one earned a 3.9% CTR on informational queries without an AI Overview and 1.6% on queries with one. A 5,400-search query would bring roughly 86 to 211 clicks a month even at number one. High volume doesn't automatically mean high traffic.",
+        ],
+        bullets: [
+          "Informational ('what is roas'): a guide. Often shows an AI Overview, so clicks are lower, but it builds trust",
+          "Tool ('dimensional weight calculator'): a working calculator. An overview can't run the math, so clicks should hold up better",
+          "Transactional ('seo consultant'): a service page. Low volume, high lead value",
+          "Brand and navigational: don't target them; the searcher already has a destination",
+        ],
+      },
+      {
+        heading: "On-page SEO checklist",
+        paragraphs: [
+          "Run the same list before every publish. None of these lifts rankings alone, but missing them holds good content back.",
+        ],
+        bullets: [
+          "Title: unique, clear, around 60 characters, main query first",
+          "Meta description: 120 to 160 characters stating the answer or your difference. It serves clicks, not rankings",
+          "One H1 and logical subheadings: hierarchy is for readers; Google says heading order doesn't affect Search",
+          "First paragraph: the direct answer. It's the most valuable spot for readers, snippets and AI summaries",
+          "URL: short and readable. Keywords in URLs have very little effect, so don't change live URLs for that reason",
+          "Images: alt text that says what the image shows, compressed files",
+          "Structured data: Article, FAQPage, BreadcrumbList or Product matching visible content",
+        ],
+      },
+      {
+        heading: "What should you check first in technical SEO?",
+        paragraphs: [
+          "On small sites, technical SEO usually comes down to a handful of basics. Check these before commissioning a full audit.",
+          "If content loads through JavaScript, be careful: Google can render it, but some AI crawlers may not run it, and rendering adds delay even on Google. Server-side or static output (SSG) is the safest route. This site is built with React, yet every page is pre-rendered to HTML.",
+        ],
+        bullets: [
+          "robots.txt doesn't block important pages and no page carries an accidental noindex",
+          "The sitemap is current and being read in Search Console. On our site, when the last-read date fell behind, new pages stayed 'not on Google' for days",
+          "One address rule: http/https, www and trailing slash all 301 to one canonical version",
+          "Works on mobile: Google evaluates the mobile version of your site",
+          "Core Web Vitals: LCP up to 2.5 s, INP up to 200 ms, CLS up to 0.1. These are experience targets, not a ranking guarantee",
+          "Multilingual sites: reciprocal hreflang, each version self-canonical",
+          "No broken internal links or redirect chains",
+        ],
+      },
+      {
+        heading: "What is a backlink, and how do you earn one?",
+        paragraphs: [
+          "A backlink is a link from another site to yours. Google uses links to discover pages and gauge importance, though PageRank is only one of many signals. One editorial link from a relevant real site beats hundreds of directory links.",
+          "Buying or selling links for ranking purposes violates Google's spam policies. Paid sponsorship links need rel='sponsored' or rel='nofollow'. The durable path is to create something worth linking to.",
+        ],
+        bullets: [
+          "Tools: embeddable calculators other sites can add to their articles (that's why our tools carry an 'Add to your site' box)",
+          "Templates: spreadsheets people can download without signing up",
+          "Original data: numbers from your own measurement that others can cite",
+          "Guest posts: only on relevant publications, with a genuinely useful piece",
+          "Brand mentions: politely ask for a link where you're mentioned without one",
+        ],
+      },
+      {
+        heading: "Did AI Overviews kill SEO?",
+        paragraphs: [
+          "No, but they changed the click math. Ahrefs' study of 300,000 keywords found that position one's desktop CTR on AI Overview queries sat about 58% below its forecast without an overview (December 2025). That's a correlation, and features like featured snippets also affect clicks, but 'number one equals lots of traffic' no longer holds for informational queries.",
+          "Google's position is clear: there are no additional requirements to appear in AI Overviews or AI Mode. A page must be indexed and eligible for a snippet, and no new AI text file or special schema is needed. So SEO comes first. This traffic is also reported inside the 'Web' search type in Search Console. Treat files like llms.txt as a low-cost extra for other AI tools, not a Google ranking lever.",
+          "Make three practical changes: favor pages with calculations, tools and original data, which summaries can't fully replace; open each section with a self-contained, sourced answer; and measure branded search growth as well as clicks. Our GEO guide has the details.",
+        ],
+      },
+      {
+        heading: "Which SEO advice is wrong or outdated?",
+        paragraphs: [
+          "Plenty of guides repeat the same claims without sources. Here's how they compare with Google's own documentation:",
+        ],
+        bullets: [
+          "'You need the meta keywords tag': Google Search doesn't use it",
+          "'Keep keyword density at 1-2%': no such number exists at Google, and excessive repetition violates spam policies",
+          "'Posts need at least 2,000 words': Google says there is no magical word count, minimum or maximum",
+          "'Your domain should contain the keyword': according to Google it has hardly any effect beyond appearing in the URL",
+          "'E-E-A-T is a ranking factor': Google's answer is 'No, it's not'",
+          "'Duplicate content gets penalized': it isn't a penalty, though it wastes crawl resources",
+          "'AI-written content is banned': the outcome matters, not the method. Mass-producing pages with generative AI without adding value is what's banned",
+          "'SEO is a one-off job': algorithms, rivals and queries change. By early November 2026 Google had already logged two core updates (March, May) and four spam updates that year",
+        ],
+      },
+      {
+        heading: "How long does SEO take?",
+        paragraphs: [
+          "There's no single timeline. Google says some changes take effect in a few hours and others take several months, and suggests waiting a few weeks before judging. Site history, competition and how quickly Google finds your page all play a part.",
+          "On a new site the first signal is impressions, not clicks. Our order was: pages got indexed, impressions began deep in the results, then low-competition 'what is' queries moved toward the top 20. Average position can drop in this phase because new pages enter low; that isn't a bad sign.",
+        ],
+      },
+      {
+        heading: "When does SEO pay for itself? A worked example",
+        paragraphs: [
+          "SEO isn't free: an agency, a consultant or your own time all cost money. Calculate breakeven traffic first. Required monthly visits = Monthly SEO cost / (Conversion rate × Contribution per order).",
+          "Example figures: $1,500 a month, 1.5% organic conversion rate, $48 contribution per order. One visit is worth 0.015 × $48 = $0.72, so you need $1,500 / $0.72 = 2,083 visits. At an average 2% CTR, that means ranking across roughly 104,000 monthly searches.",
+          "Compare the ad equivalent: at $0.80 per click, 2,083 clicks cost $1,667. So in this example SEO beats ads only after reaching breakeven, and pays nothing in the months before it. If you need cash soon, start with ads and build SEO alongside. In B2B, where one customer is worth far more, much less volume can be enough.",
+        ],
+        bullets: [
+          "If your market's total volume is below the target, SEO alone won't do it",
+          "Get contribution per order from the margin calculator and your rate from the conversion calculator",
+          "The CPC you pay on a query in Google Ads is the best proxy for its SEO value",
+        ],
+      },
+      {
+        heading: "How do you measure SEO?",
+        paragraphs: [
+          "Rank tracking alone isn't enough. Split Search Console queries into branded and non-branded; on most sites early traffic comes from people who already know you, which creates an illusion of growth. The metric that matters is non-branded clicks and what they contribute to conversions in GA4.",
+        ],
+        bullets: [
+          "Search Console › Performance: impressions, clicks, CTR, average position by query and page",
+          "Search Console › Pages: indexed pages and reasons for exclusion",
+          "GA4: Organic Search sessions, conversions, leads and revenue",
+          "Search Console › Links: referring domains",
+          "Rhythm: indexing weekly, queries and positions every 2 to 4 weeks, traffic and conversions monthly",
+        ],
+      },
+      {
+        heading: "How do you choose an SEO consultant?",
+        paragraphs: [
+          "Google's own questions are a good start. Ask for past examples, whether they follow Google's guidelines, what results to expect by when, and how they measure success. For an audit, give read-only Search Console access.",
+          "Three red flags: a number one guarantee, bundles of backlinks sold by count, and monthly reports that don't explain the work done. There's no such thing as 'priority submit' to Google.",
+        ],
+      },
+    ],
+    faq: [
+      { question: "What is SEO in simple terms?", answer: "SEO is the technical, content and authority work that helps a website rank higher in the unpaid results of search engines for relevant queries. You don't pay per click, but results take months." },
+      { question: "Can I do SEO myself?", answer: "Yes. Search Console, Keyword Planner and PageSpeed Insights are free, and the basics on a small site don't require deep technical skills. Expert help pays off in competitive markets and large site migrations." },
+      { question: "Is SEO better than Google Ads?", answer: "They complement each other. Ads bring clicks immediately but stop when the budget does; SEO starts slowly but compounds. If you need sales now, start with ads and build organic pages for the queries that prove profitable." },
+      { question: "Can I use AI to write SEO content?", answer: "Yes. Google looks at value, not method. The problem is producing many pages that add no value, which counts as scaled content abuse. Use AI for drafts and add real experience, verified sources and original calculations." },
+      { question: "How do I appear in AI Overviews?", answer: "According to Google, nothing special is required: the page must be indexed and eligible for a snippet. In practice, pages that answer directly in the first sentence with sourced, original information are easier to cite." },
+    ],
+    howTo: {
+      name: "How to do SEO step by step",
+      description: "Start an SEO program on a new or small site.",
+      steps: [
+        { name: "Set up measurement", text: "Connect Search Console and GA4, submit your sitemap and record starting numbers." },
+        { name: "Pick queries with demand", text: "Confirm monthly volume in Keyword Planner and drop topics with no demand." },
+        { name: "Confirm intent", text: "Search the query, note the result types and list what the top three pages are missing." },
+        { name: "Write the page", text: "Answer directly in the first paragraph, use question-style subheadings, examples and sources." },
+        { name: "Tune on-page elements", text: "Add a unique title and description, one H1, a readable URL and matching structured data." },
+        { name: "Add internal links", text: "Link to the new page from strong pages and from it to related pages." },
+        { name: "Measure and earn authority", text: "After a few weeks read queries and positions, strengthen pages and create assets worth linking to." },
+      ],
+    },
+    relatedToolKey: "llms-txt",
+    resources: [
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "llms.txt Generator", href: "/en/free-tools/llms-txt-generator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "What Is GEO?", href: "/en/blog/what-is-geo-generative-engine-optimization/" },
+      { label: "What Is llms.txt and Does It Work?", href: "/en/blog/what-is-llms-txt-does-it-work/" },
+      { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "Google: SEO Starter Guide", href: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide", external: true },
+      { label: "Google: How Search works", href: "https://developers.google.com/search/docs/fundamentals/how-search-works", external: true },
+      { label: "Google: Do you need an SEO?", href: "https://developers.google.com/search/docs/fundamentals/do-i-need-seo", external: true },
+      { label: "Google: AI features and your website", href: "https://developers.google.com/search/docs/appearance/ai-features", external: true },
+      { label: "Google: Spam policies", href: "https://developers.google.com/search/docs/essentials/spam-policies", external: true },
+      { label: "Google Search Status Dashboard: ranking updates", href: "https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history", external: true },
+      { label: "Ahrefs: AI Overviews reduce clicks by 58% (update)", href: "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update", external: true },
     ],
   },
 ];

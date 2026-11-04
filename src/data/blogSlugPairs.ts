@@ -30,4 +30,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "trendyol-reklam-nasil-verilir", en: "how-to-advertise-on-trendyol" },
   { tr: "cpl-nedir-lead-basi-maliyet", en: "what-is-cpl-cost-per-lead" },
   { tr: "instagram-reklam-verme-rehberi", en: "how-to-run-instagram-ads" },
+  { tr: "seo-nedir-nasil-yapilir", en: "what-is-seo-how-to-do-it" },
 ];

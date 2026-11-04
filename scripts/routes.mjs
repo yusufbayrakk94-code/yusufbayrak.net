@@ -154,6 +154,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "trendyol-reklam-nasil-verilir", en: "how-to-advertise-on-trendyol" },
   { tr: "cpl-nedir-lead-basi-maliyet", en: "what-is-cpl-cost-per-lead" },
   { tr: "instagram-reklam-verme-rehberi", en: "how-to-run-instagram-ads" },
+  { tr: "seo-nedir-nasil-yapilir", en: "what-is-seo-how-to-do-it" },
 ];
 
 // Embeddable widget routes: prerendered (iframe targets) but noindex, so they
@@ -182,10 +183,9 @@ export function getBlogSlugs() {
       path.resolve(process.cwd(), "src/data/blogPosts.ts"),
       "utf-8"
     );
-    // Only pick post slugs — exclude the category slugs by looking after `posts:` array.
-    const postsSectionStart = file.indexOf("posts:") !== -1
-      ? file.indexOf("posts:")
-      : file.indexOf("blogPosts");
+    // Only pick post slugs: start at the array declaration, never at free text
+    // (a body string containing "posts:" once dropped every post from SSG).
+    const postsSectionStart = file.indexOf("export const BLOG_POSTS");
     const source = postsSectionStart > 0 ? file.slice(postsSectionStart) : file;
     const known = ["performans-pazarlama","b2b-lead-generation","yapay-zeka-otomasyon","saas-buyume"];
     const enSlugs = new Set([
