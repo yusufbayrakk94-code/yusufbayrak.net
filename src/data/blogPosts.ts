@@ -2998,6 +2998,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "Dropshipping Nedir? İade Dahil Kâr Hesabı", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
       { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
       { label: "Kar Marjı Hesaplama: Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -4304,6 +4305,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "Dropshipping Nedir? İade Dahil Kâr Hesabı", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
       { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
@@ -4691,6 +4693,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "Dropshipping Nedir? İade Dahil Kâr Hesabı", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
       { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama (+ Hepsiburada)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
@@ -5342,6 +5345,210 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google: Spam politikaları", href: "https://developers.google.com/search/docs/essentials/spam-policies", external: true },
       { label: "Google Search Status Dashboard: sıralama güncellemeleri", href: "https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history", external: true },
       { label: "Ahrefs: AI Overviews tıklamayı %58 azaltıyor (güncelleme)", href: "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update", external: true },
+    ],
+  },
+  {
+    slug: "dropshipping-nedir-nasil-yapilir",
+    seoTitle: "Dropshipping Nedir, Türkiye'de Nasıl Yapılır? Kâr Hesabı",
+    title: "Dropshipping Nedir, Türkiye'de Nasıl Yapılır? İade Dahil Kâr Hesabı, Tedarikçi Seçimi ve Yasal Sorumluluklar (2026)",
+    description:
+      "Dropshipping, stok tutmadan satıp ürünü tedarikçiye gönderttiğiniz modeldir. Türkiye'de nasıl yapılır, iade dahil kâr hesabı ve tedarikçi seçimi bu yazıda.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Dropshipping (stoksuz satış), ürünü önceden almadan satışa koyduğunuz, sipariş gelince tedarikçinin müşteriye gönderdiği e-ticaret modelidir. Stok riski düşer; ama müşterinin karşısındaki satıcı sizsiniz, geç teslimat ve iade de sizin sorumluluğunuzdur.",
+      "Türkiye'de 2026'da en uygun yol yerli tedarikçidir. 6 Şubat 2026'dan itibaren yurt dışı siparişlerdeki 30 Euro'luk basitleştirilmiş usul kalktı, her gönderi gümrük sürecine giriyor; AliExpress'ten doğrudan Türkiye'ye gönderim eski pratikliğini kaybetti.",
+      "Asıl hesap iade dahildir. Örnek: 900 TL satış, 450 TL ürün, %18 komisyon, 85 TL kargo, 12 TL işlem, 90 TL reklam → sipariş başı 101 TL. %10 iadeyle beklenen kâr 63,7 TL'ye iner; tedarikçi iadeyi almazsa 18,7 TL kalır.",
+      "Aynı örnekte sipariş başı reklam 153,7 TL'yi geçerse zarar başlar; yani reklam panelinde başabaş ROAS 5,86'dır. Ayda 5.000 TL sabit giderle başabaş için 79 sipariş gerekir.",
+      "Dropshipping pasif gelir değildir: müşteri hizmeti, stok takibi ve iade işi günlüktür. Başlamadan önce tedarikçiden test siparişi verin ve ürünü iade dahil hesaplayın. Yazının sonunda ücretsiz Excel şablonu var.",
+    ],
+    publishedAt: "2026-11-04",
+    readingMinutes: 11,
+    tags: ["Dropshipping", "Stoksuz Satış", "E-Ticaret", "Kâr Hesabı", "Pazaryeri", "Tedarikçi"],
+    sections: [
+      {
+        heading: "Dropshipping nedir? (Kısa cevap)",
+        paragraphs: [
+          "Dropshipping, Türkçesiyle stoksuz satış, ürünleri elinizde bulundurmadan internette satışa koyduğunuz bir e-ticaret modelidir. Müşteri sizden sipariş verir ve ödemeyi size yapar, siz siparişi tedarikçiye iletirsiniz, tedarikçi ürünü doğrudan müşteriye gönderir. Kazancınız, müşteriden aldığınız fiyat ile tedarikçiye ve diğer kalemlere ödediğiniz tutar arasındaki farktır.",
+          "Modelin cazibesi stoka para bağlamamaktır. Bedeli de düşük marj ve az kontroldür: ürün kalitesini, paketlemeyi ve kargoya verilme hızını siz yönetmezsiniz, ama müşteri için muhatap sizsiniz. Bu yazı modelin Türkiye'de nasıl işlediğini, kârın nasıl hesaplanacağını ve hangi durumda başlamamak gerektiğini anlatır. Vergi konularına girmez; o konuda mali müşavirinizden görüş alın.",
+        ],
+      },
+      {
+        heading: "Dropshipping nasıl çalışır? Sipariş akışı",
+        paragraphs: [
+          "Tipik bir sipariş beş adımda ilerler. Hataların çoğu ikinci ve üçüncü adım arasındaki gecikmede ortaya çıkar: sizde 'stokta' görünen ürün tedarikçide bitmişse iptal etmek zorunda kalırsınız.",
+        ],
+        bullets: [
+          "1. Tedarikçinin ürünlerini mağazanıza ya da pazaryerine kendi fiyatınızla listelersiniz (elle ya da XML entegrasyonuyla)",
+          "2. Müşteri sipariş verir ve sizin mağazanıza öder",
+          "3. Siz siparişi tedarikçiye iletir, ürün bedelini ona ödersiniz",
+          "4. Tedarikçi ürünü müşterinin adresine gönderir; kargo takibi müşteriye iletilir",
+          "5. Şikâyet, cayma ve iadeyle siz ilgilenir, tedarikçiyle aranızda çözersiniz",
+        ],
+      },
+      {
+        heading: "Dropshipping ile stoklu satış arasındaki fark nedir?",
+        paragraphs: [
+          "Dropshipping sık sık başka modellerle karıştırılır. Aralarındaki fark, ürünün ve riskin kimde olduğudur.",
+        ],
+        bullets: [
+          "Stoklu satış: ürünü toptan alırsınız. Birim maliyet düşer, kalite kontrol sizdedir; ama satılmayan stok size kalır",
+          "Dropshipping: ürün tedarikçidedir. Sermaye az, marj düşük, kontrol sınırlıdır",
+          "Fulfillment: stok size aittir ama depolama ve kargoyu bir hizmet sağlayıcı yapar",
+          "Baskı üzerine üretim (print on demand): ürün sipariş gelince sizin tasarımınızla üretilir",
+          "Satış ortaklığı (affiliate): siz satıcı değilsiniz; yönlendirdiğiniz satıştan komisyon alırsınız ve iade sorumluluğunuz olmaz",
+        ],
+      },
+      {
+        heading: "Türkiye'de dropshipping yasal mı? Satıcı olarak sorumluluklarınız",
+        paragraphs: [
+          "Modeli özel olarak yasaklayan bir düzenleme görmedik; ancak 'tedarikçi gönderiyor' demek sorumluluğu devretmez. Ticaret Bakanlığı'nın mesafeli satış bilgilendirmesi satıcıyı muhatap alır. E-ticaret faaliyetinde bulunanların faaliyete başlamadan önce e-Devlet üzerinden ETBİS'e kaydolması gerekir.",
+          "Düzenli satış ticari faaliyettir. Hangi şirket türünün size uyduğu ve vergi yükümlülükleri bu yazının kapsamı dışında; mali müşavirinize sorun. Aşağıdaki maddeler genel bilgidir, hukuki danışmanlık değildir.",
+        ],
+        bullets: [
+          "Teslimat: taahhüt edilmiş bir süre yoksa satıcı malı en geç 30 gün içinde göndermek zorundadır",
+          "Cayma hakkı: tüketici, malın tesliminden itibaren 14 gün içinde gerekçe göstermeden cayabilir",
+          "Geri gönderme: tüketici cayma bildiriminden sonra 14 gün içinde malı geri gönderir",
+          "İade kargosu: tüketici ön bilgilendirmede belirtilen kargo şirketiyle gönderirse iade masrafından sorumlu tutulamaz",
+          "Bedel iadesi: satıcı, teslimat masrafları dahil ödemeleri 14 gün içinde iade eder",
+          "Ön bilgilendirme: ödemeden önce satıcı kimliği, toplam fiyat, ek masraflar ve cayma hakkı müşteriye bildirilir",
+          "Hasar ve kayıp: mal teslim edilene kadarki kayıp ve hasardan satıcı sorumludur",
+        ],
+      },
+      {
+        heading: "Yurt dışından dropshipping 2026'da hâlâ mantıklı mı?",
+        paragraphs: [
+          "Türkiye'deki müşteriye yurt dışından gönderim için cevap çoğunlukla hayır. 7 Ocak 2026 tarihli Resmî Gazete'de yayımlanan düzenleme, 6 Şubat 2026'dan itibaren yurt dışı siparişlerdeki 30 Euro'luk basitleştirilmiş usulü kaldırdı. Basına yansıyan açıklamalara göre tutarı ne olursa olsun tüm siparişler gümrük işlemine tabi; ayrıntılı beyanname ve hizmet bedeli de eklendi.",
+          "Bu değişiklik teslim süresini ve teslimat maliyetini belirsizleştirdi; üstüne 14 günlük cayma hakkında ürünün yurt dışına iadesi çoğu zaman üründen pahalıya gelir. Tutar hesabı için gümrük müşaviri ya da resmî kaynaklara başvurun; biz burada vergi hesabı yapmıyoruz. Pratik sonuç: Türkiye'deki müşteriye satıyorsanız yerli tedarikçi, yurt dışına satıyorsanız Etsy, Amazon ya da kendi sitenizle e-ihracat ayrı bir plan gerektirir.",
+        ],
+      },
+      {
+        heading: "Dropshipping nerede yapılır? Pazaryeri mi, kendi site mi?",
+        paragraphs: [
+          "Kanal seçimi kâr yapınızı belirler. Pazaryeri trafiği hazırdır ama komisyon keser; kendi sitede komisyon yoktur ama trafiği reklamla siz satın alırsınız. Bu farkı aşağıdaki hesapta göreceksiniz.",
+          "Platform kurallarını panelden doğrulayın. Trendyol için kamuya açık, resmî bir dropshipping yasağı bulamadık; ancak Satıcı Bilgi Merkezi'ni okuyamadık ve Türkçe rehberler kaynak göstermiyor. Amazon'un politikası ise açık: stoksuz satışa ancak alıcı için satıcının siz olduğu belliyse izin verir, paket ve belgelerde başka bir satıcı adı bulunamaz, iadeleri de siz yönetirsiniz.",
+        ],
+        bullets: [
+          "Pazaryeri (Trendyol, Hepsiburada): hazır talep, yüksek rekabet, komisyon ve geç kargo ya da iptal puanı. Geciken tedarikçi doğrudan mağaza puanınızı etkiler",
+          "Kendi siteniz (ikas, Shopify, WordPress): marka ve müşteri verisi sizde; reklam bütçesi ve güven oluşturma gerekir",
+          "Instagram ve TikTok: ürün keşfine uygun; satışın ölçümü ve iade süreci için yine mağaza altyapısı gerekir",
+          "Etsy, Amazon: yurt dışı talep; platform kuralları ve kargo süreleri ayrıca okunmalı",
+        ],
+      },
+      {
+        heading: "Dropshipping tedarikçisi nasıl bulunur ve seçilir?",
+        paragraphs: [
+          "İşin kalitesini tedarikçi belirler. Türkiye'de yerli stoksuz satış çoğunlukla XML ürün listesi veren toptancılar, üreticiler ve bayilik platformları üzerinden yürür. XML, ürün, stok ve fiyat bilgisini mağazanıza otomatik aktaran dosyadır. Kendi hizmetini tanıtan sayfaların 'en iyi tedarikçi' listeleri yerine aşağıdaki testi uygulayın.",
+          "Satışa açmadan önce kendi adresinize test siparişi verin. Süreyi kronometreyle ölçün, paketi açın, iadeyi de bir kez deneyin. Yarım günlük bu kontrol, ilk ay yaşanacak şikâyetlerin çoğunu önler.",
+        ],
+        bullets: [
+          "Stok güncelleme sıklığı: XML en az günde birkaç kez yenileniyor mu? Geç güncellenen stok iptal demektir",
+          "Kargoya verme süresi: sipariş saatine göre ne zaman çıkıyor, yazılı mı?",
+          "İade: müşteri iadesini geri alıyor mu, hangi koşulla, para ne zaman dönüyor? Hesabın en kritik satırı budur",
+          "Paket: pakette tedarikçinin fiyatlı belgesi ya da reklamı çıkıyor mu?",
+          "Ürün belgeleri: marka yetkisi, garanti ve güvenlik belgeleri var mı? Taklit ürün hesabınızı kapatabilir",
+          "Münhasırlık: aynı ürünü kaç satıcı aynı görselle satıyor? Pazaryerinde tek fark fiyat kalırsa marj erir",
+          "Yedek: tek tedarikçiye bağlı kalmayın; en çok satan ürünler için ikinci kaynak bulun",
+        ],
+      },
+      {
+        heading: "Dropshipping kâr hesabı nasıl yapılır? İade dahil örnek",
+        paragraphs: [
+          "İncelediğimiz Türkçe rehberlerin çoğunda sayısal örnek yok. Olanlarda ise iade hesaba katılmıyor; bir sayfanın örneği satışın %4,9'u kadar kâr gösterirken 'iade dahil değil' diye not düşüyor, başka bir sayfa kaynak göstermeden %8-15 net kâr söylüyor. Oysa stoksuz satışta iade, en kritik kalemdir. Doğru hesap iki formülden oluşur:",
+          "Tamamlanan sipariş kârı = Satış fiyatı − Ürün maliyeti − Komisyon − Kargo − İşlem bedeli − Reklam. Beklenen kâr = (1 − İade oranı) × Tamamlanan sipariş kârı − İade oranı × İade kaybı. İade kaybı ise gidiş ve dönüş kargosu, işlem bedeli, harcanmış reklam ve (tedarikçi almıyorsa) ürün maliyetidir.",
+          "Pazaryeri örneği (örnek tutarlar): 900 TL satış, 450 TL ürün, %18 komisyon (162 TL), 85 TL kargo, 12 TL işlem bedeli, 90 TL reklam. Tamamlanan sipariş kârı 101 TL, yani satışın %11,2'si. %10 iade oranında iade kaybı 85 + 85 + 12 + 90 = 272 TL'dir. Beklenen kâr: 0,9 × 101 − 0,1 × 272 = 63,7 TL (%7,1). Tedarikçi iadeyi almazsa kayıp 722 TL olur ve beklenen kâr 18,7 TL'ye (%2,1) düşer.",
+          "Komisyonun iadede geri alındığını varsaydık; kendi sözleşmenizde kontrol edin. Tutarlar örnektir ve vergi kalemleri bu hesaba dahil değildir. Kendi rakamlarınızla denemek için Trendyol Kâr aracını kullanın ya da ücretsiz Ürün Kârlılık Şablonu'nu indirin.",
+        ],
+        bullets: [
+          "İade %0: 101 TL",
+          "İade %10, tedarikçi geri alıyor: 63,7 TL",
+          "İade %20, tedarikçi geri alıyor: 26,4 TL",
+          "İade %10, ürün size kalıyor: 18,7 TL",
+          "İade %10, reklam 150 TL: 3,7 TL (başabaşın kıyısında)",
+          "Aynı ürün stoklu, 360 TL'ye alınıyor (%10 iade): 144,7 TL; ama 100 adet için 36.000 TL bağlanır",
+        ],
+      },
+      {
+        heading: "Reklama sipariş başı en fazla ne harcanır?",
+        paragraphs: [
+          "Reklam harcaması iki formülde de düştüğü için başabaş sınırı nettir: Maksimum reklam = (1 − İade oranı) × Reklam öncesi kâr − İade oranı × Reklam dışı iade kaybı. Pazaryeri örneğinde 0,9 × 191 − 0,1 × 182 = 153,7 TL. Başabaş ROAS 900 / 153,7 = 5,86'dır. Panelde ROAS 5,86'nın altındaysanız sipariş aldıkça para kaybedersiniz. Tedarikçi iadeyi almıyorsa sınır 108,7 TL'ye iner, ROAS eşiği 8,28'e çıkar.",
+          "Kendi site örneği (örnek tutarlar): aynı 900 TL'lik ürün, komisyon yerine %3 ödeme kesintisi (27 TL), kargo ve işlem bedeli aynı. Reklam öncesi kâr 326 TL, maksimum reklam 0,9 × 326 − 0,1 × 182 = 275,2 TL, başabaş ROAS 3,27. Kendi sitede eşik çok daha rahat görünür; ama trafik pazaryerindeki gibi hazır gelmez, dönüşüm oranı da genelde daha düşüktür. Kararı başabaş ROAS ile kendi test sonucunuzu yan yana koyarak verin.",
+        ],
+      },
+      {
+        heading: "Dropshipping ne kadar kazandırır? Aylık başabaş",
+        paragraphs: [
+          "'Ayda şu kadar kazanılır' diyen rakamlara güvenmeyin; kazanç ürün, kanal ve iade oranına bağlıdır. Kendi hesabınızı şu formülle yapın: Başabaş sipariş = Aylık sabit gider / Beklenen kâr. Mağaza aboneliği, entegrasyon ve muhasebe için ayda 5.000 TL (örnek tutar) ayırıyorsanız, 63,7 TL beklenen kârla 79 sipariş sadece gideri karşılar. Aylık 200 siparişte kalan yaklaşık 7.740 TL'dir. Bu tutarı, harcadığınız saatlerle kıyaslayın.",
+          "Sermaye sorusunun cevabı da burada: stok almadığınız için sermaye sıfır değildir. Test reklam bütçesi, mağaza kurulumu ve iade için nakit gerekir. Müşteri parası size geçmeden tedarikçiye ödeme yaparsanız pazaryerinin ödeme takvimi kadar nakit de bağlanır; 200 siparişte tedarik maliyeti 90.000 TL'yi bulur.",
+        ],
+      },
+      {
+        heading: "Dropshipping'de en sık yapılan hatalar",
+        paragraphs: [
+          "Başarısız denemelerin çoğu aynı birkaç hatayla başlar.",
+        ],
+        bullets: [
+          "Fiyatı maliyete sabit yüzde ekleyerek belirlemek: iade ve reklamı hesaba katmadan yüzde koymak sizi zarara sokar. Kar marjı ile kar oranı farkına dikkat edin",
+          "Test siparişi vermeden ürün listelemek",
+          "Tedarikçinin iade şartlarını yazılı almamak",
+          "Yüzlerce ürünü tek seferde yüklemek: 10-20 ürünü kontrol etmek daha kârlıdır",
+          "Kırılgan ya da yüksek desili ürün seçmek: desi kargoyu, kırılganlık iadeyi yükseltir. Ürün seçmeden önce desiyi hesaplayın",
+          "Yüksek iadeli kategorilere bakmadan girmek: giyimde beden iadesi tek başına kârı silebilir",
+          "Taklit ve marka tescilli ürün satmak",
+          "Reklamı ROAS'a değil tıklamaya göre yönetmek",
+        ],
+      },
+      {
+        heading: "Dropshipping'e nasıl başlanır? Kısa plan",
+        paragraphs: [
+          "Küçük başlamak en ucuz öğrenme yoludur. Önce kanal ve ürünü seçin, kaydınızı ve mali danışmanlığınızı tamamlayın, sonra reklama geçin.",
+        ],
+        bullets: [
+          "1. Niş ve kanalı seçin: pazaryerinde talep olan, küçük, hafif ve kırılmayan ürünler",
+          "2. 2-3 yerli tedarikçiyle görüşün, iade şartını yazılı alın",
+          "3. Ürünü iade dahil hesaplayın; beklenen marj hedefinizin altındaysa geçin",
+          "4. Şirket, ETBİS ve mali müşavir işlerini tamamlayın",
+          "5. Test siparişi verin: süre, paket ve iadeyi ölçün",
+          "6. 10-20 ürünle yayına çıkın, stok güncellemesini kontrol edin",
+          "7. Küçük bütçeyle reklam deneyin; başabaş ROAS altındaysa fiyatı, ürünü ya da kanalı değiştirin",
+          "8. Satan ürünü stoklu modele geçirmeyi değerlendirin: marj artar, kontrol sizde olur",
+        ],
+      },
+    ],
+    faq: [
+      { question: "Dropshipping için ne kadar sermaye gerekir?", answer: "Stok almazsınız, ama sermaye sıfır değildir: mağaza kurulumu, test reklamı ve iade nakdi gerekir. Tedarikçiye ödemeyi pazaryerinin size ödemesinden önce yapıyorsanız bu süre boyunca nakit de bağlanır. Rakamı kendi aylık sabit gideriniz ve test bütçenizden çıkarın." },
+      { question: "Dropshipping şirketsiz yapılır mı?", answer: "Trendyol gibi pazaryerleri satıcıdan şirket belgeleri ister. Düzenli satış ticari faaliyet sayıldığından şirket türü ve yükümlülükler için başlamadan önce mali müşavire danışın. Bu yazı vergi konusuna girmez." },
+      { question: "Dropshipping'de iade kim karşılar?", answer: "Müşteriye karşı satıcı olarak siz sorumlusunuz. Tüketici 14 gün içinde cayabilir ve ön bilgilendirmede belirtilen kargoyla gönderirse iade masrafından sorumlu tutulamaz. Maliyetin tedarikçiyle paylaşımı aranızdaki anlaşmaya bağlıdır; bu yüzden şartı yazılı alın." },
+      { question: "Trendyol'da dropshipping yapılır mı?", answer: "Kamuya açık kaynaklarda resmî bir yasak görmedik, ama geç kargo ve tedarik edememe iptalleri mağaza puanını etkiler. Bu yüzden hızlı kargolayan yerli tedarikçi ve güncel stok gerekir. Kuralları Satıcı Bilgi Merkezi'nden doğrulayın." },
+      { question: "Dropshipping kârlı mı?", answer: "Duruma göre değişir. Marj stoklu satışa göre düşüktür ve reklam ile iade kârı hızla eritir. Örnek hesabımızda 900 TL'lik üründe sipariş başı beklenen kâr 63,7 TL'dir. Başlamadan kendi ürününüzü iade dahil hesaplayın; pasif gelir olarak görmeyin." },
+    ],
+    howTo: {
+      name: "Dropshipping'e adım adım nasıl başlanır?",
+      description: "Türkiye'de yerli tedarikçiyle stoksuz satışa başlama.",
+      steps: [
+        { name: "Kanal ve ürünü seçin", text: "Talep olan, küçük, hafif ve kırılmayan ürünleri seçin; pazaryeri mi kendi site mi karar verin." },
+        { name: "Tedarikçilerle görüşün", text: "2-3 yerli tedarikçiyle stok güncelleme, kargo süresi ve iade şartlarını yazılı netleştirin." },
+        { name: "Kârı iade dahil hesaplayın", text: "Komisyon, kargo, reklam ve iade kaybıyla beklenen kârı ve başabaş ROAS'ı bulun." },
+        { name: "Kayıt işlemlerini tamamlayın", text: "Şirket, ETBİS ve mali danışmanlık süreçlerini başlamadan bitirin." },
+        { name: "Test siparişi verin", text: "Kendi adresinize sipariş verip süreyi, paketi ve iade sürecini ölçün." },
+        { name: "Küçük başlayın ve ölçün", text: "10-20 ürünle yayına çıkın, küçük bütçeyle reklam deneyin, başabaş ROAS altındaysa değiştirin." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Trendyol Komisyon Oranları 2026", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+      { label: "Trendyol Reklam Nasıl Verilir?", href: "/blog/trendyol-reklam-nasil-verilir/" },
+      { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "Instagram Reklam Verme Rehberi", href: "/blog/instagram-reklam-verme-rehberi/" },
+      { label: "Ticaret Bakanlığı: Mesafeli sözleşmeler hakkında bilgilendirme", href: "https://tuketici.ticaret.gov.tr/yayinlar/tuketici-bilgi-rehberi/mesafeli-sozlesmeler-hakkinda-bilgilendirme", external: true },
+      { label: "Ticaret Bakanlığı: Elektronik Ticaret Bilgi Sistemi (ETBİS)", href: "https://ticaret.gov.tr/ic-ticaret/elektronik-ticaret/elektronik-ticaret-bilgi-sistemi-etbis", external: true },
+      { label: "DonanımHaber: 30 Euro limiti kaldırıldı", href: "https://www.donanimhaber.com/yurt-disindan-gumruksuz-alisveris-donemi-bitti-30-euro-limiti-ka--200561", external: true },
+      { label: "Amazon Seller Central: Drop shipping politikası hatırlatması", href: "https://sellercentral.amazon.com/forums/t/drop-shipping-policy-reminder/839620", external: true },
     ],
   },
 ];
@@ -7936,6 +8143,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "What Is Dropshipping? Profit Math Including Returns", href: "/en/blog/what-is-dropshipping-how-it-works/" },
       { label: "Discount Calculator: Sale Price and Profit Impact", href: "/en/free-tools/discount-calculator/" },
       { label: "Trendyol Commission Rates 2026 & How to Calculate Fees", href: "/en/blog/trendyol-commission-rates/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
@@ -9215,6 +9423,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "What Is Dropshipping? Profit Math Including Returns", href: "/en/blog/what-is-dropshipping-how-it-works/" },
       { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
       { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
@@ -9572,6 +9781,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "What Is Dropshipping? Profit Math Including Returns", href: "/en/blog/what-is-dropshipping-how-it-works/" },
       { label: "Discount Calculator: Sale Price and Profit Impact", href: "/en/free-tools/discount-calculator/" },
       { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
       { label: "Trendyol Commission Rates 2026", href: "/en/blog/trendyol-commission-rates/" },
@@ -10166,6 +10376,179 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google: Spam policies", href: "https://developers.google.com/search/docs/essentials/spam-policies", external: true },
       { label: "Google Search Status Dashboard: ranking updates", href: "https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history", external: true },
       { label: "Ahrefs: AI Overviews reduce clicks by 58% (update)", href: "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update", external: true },
+    ],
+  },
+  {
+    slug: "what-is-dropshipping-how-it-works",
+    seoTitle: "What Is Dropshipping? How It Works and Real Profit Math",
+    title: "What Is Dropshipping? How It Works, Profit Math Including Returns, Supplier Checks and Seller Responsibilities (2026)",
+    description:
+      "Dropshipping means selling without stock while a supplier ships to the customer. See how it works, the profit math including returns, and supplier checks.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Dropshipping is an e-commerce model where you list products without holding stock and a supplier ships each order directly to the customer. Inventory risk falls, but you remain the seller, so late deliveries and returns are your responsibility.",
+      "Cross-border dropshipping got harder. The US ended the $800 duty-free de minimis exemption for all countries in August 2025, and Turkey ended its €30 simplified route in February 2026. A domestic supplier is now usually the safer choice.",
+      "The real calculation includes returns. Example: $90 price, $45 product, 18% commission, $8.50 shipping, $1.20 processing, $9 ads → $10.10 per order. With 10% returns the expected profit drops to $6.37; if the supplier refuses returns, it's $1.87.",
+      "In the same example ads above $15.37 per order lose money, so breakeven ROAS is 5.86. With $500 in monthly fixed costs you need 79 orders just to break even.",
+      "Dropshipping isn't passive income: customer service, stock checks and returns are daily work. Place a test order and calculate each product with returns before you start.",
+    ],
+    publishedAt: "2026-11-04",
+    readingMinutes: 10,
+    tags: ["Dropshipping", "E-commerce", "Profit Margin", "Marketplaces", "Suppliers"],
+    sections: [
+      {
+        heading: "What is dropshipping? (Short answer)",
+        paragraphs: [
+          "Dropshipping is an e-commerce model where you sell products online without keeping them in stock. The customer orders and pays you, you pass the order to a supplier, and the supplier ships directly to the customer. You earn the difference between the customer's price and what you pay the supplier and everyone else along the way.",
+          "The appeal is not tying cash up in inventory. The cost is thin margins and little control: you don't manage quality, packaging or dispatch speed, but the customer still holds you responsible. This guide covers how the model works, how to calculate profit and when not to start. It doesn't cover taxes; ask an accountant.",
+        ],
+      },
+      {
+        heading: "How does dropshipping work? The order flow",
+        paragraphs: [
+          "A typical order has five steps. Most failures appear in the delay between steps two and three: if an item shows as in stock with you but has sold out at the supplier, you have to cancel.",
+        ],
+        bullets: [
+          "1. You list the supplier's products at your own price, manually or through a product feed",
+          "2. The customer orders and pays your store",
+          "3. You forward the order and pay the supplier",
+          "4. The supplier ships to the customer and tracking is passed on",
+          "5. You handle complaints and returns, then settle with the supplier",
+        ],
+      },
+      {
+        heading: "How is dropshipping different from other models?",
+        paragraphs: [
+          "The difference is who holds the product and the risk.",
+        ],
+        bullets: [
+          "Stocked retail: you buy wholesale. Lower unit cost and more control, but unsold stock is yours",
+          "Dropshipping: the supplier holds the product. Low capital, thin margin, limited control",
+          "Fulfillment: you own the stock, a provider stores and ships it",
+          "Print on demand: the item is produced with your design once ordered",
+          "Affiliate marketing: you aren't the seller; you earn commission on referred sales and carry no return duty",
+        ],
+      },
+      {
+        heading: "Is dropshipping legal? What are your responsibilities?",
+        paragraphs: [
+          "Dropshipping is generally a legal business model, but 'the supplier ships it' doesn't transfer responsibility. Consumer law treats you as the seller. Rules vary by country, so check yours. In the EU, consumers generally have a 14-day right of withdrawal on distance purchases. In Turkey, sellers must ship within 30 days unless another date was promised, the customer can withdraw within 14 days, and e-commerce businesses must register with the ETBİS system before starting.",
+          "Platforms add their own rules. Amazon's policy is explicit: dropshipping is allowed only if it's clear to the buyer that you are the seller of record, no other seller's name can appear on packing slips or packaging, and you handle returns. This is general information, not legal advice.",
+        ],
+      },
+      {
+        heading: "Does cross-border dropshipping still make sense in 2026?",
+        paragraphs: [
+          "Less than it used to. The model relied on low-value parcels clearing customs cheaply, and that door is closing. The US suspended the $800 de minimis exemption for all countries on August 29, 2025. In Turkey, a rule published on January 7, 2026 ended the €30 simplified route on February 6, so every overseas order now goes through customs regardless of value.",
+          "Delivery times and landed costs became harder to predict, and returning a low-value item overseas often costs more than the item. Check current rules with a customs broker before you plan around cross-border shipping. We don't calculate duties here. In practice, a supplier in the customer's own country is usually the safer starting point.",
+        ],
+      },
+      {
+        heading: "Where should you dropship: a marketplace or your own store?",
+        paragraphs: [
+          "Your channel sets your profit structure. Marketplaces bring ready demand and take a commission; your own store has no commission, but you buy the traffic. The math below shows the difference.",
+        ],
+        bullets: [
+          "Marketplaces: ready demand, heavy competition, commission, and late shipments can hurt your seller rating",
+          "Your own store (Shopify, ikas, WordPress): you own the brand and customer data, but need ad budget and trust",
+          "Instagram and TikTok: good for product discovery, but you still need a store for measurement and returns",
+        ],
+      },
+      {
+        heading: "How do you find and vet a dropshipping supplier?",
+        paragraphs: [
+          "Your supplier sets the quality of the business. Skip 'best supplier' lists published by companies selling their own service, and run this check instead.",
+          "Place a test order to your own address before going live. Time it, open the package and try a return once. Half a day of checking prevents most first-month complaints.",
+        ],
+        bullets: [
+          "Stock sync: does the product feed refresh several times a day? Stale stock means cancellations",
+          "Dispatch time: is the cutoff written down?",
+          "Returns: do they take customer returns back, on what terms, and when does money return? This is the most important line in your math",
+          "Packaging: does their priced invoice or advertising end up in the box?",
+          "Product documents: brand authorization, warranty, safety documents. Counterfeits can get your account closed",
+          "Exclusivity: how many sellers use the same photos? If price is the only difference, margin disappears",
+          "Backup: find a second source for your best sellers",
+        ],
+      },
+      {
+        heading: "How do you calculate dropshipping profit? An example with returns",
+        paragraphs: [
+          "Many guides show profit without returns, yet returns are the critical line in dropshipping. You need two formulas. Completed order profit = Price − Product cost − Commission − Shipping − Processing − Ads. Expected profit = (1 − Return rate) × Completed order profit − Return rate × Return loss. Return loss is outbound and return shipping, processing, spent ad cost and, if the supplier refuses the item, the product cost.",
+          "Marketplace example: $90 price, $45 product, 18% commission ($16.20), $8.50 shipping, $1.20 processing, $9 ads. Completed order profit is $10.10, or 11.2%. At a 10% return rate, return loss is $8.50 + $8.50 + $1.20 + $9 = $27.20. Expected profit: 0.9 × $10.10 − 0.1 × $27.20 = $6.37 (7.1%). If the supplier refuses returns, the loss becomes $72.20 and expected profit falls to $1.87 (2.1%).",
+          "We assume the commission is refunded on returns; check your contract. Taxes aren't included in these example figures. Run your own numbers in the marketplace profit calculator.",
+        ],
+        bullets: [
+          "0% returns: $10.10",
+          "10% returns, supplier takes them back: $6.37",
+          "20% returns, supplier takes them back: $2.64",
+          "10% returns, item is lost: $1.87",
+          "10% returns, $15 ads: $0.37 (right at breakeven)",
+          "Same item stocked at $36 (10% returns): $14.47, but 100 units tie up $3,600",
+        ],
+      },
+      {
+        heading: "How much can you spend on ads per order?",
+        paragraphs: [
+          "Maximum ad spend = (1 − Return rate) × Profit before ads − Return rate × Non-ad return loss. In the marketplace example: 0.9 × $19.10 − 0.1 × $18.20 = $15.37. Breakeven ROAS is $90 / $15.37 = 5.86. Below that in your ad dashboard, every order loses money. If the supplier refuses returns, the limit falls to $10.87 and the threshold rises to 8.28.",
+          "Own-store example: the same $90 item with a 3% payment fee ($2.70) instead of commission. Profit before ads is $32.60, maximum ad spend $27.52, breakeven ROAS 3.27. The threshold looks far easier, but traffic doesn't arrive by itself and conversion rates tend to be lower. Compare breakeven ROAS with your own test results before you decide.",
+        ],
+      },
+      {
+        heading: "How much does dropshipping make? Monthly breakeven",
+        paragraphs: [
+          "Ignore income claims; earnings depend on product, channel and return rate. Use Breakeven orders = Monthly fixed costs / Expected profit. With $500 a month for the store, integrations and bookkeeping, 79 orders at $6.37 only cover costs. At 200 orders you keep about $774. Compare that with your hours.",
+          "That also answers the capital question. No inventory doesn't mean no capital: you need money for test ads, setup and returns. If you pay suppliers before a marketplace pays you, cash is tied up too; 200 orders means $9,000 in product cost.",
+        ],
+      },
+      {
+        heading: "What are the most common dropshipping mistakes?",
+        paragraphs: [
+          "Most failed attempts share the same few errors.",
+        ],
+        bullets: [
+          "Pricing with a flat markup that ignores returns and ads. Know the difference between margin and markup",
+          "Listing products without a test order",
+          "Not getting return terms in writing",
+          "Uploading hundreds of products at once instead of controlling 10 to 20",
+          "Choosing fragile or bulky items: dimensional weight raises shipping and fragility raises returns",
+          "Entering high-return categories without modeling them",
+          "Selling counterfeit or trademarked goods",
+          "Managing ads by clicks instead of ROAS",
+        ],
+      },
+    ],
+    faq: [
+      { question: "How much money do you need to start dropshipping?", answer: "You don't buy stock, but you do need cash for setup, test ads and returns. If you pay suppliers before a marketplace pays you, money is tied up during that gap too. Work out your number from your fixed costs and test budget." },
+      { question: "Who pays for returns in dropshipping?", answer: "You are responsible to the customer as the seller. How the cost is split with the supplier depends on your agreement, so get the terms in writing." },
+      { question: "Is dropshipping profitable?", answer: "It depends. Margins are lower than stocked retail, and ads plus returns erode them fast. In our example a $90 item earns $6.37 per order in expected profit. Calculate your product with returns first, and don't treat it as passive income." },
+      { question: "Can I dropship on Amazon?", answer: "Yes, with conditions. Amazon requires that you be the seller of record, that no other seller's name appear on packaging or slips, and that you handle returns. Buying from another retailer and having them ship to your customer isn't acceptable." },
+      { question: "Is dropshipping passive income?", answer: "No. Automation helps, but stock checks, customer service, returns and ad management are ongoing work." },
+    ],
+    howTo: {
+      name: "How to start dropshipping step by step",
+      description: "Start selling without stock using a domestic supplier.",
+      steps: [
+        { name: "Choose a channel and product", text: "Pick small, light, sturdy products with proven demand; decide between a marketplace and your own store." },
+        { name: "Talk to suppliers", text: "Confirm stock sync, dispatch times and return terms in writing with two or three suppliers." },
+        { name: "Calculate profit with returns", text: "Include commission, shipping, ads and return loss to find expected profit and breakeven ROAS." },
+        { name: "Complete registrations", text: "Finish business registration and get accounting advice before you start." },
+        { name: "Place a test order", text: "Order to your own address and measure timing, packaging and the return process." },
+        { name: "Start small and measure", text: "Launch with 10 to 20 products, test ads on a small budget and change course below breakeven ROAS." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Trendyol Commission Rates", href: "/en/blog/trendyol-commission-rates/" },
+      { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
+      { label: "How to Run Instagram Ads", href: "/en/blog/how-to-run-instagram-ads/" },
+      { label: "Amazon Seller Central: Drop shipping policy reminder", href: "https://sellercentral.amazon.com/forums/t/drop-shipping-policy-reminder/839620", external: true },
+      { label: "Thompson Coburn: De minimis exemption suspended globally", href: "https://www.thompsoncoburn.com/insights/trump-administration-indefinitely-suspends-de-minimis-exemption-for-commercial-shipments-globally/", external: true },
+      { label: "Turkey Ministry of Trade: Distance contracts", href: "https://tuketici.ticaret.gov.tr/yayinlar/tuketici-bilgi-rehberi/mesafeli-sozlesmeler-hakkinda-bilgilendirme", external: true },
     ],
   },
 ];
