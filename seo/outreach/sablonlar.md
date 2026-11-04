@@ -41,3 +41,35 @@ Merhaba <Ad>,
 "<Yazı başlığı>" yazınız için tek satırla eklenebilen ücretsiz bir hesaplayıcı önermek istedim. Satıcı indirim oranını ve birim maliyetini giriyor; indirim sonrası kârı ve aynı kârı korumak için gereken satış artışını görüyor. Reklam içermiyor, küçük bir atıf satırı var.
 <Araç linki>
 Yusuf Bayrak
+
+## Ürün Kârlılık Şablonu (04.11.2026)
+Dosya: https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx
+Ana sayfa (link verilecek yer): https://yusufbayrak.net/blog/dropshipping-nedir-nasil-yapilir/
+İçerik: 100 ürünlük tablo; iade dahil beklenen kâr ve marj, sipariş başı maksimum reklam, başabaş ROAS, Kârlı/Riskli/Zarar etiketi, aylık başabaş sipariş. Kayıt istemez. Vergi hesabı yapmaz. 902 formül LibreOffice ile hesaplandı, 0 hata; örnek satırlar yazıdaki 63,7 ve 18,7 TL ile aynı.
+Rekabet gözlemi (04.11.2026): Türkçe aramada hazır, iadeyi hesaba katan ürün kârlılık şablonu çıkmadı; sonuçlar Fiverr/Gumroad ürünleri ve genel muhasebe tabloları. Ana mesaj: "iade dahil, Türkçe, ücretsiz, kayıtsız".
+
+### Hedefler
+| # | Yer | Neden | Durum |
+|---|---|---|---|
+| 1 | Kullanıcının LinkedIn profili | En hızlı dağıtım; metin aşağıda | Kullanıcı paylaşır |
+| 2 | mukellef.co/blog/dropshipping-yaparken-dikkat-edilmesi-gerekenler/ | 04.11 kontrol: kâr hesaplayıcı/şablon yok, "%20-50 marj" ve 10$/20$ örneği iade ve reklamı dışarıda bırakıyor; site vergi araçları sunuyor, rakip değil | İletişim yalnızca telefon ve Destek Merkezi görünüyor; önce site içi yolu kontrol edin |
+| 3 | eentegre.com/blog (widget hedefi #4) | "Dropshipping'de Kâr Marjı Nasıl Hesaplanır?" başlığı 03.11'de görüldü; 04.11 aramasında yazı tekrar çıkmadı | Göndermeden önce yazıyı açıp doğrulayın; satis@eentegre.com |
+| 4 | foxs.digital, solofor.com (widget Dalga 1B) | Bu sitelere zaten Trendyol kâr aracı önerisi gidiyor | Ayrı e-posta atmayın; o teklife tek cümle ekleyin |
+
+### LinkedIn metni (kullanıcının sesiyle düzenlenmeli)
+Dropshipping rehberlerindeki kâr örneklerinde bir kalem hep eksik: iade.
+
+900 TL'lik örnek bir üründe sipariş başı kâr 101 TL görünüyor. %10 iadeyle 63,7 TL'ye iniyor, tedarikçi iadeyi almıyorsa 18,7 TL kalıyor.
+
+Bu hesabı ürün ürün yapan ücretsiz bir Excel şablonu hazırladım. Sipariş başı en fazla ne kadar reklam harcayabileceğinizi ve başabaş ROAS'ı da gösteriyor. Kayıt yok, e-posta yok.
+
+İndirme linki ilk yorumda.
+
+### Teklif metni (dropshipping veya pazaryeri kârlılık yazısı olan siteler)
+Konu: "<Yazı başlığı>" yazınız için ücretsiz Excel şablonu
+
+Merhaba <Ad>,
+"<Yazı başlığı>" yazınızı okudum, özellikle <somut bir nokta> kısmı faydalıydı. Okurlarınız için Türkçe ve ücretsiz bir ürün kârlılık şablonu hazırladım: iade dahil beklenen kârı, sipariş başı maksimum reklamı ve başabaş ROAS'ı ürün ürün hesaplıyor. Kayıt istemiyor.
+https://yusufbayrak.net/blog/dropshipping-nedir-nasil-yapilir/
+Uygun bulursanız yazınıza kaynak olarak ekleyebilirsiniz; karşılığında bir şey beklemiyorum.
+Yusuf Bayrak
