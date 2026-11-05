@@ -33,4 +33,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "seo-nedir-nasil-yapilir", en: "what-is-seo-how-to-do-it" },
   { tr: "dropshipping-nedir-nasil-yapilir", en: "what-is-dropshipping-how-it-works" },
   { tr: "crm-nedir-ne-ise-yarar", en: "what-is-crm-how-it-works" },
+  { tr: "google-ads-reklam-verme-rehberi", en: "how-to-run-google-ads-first-campaign" },
 ];

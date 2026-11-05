@@ -328,6 +328,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     resources: [
+      { label: "Google Ads Reklam Verme: İlk Kampanya Adım Adım", href: "/blog/google-ads-reklam-verme-rehberi/" },
       { label: "Google Ads Nedir, Nasıl Çalışır? Maliyet ve Örnek Hesap", href: "/blog/google-ads-nedir-nasil-calisir/" },
     ],
     relatedToolKey: "roas",
@@ -1802,6 +1803,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Google Ads Reklam Verme: İlk Kampanya Adım Adım", href: "/blog/google-ads-reklam-verme-rehberi/" },
       { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
       { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
@@ -4483,6 +4485,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Google Ads Reklam Verme: İlk Kampanya Adım Adım", href: "/blog/google-ads-reklam-verme-rehberi/" },
       { label: "SEO Nedir, Nasıl Yapılır? (reklamla karşılaştırma hesabı)", href: "/blog/seo-nedir-nasil-yapilir/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
@@ -5802,6 +5805,264 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "HubSpot: Starter planı", href: "https://www.hubspot.com/products/crm/starter", external: true },
       { label: "Pipedrive: Fiyatlar", href: "https://www.pipedrive.com/en/pricing", external: true },
       { label: "CostBench: HubSpot ve Zoho CRM fiyat karşılaştırması", href: "https://costbench.com/compare/hubspot-vs-zoho-crm/", external: true },
+    ],
+  },
+  {
+    slug: "google-ads-reklam-verme-rehberi",
+    seoTitle: "Google Ads Reklam Verme: İlk Kampanya Adım Adım (2026)",
+    title: "Google Ads Reklam Verme Rehberi: İlk Arama Kampanyası Adım Adım, Bütçe Örneği ve 14 Günlük Plan (2026)",
+    description:
+      "Google Ads'te reklam verme adım adım: hesap, dönüşüm ölçümü, kampanya ayarları, anahtar kelime, reklam metni, TL bütçe örneği ve ilk 14 günün karar planı.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Google Ads'te reklam vermek için hesabı Uzman Modu'nda açın, önce dönüşüm ölçümünü kurun, Arama kampanyası oluşturun, konum ve ağları ayarlayın, anahtar kelimeleri ve reklam metnini girin, bütçeyi ve ödemeyi tamamlayıp yayınlayın.",
+      "Hesap açarken seçtiğiniz saat dilimi ve para birimi sonradan değiştirilemez. Bu ayarı yanlış yaparsanız yeni hesap açmanız gerekir.",
+      "Bütçeyi lead ya da satış değerinden hesaplayın: Maks. TBM = Başabaş lead maliyeti × Dönüşüm oranı. Örnekte başabaş lead 500 TL, dönüşüm oranı %6 olduğundan tıklama başına 30 TL'ye kadar ödenebilir. 12 TL TBM ile 14 günlük test yaklaşık 6.300 TL tutar.",
+      "Yeni Arama kampanyalarında AI Max varsayılan olarak açıktır, anahtar kelime eşlemesi de varsayılan olarak geniştir. Az bütçeyle başlıyorsanız bu iki ayarı bilinçli seçin; Görüntülü Reklam Ağı kutusunu da kapalı tutun.",
+      "İlk 14 günde hedef kârlılık değil, öğrenmedir: ilk hafta arama terimlerini temizleyin, teklif stratejisini sık değiştirmeyin, kararı 2 hafta sonunda başabaş maliyete göre verin.",
+    ],
+    publishedAt: "2026-11-05",
+    readingMinutes: 12,
+    tags: ["Google Ads", "Google Reklam", "Arama Reklamları", "Reklam Bütçesi", "Dönüşüm Ölçümü", "Performans Pazarlama"],
+    sections: [
+      {
+        heading: "Google Ads'te nasıl reklam verilir? (Kısa cevap)",
+        paragraphs: [
+          "Google Ads'te reklam vermek için ads.google.com üzerinden hesap açar, reklamla ulaşmak istediğiniz hedefi seçer, kampanya türünü belirler, hedefleme ve bütçeyi girer, reklam metnini yazar ve ödeme bilgilerini ekleyip yayınlarsınız. Google'ın incelemesinden geçen reklam yayına girer.",
+          "İlk kampanya için en güvenli yol, zaten aranan bir ihtiyacı yakalayan Arama kampanyasıdır. Bu rehber kuruluma odaklanır ve aşağıdaki sekiz adımı izler. Açık artırmanın, kalite puanının ve maliyetin mantığını öğrenmek için önce Google Ads nedir yazımıza bakabilirsiniz.",
+        ],
+        bullets: [
+          "1. Hesabı açın (saat dilimi ve para birimine dikkat)",
+          "2. Dönüşüm ölçümünü kurun",
+          "3. Kampanya hedefini ve türünü seçin",
+          "4. Ağ, konum, dil ve AI Max ayarlarını yapın",
+          "5. Anahtar kelimeleri ve negatif kelimeleri ekleyin",
+          "6. Reklam metnini ve öğeleri yazın",
+          "7. Teklif stratejisini ve günlük bütçeyi belirleyin",
+          "8. Ödemeyi tamamlayıp yayınlayın, ilk 14 günü yönetin",
+        ],
+      },
+      {
+        heading: "Başlamadan önce ne hazırlanmalı?",
+        paragraphs: [
+          "Rakip rehberlerin çoğu doğrudan hesap açmaya gider. Oysa kampanyanın sonucunu belirleyen kararlar panele girmeden önce verilir. Şu dört şey hazır olmadan başlamayın:",
+        ],
+        bullets: [
+          "Başabaş maliyet: bir satış ya da lead için en fazla ne ödeyebileceğiniz",
+          "Tek bir dönüşüm tanımı: satın alma, form gönderimi ya da arama",
+          "Reklamdaki vaadi ilk ekranda karşılayan, mobilde hızlı açılan bir açılış sayfası",
+          "Reklamı gösterdiğiniz bölgede gerçekten hizmet verebildiğiniz bir teklif",
+        ],
+      },
+      {
+        heading: "Google Ads'e ne kadar bütçe ayırmalıyım? TL örneği",
+        paragraphs: [
+          "Google'ın zorunlu bir minimum bütçesi yoktur, ama anlamlı bir test için belirli sayıda dönüşüm gerekir. Bütçeyi başkalarının rakamından değil, kendi lead değerinizden hesaplayın.",
+          "Örnek (örnek tutarlar): bir ofis temizliği firmasında ortalama iş 4.000 TL, brüt marj %50, lead'den işe dönüş %25. Lead başına değer 4.000 × 0,50 × 0,25 = 500 TL'dir; bu sizin başabaş lead maliyetinizdir. Sitenizde tıklamaların %6'sı form ya da aramaya dönüşüyorsa ödeyebileceğiniz en yüksek TBM 500 × 0,06 = 30 TL olur. Anahtar Kelime Planlayıcı'daki tahmin 12 TL ise beklenen lead maliyeti 12 / 0,06 = 200 TL'dir ve hesap kârlı görünür.",
+          "Test bütçesi = Hedef dönüşüm × Beklenen lead maliyeti. Karar verebilmek için pratik bir eşik olarak (Google kuralı değil) 30 lead hedefleyelim: 30 × 200 = 6.000 TL. Bunu 14 güne bölerseniz günlük yaklaşık 450 TL gerekir. 14 günde 6.300 TL harcanır, yaklaşık 525 tıklama, 31 lead ve 8 iş beklenir. Bu da 15.750 TL brüt kâr, reklam sonrası 9.450 TL demektir.",
+          "Günde 150 TL ayırabiliyorsanız 14 günde 2.100 TL ile yaklaşık 175 tıklama ve 10 lead alırsınız. Bu veri otomatik öğrenme için azdır ama yine de başlanabilir: bir reklam grubu, 5–10 yüksek niyetli tam eşleme kelime ve dar bir bölge seçin, testi 4–6 haftaya yayın.",
+        ],
+        bullets: [
+          "Başabaş lead maliyeti = Ortalama iş × Brüt marj × Lead'den işe dönüş",
+          "Maks. TBM = Başabaş lead maliyeti × Dönüşüm oranı",
+          "Beklenen lead maliyeti = TBM / Dönüşüm oranı",
+          "Test bütçesi = Hedef dönüşüm × Beklenen lead maliyeti",
+          "Günlük bütçe = Test bütçesi / Test günü",
+        ],
+      },
+      {
+        heading: "Adım 1: Google Ads hesabı nasıl açılır?",
+        paragraphs: [
+          "ads.google.com adresine işletmenizin kullanacağı Google hesabıyla girin. Kurulum sizi Akıllı Mod'a yönlendirebilir; bu mod işlemlerin çoğunu otomatikleştirir ama anahtar kelime, ağ ve teklif kontrolünü sınırlar. Bu rehberdeki kurulum için akıştaki Uzman Modu'na geçiş seçeneğini kullanın. Arayüz etiketleri zaman zaman değişebilir.",
+          "En çok atlanan ayar faturalandırma ekranındadır. Google'a göre saat dilimi ve para birimi hesap kurulurken kalıcı olarak belirlenir. Sonradan farklı bir değer isterseniz yeni hesap açmanız gerekir ve eski hesabın geçmiş verisi taşınmaz. Türkiye'de çalışıyorsanız TRY ve İstanbul saatini kontrol edin; raporlar ve reklam takvimi bu saate göre çalışır.",
+          "Ajans ya da danışmanla çalışacaksanız hesabın sahibi siz olun; erişimi kullanıcı olarak verin. Reklam hesabının geçmiş verisi işletmenizin varlığıdır.",
+        ],
+      },
+      {
+        heading: "Adım 2: Dönüşüm ölçümü nasıl kurulur?",
+        paragraphs: [
+          "Ölçüm olmadan kampanya başlatmak en pahalı hatadır. Google'ın kendi rehberi de dönüşüm izlemeyi ilk adım olarak verir: akıllı teklif stratejileri dönüşüm verisi olmadan çalışmaz.",
+          "Kurulum için Hedefler menüsünde Özet'e gidin ve dönüşüm işlemi oluşturun. Web sitenizin alan adını taratın; Google etiketi ya da bağlı bir Analytics mülkü bulunursa site hazırdır, bulunmazsa etiketi ekleyin. Teşekkür sayfası gibi bir sayfa açılışını ölçmek için URL yöntemi yeterlidir. Buton tıklaması, işlem numarası ya da dinamik tutar için kod gerekir.",
+          "Her dönüşümü Birincil ya da İkincil olarak işaretleyin. Birincil dönüşümler teklif için kullanılır, ikincil olanlar yalnızca izlenir. Sayfa görüntüleme ya da sepete ekleme gibi zayıf sinyalleri birincil yaparsanız sistem size gerçekte değer üretmeyen eylemleri getirir. Kurulumdan sonra formu kendiniz doldurup Durum sütununu ve Tag Assistant'ı kontrol edin.",
+          "E-ticarette sipariş tutarını dönüşüm değeri olarak gönderin. Lead işlerinde sahte formlar ayrı bir sorundur: nitelikli lead'in sonradan CRM'den Google'a geri bildirilmesi, kampanyanın form dolduranı değil müşteriyi bulmasını sağlar.",
+        ],
+      },
+      {
+        heading: "Adım 3: Hangi kampanya türü seçilmeli?",
+        paragraphs: [
+          "Kampanyalar menüsünde artı işaretiyle yeni kampanya başlatın. Hedef olarak satış, potansiyel müşteri ya da web sitesi trafiğini seçin; Google, hedef rehberliği olmadan ilerleseniz bile en az bir dönüşüm hedefi ister. Kampanya türü olarak Arama'yı seçin.",
+          "Arama kampanyası ilk adım için uygundur, çünkü niyeti görünürdür ve hangi aramaya ne ödediğinizi okuyabilirsiniz. Performance Max daha geniş bir envantere yayılır ama sağlam dönüşüm verisi ister. Ürün feed'iniz varsa Alışveriş kampanyası e-ticaret için ayrıca değerlendirilir. Kural basit: önce talebi yakalayın, ölçümü oturtun, sonra genişleyin.",
+        ],
+      },
+      {
+        heading: "Adım 4: Kampanya ayarları nasıl yapılmalı?",
+        paragraphs: [
+          "Varsayılan ayarlar her zaman ilk kampanya için en iyisi değildir. Özellikle şu dört ayarı kendiniz seçin:",
+        ],
+        bullets: [
+          "Ağlar: Görüntülü Reklam Ağı kutusunu kapatın; arama niyetini ölçmek için bütçeyi karıştırmasın. Google arama ortaklarını da ilk testte kapalı tutabilirsiniz",
+          "Konum: yalnızca hizmet verdiğiniz yerleri seçin. Varsayılan 'Varlık veya ilgi' seçeneği, orada bulunmayan ama ilgi gösterenlere de ulaşır. Yerel hizmette 'Varlık' daha güvenlidir; gösterim sayısı genellikle düşer",
+          "Dil: müşterinizin Google'da kullandığı dili seçin. Google'ı İngilizce kullanan müşterileriniz varsa İngilizceyi de ekleyin",
+          "AI Max: yeni Arama kampanyalarında varsayılan olarak açıktır; özellikleri Anahtar kelimeler ve reklamlar bölümünden seçilir ve tamamen kapatılabilir",
+        ],
+      },
+      {
+        heading: "AI Max açık mı kalmalı?",
+        paragraphs: [
+          "Google, AI Max'i etkinleştiren reklamverenlerin benzer maliyetle yaklaşık %14 daha fazla dönüşüm aldığını söyler; bu Google'ın kendi beyanıdır ve sizin hesabınızı garanti etmez. Bizim önerimiz, az bütçeli ilk kampanyada arama terimi eşlemesini ve son URL genişletmeyi kapalı başlatıp hangi aramaların çalıştığını görmek, dönüşüm verisi oluştuktan sonra deney olarak açmaktır.",
+        ],
+      },
+      {
+        heading: "Adım 5: Anahtar kelimeler nasıl seçilir?",
+        paragraphs: [
+          "Reklam gruplarını niyete göre ayırın. Ofis temizliği örneğinde 'ofis temizliği fiyatları' ile 'ofis temizlik firması istanbul' aynı gruba girebilir, ama 'inşaat sonrası temizlik' ayrı bir hizmettir ve ayrı reklam ile sayfa ister. İlk kampanyada 1–3 reklam grubu ve grup başına 5–15 kelime yeterlidir.",
+          "Google'ın arama kampanyası rehberine göre yeni kelimelerde varsayılan eşleme geniştir. Geniş eşleme akıllı teklif ve iyi bir negatif listeyle iyi çalışabilir; ama az bütçede sizi alakasız aramalara taşıyabilir. Küçük bütçede tam ve sıralı eşlemeyle başlayın. Tam eşleme için kelimeyi köşeli paranteze, sıralı eşleme için tırnak içine alın.",
+          "Anahtar Kelime Planlayıcı'yla aylık aramayı ve teklif aralığını görün. Teklif aralığı az önce hesapladığınız maks. TBM'nin çok üstündeyse daha uzun ve niyeti net kelimelere gidin. Yayına girmeden hesap düzeyinde bir negatif liste açın; ilk günden boşa giden tıklamaları keser.",
+        ],
+        bullets: [
+          "Başlangıç negatifleri: ücretsiz, bedava, nedir, nasıl yapılır, iş ilanı, iş başvurusu, maaş, staj, eğitim, kurs, pdf, örnek",
+          "Hizmet vermediğiniz yerleri ve sunmadığınız ürünleri ekleyin",
+          "Rakip marka adlarını ayrı bir kampanyada ve bilinçli olarak test edin",
+        ],
+      },
+      {
+        heading: "Adım 6: Google Ads reklam metni nasıl yazılır?",
+        paragraphs: [
+          "Arama reklamlarının standardı duyarlı arama reklamıdır (RSA). Google, 30 karakterlik en fazla 15 başlık ve 90 karakterlik en fazla 4 açıklama alır; bunları aramaya göre birleştirir. Bu yüzden her başlık tek başına anlam taşımalı, en az birkaç başlıkta anahtar kelime geçmelidir.",
+          "Başlıkları anahtar kelime, fayda, kanıt, teklif ve eylem olarak beş grupta düşünün. Reklamdaki kampanya ya da fiyat açılış sayfasında da görünmelidir. Google'ın kurulum sayfası reklam grubu başına en az 3 reklam önerir; yeni hesapta ilk reklamın dolu olması, sayısından daha önemlidir.",
+          "Ayrıca site bağlantısı, açıklama metni ve arama öğelerini ekleyin. Öğeler ücretsizdir ve yalnızca sonucu iyileştirmesi beklendiğinde gösterilir; Google hesap genelinde en az 4 öğe türü önerir.",
+        ],
+        bullets: [
+          "Örnek başlık: Ofis Temizliği İstanbul (23 karakter)",
+          "Örnek başlık: Aynı Gün Ücretsiz Keşif (23 karakter)",
+          "Örnek başlık: Sigortalı Temizlik Ekibi (24 karakter)",
+          "Örnek başlık: Hemen Fiyat Teklifi Alın (24 karakter)",
+          "Örnek açıklama: Ofisiniz için haftalık ya da aylık temizlik planı. Ücretsiz keşif, sabit aylık fiyat. (85 karakter)",
+        ],
+      },
+      {
+        heading: "Adım 7: Teklif stratejisi ve günlük bütçe nasıl belirlenir?",
+        paragraphs: [
+          "Google'ın önerisi nettir: dönüşüm ölçümü yoksa Tıklamaları en üst düzeye çıkarma kullanın; ölçüm kuruluysa dönüşüme dayalı stratejiye geçin. Dönüşümlerin değeri aynıysa Dönüşümleri en üst düzeye çıkarma, değerleri farklıysa Dönüşüm değerini en üst düzeye çıkarma seçilir.",
+          "İlk kampanyada hedef EBM ya da hedef ROAS girmeyin. Sıkı hedefler ve düşük bütçeler öğrenmeyi yavaşlatır. Önce 2–3 hafta veri toplayın, gerçekleşen ortalamayı görün, sonra hedefi buna yakın bir yerden başlatın. E-ticarette hedefi marjınızdan hesaplamak için hedef ROAS rehberine bakın.",
+          "Günlük bütçe, hesapladığınız tutardır. Google yoğun günlerde bunun 2 katına kadar harcayabilir ama ay toplamı günlük bütçe × 30,4'ü geçmez. 450 TL günlük bütçe, bazı günler 900 TL harcayabilir; bu hata değildir.",
+        ],
+      },
+      {
+        heading: "Adım 8: Ödeme, inceleme ve yayın",
+        paragraphs: [
+          "Google Ads'te iki temel ödeme ayarı vardır. Sonradan ödemede reklamlar yayınlanır, her ayın ilk gününde ya da belirlenen eşiğe ulaşıldığında ödeme alınır. Ön ödemede önceden bakiye yüklersiniz, bakiye bitince reklamlar durur. Kullanılabilir yöntemler ülkeye ve para birimine göre değiştiği için güncel seçeneklere hesabınızın Faturalandırma bölümünden bakın.",
+          "Reklamınız yayınlanmadan önce politika incelemesinden geçer. Google'a göre çoğu reklam bir iş günü içinde incelenir; karmaşık incelemeler daha uzun sürebilir. Reklam iki tam iş gününden uzun süre incelemedeyse durumunu kontrol edin, bir haftayı geçerse destekle iletişime geçin. Reddedilen reklamda bildirilen nedeni düzeltip yeniden gönderin; Google sizden ayrıca reklamveren doğrulaması da isteyebilir.",
+        ],
+      },
+      {
+        heading: "İlk 14 günde ne yapmalı?",
+        paragraphs: [
+          "Yayına girdikten sonraki iki hafta, sonuçtan çok temizlik dönemidir. Akıllı teklifte 'Öğreniyor' durumu en fazla 7 gün sürer ve reklamlar bu sırada normal yayınlanır. Google, performansı değerlendirmek için 2 dönüşüm döngüsü ya da 2 haftadan uzun olanı beklemenizi önerir.",
+          "Öğrenmeyi anahtar kelime ekleme-çıkarma, strateji değiştirme ve dönüşüm hedefini değiştirme gibi yapısal değişiklikler tetikler. Bütçe, hedef, reklam metni ya da hedefleme değişikliği bu durumu başlatmaz ama yine de aynı döngüde sık değişiklikten kaçının.",
+          "14. günde karar kuralı: lead maliyeti başabaşın altındaysa bütçeyi kademeli artırın. Başabaşın üstünde ama lead kalitesi iyiyse dönüşüm oranını ve açılış sayfasını düzeltin. Tıklama var, dönüşüm yoksa önce ölçümü, sonra sayfayı kontrol edin. Gösterim yoksa kelime hacmini, teklifi ve onay durumunu kontrol edin.",
+        ],
+        bullets: [
+          "1–2. gün: reklam onayını, gösterimleri, ödemeyi ve test dönüşümünü kontrol edin",
+          "3. gün: Arama terimleri raporunu okuyun, alakasız aramaları negatife ekleyin",
+          "7. gün: en çok harcayan terimleri ve dönüşmeyen kelimeleri inceleyin",
+          "10. gün: reklam öğelerini ve açılış sayfası mesajını karşılaştırın",
+          "14. gün: lead maliyetini başabaşla karşılaştırın, lead kalitesini satış ekibinden alın",
+        ],
+      },
+      {
+        heading: "Reklamım neden yayınlanmıyor ya da harcamıyor?",
+        paragraphs: [
+          "Kampanya kurulu görünüyor ama gösterim yoksa nedenini şu sırayla arayın:",
+        ],
+        bullets: [
+          "Reklam incelemede ya da reddedilmiş olabilir",
+          "Ödeme yöntemi doğrulanmamış ya da reddedilmiş olabilir",
+          "Kelimeler çok dar eşlemede ve aylık aramaları az olabilir",
+          "Maks. TBM ya da hedef EBM açık artırmaya girmek için düşük olabilir",
+          "Negatif kelime, asıl kelimeyi engelliyor olabilir",
+          "Konum veya reklam takvimi çok dar olabilir",
+          "Kendi reklamınızı aramayın: tekrar aramalar reklamı göstermeyebilir, doğru teşhis için Reklam Önizleme aracını kullanın",
+        ],
+      },
+      {
+        heading: "En sık yapılan 7 hata",
+        paragraphs: [
+          "Yeni hesaplarda bütçeyi en çok yakan hatalar genellikle kurulum sırasında yapılır:",
+        ],
+        bullets: [
+          "Dönüşüm ölçmeden kampanyayı başlatmak",
+          "Akıllı Mod'da kalıp arama terimlerini görmeden para harcamak",
+          "Görüntülü Reklam Ağı kutusunu açık bırakmak",
+          "Yalnızca geniş eşleme ve negatifsiz başlamak",
+          "Ana sayfaya trafik gönderip vaadi sayfada karşılamamak",
+          "Her gün teklif ya da yapı değiştirmek",
+          "Panel ROAS'ına bakıp kâr hesabını yapmamak",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Google Ads'te reklam vermek ücretli mi?",
+        answer:
+          "Hesap açmak ücretsizdir; yalnızca reklam maliyetini ödersiniz. Arama reklamlarında genellikle tıklama olduğunda ücret alınır. Zorunlu bir minimum bütçe yoktur, ama test için kendi lead ya da satış maliyetinizden hesaplanan yeterli bir bütçe gerekir.",
+      },
+      {
+        question: "Google Ads reklamı ne kadar sürede yayına girer?",
+        answer:
+          "Google'a göre çoğu reklam bir iş günü içinde incelenir. Reklam iki tam iş gününden uzun süre incelemede kalırsa durumunu kontrol edin, bir haftayı geçerse Google Ads desteğine başvurun.",
+      },
+      {
+        question: "Google reklamı için günlük ne kadar harcamalıyım?",
+        answer:
+          "Sabit bir rakam yoktur. Test bütçesi = hedef dönüşüm × beklenen lead maliyeti formülüyle hesaplayın ve test gününe bölün. Örnekte 30 lead × 200 TL = 6.000 TL, 14 günde günlük yaklaşık 450 TL eder. Yoğun günlerde harcama günlük bütçenin 2 katına çıkabilir, ama ay toplamı bütçe × 30,4'ü geçmez.",
+      },
+      {
+        question: "Web sitem olmadan Google Ads reklamı verebilir miyim?",
+        answer:
+          "Bazı kampanya türlerinde telefon araması ya da Google İşletme Profili üzerinden reklam verilebilir. Ancak dönüşümü ölçmek ve reklam mesajını kontrol etmek için, tek sayfalık da olsa bir açılış sayfası kullanmak çok daha sağlıklıdır.",
+      },
+      {
+        question: "Akıllı Mod mu, Uzman Modu mu kullanmalıyım?",
+        answer:
+          "Akıllı Mod kurulumu kolaylaştırır ama anahtar kelime, ağ ve teklif kontrolünü sınırlar. Bu yüzden kârlılığını ölçmek isteyen işletmeler için Uzman Modu daha uygundur. Hesabınızı kendiniz yönetecek vaktiniz yoksa Akıllı Mod başlangıç olabilir, ama arama terimlerini ve sonuçları yine de takip edin.",
+      },
+    ],
+    howTo: {
+      name: "Google Ads'te ilk arama kampanyası nasıl kurulur?",
+      description: "Google Ads hesabı açmaktan ilk kampanyayı yayınlamaya kadar sekiz adım.",
+      steps: [
+        { name: "Hesabı açın", text: "ads.google.com üzerinden Uzman Modu'nda hesap açın; saat dilimi ve para birimi kalıcı olduğu için doğru seçin." },
+        { name: "Dönüşüm ölçümünü kurun", text: "Hedefler menüsünden dönüşüm işlemi oluşturun, Google etiketini ekleyin, asıl hedefi Birincil yapın ve test edin." },
+        { name: "Kampanya türünü seçin", text: "Hedefinizi belirleyin ve ilk kampanya için Arama türünü seçin." },
+        { name: "Ayarları yapın", text: "Görüntülü Reklam Ağı'nı kapatın, konum seçeneğini ve dili belirleyin, AI Max özelliklerini bilinçli seçin." },
+        { name: "Anahtar kelimeleri ekleyin", text: "Niyete göre 1–3 reklam grubu kurun, eşleme türlerini seçin ve başlangıç negatif listesini ekleyin." },
+        { name: "Reklam metnini yazın", text: "En fazla 15 başlık ve 4 açıklama girin, site bağlantısı ve açıklama metni ekleyin." },
+        { name: "Teklif ve bütçeyi belirleyin", text: "Dönüşüme dayalı strateji seçin, hedef girmeden başlayın ve günlük bütçeyi kendi hesabınızdan yazın." },
+        { name: "Yayınlayın ve yönetin", text: "Ödemeyi tamamlayın, incelemeyi bekleyin, ilk 14 gün arama terimlerini temizleyin ve kararı başabaşa göre verin." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "Google Ads Nedir, Nasıl Çalışır?", href: "/blog/google-ads-nedir-nasil-calisir/" },
+      { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "Google Ads'te Performansı Katlamanın 7 Yolu", href: "/blog/google-ads-performans-optimizasyonu/" },
+      { label: "CPL Nedir? Lead Başı Maliyet", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
+      { label: "CRM Nedir, Ne İşe Yarar?", href: "/blog/crm-nedir-ne-ise-yarar/" },
+      { label: "Google Ads Yardım: Arama kampanyası oluşturma", href: "https://support.google.com/google-ads/answer/9510373?hl=en-AU", external: true },
+      { label: "Google Ads Yardım: Web dönüşümlerini kurma", href: "https://support.google.com/google-ads/answer/16560108?hl=en", external: true },
+      { label: "Google Ads Yardım: Saat dilimi ve para birimi", href: "https://support.google.com/google-ads/answer/9842104?hl=en", external: true },
+      { label: "Google Ads Yardım: Konum seçenekleri", href: "https://support.google.com/google-ads/answer/1722038?hl=en", external: true },
+      { label: "Google Ads Yardım: AI Max kurulumu", href: "https://support.google.com/google-ads/answer/15909989?hl=en", external: true },
+      { label: "Google Ads Yardım: Akıllı Teklif öğrenmesi", href: "https://support.google.com/google-ads/answer/13020501?hl=en", external: true },
+      { label: "Google Ads Yardım: Reklam inceleme süreci", href: "https://support.google.com/google-ads/answer/1722120?hl=en", external: true },
+      { label: "Google Ads Yardım: Faturalandırma seçenekleri", href: "https://support.google.com/google-ads/answer/1704418?hl=tr", external: true },
     ],
   },
 ];
@@ -7280,6 +7541,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run Google Ads: First Campaign Step by Step", href: "/en/blog/how-to-run-google-ads-first-campaign/" },
       { label: "How to Run Instagram Ads: Cost and Budget", href: "/en/blog/how-to-run-instagram-ads/" },
       { label: "What Is CPL? Cost Per Lead Formula", href: "/en/blog/what-is-cpl-cost-per-lead/" },
       { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
@@ -9834,6 +10096,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run Google Ads: First Campaign Step by Step", href: "/en/blog/how-to-run-google-ads-first-campaign/" },
       { label: "What Is SEO and How Do You Do It? (ads comparison math)", href: "/en/blog/what-is-seo-how-to-do-it/" },
       { label: "Advertising Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
@@ -11051,6 +11314,262 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Pipedrive: Pricing", href: "https://www.pipedrive.com/en/pricing", external: true },
       { label: "CostBench: HubSpot vs Zoho CRM pricing", href: "https://costbench.com/compare/hubspot-vs-zoho-crm/", external: true },
       { label: "KVKK decision 2022/107", href: "https://www.kvkk.gov.tr/Icerik/7557/2022-107", external: true },
+    ],
+  },
+  {
+    slug: "how-to-run-google-ads-first-campaign",
+    seoTitle: "How to Run Google Ads: First Campaign Step by Step (2026)",
+    title: "How to Run Google Ads: Your First Search Campaign Step by Step, With a Budget Example and 14-Day Plan (2026)",
+    description:
+      "How to run Google Ads step by step: account setup, conversion tracking, campaign settings, keywords, ad copy, a budget example and a 14-day decision plan.",
+    category: "performans-pazarlama",
+    tldr: [
+      "To run Google Ads, open an account in Expert Mode, set up conversion tracking first, create a Search campaign, set networks and locations, add keywords and ad copy, then finish budget and billing and publish.",
+      "The time zone and currency you pick at account creation cannot be changed later. Get them wrong and you need a new account.",
+      "Work the budget back from lead value: Max CPC = Break-even cost per lead × Conversion rate. In the example, a $50 break-even lead at a 6% conversion rate supports a CPC up to $3. At a $1.50 CPC, a 14-day test costs about $770.",
+      "New Search campaigns have AI Max on by default, and keywords default to broad match. On a small budget choose both deliberately, and keep the Display Network box off.",
+      "The first 14 days are for learning, not for peak profit: clean search terms in week one, avoid constant strategy changes and decide after two weeks against your break-even cost.",
+    ],
+    publishedAt: "2026-11-05",
+    readingMinutes: 11,
+    tags: ["Google Ads", "Search Ads", "PPC", "Ad Budget", "Conversion Tracking", "Performance Marketing"],
+    sections: [
+      {
+        heading: "How do you run ads on Google? (Short answer)",
+        paragraphs: [
+          "To advertise on Google, you create an account at ads.google.com, choose your goal and campaign type, set targeting and budget, write your ad, add payment details and publish. The ad goes live once it passes Google's review.",
+          "For a first campaign, the safest route is a Search campaign that captures demand that already exists. This guide focuses on setup and follows the eight steps below. For how auctions, Quality Score and costs work, read our What Is Google Ads guide first.",
+        ],
+        bullets: [
+          "1. Create the account (mind time zone and currency)",
+          "2. Set up conversion tracking",
+          "3. Choose the campaign goal and type",
+          "4. Set networks, locations, language and AI Max",
+          "5. Add keywords and negative keywords",
+          "6. Write ad copy and assets",
+          "7. Set bidding and daily budget",
+          "8. Finish billing, publish and manage the first 14 days",
+        ],
+      },
+      {
+        heading: "What should you prepare first?",
+        paragraphs: [
+          "Most guides jump straight into account creation, yet the decisions that shape results come before you open the interface. Have these four things ready:",
+        ],
+        bullets: [
+          "Break-even cost: the most you can pay for a sale or lead",
+          "One conversion definition: purchase, form submission or call",
+          "A fast mobile landing page that delivers the ad's promise above the fold",
+          "An offer you can really fulfil in the locations you target",
+        ],
+      },
+      {
+        heading: "How much should you budget for Google Ads? Worked example",
+        paragraphs: [
+          "Google sets no required minimum, but a meaningful test needs a certain number of conversions. Calculate the budget from your own lead value, not someone else's number.",
+          "Example (illustrative figures): an office cleaning firm has an average job of $400, a 50% gross margin and a 25% lead-to-job rate. Lead value is 400 × 0.50 × 0.25 = $50, which is your break-even cost per lead. If 6% of clicks become a form or call, the highest CPC you can pay is 50 × 0.06 = $3. If Keyword Planner estimates $1.50, expected cost per lead is 1.50 / 0.06 = $25 and the math works.",
+          "Test budget = Target conversions × Expected cost per lead. Using 30 leads as a practical threshold (not a Google rule): 30 × 25 = $750. Over 14 days that is about $55 a day. You spend $770 and can expect around 513 clicks, 31 leads and 8 jobs, or $1,540 of gross profit and $770 after ads.",
+          "At $15 a day you spend $210 in 14 days for roughly 140 clicks and 8 leads. That is too little for automated learning, but you can still start: use one ad group, 5–10 high-intent exact match keywords and a narrow area, and spread the test over 4–6 weeks.",
+        ],
+        bullets: [
+          "Break-even cost per lead = Average job × Gross margin × Lead-to-job rate",
+          "Max CPC = Break-even cost per lead × Conversion rate",
+          "Expected cost per lead = CPC / Conversion rate",
+          "Test budget = Target conversions × Expected cost per lead",
+          "Daily budget = Test budget / Test days",
+        ],
+      },
+      {
+        heading: "Step 1: How do you create a Google Ads account?",
+        paragraphs: [
+          "Sign in at ads.google.com with the Google account your business will use. Setup may route you into Smart Mode, which automates most work but limits keyword, network and bidding control. For this guide, use the switch to Expert Mode in the flow. Interface labels can change over time.",
+          "The most overlooked setting sits on the billing screen. Google says time zone and currency are permanently set at account creation. If you need different values later, you must open a new account and historical data does not transfer.",
+          "If you work with an agency or consultant, own the account yourself and grant user access. The account's history is a business asset.",
+        ],
+      },
+      {
+        heading: "Step 2: How do you set up conversion tracking?",
+        paragraphs: [
+          "Launching without measurement is the most expensive mistake. Google's own guide lists conversion tracking first, because Smart Bidding cannot work without it.",
+          "In the Goals menu, open Summary and create a conversion action. Scan your domain: if a Google tag or linked Analytics property is found, the site is ready; if not, add the tag. To measure a page load such as a thank-you page, the URL method is enough. Button clicks, transaction IDs and dynamic values need code.",
+          "Mark each conversion as Primary or Secondary. Primary conversions are used for bidding; secondary ones are for observation only. Making weak signals such as page views or add-to-cart primary teaches the system to find actions with little value. After setup, submit the form yourself and check the Status column and Tag Assistant.",
+          "For ecommerce, pass order value as conversion value. For leads, spam forms are a separate issue: feeding qualified outcomes back from your CRM helps the campaign find customers, not form fillers.",
+        ],
+      },
+      {
+        heading: "Step 3: Which campaign type should you choose?",
+        paragraphs: [
+          "Start a new campaign with the plus button in the Campaigns menu. Choose sales, leads or website traffic as the objective; Google requires at least one conversion goal even if you skip goal guidance. Select Search as the campaign type.",
+          "Search suits a first campaign because intent is visible and you can read which query cost what. Performance Max spreads across more inventory but needs solid conversion data. If you have a product feed, consider Shopping separately. The rule is simple: capture demand first, get measurement right, then expand.",
+        ],
+      },
+      {
+        heading: "Step 4: Which campaign settings matter?",
+        paragraphs: [
+          "Defaults are not always best for a first campaign. Choose these four settings yourself:",
+        ],
+        bullets: [
+          "Networks: untick the Display Network so it does not blend into your search test. You can also leave Google search partners off at first",
+          "Locations: target only where you serve. The default 'Presence or interest' also reaches people who show interest without being there. 'Presence' is safer for local services, though impressions usually fall",
+          "Languages: pick the languages your customers use on Google",
+          "AI Max: on by default for new Search campaigns; features are chosen under Keywords and ads and can be fully turned off",
+        ],
+      },
+      {
+        heading: "Should AI Max stay on?",
+        paragraphs: [
+          "Google says advertisers who activate it typically see 14% more conversions or conversion value at a similar CPA or ROAS. That is Google's own claim and no guarantee for your account. Our suggestion for a small first campaign is to start with search term matching and final URL expansion off, learn which queries work, then test them as an experiment once you have conversion data.",
+        ],
+      },
+      {
+        heading: "Step 5: How do you choose keywords?",
+        paragraphs: [
+          "Split ad groups by intent. For office cleaning, 'office cleaning prices' and 'office cleaning company chicago' can share a group, but 'post-construction cleaning' is a different service and needs its own ad and page. One to three ad groups and 5–15 keywords per group are enough to start.",
+          "Google's Search campaign guide lists broad as the default match type. Broad match can work well with Smart Bidding and a good negative list, but on a small budget it can take you to irrelevant searches. On a small budget, start with exact and phrase match: brackets for exact, quotation marks for phrase.",
+          "Use Keyword Planner to check monthly searches and bid ranges. If the range sits far above your max CPC, move to longer, clearer-intent terms. Create an account-level negative list before launch to cut wasted clicks from day one.",
+        ],
+        bullets: [
+          "Starter negatives: free, what is, how to, jobs, careers, salary, internship, course, training, pdf, template",
+          "Add places you do not serve and products you do not sell",
+          "Test competitor names separately and deliberately",
+        ],
+      },
+      {
+        heading: "Step 6: How do you write Google Ads copy?",
+        paragraphs: [
+          "The standard format is the responsive search ad (RSA). It takes up to 15 headlines of 30 characters and up to 4 descriptions of 90 characters, and Google combines them per search. So each headline must stand alone and several should include the keyword.",
+          "Think of headlines in five groups: keyword, benefit, proof, offer and action. Any offer or price in the ad should also appear on the landing page. Google's setup page recommends at least 3 ads per ad group; on a new account, one fully built ad matters more than the count.",
+          "Also add sitelinks, callouts and call assets. Assets are free and show only when predicted to improve results; Google recommends at least 4 asset types across your account.",
+        ],
+        bullets: [
+          "Sample headline: Office Cleaning Chicago (23 characters)",
+          "Sample headline: Free Same-Day Site Visit (24 characters)",
+          "Sample headline: Insured Cleaning Crews (22 characters)",
+          "Sample headline: Get a Quote Today (17 characters)",
+          "Sample description: Weekly or monthly office cleaning plans. Free site visit and a fixed monthly price. (83 characters)",
+        ],
+      },
+      {
+        heading: "Step 7: How do you set bidding and daily budget?",
+        paragraphs: [
+          "Google's advice is clear: without conversion tracking use Maximize clicks; once tracking works, move to a conversion-based strategy. If conversions are equally valuable, use Maximize conversions; if values differ, use Maximize conversion value.",
+          "Do not enter a target CPA or target ROAS in your first campaign. Tight targets and low budgets slow ramp-up. Collect data for 2–3 weeks, see your real average, then start the target near it. For ecommerce targets, see our target ROAS guide.",
+          "Your daily budget is the figure you calculated. Google can spend up to 2× on busy days, but the monthly total stays within daily budget × 30.4. A $55 daily budget may spend $110 on some days; that is not a bug.",
+        ],
+      },
+      {
+        heading: "Step 8: Billing, review and launch",
+        paragraphs: [
+          "There are two main payment settings. With automatic payments, ads run first and you are charged on the first of the month or when you reach your threshold. With manual payments, you add funds in advance and ads stop when they run out. Available methods vary by country and currency, so check your account's Billing section.",
+          "Ads pass a policy review before serving. Google says most ads are reviewed within one business day, though complex reviews take longer. Check the status after more than 2 full business days and contact support after a week. If an ad is disapproved, fix the stated reason and resubmit. Google may also ask for advertiser verification.",
+        ],
+      },
+      {
+        heading: "What should you do in the first 14 days?",
+        paragraphs: [
+          "The two weeks after launch are for cleanup more than results. The Smart Bidding 'Learning' status lasts at most 7 days and ads run normally during it. Google suggests evaluating over 2 conversion cycles or 2 weeks, whichever is longer.",
+          "Structural changes trigger learning: adding or removing keywords, changing strategy, changing conversion goals. Budget, target, creative and targeting changes do not start it, but avoid repeated changes in one conversion cycle anyway.",
+          "Day-14 decision rule: if cost per lead is below break-even, raise budget gradually. If it is above break-even but lead quality is good, work on conversion rate and the landing page. Clicks with no conversions mean check tracking, then the page. No impressions means check search volume, bids and approval status.",
+        ],
+        bullets: [
+          "Days 1–2: check approval, impressions, billing and a test conversion",
+          "Day 3: read the Search terms report and add irrelevant queries as negatives",
+          "Day 7: review top-spending terms and non-converting keywords",
+          "Day 10: compare ad assets with the landing page message",
+          "Day 14: compare cost per lead with break-even and get lead quality from sales",
+        ],
+      },
+      {
+        heading: "Why isn't my ad running or spending?",
+        paragraphs: [
+          "If the campaign looks live but has no impressions, check in this order:",
+        ],
+        bullets: [
+          "The ad may be under review or disapproved",
+          "The payment method may be unverified or declined",
+          "Keywords may be too narrow with little search volume",
+          "Max CPC or target CPA may be too low to enter the auction",
+          "A negative keyword may be blocking your main keyword",
+          "Location or ad schedule may be too narrow",
+          "Do not keep searching for your own ad: use the Ad Preview tool to diagnose",
+        ],
+      },
+      {
+        heading: "The 7 most common mistakes",
+        paragraphs: [
+          "The mistakes that burn the most budget on new accounts usually happen during setup:",
+        ],
+        bullets: [
+          "Launching without conversion tracking",
+          "Staying in Smart Mode and spending without seeing search terms",
+          "Leaving the Display Network box on",
+          "Starting on broad match only with no negatives",
+          "Sending traffic to the homepage without delivering the promise",
+          "Changing bids or structure every day",
+          "Reading platform ROAS without doing the profit math",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Does it cost money to advertise on Google?",
+        answer:
+          "Creating an account is free; you pay only for ads. Search ads are usually charged per click. There is no required minimum, but a test needs a sufficient budget based on your own cost per lead or sale.",
+      },
+      {
+        question: "How long until a Google ad goes live?",
+        answer:
+          "Google says most ads are reviewed within one business day. Check the status if an ad stays in review for more than 2 full business days, and contact Google Ads support after a week.",
+      },
+      {
+        question: "How much should I spend per day on Google Ads?",
+        answer:
+          "There is no fixed number. Use test budget = target conversions × expected cost per lead, then divide by test days. In the example, 30 leads × $25 = $750, or about $55 a day over 14 days. Busy days can spend up to 2× the daily budget, but the month stays within budget × 30.4.",
+      },
+      {
+        question: "Can I run Google Ads without a website?",
+        answer:
+          "Some campaign types can run through phone calls or a Google Business Profile. Still, even a one-page landing page gives you far better control over messaging and conversion measurement.",
+      },
+      {
+        question: "Should I use Smart Mode or Expert Mode?",
+        answer:
+          "Smart Mode simplifies setup but limits keyword, network and bidding control, so Expert Mode suits businesses that want to measure profitability. If you have no time to manage an account, Smart Mode can be a start, but keep reviewing results.",
+      },
+    ],
+    howTo: {
+      name: "How to set up your first Google Ads Search campaign",
+      description: "Eight steps from creating an account to publishing your first campaign.",
+      steps: [
+        { name: "Create the account", text: "Create an account in Expert Mode at ads.google.com and choose time zone and currency carefully, since they are permanent." },
+        { name: "Set up conversion tracking", text: "Create a conversion action in Goals, add the Google tag, make your main goal Primary and test it." },
+        { name: "Choose the campaign type", text: "Pick your objective and select Search for the first campaign." },
+        { name: "Configure settings", text: "Turn off the Display Network, set location option and language, and choose AI Max features deliberately." },
+        { name: "Add keywords", text: "Build 1–3 ad groups by intent, choose match types and add a starter negative list." },
+        { name: "Write the ad", text: "Add up to 15 headlines and 4 descriptions plus sitelinks and callouts." },
+        { name: "Set bidding and budget", text: "Choose a conversion-based strategy with no target at first and enter your calculated daily budget." },
+        { name: "Publish and manage", text: "Finish billing, wait for review, clean search terms for 14 days and decide against break-even." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "What Is Google Ads?", href: "/en/blog/what-is-google-ads-how-it-works/" },
+      { label: "How to Set Target ROAS", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "What Is CPL?", href: "/en/blog/what-is-cpl-cost-per-lead/" },
+      { label: "What Is CRM?", href: "/en/blog/what-is-crm-how-it-works/" },
+      { label: "Google Ads Help: Create a Search campaign", href: "https://support.google.com/google-ads/answer/9510373?hl=en-AU", external: true },
+      { label: "Google Ads Help: Set up web conversions", href: "https://support.google.com/google-ads/answer/16560108?hl=en", external: true },
+      { label: "Google Ads Help: Time zone and currency", href: "https://support.google.com/google-ads/answer/9842104?hl=en", external: true },
+      { label: "Google Ads Help: Advanced location options", href: "https://support.google.com/google-ads/answer/1722038?hl=en", external: true },
+      { label: "Google Ads Help: Set up AI Max", href: "https://support.google.com/google-ads/answer/15909989?hl=en", external: true },
+      { label: "Google Ads Help: Smart Bidding learning", href: "https://support.google.com/google-ads/answer/13020501?hl=en", external: true },
+      { label: "Google Ads Help: Ad review process", href: "https://support.google.com/google-ads/answer/1722120?hl=en", external: true },
     ],
   },
 ];

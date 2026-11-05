@@ -89,6 +89,7 @@
 - [SEO Nedir, Nasıl Yapılır? Google'ın İşleyişi, 7 Adımlı Uygulama, AI Aramaları ve Kendini Ödeme Hesabı (2026)](https://yusufbayrak.net/blog/seo-nedir-nasil-yapilir/): SEO, sitenizi Google'ın ücretsiz sonuçlarında öne çıkarma işidir. 7 adımlı uygulama, AI Overviews etkisi, SEO efsaneleri ve kendini ödeme hesabı bu rehberde.
 - [Dropshipping Nedir, Türkiye'de Nasıl Yapılır? İade Dahil Kâr Hesabı, Tedarikçi Seçimi ve Yasal Sorumluluklar (2026)](https://yusufbayrak.net/blog/dropshipping-nedir-nasil-yapilir/): Dropshipping, stok tutmadan satıp ürünü tedarikçiye gönderttiğiniz modeldir. Türkiye'de nasıl yapılır, iade dahil kâr hesabı ve tedarikçi seçimi bu yazıda.
 - [CRM Nedir, Ne İşe Yarar? Türleri, Fiyatları, Geri Ödeme Hesabı ve KOBİ İçin Seçim Rehberi (2026)](https://yusufbayrak.net/blog/crm-nedir-ne-ise-yarar/): CRM, müşteri ve satış verisini tek yerde yöneten sistemdir. Ne işe yarar, türleri, fiyatları, geri ödeme hesabı, Excel'den geçiş ve KOBİ için seçim rehberi.
+- [Google Ads Reklam Verme Rehberi: İlk Arama Kampanyası Adım Adım, Bütçe Örneği ve 14 Günlük Plan (2026)](https://yusufbayrak.net/blog/google-ads-reklam-verme-rehberi/): Google Ads'te reklam verme adım adım: hesap, dönüşüm ölçümü, kampanya ayarları, anahtar kelime, reklam metni, TL bütçe örneği ve ilk 14 günün karar planı.
 
 ## English
 
@@ -154,6 +155,7 @@
 - [What Is SEO and How Do You Do It? How Google Works, a 7-Step Process, AI Search and the Payback Math (2026)](https://yusufbayrak.net/en/blog/what-is-seo-how-to-do-it/): SEO earns your site visibility in Google's unpaid results. Learn the 7-step process, the real effect of AI Overviews, common myths and when SEO pays for itself.
 - [What Is Dropshipping? How It Works, Profit Math Including Returns, Supplier Checks and Seller Responsibilities (2026)](https://yusufbayrak.net/en/blog/what-is-dropshipping-how-it-works/): Dropshipping means selling without stock while a supplier ships to the customer. See how it works, the profit math including returns, and supplier checks.
 - [What Is CRM? How It Works, Types, Pricing, Payback Math and How to Choose One (2026)](https://yusufbayrak.net/en/blog/what-is-crm-how-it-works/): CRM keeps customer and sales data in one system. Learn how it works, the types, 2026 pricing, a payback formula, how to choose one and how to move off Excel.
+- [How to Run Google Ads: Your First Search Campaign Step by Step, With a Budget Example and 14-Day Plan (2026)](https://yusufbayrak.net/en/blog/how-to-run-google-ads-first-campaign/): How to run Google Ads step by step: account setup, conversion tracking, campaign settings, keywords, ad copy, a budget example and a 14-day decision plan.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim
