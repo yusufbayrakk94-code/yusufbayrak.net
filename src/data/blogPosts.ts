@@ -558,7 +558,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "arr",
     resources: [
-      { label: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+      { label: "MRR Nedir, Ne Demek? Aylık Yinelenen Gelir Hesaplama", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
       { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici" },
       { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici" },
       { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici" },
@@ -963,19 +963,21 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "nrr-nedir-saas-buyume-metrigi",
-    seoTitle: "NRR Nedir? Net Gelir Tutundurma Hesaplama + Örnek",
+    seoTitle: "NRR Nedir? Formül, Örnek Hesap ve İyi NRR Kaç Olmalı?",
     title: "NRR (Net Revenue Retention) Nedir? SaaS'ta Neden ARR'dan Daha Önemli?",
     description:
-      "NRR, mevcut müşterilerden bir yıl sonra elde tutulan gelirin oranıdır. Formül, örnek hesap, iyi NRR kaç olmalı ve ARR/MRR'dan farkı.",
+      "NRR, mevcut müşterilerden elde tutulan gelirin oranıdır; yeni satış hariçtir. %100 üstü büyüme demektir. Formül, aylık-yıllık fark, örnek ve iyi NRR aralıkları.",
     category: "saas-buyume",
     tldr: [
       "NRR = (Başlangıç MRR + Genişleme − Daralma − Churn) / Başlangıç MRR × 100. Yeni müşteriler hesaba girmez.",
       "ARR gelirin büyüklüğünü, NRR ise o gelirin kalitesini gösterir; yeni satış durduğunda ne olacağını yalnızca NRR söyler.",
       "%100 nötr eşiktir. Altı taban erimesi, üstü negatif churn anlamına gelir.",
+      "Kıyaslar yıllık NRR ile yapılır: 12 ay önceki müşterilerin bugünkü MRR'si / o günkü MRR'si. Aylık NRR'yi yıllığa çevirmek için 12 ayın çarpımı alınır; %101 aylık ≈ %112,7 yıllıktır.",
       "Yatırımcı değerleme çarpanlarını en çok etkileyen metriklerden biridir; %120+ NRR premium çarpan getirir.",
     ],
     publishedAt: "2026-08-16",
-    readingMinutes: 6,
+    updatedAt: "2026-11-05",
+    readingMinutes: 7,
     tags: ["SaaS", "NRR", "Retention", "Metrikler"],
     sections: [
       {
@@ -983,7 +985,23 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "NRR (Net Revenue Retention), dönem başındaki müşteri tabanının dönem sonunda ürettiği gelirin başlangıç gelirine oranıdır. Formülü basittir: NRR = (Başlangıç MRR + Genişleme MRR − Daralma MRR − Kaybedilen MRR) / Başlangıç MRR × 100.",
           "Hesabın en kritik detayı, dışarıda bıraktığı şeydir: yeni kazanılan müşterilerin geliri bu formüle girmez. Bu yüzden NRR, pazarlama ve satış motorunu tamamen kapatsanız bile işletmenizin büyüyüp büyümeyeceğini gösteren tek metriktir. Diğer tüm büyüme metrikleri yeni satışla maskelenebilir; NRR maskelenemez.",
-          "Örnek: Dönem başı MRR'si 400.000 ₺ olan bir SaaS'ta ay içinde 60.000 ₺ genişleme (upsell, koltuk artışı), 15.000 ₺ daralma (plan küçültme) ve 25.000 ₺ churn gerçekleşti. NRR = (400.000 + 60.000 − 15.000 − 25.000) / 400.000 × 100 = %105. Yani hiç yeni müşteri gelmese bile gelir %5 büyümüş oldu.",
+          "Örnek: Dönem başı MRR'si 400.000 ₺ olan bir SaaS'ta ay içinde 60.000 ₺ genişleme (upsell, koltuk artışı), 15.000 ₺ daralma (plan küçültme) ve 25.000 ₺ churn gerçekleşti. NRR = (400.000 + 60.000 − 15.000 − 25.000) / 400.000 × 100 = %105. Yani hiç yeni müşteri gelmese bile gelir o ay %5 büyümüş oldu. Bu tek aylık bir sonuçtur; yıllık kıyaslarla karşılaştırmadan önce aşağıdaki bölüme bakın.",
+        ],
+      },
+      {
+        heading: "NRR Aylık mı, Yıllık mı Hesaplanır?",
+        paragraphs: [
+          "Sektör kıyasları ve yatırımcı sunumları yıllık NRR kullanır: 12 ay önce aktif olan müşterilerin o günkü MRR'si ile aynı müşterilerin bugünkü MRR'si karşılaştırılır. Aylık NRR ise erken uyarı içindir; %120 gibi yıllık eşiklerle doğrudan karşılaştırılmaz.",
+          "Kohort örneği: 12 ay önce aktif müşterilerin MRR'si 400.000 ₺ idi. Aynı müşterilerden bugün gelen MRR 452.000 ₺ ise yıllık NRR = 452.000 / 400.000 × 100 = %113'tür. Aradaki 12 ayda kazanılan yeni müşterilerin 90.000 ₺'lik MRR'si hesaba girmez; yanlışlıkla dahil edilirse sonuç %135,5 görünür ve tabanın gerçek gücü olduğundan iyi okunur.",
+          "Aylıktan yıllığa çevirirken oranlar toplanmaz, çarpılır: Yıllık NRR ≈ Ay 1 NRR × Ay 2 NRR × … × Ay 12 NRR. Her ay aynıysa Yıllık NRR ≈ (Aylık NRR)^12. Küçük aylık farklar bu yüzden yılda büyük sonuç doğurur.",
+        ],
+        bullets: [
+          "Aylık %101 → yıllık ≈ %112,7",
+          "Aylık %102 → yıllık ≈ %126,8",
+          "Aylık %99 → yıllık ≈ %88,6",
+          "Aylık %97,3 → yıllık ≈ %72: tabanın yaklaşık dörtte biri bir yılda erir",
+          "Tek ay %105 → yıllık ≈ %179,6: gerçekçi değildir; böyle bir ay genelde tek büyük üst paket geçişi veya yenilemeden gelir, yıllığa çevrilmez",
+          "Yıllık sözleşmeli işlerde aylık NRR dalgalanır, çünkü yenilemeler belirli aylara yığılır; bu durumda yalnızca 12 aylık kohort hesabını raporlayın",
         ],
       },
       {
@@ -1010,7 +1028,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Sağlıklı NRR Aralıkları ve Yatırımcı Bakışı",
         paragraphs: [
-          "Segmente göre yaygın referanslar: SMB odaklı SaaS'larda %90-100, mid-market'te %100-110, enterprise ve kullanım bazlı fiyatlayan ürünlerde %120 ve üzeri. Kullanım bazlı fiyatlama modelleri doğaları gereği yüksek NRR üretir, çünkü müşteri büyüdükçe fatura otomatik büyür.",
+          "Segmente göre yaygın yıllık NRR referansları: SMB odaklı SaaS'larda %90-100, mid-market'te %100-110, enterprise ve kullanım bazlı fiyatlayan ürünlerde %120 ve üzeri. Kullanım bazlı fiyatlama modelleri doğaları gereği yüksek NRR üretir, çünkü müşteri büyüdükçe fatura otomatik büyür.",
           "Yatırımcılar NRR'yi iki nedenle önemser. Birincisi, gelecekteki gelirin öngörülebilirliğini gösterir. İkincisi, ürünün gerçekten değer üretip üretmediğinin en dürüst kanıtıdır — müşteri parasını artırıyorsa memnundur, anketler bunu söyleyemez ama fatura söyler.",
         ],
       },
@@ -1030,7 +1048,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faq: [
       {
-        question: "NRR nedir?",
+        question: "NRR nedir, ne demek?",
         answer:
           "NRR (Net Revenue Retention), mevcut müşteri tabanınızdan gelen gelirin bir dönem içindeki net değişimidir. Formül: (Başlangıç MRR + Genişleme − Daralma − Churn) / Başlangıç MRR × 100. Yeni müşterilerden gelen gelir bu hesaba dahil edilmez.",
       },
@@ -1055,6 +1073,11 @@ export const BLOG_POSTS: BlogPost[] = [
           "400.000 ₺ başlangıç MRR, 60.000 ₺ genişleme, 15.000 ₺ daralma ve 25.000 ₺ churn olan bir ayda NRR = (400.000 + 60.000 − 15.000 − 25.000) / 400.000 × 100 = %105'tir. Kendi rakamlarınızla denemek için ücretsiz NRR Hesaplayıcı'yı kullanabilirsiniz.",
       },
       {
+        question: "NRR aylık mı yıllık mı hesaplanır?",
+        answer:
+          "İkisi de hesaplanır ama kıyaslar yıllık NRR ile yapılır: 12 ay önceki müşterilerin bugünkü MRR'si, o günkü MRR'lerine bölünür. Aylık NRR'yi yıllığa çevirmek için 12 ayın oranları çarpılır; aylık %101 yıllık yaklaşık %112,7, aylık %99 yıllık yaklaşık %88,6 eder.",
+      },
+      {
         question: "Negatif churn ne demek?",
         answer:
           "Mevcut müşterilerden gelen genişleme gelirinin, kaybedilen geliri aşması durumudur — yani NRR'nin %100'ün üzerinde olması. Bu profildeki şirketler yeni müşteri kazanmasa bile büyür.",
@@ -1062,18 +1085,18 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "nrr",
     resources: [
-      { label: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+      { label: "MRR Nedir, Ne Demek? Aylık Yinelenen Gelir Hesaplama", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
       {
         label: "NRR Hesaplayıcı",
-        href: "/ucretsiz-araclar/nrr-hesaplayici",
+        href: "/ucretsiz-araclar/nrr-hesaplayici/",
       },
       {
         label: "SaaS Metrikleri: ARR, CAC ve LTV",
-        href: "/blog/saas-metrikleri-arr-cac-ltv",
+        href: "/blog/saas-metrikleri-arr-cac-ltv/",
       },
       {
         label: "Rule of 40 Hesaplayıcı",
-        href: "/ucretsiz-araclar/rule-of-40-hesaplayici",
+        href: "/ucretsiz-araclar/rule-of-40-hesaplayici/",
       },
     ],
   },
@@ -1453,7 +1476,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         label: "NRR (Net Revenue Retention) Nedir?",
-        href: "/blog/nrr-nedir-saas-buyume-metrigi",
+        href: "/blog/nrr-nedir-saas-buyume-metrigi/",
       },
     ],
   },
@@ -2442,7 +2465,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
       { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
-      { label: "NRR Nedir? SaaS Büyüme Metriği", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
+      { label: "NRR Nedir? Formül, Örnek ve İyi NRR Kaç Olmalı?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
       { label: "SaaS Metrikleri 101: ARR, CAC, LTV ve Churn", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
       { label: "Stripe: Customer lifetime value (İngilizce)", href: "https://stripe.com/gb/resources/more/customer-lifetime-value", external: true },
     ],
@@ -3020,10 +3043,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "mrr-nedir-nasil-hesaplanir",
-    seoTitle: "MRR Nedir? Aylık Yinelenen Gelir Nasıl Hesaplanır?",
+    seoTitle: "MRR Nedir, Ne Demek? Aylık Yinelenen Gelir Hesaplama",
     title: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir, MRR Hareketleri ve Örnek Hesap",
     description:
-      "MRR (aylık yinelenen gelir) nedir, nasıl hesaplanır? Yıllık plan, indirim ve kur etkisi, yeni/genişleme/kayıp MRR köprüsü, Quick Ratio ve adım adım örnek.",
+      "MRR ne demek? Abonelikten her ay tekrar eden gelir. Formül, yıllık plan ve kur etkisi, MRR köprüsü, MRR nasıl artırılır ve adım adım örnek hesap.",
     category: "saas-buyume",
     tldr: [
       "MRR (Monthly Recurring Revenue, aylık yinelenen gelir), abonelik müşterilerinden her ay düzenli olarak tekrar etmesi beklenen gelirin aylık karşılığıdır. Formül: MRR = Σ (her planın aylık fiyatı × o plandaki aktif hesap). Örnek şirkette 90.000 + 48.000 + 22.500 = 160.500 TL.",
@@ -3032,11 +3055,12 @@ export const BLOG_POSTS: BlogPost[] = [
       "Aynı ay SaaS Quick Ratio yalnızca 2,0 (kaynaklar 4'ü güçlü kabul ediyor) ve brüt MRR churn %5,5: büyüme var ama kova sızdırıyor. Fiyatı dolar olan SaaS'ta MRR'yi sabit kurla da raporlayın; yoksa kur artışı büyüme gibi görünür.",
     ],
     publishedAt: "2026-10-29",
-    readingMinutes: 9,
+    updatedAt: "2026-11-05",
+    readingMinutes: 10,
     tags: ["MRR", "Aylık Yinelenen Gelir", "SaaS Metrikleri", "Net Yeni MRR", "Quick Ratio", "ARR"],
     sections: [
       {
-        heading: "MRR nedir? (Kısa cevap)",
+        heading: "MRR nedir, ne demek? (Kısa cevap)",
         paragraphs: [
           "MRR (Monthly Recurring Revenue), Türkçesiyle aylık yinelenen (tekrarlayan) gelir, abonelik modelinde çalışan bir işletmenin aktif aboneliklerinden her ay düzenli olarak elde etmeyi beklediği gelirin aylık karşılığıdır. SaaS şirketleri, mobil uygulamalar, üyelik siteleri ve abonelik kutusu satan e-ticaret markaları için temel büyüme metriğidir.",
           "Formül: MRR = Σ (Planın aylık fiyatı × O plandaki aktif hesap sayısı). Tek plan varsa MRR = Aktif hesap × ARPA (hesap başına ortalama aylık gelir). MRR bir ayın faturası ya da kasaya giren para değildir; o anki abonelik tabanının aylık gelir gücünü gösteren bir fotoğraftır.",
@@ -3119,6 +3143,20 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        heading: "MRR nasıl artırılır? Hangi kaldıraç ne kadar eder?",
+        paragraphs: [
+          "MRR dört yoldan büyür: daha çok yeni hesap, daha az kayıp ve daralma, mevcut hesaplardan daha çok genişleme, fiyat. Hangisine öncelik vereceğinizi tahminle değil, kendi MRR köprünüzle hesaplayın. Aşağıdaki senaryolar örnek şirketin Ekim köprüsünü 12 ve 24 aya taşır: yeni hesap ve yeniden aktivasyon ayda sabit tutarda, genişleme, daralma ve kayıp ise MRR'ye oranla devam eder. Mevcut gidişte MRR 12 ayda yaklaşık 255.700 TL'ye, 24 ayda 323.900 TL'ye ulaşır.",
+          "Sonuç: ilk yıl yeni satış artışı kayıp azaltmayı geçer, ikinci yılın sonunda sıralama tersine döner; çünkü kayıp oranı büyüyen MRR'nin tamamına uygulanır, yeni satış tutarı ise sabit kalır. Yeni satış ve yeniden aktivasyon tamamen durursa aynı şirketin MRR'si 12 ayda yaklaşık 115.000 TL'ye düşer; aylık NRR'nin %97,3 olması budur. Senaryolar eşit zorlukta değildir ve maliyetlerini içermez: her birinin ek maliyetini yanına yazın, yeni satış için CAC'ı CAC Hesaplayıcı ile kontrol edin.",
+        ],
+        bullets: [
+          "Yeni MRR %20 artarsa (12.400 → 14.880 TL/ay): ilk ay +2.480 TL, 12. ay +25.659 TL, 24. ay +44.040 TL",
+          "Kayıp MRR %25 azalırsa (6.200 → 4.650 TL/ay): ilk ay +1.550 TL, 12. ay +21.933 TL, 24. ay +48.206 TL",
+          "Genişleme MRR %50 artarsa (4.500 → 6.750 TL/ay): ilk ay +2.250 TL, 12. ay +32.530 TL, 24. ay +72.975 TL",
+          "Mevcut tabana %5 zam: 160.500 × %5 = 8.025 TL'lik tek seferlik sıçrama (zam hiç kayıp yaratmazsa); büyüme hızını değil yalnızca tabanı değiştirir, bu yüzden zam sonrası kayıp oranını iki ay izleyin",
+          "Önce sızıntıyı kapatın: Quick Ratio 4'ün altındaysa yeni satış bütçesini artırmadan önce kaybın en çok yoğunlaştığı planı ve kayıt ayını bulun",
+        ],
+      },
+      {
         heading: "İndirim, deneme sürümü ve kur farkı MRR'yi nasıl etkiler?",
         paragraphs: [
           "İndirim: 3 ay boyunca %25 indirimle 450 TL ödeyen 20 Başlangıç hesabı MRR'ye 20 × 450 = 9.000 TL yazılır, 12.000 TL değil. İndirim bittiğinde 3.000 TL'lik artış hareket raporunda genişleme gibi görünür; gerçek upsell ile karıştırmamak için 'indirim bitişi' olarak ayrı etiketleyin.",
@@ -3162,6 +3200,11 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faq: [
       {
+        question: "MRR ne demek?",
+        answer:
+          "MRR, Monthly Recurring Revenue'nun kısaltmasıdır ve aylık yinelenen gelir demektir: abonelik müşterilerinden her ay düzenli olarak tekrar etmesi beklenen gelirin aylık karşılığı. 150 hesap × 600 TL + 60 hesap × 800 TL + 5 hesap × 4.500 TL olan bir SaaS'ın MRR'si 160.500 TL'dir.",
+      },
+      {
         question: "MRR açılımı nedir, Türkçesi ne?",
         answer:
           "MRR, Monthly Recurring Revenue'nun kısaltmasıdır; Türkçede aylık yinelenen gelir ya da aylık tekrarlayan gelir denir. Abonelik müşterilerinden her ay düzenli olarak tekrar etmesi beklenen gelirin aylık karşılığını gösterir.",
@@ -3175,6 +3218,11 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "Net yeni MRR nedir?",
         answer:
           "Bir ayda MRR'nin net değişimidir: Yeni + Genişleme + Yeniden aktivasyon − Daralma − Kayıp MRR. Örnekte 12.400 + 4.500 + 1.200 − 2.700 − 6.200 = 9.200 TL'dir; başlangıç MRR'ye eklendiğinde bitiş MRR'yi verir.",
+      },
+      {
+        question: "MRR nasıl artırılır?",
+        answer:
+          "Dört kaldıraç vardır: yeni hesap, daha az kayıp ve daralma, mevcut hesaplardan genişleme, fiyat. Örnek şirkette yeni MRR'yi %20 artırmak 12 ayda 25.659 TL, kaybı %25 azaltmak 21.933 TL ekler; 24. ayda kayıp azaltma öne geçer (48.206 TL'ye 44.040 TL). Önceliği kendi MRR köprünüzle hesaplayın.",
       },
       {
         question: "MRR ile ARR arasındaki fark nedir?",
@@ -3207,7 +3255,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
       { label: "Churn Nedir? Churn Rate Nasıl Hesaplanır?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
-      { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
+      { label: "NRR Nedir? Formül, Örnek ve İyi NRR Kaç Olmalı?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
       { label: "SaaS Metrikleri: ARR, CAC ve LTV", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
@@ -3565,9 +3613,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
       { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
-      { label: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+      { label: "MRR Nedir, Ne Demek? Aylık Yinelenen Gelir Hesaplama", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
       { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
-      { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
+      { label: "NRR Nedir? Formül, Örnek ve İyi NRR Kaç Olmalı?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Freemium Dönüşüm Oranı Nasıl Artırılır?", href: "/blog/freemium-donusum-orani-artirma/" },
       { label: "Stripe: Başarısız ödemeleri otomatik tekrar deneme (İngilizce)", href: "https://docs.stripe.com/billing/revenue-recovery/smart-retries", external: true },
@@ -3946,8 +3994,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Rule of 40 Hesaplayıcı", href: "/ucretsiz-araclar/rule-of-40-hesaplayici/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
-      { label: "MRR Nedir, Nasıl Hesaplanır?", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
-      { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
+      { label: "MRR Nedir, Ne Demek? Nasıl Hesaplanır?", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+      { label: "NRR Nedir? Formül, Örnek ve İyi NRR Kaç Olmalı?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
       { label: "Churn Nedir? Churn Rate Nasıl Hesaplanır?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
@@ -6499,7 +6547,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "arr",
     resources: [
-      { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+      { label: "What Is MRR? MRR Formula and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator" },
       { label: "ARPA Calculator", href: "/en/free-tools/arpa-calculator" },
       { label: "ARR Calculator", href: "/en/free-tools/arr-calculator" },
@@ -6902,19 +6950,21 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "what-is-nrr-saas-growth-metric",
-    seoTitle: "What Is NRR? Net Revenue Retention Explained",
+    seoTitle: "What Is NRR? Net Revenue Retention Formula and Benchmarks",
     title: "What Is NRR (Net Revenue Retention) and Why It Beats ARR in SaaS",
     description:
-      "How NRR differs from ARR and MRR, how to calculate it, healthy benchmarks by segment, and why investors build valuation around it — with worked examples.",
+      "NRR is the share of revenue kept from existing customers, new sales excluded. Formula, monthly vs annual NRR, a cohort example and good benchmarks by segment.",
     category: "saas-buyume",
     tldr: [
       "NRR = (Starting MRR + Expansion − Contraction − Churn) / Starting MRR × 100. New customers are excluded.",
       "ARR shows the size of revenue; NRR shows its quality — only NRR tells you what happens if new sales stop.",
       "100% is the neutral line. Below it the base erodes; above it you have negative churn.",
+      "Benchmarks use annual NRR: today's MRR from customers active 12 months ago, divided by their MRR then. To annualise monthly NRR, multiply the 12 months; 101% a month ≈ 112.7% a year.",
       "NRR is one of the strongest drivers of valuation multiples; 120%+ earns a premium.",
     ],
     publishedAt: "2026-08-16",
-    readingMinutes: 6,
+    updatedAt: "2026-11-05",
+    readingMinutes: 7,
     tags: ["SaaS", "NRR", "Retention", "Metrics"],
     sections: [
       {
@@ -6923,6 +6973,22 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "NRR (Net Revenue Retention) is the revenue produced at the end of a period by the customers you had at the start, divided by their starting revenue. The formula is simple: NRR = (Starting MRR + Expansion MRR − Contraction MRR − Churned MRR) / Starting MRR × 100.",
           "The critical detail is what it leaves out: revenue from newly acquired customers never enters the calculation. That makes NRR the only metric that tells you whether the business would still grow with the marketing and sales engine switched off. Every other growth metric can be masked by new sales; NRR cannot.",
           "Example: a SaaS starts the month at $40,000 MRR and books $6,000 of expansion (upsell, extra seats), $1,500 of contraction (downgrades) and $2,500 of churn. NRR = (40,000 + 6,000 − 1,500 − 2,500) / 40,000 × 100 = 105%. Revenue grew 5% without a single new customer.",
+        ],
+      },
+      {
+        heading: "Is NRR monthly or annual?",
+        paragraphs: [
+          "Benchmarks and investor decks use annual NRR: the MRR of customers active 12 months ago is compared with what the same customers pay today. Monthly NRR is an early warning signal; do not compare it directly with annual thresholds like 120%.",
+          "Cohort example: customers active 12 months ago paid $40,000 MRR. Those same customers pay $45,200 today, so annual NRR = 45,200 / 40,000 × 100 = 113%. The $9,000 MRR from customers won during those 12 months stays out; include it by mistake and the result reads 135.5%, overstating the strength of the base.",
+          "When annualising, multiply rather than add: Annual NRR ≈ Month 1 NRR × Month 2 NRR × … × Month 12 NRR. If every month is the same, Annual NRR ≈ (Monthly NRR)^12, which is why small monthly gaps become large annual ones.",
+        ],
+        bullets: [
+          "101% a month → about 112.7% a year",
+          "102% a month → about 126.8% a year",
+          "99% a month → about 88.6% a year",
+          "97.3% a month → about 72% a year: roughly a quarter of the base gone in 12 months",
+          "A single 105% month → about 179.6%: unrealistic. A month like that usually comes from one large upgrade or renewal, so do not annualise it",
+          "With annual contracts, monthly NRR swings because renewals cluster in certain months; report only the 12-month cohort figure",
         ],
       },
       {
@@ -6994,6 +7060,11 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "With $40,000 starting MRR, $6,000 expansion, $1,500 contraction and $2,500 churn: NRR = (40,000 + 6,000 − 1,500 − 2,500) / 40,000 × 100 = 105%. Run your own numbers with the free NRR Calculator.",
       },
       {
+        question: "Is NRR monthly or annual?",
+        answer:
+          "Both exist, but benchmarks use annual NRR: today's MRR from customers active 12 months ago, divided by their MRR then. To annualise monthly NRR, multiply the 12 monthly rates; 101% a month is about 112.7% a year, and 99% a month about 88.6%.",
+      },
+      {
         question: "What does negative churn mean?",
         answer:
           "It means expansion revenue from existing customers exceeds lost revenue — NRR above 100%. Companies in that position grow even without winning a single new customer.",
@@ -7001,18 +7072,18 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "nrr",
     resources: [
-      { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+      { label: "What Is MRR? MRR Formula and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       {
         label: "NRR Calculator",
-        href: "/en/free-tools/nrr-calculator",
+        href: "/en/free-tools/nrr-calculator/",
       },
       {
         label: "SaaS Metrics: ARR, CAC and LTV",
-        href: "/en/blog/saas-metrics-arr-cac-ltv",
+        href: "/en/blog/saas-metrics-arr-cac-ltv/",
       },
       {
         label: "Rule of 40 Calculator",
-        href: "/en/free-tools/rule-of-40-calculator",
+        href: "/en/free-tools/rule-of-40-calculator/",
       },
     ],
   },
@@ -7092,7 +7163,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     relatedToolKey: "mrr",
     resources: [
       { label: "What Is ARR? Annual Recurring Revenue & the ARR Bridge", href: "/en/blog/what-is-arr-annual-recurring-revenue/" },
-      { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+      { label: "What Is MRR? MRR Formula and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       {
         label: "MRR Calculator",
         href: "/en/free-tools/mrr-calculator",
@@ -8679,10 +8750,10 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "what-is-mrr-how-to-calculate",
-    seoTitle: "What Is MRR? How to Calculate Monthly Recurring Revenue",
+    seoTitle: "What Is MRR? MRR Formula and How to Calculate It",
     title: "What Is MRR and How Do You Calculate It? Monthly Recurring Revenue, MRR Movements and a Worked Example",
     description:
-      "What is MRR and how do you calculate it? Annual plans, discounts and FX, the new/expansion/churn MRR bridge, SaaS Quick Ratio and a full worked example.",
+      "MRR formula and how to calculate monthly recurring revenue: annual plans, discounts, FX, the MRR bridge, how to increase MRR and a full worked example.",
     category: "saas-buyume",
     tldr: [
       "MRR (Monthly Recurring Revenue) is the monthly value of the subscription revenue you expect to repeat every month. Formula: MRR = Σ (each plan's monthly price × active accounts on it). In the example: $7,350 + $3,600 + $2,000 = $12,950.",
@@ -8691,7 +8762,8 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "The same month's SaaS Quick Ratio is only 2.0 (4+ is usually considered strong) and gross MRR churn is 5.7%: the business is growing, but the bucket leaks. If you bill in several currencies, report MRR at a constant exchange rate too.",
     ],
     publishedAt: "2026-10-29",
-    readingMinutes: 9,
+    updatedAt: "2026-11-05",
+    readingMinutes: 10,
     tags: ["MRR", "Monthly Recurring Revenue", "SaaS Metrics", "Net New MRR", "Quick Ratio", "ARR"],
     sections: [
       {
@@ -8778,6 +8850,20 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         ],
       },
       {
+        heading: "How do you increase MRR? What each lever is worth",
+        paragraphs: [
+          "MRR grows four ways: more new accounts, less churn and contraction, more expansion from existing accounts, and price. Work out your priority from your own MRR bridge rather than by instinct. The scenarios below extend the example company's October bridge over 12 and 24 months: new and reactivated MRR stay at a fixed amount per month, while expansion, contraction and churn continue as a share of MRR. On the current path MRR reaches about $20,178 in 12 months and $25,181 in 24.",
+          "The result: in year one more new sales beats less churn, but by month 24 the order flips, because the churn rate applies to a growing MRR while new sales stay flat. If new sales and reactivation stopped entirely, the same company's MRR would fall to about $8,964 in 12 months; that is what 97.0% monthly NRR means. The scenarios are not equally hard and exclude their costs, so write the cost of each next to it and check new-sales efficiency with the CAC Calculator.",
+        ],
+        bullets: [
+          "New MRR up 20% ($1,002 → $1,202 a month): +$200 in month 1, +$2,043 by month 12, +$3,457 by month 24",
+          "Churned MRR down 25% ($501 → $376 a month): +$125 in month 1, +$1,727 by month 12, +$3,706 by month 24",
+          "Expansion MRR up 50% ($350 → $525 a month): +$175 in month 1, +$2,459 by month 12, +$5,372 by month 24",
+          "A 5% price rise on the existing base: $12,950 × 5% = $648, a one-off step (assuming it causes no churn). It changes the base, not the growth rate, so watch churn for two months afterwards",
+          "Fix the leak first: if Quick Ratio is below 4, find the plan and signup month where churn concentrates before raising the new-sales budget",
+        ],
+      },
+      {
         heading: "How do discounts, free trials and exchange rates affect MRR?",
         paragraphs: [
           "Discounts: 20 Starter accounts paying 25% less for 3 months add 20 × $36.75 = $735 to MRR, not $980. When the discount ends, the $245 increase shows up as expansion in movement reports; label it 'discount ended' so it is not confused with a real upsell.",
@@ -8834,6 +8920,11 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         question: "What is net new MRR?",
         answer:
           "It is the net change in MRR over a month: New + Expansion + Reactivation − Contraction − Churned MRR. In the example $1,002 + $350 + $98 − $240 − $501 = $709; added to starting MRR it gives ending MRR.",
+      },
+      {
+        question: "How do you increase MRR?",
+        answer:
+          "There are four levers: new accounts, less churn and contraction, expansion from existing accounts, and price. In the example, raising new MRR 20% adds $2,043 after 12 months and cutting churn 25% adds $1,727; by month 24 cutting churn pulls ahead ($3,706 vs $3,457). Set your priority from your own MRR bridge.",
       },
       {
         question: "What is the difference between MRR and ARR?",
@@ -9223,7 +9314,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "NRR Calculator", href: "/en/free-tools/nrr-calculator/" },
       { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator/" },
       { label: "Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
-      { label: "What Is MRR and How Do You Calculate It?", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+      { label: "What Is MRR? MRR Formula and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       { label: "What Is LTV? What Should the LTV:CAC Ratio Be?", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
       { label: "What Is NRR? Why It Matters More Than ARR", href: "/en/blog/what-is-nrr-saas-growth-metric/" },
       { label: "What Is CAC? How to Calculate Customer Acquisition Cost", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
@@ -9593,7 +9684,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Rule of 40 Calculator", href: "/en/free-tools/rule-of-40-calculator/" },
       { label: "Churn Rate Calculator", href: "/en/free-tools/churn-rate-calculator/" },
       { label: "ARR vs MRR: What's the Difference?", href: "/en/blog/arr-vs-mrr-difference/" },
-      { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+      { label: "What Is MRR? MRR Formula and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
       { label: "What Is NRR and Why It Beats ARR in SaaS", href: "/en/blog/what-is-nrr-saas-growth-metric/" },
       { label: "What Is Churn Rate?", href: "/en/blog/what-is-churn-rate/" },
       { label: "What Is CAC?", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },

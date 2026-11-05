@@ -326,7 +326,7 @@ export const mrr: ToolContent = {
     { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
     { label: "SaaS Tools", href: "/en/free-tools/saas-tools", note: "All SaaS metric calculators" },
   ],
-  relatedPost: { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+  relatedPost: { label: "What Is MRR? MRR Formula and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
 };
 
 export const arpa: ToolContent = {
@@ -359,7 +359,7 @@ export const arpa: ToolContent = {
     { label: "CAC Calculator", href: "/en/free-tools/cac-calculator", note: "Customer acquisition cost" },
     { label: "SaaS Tools", href: "/en/free-tools/saas-tools", note: "All SaaS metric calculators" },
   ],
-  relatedPost: { label: "What Is MRR and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
+  relatedPost: { label: "What Is MRR? MRR Formula and How to Calculate It", href: "/en/blog/what-is-mrr-how-to-calculate/" },
 };
 
 export const nrr: ToolContent = {

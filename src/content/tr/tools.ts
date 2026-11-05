@@ -351,7 +351,7 @@ export const mrr: ToolContent = {
     { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
     { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS metrik hesaplayıcıları" },
   ],
-  relatedPost: { label: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+  relatedPost: { label: "MRR Nedir, Ne Demek? Aylık Yinelenen Gelir Hesaplama", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
 };
 
 export const arpa: ToolContent = {
@@ -384,7 +384,7 @@ export const arpa: ToolContent = {
     { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
     { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS metrik hesaplayıcıları" },
   ],
-  relatedPost: { label: "MRR Nedir, Nasıl Hesaplanır? Aylık Yinelenen Gelir", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+  relatedPost: { label: "MRR Nedir, Ne Demek? Aylık Yinelenen Gelir Hesaplama", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
 };
 
 export const nrr: ToolContent = {
@@ -416,7 +416,7 @@ export const nrr: ToolContent = {
     { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
     { label: "Rule of 40 Hesaplayıcı", href: "/ucretsiz-araclar/rule-of-40-hesaplayici", note: "Büyüme + kârlılık dengesi" },
   ],
-  relatedPost: { label: "NRR Nedir? SaaS'ta Neden ARR'dan Daha Önemli?", href: "/blog/nrr-nedir-saas-buyume-metrigi" },
+  relatedPost: { label: "NRR Nedir? Formül, Örnek ve İyi NRR Kaç Olmalı?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
 };
 
 export const ruleOf40: ToolContent = {
