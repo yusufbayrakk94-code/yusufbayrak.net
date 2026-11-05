@@ -815,6 +815,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "cac",
     resources: [
+      { label: "CRM Nedir, Ne İşe Yarar?", href: "/blog/crm-nedir-ne-ise-yarar/" },
       { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       {
         label: "B2B Lead Generation Hunisi Nasıl Tasarlanır? Uçtan Uca Rehber",
@@ -2834,6 +2835,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "cac",
     resources: [
+      { label: "CRM Nedir, Ne İşe Yarar? Kanal Bazlı CAC Ölçümü", href: "/blog/crm-nedir-ne-ise-yarar/" },
       { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
       { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" },
@@ -4855,6 +4857,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "CRM Nedir, Ne İşe Yarar? Lead'den Müşteriye Ölçüm", href: "/blog/crm-nedir-ne-ise-yarar/" },
       { label: "Reklam Bütçesi Hesaplama (B2B modu)", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
@@ -5549,6 +5552,256 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Ticaret Bakanlığı: Elektronik Ticaret Bilgi Sistemi (ETBİS)", href: "https://ticaret.gov.tr/ic-ticaret/elektronik-ticaret/elektronik-ticaret-bilgi-sistemi-etbis", external: true },
       { label: "DonanımHaber: 30 Euro limiti kaldırıldı", href: "https://www.donanimhaber.com/yurt-disindan-gumruksuz-alisveris-donemi-bitti-30-euro-limiti-ka--200561", external: true },
       { label: "Amazon Seller Central: Drop shipping politikası hatırlatması", href: "https://sellercentral.amazon.com/forums/t/drop-shipping-policy-reminder/839620", external: true },
+    ],
+  },
+  {
+    slug: "crm-nedir-ne-ise-yarar",
+    seoTitle: "CRM Nedir, Ne İşe Yarar? KOBİ İçin Seçim ve Ölçüm Rehberi",
+    title: "CRM Nedir, Ne İşe Yarar? Türleri, Fiyatları, Geri Ödeme Hesabı ve KOBİ İçin Seçim Rehberi (2026)",
+    description:
+      "CRM, müşteri ve satış verisini tek yerde yöneten sistemdir. Ne işe yarar, türleri, fiyatları, geri ödeme hesabı, Excel'den geçiş ve KOBİ için seçim rehberi.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "CRM (Customer Relationship Management, müşteri ilişkileri yönetimi), potansiyel ve mevcut müşterilerle ilgili tüm kayıtları tek yerde tutan ve satış, pazarlama ve destek ekiplerinin aynı veriyle çalışmasını sağlayan sistemdir.",
+      "Bir CRM'in beş temel kaydı vardır: lead, kişi, şirket, fırsat ve aktivite. Değeri yazılımdan değil, her fırsatın hangi aşamada olduğunun ve sıradaki adımın ne olduğunun görünür olmasından gelir.",
+      "Geri ödeme = Kurulum maliyeti / (Aylık ek brüt kâr − Aylık lisans). Örnekte 5.000 TL aylık lisans, müşteri başı 30.000 TL brüt kârla altı ayda bir fazladan müşteriyle karşılanır.",
+      "CRM'in reklamcı için asıl faydası, lead maliyetinden müşteri maliyetine geçmektir: iki kanalın CPL'i aynı (350 TL) olsa da birinin CAC'ı 5.250 TL, diğerininki 10.500 TL çıkabilir.",
+      "Her işletmenin CRM'e ihtiyacı yoktur: az sayıda fırsatı tek kişi yönetiyorsa iyi tutulan bir tablo yeter. Satın alırken lisans fiyatına değil, toplam maliyete ve ekibin programı gerçekten kullanıp kullanmayacağına bakın.",
+    ],
+    publishedAt: "2026-11-05",
+    readingMinutes: 12,
+    tags: ["CRM", "Satış Yönetimi", "B2B", "Lead", "CAC", "KOBİ"],
+    sections: [
+      {
+        heading: "CRM nedir? (Kısa cevap)",
+        paragraphs: [
+          "CRM, İngilizce Customer Relationship Management ifadesinin kısaltmasıdır; Türkçesi müşteri ilişkileri yönetimidir. Günlük kullanımda çoğunlukla müşteri ve satış kayıtlarını tutan yazılımı anlatır: kimin ne zaman aradığı, hangi teklifin verildiği, hangi şikâyetin açıldığı ve sıradaki adımın ne olduğu tek ekranda görünür.",
+          "Kavram üç şeyi birden kapsar. Strateji olarak CRM, müşteriyi şirket merkezine alıp ilişkiyi uzun vadeli yönetme kararıdır. Süreç olarak CRM, bir talebin kim tarafından, kaç saatte ve hangi adımlarla işleneceğinin kuralıdır. Yazılım olarak CRM ise bu kuralları uygulatan ve kaydeden araçtır. Çoğu başarısız CRM projesi, üçüncüyü satın alıp ilk ikisini yapmayan şirketlerden çıkar.",
+        ],
+      },
+      {
+        heading: "CRM ne işe yarar? 6 somut fayda",
+        paragraphs: [
+          "Tanıtım metinlerindeki 'müşteri memnuniyetini artırır' cümlesi doğru ama işe yaramaz. Pratikte CRM'in çözdüğü sorunlar şunlardır:",
+        ],
+        bullets: [
+          "Unutulan takip biter: her fırsatın bir sonraki adımı ve tarihi vardır; tarihi geçen işler listede görünür",
+          "Bilgi kişiye bağlı kalmaz: satışçı ayrıldığında görüşme geçmişi şirkette kalır",
+          "Satış tahmini yapılır: elde kaç fırsat, hangi aşamada ve ne kadar değerde net görünür",
+          "Reklamın gerçek sonucu ölçülür: lead'in satışa dönüp dönmediği kaynağıyla birlikte kaydedilir",
+          "Mevcut müşteri fırsatları görünür: yenileme tarihi, ek satış ve kayıp riski takip edilir",
+          "Destek ve satış aynı bilgiyle konuşur: müşteri derdini iki kez anlatmaz",
+        ],
+      },
+      {
+        heading: "CRM programı nasıl çalışır? 5 temel kayıt",
+        paragraphs: [
+          "Türkçe rehberlerin çoğu CRM'in özelliklerini sayar ama içindeki yapıyı anlatmaz. Oysa neredeyse tüm CRM'ler aynı beş kayıt türü üzerine kuruludur. Bu mantığı anlarsanız hangi programa geçerseniz geçin kurulum kolaylaşır.",
+          "Tipik akış şöyledir: reklam formundan bir lead gelir, satışçı arar ve ihtiyaç doğrulanırsa lead kişi ve şirket kaydına dönüşür, aynı anda bir fırsat açılır. Fırsat aşamalar arasında ilerler, her görüşme aktivite olarak işlenir. Fırsat kazanılınca müşteri olur; kaybedilince de kayıp nedeni yazılır. Kayıp nedeni, çoğu şirketin toplamadığı ama en değerli alandır.",
+        ],
+        bullets: [
+          "Lead: henüz doğrulanmamış talep (form, arama, fuar kartı)",
+          "Kişi: tek bir insan; telefon, e-posta, unvan ve iletişim izni burada durur",
+          "Şirket: kişilerin bağlı olduğu firma; B2B'de raporların temeli",
+          "Fırsat (deal): değeri, aşaması ve beklenen kapanış tarihi olan satış olasılığı",
+          "Aktivite: arama, toplantı, e-posta, görev; bir sonraki adım burada planlanır",
+        ],
+      },
+      {
+        heading: "CRM türleri nelerdir?",
+        paragraphs: [
+          "Klasik sınıflama üç türdür: operasyonel, analitik ve işbirlikçi CRM. Bugün bu üçü tek üründe birleşmiş durumda; yine de ihtiyacınızın hangisine yakın olduğunu bilmek ürün seçimini kolaylaştırır.",
+        ],
+        bullets: [
+          "Operasyonel CRM: günlük satış, pazarlama ve destek işini yürütür; KOBİ'lerin ilk ihtiyacı budur",
+          "Analitik CRM: veriden segment, kayıp riski ve tahmin üretir; yeterli geçmiş veri olmadan değer üretmez",
+          "İşbirlikçi CRM: farklı ekip ve kanalların aynı müşteri geçmişini görmesini sağlar",
+          "Satış CRM'i: fırsat hattı (pipeline) odaklıdır; B2B ve hizmet işletmelerinde en yaygın başlangıç",
+          "E-ticaret CRM'i: sipariş geçmişine göre e-posta, SMS ve sadakat iletişimi yönetir",
+        ],
+      },
+      {
+        heading: "CRM, ERP ve Excel arasındaki fark nedir?",
+        paragraphs: [
+          "CRM müşteri tarafını, yani satış öncesini ve ilişkiyi yönetir. ERP ise şirketin iç kaynaklarını yönetir: stok, üretim, satın alma, muhasebe. Pazarlama otomasyonu toplu iletişimi yürütür. İkisi bir arada kullanıldığında satış CRM'de kazanılır, siparişe dönüşünce ERP'ye aktarılır.",
+          "Excel ise bir kayıt aracıdır, sistem değildir. Hatırlatma yapmaz, iki kişi aynı anda güncellediğinde sürüm karışır, kimin neyi değiştirdiğini göstermez ve lead kaynağını otomatik yazmaz. Yine de kötü bir başlangıç değildir: fırsat sayınız azsa ve tek kişi yönetiyorsa iyi tutulan bir tablo, kimsenin girmediği bir CRM'den her zaman iyidir.",
+        ],
+      },
+      {
+        heading: "İşletmenizin CRM'e ihtiyacı var mı?",
+        paragraphs: [
+          "Rakip rehberlerin çoğu her işletmenin CRM'e ihtiyacı olduğunu söyler, çünkü çoğu CRM satar. Kararı rakamla verin: aşağıdaki işaretlerden ikisi varsa geçiş zamanı gelmiştir. Hiçbiri yoksa önce tablonuzu düzenleyin.",
+        ],
+        bullets: [
+          "Birden fazla kişi aynı müşterilerle konuşuyor",
+          "Satış döngünüz haftaları buluyor ve bir fırsat birkaç görüşme gerektiriyor",
+          "Reklam harcıyorsunuz ama hangi kanalın müşteri getirdiğini söyleyemiyorsunuz",
+          "Lead'lere dönüş süresini ölçemiyorsunuz ya da bazı lead'lerin hiç arandığından emin değilsiniz",
+          "Satışçı ayrıldığında müşteri geçmişi de gidiyor",
+          "Gelecek ayın satışını tahmin ederken herkes farklı rakam söylüyor",
+        ],
+      },
+      {
+        heading: "CRM kendini ne kadar sürede öder? Formül ve örnek",
+        paragraphs: [
+          "CRM kararı bir yatırım kararıdır. Hesap için iki formül yeterlidir: Aylık ek brüt kâr = Ek müşteri sayısı × Müşteri başı brüt kâr. Geri ödeme süresi (ay) = Kurulum maliyeti / (Aylık ek brüt kâr − Aylık lisans).",
+          "Örnek (örnek tutarlar): bir B2B hizmet firması ayda 120 lead alıyor ve lead başına 350 TL'den 42.000 TL reklam harcıyor. Lead'lerin %40'ı nitelikli (48), nitelikliler %50 ile teklife dönüyor (24), teklifler %25 ile kapanıyor: ayda 6 müşteri. Ortalama satış 60.000 TL, brüt marj %50, yani müşteri başı brüt kâr 30.000 TL.",
+          "CRM'in tek etkisi, takipsiz kalan lead'leri azaltarak nitelikli oranını %40'tan %45'e çıkarmak olsun. Nitelikli lead 54'e, teklif 27'ye, müşteri 6,75'e çıkar. Ayda 0,75 ek müşteri, 22.500 TL ek brüt kâr demektir. 5 kullanıcı için aylık lisans 5.000 TL, kurulum ve eğitim 30.000 TL ise geri ödeme 30.000 / (22.500 − 5.000) = 1,7 aydır.",
+          "Etki üçte birinde kalıp ayda yalnızca 0,25 ek müşteri getirirse ek kâr 7.500 TL olur ve geri ödeme 30.000 / 2.500 = 12 aya uzar. Lisansın başabaşı ise 5.000 / 30.000 = ayda 0,17 müşteridir, yani altı ayda bir fazladan müşteri lisansı öder. Tahmininize ekibin veri girişine harcayacağı zamanı da ekleyin; bu kalem çoğu hesapta unutulur.",
+        ],
+        bullets: [
+          "Aylık ek brüt kâr = Ek müşteri × Müşteri başı brüt kâr",
+          "Geri ödeme (ay) = Kurulum maliyeti / (Aylık ek brüt kâr − Aylık lisans)",
+          "Lisans başabaşı (müşteri/ay) = Aylık lisans / Müşteri başı brüt kâr",
+        ],
+      },
+      {
+        heading: "CRM ile hangi metrikler ölçülür?",
+        paragraphs: [
+          "CRM kurulduğunda ilk kazanç, lead başına maliyetten müşteri başına maliyete geçmektir. Aynı örnekte reklam bütçesini iki kanala eşit bölelim. Google 21.000 TL ile 60 lead, Meta 21.000 TL ile 60 lead getirsin: ikisinin CPL'i de 350 TL'dir. CRM'de kaynağa göre baktığınızda Google lead'lerinden 4, Meta lead'lerinden 2 müşteri çıktığını görürsünüz. Google'ın CAC'ı 5.250 TL, Meta'nınki 10.500 TL'dir. Yalnızca reklam panelindeki CPL'e bakan biri bu farkı hiç görmez.",
+          "İkinci kazanç ağırlıklı fırsat hattıdır (weighted pipeline). Her aşamaya, kendi geçmiş verinizden gelen bir kapanma olasılığı verilir. 8 fırsat keşifte (%10), 5'i teklifte (%30), 2'si müzakerede (%60) ve fırsat değeri 60.000 TL ise: 48.000 + 90.000 + 72.000 = 210.000 TL. Ham toplam 900.000 TL görünür; yönetim bütçeyi buna göre planlarsa yanılır.",
+          "Aşama olasılıkları varsayımdan değil, en az birkaç aylık kayıttan gelmelidir. İlk aylarda veri azsa olasılıkları tahmin olarak işaretleyin ve üç ayda bir gerçek oranlarla değiştirin.",
+        ],
+        bullets: [
+          "Lead → nitelikli lead → teklif → müşteri dönüşüm oranı (kaynak bazında)",
+          "İlk dönüş süresi: lead geldikten sonra ilk temasa kadar geçen süre",
+          "Satış döngüsü: fırsatın açılmasından kapanmasına kadar geçen gün",
+          "Kazanma oranı ve kayıp nedeni dağılımı",
+          "Kanal bazlı CAC ve ortalama fırsat değeri",
+          "Mevcut müşteride churn ve yenileme oranı",
+        ],
+      },
+      {
+        heading: "CRM reklam kampanyalarını nasıl iyileştirir?",
+        paragraphs: [
+          "Reklam platformları neye optimize edilirse onu getirir. Kampanyayı form doldurmaya optimize ederseniz form dolduran kişi getirir, satın alan kişiyi değil. Çözüm, CRM'deki sonucu reklam platformuna geri göndermektir.",
+          "Google Ads'te bunun için önerilen yol gelişmiş lead dönüşümleridir. Google etiketi formdaki e-posta ya da telefonu karma (hash) değer olarak yakalar; lead CRM'de müşteriye dönüştüğünde aynı karma veriyi Google'a yüklersiniz ve Google iki kaydı eşleştirir. Etiket kullanılmıyorsa eşleşme için gclid değerinin CRM'e yazılması gerekir. Google, 15 Haziran 2026'dan itibaren bu yüklemelerin Data Manager API'ye taşındığını duyurdu; entegrasyon kurmadan önce güncel dokümana bakın.",
+          "Bu kurulumun ön koşulu basittir: formdaki kaynak bilgisi (UTM, gclid) gizli alanlarla CRM'e yazılmalıdır. Bu alanlar kurulum gününde eklenmezse geçmiş veri bir daha geri gelmez. Müşteri verisini reklam platformuna göndermek kişisel veri aktarımı sayılabileceği için aydınlatma metninizi de buna göre gözden geçirin.",
+        ],
+      },
+      {
+        heading: "CRM fiyatları ne kadar? (Kasım 2026)",
+        paragraphs: [
+          "Yabancı CRM'ler çoğunlukla kullanıcı başı aylık dolar fiyatıyla satılır. Aşağıdaki rakamlar 5 Kasım 2026'da kontrol edilen liste fiyatlarıdır; indirim, kur ve plan içerikleri sık değiştiği için satın almadan önce satıcıdan teyit edin. Zoho için ikincil kaynak kullanıldı. Kurumsal planlar ve Türkiye'deki yerli CRM'ler çoğunlukla teklif usulü fiyatlanır.",
+          "Toplam maliyet = (Kullanıcı × Aylık lisans × 12) + Kurulum + Entegrasyon + Eğitim + Ekip zamanı. Örneğin 5 kullanıcı ve kullanıcı başı aylık 39 dolar, yılda 2.340 dolar lisans eder. Ücretsiz plan cazip görünse de ihtiyacınız olan otomasyon, rapor ya da izin bir üst plandaysa gerçek karşılaştırma o plan üzerinden yapılmalıdır.",
+        ],
+        bullets: [
+          "HubSpot: ücretsiz plan (en fazla 1.000 kişi, 2 kullanıcı); Starter normalde koltuk başı aylık 20 dolar, yeni müşterilere süreli indirim var",
+          "Pipedrive: ücretsiz plan yok, 14 gün deneme; yıllık faturalamada koltuk başı aylık 14, 39, 59 ve 79 dolar",
+          "Zoho CRM: ücretsiz plan; ücretli planlar kullanıcı başı aylık 20, 35 ve 50 dolar seviyesinde",
+        ],
+      },
+      {
+        heading: "CRM nasıl seçilir? Ağırlıklı puan kartı",
+        paragraphs: [
+          "Özellik listesi karşılaştırması sizi en kalabalık ürüne götürür. Bunun yerine 2–3 aday seçin, gerçek bir fırsatı baştan sona deneyin ve aşağıdaki kriterleri 1–5 arası puanlayın.",
+          "Örnek: A ürünü sırayla 4, 5, 3, 3, 5, 3 puan alırsa toplam 4,0; B ürünü 5, 3, 5, 4, 3, 4 alırsa toplam 4,15 olur. B'nin kullanımı daha zor olduğu için karar yine de ekiple yapılacak denemeye bağlıdır: satışçıların girmediği CRM'in puanı anlamsızdır.",
+        ],
+        bullets: [
+          "Satış sürecinize uyum (%30): aşamalar, zorunlu alanlar, görev kuralları",
+          "Kullanım kolaylığı ve mobil (%25): satışçı görüşmeden sonra 30 saniyede kayıt girebiliyor mu",
+          "Entegrasyon (%20): form, reklam, e-posta, telefon, WhatsApp, muhasebe",
+          "Raporlama (%10): kaynak bazlı dönüşüm ve CAC çıkıyor mu",
+          "Toplam maliyet (%10): 3 yıllık lisans, kurulum ve eğitim",
+          "Veri ve uyum (%5): dışa aktarma, yetki seviyeleri, veri konumu",
+        ],
+      },
+      {
+        heading: "Excel'den CRM'e nasıl geçilir? 30 günlük plan",
+        paragraphs: [
+          "Geçişlerin çoğu teknik nedenle değil, ekip kullanmadığı için başarısız olur. Bu yüzden önce az alanla başlayın. Bir lead kaydı için 5–6 zorunlu alan yeterlidir; 40 alanlı form ilk haftada terk edilir.",
+          "Temel kural şudur: CRM'de yoksa yapılmadı sayılır. Haftalık satış toplantısını CRM ekranından yapın, ayrı tablo istemeyin. Yönetici raporu CRM'den almaya başlayınca ekip de kaydı tutmaya başlar.",
+        ],
+        bullets: [
+          "1. hafta: satış aşamalarını ve her aşamanın çıkış kuralını yazın (örnek: 'Teklif' aşaması için teklifin gönderilmiş olması gerekir)",
+          "1. hafta: alan sözlüğünü çıkarın; kaynak ve kayıp nedeni açılır listeden seçilsin",
+          "2. hafta: Excel'i temizleyin; tekrarları silin, telefon biçimini birleştirin, iletişim izni sütunu ekleyin",
+          "2. hafta: 2 kişilik pilot ekiple gerçek fırsatları girin",
+          "3. hafta: web formu, UTM alanları, e-posta ve takvim entegrasyonlarını bağlayın",
+          "4. hafta: tüm ekibi alın, tabloyu salt okunur yapın, ilk raporu çıkarın",
+        ],
+      },
+      {
+        heading: "CRM ve KVKK: müşteri verisinde nelere dikkat edilmeli?",
+        paragraphs: [
+          "CRM, kişisel veri tutan bir sistemdir; özellikle pazarlama iletisi gönderecekseniz iki mevzuat birlikte geçerlidir. Bu bölüm genel bilgidir, hukuki tavsiye değildir; kendi durumunuz için hukuk danışmanınıza başvurun.",
+          "Ticari elektronik ileti yönetmeliğine göre tacir ve esnaf olan alıcılar için önceden onay zorunlu değildir, ancak ileti öncesi adres İYS'ye kaydedilir ve alıcı ret hakkını kullanırsa onaysız gönderim yapılamaz. Ret talebinden sonra gönderim üç iş günü içinde durdurulur, onay kayıtları onayın bitişinden itibaren üç yıl saklanır. Onay almak için ticari ileti gönderilemez ve onay metnindeki kutucuk önceden işaretli olamaz.",
+          "İYS kaydı tek başına yeterli de değildir. KVKK Kurulu'nun 2022/107 sayılı kararında bir şirket, numaranın İYS'de kayıtlı olduğunu savunmuş; ancak dayanak ilişkiyi ya da açık rızayı gösteremediği için idari para cezası almıştır. Pratik sonuç: CRM'de her kişi için iletişim izninin kanalını, tarihini ve kaynağını ayrı alan olarak tutun.",
+        ],
+      },
+      {
+        heading: "CRM projeleri neden başarısız olur?",
+        paragraphs: [
+          "Sorun neredeyse her zaman yazılımda değildir. Sık görülen hatalar şunlardır:",
+        ],
+        bullets: [
+          "Süreç yokken program almak: CRM dağınık süreci hızlandırır, düzeltmez",
+          "Fazla alan zorunlu yapmak: satışçı veri girmeyi bırakır ya da rastgele doldurur",
+          "Kaynak alanını boş bırakmak: reklamın kaç müşteri getirdiği sonradan öğrenilemez",
+          "Kayıp nedeni toplamamak: neden satılamadığı hiç öğrenilmez",
+          "Eski veriyi temizlemeden taşımak: kirli veri ilk günden güveni bitirir",
+          "En ucuz ya da en bilinen ürünü denemeden almak",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "CRM ne demek, Türkçesi nedir?",
+        answer:
+          "CRM, Customer Relationship Management ifadesinin kısaltmasıdır ve Türkçesi müşteri ilişkileri yönetimidir. Hem bu yaklaşımı hem de müşteri, satış ve destek kayıtlarını tek yerde tutan yazılımı anlatır.",
+      },
+      {
+        question: "CRM programı ücretsiz olur mu?",
+        answer:
+          "Evet, HubSpot ve Zoho gibi bazı ürünlerin ücretsiz planları var; ancak kullanıcı, kayıt ve özellik sınırları bulunur. Örneğin HubSpot'un ücretsiz planı 1.000 kişi ve 2 kullanıcıyla sınırlıdır. Küçük ekipler için iyi bir başlangıçtır, otomasyon ve gelişmiş rapor gerektiğinde ücretli plana geçmek gerekir.",
+      },
+      {
+        question: "CRM ile ERP arasındaki fark nedir?",
+        answer:
+          "CRM müşteri ve satış ilişkisini, ERP ise stok, üretim, satın alma ve muhasebe gibi iç süreçleri yönetir. Kısaca CRM satışı kazanmaya, ERP satışı teslim edip kayda geçirmeye yarar. Büyüyen şirketler ikisini entegre kullanır.",
+      },
+      {
+        question: "Küçük işletme için CRM gerekli mi?",
+        answer:
+          "Fırsat sayısı azsa ve tek kişi yönetiyorsa gerekli değildir; düzenli bir tablo yeter. Birden fazla kişi aynı müşterilerle konuşuyorsa, reklam harcanıyor ama sonucu kaynağa göre ölçülemiyorsa ya da takipler unutuluyorsa ücretsiz bir planla başlamak mantıklıdır.",
+      },
+      {
+        question: "CRM kurulumu ne kadar sürer?",
+        answer:
+          "Küçük bir ekip için temel kurulum yaklaşık 30 günde tamamlanabilir: süreç ve alanların yazılması, verinin temizlenmesi, pilot kullanım ve entegrasyonlar. Asıl zaman alan kısım yazılım değil, ekibin kullanım alışkanlığıdır; fayda birkaç aylık düzenli veriyle görünür hale gelir.",
+      },
+    ],
+    howTo: {
+      name: "Excel'den CRM'e 30 günde geçiş",
+      description: "Küçük bir satış ekibinin müşteri tablosundan CRM kullanımına geçişi için adımlar.",
+      steps: [
+        { name: "Süreci yazın", text: "Satış aşamalarını ve her aşamanın çıkış kuralını yazın, zorunlu alanları 5–6 ile sınırlayın." },
+        { name: "Veriyi temizleyin", text: "Tekrar kayıtları silin, telefon biçimini birleştirin ve iletişim izni sütunu ekleyin." },
+        { name: "Pilot başlatın", text: "İki kişilik ekiple gerçek fırsatları CRM'e girip eksik alanları düzeltin." },
+        { name: "Entegrasyonları bağlayın", text: "Web formunu, UTM alanlarını, e-postayı ve takvimi CRM'e bağlayın." },
+        { name: "Tüm ekibe açın", text: "Eski tabloyu salt okunur yapın ve haftalık satış toplantısını CRM ekranından yapın." },
+        { name: "İlk raporu okuyun", text: "Kaynak bazlı dönüşüm, CAC ve kayıp nedenlerini çıkarıp aşama olasılıklarını güncelleyin." },
+      ],
+    },
+    relatedToolKey: "cac",
+    resources: [
+      { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
+      { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "CPL Nedir? Lead Başı Maliyet", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
+      { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "Churn Nedir? Churn Rate Nasıl Hesaplanır?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
+      { label: "B2B Lead Generation Huni Tasarımı", href: "/blog/b2b-lead-generation-huni-tasarimi/" },
+      { label: "n8n ile Lead Enrichment Otomasyonu", href: "/blog/n8n-ile-lead-enrichment-otomasyonu/" },
+      { label: "Ticari İletişim ve Ticari Elektronik İletiler Hakkında Yönetmelik", href: "https://www.lexpera.com.tr/mevzuat/yonetmelikler/ticari-iletisim-ve-ticari-elektronik-iletiler-hakkinda-yonetmelik", external: true },
+      { label: "KVKK Kurul Kararı 2022/107", href: "https://www.kvkk.gov.tr/Icerik/7557/2022-107", external: true },
+      { label: "Ticaret Bakanlığı: İleti Yönetim Sistemi", href: "https://ticaret.gov.tr/ic-ticaret/ticari-elektronik-iletiler/ileti-yonetim-sistemi-iys", external: true },
+      { label: "Google Ads Yardım: Gelişmiş lead dönüşümleri", href: "https://support.google.com/google-ads/answer/15713840?hl=en", external: true },
+      { label: "HubSpot: Starter planı", href: "https://www.hubspot.com/products/crm/starter", external: true },
+      { label: "Pipedrive: Fiyatlar", href: "https://www.pipedrive.com/en/pricing", external: true },
+      { label: "CostBench: HubSpot ve Zoho CRM fiyat karşılaştırması", href: "https://costbench.com/compare/hubspot-vs-zoho-crm/", external: true },
     ],
   },
 ];
@@ -7979,6 +8232,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "cac",
     resources: [
+      { label: "What Is CRM? Measuring CAC by Channel", href: "/en/blog/what-is-crm-how-it-works/" },
       { label: "What Is CPL? Cost Per Lead Formula", href: "/en/blog/what-is-cpl-cost-per-lead/" },
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
       { label: "CAC Payback Period Calculator", href: "/en/free-tools/cac-payback-period-calculator/" },
@@ -9931,6 +10185,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is CRM? How It Works, Costs and Payback", href: "/en/blog/what-is-crm-how-it-works/" },
       { label: "Ad Budget Calculator (B2B mode)", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
       { label: "What Is CAC?", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
@@ -10549,6 +10804,253 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Amazon Seller Central: Drop shipping policy reminder", href: "https://sellercentral.amazon.com/forums/t/drop-shipping-policy-reminder/839620", external: true },
       { label: "Thompson Coburn: De minimis exemption suspended globally", href: "https://www.thompsoncoburn.com/insights/trump-administration-indefinitely-suspends-de-minimis-exemption-for-commercial-shipments-globally/", external: true },
       { label: "Turkey Ministry of Trade: Distance contracts", href: "https://tuketici.ticaret.gov.tr/yayinlar/tuketici-bilgi-rehberi/mesafeli-sozlesmeler-hakkinda-bilgilendirme", external: true },
+    ],
+  },
+  {
+    slug: "what-is-crm-how-it-works",
+    seoTitle: "What Is CRM? How It Works, Costs and Payback for SMBs",
+    title: "What Is CRM? How It Works, Types, Pricing, Payback Math and How to Choose One (2026)",
+    description:
+      "CRM keeps customer and sales data in one system. Learn how it works, the types, 2026 pricing, a payback formula, how to choose one and how to move off Excel.",
+    category: "b2b-lead-generation",
+    tldr: [
+      "CRM (customer relationship management) is the system that keeps every record about prospects and customers in one place, so sales, marketing and support work from the same data.",
+      "Almost every CRM is built on five records: lead, contact, company, deal and activity. The value comes less from the software than from seeing what stage each deal is in and what happens next.",
+      "Payback = Setup cost / (Monthly extra gross profit − Monthly licence). In the example, a $100 monthly licence is covered by one extra $3,000 customer every 30 months.",
+      "For advertisers the real gain is moving from cost per lead to cost per customer: two channels can both have a $35 CPL while one has a CAC of $525 and the other $1,050.",
+      "Not every business needs a CRM. If one person manages a few deals, a well-kept spreadsheet is enough. When buying, compare total cost and whether the team will truly use it, not the licence price alone.",
+    ],
+    publishedAt: "2026-11-05",
+    readingMinutes: 11,
+    tags: ["CRM", "Sales Management", "B2B", "Lead Generation", "CAC", "SMB"],
+    sections: [
+      {
+        heading: "What is CRM? (Short answer)",
+        paragraphs: [
+          "CRM stands for customer relationship management. In everyday use it means the software that stores customer and sales records: who called when, which quote went out, which complaint is open and what the next step is, all on one screen.",
+          "The term covers three things. As a strategy, it is the decision to manage customer relationships for the long term. As a process, it is the rule for who handles an inquiry, how fast and through which steps. As software, it is the tool that enforces and records those rules. Most failed CRM projects come from companies that bought the third without doing the first two.",
+        ],
+      },
+      {
+        heading: "What does a CRM do? 6 concrete benefits",
+        paragraphs: [
+          "'Improves customer satisfaction' is true but not useful. In practice a CRM solves these problems:",
+        ],
+        bullets: [
+          "Forgotten follow-ups end: every deal has a next step and a date, and overdue work shows up in a list",
+          "Knowledge stays with the company: when a rep leaves, the conversation history stays",
+          "Forecasting becomes possible: you can see how many deals exist, at what stage and for what value",
+          "Ad results become measurable: whether a lead became a sale is recorded with its source",
+          "Existing customer opportunities surface: renewal dates, upsells and churn risk are tracked",
+          "Support and sales share context: customers do not have to explain themselves twice",
+        ],
+      },
+      {
+        heading: "How does CRM software work? The 5 core records",
+        paragraphs: [
+          "Most guides list features but skip the structure. Nearly every CRM is built on the same five record types, so once you understand them, setting up any product gets easier.",
+          "The typical flow: a lead arrives from an ad form, a rep calls, and if the need is confirmed the lead becomes a contact and company record and a deal is opened. The deal moves through stages and every conversation is logged as an activity. A won deal becomes a customer; a lost deal gets a loss reason. That loss reason is the field most companies skip and the most valuable one they could collect.",
+        ],
+        bullets: [
+          "Lead: an unverified inquiry (form, call, event card)",
+          "Contact: one person, with phone, email, title and contact permission",
+          "Company: the organization contacts belong to; the basis of B2B reports",
+          "Deal: a sales opportunity with a value, a stage and an expected close date",
+          "Activity: a call, meeting, email or task; this is where the next step is planned",
+        ],
+      },
+      {
+        heading: "What are the types of CRM?",
+        paragraphs: [
+          "The classic split is operational, analytical and collaborative CRM. Today all three are usually in one product, but knowing which is closest to your need still simplifies the choice.",
+        ],
+        bullets: [
+          "Operational CRM: runs daily sales, marketing and support work; the first need for most SMBs",
+          "Analytical CRM: turns data into segments, churn risk and forecasts; needs enough history to be useful",
+          "Collaborative CRM: lets different teams and channels see the same customer history",
+          "Sales CRM: pipeline-focused; the most common starting point in B2B and services",
+          "Ecommerce CRM: runs email, SMS and loyalty messaging based on order history",
+        ],
+      },
+      {
+        heading: "CRM vs ERP vs spreadsheets",
+        paragraphs: [
+          "CRM manages the customer side: pre-sale activity and the relationship. ERP manages internal resources such as inventory, production, purchasing and accounting. Marketing automation runs bulk communication. When used together, a deal is won in the CRM and passed to the ERP as an order.",
+          "A spreadsheet is a record, not a system. It sends no reminders, two people editing it create version conflicts, it does not show who changed what and it does not capture lead source automatically. Still, it is not a bad start: if you have few deals and one person manages them, a well-kept sheet beats a CRM nobody opens.",
+        ],
+      },
+      {
+        heading: "Does your business need a CRM?",
+        paragraphs: [
+          "Many guides say every business needs one, usually because they sell one. Decide with evidence instead: if two of the signs below apply, it is time to move. If none do, tidy up your spreadsheet first.",
+        ],
+        bullets: [
+          "More than one person talks to the same customers",
+          "Your sales cycle takes weeks and a deal needs several conversations",
+          "You spend on ads but cannot say which channel brings customers",
+          "You cannot measure response time, or you are not sure every lead was called",
+          "When a rep leaves, the customer history leaves too",
+          "Everyone gives a different number when forecasting next month",
+        ],
+      },
+      {
+        heading: "How fast does a CRM pay for itself? Formula and example",
+        paragraphs: [
+          "A CRM is an investment decision, and two formulas are enough: Monthly extra gross profit = Extra customers × Gross profit per customer. Payback (months) = Setup cost / (Monthly extra gross profit − Monthly licence).",
+          "Example (illustrative figures): a B2B service firm gets 120 leads a month at $35 each, spending $4,200. 40% of leads qualify (48), half of those reach a proposal (24) and 25% of proposals close: 6 customers a month. The average sale is $6,000 at a 50% gross margin, so gross profit per customer is $3,000.",
+          "Suppose the CRM's only effect is to reduce neglected leads and lift the qualified rate from 40% to 45%. Qualified leads rise to 54, proposals to 27 and customers to 6.75. That is 0.75 extra customers, or $2,250 of extra gross profit a month. With a $100 monthly licence for 5 seats and $3,000 of setup and training, payback is 3,000 / (2,250 − 100) = 1.4 months.",
+          "If the effect is only a third of that, at 0.25 extra customers, extra profit is $750 and payback stretches to 3,000 / 650 = 4.6 months. Licence break-even is 100 / 3,000 = 0.03 customers a month, or one extra customer every 30 months. Add the time your team will spend on data entry; most business cases forget it.",
+        ],
+        bullets: [
+          "Monthly extra gross profit = Extra customers × Gross profit per customer",
+          "Payback (months) = Setup cost / (Monthly extra gross profit − Monthly licence)",
+          "Licence break-even (customers/month) = Monthly licence / Gross profit per customer",
+        ],
+      },
+      {
+        heading: "What can you measure with a CRM?",
+        paragraphs: [
+          "The first gain is moving from cost per lead to cost per customer. Split the same budget equally: Google brings 60 leads for $2,100 and Meta brings 60 leads for $2,100, so both have a $35 CPL. By source in the CRM, you see 4 customers from Google and 2 from Meta. Google's CAC is $525 and Meta's is $1,050. Anyone looking only at the ad platform's CPL never sees this.",
+          "The second gain is a weighted pipeline. Each stage gets a close probability from your own history. With 8 deals in discovery (10%), 5 in proposal (30%), 2 in negotiation (60%) and a $6,000 deal value: 4,800 + 9,000 + 7,200 = $21,000. The raw total looks like $90,000, and planning on that number misleads you.",
+          "Stage probabilities should come from at least a few months of records, not assumptions. Early on, mark them as estimates and replace them quarterly with real rates.",
+        ],
+        bullets: [
+          "Lead → qualified lead → proposal → customer conversion, by source",
+          "First response time from lead to first contact",
+          "Sales cycle length in days",
+          "Win rate and loss reason mix",
+          "CAC by channel and average deal value",
+          "Churn and renewal rate for existing customers",
+        ],
+      },
+      {
+        heading: "How does a CRM improve ad campaigns?",
+        paragraphs: [
+          "Ad platforms deliver what you optimize for. Optimize for form fills and you get people who fill in forms, not people who buy. The fix is sending the CRM outcome back to the ad platform.",
+          "In Google Ads the recommended route is enhanced conversions for leads. The Google tag captures the form's email or phone as a hashed value; when the lead becomes a customer in your CRM, you upload the same hashed data and Google matches the two. Without a tag, the gclid must be stored in the CRM for matching. Google announced these uploads move to the Data Manager API starting June 15, 2026, so check current documentation before building the integration.",
+          "One prerequisite: source data (UTM, gclid) must be written to the CRM through hidden form fields. If those fields are not added on day one, the history never comes back. Sending customer data to ad platforms is a data transfer, so review your privacy notice accordingly.",
+        ],
+      },
+      {
+        heading: "How much does a CRM cost? (November 2026)",
+        paragraphs: [
+          "The figures below are list prices checked on November 5, 2026. Discounts and plan contents change often, so confirm with the vendor. The Zoho figures come from a secondary source. Enterprise plans are usually quote-based.",
+          "Total cost = (Seats × Monthly licence × 12) + Setup + Integrations + Training + Team time. For example, 5 seats at $39 a month is $2,340 a year in licences. A free plan looks attractive, but if the automation, report or permission you need sits one tier up, compare on that tier.",
+        ],
+        bullets: [
+          "HubSpot: free plan (up to 1,000 contacts, 2 users); Starter normally $20 per seat per month, with a limited-time new-customer discount",
+          "Pipedrive: no free plan, 14-day trial; $14, $39, $59 and $79 per seat per month billed annually",
+          "Zoho CRM: free plan; paid tiers around $20, $35 and $50 per user per month",
+        ],
+      },
+      {
+        heading: "How to choose a CRM: a weighted scorecard",
+        paragraphs: [
+          "Feature-list comparisons push you toward the busiest product. Instead, pick 2–3 candidates, run one real deal through each and score the criteria below from 1 to 5.",
+          "Example: product A scores 4, 5, 3, 3, 5, 3 for a total of 4.0; product B scores 5, 3, 5, 4, 3, 4 for 4.15. Because B is harder to use, the call still depends on the team trial: the score of a CRM reps will not open means nothing.",
+        ],
+        bullets: [
+          "Fit with your sales process (30%): stages, required fields, task rules",
+          "Ease of use and mobile (25%): can a rep log a call in 30 seconds",
+          "Integrations (20%): forms, ads, email, phone, messaging, accounting",
+          "Reporting (10%): can it show conversion and CAC by source",
+          "Total cost (10%): three-year licence, setup and training",
+          "Data and compliance (5%): export, permission levels, data location",
+        ],
+      },
+      {
+        heading: "How to move from Excel to a CRM: a 30-day plan",
+        paragraphs: [
+          "Most migrations fail because the team does not use the tool, not for technical reasons. So start small: 5–6 required fields per lead is enough; a 40-field form is abandoned in the first week.",
+          "The core rule: if it is not in the CRM, it did not happen. Run the weekly sales meeting from the CRM screen and stop accepting separate sheets. Once managers report from the CRM, the team starts keeping records.",
+        ],
+        bullets: [
+          "Week 1: write your stages and each stage's exit rule (for example, 'Proposal' requires a sent proposal)",
+          "Week 1: define fields; make source and loss reason dropdowns",
+          "Week 2: clean the sheet; remove duplicates, standardize phone formats, add a permission column",
+          "Week 2: pilot with 2 people on real deals",
+          "Week 3: connect the web form, UTM fields, email and calendar",
+          "Week 4: onboard everyone, make the sheet read-only and pull the first report",
+        ],
+      },
+      {
+        heading: "CRM and data privacy: what to watch",
+        paragraphs: [
+          "A CRM holds personal data, and marketing messages add a second layer of rules that vary by country. Check GDPR, CAN-SPAM or your local law with counsel; this section is general information, not legal advice.",
+          "In Turkey, for instance, merchants can receive commercial messages without prior consent, but they must be registered in the national İYS system and any opt-out stops sending within three business days. A consent record alone is also not always enough: in decision 2022/107, Turkey's data protection board fined a company that had a number registered in İYS but could not document the underlying relationship or consent.",
+          "The practical takeaway works everywhere: store each contact's permission channel, date and source as separate CRM fields.",
+        ],
+      },
+      {
+        heading: "Why do CRM projects fail?",
+        paragraphs: [
+          "The problem is rarely the software. The common mistakes:",
+        ],
+        bullets: [
+          "Buying a tool before defining a process: a CRM speeds up a messy process, it does not fix it",
+          "Too many required fields: reps stop entering data or fill it randomly",
+          "Leaving lead source empty: you can never learn how many customers ads brought",
+          "Not collecting loss reasons: you never learn why you lose",
+          "Migrating dirty data: it destroys trust from day one",
+          "Buying the cheapest or best-known product without a trial",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does CRM stand for?",
+        answer:
+          "CRM stands for customer relationship management. It refers both to the approach and to the software that keeps customer, sales and support records in one place.",
+      },
+      {
+        question: "Is there a free CRM?",
+        answer:
+          "Yes. HubSpot and Zoho offer free plans with limits on users, records and features; HubSpot's free plan, for example, is limited to 1,000 contacts and 2 users. It is a good start for small teams, and you move to a paid tier when you need automation or deeper reports.",
+      },
+      {
+        question: "What is the difference between CRM and ERP?",
+        answer:
+          "CRM manages customer and sales relationships, while ERP manages internal processes such as inventory, production, purchasing and accounting. In short, CRM helps you win the sale and ERP helps you deliver and record it. Growing companies usually integrate both.",
+      },
+      {
+        question: "Does a small business need a CRM?",
+        answer:
+          "Not if one person handles a small number of deals; a tidy spreadsheet is enough. If several people talk to the same customers, you spend on ads without knowing results by source, or follow-ups get forgotten, a free plan is a sensible start.",
+      },
+      {
+        question: "How long does CRM setup take?",
+        answer:
+          "A small team can finish a basic setup in about 30 days: defining the process and fields, cleaning data, running a pilot and connecting integrations. The slow part is team habit rather than software, and the benefit becomes visible after a few months of consistent data.",
+      },
+    ],
+    howTo: {
+      name: "Move from Excel to a CRM in 30 days",
+      description: "Steps for a small sales team moving from a customer spreadsheet to a CRM.",
+      steps: [
+        { name: "Write the process", text: "Define sales stages and exit rules, and limit required fields to 5–6." },
+        { name: "Clean the data", text: "Remove duplicates, standardize phone formats and add a contact permission column." },
+        { name: "Run a pilot", text: "Enter real deals with two people and fix missing fields." },
+        { name: "Connect integrations", text: "Connect the web form, UTM fields, email and calendar to the CRM." },
+        { name: "Roll out to everyone", text: "Make the old sheet read-only and run the weekly sales meeting from the CRM." },
+        { name: "Read the first report", text: "Pull conversion by source, CAC and loss reasons, then update stage probabilities." },
+      ],
+    },
+    relatedToolKey: "cac",
+    resources: [
+      { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "What Is CAC?", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
+      { label: "What Is CPL?", href: "/en/blog/what-is-cpl-cost-per-lead/" },
+      { label: "What Is LTV?", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
+      { label: "What Is Churn Rate?", href: "/en/blog/what-is-churn-rate/" },
+      { label: "B2B Lead Generation Funnel Design", href: "/en/blog/b2b-lead-generation-funnel-design/" },
+      { label: "Google Ads Help: Enhanced conversions for leads", href: "https://support.google.com/google-ads/answer/15713840?hl=en", external: true },
+      { label: "HubSpot: Starter plan", href: "https://www.hubspot.com/products/crm/starter", external: true },
+      { label: "Pipedrive: Pricing", href: "https://www.pipedrive.com/en/pricing", external: true },
+      { label: "CostBench: HubSpot vs Zoho CRM pricing", href: "https://costbench.com/compare/hubspot-vs-zoho-crm/", external: true },
+      { label: "KVKK decision 2022/107", href: "https://www.kvkk.gov.tr/Icerik/7557/2022-107", external: true },
     ],
   },
 ];

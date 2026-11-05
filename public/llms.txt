@@ -88,6 +88,7 @@
 - [Instagram Reklam Verme Rehberi (2026): Fiyatlar, TL Bütçe Hesabı, Öne Çıkar ve Reklam Yöneticisi Adımları](https://yusufbayrak.net/blog/instagram-reklam-verme-rehberi/): Instagram'da reklam nasıl verilir, fiyatı ne kadar? Öne Çıkar ve Reklam Yöneticisi adımları, yerleşim ölçüleri, DM reklamı ölçümü ve TL bütçe hesabı örneği.
 - [SEO Nedir, Nasıl Yapılır? Google'ın İşleyişi, 7 Adımlı Uygulama, AI Aramaları ve Kendini Ödeme Hesabı (2026)](https://yusufbayrak.net/blog/seo-nedir-nasil-yapilir/): SEO, sitenizi Google'ın ücretsiz sonuçlarında öne çıkarma işidir. 7 adımlı uygulama, AI Overviews etkisi, SEO efsaneleri ve kendini ödeme hesabı bu rehberde.
 - [Dropshipping Nedir, Türkiye'de Nasıl Yapılır? İade Dahil Kâr Hesabı, Tedarikçi Seçimi ve Yasal Sorumluluklar (2026)](https://yusufbayrak.net/blog/dropshipping-nedir-nasil-yapilir/): Dropshipping, stok tutmadan satıp ürünü tedarikçiye gönderttiğiniz modeldir. Türkiye'de nasıl yapılır, iade dahil kâr hesabı ve tedarikçi seçimi bu yazıda.
+- [CRM Nedir, Ne İşe Yarar? Türleri, Fiyatları, Geri Ödeme Hesabı ve KOBİ İçin Seçim Rehberi (2026)](https://yusufbayrak.net/blog/crm-nedir-ne-ise-yarar/): CRM, müşteri ve satış verisini tek yerde yöneten sistemdir. Ne işe yarar, türleri, fiyatları, geri ödeme hesabı, Excel'den geçiş ve KOBİ için seçim rehberi.
 
 ## English
 
@@ -152,6 +153,7 @@
 - [How to Run Instagram Ads (2026): Costs, Budget Math, Boost vs Ads Manager and Ad Specs](https://yusufbayrak.net/en/blog/how-to-run-instagram-ads/): How to run Instagram ads and what they cost: Boost and Ads Manager steps, placement sizes, DM ad measurement and a worked budget example with real math.
 - [What Is SEO and How Do You Do It? How Google Works, a 7-Step Process, AI Search and the Payback Math (2026)](https://yusufbayrak.net/en/blog/what-is-seo-how-to-do-it/): SEO earns your site visibility in Google's unpaid results. Learn the 7-step process, the real effect of AI Overviews, common myths and when SEO pays for itself.
 - [What Is Dropshipping? How It Works, Profit Math Including Returns, Supplier Checks and Seller Responsibilities (2026)](https://yusufbayrak.net/en/blog/what-is-dropshipping-how-it-works/): Dropshipping means selling without stock while a supplier ships to the customer. See how it works, the profit math including returns, and supplier checks.
+- [What Is CRM? How It Works, Types, Pricing, Payback Math and How to Choose One (2026)](https://yusufbayrak.net/en/blog/what-is-crm-how-it-works/): CRM keeps customer and sales data in one system. Learn how it works, the types, 2026 pricing, a payback formula, how to choose one and how to move off Excel.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim
