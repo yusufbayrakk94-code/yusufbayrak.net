@@ -4,9 +4,9 @@ En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülec
 
 ## 2026-11-05 (veri görevi)
 - Not: 04.11 veri kaydı yok; son veri kaydı 03.11.
-- Search Console (son 28 gün, veri 02.11'e kadar): tıklama ve gösterim 03.11 ölçümüne göre arttı ama 31.12 ara hedefinin çok gerisinde. Son 7 günde gösterim önceki 7 güne göre iki katın üzerinde, tıklama yatay ve TO düştü; ortalama sıra iyileşti. Tıklamalar hâlâ marka/AdGusto ve ana/iletişim sayfalarından.
+- Search Console (son 28 gün, veri 02.11'e kadar): tıklama ve gösterim başlangıca göre arttı ama 31.12 ara hedefinin çok gerisinde. Son 7 günde gösterim önceki 7 güne göre iki katın üzerinde, tıklama yatay ve TO düştü; ortalama sıra iyileşti. Tıklamalar hâlâ marka/AdGusto ve ana/iletişim sayfalarından.
 - Hedef sorgular: 'ltv nedir' ilk 10'da, 'cac nedir' ilk 20'de (ikisi az gösterimle, son 7 günde geldi). Yeni: 'mrr ne demek' ilk 15, 'ltv' ilk 15, 'cac açılımı' ilk 10. 'utm nedir' 50 civarı; 'başabaş roas', 'roas' 65-70; 'roas hesaplama' 80+. Desi, trendyol, kar marjı, mrr nedir, churn nedir, llms txt sorgularında hâlâ gösterim yok. 30.11 ara hedefi: 2 sorgu yolda, üçüncü aday 'mrr' kümesi.
-- Dizin: dizindeki sayfa sayısı değişmedi (rapor son güncellemesi 23.10 görünüyor; gecikmeli). "Keşfedildi" listesi aynı: 7 EN araç + Brandog. 'Yeniden yönlendirme hatası' doğrulaması sürüyor. Yeni doğrulama başlatılmadı.
+- Dizin: dizindeki sayfa sayısı başlangıca göre arttı; rapor son güncellemesi 23.10 görünüyor (gecikmeli), bu yüzden son sayfalar sayıya yansımıyor. "Keşfedildi" listesi aynı: 7 EN araç + Brandog. 'Yeniden yönlendirme hatası' doğrulaması sürüyor. Yeni doğrulama başlatılmadı.
 - ÖNEMLİ, devam ediyor: site haritası hâlâ 30.10'da okunmuş. Bugün denetlenen 4 yeni TR yazının hepsi "URL Google'da yok". Yeniden gönderme onaylı işlemler dışında; kullanıcı kararı bekleniyor.
 - Dizine ekleme isteği (5/5): CRM, SEO, Dropshipping, Google Ads reklam verme yazıları (TR) ve Kar Marjı aracı (TR, 03.11 yeniden yazımı için). Öncelik hacme göre.
 - GA4 (son 28 gün, 04.11'e kadar; mülk a402211750p546941527 doğrulandı): oturum başlangıcın altında, Direct çoğunluk, Organic Search hafif yukarıda. generate_lead, form_start, contact_click, tool_use yok; önemli etkinlik yok; embed kullanımı görünmüyor. Doğrulama hâlâ kullanıcı testine bağlı.
