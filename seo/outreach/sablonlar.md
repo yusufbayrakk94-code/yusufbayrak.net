@@ -73,3 +73,35 @@ Merhaba <Ad>,
 https://yusufbayrak.net/blog/dropshipping-nedir-nasil-yapilir/
 Uygun bulursanız yazınıza kaynak olarak ekleyebilirsiniz; karşılığında bir şey beklemiyorum.
 Yusuf Bayrak
+
+## Google Ads Kampanya Planı Şablonu (05.11.2026)
+Dosya: https://yusufbayrak.net/sablonlar/google-ads-kampanya-plani-sablonu.xlsx
+Ana sayfa (link verilecek yer): https://yusufbayrak.net/blog/google-ads-reklam-verme-rehberi/
+İçerik: 7 sayfa. Lead değerinden başabaş maliyet, maks. TBM, test ve günlük bütçe; kampanya brief'i; kelime tablosu (TBM kontrolü), başlangıç negatif listesi; 15 başlık ve 4 açıklama karakter sayacı; 14 günlük takip (lead maliyeti ve başabaş durumu). Kayıt istemez. Vergi hesabı yapmaz. 166 formül LibreOffice ile hesaplandı, 0 hata; örnek değerler yazıdaki hesapla aynı (500 TL, 30 TL, 6.300 TL).
+Rekabet gözlemi (05.11.2026): Türkçe aramada hazır şablon çıkmadı; sonuçlar İngilizce ve çoğu ücretli (Flevy, Gumroad) ya da e-posta/hesap isteyen kaynaklar. Ana mesaj: "Türkçe, ücretsiz, kayıtsız, bütçe hesabı dahil".
+
+### Hedefler
+| # | Yer | Neden | Durum |
+|---|---|---|---|
+| 1 | Kullanıcının LinkedIn profili | En hızlı dağıtım; metin aşağıda | Kullanıcı paylaşır |
+| 2 | eticaretmerkezim.com (widget hedefi #1) | Reklam ve kârlılık yazıları var; zaten teklif gidiyor | Ayrı e-posta atmayın; hatırlatmaya tek cümle ekleyin |
+| 3 | karekod.org/blog/google-ads-reklam-nasil-verilir/ | 05.11 kontrol: yazıda hesap kurulumu, TL örneği ve şablon yok | Danışmanlık satan bir site; kabul olasılığı orta. İletişim yolunu kullanıcı kontrol etmeli |
+| 4 | foxs.digital, solofor.com (widget Dalga 1B) | Reklam hizmeti veriyorlar | Ayrı e-posta atmayın; mevcut teklife tek cümle ekleyin |
+
+### LinkedIn metni (kullanıcının sesiyle düzenlenmeli)
+Google Ads'te ilk kampanyayı açarken sorulması gereken soru "günlük kaç TL?" değil, "bir lead bana kaça kâr bırakır?".
+
+4.000 TL'lik işte %50 marj ve %25 kapanış oranı varsa lead 500 TL eder. Dönüşüm oranı %6 ise tıklama başına 30 TL'ye kadar ödenebilir. Bütçe de buradan çıkar.
+
+Bu hesabı, kampanya brief'ini, kelime kontrolünü, reklam metni sayacını ve ilk 14 günün takibini tek dosyada topladım. Ücretsiz, kayıt yok.
+
+İndirme linki ilk yorumda.
+
+### Teklif metni (Google Ads rehberi olan siteler)
+Konu: "<Yazı başlığı>" yazınız için ücretsiz Excel şablonu
+
+Merhaba <Ad>,
+"<Yazı başlığı>" yazınızı okudum, özellikle <somut bir nokta> kısmı faydalıydı. Okurlarınız için Türkçe ve ücretsiz bir Google Ads kampanya planı şablonu hazırladım: lead değerinden maksimum TBM ve test bütçesini hesaplıyor, brief ve reklam metni kontrolü içeriyor, ilk 14 günü izliyor. Kayıt istemiyor.
+https://yusufbayrak.net/blog/google-ads-reklam-verme-rehberi/
+Uygun bulursanız yazınıza kaynak olarak ekleyebilirsiniz; karşılığında bir şey beklemiyorum.
+Yusuf Bayrak

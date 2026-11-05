@@ -5861,6 +5861,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Örnek (örnek tutarlar): bir ofis temizliği firmasında ortalama iş 4.000 TL, brüt marj %50, lead'den işe dönüş %25. Lead başına değer 4.000 × 0,50 × 0,25 = 500 TL'dir; bu sizin başabaş lead maliyetinizdir. Sitenizde tıklamaların %6'sı form ya da aramaya dönüşüyorsa ödeyebileceğiniz en yüksek TBM 500 × 0,06 = 30 TL olur. Anahtar Kelime Planlayıcı'daki tahmin 12 TL ise beklenen lead maliyeti 12 / 0,06 = 200 TL'dir ve hesap kârlı görünür.",
           "Test bütçesi = Hedef dönüşüm × Beklenen lead maliyeti. Karar verebilmek için pratik bir eşik olarak (Google kuralı değil) 30 lead hedefleyelim: 30 × 200 = 6.000 TL. Bunu 14 güne bölerseniz günlük yaklaşık 450 TL gerekir. 14 günde 6.300 TL harcanır, yaklaşık 525 tıklama, 31 lead ve 8 iş beklenir. Bu da 15.750 TL brüt kâr, reklam sonrası 9.450 TL demektir.",
           "Günde 150 TL ayırabiliyorsanız 14 günde 2.100 TL ile yaklaşık 175 tıklama ve 10 lead alırsınız. Bu veri otomatik öğrenme için azdır ama yine de başlanabilir: bir reklam grubu, 5–10 yüksek niyetli tam eşleme kelime ve dar bir bölge seçin, testi 4–6 haftaya yayın.",
+          "Bu hesabı, kampanya brief'ini, kelime ve reklam metni kontrollerini ve 14 günlük takibi tek dosyada yapmak için yazının sonundaki kaynaklardan ücretsiz Google Ads Kampanya Planı Şablonu'nu indirebilirsiniz; kayıt istemez.",
         ],
         bullets: [
           "Başabaş lead maliyeti = Ortalama iş × Brüt marj × Lead'den işe dönüş",
@@ -6044,6 +6045,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Google Ads Kampanya Planı Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/google-ads-kampanya-plani-sablonu.xlsx", external: true },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
