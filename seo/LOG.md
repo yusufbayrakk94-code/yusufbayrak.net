@@ -2,6 +2,11 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-11-06 (içerik görevi)
+- YENİ YAZI: "KPI Nedir? Pazarlama KPI'ları Nasıl Belirlenir?" (/blog/kpi-nedir-pazarlama-kpi-ornekleri/ + EN /en/blog/what-is-a-kpi-marketing-kpi-examples/). Takvimin 6 Kas satırı; hacim: 'kpi nedir' 1.900/ay (Keyword Planner, 02.11).
+- Rakip bulgusu: kariyer.net (~500 kelime, KPI'yı 'nicel metrik' diye tanımlıyor, formül yok), iienstitu (2018, formül/örnek/SSS yok, metnin yarısı tekrar), ClickUp TR (40 KPI formüllü ama takipçi gibi metrikleri KPI sayıyor, öncü/gecikmeli ayrımı ve hedef belirleme yöntemi yok, %400 ROI'yi yanlış yorumluyor). Bizim farkımız: KPI/metrik 3 soru testi, hedeften geriye sayısal KPI ağacı (ciro → sipariş → oturum → bütçe → ROAS → katkı), öncü/gecikmeli ayrımı, KPI kartı şablonu, e-ticaret/B2B/SaaS formüllü setler + araç linkleri, GA4 key event (Google kaynağı). Analiz: seo/research/kpi-nedir.md.
+- İç link: yeni yazı → Dönüşüm Oranı (relatedToolKey), ROAS, Kar Marjı, Trendyol Kâr, CAC, Reklam Bütçesi, MRR araçları + 6 yazı. Gelen: CAC nedir ve Google Ads reklam verme rehberi (TR+EN) kaynakları; Dönüşüm Oranı aracı otomatik. Ölçüm: 'kpi nedir', 'pazarlama kpi', 'kpi örnekleri' gösterim/sıra.
+
 ## 2026-11-05 (veri görevi)
 - Not: 04.11 veri kaydı yok; son veri kaydı 03.11.
 - Search Console (son 28 gün, veri 02.11'e kadar): tıklama ve gösterim başlangıca göre arttı ama 31.12 ara hedefinin çok gerisinde. Son 7 günde gösterim önceki 7 güne göre iki katın üzerinde, tıklama yatay ve TO düştü; ortalama sıra iyileşti. Tıklamalar hâlâ marka/AdGusto ve ana/iletişim sayfalarından.

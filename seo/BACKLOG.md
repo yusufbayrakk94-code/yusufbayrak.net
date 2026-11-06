@@ -38,6 +38,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi: /blog/crm-nedir-ne-ise-yarar/, /blog/seo-nedir-nasil-yapilir/, /blog/dropshipping-nedir-nasil-yapilir/, /blog/google-ads-reklam-verme-rehberi/, /ucretsiz-araclar/brut-kar-marji-hesaplayici/ — 2026-11-05 (5/5; 4 yazı "URL Google'da yok" idi, Kar Marjı aracı dizindeydi, yeniden yazıldığı için istendi)
 - [ ] Dizine ekleme isteği (2026-11-05 kalan, TR önce): /blog/roas-nedir-nasil-hesaplanir/, /en/blog/what-is-crm-how-it-works/, /en/blog/what-is-seo-how-to-do-it/, /en/blog/what-is-dropshipping-how-it-works/, /en/blog/how-to-run-google-ads-first-campaign/
 - [ ] Dizine ekleme isteği (2026-11-05 güçlendirildi, TR önce; ÖNCELİKLİ): /blog/mrr-nedir-nasil-hesaplanir/, /blog/nrr-nedir-saas-buyume-metrigi/, /en/blog/what-is-mrr-how-to-calculate/, /en/blog/what-is-nrr-saas-growth-metric/
+- [ ] Dizine ekleme isteği (2026-11-06, TR önce): /blog/kpi-nedir-pazarlama-kpi-ornekleri/, /en/blog/what-is-a-kpi-marketing-kpi-examples/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
@@ -104,6 +105,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dropshipping nedir — 2026-11-04 (/blog/dropshipping-nedir-nasil-yapilir/)
 - [x] CRM nedir — 2026-11-05 (/blog/crm-nedir-ne-ise-yarar/)
 - [x] Google Ads reklam verme rehberi — 2026-11-05 (/blog/google-ads-reklam-verme-rehberi/)
+- [x] KPI nedir (metrik kümesinin üst sayfası) — 2026-11-06 (/blog/kpi-nedir-pazarlama-kpi-ornekleri/)
 - [x] Trendyol reklam nasıl verilir — 2026-11-02 (/blog/trendyol-reklam-nasil-verilir/)
 - [x] CPL nedir — 2026-11-02 (/blog/cpl-nedir-lead-basi-maliyet/)
 

@@ -2860,6 +2860,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "cac",
     resources: [
+      { label: "KPI Nedir? Pazarlama KPI Örnekleri", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
       { label: "CRM Nedir, Ne İşe Yarar? Kanal Bazlı CAC Ölçümü", href: "/blog/crm-nedir-ne-ise-yarar/" },
       { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
@@ -6093,6 +6094,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "KPI Nedir? Pazarlama KPI Örnekleri", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
       { label: "Google Ads Kampanya Planı Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/google-ads-kampanya-plani-sablonu.xlsx", external: true },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -6113,6 +6115,229 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Yardım: Akıllı Teklif öğrenmesi", href: "https://support.google.com/google-ads/answer/13020501?hl=en", external: true },
       { label: "Google Ads Yardım: Reklam inceleme süreci", href: "https://support.google.com/google-ads/answer/1722120?hl=en", external: true },
       { label: "Google Ads Yardım: Faturalandırma seçenekleri", href: "https://support.google.com/google-ads/answer/1704418?hl=tr", external: true },
+    ],
+  },
+  {
+    slug: "kpi-nedir-pazarlama-kpi-ornekleri",
+    seoTitle: "KPI Nedir? Pazarlama KPI Örnekleri ve Belirleme",
+    title: "KPI Nedir? Pazarlama KPI'ları Nasıl Belirlenir? Formüllü Örnekler ve KPI Ağacı",
+    description:
+      "KPI nedir, metrikten farkı ne? Hedeften geriye KPI ağacı, öncü ve gecikmeli göstergeler, KPI kartı ve e-ticaret, B2B, SaaS için formüllü KPI örnekleri.",
+    category: "performans-pazarlama",
+    tldr: [
+      "KPI (Key Performance Indicator, temel performans göstergesi), bir iş hedefine ne kadar yaklaştığınızı gösteren ve bir hedef değeri, sahibi ile ölçüm sıklığı olan metriktir. Her KPI bir metriktir; ama her metrik KPI değildir.",
+      "İyi KPI hedeften geriye çıkarılır: 600.000 TL aylık ciro hedefi, 1.200 TL sepet ortalamasıyla 500 sipariş, %1,5 dönüşüm oranıyla yaklaşık 33.300 oturum demektir. Bu zincirdeki her halka ayrı bir KPI'dır.",
+      "KPI'ları öncü (haftalık bakılan, önceden uyaran: dönüşüm oranı, CPL) ve gecikmeli (sonucu gösteren: kâr, churn) olarak ayırın. Ekip başına 3–5 KPI yeterlidir.",
+      "Her KPI için bir kart yazın: formül, veri kaynağı, sahibi, sıklık, başlangıç değeri, hedef, uyarı eşiği ve eşik aşılınca yapılacak iş.",
+    ],
+    publishedAt: "2026-11-06",
+    readingMinutes: 9,
+    tags: ["KPI", "Pazarlama Metrikleri", "Performans Pazarlama", "E-ticaret", "B2B", "SaaS"],
+    sections: [
+      {
+        heading: "KPI nedir? (Kısa cevap)",
+        paragraphs: [
+          "KPI, İngilizce Key Performance Indicator'ın kısaltmasıdır; Türkçede temel (anahtar) performans göstergesi denir. Bir işletmenin, ekibin ya da kampanyanın belirlenen hedefe ne kadar yaklaştığını gösteren ölçülebilir değerdir.",
+          "Bir değerin KPI sayılması için üç şey gerekir: bir hedefe bağlı olması (örneğin 'Mart sonunda dönüşüm oranı %1,5'), bir sahibinin olması (o sayıdan sorumlu kişi) ve düzenli aralıklarla ölçülmesi. Hedefi ve sahibi olmayan sayı yalnızca bir metriktir.",
+          "Örnek: bir e-ticaret sitesinin 'aylık oturum sayısı' bir metriktir. Aynı şirket 'Ocak'ta reklamdan gelen siparişlerin sipariş başı maliyetini 350 TL'den 300 TL'ye indirmek' hedefini koyup bunu her hafta pazarlama sorumlusuna raporlatıyorsa, sipariş başı maliyet o şirketin KPI'ıdır.",
+        ],
+      },
+      {
+        heading: "KPI ile metrik arasındaki fark nedir?",
+        paragraphs: [
+          "Metrik, ölçebildiğiniz her şeydir: gösterim, tıklama, takipçi, sayfada kalma süresi, e-posta açılma oranı. KPI ise bu metriklerin içinden, işin sonucunu en doğrudan etkileyen ve hedef konulan birkaç tanesidir. Google Analytics, Meta ve Google Ads panelleri yüzlerce metrik gösterir; KPI'ları seçmek sizin işinizdir.",
+          "Bir metriğin KPI olup olmadığını üç soruyla test edin:",
+        ],
+        bullets: [
+          "Hedefe bağlı mı? Bu sayı değişince ciro, kâr ya da müşteri sayısı da değişiyor mu?",
+          "Sahibi var mı? Sayı kötüleşince 'bunu ben düzeltirim' diyecek bir kişi ya da ekip var mı?",
+          "Karar değiştiriyor mu? Sayı hedefin altına düşünce bütçe, kampanya ya da sayfa üzerinde bir şey değişecek mi? Hiçbir şey değişmeyecekse KPI değil, rapor süsüdür.",
+        ],
+      },
+      {
+        heading: "KPI nasıl belirlenir? Hedeften geriye KPI ağacı",
+        paragraphs: [
+          "En sağlam yöntem, iş hedefinden başlayıp onu oluşturan çarpanlara ayırmaktır. Böylece her KPI ana hedefe matematiksel olarak bağlanır ve 'neden bu sayıya bakıyoruz' sorusunun cevabı hazır olur.",
+          "Örnek bir e-ticaret sitesi aylık 600.000 TL ciro hedefliyor. Sepet ortalaması (AOV) 1.200 TL ise 600.000 / 1.200 = 500 sipariş gerekir. Sitenin dönüşüm oranı %1,5 ise 500 / 0,015 ≈ 33.300 oturum gerekir.",
+          "Siparişlerin %60'ının reklamdan gelmesi bekleniyorsa reklamın görevi 300 siparişdir. Brüt kâr marjı %40 ise sipariş başına brüt kâr 1.200 × 0,40 = 480 TL'dir; bu, reklamın sipariş başına harcayabileceği en yüksek tutardır (başabaş CPA). Şirket sipariş başı 300 TL hedeflerse reklam bütçesi 300 × 300 = 90.000 TL olur, ROAS (300 × 1.200) / 90.000 = 4,0 çıkar. Başabaş ROAS 1 / 0,40 = 2,5'tir. Reklamdan gelen siparişler, reklam maliyeti düşüldükten sonra 300 × 480 − 90.000 = 54.000 TL katkı bırakır.",
+          "Bu ağaçtan şu KPI seti çıkar: ana hedef olarak aylık ciro ve reklam sonrası katkı; ara KPI olarak sipariş sayısı, sepet ortalaması, dönüşüm oranı ve sipariş başı maliyet (ya da ROAS). Bir halka hedefin altında kaldığında hangi ekibin neyi düzelteceği bellidir.",
+        ],
+        bullets: [
+          "Ciro = Sipariş sayısı × Sepet ortalaması",
+          "Sipariş sayısı = Oturum × Dönüşüm oranı",
+          "Reklam bütçesi = Reklam siparişi × Hedef sipariş başı maliyet",
+          "ROAS = Reklam cirosu / Reklam harcaması; başabaş ROAS = 1 / Brüt marj",
+        ],
+      },
+      {
+        heading: "Öncü ve gecikmeli KPI nedir?",
+        paragraphs: [
+          "Gecikmeli (lagging) göstergeler sonucu söyler ama geç söyler: aylık ciro, net kâr, müşteri kaybı (churn), müşteri yaşam boyu değeri. Ay bittiğinde ne olduğunu bilirsiniz, ama o ay için yapacak bir şey kalmamıştır.",
+          "Öncü (leading) göstergeler sonuca giden yolu gösterir ve erken uyarır: oturum sayısı, sepete ekleme oranı, dönüşüm oranı, tıklama oranı (CTR), lead başı maliyet (CPL), satış görüşmesine dönüşen lead oranı. Bunlar haftalık, hatta günlük izlenir.",
+          "Doğru set ikisini birlikte içerir. Yönetim gecikmeli KPI'ları aylık okur; pazarlama ekibi öncü KPI'ları haftalık izler ve ay sonunu beklemeden müdahale eder. Yukarıdaki örnekte ayın ilk haftasında dönüşüm oranı %1,2'ye düştüyse, ay sonunda yaklaşık 100 sipariş eksik kalacağını şimdiden bilirsiniz.",
+        ],
+      },
+      {
+        heading: "KPI kartı nasıl yazılır?",
+        paragraphs: [
+          "KPI'ların çoğu ölçüm tanımı yazılı olmadığı için tartışma konusu olur: 'Dönüşüm oranı' kimi için sipariş / oturum, kimi için sipariş / kullanıcıdır. Her KPI için tek sayfalık bir kart hazırlayın ve tanımı değiştirmeden önce herkese duyurun.",
+          "Örnek kart — Dönüşüm oranı. Formül: satın alma sayısı / oturum × 100. Kaynak: GA4. Sahibi: e-ticaret müdürü. Sıklık: haftalık. Başlangıç: %1,2 (son 90 gün). Hedef: 31 Mart'a kadar %1,5. Eşik: %1,0'ın altı kırmızı, %1,0–1,4 sarı. Aksiyon: kırmızıda ödeme adımlarını ve son değişiklikleri kontrol et.",
+        ],
+        bullets: [
+          "Ad ve tanım: herkesin aynı şeyi anladığı tek cümle",
+          "Formül: pay ve payda açıkça (hangi dönüşümler, hangi maliyetler)",
+          "Veri kaynağı: GA4, reklam paneli, CRM, muhasebe — tek kaynak seçin",
+          "Sahibi: tek kişi ya da ekip",
+          "Sıklık: öncü KPI haftalık, gecikmeli KPI aylık",
+          "Başlangıç değeri ve hedef: tarihli ve sayılı",
+          "Eşikler ve aksiyon: kırmızı, sarı, yeşil ve her birinde ne yapılacağı",
+        ],
+      },
+      {
+        heading: "Hedef değer nasıl konur?",
+        paragraphs: [
+          "İki yol vardır ve ikisini birlikte kullanmak en sağlıklısıdır. Aşağıdan yukarı: son 90 günün ortalamasını başlangıç alın ve gerçekçi bir iyileşme ekleyin (dönüşüm oranı %1,2 → %1,4). Yukarıdan aşağı: iş hedefini KPI ağacına yerleştirip gereken değeri hesaplayın (600.000 TL ciro için %1,5 gerekiyor).",
+          "İki sayı arasındaki fark size planın gerçekçiliğini söyler. Gereken dönüşüm oranı %1,5, ulaşılabilir görünen %1,4 ise aradaki farkı başka bir halkadan kapatmanız gerekir: daha çok trafik, daha yüksek sepet ortalaması ya da daha fazla reklam bütçesi. Hedefi yalnızca 'geçen yıldan %20 fazla' diye koymak bu kontrolü atlar.",
+          "Hedefler SMART kuralına uymalıdır: belirli (specific), ölçülebilir (measurable), ulaşılabilir (achievable), işle ilgili (relevant) ve tarihli (time-bound). Pratikte bu, her hedefin bir sayı ve bir tarih içermesi demektir.",
+        ],
+      },
+      {
+        heading: "E-ticaret için KPI örnekleri",
+        paragraphs: [
+          "Online satış yapan bir işletme için başlangıçta şu beş KPI yeterlidir. Hepsinin hesaplayıcısı sitede ücretsiz olarak vardır.",
+        ],
+        bullets: [
+          "Reklam sonrası katkı kârı = Brüt kâr − Reklam harcaması (ana hedef; ciro yerine bu sayı)",
+          "Dönüşüm oranı = Sipariş / Oturum × 100 (Dönüşüm Oranı Hesaplayıcı)",
+          "Sepet ortalaması (AOV) = Ciro / Sipariş sayısı",
+          "ROAS = Reklam cirosu / Reklam harcaması; başabaş ROAS = 1 / Brüt marj (ROAS Hesaplayıcı)",
+          "Brüt kâr marjı = (Satış fiyatı − Ürün maliyeti) / Satış fiyatı × 100 (Kar Marjı Hesaplama); pazaryerinde komisyon ve kargo dahil (Trendyol Kâr Hesaplama)",
+          "Destek metrikleri: iade oranı, tekrar satın alma oranı, sipariş başı kargo maliyeti",
+        ],
+      },
+      {
+        heading: "B2B ve hizmet işletmeleri için KPI örnekleri",
+        paragraphs: [
+          "Satışın formla başlayıp satış ekibiyle kapandığı işlerde reklam panelindeki dönüşüm yeterli değildir; KPI zinciri CRM'e kadar uzanmalıdır.",
+        ],
+        bullets: [
+          "Lead başı maliyet: CPL = Harcama / Geçerli lead sayısı",
+          "Lead'den satış görüşmesine (SQL) dönüşüm oranı = SQL / Lead × 100",
+          "Kazanma oranı = Kazanılan teklif / Verilen teklif × 100",
+          "Müşteri edinme maliyeti: CAC = Satış ve pazarlama maliyeti / Yeni müşteri sayısı (CAC Hesaplayıcı)",
+          "Pipeline değeri: açık fırsatların toplam tutarı (CRM)",
+        ],
+      },
+      {
+        heading: "SaaS ve abonelik işleri için KPI örnekleri",
+        paragraphs: [
+          "Abonelik gelirinde büyüme yeni satıştan çok, mevcut müşterinin kalmasına ve büyümesine bağlıdır. Bu yüzden SaaS KPI'ları gelir tabanına odaklanır.",
+        ],
+        bullets: [
+          "MRR (aylık yinelenen gelir) ve büyüme oranı (MRR Hesaplayıcı)",
+          "Churn oranı = Dönemde kaybedilen müşteri / Dönem başı müşteri × 100 (Churn Hesaplayıcı)",
+          "NRR (net gelir tutma) = (Başlangıç MRR + Genişleme − Daralma − Kayıp) / Başlangıç MRR × 100",
+          "LTV:CAC oranı (LTV ve CAC hesaplayıcıları)",
+          "CAC geri ödeme süresi = CAC / (Aylık müşteri başı gelir × Brüt marj)",
+        ],
+      },
+      {
+        heading: "Hangi metrikler KPI olmamalı?",
+        paragraphs: [
+          "Kolay yükselen ama işin sonucunu doğrudan değiştirmeyen sayılara boş metrik (vanity metric) denir. Bunları izlemek yanlış değildir; ama hedef ve prim bunlara bağlanırsa ekip yanlış şeyi optimize eder.",
+        ],
+        bullets: [
+          "Takipçi ve beğeni sayısı: satışla bağlantısı ölçülmediyse",
+          "Gösterim ve erişim: maliyet ve sonuçla birlikte okunmadıkça",
+          "Tek başına oturum sayısı: dönüşüm oranı düşüyorsa artan trafik bir şey ifade etmez",
+          "Platformun kendi ROAS'ı: platformlar aynı satışı birden fazla kez sahiplenebilir; ciroyu sitenizin ya da muhasebenizin verisiyle karşılaştırın",
+          "Düşük CPL: lead kalitesi ölçülmüyorsa ucuz lead pahalı müşteriye dönüşebilir",
+        ],
+      },
+      {
+        heading: "KPI ile OKR arasındaki fark nedir?",
+        paragraphs: [
+          "KPI sürekli izlenen sağlık göstergesidir: dönüşüm oranı her ay ölçülür ve belirli bir aralıkta kalması beklenir. OKR (Objectives and Key Results, hedefler ve anahtar sonuçlar) ise belirli bir dönem için konulan iddialı değişim hedefidir: 'Bu çeyrekte dönüşüm oranını %1,2'den %1,5'e çıkarmak.'",
+          "Pratikte ikisi birbirini tamamlar. Bir KPI kırmızıya döndüğünde onu düzeltmek bir sonraki dönemin OKR'ı olabilir; OKR hedefe ulaştığında yeni değer o KPI'ın yeni normali olur.",
+        ],
+      },
+      {
+        heading: "KPI'lar GA4'te ve reklam panellerinde nasıl takip edilir?",
+        paragraphs: [
+          "GA4'te işiniz için önemli olan olayları (satın alma, form gönderme, demo isteği) 'key event' olarak işaretleyin. Google'ın tanımına göre key event'ler trafik edinimi ve kullanıcı davranışını analiz etmek içindir; Google Ads'te teklif ve kampanya ölçümü için kullanılan ise dönüşümlerdir. Aynı satış iki tarafta farklı sayılabilir; KPI kartında hangi kaynağın esas alındığını yazın.",
+          "Reklam kanallarını doğru ayırabilmek için bütün kampanya linklerinde tutarlı UTM parametreleri kullanın. Aksi halde trafiğin bir kısmı GA4'te 'Unassigned' görünür ve kanal bazlı KPI'lar bozulur.",
+          "KPI'ları tek bir tabloda toplayın: satırlarda KPI'lar, sütunlarda hedef, bu hafta, geçen hafta ve durum (kırmızı/sarı/yeşil). Haftalık 15 dakikalık bir toplantıda yalnızca kırmızı ve sarı satırları konuşun.",
+        ],
+      },
+      {
+        heading: "KPI belirlerken en sık yapılan 6 hata",
+        paragraphs: [
+          "KPI sistemi kurulduktan sonra en çok şu nedenlerle işlevsiz kalır:",
+        ],
+        bullets: [
+          "Çok fazla KPI: 20 göstergenin olduğu yerde hiçbiri öncelikli değildir; ekip başına 3–5 KPI seçin",
+          "Başlangıç değeri olmadan hedef koymak: %1,5 hedefi, bugün %0,8 mi yoksa %1,4 mü olduğunuza göre çok farklı bir iştir",
+          "Yalnızca ciroya bakmak: marj ve reklam maliyeti düşülmeden büyüyen ciro zarar büyütüyor olabilir",
+          "Tanımı yolda değiştirmek: payda değişince trend kırılır; değişikliği tarihiyle not edin",
+          "Sahipsiz KPI: herkesin sorumlu olduğu sayıdan kimse sorumlu değildir",
+          "Kaynakları karıştırmak: reklam panelinin dönüşümü ile CRM'deki müşteri sayısı aynı tabloda toplanmaz",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "KPI'ın Türkçe karşılığı nedir?",
+        answer:
+          "KPI, Key Performance Indicator'ın kısaltmasıdır. Türkçede temel performans göstergesi ya da anahtar performans göstergesi denir. İş hayatında çoğunlukla kısaltmasıyla, 'KPI' olarak kullanılır.",
+      },
+      {
+        question: "Bir şirketin kaç KPI'ı olmalı?",
+        answer:
+          "Sabit bir sayı yoktur, ama şirket düzeyinde 3–5, her ekip için de 3–5 KPI yönetilebilir bir sınırdır. Bu sayıyı aşan göstergeleri destek metriği olarak izleyin, hedef ve prim bağlamayın.",
+      },
+      {
+        question: "Pazarlamada en önemli KPI hangisidir?",
+        answer:
+          "İş modeline göre değişir. E-ticarette reklam sonrası katkı kârı ve ROAS, B2B'de satış görüşmesine dönen lead maliyeti ve CAC, SaaS'ta MRR büyümesi, churn ve NRR genellikle en üstte yer alır. Ortak kural: ana KPI ciro değil, maliyetler düşüldükten sonra kalan değere yakın olmalıdır.",
+      },
+      {
+        question: "KPI ile hedef aynı şey mi?",
+        answer:
+          "Hayır. Hedef ulaşmak istediğiniz sonuçtur (Mart sonunda 500 sipariş); KPI o hedefe ne kadar yaklaştığınızı gösteren göstergedir (haftalık sipariş sayısı, dönüşüm oranı). Hedef bir kez konur, KPI düzenli ölçülür.",
+      },
+      {
+        question: "KPI'lar ne sıklıkla güncellenmeli?",
+        answer:
+          "Öncü KPI'lar (dönüşüm oranı, CPL, CTR) haftalık, gecikmeli KPI'lar (kâr, churn, LTV) aylık ya da çeyreklik okunur. KPI setinin kendisi ise iş modeli ya da strateji değiştiğinde, en az yılda bir gözden geçirilir.",
+      },
+    ],
+    howTo: {
+      name: "Pazarlama KPI'ları nasıl belirlenir?",
+      description: "İş hedefinden başlayıp ölçülebilir, sahibi olan KPI setine beş adımda ulaşma.",
+      steps: [
+        { name: "İş hedefini sayıyla yazın", text: "Örneğin 'aylık 600.000 TL ciro ve 50.000 TL'nin üzerinde reklam sonrası katkı' gibi tarihli ve sayılı bir hedef koyun." },
+        { name: "Hedefi çarpanlarına ayırın", text: "Ciro = sipariş × sepet ortalaması, sipariş = oturum × dönüşüm oranı gibi KPI ağacını çıkarın ve her halkanın gereken değerini hesaplayın." },
+        { name: "Öncü ve gecikmeli KPI'ları seçin", text: "Ağaçtan ekip başına 3–5 KPI seçin; sonucu gösteren gecikmeli ve erken uyaran öncü göstergeleri birlikte alın." },
+        { name: "Her KPI için kart yazın", text: "Formül, veri kaynağı, sahibi, ölçüm sıklığı, başlangıç değeri, hedef, eşikler ve eşik aşılınca yapılacak işi yazılı hale getirin." },
+        { name: "Haftalık izleyin ve aksiyon alın", text: "KPI'ları tek tabloda toplayın, haftalık toplantıda kırmızı ve sarı olanları konuşun, tanım değişikliklerini tarihiyle not edin." },
+      ],
+    },
+    relatedToolKey: "conversion",
+    resources: [
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "CPL Nedir? Lead Başı Maliyet", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
+      { label: "Churn Nedir, Churn Rate Nasıl Hesaplanır?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
+      { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "UTM Parametreleri Nedir?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "Google Analytics Yardım: Etkinlikler ve key event'ler", href: "https://support.google.com/analytics/answer/13965727?hl=tr", external: true },
     ],
   },
 ];
@@ -8567,6 +8792,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "cac",
     resources: [
+      { label: "What Is a KPI? Marketing KPI Examples", href: "/en/blog/what-is-a-kpi-marketing-kpi-examples/" },
       { label: "What Is CRM? Measuring CAC by Channel", href: "/en/blog/what-is-crm-how-it-works/" },
       { label: "What Is CPL? Cost Per Lead Formula", href: "/en/blog/what-is-cpl-cost-per-lead/" },
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
@@ -11646,6 +11872,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is a KPI? Marketing KPI Examples", href: "/en/blog/what-is-a-kpi-marketing-kpi-examples/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
@@ -11663,6 +11890,229 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google Ads Help: Set up AI Max", href: "https://support.google.com/google-ads/answer/15909989?hl=en", external: true },
       { label: "Google Ads Help: Smart Bidding learning", href: "https://support.google.com/google-ads/answer/13020501?hl=en", external: true },
       { label: "Google Ads Help: Ad review process", href: "https://support.google.com/google-ads/answer/1722120?hl=en", external: true },
+    ],
+  },
+  {
+    slug: "what-is-a-kpi-marketing-kpi-examples",
+    seoTitle: "What Is a KPI? Marketing KPI Examples & How to Set",
+    title: "What Is a KPI? How to Set Marketing KPIs, With Formulas and a KPI Tree",
+    description:
+      "What is a KPI and how is it different from a metric? Build a KPI tree from your goal, split leading and lagging KPIs, and use formula-based KPI examples.",
+    category: "performans-pazarlama",
+    tldr: [
+      "A KPI (key performance indicator) is a metric that shows how close you are to a business goal and has a target value, an owner and a measurement cadence. Every KPI is a metric; not every metric is a KPI.",
+      "Good KPIs are derived backwards from the goal: a $60,000 monthly revenue target at a $120 average order value means 500 orders, and at a 1.5% conversion rate roughly 33,300 sessions. Each link in that chain is a KPI.",
+      "Split KPIs into leading (checked weekly, warn early: conversion rate, CPL) and lagging (show the outcome: profit, churn). Three to five KPIs per team is enough.",
+      "Write a card for every KPI: formula, data source, owner, cadence, baseline, target, alert threshold and what to do when it is breached.",
+    ],
+    publishedAt: "2026-11-06",
+    readingMinutes: 9,
+    tags: ["KPI", "Marketing Metrics", "Performance Marketing", "Ecommerce", "B2B", "SaaS"],
+    sections: [
+      {
+        heading: "What is a KPI? (Short answer)",
+        paragraphs: [
+          "KPI stands for key performance indicator. It is a measurable value that shows how close a business, team or campaign is to a defined goal.",
+          "A number becomes a KPI when three things are true: it is tied to a goal (for example, 'a 1.5% conversion rate by the end of March'), it has an owner (the person accountable for it) and it is measured at a fixed cadence. A number without a target and an owner is just a metric.",
+          "Example: monthly sessions on an online store is a metric. If the same company sets the goal 'cut paid cost per order from $35 to $30 in January' and the marketing lead reports it every week, cost per order is that company's KPI.",
+        ],
+      },
+      {
+        heading: "What is the difference between a KPI and a metric?",
+        paragraphs: [
+          "A metric is anything you can measure: impressions, clicks, followers, time on page, email open rate. KPIs are the few metrics that most directly drive the business outcome and carry a target. Google Analytics, Meta and Google Ads show you hundreds of metrics; choosing the KPIs is your job.",
+          "Test whether a metric is a KPI with three questions:",
+        ],
+        bullets: [
+          "Is it tied to the goal? When this number moves, do revenue, profit or customer count move too?",
+          "Does it have an owner? When it gets worse, is there a person or team who will say 'I'll fix that'?",
+          "Does it change decisions? If it drops below target, will budget, campaigns or pages change? If nothing changes, it is decoration, not a KPI.",
+        ],
+      },
+      {
+        heading: "How do you set KPIs? Build a KPI tree backwards from the goal",
+        paragraphs: [
+          "The most robust method is to start with the business goal and break it into its multipliers. Every KPI then connects mathematically to the main goal, and 'why are we watching this number?' already has an answer.",
+          "An example online store targets $60,000 in monthly revenue. With a $120 average order value (AOV) it needs 60,000 / 120 = 500 orders. With a 1.5% conversion rate it needs 500 / 0.015 ≈ 33,300 sessions.",
+          "If 60% of orders are expected from ads, paid's job is 300 orders. At a 40% gross margin, gross profit per order is 120 × 0.40 = $48; that is the most ads can spend per order (break-even CPA). If the company targets $30 per order, the ad budget is 300 × 30 = $9,000 and ROAS is (300 × 120) / 9,000 = 4.0. Break-even ROAS is 1 / 0.40 = 2.5. Paid orders leave 300 × 48 − 9,000 = $5,400 of contribution after ad spend.",
+          "The tree gives this KPI set: the main goal is monthly revenue and contribution after ad spend; the supporting KPIs are orders, AOV, conversion rate and cost per order (or ROAS). When one link falls short, it is clear which team fixes what.",
+        ],
+        bullets: [
+          "Revenue = Orders × Average order value",
+          "Orders = Sessions × Conversion rate",
+          "Ad budget = Paid orders × Target cost per order",
+          "ROAS = Ad revenue / Ad spend; break-even ROAS = 1 / Gross margin",
+        ],
+      },
+      {
+        heading: "What are leading and lagging KPIs?",
+        paragraphs: [
+          "Lagging indicators tell you the outcome, but late: monthly revenue, net profit, churn, customer lifetime value. When the month closes you know what happened, but there is nothing left to do about that month.",
+          "Leading indicators show the path to the outcome and warn early: sessions, add-to-cart rate, conversion rate, click-through rate (CTR), cost per lead (CPL), lead-to-sales-call rate. These are tracked weekly or even daily.",
+          "A good set contains both. Leadership reads lagging KPIs monthly; the marketing team watches leading KPIs weekly and acts before month end. In the example above, if conversion rate drops to 1.2% in week one, you already know the month will be about 100 orders short.",
+        ],
+      },
+      {
+        heading: "How do you write a KPI card?",
+        paragraphs: [
+          "Most KPI arguments happen because the definition was never written down: one person's 'conversion rate' is orders / sessions, another's is orders / users. Write a one-page card for every KPI and announce any definition change before making it.",
+          "Example card — Conversion rate. Formula: purchases / sessions × 100. Source: GA4. Owner: ecommerce manager. Cadence: weekly. Baseline: 1.2% (last 90 days). Target: 1.5% by March 31. Thresholds: below 1.0% red, 1.0–1.4% amber. Action: on red, check checkout steps and recent site changes.",
+        ],
+        bullets: [
+          "Name and definition: one sentence everyone reads the same way",
+          "Formula: numerator and denominator spelled out (which conversions, which costs)",
+          "Data source: GA4, ad platform, CRM or accounting — pick one",
+          "Owner: one person or team",
+          "Cadence: leading KPIs weekly, lagging KPIs monthly",
+          "Baseline and target: dated and numeric",
+          "Thresholds and actions: red, amber, green and what happens at each",
+        ],
+      },
+      {
+        heading: "How do you set the target value?",
+        paragraphs: [
+          "There are two routes and using both is healthiest. Bottom-up: take the last 90-day average as the baseline and add a realistic improvement (conversion rate 1.2% → 1.4%). Top-down: place the business goal in the KPI tree and calculate the value required ($60,000 in revenue needs 1.5%).",
+          "The gap between the two numbers tells you whether the plan is realistic. If 1.5% is required and 1.4% looks achievable, you must close the gap through another link: more traffic, a higher AOV or more ad budget. Setting targets as '20% more than last year' skips this check.",
+          "Targets should be SMART: specific, measurable, achievable, relevant and time-bound. In practice, every target includes a number and a date.",
+        ],
+      },
+      {
+        heading: "KPI examples for ecommerce",
+        paragraphs: [
+          "For an online store, these five KPIs are enough to start. Each has a free calculator on this site.",
+        ],
+        bullets: [
+          "Contribution after ad spend = Gross profit − Ad spend (the main goal; use it instead of revenue)",
+          "Conversion rate = Orders / Sessions × 100 (Conversion Rate Calculator)",
+          "Average order value (AOV) = Revenue / Orders",
+          "ROAS = Ad revenue / Ad spend; break-even ROAS = 1 / Gross margin (ROAS Calculator)",
+          "Gross profit margin = (Price − Product cost) / Price × 100 (Gross Profit Margin Calculator); on marketplaces include fees and shipping (Marketplace Profit Calculator)",
+          "Supporting metrics: return rate, repeat purchase rate, shipping cost per order",
+        ],
+      },
+      {
+        heading: "KPI examples for B2B and service businesses",
+        paragraphs: [
+          "When a sale starts with a form and closes with a sales team, the ad platform's conversion count is not enough; the KPI chain has to reach the CRM.",
+        ],
+        bullets: [
+          "Cost per lead: CPL = Spend / Valid leads",
+          "Lead-to-SQL rate = Sales-qualified leads / Leads × 100",
+          "Win rate = Deals won / Proposals sent × 100",
+          "Customer acquisition cost: CAC = Sales and marketing cost / New customers (CAC Calculator)",
+          "Pipeline value: total value of open opportunities (CRM)",
+        ],
+      },
+      {
+        heading: "KPI examples for SaaS and subscription businesses",
+        paragraphs: [
+          "In subscription revenue, growth depends more on existing customers staying and expanding than on new sales. SaaS KPIs therefore focus on the revenue base.",
+        ],
+        bullets: [
+          "MRR (monthly recurring revenue) and its growth rate (MRR Calculator)",
+          "Churn rate = Customers lost in period / Customers at start × 100 (Churn Calculator)",
+          "NRR = (Starting MRR + Expansion − Contraction − Churn) / Starting MRR × 100",
+          "LTV:CAC ratio (LTV and CAC calculators)",
+          "CAC payback period = CAC / (Monthly revenue per customer × Gross margin)",
+        ],
+      },
+      {
+        heading: "Which metrics should not be KPIs?",
+        paragraphs: [
+          "Numbers that rise easily but do not directly change business results are called vanity metrics. Tracking them is fine; tying targets and bonuses to them makes the team optimise the wrong thing.",
+        ],
+        bullets: [
+          "Followers and likes, unless their link to sales is measured",
+          "Impressions and reach, unless read together with cost and outcome",
+          "Sessions alone: more traffic means little if conversion rate is falling",
+          "The platform's own ROAS: platforms can claim the same sale more than once; reconcile revenue with your site or accounting data",
+          "Low CPL: if lead quality is not measured, cheap leads can become expensive customers",
+        ],
+      },
+      {
+        heading: "What is the difference between a KPI and an OKR?",
+        paragraphs: [
+          "A KPI is a continuously tracked health indicator: conversion rate is measured every month and expected to stay in a range. An OKR (Objectives and Key Results) is an ambitious change goal for a specific period: 'Lift conversion rate from 1.2% to 1.5% this quarter.'",
+          "In practice they complement each other. When a KPI turns red, fixing it can become next period's OKR; when the OKR is hit, the new value becomes the KPI's new normal.",
+        ],
+      },
+      {
+        heading: "How do you track KPIs in GA4 and ad platforms?",
+        paragraphs: [
+          "In GA4, mark the events that matter to your business (purchase, form submit, demo request) as key events. By Google's definition, key events are for analysing traffic acquisition and user behaviour, while conversions are what Google Ads uses to measure campaigns and guide bidding. The same sale can be counted differently in each; state on the KPI card which source is the source of truth.",
+          "Use consistent UTM parameters on every campaign link so channels are attributed correctly. Otherwise part of your traffic lands in GA4's 'Unassigned' group and channel KPIs break.",
+          "Keep all KPIs in one table: KPIs in rows, and target, this week, last week and status (red/amber/green) in columns. In a 15-minute weekly meeting, discuss only red and amber rows.",
+        ],
+      },
+      {
+        heading: "6 common mistakes when setting KPIs",
+        paragraphs: [
+          "Once a KPI system is in place, it usually stops working for these reasons:",
+        ],
+        bullets: [
+          "Too many KPIs: with 20 indicators nothing is a priority; pick 3–5 per team",
+          "Targets without a baseline: a 1.5% target is a very different job at 0.8% than at 1.4%",
+          "Watching revenue only: revenue growing before margin and ad cost may be growing a loss",
+          "Changing the definition mid-stream: a new denominator breaks the trend; log changes with dates",
+          "Ownerless KPIs: a number everyone owns is a number nobody owns",
+          "Mixing sources: ad platform conversions and CRM customer counts do not belong in the same sum",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does KPI stand for?",
+        answer:
+          "KPI stands for key performance indicator: a measurable value, with a target and an owner, that shows progress toward a business goal.",
+      },
+      {
+        question: "How many KPIs should a company have?",
+        answer:
+          "There is no fixed number, but 3–5 at company level and 3–5 per team is a manageable limit. Track anything beyond that as supporting metrics without targets or bonuses attached.",
+      },
+      {
+        question: "What is the most important marketing KPI?",
+        answer:
+          "It depends on the business model. In ecommerce, contribution after ad spend and ROAS usually lead; in B2B, cost per sales-qualified lead and CAC; in SaaS, MRR growth, churn and NRR. The common rule: the main KPI should be close to the value left after costs, not revenue.",
+      },
+      {
+        question: "Is a KPI the same as a goal?",
+        answer:
+          "No. A goal is the result you want (500 orders by the end of March); a KPI is the indicator that shows how close you are (weekly orders, conversion rate). A goal is set once; a KPI is measured regularly.",
+      },
+      {
+        question: "How often should KPIs be reviewed?",
+        answer:
+          "Leading KPIs (conversion rate, CPL, CTR) are read weekly; lagging KPIs (profit, churn, LTV) monthly or quarterly. The KPI set itself should be reviewed when the business model or strategy changes, and at least once a year.",
+      },
+    ],
+    howTo: {
+      name: "How to set marketing KPIs",
+      description: "Go from a business goal to a measurable, owned KPI set in five steps.",
+      steps: [
+        { name: "Write the business goal as a number", text: "Set a dated, numeric goal such as '$60,000 monthly revenue and more than $5,000 contribution after ad spend'." },
+        { name: "Break the goal into multipliers", text: "Build the KPI tree (revenue = orders × AOV, orders = sessions × conversion rate) and calculate the value each link needs." },
+        { name: "Pick leading and lagging KPIs", text: "Choose 3–5 KPIs per team from the tree, combining lagging outcome KPIs with leading early-warning KPIs." },
+        { name: "Write a card for each KPI", text: "Document formula, data source, owner, cadence, baseline, target, thresholds and the action to take when a threshold is breached." },
+        { name: "Track weekly and act", text: "Keep KPIs in one table, discuss red and amber rows in a weekly meeting and log definition changes with dates." },
+      ],
+    },
+    relatedToolKey: "conversion",
+    resources: [
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "MRR Calculator", href: "/en/free-tools/mrr-calculator/" },
+      { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "What Is CAC?", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
+      { label: "What Is CPL?", href: "/en/blog/what-is-cpl-cost-per-lead/" },
+      { label: "What Is Churn Rate?", href: "/en/blog/what-is-churn-rate/" },
+      { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "Google Analytics Help: Events and key events", href: "https://support.google.com/analytics/answer/13965727?hl=en", external: true },
     ],
   },
 ];
