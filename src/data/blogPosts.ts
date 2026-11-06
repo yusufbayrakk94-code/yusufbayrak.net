@@ -672,7 +672,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "roas",
     resources: [
       { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
-      { label: "Meta Reklam Verme Rehberi: Bütçe, Kitle ve Öğrenme Aşaması", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "Advantage+ Hedef Kitlesi Nedir? Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
     ],
@@ -3637,8 +3637,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "Bütçe yetmiyorsa reklam setlerini birleştirin ya da daha sık gerçekleşen bir olayı (ör. ödeme başlatma, ≈90 TL → haftada ≈54 olay) optimize edin. Advantage+ kampanya bütçesi + Advantage+ kitle + Advantage+ yerleşimler 2025'ten beri satış ve uygulama kampanyalarında varsayılan kurulum.",
     ],
     publishedAt: "2026-10-30",
-    updatedAt: "2026-11-03",
-    readingMinutes: 11,
+    updatedAt: "2026-11-06",
+    readingMinutes: 12,
     tags: ["Meta Reklam", "Facebook Reklamı", "Instagram Reklamı", "Reklam Yöneticisi", "Advantage+", "Reklam Bütçesi"],
     sections: [
       {
@@ -3719,6 +3719,21 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        heading: "Advantage+ hedef kitlesi nedir, nasıl çalışır?",
+        paragraphs: [
+          "Advantage+ hedef kitlesi (Advantage+ audience), reklam setinde kitleyi sizin yerinize Meta'nın yapay zekâsının bulduğu hedefleme ayarıdır. Piksel verisi, dönüşüm geçmişi ve reklamlarınızla etkileşimden öğrenir; tanımladığınız kişilerle sınırlı kalmadan dönüşüm olasılığı yüksek gördüğü kişilere de reklam gösterir. Satış ve uygulama kampanyalarında artık varsayılan kitle ayarıdır.",
+          "Bu ayarda girdiğiniz bilgiler iki türe ayrılır. Kitle önerileri (özel hedef kitle, benzer kitle, yaş aralığı, cinsiyet, ilgi alanları) kesin sınır değildir: Meta önce bu kişilere öncelik verir, sonra daha iyi sonuç bulursa dışarı çıkar. Kitle kontrolleri ise kesin sınırdır: konum, minimum yaş, hariç tutulan özel hedef kitleler ve dil. Meta bunların dışına çıkmaz. Pratik sonuç: '25-34 yaş kadın' yazdığınızda reklam 40 yaşındaki bir erkeğe de gösterilebilir, ama 'yalnızca Türkiye' yazdığınızda yurt dışına gösterilmez.",
+          "Meta'nın Nisan 2025 tarihli Advantage+ açıklamasına göre Advantage+ hedef kitlesini kullanan reklamverenlerde web sitesi dönüşümü başına maliyet ortalama yaklaşık %7 daha düşük çıktı (Meta'nın kendi kontrollü deneyi; garanti değil, ortalama tahmin). Kendi hesabınızda karar vermek için aynı kreatif ve bütçeyle Advantage+ kitle ile eski (orijinal) kitle ayarını A/B testiyle karşılaştırın ve CPA'yı başabaş değerinizle okuyun.",
+        ],
+        bullets: [
+          "Ne zaman kullanılır: piksel ve satın alma olayı sağlıklı, haftada onlarca dönüşüm var, yeni müşteri arıyorsunuz",
+          "Ne zaman orijinal kitleye dönülür: yalnızca mevcut ziyaretçilere yeniden pazarlama yapacaksanız, ürününüz yasal olarak belirli bir yaşın altına satılamıyorsa (minimum yaşı kitle kontrolüne yazın) ya da dönüşüm verisi çok azsa",
+          "Mutlaka kitle kontrolüne yazın: kargo/hizmet verebildiğiniz konum ve gerekiyorsa minimum yaş",
+          "Hariç tutma: tek seferlik ürünlerde son satın alanları hariç tutulan özel hedef kitle olarak ekleyin; aksi hâlde yeni müşteri bütçesi mevcut müşterilere harcanabilir",
+          "Kontrol: Reklam Yöneticisi'nde sonuçları 'Kitle segmentleri' kırılımıyla açarak bütçenin ne kadarının yeni kişilere, ne kadarının mevcut müşterilere gittiğini izleyin (bu kırılım için hesabınızda müşteri listesi tanımlı olmalı)",
+        ],
+      },
+      {
         heading: "Meta reklam kreatifi nasıl hazırlanır?",
         paragraphs: [
           "Geniş kitle kullanıldığında doğru kişiyi bulan şey kreatiftir: ilk 2–3 saniyede kime hitap ettiğini ve hangi sorunu çözdüğünü söyleyen görsel ya da video, algoritmanın doğru kişiyi seçmesine yardım eder. Tek kreatifle başlamak yerine aynı reklam setine birbirinden belirgin biçimde farklı birkaç açı yükleyin.",
@@ -3787,6 +3802,11 @@ export const BLOG_POSTS: BlogPost[] = [
           "Pikseliniz sağlıklıysa ve haftada onlarca dönüşüm alıyorsanız Advantage+ (kampanya bütçesi, kitle ve yerleşimler) iyi bir başlangıçtır. Dönüşüm verisi çok azsa ya da kesin bir kitle kısıtınız varsa manuel ayarlarla veri biriktirip sonra geçin.",
       },
       {
+        question: "Advantage+ hedef kitlesi nedir?",
+        answer:
+          "Meta'nın kitleyi yapay zekâyla bulduğu varsayılan hedefleme ayarıdır. Girdiğiniz yaş, cinsiyet, ilgi alanı ve özel hedef kitleler yalnızca öneri olarak kullanılır; konum, minimum yaş, dil ve hariç tutulan kitleler ise kesin sınırdır. Piksel verisi güçlü satış kampanyalarında iyi bir başlangıçtır; yeniden pazarlama için orijinal kitle ayarı daha uygundur.",
+      },
+      {
         question: "Meta reklamında öğrenme aşaması ne kadar sürer?",
         answer:
           "Meta, bir reklam setinin son önemli düzenlemeden sonraki 7 günde yaklaşık 50 optimizasyon olayı toplamasını bekler. Bu hacme ulaşamayan reklam setleri 'Öğrenme sınırlı' olarak görünür; bütçeyi artırmak, reklam setlerini birleştirmek ya da daha sık gerçekleşen bir olayı seçmek çözümdür.",
@@ -3820,6 +3840,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Meta for Developers: Satış ve uygulama kampanyalarında Advantage+ (İngilizce)", href: "https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/", external: true },
       { label: "Meta for Developers: Piksel ve Dönüşümler API olaylarının tekilleştirilmesi (İngilizce)", href: "https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events", external: true },
       { label: "Meta İşletme Yardım Merkezi: Öğrenme aşaması", href: "https://www.facebook.com/business/help/112167992830700/", external: true },
+      { label: "Meta Newsroom: Advantage+ iki dakikada (Nisan 2025, Korece sürüm)", href: "https://about.fb.com/ko/news/2025/04/meta-advantage-explained-in-two-minutes/", external: true },
+      { label: "Jon Loomer: How Advantage+ Audience Works (İngilizce)", href: "https://www.jonloomer.com/how-advantage-plus-audience-works/", external: true },
     ],
   },
   {
@@ -5162,7 +5184,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
-      { label: "Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "Meta Reklam Verme Rehberi ve Advantage+ Hedef Kitlesi", href: "/blog/meta-reklam-verme-rehberi/" },
       { label: "Meta Ads Öğrenme Aşamasından Çıkma", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
       { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
@@ -7498,7 +7520,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     seoTitle: "What Is ROAS & How to Calculate It? What's a Good ROAS?",
     title: "What Is ROAS, How Do You Calculate It, and What's a Good ROAS? (With Break-Even Formula)",
     description:
-      "ROAS is revenue per $1 of ad spend. The ROAS formula, worked calculations, gross vs net ROAS, break-even ROAS, what's a good ROAS and how to improve it.",
+      "ROAS is revenue per $1 of ad spend. ROAS formula with worked examples, average ROAS across campaigns, gross vs net ROAS, break-even and what's a good ROAS.",
     category: "performans-pazarlama",
     tldr: [
       "ROAS = Revenue from ads / Ad spend. Spend $1,000 and generate $4,000 in revenue and your ROAS is 4 (or 400%).",
@@ -7508,8 +7530,8 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Validate decisions with MER (total revenue / total marketing spend), not just the ROAS shown in ad platforms.",
     ],
     publishedAt: "2026-10-22",
-    updatedAt: "2026-11-03",
-    readingMinutes: 10,
+    updatedAt: "2026-11-06",
+    readingMinutes: 11,
     tags: ["ROAS", "Performance Marketing", "Google Ads", "Meta Ads", "E-commerce"],
     sections: [
       {
@@ -7526,6 +7548,21 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "Example: An e-commerce brand spends $12,000 a month on Meta Ads and generates $50,400 in revenue attributed to those ads. ROAS = 50,400 / 12,000 = 4.2.",
           "Use net revenue: exclude sales tax or VAT and subtract refunds and returns. Ad platforms typically count gross cart value and returned orders, which can inflate ROAS by 20-30% versus reality.",
           "Where to find it: Google Ads shows the same ratio in the 'Conv. value / cost' column, and Meta Ads Manager in 'Purchase ROAS'. A blank or zero column usually means order values are not being passed to the ad account.",
+        ],
+      },
+      {
+        heading: "What Is the Average ROAS? How to Calculate It Across Campaigns",
+        paragraphs: [
+          "Average ROAS across several campaigns is total attributed revenue divided by total ad spend, not the mean of each campaign's ROAS. Averaging the ratios gives small campaigns the same weight as large ones and overstates the result.",
+          "Example: Campaign A spends $1,000 and brings $6,000 (ROAS 6). Campaign B spends $9,000 and brings $18,000 (ROAS 2). The simple mean of the two ratios is (6 + 2) / 2 = 4, but the account actually returned $24,000 on $10,000, so the real average ROAS is 2.4. If your break-even ROAS is 2.5, the account is losing money even though the 'average' looks healthy.",
+          "In a spreadsheet, put revenue in column B and spend in column C. ROAS per row is =B2/C2 (format as a percentage to read 2.4 as 240%). Account ROAS is =SUM(B2:B20)/SUM(C2:C20), never =AVERAGE(D2:D20) over the per-row ROAS column.",
+          "Published 'average ROAS' benchmarks vary widely by source, channel and category; Shopify's roundup of industry figures ranges from about 2 on Meta for food and beverage to about 6 on Google for beauty. Treat these as context only: they mix different attribution windows, include or exclude tax and returns, and say nothing about your margin. Your own break-even ROAS is the number to beat.",
+        ],
+        bullets: [
+          "Average ROAS = Total ad revenue / Total ad spend (spend-weighted)",
+          "Median ROAS of campaigns tells you what a typical campaign does; it is not the account result",
+          "Compare periods with the same attribution window and the same revenue definition (net of tax and refunds)",
+          "Report branded search and remarketing separately; their high ROAS lifts the account average",
         ],
       },
       {
@@ -7639,6 +7676,11 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "ROAS divides revenue by ad spend and ignores costs. ROI measures net profitability with (Profit − Investment) / Investment. A high ROAS doesn't guarantee a high ROI; a 4 ROAS can lose money on a low-margin product.",
       },
       {
+        question: "What is the average ROAS?",
+        answer:
+          "Across campaigns, average ROAS is total ad revenue divided by total ad spend, not the mean of each campaign's ROAS. $24,000 in revenue on $10,000 of spend is a 2.4 average ROAS, even if one small campaign shows 6. Industry benchmarks vary widely by channel and category, so compare against your break-even ROAS instead.",
+      },
+      {
         question: "What does a ROAS of 3 mean?",
         answer:
           "Every $1 of ad spend returned $3 in revenue, also written as 300%. That revenue is not profit: below a 33.3% margin, a 3 ROAS loses money.",
@@ -7687,6 +7729,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "7 Data-Driven Ways to Multiply Your Google Ads Performance", href: "/en/blog/google-ads-performance-optimization/" },
       { label: "How to Exit Meta Ads Learning Phase Fast", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
       { label: "Google Ads Help: About Target ROAS bidding", href: "https://support.google.com/google-ads/answer/6268637", external: true },
+      { label: "Shopify: ROAS benchmarks by industry", href: "https://www.shopify.com/ng/blog/roas-benchmarks-by-industry", external: true },
     ],
   },
   {
@@ -7845,7 +7888,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
       { label: "How to Run Meta Ads: Budget, Audience & Learning Phase", href: "/en/blog/how-to-run-meta-ads-guide/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
-      { label: "What Is ROAS and How Do You Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "ROAS Formula: How to Calculate ROAS (With Examples)", href: "/en/blog/what-is-roas-how-to-calculate/" },
       { label: "How to Exit the Meta Ads Learning Phase Faster", href: "/en/blog/meta-ads-exit-learning-phase-tactics/" },
       { label: "Google Ads Help: About budgets", href: "https://support.google.com/google-ads/answer/10486536", external: true },
       { label: "Google Ads Help: About seasonality adjustments", href: "https://support.google.com/google-ads/answer/10369906", external: true },
@@ -8251,7 +8294,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
-      { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "How to Calculate ROAS and Average ROAS Across Campaigns", href: "/en/blog/what-is-roas-how-to-calculate/" },
       { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
       { label: "Google Ads Performance Optimization", href: "/en/blog/google-ads-performance-optimization/" },
       { label: "Google Ads Help: About Target ROAS bidding", href: "https://support.google.com/google-ads/answer/6268637", external: true },
