@@ -2677,10 +2677,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cac-nedir-musteri-edinme-maliyeti",
-    seoTitle: "CAC Nedir, Ne Demek? Müşteri Edinme Maliyeti Hesaplama",
+    seoTitle: "CAC Nedir, Açılımı Ne? Müşteri Edinme Maliyeti Hesaplama",
     title: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır? (Blended, Paid ve Kanal Bazında Örnekler)",
     description:
-      "CAC ne demek? Müşteri edinme maliyeti, bir yeni müşteri için harcanan ortalama tutardır. Formül, örnek hesap, paid/blended CAC, CAC ile ROAS ve CPA farkı.",
+      "CAC açılımı Customer Acquisition Cost, yani müşteri edinme maliyeti: bir yeni müşteri için harcanan ortalama tutar. Formül, örnek hesap, paid ve blended CAC.",
     category: "saas-buyume",
     tldr: [
       "CAC (Customer Acquisition Cost, müşteri edinme maliyeti), bir dönemde yeni müşteri kazanmak için harcanan toplam pazarlama ve satış maliyetinin o dönemde kazanılan yeni müşteri sayısına bölünmesidir: 310.000 TL ÷ 1.000 yeni müşteri = 310 TL.",
@@ -2689,7 +2689,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "CAC tek başına iyi ya da kötü değildir; ilk sipariş katkısı, LTV ve geri ödeme süresiyle okunur. 900 TL sepet ve %30 katkı marjıyla ilk sipariş 270 TL bırakır; 329 TL'lik paid CAC her yeni müşteride ilk siparişte 59 TL açık demektir.",
     ],
     publishedAt: "2026-10-28",
-    updatedAt: "2026-11-02",
+    updatedAt: "2026-11-07",
     readingMinutes: 10,
     tags: ["CAC", "Müşteri Edinme Maliyeti", "Paid CAC", "Blended CAC", "Birim Ekonomisi", "LTV:CAC"],
     sections: [
