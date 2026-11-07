@@ -105,3 +105,36 @@ Merhaba <Ad>,
 https://yusufbayrak.net/blog/google-ads-reklam-verme-rehberi/
 Uygun bulursanız yazınıza kaynak olarak ekleyebilirsiniz; karşılığında bir şey beklemiyorum.
 Yusuf Bayrak
+
+## E-ticaret Açılış Bütçesi ve Başabaş Şablonu (07.11.2026)
+Dosya: https://yusufbayrak.net/sablonlar/e-ticaret-acilis-butcesi-sablonu.xlsx
+Ana sayfa (link verilecek yer): https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/
+İçerik: 7 sayfa. Kurulum bütçesi, aylık sabit giderler, sipariş ekonomisi (ödeme kesintisi, kargo, paketleme, iade ve CPA dahil beklenen/net katkı, başabaş ROAS, durum etiketi), başabaş sipariş ve gereken oturum, pist ile başlangıç sermayesi, site vs pazaryeri (sitede ödenebilecek en yüksek CPA), 20 maddelik açılış kontrol listesi (Evet/Hayır). Kayıt istemez. Vergi hesabı yapmaz. 28 formül LibreOffice ile hesaplandı, 0 hata; örnek değerler yazıyla aynı.
+Rekabet gözlemi (07.11.2026): Türkçe "e ticaret sitesi kurmak" sonuçlarında indirilebilir bütçe/başabaş şablonu yok. Ticimax tablosu var ama başabaşı reklamsız hesaplıyor (aynı örnekte 55 vs 160 sipariş); birfatura yazısında yalnızca "5.000–50.000 TL" aralığı var. Ana mesaj: "reklam ve iade dahil başabaş, Türkçe, ücretsiz, kayıtsız".
+
+### Hedefler
+| # | Yer | Neden | Durum |
+|---|---|---|---|
+| 1 | Kullanıcının LinkedIn profili | En hızlı dağıtım; metin aşağıda | Kullanıcı paylaşır |
+| 2 | birfatura.com/basarili-e-ticaret-sitesi-kurmak-icin-4-yol/ | 07.11 kontrol: 16.10.2026 güncel, hesaplayıcı/şablon yok, yalnızca kaba maliyet aralığı; site e-fatura yazılımı satıyor, altyapı rakibi değil. İletişim: iletisim@birfatura.com, birfatura.com/iletisim/ | Kullanıcı gönderir |
+| 3 | mukellef.co (Ürün Kârlılık Şablonu hedefi #2) | Aynı siteye ayrı e-posta atmayın; o teklife tek cümle ekleyin | Birleştir |
+| 4 | eticaretmerkezim.com (widget hedefi #1) | Mevcut iletişime tek cümle | Hatırlatmayla birlikte |
+| 5 | Türkçe "e-ticaret sitesi nasıl kurulur" yazısı olan ajans/girişimci blogları (altyapı satanlar hariç) | Kaynak olarak eklenebilir | Kullanıcı göndermeden önce her sayfayı açıp şablon/hesaplayıcı olmadığını doğrulasın |
+
+### LinkedIn metni (kullanıcının sesiyle düzenlenmeli)
+E-ticaret sitesi kurma rehberlerindeki başabaş hesabında bir kalem hep eksik: reklam.
+
+Örnek bir mağazada aylık 18.000 TL sabit gideri reklamsız hesapla 55 sipariş karşılıyor gibi görünüyor. Ödeme kesintisi, %8 iade ve sipariş başı 180 TL reklam eklenince gereken sayı 160'a çıkıyor.
+
+Bu hesabı kendi rakamlarınızla yapan ücretsiz bir Excel şablonu hazırladım: kurulum bütçesi, sipariş başı kâr, başabaş sipariş, başlangıç sermayesi ve "kendi site mi pazaryeri mi" karşılaştırması. İçinde 20 maddelik açılış kontrol listesi de var. Kayıt yok, e-posta yok.
+
+İndirme linki ilk yorumda.
+
+### Teklif metni (e-ticaret sitesi kurma yazısı olan siteler)
+Konu: "<Yazı başlığı>" yazınız için ücretsiz Excel şablonu
+
+Merhaba <Ad>,
+"<Yazı başlığı>" yazınızı okudum, özellikle <somut bir nokta> kısmı faydalıydı. Okurlarınızın işine yarayabileceğini düşündüğüm Türkçe ve ücretsiz bir e-ticaret açılış bütçesi şablonu hazırladım: kurulum bütçesini, reklam ve iade dahil sipariş başı kârı, aylık başabaş sipariş sayısını ve başlangıç sermayesini hesaplıyor; 20 maddelik bir açılış kontrol listesi de içeriyor. Kayıt istemiyor.
+https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/
+Uygun bulursanız yazınıza kaynak olarak ekleyebilirsiniz; karşılığında bir şey beklemiyorum.
+Yusuf Bayrak

@@ -594,6 +594,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-start-an-ecommerce-website-checklist/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -1170,6 +1179,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-roi-how-to-calculate/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/roi-nedir-nasil-hesaplanir/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/roi-nedir-nasil-hesaplanir/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/how-to-start-an-ecommerce-website-checklist/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-start-an-ecommerce-website-checklist/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

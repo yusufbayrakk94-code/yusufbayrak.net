@@ -36,4 +36,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "google-ads-reklam-verme-rehberi", en: "how-to-run-google-ads-first-campaign" },
   { tr: "kpi-nedir-pazarlama-kpi-ornekleri", en: "what-is-a-kpi-marketing-kpi-examples" },
   { tr: "roi-nedir-nasil-hesaplanir", en: "what-is-roi-how-to-calculate" },
+  { tr: "e-ticaret-sitesi-kurmak-icin-gerekenler", en: "how-to-start-an-ecommerce-website-checklist" },
 ];

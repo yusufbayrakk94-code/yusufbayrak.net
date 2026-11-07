@@ -3027,6 +3027,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "E-ticaret Sitesi Kurmak: Maliyet ve Başabaş", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
       { label: "ROI Nedir, Nasıl Hesaplanır?", href: "/blog/roi-nedir-nasil-hesaplanir/" },
       { label: "Dropshipping Nedir? İade Dahil Kâr Hesabı", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
       { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
@@ -4382,6 +4383,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "Kendi Site mi Pazaryeri mi? E-ticaret Sitesi Kurmak", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
       { label: "Dropshipping Nedir? İade Dahil Kâr Hesabı", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
       { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Reklam Nasıl Verilir? Maliyet ve Kâr Hesabı", href: "/blog/trendyol-reklam-nasil-verilir/" },
@@ -5614,6 +5616,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "E-ticaret Sitesi Kurmak İçin Gerekenler", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
       { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
       { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -6544,6 +6547,217 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "LTV Nedir? LTV:CAC Oranı", href: "/blog/ltv-nedir-ltv-cac-orani/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "KPI Nedir? Pazarlama KPI'ları", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
+    ],
+  },
+  {
+    slug: "e-ticaret-sitesi-kurmak-icin-gerekenler",
+    seoTitle: "E-Ticaret Sitesi Kurmak: Gerekenler, Maliyet ve Başabaş",
+    title: "E-Ticaret Sitesi Kurmak İçin Gerekenler: Kontrol Listesi, Maliyet Kalemleri ve Başabaş Hesabı",
+    description:
+      "E-ticaret sitesi kurmak için gerekenler: yasal ve teknik kontrol listesi, maliyet kalemleri, başlangıç sermayesi, sipariş başı kâr ve başabaş sipariş hesabı.",
+    category: "performans-pazarlama",
+    tldr: [
+      "E-ticaret sitesi kurmak için beş blok gerekir: yasal zemin (işletme kaydı, ETBİS, mesafeli satış metinleri, KVKK), altyapı (alan adı, platform, SSL), ödeme (sanal POS ya da ödeme kuruluşu), lojistik (kargo anlaşması, paketleme) ve ölçüm (GA4, UTM, Search Console).",
+      "ETBİS kaydı faaliyete başlamadan önce yapılır; sitede ön bilgilendirme formu, mesafeli satış sözleşmesi ve 14 günlük cayma hakkı koşulları sipariş öncesi gösterilmelidir.",
+      "Asıl soru kurulum maliyeti değil, sipariş başı kârdır. Örnek: 900 TL'lik siparişte ürün, ödeme kesintisi, kargo, paketleme ve %8 iadeden sonra 293 TL kalır; sipariş başı 180 TL reklamla 113 TL. Aylık 18.000 TL sabit gideri karşılamak için ayda 160 sipariş gerekir.",
+      "Aynı ürün %20 komisyonlu bir pazaryerinde 152 TL bırakıyorsa, kendi siteniz ancak sipariş başı reklam maliyetiniz yaklaşık 141 TL'nin altına indiğinde daha kârlı olur.",
+    ],
+    publishedAt: "2026-11-07",
+    readingMinutes: 11,
+    tags: ["E-ticaret", "E-ticaret Sitesi Kurmak", "Başabaş Noktası", "Kar Marjı", "Kargo", "ETBİS"],
+    sections: [
+      {
+        heading: "E-ticaret sitesi kurmak için neler gerekir? (Kısa cevap)",
+        paragraphs: [
+          "Bir e-ticaret sitesini açmak bugün birkaç günlük iştir; hazır altyapılar tasarımı ve ödeme sayfasını büyük ölçüde çözüyor. Zor olan, siteyi kârlı ve kurallara uygun çalıştırmaktır. Bu yüzden gerekenleri beş blokta düşünün ve her bloğu açılıştan önce kapatın.",
+          "Yazının devamında her bloğun kontrol listesini, maliyet kalemlerini ve en önemlisi siteyi açmadan önce yapmanız gereken hesabı bulacaksınız: bir siparişin size ne bıraktığı ve ayda kaç sipariş gerektiği. Tutarlar örnektir; kendi teklif ve tarifelerinizle değiştirin.",
+        ],
+        bullets: [
+          "Yasal zemin: işletme kaydı, ETBİS kaydı, ön bilgilendirme formu, mesafeli satış sözleşmesi, iade ve cayma koşulları, KVKK aydınlatma metni, çerez politikası, site künyesi",
+          "Altyapı: alan adı, e-ticaret platformu (hazır altyapı, açık kaynak ya da özel yazılım), SSL, tema ve mobil uyum",
+          "Ödeme: sanal POS ya da ödeme kuruluşu, taksit ve kesinti oranları, iade süreci",
+          "Lojistik: kargo anlaşması (desi tarifesi), paketleme, stok ya da tedarikçi düzeni",
+          "Ölçüm ve pazarlama: GA4, Search Console, UTM'li kampanya linkleri, ilk reklam testi bütçesi",
+        ],
+      },
+      {
+        heading: "Siteyi açmadan önce hangi yasal adımlar gerekir?",
+        paragraphs: [
+          "Düzenli satış yapacaksanız bir işletme kaydı (şahıs işletmesi ya da şirket) gerekir. Hangi türün size uygun olduğu ve mali yükümlülükler için bir mali müşavirle görüşün; bu yazı o konulara girmez ve hukuki ya da mali danışmanlık yerine geçmez.",
+          "ETBİS (Elektronik Ticaret Bilgi Sistemi): Ticaret Bakanlığı'nın kayıt sistemidir. İlgili tebliğe göre kendi e-ticaret ortamında (siteniz ya da uygulamanız) satış yapanlar faaliyete başlamadan önce ETBİS'e kaydolur. Kayıt sonrası istenen diğer bildirimler kayıttan itibaren 30 gün içinde, bilgilerde değişiklik olursa değişiklikten itibaren 30 gün içinde yapılır. Bildirimler e-Devlet üzerinden yapılır.",
+          "Mesafeli satış kuralları: tüketici, siparişi onaylamadan önce ön bilgilendirme formunu ve mesafeli satış sözleşmesini görebilmelidir. Tüketicinin gerekçe göstermeden 14 gün içinde cayma hakkı vardır; satıcı bedeli cayma bildiriminden itibaren 14 gün içinde iade etmelidir. Bazı ürünlerde cayma hakkı yoktur: örneğin kişiye özel hazırlanan ürünler ve teslim edilmiş cep telefonu, akıllı saat, tablet ve bilgisayarlar. Ayıplı ya da yanlış gönderilen ürünün iadesi bu istisnalardan etkilenmez.",
+          "Kişisel veriler ve iletişim: KVKK aydınlatma metni ve çerez politikası yayınlayın, kampanya e-postası ve SMS göndermeden önce açık onay alın ve onayları kayıt altında tutun. Sitenin altına ticaret unvanı, MERSİS numarası ve iletişim bilgilerinin yer aldığı bir künye ekleyin.",
+        ],
+        bullets: [
+          "İşletme kaydı (tür ve mali yükümlülükler için mali müşavir)",
+          "ETBİS kaydı: satışa başlamadan önce, e-Devlet üzerinden",
+          "Ön bilgilendirme formu ve mesafeli satış sözleşmesi: ödeme adımında, onay kutusuyla",
+          "İade ve cayma sayfası: 14 gün, istisnalar, iade kargosunun kimde olduğu",
+          "KVKK aydınlatma metni, gizlilik ve çerez politikası",
+          "Kampanya iletileri için açık onay ve kayıt",
+          "Künye: unvan, MERSİS numarası, adres, e-posta, telefon",
+        ],
+      },
+      {
+        heading: "Hazır altyapı mı, açık kaynak mı, özel yazılım mı?",
+        paragraphs: [
+          "Hazır altyapı (kiralık e-ticaret paketleri ve yurt dışı SaaS platformları) aylık ya da yıllık ücretle barındırma, güvenlik, ödeme ve kargo entegrasyonlarını hazır verir; birkaç günde açılır. Açık kaynak çözümler (örneğin WordPress + WooCommerce) lisans ücreti istemez ama barındırma, güncelleme ve güvenlik sizin ya da çalıştığınız geliştiricinin sorumluluğundadır. Özel yazılım en esnek ama en pahalı ve en yavaş seçenektir; ancak hazır sistemlerin karşılayamadığı bir iş akışınız varsa anlamlıdır.",
+          "Seçimi üç soruyla yapın: aylık sabit gideriniz ne kadar olabilir, teknik işi kim yapacak ve hangi entegrasyonlar şart (pazaryeri, kargo, muhasebe, ERP)? İlk yıl satış hacmi belli değilse sabit gideri düşük tutan seçenek neredeyse her zaman daha güvenlidir. Platform fiyatları sık değiştiği için birden fazla güncel teklif alın ve ödeme kesintilerini, ek modül ücretlerini ve yıllık zam koşullarını da sorun.",
+        ],
+      },
+      {
+        heading: "E-ticaret sitesi kurmanın maliyet kalemleri nelerdir?",
+        paragraphs: [
+          "Maliyetleri üç gruba ayırın. Tek seferlik kurulum kalemleri bir kez ödenir; aylık sabit giderler satış olsun olmasın ödenir; değişken giderler ise her siparişte oluşur. Rakip rehberlerin çoğu ilk iki gruba odaklanır, oysa kâr ya da zararı belirleyen üçüncü gruptur.",
+          "Kendi listenizi çıkarırken her kalem için 'kim, ne kadar, ne sıklıkla' yazın. Ürün fotoğrafı, ürün açıklamaları ve hukuki metinler gibi kalemleri kendiniz yapacaksanız bile süresini not edin; ilk ayların en büyük gizli maliyeti kurucunun zamanıdır.",
+        ],
+        bullets: [
+          "Tek seferlik: alan adı (yıllık yenilenir), tema/tasarım, logo, ürün fotoğrafı, ürün içerikleri, hukuki metinler, ilk stok, kurulum ve entegrasyon",
+          "Aylık sabit: platform aboneliği ya da barındırma, ek modüller, muhasebe hizmeti, e-posta/SMS aracı, (varsa) personel ve depo",
+          "Değişken (sipariş başı): ürün maliyeti, ödeme kesintisi, kargo, paketleme, iade kaybı, reklam maliyeti",
+        ],
+      },
+      {
+        heading: "Ne kadar başlangıç sermayesi gerekir? Formül ve örnek",
+        paragraphs: [
+          "Başlangıç sermayesini tek bir rakam olarak sormak yerine formülle hesaplayın. Sitenin ilk aylarda kendini çevirmeyeceğini varsayıp kaç ay dayanmak istediğinizi (pist) seçin.",
+          "Örnek (örnek tutarlar): kurulum kalemleri 30.000 TL, ilk stok 60.000 TL, aylık sabit gider 18.000 TL ve aylık reklam testi 25.000 TL olsun. Üç aylık pist için: 30.000 + 60.000 + 3 × (18.000 + 25.000) = 219.000 TL. Bu rakam satışlardan gelecek katkıyı hesaba katmaz; yani en kötü senaryo tamponudur. Stoksuz çalışıyorsanız (dropshipping) ilk stok kalemi düşer ama sipariş başı kârınız da genellikle küçülür.",
+        ],
+        bullets: [
+          "Başlangıç sermayesi = Kurulum + İlk stok + (Aylık sabit gider + Aylık reklam testi) × Pist (ay)",
+          "Pist: satışlar sabit giderleri karşılamaya başlayana kadar dayanmak istediğiniz ay sayısı",
+        ],
+      },
+      {
+        heading: "Bir sipariş size ne kadar kazandırır? Sipariş başı katkı hesabı",
+        paragraphs: [
+          "Siteyi açmadan önce yapmanız gereken en önemli hesap budur. Örnek bir siparişi ele alalım (örnek tutarlar): sepet tutarı 900 TL, ürün maliyeti 450 TL, ödeme kesintisi %3 (27 TL), kargo 75 TL, paketleme 15 TL. Tamamlanan bir sipariş size 900 − 450 − 27 − 75 − 15 = 333 TL bırakır.",
+          "Şimdi iadeyi ekleyin. Siparişlerin %8'i iade ediliyorsa, iade edilen siparişte ürün stoğa döner ama gidiş ve dönüş kargosu ile paketleme (75 + 75 + 15 = 165 TL) kaybolur. Beklenen katkı: 0,92 × 333 − 0,08 × 165 = 293 TL. Bu, reklamdan önce sipariş başına kalan tutardır ve aynı zamanda sipariş başı ödeyebileceğiniz en yüksek reklam maliyetidir.",
+          "Sipariş başı reklam maliyetiniz (CPA) 180 TL ise net katkı 293 − 180 = 113 TL'ye iner. Bu rakamdan başabaş ROAS da çıkar: 900 / 293 = 3,07. Yani reklamdan gelen her 1 TL harcama en az 3,07 TL ciro getirmezse o sipariş zarar ettirir. Ürün bazında bu hesabı Kar Marjı Hesaplama ve ROAS Hesaplayıcı ile, kargo kalemini Desi Hesaplama ve Kargo Ücreti Hesaplama araçlarıyla netleştirebilirsiniz.",
+        ],
+        bullets: [
+          "Tamamlanan sipariş katkısı = Sepet − Ürün maliyeti − Ödeme kesintisi − Kargo − Paketleme",
+          "Beklenen katkı = (1 − İade oranı) × Tamamlanan katkı − İade oranı × (Gidiş kargo + Dönüş kargo + Paketleme)",
+          "Net katkı = Beklenen katkı − Sipariş başı reklam maliyeti (CPA)",
+          "Başabaş ROAS = Sepet tutarı / Beklenen katkı",
+        ],
+      },
+      {
+        heading: "Ayda kaç sipariş gerekir? Başabaş noktası",
+        paragraphs: [
+          "Aylık başabaş sipariş = Aylık sabit gider / Sipariş başı net katkı. Örnekte 18.000 / 113 ≈ 160 sipariştir. Ayda 160 siparişin altında site zarar eder, üstünde kâra geçer.",
+          "Reklam maliyetini birim hesaptan dışarıda bırakan yöntemler aynı örnekte 18.000 / 333 = 54,05, yani yukarı yuvarlanınca 55 sipariş bulur. Aradaki fark üç kat; reklamla satış yapacak bir mağaza için 55 sipariş hedefi sizi zarardayken kârda olduğunuza inandırabilir. Bu yüzden başabaşı her zaman reklam ve iade düşüldükten sonraki katkıyla hesaplayın.",
+          "Sonucu gerçekçilik testine sokun: ayda 160 sipariş, %1,5 dönüşüm oranıyla yaklaşık 10.700 oturum demektir. Bu trafiği hangi kanaldan, hangi maliyetle getireceğinizi açılıştan önce yazın. Dönüşüm oranınızı ölçmeye başladıktan sonra Dönüşüm Oranı Hesaplayıcı ile hedefi güncelleyin.",
+          "Bu yazıdaki bütün hesapları (kurulum bütçesi, aylık giderler, sipariş başı katkı, başabaş sipariş, pist ve site/pazaryeri karşılaştırması) kayıt istemeyen ücretsiz bir Excel şablonuna döktük; kaynaklar bölümünden indirip kendi rakamlarınızı yazabilirsiniz. Şablon bir de açılış kontrol listesi içerir.",
+        ],
+        bullets: [
+          "Aylık başabaş sipariş = Aylık sabit gider / Net katkı",
+          "Gereken oturum = Başabaş sipariş / Dönüşüm oranı",
+        ],
+      },
+      {
+        heading: "Kendi site mi, pazaryeri mi? Aynı ürünle karşılaştırma",
+        paragraphs: [
+          "Aynı ürünü %20 komisyonlu bir pazaryerinde sattığınızı düşünün (örnek oran; gerçek komisyon kategoriye göre değişir). Pazaryeri ödemeyi kendisi aldığı için ödeme kesintisi yoktur: 900 − 450 − 180 − 75 − 15 = 180 TL; aynı %8 iadeyle beklenen katkı 0,92 × 180 − 0,08 × 165 = 152 TL.",
+          "Kendi sitenizde reklamdan önce 293 TL kalıyordu. Fark 293 − 152 = 141 TL'dir. Yani bu örnekte, sitenizde sipariş başı reklam maliyetiniz 141 TL'nin altına inmedikçe pazaryeri sipariş başına daha fazla bırakır. 180 TL'lik CPA ile site 113 TL, pazaryeri 152 TL bırakır (pazaryerinde ayrıca reklam vermediğiniz varsayımıyla).",
+          "Sitenin avantajı zamanla ortaya çıkar: tekrar alışveriş yapan müşteri, e-posta listesi ve organik trafik reklamsız sipariş getirir; ortalama reklam maliyeti düşer ve müşteri verisi sizde kalır. Pratik yol çoğu zaman ikisini birlikte yürütmektir: pazaryerinde hacim ve nakit akışı, sitede tekrar eden müşteri ve marka. Pazaryeri tarafını Trendyol Kâr Hesaplama aracıyla ürün bazında hesaplayabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Teknik ve operasyon kontrol listesi",
+        paragraphs: ["Açılıştan önce aşağıdaki her maddeyi test siparişiyle doğrulayın: kendi kartınızla bir sipariş verin, iptal edin ve iadesini yapın."],
+        bullets: [
+          "Alan adı ve SSL (adres çubuğunda https), www ve www'siz adreslerin tek adrese yönlenmesi",
+          "Mobil ödeme akışı: sepetten ödeme onayına kadar en fazla birkaç adım, misafir alışveriş seçeneği",
+          "Ödeme: taksit seçenekleri, 3D Secure, başarısız ödeme ve iade akışı test edildi",
+          "Kargo: desi ve kargo ücretleri ürünlere doğru tanımlandı, ücretsiz kargo eşiği kâr hesabıyla belirlendi",
+          "Ürün sayfaları: özgün açıklama, ölçü ve malzeme bilgisi, birden fazla fotoğraf, stok ve teslim süresi",
+          "Yasal sayfalar ödeme adımından linkli; ön bilgilendirme ve sözleşme onayı alınıyor",
+          "GA4 kurulu ve satın alma olayı geliyor; Search Console doğrulandı ve site haritası gönderildi",
+          "Bütün kampanya linklerinde tutarlı UTM parametreleri",
+          "Sipariş, kargo ve iade bildirim e-postaları test edildi",
+        ],
+      },
+      {
+        heading: "İlk 30 günde ne yapılmalı?",
+        paragraphs: [
+          "Açılış günü işin başlangıcıdır. İlk ay hedefi çok satış değil, sipariş başı katkıyı doğrulamak ve hangi kanalın hangi maliyetle sipariş getirdiğini öğrenmektir.",
+        ],
+        bullets: [
+          "1. hafta: test siparişleri, ilk müşterilerden (tanıdık çevre) geri bildirim, ürün sayfası düzeltmeleri",
+          "2. hafta: küçük bir reklam testi (tek kanal, birkaç ürün); CPA'yı beklenen katkıyla (örnekte 293 TL) karşılaştırın",
+          "3. hafta: en iyi satan ürünlere bütçe kaydırın, kâr ettirmeyen ürünleri reklamdan çıkarın; e-posta listesi toplamaya başlayın",
+          "4. hafta: gerçekleşen iade oranı, kargo maliyeti ve CPA ile başabaş hesabını yeniden yapın; ikinci ayın bütçesini buna göre belirleyin",
+          "Sürekli: Search Console'da hangi aramalardan gösterim aldığınızı izleyin ve kategori sayfalarını bu aramalara göre güçlendirin",
+        ],
+      },
+      {
+        heading: "E-ticaret sitesi kurarken en sık yapılan 6 hata",
+        paragraphs: ["Bu hataların çoğu açılıştan önceki hesaplarla önlenebilir:"],
+        bullets: [
+          "Kâr hesabını reklamsız yapmak: başabaşı reklam ve iade düşülmüş katkıyla hesaplayın",
+          "Ücretsiz kargo eşiğini rakibe bakarak koymak: eşik, sepet tutarı ve kargo maliyetinize göre belirlenmelidir",
+          "Sabit gideri ilk günden büyütmek: hacim belli olmadan pahalı paket, ek modül ve personel",
+          "Ürün sayfalarını tedarikçi metniyle doldurmak: aynı metni kullanan yüzlerce sayfa arasında aramada öne çıkmak zordur",
+          "Ölçümü sonraya bırakmak: GA4 ve UTM açılışta kurulmazsa ilk ayın verisi bir daha geri gelmez",
+          "Yasal metinleri kopyalamak: başka bir mağazanın metni sizin iade koşullarınızı ve ürünlerinizi yansıtmaz",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "E-ticaret sitesi kurmak için şirket gerekir mi?",
+        answer:
+          "Düzenli satış yapacaksanız bir işletme kaydı (şahıs işletmesi ya da şirket) gerekir; ETBİS kaydı ve ödeme altyapısı başvuruları da bu bilgilerle yapılır. Hangi türün size uygun olduğunu ve mali yükümlülükleri bir mali müşavirle netleştirin.",
+      },
+      {
+        question: "ETBİS kaydı ne zaman yapılır?",
+        answer:
+          "Elektronik Ticaret Bilgi Sistemi ve Bildirim Yükümlülükleri Hakkında Tebliğ'e göre kendi sitesinde ya da uygulamasında satış yapanlar faaliyete başlamadan önce ETBİS'e kaydolur. Diğer bildirimler kayıttan itibaren 30 gün içinde, değişiklikler ise değişiklikten itibaren 30 gün içinde e-Devlet üzerinden yapılır.",
+      },
+      {
+        question: "E-ticaret sitesi kurmak ne kadar tutar?",
+        answer:
+          "Tek bir rakam yoktur; seçtiğiniz altyapı, ürün sayısı ve stok ihtiyacı belirler. Başlangıç sermayesini Kurulum + İlk stok + (Aylık sabit gider + Aylık reklam testi) × Pist formülüyle hesaplayın. Örnek tutarlarla 30.000 TL kurulum, 60.000 TL stok ve aylık 43.000 TL gider için üç aylık pist 219.000 TL eder.",
+      },
+      {
+        question: "E-ticaret sitesi kaç siparişte kâra geçer?",
+        answer:
+          "Aylık başabaş sipariş = Aylık sabit gider / Sipariş başı net katkı. Net katkı; ürün, ödeme kesintisi, kargo, paketleme, iade ve reklam maliyeti düşüldükten sonra kalan tutardır. Örnekte 18.000 TL sabit gider ve 113 TL net katkıyla ayda yaklaşık 160 sipariş gerekir.",
+      },
+      {
+        question: "Kendi site mi daha kârlı, pazaryeri mi?",
+        answer:
+          "Ürüne ve reklam maliyetine bağlıdır. Sitede reklamdan önce kalan katkı ile pazaryerindeki katkı arasındaki fark, sitede sipariş başı ödeyebileceğiniz en yüksek reklam maliyetidir. Örnekte bu fark 141 TL'dir; CPA bunun üzerindeyse pazaryeri sipariş başına daha fazla bırakır. Tekrar eden müşteri ve organik trafik arttıkça site avantaj kazanır.",
+      },
+    ],
+    howTo: {
+      name: "E-ticaret sitesi nasıl kurulur?",
+      description: "Kâr hesabından açılışa kadar kendi e-ticaret sitenizi altı adımda kurma.",
+      steps: [
+        { name: "Sipariş başı katkıyı hesaplayın", text: "Sepet tutarından ürün maliyeti, ödeme kesintisi, kargo, paketleme ve iade kaybını düşün; reklamdan önce kalan tutarı ve başabaş ROAS'ı bulun." },
+        { name: "Başabaş ve sermayeyi belirleyin", text: "Aylık sabit gideri net katkıya bölerek başabaş siparişi, kurulum + stok + pist formülüyle başlangıç sermayesini hesaplayın." },
+        { name: "Yasal zemini hazırlayın", text: "İşletme kaydını yapın, satışa başlamadan önce ETBİS'e kaydolun; ön bilgilendirme formu, mesafeli satış sözleşmesi, iade/cayma, KVKK ve çerez metinlerini yayınlayın." },
+        { name: "Altyapı ve ödemeyi kurun", text: "Alan adı ve platformu seçin, SSL'i etkinleştirin, sanal POS ya da ödeme kuruluşunu bağlayın ve kargo anlaşmasını desi tarifesiyle tanımlayın." },
+        { name: "Ölçümü kurun", text: "GA4 satın alma olayını, Search Console doğrulamasını ve kampanya linklerinde UTM standardını açılıştan önce hazırlayın." },
+        { name: "Test edip açın", text: "Kendi kartınızla sipariş, iptal ve iade testi yapın; ilk 30 günde küçük bir reklam testiyle CPA'yı beklenen katkıyla karşılaştırın." },
+      ],
+    },
+    relatedToolKey: "gross-margin",
+    resources: [
+      { label: "E-ticaret Açılış Bütçesi ve Başabaş Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/e-ticaret-acilis-butcesi-sablonu.xlsx", external: true },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "Dropshipping Nedir, Nasıl Yapılır?", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
+      { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "ROI Nedir, Nasıl Hesaplanır?", href: "/blog/roi-nedir-nasil-hesaplanir/" },
+      { label: "UTM Parametreleri Nedir?", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "SEO Nedir, Nasıl Yapılır?", href: "/blog/seo-nedir-nasil-yapilir/" },
+      { label: "Elektronik Ticaret Bilgi Sistemi ve Bildirim Yükümlülükleri Hakkında Tebliğ (mevzuat metni)", href: "https://www.lexpera.com.tr/mevzuat/tebligler/elektronik-ticaret-bilgi-sistemi-ve-bildirim-yukumlulukleri-hakkinda-teblig", external: true },
     ],
   },
 ];
@@ -9186,6 +9400,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "How to Start an Ecommerce Website: Costs and Break-Even", href: "/en/blog/how-to-start-an-ecommerce-website-checklist/" },
       { label: "What Is ROI and How to Calculate It", href: "/en/blog/what-is-roi-how-to-calculate/" },
       { label: "What Is Dropshipping? Profit Math Including Returns", href: "/en/blog/what-is-dropshipping-how-it-works/" },
       { label: "Discount Calculator: Sale Price and Profit Impact", href: "/en/free-tools/discount-calculator/" },
@@ -10487,6 +10702,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "Own Site or Marketplace? Starting an Ecommerce Website", href: "/en/blog/how-to-start-an-ecommerce-website-checklist/" },
       { label: "What Is Dropshipping? Profit Math Including Returns", href: "/en/blog/what-is-dropshipping-how-it-works/" },
       { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
@@ -11604,6 +11820,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "How to Start an Ecommerce Website", href: "/en/blog/how-to-start-an-ecommerce-website-checklist/" },
       { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
@@ -12524,6 +12741,216 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "What Is LTV? LTV:CAC Ratio", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
       { label: "What Is CAC? Customer Acquisition Cost", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
       { label: "What Is a KPI? Marketing KPI Examples", href: "/en/blog/what-is-a-kpi-marketing-kpi-examples/" },
+    ],
+  },
+  {
+    slug: "how-to-start-an-ecommerce-website-checklist",
+    seoTitle: "How to Start an Ecommerce Website: Costs and Break-Even",
+    title: "How to Start an Ecommerce Website: Checklist, Cost Items and Break-Even Math",
+    description:
+      "What you need to start an ecommerce website: legal and technical checklist, cost items, startup capital, profit per order and monthly break-even orders.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Starting an ecommerce website takes five blocks: a legal base (business registration, consumer terms, privacy policy), infrastructure (domain, platform, SSL), payments (gateway and fees), logistics (carrier contract, packaging) and measurement (GA4, UTM, Search Console).",
+      "Before launch, publish your terms, returns policy and privacy policy and show them at checkout. In the EU and Turkey, consumers have a 14-day right of withdrawal on most online purchases.",
+      "The real question isn't setup cost but profit per order. Example: on a $90 order, after product, payment fees, shipping, packaging and 8% returns you keep $29.32; with $18 of ad cost per order, $11.32. Covering $1,800 of monthly fixed costs takes about 160 orders a month.",
+      "If the same product leaves $15.24 on a marketplace with a 20% commission, your own site only earns more once ad cost per order falls below about $14.",
+    ],
+    publishedAt: "2026-11-07",
+    readingMinutes: 11,
+    tags: ["Ecommerce", "Start an Online Store", "Break-Even", "Profit Margin", "Shipping", "Checklist"],
+    sections: [
+      {
+        heading: "What do you need to start an ecommerce website? (Short answer)",
+        paragraphs: [
+          "Opening an online store takes days today; ready-made platforms handle most of the design and checkout. The hard part is running it profitably and within the rules. So think of the requirements as five blocks and close each one before launch.",
+          "Below you'll find a checklist for each block, the cost items, and most importantly the math to do before you open: what one order leaves you and how many orders a month you need. The amounts are examples; replace them with your own quotes and rates.",
+        ],
+        bullets: [
+          "Legal base: business registration, terms of sale, returns and withdrawal policy, privacy and cookie policy, company details on the site",
+          "Infrastructure: domain, ecommerce platform (hosted SaaS, open source or custom build), SSL, theme and mobile experience",
+          "Payments: payment gateway, fees and installments, refund process",
+          "Logistics: carrier contract (dimensional weight rates), packaging, stock or supplier setup",
+          "Measurement and marketing: GA4, Search Console, UTM-tagged campaign links, a first ad test budget",
+        ],
+      },
+      {
+        heading: "Which legal steps come before launch?",
+        paragraphs: [
+          "Rules depend on your country, so treat this as a checklist to confirm with a local accountant or lawyer, not as legal advice. In most markets, selling regularly requires a registered business, and payment providers will ask for those details when you apply.",
+          "Consumer rules: show your terms of sale, delivery times, total price and returns policy before the customer confirms the order. In the EU, consumers can withdraw from most online purchases within 14 days without giving a reason, and Turkey applies the same 14-day period; some items, such as personalized products, are exempt. Faulty or wrong items must be accepted back regardless.",
+          "In Turkey specifically, sellers on their own website must register with ETBİS, the Ministry of Trade's e-commerce information system, before they start selling, and show a pre-information form and distance sales contract at checkout.",
+          "Data and messaging: publish a privacy policy and cookie notice (GDPR in the EU, KVKK in Turkey), collect explicit consent before sending marketing emails or texts, and keep a record of that consent. Add your legal business name and contact details to the site footer.",
+        ],
+        bullets: [
+          "Business registration (type and financial obligations: ask a local accountant)",
+          "Local e-commerce registrations where required (e.g. ETBİS in Turkey, before selling)",
+          "Terms of sale and pre-contract information shown at checkout with a consent box",
+          "Returns and withdrawal page: period, exceptions, who pays return shipping",
+          "Privacy policy and cookie notice",
+          "Explicit consent and records for marketing messages",
+          "Company details: legal name, registration number, address, email, phone",
+        ],
+      },
+      {
+        heading: "Hosted platform, open source or custom build?",
+        paragraphs: [
+          "Hosted platforms (SaaS stores) bundle hosting, security, payments and shipping integrations for a monthly fee and can be live in days. Open source options (for example WordPress + WooCommerce) carry no license fee, but hosting, updates and security become your or your developer's job. A custom build is the most flexible and the most expensive and slowest option; it only makes sense if you have a workflow ready-made systems can't handle.",
+          "Decide with three questions: how much monthly fixed cost can you carry, who will do the technical work, and which integrations are essential (marketplaces, carriers, accounting, ERP)? If first-year volume is uncertain, the option with lower fixed costs is almost always safer. Prices change often, so get more than one current quote and ask about transaction fees, paid add-ons and renewal terms.",
+        ],
+      },
+      {
+        heading: "What are the cost items of an ecommerce website?",
+        paragraphs: [
+          "Split costs into three groups. One-time setup items are paid once; monthly fixed costs are paid whether you sell or not; variable costs occur on every order. Most guides focus on the first two, but it's the third group that decides profit or loss.",
+          "When you build your own list, write 'who, how much, how often' for each item. Even if you'll do product photos, product copy and legal pages yourself, note the time; the founder's time is the biggest hidden cost of the first months.",
+        ],
+        bullets: [
+          "One-time: domain (renews yearly), theme/design, logo, product photography, product copy, legal pages, first stock, setup and integrations",
+          "Monthly fixed: platform subscription or hosting, add-ons, bookkeeping, email/SMS tool, staff and storage if any",
+          "Variable (per order): product cost, payment fee, shipping, packaging, return losses, ad cost",
+        ],
+      },
+      {
+        heading: "How much startup capital do you need? Formula and example",
+        paragraphs: [
+          "Instead of asking for a single number, calculate startup capital with a formula. Assume the store won't pay for itself in the first months and pick how many months you want to be able to last (your runway).",
+          "Example (illustrative amounts): setup items $3,000, first stock $6,000, monthly fixed costs $1,800 and a monthly ad test of $2,500. For a three-month runway: $3,000 + $6,000 + 3 × ($1,800 + $2,500) = $21,900. This ignores contribution from sales, so it's a worst-case buffer. If you work without stock (dropshipping), the stock line drops, but profit per order usually shrinks too.",
+        ],
+        bullets: [
+          "Startup capital = Setup + First stock + (Monthly fixed costs + Monthly ad test) × Runway (months)",
+          "Runway: the number of months you want to last until sales cover fixed costs",
+        ],
+      },
+      {
+        heading: "How much does one order make? Contribution per order",
+        paragraphs: [
+          "This is the most important calculation to do before you open. Take an example order (illustrative amounts): order value $90, product cost $45, payment fee 3% ($2.70), shipping $7.50, packaging $1.50. A completed order leaves you $90 − $45 − $2.70 − $7.50 − $1.50 = $33.30.",
+          "Now add returns. If 8% of orders come back, the product returns to stock but outbound and return shipping plus packaging ($7.50 + $7.50 + $1.50 = $16.50) are lost. Expected contribution: 0.92 × $33.30 − 0.08 × $16.50 = $29.32. That's what each order leaves before advertising, and also the most you can pay in ads per order.",
+          "If your ad cost per order (CPA) is $18, net contribution falls to $29.32 − $18 = $11.32. Break-even ROAS follows: $90 / $29.32 = 3.07. Any ad dollar that brings in less than $3.07 of revenue loses money on that order. You can check this per product with the gross margin calculator and the ROAS calculator, and pin down shipping with the dimensional weight and shipping cost calculators.",
+        ],
+        bullets: [
+          "Completed-order contribution = Order value − Product cost − Payment fee − Shipping − Packaging",
+          "Expected contribution = (1 − Return rate) × Completed contribution − Return rate × (Outbound + Return shipping + Packaging)",
+          "Net contribution = Expected contribution − Ad cost per order (CPA)",
+          "Break-even ROAS = Order value / Expected contribution",
+        ],
+      },
+      {
+        heading: "How many orders a month do you need? Break-even point",
+        paragraphs: [
+          "Monthly break-even orders = Monthly fixed costs / Net contribution per order. In the example, $1,800 / $11.32 ≈ 160 orders. Below 160 orders a month the store loses money; above it, it profits.",
+          "Methods that leave ad cost out of the unit math get $1,800 / $33.30 = 54.05, or 55 orders rounded up, for the same store. That's a threefold gap; for a store that sells through ads, a 55-order target can convince you you're profitable while you're losing money. Always calculate break-even on contribution after ads and returns.",
+          "Then reality-check it: 160 orders a month at a 1.5% conversion rate means about 10,700 sessions. Write down which channels will bring that traffic and at what cost before launch. Once you're measuring conversion rate, update the target with the conversion rate calculator.",
+          "We put every calculation in this guide (setup budget, monthly costs, contribution per order, break-even orders, runway and the site vs marketplace comparison) into a free Excel template that needs no sign-up. It's in Turkish, but the formulas work with any currency; download it from the resources section. It also includes a launch checklist.",
+        ],
+        bullets: [
+          "Monthly break-even orders = Monthly fixed costs / Net contribution",
+          "Required sessions = Break-even orders / Conversion rate",
+        ],
+      },
+      {
+        heading: "Your own site or a marketplace? Same product, side by side",
+        paragraphs: [
+          "Imagine selling the same product on a marketplace with a 20% commission (an example rate; real commissions vary by category). The marketplace collects payment, so there's no payment fee: $90 − $45 − $18 − $7.50 − $1.50 = $18; with the same 8% returns, expected contribution is 0.92 × $18 − 0.08 × $16.50 = $15.24.",
+          "On your own site, $29.32 was left before ads. The gap is $29.32 − $15.24 ≈ $14. So in this example, unless your site's ad cost per order drops below about $14, the marketplace leaves more per order. At an $18 CPA, the site leaves $11.32 and the marketplace $15.24 (assuming no extra marketplace ads).",
+          "The site's advantage shows up over time: repeat customers, an email list and organic traffic bring orders without ad cost, average ad cost falls, and the customer data stays with you. In practice the usual answer is to run both: the marketplace for volume and cash flow, the site for repeat customers and brand. You can model the marketplace side per product with the marketplace profit calculator.",
+        ],
+      },
+      {
+        heading: "Technical and operations checklist",
+        paragraphs: ["Before launch, verify every item with a test order: place an order with your own card, cancel it and refund it."],
+        bullets: [
+          "Domain and SSL (https in the address bar), www and non-www redirect to one address",
+          "Mobile checkout: only a few steps from cart to confirmation, guest checkout available",
+          "Payments: installments if relevant, 3D Secure, failed payment and refund flows tested",
+          "Shipping: dimensional weight and rates set correctly per product, free shipping threshold set from your profit math",
+          "Product pages: original descriptions, size and material details, several photos, stock and delivery time",
+          "Legal pages linked from checkout; consent to terms collected",
+          "GA4 installed and the purchase event firing; Search Console verified and sitemap submitted",
+          "Consistent UTM parameters on every campaign link",
+          "Order, shipping and refund notification emails tested",
+        ],
+      },
+      {
+        heading: "What should you do in the first 30 days?",
+        paragraphs: [
+          "Launch day is just the start. The first month's goal isn't big sales; it's validating contribution per order and learning which channel brings orders at what cost.",
+        ],
+        bullets: [
+          "Week 1: test orders, feedback from first customers (friends and network), product page fixes",
+          "Week 2: a small ad test (one channel, a few products); compare CPA with expected contribution ($29.32 in the example)",
+          "Week 3: shift budget to best sellers, pull unprofitable products from ads, start collecting emails",
+          "Week 4: redo the break-even math with actual return rate, shipping cost and CPA; set month two's budget accordingly",
+          "Ongoing: watch which searches bring impressions in Search Console and strengthen category pages for them",
+        ],
+      },
+      {
+        heading: "6 common mistakes when starting an ecommerce website",
+        paragraphs: ["Most of these can be prevented with the math you do before launch:"],
+        bullets: [
+          "Calculating profit without ads: compute break-even on contribution after ads and returns",
+          "Copying a competitor's free shipping threshold: set it from your own order value and shipping cost",
+          "Growing fixed costs from day one: expensive plans, add-ons and staff before volume is known",
+          "Filling product pages with supplier copy: it's hard to stand out in search among hundreds of pages with the same text",
+          "Leaving measurement for later: if GA4 and UTMs aren't set up at launch, the first month's data never comes back",
+          "Copying legal pages: another store's terms don't reflect your returns policy or products",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Do I need a company to start an ecommerce website?",
+        answer:
+          "If you sell regularly, most countries require a registered business (sole trader or company), and payment providers ask for those details. Confirm the right type and your financial obligations with a local accountant.",
+      },
+      {
+        question: "What legal pages does an online store need?",
+        answer:
+          "At minimum: terms of sale with pre-contract information, a returns and withdrawal policy, a privacy policy and a cookie notice, plus your business details. In the EU and Turkey, consumers have a 14-day right of withdrawal on most online purchases, with exceptions such as personalized items.",
+      },
+      {
+        question: "How much does it cost to start an ecommerce website?",
+        answer:
+          "There's no single number; your platform, product count and stock needs decide it. Use Startup capital = Setup + First stock + (Monthly fixed costs + Monthly ad test) × Runway. With illustrative amounts of $3,000 setup, $6,000 stock and $4,300 of monthly costs, a three-month runway is $21,900.",
+      },
+      {
+        question: "How many orders does an online store need to break even?",
+        answer:
+          "Monthly break-even orders = Monthly fixed costs / Net contribution per order, where net contribution is what's left after product, payment fee, shipping, packaging, returns and ad cost. In the example, $1,800 of fixed costs and $11.32 of net contribution need about 160 orders a month.",
+      },
+      {
+        question: "Is my own site more profitable than a marketplace?",
+        answer:
+          "It depends on the product and your ad cost. The gap between your site's contribution before ads and the marketplace contribution is the most you can pay in ads per order on your site. In the example that gap is about $14; above that CPA, the marketplace leaves more per order. As repeat customers and organic traffic grow, the site gains the edge.",
+      },
+    ],
+    howTo: {
+      name: "How to start an ecommerce website",
+      description: "Set up your own online store in six steps, from profit math to launch.",
+      steps: [
+        { name: "Calculate contribution per order", text: "Subtract product cost, payment fee, shipping, packaging and return losses from order value; find what's left before ads and your break-even ROAS." },
+        { name: "Set break-even and capital", text: "Divide monthly fixed costs by net contribution for break-even orders, and use setup + stock + runway for startup capital." },
+        { name: "Prepare the legal base", text: "Register the business and any local e-commerce registrations; publish terms, returns/withdrawal, privacy and cookie pages." },
+        { name: "Set up platform and payments", text: "Choose a domain and platform, enable SSL, connect a payment gateway and set your carrier rates with dimensional weight." },
+        { name: "Set up measurement", text: "Prepare the GA4 purchase event, Search Console verification and a UTM standard for campaign links before launch." },
+        { name: "Test and launch", text: "Run an order, cancellation and refund test with your own card; in the first 30 days, compare CPA with expected contribution through a small ad test." },
+      ],
+    },
+    relatedToolKey: "gross-margin",
+    resources: [
+      { label: "Ecommerce Launch Budget and Break-Even Template (free Excel, Turkish)", href: "https://yusufbayrak.net/sablonlar/e-ticaret-acilis-butcesi-sablonu.xlsx", external: true },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
+      { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "What Is Dropshipping and How It Works", href: "/en/blog/what-is-dropshipping-how-it-works/" },
+      { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
+      { label: "What Is ROI and How to Calculate It", href: "/en/blog/what-is-roi-how-to-calculate/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "What Is SEO and How to Do It", href: "/en/blog/what-is-seo-how-to-do-it/" },
     ],
   },
 ];
