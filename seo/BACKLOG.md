@@ -44,6 +44,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi: /blog/meta-reklam-verme-rehberi/, /blog/arr-nedir-yillik-yinelenen-gelir/ ("URL Google'da yok", durum "Tarandı - şu anda dizine eklenmiş değil"), /en/blog/what-is-mrr-how-to-calculate/, /en/blog/what-is-nrr-saas-growth-metric/, /blog/cac-nedir-musteri-edinme-maliyeti/ (07.11 başlık/açıklama) — 2026-11-07
 - [ ] Dizine ekleme isteği (2026-11-07 kalan, TR önce): /en/free-tools/shipping-cost-calculator/ (yeni bölüm + başlık), /en/blog/what-is-a-kpi-marketing-kpi-examples/, /en/blog/what-is-roas-how-to-calculate/, /blog/utm-nedir-utm-parametreleri/, /blog/ltv-nedir-ltv-cac-orani/
 - [ ] ARR nedir TR "Tarandı - dizine eklenmedi" (07.11 URL Denetimi): 1 hafta izle; devam ederse MRR/NRR/SaaS Metrikleri yazılarından sorgu metniyle iç link ve özgün örnek güçlendirmesi
+- [ ] Dizine ekleme isteği (2026-11-07, TR önce): /blog/roi-nedir-nasil-hesaplanir/, /en/blog/what-is-roi-how-to-calculate/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28

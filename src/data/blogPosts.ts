@@ -1660,6 +1660,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "ROI Nedir, Nasıl Hesaplanır? ROAS Farkı", href: "/blog/roi-nedir-nasil-hesaplanir/" },
       { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
       { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
@@ -3026,6 +3027,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "ROI Nedir, Nasıl Hesaplanır?", href: "/blog/roi-nedir-nasil-hesaplanir/" },
       { label: "Dropshipping Nedir? İade Dahil Kâr Hesabı", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
       { label: "İndirim Hesaplama: İndirimli Fiyat ve Kâr Etkisi", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
@@ -6346,6 +6348,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "conversion",
     resources: [
+      { label: "ROI Nedir, Nasıl Hesaplanır?", href: "/blog/roi-nedir-nasil-hesaplanir/" },
       { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -6360,6 +6363,187 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "UTM Parametreleri Nedir?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "Google Analytics Yardım: Etkinlikler ve key event'ler", href: "https://support.google.com/analytics/answer/13965727?hl=tr", external: true },
+    ],
+  },
+  {
+    slug: "roi-nedir-nasil-hesaplanir",
+    seoTitle: "ROI Nedir, Nasıl Hesaplanır? Formül, Örnek, ROAS Farkı",
+    title: "ROI Nedir, Nasıl Hesaplanır? Pazarlamada Doğru ROI Formülü ve ROAS Farkı",
+    description:
+      "ROI nedir, nasıl hesaplanır? Yatırım getirisi formülü, pazarlamada ciro yerine brüt kârla hesap, ROI ile ROAS farkı, yıllıklandırma ve sayısal örnekler.",
+    category: "performans-pazarlama",
+    tldr: [
+      "ROI (Return on Investment, yatırım getirisi), bir yatırımdan elde edilen net kazancın yatırım maliyetine oranıdır: ROI = (Getiri − Maliyet) / Maliyet × 100.",
+      "Pazarlamada en sık hata getiri yerine ciroyu yazmaktır. 60.000 TL'lik kampanya 250.000 TL ciro getirdiyse ve brüt marj %40 ise ROI %316,7 değil, %66,7'dir.",
+      "ROAS yalnızca ciroyu reklam harcamasına böler; ROI kârı ölçer. Yalnızca reklam maliyeti varken ROI = ROAS × Brüt marj − 1. %40 marjda ROAS 2,5 başabaştır (ROI %0).",
+      "ROI'yi süreyle birlikte okuyun: 6 ayda %30 getiri yıllık yaklaşık %69 demektir. Kampanya olmasa da gelecek satışları düşmezseniz ROI'yi olduğundan yüksek hesaplarsınız.",
+    ],
+    publishedAt: "2026-11-07",
+    readingMinutes: 9,
+    tags: ["ROI", "Yatırım Getirisi", "ROAS", "Pazarlama Metrikleri", "Performans Pazarlama", "E-ticaret"],
+    sections: [
+      {
+        heading: "ROI nedir? (Kısa cevap)",
+        paragraphs: [
+          "ROI, İngilizce Return on Investment'ın kısaltmasıdır ve Türkçede yatırım getirisi ya da yatırımın geri dönüşü olarak kullanılır. Bir yatırıma koyduğunuz her 100 liranın size kaç lira net kazanç bıraktığını yüzde olarak gösterir.",
+          "Formül: ROI = (Getiri − Maliyet) / Maliyet × 100. 10.000 TL'lik bir yatırım 13.000 TL geri getirdiyse net kazanç 3.000 TL, ROI %30'dur. ROI %0 ise paranızı yalnızca geri almışsınızdır; eksi bir ROI zarar ettiğinizi gösterir.",
+          "Aynı formül hisse senedi, makine, yazılım, eğitim ya da reklam kampanyası için kullanılabilir. Farkı yaratan, 'getiri' ve 'maliyet' kalemlerine neyi yazdığınızdır. Bu yazı özellikle pazarlama ve e-ticaret kararlarında ROI'nin nasıl doğru hesaplanacağına odaklanır.",
+        ],
+      },
+      {
+        heading: "ROI nasıl hesaplanır? Formül ve adımlar",
+        paragraphs: [
+          "Hesap üç adımdır: önce dönemin toplam maliyetini, sonra o maliyetin yarattığı getiriyi bulun, son olarak farkı maliyete bölün. Sonucu 100 ile çarparak yüzdeye çevirin.",
+          "Örnek: bir mağaza vitrin yenilemesine 40.000 TL harcıyor. Yenileme sonrası ek satışların brüt kârı (ürün maliyeti düşülmüş hali) 52.000 TL. ROI = (52.000 − 40.000) / 40.000 × 100 = %30.",
+          "Bazı kaynaklar ROI'yi kat olarak da yazar: getiri / maliyet = 1,3. Bu bir 'geri dönüş katsayısıdır'; içinde maliyetin kendisi de vardır. %30 ROI ile 1,3 kat aynı şeyi anlatır, ama 'ROI 1'in üzerinde olmalı' gibi ifadeler bu iki gösterimi karıştırdığı için yanıltıcıdır. Yüzde gösterimde eşik %0'dır.",
+        ],
+        bullets: [
+          "ROI (%) = (Getiri − Maliyet) / Maliyet × 100",
+          "Net kazanç = Getiri − Maliyet",
+          "Geri dönüş katsayısı = Getiri / Maliyet = 1 + ROI",
+          "Başabaş: ROI = %0 (getiri = maliyet)",
+        ],
+      },
+      {
+        heading: "Pazarlamada ROI: neden ciro değil, brüt kâr kullanılır?",
+        paragraphs: [
+          "Pazarlama ROI'sinde en yaygın hata, getiri olarak kampanyanın getirdiği ciroyu yazmaktır. Oysa satılan ürünün de bir maliyeti vardır ve o maliyet kampanya olmasa da ödenmeyecekti. Getiri, satışın size bıraktığı brüt kârdır.",
+          "Örnek: 60.000 TL'lik bir kampanya (reklam + ajans + görsel) 250.000 TL ciro getiriyor. Ürünlerin brüt kâr marjı %40, yani bu cironun brüt kârı 100.000 TL. Doğru hesap: ROI = (100.000 − 60.000) / 60.000 = %66,7.",
+          "Ciroyla yapılan yanlış hesap ise (250.000 − 60.000) / 60.000 = %316,7 çıkar. Aradaki fark, bir kampanyayı olduğundan beş kat başarılı göstermeye yeter. Pazaryerinde satıyorsanız brüt kârı komisyon, kargo ve iade düştükten sonra hesaplayın; Trendyol Kâr Hesaplama aracı sipariş başı bu tutarı verir.",
+        ],
+        bullets: [
+          "Pazarlama ROI = (Brüt kâr − Pazarlama maliyeti) / Pazarlama maliyeti × 100",
+          "Brüt kâr = Ciro × Brüt kâr marjı",
+          "Maliyete reklam harcamasının yanında ajans, araç, içerik ve ekip zamanını da ekleyin",
+        ],
+      },
+      {
+        heading: "ROI ile ROAS arasındaki fark nedir?",
+        paragraphs: [
+          "ROAS (reklam harcamasının getirisi) ciroyu reklam harcamasına böler: ROAS = Reklam cirosu / Reklam harcaması. Ürün maliyetini, kargoyu ve diğer giderleri görmez; bu yüzden hızlı bir kanal göstergesidir. ROI ise kârı ölçer ve işin para kazanıp kazanmadığını söyler.",
+          "Kampanyanın tek maliyeti reklam harcamasıysa ikisi arasında basit bir köprü vardır: ROI = ROAS × Brüt marj − 1. Reklama 10.000 TL harcayıp 50.000 TL ciro elde ettiyseniz ROAS 5'tir; %40 marjla brüt kâr 20.000 TL, ROI (20.000 − 10.000) / 10.000 = %100 olur. Formülle: 5 × 0,40 − 1 = 1, yani %100.",
+          "Bu köprüden iki pratik sayı çıkar. Başabaş ROAS = 1 / Brüt marj: %40 marjda 2,5'in altındaki her ROAS zarardır. Hedef ROI'den hedef ROAS'a geçmek için: Hedef ROAS = (1 + Hedef ROI) / Brüt marj. %50 ROI isteyen ve %40 marjla satan biri için hedef ROAS 1,5 / 0,40 = 3,75'tir. Bu değerleri ROAS Hesaplayıcı ve Reklam Bütçesi Hesaplama araçlarında kendi rakamlarınızla görebilirsiniz.",
+        ],
+        bullets: [
+          "ROAS = Reklam cirosu / Reklam harcaması (kat olarak okunur, ör. 5)",
+          "ROI = (Brüt kâr − Maliyet) / Maliyet (yüzde olarak okunur, ör. %100)",
+          "Yalnızca reklam maliyeti varken: ROI = ROAS × Brüt marj − 1",
+          "Başabaş ROAS = 1 / Brüt marj; Hedef ROAS = (1 + Hedef ROI) / Brüt marj",
+        ],
+      },
+      {
+        heading: "ROI'de süre neden önemli? Yıllıklandırma ve geri ödeme süresi",
+        paragraphs: [
+          "ROI formülünde zaman yoktur. 3 ayda %30 kazandıran yatırımla 3 yılda %30 kazandıran yatırım aynı ROI'yi verir ama aynı iş değildir. Farklı süreli yatırımları karşılaştırırken ROI'yi yıllığa çevirin.",
+          "Yıllık ROI = (1 + ROI)^(12 / Ay sayısı) − 1. 6 ayda %30 getiri: (1,30)^2 − 1 = %69 yıllık. Basit çarpma (%30 × 2 = %60) getirinin yeniden kullanılmasını hesaba katmadığı için düşük kalır; tersine, kısa süreli şanslı bir sonucu yıllığa çevirmek de fazla iyimser bir tablo çizebilir.",
+          "Geri ödeme süresi ise maliyetin kaç ayda geri döndüğünü söyler: Geri ödeme (ay) = Maliyet / Aylık brüt kâr. Yukarıdaki 60.000 TL'lik kampanyanın 100.000 TL brüt kârı üç aya yayıldıysa aylık 33.333 TL'dir; geri ödeme 60.000 / 33.333 ≈ 1,8 aydır. Abonelik işlerinde aynı mantık CAC geri ödeme süresi olarak izlenir.",
+        ],
+        bullets: [
+          "Yıllık ROI = (1 + ROI)^(12 / Ay) − 1",
+          "Geri ödeme süresi (ay) = Maliyet / Aylık brüt kâr",
+        ],
+      },
+      {
+        heading: "İlk siparişe göre mi, müşteri ömrüne göre mi? (LTV ile ROI)",
+        paragraphs: [
+          "Tekrar satın alınan ürünlerde ilk siparişin ROI'si çoğu zaman eksidir ve bu tek başına kampanyanın kötü olduğunu göstermez. Doğru soru, müşterinin belirli bir sürede bıraktığı toplam brüt kârın edinme maliyetini geçip geçmediğidir.",
+          "Örnek: bir müşteriyi kazanmanın maliyeti (CAC) 600 TL. İlk siparişin brüt kârı 480 TL, yani ilk sipariş ROI'si (480 − 600) / 600 = %−20. Aynı müşteri 12 ayda toplam 1.200 TL brüt kâr bırakıyorsa 12 aylık ROI (1.200 − 600) / 600 = %100'dür.",
+          "Bu yüzden raporda hangi pencereyi kullandığınızı yazın: ilk sipariş, 90 gün ya da 12 ay. Müşteri ömrü hesabını LTV yazısında, edinme maliyeti hesabını CAC yazısında ayrıntılı bulabilirsiniz. Nakit akışı dar bir işletme için 12 ay beklemek mümkün olmayabilir; uzun pencere ROI'sini geri ödeme süresiyle birlikte okuyun.",
+        ],
+      },
+      {
+        heading: "Artımsallık: kampanya olmasa da gelecek satışlar",
+        paragraphs: [
+          "ROI hesabındaki ikinci büyük hata, kampanya döneminde gelen bütün satışları kampanyaya yazmaktır. Marka aramalarından, sadık müşterilerden ya da doğal trafikten gelecek satışlar zaten gelecekti. Kampanyanın gerçek getirisi yalnızca onun sayesinde gelen ek (artımsal) satıştır.",
+          "Önceki örneğe dönelim: 250.000 TL cironun %40'ı kampanya olmasa da gelecekse artımsal ciro 150.000 TL, artımsal brüt kâr 60.000 TL'dir. ROI = (60.000 − 60.000) / 60.000 = %0. Panelde %66,7 görünen kampanya aslında yalnızca kendini ödemiştir.",
+          "Artımsallığı ölçmenin en sade yolları: kampanyayı bir bölgede ya da bir hafta kapatıp satışı karşılaştırmak, marka aramalarını performans kampanyalarından ayrı raporlamak ve platform panelindeki dönüşümleri sitenizin ya da muhasebenizin verisiyle karşılaştırmaktır. Kesin rakam bulamıyorsanız bile bir 'zaten gelecekti' payı tahmin edip ROI'yi iki senaryoyla raporlamak, tek bir şişkin rakamdan daha dürüsttür.",
+        ],
+      },
+      {
+        heading: "Yazılım ve otomasyon yatırımlarında ROI nasıl hesaplanır?",
+        paragraphs: [
+          "Bir CRM, raporlama aracı ya da otomasyon yatırımında getiri çoğu zaman ek satış değil, kazanılan zamandır. Zaman tasarrufunu paraya çevirmek için saat × saatlik maliyet kullanılır.",
+          "Örnek: yıllık toplam maliyeti (lisans, kurulum, eğitim) 80.000 TL olan bir otomasyon haftada 10 saatlik manuel işi kaldırıyor. Bu işi yapan kişinin işverene saatlik maliyeti 400 TL ise yıllık tasarruf 10 × 52 × 400 = 208.000 TL'dir. ROI = (208.000 − 80.000) / 80.000 = %160.",
+          "Bir uyarı: kazanılan saat başka bir değere dönüşmüyorsa (ekip aynı sürede daha fazla satış ya da müşteri hizmeti yapmıyorsa) bu tasarruf kâğıt üzerinde kalır. Bu tür ROI'yi 'nakit' ve 'kapasite' olarak ayrı yazın.",
+        ],
+      },
+      {
+        heading: "İyi ROI kaç olmalı?",
+        paragraphs: [
+          "Herkes için geçerli tek bir 'iyi ROI' yoktur. Bir yatırımın ROI'si, aynı parayla yapabileceğiniz en iyi alternatiften ve taşıdığı riskten yüksek olmalıdır. Paranın başka bir yerde getireceği getiri yükseldikçe, pazarlama ve büyüme yatırımlarından beklenen ROI de yükselir.",
+          "Pratik bir kural: kampanya ROI'si %0'ın üzerindeyse kampanya kendini ödüyordur; ama sabit giderleri (kira, maaş, yazılım) karşılayıp karşılamadığı ayrı bir sorudur. Bu yüzden kampanya düzeyinde brüt kâr bazlı ROI'ye, şirket düzeyinde ise tüm giderler düşüldükten sonraki kâra bakın.",
+        ],
+        bullets: [
+          "ROI < %0: yatırım parasını geri getirmiyor",
+          "ROI = %0: başabaş; kendini ödüyor ama kazandırmıyor",
+          "ROI > %0: kazandırıyor; alternatif getiri ve riskle karşılaştırın",
+          "Farklı süreli yatırımları yıllık ROI ile karşılaştırın",
+        ],
+      },
+      {
+        heading: "ROI hesaplarken en sık yapılan 6 hata",
+        paragraphs: ["Aşağıdaki hatalar ROI'yi sistematik olarak olduğundan yüksek gösterir:"],
+        bullets: [
+          "Getiriye ciroyu yazmak: ürün maliyeti, komisyon ve kargo düşülmeli",
+          "Maliyeti eksik yazmak: ajans, araç, içerik üretimi ve ekip zamanı da maliyettir",
+          "Süreyi yok saymak: farklı süreli yatırımları yıllık ROI ile karşılaştırın",
+          "Artımsallığı ölçmemek: kampanya olmasa da gelecek satışları düşün",
+          "Platformun raporladığı dönüşümü doğru kabul etmek: aynı satış birden fazla kanalda sayılabilir",
+          "İadeleri unutmak: iade edilen siparişin cirosu ve kargosu getiriden düşülmelidir",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "ROI ne demek, açılımı nedir?",
+        answer:
+          "ROI, Return on Investment'ın kısaltmasıdır. Türkçede yatırım getirisi ya da yatırımın geri dönüşü anlamına gelir ve bir yatırımın maliyetine göre ne kadar net kazanç sağladığını yüzde olarak gösterir.",
+      },
+      {
+        question: "ROI formülü nedir?",
+        answer:
+          "ROI = (Getiri − Maliyet) / Maliyet × 100. Pazarlamada getiri olarak ciro değil, satışın bıraktığı brüt kâr kullanılmalıdır. Örneğin 60.000 TL maliyetli bir kampanya 100.000 TL brüt kâr getirdiyse ROI %66,7'dir.",
+      },
+      {
+        question: "ROI ile ROAS aynı şey mi?",
+        answer:
+          "Hayır. ROAS ciroyu reklam harcamasına böler ve kat olarak okunur (ör. 5). ROI kârı maliyete böler ve yüzde olarak okunur. Yalnızca reklam maliyeti varken ROI = ROAS × Brüt marj − 1 olur; %40 marjda ROAS 5, ROI %100'e karşılık gelir.",
+      },
+      {
+        question: "Negatif ROI ne anlama gelir?",
+        answer:
+          "Negatif ROI, yatırımın maliyetini geri getirmediğini, yani zarar ettiğini gösterir. Ancak tekrar satın alınan ürünlerde ilk siparişin ROI'si eksi olup müşterinin 12 aylık ROI'si artı olabilir; hangi zaman penceresine baktığınızı mutlaka belirtin.",
+      },
+      {
+        question: "Yüzde 100 ROI ne demek?",
+        answer:
+          "%100 ROI, yatırdığınız tutarın tamamını geri alıp üstüne aynı tutar kadar net kazanç elde ettiğiniz anlamına gelir. 10.000 TL yatırım 20.000 TL getiri (kampanyada brüt kâr) sağladıysa ROI %100'dür; 10.000 TL'nin 'iki katı kazanç' değil, 10.000 TL net kazançtır.",
+      },
+    ],
+    howTo: {
+      name: "Pazarlama ROI'si nasıl hesaplanır?",
+      description: "Bir kampanyanın yatırım getirisini brüt kâr ve artımsallıkla beş adımda hesaplama.",
+      steps: [
+        { name: "Toplam maliyeti bulun", text: "Reklam harcamasına ajans, araç, içerik ve ekip zamanını ekleyerek kampanyanın toplam maliyetini yazın." },
+        { name: "Ciroyu brüt kâra çevirin", text: "Kampanyanın getirdiği ciroyu brüt kâr marjıyla çarpın; pazaryerinde komisyon, kargo ve iadeyi de düşün." },
+        { name: "Artımsal payı ayırın", text: "Kampanya olmasa da gelecek satışların payını tahmin edin ve getiriden çıkarın." },
+        { name: "ROI'yi hesaplayın", text: "ROI = (Brüt kâr − Maliyet) / Maliyet × 100 formülünü uygulayın; %0 başabaştır." },
+        { name: "Süreye göre okuyun", text: "Farklı süreli yatırımları yıllık ROI = (1 + ROI)^(12 / Ay) − 1 ile karşılaştırın ve geri ödeme süresini not edin." },
+      ],
+    },
+    relatedToolKey: "roas",
+    resources: [
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "LTV Nedir? LTV:CAC Oranı", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "KPI Nedir? Pazarlama KPI'ları", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
     ],
   },
 ];
@@ -7720,6 +7904,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "What Is ROI? ROI vs ROAS", href: "/en/blog/what-is-roi-how-to-calculate/" },
       { label: "How to Run Instagram Ads: Cost and Budget", href: "/en/blog/how-to-run-instagram-ads/" },
       { label: "How to Advertise on Trendyol: Ad Types, Costs & Profit", href: "/en/blog/how-to-advertise-on-trendyol/" },
       { label: "How to Calculate Profit Margin (Margin vs Markup)", href: "/en/blog/how-to-calculate-profit-margin/" },
@@ -9001,6 +9186,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "What Is ROI and How to Calculate It", href: "/en/blog/what-is-roi-how-to-calculate/" },
       { label: "What Is Dropshipping? Profit Math Including Returns", href: "/en/blog/what-is-dropshipping-how-it-works/" },
       { label: "Discount Calculator: Sale Price and Profit Impact", href: "/en/free-tools/discount-calculator/" },
       { label: "Trendyol Commission Rates 2026 & How to Calculate Fees", href: "/en/blog/trendyol-commission-rates/" },
@@ -12142,6 +12328,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "conversion",
     resources: [
+      { label: "What Is ROI and How to Calculate It", href: "/en/blog/what-is-roi-how-to-calculate/" },
       { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
@@ -12156,6 +12343,187 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
       { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
       { label: "Google Analytics Help: Events and key events", href: "https://support.google.com/analytics/answer/13965727?hl=en", external: true },
+    ],
+  },
+  {
+    slug: "what-is-roi-how-to-calculate",
+    seoTitle: "What Is ROI? Formula, Marketing Examples, ROI vs ROAS",
+    title: "What Is ROI and How Do You Calculate It? The Right Marketing ROI Formula and ROI vs ROAS",
+    description:
+      "What is ROI and how do you calculate it? The ROI formula, why marketing ROI uses gross profit instead of revenue, ROI vs ROAS, annualized ROI and examples.",
+    category: "performans-pazarlama",
+    tldr: [
+      "ROI (return on investment) is the net gain from an investment divided by its cost: ROI = (Return − Cost) / Cost × 100.",
+      "The most common marketing mistake is using revenue as the return. If a $6,000 campaign brings $25,000 in revenue at a 40% gross margin, ROI is 66.7%, not 316.7%.",
+      "ROAS divides revenue by ad spend; ROI measures profit. When ad spend is the only cost, ROI = ROAS × Gross margin − 1. At a 40% margin, a ROAS of 2.5 is break-even (0% ROI).",
+      "Read ROI together with time: 30% in 6 months is about 69% a year. If you don't remove sales that would have happened anyway, you overstate ROI.",
+    ],
+    publishedAt: "2026-11-07",
+    readingMinutes: 9,
+    tags: ["ROI", "Return on Investment", "ROAS", "Marketing Metrics", "Performance Marketing", "Ecommerce"],
+    sections: [
+      {
+        heading: "What is ROI? (Short answer)",
+        paragraphs: [
+          "ROI stands for return on investment. It shows, as a percentage, how much net gain every $100 you put into something brings back.",
+          "Formula: ROI = (Return − Cost) / Cost × 100. If a $1,000 investment returns $1,300, the net gain is $300 and ROI is 30%. A 0% ROI means you only got your money back; a negative ROI means you lost money.",
+          "The same formula works for stocks, equipment, software, training or an ad campaign. What changes the answer is what you put in the 'return' and 'cost' lines. This guide focuses on calculating ROI correctly for marketing and ecommerce decisions.",
+        ],
+      },
+      {
+        heading: "How do you calculate ROI? Formula and steps",
+        paragraphs: [
+          "There are three steps: find the total cost for the period, find the return that cost created, then divide the difference by the cost. Multiply by 100 to get a percentage.",
+          "Example: a store spends $4,000 on a storefront redesign. The gross profit (after product cost) from the extra sales that follow is $5,200. ROI = ($5,200 − $4,000) / $4,000 × 100 = 30%.",
+          "Some sources write ROI as a multiple: return / cost = 1.3. That multiple includes the cost itself. A 30% ROI and a 1.3x multiple describe the same result, but statements like 'ROI should be above 1' mix the two notations. In percentage form, the break-even line is 0%.",
+        ],
+        bullets: [
+          "ROI (%) = (Return − Cost) / Cost × 100",
+          "Net gain = Return − Cost",
+          "Return multiple = Return / Cost = 1 + ROI",
+          "Break-even: ROI = 0% (return = cost)",
+        ],
+      },
+      {
+        heading: "Marketing ROI: why use gross profit instead of revenue?",
+        paragraphs: [
+          "The most common marketing ROI mistake is putting campaign revenue in the return line. The products you sold also cost money, and that cost would not have been paid without the sale. The return is the gross profit the sales leave you with.",
+          "Example: a $6,000 campaign (ads + agency + creative) brings $25,000 in revenue. The products carry a 40% gross margin, so that revenue produces $10,000 of gross profit. Correct ROI = ($10,000 − $6,000) / $6,000 = 66.7%.",
+          "The revenue-based version gives ($25,000 − $6,000) / $6,000 = 316.7%, which makes the campaign look nearly five times better than it was. If you sell on a marketplace, compute gross profit after commission, shipping and returns; the marketplace profit calculator gives you that figure per order.",
+        ],
+        bullets: [
+          "Marketing ROI = (Gross profit − Marketing cost) / Marketing cost × 100",
+          "Gross profit = Revenue × Gross margin",
+          "Add agency fees, tools, content and team time to ad spend in the cost line",
+        ],
+      },
+      {
+        heading: "What is the difference between ROI and ROAS?",
+        paragraphs: [
+          "ROAS (return on ad spend) divides revenue by ad spend: ROAS = Ad revenue / Ad spend. It ignores product cost, shipping and other expenses, which makes it a quick channel signal. ROI measures profit and tells you whether the business actually made money.",
+          "If ad spend is the campaign's only cost, there is a simple bridge: ROI = ROAS × Gross margin − 1. Spend $1,000 and make $5,000 in revenue and ROAS is 5; at a 40% margin, gross profit is $2,000 and ROI is ($2,000 − $1,000) / $1,000 = 100%. With the formula: 5 × 0.40 − 1 = 1, or 100%.",
+          "Two practical numbers follow. Break-even ROAS = 1 / Gross margin: at a 40% margin, any ROAS below 2.5 loses money. To turn a target ROI into a target ROAS: Target ROAS = (1 + Target ROI) / Gross margin. Someone selling at a 40% margin who wants a 50% ROI needs a ROAS of 1.5 / 0.40 = 3.75. You can check these with your own numbers in the ROAS calculator and the ad budget calculator.",
+        ],
+        bullets: [
+          "ROAS = Ad revenue / Ad spend (read as a multiple, e.g. 5)",
+          "ROI = (Gross profit − Cost) / Cost (read as a percentage, e.g. 100%)",
+          "With ad spend as the only cost: ROI = ROAS × Gross margin − 1",
+          "Break-even ROAS = 1 / Gross margin; Target ROAS = (1 + Target ROI) / Gross margin",
+        ],
+      },
+      {
+        heading: "Why does time matter? Annualized ROI and payback period",
+        paragraphs: [
+          "The ROI formula has no time in it. An investment that returns 30% in 3 months and one that returns 30% in 3 years show the same ROI but are not the same deal. When comparing investments of different lengths, annualize ROI.",
+          "Annualized ROI = (1 + ROI)^(12 / Months) − 1. A 30% return in 6 months: (1.30)^2 − 1 = 69% a year. Simple multiplication (30% × 2 = 60%) ignores compounding and comes out low; on the other hand, annualizing a short lucky result can paint an overly optimistic picture.",
+          "Payback period tells you how many months it takes to recover the cost: Payback (months) = Cost / Monthly gross profit. If the $6,000 campaign above produced its $10,000 of gross profit over three months, that is $3,333 a month and payback is $6,000 / $3,333 ≈ 1.8 months. Subscription businesses track the same idea as CAC payback.",
+        ],
+        bullets: [
+          "Annualized ROI = (1 + ROI)^(12 / Months) − 1",
+          "Payback period (months) = Cost / Monthly gross profit",
+        ],
+      },
+      {
+        heading: "First order or customer lifetime? (ROI with LTV)",
+        paragraphs: [
+          "For products people buy again, first-order ROI is often negative, and that alone doesn't mean the campaign failed. The right question is whether the total gross profit a customer leaves over a set period exceeds the cost of acquiring them.",
+          "Example: acquiring a customer costs $60 (CAC). The first order's gross profit is $48, so first-order ROI is ($48 − $60) / $60 = −20%. If the same customer leaves $120 of gross profit over 12 months, 12-month ROI is ($120 − $60) / $60 = 100%.",
+          "So always state the window you used: first order, 90 days or 12 months. A business with tight cash flow may not be able to wait 12 months; read long-window ROI together with payback period.",
+        ],
+      },
+      {
+        heading: "Incrementality: sales that would have happened anyway",
+        paragraphs: [
+          "The second big ROI mistake is crediting every sale during the campaign to the campaign. Sales from brand searches, loyal customers or organic traffic would have come anyway. The campaign's real return is only the extra (incremental) sales it caused.",
+          "Back to the earlier example: if 40% of the $25,000 would have come without the campaign, incremental revenue is $15,000 and incremental gross profit is $6,000. ROI = ($6,000 − $6,000) / $6,000 = 0%. The campaign that showed 66.7% in the dashboard only paid for itself.",
+          "Simple ways to estimate incrementality: pause the campaign in one region or for one week and compare sales, report brand search separately from performance campaigns, and compare platform-reported conversions with your own site or accounting data. Even without an exact figure, reporting ROI under two scenarios with an estimated 'would have happened anyway' share is more honest than one inflated number.",
+        ],
+      },
+      {
+        heading: "How do you calculate ROI on software and automation?",
+        paragraphs: [
+          "For a CRM, reporting tool or automation, the return is often time saved rather than extra sales. To turn time into money, use hours × hourly cost.",
+          "Example: an automation with a total yearly cost (license, setup, training) of $8,000 removes 10 hours of manual work a week. If that person costs the business $40 an hour, yearly savings are 10 × 52 × $40 = $20,800. ROI = ($20,800 − $8,000) / $8,000 = 160%.",
+          "A caveat: if the freed hours don't turn into something valuable (more sales or better service in the same time), the saving stays on paper. Report this kind of ROI separately as 'cash' and 'capacity'.",
+        ],
+      },
+      {
+        heading: "What is a good ROI?",
+        paragraphs: [
+          "There is no single 'good ROI' for everyone. An investment's ROI should beat the best alternative use of the same money and compensate for its risk. The higher the return money can earn elsewhere, the higher the ROI you should expect from marketing and growth investments.",
+          "A practical rule: if a campaign's ROI is above 0%, it pays for itself; whether it also covers fixed costs (rent, salaries, software) is a separate question. Use gross-profit ROI at the campaign level and profit after all expenses at the company level.",
+        ],
+        bullets: [
+          "ROI < 0%: the investment doesn't return its cost",
+          "ROI = 0%: break-even; it pays for itself but earns nothing",
+          "ROI > 0%: it earns; compare with alternative returns and risk",
+          "Compare investments of different lengths using annualized ROI",
+        ],
+      },
+      {
+        heading: "6 common ROI calculation mistakes",
+        paragraphs: ["These mistakes systematically make ROI look higher than it is:"],
+        bullets: [
+          "Using revenue as the return: subtract product cost, commission and shipping",
+          "Understating cost: agency fees, tools, content production and team time are costs too",
+          "Ignoring time: compare investments of different lengths with annualized ROI",
+          "Not measuring incrementality: remove sales that would have happened anyway",
+          "Trusting platform-reported conversions: the same sale can be counted by several channels",
+          "Forgetting returns: refunded revenue and its shipping should come off the return",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does ROI stand for?",
+        answer:
+          "ROI stands for return on investment. It shows how much net gain an investment produced relative to its cost, expressed as a percentage.",
+      },
+      {
+        question: "What is the ROI formula?",
+        answer:
+          "ROI = (Return − Cost) / Cost × 100. In marketing, use the gross profit from sales as the return, not revenue. For example, a $6,000 campaign that produced $10,000 of gross profit has an ROI of 66.7%.",
+      },
+      {
+        question: "Are ROI and ROAS the same?",
+        answer:
+          "No. ROAS divides revenue by ad spend and is read as a multiple (e.g. 5). ROI divides profit by cost and is read as a percentage. With ad spend as the only cost, ROI = ROAS × Gross margin − 1; at a 40% margin, a ROAS of 5 equals a 100% ROI.",
+      },
+      {
+        question: "What does a negative ROI mean?",
+        answer:
+          "A negative ROI means the investment did not return its cost, so you lost money. For repeat-purchase products, though, first-order ROI can be negative while 12-month customer ROI is positive, so always state which window you used.",
+      },
+      {
+        question: "What does a 100% ROI mean?",
+        answer:
+          "A 100% ROI means you got back everything you invested plus the same amount again as net gain. If $1,000 produced $2,000 of return (gross profit for a campaign), ROI is 100%: a net gain of $1,000, not 'twice the money in profit'.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate marketing ROI",
+      description: "Calculate a campaign's return on investment using gross profit and incrementality in five steps.",
+      steps: [
+        { name: "Find the total cost", text: "Add agency fees, tools, content and team time to ad spend to get the campaign's total cost." },
+        { name: "Turn revenue into gross profit", text: "Multiply campaign revenue by your gross margin; on marketplaces also subtract commission, shipping and returns." },
+        { name: "Remove the non-incremental share", text: "Estimate the share of sales that would have happened without the campaign and take it out of the return." },
+        { name: "Calculate ROI", text: "Apply ROI = (Gross profit − Cost) / Cost × 100; 0% is break-even." },
+        { name: "Read it against time", text: "Compare investments of different lengths with annualized ROI = (1 + ROI)^(12 / Months) − 1 and note the payback period." },
+      ],
+    },
+    relatedToolKey: "roas",
+    resources: [
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "CAC Payback Period Calculator", href: "/en/free-tools/cac-payback-period-calculator/" },
+      { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
+      { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "What Is LTV? LTV:CAC Ratio", href: "/en/blog/what-is-ltv-ltv-cac-ratio/" },
+      { label: "What Is CAC? Customer Acquisition Cost", href: "/en/blog/what-is-cac-customer-acquisition-cost/" },
+      { label: "What Is a KPI? Marketing KPI Examples", href: "/en/blog/what-is-a-kpi-marketing-kpi-examples/" },
     ],
   },
 ];

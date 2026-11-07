@@ -159,6 +159,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "crm-nedir-ne-ise-yarar", en: "what-is-crm-how-it-works" },
   { tr: "google-ads-reklam-verme-rehberi", en: "how-to-run-google-ads-first-campaign" },
   { tr: "kpi-nedir-pazarlama-kpi-ornekleri", en: "what-is-a-kpi-marketing-kpi-examples" },
+  { tr: "roi-nedir-nasil-hesaplanir", en: "what-is-roi-how-to-calculate" },
 ];
 
 // Embeddable widget routes: prerendered (iframe targets) but noindex, so they

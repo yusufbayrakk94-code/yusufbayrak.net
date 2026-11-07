@@ -30,3 +30,6 @@ Talep: Planner 1.600 + 10+ Türkçe sayfa.
 
 ## Yamyamlaşma
 ROAS yazısında tek SSS (ROAS vs ROI) var; ROI yazısı ROI'nin kendisini ve pazarlama/yatırım hesaplarını işler, ROAS yazısına link verir. ROAS aracı relatedToolKey.
+
+## 07.11.2026 yeniden kontrol
+Türkçe SERP aynı (multinet, İş Portföy, eleman.net, IdeaSoft, Garanti BBVA Yatırım, multinet, kontentino, appmaster, indigodergisi, Ticimax, plisio, tangem). Yayınlandı: /blog/roi-nedir-nasil-hesaplanir/ + /en/blog/what-is-roi-how-to-calculate/. Ek açı: ROI vs geri dönüş katsayısı (Ticimax'ın "1'in üzerinde" karışıklığı), %100 ROI'nin doğru okunması (ClickUp hatası), hedef ROI → hedef ROAS formülü. Ayrı ROI aracı açılmadı (ROAS aracı ve Reklam Bütçesi aracı hedef ROI → ROAS dönüşümünü karşılıyor; yamyamlaşma riski).

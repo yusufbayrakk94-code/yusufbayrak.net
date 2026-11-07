@@ -35,4 +35,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "crm-nedir-ne-ise-yarar", en: "what-is-crm-how-it-works" },
   { tr: "google-ads-reklam-verme-rehberi", en: "how-to-run-google-ads-first-campaign" },
   { tr: "kpi-nedir-pazarlama-kpi-ornekleri", en: "what-is-a-kpi-marketing-kpi-examples" },
+  { tr: "roi-nedir-nasil-hesaplanir", en: "what-is-roi-how-to-calculate" },
 ];
