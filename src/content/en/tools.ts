@@ -532,7 +532,7 @@ export const marketplace: ToolContent = {
   relatedTools: [
     { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator", note: "Shipping desi" },
     { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator", note: "Rate cards and free shipping threshold" },
-    { label: "Discount Calculator", href: "/en/free-tools/discount-calculator", note: "Profit after a discount and sales uplift needed" },
+    { label: "Percentage Discount Calculator", href: "/en/free-tools/discount-calculator", note: "Profit after a discount and sales uplift needed" },
     { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator", note: "Measure return on ad spend" },
     { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
     { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Store-level profitability" },
@@ -635,9 +635,9 @@ export const desi: ToolContent = {
 export const discount: ToolContent = {
   slug: "discount-calculator",
   path: "/en/free-tools/discount-calculator",
-  title: "Discount Calculator: Percent Off and Sale Price",
+  title: "Discount Calculator: Percentage Off & Sale Price",
   description:
-    "Free discount calculator: find the sale price, percent off and original price, stack discounts, check buy X pay Y deals and see the profit impact for sellers.",
+    "Free percentage discount calculator: sale price, percent off between two prices, original price, stacked discounts and the profit impact for sellers.",
   intro:
     "Enter a price and a discount to see the sale price and how much you save. You can also find the percent off between two prices, work back to the original price, stack an extra cart discount and check buy-X-pay-Y deals. If you are a seller, add your unit cost: the calculator shows how far the discount cuts your profit and how many more units you need to sell to stay even.",
   seoParagraphs: [
@@ -655,6 +655,11 @@ export const discount: ToolContent = {
       heading: "How do you find the original price from a sale price?",
       body:
         "Original price = Sale price / (1 − Discount / 100). An item at $60 after 20% off originally cost 60 / 0.80 = $75. Adding 20% to the sale price gives $72, which is wrong because the discount was taken from $75. For the same reason, undoing a 20% discount takes a 25% price rise.",
+    },
+    {
+      heading: "Sale percentage chart: what you pay at common discounts",
+      body:
+        "Subtract the discount from 100 to get the share of the price you still pay, then multiply. 10% off = pay 90% (× 0.90), 15% off = 85%, 20% off = 80%, 25% off = 75%, 30% off = 70%, 40% off = 60%, 50% off = 50%, 60% off = 40%, 70% off = 30%. Worked examples: 30% off $80 is 80 × 0.70 = $56; 15% off $45 is 45 × 0.85 = $38.25; 40% off $65 is 65 × 0.60 = $39. Going the other way, a tag that drops from $49.99 to $34.99 is 15 / 49.99 = 30% off. For anything that is not a round number, enter the price and percentage in the calculator above.",
     },
     {
       heading: "How do stacked discounts work? Why 20% + 10% is not 30%",
@@ -680,6 +685,7 @@ export const discount: ToolContent = {
   faqs: [
     { q: "How do I calculate percent off?", a: "Multiply the price by (1 − discount / 100). 20% off $50 is 50 × 0.80 = $40, saving $10." },
     { q: "How do I work out the discount between two prices?", a: "(Original − Sale) / Original × 100. Going from $75 to $60 is 15 / 75 = 20% off." },
+    { q: "What is 30% off $80?", a: "$56. At 30% off you pay 70% of the price: 80 × 0.70 = 56, so you save $24." },
     { q: "Do 20% and 10% discounts add up to 30%?", a: "No, they make 28%. The second applies to the reduced price: 1 − 0.80 × 0.90 = 0.28." },
     { q: "How do I find the original price before a discount?", a: "Divide the sale price by (1 − discount / 100). $60 after 20% off was 60 / 0.80 = $75." },
     { q: "What discount is buy 3 pay 2?", a: "33.3%. The formula is 1 − Y / X, so buy 4 pay 3 is 25%." },

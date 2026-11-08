@@ -1831,7 +1831,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
       { label: "CPL Nedir? Lead Başı Maliyet Nasıl Hesaplanır?", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
-      { label: "LTV Nedir? Müşteri Yaşam Boyu Değeri Hesaplama", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "LTV Nedir, Ne Demek? Müşteri Yaşam Boyu Değeri", href: "/blog/ltv-nedir-ltv-cac-orani/" },
       { label: "UTM Nedir? UTM Kodu Nasıl Oluşturulur?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "Google Ads Nedir, Nasıl Çalışır? Maliyet ve Örnek Hesap", href: "/blog/google-ads-nedir-nasil-calisir/" },
       { label: "Meta Reklam Verme Rehberi: Bütçe, Kitle ve Öğrenme Aşaması", href: "/blog/meta-reklam-verme-rehberi/" },
@@ -2287,10 +2287,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ltv-nedir-ltv-cac-orani",
-    seoTitle: "LTV Nedir? Müşteri Yaşam Boyu Değeri Hesaplama (Örnekli)",
+    seoTitle: "LTV Nedir, Ne Demek? Müşteri Yaşam Boyu Değeri Hesaplama",
     title: "LTV Nedir, Nasıl Hesaplanır? LTV:CAC Oranı Kaç Olmalı? (Kohort ve Reklam Örnekleriyle)",
     description:
-      "LTV, bir müşterinin size bıraktığı toplam kârdır. 483 TL'lik örnekle LTV hesaplama, kohort yöntemi, LTV:CAC oranı kaç olmalı ve reklama ne kadar harcanır?",
+      "LTV ne demek? Lifetime Value, yani müşteri yaşam boyu değeri: bir müşterinin bıraktığı toplam kâr. Formül, 483 TL örnek ve LTV:CAC oranı kaç olmalı?",
     category: "saas-buyume",
     tldr: [
       "LTV (müşteri yaşam boyu değeri), bir müşterinin sizinle kaldığı süre boyunca bıraktığı toplam kârdır. Ciroyla değil marjla hesaplanır: ortalama sepeti 600 TL, katkı marjı %35 olan ve 24 ayda ortalama 2,3 sipariş veren müşterinin LTV'si 483 TL'dir (ciro LTV'si 1.380 TL).",
@@ -2299,7 +2299,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "LTV'yi reklam hedefine çevirin: Maks. CAC = LTV / Hedef oran. Örnekte 3:1 hedefi 161 TL CAC ve ilk siparişte yaklaşık 3,73 ROAS demektir; tekrar satın alma düşükse 3:1 kuralı ilk siparişte kâr etmeyi gerektirir.",
     ],
     publishedAt: "2026-10-26",
-    updatedAt: "2026-11-02",
+    updatedAt: "2026-11-08",
     readingMinutes: 9,
     tags: ["LTV", "LTV:CAC", "Müşteri Yaşam Boyu Değeri", "Kohort Analizi", "CAC", "Birim Ekonomisi"],
     sections: [
@@ -10550,7 +10550,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "trendyol-commission-rates",
-    seoTitle: "Trendyol Commission Rates 2026 & How to Calculate Fees",
+    seoTitle: "Trendyol Commission Rate 2026 by Category + Fee Formula",
     title: "Trendyol Commission Rates 2026: How Fees Are Calculated, Shipping Thresholds and Campaign Traps (With Examples)",
     description:
       "Trendyol commission rates in 2026: category ranges, the commission formula, shipping thresholds and service fee, break-even price and a campaign offer example.",
