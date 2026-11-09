@@ -4416,6 +4416,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
       { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
       { label: "Etsy'de Satış: Komisyonlar ve Kâr Hesabı", href: "/blog/etsyde-satis-komisyon-kar-hesabi/" },
+      { label: "Hepsiburada'da Satıcı Olmak: Gerekenler, Komisyon ve Kâr", href: "/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/" },
       { label: "Trendyol Satıcı Bilgi Merkezi: Platform Hizmet Bedeli", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/platform-hizmet-bedeli", external: true },
       { label: "Trendyol Satıcı Bilgi Merkezi: Trendyol Komisyonları", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/trendyol-komisyonlari", external: true },
       { label: "Trendyol Satıcı Bilgi Merkezi: Kargo Baremi Uygulaması", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/kargo-baremi-uygulamasi", external: true },
@@ -4806,6 +4807,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
       { label: "Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "Hepsiburada'da Satıcı Olmak: Gerekenler, Komisyon ve Kâr", href: "/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/" },
       { label: "Trendyol Reklam Çözümleri (resmî site)", href: "https://ads.trendyol.com/", external: true },
     ],
   },
@@ -6877,6 +6879,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Maliyete yüzde ekleyerek fiyat koymak, yüzdesel kesintiler yüzünden hedefin altında kalmanıza yol açar. Doğru yol, fiyatı istediğiniz kârdan geriye doğru hesaplamaktır.",
           "Örnekte maliyetler toplamı 450 + 40 + 650 = 1.140 TL, sabit ücretler 14 + 8,40 = 22,40 TL, yüzdesel kesinti %14,67'dir. Sipariş başı 500 TL kâr için: (1.140 + 22,40 + 500) / (1 − 0,1467) = 1.948 TL sipariş tutarı gerekir. Alıcıdan 650 TL kargo alacaksanız ürün fiyatı yaklaşık 1.298 TL olur.",
           "Offsite Ads ihtimalini de karşılamak istiyorsanız paydaya %15'i ekleyin: 1.662,40 / (1 − 0,2967) = 2.364 TL. Hiç kâr etmeden yalnızca masrafları karşılayan başabaş sipariş tutarı ise 1.162,40 / 0,8533 = 1.362 TL'dir; bunun altındaki her satış zarar ettirir.",
+          "Bu yazıdaki kesinti, net kalan ve hedef fiyat hesaplarını kayıt istemeyen ücretsiz bir Excel şablonuna döktük: oranları tek sayfadan güncelleyip ürünlerinizi satır satır karşılaştırabilirsiniz. Şablonu kaynaklar bölümünden indirebilirsiniz.",
         ],
         bullets: [
           "Hedef sipariş tutarı = (Ürün + Paketleme + Kargo maliyeti + Sabit ücretler + Hedef kâr) / (1 − Yüzdesel kesintiler)",
@@ -6965,6 +6968,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "desi",
     resources: [
+      { label: "Etsy Fiyat ve Kâr Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/etsy-fiyat-ve-kar-sablonu.xlsx", external: true },
       { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
@@ -6974,8 +6978,201 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
       { label: "Dropshipping Nedir, Nasıl Yapılır?", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
       { label: "E-Ticaret Sitesi Kurmak İçin Gerekenler", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
+      { label: "Hepsiburada'da Satıcı Olmak: Gerekenler, Komisyon ve Kâr", href: "/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/" },
       { label: "Etsy Yardım: Ödeme işlem ücretleri (ülkelere göre)", href: "https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy", external: true },
       { label: "Etsy Topluluk Duyurusu: Düzenleyici işletim ücreti güncellemesi (Haziran 2026)", href: "https://community.etsy.com/forum/announcements-290/topic/regulatory-operating-fee-updates-for-some-markets-181930/", external: true },
+    ],
+  },
+  {
+    slug: "hepsiburada-satici-olmak-komisyon-kar-hesabi",
+    seoTitle: "Hepsiburada Satıcı Olmak: Gerekenler, Komisyon ve Kâr",
+    title: "Hepsiburada'da Satıcı Olmak: Gerekenler, Başvuru Adımları, Komisyon ve İlk Kâr Hesabı",
+    description:
+      "Hepsiburada satıcı olmak için gerekenler: belgeler, şahıs şirketi, başvuru adımları, komisyon ve hizmet bedeli, ödeme vadesi ve örnek sipariş kârı hesabı.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Hepsiburada'da satıcı olmak için vergi mükellefi bir işletme gerekir; şahıs şirketi yeterlidir. Başvuruda vergi levhası, imza sirküleri ya da imza beyannamesi, işletme adına IBAN ve iletişim bilgileri istenir. Mağaza açmak ücretsizdir.",
+      "Satış başına kategoriye göre değişen komisyon ve teslim edilen paket başına sabit bir hizmet bedeli kesilir; kargo, Hepsiburada'nın anlaşmalı firmalarıyla desiye göre ücretlendirilir. Ödeme teslimattan sonra, kategoriye göre değişen vadeyle hesaba geçer.",
+      "Örnek (KDV hariç, örnek tutarlar): 1.000 TL'lik satışta %18 komisyon, 10,99 TL hizmet bedeli, 82 TL kargo, 450 TL ürün ve 15 TL paketlemeden sonra 262,01 TL kalır; %6 iadeyle 235,55 TL, sipariş başı 60 TL reklamla 175,55 TL. Başabaş ROAS 4,25'tir.",
+      "Vade nakit ihtiyacı doğurur: günde 10 sipariş ve yaklaşık 31 günlük tahsilat süresiyle, ödemeler gelmeye başlamadan önce yaklaşık 188.000 TL'lik ürün, kargo ve reklam harcamasını finanse etmeniz gerekir.",
+    ],
+    publishedAt: "2026-11-09",
+    readingMinutes: 10,
+    tags: ["Hepsiburada", "Pazaryeri", "Hepsiburada Satıcı Olmak", "Komisyon", "Kar Marjı", "E-ticaret"],
+    sections: [
+      {
+        heading: "Hepsiburada'da satıcı olmak için ne gerekir? (Kısa cevap)",
+        paragraphs: [
+          "Hepsiburada'da satış yapmak için bireysel hesap yetmez; vergi kaydı olan bir işletme gerekir. Şahıs şirketi, limited ya da anonim şirket fark etmez. Başvuru Hepsiburada'nın satıcı başvuru ekranından çevrim içi yapılır, mağaza açmak ücretsizdir ve kesintiler yalnızca satış olduğunda başlar.",
+          "Başvurudan önce iki hesabı mutlaka yapın: bir siparişin komisyon, hizmet bedeli, kargo ve iadeden sonra size ne bıraktığı ve ödemeler vadeyle geldiği için ilk aylarda ne kadar nakde ihtiyacınız olduğu. Bu yazıda önce gerekenleri ve başvuru adımlarını, sonra bu iki hesabı örnekle bulacaksınız. Tutarlar örnektir ve KDV hariçtir; vergi ve mali yükümlülükler bu yazının konusu değildir, bunlar için mali müşavirinize danışın.",
+        ],
+        bullets: [
+          "Vergi mükellefi işletme (şahıs şirketi yeterli)",
+          "Vergi levhası ve imza sirküleri ya da imza beyannamesi",
+          "İşletme adına açılmış banka hesabı (IBAN)",
+          "Fatura düzenleyebilme altyapısı (hangi sistemin size uygun olduğunu mali müşavirinizle belirleyin)",
+          "Gerçek ve doğrulanabilir adres, telefon ve e-posta bilgileri",
+          "Satacağınız ürünler için marka, fatura ya da tedarik belgeleri (bazı kategoriler ve markalar ek belge ister)",
+        ],
+      },
+      {
+        heading: "Şahıs şirketiyle Hepsiburada'da satış yapılır mı?",
+        paragraphs: [
+          "Evet. Hepsiburada satıcıdan vergi kaydı olan bir işletme ister; şirket türü şart değildir. Şahıs şirketiyle başvuranlarda ticaret sicil gazetesi gibi şirketlere özgü belgeler genellikle istenmez, vergi levhası ve imza beyannamesi yeterli olur. Başvuru formunda boş bırakılamayan bir alan varsa ne yükleyeceğinizi Hepsiburada satıcı destek kanalına sorun.",
+          "Hangi işletme türünün size uygun olduğu satış hacminize, ortaklık yapınıza ve diğer işlerinize bağlıdır. Bu kararı ve mali yükümlülüklerinizi bir mali müşavirle netleştirin.",
+          "Hepsiburada standart satıcı tipinin yanında kadın girişimcilere yönelik bir program (işletmenin çoğunluk hissesinin kadına ait olması koşuluyla) ve yerel üreticilere yönelik bir program da yürütür. Bu programların güncel koşullarını başvuru ekranından kontrol edin.",
+        ],
+      },
+      {
+        heading: "Hepsiburada satıcı başvurusu nasıl yapılır? Adım adım",
+        paragraphs: [
+          "Başvurunun kendisi kısa sürer; onay süresi belgelerin eksiksiz olmasına bağlıdır. Rakip rehberlerde birkaç iş gününden iki haftaya kadar farklı süreler geçiyor. Eksik, okunaksız ya da güncel olmayan belgeler gecikmenin en sık nedenidir; bu yüzden belgeleri baştan PDF olarak tek klasörde hazırlayın.",
+        ],
+        bullets: [
+          "1. Belgeleri hazırlayın: vergi levhası, imza sirküleri/beyannamesi, IBAN bilgisi; şirketseniz ticaret sicil gazetesi ve faaliyet belgesi",
+          "2. Hepsiburada'nın satıcı başvuru sayfasından yeni başvuru başlatın ve satıcı tipini seçin",
+          "3. Yetkili kişi ve iletişim bilgilerini girin, telefon ve e-postayı doğrulayın",
+          "4. İşletme bilgilerini vergi levhasındaki unvan ve vergi numarasıyla birebir aynı yazın",
+          "5. Banka, fatura ve sevkiyat adreslerini tamamlayın",
+          "6. Belgeleri yükleyin, satıcı sözleşmesini okuyup onaylayın",
+          "7. Onay e-postasından sonra satıcı paneline girin; kargo ayarlarını ve ilk ürünleri tanımlayın",
+        ],
+      },
+      {
+        heading: "Hepsiburada'da hangi kesintiler var?",
+        paragraphs: [
+          "Hepsiburada'da bir satıştan üç ana kalem düşer: komisyon, hizmet bedeli ve kargo. Komisyon ürün kategorisine göre değişir ve satış fiyatı üzerinden alınır; oranlar tek haneli yüzdelerden (örneğin telefon gibi kategoriler) giyim, ayakkabı ve aksesuar gibi kategorilerde %17-20 civarına kadar çıkar. Kesin oranı mağaza onayından sonra satıcı panelinde kategori bazında görürsünüz; üçüncü taraf listeler sık eskidiği için fiyatı paneldeki orana göre kurun.",
+          "Hizmet bedeli, teslim edilen paket başına kategoriden bağımsız alınan sabit bir tutardır. Kamuya açık sektör kaynakları 2026 sonbaharı için paket başı 10-11 TL aralığında tutarlar aktarıyor; bazı dönemlerde belirli kargo firmasıyla çalışan ve siparişi hızlı kargoya veren satıcılar için indirim ya da muafiyet uygulandığı da bildiriliyor. Tutar ve koşullar sık değiştiği için güncel değeri satıcı panelinizden alın.",
+          "Kargo, Hepsiburada'nın anlaşmalı kargo firmaları üzerinden desiye göre ücretlendirilir. Belirli sepet tutarının altındaki siparişlerde barem adı verilen sabit kargo bedelleri uygulanabilir; bu baremler kargo firması, kargoya veriliş süresi ve zamanında teslim oranı gibi koşullara bağlıdır. Ürününüzün desisini Desi Hesaplama aracıyla hesaplayıp tarifeyi Kargo Ücreti Hesaplama aracında deneyebilirsiniz.",
+        ],
+        bullets: [
+          "Komisyon = Satış fiyatı × Kategori komisyon oranı",
+          "Hizmet bedeli: teslim edilen paket başına sabit tutar (panelden güncel değer)",
+          "Kargo: anlaşmalı tarife × desi (ya da barem koşulları sağlanırsa sabit barem bedeli)",
+          "İsteğe bağlı: Hepsiburada reklamları, kampanya ve kupon katılımları",
+          "Operasyon hataları: geç kargolama, iptal ve eksik fatura gibi durumlarda ceza bedelleri uygulanabilir",
+        ],
+      },
+      {
+        heading: "Hepsiburada'da bir siparişten ne kadar kâr kalır?",
+        paragraphs: [
+          "Örnek (KDV hariç, örnek tutarlar): KDV hariç 1.000 TL'ye sattığınız bir ürün düşünün. Komisyon %18 = 180 TL, hizmet bedeli 10,99 TL, kargo 82 TL, ürün maliyeti 450 TL ve paketleme 15 TL olsun. Tamamlanan bir sipariş size 1.000 − 180 − 10,99 − 82 − 450 − 15 = 262,01 TL bırakır.",
+          "Şimdi iadeyi ekleyin. Siparişlerin %6'sı iade ediliyorsa ve iadede ürün stoğa dönüyor, komisyon iade ediliyor ama gidiş ve dönüş kargosu ile paketleme (82 + 82 + 15 = 179 TL) kayboluyorsa beklenen katkı 0,94 × 262,01 − 0,06 × 179 = 235,55 TL olur. Bu tutar reklamdan önce sipariş başına kalan paradır ve sipariş başı ödeyebileceğiniz en yüksek reklam maliyetidir.",
+          "Sipariş başı reklam maliyetiniz 60 TL ise net katkı 175,55 TL'ye iner. Başabaş ROAS ise 1.000 / 235,55 = 4,25'tir: Hepsiburada reklamlarında harcanan her 1 TL en az 4,25 TL satış getirmezse o satış zarar ettirir. Aynı hesabı kendi ürününüz için Trendyol Komisyon ve Kâr Hesaplama aracında Hepsiburada seçeneğiyle yapabilirsiniz.",
+        ],
+        bullets: [
+          "Tamamlanan sipariş katkısı = Satış fiyatı − Komisyon − Hizmet bedeli − Kargo − Ürün maliyeti − Paketleme",
+          "Beklenen katkı = (1 − İade oranı) × Tamamlanan katkı − İade oranı × (Gidiş kargo + Dönüş kargo + Paketleme)",
+          "Net katkı = Beklenen katkı − Sipariş başı reklam maliyeti",
+          "Başabaş ROAS = Satış fiyatı / Beklenen katkı",
+        ],
+      },
+      {
+        heading: "Hepsiburada'da fiyat nasıl belirlenir?",
+        paragraphs: [
+          "Maliyete yüzde ekleyerek fiyat koymak, komisyon satış fiyatı üzerinden alındığı için hedefin altında kalmanıza yol açar. Fiyatı istediğiniz kârdan geriye doğru hesaplayın.",
+          "Örnekte ürün, kargo, paketleme ve hizmet bedeli toplamı 450 + 82 + 15 + 10,99 = 557,99 TL, komisyon %18'dir. Sipariş başı 150 TL kâr için (557,99 + 150) / (1 − 0,18) = 863,40 TL (KDV hariç) fiyat gerekir. Kâr etmeden yalnızca masrafları karşılayan başabaş fiyat 557,99 / 0,82 = 680,48 TL'dir. Bu formül iadeyi ve reklamı içermez; reklam verecekseniz hedef kâra sipariş başı reklam bütçesini, iade oranı yüksekse beklenen iade kaybını ekleyin.",
+          "Kampanya ya da indirim yapmadan önce indirimli fiyatın başabaş fiyatın üzerinde kalıp kalmadığını kontrol edin. İndirimin kârınıza etkisini İndirim Hesaplama aracıyla görebilirsiniz.",
+        ],
+        bullets: [
+          "Hedef fiyat = (Ürün + Kargo + Paketleme + Hizmet bedeli + Hedef kâr) / (1 − Komisyon oranı)",
+          "Başabaş fiyat = (Ürün + Kargo + Paketleme + Hizmet bedeli) / (1 − Komisyon oranı)",
+        ],
+      },
+      {
+        heading: "Hepsiburada ödemeleri ne zaman yatırır? Vade ve nakit ihtiyacı",
+        paragraphs: [
+          "Hepsiburada satış bedelini sipariş anında değil, ürün müşteriye teslim edildikten sonra ve kategoriye göre belirlenen vadeyle öder. Rakip kaynaklarda teslimat sonrası 14 ile 45 gün arasında değişen süreler aktarılıyor; çoğu kategoride yaklaşık 4 hafta öne çıkıyor. Kendi kategorinizin vadesini satıcı panelinden ve sözleşmenizden kontrol edin.",
+          "Vade, rakip rehberlerin atladığı ama ilk aylarda en çok satıcıyı zorlayan konudur: ürünü, kargoyu ve reklamı bugün ödersiniz, parası yaklaşık bir ay sonra gelir. Gereken nakdi kabaca şöyle hesaplayın: Günlük sipariş × Sipariş başı peşin ödenen tutar × Tahsilat süresi (gün).",
+          "Örnekte sipariş başı peşin ödenen tutar ürün, kargo, paketleme ve reklam toplamı 450 + 82 + 15 + 60 = 607 TL'dir (komisyon ve hizmet bedeli ödemeden düşüldüğü için peşin çıkmaz). Günde 10 sipariş ve 3 günlük teslimat + 28 günlük vadeyle 31 günlük tahsilat süresi için 10 × 607 × 31 = 188.170 TL gerekir. Satışlar büyüdükçe bu ihtiyaç da büyür; hızlı büyüyen mağazalar kârlıyken nakit sıkıntısına düşebilir.",
+        ],
+        bullets: [
+          "Nakit ihtiyacı ≈ Günlük sipariş × (Ürün + Kargo + Paketleme + Reklam) × (Teslimat süresi + Vade)",
+        ],
+      },
+      {
+        heading: "Hepsiburada'da satışları ne belirler? Tek ürün sayfası ve öne çıkan satıcı",
+        paragraphs: [
+          "Hepsiburada'da aynı ürünü satan satıcılar genellikle tek bir ürün sayfasında listelenir ve müşteri önce o sayfada öne çıkan satıcının teklifini görür. Bu yüzden markalı ve başka satıcıların da sattığı ürünlerde fiyat tek başına yetmez; kargoya veriliş hızı, satıcı puanı, stok sürekliliği ve iptal oranı da görünürlüğü etkiler.",
+          "Kendi markanızla ya da özgün ürünle giriyorsanız ürün sayfası sizindir; bu durumda öne çıkan etkenler ürün içeriği (başlık, görseller, özellikler), yorumlar ve reklamdır. Her iki durumda da kargolama süresini gerçekçi girin: geç kargolama hem ceza hem puan kaybı demektir.",
+        ],
+      },
+      {
+        heading: "İlk 30 günde ne yapılmalı?",
+        paragraphs: ["Onaydan sonraki ilk ayın hedefi çok ürün açmak değil, sipariş başı katkıyı ve operasyonu doğrulamaktır:"],
+        bullets: [
+          "1. hafta: 10-20 ürünle başlayın; her ürün için desi, kargo ücreti, komisyon ve başabaş fiyatı hesaplayın",
+          "2. hafta: ilk siparişleri zamanında kargolayın, fatura ve iade akışını test edin; kargoya veriliş süresini gerçekçi ayarlayın",
+          "3. hafta: kârlı ürünlerde küçük bir reklam testi açın; reklam maliyetini beklenen katkıyla (örnekte 235,55 TL) ve başabaş ROAS ile karşılaştırın",
+          "4. hafta: gerçekleşen iade oranı, kargo maliyeti ve vadeyle hesabı yenileyin; nakit ihtiyacını gelecek ayın satış hedefine göre planlayın",
+        ],
+      },
+      {
+        heading: "Hepsiburada satıcılarının en sık yaptığı 6 hata",
+        paragraphs: ["Bu hataların çoğu başvurudan önce yapılacak birkaç hesapla önlenebilir:"],
+        bullets: [
+          "Komisyonu bilmeden fiyat koymak: oranı paneldeki kategori değerinden alın",
+          "Hizmet bedelini ve iade kargosunu hesaba katmamak: düşük fiyatlı üründe kârın önemli bir kısmını götürür",
+          "Kârı reklamsız hesaplamak: başabaş ROAS'ı bilmeden reklam açmak",
+          "Vadeyi unutmak: kârlı satış büyürken nakit sıkıntısına düşmek",
+          "Gerçekçi olmayan kargolama süresi girmek: ceza ve puan kaybı",
+          "Belge ve unvan uyuşmazlığı: başvuruda vergi levhasındaki bilgilerle birebir aynı yazmamak",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Hepsiburada'da satıcı olmak ücretli mi?",
+        answer:
+          "Hayır, mağaza açmak ücretsizdir. Kesintiler satış olduğunda başlar: kategoriye göre komisyon, teslim edilen paket başına hizmet bedeli ve kargo. Reklam ve kampanya katılımı isteğe bağlıdır.",
+      },
+      {
+        question: "Şahıs şirketiyle Hepsiburada'da satış yapılır mı?",
+        answer:
+          "Evet. Hepsiburada vergi kaydı olan bir işletme ister; şahıs şirketi yeterlidir. Başvuruda vergi levhası, imza beyannamesi ya da sirküleri ve işletme adına IBAN istenir. Bireysel (vergi kaydı olmayan) hesapla satış yapılamaz.",
+      },
+      {
+        question: "Hepsiburada mağaza onayı kaç günde gelir?",
+        answer:
+          "Belgeler eksiksizse genellikle birkaç iş günü içinde; eksik ya da güncel olmayan belge varsa iki haftaya kadar uzayabilir. Unvan ve vergi numarasını vergi levhasıyla birebir aynı girmek gecikmeyi önler.",
+      },
+      {
+        question: "Hepsiburada satıcıya ödemeyi ne zaman yapar?",
+        answer:
+          "Ödeme, ürün müşteriye teslim edildikten sonra kategoriye göre belirlenen vadeyle yapılır; çoğu kategoride yaklaşık 4 hafta öne çıkar. Kendi kategorinizin vadesini satıcı panelinden kontrol edin ve ilk aylar için nakit planı yapın.",
+      },
+      {
+        question: "Hepsiburada'da kâr nasıl hesaplanır?",
+        answer:
+          "Satış fiyatından komisyon, hizmet bedeli, kargo, ürün maliyeti ve paketlemeyi düşün; iade oranına göre beklenen iade kaybını ve sipariş başı reklam maliyetini çıkarın. Örnekte KDV hariç 1.000 TL'lik satış iade ve reklamdan sonra 175,55 TL bırakır.",
+      },
+    ],
+    howTo: {
+      name: "Hepsiburada'da satıcı nasıl olunur?",
+      description: "Hepsiburada satıcı başvurusundan ilk kârlı siparişe altı adım.",
+      steps: [
+        { name: "İşletme ve belgeleri hazırlayın", text: "Vergi mükellefi bir işletme (şahıs şirketi yeterli), vergi levhası, imza sirküleri ya da beyannamesi ve işletme adına IBAN hazırlayın." },
+        { name: "Başvuruyu yapın", text: "Satıcı başvuru sayfasından satıcı tipini seçin, işletme bilgilerini vergi levhasıyla birebir girin, belgeleri yükleyip sözleşmeyi onaylayın." },
+        { name: "Sipariş başı katkıyı hesaplayın", text: "Her ürün için komisyon, hizmet bedeli, kargo (desi), paketleme ve iade kaybını düşerek reklam öncesi kalan tutarı ve başabaş ROAS'ı bulun." },
+        { name: "Fiyatı belirleyin", text: "(Maliyetler + hizmet bedeli + hedef kâr) / (1 − komisyon oranı) formülüyle hedef fiyatı, aynı formülü kârsız kurarak başabaş fiyatı hesaplayın." },
+        { name: "Nakit planı yapın", text: "Günlük sipariş × peşin ödenen sipariş başı tutar × (teslimat süresi + vade) ile ödemeler gelene kadar gereken nakdi hesaplayın." },
+        { name: "Küçük başlayıp ölçün", text: "10-20 ürünle açılın, zamanında kargolayın, küçük bir reklam testiyle reklam maliyetini beklenen katkıyla karşılaştırın." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Trendyol Komisyon ve Kâr Hesaplama (Hepsiburada seçeneğiyle)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "İndirim Hesaplama", href: "/ucretsiz-araclar/indirim-hesaplama/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+      { label: "Trendyol Reklam Nasıl Verilir?", href: "/blog/trendyol-reklam-nasil-verilir/" },
+      { label: "Etsy'de Satış: Komisyonlar ve Kâr Hesabı", href: "/blog/etsyde-satis-komisyon-kar-hesabi/" },
+      { label: "E-Ticaret Sitesi Kurmak İçin Gerekenler", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
+      { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
+      { label: "Hepsiburada Satıcı Başvurusu (resmî sayfa)", href: "https://merchant.hepsiburada.com/v2/sign-up", external: true },
     ],
   },
 ];
@@ -10931,6 +11128,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
       { label: "Etsy Fees Explained: How Much Etsy Takes", href: "/en/blog/etsy-fees-profit-calculation/" },
+      { label: "How to Sell on Hepsiburada: Requirements, Fees, Profit", href: "/en/blog/how-to-sell-on-hepsiburada-seller-guide/" },
       { label: "Trendyol Seller Information Center: Platform Service Fee (Turkish)", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/platform-hizmet-bedeli", external: true },
       { label: "Trendyol Seller Information Center: Commissions (Turkish)", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/trendyol-komisyonlari", external: true },
     ],
@@ -11335,6 +11533,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
+      { label: "How to Sell on Hepsiburada: Requirements, Fees, Profit", href: "/en/blog/how-to-sell-on-hepsiburada-seller-guide/" },
       { label: "Trendyol ad solutions (official site)", href: "https://ads.trendyol.com/", external: true },
     ],
   },
@@ -13377,8 +13576,181 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Trendyol Commission Rates", href: "/en/blog/trendyol-commission-rates/" },
       { label: "What Is Dropshipping and How Does It Work?", href: "/en/blog/what-is-dropshipping-how-it-works/" },
       { label: "How to Start an Ecommerce Website: Checklist", href: "/en/blog/how-to-start-an-ecommerce-website-checklist/" },
+      { label: "How to Sell on Hepsiburada: Requirements, Fees, Profit", href: "/en/blog/how-to-sell-on-hepsiburada-seller-guide/" },
       { label: "Etsy Help: Payment processing fees by country", href: "https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy", external: true },
       { label: "Etsy Community announcement: Regulatory operating fee updates (June 2026)", href: "https://community.etsy.com/forum/announcements-290/topic/regulatory-operating-fee-updates-for-some-markets-181930/", external: true },
+    ],
+  },
+  {
+    slug: "how-to-sell-on-hepsiburada-seller-guide",
+    seoTitle: "How to Sell on Hepsiburada: Requirements, Fees, Profit",
+    title: "How to Sell on Hepsiburada: Seller Requirements, Fees, Payout Timing and a Profit Example",
+    description:
+      "How to become a Hepsiburada seller: requirements and documents, application steps, commission and service fees, payout timing and a worked profit example.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Hepsiburada, one of Türkiye's largest marketplaces, only accepts sellers with a tax-registered business in Türkiye; a sole proprietorship is enough. You need a tax certificate, a signature circular or declaration and a business bank account. Opening a store is free.",
+      "Each sale carries a category commission, a fixed service fee per delivered package and shipping through Hepsiburada's contracted carriers, priced by dimensional weight. Payouts arrive after delivery, on a payment term that varies by category.",
+      "Example (amounts excluding VAT, illustrative): on a 1,000 TRY sale, an 18% commission, 10.99 TRY service fee, 82 TRY shipping, 450 TRY product cost and 15 TRY packaging leave 262.01 TRY; with 6% returns, 235.55 TRY; with 60 TRY ad cost per order, 175.55 TRY. Break-even ROAS is 4.25.",
+      "Payment terms create a cash need: at 10 orders a day and about 31 days from shipment to payout, you finance roughly 188,000 TRY of product, shipping and ad spend before the first payouts arrive.",
+    ],
+    publishedAt: "2026-11-09",
+    readingMinutes: 9,
+    tags: ["Hepsiburada", "Marketplace", "Türkiye Ecommerce", "Seller Fees", "Profit Margin", "Cash Flow"],
+    sections: [
+      {
+        heading: "What do you need to sell on Hepsiburada? (Short answer)",
+        paragraphs: [
+          "Hepsiburada is one of Türkiye's largest online marketplaces. A personal account is not enough to sell: you need a business registered for tax in Türkiye. A sole proprietorship, limited company or joint-stock company all qualify. You apply online through Hepsiburada's seller sign-up page, opening a store is free and fees start only when you sell.",
+          "Foreign brands without a Turkish entity usually reach Hepsiburada through a local company, distributor or partner. Before applying, run two numbers: what an order leaves you after commission, service fee, shipping and returns, and how much cash you need because payouts arrive weeks after the sale. Amounts below are examples in Turkish lira and exclude VAT; tax and legal obligations are outside the scope of this guide, so check them with a local accountant.",
+        ],
+        bullets: [
+          "Tax-registered business in Türkiye (a sole proprietorship is enough)",
+          "Tax certificate and signature circular or signature declaration",
+          "Bank account (IBAN) in the business's name",
+          "Ability to issue invoices for each order",
+          "Verifiable address, phone and email",
+          "Brand, invoice or sourcing documents for products (some categories and brands require extra documents)",
+        ],
+      },
+      {
+        heading: "How do you apply to become a Hepsiburada seller?",
+        paragraphs: [
+          "The application itself is short; approval time depends on how complete your documents are. Seller guides report anything from a few business days to two weeks. Missing, unreadable or outdated documents are the most common cause of delay, so prepare them as PDFs in one folder before you start.",
+          "Besides the standard seller type, Hepsiburada runs programs for women entrepreneurs (for businesses majority-owned by women) and for local producers. Check their current terms on the application screen.",
+        ],
+        bullets: [
+          "1. Prepare documents: tax certificate, signature circular/declaration, IBAN; for companies, trade registry gazette and certificate of activity",
+          "2. Start a new application on Hepsiburada's seller sign-up page and choose the seller type",
+          "3. Enter and verify the authorized person's contact details",
+          "4. Enter the business name and tax number exactly as on the tax certificate",
+          "5. Add bank, invoice and shipping addresses",
+          "6. Upload the documents and accept the seller agreement",
+          "7. After the approval email, set up shipping in the seller panel and list your first products",
+        ],
+      },
+      {
+        heading: "What fees does Hepsiburada charge sellers?",
+        paragraphs: [
+          "Three main costs come off each sale: commission, service fee and shipping. Commission depends on the product category and is charged on the sale price; rates range from single digits in categories like phones to around 17-20% in categories like clothing, shoes and accessories. You see the exact rate per category in the seller panel after approval; third-party lists go out of date quickly, so price from the panel rate.",
+          "The service fee is a fixed amount per delivered package, regardless of category. Public industry sources reported amounts of roughly 10-11 TRY per package for autumn 2026, and discounts or waivers for sellers using certain carriers and shipping fast have been reported in some periods. Because the amount and conditions change, take the current value from your seller panel.",
+          "Shipping runs through Hepsiburada's contracted carriers and is priced by dimensional weight (in Türkiye, Length × Width × Height in cm / 3000 for domestic parcels). Orders below a certain basket value may get fixed 'barem' shipping prices if conditions such as carrier choice and on-time shipping are met. Estimate your parcel's size with the Dimensional Weight Calculator and its cost with the Shipping Cost Calculator.",
+        ],
+        bullets: [
+          "Commission = Sale price × Category commission rate",
+          "Service fee: fixed amount per delivered package (current value in the seller panel)",
+          "Shipping: contracted carrier rate × dimensional weight, or a fixed barem price when conditions are met",
+          "Optional: Hepsiburada ads, campaigns and coupons",
+          "Penalties may apply for late shipping, cancellations or missing invoices",
+        ],
+      },
+      {
+        heading: "How much profit does a Hepsiburada order leave?",
+        paragraphs: [
+          "Example (excluding VAT, illustrative amounts): you sell a product for 1,000 TRY. Commission at 18% is 180 TRY, the service fee is 10.99 TRY, shipping 82 TRY, product cost 450 TRY and packaging 15 TRY. A completed order leaves 1,000 − 180 − 10.99 − 82 − 450 − 15 = 262.01 TRY.",
+          "Now add returns. If 6% of orders come back, the product returns to stock and the commission is refunded, but outbound and return shipping plus packaging (82 + 82 + 15 = 179 TRY) are lost. Expected contribution: 0.94 × 262.01 − 0.06 × 179 = 235.55 TRY. That is what each order leaves before advertising, and the most you can pay in ad cost per order.",
+          "With 60 TRY in ad cost per order, net contribution drops to 175.55 TRY. Break-even ROAS is 1,000 / 235.55 = 4.25: every 1 TRY of ad spend must bring at least 4.25 TRY in sales or the sale loses money. Run the same numbers for your product with the Marketplace Profit Calculator, which has a Hepsiburada preset.",
+        ],
+        bullets: [
+          "Completed order contribution = Price − Commission − Service fee − Shipping − Product cost − Packaging",
+          "Expected contribution = (1 − Return rate) × Completed contribution − Return rate × (Outbound + Return shipping + Packaging)",
+          "Net contribution = Expected contribution − Ad cost per order",
+          "Break-even ROAS = Price / Expected contribution",
+        ],
+      },
+      {
+        heading: "How should you price on Hepsiburada?",
+        paragraphs: [
+          "Adding a markup to cost falls short because commission is charged on the sale price. Work backwards from your target profit instead.",
+          "In the example, product, shipping, packaging and service fee total 450 + 82 + 15 + 10.99 = 557.99 TRY and commission is 18%. For 150 TRY profit per order: (557.99 + 150) / (1 − 0.18) = 863.40 TRY (excluding VAT). The break-even price that only covers costs is 557.99 / 0.82 = 680.48 TRY. The formula excludes returns and ads; add your ad budget per order to the target profit, and expected return losses if your return rate is high. Check discounts against the break-even price with the Discount Calculator.",
+        ],
+        bullets: [
+          "Target price = (Product + Shipping + Packaging + Service fee + Target profit) / (1 − Commission rate)",
+          "Break-even price = (Product + Shipping + Packaging + Service fee) / (1 − Commission rate)",
+        ],
+      },
+      {
+        heading: "When does Hepsiburada pay sellers? Payment terms and cash needs",
+        paragraphs: [
+          "Hepsiburada pays the sale amount after the product is delivered, on a payment term set by category. Seller guides report terms from 14 to 45 days after delivery, with about four weeks common in most categories. Check your category's term in the seller panel and your agreement.",
+          "This is the point most guides skip, and the one that strains new sellers most: you pay for product, shipping and ads today, and the money arrives about a month later. Estimate the cash you need as Daily orders × Upfront cost per order × Days from shipment to payout.",
+          "In the example, upfront cost per order is product, shipping, packaging and ads: 450 + 82 + 15 + 60 = 607 TRY (commission and service fee are deducted from the payout, so they are not paid upfront). At 10 orders a day and 3 days of delivery plus a 28-day term, that is 10 × 607 × 31 = 188,170 TRY. The need grows with sales, which is how fast-growing stores run out of cash while profitable.",
+        ],
+        bullets: [
+          "Cash need ≈ Daily orders × (Product + Shipping + Packaging + Ads) × (Delivery days + Payment term)",
+        ],
+      },
+      {
+        heading: "What drives sales on Hepsiburada?",
+        paragraphs: [
+          "Sellers of the same product are usually grouped on a single product page, and shoppers first see the featured seller's offer. For branded products sold by several sellers, price alone is not enough: shipping speed, seller rating, stock continuity and cancellation rate also affect visibility.",
+          "If you sell your own brand or unique products, the product page is yours, and content (title, images, attributes), reviews and ads matter most. Either way, set a realistic handling time: late shipping means penalties and a lower rating.",
+        ],
+      },
+      {
+        heading: "6 common mistakes new Hepsiburada sellers make",
+        paragraphs: ["Most of these are avoided with a few calculations before you apply:"],
+        bullets: [
+          "Pricing without knowing the category commission from the panel",
+          "Ignoring the service fee and return shipping on low-priced items",
+          "Calculating profit without ads and launching campaigns without a break-even ROAS",
+          "Forgetting the payment term and running out of cash while growing",
+          "Setting unrealistic handling times, leading to penalties",
+          "Entering business details that don't match the tax certificate exactly",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is it free to open a store on Hepsiburada?",
+        answer:
+          "Yes. Opening a store is free; fees start when you sell: a category commission, a fixed service fee per delivered package and shipping. Ads and campaigns are optional.",
+      },
+      {
+        question: "Can foreign companies sell on Hepsiburada?",
+        answer:
+          "The standard seller program requires a business registered for tax in Türkiye, with a Turkish tax certificate and bank account. Foreign brands typically sell through a local company, distributor or partner.",
+      },
+      {
+        question: "How long does Hepsiburada seller approval take?",
+        answer:
+          "Usually a few business days if documents are complete; it can stretch to two weeks with missing or outdated documents. Entering the business name and tax number exactly as on the tax certificate avoids delays.",
+      },
+      {
+        question: "When does Hepsiburada pay sellers?",
+        answer:
+          "After delivery, on a payment term set by category; about four weeks is common. Check your category's term in the seller panel and plan cash for the first months.",
+      },
+      {
+        question: "How do you calculate profit on Hepsiburada?",
+        answer:
+          "Subtract commission, service fee, shipping, product cost and packaging from the sale price, then subtract expected return losses and ad cost per order. In the example, a 1,000 TRY sale (excluding VAT) leaves 175.55 TRY after returns and ads.",
+      },
+    ],
+    howTo: {
+      name: "How to become a Hepsiburada seller",
+      description: "From application to your first profitable order in six steps.",
+      steps: [
+        { name: "Prepare the business and documents", text: "Set up a tax-registered business in Türkiye (a sole proprietorship is enough) and prepare the tax certificate, signature circular or declaration and business IBAN." },
+        { name: "Apply", text: "Choose the seller type on the sign-up page, enter business details exactly as on the tax certificate, upload documents and accept the agreement." },
+        { name: "Calculate contribution per order", text: "For each product, subtract commission, service fee, shipping, packaging and return losses to find what is left before ads and the break-even ROAS." },
+        { name: "Set prices", text: "Use (costs + service fee + target profit) / (1 − commission rate) for the target price, and the same formula without profit for the break-even price." },
+        { name: "Plan cash", text: "Multiply daily orders by upfront cost per order and days to payout to estimate the cash needed before payouts start." },
+        { name: "Start small and measure", text: "Launch with 10-20 products, ship on time and run a small ad test, comparing ad cost with expected contribution." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Marketplace Profit Calculator (Hepsiburada preset)", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
+      { label: "Discount Calculator", href: "/en/free-tools/discount-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Trendyol Commission Rates", href: "/en/blog/trendyol-commission-rates/" },
+      { label: "How to Advertise on Trendyol", href: "/en/blog/how-to-advertise-on-trendyol/" },
+      { label: "Etsy Fees Explained: How Much Etsy Takes", href: "/en/blog/etsy-fees-profit-calculation/" },
+      { label: "How to Start an Ecommerce Website: Checklist", href: "/en/blog/how-to-start-an-ecommerce-website-checklist/" },
+      { label: "Hepsiburada seller sign-up (official page)", href: "https://merchant.hepsiburada.com/v2/sign-up", external: true },
     ],
   },
 ];

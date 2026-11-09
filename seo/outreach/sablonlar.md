@@ -138,3 +138,32 @@ Merhaba <Ad>,
 https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/
 Uygun bulursanız yazınıza kaynak olarak ekleyebilirsiniz; karşılığında bir şey beklemiyorum.
 Yusuf Bayrak
+
+## Etsy Fiyat ve Kâr Şablonu (09.11.2026)
+Dosya: https://yusufbayrak.net/sablonlar/etsy-fiyat-ve-kar-sablonu.xlsx (kayıtsız indirme; 5 sayfa: Oranlar, Sipariş Hesabı, Fiyat Hedefi, Ürün Listesi, Notlar). Rehber: https://yusufbayrak.net/blog/etsyde-satis-komisyon-kar-hesabi/
+İçerik: Türkiye satıcısı için Etsy oranları tek sayfada (işlem %6,5, ödeme %6,5 + 14 TL, düzenleyici %1,67, listeleme 0,20 $, dönüşüm %2,5, Offsite Ads %15/%12 ve 100 $ sınırı), sipariş başı kesinti ve net kalan, hedef kâr → sipariş tutarı/ürün fiyatı, başabaş, 20 satırlık ürün karşılaştırması. LibreOffice ile hesaplandı, 0 hata; örnek değerler yazıyla aynı (2.100 TL → 330,47 TL kesinti, 629,53 TL net, 500 TL kâr için 1.948,20 TL). Vergi kalemi yok.
+
+### Hedefler (09.11 WebFetch ile incelendi — ikisinde de rakamlar eskimiş, şablon/hesap yok)
+| # | Site | Sayfa | Bulgu | Teklif |
+|---|---|---|---|---|
+| 1 | eleman.net (İş Rehberi) | "Etsy'de Mağaza Nasıl Açılır?" — https://www.eleman.net/is-rehberi/pratik-bilgiler/etsy-de-magaza-nasil-acilir-h6090 (23.12.2024) | İşlem ücretini %5 ve ödemeyi "%6,5 + 3 TL" veriyor; aynı yazıda çelişen ikinci oran seti; kâr hesabı yok | Güncel oran düzeltmesi + şablon linki. İletişim: sitedeki İletişim sayfası (e-posta görünmüyor) |
+| 2 | Para Dergi (girişimcilik) | "Evden el işi ile döviz kazanmak mümkün" — https://paradergi.com.tr/girisimcilik/2023/07/19/evden-el-isi-ile-doviz-kazanmak-mumkun | %5 işlem ve "%6,5 + 3 TL" (2023); hesap yok | Editöre güncelleme notu + şablon; ya da "Etsy'de 2026'da bir satıştan ne kalır?" kısa uzman yazısı önerisi |
+| 3 | custombull.com (Türkiye'den POD/Etsy üreticisi, EN blog) | "Getting paid on Etsy from Turkey" — https://custombull.com/en/blog/getting-paid-on-etsy-from-turkey | Ücret tablosu var, hesaplayıcı/şablon yok | EN rehber linki (https://yusufbayrak.net/en/blog/etsy-fees-profit-calculation/) + Türkçe şablon; iletişim formu |
+Elenen: ikas, Ticimax, IdeaSoft, Shopify, WorldFirst (altyapı/ödeme firmaları, kendi içeriklerini kullanır); armut.com (hizmet ilanı).
+
+### Teklif metni (eleman.net / Para Dergi — kullanıcının göndereceği)
+Konu: Etsy yazınızdaki ücret oranları hakkında küçük bir güncelleme
+
+Merhaba,
+
+"[yazı başlığı]" yazınızı okudum; Etsy'ye başlamak isteyenler için iyi bir giriş. Yalnızca ücret bölümü eskimiş görünüyor: Etsy işlem ücreti 2022'den beri %6,5; Türkiye'deki satıcılar için ödeme işlem ücreti şu an %6,5 + 14 TL (Etsy yardım sayfası) ve Haziran 2026'dan beri %1,67 düzenleyici işletim ücreti de kesiliyor. Bu üç kalemle birlikte örnek bir 2.100 TL'lik siparişte toplam kesinti yaklaşık %15,7 ediyor.
+
+Okurlarınız kendi ürünlerinde hesap yapabilsin diye kayıt istemeyen ücretsiz bir Excel şablonu hazırladım (oranlar tek sayfadan güncellenebiliyor, hedef kâr için fiyatı da hesaplıyor):
+https://yusufbayrak.net/sablonlar/etsy-fiyat-ve-kar-sablonu.xlsx
+Kaynaklarıyla açıklamalı hali: https://yusufbayrak.net/blog/etsyde-satis-komisyon-kar-hesabi/
+
+Yazınızı güncellerken işinize yararsa kullanabilirsiniz. Kolay gelsin,
+Yusuf Bayrak
+
+### LinkedIn metni (kullanıcının sesiyle düzenlenmeli)
+Etsy'de "komisyon %6,5" diye bilinen rakam, Türkiye'deki bir satıcı için aslında %14,67 + 14 TL. Ödeme işlem ücreti ve Haziran'da değişen düzenleyici işletim ücreti de kesiliyor; satış Etsy'nin site dışı reklamından gelirse %15 daha. 2.100 TL'lik örnek siparişte kesinti 330 TL, Offsite Ads'li satışta 645 TL. Fiyatı tersten kurmak için ücretsiz bir Excel şablonu hazırladım: [link]

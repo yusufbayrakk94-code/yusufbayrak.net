@@ -38,4 +38,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "roi-nedir-nasil-hesaplanir", en: "what-is-roi-how-to-calculate" },
   { tr: "e-ticaret-sitesi-kurmak-icin-gerekenler", en: "how-to-start-an-ecommerce-website-checklist" },
   { tr: "etsyde-satis-komisyon-kar-hesabi", en: "etsy-fees-profit-calculation" },
+  { tr: "hepsiburada-satici-olmak-komisyon-kar-hesabi", en: "how-to-sell-on-hepsiburada-seller-guide" },
 ];
