@@ -1972,7 +1972,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "utm",
     resources: [
       { label: "UTM Link Oluşturucu (GA4 kanal tahminli)", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
-      { label: "UTM Nedir? UTM Parametreleri Rehberi", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "UTM Nedir? UTM'li Link GA4'te Görünmüyorsa 6 Adımlık Kontrol", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
       { label: "Google Analytics Yardım: Varsayılan kanal grubu kuralları", href: "https://support.google.com/analytics/answer/9756891", external: true },
@@ -2485,7 +2485,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Google Ads'te manuel UTM yerine otomatik etiketlemeyi açık tutun; Meta'da dinamik parametrelerle ({{campaign.name}}, {{ad.name}}) tek şablon kullanın. Sitenizin kendi iç linklerine asla UTM eklemeyin.",
     ],
     publishedAt: "2026-10-27",
-    updatedAt: "2026-11-02",
+    updatedAt: "2026-11-09",
     readingMinutes: 10,
     tags: ["UTM", "UTM Kodu", "UTM Parametreleri", "GA4", "Kampanya Takibi", "Google Analytics", "Ölçümleme"],
     sections: [
@@ -2604,6 +2604,20 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        heading: "UTM'li link GA4'te görünmüyorsa ne yapmalı? 6 adımlık kontrol",
+        paragraphs: [
+          "Kampanya linkini paylaştınız ama GA4'te kaynak hâlâ 'direct', '(not set)' ya da Unassigned görünüyorsa sorun çoğu zaman linkin kendisinde değil, yolda ya da raporda yaşanır. Şu sırayla kontrol edin; ilk üç adım sorunların büyük kısmını çözer:",
+        ],
+        bullets: [
+          "1. Adres çubuğuna bakın: linki telefonda, paylaştığınız uygulamanın içinden açın. Sayfa açıldığında utm_ parametreleri adreste duruyor mu? Link kısaltıcı, http→https, www veya dil yönlendirmesi parametreleri düşürüyorsa yönlendirmenin sorgu dizesini taşıdığından emin olun",
+          "2. Soru işareti ve # sırasını kontrol edin: UTM'ler ? ile başlayan sorgu dizesinde olmalı, # (sayfa içi bölüm) işaretinden önce gelmelidir. Doğru: site.com/sayfa/?utm_source=instagram&utm_medium=social#yorumlar. Yanlış: site.com/sayfa/#yorumlar?utm_source=instagram; # sonrası sorgu dizesi sayılmaz ve parametreler okunmaz. Adreste zaten ? varsa yeni parametreleri ikinci bir ? ile değil & ile ekleyin",
+          "3. Gizli pencerede test edin: linki gizli pencerede açıp GA4 › Raporlar › Gerçek zamanlı ekranında kaynak ve kampanyayı arayın. Aynı tarayıcıda zaten açık bir oturumunuz varsa oturum kaynağı oturumu başlatan ilk kaynağa göre yazıldığı için testiniz yanıltıcı olabilir",
+          "4. Çerez onayını hesaba katın: ziyaretçi analitik çerezlerini reddettiğinde, izin modu kurulumunuza göre olaylar hiç gönderilmez ya da çerezsiz gönderilir; raporda kampanya trafiği olduğundan az görünür. Test sırasında çerez bannerında analitiği kabul edin",
+          "5. Google Ads linklerinde gclid'i hatırlayın: otomatik etiketleme açıkken GA4 manuel utm_source ve utm_medium yerine Google Ads verisini kullanır; bu bir hata değil, beklenen davranıştır",
+          "6. Doğru boyuta bakın: UTM'ler 'Oturum kaynağı/aracı' ve 'Oturum kampanyası' boyutlarında görünür, 'Sayfa yolu + sorgu dizesi' boyutunda görünmez. Standart raporlara verinin düşmesi 24-48 saat sürebilir; değerler büyük harf veya Türkçe karakter içeriyorsa aynı kampanya iki satıra bölünmüş olabilir",
+        ],
+      },
+      {
         heading: "UTM kullanırken en sık yapılan hatalar",
         paragraphs: [
           "UTM hataları çoğu zaman rapor açıldığında değil, haftalar sonra bütçe kararı verilirken fark edilir. Şu hatalardan kaçının:",
@@ -2644,6 +2658,11 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "UTM kodu (UTM linki) nasıl oluşturulur?",
         answer:
           "Sayfa adresinin sonuna ? ekleyip parametreleri & ile birleştirerek elle yazabilirsiniz; ama hata riskini azaltmak için bir UTM oluşturucu kullanmak daha güvenlidir. Ücretsiz UTM Link Oluşturucu aracımız değerleri otomatik küçük harfe ve Türkçe karaktersiz hale çevirir ve linkin GA4'te hangi kanala düşeceğini gösterir.",
+      },
+      {
+        question: "UTM'li link GA4'te neden görünmüyor?",
+        answer:
+          "En sık nedenler: yönlendirme veya link kısaltıcının parametreleri düşürmesi, UTM'lerin # işaretinden sonra yazılması, testin zaten açık bir oturumda yapılması, ziyaretçinin analitik çerezlerini reddetmesi ve Google Ads'te gclid'in manuel UTM'yi geçersiz kılması. Linki gizli pencerede açıp adres çubuğunu ve GA4 Gerçek zamanlı raporunu kontrol edin.",
       },
       {
         question: "WhatsApp ve QR kod linklerinde UTM nasıl yazılır?",
@@ -6964,7 +6983,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       },
     ],
     resources: [
-      { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
+      { label: "How Paid Google Advertising Works (Top of Page Rate Explained)", href: "/en/blog/what-is-google-ads-how-it-works/" },
     ],
     relatedToolKey: "roas",
   },
@@ -10718,10 +10737,10 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "what-is-google-ads-how-it-works",
-    seoTitle: "What Is Google Ads and How Does It Work? Costs Explained",
+    seoTitle: "What Is Google Ads? How Paid Google Advertising Works",
     title: "What Is Google Ads and How Does It Work? Auction, Quality Score, Costs and Campaign Types (2026)",
     description:
-      "What is Google Ads and how does it work? The auction and actual CPC, Quality Score, budget rules, 2026 campaign types, bid strategies and a worked cost example.",
+      "How paid advertising on Google works: the auction and actual CPC, Quality Score, top of page bid and rate, budgets, campaign types and a worked cost example.",
     category: "performans-pazarlama",
     tldr: [
       "Google Ads is Google's advertising platform: it shows your ads on Google Search, YouTube, Gmail, Discover, Maps and Google's partner sites. On Search you mostly pay per click (CPC).",
@@ -10730,6 +10749,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Cost math: CPA = CPC / Conversion rate. With a $1.20 CPC and a 2% conversion rate, each sale costs $60; on a $180 order at 40% margin, break-even CPA is $72, so the campaign is profitable. A $75 daily budget spends at most $2,280 a month.",
     ],
     publishedAt: "2026-11-01",
+    updatedAt: "2026-11-09",
     readingMinutes: 8,
     tags: ["Google Ads", "PPC", "CPC", "Quality Score", "Performance Marketing"],
     sections: [
@@ -10787,6 +10807,36 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         paragraphs: [
           "You set an average daily budget per campaign. On high-traffic days Google may spend up to 2× that amount, but your monthly charge won't exceed the daily budget times the average number of days in a month (30.4).",
           "Continuing the example: a $75 daily budget can spend up to $150 on a busy day, but at most 75 × 30.4 = $2,280 a month. At a $1.20 CPC that is about 1,900 clicks; at 2% about 38 sales, $6,840 revenue and $456 gross profit after ads (about 62 clicks and 1.25 sales a day). One or two sales a day is thin data for Smart Bidding, so keep small budgets focused on few high-intent keywords.",
+        ],
+      },
+      {
+        heading: "What do top of page bid and top of page rate mean in Google Ads?",
+        paragraphs: [
+          "Two of the most misread numbers in Google Ads are the top of page bid estimates in Keyword Planner and the top of page rate in campaign reports. Neither is a price list; both describe where ads appeared in past auctions.",
+          "Top of page bid (low range) and top of page bid (high range) are Keyword Planner estimates. Google's Ads API documents them as the 20th and 80th percentile of the top of page bid for the keyword: roughly, the low range is what advertisers at the cheaper end paid to appear among top ads, and the high range is what the expensive end paid. Treat the range as the market's spread, not as what you will pay; your actual CPC still depends on Ad Rank, quality and competition in each auction.",
+          "Top of page rate (Search top impression rate, shown as Impr. (Top) %) is the percentage of your ad impressions shown among top ads. Absolute top impression rate (Impr. (Abs. Top) %) is the share shown as the very first ad. Since a March 2024 help center update, Google's definition says top ads are usually above the organic results but may show below the top organic results on some queries, so a 'top' impression is not always above the first organic link.",
+          "Use the estimates against your own profit threshold. In the worked example above, the most you can pay per click is $1.44 (break-even CPA $72 × 2% conversion rate). If Keyword Planner shows a low range of $0.80 and a high range of $2.60 for a keyword, you can only compete in the cheaper part of that auction profitably. Bidding toward the high range to reach the absolute top would lose money unless conversion rate or order value rises.",
+        ],
+        bullets: [
+          "Top of page bid (low range) = 20th percentile estimate; Top of page bid (high range) = 80th percentile estimate",
+          "Impr. (Top) % = share of your impressions shown among top ads",
+          "Impr. (Abs. Top) % = share of your impressions shown as the first ad",
+          "Profitable bid ceiling = Break-even CPA × Conversion rate; compare it with the range before bidding",
+        ],
+      },
+      {
+        heading: "Google Ads keyword report columns explained (with formulas)",
+        paragraphs: [
+          "When you download the keywords report from Google Ads, the export starts with columns such as Keyword status, Keyword, Match type, Status, Status reasons, Currency code, Max. CPC, Final URL, Clicks, Impr., CTR, Avg. CPC, Cost, Conv. rate, Conversions and Cost / conv. The first group describes the setup, the second group is performance, and the performance columns are linked by simple formulas, so you can check any row yourself.",
+          "Example row: 4,000 impressions and 200 clicks give a 5% CTR. At a $1.20 average CPC the cost is $240. Four conversions give a 2% conversion rate and a cost per conversion of $60, the same as $1.20 / 2%. Against the $72 break-even CPA from the example, this keyword is profitable; at a 1.5% conversion rate the same CPC would cost $80 per conversion and lose money.",
+        ],
+        bullets: [
+          "Keyword status / Status / Status reasons: whether the keyword is eligible to show and, if not, why (paused, low search volume, disapproved, limited by policy)",
+          "Match type: broad, phrase or exact; Max. CPC: the bid cap you set (empty or ignored under Smart Bidding); Final URL: the landing page for that keyword",
+          "CTR = Clicks / Impr.",
+          "Cost = Clicks × Avg. CPC",
+          "Conv. rate = Conversions / Clicks (Google divides by ad interactions)",
+          "Cost / conv. = Cost / Conversions = Avg. CPC / Conv. rate",
         ],
       },
       {
@@ -10857,6 +10907,16 @@ export const BLOG_POSTS_EN: BlogPost[] = [
         answer:
           "Google can spend up to 2× your daily budget on busy days, but monthly spend won't exceed daily budget × 30.4. A $75 daily budget spends at most $2,280 a month.",
       },
+      {
+        question: "What does top of page bid (low range) mean?",
+        answer:
+          "It is a Keyword Planner estimate: the 20th percentile of the top of page bid for that keyword, while the high range is the 80th percentile. It shows the market's spread for appearing among top ads, not the price you will pay; compare it with your own max CPC (break-even CPA × conversion rate).",
+      },
+      {
+        question: "What is top of page rate in Google Ads?",
+        answer:
+          "Top of page rate (Search top impression rate, Impr. (Top) %) is the percentage of your ad impressions shown among top ads. Absolute top rate is the share shown as the very first ad. Top ads are usually above organic results but can appear below the top organic results on some queries.",
+      },
     ],
     relatedToolKey: "ad-budget",
     resources: [
@@ -10871,6 +10931,8 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "How to Run Meta Ads: A Practical Guide", href: "/en/blog/how-to-run-meta-ads-guide/" },
       { label: "Google Ads Help: Actual cost-per-click (CPC)", href: "https://support.google.com/google-ads/answer/6297?hl=en", external: true },
       { label: "Google Ads Help: About Quality Score for Search campaigns", href: "https://support.google.com/google-ads/answer/6167118?hl=en", external: true },
+      { label: "Google Ads Help: About top and absolute top metrics", href: "https://support.google.com/google-ads/answer/7501826?hl=en", external: true },
+      { label: "Google Ads API: KeywordPlanHistoricalMetrics (top of page bid ranges)", href: "https://developers.google.com/google-ads/api/reference/rpc/v26/KeywordPlanHistoricalMetrics", external: true },
     ],
   },
   {
@@ -12324,7 +12386,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
       { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
-      { label: "What Is Google Ads?", href: "/en/blog/what-is-google-ads-how-it-works/" },
+      { label: "What Is Google Ads? Paid Google Advertising, Top of Page Bid and Rate", href: "/en/blog/what-is-google-ads-how-it-works/" },
       { label: "How to Set Target ROAS", href: "/en/blog/how-to-set-target-roas-google-ads/" },
       { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
       { label: "What Is CPL?", href: "/en/blog/what-is-cpl-cost-per-lead/" },
