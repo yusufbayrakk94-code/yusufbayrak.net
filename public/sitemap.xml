@@ -603,6 +603,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/etsyde-satis-komisyon-kar-hesabi/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/etsyde-satis-komisyon-kar-hesabi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/etsy-fees-profit-calculation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/etsyde-satis-komisyon-kar-hesabi/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -1188,6 +1197,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-start-an-ecommerce-website-checklist/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/etsy-fees-profit-calculation/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/etsy-fees-profit-calculation/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/etsyde-satis-komisyon-kar-hesabi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/etsyde-satis-komisyon-kar-hesabi/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

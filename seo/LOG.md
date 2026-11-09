@@ -2,6 +2,12 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-11-09 (içerik görevi)
+- Not: 08.11 içerik görevinin commit'i depoya düşmemişti (8 Kas satırları açık kaldı); bugün takvimdeki ilk iki açık satır (8 Kas) alındı, 9 Kas satırları bir gün kaydı.
+- YENİ YAZI 1: "Etsy'de Satış Nasıl Yapılır? Komisyonlar, Kesintiler ve Örnek Kâr Hesabı" (/blog/etsyde-satis-komisyon-kar-hesabi/ + EN /en/blog/etsy-fees-profit-calculation/). Hacim: etsy satış 1.600, etsy komisyon hesaplama 210 (Keyword Planner, 02.11).
+- Rakip bulgusu: ikas aracı Türkiye ödeme ücretini yanlış veriyor (%4,5 + 0,30 $; Etsy yardım sayfasında %6,5 + 14 TRY), düzenleyici işletim ücreti yok; Ticimax %5/%6,5 çelişkisi ve eski "%6,5 + 3 TL", örnek yok; ikas rehberi (~4.300 kelime) ödeme ücretini hiç vermiyor, hesap yapılamıyor. Farkımız: doğrulanmış Türkiye oranları (%6,5 + %6,5 + 14 TL + %1,67 düzenleyici, 22.06.2026'dan beri), 2.100 TL sipariş → 330,47 TL kesinti (%15,7), net 629,53 TL / Offsite Ads ile 314,53 TL; hedef kâr fiyat formülü (1.948 TL; Offsite Ads ile 2.364; başabaş 1.362), %2,5 dönüşüm ve 600 TL altı 42 TL çekim ücreti, 5000 bölenli yurt dışı desi örneği. EN sürüm ABD satıcısı örneğiyle ($50 sipariş → $5,20 ücret, $21,80 kâr; $15 kâr için $42,49). Vergi içeriği yok (mali müşavire yönlendirme). Hesaplar Python ile doğrulandı.
+- İç link: yeni yazı → Desi (relatedToolKey), Kargo Ücreti, Trendyol Kâr, Kar Marjı, ROAS + 4 yazı. Gelen: Trendyol komisyon oranları ve Dropshipping yazıları (TR+EN) kaynakları; Desi aracı otomatik. Ölçüm: 'etsy satış', 'etsy komisyon hesaplama', 'etsy komisyon oranları' gösterim/sıra.
+
 ## 2026-11-09 (veri görevi)
 - Search Console (son 28 gün, veri 07.11'e kadar): tıklama ve gösterim 08.11 ölçümüne göre yine arttı; gösterim başlangıcın yaklaşık 5 katı ama 31.12 ara hedefinin (1.500+) hâlâ yarısının altında. Son 7 gün önceki 7 günün yaklaşık 2,7 katı gösterim ve 4 katı tıklama → hızlanma sürüyor; ortalama sıra yeni EN sayfalarla 30 civarında. Marka dışı en çok gösterim: EN Google Ads nedir (Search Console "normalden fazla gösterim" önerisi), EN kargo ve indirim araçları, EN ROAS yazısı.
 - Hedef sorgular: 'ltv nedir' 8 (ilk 10), 'cac açılımı' 7, 'cac nedir' 21, 'cac ne demek' 23, 'ltv ne demek' 10, 'mrr ne demek' 13-14; 'utm nedir' 53, 'utm nasıl oluşturulur' 60; 'başabaş roas', 'roas' 65-70; 'roas hesaplama', 'llms.txt oluşturucu' 80+. Desi, trendyol komisyon/kar hesaplama, kar marjı, churn nedir: hâlâ gösterim yok. 30.11 ara hedefi: 2 sorgu yolda.

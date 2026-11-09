@@ -4415,6 +4415,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
       { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+      { label: "Etsy'de Satış: Komisyonlar ve Kâr Hesabı", href: "/blog/etsyde-satis-komisyon-kar-hesabi/" },
       { label: "Trendyol Satıcı Bilgi Merkezi: Platform Hizmet Bedeli", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/platform-hizmet-bedeli", external: true },
       { label: "Trendyol Satıcı Bilgi Merkezi: Trendyol Komisyonları", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/trendyol-komisyonlari", external: true },
       { label: "Trendyol Satıcı Bilgi Merkezi: Kargo Baremi Uygulaması", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/kargo-baremi-uygulamasi", external: true },
@@ -5636,6 +5637,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "marketplace",
     resources: [
       { label: "E-ticaret Sitesi Kurmak İçin Gerekenler", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
+      { label: "Etsy'de Satış: Komisyonlar ve Kâr Hesabı", href: "/blog/etsyde-satis-komisyon-kar-hesabi/" },
       { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
       { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -6777,6 +6779,203 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "UTM Parametreleri Nedir?", href: "/blog/utm-nedir-utm-parametreleri/" },
       { label: "SEO Nedir, Nasıl Yapılır?", href: "/blog/seo-nedir-nasil-yapilir/" },
       { label: "Elektronik Ticaret Bilgi Sistemi ve Bildirim Yükümlülükleri Hakkında Tebliğ (mevzuat metni)", href: "https://www.lexpera.com.tr/mevzuat/tebligler/elektronik-ticaret-bilgi-sistemi-ve-bildirim-yukumlulukleri-hakkinda-teblig", external: true },
+    ],
+  },
+  {
+    slug: "etsyde-satis-komisyon-kar-hesabi",
+    seoTitle: "Etsy'de Satış: Komisyon Hesaplama ve Kâr Rehberi 2026",
+    title: "Etsy'de Satış Nasıl Yapılır? Komisyonlar, Kesintiler ve Örnek Kâr Hesabı (2026)",
+    description:
+      "Etsy'de satış rehberi: Türkiye'den mağaza açma adımları, güncel Etsy komisyonları (%6,5 + 14 TL dahil), örnek kesinti dökümü ve hedef kâr için fiyat formülü.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Türkiye'den Etsy'de satış için bir Etsy hesabı, mağaza, en az bir ürün ilanı, Türkiye'deki bir banka hesabı (ödemeler TL olarak gelir) ve ücretler için bir kredi kartı yeterlidir; mağaza açılışında kimlik doğrulaması istenir.",
+      "Bir satışta beş kalem kesilir: listeleme ücreti (0,20 $), işlem ücreti (%6,5), ödeme işlem ücreti (Türkiye'de %6,5 + 14 TL), düzenleyici işletim ücreti (22.06.2026'dan itibaren %1,67) ve satış Etsy'nin site dışı reklamından geldiyse Offsite Ads (%15 ya da %12).",
+      "Örnek: 1.500 TL ürün + 600 TL kargo = 2.100 TL'lik siparişte Etsy kesintisi 330,47 TL'dir (%15,7). Ürün, paketleme ve gerçek kargo maliyetinden sonra 629,53 TL kalır; satış Offsite Ads'ten gelirse 314,53 TL'ye düşer.",
+      "Fiyatı tersten kurun: Sipariş toplamı = (Ürün + paketleme + kargo maliyeti + sabit ücretler + hedef kâr) / (1 − yüzde kesintiler). Örnekte 500 TL kâr için 1.948 TL, Offsite Ads ihtimaliyle 2.364 TL gerekir.",
+    ],
+    publishedAt: "2026-11-09",
+    readingMinutes: 10,
+    tags: ["Etsy", "Etsy Komisyon Hesaplama", "Pazaryeri", "E-ihracat", "Kar Marjı", "Yurt Dışı Kargo"],
+    sections: [
+      {
+        heading: "Etsy'de satış nasıl yapılır? (Kısa cevap)",
+        paragraphs: [
+          "Etsy; el yapımı ürünler, vintage ürünler, sanat ve tasarım ürünleri ile hobi malzemelerinin satıldığı küresel bir pazaryeridir. Türkiye'den satıcı olarak kayıt olabilir, ürünlerinizi başta ABD ve Avrupa olmak üzere dünyanın farklı yerlerindeki alıcılara satabilirsiniz. Mağaza açmak için aylık abonelik gerekmez; Etsy her ilan ve her satış için ayrı ücret keser.",
+          "Satışa başlamadan önce iki şeyi netleştirin: Etsy'nin bir siparişten toplam ne kadar kestiği ve yurt dışı kargonun size gerçekte kaça mal olduğu. Bu yazıda önce mağaza açma adımlarını, sonra güncel kesintileri ve bunları kullanan örnek bir kâr hesabını bulacaksınız. Tutarlar örnektir; Etsy ücretleri ve döviz kuru değiştiği için hesabı kendi rakamlarınızla tekrarlayın.",
+        ],
+        bullets: [
+          "Etsy hesabı ve mağaza adı (arayüz İngilizce ya da başka bir desteklenen dilde)",
+          "En az bir ürün ilanı: fotoğraflar, başlık, açıklama, fiyat, stok, kargo profili",
+          "Ödeme hesabı: Türkiye'de bir banka hesabı; ödemeler Etsy Payments ile TL olarak yatırılır",
+          "Ücretler için kredi ya da banka kartı ve fatura adresi",
+          "Kimlik doğrulaması (Etsy mağaza açılışında ister)",
+        ],
+      },
+      {
+        heading: "Türkiye'den Etsy mağazası nasıl açılır? Adım adım",
+        paragraphs: [
+          "Mağaza açma akışı birkaç adımdan oluşur ve genellikle bir oturumda tamamlanır. Asıl zaman alan kısım, ilk ilanları iyi fotoğraf ve açıklamayla hazırlamaktır.",
+          "Ödeme hesabı adımında ülke seçimine dikkat edin: Etsy, mağazanın kayıtlı olduğu ülkedeki bir banka hesabını ister ve bu ülke sonradan kolayca değiştirilemez. Türkiye, Etsy Payments'ın kullanılabildiği ülkeler arasındadır; alıcı kartla ya da Etsy'nin sunduğu diğer yöntemlerle öder, para mağaza bakiyenize düşer ve oradan banka hesabınıza TL olarak aktarılır.",
+          "Şirket kurmanız gerekip gerekmediği ve mali yükümlülükleriniz satış hacminize ve durumunuza göre değişir; bu konuları bir mali müşavirle netleştirin. Bu yazı mali ya da hukuki danışmanlık yerine geçmez ve bu konulara girmez.",
+        ],
+        bullets: [
+          "1. Etsy'nin satıcı sayfasından hesap açın ve mağaza tercihlerini seçin: dil, ülke (Türkiye), mağaza para birimi",
+          "2. Mağaza adını belirleyin; marka olarak kullanacağınız, kısa ve akılda kalan bir ad seçin",
+          "3. İlk ilanı ekleyin: 1-10 fotoğraf, isteğe bağlı kısa video, başlık, açıklama, fiyat, stok, varyasyonlar ve kargo profili",
+          "4. Ödeme bilgilerini girin: Türkiye'deki banka hesabınız, kimlik ve adres bilgileri",
+          "5. Ücretler için kart ve fatura adresi ekleyin",
+          "6. Kimlik doğrulamasını tamamlayın ve mağazayı açın",
+        ],
+      },
+      {
+        heading: "Etsy komisyonları nelerdir? Türkiye için güncel kesintiler",
+        paragraphs: [
+          "Etsy'de tek bir 'komisyon oranı' yoktur; bir satışta birkaç ayrı ücret kesilir. Rakip sayfaların çoğu ödeme işlem ücretini eski ya da başka ülkelere ait oranlarla veriyor veya düzenleyici işletim ücretini hiç anmıyor. Aşağıdaki oranlar Kasım 2026 itibarıyla Etsy'nin yardım sayfası ve duyurularına göre derlenmiştir.",
+          "Ücretlerin hangi tutar üzerinden hesaplandığı önemlidir: işlem ücreti ve düzenleyici işletim ücreti ürün fiyatı, alıcının ödediği kargo ve (varsa) hediye paketi ya da kişiselleştirme tutarı üzerinden; ödeme işlem ücreti ise alıcının ödediği toplam tutar üzerinden alınır. Yani kargo ücretini alıcıdan ayrıca alsanız da bu tutar üzerinden de kesinti ödersiniz.",
+        ],
+        bullets: [
+          "Listeleme ücreti: ilan başına 0,20 $; ilan 4 ay ya da satılana kadar yayında kalır. Stoklu ilanlarda her satıştan sonra ilan otomatik yenilenir ve ücret yeniden kesilir",
+          "İşlem ücreti: sipariş tutarının (ürün + kargo + hediye paketi/kişiselleştirme) %6,5'i",
+          "Ödeme işlem ücreti (Türkiye): alıcının ödediği toplam tutarın %6,5'i + sipariş başı 14 TL",
+          "Düzenleyici işletim ücreti (Türkiye): 22 Haziran 2026'dan itibaren %1,67 (önceden %2,27)",
+          "Offsite Ads: satış Etsy'nin Google, sosyal medya gibi site dışı reklamlarından geldiyse sipariş tutarının %15'i (son 12 ayda satışı 10.000 $ altında olan mağazalar, programdan çıkabilir) ya da %12'si (10.000 $ ve üstü, katılım zorunlu); sipariş başına en fazla 100 $",
+          "Para birimi dönüşümü: ilan para birimi ödeme hesabınızın para biriminden farklıysa %2,5",
+          "Para çekme: banka hesabına en az 50 TL çekilebilir; 600 TL altındaki çekimlerde 42 TL ücret alınır",
+          "İsteğe bağlı: Etsy Ads (site içi reklam) harcaması ve Etsy Plus aboneliği",
+        ],
+      },
+      {
+        heading: "Etsy komisyon hesaplama: örnek sipariş üzerinden",
+        paragraphs: [
+          "Örnek (örnek tutarlar, örnek kur 1 $ = 42 TL): el yapımı bir ürünü 1.500 TL'ye satıyorsunuz ve alıcıdan 600 TL kargo ücreti alıyorsunuz. Sipariş tutarı 2.100 TL'dir. Mağaza para biriminiz TL olduğu için para birimi dönüşüm ücreti yoktur.",
+          "Kesintiler: listeleme 0,20 $ = 8,40 TL; işlem ücreti 2.100 × %6,5 = 136,50 TL; ödeme işlem ücreti 2.100 × %6,5 + 14 = 150,50 TL; düzenleyici işletim ücreti 2.100 × %1,67 = 35,07 TL. Toplam Etsy kesintisi 330,47 TL'dir; bu, sipariş tutarının %15,7'si eder.",
+          "Mağaza para biriminiz dolar olsaydı ve ödemeler TL hesabınıza aktarılsaydı 2.100 × %2,5 = 52,50 TL dönüşüm ücreti eklenirdi; kesinti 382,97 TL'ye, yani %18,2'ye çıkardı. Satış Etsy'nin site dışı reklamından geldiyse 2.100 × %15 = 315 TL daha kesilir ve toplam kesinti 645,47 TL'ye (%30,7) ulaşır.",
+        ],
+        bullets: [
+          "Yüzdesel kesintiler = Sipariş tutarı × (%6,5 + %6,5 + %1,67) = Sipariş tutarı × %14,67",
+          "Sabit kesintiler = 14 TL (ödeme) + 0,20 $ (listeleme, TL karşılığı)",
+          "Toplam Etsy kesintisi = Yüzdesel kesintiler + Sabit kesintiler (+ varsa %2,5 dönüşüm, + varsa Offsite Ads)",
+        ],
+      },
+      {
+        heading: "Etsy'de bir satıştan ne kadar kâr kalır?",
+        paragraphs: [
+          "Etsy kesintisi resmin yalnızca bir parçasıdır. Aynı örnekte ürünün size maliyeti 450 TL, paketleme 40 TL ve kargo firmasına ödediğiniz yurt dışı gönderim ücreti 650 TL olsun. Elinizde kalan: 2.100 − 330,47 − 450 − 40 − 650 = 629,53 TL. Bu, sipariş tutarının yaklaşık %30'udur.",
+          "Satış Offsite Ads'ten geldiyse kalan tutar 629,53 − 315 = 314,53 TL'ye, yani yarıya iner. Mağazanız 10.000 $ eşiğinin altındaysa programdan çıkabilirsiniz; kalmayı seçerseniz fiyatınızı en kötü senaryoya göre kurun. Etsy Ads ile site içi reklam verecekseniz sipariş başı reklam maliyetini de bu tutardan düşün; reklamın kârlı olup olmadığını ROAS Hesaplayıcı ile kontrol edebilirsiniz.",
+          "Dikkat edilecek bir başka nokta kargodur: alıcıdan aldığınız 600 TL kargo ücreti gerçek maliyetin (650 TL) altında kaldı ve üstüne 600 TL üzerinden de kesinti ödediniz. Kargo ücretini belirlerken gerçek maliyeti ve kesintiyi birlikte hesaba katın.",
+        ],
+        bullets: [
+          "Net kalan = Sipariş tutarı − Etsy kesintileri − Ürün maliyeti − Paketleme − Gerçek kargo maliyeti",
+          "Kâr marjı = Net kalan / Sipariş tutarı",
+          "Reklamlı satışta: Net kalan − Offsite Ads ya da Etsy Ads maliyeti",
+        ],
+      },
+      {
+        heading: "Etsy'de fiyat nasıl belirlenir? Hedef kâr formülü",
+        paragraphs: [
+          "Maliyete yüzde ekleyerek fiyat koymak, yüzdesel kesintiler yüzünden hedefin altında kalmanıza yol açar. Doğru yol, fiyatı istediğiniz kârdan geriye doğru hesaplamaktır.",
+          "Örnekte maliyetler toplamı 450 + 40 + 650 = 1.140 TL, sabit ücretler 14 + 8,40 = 22,40 TL, yüzdesel kesinti %14,67'dir. Sipariş başı 500 TL kâr için: (1.140 + 22,40 + 500) / (1 − 0,1467) = 1.948 TL sipariş tutarı gerekir. Alıcıdan 650 TL kargo alacaksanız ürün fiyatı yaklaşık 1.298 TL olur.",
+          "Offsite Ads ihtimalini de karşılamak istiyorsanız paydaya %15'i ekleyin: 1.662,40 / (1 − 0,2967) = 2.364 TL. Hiç kâr etmeden yalnızca masrafları karşılayan başabaş sipariş tutarı ise 1.162,40 / 0,8533 = 1.362 TL'dir; bunun altındaki her satış zarar ettirir.",
+        ],
+        bullets: [
+          "Hedef sipariş tutarı = (Ürün + Paketleme + Kargo maliyeti + Sabit ücretler + Hedef kâr) / (1 − Yüzdesel kesintiler)",
+          "Başabaş sipariş tutarı = (Ürün + Paketleme + Kargo maliyeti + Sabit ücretler) / (1 − Yüzdesel kesintiler)",
+          "Offsite Ads payı: paydadaki yüzdeye %15 (ya da %12) ekleyin",
+        ],
+      },
+      {
+        heading: "Yurt dışı kargo ücreti nasıl hesaplanır?",
+        paragraphs: [
+          "Etsy satışlarının çoğu yurt dışına gittiği için kargo, ürün maliyetinden sonraki en büyük kalemdir. Uluslararası ekspres taşıyıcılar ve PTT'nin uluslararası hizmetleri genellikle hacimsel ağırlığı En × Boy × Yükseklik (cm) / 5000 ile hesaplar ve ücreti hacimsel ağırlıkla gerçek ağırlıktan büyük olana göre belirler. Yurt içinde yaygın bölen 3000'dir; aynı koli yurt dışında daha düşük desi çıkar ama kilogram fiyatı çok daha yüksektir.",
+          "Kutuyu ürüne göre seçmek doğrudan kâr getirir: 40 × 30 × 20 cm'lik koli 5000 bölenle 4,8 desidir; 35 × 25 × 15 cm'lik koliye geçmek 2,6 desiye indirir. Kendi kolinizi Desi Hesaplama aracıyla ölçüp tarifenizle ücreti Kargo Ücreti Hesaplama aracında hesaplayabilirsiniz. Gümrük ve ithalat kuralları ülkeden ülkeye değişir ve sık güncellenir; hedef ülkeler için güncel koşulları kargo firmanızdan alın ve ilan sayfanızda alıcıya açıkça yazın.",
+          "Ücretsiz kargo sunacaksanız kargo maliyetini ürün fiyatına ekleyin ve yukarıdaki formülle fiyatı yeniden hesaplayın. Kesinti sipariş tutarı üzerinden alındığı için kargoyu fiyata gömmek kesinti tutarını değiştirmez; yalnızca alıcının gördüğü fiyat yapısını değiştirir.",
+        ],
+      },
+      {
+        heading: "Etsy mi, Trendyol mu? Kesintileri karşılaştırma",
+        paragraphs: [
+          "Örnekteki Etsy kesintisi (%15,7) Trendyol'daki birçok kategori komisyonuyla aynı bantta görünür; ama iki pazaryerini karşılaştırırken yalnızca yüzdeye bakmak yanıltır. Trendyol'da kargo genellikle anlaşmalı yurt içi tarifeyle gider ve sepet tutarları daha düşüktür; Etsy'de sepet döviz bazlı ve yüksek, kargo ise pahalıdır. Karşılaştırmayı sipariş başı net kalan tutarla yapın.",
+          "Trendyol ve Hepsiburada tarafını Trendyol Komisyon ve Kâr Hesaplama aracıyla, Etsy tarafını bu yazıdaki formülle hesaplayın. El yapımı, kişiye özel ya da tasarım ürünlerinde Etsy'nin yüksek sepet tutarı kargo ve kesintiyi rahatça karşılayabilir; standart ve ağır ürünlerde ise yurt içi pazaryerleri genellikle daha fazla bırakır.",
+        ],
+      },
+      {
+        heading: "Etsy'de ne satılır? Kârlı ürün için 5 kontrol",
+        paragraphs: [
+          "Etsy'de el yapımı ürünler, vintage ürünler (en az 20 yıllık) ve hobi malzemeleri satılabilir; satıcının tasarlamadığı ya da üretmediği hazır ürünlerin yeniden satışı Etsy kurallarına aykırıdır. Ürün seçerken yalnızca trende değil, kâr hesabına bakın:",
+        ],
+        bullets: [
+          "Hafif ve küçük mü? Yurt dışı kargo ağır ve hacimli ürünlerde kârı hızla eritir",
+          "Sipariş tutarı kesinti + kargo + maliyeti karşılıyor mu? Başabaş formülüyle kontrol edin",
+          "Kişiselleştirilebilir mi? Kişiye özel ürünler fiyat karşılaştırmasından kısmen korunur",
+          "Kırılgan mı? Paketleme maliyetini ve hasar riskini hesaba katın",
+          "Etsy kurallarına uygun mu? El yapımı/tasarım tanımını ve yasaklı ürün listesini ilan öncesi kontrol edin",
+        ],
+      },
+      {
+        heading: "Etsy satışında en sık yapılan 6 hata",
+        paragraphs: ["Bu hataların çoğu ilk ilanı açmadan önce yapılacak bir hesapla önlenir:"],
+        bullets: [
+          "Komisyonu %6,5 sanmak: ödeme işlem ücreti ve düzenleyici ücretle birlikte yüzdesel kesinti %14,67'dir",
+          "Kesintinin kargo üzerinden de alındığını unutmak",
+          "14 TL sabit ücreti düşük fiyatlı ürünlerde ihmal etmek: 300 TL'lik siparişte tek başına %4,7 eder",
+          "Offsite Ads'i fiyata katmamak: reklamdan gelen bir satış kârın yarısını götürebilir",
+          "Para çekimlerini küçük tutarlarla yapmak: 600 TL altındaki her çekimde 42 TL ödenir",
+          "Kargo profilini tahminle doldurmak: koliyi ölçün, desiyi hesaplayın, tarifeyi kargo firmasından alın",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Etsy kaç para komisyon alıyor?",
+        answer:
+          "Türkiye'deki bir satıcı için bir satışta işlem ücreti %6,5, ödeme işlem ücreti %6,5 + 14 TL ve düzenleyici işletim ücreti %1,67'dir; yani sipariş tutarının %14,67'si artı 14 TL. Buna ilan başı 0,20 $ listeleme ücreti eklenir. Satış Etsy'nin site dışı reklamından geldiyse %15 ya da %12 Offsite Ads ücreti de kesilir.",
+      },
+      {
+        question: "Etsy komisyonu nasıl hesaplanır?",
+        answer:
+          "Sipariş tutarını (ürün + kargo + varsa hediye paketi) %14,67 ile çarpın, 14 TL ödeme sabit ücretini ve 0,20 $ listeleme ücretinin TL karşılığını ekleyin. Örneğin 2.100 TL'lik siparişte 308,07 + 14 + 8,40 = 330,47 TL kesilir. Mağaza para biriminiz ödeme hesabınızdan farklıysa %2,5 dönüşüm ücretini de ekleyin.",
+      },
+      {
+        question: "Türkiye'den Etsy'de satış yapılabilir mi, para nasıl çekilir?",
+        answer:
+          "Evet. Türkiye Etsy Payments'ın kullanılabildiği ülkeler arasındadır. Ödemeler mağaza bakiyenize düşer ve Türkiye'deki banka hesabınıza TL olarak aktarılır. En az 50 TL çekilebilir; 600 TL altındaki çekimlerde 42 TL ücret alınır.",
+      },
+      {
+        question: "Etsy mağaza açmak ücretli mi?",
+        answer:
+          "Etsy aylık abonelik istemez; ilan başına 0,20 $ listeleme ücreti ve satış başına kesintiler alır. Etsy Plus gibi abonelikler ve Etsy Ads reklam harcaması isteğe bağlıdır. Hesap açılışında Etsy'nin gösterdiği güncel koşulları kontrol edin.",
+      },
+      {
+        question: "Etsy'de satış için şirket gerekir mi?",
+        answer:
+          "Etsy bireysel satıcıların da mağaza açmasına izin verir. Şirket kurmanız gerekip gerekmediği ve mali yükümlülükleriniz satış hacminize ve durumunuza bağlıdır; bunu bir mali müşavirle netleştirin.",
+      },
+    ],
+    howTo: {
+      name: "Etsy'de bir ürünün fiyatı nasıl hesaplanır?",
+      description: "Etsy kesintileri, kargo ve hedef kârla bir ilanın fiyatını beş adımda belirleme.",
+      steps: [
+        { name: "Maliyetleri toplayın", text: "Ürün maliyeti, paketleme ve kargo firmasına ödeyeceğiniz gerçek yurt dışı gönderim ücretini (desi ile) toplayın." },
+        { name: "Sabit ücretleri ekleyin", text: "Sipariş başı 14 TL ödeme sabit ücretini ve 0,20 $ listeleme ücretinin TL karşılığını ekleyin." },
+        { name: "Yüzdesel kesintiyi belirleyin", text: "İşlem (%6,5), ödeme (%6,5) ve düzenleyici işletim (%1,67) ücretlerini toplayın; para birimi dönüşümü ve Offsite Ads varsa ekleyin." },
+        { name: "Hedef kârı seçin", text: "Sipariş başına kalmasını istediğiniz tutarı belirleyin." },
+        { name: "Sipariş tutarını hesaplayın", text: "(Maliyetler + sabit ücretler + hedef kâr) / (1 − yüzdesel kesinti) ile sipariş tutarını bulun, alıcıdan alacağınız kargo ücretini düşerek ürün fiyatını belirleyin." },
+      ],
+    },
+    relatedToolKey: "desi",
+    resources: [
+      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+      { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "Dropshipping Nedir, Nasıl Yapılır?", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
+      { label: "E-Ticaret Sitesi Kurmak İçin Gerekenler", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
+      { label: "Etsy Yardım: Ödeme işlem ücretleri (ülkelere göre)", href: "https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy", external: true },
+      { label: "Etsy Topluluk Duyurusu: Düzenleyici işletim ücreti güncellemesi (Haziran 2026)", href: "https://community.etsy.com/forum/announcements-290/topic/regulatory-operating-fee-updates-for-some-markets-181930/", external: true },
     ],
   },
 ];
@@ -10731,6 +10930,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "What Is ROAS & How to Calculate It?", href: "/en/blog/what-is-roas-how-to-calculate/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "Etsy Fees Explained: How Much Etsy Takes", href: "/en/blog/etsy-fees-profit-calculation/" },
       { label: "Trendyol Seller Information Center: Platform Service Fee (Turkish)", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/platform-hizmet-bedeli", external: true },
       { label: "Trendyol Seller Information Center: Commissions (Turkish)", href: "https://akademi.trendyol.com/tr/satici-bilgi-merkezi/detay/trendyol-komisyonlari", external: true },
     ],
@@ -11891,6 +12091,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Trendyol Commission Rates", href: "/en/blog/trendyol-commission-rates/" },
       { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
       { label: "How to Run Instagram Ads", href: "/en/blog/how-to-run-instagram-ads/" },
+      { label: "Etsy Fees Explained: How Much Etsy Takes", href: "/en/blog/etsy-fees-profit-calculation/" },
       { label: "Amazon Seller Central: Drop shipping policy reminder", href: "https://sellercentral.amazon.com/forums/t/drop-shipping-policy-reminder/839620", external: true },
       { label: "Thompson Coburn: De minimis exemption suspended globally", href: "https://www.thompsoncoburn.com/insights/trump-administration-indefinitely-suspends-de-minimis-exemption-for-commercial-shipments-globally/", external: true },
       { label: "Turkey Ministry of Trade: Distance contracts", href: "https://tuketici.ticaret.gov.tr/yayinlar/tuketici-bilgi-rehberi/mesafeli-sozlesmeler-hakkinda-bilgilendirme", external: true },
@@ -13013,6 +13214,171 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "What Is ROI and How to Calculate It", href: "/en/blog/what-is-roi-how-to-calculate/" },
       { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
       { label: "What Is SEO and How to Do It", href: "/en/blog/what-is-seo-how-to-do-it/" },
+    ],
+  },
+  {
+    slug: "etsy-fees-profit-calculation",
+    seoTitle: "Etsy Fees 2026: How Much Etsy Takes + Profit Formula",
+    title: "Etsy Fees Explained: How Much Etsy Takes per Sale and How to Price for Profit (2026)",
+    description:
+      "How much does Etsy take per sale? Every Etsy fee in 2026 (listing, 6.5% transaction, payment processing, Offsite Ads), a worked example and a pricing formula.",
+    category: "performans-pazarlama",
+    tldr: [
+      "A typical Etsy sale carries three fees: a $0.20 listing fee, a 6.5% transaction fee on the item price plus shipping, and a payment processing fee (3% + $0.25 for US sellers; it varies by country). Some countries add a regulatory operating fee.",
+      "If the sale came from Etsy's Offsite Ads, Etsy also takes 15% (shops under $10,000 in trailing 12-month sales, who can opt out) or 12% (shops at $10,000 or more, mandatory), capped at $100 per order.",
+      "Example: a $40 item with $10 shipping is a $50 order. A US seller pays $5.20 in Etsy fees (10.4%). After a $12 product cost, $2 packaging and a $9 shipping label, $21.80 is left; an Offsite Ads sale leaves $14.30.",
+      "Price backwards from profit: Order total = (Product + packaging + shipping cost + fixed fees + target profit) / (1 − percentage fees). In the example, $15 profit needs a $42.49 order total, or $50.93 if the sale may come from Offsite Ads.",
+    ],
+    publishedAt: "2026-11-09",
+    readingMinutes: 9,
+    tags: ["Etsy", "Etsy Fees", "Marketplace", "Profit Margin", "Pricing", "Shipping"],
+    sections: [
+      {
+        heading: "How much does Etsy take per sale? (Short answer)",
+        paragraphs: [
+          "For a US seller, Etsy takes roughly 9.5% of the order total plus about $0.45 per sale: a 6.5% transaction fee, 3% + $0.25 payment processing and a $0.20 listing fee. On a $50 order that is $5.20, or 10.4%. If the buyer arrived through Etsy's Offsite Ads, another 15% or 12% comes off.",
+          "There is no monthly subscription to open a shop; Etsy charges per listing and per sale. The rest of this guide lists each fee, works through a full profit example and gives a formula to set prices that hit a target profit. Amounts are examples; Etsy's fees change, so check the current rates in your shop before you price.",
+        ],
+        bullets: [
+          "Listing fee: $0.20 per listing",
+          "Transaction fee: 6.5% of item price + shipping + gift wrap/personalization",
+          "Payment processing (US): 3% + $0.25 of the total the buyer pays; other countries differ",
+          "Regulatory operating fee: only in some countries (for example 0.48% in the UK and 1.14% in France from June 22, 2026)",
+          "Offsite Ads: 15% or 12% on ad-attributed orders, capped at $100",
+          "Currency conversion: 2.5% when your listing currency differs from your payment account currency",
+        ],
+      },
+      {
+        heading: "What are all the Etsy seller fees in 2026?",
+        paragraphs: [
+          "Etsy does not have a single commission rate. Each sale carries several separate fees, and the base they are calculated on matters: the transaction fee is charged on the item price plus the shipping you charge (and gift wrap or personalization), and payment processing is charged on the total the buyer pays. So charging shipping separately does not avoid fees on it.",
+          "Listings stay live for four months or until they sell. On a listing with more than one item in stock, each sale automatically renews it and charges another $0.20. Etsy Ads (on-site ads) and the Etsy Plus subscription are optional extra costs.",
+        ],
+        bullets: [
+          "Listing: $0.20 per listing, renews every 4 months or after each sale on multi-quantity listings",
+          "Transaction: 6.5% of the order amount (item + shipping + gift wrap/personalization)",
+          "Payment processing: percentage + fixed fee by country (US 3% + $0.25; Türkiye 6.5% + 14 TRY, for example)",
+          "Regulatory operating fee: applies in some countries; rates were updated on June 22, 2026 (e.g., Türkiye 1.67%, France 1.14%, UK 0.48%)",
+          "Offsite Ads: 15% for shops under $10,000 in trailing 12-month sales (opt-out allowed), 12% at $10,000 or more (mandatory); max $100 per order",
+          "Currency conversion: 2.5% if listing and payment account currencies differ",
+          "Optional: Etsy Ads spend, Etsy Plus subscription",
+        ],
+      },
+      {
+        heading: "How to calculate Etsy fees: worked example",
+        paragraphs: [
+          "Example (illustrative amounts, US seller, listing in USD): you sell a handmade item for $40 and charge $10 shipping. The order total is $50.",
+          "Fees: listing $0.20; transaction 6.5% × $50 = $3.25; payment processing 3% × $50 + $0.25 = $1.75. Total Etsy fees: $5.20, which is 10.4% of the order. If the sale came through Offsite Ads, add 15% × $50 = $7.50, for $12.70 in total (25.4%).",
+        ],
+        bullets: [
+          "Percentage fees = Order total × (6.5% + payment processing %) — 9.5% for a US seller",
+          "Fixed fees = payment processing fixed fee + $0.20 listing — $0.45 for a US seller",
+          "Total Etsy fees = Percentage fees + Fixed fees (+ regulatory fee, currency conversion or Offsite Ads where they apply)",
+        ],
+      },
+      {
+        heading: "How much profit do you keep on an Etsy sale?",
+        paragraphs: [
+          "Fees are only part of the picture. In the same example, the product costs you $12 to make, packaging is $2 and the shipping label costs $9. You keep $50 − $5.20 − $12 − $2 − $9 = $21.80, or 43.6% of the order.",
+          "If the sale came from Offsite Ads, you keep $21.80 − $7.50 = $14.30. If you are under the $10,000 threshold you can opt out; if you stay in, price for the worst case. If you also run Etsy Ads, subtract your ad cost per order and check whether the ads pay for themselves with the ROAS Calculator.",
+        ],
+        bullets: [
+          "Profit = Order total − Etsy fees − Product cost − Packaging − Actual shipping cost",
+          "Profit margin = Profit / Order total",
+          "With ads: Profit − Offsite Ads fee or Etsy Ads cost per order",
+        ],
+      },
+      {
+        heading: "How should you price on Etsy? The target profit formula",
+        paragraphs: [
+          "Adding a markup to cost leaves you short of your target because Etsy's percentage fees grow with the price. Work backwards from the profit you want instead.",
+          "In the example, costs are $12 + $2 + $9 = $23, fixed fees are $0.45 and percentage fees are 9.5%. For $15 profit per order: ($23 + $0.45 + $15) / (1 − 0.095) = $42.49 order total. If you charge $9 shipping, the item price is about $33.49.",
+          "To cover a possible Offsite Ads sale, add 15% to the percentage: $38.45 / (1 − 0.245) = $50.93. The break-even order total, which covers costs with zero profit, is $23.45 / 0.905 = $25.91; any sale below it loses money.",
+        ],
+        bullets: [
+          "Target order total = (Product + Packaging + Shipping cost + Fixed fees + Target profit) / (1 − Percentage fees)",
+          "Break-even order total = (Product + Packaging + Shipping cost + Fixed fees) / (1 − Percentage fees)",
+          "Offsite Ads buffer: add 15% (or 12%) to the percentage in the denominator",
+        ],
+      },
+      {
+        heading: "How do shipping costs affect Etsy profit?",
+        paragraphs: [
+          "Shipping is usually the largest cost after the product itself, especially for international orders. Carriers charge by the greater of actual weight and dimensional weight; international express services typically use Length × Width × Height (cm) / 5000. A 40 × 30 × 20 cm box is 4.8 kg dimensional weight with a 5000 divisor; switching to a 35 × 25 × 15 cm box drops it to 2.6 kg.",
+          "Measure your box with the Dimensional Weight Calculator and estimate the label cost with the Shipping Cost Calculator. If you offer free shipping, add the label cost to the item price and rerun the pricing formula: Etsy charges fees on the order total either way, so free shipping changes how the price looks to the buyer, not the fees you pay.",
+        ],
+      },
+      {
+        heading: "Is Etsy more expensive than other marketplaces?",
+        paragraphs: [
+          "Etsy's fee load for a US seller (about 10% of the order plus $0.45) is lower than the referral fees on many general marketplaces, but comparing percentages alone is misleading. Etsy order values for handmade and personalized goods tend to be higher, while shipping is often paid per order without marketplace-negotiated rates. Compare marketplaces on profit left per order, not on the headline fee.",
+          "For sellers outside the US the picture changes: in Türkiye, for example, payment processing is 6.5% + 14 TRY and the regulatory operating fee is 1.67%, so percentage fees reach 14.67% before Offsite Ads. Use the same formula with your country's rates, and model other marketplaces with the Marketplace Profit Calculator.",
+        ],
+      },
+      {
+        heading: "6 common Etsy pricing mistakes",
+        paragraphs: ["Most of these are avoided with one calculation before you publish a listing:"],
+        bullets: [
+          "Thinking Etsy takes 6.5%: with payment processing, US sellers pay 9.5% plus fixed fees",
+          "Forgetting that fees apply to the shipping you charge",
+          "Ignoring fixed fees on cheap items: $0.45 is 4.5% of a $10 order",
+          "Leaving Offsite Ads out of the price: one ad-attributed sale can cut profit by a third or more",
+          "Listing in a different currency from your bank account without counting the 2.5% conversion fee",
+          "Guessing shipping profiles: measure the box, calculate dimensional weight and use real carrier rates",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How much does Etsy take from a $100 sale?",
+        answer:
+          "For a US seller, on a $100 order total (item plus shipping) Etsy takes $6.50 transaction fee, $3.25 payment processing (3% + $0.25) and $0.20 listing fee: $9.95 in total. If the sale came from Offsite Ads, add $15 (or $12 for shops over $10,000 in yearly sales).",
+      },
+      {
+        question: "Does Etsy charge fees on shipping?",
+        answer:
+          "Yes. The 6.5% transaction fee applies to the item price plus the shipping you charge, plus gift wrap or personalization if offered, and payment processing applies to the total the buyer pays.",
+      },
+      {
+        question: "Can I opt out of Etsy Offsite Ads?",
+        answer:
+          "Shops with less than $10,000 in sales over the past 12 months can opt out; if they stay in, the fee is 15% of ad-attributed orders. Shops at $10,000 or more are enrolled at 12% and cannot opt out. The fee is capped at $100 per order.",
+      },
+      {
+        question: "Does it cost money to open an Etsy shop?",
+        answer:
+          "Etsy has no monthly subscription for a standard shop; you pay $0.20 per listing and fees per sale. Etsy Plus and Etsy Ads are optional. Check the terms Etsy shows during sign-up, as they can vary by country.",
+      },
+      {
+        question: "How do I calculate Etsy fees for my country?",
+        answer:
+          "Add the 6.5% transaction fee to your country's payment processing percentage and any regulatory operating fee, multiply by the order total, then add the payment processing fixed fee and $0.20 listing fee. Etsy's help center lists payment processing fees by country.",
+      },
+    ],
+    howTo: {
+      name: "How to price an Etsy listing for profit",
+      description: "Set an Etsy price that covers fees, shipping and a target profit in five steps.",
+      steps: [
+        { name: "Add up your costs", text: "Total the product cost, packaging and the actual shipping label cost based on box size and weight." },
+        { name: "Add fixed fees", text: "Add the payment processing fixed fee for your country and the $0.20 listing fee." },
+        { name: "Set the percentage fees", text: "Add the 6.5% transaction fee, your payment processing percentage and any regulatory operating fee; include currency conversion and Offsite Ads if they apply." },
+        { name: "Choose a target profit", text: "Decide how much you want to keep per order." },
+        { name: "Calculate the order total", text: "Divide (costs + fixed fees + target profit) by (1 − percentage fees), then subtract the shipping you charge to get the item price." },
+      ],
+    },
+    relatedToolKey: "desi",
+    resources: [
+      { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
+      { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Gross Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "How to Calculate Profit Margin", href: "/en/blog/how-to-calculate-profit-margin/" },
+      { label: "Trendyol Commission Rates", href: "/en/blog/trendyol-commission-rates/" },
+      { label: "What Is Dropshipping and How Does It Work?", href: "/en/blog/what-is-dropshipping-how-it-works/" },
+      { label: "How to Start an Ecommerce Website: Checklist", href: "/en/blog/how-to-start-an-ecommerce-website-checklist/" },
+      { label: "Etsy Help: Payment processing fees by country", href: "https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy", external: true },
+      { label: "Etsy Community announcement: Regulatory operating fee updates (June 2026)", href: "https://community.etsy.com/forum/announcements-290/topic/regulatory-operating-fee-updates-for-some-markets-181930/", external: true },
     ],
   },
 ];

@@ -48,6 +48,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi: /en/free-tools/shipping-cost-calculator/ (ÖNCELİKLİ), /en/blog/what-is-google-ads-how-it-works/ (09.11 bölümler), /en/blog/what-is-roi-how-to-calculate/, /en/blog/how-to-start-an-ecommerce-website-checklist/ (ikisi "URL Google'da yok"), /en/blog/trendyol-commission-rates/ — 2026-11-09 (5/5)
 - [ ] Dizine ekleme isteği (2026-11-09 güçlendirildi, TR): /blog/utm-nedir-utm-parametreleri/ (GA4 sorun giderme bölümü; 08.11'de istenmişti, 1-2 gün sonra yeniden)
 - [ ] Dizine ekleme isteği (kalan EN): /en/blog/what-is-a-kpi-marketing-kpi-examples/, /en/blog/what-is-roas-how-to-calculate/
+- [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 1, TR önce): /blog/etsyde-satis-komisyon-kar-hesabi/, /en/blog/etsy-fees-profit-calculation/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
