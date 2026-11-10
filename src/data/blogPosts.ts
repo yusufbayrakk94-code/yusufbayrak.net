@@ -3847,6 +3847,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Landing Page Nedir? Dönüşen Açılış Sayfası", href: "/blog/landing-page-nedir-donusen-acilis-sayfasi/" },
       { label: "Instagram Reklam Verme Rehberi: Bütçe ve Fiyatlar", href: "/blog/instagram-reklam-verme-rehberi/" },
       { label: "CAC Nedir? Müşteri Edinme Maliyeti Nasıl Hesaplanır?", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
@@ -4958,6 +4959,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Landing Page Nedir? Dönüşen Açılış Sayfası Kontrol Listesi", href: "/blog/landing-page-nedir-donusen-acilis-sayfasi/" },
       { label: "CRM Nedir, Ne İşe Yarar? Lead'den Müşteriye Ölçüm", href: "/blog/crm-nedir-ne-ise-yarar/" },
       { label: "Reklam Bütçesi Hesaplama (B2B modu)", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici/" },
@@ -6146,6 +6148,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "Landing Page Nedir? Açılış Sayfası Kontrol Listesi", href: "/blog/landing-page-nedir-donusen-acilis-sayfasi/" },
       { label: "KPI Nedir? Pazarlama KPI Örnekleri", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
       { label: "Google Ads Kampanya Planı Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/google-ads-kampanya-plani-sablonu.xlsx", external: true },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
@@ -7389,6 +7392,221 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google: Widget linkleri hakkında hatırlatma (2016)", href: "https://developers.google.com/search/blog/2016/09/a-reminder-about-widget-links", external: true },
       { label: "Search Console Yardım: Linkleri reddetme (disavow)", href: "https://support.google.com/webmasters/answer/2648487", external: true },
       { label: "Search Console Yardım: Bağlantılar raporu", href: "https://support.google.com/webmasters/answer/9049606", external: true },
+    ],
+  },
+  {
+    slug: "landing-page-nedir-donusen-acilis-sayfasi",
+    seoTitle: "Landing Page Nedir? Dönüşen Açılış Sayfası Kontrol Listesi",
+    title: "Landing Page Nedir? Dönüşen Açılış Sayfası İçin Kontrol Listesi ve Örnek Hesap",
+    description:
+      "Landing page (açılış sayfası) nedir, ana sayfadan farkı ne? Türleri, dönüşüm oranı formülü, CPL'ye etkisi, hız eşikleri, form ve 20 maddelik kontrol listesi.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Landing page (açılış sayfası, iniş sayfası), ziyaretçinin bir reklama, e-postaya ya da linke tıkladıktan sonra geldiği ve tek bir eylem için tasarlanan sayfadır: form doldurmak, satın almak, demo istemek ya da indirmek.",
+      "Ana sayfa herkese her şeyi anlatır; landing page tek bir kitleye tek bir teklif sunar. Bu odak, aynı reklam bütçesinden daha çok dönüşüm almanın en ucuz yoludur.",
+      "Dönüşüm oranı = dönüşüm ÷ ziyaretçi × 100. Örnek: 2.000 tıklama ve 6 TL TBM ile 12.000 TL harcamada dönüşüm oranı %2'den %3'e çıkarsa lead sayısı 40'tan 60'a çıkar, lead başı maliyet 300 TL'den 200 TL'ye iner.",
+      "İyi bir landing page'in çekirdeği: reklamla aynı vaadi tekrarlayan başlık, tek ve net eylem çağrısı, yalnızca gerekli form alanları, güven kanıtı ve hızlı yüklenme (LCP 2,5 saniyenin altında).",
+    ],
+    publishedAt: "2026-11-10",
+    readingMinutes: 10,
+    tags: ["Landing Page", "Açılış Sayfası", "Dönüşüm Oranı", "CRO", "Google Ads", "Lead"],
+    sections: [
+      {
+        heading: "Landing page nedir? (Kısa cevap)",
+        paragraphs: [
+          "Landing page, Türkçede açılış sayfası ya da iniş sayfası, ziyaretçinin bir reklama, e-postadaki linke veya sosyal medya gönderisine tıkladıktan sonra 'indiği' sayfadır. Pazarlamada bu terim daha dar bir anlamda kullanılır: tek bir kampanya ve tek bir hedef için hazırlanmış, ziyaretçiyi tek bir eyleme yönlendiren sayfa.",
+          "Bu eylem işinize göre değişir: B2B'de demo ya da teklif formu, e-ticarette satın alma, SaaS'ta ücretsiz deneme kaydı, içerik pazarlamasında e-kitap ya da şablon indirme. Ortak nokta, sayfada ziyaretçinin dikkatini dağıtacak başka bir yol bırakmamaktır.",
+          "Bu yazıda landing page'in ana sayfadan farkını, türlerini, dönüşüm oranının reklam maliyetinize etkisini sayılarla, sayfanın bölüm bölüm nasıl kurulacağını ve yayından önce kullanabileceğiniz 20 maddelik kontrol listesini bulacaksınız.",
+        ],
+      },
+      {
+        heading: "Landing page ile ana sayfa arasındaki fark nedir?",
+        paragraphs: [
+          "Ana sayfa markanızın vitrini gibidir: farklı ihtiyaçlarla gelen herkesi doğru yere yönlendirmeye çalışır, bu yüzden menüsü, birden fazla teklifi ve çok sayıda linki vardır. Landing page ise belirli bir reklamdan gelen belirli bir kitle için yazılır ve tek bir soruya cevap verir: 'Tıkladığım şey burada mı ve ne yapmam gerekiyor?'",
+          "Reklamı ana sayfaya göndermek en yaygın ve en pahalı hatalardan biridir. 'Kargo desi hesaplama' arayan birini ana sayfaya gönderirseniz, aradığı şeyi kendisi bulmak zorunda kalır; bir kısmı bulamadan çıkar ve o tıklamanın parasını yine ödersiniz.",
+        ],
+        bullets: [
+          "Hedef: ana sayfada çok sayıda, landing page'de tek bir eylem",
+          "Kitle: ana sayfada herkes, landing page'de belirli bir reklam ya da segment",
+          "Gezinme: ana sayfada tam menü, landing page'de çoğu zaman menüsüz ya da sade",
+          "Metin: ana sayfada marka anlatımı, landing page'de reklamdaki vaadin devamı",
+          "Ölçüm: ana sayfada genel trafik metrikleri, landing page'de tek bir dönüşüm oranı",
+        ],
+      },
+      {
+        heading: "Landing page türleri nelerdir?",
+        paragraphs: [
+          "Türleri sayfanın istediği eyleme göre ayırmak en kullanışlı yoldur, çünkü her tür farklı bir başarı ölçüsüne sahiptir:",
+        ],
+        bullets: [
+          "Lead (potansiyel müşteri) sayfası: form karşılığı teklif, demo, danışmanlık ya da içerik sunar. Ölçü: form dönüşüm oranı ve lead başı maliyet (CPL).",
+          "Satış ya da ürün odaklı sayfa: tek bir ürün veya paket için doğrudan satın almaya yönlendirir. Ölçü: satın alma oranı ve ROAS.",
+          "Tıklama (ara) sayfası: teklifi ısıtıp ziyaretçiyi sepet veya kayıt sayfasına geçirir. Ölçü: sonraki adıma geçiş oranı.",
+          "Etkinlik ya da webinar kayıt sayfası: tarih, konuşmacı ve gündemle kayıt toplar. Ölçü: kayıt oranı ve katılım oranı.",
+          "Uygulama indirme ya da deneme sayfası: mağaza linkine veya kayıt formuna yönlendirir. Ölçü: kurulum ya da aktif kullanıcıya dönüşüm.",
+          "Teşekkür sayfası: dönüşümden sonra açılır, sonraki adımı söyler ve dönüşüm ölçümünün tetiklendiği yerdir. Çoğu rehberde unutulur ama her landing page'in bir parçasıdır.",
+        ],
+      },
+      {
+        heading: "Landing page dönüşüm oranı nasıl hesaplanır? Reklam maliyetine etkisi",
+        paragraphs: [
+          "Dönüşüm oranı = dönüşüm sayısı ÷ ziyaretçi (ya da tıklama) sayısı × 100. 1.500 ziyaretçiden 45 form geldiyse dönüşüm oranı %3'tür. Reklam tarafında ise lead başı maliyet = tıklama başı maliyet (TBM) ÷ dönüşüm oranı formülüyle doğrudan bağlanır.",
+          "Örnek (örnek tutarlar): bir Google Ads kampanyası ayda 2.000 tıklama getiriyor, TBM 6 TL, toplam harcama 12.000 TL. Sayfanın dönüşüm oranı %2 ise 40 lead gelir ve lead başı maliyet 300 TL olur. Aynı trafikle sayfayı iyileştirip dönüşüm oranını %3'e çıkarırsanız 60 lead alırsınız ve maliyet 200 TL'ye iner. Dönüşüm oranı %1'e düşerse lead başı maliyet 600 TL'ye çıkar.",
+          "Bu yüzden landing page iyileştirmesi çoğu zaman tekliften ya da hedeflemeden daha ucuz bir kaldıraçtır: reklam bütçesine bir lira eklemeden lead maliyetini üçte bir düşürebilir. Kendi rakamlarınızı Dönüşüm Oranı Hesaplayıcı ile, lead maliyetini CPL rehberindeki formülle kontrol edebilirsiniz.",
+        ],
+        bullets: [
+          "%1 dönüşüm → 20 lead → 600 TL lead başı maliyet",
+          "%2 dönüşüm → 40 lead → 300 TL",
+          "%3 dönüşüm → 60 lead → 200 TL",
+          "%4 dönüşüm → 80 lead → 150 TL",
+        ],
+      },
+      {
+        heading: "İyi bir landing page'de hangi bölümler olmalı?",
+        paragraphs: [
+          "Etkili sayfaların çoğu aynı sırayı izler, çünkü ziyaretçinin kafasındaki soruları aynı sırayla cevaplar: Doğru yerde miyim? Bu bana ne kazandırır? Neden inanayım? Ne yapmalıyım? Ya bir sorun çıkarsa?",
+        ],
+        bullets: [
+          "1. Başlık (H1): reklamdaki vaadi aynı kelimelerle tekrarlayın. Ziyaretçi ilk saniyede doğru yerde olduğunu anlamalı.",
+          "2. Alt başlık: kime, ne sonuç, ne kadar sürede ya da hangi koşulla sorusunu tek cümlede cevaplayın.",
+          "3. Eylem çağrısı (CTA): ekranın ilk görünen kısmında, eylemi anlatan bir düğme ('Teklif al', 'Ücretsiz dene'); 'Gönder' gibi belirsiz metinlerden kaçının.",
+          "4. Fayda listesi: özellik değil sonuç yazın; 3-5 madde yeterli.",
+          "5. Güven kanıtı: gerçek müşteri yorumları, logo, vaka rakamı, sertifika, iade veya garanti koşulu. Uydurma yorum kullanmayın; hem güveni hem yasal riski yönetemezsiniz.",
+          "6. Form ya da satın alma alanı: yalnızca gerekli alanlar, açık bir gizlilik notu.",
+          "7. Sık sorulan sorular: fiyat, süre, iptal, teslimat gibi itirazları sayfada cevaplayın.",
+          "8. Tekrar eden CTA: uzun sayfalarda sonda da aynı eylem çağrısını verin.",
+        ],
+      },
+      {
+        heading: "Reklam ile landing page uyumu neden önemli? Mesaj eşleşmesi",
+        paragraphs: [
+          "Mesaj eşleşmesi, reklamda verdiğiniz vaadin sayfada aynı kelimelerle ve aynı teklifle karşılanmasıdır. Reklamda '%20 indirimli kurulum' yazıp sayfada indirimden hiç söz etmezseniz, ziyaretçi yanlış yere geldiğini düşünüp çıkar.",
+          "Google Ads'te bu doğrudan ölçülür: Kalite Puanı'nın üç bileşeninden biri 'açılış sayfası deneyimi'dir (diğerleri beklenen tıklama oranı ve reklam alaka düzeyi). Google bunu, sayfanızın reklamı tıklayan kişi için ne kadar alakalı ve faydalı olduğu olarak tanımlar ve 'ortalamanın üstünde / ortalama / ortalamanın altında' olarak gösterir. Kalite Puanı açık artırmaya doğrudan girmese de sorunun nerede olduğunu gösteren iyi bir teşhis aracıdır.",
+          "Pratik kural: her reklam grubu, mümkünse kendi landing page'ine ya da en azından başlığı o gruba göre değişen bir sayfaya gitmeli. Reklam başlığı, sayfanın H1'i, teklif ve CTA aynı kelimeleri paylaşmalı.",
+        ],
+      },
+      {
+        heading: "Landing page ne kadar hızlı olmalı?",
+        paragraphs: [
+          "Reklamdan gelen ziyaretçi sabırsızdır ve çoğunlukla mobildedir; sayfa açılmadan geri dönen her tıklama boşa ödenmiş paradır. Google'ın Core Web Vitals ölçütleri iyi bir hedef verir. Ziyaretlerin %75'inde şu değerlerin altında kalmayı hedefleyin:",
+          "Landing page'leri hızlandırmanın en etkili yolları: büyük görselleri sıkıştırıp doğru boyutta sunmak, ilk ekrandaki görsele öncelik vermek, gereksiz takip kodlarını ve sohbet eklentilerini kaldırmak, sayfa oluşturucuların ağır şablonları yerine sade bir yapı kullanmak. Hızı PageSpeed Insights ile hem mobil hem masaüstü için kontrol edin.",
+        ],
+        bullets: [
+          "LCP (en büyük içerik öğesinin yüklenmesi): 2,5 saniye veya daha az",
+          "INP (etkileşime yanıt süresi): 200 milisaniye veya daha az",
+          "CLS (sayfa kayması): 0,1 veya daha az",
+        ],
+      },
+      {
+        heading: "Formda kaç alan olmalı?",
+        paragraphs: [
+          "Sihirli bir sayı yok; doğru soru şudur: bu alan, satış ekibinin ya da sizin vereceğiniz bir kararı besliyor mu? Beslemiyorsa kaldırın. Ad, e-posta ve telefon çoğu lead formu için yeterlidir; şirket büyüklüğü veya bütçe gibi alanlar ancak lead'leri gerçekten farklı işliyorsanız eklenmelidir.",
+          "Daha uzun form daha az ama daha nitelikli lead getirebilir; bu bir tercih meselesidir. Kararı lead sayısına göre değil, satışa dönen lead başına maliyete göre verin. Formda kişisel veri topluyorsanız KVKK kapsamında aydınlatma metnine link verin; e-posta veya SMS ile pazarlama iletisi gönderecekseniz bunun için ayrı onay alın. Ayrıntılar için hukuk danışmanınıza başvurun.",
+        ],
+        bullets: [
+          "Her alanın kullanıldığı bir karar var mı?",
+          "Zorunlu olmayan alanlar 'isteğe bağlı' olarak işaretli mi?",
+          "Mobilde doğru klavye açılıyor mu (telefon alanında rakam klavyesi)?",
+          "Hata mesajı alanın yanında ve anlaşılır mı?",
+          "Gönderimden sonra teşekkür sayfası açılıyor ve dönüşüm ölçülüyor mu?",
+        ],
+      },
+      {
+        heading: "Landing page A/B testi için ne kadar trafik gerekir?",
+        paragraphs: [
+          "A/B testi, sayfanın iki sürümünü aynı anda farklı ziyaretçilere gösterip hangisinin daha iyi dönüştüğünü ölçmektir. Çoğu rehber 'A/B testi yapın' der ama ne kadar trafik gerektiğini söylemez. Kabaca bir yaklaşım (yaygın kullanılan %95 güven ve %80 güç varsayımıyla): varyant başına gereken ziyaretçi ≈ 16 × p × (1 − p) ÷ (fark)².",
+          "Örnek: dönüşüm oranınız %2 ve %2,5'e çıkan bir farkı (göreli %25 artış) yakalamak istiyorsunuz. 16 × 0,02 × 0,98 ÷ 0,005² ≈ 12.500 ziyaretçi, her varyant için. Ayda 2.000 tıklama alan bir kampanyada bu, iki varyant için yaklaşık bir yıl demektir.",
+          "Sonuç: düşük trafikli sayfalarda küçük değişiklikleri (düğme rengi gibi) test etmeye çalışmayın. Bunun yerine teklif, başlık ya da form uzunluğu gibi büyük farklar yaratan değişiklikleri yapın, önceki ve sonraki dönemin dönüşüm oranını karşılaştırın ve testi yalnızca yeterli trafiğe ulaştığınızda kurun.",
+        ],
+      },
+      {
+        heading: "Yayından önce 20 maddelik landing page kontrol listesi",
+        paragraphs: [
+          "Aşağıdaki listeyi her yeni kampanya sayfası için yayından önce tek tek işaretleyin. Bir maddeyi atlıyorsanız bunun bilinçli bir karar olduğundan emin olun.",
+        ],
+        bullets: [
+          "1. Sayfanın tek bir hedefi ve tek bir ana CTA'sı var",
+          "2. H1 reklamdaki vaadi aynı kelimelerle tekrarlıyor",
+          "3. Teklif (fiyat, indirim, süre) reklamla birebir aynı",
+          "4. Alt başlık kime ve ne sonuç sorusunu cevaplıyor",
+          "5. CTA ilk ekranda görünüyor ve eylemi anlatıyor",
+          "6. Menü ve sayfadan çıkaran linkler kaldırıldı ya da sadeleştirildi",
+          "7. Fayda maddeleri özellik değil sonuç anlatıyor",
+          "8. Gerçek güven kanıtı (yorum, logo, vaka, garanti) var",
+          "9. Form yalnızca gerekli alanları istiyor",
+          "10. Aydınlatma metni linki ve gerekiyorsa ayrı pazarlama onayı var",
+          "11. Sık sorulan itirazlar (fiyat, süre, iptal) cevaplanıyor",
+          "12. Mobilde metin okunuyor, düğmeler parmakla rahat tıklanıyor",
+          "13. LCP 2,5 saniyenin altında, sayfa kaymıyor",
+          "14. Görseller sıkıştırılmış ve doğru boyutta",
+          "15. Teşekkür sayfası sonraki adımı söylüyor",
+          "16. Dönüşüm olayı (ör. GA4'te generate_lead) teşekkür sayfasında ya da form gönderiminde tetikleniyor",
+          "17. Reklam linklerinde UTM parametreleri doğru ve küçük harfli",
+          "18. Google Ads'te otomatik etiketleme açık, dönüşüm işlemi doğru sayfaya bağlı",
+          "19. Sayfa kampanya bitince kaldırılacaksa noindex, kalıcıysa arama için de optimize edildi",
+          "20. Formu kendiniz doldurup lead'in CRM'e veya e-postanıza ulaştığını test ettiniz",
+        ],
+      },
+      {
+        heading: "Landing page yayından sonra nasıl ölçülür? İlk 14 gün",
+        paragraphs: [
+          "Yayından sonraki ilk iki hafta karar vermek için değil, sorun yakalamak için kullanılır. İlk gün form testini canlıda tekrarlayın ve GA4 Gerçek zamanlı raporunda dönüşüm olayının düştüğünü görün. İlk hafta sayfanın mobil ve masaüstü dönüşüm oranını ayrı ayrı izleyin; büyük bir fark genellikle mobil form ya da hız sorununu gösterir.",
+          "İkinci haftanın sonunda üç sayıya bakın: dönüşüm oranı, lead başı maliyet ve (satış verisi varsa) lead'den müşteriye dönüş oranı. Bu üçünü hedef ROAS ya da maksimum CPA ile karşılaştırın; sayfa hedefi tutturmuyorsa önce mesaj eşleşmesini ve teklifi, sonra formu ve hızı ele alın.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Landing page ne demek?",
+        answer:
+          "Landing page, Türkçede açılış ya da iniş sayfası, ziyaretçinin bir reklama veya linke tıkladıktan sonra geldiği ve tek bir eylem (form, satın alma, kayıt, indirme) için tasarlanan sayfadır.",
+      },
+      {
+        question: "Landing page ile web sitesi arasındaki fark nedir?",
+        answer:
+          "Web sitesi ve ana sayfa farklı ziyaretçilere birçok seçenek sunar. Landing page ise belirli bir kampanyadan gelen belirli bir kitleye tek teklif ve tek eylem sunar; menü ve çıkış linkleri genellikle sadeleştirilir.",
+      },
+      {
+        question: "İyi bir landing page dönüşüm oranı kaç olmalı?",
+        answer:
+          "Tek bir doğru sayı yoktur; sektör, teklif, trafik kaynağı ve formun uzunluğu oranı çok değiştirir. Doğru ölçü, dönüşüm oranının size kabul edilebilir bir lead başı maliyet veya ROAS sağlayıp sağlamadığıdır. Lead başı maliyet = TBM ÷ dönüşüm oranı formülüyle hedefinizi hesaplayın.",
+      },
+      {
+        question: "Landing page SEO için kullanılabilir mi?",
+        answer:
+          "Evet. Kalıcı bir teklif veya hizmet sayfasıysa arama niyetine uygun başlık, yeterli içerik ve iç linklerle arama için de optimize edilebilir. Kısa süreli kampanya sayfalarında ise genellikle noindex kullanılır ve kampanya bitince sayfa kaldırılır ya da yönlendirilir.",
+      },
+      {
+        question: "Landing page nasıl hazırlanır?",
+        answer:
+          "Önce tek hedefi ve kitleyi belirleyin, reklamdaki vaadi tekrarlayan bir başlık yazın, faydaları ve güven kanıtını ekleyin, yalnızca gerekli alanları içeren bir form ve net bir CTA koyun, sayfayı hızlandırın, dönüşüm ölçümünü kurun ve formu yayından önce test edin.",
+      },
+    ],
+    howTo: {
+      name: "Dönüşen bir landing page nasıl hazırlanır?",
+      description: "Hedeften ölçüme altı adımda açılış sayfası.",
+      steps: [
+        { name: "Tek hedefi ve kitleyi belirleyin", text: "Sayfanın istediği tek eylemi (form, satın alma, kayıt) ve hangi reklamdan hangi kitlenin geleceğini yazın." },
+        { name: "Mesaj eşleşmesini kurun", text: "Reklam başlığındaki vaadi H1'de aynı kelimelerle tekrarlayın; teklif ve CTA reklamla birebir aynı olsun." },
+        { name: "Bölümleri sırayla yazın", text: "Başlık, alt başlık, CTA, fayda listesi, güven kanıtı, form ve SSS sırasını izleyin." },
+        { name: "Formu sadeleştirin", text: "Her alanın bir kararı beslediğinden emin olun; aydınlatma metni linkini ve gerekiyorsa ayrı pazarlama onayını ekleyin." },
+        { name: "Hızı ve mobil deneyimi kontrol edin", text: "LCP 2,5 saniyenin, INP 200 ms'nin, CLS 0,1'in altında olsun; düğmeler mobilde rahat tıklansın." },
+        { name: "Ölçümü kurup test edin", text: "Teşekkür sayfasında dönüşüm olayını tetikleyin, UTM'leri kontrol edin, formu kendiniz doldurup lead'in ulaştığını doğrulayın." },
+      ],
+    },
+    relatedToolKey: "conversion",
+    resources: [
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "CPL Nedir? Lead Başı Maliyet", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
+      { label: "Google Ads Reklam Verme Rehberi", href: "/blog/google-ads-reklam-verme-rehberi/" },
+      { label: "Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "Google Ads Yardım: Kalite Puanı hakkında", href: "https://support.google.com/google-ads/answer/6167118", external: true },
+      { label: "web.dev: Core Web Vitals eşikleri", href: "https://web.dev/articles/vitals", external: true },
+      { label: "KVKK (Kişisel Verileri Koruma Kurumu)", href: "https://www.kvkk.gov.tr/", external: true },
     ],
   },
 ];
@@ -10797,6 +11015,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is a Landing Page? (Conversion Checklist)", href: "/en/blog/what-is-a-landing-page-checklist/" },
       { label: "How to Run Instagram Ads: Cost and Budget", href: "/en/blog/how-to-run-instagram-ads/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
@@ -11890,6 +12109,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is a Landing Page? High-Converting Checklist", href: "/en/blog/what-is-a-landing-page-checklist/" },
       { label: "What Is CRM? How It Works, Costs and Payback", href: "/en/blog/what-is-crm-how-it-works/" },
       { label: "Ad Budget Calculator (B2B mode)", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "CAC Calculator", href: "/en/free-tools/cac-calculator/" },
@@ -12998,6 +13218,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is a Landing Page? 20-Point Checklist", href: "/en/blog/what-is-a-landing-page-checklist/" },
       { label: "What Is a KPI? Marketing KPI Examples", href: "/en/blog/what-is-a-kpi-marketing-kpi-examples/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
@@ -14183,6 +14404,220 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google: A reminder about widget links (2016)", href: "https://developers.google.com/search/blog/2016/09/a-reminder-about-widget-links", external: true },
       { label: "Search Console Help: Disavow links", href: "https://support.google.com/webmasters/answer/2648487", external: true },
       { label: "Search Console Help: Links report", href: "https://support.google.com/webmasters/answer/9049606", external: true },
+    ],
+  },
+  {
+    slug: "what-is-a-landing-page-checklist",
+    seoTitle: "What Is a Landing Page? High-Converting Checklist",
+    title: "What Is a Landing Page? A Checklist for Pages That Convert, With a Worked Example",
+    description:
+      "What is a landing page and how is it different from a homepage? Types, conversion rate formula, cost per lead impact, speed targets and a 20-point checklist.",
+    category: "performans-pazarlama",
+    tldr: [
+      "A landing page is the page a visitor arrives on after clicking an ad, email or link, built around a single action: fill in a form, buy, book a demo or download.",
+      "A homepage tells everyone everything; a landing page makes one offer to one audience. That focus is the cheapest way to get more conversions from the same ad budget.",
+      "Conversion rate = conversions ÷ visitors × 100. Example: 2,000 clicks at a $1.50 CPC ($3,000 spend). Lifting conversion rate from 2% to 3% takes you from 40 to 60 leads and cuts cost per lead from $75 to $50.",
+      "The core of a good landing page: a headline that repeats the ad's promise, one clear call to action, only the form fields you need, real proof and fast loading (LCP under 2.5 seconds).",
+    ],
+    publishedAt: "2026-11-10",
+    readingMinutes: 9,
+    tags: ["Landing Page", "Conversion Rate", "CRO", "Google Ads", "Lead Generation"],
+    sections: [
+      {
+        heading: "What is a landing page? (Short answer)",
+        paragraphs: [
+          "A landing page is the page a visitor 'lands' on after clicking an ad, a link in an email or a social post. In marketing the term is narrower: a page built for one campaign and one goal, guiding the visitor toward a single action.",
+          "That action depends on your business: a demo or quote form in B2B, a purchase in ecommerce, a free trial sign-up in SaaS, an ebook or template download in content marketing. What these pages share is that they leave no other path to distract the visitor.",
+          "Below you'll find how a landing page differs from a homepage, the main types, how conversion rate changes your ad costs (with numbers), how to build the page section by section and a 20-point pre-launch checklist.",
+        ],
+      },
+      {
+        heading: "What's the difference between a landing page and a homepage?",
+        paragraphs: [
+          "A homepage is your shop window: it tries to route visitors with different needs to the right place, so it has a menu, several offers and lots of links. A landing page is written for a specific audience coming from a specific ad and answers one question: 'Is what I clicked on here, and what do I do next?'",
+          "Sending ads to the homepage is one of the most common and expensive mistakes. Someone searching for a 'dimensional weight calculator' who lands on your homepage has to hunt for it; some leave before they find it, and you still pay for the click.",
+        ],
+        bullets: [
+          "Goal: many actions on a homepage, one on a landing page",
+          "Audience: everyone vs a specific ad or segment",
+          "Navigation: full menu vs no menu or a minimal one",
+          "Copy: brand story vs a continuation of the ad's promise",
+          "Measurement: general traffic metrics vs a single conversion rate",
+        ],
+      },
+      {
+        heading: "What are the types of landing pages?",
+        paragraphs: [
+          "Grouping by the action the page asks for is the most useful split, because each type has its own success metric:",
+        ],
+        bullets: [
+          "Lead generation page: offers a quote, demo, consultation or content in exchange for a form. Metric: form conversion rate and cost per lead (CPL).",
+          "Sales or product page: drives a direct purchase of one product or bundle. Metric: purchase rate and ROAS.",
+          "Click-through page: warms up the offer and passes the visitor to the cart or sign-up. Metric: click-through to the next step.",
+          "Event or webinar page: collects registrations with date, speakers and agenda. Metric: registration and attendance rate.",
+          "App download or trial page: sends visitors to the app store or sign-up form. Metric: installs or activated users.",
+          "Thank-you page: opens after conversion, tells the visitor what happens next and is where conversion tracking fires. Most guides forget it, but every landing page needs one.",
+        ],
+      },
+      {
+        heading: "How do you calculate landing page conversion rate? The impact on ad costs",
+        paragraphs: [
+          "Conversion rate = conversions ÷ visitors (or clicks) × 100. If 45 forms come from 1,500 visitors, the conversion rate is 3%. On the ad side, cost per lead = cost per click (CPC) ÷ conversion rate, so the two are directly linked.",
+          "Example: a Google Ads campaign brings 2,000 clicks a month at a $1.50 CPC, $3,000 in spend. At a 2% conversion rate you get 40 leads at $75 each. Improve the page to 3% with the same traffic and you get 60 leads at $50. If conversion rate drops to 1%, cost per lead jumps to $150.",
+          "That's why landing page work is often a cheaper lever than bids or targeting: it can cut lead costs by a third without adding a dollar to the budget. Check your own numbers with the Conversion Rate Calculator and the CPL formula.",
+        ],
+        bullets: [
+          "1% conversion → 20 leads → $150 cost per lead",
+          "2% conversion → 40 leads → $75",
+          "3% conversion → 60 leads → $50",
+          "4% conversion → 80 leads → $37.50",
+        ],
+      },
+      {
+        heading: "Which sections should a good landing page have?",
+        paragraphs: [
+          "Most effective pages follow the same order because they answer the visitor's questions in that order: Am I in the right place? What's in it for me? Why should I believe it? What should I do? What if something goes wrong?",
+        ],
+        bullets: [
+          "1. Headline (H1): repeat the ad's promise in the same words so the visitor knows instantly they're in the right place.",
+          "2. Subheadline: who it's for, what result, how fast or on what terms, in one sentence.",
+          "3. Call to action: above the fold, a button that names the action ('Get a quote', 'Start free trial'); avoid vague labels like 'Submit'.",
+          "4. Benefits: outcomes, not features; 3-5 bullets are enough.",
+          "5. Proof: real customer reviews, logos, case study numbers, certifications, a refund or guarantee policy. Never invent reviews.",
+          "6. Form or checkout: only the fields you need, plus a clear privacy note.",
+          "7. FAQ: answer objections about price, timing, cancellation or delivery on the page.",
+          "8. Repeated CTA: on long pages, repeat the same call to action at the end.",
+        ],
+      },
+      {
+        heading: "Why does ad-to-page message match matter?",
+        paragraphs: [
+          "Message match means the promise in your ad is met on the page with the same words and the same offer. If the ad says '20% off setup' and the page never mentions a discount, visitors assume they're in the wrong place and leave.",
+          "Google Ads measures this directly: one of Quality Score's three components is landing page experience (the others are expected CTR and ad relevance). Google defines it as how relevant and useful your landing page is to people who click your ad, rated above average, average or below average. Quality Score isn't an input in the ad auction, but it's a good diagnostic for where the problem is.",
+          "Rule of thumb: each ad group should go to its own landing page, or at least to a page whose headline changes for that group. The ad headline, the page H1, the offer and the CTA should share the same words.",
+        ],
+      },
+      {
+        heading: "How fast should a landing page be?",
+        paragraphs: [
+          "Paid visitors are impatient and mostly on mobile; every click that bounces before the page loads is wasted spend. Google's Core Web Vitals give a sensible target. Aim to stay within these values for at least 75% of visits:",
+          "The biggest speed wins on landing pages: compress images and serve them at the right size, prioritize the above-the-fold image, remove unnecessary tracking scripts and chat widgets, and prefer a lean layout over heavy page-builder templates. Check mobile and desktop in PageSpeed Insights.",
+        ],
+        bullets: [
+          "LCP (Largest Contentful Paint): 2.5 seconds or less",
+          "INP (Interaction to Next Paint): 200 milliseconds or less",
+          "CLS (Cumulative Layout Shift): 0.1 or less",
+        ],
+      },
+      {
+        heading: "How many fields should a landing page form have?",
+        paragraphs: [
+          "There's no magic number; the real question is whether each field feeds a decision you or your sales team will make. If it doesn't, remove it. Name, email and phone are enough for most lead forms; company size or budget fields belong only if you actually route leads differently.",
+          "Longer forms can bring fewer but better leads; it's a trade-off. Decide on cost per lead that turns into a customer, not on raw lead count. If you collect personal data, link to your privacy notice and get separate consent where you plan to send marketing emails or texts; check the rules that apply in your country with a legal adviser.",
+        ],
+        bullets: [
+          "Does every field feed a decision?",
+          "Are non-required fields marked 'optional'?",
+          "Does the right keyboard open on mobile (numeric for phone)?",
+          "Are error messages next to the field and clear?",
+          "Does a thank-you page open after submit, and is the conversion tracked?",
+        ],
+      },
+      {
+        heading: "How much traffic do you need to A/B test a landing page?",
+        paragraphs: [
+          "An A/B test shows two versions of the page to different visitors at the same time and measures which converts better. Most guides say 'run A/B tests' but skip how much traffic it takes. A rough rule (assuming the common 95% confidence and 80% power): visitors needed per variant ≈ 16 × p × (1 − p) ÷ (difference)².",
+          "Example: your conversion rate is 2% and you want to detect a lift to 2.5% (a 25% relative increase). 16 × 0.02 × 0.98 ÷ 0.005² ≈ 12,500 visitors per variant. For a campaign getting 2,000 clicks a month, that's roughly a year for two variants.",
+          "The takeaway: on low-traffic pages, don't test small tweaks like button colors. Make changes big enough to matter (offer, headline, form length), compare conversion rate before and after, and set up proper tests only once you have the traffic.",
+        ],
+      },
+      {
+        heading: "20-point landing page checklist before launch",
+        paragraphs: [
+          "Tick these off for every new campaign page before it goes live. If you skip one, make sure it's a deliberate decision.",
+        ],
+        bullets: [
+          "1. The page has one goal and one primary CTA",
+          "2. The H1 repeats the ad's promise in the same words",
+          "3. The offer (price, discount, timing) matches the ad exactly",
+          "4. The subheadline says who it's for and what result",
+          "5. The CTA is above the fold and names the action",
+          "6. The menu and exit links are removed or minimized",
+          "7. Benefits describe outcomes, not features",
+          "8. Real proof (reviews, logos, case study, guarantee) is present",
+          "9. The form asks only for necessary fields",
+          "10. A privacy notice link and, where needed, separate marketing consent are in place",
+          "11. Common objections (price, timing, cancellation) are answered",
+          "12. Text is readable on mobile and buttons are easy to tap",
+          "13. LCP is under 2.5 seconds and the layout doesn't shift",
+          "14. Images are compressed and correctly sized",
+          "15. The thank-you page explains the next step",
+          "16. The conversion event (for example generate_lead in GA4) fires on the thank-you page or form submit",
+          "17. UTM parameters on ad links are correct and lowercase",
+          "18. Google Ads auto-tagging is on and the conversion action points at the right page",
+          "19. Temporary campaign pages are noindexed; permanent ones are optimized for search too",
+          "20. You filled in the form yourself and confirmed the lead reached your CRM or inbox",
+        ],
+      },
+      {
+        heading: "How do you measure a landing page after launch? The first 14 days",
+        paragraphs: [
+          "The first two weeks are for catching problems, not for verdicts. On day one, repeat the form test live and watch the conversion event arrive in GA4's Realtime report. In week one, track mobile and desktop conversion rates separately; a big gap usually points to a mobile form or speed issue.",
+          "At the end of week two, look at three numbers: conversion rate, cost per lead and (if you have sales data) lead-to-customer rate. Compare them with your target ROAS or maximum CPA. If the page misses, fix message match and the offer first, then the form and speed.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What is a landing page in simple terms?",
+        answer:
+          "A landing page is the page visitors arrive on after clicking an ad or link, designed around one action such as filling in a form, buying, signing up or downloading.",
+      },
+      {
+        question: "What's the difference between a landing page and a website?",
+        answer:
+          "A website and its homepage give different visitors many options. A landing page gives one audience from one campaign a single offer and a single action, usually with navigation and exit links stripped back.",
+      },
+      {
+        question: "What is a good landing page conversion rate?",
+        answer:
+          "There's no single right number; industry, offer, traffic source and form length change it a lot. The right test is whether your conversion rate delivers an acceptable cost per lead or ROAS. Work out your target with cost per lead = CPC ÷ conversion rate.",
+      },
+      {
+        question: "Can a landing page rank in Google?",
+        answer:
+          "Yes. A permanent offer or service page can be optimized for search with a headline that matches search intent, enough content and internal links. Short-lived campaign pages are usually noindexed and removed or redirected when the campaign ends.",
+      },
+      {
+        question: "How do you create a landing page?",
+        answer:
+          "Define one goal and audience, write a headline that repeats the ad's promise, add benefits and proof, include a form with only the necessary fields and a clear CTA, make the page fast, set up conversion tracking and test the form before launch.",
+      },
+    ],
+    howTo: {
+      name: "How to build a landing page that converts",
+      description: "From goal to measurement in six steps.",
+      steps: [
+        { name: "Define one goal and audience", text: "Write down the single action the page asks for and which ad brings which audience." },
+        { name: "Set up message match", text: "Repeat the ad headline's promise in the H1 with the same words; keep the offer and CTA identical to the ad." },
+        { name: "Write the sections in order", text: "Headline, subheadline, CTA, benefits, proof, form and FAQ." },
+        { name: "Trim the form", text: "Make sure every field feeds a decision; add a privacy notice link and separate marketing consent where needed." },
+        { name: "Check speed and mobile", text: "Keep LCP under 2.5 s, INP under 200 ms and CLS under 0.1; make buttons easy to tap on mobile." },
+        { name: "Set up tracking and test", text: "Fire the conversion event on the thank-you page, check UTMs and submit the form yourself to confirm the lead arrives." },
+      ],
+    },
+    relatedToolKey: "conversion",
+    resources: [
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "What Is CPL? Cost per Lead", href: "/en/blog/what-is-cpl-cost-per-lead/" },
+      { label: "How to Run Google Ads: Your First Campaign", href: "/en/blog/how-to-run-google-ads-first-campaign/" },
+      { label: "How to Run Meta Ads", href: "/en/blog/how-to-run-meta-ads-guide/" },
+      { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
+      { label: "Google Ads Help: About Quality Score", href: "https://support.google.com/google-ads/answer/6167118", external: true },
+      { label: "web.dev: Core Web Vitals thresholds", href: "https://web.dev/articles/vitals", external: true },
     ],
   },
 ];

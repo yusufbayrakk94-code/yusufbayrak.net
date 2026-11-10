@@ -164,6 +164,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "etsyde-satis-komisyon-kar-hesabi", en: "etsy-fees-profit-calculation" },
   { tr: "hepsiburada-satici-olmak-komisyon-kar-hesabi", en: "how-to-sell-on-hepsiburada-seller-guide" },
   { tr: "backlink-nedir-nasil-alinir", en: "what-are-backlinks-how-to-get-them" },
+  { tr: "landing-page-nedir-donusen-acilis-sayfasi", en: "what-is-a-landing-page-checklist" },
 ];
 
 // Embeddable widget routes: prerendered (iframe targets) but noindex, so they
