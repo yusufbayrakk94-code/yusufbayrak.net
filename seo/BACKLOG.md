@@ -50,6 +50,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (kalan EN): /en/blog/what-is-a-kpi-marketing-kpi-examples/, /en/blog/what-is-roas-how-to-calculate/
 - [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 1, TR önce): /blog/etsyde-satis-komisyon-kar-hesabi/, /en/blog/etsy-fees-profit-calculation/
 - [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 2, TR önce): /blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/, /en/blog/how-to-sell-on-hepsiburada-seller-guide/
+- [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 1, TR önce): /blog/backlink-nedir-nasil-alinir/, /en/blog/what-are-backlinks-how-to-get-them/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28

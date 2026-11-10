@@ -4220,6 +4220,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "llms-txt",
     resources: [
+      { label: "Backlink Nedir, Nasıl Alınır?", href: "/blog/backlink-nedir-nasil-alinir/" },
       { label: "SEO Nedir, Nasıl Yapılır? 2026 Rehberi", href: "/blog/seo-nedir-nasil-yapilir/" },
       { label: "llms.txt Nedir, İşe Yarıyor mu? (2026 verileriyle)", href: "/blog/llms-txt-nedir-ise-yariyor-mu/" },
       { label: "llms.txt Oluşturucu", href: "/ucretsiz-araclar/llms-txt-olusturucu/" },
@@ -5433,6 +5434,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "llms-txt",
     resources: [
+      { label: "Backlink Nedir, Nasıl Alınır? Ücretsiz ve Güvenli Yöntemler", href: "/blog/backlink-nedir-nasil-alinir/" },
       { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "llms.txt Oluşturucu", href: "/ucretsiz-araclar/llms-txt-olusturucu/" },
@@ -7173,6 +7175,220 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "E-Ticaret Sitesi Kurmak İçin Gerekenler", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
       { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
       { label: "Hepsiburada Satıcı Başvurusu (resmî sayfa)", href: "https://merchant.hepsiburada.com/v2/sign-up", external: true },
+    ],
+  },
+  {
+    slug: "backlink-nedir-nasil-alinir",
+    seoTitle: "Backlink Nedir, Nasıl Alınır? Ücretsiz ve Güvenli Yöntemler",
+    title: "Backlink Nedir, Nasıl Alınır? Ücretsiz, Güvenli Yöntemler ve Google'ın Link Kuralları",
+    description:
+      "Backlink nedir, nasıl alınır? Dofollow, nofollow, sponsored ve ugc farkı, Google'ın link spam listesi, ücretsiz backlink yöntemleri ve Search Console ile ölçüm.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Backlink, başka bir sitenin sizin sayfanıza verdiği linktir. Google linkleri hem yeni sayfaları keşfetmek hem de bir sayfanın ne kadar önemli olduğunu anlamak için kullanır; ama link, sıralamayı belirleyen pek çok sinyalden yalnızca biridir.",
+      "Değerli backlink; konunuzla ilgili, gerçek okuru olan bir sitenin yazı içinde, editörün kendi isteğiyle verdiği linktir. Yüzlerce dizin, forum imzası ya da paket linkten daha çok işe yarar.",
+      "Google ücretli linki yasaklamaz, işaretlenmemiş ücretli linki yasaklar: reklam ve sponsorlu linkler rel=\"sponsored\" (ya da nofollow) taşımalıdır. Link satın alma, aşırı link takası, anahtar kelimeli konuk yazı linkleri ve widget içine gizlenmiş anahtar kelimeli linkler Google'ın link spam listesindedir.",
+      "Ücretsiz ve güvenli yol: linklenmeyi hak eden bir varlık (araç, şablon, özgün veri) üretmek, sizi anan ama link vermeyen siteleri bulmak, kırık linkleri bildirmek ve iş ortaklarınızdan gerçek bir sayfada yer istemek. Sonucu Search Console › Bağlantılar raporunda izleyin.",
+    ],
+    publishedAt: "2026-11-10",
+    readingMinutes: 11,
+    tags: ["Backlink", "SEO", "Link Building", "Dofollow", "Nofollow", "Search Console"],
+    sections: [
+      {
+        heading: "Backlink nedir? (Kısa cevap)",
+        paragraphs: [
+          "Backlink (geri bağlantı), başka bir web sitesinin sizin sitenizdeki bir sayfaya verdiği linktir. Bir blog yazarı yazısında sizin hesaplama aracınıza link verdiyse, o link sizin için bir backlinktir. Kendi sitenizin sayfaları arasındaki linkler ise iç linktir; backlink sayılmaz.",
+          "Google backlinkleri iki iş için kullanır: yeni sayfaları bulmak (tarayıcı linkleri takip eder) ve bir sayfanın önemini anlamak. Başka sitelerin size link vermesi, bir tür referans gibi okunur. Ancak bu tek sinyal değildir: içeriğin soruya ne kadar iyi cevap verdiği, sayfa deneyimi ve konu uzmanlığı da sıralamayı belirler. Az ama ilgili link alan iyi bir sayfa, çok link alan zayıf bir sayfayı geçebilir.",
+          "Bu yazıda backlink türlerini, Google'ın açıkça yasakladığı link yöntemlerini, para harcamadan backlink almanın güvenli yollarını ve sonucu nasıl ölçeceğinizi bulacaksınız. Kendi sitemizde yaptığımız bir düzeltmeyi de örnek olarak paylaşıyoruz.",
+        ],
+      },
+      {
+        heading: "Backlink SEO'da neden önemli?",
+        paragraphs: [
+          "Yeni bir sitenin en büyük sorunu, Google'ın siteye ne kadar güveneceğini bilmemesidir. İlgili sitelerden gelen linkler bu boşluğu doldurur: sayfanız daha hızlı keşfedilir, dizine girme ihtimali artar ve rekabetli sorgularda öne geçmesi kolaylaşır. Ayrıca iyi bir backlink, o siteyi okuyan insanlardan doğrudan ziyaretçi de getirir; bu trafik çoğu zaman sıralama etkisinden daha hızlı görünür.",
+          "Backlink şu durumlarda en çok fark yaratır: rekabetli bir sorguda içeriğiniz rakiplerle aynı kalitedeyse, site yeniyse ve henüz hiç link almadıysa, sayfanız dizinde ama 'Keşfedildi - şu anda dizine eklenmedi' durumunda bekliyorsa. Buna karşılık içeriğiniz soruya cevap vermiyorsa link almak sorunu çözmez; önce sayfayı düzeltin.",
+        ],
+      },
+      {
+        heading: "Dofollow, nofollow, sponsored ve ugc farkı nedir?",
+        paragraphs: [
+          "Varsayılan bir link (ek bir işaret taşımayan) halk arasında 'dofollow' olarak anılır; aslında HTML'de 'dofollow' diye bir değer yoktur, linkin rel özelliğinde nofollow, sponsored ya da ugc bulunmaması yeterlidir. Google, link veren sitenin linkin niteliğini belirtmesi için üç değer tanımlar:",
+        ],
+        bullets: [
+          "rel=\"sponsored\": reklam, sponsorluk ya da ücret karşılığı verilen linkler. Google ücretli linkler için bu değeri önerir; nofollow da kabul edilir.",
+          "rel=\"ugc\": yorumlar ve forum mesajları gibi kullanıcıların yazdığı içerikteki linkler. Sürekli kaliteli katkı yapan güvenilir yazarlar için kaldırılabilir.",
+          "rel=\"nofollow\": diğer ikisi uymadığında ve Google'ın sitenizi linklenen sayfayla ilişkilendirmesini istemediğinizde.",
+          "Değerler birlikte kullanılabilir: rel=\"ugc nofollow\" gibi.",
+          "2019'dan beri Google bu değerleri kesin bir yasak değil, bir ipucu olarak değerlendirir. Yani nofollow bir link tamamen değersiz değildir; ama sıralama etkisini garanti etmez.",
+        ],
+      },
+      {
+        heading: "Hangi backlink değerlidir? 5 soruluk kontrol",
+        paragraphs: [
+          "Bir link fırsatı karşısında 'domain otoritesi kaç?' sorusu yanıltıcıdır. DA ya da DR gibi puanlar üçüncü taraf araçların tahminleridir, Google bu puanları kullanmaz. Biz link fırsatlarını şu beş soruyla, her birine 0-2 puan vererek değerlendiriyoruz:",
+          "Toplam 8-10 puan alan fırsat için zaman ayırın, 4-7 puanlık fırsat iyi bir ek olabilir, 0-3 puanlık fırsatla uğraşmayın. Örneğin e-ticaret kargo maliyetleri anlatan, Google'da görünen bir ajans yazısının içinden desi aracınıza verilen link 9-10 puan alır; alakasız bir dizin sitesinin profil sayfası 1-2 puan alır.",
+        ],
+        bullets: [
+          "Konu ilgisi: site ve sayfa sizin konunuzla ilgili mi? (0 alakasız, 1 kısmen, 2 doğrudan)",
+          "Gerçek okur: site Google'da görünüyor ve gerçekten okunuyor mu, yoksa yalnızca link satmak için mi var?",
+          "Konum: link yazının içinde, bağlamın parçası mı (2), kenar çubuğu ya da altbilgide mi (1), profil/dizin sayfasında mı (0)?",
+          "Editoryal karar: linki editör kendi isteğiyle mi verdi, yoksa ücret ya da takas karşılığı mı? Ücretliyse sponsored olarak işaretlenmeli ve sıralama değeri beklenmemeli.",
+          "Doğal anchor: link metni doğal mı (marka adı, sayfa adı, 'bu hesaplayıcı'), yoksa tam eşleşen anahtar kelimelerle mi doldurulmuş?",
+        ],
+      },
+      {
+        heading: "Google hangi backlink yöntemlerini yasaklıyor?",
+        paragraphs: [
+          "Google'ın spam politikaları, sıralamayı manipüle etmek için yapılan linkleri 'link spam' olarak tanımlar ve örnekleri açıkça listeler. Bu yöntemler otomatik sistemlerle ya da gerektiğinde insan incelemesiyle tespit edilir ve manuel işleme yol açabilir. Türkçe rehberlerin çoğunda bu liste eksik olduğu için tam halini özetliyoruz:",
+        ],
+        bullets: [
+          "Sıralama amacıyla link satın almak veya satmak (para, ürün, hizmet karşılığı; 'ürünü gönderiyoruz, link verip yazın' dahil)",
+          "Aşırı link takası ('bana link ver, ben de sana vereyim') ve yalnızca çapraz link için kurulan ortak sayfaları",
+          "Otomatik programlarla veya hizmetlerle link oluşturmak",
+          "Sözleşme ya da kullanım şartlarıyla link zorunluluğu koyup karşı tarafın linki işaretlemesine izin vermemek",
+          "Sıralama değeri aktaran metin reklamları ve linkli advertorial yazılar",
+          "Başka sitelerdeki konuk yazılarda ve basın bültenlerinde optimize edilmiş anchor metinleri",
+          "Düşük kaliteli dizin ve yer imi sitelerinden linkler",
+          "Farklı sitelere dağıtılan widget'lara gömülmüş anahtar kelimeli, gizli ya da düşük kaliteli linkler",
+          "Pek çok sitenin altbilgisine veya şablonuna yayılmış linkler",
+          "Forum yorumlarında ve imzalarda optimize edilmiş linkler",
+          "Esas amacı link sinyallerini manipüle etmek olan düşük değerli içerik üretmek",
+        ],
+      },
+      {
+        heading: "Backlink satın almak neden riskli? '1000 backlink 50 TL' hesabı",
+        paragraphs: [
+          "Google link alıp satmanın web ekonomisinin normal bir parçası olduğunu kabul eder; sorun, linkin sponsored ya da nofollow ile işaretlenmemesidir. İşaretlenmiş ücretli link sıralama değeri taşımaz. İşaretlenmemiş olan ise kuralı ihlal eder. Yani satın alınan bir linkten sıralama bekliyorsanız, tanımı gereği politika dışındasınız.",
+          "Paket backlink satışlarında link başına maliyet birkaç kuruştur; bu fiyatın mümkün olmasının tek yolu otomatik ve okuru olmayan sitelerdir. Böyle linkler en iyi ihtimalle görmezden gelinir, en kötü ihtimalle manuel işlem riski doğurur ve temizlenmesi haftalar alır. Aynı bütçeyi bir hesaplama aracı ya da şablon hazırlamaya ayırmak, yıllarca link getirebilecek bir varlık bırakır.",
+        ],
+      },
+      {
+        heading: "Ücretsiz backlink nasıl alınır? 8 güvenli yöntem",
+        paragraphs: [
+          "Aşağıdaki yöntemlerin ortak noktası, linki karşı taraf için de değerli kılmasıdır: okuruna faydalı bir kaynak, düzeltilmiş bir hata ya da gerçek bir iş ilişkisi. Para ödemezsiniz; karşılığında zaman ve kalite ödersiniz.",
+        ],
+        bullets: [
+          "1. Linklenebilir varlık üretin: ücretsiz hesaplama aracı, indirilebilir şablon (xlsx), özgün veri ya da kontrol listesi. Yazarlar bir konuyu anlatırken 'şu araçla hesaplayabilirsiniz' diyerek link vermeyi sever.",
+          "2. Sizi anan ama link vermeyen siteleri bulun: markanızı ya da adınızı Google'da tırnak içinde arayın; link vermeden anan yazarlara kısa bir teşekkür ve link ricası gönderin. Bu yöntemin kabul oranı soğuk e-postadan yüksektir.",
+          "3. Kırık linkleri bildirin: konunuzdaki kaynak sayfalarda artık açılmayan linkleri bulun, yazara hatayı bildirin ve yerine uygun gelecek kendi sayfanızı önerin.",
+          "4. Güncel olmayan bilgiyi düzeltin: rakip yazılarda eski oranlar, kalkmış kurallar veya hatalı formüller varsa, doğru bilginin olduğu sayfanızı kaynak olarak önerin.",
+          "5. Uzman görüşü verin: gazetecilerin ve editörlerin kaynak aradığı konularda kısa, kaynaklı ve alıntılanabilir yorumlar paylaşın.",
+          "6. Konuk yazı yazın, ama doğru şekilde: okura gerçekten bir şey öğreten bir yazı, linki marka ya da kaynak olarak ve anahtar kelimeyle doldurmadan. Ücretli konuk yazı sponsored olarak işaretlenmelidir.",
+          "7. İş ortaklarınızı ve tedarikçilerinizi değerlendirin: çalıştığınız platformların 'iş ortakları', 'referanslar' ya da 'vaka çalışmaları' sayfalarında gerçek bir proje anlatımıyla yer alın.",
+          "8. İşletme profillerini doğru kurun: Google İşletme Profili, sektör dernekleri, üniversite ve etkinlik sayfaları. Bu linklerin çoğu sıralamaya az etki eder ama marka güvenini ve keşfi destekler.",
+        ],
+      },
+      {
+        heading: "Gömülebilir widget ile backlink alınır mı? Kendi deneyimimiz",
+        paragraphs: [
+          "Biz de araçlarımızın bir kısmını (ROAS, reklam bütçesi, pazaryeri kâr, desi, indirim ve kargo ücreti hesaplayıcıları) başka sitelerin sayfalarına gömebileceği bir widget olarak sunuyoruz. İlk sürümde kopyalanan kodun altındaki atıf linki aracın tam başlığını, yani 'ROAS Hesaplama: ROAS ve Başabaş ROAS Hesaplayıcı' gibi anahtar kelimeli bir metni anchor olarak kullanıyordu.",
+          "Bu, Google'ın link spam listesinde açıkça geçen duruma uyuyordu: farklı sitelere dağıtılan widget'lardaki anahtar kelimeli linkler. Google 2016'daki uyarısında widget linkleri için rel=\"nofollow\" eklemeyi ya da linki kaldırmayı öneriyor. Widget'ı dağıtmaya başlamadan önce atıf linkini marka adına (yusufbayrak.net) çevirdik ve nofollow ekledik.",
+          "Peki widget neden hâlâ işe yarıyor? Çünkü değeri o tek link değil: aracı sayfasına ekleyen bir site, okuruna sizi tanıtır, araçtan doğrudan ziyaretçi gelir ve aynı yazar ileride yazısının içinde kendi isteğiyle link verme ihtimali yüksek bir kaynak olarak sizi tanır. Widget'ı 'link makinesi' değil, ilişki başlatan bir varlık olarak düşünün.",
+        ],
+      },
+      {
+        heading: "Backlink isteği e-postası nasıl yazılır? Örnek",
+        paragraphs: [
+          "İyi bir link isteği kısa, kişisel ve karşı tarafın okuruna odaklıdır. Toplu ve şablon kokan e-postalar hem yanıt almaz hem de markanıza zarar verir. Şu yapıyı kullanabilirsiniz:",
+          "Örnek: 'Merhaba Ayşe Hanım, kargo maliyetleri yazınızı okudum; desi hesabını adım adım anlatmanız çok faydalı. Yazıda okurların kendi koli ölçüleriyle hesap yapabileceği bir araç yok. Ücretsiz desi hesaplayıcımız bölen ve yuvarlama seçimini de gösteriyor; uygun görürseniz okurlarınız için kaynak olarak ekleyebilirsiniz. Link: … Kolay gelsin, Yusuf.'",
+        ],
+        bullets: [
+          "Konu satırında yazının adını kullanın; 'işbirliği teklifi' gibi genel ifadelerden kaçının",
+          "Yazıyı gerçekten okuduğunuzu gösteren bir cümle yazın",
+          "Okurun eksik kalan ihtiyacını tek cümlede söyleyin",
+          "Önerdiğiniz sayfanın bu ihtiyacı nasıl karşıladığını anlatın ve linki verin",
+          "Karşılık, ücret veya link takası önermeyin; en fazla bir kez, bir hafta sonra kısa bir hatırlatma yapın",
+        ],
+      },
+      {
+        heading: "Backlink çalışması ne kadar zaman alır? Örnek hesap",
+        paragraphs: [
+          "Backlink çalışması bir bütçe kalemi değil, bir zaman kalemidir; bu yüzden onu da diğer pazarlama işleri gibi hesaplayın. Aşağıdaki rakamlar varsayımdır, kendi yanıt oranlarınızı ilk dalgada ölçün.",
+          "Örnek: 40 kişiselleştirilmiş e-posta gönderiyorsunuz, her biri araştırmasıyla 20 dakika sürüyor (yaklaşık 13 saat). Yanıt oranı %15 ise 6 yanıt, bunların yarısı link verirse 3 yeni yönlendiren alan adı. Link başına maliyet = toplam saat × saat değeriniz ÷ link sayısı. Saatinizi 500 TL sayarsanız: 13,3 × 500 ÷ 3 ≈ 2.222 TL. İlk dalgadan sonra en çok yanıt getiren hedef türüne (örneğin eski bilgi düzeltmesi) odaklanmak bu maliyeti hızla düşürür.",
+          "Etkinin görünmesi aylar sürebilir: Google'ın linki keşfetmesi, sayfayı yeniden değerlendirmesi ve sıralamanın oturması zaman alır. Bu yüzden sonucu haftalık değil aylık okuyun.",
+        ],
+      },
+      {
+        heading: "Backlinkler nasıl kontrol edilir? Search Console Bağlantılar raporu",
+        paragraphs: [
+          "Ücretsiz ve en güvenilir kaynak Google Search Console'daki Bağlantılar raporudur. Rapor, Google'ın bildiği linklerden bir örneklem gösterir: en çok bağlantı alan sayfalarınız, size en çok bağlantı veren siteler ve en sık kullanılan bağlantı metinleri. Ayrıca iç linklerinizi de listeler; yeni bir sayfanın yeterince iç link alıp almadığını buradan görebilirsiniz.",
+          "Ayda bir şu üç soruya bakın: yönlendiren alan adı sayısı arttı mı, en çok link alan sayfalar para kazandıran ya da önemli sayfalarınız mı, bağlantı metinleri doğal mı (marka adı ve sayfa adı ağırlıklı)? Ahrefs, Semrush gibi ücretli araçlar daha geniş tarama sunar, ama küçük bir site için Search Console başlangıçta yeterlidir.",
+        ],
+      },
+      {
+        heading: "Zararlı backlinkler için disavow gerekir mi?",
+        paragraphs: [
+          "Çoğu durumda hayır. Google, linkleri reddetme (disavow) aracının sayfasında çoğu sitenin bu araca ihtiyaç duymayacağını açıkça yazar. Araç yalnızca sitenize işaret eden çok sayıda spam, yapay ya da düşük kaliteli link varsa ve bu linkler manuel işleme yol açtıysa ya da açması muhtemelse önerilir. Google, rastgele spam linkleri zaten büyük ölçüde görmezden gelir.",
+          "Search Console'da 'Manuel işlemler' bölümünde bir uyarı yoksa ve geçmişte link satın almadıysanız, birkaç tuhaf siteden gelen linkler için disavow dosyası hazırlamayın. Yanlış kullanım, değerli linklerinizin de görmezden gelinmesine yol açabilir. Dosya yüklendikten sonra Google'ın listeyi dikkate alması birkaç hafta sürer.",
+        ],
+      },
+      {
+        heading: "Backlink çalışmasında en sık yapılan hatalar",
+        paragraphs: [
+          "Aşağıdaki hataların çoğu, 'link sayısı' hedeflemekten doğar. Hedefi 'ilgili sitelerden gelen yönlendiren alan adı' olarak koyduğunuzda çoğu kendiliğinden ortadan kalkar.",
+        ],
+        bullets: [
+          "Önce link, sonra içerik: linklenmeyi hak eden bir sayfa yokken outreach yapmak",
+          "Her linkte aynı anahtar kelimeyi anchor olarak istemek",
+          "Tüm linkleri ana sayfaya yönlendirmek; oysa yazarlar konuya özel kaynak sayfasına link vermeyi tercih eder",
+          "Ücretli yerleşimleri sponsored olarak işaretletmemek",
+          "Dizin, forum ve yorum linklerine zaman harcamak",
+          "Disavow aracını gereksiz yere kullanmak",
+          "Sonucu ölçmemek: yönlendiren alan adı ve yönlendirme trafiğini aylık izlememek",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Backlink nedir, kısaca?",
+        answer:
+          "Backlink, başka bir web sitesinin sizin sitenizdeki bir sayfaya verdiği linktir. Google linkleri yeni sayfaları keşfetmek ve sayfaların önemini anlamak için kullanır; ilgili ve gerçek sitelerden gelen linkler sıralamayı destekler.",
+      },
+      {
+        question: "Dofollow ve nofollow backlink farkı nedir?",
+        answer:
+          "Varsayılan (rel özelliği olmayan) link 'dofollow' diye anılır ve sıralama sinyali aktarabilir. rel=\"nofollow\" taşıyan link için Google, linki takip edip etmeyeceğine ve değer verip vermeyeceğine kendisi karar verir; 2019'dan beri bu bir ipucudur. Ücretli linkler için rel=\"sponsored\", kullanıcı içeriği için rel=\"ugc\" kullanılır.",
+      },
+      {
+        question: "Ücretsiz backlink nasıl alınır?",
+        answer:
+          "Linklenmeyi hak eden bir varlık (ücretsiz araç, şablon, özgün veri) üretin; sizi anan ama link vermeyen sitelerden link isteyin; kırık ya da güncel olmayan linkleri yazara bildirip kendi sayfanızı önerin; iş ortaklarınızın sayfalarında gerçek bir proje anlatımıyla yer alın.",
+      },
+      {
+        question: "Backlink satın almak yasak mı?",
+        answer:
+          "Google link satın almayı tek başına yasaklamaz; ücretli link rel=\"sponsored\" ya da nofollow ile işaretlenmelidir. İşaretlenmemiş ve sıralama amacıyla alınan ücretli linkler Google'ın link spam politikasına aykırıdır ve manuel işleme yol açabilir.",
+      },
+      {
+        question: "Backlinklerimi nasıl görebilirim?",
+        answer:
+          "Google Search Console › Bağlantılar raporu, Google'ın bildiği linklerden bir örneklem gösterir: en çok link alan sayfalarınız, en çok link veren siteler ve bağlantı metinleri. Daha geniş tarama için Ahrefs veya Semrush gibi ücretli araçlar kullanılabilir.",
+      },
+    ],
+    howTo: {
+      name: "Ücretsiz ve güvenli backlink nasıl alınır?",
+      description: "Linklenebilir bir varlıktan ilk yönlendiren alan adlarına beş adım.",
+      steps: [
+        { name: "Linklenebilir varlık hazırlayın", text: "Konunuzda yazarların kaynak olarak göstermek isteyeceği bir sayfa üretin: ücretsiz hesaplama aracı, indirilebilir şablon, özgün veri ya da kontrol listesi." },
+        { name: "Hedef listesi çıkarın", text: "Konuyu anlatan ama aracınız gibi bir kaynağa link vermeyen, Google'da görünen ve gerçek okuru olan yazıları listeleyin; her birini 5 soruluk kontrolle puanlayın." },
+        { name: "Kişisel istek gönderin", text: "Yazının adını kullanın, okurun eksik ihtiyacını tek cümlede söyleyin, sayfanızın bunu nasıl karşıladığını anlatın; karşılık veya takas önermeyin." },
+        { name: "Ücretli yerleşimleri işaretletin", text: "Sponsorlu yazı veya reklam söz konusuysa linkin rel=\"sponsored\" taşımasını isteyin; sıralama değeri beklemeyin." },
+        { name: "Aylık ölçün", text: "Search Console › Bağlantılar raporunda yönlendiren alan adı sayısını, en çok link alan sayfaları ve bağlantı metinlerini ayda bir kontrol edin." },
+      ],
+    },
+    relatedToolKey: "llms-txt",
+    resources: [
+      { label: "SEO Nedir, Nasıl Yapılır? 2026 Rehberi", href: "/blog/seo-nedir-nasil-yapilir/" },
+      { label: "GEO Nedir? Yapay Zekâ Aramalarında Görünürlük", href: "/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/" },
+      { label: "Desi Hesaplama (gömülebilir widget)", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Trendyol Komisyon ve Kâr Hesaplama (gömülebilir widget)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "ROAS Hesaplama (gömülebilir widget)", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "KPI Nedir? Pazarlama KPI Örnekleri", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
+      { label: "Google: Spam politikaları (link spam)", href: "https://developers.google.com/search/docs/essentials/spam-policies", external: true },
+      { label: "Google: Giden linkleri nitelendirme (sponsored, ugc, nofollow)", href: "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links", external: true },
+      { label: "Google: Widget linkleri hakkında hatırlatma (2016)", href: "https://developers.google.com/search/blog/2016/09/a-reminder-about-widget-links", external: true },
+      { label: "Search Console Yardım: Linkleri reddetme (disavow)", href: "https://support.google.com/webmasters/answer/2648487", external: true },
+      { label: "Search Console Yardım: Bağlantılar raporu", href: "https://support.google.com/webmasters/answer/9049606", external: true },
     ],
   },
 ];
@@ -10949,6 +11165,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "llms-txt",
     resources: [
+      { label: "What Are Backlinks and How to Get Them", href: "/en/blog/what-are-backlinks-how-to-get-them/" },
       { label: "What Is SEO and How Do You Do It?", href: "/en/blog/what-is-seo-how-to-do-it/" },
       { label: "What Is llms.txt and Does It Work? (2026 data)", href: "/en/blog/what-is-llms-txt-does-it-work/" },
       { label: "llms.txt Generator", href: "/en/free-tools/llms-txt-generator/" },
@@ -12104,6 +12321,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "llms-txt",
     resources: [
+      { label: "What Are Backlinks? How to Get Them Free and Safely", href: "/en/blog/what-are-backlinks-how-to-get-them/" },
       { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "llms.txt Generator", href: "/en/free-tools/llms-txt-generator/" },
@@ -13751,6 +13969,220 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Etsy Fees Explained: How Much Etsy Takes", href: "/en/blog/etsy-fees-profit-calculation/" },
       { label: "How to Start an Ecommerce Website: Checklist", href: "/en/blog/how-to-start-an-ecommerce-website-checklist/" },
       { label: "Hepsiburada seller sign-up (official page)", href: "https://merchant.hepsiburada.com/v2/sign-up", external: true },
+    ],
+  },
+  {
+    slug: "what-are-backlinks-how-to-get-them",
+    seoTitle: "What Are Backlinks? How to Get Them Free and Safely",
+    title: "What Are Backlinks and How Do You Get Them? Free, Safe Methods and Google's Link Rules",
+    description:
+      "What are backlinks and how do you get them? Dofollow vs nofollow, sponsored and ugc, Google's link spam list, free link building methods and measurement.",
+    category: "performans-pazarlama",
+    tldr: [
+      "A backlink is a link from another website to a page on your site. Google uses links to discover new pages and to understand how important a page is, but links are only one of many ranking signals.",
+      "A valuable backlink comes from a relevant site with real readers, sits inside the body of an article and is placed by the editor's own choice. One of those beats hundreds of directory, forum-signature or bulk links.",
+      "Google doesn't ban paid links; it bans unqualified paid links. Ads and sponsored links should carry rel=\"sponsored\" (or nofollow). Buying links, excessive link exchanges, keyword-rich guest post links and keyword-rich links hidden in widgets are all on Google's link spam list.",
+      "The free, safe route: build something worth linking to (a tool, template or original data), turn unlinked brand mentions into links, report broken links and ask partners for a real page. Track results in Search Console's Links report.",
+    ],
+    publishedAt: "2026-11-10",
+    readingMinutes: 10,
+    tags: ["Backlinks", "SEO", "Link Building", "Dofollow", "Nofollow", "Search Console"],
+    sections: [
+      {
+        heading: "What is a backlink? (Short answer)",
+        paragraphs: [
+          "A backlink (inbound link) is a link from another website to a page on your site. If a blogger links to your calculator in an article, that link is a backlink for you. Links between pages of your own site are internal links, not backlinks.",
+          "Google uses backlinks for two jobs: discovering new pages (crawlers follow links) and understanding how important a page is. Links from other sites read like references. They're not the only signal, though: how well the content answers the query, page experience and topical expertise also decide rankings. A strong page with a few relevant links can outrank a weak page with many.",
+          "This guide covers backlink types, the link schemes Google explicitly prohibits, safe ways to earn links without paying, and how to measure the results, including a fix we made on our own site.",
+        ],
+      },
+      {
+        heading: "Why do backlinks matter for SEO?",
+        paragraphs: [
+          "A new site's biggest problem is that Google doesn't yet know how much to trust it. Links from relevant sites fill that gap: your pages get discovered faster, are more likely to be indexed and find it easier to compete for contested queries. A good backlink also sends readers directly, and that referral traffic often shows up sooner than any ranking effect.",
+          "Backlinks make the biggest difference when your content is already on par with competitors, when the site is new with no links yet, or when a page sits in 'Discovered - currently not indexed'. If the page doesn't answer the query, links won't fix it; fix the page first.",
+        ],
+      },
+      {
+        heading: "Dofollow vs nofollow vs sponsored vs ugc: what's the difference?",
+        paragraphs: [
+          "A plain link with no qualifier is commonly called 'dofollow'; HTML has no such value, it simply means the rel attribute doesn't contain nofollow, sponsored or ugc. Google defines three values site owners use to qualify outbound links:",
+        ],
+        bullets: [
+          "rel=\"sponsored\": ads, sponsorships or links placed in exchange for payment. Google recommends this value for paid links; nofollow is also accepted.",
+          "rel=\"ugc\": links in user-generated content such as comments and forum posts. It can be removed for trusted contributors with a consistent quality record.",
+          "rel=\"nofollow\": when neither of the above fits and you don't want Google to associate your site with the linked page.",
+          "Values can be combined, for example rel=\"ugc nofollow\".",
+          "Since 2019 Google treats these values as hints rather than strict directives. A nofollow link isn't worthless, but it doesn't guarantee any ranking effect.",
+        ],
+      },
+      {
+        heading: "Which backlinks are valuable? A 5-question check",
+        paragraphs: [
+          "Asking 'what's the domain authority?' is misleading. DA and DR are third-party estimates; Google doesn't use them. We score each link opportunity on five questions, 0-2 points each:",
+          "Spend time on opportunities scoring 8-10, treat 4-7 as nice-to-have and skip 0-3. A link from inside an agency article about ecommerce shipping costs that ranks in Google, pointing to your dimensional weight calculator, scores 9-10; a profile page on an unrelated directory scores 1-2.",
+        ],
+        bullets: [
+          "Topical relevance: is the site and page about your topic? (0 unrelated, 1 partly, 2 directly)",
+          "Real readers: does the site show up in Google and get read, or does it exist only to sell links?",
+          "Placement: inside the article as part of the context (2), sidebar or footer (1), profile or directory page (0)?",
+          "Editorial choice: did the editor choose to link, or was it paid or traded? Paid links should be marked sponsored and shouldn't be expected to pass ranking value.",
+          "Natural anchor: is the link text natural (brand, page name, 'this calculator') or stuffed with exact-match keywords?",
+        ],
+      },
+      {
+        heading: "Which link building methods does Google prohibit?",
+        paragraphs: [
+          "Google's spam policies define links intended to manipulate rankings as link spam and list examples. Violations are detected by automated systems and, as needed, human review, and can result in a manual action. Here is the full list in short form:",
+        ],
+        bullets: [
+          "Buying or selling links for ranking purposes (money, goods or services, including 'we'll send you the product if you write about it with a link')",
+          "Excessive link exchanges and partner pages built only for cross-linking",
+          "Using automated programs or services to create links",
+          "Requiring a link in terms of service or contracts without letting the other party qualify it",
+          "Text ads and advertorials that pass ranking credit",
+          "Optimized anchor text in guest posts or press releases on other sites",
+          "Low-quality directory or bookmark site links",
+          "Keyword-rich, hidden or low-quality links embedded in widgets distributed across sites",
+          "Widely distributed links in footers or templates of various sites",
+          "Forum comments with optimized links in the post or signature",
+          "Low-value content created mainly to manipulate link signals",
+        ],
+      },
+      {
+        heading: "Why is buying backlinks risky?",
+        paragraphs: [
+          "Google acknowledges that buying and selling links is a normal part of the web economy, as long as the links are qualified with sponsored or nofollow. A qualified paid link passes no ranking value; an unqualified one breaks the rules. If you buy a link expecting rankings, you're outside the policy by definition.",
+          "Bulk link packages work out to cents per link, which is only possible with automated sites nobody reads. At best Google ignores them; at worst they create manual action risk that takes weeks to clean up. The same budget spent on a calculator or template leaves you an asset that can earn links for years.",
+        ],
+      },
+      {
+        heading: "How to get backlinks for free: 8 safe methods",
+        paragraphs: [
+          "Every method below works because it makes the link valuable to the linking site too: a useful resource for its readers, a corrected mistake or a real business relationship. You don't pay money; you pay with time and quality.",
+        ],
+        bullets: [
+          "1. Build a linkable asset: a free calculator, a downloadable spreadsheet template, original data or a checklist. Writers like to say 'you can calculate it with this tool' and link.",
+          "2. Reclaim unlinked mentions: search your brand or name in quotes; send a short thank-you and link request to writers who mention you without linking. Acceptance rates beat cold outreach.",
+          "3. Report broken links: find dead links on resource pages in your niche, tell the author and suggest your page as a replacement.",
+          "4. Correct outdated information: when articles cite old rates, retired rules or wrong formulas, suggest your up-to-date page as a source.",
+          "5. Offer expert commentary: share short, sourced, quotable answers where journalists and editors look for sources.",
+          "6. Write guest posts the right way: teach the reader something, link as a brand or source without keyword-stuffed anchors, and mark paid guest posts as sponsored.",
+          "7. Use partners and vendors: get listed on partner, customer or case study pages of platforms you actually work with, with a real project write-up.",
+          "8. Set up business profiles properly: Google Business Profile, industry associations, university and event pages. Most of these do little for rankings but support trust and discovery.",
+        ],
+      },
+      {
+        heading: "Can an embeddable widget earn backlinks? What we changed",
+        paragraphs: [
+          "We offer several of our calculators (ROAS, ad budget, marketplace profit, dimensional weight, discount and shipping cost) as widgets other sites can embed. In the first version, the attribution link under the copied code used the tool's full title, a keyword-rich phrase like 'ROAS Calculator: ROAS and Break-even ROAS', as the anchor.",
+          "That matched an example on Google's link spam list: keyword-rich links in widgets distributed across sites. Google's 2016 reminder recommends adding rel=\"nofollow\" to widget links or removing them. Before distributing the widget, we switched the attribution anchor to our brand (yusufbayrak.net) and added nofollow.",
+          "So why bother with a widget? Because the value isn't that one link: a site that embeds your tool introduces you to its readers, sends direct visitors, and the same writer is far more likely to cite you editorially in a future article. Treat a widget as a relationship starter, not a link machine.",
+        ],
+      },
+      {
+        heading: "How to write a backlink outreach email (example)",
+        paragraphs: [
+          "A good link request is short, personal and focused on the other site's readers. Bulk, template-sounding emails get no replies and hurt your brand. Use this structure:",
+          "Example: 'Hi Sarah, I read your guide to shipping costs; the step-by-step dimensional weight explanation is really useful. Readers can't plug in their own box sizes anywhere in the article, though. Our free dimensional weight calculator also shows the divisor and rounding choice; if you think it helps, feel free to add it as a resource. Link: … Thanks, Yusuf.'",
+        ],
+        bullets: [
+          "Use the article title in the subject line; avoid generic 'collaboration opportunity' lines",
+          "Write one sentence that proves you read the piece",
+          "State the reader's unmet need in one sentence",
+          "Explain how your page meets it and include the link",
+          "Don't offer payment or a link swap; follow up once, a week later, at most",
+        ],
+      },
+      {
+        heading: "How long does link building take? A worked example",
+        paragraphs: [
+          "Link building is a time cost rather than a budget line, so calculate it like any other marketing activity. The numbers below are assumptions; measure your own reply rates in the first wave.",
+          "Example: you send 40 personalized emails at 20 minutes each including research (about 13 hours). At a 15% reply rate that's 6 replies; if half link, you gain 3 new referring domains. Cost per link = total hours × your hourly value ÷ links. At $50 an hour: 13.3 × 50 ÷ 3 ≈ $222. After the first wave, focusing on the target type that replied most (for example outdated-information fixes) brings that cost down quickly.",
+          "The ranking effect can take months: Google has to discover the link, re-evaluate the page and rankings have to settle. Read results monthly, not weekly.",
+        ],
+      },
+      {
+        heading: "How do you check your backlinks? Search Console's Links report",
+        paragraphs: [
+          "The free and most reliable source is the Links report in Google Search Console. It shows a sample of the links Google knows about: your top linked pages, top linking sites and top linking text. It also lists internal links, so you can see whether a new page gets enough of them.",
+          "Once a month, check three things: is the number of referring domains growing, are your most-linked pages the ones that matter commercially, and is anchor text natural (mostly brand and page names)? Paid tools such as Ahrefs or Semrush crawl more widely, but Search Console is enough for a small site to start.",
+        ],
+      },
+      {
+        heading: "Do you need to disavow bad backlinks?",
+        paragraphs: [
+          "Usually not. Google states on its disavow tool page that most sites will not need it. It's meant for sites with a considerable number of spammy, artificial or low-quality links that have caused, or are likely to cause, a manual action. Google already ignores most random spam links.",
+          "If Search Console shows no manual action and you never bought links, don't build a disavow file for a handful of odd domains; misuse can make Google ignore good links too. After upload, it takes a few weeks for Google to incorporate the list.",
+        ],
+      },
+      {
+        heading: "Common link building mistakes",
+        paragraphs: [
+          "Most of these come from chasing link counts. Set the goal as 'referring domains from relevant sites' and most of them disappear.",
+        ],
+        bullets: [
+          "Outreach before having a page worth linking to",
+          "Asking for the same keyword anchor on every link",
+          "Pointing every link at the homepage, while writers prefer a topic-specific resource",
+          "Not getting paid placements marked as sponsored",
+          "Spending time on directory, forum and comment links",
+          "Using the disavow tool without a reason",
+          "Not measuring referring domains and referral traffic monthly",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What is a backlink in simple terms?",
+        answer:
+          "A backlink is a link from another website to a page on your site. Google uses links to discover pages and understand their importance; links from relevant, real sites support rankings.",
+      },
+      {
+        question: "What's the difference between dofollow and nofollow backlinks?",
+        answer:
+          "A plain link without a rel qualifier is called 'dofollow' and can pass ranking signals. For rel=\"nofollow\" links, Google decides whether to follow and credit them; since 2019 it's treated as a hint. Use rel=\"sponsored\" for paid links and rel=\"ugc\" for user-generated content.",
+      },
+      {
+        question: "How can I get backlinks for free?",
+        answer:
+          "Create a linkable asset (free tool, template, original data), turn unlinked mentions into links, report broken or outdated links and suggest your page, and get listed on partner pages with a real project write-up.",
+      },
+      {
+        question: "Is buying backlinks against Google's rules?",
+        answer:
+          "Buying links isn't banned by itself, but paid links must be qualified with rel=\"sponsored\" or nofollow. Unqualified paid links bought for rankings violate Google's link spam policy and can lead to a manual action.",
+      },
+      {
+        question: "How do I see my backlinks?",
+        answer:
+          "Google Search Console's Links report shows a sample of links Google knows about: top linked pages, top linking sites and top linking text. Paid tools like Ahrefs or Semrush offer wider crawls.",
+      },
+    ],
+    howTo: {
+      name: "How to earn backlinks safely and for free",
+      description: "Five steps from a linkable asset to your first referring domains.",
+      steps: [
+        { name: "Build a linkable asset", text: "Create a page writers in your niche would want to cite: a free calculator, a downloadable template, original data or a checklist." },
+        { name: "List targets", text: "Find articles that cover the topic, rank in Google and have real readers but don't link to a resource like yours; score each with the 5-question check." },
+        { name: "Send personal requests", text: "Use the article title, state the reader's unmet need in one sentence, explain how your page meets it and don't offer payment or swaps." },
+        { name: "Qualify paid placements", text: "For sponsored posts or ads, ask for rel=\"sponsored\" on the link and don't expect ranking value." },
+        { name: "Measure monthly", text: "Check referring domains, top linked pages and linking text in Search Console's Links report once a month." },
+      ],
+    },
+    relatedToolKey: "llms-txt",
+    resources: [
+      { label: "What Is SEO and How Do You Do It? (2026)", href: "/en/blog/what-is-seo-how-to-do-it/" },
+      { label: "What Is GEO? Generative Engine Optimization", href: "/en/blog/what-is-geo-generative-engine-optimization/" },
+      { label: "Dimensional Weight Calculator (embeddable)", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "Marketplace Profit Calculator (embeddable)", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "ROAS Calculator (embeddable)", href: "/en/free-tools/roas-calculator/" },
+      { label: "What Is a KPI? Marketing KPI Examples", href: "/en/blog/what-is-a-kpi-marketing-kpi-examples/" },
+      { label: "Google: Spam policies (link spam)", href: "https://developers.google.com/search/docs/essentials/spam-policies", external: true },
+      { label: "Google: Qualify your outbound links", href: "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links", external: true },
+      { label: "Google: A reminder about widget links (2016)", href: "https://developers.google.com/search/blog/2016/09/a-reminder-about-widget-links", external: true },
+      { label: "Search Console Help: Disavow links", href: "https://support.google.com/webmasters/answer/2648487", external: true },
+      { label: "Search Console Help: Links report", href: "https://support.google.com/webmasters/answer/9049606", external: true },
     ],
   },
 ];

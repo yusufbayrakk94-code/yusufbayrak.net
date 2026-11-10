@@ -235,7 +235,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -621,6 +621,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/backlink-nedir-nasil-alinir/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/backlink-nedir-nasil-alinir/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-are-backlinks-how-to-get-them/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/backlink-nedir-nasil-alinir/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -854,7 +863,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/en/blog/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -1224,6 +1233,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-sell-on-hepsiburada-seller-guide/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/what-are-backlinks-how-to-get-them/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-are-backlinks-how-to-get-them/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/backlink-nedir-nasil-alinir/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/backlink-nedir-nasil-alinir/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
