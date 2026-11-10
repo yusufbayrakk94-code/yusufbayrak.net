@@ -2,6 +2,7 @@
 
 Amaç: 27.10.2026'da yayına alınan gömülebilir araçların (ROAS, Reklam Bütçesi, Trendyol Kâr, Desi) ilgili
 yazılara eklenmesi → doğal atıf linki (yönlendiren alan adı, GOALS.md H7). Ücretli link YOK; link karşılığı para/ürün teklif edilmez.
+**10.11.2026 notu:** gömme kodundaki atıf linki artık marka anchor'lı ve rel="nofollow" (Google widget link politikası; seo/widget-plan.md). Teklif metinlerinde "link" yerine aracın okura faydası öne çıkarılır; asıl hedef, yazarın yazının içinde kendi isteğiyle kaynak linki vermesi.
 **Gönderimi kullanıcı yapar.** Claude dış sitelere hiçbir şey göndermez, form doldurmaz, hesap açmaz.
 
 Gömme sayfaları (noindex, canonical asıl araca):

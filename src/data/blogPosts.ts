@@ -7522,7 +7522,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Yayından önce 20 maddelik landing page kontrol listesi",
         paragraphs: [
-          "Aşağıdaki listeyi her yeni kampanya sayfası için yayından önce tek tek işaretleyin. Bir maddeyi atlıyorsanız bunun bilinçli bir karar olduğundan emin olun.",
+          "Aşağıdaki listeyi her yeni kampanya sayfası için yayından önce tek tek işaretleyin. Bir maddeyi atlıyorsanız bunun bilinçli bir karar olduğundan emin olun. Listenin puanlı Excel sürümünü (dönüşüm → lead maliyeti tablosu ve A/B testi trafik hesabıyla) kaynaklar bölümündeki ücretsiz şablondan indirebilirsiniz.",
         ],
         bullets: [
           "1. Sayfanın tek bir hedefi ve tek bir ana CTA'sı var",
@@ -7604,6 +7604,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Reklam Verme Rehberi", href: "/blog/google-ads-reklam-verme-rehberi/" },
       { label: "Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
       { label: "Hedef ROAS Nasıl Belirlenir?", href: "/blog/hedef-roas-nasil-belirlenir/" },
+      { label: "Landing Page Kontrol Listesi ve Dönüşüm Hesabı Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/landing-page-kontrol-listesi-sablonu.xlsx", external: true },
       { label: "Google Ads Yardım: Kalite Puanı hakkında", href: "https://support.google.com/google-ads/answer/6167118", external: true },
       { label: "web.dev: Core Web Vitals eşikleri", href: "https://web.dev/articles/vitals", external: true },
       { label: "KVKK (Kişisel Verileri Koruma Kurumu)", href: "https://www.kvkk.gov.tr/", external: true },

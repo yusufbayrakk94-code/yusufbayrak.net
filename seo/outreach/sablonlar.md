@@ -167,3 +167,35 @@ Yusuf Bayrak
 
 ### LinkedIn metni (kullanıcının sesiyle düzenlenmeli)
 Etsy'de "komisyon %6,5" diye bilinen rakam, Türkiye'deki bir satıcı için aslında %14,67 + 14 TL. Ödeme işlem ücreti ve Haziran'da değişen düzenleyici işletim ücreti de kesiliyor; satış Etsy'nin site dışı reklamından gelirse %15 daha. 2.100 TL'lik örnek siparişte kesinti 330 TL, Offsite Ads'li satışta 645 TL. Fiyatı tersten kurmak için ücretsiz bir Excel şablonu hazırladım: [link]
+
+## Landing Page Kontrol Listesi ve Dönüşüm Hesabı Şablonu (2026-11-10)
+Dosya: https://yusufbayrak.net/sablonlar/landing-page-kontrol-listesi-sablonu.xlsx
+Ana sayfa (link verilecek yer): https://yusufbayrak.net/blog/landing-page-nedir-donusen-acilis-sayfasi/
+İçerik: 4 sayfa — kullanım; 20 maddelik puanlı kontrol listesi (Evet/Kısmen/Hayır, hazır olma yüzdesi, "yayına hazır / eksikleri tamamla / yayına alma" kararı); dönüşüm oranı → lead sayısı ve lead başı maliyet tablosu + hedef CPL'den gereken dönüşüm oranı; A/B testi için varyant başına gereken ziyaretçi ve test süresi. LibreOffice ile hesaplandı, 0 formül hatası; örnek değerler yazıyla aynı (2.000 tıklama × 6 TL → %2'de 40 lead / 300 TL, %3'te 60 / 200 TL; %2 → %2,5 için ~12.544 ziyaretçi/varyant, ~12,5 ay). Kayıt/e-posta istemez.
+Rekabet gözlemi (10.11.2026): Türkçe "landing page nedir" SERP'inde (GoDaddy TR, ikas, Ticimax, Webtekno) indirilebilir kontrol listesi, dönüşüm → CPL hesabı ve A/B testi trafik hesabı yok. Adapte Dijital'de 6 maddelik kontrol tablosu var ama formül/trafik hesabı yok.
+
+### Hedefler (kullanıcı gönderir; göndermeden önce yazıyı açıp somut bir cümle bulun)
+| # | Yer | Neden | Durum |
+|---|---|---|---|
+| 1 | Kullanıcının LinkedIn profili | En hızlı dağıtım; metin aşağıda | Kullanıcı paylaşır |
+| 2 | webtekno.com — "Dijital Pazarlamada Kritik Bir Öneme Sahip 'Landing Page' Tam Olarak Nedir, Nasıl Çalışır?" (01.03.2024, yazar İsmail Sağdıç, Webtures) | Yazıda dönüşüm oranı yalnızca genel geçiyor; şablon, formül, A/B yöntemi yok. Yazar SEO yöneticisi → kaynak eklemeye açık olabilir | LinkedIn üzerinden yazara (Webtures) kısa mesaj |
+| 3 | adaptedijital.com — "What Is a Landing Page — and Why It Decides Your Ad Results" (30.07.2026, Dilek Lök) | 6 maddelik kontrol tablosu var ama dönüşüm oranı formülü ve A/B trafik hesabı yok; ajans, Google Ads müşterilerine yazıyor | Site iletişim sayfası (e-posta Cloudflare ile gizli) |
+| 4 | Widget hedefleri (eticaretmerkezim, foxs, solofor) | Zaten iletişim kurulduysa yeni mesaj atmayın; ileride bir yanıt gelirse tek cümleyle eklenebilir | Bekle |
+
+### LinkedIn metni (kullanıcının sesiyle düzenlenmeli)
+Aynı reklam bütçesiyle iki kat lead almanın en ucuz yolu çoğu zaman teklif değil, açılış sayfası.
+
+Basit bir hesap: ayda 2.000 tıklama, 6 TL TBM. Sayfa %2 dönüştürürse lead başı 300 TL, %3 dönüştürürse 200 TL. Bütçeye tek lira eklemeden.
+
+Yayından önce kullandığım 20 maddelik kontrol listesini puanlı bir Excel'e çevirdim. İçinde dönüşüm → lead maliyeti tablosu ve "A/B testi için yeterli trafiğim var mı?" hesabı da var (spoiler: ayda 2.000 tıklamayla %2'den %2,5'e çıkışı ölçmek yaklaşık bir yıl sürüyor). Ücretsiz, kayıt yok.
+
+İndirme linki ilk yorumda.
+
+### Teklif metni (webtekno yazarı / adaptedijital)
+Konu: "<Yazı başlığı>" için ücretsiz kontrol listesi şablonu
+
+Merhaba <Ad>,
+"<Yazı başlığı>" yazınızı okudum; <somut bir nokta, ör. 'mesaj tutarlılığı vurgusu'> çok yerinde. Okurlarınız için tamamlayıcı olabileceğini düşündüğüm Türkçe ve ücretsiz bir Excel şablonu hazırladım: 20 maddelik puanlı yayın öncesi kontrol listesi, dönüşüm oranının lead maliyetine etkisini gösteren tablo ve A/B testi için gereken trafik hesabı. Kayıt istemiyor.
+https://yusufbayrak.net/blog/landing-page-nedir-donusen-acilis-sayfasi/ (şablon sayfanın kaynaklar bölümünde)
+Uygun görürseniz kaynak olarak eklenebilir; görmezseniz de teşekkürler.
+Yusuf Bayrak — yusufbayrak.net

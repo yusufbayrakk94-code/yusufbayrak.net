@@ -104,7 +104,7 @@ export function ToolPage({ toolKey, children }: Props) {
   const eui = EMBED_UI[locale === "en" ? "en" : "tr"];
   const canEmbed = (EMBEDDABLE_TOOLS as readonly string[]).includes(String(toolKey));
   const embedUrl = `${SITE_URL}${withSlash(embedPathFor(tool.path))}`;
-  const embedCode = `<iframe src="${embedUrl}" width="100%" height="720" style="border:0;max-width:760px" loading="lazy" title="${tool.title}"></iframe>\n<p style="font-size:12px">${eui.credit}: <a href="${canonical}">${tool.title} – Yusuf Bayrak</a></p>`;
+  const embedCode = `<iframe src="${embedUrl}" width="100%" height="720" style="border:0;max-width:760px" loading="lazy" title="${tool.title}"></iframe>\n<p style="font-size:12px">${eui.credit}: ${tool.title} – <a href="${canonical}" rel="nofollow">yusufbayrak.net</a></p>`;
   const copyEmbed = async () => {
     try {
       await navigator.clipboard.writeText(embedCode);
