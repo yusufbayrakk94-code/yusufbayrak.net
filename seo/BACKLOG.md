@@ -50,6 +50,8 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (kalan EN): /en/blog/what-is-a-kpi-marketing-kpi-examples/, /en/blog/what-is-roas-how-to-calculate/
 - [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 1, TR önce): /blog/etsyde-satis-komisyon-kar-hesabi/, /en/blog/etsy-fees-profit-calculation/
 - [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 2, TR önce): /blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/, /en/blog/how-to-sell-on-hepsiburada-seller-guide/
+- [ ] Dizine ekleme isteği (2026-11-10 güçlendirildi, ÖNCELİKLİ, TR önce): /ucretsiz-araclar/roas-hesaplayici/ (iade oranı + başabaş ROAS tablosu), /blog/cac-nedir-musteri-edinme-maliyeti/ (gelen iç link anchor'ları), /en/free-tools/roas-calculator/
+- [!] 10.11 veri görevi: yerleşik tarayıcıda Google oturumu kapalıydı → Search Console, GA4, Keyword Planner okunamadı, 10.11 dizine ekleme kotası (5) kullanılamadı. Kullanıcının yeniden oturum açması gerekiyor.
 - [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 1, TR önce): /blog/backlink-nedir-nasil-alinir/, /en/blog/what-are-backlinks-how-to-get-them/
 - [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 2, TR önce): /blog/landing-page-nedir-donusen-acilis-sayfasi/, /en/blog/what-is-a-landing-page-checklist/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
