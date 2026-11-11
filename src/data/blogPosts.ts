@@ -1838,7 +1838,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
       { label: "Meta Ads'te Öğrenme Aşamasından Nasıl Hızlı Çıkılır?", href: "/blog/meta-ads-ogrenme-asamasindan-cikma-taktikleri/" },
-      { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Trendyol Komisyon Hesaplama ve Kâr Hesaplayıcı", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Google Ads Yardım: Bütçelere genel bakış", href: "https://support.google.com/google-ads/answer/10486536", external: true },
       { label: "Google Ads Yardım: Dönemlik ayarlamalar", href: "https://support.google.com/google-ads/answer/10369906", external: true },
     ],
@@ -3476,7 +3476,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "Müşteri churn'ünün yanında gelir churn'ünü (brüt ve net) ve kohort churn'ünü izleyin: ilk ay churn'ü yüksek, sonraki aylar düşükse sorun ürün değil onboarding'dir. Kaynaksız 'iyi churn oranı' eşikleri yerine kendi kohortlarınızın eğilimiyle kıyaslayın.",
     ],
     publishedAt: "2026-10-30",
-    readingMinutes: 9,
+    updatedAt: "2026-11-11",
+    readingMinutes: 10,
     tags: ["Churn", "Churn Rate", "Müşteri Kaybı", "SaaS Metrikleri", "Gelir Churn'ü", "Kohort Analizi"],
     sections: [
       {
@@ -3550,6 +3551,20 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        heading: "Churn analizi Excel veya Google Sheets'te nasıl yapılır?",
+        paragraphs: [
+          "Churn analizi için pahalı bir araca gerek yok; her müşteri için bir satır içeren bir tablo yeterlidir: A sütununda müşteri kimliği, B'de başlangıç (ilk ödeme) tarihi, C'de iptal tarihi (aktif müşteride boş), D'de kazanım kanalı veya paket. E1 hücresine dönem başını (ör. 01.10.2026), E2'ye bir sonraki dönemin başını (01.11.2026) yazın.",
+          "Kanal ya da paket kırılımı için formüllere bir koşul eklemek yeterli: ÇOKEĞERSAY(...; D:D; \"Meta\"). Aynı Ekim verisini kanala göre ayırdığımızı varsayalım: Meta reklamlarından gelen 300 aboneden 24'ü (%8), organik ve yönlendirmeden gelen 500 aboneden 16'sı (%3,2) ayrılmış. Toplam yine 40 / 800 = %5, ama tablo kaybın büyük kısmının tek bir kanaldan geldiğini gösteriyor. Bu durumda Meta'nın görünen CAC'ı düşük olsa bile LTV'si de düşüktür; kanal bütçesine karar verirken iki rakamı birlikte okuyun.",
+        ],
+        bullets: [
+          "Dönem başı aktif müşteri (Türkçe Excel): =ÇOKEĞERSAY(B:B;\"<\"&E1;C:C;\"\")+ÇOKEĞERSAY(B:B;\"<\"&E1;C:C;\">=\"&E1) — İngilizce Excel ve Google Sheets'te COUNTIFS ve virgül kullanılır",
+          "Dönem içinde kaybedilen (yalnızca dönem başındaki müşterilerden): =ÇOKEĞERSAY(B:B;\"<\"&E1;C:C;\">=\"&E1;C:C;\"<\"&E2)",
+          "Aylık churn: =kayıp / dönem başı aktif (hücreyi yüzde biçimine alın) → örnekte 40 / 800 = %5",
+          "Yıllık churn: =1-(1-aylık churn)^12 → %5 için yaklaşık %46",
+          "Ay içinde kaydolup aynı ay ayrılanlar bu formüllerde sayılmaz; onları kohort tablosunda ilk ay kaybı olarak izleyin",
+        ],
+      },
+      {
         heading: "Churn neden önemlidir? LTV ve büyümeye etkisi",
         paragraphs: [
           "Churn, müşteri yaşam boyu değerinin (LTV) paydasındadır: LTV = Aylık müşteri başı brüt kâr / Aylık churn. ARPA 450 TL ve brüt marj %80 ise müşteri başı aylık brüt kâr 360 TL'dir. %5 churn ile LTV 360 / 0,05 = 7.200 TL; %4,25 ile ≈ 8.470 TL; %4 ile 9.000 TL. Churn'deki 1 puanlık düşüş, aynı müşteri için harcayabileceğiniz edinme maliyetini (CAC) %25 artırır.",
@@ -3606,6 +3621,11 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "İyi bir churn oranı kaçtır?",
         answer:
           "Herkes için geçerli tek bir oran yoktur: küçük işletmelere aylık abonelik satan ürünlerde churn doğal olarak yüksek, yıllık sözleşmeli kurumsal ürünlerde düşüktür. Kaynağı belirsiz eşikler yerine kendi kohortlarınızın eğilimine bakın; yeni kohortların churn'ü eskilerden düşükse doğru yoldasınız.",
+      },
+      {
+        question: "Churn analizi nasıl yapılır?",
+        answer:
+          "Her müşteri için başlangıç ve iptal tarihini içeren bir tablo hazırlayın; dönem başı aktif müşteriyi ve bunlardan dönem içinde ayrılanları ÇOKEĞERSAY (COUNTIFS) ile sayıp oranlayın. Ardından aynı hesabı kanal, paket ve kayıt ayına (kohort) göre tekrarlayın; ortalama churn'ün içinde hangi segmentin kaybı taşıdığını bu kırılım gösterir.",
       },
       {
         question: "Gönülsüz churn nedir?",
@@ -14826,7 +14846,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
   marketplace: {
     tr: {
       href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama",
-      label: "Trendyol & Hepsiburada Kâr Hesaplama",
+      label: "Trendyol Komisyon Hesaplama ve Kâr Hesaplayıcı",
       description: "Komisyon, kargo, stopaj, iade ve reklam dahil sipariş başı net kârınızı görün.",
     },
     en: {

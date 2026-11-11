@@ -537,6 +537,16 @@ export const marketplace: ToolContent = {
         "%20 KDV'li bir ürünü 599 TL'ye sattığınızı düşünelim. KDV hariç satış 499,17 TL'dir. Komisyon oranı %15 ise ve komisyon KDV dahil fiyat üzerinden hesaplanıyorsa komisyon 89,85 TL olur. Kargo 65 TL, hizmet bedeli 10,99 TL, ürün maliyeti 220 TL ve paketleme 8 TL düşüldüğünde iade edilmeyen bir siparişte net kâr 105,33 TL, marj yaklaşık %21'dir. Şimdi iade oranını %8 ve sipariş başı reklam harcamasını 40 TL olarak ekleyelim: sipariş başı ortalama net kâr 45,86 TL'ye, marj %9,2'ye düşer. Yani iade ve reklam, kâğıt üzerindeki kârın yarısından fazlasını eritir. Aynı üründe başabaş satış fiyatı yaklaşık 526 TL, %10 net marj için gereken fiyat ise yaklaşık 606 TL'dir.",
     },
     {
+      heading: "Trendyol komisyon hesaplama: komisyon tutarı nasıl bulunur?",
+      body:
+        "Komisyon tutarı = Satış fiyatı × Komisyon oranı. Oran, ürünün kategorisine ve satıcı paneldeki anlaşmanıza göre belirlenir; tutar, müşterinin ödediği fiyat üzerinden hesaplanır. Hızlı başvuru için birkaç örnek: 250 TL'lik üründe %10 komisyon 25 TL, %15 komisyon 37,50 TL, %20 komisyon 50 TL, %25 komisyon 62,50 TL'dir. 500 TL'de aynı oranlar sırasıyla 50, 75, 100 ve 125 TL; 1.000 TL'de 100, 150, 200 ve 250 TL eder. Ancak komisyon tutarını bilmek kârı bilmek değildir: aynı 500 TL'lik üründe kargo, hizmet bedeli, ürün maliyeti, iade ve reklam düşülmeden ne kazandığınız görünmez. Bu yüzden araç komisyonu ayrı bir satır olarak gösterir ve ardından sipariş başı net kâra kadar tüm kalemleri hesaplar.",
+    },
+    {
+      heading: "Komisyon oranı artarsa fiyatı ne kadar artırmalısınız?",
+      body:
+        "Kategori komisyonu yükseldiğinde ya da bir kampanyaya daha yüksek oranla katıldığınızda, eski kârı korumak için gereken fiyat sanıldığından fazla artar; çünkü komisyon artan fiyatın üzerinden de alınır. Yukarıdaki 599 TL'lik örnekte (kargo 65 TL, hizmet bedeli 10,99 TL, ürün maliyeti 220 TL, paketleme 8 TL) iade edilmeyen siparişte kâr %15 komisyonla 105,33 TL'dir. Oran %18 olursa kâr 87,36 TL'ye, %20 olursa 75,38 TL'ye, %22 olursa 63,40 TL'ye düşer. Aynı 105,33 TL'yi korumak için gereken fiyat sırasıyla yaklaşık 627, 646 ve 667 TL'dir: 5 puanlık komisyon artışı fiyatta yaklaşık %8'lik artış ister. Araçta komisyon oranını yeni değerle girip 'Hedef net kâr marjı' alanını doldurursanız, o marjı koruyan satış fiyatını doğrudan görürsünüz.",
+    },
+    {
       heading: "Komisyon KDV dahil fiyattan mı hesaplanır?",
       body:
         "Pazaryerleri komisyonu genellikle müşterinin ödediği KDV dahil satış fiyatı üzerinden hesaplar ve komisyon faturasına ayrıca %20 KDV ekler. Bu yüzden 'komisyon oranım %15' demek, KDV hariç satışınızın %15'inden daha fazlasını ödediğiniz anlamına gelir: örnekteki 599 TL'lik üründe komisyon, KDV hariç satışın yaklaşık %18'ine denk gelir. Komisyon oranı kategoriye, satıcı seviyesine ve kampanya anlaşmalarına göre değişir; kesin oranı satıcı panelinizdeki anlaşma bilgilerinden alıp araca girin.",
@@ -569,6 +579,7 @@ export const marketplace: ToolContent = {
   ],
   faqs: [
     { q: "Trendyol kâr hesaplama nasıl yapılır?", a: "KDV dahil satış fiyatını KDV oranına bölerek KDV hariç satışı bulun, ardından komisyonu (KDV dahil fiyat × komisyon oranı), kargoyu, platform hizmet bedelini, ürün maliyetini ve paketlemeyi düşün. Gerçek kâr için iade maliyetini ve sipariş başı reklam harcamasını da ekleyin. Bu araç tüm adımları otomatik yapar." },
+    { q: "Trendyol komisyonu nasıl hesaplanır?", a: "Komisyon tutarı = Satış fiyatı × Komisyon oranı. Örneğin 500 TL'lik bir üründe %15 komisyon 75 TL, %20 komisyon 100 TL'dir. Oranınızı satıcı paneldeki kategori anlaşmasından alın; net kârı görmek için kargo, hizmet bedeli, ürün maliyeti, iade ve reklamı da düşmeniz gerekir, araç bunu otomatik yapar." },
     { q: "Pazaryeri komisyonu KDV dahil fiyattan mı alınır?", a: "Genellikle evet: komisyon, müşterinin ödediği KDV dahil fiyat üzerinden hesaplanır ve komisyon faturasına ayrıca %20 KDV eklenir. Bu KDV indirilebildiği için kârdan düşülmez, ancak komisyonun kendisi KDV hariç satışınıza oranla, ilan edilen orandan daha yüksek bir paya karşılık gelir." },
     { q: "E-ticaret stopajı nasıl hesaplanır ve geri alınabilir mi?", a: "Stopaj, KDV hariç satış tutarının %1'idir ve pazaryeri tarafından ödemenizden kesilir. Peşin ödenmiş gelir vergisi olduğu için beyannamede hesaplanan vergiden mahsup edilir; mahsup edilemeyen kısım için iade talep edilebilir. Kesin durumunuz için mali müşavirinize danışın." },
     { q: "Platform hizmet bedeli ne kadar?", a: "Trendyol ve Hepsiburada teslim edilen paket başına sabit bir hizmet bedeli alır ve bu tutar sık güncellenir. Araçtaki varsayılan değer kamuya açık kaynaklardan derlenmiştir; satıcı panelinizdeki güncel tutarla değiştirebilirsiniz." },
@@ -640,7 +651,7 @@ export const adBudget: ToolContent = {
   ],
   relatedTools: [
     { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "Gerçekleşen ROAS'ı ölçün" },
-    { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Sipariş başı net kâr" },
+    { label: "Trendyol Komisyon Hesaplama ve Kâr Hesaplayıcı", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Sipariş başı net kâr" },
     { label: "CAC Geri Ödeme Süresi Hesaplayıcı", href: "/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici", note: "B2B geri ödeme" },
     { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici", note: "Dönüşüm hedefi" },
   ],
@@ -722,7 +733,7 @@ export const desi: ToolContent = {
   ],
   relatedTools: [
     { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama", note: "Kademeli tarife, teklif karşılaştırma, ücretsiz kargo eşiği" },
-    { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Kargo dahil sipariş başı kâr" },
+    { label: "Trendyol Komisyon Hesaplama ve Kâr Hesaplayıcı", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Kargo dahil sipariş başı kâr" },
     { label: "Brüt Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Ürün bazında marj" },
     { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Kargo dahil kârlılık" },
     { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret hesaplayıcıları" },
@@ -799,7 +810,7 @@ export const discount: ToolContent = {
     { q: "Satıcı olarak ne kadar indirim yapabilirim?", a: "Komisyonsuz durumda en fazla marjınız kadar: %40 marjda %40 indirimde kâr sıfırdır. Kârı korumak için satış adedinin de artması gerekir; %40 marjlı üründe %20 indirim satışların iki katına çıkmasını ister. Araçta birim maliyetinizi girerek kendi oranlarınızı görebilirsiniz." },
   ],
   relatedTools: [
-    { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Komisyon, kargo ve iade dahil net kâr" },
+    { label: "Trendyol Komisyon Hesaplama ve Kâr Hesaplayıcı", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama", note: "Komisyon, kargo ve iade dahil net kâr" },
     { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici", note: "Brüt kar marjı" },
     { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici", note: "İndirimli fiyatta başabaş ROAS" },
     { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama", note: "Kampanya bütçesi" },
