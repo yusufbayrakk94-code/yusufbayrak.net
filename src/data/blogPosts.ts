@@ -4603,6 +4603,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "CTR Nedir? İyi Tıklama Oranı Kaç?", href: "/blog/ctr-nedir-iyi-tiklama-orani-kac/" },
       { label: "Google Ads Reklam Verme: İlk Kampanya Adım Adım", href: "/blog/google-ads-reklam-verme-rehberi/" },
       { label: "SEO Nedir, Nasıl Yapılır? (reklamla karşılaştırma hesabı)", href: "/blog/seo-nedir-nasil-yapilir/" },
       { label: "CAC Nedir, Ne Demek? Müşteri Edinme Maliyeti Hesaplama", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
@@ -7616,6 +7617,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "conversion",
     resources: [
+      { label: "CTR Nedir? Tıklama Oranı Nasıl Hesaplanır?", href: "/blog/ctr-nedir-iyi-tiklama-orani-kac/" },
       { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
       { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
@@ -7628,6 +7630,181 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Yardım: Kalite Puanı hakkında", href: "https://support.google.com/google-ads/answer/6167118", external: true },
       { label: "web.dev: Core Web Vitals eşikleri", href: "https://web.dev/articles/vitals", external: true },
       { label: "KVKK (Kişisel Verileri Koruma Kurumu)", href: "https://www.kvkk.gov.tr/", external: true },
+    ],
+  },
+  {
+    slug: "ctr-nedir-iyi-tiklama-orani-kac",
+    seoTitle: "CTR Nedir? Tıklama Oranı Hesaplama ve İyi CTR Kaç Olmalı",
+    title: "CTR Nedir? Tıklama Oranı Nasıl Hesaplanır, Reklamda ve SEO'da İyi CTR Kaç?",
+    description:
+      "CTR (tıklama oranı) nedir, nasıl hesaplanır? Google Ads, Meta, SEO ve e-postada iyi CTR kaç, CTR'nin TBM ve EBM'ye etkisi, Search Console'da doğru okuma.",
+    category: "performans-pazarlama",
+    tldr: [
+      "CTR (click-through rate, tıklama oranı), reklamınızın ya da arama sonucunuzun görüldüğü her 100 seferden kaçında tıklandığını gösterir: CTR = tıklama ÷ gösterim × 100. 20.000 gösterim ve 300 tıklama = %1,5.",
+      "Tek bir 'iyi CTR' yoktur; kanal, sıra, sektör ve marka bilinirliği oranı çok değiştirir. Kaynaklı referanslar: ABD arama reklamlarında ortalama CTR %6,66 (LocaliQ/WordStream 2025), organik 1. sıra ortalama %27,6 (Backlinko). Asıl kıyas kendi geçmişinizle yapılmalı.",
+      "CTR maliyeti doğrudan değiştirir: TBM = BGBM ÷ (CTR × 1.000). Bin gösterim 60 TL iken CTR %0,8'den %1,2'ye çıkarsa tıklama başı maliyet 7,5 TL'den 5 TL'ye iner.",
+      "Yüksek CTR tek başına başarı değildir: tıklayan kişi dönüşmüyorsa daha çok ödersiniz. CTR'yi her zaman dönüşüm oranı ve edinme başı maliyetle (EBM) birlikte okuyun.",
+    ],
+    publishedAt: "2026-11-11",
+    readingMinutes: 10,
+    tags: ["CTR", "Tıklama Oranı", "Google Ads", "Search Console", "SEO", "Reklam Metrikleri"],
+    sections: [
+      {
+        heading: "CTR nedir? (Kısa cevap)",
+        paragraphs: [
+          "CTR, İngilizce click-through rate kelimelerinin kısaltmasıdır; Türkçede tıklama oranı (Google Ads arayüzünde 'TO') olarak geçer. Bir reklamın, arama sonucunun, e-postadaki linkin ya da bir ürün kartının kaç kez görüldüğüne karşılık kaç kez tıklandığını yüzde olarak gösterir.",
+          "Google'ın tanımıyla CTR, reklamınızı görenlerin ne sıklıkla tıkladığını gösteren orandır ve reklamlarınızın ve anahtar kelimelerinizin ne kadar iyi performans gösterdiğini değerlendirmek için kullanılır. Aynı mantık organik aramada da geçerlidir: Search Console, sayfanızın arama sonuçlarında kaç kez gösterildiğini ve kaç kez tıklandığını ayrı ayrı raporlar.",
+          "Bu yazıda CTR'nin nasıl hesaplandığını, kanal kanal kaynaklı karşılaştırma rakamlarını, CTR'nin tıklama başı maliyete etkisini sayılarla, Search Console'da düşük CTR'li sayfaları nasıl bulacağınızı ve CTR'nin yanılttığı durumları bulacaksınız.",
+        ],
+      },
+      {
+        heading: "CTR nasıl hesaplanır? Formül ve örnekler",
+        paragraphs: [
+          "Formül: CTR = tıklama sayısı ÷ gösterim sayısı × 100. Gösterim, reklamın ya da sonucun ekranda görüntülenme sayısıdır; tıklama ise bu gösterimlerden kaçının tıklamaya dönüştüğüdür.",
+          "Bir hesap ya da sitenin toplam CTR'sini bulurken satırların CTR'lerinin ortalamasını almayın; toplam tıklamayı toplam gösterime bölün. Örnek: A sayfası 10.000 gösterimde 100 tıklama (%1), B sayfası 500 gösterimde 50 tıklama (%10) almış olsun. İki oranın ortalaması %5,5 eder ama gerçek toplam CTR 150 ÷ 10.500 = %1,43'tür. Gösterimi az olan satır ortalamayı şişirir.",
+        ],
+        bullets: [
+          "Google Ads: 20.000 gösterim, 300 tıklama → CTR %1,5",
+          "Search Console: 4.000 gösterim, 80 tıklama → CTR %2",
+          "Meta (bağlantı tıklaması): 50.000 gösterim, 400 bağlantı tıklaması → CTR %0,8",
+          "E-posta: 10.000 teslim edilen, 300 tıklama → CTR %3",
+          "Pazaryeri ürün kartı: 8.000 listeleme görüntülenmesi, 240 ürün sayfası ziyareti → CTR %3",
+        ],
+      },
+      {
+        heading: "İyi bir CTR kaç olmalı? Kanal kanal referanslar",
+        paragraphs: [
+          "Çoğu Türkçe kaynak 'arama reklamlarında %2–5 iyidir' gibi aralıklar verir ama kaynağını göstermez. Aşağıdaki rakamlar kaynaklıdır; hepsinin ağırlıkla ABD verisi olduğunu ve Türkiye'deki sektörünüzde farklı çıkabileceğini unutmayın. Referans olarak kullanın, hedef olarak değil.",
+          "Arama reklamları: LocaliQ'nun Nisan 2024–Mart 2025 arasında 23 sektörde 16.000'den fazla kampanyayı inceleyen raporunda tüm sektörlerin ortalama CTR'si %6,66 (bir önceki yıla göre %3,74 artış). Aynı raporda ortalama tıklama başı maliyet 5,26 $ ve ortalama dönüşüm oranı %7,52.",
+          "Organik arama: Backlinko'nun Semrush'tan alınan Search Console verileriyle (yaklaşık 4 milyon arama sonucu) yaptığı çalışmada 1. sıradaki sonucun ortalama CTR'si %27,6; 1. sıra 10. sıraya göre yaklaşık 10 kat daha çok tıklanıyor ve ilk üç sonuç tıklamaların %54,4'ünü alıyor. Çalışma 2019 tarihli; o tarihten sonra yapay zekâ özetleri tıklama dağılımını değiştirdi.",
+          "Yapay zekâ özetlerinin etkisi: Pew Research Center'ın Mart 2025'te 900 ABD'li yetişkinin tarama verisiyle yaptığı analizde, sayfada AI özeti olan aramaların %8'inde, olmayanların %15'inde geleneksel bir sonuca tıklandı. Google çalışmanın yöntemine itiraz etti; yine de bilgi amaçlı sorgularda organik CTR'nin eskisinden düşük olmasını beklemek gerçekçi.",
+          "Görüntülü reklam, sosyal medya ve video: bu kanallarda kullanıcı bir şey aramadığı için CTR doğal olarak arama reklamlarından çok daha düşüktür. Platformlar tıklamayı farklı tanımladığından (Meta'da 'tüm tıklamalar' ile 'bağlantı tıklamaları' ayrı) kanallar arası CTR karşılaştırması yanıltıcıdır. Video reklamda ise asıl metrik genellikle görüntülenme oranıdır.",
+        ],
+        bullets: [
+          "Kendi hesabınızın son 90 günlük CTR'si en iyi referanstır; yeni reklamı ilk önce onunla kıyaslayın",
+          "Marka aramalarında CTR çok yüksek, genel kategori aramalarında düşüktür; ikisini ayrı raporlayın",
+          "Organikte CTR'yi her zaman ortalama sırayla birlikte okuyun: 8. sıradaki %1, 2. sıradaki %1 ile aynı şey değildir",
+        ],
+      },
+      {
+        heading: "CTR reklam maliyetini nasıl etkiler? TBM ve EBM hesabı",
+        paragraphs: [
+          "CTR yalnızca bir ilgi göstergesi değildir; bin gösterim başına ödenen tutar (BGBM, CPM) sabitken tıklama başı maliyeti (TBM, CPC) doğrudan belirler: TBM = BGBM ÷ (CTR × 1.000). Edinme başı maliyet ise EBM (CPA) = TBM ÷ dönüşüm oranı formülüyle bağlanır.",
+          "Örnek (örnek tutarlar): bir Meta kampanyasında bin gösterim 60 TL. CTR %0,8 ise bin gösterimden 8 tıklama gelir ve TBM 7,5 TL olur. Kreatif yenilenip CTR %1,2'ye çıkarsa 12 tıklama gelir, TBM 5 TL'ye iner. CTR %0,5'e düşerse TBM 12 TL'ye çıkar. Dönüşüm oranı %2 ise EBM sırasıyla 375 TL, 250 TL ve 600 TL olur.",
+          "Google Ads arama reklamlarında mekanizma farklı ama sonuç benzerdir: beklenen tıklama oranı Kalite Puanı'nın üç bileşeninden biridir (diğerleri reklam alaka düzeyi ve açılış sayfası deneyimi). Google, reklamın alakalı olmasının daha düşük maliyet ve daha iyi reklam sıralaması getirebileceğini belirtir. Yani tıklanmayan bir reklam hem daha az trafik hem de daha pahalı trafik demektir.",
+        ],
+        bullets: [
+          "CTR %0,5 → 5 tıklama / 1.000 gösterim → TBM 12 TL → EBM 600 TL",
+          "CTR %0,8 → 8 tıklama → TBM 7,5 TL → EBM 375 TL",
+          "CTR %1,2 → 12 tıklama → TBM 5 TL → EBM 250 TL",
+          "CTR %1,6 → 16 tıklama → TBM 3,75 TL → EBM 187,5 TL",
+        ],
+      },
+      {
+        heading: "Yüksek CTR her zaman iyi mi? CTR'nin yanılttığı durumlar",
+        paragraphs: [
+          "Hayır. CTR ilgiyi ölçer, değeri ölçmez. Abartılı bir vaat ya da merak uyandıran ama sayfada karşılığı olmayan bir başlık (clickbait) CTR'yi yükseltir, ama tıklayan kişi aradığını bulamadığında hem dönüşüm düşer hem de tıklamaların parasını ödersiniz.",
+          "Örnek (örnek tutarlar, TBM 5 TL, 25.000 gösterim): A reklamının CTR'si %4; 1.000 tıklama, 5.000 TL harcama, %1 dönüşümle 10 satış ve 500 TL EBM. B reklamının CTR'si %2; 500 tıklama, 2.500 TL harcama, %3 dönüşümle 15 satış ve yaklaşık 167 TL EBM. CTR'si yarı yarıya düşük olan B, hem daha çok satış hem üç kat daha ucuz satış getiriyor.",
+        ],
+        bullets: [
+          "Yüksek CTR + düşük dönüşüm: reklam ile açılış sayfası arasında mesaj uyumsuzluğu ya da yanlış kitle",
+          "Düşük CTR + yüksek ROAS: dar ve nitelikli bir kitle; fiyatı reklamda açıkça yazmak bilerek CTR'yi düşürüp yanlış tıklamaları eler",
+          "Ani CTR sıçraması: geçersiz trafik, bot ya da yanlışlıkla tıklamaya açık bir yerleşim (ör. mobil uygulama içi) olabilir; yerleşim raporunu kontrol edin",
+          "Organikte yüksek CTR ama yüksek hemen çıkma: başlık sayfanın sunduğundan fazlasını vaat ediyor",
+        ],
+      },
+      {
+        heading: "Search Console'da CTR nasıl okunur? Düşük CTR'li sayfaları bulma",
+        paragraphs: [
+          "Search Console › Performans › Arama sonuçları raporunda Toplam tıklama, Toplam gösterim, Ortalama TO ve Ortalama konum kutucuklarını açın. Gösterim, sonucunuzun kullanıcının ekranında listelendiği sayıdır; kullanıcı aşağı kaydırıp görmese bile sayfa yüklendiğinde sayılabilir. Bu yüzden 30. sıradaki bir sayfanın CTR'si doğal olarak sıfıra yakındır.",
+          "Fırsat bulmanın en pratik yolu: son 3 ayı seçin, Sorgular ve Sayfalar sekmelerinde ortalama konumu 1–10 arasında olup CTR'si aynı sıradaki diğer sayfalarınıza göre belirgin şekilde düşük kalan satırları işaretleyin. Bunlar sıralaması zaten iyi olan ama başlığı ya da açıklaması tıklatmayan sayfalardır; en az emekle en çok tıklama kazanacağınız yer burasıdır.",
+          "Okurken dikkat edilecek iki tuzak: marka sorgularını (siteniz ya da şirket adınız) filtreleyip ayrı inceleyin, çünkü genel CTR'yi yapay olarak yükseltirler. İkincisi, AI Overviews ve AI Modu'ndaki görünürlük Search Console'da ayrı bir rapor olarak değil, 'Web' arama türünün içinde sayılır; bilgi sorgularında CTR düşüşünün bir kısmı sıralama kaybından değil, sayfanın üstünde cevap verilmesinden gelebilir.",
+        ],
+      },
+      {
+        heading: "CTR nasıl artırılır? Reklamda ve SEO'da yapılacaklar",
+        paragraphs: [
+          "Reklam ve organik sonuçta tıklamayı aynı şey belirler: kullanıcı, sonucun kendi sorusunun cevabı olduğunu bir bakışta anlamalı. Aşağıdaki maddeleri önce en çok gösterim alan ama CTR'si düşük satırlarda uygulayın.",
+        ],
+        bullets: [
+          "Başlıkta aranan kelimeyi ve sonucu birlikte verin: 'Desi hesaplama' yerine 'Desi Hesaplama: Kargo Desisini Saniyeler İçinde Bulun'",
+          "Somut bir sayı ya da fayda ekleyin: fiyat, süre, ücretsiz, adım sayısı; ama sayfada karşılığı olmayan vaat yazmayın",
+          "Google Ads'te en az üç-dört farklı başlık mesajı ve uygun öğeler (site bağlantısı, açıklama metni, yapılandırılmış snippet) kullanın; reklam büyür, tıklanabilir alan artar",
+          "Negatif anahtar kelimelerle alakasız aramaları eleyin; alakasız gösterim CTR'yi düşürür",
+          "Meta ve YouTube'da kreatifi düzenli yenileyin; aynı kişi aynı reklamı çok sık görünce CTR düşer (sıklık raporunu izleyin)",
+          "SEO'da title'ı 60 karakter civarında tutun, ana kelimeyi başa alın; meta açıklamada sayfanın neyi çözdüğünü tek cümlede söyleyin",
+          "Uygun sayfalarda yapılandırılmış veri ekleyin; zengin sonuç garantisi yoktur ama sonucu daha anlaşılır kılabilir",
+        ],
+      },
+      {
+        heading: "E-postada CTR ile CTOR farkı nedir?",
+        paragraphs: [
+          "E-posta pazarlamasında iki farklı oran sık karıştırılır. CTR = tıklayan ÷ teslim edilen e-posta × 100; CTOR (click-to-open rate, açılma başına tıklama) = tıklayan ÷ açan × 100. Örnek: 10.000 teslim edilen, 2.500 açılan ve 300 tıklanan bir kampanyada CTR %3, CTOR %12'dir.",
+          "CTR, konu satırı dahil tüm kampanyanın tıklama getirme gücünü gösterir; CTOR ise e-postayı açanların içeriği ne kadar ilgi çekici bulduğunu ölçer. Bazı rehberler tıklamayı açılana bölüp buna CTR der; bu aslında CTOR'dur ve oranı olduğundan yüksek gösterir. Ayrıca gizlilik özellikleri (ör. Apple Mail Gizlilik Koruması) açılma verisini şişirebildiği için CTOR'u dikkatli yorumlayın.",
+        ],
+      },
+      {
+        heading: "CTR'yi hangi metriklerle birlikte izlemelisiniz?",
+        paragraphs: [
+          "CTR huninin yalnızca ilk adımıdır. Kararı tek başına CTR'ye göre vermek, mağazanın vitrinine bakan kişi sayısıyla satışları tahmin etmeye benzer. Sağlıklı bir okuma için şu zinciri birlikte izleyin: gösterim → CTR → TBM → dönüşüm oranı → EBM ya da lead başı maliyet → ROAS.",
+          "Her bağlantıyı ayrı araçla kontrol edebilirsiniz: dönüşüm oranını Dönüşüm Oranı Hesaplayıcı ile, reklamın kâr getirip getirmediğini ROAS Hesaplama aracıyla, aylık hedef için gereken harcamayı Reklam Bütçesi Hesaplama ile. Trafiğin hangi reklamdan geldiğini GA4'te doğru görmek için linklerinize UTM parametreleri ekleyin.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "CTR ne demek?",
+        answer:
+          "CTR, click-through rate yani tıklama oranı demektir. Bir reklamın, arama sonucunun ya da linkin görüldüğü her 100 seferden kaçında tıklandığını gösterir. Formülü: tıklama ÷ gösterim × 100.",
+      },
+      {
+        question: "CTR nasıl hesaplanır?",
+        answer:
+          "Tıklama sayısını gösterim sayısına bölüp 100 ile çarpın. Örneğin 20.000 gösterimde 300 tıklama aldıysanız CTR = 300 ÷ 20.000 × 100 = %1,5'tir. Birden fazla reklam ya da sayfanın toplamı için oranların ortalamasını değil, toplam tıklamayı toplam gösterime bölün.",
+      },
+      {
+        question: "Google Ads'te iyi CTR kaç olmalı?",
+        answer:
+          "Sektöre ve kelimeye göre çok değişir. LocaliQ/WordStream'in 2025 raporunda ABD arama reklamlarında tüm sektör ortalaması %6,66'dır. Marka kelimelerinde CTR çok daha yüksek, genel kategori kelimelerinde daha düşüktür; en doğru kıyas kendi hesabınızın geçmiş verisidir.",
+      },
+      {
+        question: "Organik aramada iyi CTR kaç?",
+        answer:
+          "Sıraya bağlıdır. Backlinko'nun çalışmasında 1. sıranın ortalama CTR'si %27,6, ve 1. sıra 10. sıradan yaklaşık 10 kat fazla tıklanıyor. Yapay zekâ özetlerinin göründüğü bilgi sorgularında oranlar daha düşük olabilir. Search Console'da CTR'yi her zaman ortalama konumla birlikte değerlendirin.",
+      },
+      {
+        question: "CTR düşükse ne yapmalıyım?",
+        answer:
+          "Önce gösterimlerin alakalı olup olmadığına bakın (yanlış arama terimleri, yanlış kitle). Sonra başlık ve açıklamada aranan kelimeyi, somut bir faydayı ve net bir eylemi verin. Reklamlarda kreatifi yenileyin ve sıklığı kontrol edin. Değişikliğin etkisini en az iki-üç haftalık veriyle önce/sonra karşılaştırın.",
+      },
+    ],
+    howTo: {
+      name: "Düşük CTR'li sayfa ve reklamlar nasıl bulunup iyileştirilir?",
+      description: "Search Console ve reklam panelinde beş adımda CTR iyileştirme.",
+      steps: [
+        { name: "Doğru dönemi ve metrikleri açın", text: "Search Console Performans raporunda son 3 ayı seçip tıklama, gösterim, ortalama TO ve ortalama konumu açın; reklam panelinde ise son 30-90 günü kullanın." },
+        { name: "Marka sorgularını ayırın", text: "Site ya da şirket adınızı içeren sorguları filtreleyip ayrı inceleyin; genel CTR'yi yapay olarak yükseltirler." },
+        { name: "Fırsat satırlarını işaretleyin", text: "Ortalama konumu 1-10 arasında olup aynı sıradaki diğer sayfalarınıza göre CTR'si belirgin şekilde düşük kalan sorgu ve sayfaları listeleyin." },
+        { name: "Başlık ve açıklamayı yeniden yazın", text: "Aranan kelimeyi başa alın, somut bir fayda ya da sayı ekleyin, sayfada karşılığı olmayan vaatten kaçının; reklamda yeni başlık varyasyonları ekleyin." },
+        { name: "Önce/sonra ölçün", text: "Değişiklik tarihini not edin; iki-üç hafta sonra aynı sorgu ve sıra aralığında CTR'yi, reklamda ise CTR ile birlikte dönüşüm oranı ve EBM'yi karşılaştırın." },
+      ],
+    },
+    relatedToolKey: "roas",
+    resources: [
+      { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "Google Ads Nedir, Nasıl Çalışır?", href: "/blog/google-ads-nedir-nasil-calisir/" },
+      { label: "Landing Page Nedir? Dönüşen Açılış Sayfası", href: "/blog/landing-page-nedir-donusen-acilis-sayfasi/" },
+      { label: "CPL Nedir? Lead Başı Maliyet", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
+      { label: "SEO Nedir, Nasıl Yapılır?", href: "/blog/seo-nedir-nasil-yapilir/" },
+      { label: "KPI Nedir? Pazarlama KPI Örnekleri", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
+      { label: "Google Ads Yardım: Tıklama oranı (TO)", href: "https://support.google.com/google-ads/answer/2615875", external: true },
+      { label: "Google Ads Yardım: Kalite Puanı hakkında", href: "https://support.google.com/google-ads/answer/6167118", external: true },
+      { label: "Search Console Yardım: Performans raporu", href: "https://support.google.com/webmasters/answer/7576553", external: true },
+      { label: "Backlinko: Google CTR istatistikleri", href: "https://backlinko.com/google-ctr-stats", external: true },
+      { label: "Pew Research: AI özetleri ve link tıklamaları (2025)", href: "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/", external: true },
     ],
   },
 ];
@@ -11775,6 +11952,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is CTR? What Is a Good Click-Through Rate?", href: "/en/blog/what-is-ctr-good-click-through-rate/" },
       { label: "How to Run Google Ads: First Campaign Step by Step", href: "/en/blog/how-to-run-google-ads-first-campaign/" },
       { label: "What Is SEO and How Do You Do It? (ads comparison math)", href: "/en/blog/what-is-seo-how-to-do-it/" },
       { label: "Advertising Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
@@ -14629,6 +14807,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "conversion",
     resources: [
+      { label: "What Is CTR? How to Calculate Click-Through Rate", href: "/en/blog/what-is-ctr-good-click-through-rate/" },
       { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
@@ -14639,6 +14818,181 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "How to Set Target ROAS in Google Ads", href: "/en/blog/how-to-set-target-roas-google-ads/" },
       { label: "Google Ads Help: About Quality Score", href: "https://support.google.com/google-ads/answer/6167118", external: true },
       { label: "web.dev: Core Web Vitals thresholds", href: "https://web.dev/articles/vitals", external: true },
+    ],
+  },
+  {
+    slug: "what-is-ctr-good-click-through-rate",
+    seoTitle: "What Is CTR? How to Calculate It and What Is a Good CTR",
+    title: "What Is CTR? How to Calculate Click-Through Rate and What Counts as Good in Ads and SEO",
+    description:
+      "What is CTR (click-through rate) and how do you calculate it? Good CTR for Google Ads, Meta, SEO and email, how CTR drives CPC and CPA, and Search Console tips.",
+    category: "performans-pazarlama",
+    tldr: [
+      "CTR (click-through rate) shows how many times out of every 100 your ad or search result was clicked after being shown: CTR = clicks ÷ impressions × 100. 20,000 impressions and 300 clicks = 1.5%.",
+      "There is no single 'good CTR'; channel, position, industry and brand awareness move it a lot. Sourced reference points: average US search ad CTR 6.66% (LocaliQ/WordStream 2025) and 27.6% for the #1 organic result (Backlinko). Your own history is the benchmark that matters.",
+      "CTR changes cost directly: CPC = CPM ÷ (CTR × 1,000). At a $12 CPM, lifting CTR from 0.8% to 1.2% cuts cost per click from $1.50 to $1.00.",
+      "High CTR alone is not success: if the people who click don't convert, you just pay more. Always read CTR together with conversion rate and cost per acquisition (CPA).",
+    ],
+    publishedAt: "2026-11-11",
+    readingMinutes: 10,
+    tags: ["CTR", "Click-Through Rate", "Google Ads", "Search Console", "SEO", "Ad Metrics"],
+    sections: [
+      {
+        heading: "What is CTR? (Short answer)",
+        paragraphs: [
+          "CTR stands for click-through rate. It is the percentage of times an ad, a search result, an email link or a product card was clicked out of the times it was shown.",
+          "Google defines CTR as a ratio showing how often people who see your ad end up clicking it, and uses it to judge how well your ads and keywords are performing. The same logic applies to organic search: Search Console reports how many times your page appeared in search results and how many times it was clicked.",
+          "This guide covers how CTR is calculated, sourced benchmarks by channel, how CTR changes your cost per click with worked numbers, how to find low-CTR pages in Search Console, and when CTR misleads you.",
+        ],
+      },
+      {
+        heading: "How do you calculate CTR? Formula and examples",
+        paragraphs: [
+          "Formula: CTR = clicks ÷ impressions × 100. An impression is each time the ad or result is displayed; a click is how many of those impressions turned into a click.",
+          "When you calculate the total CTR of an account or site, don't average the row-level CTRs; divide total clicks by total impressions. Example: page A gets 100 clicks from 10,000 impressions (1%) and page B gets 50 clicks from 500 impressions (10%). The average of the two rates is 5.5%, but the real combined CTR is 150 ÷ 10,500 = 1.43%. Low-impression rows inflate a simple average.",
+        ],
+        bullets: [
+          "Google Ads: 20,000 impressions, 300 clicks → 1.5% CTR",
+          "Search Console: 4,000 impressions, 80 clicks → 2% CTR",
+          "Meta (link clicks): 50,000 impressions, 400 link clicks → 0.8% CTR",
+          "Email: 10,000 delivered, 300 clicks → 3% CTR",
+          "Marketplace product card: 8,000 listing views, 240 product page visits → 3% CTR",
+        ],
+      },
+      {
+        heading: "What is a good CTR? Benchmarks by channel",
+        paragraphs: [
+          "Many guides quote ranges like '2–5% is good for search ads' without a source. The figures below are sourced; most are US-weighted data, so your market and industry may differ. Use them as reference points, not targets.",
+          "Search ads: LocaliQ's report covering more than 16,000 campaigns across 23 industries between April 2024 and March 2025 puts the all-industry average CTR at 6.66% (up 3.74% year over year), with an average cost per click of $5.26 and an average conversion rate of 7.52%.",
+          "Organic search: Backlinko's study of Search Console data supplied via Semrush (around 4 million search results) found an average CTR of 27.6% for the #1 result; #1 gets roughly 10 times more clicks than #10, and the top three results take 54.4% of all clicks. The study dates from 2019; AI summaries have changed click distribution since.",
+          "The effect of AI summaries: Pew Research Center's analysis of browsing data from 900 US adults in March 2025 found that people clicked a traditional result in 8% of visits when an AI summary appeared and 15% when it didn't. Google disputed the methodology; still, it is realistic to expect lower organic CTR on informational queries than before.",
+          "Display, social and video: users aren't searching for anything, so CTR is naturally far lower than on search ads. Platforms define clicks differently (Meta separates 'all clicks' from 'link clicks'), so cross-channel CTR comparisons mislead. For video ads the primary metric is usually view rate.",
+        ],
+        bullets: [
+          "Your own account's last 90 days of CTR is the best benchmark; compare every new ad against it first",
+          "Brand searches have very high CTR and generic category searches low CTR; report them separately",
+          "In organic search, always read CTR alongside average position: 1% at position 8 is not the same as 1% at position 2",
+        ],
+      },
+      {
+        heading: "How does CTR affect ad costs? CPC and CPA math",
+        paragraphs: [
+          "CTR isn't just an interest signal. When the price per thousand impressions (CPM) is fixed, it directly sets your cost per click: CPC = CPM ÷ (CTR × 1,000). Cost per acquisition follows from CPA = CPC ÷ conversion rate.",
+          "Example (illustrative numbers): a Meta campaign pays $12 per thousand impressions. At a 0.8% CTR you get 8 clicks per thousand impressions and a $1.50 CPC. Refresh the creative and lift CTR to 1.2%, and you get 12 clicks and a $1.00 CPC. If CTR drops to 0.5%, CPC rises to $2.40. With a 2% conversion rate, CPA is $75, $50 and $120 respectively.",
+          "In Google search ads the mechanism differs but the outcome is similar: expected click-through rate is one of the three Quality Score components (with ad relevance and landing page experience). Google notes that more relevant ads can lead to lower costs and better ad positions. An ad nobody clicks means both less traffic and more expensive traffic.",
+        ],
+        bullets: [
+          "0.5% CTR → 5 clicks / 1,000 impressions → $2.40 CPC → $120 CPA",
+          "0.8% CTR → 8 clicks → $1.50 CPC → $75 CPA",
+          "1.2% CTR → 12 clicks → $1.00 CPC → $50 CPA",
+          "1.6% CTR → 16 clicks → $0.75 CPC → $37.50 CPA",
+        ],
+      },
+      {
+        heading: "Is a high CTR always good? When CTR misleads",
+        paragraphs: [
+          "No. CTR measures interest, not value. An exaggerated promise or a curiosity-bait headline with nothing behind it (clickbait) lifts CTR, but when people don't find what they came for, conversions drop and you still pay for the clicks.",
+          "Example (illustrative numbers, $1 CPC, 25,000 impressions): ad A has a 4% CTR; 1,000 clicks, $1,000 spend, 10 sales at a 1% conversion rate and a $100 CPA. Ad B has a 2% CTR; 500 clicks, $500 spend, 15 sales at a 3% conversion rate and a CPA of about $33. Ad B, with half the CTR, brings more sales at a third of the cost.",
+        ],
+        bullets: [
+          "High CTR + low conversion: message mismatch between ad and landing page, or the wrong audience",
+          "Low CTR + high ROAS: a narrow, qualified audience; showing the price in the ad deliberately lowers CTR and filters out the wrong clicks",
+          "Sudden CTR spike: invalid traffic, bots or an accident-prone placement (e.g. in-app); check the placement report",
+          "High organic CTR but high bounce: the title promises more than the page delivers",
+        ],
+      },
+      {
+        heading: "How do you read CTR in Search Console? Finding low-CTR pages",
+        paragraphs: [
+          "In Search Console › Performance › Search results, turn on Total clicks, Total impressions, Average CTR and Average position. An impression is counted when your result is listed for the user, which can happen even if they never scroll down to it. That's why a page at position 30 naturally has a CTR close to zero.",
+          "The most practical way to find opportunities: select the last 3 months and, in the Queries and Pages tabs, flag rows with an average position between 1 and 10 whose CTR is clearly lower than your other pages at similar positions. These pages already rank well but their title or description isn't earning the click; it's where you win the most clicks for the least work.",
+          "Two traps: filter out brand queries (your site or company name) and review them separately, because they inflate overall CTR. Second, visibility in AI Overviews and AI Mode isn't a separate report in Search Console; it's counted inside the 'Web' search type. Part of a CTR drop on informational queries may come from the answer appearing above your result, not from a ranking loss.",
+        ],
+      },
+      {
+        heading: "How do you improve CTR in ads and SEO?",
+        paragraphs: [
+          "The same thing drives clicks on ads and organic results: users must see at a glance that your result answers their question. Apply the points below to the rows with the most impressions and the lowest CTR first.",
+        ],
+        bullets: [
+          "Put the searched term and the outcome together in the title: instead of 'Shipping calculator', try 'Shipping Weight Calculator: Find Dimensional Weight in Seconds'",
+          "Add a concrete number or benefit: price, time, free, number of steps; never promise what the page doesn't deliver",
+          "In Google Ads, use at least three or four distinct headline messages and relevant assets (sitelinks, callouts, structured snippets); larger ads offer more clickable space",
+          "Exclude irrelevant searches with negative keywords; irrelevant impressions drag CTR down",
+          "Refresh creative regularly on Meta and YouTube; CTR drops when the same person sees the same ad too often (watch frequency)",
+          "In SEO, keep titles around 60 characters with the main keyword first; use the meta description to say in one sentence what the page solves",
+          "Add structured data where appropriate; rich results aren't guaranteed but can make your result clearer",
+        ],
+      },
+      {
+        heading: "What is the difference between CTR and CTOR in email?",
+        paragraphs: [
+          "Two rates are often confused in email marketing. CTR = clickers ÷ delivered emails × 100; CTOR (click-to-open rate) = clickers ÷ openers × 100. Example: a campaign with 10,000 delivered, 2,500 opened and 300 clicked has a 3% CTR and a 12% CTOR.",
+          "CTR shows the click-generating power of the whole campaign, subject line included; CTOR measures how engaging openers found the content. Some guides divide clicks by opens and call it CTR; that is actually CTOR and overstates the rate. Privacy features such as Apple Mail Privacy Protection can inflate open data, so interpret CTOR with care.",
+        ],
+      },
+      {
+        heading: "Which metrics should you track alongside CTR?",
+        paragraphs: [
+          "CTR is only the first step of the funnel. Deciding on CTR alone is like predicting sales from how many people look at a shop window. For a healthy read, track this chain together: impressions → CTR → CPC → conversion rate → CPA or cost per lead → ROAS.",
+          "You can check each link with a dedicated tool: conversion rate with the Conversion Rate Calculator, whether ads are profitable with the ROAS Calculator, and the spend needed for a monthly goal with the Ad Budget Calculator. Add UTM parameters to your links so GA4 shows exactly which ad sent the traffic.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does CTR mean?",
+        answer:
+          "CTR means click-through rate. It shows how many times out of every 100 an ad, search result or link was clicked after being shown. Formula: clicks ÷ impressions × 100.",
+      },
+      {
+        question: "How do you calculate CTR?",
+        answer:
+          "Divide clicks by impressions and multiply by 100. If you got 300 clicks from 20,000 impressions, CTR = 300 ÷ 20,000 × 100 = 1.5%. For several ads or pages combined, divide total clicks by total impressions rather than averaging the rates.",
+      },
+      {
+        question: "What is a good CTR for Google Ads?",
+        answer:
+          "It varies widely by industry and keyword. LocaliQ/WordStream's 2025 report puts the all-industry average for US search ads at 6.66%. Brand keywords have much higher CTR and generic category keywords lower; your own account history is the most accurate comparison.",
+      },
+      {
+        question: "What is a good organic CTR?",
+        answer:
+          "It depends on position. In Backlinko's study, the #1 result averaged a 27.6% CTR and got about 10 times more clicks than #10. On informational queries with AI summaries, rates can be lower. Always read CTR with average position in Search Console.",
+      },
+      {
+        question: "What should I do if my CTR is low?",
+        answer:
+          "First check whether impressions are relevant (wrong search terms, wrong audience). Then put the searched term, a concrete benefit and a clear action in the title and description. Refresh ad creative and check frequency. Compare before and after using at least two to three weeks of data.",
+      },
+    ],
+    howTo: {
+      name: "How to find and fix low-CTR pages and ads",
+      description: "Five steps to improve CTR in Search Console and your ad account.",
+      steps: [
+        { name: "Pick the right period and metrics", text: "In the Search Console Performance report, select the last 3 months and turn on clicks, impressions, average CTR and average position; in your ad account use the last 30-90 days." },
+        { name: "Separate brand queries", text: "Filter queries that contain your site or company name and review them separately; they artificially inflate overall CTR." },
+        { name: "Flag opportunity rows", text: "List queries and pages with an average position between 1 and 10 whose CTR is clearly lower than your other pages at similar positions." },
+        { name: "Rewrite title and description", text: "Put the searched term first, add a concrete benefit or number, avoid promises the page doesn't keep; add new headline variations to ads." },
+        { name: "Measure before and after", text: "Note the change date; two to three weeks later compare CTR for the same queries and position range, and for ads compare CTR together with conversion rate and CPA." },
+      ],
+    },
+    relatedToolKey: "roas",
+    resources: [
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
+      { label: "What Is a Landing Page? Checklist", href: "/en/blog/what-is-a-landing-page-checklist/" },
+      { label: "What Is CPL? Cost per Lead", href: "/en/blog/what-is-cpl-cost-per-lead/" },
+      { label: "What Is SEO and How Do You Do It?", href: "/en/blog/what-is-seo-how-to-do-it/" },
+      { label: "What Is a KPI? Marketing KPI Examples", href: "/en/blog/what-is-a-kpi-marketing-kpi-examples/" },
+      { label: "Google Ads Help: Clickthrough rate (CTR)", href: "https://support.google.com/google-ads/answer/2615875", external: true },
+      { label: "Google Ads Help: About Quality Score", href: "https://support.google.com/google-ads/answer/6167118", external: true },
+      { label: "Search Console Help: Performance report", href: "https://support.google.com/webmasters/answer/7576553", external: true },
+      { label: "Backlinko: Google CTR stats", href: "https://backlinko.com/google-ctr-stats", external: true },
+      { label: "Pew Research: AI summaries and link clicks (2025)", href: "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/", external: true },
     ],
   },
 ];

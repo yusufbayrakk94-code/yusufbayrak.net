@@ -97,6 +97,7 @@
 - [Hepsiburada'da Satıcı Olmak: Gerekenler, Başvuru Adımları, Komisyon ve İlk Kâr Hesabı](https://yusufbayrak.net/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/): Hepsiburada satıcı olmak için gerekenler: belgeler, şahıs şirketi, başvuru adımları, komisyon ve hizmet bedeli, ödeme vadesi ve örnek sipariş kârı hesabı.
 - [Backlink Nedir, Nasıl Alınır? Ücretsiz, Güvenli Yöntemler ve Google'ın Link Kuralları](https://yusufbayrak.net/blog/backlink-nedir-nasil-alinir/): Backlink nedir, nasıl alınır? Dofollow, nofollow, sponsored ve ugc farkı, Google'ın link spam listesi, ücretsiz backlink yöntemleri ve Search Console ile ölçüm.
 - [Landing Page Nedir? Dönüşen Açılış Sayfası İçin Kontrol Listesi ve Örnek Hesap](https://yusufbayrak.net/blog/landing-page-nedir-donusen-acilis-sayfasi/): Landing page (açılış sayfası) nedir, ana sayfadan farkı ne? Türleri, dönüşüm oranı formülü, CPL'ye etkisi, hız eşikleri, form ve 20 maddelik kontrol listesi.
+- [CTR Nedir? Tıklama Oranı Nasıl Hesaplanır, Reklamda ve SEO'da İyi CTR Kaç?](https://yusufbayrak.net/blog/ctr-nedir-iyi-tiklama-orani-kac/): CTR (tıklama oranı) nedir, nasıl hesaplanır? Google Ads, Meta, SEO ve e-postada iyi CTR kaç, CTR'nin TBM ve EBM'ye etkisi, Search Console'da doğru okuma.
 
 ## English
 
@@ -170,6 +171,7 @@
 - [How to Sell on Hepsiburada: Seller Requirements, Fees, Payout Timing and a Profit Example](https://yusufbayrak.net/en/blog/how-to-sell-on-hepsiburada-seller-guide/): How to become a Hepsiburada seller: requirements and documents, application steps, commission and service fees, payout timing and a worked profit example.
 - [What Are Backlinks and How Do You Get Them? Free, Safe Methods and Google's Link Rules](https://yusufbayrak.net/en/blog/what-are-backlinks-how-to-get-them/): What are backlinks and how do you get them? Dofollow vs nofollow, sponsored and ugc, Google's link spam list, free link building methods and measurement.
 - [What Is a Landing Page? A Checklist for Pages That Convert, With a Worked Example](https://yusufbayrak.net/en/blog/what-is-a-landing-page-checklist/): What is a landing page and how is it different from a homepage? Types, conversion rate formula, cost per lead impact, speed targets and a 20-point checklist.
+- [What Is CTR? How to Calculate Click-Through Rate and What Counts as Good in Ads and SEO](https://yusufbayrak.net/en/blog/what-is-ctr-good-click-through-rate/): What is CTR (click-through rate) and how do you calculate it? Good CTR for Google Ads, Meta, SEO and email, how CTR drives CPC and CPA, and Search Console tips.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim

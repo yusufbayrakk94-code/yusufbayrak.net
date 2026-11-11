@@ -41,4 +41,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "hepsiburada-satici-olmak-komisyon-kar-hesabi", en: "how-to-sell-on-hepsiburada-seller-guide" },
   { tr: "backlink-nedir-nasil-alinir", en: "what-are-backlinks-how-to-get-them" },
   { tr: "landing-page-nedir-donusen-acilis-sayfasi", en: "what-is-a-landing-page-checklist" },
+  { tr: "ctr-nedir-iyi-tiklama-orani-kac", en: "what-is-ctr-good-click-through-rate" },
 ];
