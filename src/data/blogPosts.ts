@@ -1255,6 +1255,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Negatif ICP (kime satmayacağınız) en az pozitif tanım kadar değerlidir.",
     ],
     publishedAt: "2026-08-16",
+    updatedAt: "2026-11-11",
     readingMinutes: 7,
     tags: ["ICP", "B2B", "Lead Generation", "Segmentasyon"],
     sections: [
@@ -1278,6 +1279,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Doldurulabilir ICP Şablonu",
         paragraphs: [
           "Aşağıdaki dört katmanı doldurduğunuzda, reklam hedeflemesinden lead skorlamaya kadar her yerde kullanabileceğiniz tek bir kaynak elde edersiniz. Her satırı somut yazın; \"orta ölçekli şirketler\" gibi ifadeler hedeflenebilir değildir.",
+          "Aynı yapının doldurulabilir Excel sürümünü kaynaklar bölümünden ücretsiz indirebilirsiniz: müşteri listenizden LTV, satış döngüsü, destek yükü ve churn ile ICP ve negatif ICP adaylarını otomatik ayıran bir analiz sayfası, dört katmanlı ICP tanım formu, ağırlıklı lead skorlama (A/B/C sınıfı) ve kapanan anlaşmaların ICP'ye uyum oranını gösteren kontrol sayfası içerir.",
         ],
         bullets: [
           "Firmografik: sektör / çalışan sayısı / yıllık ciro / coğrafya / şirket yaşı.",
@@ -1376,6 +1378,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "cac",
     resources: [
+      { label: "ICP Şablonu ve Lead Skorlama (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/icp-ideal-musteri-profili-sablonu.xlsx", external: true },
       {
         label: "B2B Lead Generation Hunisi Nasıl Tasarlanır?",
         href: "/blog/b2b-lead-generation-huni-tasarimi",

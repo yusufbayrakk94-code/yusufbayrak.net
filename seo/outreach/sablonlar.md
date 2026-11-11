@@ -199,3 +199,33 @@ Merhaba <Ad>,
 https://yusufbayrak.net/blog/landing-page-nedir-donusen-acilis-sayfasi/ (şablon sayfanın kaynaklar bölümünde)
 Uygun görürseniz kaynak olarak eklenebilir; görmezseniz de teşekkürler.
 Yusuf Bayrak — yusufbayrak.net
+
+## ICP Şablonu ve Lead Skorlama (2026-11-11)
+Dosya: https://yusufbayrak.net/sablonlar/icp-ideal-musteri-profili-sablonu.xlsx
+Ana sayfa (link verilecek yer): https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon/
+İçerik: 5 sayfa — kullanım; Müşteri Analizi (müşteri listesinden LTV, satış döngüsü, destek yükü, churn medyanlarına göre 0-4 "en iyi müşteri" puanı → ICP adayı / negatif ICP adayı, özet ortalamalar); ICP Tanımı (4 katman + değer eşiği + negatif ICP + persona, örnek sütunlu); Lead Skorlama (ağırlıklı kriterler, Evet/Hayır seçimiyle 0-100 puan, A/B/C/D sınıfı); ICP Kontrol (kapanan anlaşmaların ICP'ye uyum oranı ve tutar payı, yorum). LibreOffice ile hesaplandı, 0 formül hatası. Örnek satırlar kurgusal ve "Örnek" diye etiketli. Kayıt/e-posta istemez. BLOG_POSTS'taki ICP yazısının (TR) şablon bölümüne ve kaynaklarına bağlandı; BACKLOG'daki "ICP şablonu kaldı" maddesini kapatır.
+Rekabet gözlemi (11.11.2026): Türkçe "ideal müşteri profili nedir" SERP'inde ClickUp TR (kendi ürününe bağlı şablonlar), QuestionPro TR, Kontentino TR sözlük (~200 kelime, şablon/skor yok), SEOptimer TR. Müşteri verisinden ICP çıkaran ve lead skorlamaya bağlayan bağımsız, Türkçe, indirilebilir bir Excel bulunamadı.
+
+### Hedefler (kullanıcı gönderir; göndermeden önce sayfayı açıp somut bir cümle bulun)
+| # | Yer | Neden | Durum |
+|---|---|---|---|
+| 1 | Kullanıcının LinkedIn profili (B2B kitle) | ICP konusu B2B satış/pazarlama kitlesinde doğrudan ilgi görür; metin aşağıda | Kullanıcı paylaşır |
+| 2 | kontentino.com/tr — "İdeal Müşteri Profili (ICP)" sözlük maddesi | Kısa tanım, şablon/yöntem yok; "kaynaklar" eklemeye uygun bir sözlük sayfası | Kontentino iletişim/destek formu üzerinden kısa öneri |
+| 3 | questionpro.com/blog/tr — ICP yazısı | Anket aracı odaklı; müşteri verisinden skor çıkaran tamamlayıcı şablon değer katabilir | Blog iletişim adresi (sayfada yoksa LinkedIn'de QuestionPro TR içerik ekibi) |
+| 4 | Konuk yazı Taslak 2 hedefi (girişim yayını) | Taslak gönderilirse yazıya "ICP şablonu" kaynak linki olarak eklenebilir | Taslak gönderiminde ekle |
+
+### LinkedIn metni (kullanıcının sesiyle düzenlenmeli)
+ICP'yi toplantı odasında yazmayın; müşteri listenizde zaten yazılı.
+
+En iyi 10-20 müşterinizi LTV, satış döngüsü, destek yükü ve churn'e göre puanlayın. 3-4 puan alanların ortak özellikleri ICP'niz, 0-1 alanlarınki negatif ICP'niz. Örnek veride ICP adaylarının ortalama LTV'si 395.000 TL, negatif adaylarınki 85.000 TL çıktı: yaklaşık 4,6 kat fark.
+
+Bunu otomatik yapan, ICP tanım formu ve ağırlıklı lead skorlama (A/B/C) içeren ücretsiz bir Excel hazırladım. Kayıt yok. Link ilk yorumda.
+
+### Teklif metni (kontentino / questionpro)
+Konu: ICP maddeniz için ücretsiz Türkçe şablon önerisi
+
+Merhaba,
+"İdeal Müşteri Profili" sayfanızı okudum; <somut bir nokta, ör. 'en iyi müşterilerden başlama önerisi'> çok yerinde. Okurlarınız için tamamlayıcı olabileceğini düşündüğüm Türkçe ve ücretsiz bir Excel şablonu hazırladım: müşteri listesinden ICP ve negatif ICP adaylarını ayıran analiz sayfası, dört katmanlı tanım formu ve ağırlıklı lead skorlama. Kayıt istemiyor.
+https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon/ (şablon kaynaklar bölümünde)
+Uygun görürseniz kaynak olarak eklenebilir; görmezseniz de teşekkürler.
+Yusuf Bayrak — yusufbayrak.net
