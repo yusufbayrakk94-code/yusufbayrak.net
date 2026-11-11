@@ -166,6 +166,7 @@ export const BLOG_SLUG_PAIRS = [
   { tr: "backlink-nedir-nasil-alinir", en: "what-are-backlinks-how-to-get-them" },
   { tr: "landing-page-nedir-donusen-acilis-sayfasi", en: "what-is-a-landing-page-checklist" },
   { tr: "ctr-nedir-iyi-tiklama-orani-kac", en: "what-is-ctr-good-click-through-rate" },
+  { tr: "youtube-reklam-verme-rehberi", en: "how-to-run-youtube-ads" },
 ];
 
 // Embeddable widget routes: prerendered (iframe targets) but noindex, so they

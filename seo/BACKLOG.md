@@ -55,6 +55,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 1, TR önce): /blog/backlink-nedir-nasil-alinir/, /en/blog/what-are-backlinks-how-to-get-them/
 - [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 2, TR önce): /blog/landing-page-nedir-donusen-acilis-sayfasi/, /en/blog/what-is-a-landing-page-checklist/
 - [ ] Dizine ekleme isteği (2026-11-11 yeni yazı 1, TR önce): /blog/ctr-nedir-iyi-tiklama-orani-kac/, /en/blog/what-is-ctr-good-click-through-rate/
+- [ ] Dizine ekleme isteği (2026-11-11 yeni yazı 2, TR önce): /blog/youtube-reklam-verme-rehberi/, /en/blog/how-to-run-youtube-ads/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28

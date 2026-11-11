@@ -5230,6 +5230,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "YouTube Reklam Verme Rehberi", href: "/blog/youtube-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS ve Başabaş ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -6169,6 +6170,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "YouTube Reklam Verme Rehberi", href: "/blog/youtube-reklam-verme-rehberi/" },
       { label: "Landing Page Nedir? Açılış Sayfası Kontrol Listesi", href: "/blog/landing-page-nedir-donusen-acilis-sayfasi/" },
       { label: "KPI Nedir? Pazarlama KPI Örnekleri", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
       { label: "Google Ads Kampanya Planı Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/google-ads-kampanya-plani-sablonu.xlsx", external: true },
@@ -7805,6 +7807,197 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Search Console Yardım: Performans raporu", href: "https://support.google.com/webmasters/answer/7576553", external: true },
       { label: "Backlinko: Google CTR istatistikleri", href: "https://backlinko.com/google-ctr-stats", external: true },
       { label: "Pew Research: AI özetleri ve link tıklamaları (2025)", href: "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/", external: true },
+    ],
+  },
+  {
+    slug: "youtube-reklam-verme-rehberi",
+    seoTitle: "YouTube Reklam Verme Rehberi: Türler, Bütçe ve Adımlar",
+    title: "YouTube Reklam Verme Rehberi: Reklam Türleri, Fiyatlandırma, TL Bütçe Örneği ve Adım Adım Kurulum",
+    description:
+      "YouTube'da reklam nasıl verilir? Güncel reklam türleri, TBG ve BGBM ile ödeme, TL bütçe örneği, Google Ads'te adım adım kurulum ve dönüşüm ölçümü.",
+    category: "performans-pazarlama",
+    tldr: [
+      "YouTube reklamları YouTube Studio'dan değil, Google Ads'ten verilir. Gerekenler: bir Google Ads hesabı, videonun YouTube'a herkese açık ya da liste dışı olarak yüklenmesi ve kanalın Google Ads'e bağlanması.",
+      "Güncel reklam türleri: atlanabilir yayın içi (5 saniye sonra atlanır), atlanamaz yayın içi (15-60 sn), bumper (6 sn'ye kadar), yayın içi akış (in-feed), Shorts ve Masthead. Eski bindirme (overlay) reklamları artık yok.",
+      "Ödeme biçime göre değişir: atlanabilir reklamda izleyici 30 saniyeyi (daha kısa videoda tamamını) izlerse ya da etkileşime girerse ödersiniz (TBG); bumper ve atlanamaz reklamda bin gösterim başına (BGBM) ödersiniz.",
+      "Örnek: 10.000 TL bütçe ve 0,50 TL ortalama görüntüleme başı maliyetle yaklaşık 20.000 görüntüleme alırsınız. Satış ve lead hedefinde Google, video eylem kampanyalarının yerini alan Demand Gen için günlük bütçeyi beklenen edinme maliyetinin en az 20 katı önerir.",
+    ],
+    publishedAt: "2026-11-11",
+    readingMinutes: 11,
+    tags: ["YouTube Reklam", "Video Reklam", "Google Ads", "Demand Gen", "Reklam Bütçesi", "TBG"],
+    sections: [
+      {
+        heading: "YouTube'da reklam nasıl verilir? (Kısa cevap)",
+        paragraphs: [
+          "YouTube reklamları Google Ads üzerinden verilir. Reklamınız olacak videoyu YouTube kanalınıza herkese açık ya da liste dışı (unlisted) olarak yüklersiniz, kanalı Google Ads hesabınıza bağlarsınız, sonra Google Ads'te bir video kampanyası (bilinirlik ve değerlendirme için) ya da Demand Gen kampanyası (satış, lead ve trafik için) oluşturup bütçe, hedefleme ve videoyu seçersiniz. Reklam incelemeden geçince yayına girer.",
+          "Sık yapılan bir karışıklığı baştan düzeltelim: YouTube Studio'daki 'Para kazanma' ve reklam türü seçimleri, içerik üreticinin kendi videolarında başkalarının reklamlarının gösterilmesi içindir. Kendi ürününüzün reklamını vermek için bu menüye değil, Google Ads'e gidersiniz. Bazı Türkçe rehberler bu iki işi karıştırıyor.",
+          "Bu rehberde güncel reklam türlerini ve nasıl ücretlendirildiklerini, hedefinize göre doğru kampanya türünü, TL ile bütçe hesabını, Google Ads'te kurulumu adım adım ve kampanyanın işe yarayıp yaramadığını nasıl ölçeceğinizi bulacaksınız.",
+        ],
+      },
+      {
+        heading: "YouTube reklamı vermek için neler gerekir?",
+        paragraphs: [
+          "Başlamadan önce şu dört şeyin hazır olması kurulumu yarım saate indirir:",
+        ],
+        bullets: [
+          "Google Ads hesabı: ödeme bilgileri tanımlı, para birimi TL olarak seçilmiş (para birimi hesap açıldıktan sonra değiştirilemez)",
+          "YouTube kanalı ve reklam videosu: video herkese açık ya da liste dışı olmalı; gizli (private) videolar reklamda kullanılamaz",
+          "Kanal bağlantısı: YouTube kanalınızı Google Ads'e bağlayın; böylece videoyu izleyenlere yeniden pazarlama yapabilir ve kanal metriklerini görebilirsiniz",
+          "Açılış sayfası ve ölçüm: satış ya da lead hedefliyorsanız Google Ads dönüşüm etiketi veya GA4'ten içe aktarılan dönüşüm, otomatik etiketleme ve gerekiyorsa UTM parametreleri",
+        ],
+      },
+      {
+        heading: "YouTube reklam türleri nelerdir? (2026 güncel liste)",
+        paragraphs: [
+          "Google Ads Yardım'daki güncel listeye göre YouTube'da altı ana video reklam biçimi var. Biçim, hem reklamın nerede ve nasıl görüneceğini hem de neye para ödeyeceğinizi belirler:",
+          "Bazı rehberlerde hâlâ geçen bindirme (overlay) reklamlar ve 'TrueView Discovery' adı eskidir. Bugünkü karşılığı yayın içi akış (in-feed) reklamlarıdır.",
+        ],
+        bullets: [
+          "Atlanabilir yayın içi (skippable in-stream): videodan önce, ortasında ya da sonunda oynar; izleyici 5 saniye sonra atlayabilir. TBG teklifinde izleyici 30 saniyeyi (video daha kısaysa tamamını) izlediğinde veya etkileşime girdiğinde ödersiniz. Süre sınırı yok; Google 3 dakikanın altını önerir.",
+          "Atlanamaz yayın içi (non-skippable in-stream): atlanamaz, kampanya alt türüne göre 15 ile 60 saniye arası olabilir. Hedef BGBM ile gösterim başına ödersiniz.",
+          "Bumper: en fazla 6 saniyelik, atlanamaz kısa reklam. Hatırlatma ve erişim için kullanılır, BGBM ile ödenir.",
+          "Yayın içi akış (in-feed): YouTube arama sonuçlarında, önerilen videolarda ve ana sayfada küçük resim ve metinle görünür. Kullanıcı tıklayıp izlemeye başladığında ödersiniz.",
+          "Shorts reklamları: Shorts akışında videolar arasında görünür; kullanıcı kaydırarak hemen geçebilir. Görüntüleme, 10 saniye izleme ya da sonuna kadar izleme veya eylem çağrısına, beğeniye, yoruma, paylaşıma tıklama ile sayılır. Dikey (9:16) video gerekir.",
+          "Masthead: YouTube ana sayfasının en üstünde görünen büyük format. Yalnızca rezervasyonla, Google satış ekibi üzerinden satın alınır; küçük ve orta bütçeler için genellikle uygun değildir.",
+        ],
+      },
+      {
+        heading: "Hangi kampanya türünü seçmelisiniz? Hedefe göre seçim",
+        paragraphs: [
+          "Google Ads'te kampanyayı hedefle başlatırsınız ve seçtiğiniz hedef, kullanılabilecek kampanya türünü belirler. YouTube için iki yol var:",
+          "Önemli bir değişiklik: dönüşüm odaklı eski 'video eylem kampanyaları' (Video Action Campaigns) Demand Gen'e taşındı. Google, Nisan 2025'te yeni video eylem kampanyası oluşturmayı kapattı ve son kampanyaları Nisan 2026'da Demand Gen'e aktardı. Yani bugün YouTube'dan satış ya da lead hedefliyorsanız Demand Gen kampanyası kurarsınız; bu kampanya YouTube'un yanında Discover ve Gmail envanterini de kullanır.",
+        ],
+        bullets: [
+          "Bilinirlik ve değerlendirme → Video kampanyası: video görüntülemeleri (izlenme ve kanal etkileşimi için atlanabilir, in-feed ve Shorts), video erişimi (en çok tekil kişiye ulaşmak için bumper, atlanabilir ve atlanamaz karışımı), hedef sıklık ve reklam dizisi gibi alt türler",
+          "Satış, potansiyel müşteri ya da web sitesi trafiği → Demand Gen: video ve görsel öğelerle dönüşüm hedefli teklif (dönüşümleri artırma, hedef EBM, hedef ROAS)",
+          "Ürün katalog ve feed'i olan e-ticaret siteleri için Performance Max de YouTube envanterini kullanır, ama YouTube'a özel kontrol ve raporlama daha sınırlıdır",
+          "Pratik kural: yeni bir marka ya da ürün için önce görüntüleme ve erişimle kitle oluşturun, sonra bu kitleye ve sitenizi ziyaret edenlere Demand Gen ile dönüşüm teklifi verin",
+        ],
+      },
+      {
+        heading: "YouTube reklam fiyatları nasıl belirlenir? TL bütçe örneği",
+        paragraphs: [
+          "YouTube'da sabit bir reklam fiyatı yoktur; fiyat açık artırmayla belirlenir ve hedeflediğiniz kitle, ülke, sezon, rekabet ve reklamınızın ilgi çekiciliği maliyeti değiştirir. Bu yüzden 'bir görüntüleme kaç TL' sorusunun tek bir cevabı yok. Doğru yaklaşım, hedefinize göre bütçeyi geriye doğru hesaplamak ve ilk 1-2 haftanın gerçek maliyetiyle düzeltmektir.",
+          "Görüntüleme hedefi (örnek tutarlar): bütçe 10.000 TL, ortalama görüntüleme başı maliyet (TBG) 0,50 TL ise yaklaşık 20.000 görüntüleme alırsınız. Görüntülenme oranı %25 ise bunun için yaklaşık 80.000 gösterim gerekir. Formül: görüntüleme = bütçe ÷ TBG.",
+          "Erişim hedefi (örnek tutarlar): bütçe 10.000 TL, bin gösterim başı maliyet (BGBM) 50 TL ise 200.000 gösterim alırsınız. Ortalama sıklık 2,5 ise bu yaklaşık 80.000 tekil kişiye ulaşmak demektir. Formül: gösterim = bütçe ÷ BGBM × 1.000; tekil erişim ≈ gösterim ÷ sıklık.",
+          "Satış ve lead hedefi (Demand Gen): Google, Demand Gen'de günlük bütçenin beklenen edinme başı maliyetin (EBM) en az 20 katı olmasını öneriyor. Beklenen EBM 150 TL ise günlük en az 3.000 TL demektir. Ayrıca en az 4-6 hafta çalıştırmayı, büyük değişikliklerden önce yaklaşık 2 haftalık öğrenme süresi tanımayı ve teklif değişikliklerini haftada bir, %15'i aşmayacak şekilde yapmayı öneriyor. Bu bütçe sizin için yüksekse önce daha ucuz hedeflerle (görüntüleme, yeniden pazarlama) başlayın ya da arama kampanyalarına öncelik verin.",
+        ],
+        bullets: [
+          "10.000 TL ÷ 0,50 TL TBG → ~20.000 görüntüleme",
+          "10.000 TL ÷ 50 TL BGBM × 1.000 → 200.000 gösterim → sıklık 2,5 ile ~80.000 kişi",
+          "Beklenen EBM 150 TL × 20 → Demand Gen için günlük ≥ 3.000 TL",
+          "Kendi rakamlarınızla aylık bütçeyi Reklam Bütçesi Hesaplama aracıyla, kârlı EBM sınırını ROAS Hesaplama aracıyla kontrol edin",
+        ],
+      },
+      {
+        heading: "Google Ads'te YouTube reklamı adım adım nasıl kurulur?",
+        paragraphs: [
+          "Aşağıdaki adımlar bilinirlik amaçlı bir video kampanyası içindir; Demand Gen kurulumu da benzer akışı izler, yalnızca hedef ve teklif seçenekleri farklıdır. Arayüz adları zaman zaman değişebilir ama sıra aynıdır:",
+        ],
+        bullets: [
+          "1. Videoyu YouTube'a herkese açık ya da liste dışı olarak yükleyin ve video bağlantısını kopyalayın",
+          "2. Google Ads'te Kampanyalar › Yeni kampanya'ya tıklayın, hedefi seçin (bilinirlik ve değerlendirme ya da satış/potansiyel müşteri) ve kampanya türü olarak Video'yu (veya Demand Gen'i) seçin",
+          "3. Alt türü seçin: görüntüleme, erişim, hedef sıklık ya da reklam dizisi",
+          "4. Bütçeyi (günlük ya da kampanya toplamı) ve başlangıç-bitiş tarihlerini girin; teklif stratejisi alt türe göre gelir (ör. hedef TBG, hedef BGBM)",
+          "5. Konum, dil ve envanter türünü ayarlayın; markanız için hassas içerik kategorilerini hariç tutun",
+          "6. Hedeflemeyi belirleyin: demografi, kitleler (ilgi alanları, pazardaki kitleler, kendi müşteri listeniz ve kanal/site ziyaretçileri), gerekiyorsa konular, anahtar kelimeler ve yerleşimler. Çok dar hedefleme gösterimi ve öğrenmeyi kısıtlar",
+          "7. Reklamı oluşturun: video bağlantısını yapıştırın, nihai URL'yi (gerekirse UTM'li), eylem çağrısını ve başlığı girin; Shorts için dikey sürüm ekleyin",
+          "8. Kampanyayı yayınlayın; reklamlar politika incelemesinden geçer (Google çoğu reklamın bir iş günü içinde incelendiğini belirtir)",
+        ],
+      },
+      {
+        heading: "İyi bir YouTube reklam videosu nasıl olmalı?",
+        paragraphs: [
+          "Atlanabilir reklamda ilk 5 saniye her şeydir: izleyici atlamadan önce ne olduğunu ve neden izlemesi gerektiğini anlamalı. Atlanan reklam için TBG teklifinde ödeme yapmazsınız, ama mesajınız da ulaşmaz. Google'ın etkili video reklam önerileri dört başlıkta toplanır: dikkat çekin, markayı erken ve net gösterin, izleyiciyle duygusal ya da pratik bağ kurun ve ne yapması gerektiğini açıkça söyleyin.",
+        ],
+        bullets: [
+          "İlk 5 saniyede ürün, sorun ya da sonuç görünsün; uzun logo animasyonuyla açmayın",
+          "Marka adı ve ürün ilk saniyelerde ekranda olsun; atlayan izleyici bile kimin reklamı olduğunu görsün",
+          "Mobil izleyicilerin önemli bir kısmı sesi kapalı izler; altyazı ve ekran yazısı kullanın",
+          "Shorts ve mobil için dikey (9:16), yayın içi için yatay (16:9) sürüm hazırlayın",
+          "Sonda tek ve net bir eylem çağrısı verin; açılış sayfası videodaki vaadi aynı kelimelerle karşılasın",
+          "Aynı kitleye aylarca aynı videoyu göstermeyin; sıklığı izleyip kreatifi yenileyin",
+        ],
+      },
+      {
+        heading: "YouTube reklamları nasıl ölçülür? Hangi metrikler önemli?",
+        paragraphs: [
+          "Video kampanyasını arama kampanyası gibi yalnızca son tıklamaya göre değerlendirmek yanıltıcıdır, çünkü videoyu izleyen birçok kişi reklama tıklamaz, sonradan sizi arar. Hedefinize göre şu metrikleri izleyin:",
+          "Etkileşimli görüntüleme dönüşümleri (engaged-view conversions): atlanabilir reklamda kullanıcı en az 10 saniye (daha kısa reklamda tamamını), in-feed ve Shorts'ta 5 saniye izleyip tıklamadan sonra dönüşüm yaparsa sayılır. Web dönüşümleri için varsayılan pencere 3 gündür ve dönüşüm işlemi ayarlarından değiştirilebilir. Bu dönüşümleri tıklama dönüşümlerinden ayrı raporlayın; karar verirken ikisini birlikte ama ayrı ayrı okuyun.",
+          "Ek kontrol olarak kampanya süresince marka adınızla yapılan aramaları (Search Console ve arama kampanyası verisi) ve doğrudan trafiği izleyin. Belirgin bütçeyle çalışan hesaplarda Google'ın Marka Etkisi (Brand Lift) ölçümü, reklamı görenlerle görmeyenleri anketle karşılaştırır.",
+        ],
+        bullets: [
+          "Görüntülenme oranı = görüntüleme ÷ gösterim × 100: videonun ilk saniyelerde ilgi çekip çekmediğini gösterir",
+          "TBG (görüntüleme başı maliyet) = maliyet ÷ görüntüleme; BGBM = maliyet ÷ gösterim × 1.000",
+          "Video oynatma yüzdeleri (%25, %50, %75, %100): videonun nerede izleyici kaybettiğini gösterir",
+          "Tekil erişim ve ortalama sıklık: erişim kampanyalarında asıl başarı ölçüsü",
+          "Tıklama oranı, dönüşüm ve EBM/ROAS: Demand Gen ve satış hedefinde asıl karar metrikleri",
+        ],
+      },
+      {
+        heading: "YouTube reklamı kimlere uygun, kimlere değil?",
+        paragraphs: [
+          "YouTube, ürününüzü göstermek, nasıl çalıştığını anlatmak ya da yeni bir kategoride talep yaratmak gerektiğinde güçlüdür: görsel olarak anlatılan ürünler, uygulamalar, eğitim ve hizmet sektörleri, yeni markalar. Talep zaten varsa ve insanlar ürünü Google'da arıyorsa, sınırlı bütçeyle önce arama kampanyalarından başlamak genellikle daha hızlı geri dönüş sağlar.",
+          "Bütçesi küçük, ölçümü kurulmamış ve elinde iyi bir video olmayan bir işletme için YouTube'a para harcamak çoğu zaman erkendir. Önce dönüşüm ölçümünü kurun, arama ve yeniden pazarlama ile kârlı bir EBM bulun, sonra YouTube ile en üst huniyi büyütün.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "YouTube'da reklam vermek ücretli mi, en az ne kadar bütçe gerekir?",
+        answer:
+          "Evet, YouTube reklamları ücretlidir ve Google Ads üzerinden açık artırmayla satılır. Platform için zorunlu tek bir alt sınır yoktur; bütçeyi hedefe göre hesaplarsınız. Satış/lead hedefli Demand Gen için Google, günlük bütçenin beklenen edinme maliyetinin en az 20 katı olmasını önerir.",
+      },
+      {
+        question: "YouTube reklamında ne zaman ücret ödenir?",
+        answer:
+          "Atlanabilir reklamda TBG teklifiyle izleyici 30 saniyeyi (daha kısa videoda tamamını) izlediğinde veya reklamla etkileşime girdiğinde ödersiniz; 5 saniyede atlarsa ödemezsiniz. Bumper ve atlanamaz reklamlarda bin gösterim başına (BGBM), in-feed reklamda kullanıcı tıklayıp izlemeye başladığında ödersiniz.",
+      },
+      {
+        question: "YouTube reklamı için kanal açmak zorunlu mu?",
+        answer:
+          "Evet. Reklam videosunun bir YouTube kanalına herkese açık ya da liste dışı olarak yüklenmiş olması gerekir. Kanalı Google Ads'e bağlamanız ayrıca yeniden pazarlama listeleri ve kanal metrikleri için faydalıdır.",
+      },
+      {
+        question: "YouTube reklamı kaç saniye olmalı?",
+        answer:
+          "Biçime bağlıdır: bumper en fazla 6 saniye, atlanamaz reklam 15-60 saniye, atlanabilir reklamda sınır yoktur ama Google 3 dakikanın altını önerir; Shorts için 60 saniyenin altı önerilir. Atlanabilir reklamda asıl mesajı ilk 5 saniyede verin.",
+      },
+      {
+        question: "Video eylem kampanyası hâlâ kullanılabiliyor mu?",
+        answer:
+          "Hayır. Google, Nisan 2025'te yeni video eylem kampanyası oluşturmayı kapattı ve mevcut kampanyaları Demand Gen'e taşıdı; son geçişler Nisan 2026'da tamamlandı. YouTube'dan dönüşüm hedefliyorsanız Demand Gen kampanyası kurun.",
+      },
+    ],
+    howTo: {
+      name: "Google Ads'te YouTube reklamı nasıl verilir?",
+      description: "Videoyu yüklemekten yayına sekiz adımda YouTube video kampanyası.",
+      steps: [
+        { name: "Videoyu yükleyin", text: "Reklam videosunu YouTube kanalınıza herkese açık ya da liste dışı olarak yükleyin ve bağlantısını kopyalayın." },
+        { name: "Yeni kampanya ve hedef", text: "Google Ads'te yeni kampanya oluşturun, hedefi seçin ve kampanya türü olarak Video'yu (bilinirlik) veya Demand Gen'i (satış/lead) seçin." },
+        { name: "Alt türü seçin", text: "Görüntüleme, erişim, hedef sıklık ya da reklam dizisi alt türlerinden hedefinize uygun olanı seçin." },
+        { name: "Bütçe ve teklif", text: "Günlük ya da toplam bütçeyi ve tarihleri girin; bütçeyi görüntüleme = bütçe ÷ TBG veya gösterim = bütçe ÷ BGBM × 1.000 formülüyle hedefe göre hesaplayın." },
+        { name: "Konum, dil ve envanter", text: "Hedef konum ve dili seçin, markanız için uygun olmayan içerik kategorilerini hariç tutun." },
+        { name: "Hedefleme", text: "Demografi, kitle (ilgi alanı, pazardaki kitle, müşteri listesi, site ve kanal ziyaretçileri) ve gerekiyorsa konu, anahtar kelime ve yerleşim seçin; çok daraltmayın." },
+        { name: "Reklamı oluşturun", text: "Video bağlantısını, UTM'li nihai URL'yi, eylem çağrısını ve başlığı girin; Shorts için dikey sürüm ekleyin." },
+        { name: "Yayınlayın ve ölçün", text: "Kampanyayı yayınlayın; incelemeden sonra görüntülenme oranı, TBG, oynatma yüzdeleri ve dönüşümleri haftalık izleyin." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "Google Ads Nedir, Nasıl Çalışır?", href: "/blog/google-ads-nedir-nasil-calisir/" },
+      { label: "Google Ads Reklam Verme Rehberi (ilk kampanya)", href: "/blog/google-ads-reklam-verme-rehberi/" },
+      { label: "Instagram Reklam Verme Rehberi", href: "/blog/instagram-reklam-verme-rehberi/" },
+      { label: "CTR Nedir? İyi Tıklama Oranı Kaç?", href: "/blog/ctr-nedir-iyi-tiklama-orani-kac/" },
+      { label: "Reklam Bütçesi Nasıl Belirlenir?", href: "/blog/reklam-butcesi-nasil-belirlenir/" },
+      { label: "Google Ads Yardım: Video reklam biçimleri", href: "https://support.google.com/google-ads/answer/2375464", external: true },
+      { label: "Google Ads Yardım: Video eylem kampanyalarının Demand Gen'e geçişi", href: "https://support.google.com/google-ads/answer/15110871", external: true },
+      { label: "Google Ads Yardım: Etkileşimli görüntüleme dönüşümleri", href: "https://support.google.com/google-ads/answer/10048752", external: true },
+      { label: "Google Ads Yardım: Video kampanyaları hakkında", href: "https://support.google.com/google-ads/answer/6340491", external: true },
     ],
   },
 ];
@@ -12514,6 +12707,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run YouTube Ads", href: "/en/blog/how-to-run-youtube-ads/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
@@ -13417,6 +13611,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run YouTube Ads", href: "/en/blog/how-to-run-youtube-ads/" },
       { label: "What Is a Landing Page? 20-Point Checklist", href: "/en/blog/what-is-a-landing-page-checklist/" },
       { label: "What Is a KPI? Marketing KPI Examples", href: "/en/blog/what-is-a-kpi-marketing-kpi-examples/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
@@ -14993,6 +15188,197 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Search Console Help: Performance report", href: "https://support.google.com/webmasters/answer/7576553", external: true },
       { label: "Backlinko: Google CTR stats", href: "https://backlinko.com/google-ctr-stats", external: true },
       { label: "Pew Research: AI summaries and link clicks (2025)", href: "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/", external: true },
+    ],
+  },
+  {
+    slug: "how-to-run-youtube-ads",
+    seoTitle: "How to Run YouTube Ads: Formats, Budget and Setup Steps",
+    title: "How to Run YouTube Ads: Ad Formats, Pricing, a Budget Example and Step-by-Step Setup",
+    description:
+      "How do you advertise on YouTube? Current ad formats, paying by CPV and CPM, a worked budget example, step-by-step Google Ads setup and conversion measurement.",
+    category: "performans-pazarlama",
+    tldr: [
+      "YouTube ads are bought in Google Ads, not YouTube Studio. You need a Google Ads account, the video uploaded to YouTube as public or unlisted, and the channel linked to Google Ads.",
+      "Current formats: skippable in-stream (skippable after 5 seconds), non-skippable in-stream (15-60 sec), bumper (up to 6 sec), in-feed, Shorts and Masthead. The old overlay ads no longer exist.",
+      "Billing depends on format: on skippable ads you pay when the viewer watches 30 seconds (or the whole ad if shorter) or interacts (CPV); on bumper and non-skippable ads you pay per thousand impressions (CPM).",
+      "Example: a $1,000 budget at an average $0.05 cost per view buys about 20,000 views. For sales and leads, Google recommends a Demand Gen daily budget of at least 20 times your expected CPA; Demand Gen replaced video action campaigns.",
+    ],
+    publishedAt: "2026-11-11",
+    readingMinutes: 11,
+    tags: ["YouTube Ads", "Video Ads", "Google Ads", "Demand Gen", "Ad Budget", "CPV"],
+    sections: [
+      {
+        heading: "How do you advertise on YouTube? (Short answer)",
+        paragraphs: [
+          "YouTube ads run through Google Ads. You upload your ad video to your YouTube channel as public or unlisted, link the channel to your Google Ads account, then create a Video campaign (for awareness and consideration) or a Demand Gen campaign (for sales, leads and traffic) in Google Ads, choosing budget, targeting and the video. Once the ad passes review, it goes live.",
+          "Let's clear up a common confusion first: the monetization and ad-type options in YouTube Studio are for creators who want other brands' ads shown on their own videos. To advertise your own product, you go to Google Ads, not that menu. Some guides mix up the two.",
+          "This guide covers the current ad formats and how they are billed, the right campaign type for your goal, budget math, step-by-step setup in Google Ads, and how to measure whether the campaign works.",
+        ],
+      },
+      {
+        heading: "What do you need to run YouTube ads?",
+        paragraphs: [
+          "Having these four things ready cuts setup to about half an hour:",
+        ],
+        bullets: [
+          "A Google Ads account with billing set up and the right currency (currency can't be changed after the account is created)",
+          "A YouTube channel and ad video: the video must be public or unlisted; private videos can't be used in ads",
+          "Channel link: link your YouTube channel to Google Ads so you can remarket to viewers and see channel metrics",
+          "Landing page and measurement: if you want sales or leads, a Google Ads conversion tag or conversions imported from GA4, auto-tagging and, where needed, UTM parameters",
+        ],
+      },
+      {
+        heading: "What are the YouTube ad formats? (2026 list)",
+        paragraphs: [
+          "According to the current Google Ads Help list, YouTube has six main video ad formats. The format determines both where and how the ad shows and what you pay for:",
+          "Overlay ads and the 'TrueView Discovery' name that still appear in some guides are outdated. Today's equivalent is in-feed ads.",
+        ],
+        bullets: [
+          "Skippable in-stream: plays before, during or after a video; viewers can skip after 5 seconds. With CPV bidding you pay when the viewer watches 30 seconds (or the full ad if shorter) or interacts. No length limit; Google recommends under 3 minutes.",
+          "Non-skippable in-stream: can't be skipped and runs 15 to 60 seconds depending on campaign subtype. Billed per impression with target CPM.",
+          "Bumper: a non-skippable ad of up to 6 seconds, used for reminders and reach, billed by CPM.",
+          "In-feed: appears with a thumbnail and text in YouTube search results, Watch Next and the home feed. You pay when someone clicks to watch.",
+          "Shorts ads: appear between videos in the Shorts feed; users can swipe past immediately. A view counts at 10 seconds watched, a full watch, or a click on the CTA, like, comment or share. Needs a vertical (9:16) video.",
+          "Masthead: the large unit at the top of the YouTube home feed. Reservation only, bought through Google sales; usually not suitable for small and mid-size budgets.",
+        ],
+      },
+      {
+        heading: "Which campaign type should you choose? Choosing by goal",
+        paragraphs: [
+          "In Google Ads you start a campaign with a goal, and the goal determines which campaign types are available. For YouTube there are two routes:",
+          "An important change: the conversion-focused 'Video action campaigns' moved to Demand Gen. Google stopped new video action campaign creation in April 2025 and moved the last campaigns to Demand Gen in April 2026. So if you want sales or leads from YouTube today, you build a Demand Gen campaign, which also uses Discover and Gmail inventory alongside YouTube.",
+        ],
+        bullets: [
+          "Awareness and consideration → Video campaign: video views (skippable, in-feed and Shorts for views and channel engagement), video reach (a mix of bumper, skippable and non-skippable to reach the most unique people), target frequency and ad sequence subtypes",
+          "Sales, leads or website traffic → Demand Gen: conversion-based bidding with video and image assets (maximize conversions, target CPA, target ROAS)",
+          "Ecommerce sites with a product feed can also reach YouTube through Performance Max, but YouTube-specific control and reporting are more limited",
+          "Rule of thumb: for a new brand or product, build an audience with views and reach first, then target that audience and site visitors with a Demand Gen conversion offer",
+        ],
+      },
+      {
+        heading: "How is YouTube ad pricing set? Budget example",
+        paragraphs: [
+          "YouTube has no fixed ad price; prices are set by auction, and your audience, country, season, competition and how engaging your ad is all change cost. So 'how much does a view cost' has no single answer. The right approach is to work the budget backwards from your goal and correct it with the actual costs of the first 1-2 weeks.",
+          "Views goal (illustrative numbers): with a $1,000 budget and an average cost per view (CPV) of $0.05, you get about 20,000 views. At a 25% view rate, that takes about 80,000 impressions. Formula: views = budget ÷ CPV.",
+          "Reach goal (illustrative numbers): with a $1,000 budget and a $5 CPM, you get 200,000 impressions. At an average frequency of 2.5, that reaches about 80,000 unique people. Formula: impressions = budget ÷ CPM × 1,000; unique reach ≈ impressions ÷ frequency.",
+          "Sales and leads goal (Demand Gen): Google recommends a daily budget of at least 20 times your expected cost per acquisition (CPA). With an expected CPA of $40, that's at least $800 a day. Google also recommends running for at least 4-6 weeks, allowing about 2 weeks of learning before major changes, and changing bids no more than 15% once a week. If that budget is too high, start with cheaper goals (views, remarketing) or prioritize search campaigns.",
+        ],
+        bullets: [
+          "$1,000 ÷ $0.05 CPV → ~20,000 views",
+          "$1,000 ÷ $5 CPM × 1,000 → 200,000 impressions → ~80,000 people at frequency 2.5",
+          "Expected CPA $40 × 20 → Demand Gen daily budget ≥ $800",
+          "Check the monthly budget with the Ad Budget Calculator and your profitable CPA ceiling with the ROAS Calculator",
+        ],
+      },
+      {
+        heading: "How do you set up a YouTube ad in Google Ads step by step?",
+        paragraphs: [
+          "The steps below are for an awareness Video campaign; Demand Gen setup follows a similar flow with different goal and bidding options. Interface labels change from time to time, but the order stays the same:",
+        ],
+        bullets: [
+          "1. Upload the video to YouTube as public or unlisted and copy the link",
+          "2. In Google Ads, go to Campaigns › New campaign, choose the goal (awareness and consideration, or sales/leads) and pick Video (or Demand Gen) as the campaign type",
+          "3. Choose the subtype: views, reach, target frequency or ad sequence",
+          "4. Enter the budget (daily or campaign total) and start-end dates; the bid strategy follows from the subtype (e.g. target CPV, target CPM)",
+          "5. Set location, language and inventory type; exclude content categories that are sensitive for your brand",
+          "6. Set targeting: demographics, audiences (interests, in-market, your customer list, channel and site visitors) and, if needed, topics, keywords and placements. Over-narrow targeting limits delivery and learning",
+          "7. Create the ad: paste the video link, add the final URL (with UTMs if needed), call to action and headline; add a vertical version for Shorts",
+          "8. Publish; ads go through policy review (Google says most ads are reviewed within one business day)",
+        ],
+      },
+      {
+        heading: "What makes a good YouTube ad video?",
+        paragraphs: [
+          "On skippable ads, the first 5 seconds are everything: viewers must understand what it is and why to keep watching before they can skip. With CPV bidding you don't pay for skipped ads, but your message doesn't land either. Google's guidance for effective video ads comes down to four things: grab attention, show the brand early and clearly, connect with the viewer emotionally or practically, and tell them clearly what to do.",
+        ],
+        bullets: [
+          "Show the product, problem or outcome in the first 5 seconds; don't open with a long logo animation",
+          "Put the brand name and product on screen in the first seconds so even people who skip know whose ad it was",
+          "Many mobile viewers watch with sound off; use captions and on-screen text",
+          "Prepare a vertical (9:16) version for Shorts and mobile, and horizontal (16:9) for in-stream",
+          "End with one clear call to action; the landing page should match the video's promise in the same words",
+          "Don't show the same video to the same audience for months; watch frequency and refresh creative",
+        ],
+      },
+      {
+        heading: "How do you measure YouTube ads? Which metrics matter?",
+        paragraphs: [
+          "Judging a video campaign only on last click, like a search campaign, is misleading: many people who watch don't click the ad but search for you later. Track these metrics depending on your goal:",
+          "Engaged-view conversions: counted when a user watches at least 10 seconds of a skippable ad (or all of it if shorter), or 5 seconds of an in-feed or Shorts ad, and later converts without clicking. The default window for web conversions is 3 days and can be changed in the conversion action settings. Report these separately from click conversions; read both together but separately when making decisions.",
+          "As an extra check, watch branded searches (Search Console and search campaign data) and direct traffic during the campaign. Accounts with meaningful spend can use Google's Brand Lift study, which surveys people who saw the ad against those who didn't.",
+        ],
+        bullets: [
+          "View rate = views ÷ impressions × 100: shows whether the opening seconds hold attention",
+          "CPV (cost per view) = cost ÷ views; CPM = cost ÷ impressions × 1,000",
+          "Video played to 25%, 50%, 75%, 100%: shows where the video loses viewers",
+          "Unique reach and average frequency: the real success measure for reach campaigns",
+          "CTR, conversions and CPA/ROAS: the decision metrics for Demand Gen and sales goals",
+        ],
+      },
+      {
+        heading: "Who are YouTube ads right for, and who not?",
+        paragraphs: [
+          "YouTube is strong when you need to show a product, explain how it works or create demand in a new category: visually explained products, apps, education and services, new brands. If demand already exists and people search for the product on Google, starting with search campaigns usually pays back faster on a limited budget.",
+          "For a business with a small budget, no measurement set up and no good video, spending on YouTube is often premature. Set up conversion tracking first, find a profitable CPA with search and remarketing, then grow the top of the funnel with YouTube.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Do YouTube ads cost money, and what is the minimum budget?",
+        answer:
+          "Yes, YouTube ads are paid and sold by auction through Google Ads. There is no single mandatory minimum; you size the budget to your goal. For sales or lead-focused Demand Gen, Google recommends a daily budget of at least 20 times your expected cost per acquisition.",
+      },
+      {
+        question: "When do you pay for a YouTube ad?",
+        answer:
+          "On skippable ads with CPV bidding you pay when the viewer watches 30 seconds (or the whole ad if shorter) or interacts; if they skip at 5 seconds you don't pay. Bumper and non-skippable ads are billed per thousand impressions (CPM), and in-feed ads when the user clicks to watch.",
+      },
+      {
+        question: "Do you need a YouTube channel to run ads?",
+        answer:
+          "Yes. The ad video must be uploaded to a YouTube channel as public or unlisted. Linking the channel to Google Ads also helps with remarketing lists and channel metrics.",
+      },
+      {
+        question: "How long should a YouTube ad be?",
+        answer:
+          "It depends on the format: bumpers are up to 6 seconds, non-skippable ads 15-60 seconds, skippable ads have no limit but Google recommends under 3 minutes, and under 60 seconds is recommended for Shorts. On skippable ads, deliver the core message in the first 5 seconds.",
+      },
+      {
+        question: "Can you still use video action campaigns?",
+        answer:
+          "No. Google stopped new video action campaign creation in April 2025 and moved existing campaigns to Demand Gen, with the final upgrades in April 2026. If you want conversions from YouTube, set up a Demand Gen campaign.",
+      },
+    ],
+    howTo: {
+      name: "How to run a YouTube ad in Google Ads",
+      description: "From uploading the video to going live in eight steps.",
+      steps: [
+        { name: "Upload the video", text: "Upload the ad video to your YouTube channel as public or unlisted and copy its link." },
+        { name: "New campaign and goal", text: "Create a new campaign in Google Ads, choose the goal and pick Video (awareness) or Demand Gen (sales/leads) as the campaign type." },
+        { name: "Choose the subtype", text: "Pick the subtype that fits your goal: views, reach, target frequency or ad sequence." },
+        { name: "Budget and bidding", text: "Enter a daily or total budget and dates; size it to your goal with views = budget ÷ CPV or impressions = budget ÷ CPM × 1,000." },
+        { name: "Location, language and inventory", text: "Choose target location and language and exclude content categories unsuitable for your brand." },
+        { name: "Targeting", text: "Choose demographics, audiences (interests, in-market, customer lists, site and channel visitors) and, if needed, topics, keywords and placements; don't over-narrow." },
+        { name: "Create the ad", text: "Add the video link, a final URL with UTMs, a call to action and a headline; add a vertical version for Shorts." },
+        { name: "Publish and measure", text: "Publish the campaign; after review, track view rate, CPV, video completion and conversions weekly." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
+      { label: "How to Run Google Ads: Your First Campaign", href: "/en/blog/how-to-run-google-ads-first-campaign/" },
+      { label: "How to Run Instagram Ads", href: "/en/blog/how-to-run-instagram-ads/" },
+      { label: "What Is CTR? What Is a Good Click-Through Rate?", href: "/en/blog/what-is-ctr-good-click-through-rate/" },
+      { label: "How to Set an Advertising Budget", href: "/en/blog/how-to-set-advertising-budget/" },
+      { label: "Google Ads Help: About video ad formats", href: "https://support.google.com/google-ads/answer/2375464", external: true },
+      { label: "Google Ads Help: Video action campaigns upgrading to Demand Gen", href: "https://support.google.com/google-ads/answer/15110871", external: true },
+      { label: "Google Ads Help: About engaged-view conversions", href: "https://support.google.com/google-ads/answer/10048752", external: true },
+      { label: "Google Ads Help: About Video campaigns", href: "https://support.google.com/google-ads/answer/6340491", external: true },
     ],
   },
 ];
