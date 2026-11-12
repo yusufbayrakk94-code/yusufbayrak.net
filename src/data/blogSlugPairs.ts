@@ -43,4 +43,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "landing-page-nedir-donusen-acilis-sayfasi", en: "what-is-a-landing-page-checklist" },
   { tr: "ctr-nedir-iyi-tiklama-orani-kac", en: "what-is-ctr-good-click-through-rate" },
   { tr: "youtube-reklam-verme-rehberi", en: "how-to-run-youtube-ads" },
+  { tr: "ptt-aras-yurtici-kargo-desi-hesaplama", en: "turkish-carriers-dimensional-weight-rules" },
 ];

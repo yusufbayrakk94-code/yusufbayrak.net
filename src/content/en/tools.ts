@@ -632,6 +632,7 @@ export const desi: ToolContent = {
     { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator", note: "Product-level margin" },
     { label: "Net Profit Margin Calculator", href: "/en/free-tools/net-profit-margin-calculator", note: "Profitability incl. shipping" },
   ],
+  relatedPost: { label: "How Turkish Carriers Calculate Desi: PTT, Aras, Yurtiçi and MNG Rules", href: "/en/blog/turkish-carriers-dimensional-weight-rules/" },
 };
 
 export const discount: ToolContent = {

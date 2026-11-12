@@ -770,6 +770,7 @@ export const desi: ToolContent = {
     { label: "Net Kar Marjı Hesaplayıcı", href: "/ucretsiz-araclar/net-kar-marji-hesaplayici", note: "Kargo dahil kârlılık" },
     { label: "E-Ticaret Araçları", href: "/ucretsiz-araclar/e-ticaret-araclari", note: "Tüm e-ticaret hesaplayıcıları" },
   ],
+  relatedPost: { label: "PTT, Aras, Yurtiçi ve MNG Kargo Desi Hesaplama: Firmaların Desi Kuralları", href: "/blog/ptt-aras-yurtici-kargo-desi-hesaplama/" },
 };
 
 export const discount: ToolContent = {

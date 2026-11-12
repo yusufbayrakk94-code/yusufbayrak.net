@@ -235,7 +235,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/blog/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -657,6 +657,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/turkish-carriers-dimensional-weight-rules/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -890,7 +899,7 @@
   </url>
   <url>
     <loc>https://yusufbayrak.net/en/blog/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/" />
@@ -1296,6 +1305,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/how-to-run-youtube-ads/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/youtube-reklam-verme-rehberi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/youtube-reklam-verme-rehberi/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/turkish-carriers-dimensional-weight-rules/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/turkish-carriers-dimensional-weight-rules/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -6799,6 +6799,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "Kargo Firmalarının Desi Kuralları (PTT, Aras, Yurtiçi, MNG)", href: "/blog/ptt-aras-yurtici-kargo-desi-hesaplama/" },
       { label: "E-ticaret Açılış Bütçesi ve Başabaş Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/e-ticaret-acilis-butcesi-sablonu.xlsx", external: true },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
@@ -7192,6 +7193,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "PTT, Aras, Yurtiçi ve MNG Kargo Desi Hesaplama: Firmaların Kuralları", href: "/blog/ptt-aras-yurtici-kargo-desi-hesaplama/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama (Hepsiburada seçeneğiyle)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
@@ -8001,6 +8003,156 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Yardım: Video eylem kampanyalarının Demand Gen'e geçişi", href: "https://support.google.com/google-ads/answer/15110871", external: true },
       { label: "Google Ads Yardım: Etkileşimli görüntüleme dönüşümleri", href: "https://support.google.com/google-ads/answer/10048752", external: true },
       { label: "Google Ads Yardım: Video kampanyaları hakkında", href: "https://support.google.com/google-ads/answer/6340491", external: true },
+    ],
+  },
+  {
+    slug: "ptt-aras-yurtici-kargo-desi-hesaplama",
+    seoTitle: "PTT, Aras, Yurtiçi Kargo Desi Hesaplama: Kurallar",
+    title: "PTT, Aras, Yurtiçi ve MNG Kargo Desi Hesaplama: Firmaların Desi Kuralları Karşılaştırması",
+    description:
+      "PTT, Aras, Yurtiçi ve MNG Kargo desiyi nasıl hesaplıyor? Bölen, 30 desi üstü, ağır gönderi eşiği, kabul sınırları, bant tarifesi ve desi itirazı örneklerle.",
+    category: "performans-pazarlama",
+    tldr: [
+      "PTT, Aras, Yurtiçi ve MNG Kargo yurt içinde desiyi aynı formülle hesaplar: En × Boy × Yükseklik (cm) ÷ 3000; ücret, desi ile gerçek ağırlıktan büyük olana göre alınır. Yurtiçi Kargo'nun taşıma sözleşmesinde 300 dm³ = 100 desi, Aras'ın 2026 fiyat listesinde ÷ 3000 açıkça yazıyor.",
+      "Firmalar formülde değil kurallarda ayrışır: tarife yapısı (PTT il içi / il dışı, Aras ve MNG mesafe bölgesi), 30 kg/desi üstünün ek desi ile fiyatlanması, ağır gönderi eşiği (Yurtiçi tek parça 100 kg/desi, Aras 100 kg veya 300 desi) ve kabul sınırları (Yurtiçi: 300 kg / 700 desi / en uzun kenar 500 cm).",
+      "En pahalı hata kademe sınırıdır: anlaşmalı bant tarifelerinde 4,2 desilik koli 5 desiye yuvarlanıp bir üst banda geçer; örnek tarifede bu %33 daha pahalı gönderi demektir. Yüksekliği 1 cm azaltmak koliyi 4 desiye indirir.",
+      "Ölçülen desi beyan ettiğinizden yüksek çıkarsa fark faturası gelir. Kolinin dış ölçüsünü fotoğraflayın, ölçüyü gönderi kaydına yazın, takip ekranında kayıtlı desiyi kontrol edin ve fark varsa kanıtla itiraz edin.",
+    ],
+    publishedAt: "2026-11-12",
+    readingMinutes: 10,
+    tags: ["desi hesaplama", "ptt kargo desi", "aras kargo desi", "yurtiçi kargo desi", "mng kargo", "kargo ücreti", "e-ticaret"],
+    sections: [
+      {
+        heading: "PTT, Aras, Yurtiçi ve MNG Kargo desiyi farklı mı hesaplıyor?",
+        paragraphs: [
+          "Hayır. Türkiye'de yurt içi gönderilerde dört büyük firmanın desi formülü aynıdır: Desi = En × Boy × Yükseklik (cm) ÷ 3000. Ücret, bu desi ile kolinin gerçek ağırlığından (kg) hangisi büyükse ona göre belirlenir; buna ücrete esas ağırlık denir. Bunu firmaların kendi belgelerinden doğrulayabilirsiniz: Aras Kargo'nun 1 Ocak 2026'dan geçerli standart fiyat listesi hacimsel ağırlığı en × boy × yükseklik ÷ 3000 olarak tanımlar ve büyük olanın faturalandığını yazar; Yurtiçi Kargo'nun taşıma sözleşmesi 300 dm³ hacmi 100 desi olarak sayar, bu da 3000 bölenine karşılık gelir.",
+          "Yani 'PTT kargo desi hesaplama' ile 'Aras kargo desi hesaplama' aynı sonucu verir: 50 × 40 × 30 cm'lik bir koli 60.000 cm³ ÷ 3000 = 20 desidir; içindeki ürün 6 kg ise ücrete esas değer 20, 25 kg ise 25'tir. Faturanızı değiştiren şey formül değil; tarifenin yapısı, kademe sınırları, ağır gönderi eşiği, kabul sınırları ve ölçümün nasıl yapıldığıdır. Bu yazı bu farkları firma firma karşılaştırıyor. Tek bir kolinin desisini hızlıca bulmak için Desi Hesaplama aracını kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Firmaların desi kuralları yan yana: neler farklı?",
+        paragraphs: [
+          "Aşağıdaki karşılaştırma firmaların yayımladığı belgelere (Aras 2026 fiyat listesi ve hizmet taahhütleri, Yurtiçi taşıma sözleşmesi) ve PTT'nin 4 Şubat 2026 ücret tarifesini aktaran kaynaklara dayanır. MNG için resmî bir kural belgesine ulaşamadık; MNG satırı üçüncü taraf kaynaklara dayandığı için gönderi öncesi firmayla doğrulayın. Fiyat vermiyoruz: tarifeler yılda birkaç kez değişiyor ve kaynaklar arasında bile tutarsız.",
+        ],
+        bullets: [
+          "Bölen: dördünde de yurt içi ÷ 3000; ücrete esas ağırlık = desi ile kg'dan büyük olan",
+          "Tarife yapısı — PTT: il içi ve il dışı olmak üzere iki sütun; çıkış ve varış ili aynıysa il içi uygulanır",
+          "Tarife yapısı — Aras: mesafe bölgesine göre sütunlar (şehir içinden uzak bölgeye), 1-30 kg/desi arası her biri ayrı satır, 31 ve üstü her ek kg/desi için ek ücret",
+          "Tarife yapısı — Yurtiçi: kg/desi satırları + mesafe; tek parça 0-30 kg/desi gönderiler kata kadar teslim edilir",
+          "Tarife yapısı — MNG (üçüncü taraf kaynaklara göre): şehir içi, kısa hat ve uzun hat ayrımı; kırsal ve uzak adreslere ek ücret olabilir",
+          "30 kg/desi üstü — PTT ve Aras: 30'dan sonraki her kg/desi ayrıca ücretlendirilir",
+          "Ağır gönderi eşiği — Yurtiçi: tek parça 100 kg veya 100 desi üstüne ağır gönderi ek ücreti; Aras: 2026 listesine göre 100 kg veya 300 desi üstüne ağır gönderi ücreti; PTT: 100 kg/desi üstü gönderilerde ek ücret ve farklı teslim şekli",
+          "Teslim şekli — Yurtiçi: 31-200 kg veya 31-400 desi (en uzun kenar 250 cm'ye kadar) bina kapısından, 201-300 kg / 401-700 desi aktarma merkezinden teslim",
+          "Kabul sınırı — Yurtiçi: tek parçada 300 kg, 700 desi veya en uzun kenarı 500 cm'yi aşan gönderi kabul edilmez; Aras: şubeden şubeye tek parçada 100 desi/kg üstü, 270 cm'yi geçen çıta/çubuk ve tek irsaliyede 50 parçayı aşan gönderiler standart dışıdır (teslim süresine +1 iş günü eklenebilir); PTT: adalara (Büyükada, Heybeliada, Kınalıada, Burgazada) gönderide en fazla 20 kg",
+        ],
+      },
+      {
+        heading: "Mesafe ve il içi / il dışı ayrımı aynı desinin fiyatını nasıl değiştirir?",
+        paragraphs: [
+          "Desi aynı kalsa da hangi sütundan fiyat okunduğu değişir. PTT'de çıkış ve varış ili aynıysa il içi, farklıysa il dışı tarifesi uygulanır; 4 Şubat 2026 tarifesini aktaran kaynaklarda 10 kg/desilik gönderinin il dışı fiyatı il içinin yaklaşık 1,5 katıdır. Aras ve MNG ise ili değil mesafeyi esas alır: aynı il içindeki iki ilçe şehir içi sayılırken komşu ile uzak bölge farklı sütundan fiyatlanır.",
+          "Pratik sonucu: müşterilerinizin çoğu kendi ilinizdeyse PTT'nin il içi avantajı belirleyici olabilir; Türkiye'nin her yerine gönderiyorsanız mesafe bölgeli bir tarifenin ortalama maliyetine bakmak gerekir. Bunu tahmin etmek yerine son üç ayın siparişlerini il bazında sayın ve her firmanın teklifini aynı sipariş dağılımıyla hesaplayın. Kargo Ücreti Hesaplama aracındaki teklif karşılaştırması bu iş için tasarlandı.",
+        ],
+      },
+      {
+        heading: "Kademe (bant) tarifesinde 1 cm neden %33 fark yaratır?",
+        paragraphs: [
+          "Birçok anlaşmalı ve kampanyalı tarife her desiyi ayrı fiyatlamaz, desileri bantlara toplar. Örneğin ikas'ın Mart 2026'da yayımladığı kampanyalı Aras tablosunda 1-4 desi 89,90 TL, 5-7 desi 119,90 TL, 8-10 desi 149,90 TL'dir (KDV hariç). Bu yapıda maliyeti belirleyen şey desinin kendisi değil, hangi banda düştüğüdür.",
+          "Örnek: 35 × 30 × 12 cm'lik koli 12.600 ÷ 3000 = 4,2 desidir ve yukarı yuvarlanınca 5 desi olur; yani 5-7 bandına girer. Yüksekliği 11 cm'ye indirirseniz hacim 11.550 cm³, desi 3,85 olur, yuvarlanınca 4 desiyle 1-4 bandında kalır. Bu tabloda iki gönderi arasındaki fark 119,90 − 89,90 = 30 TL, yani %33'tür. 4 desinin altında kalmak için yükseklik en fazla 4 × 3000 ÷ (35 × 30) = 11,43 cm olabilir.",
+          "Ayda 1.000 koli gönderen bir satıcı için koli başına 30 TL, ayda 30.000 TL demektir (örnek tutarlar). Bu yüzden kutu ölçülerinizi tarifenizin bant sınırlarına göre seçin. Desi Hesaplama aracı, 1 desi düşürmek için gereken en yüksek kutu yüksekliğini otomatik gösterir.",
+        ],
+        bullets: [
+          "Tarifenizdeki bant sınırlarını (ör. 1-4, 5-7, 8-10) not edin",
+          "En çok satan 5 ürününüzün paketli dış ölçüsünü ölçüp desisini hesaplayın",
+          "Bant sınırının hemen üstünde kalan (4,1-4,5 gibi) ürünler için daha küçük kutu veya farklı katlama deneyin",
+          "Kutu küçültürken ürünün korunmasını ve ezilme riskini ihmal etmeyin; hasarlı iade, kazanılan kargo farkından pahalıdır",
+        ],
+      },
+      {
+        heading: "30 desi üstü gönderilerde ücret nasıl hesaplanır?",
+        paragraphs: [
+          "PTT ve Aras tarifelerinde 1'den 30'a kadar her kg/desinin ayrı bir satırı vardır; 30'u aşan gönderilerde 30'luk satırın fiyatına her ek kg/desi için bir ek ücret eklenir. Formül: Ücret = 30 kg/desi fiyatı + (Ücrete esas değer − 30) × Ek kg/desi ücreti.",
+          "Örnek (örnek tutarlar): 70 × 50 × 40 cm'lik koli 140.000 ÷ 3000 = 46,67 desidir, yukarı yuvarlanınca 47 olur. Ürün 18 kg olduğu için desi belirler. Tarifede 30 desi 900 TL ve ek desi 25 TL ise ücret 900 + 17 × 25 = 1.325 TL olur. Aynı ürünü iki koliye bölmek her zaman ucuzlatmaz: her koli ayrı ölçülüp ayrı yuvarlandığı için toplam desi genelde artar, ama iki koli 30 desinin altına inerse ek desi satırından kurtulabilirsiniz. İkisini de Desi Hesaplama aracında çoklu koli olarak deneyip karşılaştırın.",
+        ],
+      },
+      {
+        heading: "Ağır gönderi eşiği firma seçimini nasıl değiştirir?",
+        paragraphs: [
+          "Mobilya, beyaz eşya aksesuarı veya büyük ev tekstili gönderiyorsanız asıl fark ağır gönderi eşiğindedir. Örnek: 120 × 80 × 40 cm'lik hafif bir koli 384.000 ÷ 3000 = 128 desidir. Yurtiçi Kargo'nun sözleşmesine göre bu koli tek parça 100 desiyi aştığı için ağır gönderi ek ücretine girer ve 31-400 desi aralığında olduğu için bina kapısından teslim edilir (kata teslim 30 kg/desiye kadar). Aras'ın 2026 standart listesinde ağır gönderi ücreti 100 kg veya 300 desinin üzerinde başlar; ancak Aras'ın hizmet taahhütleri şubeden şubeye tek parçada 100 desi/kg üstü gönderileri standart dışı sayar ve teslim süresine bir iş günü eklenebileceğini belirtir.",
+          "Bu nedenle 100 desi üstü ürünlerde 'hangi firma daha ucuz' sorusu desi tablosuyla değil, ağır gönderi ek ücreti, teslim şekli (kata mı, bina kapısına mı, aktarma merkezine mi) ve süre birlikte değerlendirilerek cevaplanır. Müşteriye ürün sayfasında teslim şeklini önceden yazmak, 'kapıya bıraktılar' şikâyetlerini ve iadeleri azaltır.",
+        ],
+      },
+      {
+        heading: "Kargo firması desiyi neden yüksek ölçer? Desi itirazı nasıl yapılır?",
+        paragraphs: [
+          "Faturalanan desi, sizin girdiğiniz değer değil, firmanın ölçtüğü değerdir. Yurtiçi Kargo sözleşmesi kg/desi bilgilerini değiştirme hakkını açıkça firmada bırakır. Şikâyet platformlarında tek bir kargo firmasının 'desi hesaplama' etiketinde 80'den fazla kayıt var; ortak örüntüler ölçmeden desi girilmesi, aynı ürüne farklı günlerde farklı desi yazılması ve iade gönderilerinde beklenmedik yüksek desidir. Bu farklar pazaryerinde doğrudan satıcı hakedişinden düşebilir.",
+          "Haklı bir itirazın gücü kanıttır. Firma ölçümü dış ölçüden ve en çıkıntılı noktadan alır; şişkin koli, taşan bant veya köpük ölçüyü büyütür. Kendi ölçünüzü de aynı şekilde alırsanız farkın gerçekten hata olup olmadığını baştan anlarsınız.",
+        ],
+        bullets: [
+          "Ölçüyü kolinin dış yüzeyinden, en çıkıntılı noktalardan alın; kesirli değeri yukarı yuvarlayın",
+          "Teslimden önce koliyi metreyle birlikte (en, boy, yükseklik ayrı ayrı) ve tartıda fotoğraflayın",
+          "Ölçü ve ağırlığı gönderi kaydına, entegrasyona veya pazaryeri paneline doğru girin",
+          "Takip ekranında ve faturada kayıtlı desiyi her gönderide değil, en azından haftalık örneklemle kontrol edin",
+          "Fark varsa gönderi numarası, fotoğraflar ve hesabınızla firmanın müşteri hizmetlerine yazılı başvurun; anlaşmalı müşteriyseniz müşteri temsilcinize iletin",
+          "Aynı ürün sürekli yüksek ölçülüyorsa kutuyu değiştirin veya ürün kartındaki ölçüyü güncelleyin",
+        ],
+      },
+      {
+        heading: "Firma mı, sözleşme mi? Gerçek maliyeti ne belirler?",
+        paragraphs: [
+          "Aynı firmada üç ayrı fiyat dünyası vardır: şubeden bireysel gönderi fiyatı, e-ticaret anlaşması (hacme göre pazarlık edilir, çoğu zaman bant tarifesi) ve pazaryerinin kendi anlaşmalı tarifesi (Trendyol, Hepsiburada gibi platformlarda desi kademelerine göre). Bu yüzden 'PTT mi Aras mı daha ucuz' sorusunun tek cevabı yoktur; aynı firmayı iki satıcı çok farklı fiyata kullanır.",
+          "Doğru karşılaştırma için her firmadan aynı formatta teklif isteyin: desi bantları ve bant fiyatları, 30 üstü ek desi ücreti, mesafe/il ayrımı, ağır gönderi eşiği, kapıdan alım, iade ve teslim edilemeyen gönderi ücretleri, ölçüm itiraz süreci. Ardından kendi sipariş dağılımınızla (ürün bazında desi × il dağılımı) aylık toplamı hesaplayın. Sipariş başı kargo maliyetinin kâra etkisini Trendyol & Hepsiburada Kâr Hesaplama aracıyla, ürün marjına etkisini Kar Marjı Hesaplama aracıyla görebilirsiniz.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "PTT Kargo desi nasıl hesaplanır?",
+        answer:
+          "Diğer yurt içi firmalarla aynı formülle: En × Boy × Yükseklik (cm) ÷ 3000. Ücret, desi ile gerçek ağırlıktan büyük olana göre alınır. PTT'de fiyatı ayrıca çıkış ve varış ilinin aynı olup olmadığı (il içi / il dışı) belirler; 30 kg/desiden sonraki her kg/desi ek ücretlendirilir.",
+      },
+      {
+        question: "Aras Kargo ve Yurtiçi Kargo desi hesabı arasında fark var mı?",
+        answer:
+          "Formül aynıdır (÷ 3000, büyük olan faturalanır). Farklar kurallardadır: Aras mesafe bölgesine göre fiyatlar ve 2026 listesinde ağır gönderi ücretini 100 kg veya 300 desinin üzerinde uygular; Yurtiçi tek parça 100 kg/desi üstüne ağır gönderi ek ücreti alır ve 300 kg, 700 desi veya 500 cm'yi aşan tek parçayı kabul etmez.",
+      },
+      {
+        question: "Kargo firmaları desi küsuratını yuvarlıyor mu?",
+        answer:
+          "Tarifeler kg/desiyi tam sayı satırlarla fiyatladığı için kesirli değerler pratikte bir üst satıra yuvarlanır: 4,2 desi 5 desi olarak ücretlendirilir. Firma belgelerinde ayrı bir yuvarlama maddesi bulunmadığından anlaşmalı tarifenizdeki kuralı sözleşmenizden kontrol edin.",
+      },
+      {
+        question: "Kargo firmasının yazdığı desi benim hesabımdan yüksekse ne yapmalıyım?",
+        answer:
+          "Önce kendi ölçünüzü dış yüzeyden ve en çıkıntılı noktadan aldığınızdan emin olun. Fark gerçekse gönderi numarası, metreli ve tartılı fotoğraflarla firmaya yazılı itiraz edin; anlaşmalı müşteriyseniz temsilcinize iletin. Sürekli tekrarlanıyorsa kutuyu ve ürün kartındaki ölçüyü güncelleyin.",
+      },
+      {
+        question: "MNG Kargo desiyi farklı hesaplıyor mu?",
+        answer:
+          "Hayır, MNG de yurt içinde ÷ 3000 formülünü ve büyük olanın faturalanması kuralını kullanır. Üçüncü taraf kaynaklara göre MNG fiyatlarını şehir içi, kısa hat ve uzun hat olarak ayırır. Ağır gönderi ve ölçü sınırları için gönderi öncesi firmanın güncel koşullarını kontrol edin.",
+      },
+    ],
+    howTo: {
+      name: "Kargo firmaları için desi ve ücret nasıl karşılaştırılır?",
+      description: "Aynı koli için PTT, Aras, Yurtiçi ve MNG maliyetini dört adımda karşılaştırın.",
+      steps: [
+        { name: "Desiyi hesaplayın", text: "Kolinin dış ölçülerini çarpıp 3000'e bölün, gerçek ağırlıkla karşılaştırın ve büyük olanı yukarı yuvarlayın." },
+        { name: "Bandı ve sütunu bulun", text: "Her firmanın tarifesinde bu değerin düştüğü bandı ve gönderinin mesafe/il sütununu belirleyin." },
+        { name: "Eşikleri kontrol edin", text: "30 kg/desi üstü ek desi ücretini, ağır gönderi eşiğini ve teslim şeklini firma bazında not edin." },
+        { name: "Sipariş dağılımıyla hesaplayın", text: "Son üç ayın sipariş dağılımını (ürün desisi × il) her firmanın teklifine uygulayıp aylık toplamı karşılaştırın." },
+      ],
+    },
+    relatedToolKey: "desi",
+    resources: [
+      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Hepsiburada'da Satıcı Olmak: Komisyon ve Kâr Hesabı", href: "/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/" },
+      { label: "Trendyol Komisyon Oranları ve Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+      { label: "E-ticaret Sitesi Kurmak İçin Gerekenler", href: "/blog/e-ticaret-sitesi-kurmak-icin-gerekenler/" },
+      { label: "Yurtiçi Kargo: Kargo/Posta Gönderisi Taşıma Sözleşmesi (PDF)", href: "https://www.yurticikargo.com/web_files/yurtici-kargo/Uploads/Revize-pdf/Ta%C5%9F%C4%B1ma%20S%C3%B6zle%C5%9Fmesi.pdf", external: true },
+      { label: "Aras Kargo: Hizmet taahhütleri (PDF)", href: "https://www.araskargo.com.tr/assets/images/pdf/hizmet-taah%C3%BCtlerimiz.pdf", external: true },
+      { label: "Aras Kargo: 2026 standart fiyat listesi (PDF, İngilizce)", href: "https://www.araskargo.com.tr/assets/images/pdf/en/aras-cargo-standard-price-list-2026-en.pdf", external: true },
     ],
   },
 ];
@@ -14237,6 +14389,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "gross-margin",
     resources: [
+      { label: "Turkish Carriers' Dimensional Weight Rules", href: "/en/blog/turkish-carriers-dimensional-weight-rules/" },
       { label: "Ecommerce Launch Budget and Break-Even Template (free Excel, Turkish)", href: "https://yusufbayrak.net/sablonlar/e-ticaret-acilis-butcesi-sablonu.xlsx", external: true },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
       { label: "Dimensional Weight (Desi) Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
@@ -14577,6 +14730,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "marketplace",
     resources: [
+      { label: "How Turkish Carriers Calculate Desi (PTT, Aras, Yurtiçi, MNG)", href: "/en/blog/turkish-carriers-dimensional-weight-rules/" },
       { label: "Marketplace Profit Calculator (Hepsiburada preset)", href: "/en/free-tools/marketplace-profit-calculator/" },
       { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
       { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
@@ -15382,6 +15536,156 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google Ads Help: Video action campaigns upgrading to Demand Gen", href: "https://support.google.com/google-ads/answer/15110871", external: true },
       { label: "Google Ads Help: About engaged-view conversions", href: "https://support.google.com/google-ads/answer/10048752", external: true },
       { label: "Google Ads Help: About Video campaigns", href: "https://support.google.com/google-ads/answer/6340491", external: true },
+    ],
+  },
+  {
+    slug: "turkish-carriers-dimensional-weight-rules",
+    seoTitle: "Turkish Carriers' Dimensional Weight (Desi) Rules",
+    title: "PTT, Aras, Yurtiçi and MNG: How Turkish Carriers Calculate Dimensional Weight (Desi)",
+    description:
+      "How PTT, Aras, Yurtiçi and MNG calculate desi: the 3000 divisor, pricing above 30, heavy-shipment thresholds, size limits, price bands and desi disputes.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Türkiye's four big domestic carriers use the same formula: desi = length × width × height (cm) ÷ 3000, and you pay for whichever is larger, desi or actual kg. Yurtiçi's carriage contract counts 300 dm³ as 100 desi; Aras's 2026 price list states ÷ 3000 explicitly.",
+      "Carriers differ in their rules, not the formula: tariff structure (PTT in-city vs. out-of-city, Aras and MNG by distance zone), extra charges per desi above 30, heavy-shipment thresholds (Yurtiçi 100 kg/desi per piece, Aras 100 kg or 300 desi) and acceptance limits (Yurtiçi: 300 kg / 700 desi / 500 cm longest side).",
+      "The costliest mistake is a band boundary: in banded contract tariffs a 4.2-desi box rounds up to 5 and jumps a band, which in the example tariff makes the shipment 33% more expensive. Cutting 1 cm of height brings it back to 4 desi.",
+      "If the carrier measures more desi than you declared, you get billed the difference. Photograph the outer dimensions, record them on the shipment, check the desi shown in tracking and dispute with evidence.",
+    ],
+    publishedAt: "2026-11-12",
+    readingMinutes: 9,
+    tags: ["dimensional weight", "desi", "ptt kargo", "aras kargo", "yurtici kargo", "shipping cost", "ecommerce turkey"],
+    sections: [
+      {
+        heading: "Do PTT, Aras, Yurtiçi and MNG calculate desi differently?",
+        paragraphs: [
+          "No. For domestic shipments in Türkiye, all four major carriers use the same formula: desi = length × width × height (cm) ÷ 3000. You are charged on whichever is larger, the desi or the parcel's actual weight in kg; this is the chargeable weight. The carriers' own documents confirm it: Aras's standard price list valid from 1 January 2026 defines volumetric weight as width × length × height ÷ 3000 and bills the greater value, and Yurtiçi's carriage contract counts a 300 dm³ volume as 100 desi, which is the 3000 divisor.",
+          "So a 50 × 40 × 30 cm box is 60,000 cm³ ÷ 3000 = 20 desi at every carrier; if the product weighs 6 kg you pay for 20, if it weighs 25 kg you pay for 25. What changes your invoice is not the formula but the tariff structure, band boundaries, heavy-shipment thresholds, acceptance limits and how the parcel is measured. This guide compares those rules carrier by carrier. For a single box, the Dimensional Weight Calculator gives the desi instantly.",
+        ],
+      },
+      {
+        heading: "Carrier rules side by side: what actually differs?",
+        paragraphs: [
+          "The comparison below is based on the carriers' published documents (Aras's 2026 price list and service commitments, Yurtiçi's carriage contract) and on sources quoting PTT's tariff of 4 February 2026. We could not find an official rules document for MNG, so its line relies on third-party sources; confirm it with the carrier before shipping. We deliberately give no price list: tariffs change several times a year and even the sources disagree.",
+        ],
+        bullets: [
+          "Divisor: ÷ 3000 domestically at all four; chargeable weight = the larger of desi and kg",
+          "Tariff structure — PTT: two columns, in-city and out-of-city; in-city applies when origin and destination province are the same",
+          "Tariff structure — Aras: columns by distance zone (city to far zone), a separate row for each kg/desi from 1 to 30, and a per-kg/desi charge from 31 up",
+          "Tariff structure — Yurtiçi: kg/desi rows plus distance; single pieces of 0–30 kg/desi are delivered to the floor",
+          "Tariff structure — MNG (per third-party sources): city, short-haul and long-haul tiers; rural and remote addresses may cost extra",
+          "Above 30 kg/desi — PTT and Aras: every kg/desi after 30 is charged separately",
+          "Heavy-shipment threshold — Yurtiçi: surcharge above 100 kg or 100 desi per piece; Aras: per its 2026 list, a heavy-shipment fee above 100 kg or 300 desi; PTT: surcharge and a different delivery method above 100 kg/desi",
+          "Delivery method — Yurtiçi: 31–200 kg or 31–400 desi (longest side up to 250 cm) delivered to the building entrance, 201–300 kg / 401–700 desi collected from the transfer hub",
+          "Acceptance limits — Yurtiçi: single pieces over 300 kg, 700 desi or 500 cm on the longest side are not accepted; Aras: branch-to-branch single pieces over 100 desi/kg, rods over 270 cm and more than 50 pieces per waybill are non-standard (delivery may take +1 business day); PTT: max 20 kg to and from the Princes' Islands",
+        ],
+      },
+      {
+        heading: "How do distance and in-city vs. out-of-city change the price of the same desi?",
+        paragraphs: [
+          "The desi stays the same; the column you read the price from changes. PTT applies its in-city rate when origin and destination province match and its out-of-city rate otherwise; in sources quoting the 4 February 2026 tariff, a 10 kg/desi out-of-city parcel costs about 1.5 times the in-city price. Aras and MNG price by distance instead: two districts in the same city count as city delivery, while neighbouring and distant regions sit in different columns.",
+          "In practice: if most of your customers are in your own province, PTT's in-city rate can decide it; if you ship nationwide, compare the average cost of a distance-zoned tariff. Instead of guessing, count the last three months of orders by province and run each carrier's quote against that same distribution. The quote comparison in the Shipping Cost Calculator is built for exactly that.",
+        ],
+      },
+      {
+        heading: "Why can 1 cm cost 33% more in a banded tariff?",
+        paragraphs: [
+          "Many contract and promotional tariffs don't price each desi separately; they group desi into bands. In the promotional Aras table ikas published in March 2026, for example, 1–4 desi costs 89.90 TRY, 5–7 desi 119.90 TRY and 8–10 desi 149.90 TRY (excluding VAT). In that structure, the band decides the cost, not the desi itself.",
+          "Example: a 35 × 30 × 12 cm box is 12,600 ÷ 3000 = 4.2 desi, rounds up to 5 and lands in the 5–7 band. Reduce the height to 11 cm and it is 11,550 cm³, 3.85 desi, rounding to 4 and staying in the 1–4 band. In that table the difference is 119.90 − 89.90 = 30 TRY, or 33%. To stay at 4 desi, the height can be at most 4 × 3000 ÷ (35 × 30) = 11.43 cm.",
+          "For a seller shipping 1,000 parcels a month, 30 TRY per parcel is 30,000 TRY a month (illustrative amounts). Choose box sizes around your tariff's band limits. The Dimensional Weight Calculator shows the maximum box height needed to drop one desi.",
+        ],
+        bullets: [
+          "Write down your tariff's band limits (e.g., 1–4, 5–7, 8–10)",
+          "Measure the packed outer size of your 5 best sellers and calculate their desi",
+          "For products just above a band limit (4.1–4.5, say), try a smaller box or different folding",
+          "Don't sacrifice protection: a damaged return costs more than the shipping saved",
+        ],
+      },
+      {
+        heading: "How is shipping priced above 30 desi?",
+        paragraphs: [
+          "PTT and Aras tariffs have a row for each kg/desi from 1 to 30; above 30, every extra kg/desi adds a surcharge to the 30 row. Formula: price = 30 kg/desi price + (chargeable value − 30) × extra kg/desi rate.",
+          "Example (illustrative amounts): a 70 × 50 × 40 cm box is 140,000 ÷ 3000 = 46.67 desi, rounded up to 47. The product weighs 18 kg, so desi decides. If the 30-desi row is 900 TRY and each extra desi 25 TRY, the price is 900 + 17 × 25 = 1,325 TRY. Splitting into two boxes doesn't always help: each box is measured and rounded separately, so total desi usually rises, but if both boxes fall under 30 desi you avoid the extra-desi charge. Try both as multiple parcels in the Dimensional Weight Calculator.",
+        ],
+      },
+      {
+        heading: "How does the heavy-shipment threshold change carrier choice?",
+        paragraphs: [
+          "If you ship furniture, large home textiles or bulky accessories, the real difference is the heavy-shipment threshold. Example: a light 120 × 80 × 40 cm box is 384,000 ÷ 3000 = 128 desi. Under Yurtiçi's contract it exceeds 100 desi per piece, so the heavy-shipment surcharge applies, and being within 31–400 desi it is delivered to the building entrance (floor delivery only up to 30 kg/desi). Aras's 2026 standard list starts the heavy-shipment fee above 100 kg or 300 desi; but Aras's service commitments treat branch-to-branch single pieces over 100 desi/kg as non-standard, with a possible extra business day.",
+          "So above 100 desi, 'which carrier is cheaper' is answered not by the desi table but by the surcharge, the delivery method (to the floor, to the building entrance, or pick-up at a hub) and the transit time together. Stating the delivery method on the product page reduces complaints and returns.",
+        ],
+      },
+      {
+        heading: "Why does the carrier measure a higher desi, and how do you dispute it?",
+        paragraphs: [
+          "You are billed on the carrier's measurement, not the value you entered. Yurtiçi's contract explicitly reserves the right to change kg/desi information. On Turkish complaint platforms, a single carrier's 'desi calculation' tag holds more than 80 complaints; the common patterns are desi entered without measuring, the same product recorded at different desi on different days, and unexpectedly high desi on return shipments. On marketplaces, these differences can be deducted straight from the seller's payout.",
+          "A dispute stands on evidence. Carriers measure the outer dimensions at the most protruding points; a bulging box, overhanging tape or foam makes it bigger. Measure the same way and you will know up front whether a difference is really an error.",
+        ],
+        bullets: [
+          "Measure the outer surface at the most protruding points; round fractions up",
+          "Before handover, photograph the box with a tape measure on each side and on a scale",
+          "Enter dimensions and weight correctly in the shipment record, integration or marketplace panel",
+          "Check the desi recorded in tracking and on invoices, at least as a weekly sample",
+          "If there's a gap, write to the carrier with the tracking number, photos and your calculation; contract customers should go through their account manager",
+          "If one product is always measured higher, change the box or update the dimensions on the product card",
+        ],
+      },
+      {
+        heading: "Carrier or contract: what really sets your cost?",
+        paragraphs: [
+          "The same carrier lives in three price worlds: the walk-in branch price, an ecommerce contract (negotiated by volume, often banded) and the marketplace's own contracted tariff (on platforms such as Trendyol and Hepsiburada, by desi band). That's why 'is PTT or Aras cheaper' has no single answer; two sellers pay very different prices for the same carrier.",
+          "To compare fairly, ask each carrier for a quote in the same format: desi bands and band prices, extra-desi rate above 30, distance or province split, heavy-shipment threshold, pickup, return and failed-delivery fees, and the measurement dispute process. Then apply your own order mix (product desi × province) to get a monthly total. See the effect of per-order shipping on profit with the Trendyol & Hepsiburada Profit Calculator and on product margin with the Profit Margin Calculator.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How does PTT calculate desi?",
+        answer:
+          "With the same formula as other domestic carriers: length × width × height (cm) ÷ 3000, charging the larger of desi and actual weight. PTT's price also depends on whether origin and destination are in the same province (in-city vs. out-of-city), and each kg/desi above 30 is charged extra.",
+      },
+      {
+        question: "Is there a difference between Aras and Yurtiçi desi calculation?",
+        answer:
+          "The formula is identical (÷ 3000, the larger value is billed). The rules differ: Aras prices by distance zone and, per its 2026 list, applies a heavy-shipment fee above 100 kg or 300 desi; Yurtiçi charges a heavy-shipment surcharge above 100 kg/desi per piece and won't accept single pieces over 300 kg, 700 desi or 500 cm.",
+      },
+      {
+        question: "Do Turkish carriers round up fractional desi?",
+        answer:
+          "Tariffs price kg/desi in whole-number rows, so fractions effectively move to the next row: 4.2 desi is charged as 5. The carriers' documents don't contain a separate rounding clause, so check the rule in your contract tariff.",
+      },
+      {
+        question: "What should I do if the carrier records a higher desi than I calculated?",
+        answer:
+          "First make sure you measured the outer surface at the most protruding points. If the gap is real, dispute it in writing with the tracking number and photos of the box with a tape measure and on a scale; contract customers should involve their account manager. If it keeps happening, change the box or update the product dimensions.",
+      },
+      {
+        question: "Does MNG calculate desi differently?",
+        answer:
+          "No, MNG also uses ÷ 3000 domestically and bills the larger of desi and kg. Third-party sources say MNG splits prices into city, short-haul and long-haul tiers. Check the carrier's current conditions for heavy shipments and size limits before sending.",
+      },
+    ],
+    howTo: {
+      name: "How to compare desi and shipping cost across Turkish carriers",
+      description: "Compare the cost of the same box at PTT, Aras, Yurtiçi and MNG in four steps.",
+      steps: [
+        { name: "Calculate the desi", text: "Multiply the outer dimensions, divide by 3000, compare with actual weight and round the larger value up." },
+        { name: "Find the band and column", text: "In each carrier's tariff, find the band for this value and the distance or province column for the shipment." },
+        { name: "Check the thresholds", text: "Note the extra-desi rate above 30, the heavy-shipment threshold and the delivery method for each carrier." },
+        { name: "Apply your order mix", text: "Apply the last three months' order mix (product desi × province) to each quote and compare monthly totals." },
+      ],
+    },
+    relatedToolKey: "desi",
+    resources: [
+      { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
+      { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
+      { label: "Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "How to Sell on Hepsiburada", href: "/en/blog/how-to-sell-on-hepsiburada-seller-guide/" },
+      { label: "Trendyol Commission Rates", href: "/en/blog/trendyol-commission-rates/" },
+      { label: "How to Start an Ecommerce Website: Checklist", href: "/en/blog/how-to-start-an-ecommerce-website-checklist/" },
+      { label: "Yurtiçi Kargo: Carriage contract (PDF, Turkish)", href: "https://www.yurticikargo.com/web_files/yurtici-kargo/Uploads/Revize-pdf/Ta%C5%9F%C4%B1ma%20S%C3%B6zle%C5%9Fmesi.pdf", external: true },
+      { label: "Aras Kargo: Service commitments (PDF, Turkish)", href: "https://www.araskargo.com.tr/assets/images/pdf/hizmet-taah%C3%BCtlerimiz.pdf", external: true },
+      { label: "Aras Kargo: 2026 standard price list (PDF)", href: "https://www.araskargo.com.tr/assets/images/pdf/en/aras-cargo-standard-price-list-2026-en.pdf", external: true },
     ],
   },
 ];
