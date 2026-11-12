@@ -229,3 +229,47 @@ Merhaba,
 https://yusufbayrak.net/blog/icp-ideal-musteri-profili-sablon/ (şablon kaynaklar bölümünde)
 Uygun görürseniz kaynak olarak eklenebilir; görmezseniz de teşekkürler.
 Yusuf Bayrak — yusufbayrak.net
+
+## Kargo Desi ve Kutu Optimizasyonu Şablonu (2026-11-12)
+Dosya: https://yusufbayrak.net/sablonlar/kargo-desi-ve-kutu-optimizasyonu-sablonu.xlsx
+Ana sayfa (link verilecek yer): https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/ (ayrıca yurtdışı kargo yazısında)
+İçerik: 4 sayfa — kullanım; Tarife Bantları (kendi anlaşmalı bant tarifenizi girin; 30 üstü ek desi); Ürün Desi (40 ürün satırı: yurt içi desi ÷3000,
+ücrete esas desi/kg, belirleyen, bant fiyatı, aylık kargo, alt bant üst sınırı, alt banda inmek için maks. kutu yüksekliği, alt bantla aylık tasarruf,
+yurt dışı ekspres hacimsel ağırlık ÷5000 + 0,5 kg yuvarlama, posta küçük paket uygunluğu); Özet (toplam kargo, olası tasarruf oranı).
+LibreOffice ile hesaplandı, 0 formül hatası. Örnek veride 6 ürün / 1.500 aylık gönderi: aylık kargo 181.480 TL, alt banda inme ile olası tasarruf 22.700 TL (%12,5) — örnek tutarlar.
+Rekabet gözlemi (12.11.2026): Türkçe SERP'te desi araçları tek koli hesaplıyor (ikas, takvim, Ticimax, kobitime); ürün listesi + tarife bandı + kutu
+optimizasyonu yapan indirilebilir şablon bulunamadı. Ticimax'ın desi yazısındaki Excel örneğinde formül hataları var (÷100 formül kutusu, 3. satırda D2 referansı, "X" çarpma işareti).
+
+### Hedefler (kullanıcı gönderir; göndermeden önce sayfayı açıp somut bir cümle bulun)
+| # | Yer | Neden | Durum |
+|---|---|---|---|
+| 1 | ticimax.com/blog/kargo-desisi-nasil-hesaplanir | Yazıda Excel ile desi hesabı örneği var ama formüller hatalı; doğru ve ücretsiz şablon okura doğrudan değer | Ticimax içerik ekibi (blog iletişim / LinkedIn) — kibar düzeltme önerisi + şablon |
+| 2 | yengec.co/blog/ptt-kargo-ucretleri | ~320 kelime, araç/şablon yok; PTT desi hesabını anlatıyor | Yengeç blog iletişim |
+| 3 | Kullanıcının LinkedIn profili + e-ticaret satıcı grupları | Kargo maliyeti satıcıların en somut derdi; örnek %12,5 tasarruf çarpıcı | Kullanıcı paylaşır |
+| 4 | Widget dağıtımı listesindeki e-ticaret ajans blogları (seo/outreach/widget-dagitimi.md, ör. eticaretmerkezim) | Desi widget teklifiyle birlikte şablon da sunulabilir | Widget teklifine ek |
+
+### LinkedIn metni (kullanıcının sesiyle düzenlenmeli)
+Kargo faturanızın %10'undan fazlası kutu ölçüsünde saklı olabilir.
+
+Anlaşmalı kargo tarifeleri çoğu zaman desileri bantlara toplar (1-4, 5-7, 8-10...). 35 × 30 × 12 cm'lik koli 4,2 desi → 5'e yuvarlanır → bir üst bant. Yüksekliği 11,4 cm'ye indirmek aynı ürünü bir alt banda taşır; örnek tarifede gönderi başına %33 fark.
+
+Ürün listenizi girince her ürünün bandını, alt banda inmek için gereken en yüksek kutu yüksekliğini ve aylık tasarrufu hesaplayan ücretsiz bir Excel hazırladım. Yurt dışı ekspres (÷5000, 0,5 kg yuvarlama) ve küçük paket uygunluğu da içinde. Kayıt yok. Link ilk yorumda.
+
+### Teklif metni (Ticimax)
+Konu: Desi yazınızdaki Excel örneği için küçük bir düzeltme ve ücretsiz şablon
+
+Merhaba,
+"Desi Hesaplama: Desi Nasıl Hesaplanır?" yazınızı okudum; desi tablosundaki örnekler doğru ve anlaşılır. Excel bölümünde birkaç küçük hata gözüme çarptı: formül kutusunda ÷3000 yerine ÷100 yazıyor, 3. satırın formülü D2 hücresine bakıyor ve "X" çarpma işareti Excel'de çalışmıyor ("*" olmalı).
+Okurlarınız için tamamlayıcı olabilecek, Türkçe ve ücretsiz bir Excel şablonu hazırladım: ürün listesinden yurt içi/yurt dışı desi, tarife bandı ve kutu küçültme tasarrufu hesaplıyor.
+https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/ (şablon kaynaklar bölümünde)
+Uygun görürseniz kaynak olarak eklenebilir; görmezseniz de düzeltmeler işinize yarar umarım.
+Yusuf Bayrak — yusufbayrak.net
+
+### Teklif metni (Yengeç)
+Konu: PTT kargo ücretleri yazınız için ücretsiz desi şablonu
+
+Merhaba,
+"2026 PTT Kargo Ücretleri" yazınızı okudum; <somut bir nokta>. Okurlarınızın kendi ürünleri için desi ve kargo bandını hesaplayabileceği Türkçe, ücretsiz bir Excel şablonu hazırladım (ürün listesi, tarife bantları, kutu küçültme tasarrufu, yurt dışı ÷5000).
+https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/
+Uygun görürseniz kaynak olarak eklenebilir; teşekkürler.
+Yusuf Bayrak — yusufbayrak.net

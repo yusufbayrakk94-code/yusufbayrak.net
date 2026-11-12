@@ -154,5 +154,5 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 
 ## Otorite / dağıtım
 - [ ] Türkiye B2B/e-ticaret reklam maliyetleri raporu (veri çalışması)
-- [~] İndirilebilir şablonlar: UTM takip tablosu 02.11, Ürün Kârlılık Şablonu 04.11, Google Ads Kampanya Planı 05.11, E-ticaret Açılış Bütçesi ve Başabaş Şablonu 07.11, Etsy Fiyat ve Kâr Şablonu 09.11, Landing Page Kontrol Listesi 10.11, ICP Şablonu ve Lead Skorlama 11.11 yayında
+- [~] İndirilebilir şablonlar: UTM takip tablosu 02.11, Ürün Kârlılık Şablonu 04.11, Google Ads Kampanya Planı 05.11, E-ticaret Açılış Bütçesi ve Başabaş Şablonu 07.11, Etsy Fiyat ve Kâr Şablonu 09.11, Landing Page Kontrol Listesi 10.11, ICP Şablonu ve Lead Skorlama 11.11 yayında, Kargo Desi ve Kutu Optimizasyonu Şablonu 12.11 yayında (hedefler ve metinler seo/outreach/sablonlar.md; Ticimax düzeltme önerisi, Yengeç, LinkedIn — kullanıcı gönderir)
 - [ ] Marka tescil sorgulama aracı fikri (Brandog/Marka-MCP) — kullanıcıyla değerlendir

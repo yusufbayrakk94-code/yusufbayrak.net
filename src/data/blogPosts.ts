@@ -8066,6 +8066,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "En çok satan 5 ürününüzün paketli dış ölçüsünü ölçüp desisini hesaplayın",
           "Bant sınırının hemen üstünde kalan (4,1-4,5 gibi) ürünler için daha küçük kutu veya farklı katlama deneyin",
           "Kutu küçültürken ürünün korunmasını ve ezilme riskini ihmal etmeyin; hasarlı iade, kazanılan kargo farkından pahalıdır",
+          "Tüm ürünlerinizin bandını, alt banda inmek için gereken en yüksek kutu yüksekliğini ve aylık tasarrufu ücretsiz Kargo Desi ve Kutu Optimizasyonu Şablonu (Excel) ile tek tabloda görebilirsiniz",
         ],
       },
       {
@@ -8144,6 +8145,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "desi",
     resources: [
+      { label: "Kargo Desi ve Kutu Optimizasyonu Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/kargo-desi-ve-kutu-optimizasyonu-sablonu.xlsx", external: true },
       { label: "Yurtdışı Kargo Ücreti Hesaplama: 5000 Desi ve Örnekler", href: "/blog/yurtdisi-kargo-ucreti-hesaplama-desi/" },
       { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
@@ -8293,6 +8295,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "desi",
     resources: [
+      { label: "Kargo Desi ve Kutu Optimizasyonu Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/kargo-desi-ve-kutu-optimizasyonu-sablonu.xlsx", external: true },
       { label: "Desi Hesaplama (5000 böleni seçeneğiyle)", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
