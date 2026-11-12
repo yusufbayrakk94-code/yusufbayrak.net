@@ -2,6 +2,17 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-11-12 (veri görevi, ek — oturum yenilendi)
+- Kullanıcı yerleşik tarayıcıda yeniden oturum açtı. ÖNEMLİ: tarayıcıda iki Google hesabı var; varsayılan hesap (u/0, AdGusto) yusufbayrak.net'e erişemiyor. Search Console ve GA4 için /u/1/ (Search Console) ve ?authuser=1 (GA4) kullanılmalı. Örnek: https://search.google.com/u/1/search-console/performance/search-analytics?resource_id=sc-domain%3Ayusufbayrak.net ve https://analytics.google.com/analytics/web/?authuser=1#/a402211750p546941527/reports/explorer?r=top-events
+- Not: dar panelde URL Denetimi kutusu gizleniyor; resize_window ile 1280×800 yapıp sonra "desktop"a dön.
+- Search Console (son 28 gün): tıklama hâlâ çok az, gösterim 04.11'e göre belirgin arttı (31.12 hedefinin altında). Son 7 günde gösterim önceki 7 günün yaklaşık 3 katı; artışın çoğu EN araç ve yazılardan (Discount, Shipping Cost, Google Ads, Trendyol commission). İlk tıklamalar marka dışı sayfalardan geldi: Trendyol komisyon oranları TR yazısı (8. sıra) ve Brandog projesi.
+- Hedef sorgular: 'ltv nedir' 8, 'cac açılımı' 7, 'cac nedir' 21, 'cac ne demek' 23, 'mrr ne demek' 13-14, 'ltv ne demek' 10; 'utm nedir' 53; 'başabaş roas' 65; 'roas hesaplama' 81. 'trendyol commission rate' EN yazıyla 7. sırada. Desi aracı ilk kez göründü ('tomruk desi hesaplama' gibi uzun kuyruk, 58 civarı). Trendyol komisyon/kar, kar marjı, churn nedir sorgularında hâlâ gösterim yok.
+- Fırsatlar (sonraki güçlendirme): 'discount calculator' 19-20 (EN İndirim aracı, 8-30 bandı) ve EN Instagram reklam yazısı 16; UTM TR yazısı 12'ye çıktı; CPL TR 25.
+- Dizin: dizine eklenen sayfa belirgin arttı; "Keşfedildi" doğrulaması başarılı, "Yeniden yönlendirme hatası" doğrulaması sürüyor; "Tarandı - dizine eklenmedi" kümesi büyüdü (yeni yazılar), izleniyor.
+- GA4 (son 28 gün, mülk a402211750p546941527 doğrulandı): oturum düşük; Direct çoğunluk, Organic Search ikinci. generate_lead, form_start, contact_click, tool_use yine yok.
+- Dizine ekleme isteği (5/5): ROAS aracı TR (ÖNCELİKLİ), Trendyol Komisyon ve Kâr aracı TR (11.11 güçlendirildi), Desi aracı TR (12.11 güçlendirildi), Etsy ve Hepsiburada TR yazıları (ikisi "URL Google'da yok").
+- Sayfa güçlendirme bu ek çalışmada yapılmadı: bugünkü veri görevi Desi ve Kar Marjı araçlarını güçlendirmişti; MRR aracı v2 de bugün yayına çıktı.
+
 ## 2026-11-12 (veri görevi)
 - ENGEL (3. gün): yerleşik tarayıcıda Google oturumu hâlâ kapalı (Search Console giriş sayfasına yönlendi). Kural gereği oturum açılmadı; Search Console, GA4 ve Keyword Planner okunamadı, dizine ekleme istekleri (0/5) gönderilemedi, kuyruk BACKLOG'da bekliyor. Kullanıcıya adım adım bildirim gönderildi. Takvimde ~26 açık konu (eşik 14) → hacim turu ertelemesi henüz risk değil; 22.11'e kadar oturum açılmazsa takvim tükenmeye yaklaşır.
 - Sayfa seçimi taze veri olmadan, hacmi en yüksek ve gösterimi olmayan hedef sorgu sayfalarından yapıldı (Trendyol ve Churn 11.11'de güçlendirilmişti).

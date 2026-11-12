@@ -48,10 +48,11 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Dizine ekleme isteği gönderildi: /en/free-tools/shipping-cost-calculator/ (ÖNCELİKLİ), /en/blog/what-is-google-ads-how-it-works/ (09.11 bölümler), /en/blog/what-is-roi-how-to-calculate/, /en/blog/how-to-start-an-ecommerce-website-checklist/ (ikisi "URL Google'da yok"), /en/blog/trendyol-commission-rates/ — 2026-11-09 (5/5)
 - [ ] Dizine ekleme isteği (2026-11-09 güçlendirildi, TR): /blog/utm-nedir-utm-parametreleri/ (GA4 sorun giderme bölümü; 08.11'de istenmişti, 1-2 gün sonra yeniden)
 - [ ] Dizine ekleme isteği (kalan EN): /en/blog/what-is-a-kpi-marketing-kpi-examples/, /en/blog/what-is-roas-how-to-calculate/
-- [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 1, TR önce): /blog/etsyde-satis-komisyon-kar-hesabi/, /en/blog/etsy-fees-profit-calculation/
-- [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 2, TR önce): /blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/, /en/blog/how-to-sell-on-hepsiburada-seller-guide/
-- [ ] Dizine ekleme isteği (2026-11-10 güçlendirildi, ÖNCELİKLİ, TR önce): /ucretsiz-araclar/roas-hesaplayici/ (iade oranı + başabaş ROAS tablosu), /blog/cac-nedir-musteri-edinme-maliyeti/ (gelen iç link anchor'ları), /en/free-tools/roas-calculator/
-- [!] 10.11 veri görevi: yerleşik tarayıcıda Google oturumu kapalıydı → Search Console, GA4, Keyword Planner okunamadı, 10.11 dizine ekleme kotası (5) kullanılamadı. Kullanıcının yeniden oturum açması gerekiyor.
+- [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 1, TR önce): /en/blog/etsy-fees-profit-calculation/
+- [ ] Dizine ekleme isteği (2026-11-09 yeni yazı 2, TR önce): /en/blog/how-to-sell-on-hepsiburada-seller-guide/
+- [ ] Dizine ekleme isteği (2026-11-10 güçlendirildi, ÖNCELİKLİ, TR önce): /blog/cac-nedir-musteri-edinme-maliyeti/ (gelen iç link anchor'ları), /en/free-tools/roas-calculator/
+- [x] 10–12.11 Google oturumu kapalıydı; 12.11 akşamı kullanıcı yeniden giriş yaptı. Erişimli hesap tarayıcıda 2. hesap: Search Console için /u/1/, GA4 için ?authuser=1 kullan (u/0 = AdGusto, erişimi yok)
+- [x] Dizine ekleme isteği gönderildi: /ucretsiz-araclar/roas-hesaplayici/, /ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/, /ucretsiz-araclar/desi-hesaplama/, /blog/etsyde-satis-komisyon-kar-hesabi/, /blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/ — 2026-11-12 (5/5)
 - [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 1, TR önce): /blog/backlink-nedir-nasil-alinir/, /en/blog/what-are-backlinks-how-to-get-them/
 - [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 2, TR önce): /blog/landing-page-nedir-donusen-acilis-sayfasi/, /en/blog/what-is-a-landing-page-checklist/
 - [ ] Dizine ekleme isteği (2026-11-11 yeni yazı 1, TR önce): /blog/ctr-nedir-iyi-tiklama-orani-kac/, /en/blog/what-is-ctr-good-click-through-rate/
