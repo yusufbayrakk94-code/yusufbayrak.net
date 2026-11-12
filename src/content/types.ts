@@ -27,7 +27,7 @@ export interface ToolContent {
   title: string;
   description: string;
   intro: string;
-  seoParagraphs: Array<{ heading?: string; body: string }>;
+  seoParagraphs: Array<{ heading?: string; body: string; table?: { head: string[]; rows: string[][] } }>;
   faqs: FaqItem[];
   /** schema.org applicationCategory override (defaults to BusinessApplication). */
   applicationCategory?: string;

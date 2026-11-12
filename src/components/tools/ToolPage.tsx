@@ -226,6 +226,28 @@ export function ToolPage({ toolKey, children }: Props) {
                   <div key={i}>
                     {para.heading && <h2>{para.heading}</h2>}
                     <p>{para.body}</p>
+                    {para.table && (
+                      <div className="mt-4 overflow-x-auto">
+                        <table className="w-full text-sm border border-border">
+                          <thead>
+                            <tr>
+                              {para.table.head.map((h, j) => (
+                                <th key={j} className="border border-border px-3 py-2 text-left text-foreground font-semibold">{h}</th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {para.table.rows.map((r, j) => (
+                              <tr key={j}>
+                                {r.map((c, k) => (
+                                  <td key={k} className="border border-border px-3 py-2">{c}</td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
                   </div>
                 ))}
               </article>

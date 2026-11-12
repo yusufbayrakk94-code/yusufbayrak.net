@@ -5672,7 +5672,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
       { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
-      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
       { label: "ROAS ve Başabaş ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Trendyol Komisyon Oranları 2026", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
@@ -6801,7 +6801,7 @@ export const BLOG_POSTS: BlogPost[] = [
     resources: [
       { label: "E-ticaret Açılış Bütçesi ve Başabaş Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/e-ticaret-acilis-butcesi-sablonu.xlsx", external: true },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
-      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "ROAS ve Başabaş ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -7000,7 +7000,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "desi",
     resources: [
       { label: "Etsy Fiyat ve Kâr Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/etsy-fiyat-ve-kar-sablonu.xlsx", external: true },
-      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
       { label: "Trendyol Komisyon ve Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -7193,7 +7193,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "marketplace",
     resources: [
       { label: "Trendyol Komisyon ve Kâr Hesaplama (Hepsiburada seçeneğiyle)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
-      { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
       { label: "İndirim Hesaplama", href: "/ucretsiz-araclar/indirim-hesaplama/" },
       { label: "ROAS ve Başabaş ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -15637,7 +15637,7 @@ const RELATED_TOOLS: Record<RelatedToolKey, LocalizedToolMeta> = {
   desi: {
     tr: {
       href: "/ucretsiz-araclar/desi-hesaplama",
-      label: "Desi Hesaplama",
+      label: "Desi Hesaplama ve Hazır Desi Tablosu",
       description: "Kargo desisini ve ücrete esas desi/kg değerini çoklu koli ile hesaplayın.",
     },
     en: {
