@@ -7000,6 +7000,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "desi",
     resources: [
+      { label: "Yurtdışı Kargo Ücreti Nasıl Hesaplanır? (5000 böleni, ek ücretler)", href: "/blog/yurtdisi-kargo-ucreti-hesaplama-desi/" },
       { label: "Etsy Fiyat ve Kâr Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/etsy-fiyat-ve-kar-sablonu.xlsx", external: true },
       { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
@@ -8143,6 +8144,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "desi",
     resources: [
+      { label: "Yurtdışı Kargo Ücreti Hesaplama: 5000 Desi ve Örnekler", href: "/blog/yurtdisi-kargo-ucreti-hesaplama-desi/" },
       { label: "Desi Hesaplama", href: "/ucretsiz-araclar/desi-hesaplama/" },
       { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
       { label: "Trendyol & Hepsiburada Kâr Hesaplama", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
@@ -8153,6 +8155,154 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Yurtiçi Kargo: Kargo/Posta Gönderisi Taşıma Sözleşmesi (PDF)", href: "https://www.yurticikargo.com/web_files/yurtici-kargo/Uploads/Revize-pdf/Ta%C5%9F%C4%B1ma%20S%C3%B6zle%C5%9Fmesi.pdf", external: true },
       { label: "Aras Kargo: Hizmet taahhütleri (PDF)", href: "https://www.araskargo.com.tr/assets/images/pdf/hizmet-taah%C3%BCtlerimiz.pdf", external: true },
       { label: "Aras Kargo: 2026 standart fiyat listesi (PDF, İngilizce)", href: "https://www.araskargo.com.tr/assets/images/pdf/en/aras-cargo-standard-price-list-2026-en.pdf", external: true },
+    ],
+  },
+  {
+    slug: "yurtdisi-kargo-ucreti-hesaplama-desi",
+    seoTitle: "Yurtdışı Kargo Ücreti Hesaplama: 5000 Desi ve Örnekler",
+    title: "Yurtdışı Kargo Ücreti Nasıl Hesaplanır? 5000 Böleni, 0,5 kg Yuvarlama, Ek Ücretler ve PTT Küçük Paket",
+    description:
+      "Yurtdışı kargo ücreti hesaplama: 5000 bölenli desi, 0,5 kg yuvarlama, bölge, yakıt ve uzak bölge ek ücretleri, PTT küçük paket ve kutu küçültme örnekleri.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Yurt dışı ekspres kargoda hacimsel ağırlık En × Boy × Yükseklik (cm) ÷ 5000 ile bulunur (yurt içinde ÷ 3000). Ücret, hacimsel ağırlık ile gerçek ağırlıktan büyük olana göre alınır; DHL Express bu değeri 30 kg'a kadar 0,5 kg'a, sonrasında 1 kg'a yukarı yuvarlar ve her parçayı ayrı yuvarlar.",
+      "Toplam ücret = Varış ülkesinin bölge tarifesindeki fiyat (ücrete esas kg) × (1 + yakıt ek ücreti %) + varsa uzak bölge, aşırı boyut gibi ek ücretler. Ekspres fiyatlar genellikle euro bazlıdır; TL maliyetiniz kurla değişir. Gümrük vergileri ve masrafları navlun ücretine dahil değildir.",
+      "2 kg'a kadar, bir kenarı 60 cm'yi ve üç kenar toplamı 90 cm'yi aşmayan ürünlerde PTT'nin küçük paket hizmeti ağırlıkla fiyatlanır; hafif ve küçük ürünlerde ekspresten çoğu zaman ucuzdur ama daha yavaştır.",
+      "40 × 30 × 20 cm'lik 2,3 kg'lık koli ekspreste 5 kg olarak faturalanır; kutuyu 35 × 25 × 18 cm'ye indirmek ücrete esas ağırlığı 3,5 kg'a, yani %30 düşürür.",
+    ],
+    publishedAt: "2026-11-12",
+    readingMinutes: 10,
+    tags: ["yurtdışı kargo", "ptt yurtdışı kargo", "desi hesaplama", "hacimsel ağırlık", "e-ihracat", "kargo ücreti", "etsy"],
+    sections: [
+      {
+        heading: "Yurtdışı kargo ücreti nasıl hesaplanır?",
+        paragraphs: [
+          "Yurt dışı kargo ücreti dört adımda hesaplanır: (1) her kolinin hacimsel ağırlığını bulun: En × Boy × Yükseklik (cm) ÷ 5000; (2) hacimsel ağırlık ile gerçek ağırlıktan büyük olanı alın ve taşıyıcının kuralına göre yukarı yuvarlayın (ücrete esas ağırlık); (3) varış ülkesinin bulunduğu bölgenin tarifesinden bu ağırlığın fiyatını okuyun; (4) yakıt ek ücretini ve varsa uzak bölge, aşırı boyut gibi ek ücretleri ekleyin.",
+          "5000 böleni uluslararası ekspres taşıyıcılarda standarttır: DHL Express'in Türkiye 2026 hizmet ve fiyat rehberi hacimsel ağırlığı her parça için uzunluk × genişlik × yükseklik ÷ 5000 olarak tanımlar; FedEx Türkiye de en yaygın bölenin 5000 olduğunu belirtir. Ticaret Bakanlığı'nın e-ihracat lojistik eğitim modülündeki örnek: 60 × 40 × 40 cm'lik koli 96.000 ÷ 5000 = 19,2 kg'dır ve faturada bir üst kademeye yuvarlanır. Desi Hesaplama aracında bölen olarak 5000'i seçerek aynı hesabı yapabilirsiniz.",
+        ],
+        bullets: [
+          "Hacimsel ağırlık = En × Boy × Yükseklik (cm) ÷ 5000",
+          "Ücrete esas ağırlık = max(hacimsel, gerçek), yukarı yuvarlanmış",
+          "Ücret = Bölge fiyatı (ücrete esas kg) × (1 + yakıt ek ücreti) + diğer ek ücretler",
+        ],
+      },
+      {
+        heading: "Yurt içi 3000, yurt dışı 5000: aynı koli neden farklı hesaplanır?",
+        paragraphs: [
+          "Bölen büyüdükçe aynı kolinin hacimsel ağırlığı düşer. Yurt içinde 1 desi 3000 cm³ iken ekspres yurt dışı gönderide 1 kg 5000 cm³'tür. Bu yüzden yurt içindeki desi rakamınızı yurt dışı fiyat listesinde kullanırsanız maliyeti olduğundan yüksek tahmin edersiniz; tersini yaparsanız yurt içi ücretini düşük görürsünüz.",
+          "Örnek: 40 × 30 × 20 cm'lik koli 24.000 cm³'tür. Yurt içinde 24.000 ÷ 3000 = 8 desi, yurt dışı ekspreste 24.000 ÷ 5000 = 4,8 kg eder ve 0,5 kg'a yuvarlanınca 5 kg olarak faturalanır. Küçük bir ürünü ele alalım: 25 × 20 × 10 cm ve 0,6 kg. Yurt içinde 5.000 ÷ 3000 = 1,67, yuvarlanınca 2 desi; ekspreste 5.000 ÷ 5000 = 1,0 kg ve gerçek ağırlıktan büyük olduğu için 1 kg üzerinden ücretlendirilir.",
+        ],
+      },
+      {
+        heading: "0,5 kg yuvarlama ve çoklu koli tuzağı",
+        paragraphs: [
+          "DHL Express Worldwide'da ücrete esas ağırlık 30 kg'a kadar bir üst 0,5 kg'a, 30 kg'ın üzerinde bir üst 1 kg'a yuvarlanır ve gönderideki her parça ayrı ayrı yuvarlanır. Yani 4,6 kg ile 5,0 kg aynı fiyattır; 5,1 kg ise 5,5 kg olarak faturalanır.",
+          "Parça bazında yuvarlama çoklu kolide fark yaratır. Hacimsel ağırlığı 1,2 kg olan iki koliyi ayrı gönderdiğinizde her biri 1,5 kg'a yuvarlanır ve toplam 3,0 kg ödersiniz; aynı ürünleri hacimsel ağırlığı 2,4 kg olan tek koliye koyarsanız 2,5 kg ödersiniz. Fark %20'dir. Tersine, tek koli parça başı limiti (DHL Express Worldwide'da 70 kg ve 120 × 80 × 80 cm) veya aşırı boyut eşiğini aşıyorsa bölmek ucuzlatabilir. İki senaryoyu da Desi Hesaplama aracında 5000 böleni ve 0,5 yuvarlamayla deneyin.",
+        ],
+      },
+      {
+        heading: "Yurtdışı kargo fiyatını hangi ek ücretler artırır?",
+        paragraphs: [
+          "Fiyat listesindeki rakam çoğu zaman ödeyeceğiniz tutar değildir. DHL Express'in 2026 rehberi fiyatların gümrük vergileri, vergiler, gümrükleme masrafları ve tüm ek ücretler hariç olduğunu açıkça yazar. En sık karşılaşılan kalemler:",
+        ],
+        bullets: [
+          "Yakıt ek ücreti: taşıma ücretine ve bazı ek hizmetlere uygulanan yüzde. DHL'de hava taşımacılığı için ABD Enerji Bakanlığı'nın jet yakıtı fiyatlarına bağlı bir endeksle her ay yeniden belirlenir; teklifleri karşılaştırırken o ayın oranını sorun",
+          "Uzak bölge ek ücreti: alım veya teslim adresi ulaşılması zor bir bölgedeyse gönderi başına, ağırlığa göre eklenir",
+          "Aşırı boyut ek ücreti: DHL'de en uzun kenarı 100 cm'yi veya ikinci uzun kenarı 80 cm'yi aşan her parça için; rulo halı, poster tüpü, uzun aksesuar gibi ürünlerde sürpriz kalemdir",
+          "Aşırı ağırlık ek ücreti: gerçek veya hacimsel ağırlığı 70 kg'ı aşan her parça için",
+          "Vergi ve harçları gönderici öder (DTP) hizmeti: alıcının ödeyeceği gümrük masraflarını sizin üstlenmeniz için gümrük tutarına yüzde olarak eklenen hizmet bedeli",
+          "Kur: ekspres tarifeler genellikle euro bazlıdır; aynı gönderinin TL maliyeti kurla birlikte değişir",
+        ],
+      },
+      {
+        heading: "Örnek hesap: Almanya'ya 2,3 kg'lık koli",
+        paragraphs: [
+          "Aşağıdaki fiyatlar örnek tutarlardır; gerçek rakamlar taşıyıcıya, anlaşmanıza, bölgeye ve aya göre değişir. 40 × 30 × 20 cm'lik, 2,3 kg'lık koli: hacimsel ağırlık 4,8 kg, gerçek ağırlık 2,3 kg; büyük olan hacimsel ağırlıktır ve 0,5 kg'a yuvarlanınca ücrete esas ağırlık 5,0 kg olur.",
+          "Bölge tarifesinde 5 kg'ın fiyatı 60 € ve o ayın yakıt ek ücreti %30 ise taşıma ücreti 60 × 1,30 = 78 € olur. Adres uzak bölgedeyse ve uzak bölge ücreti 25 € ise (örnekte yakıta tabi olmadığını varsaydık) toplam 103 € eder. 1 € = 50 TL varsayımıyla 5.150 TL demektir.",
+          "Kutuyu 35 × 25 × 18 cm'ye küçültürseniz hacim 15.750 cm³, hacimsel ağırlık 3,15 kg olur ve 3,5 kg'a yuvarlanır. Ücrete esas ağırlık 5,0'dan 3,5 kg'a, yani %30 düşer. Tarifede 3,5 kg 48 € ise taşıma ücreti 48 × 1,30 = 62,40 € olur; gönderi başına 15,60 € tasarruf. Ayda 200 yurt dışı siparişte bu 3.120 € eder.",
+        ],
+        bullets: [
+          "40 × 30 × 20 = 24.000 cm³ ÷ 5000 = 4,8 kg → 5,0 kg (gerçek 2,3 kg)",
+          "60 € × 1,30 = 78 €; + 25 € uzak bölge = 103 € (örnek tutarlar)",
+          "35 × 25 × 18 = 15.750 cm³ ÷ 5000 = 3,15 kg → 3,5 kg → 48 € × 1,30 = 62,40 €",
+        ],
+      },
+      {
+        heading: "PTT ile yurtdışı kargo: küçük paket mi ekspres mi?",
+        paragraphs: [
+          "PTT'nin yurt dışı gönderilerinde ürününüzün boyutuna göre iki farklı mantık işler. Küçük paket hizmeti, ağırlığı en fazla 2 kg olan, bir kenarı 60 cm'yi ve üç kenarının toplamı 90 cm'yi aşmayan gönderiler içindir ve ağırlıkla fiyatlanır; takı, aksesuar, küçük tekstil ve el yapımı ürünlerde ekspres hizmete göre çoğu zaman belirgin şekilde ucuzdur ama teslimat daha uzun sürer. Bu sınırları aşan gönderilerde koli ve ekspres hizmetlere geçilir.",
+          "PTT'nin güncel yurt dışı fiyatını yazmıyoruz: tarifeler değişiyor ve ülke grubuna göre farklılaşıyor. Fiyatı PTT'nin gönderi ücreti hesaplama ekranından ya da yurt dışı gönderi teklif formundan alın. Karar için şu soruları sorun: Ürün küçük paket sınırlarına giriyor mu? Müşteri hızlı teslimat için ödeme yapıyor mu? Takip ve teslim kanıtı iade ve itiraz süreçleriniz için yeterli mi?",
+        ],
+        bullets: [
+          "≤ 2 kg, kenar ≤ 60 cm, üç kenar toplamı ≤ 90 cm → küçük paket (ağırlık bazlı) adayı",
+          "Hafif ama hacimli ürün → ekspreste 5000 bölenli hacimsel ağırlık belirler; kutu ölçüsü en büyük kaldıraç",
+          "Ağır ve küçük ürün → gerçek ağırlık belirler; kutu küçültmek kazandırmaz, hizmet ve bölge seçimi kazandırır",
+          "Zaman hassas veya yüksek tutarlı sipariş → ekspres; takip ve teslim kanıtı daha güçlü",
+        ],
+      },
+      {
+        heading: "Yurtdışı kargoyu ürün fiyatına nasıl yansıtmalı?",
+        paragraphs: [
+          "Yurt dışı kargo genellikle sipariş tutarının büyük bir kısmıdır; bu yüzden ürün fiyatını belirlemeden önce kargo maliyetini hesaplayın. Üç yaygın yöntem var: (1) kargoyu alıcıdan ayrı tahsil etmek (şeffaf ama sepette vazgeçmeyi artırabilir), (2) kargoyu ürün fiyatına gömüp 'ücretsiz kargo' sunmak (fiyat = (maliyet + kargo + hedef kâr) ÷ (1 − komisyon oranı)), (3) bölge bazlı sabit kargo (Avrupa, Kuzey Amerika gibi gruplara ortalama ücret).",
+          "Hangisini seçerseniz seçin, en çok satan ürünleriniz için hacimsel ağırlığı ve bölge fiyatını tek tek hesaplayın; ortalama bir kargo ücreti kullanmak, hacimli ürünlerde zararına satışa yol açar. Etsy gibi pazaryerlerinde kargo ücretinin de komisyona tabi olabileceğini unutmayın; ayrıntılı örnek Etsy'de satış yazısında. Sipariş başı kârı Kar Marjı Hesaplama aracıyla kontrol edin.",
+        ],
+      },
+      {
+        heading: "Gümrük ve vergiler bu hesaba dahil mi?",
+        paragraphs: [
+          "Hayır. Bu yazıdaki hesap yalnızca taşıma (navlun) ücretini kapsar. Alıcı ülkedeki gümrük vergileri, ithalat vergileri ve gümrükleme masrafları ayrı kalemlerdir; kimin ödeyeceği seçtiğiniz teslim şekline (alıcı öder ya da gönderici öder) bağlıdır ve ülkeye göre değişir. Bu kalemleri hesaplamak için taşıyıcınızın gümrük hizmetine veya bir gümrük müşavirine danışın. Mikro ihracatta gümrük beyanı genellikle kargo firması tarafından yapılır; hangi beyanın kimin tarafından hazırlanacağını anlaşma öncesinde taşıyıcınıza sorun.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Yurtdışı kargoda desi nasıl hesaplanır?",
+        answer:
+          "Ekspres yurt dışı gönderide hacimsel ağırlık En × Boy × Yükseklik (cm) ÷ 5000 ile hesaplanır. Sonuç gerçek ağırlıkla karşılaştırılır, büyük olan yukarı yuvarlanır. Örneğin 40 × 30 × 20 cm'lik koli 4,8 kg eder ve 5 kg olarak faturalanır; yurt içinde aynı koli 8 desidir.",
+      },
+      {
+        question: "PTT yurtdışı kargo ücreti nasıl hesaplanır?",
+        answer:
+          "2 kg'a kadar, bir kenarı 60 cm'yi ve üç kenar toplamı 90 cm'yi aşmayan gönderiler küçük paket olarak ağırlıkla fiyatlanır; daha büyük gönderiler koli veya ekspres hizmetlere girer. Güncel fiyatı PTT'nin gönderi ücreti hesaplama ekranından veya yurt dışı teklif formundan, varış ülkesini ve ağırlığı girerek alın.",
+      },
+      {
+        question: "Yurtdışı kargoda ağırlık nasıl yuvarlanır?",
+        answer:
+          "DHL Express Worldwide'da ücrete esas ağırlık 30 kg'a kadar bir üst 0,5 kg'a, 30 kg'ın üzerinde bir üst 1 kg'a yuvarlanır ve her parça ayrı yuvarlanır. Diğer taşıyıcılarda ve ekonomi hizmetlerinde kademe 1 kg olabilir; anlaşmanızı kontrol edin.",
+      },
+      {
+        question: "Yakıt ek ücreti nedir, neden her ay değişir?",
+        answer:
+          "Yakıt ek ücreti taşıma ücretine ve bazı ek hizmetlere eklenen bir yüzdedir. DHL Express bunu hava taşımacılığında ABD Enerji Bakanlığı'nın yayımladığı jet yakıtı fiyatlarına bağlı bir endeksle her ay yeniden belirler. Bu yüzden aynı gönderinin fiyatı aydan aya değişebilir.",
+      },
+      {
+        question: "Yurtdışı kargo ücretine gümrük vergisi dahil mi?",
+        answer:
+          "Hayır. Taşıyıcıların fiyat listeleri gümrük vergileri, vergiler ve gümrükleme masrafları hariçtir. Bu kalemler alıcı ülkenin kurallarına ve seçtiğiniz teslim şekline göre ayrıca oluşur; hesap için taşıyıcınıza veya bir gümrük müşavirine danışın.",
+      },
+    ],
+    howTo: {
+      name: "Yurtdışı kargo ücreti nasıl hesaplanır?",
+      description: "Bir koli için yurt dışı ekspres kargo ücretini dört adımda hesaplayın.",
+      steps: [
+        { name: "Hacimsel ağırlığı bulun", text: "Kolinin dış ölçülerini (cm) çarpıp 5000'e bölün." },
+        { name: "Ücrete esas ağırlığı belirleyin", text: "Hacimsel ağırlık ile gerçek ağırlıktan büyük olanı alın ve taşıyıcının kademesine (ör. 0,5 kg) yukarı yuvarlayın; her koliyi ayrı yuvarlayın." },
+        { name: "Bölge fiyatını okuyun", text: "Varış ülkesinin bölgesini bulun ve tarifeden ücrete esas ağırlığın fiyatını alın." },
+        { name: "Ek ücretleri ekleyin", text: "Fiyatı (1 + o ayın yakıt ek ücreti) ile çarpın; uzak bölge, aşırı boyut gibi ek ücretleri ve kur etkisini ekleyin." },
+      ],
+    },
+    relatedToolKey: "desi",
+    resources: [
+      { label: "Desi Hesaplama (5000 böleni seçeneğiyle)", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Etsy'de Satış: Komisyon ve Kâr Hesabı", href: "/blog/etsyde-satis-komisyon-kar-hesabi/" },
+      { label: "PTT, Aras, Yurtiçi ve MNG Kargo Desi Kuralları", href: "/blog/ptt-aras-yurtici-kargo-desi-hesaplama/" },
+      { label: "Dropshipping Nedir, Nasıl Yapılır?", href: "/blog/dropshipping-nedir-nasil-yapilir/" },
+      { label: "DHL Express Türkiye 2026 Hizmet ve Fiyat Rehberi (PDF, İngilizce)", href: "https://mydhl.express.dhl/content/dam/downloads/tr/en/rate-guide/service_and_rate_guide_tr_en_2026.pdf", external: true },
+      { label: "FedEx Türkiye: Boyutsal ağırlık", href: "https://www.fedex.com/tr-tr/shipping-channel/preparing-shipment/shipping-costs/dimensional-weight.html", external: true },
+      { label: "PTT: Yurt dışı gönderi teklif formu", href: "https://www.ptt.gov.tr/gonderi-ucreti-hesaplama/InternationalOffer/InternationalOfferPage", external: true },
+      { label: "Ticaret Bakanlığı: E-ihracatta lojistik ve gönderim işlemleri (PDF)", href: "https://ticaret.gov.tr/data/655626e913b876b1c00ec662/Mod%C3%BCl%2013%20-%20E-%C4%B0hracatta%20Lojistik%20ve%20G%C3%B6nderim%20%C4%B0%C5%9Flemleri%20-%20Ali%20CEYLAN%20-%2010%20Kas%C4%B1m.pdf", external: true },
     ],
   },
 ];
@@ -14556,6 +14706,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "desi",
     resources: [
+      { label: "How to Calculate International Shipping Cost (5000 divisor)", href: "/en/blog/international-shipping-cost-dimensional-weight/" },
       { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
       { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
       { label: "Marketplace Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
@@ -15676,6 +15827,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "desi",
     resources: [
+      { label: "International Shipping Cost: the 5000 Divisor", href: "/en/blog/international-shipping-cost-dimensional-weight/" },
       { label: "Dimensional Weight Calculator", href: "/en/free-tools/dimensional-weight-calculator/" },
       { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
       { label: "Trendyol & Hepsiburada Profit Calculator", href: "/en/free-tools/marketplace-profit-calculator/" },
@@ -15686,6 +15838,153 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Yurtiçi Kargo: Carriage contract (PDF, Turkish)", href: "https://www.yurticikargo.com/web_files/yurtici-kargo/Uploads/Revize-pdf/Ta%C5%9F%C4%B1ma%20S%C3%B6zle%C5%9Fmesi.pdf", external: true },
       { label: "Aras Kargo: Service commitments (PDF, Turkish)", href: "https://www.araskargo.com.tr/assets/images/pdf/hizmet-taah%C3%BCtlerimiz.pdf", external: true },
       { label: "Aras Kargo: 2026 standard price list (PDF)", href: "https://www.araskargo.com.tr/assets/images/pdf/en/aras-cargo-standard-price-list-2026-en.pdf", external: true },
+    ],
+  },
+  {
+    slug: "international-shipping-cost-dimensional-weight",
+    seoTitle: "International Shipping Cost: 5000 Divisor & Examples",
+    title: "How to Calculate International Shipping Cost: the 5000 Divisor, 0.5 kg Rounding, Surcharges and Small Packets",
+    description:
+      "Calculate international shipping cost: volumetric weight with the 5000 divisor, 0.5 kg rounding, zones, fuel and remote-area surcharges, plus box-size examples.",
+    category: "performans-pazarlama",
+    tldr: [
+      "International express carriers calculate volumetric weight as length × width × height (cm) ÷ 5000 (Turkish domestic carriers use ÷ 3000). You pay for the larger of volumetric and actual weight; DHL Express rounds it up to the next 0.5 kg up to 30 kg, then to the next 1 kg, and rounds each piece separately.",
+      "Total cost = the destination zone's price for the chargeable weight × (1 + fuel surcharge %) + any remote-area, oversize or similar surcharges. Express rates are often quoted in euros, so your local-currency cost moves with the exchange rate. Duties and taxes are not included in the freight price.",
+      "Postal small packets (up to 2 kg, one side up to 60 cm, three sides up to 90 cm in total) are priced by weight; for light, small items they are usually much cheaper than express, but slower.",
+      "A 40 × 30 × 20 cm box weighing 2.3 kg is billed as 5 kg by express carriers; shrinking it to 35 × 25 × 18 cm cuts the chargeable weight to 3.5 kg, or 30%.",
+    ],
+    publishedAt: "2026-11-12",
+    readingMinutes: 9,
+    tags: ["international shipping", "dimensional weight", "volumetric weight", "shipping cost", "ecommerce export", "etsy", "dhl express"],
+    sections: [
+      {
+        heading: "How is international shipping cost calculated?",
+        paragraphs: [
+          "International shipping cost comes from four steps: (1) find each box's volumetric weight: length × width × height (cm) ÷ 5000; (2) take the larger of volumetric and actual weight and round it up by the carrier's rule (the chargeable weight); (3) read the price for that weight in the destination's zone tariff; (4) add the fuel surcharge and any remote-area, oversize or similar fees.",
+          "The 5000 divisor is the international express standard: DHL Express's 2026 service and rate guide for Türkiye defines volumetric weight per piece as length × width × height ÷ 5000, and FedEx Türkiye says 5000 is the most common divisor. The example in the Turkish Trade Ministry's ecommerce-export logistics module: a 60 × 40 × 40 cm box is 96,000 ÷ 5000 = 19.2 kg and is rounded up to the next step on the invoice. Pick 5000 as the divisor in the Dimensional Weight Calculator to do the same calculation.",
+        ],
+        bullets: [
+          "Volumetric weight = length × width × height (cm) ÷ 5000",
+          "Chargeable weight = max(volumetric, actual), rounded up",
+          "Price = zone price (chargeable kg) × (1 + fuel surcharge) + other surcharges",
+        ],
+      },
+      {
+        heading: "Domestic 3000 vs. international 5000: why does the same box weigh differently?",
+        paragraphs: [
+          "The larger the divisor, the lower the volumetric weight of the same box. In Turkish domestic shipping one desi is 3000 cm³; in international express one kilogram is 5000 cm³. Use your domestic desi in an international price list and you overestimate the cost; do the opposite and you underestimate domestic shipping.",
+          "Example: a 40 × 30 × 20 cm box is 24,000 cm³. Domestically that is 24,000 ÷ 3000 = 8 desi; in international express it is 24,000 ÷ 5000 = 4.8 kg, billed as 5 kg after 0.5 kg rounding. A small item: 25 × 20 × 10 cm and 0.6 kg. Domestically 5,000 ÷ 3000 = 1.67, rounded to 2 desi; in express 5,000 ÷ 5000 = 1.0 kg, which beats the actual weight, so you pay for 1 kg.",
+        ],
+      },
+      {
+        heading: "0.5 kg rounding and the multi-box trap",
+        paragraphs: [
+          "With DHL Express Worldwide, chargeable weight is rounded up to the next 0.5 kg up to 30 kg and to the next 1 kg above that, and every piece in the shipment is rounded separately. So 4.6 kg and 5.0 kg cost the same; 5.1 kg is billed as 5.5 kg.",
+          "Per-piece rounding matters with multiple boxes. Ship two boxes with a volumetric weight of 1.2 kg each and both round up to 1.5 kg, so you pay for 3.0 kg; put the same goods in one box with a volumetric weight of 2.4 kg and you pay for 2.5 kg. That's a 20% difference. Conversely, if one box exceeds the per-piece limit (70 kg and 120 × 80 × 80 cm for DHL Express Worldwide) or the oversize threshold, splitting may be cheaper. Test both in the Dimensional Weight Calculator with the 5000 divisor and 0.5 rounding.",
+        ],
+      },
+      {
+        heading: "Which surcharges raise international shipping prices?",
+        paragraphs: [
+          "The rate card is rarely what you pay. DHL Express's 2026 guide states that rates exclude customs duties, taxes, clearance charges and all surcharges. The most common items:",
+        ],
+        bullets: [
+          "Fuel surcharge: a percentage on transport and certain additional charges. For air, DHL resets it monthly from an index tied to US Department of Energy jet-fuel prices; ask for the current month's rate when comparing quotes",
+          "Remote-area surcharge: added per shipment, by weight, when the pickup or delivery address is hard to reach",
+          "Oversize piece: at DHL, any piece whose longest side exceeds 100 cm or second-longest exceeds 80 cm; a surprise line for rugs, poster tubes and long accessories",
+          "Overweight piece: any piece over 70 kg by actual or volumetric weight",
+          "Duties and taxes paid by the shipper (DTP): a service fee, as a percentage of the duties, for covering the receiver's customs charges",
+          "Exchange rate: express tariffs are often in euros, so the same shipment's cost in your currency moves with the rate",
+        ],
+      },
+      {
+        heading: "Worked example: a 2.3 kg box to Germany",
+        paragraphs: [
+          "Prices below are illustrative; real figures depend on the carrier, your contract, the zone and the month. A 40 × 30 × 20 cm box weighing 2.3 kg: volumetric 4.8 kg, actual 2.3 kg; volumetric wins and rounds to a 5.0 kg chargeable weight.",
+          "If the zone price for 5 kg is $65 and this month's fuel surcharge is 30%, transport costs 65 × 1.30 = $84.50. If the address is remote and the remote-area fee is $27 (assumed not subject to fuel here), the total is $111.50.",
+          "Shrink the box to 35 × 25 × 18 cm and the volume is 15,750 cm³, the volumetric weight 3.15 kg, rounded to 3.5 kg. The chargeable weight drops from 5.0 to 3.5 kg, or 30%. If 3.5 kg costs $52, transport is 52 × 1.30 = $67.60, saving $16.90 per shipment. At 200 international orders a month that's $3,380.",
+        ],
+        bullets: [
+          "40 × 30 × 20 = 24,000 cm³ ÷ 5000 = 4.8 kg → 5.0 kg (actual 2.3 kg)",
+          "$65 × 1.30 = $84.50; + $27 remote area = $111.50 (illustrative)",
+          "35 × 25 × 18 = 15,750 cm³ ÷ 5000 = 3.15 kg → 3.5 kg → $52 × 1.30 = $67.60",
+        ],
+      },
+      {
+        heading: "Postal small packet or express?",
+        paragraphs: [
+          "From Türkiye, PTT's international services follow two logics depending on size. The small-packet service covers items up to 2 kg, with no side over 60 cm and the three sides totalling no more than 90 cm, and is priced by weight; for jewellery, accessories, small textiles and handmade goods it is usually much cheaper than express, but delivery takes longer. Anything beyond those limits moves to parcel and express services.",
+          "We don't list PTT's current international prices: they change and differ by country group. Get the price from PTT's postage calculator or its international quote form. To decide, ask: does the item fit small-packet limits? Will the customer pay for speed? Is the tracking and proof of delivery enough for your returns and disputes?",
+        ],
+        bullets: [
+          "≤ 2 kg, side ≤ 60 cm, three sides ≤ 90 cm → small-packet candidate (priced by weight)",
+          "Light but bulky item → in express, volumetric weight (÷ 5000) decides; box size is your biggest lever",
+          "Heavy, compact item → actual weight decides; a smaller box saves nothing, service and zone choice do",
+          "Time-sensitive or high-value order → express, with stronger tracking and proof of delivery",
+        ],
+      },
+      {
+        heading: "How should you build international shipping into your prices?",
+        paragraphs: [
+          "International shipping is often a large share of the order value, so calculate it before you set the product price. Three common approaches: (1) charge shipping separately (transparent, but can raise cart abandonment), (2) build it into the price and offer 'free shipping' (price = (cost + shipping + target profit) ÷ (1 − commission rate)), (3) flat shipping by region (an average rate for groups such as Europe or North America).",
+          "Whichever you choose, calculate the volumetric weight and zone price for your best sellers one by one; an average shipping figure leads to loss-making sales on bulky items. On marketplaces such as Etsy, shipping can also carry the transaction fee; see the Etsy fees article for a worked example. Check per-order profit with the Profit Margin Calculator.",
+        ],
+      },
+      {
+        heading: "Are customs duties and taxes included?",
+        paragraphs: [
+          "No. The calculation here covers only the transport (freight) price. Customs duties, import taxes and clearance charges in the destination country are separate; who pays depends on the delivery terms you choose (receiver pays or shipper pays) and varies by country. Ask your carrier's customs service or a customs broker to work those out. For small ecommerce exports, the customs declaration is usually filed by the carrier; confirm who prepares which declaration before you sign a contract.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How is volumetric weight calculated for international shipping?",
+        answer:
+          "International express carriers use length × width × height (cm) ÷ 5000. The result is compared with actual weight and the larger value is rounded up. A 40 × 30 × 20 cm box is 4.8 kg and billed as 5 kg; the same box is 8 desi in Turkish domestic shipping.",
+      },
+      {
+        question: "How are postal small packets priced?",
+        answer:
+          "Small packets up to 2 kg, with no side over 60 cm and three sides totalling no more than 90 cm, are priced by weight rather than volume. Larger items move to parcel or express services. Get the current price from the postal operator's calculator by entering the destination and weight.",
+      },
+      {
+        question: "How is weight rounded in international express shipping?",
+        answer:
+          "With DHL Express Worldwide, chargeable weight is rounded up to the next 0.5 kg up to 30 kg and to the next 1 kg above that, and each piece is rounded separately. Other carriers and economy services may use 1 kg steps; check your contract.",
+      },
+      {
+        question: "What is a fuel surcharge and why does it change every month?",
+        answer:
+          "It's a percentage added to transport and some additional charges. DHL Express resets it monthly for air shipments from an index tied to US Department of Energy jet-fuel prices, so the same shipment can cost a different amount from one month to the next.",
+      },
+      {
+        question: "Does international shipping cost include customs duties?",
+        answer:
+          "No. Carrier rate cards exclude duties, taxes and clearance charges. Those arise separately under the destination country's rules and your delivery terms; ask your carrier or a customs broker to calculate them.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate international shipping cost",
+      description: "Calculate the international express cost of a box in four steps.",
+      steps: [
+        { name: "Find the volumetric weight", text: "Multiply the outer dimensions (cm) and divide by 5000." },
+        { name: "Set the chargeable weight", text: "Take the larger of volumetric and actual weight and round up to the carrier's step (e.g., 0.5 kg); round each box separately." },
+        { name: "Read the zone price", text: "Find the destination's zone and read the price for the chargeable weight in the tariff." },
+        { name: "Add surcharges", text: "Multiply by (1 + this month's fuel surcharge) and add remote-area, oversize and exchange-rate effects." },
+      ],
+    },
+    relatedToolKey: "desi",
+    resources: [
+      { label: "Dimensional Weight Calculator (with the 5000 divisor)", href: "/en/free-tools/dimensional-weight-calculator/" },
+      { label: "Shipping Cost Calculator", href: "/en/free-tools/shipping-cost-calculator/" },
+      { label: "Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Etsy Fees and Profit Calculation", href: "/en/blog/etsy-fees-profit-calculation/" },
+      { label: "Turkish Carriers' Dimensional Weight Rules", href: "/en/blog/turkish-carriers-dimensional-weight-rules/" },
+      { label: "What Is Dropshipping and How It Works", href: "/en/blog/what-is-dropshipping-how-it-works/" },
+      { label: "DHL Express Türkiye 2026 Service and Rate Guide (PDF)", href: "https://mydhl.express.dhl/content/dam/downloads/tr/en/rate-guide/service_and_rate_guide_tr_en_2026.pdf", external: true },
+      { label: "FedEx Türkiye: Dimensional weight (Turkish)", href: "https://www.fedex.com/tr-tr/shipping-channel/preparing-shipment/shipping-costs/dimensional-weight.html", external: true },
+      { label: "PTT: International shipment quote form", href: "https://www.ptt.gov.tr/gonderi-ucreti-hesaplama/InternationalOffer/InternationalOfferPage", external: true },
     ],
   },
 ];

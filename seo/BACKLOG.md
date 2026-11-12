@@ -58,6 +58,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-11-11 yeni yazı 2, TR önce): /blog/youtube-reklam-verme-rehberi/, /en/blog/how-to-run-youtube-ads/
 - [ ] Dizine ekleme isteği (2026-11-11 güncellendi, TR): /blog/icp-ideal-musteri-profili-sablon/ (ICP Excel şablonu eklendi; düşük öncelik)
 - [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 1, TR önce): /blog/ptt-aras-yurtici-kargo-desi-hesaplama/, /en/blog/turkish-carriers-dimensional-weight-rules/
+- [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 2, TR önce): /blog/yurtdisi-kargo-ucreti-hesaplama-desi/, /en/blog/international-shipping-cost-dimensional-weight/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
