@@ -559,7 +559,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "arr",
     resources: [
       { label: "MRR Nedir, Ne Demek? Aylık Yinelenen Gelir Hesaplama", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
-      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici" },
+      { label: "MRR Hesaplama Aracı", href: "/ucretsiz-araclar/mrr-hesaplayici" },
       { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici" },
       { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici" },
       { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici" },
@@ -3081,7 +3081,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Aynı ay SaaS Quick Ratio yalnızca 2,0 (kaynaklar 4'ü güçlü kabul ediyor) ve brüt MRR churn %5,5: büyüme var ama kova sızdırıyor. Fiyatı dolar olan SaaS'ta MRR'yi sabit kurla da raporlayın; yoksa kur artışı büyüme gibi görünür.",
     ],
     publishedAt: "2026-10-29",
-    updatedAt: "2026-11-05",
+    updatedAt: "2026-11-12",
     readingMinutes: 10,
     tags: ["MRR", "Aylık Yinelenen Gelir", "SaaS Metrikleri", "Net Yeni MRR", "Quick Ratio", "ARR"],
     sections: [
@@ -3091,6 +3091,17 @@ export const BLOG_POSTS: BlogPost[] = [
           "MRR (Monthly Recurring Revenue), Türkçesiyle aylık yinelenen (tekrarlayan) gelir, abonelik modelinde çalışan bir işletmenin aktif aboneliklerinden her ay düzenli olarak elde etmeyi beklediği gelirin aylık karşılığıdır. SaaS şirketleri, mobil uygulamalar, üyelik siteleri ve abonelik kutusu satan e-ticaret markaları için temel büyüme metriğidir.",
           "Formül: MRR = Σ (Planın aylık fiyatı × O plandaki aktif hesap sayısı). Tek plan varsa MRR = Aktif hesap × ARPA (hesap başına ortalama aylık gelir). MRR bir ayın faturası ya da kasaya giren para değildir; o anki abonelik tabanının aylık gelir gücünü gösteren bir fotoğraftır.",
           "MRR'nin yıllık karşılığı ARR'dir: ARR = MRR × 12. Bu yazıdaki tüm tutarlar örnek tutarlardır ve hesaplar tek bir örnek şirket üzerinden ilerler; kendi rakamlarınızla denemek için MRR Hesaplayıcı'yı kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "MRR formülü nedir? 3 hesap yöntemi",
+        paragraphs: [
+          "MRR tek bir rakamdır ama ona üç yoldan ulaşılır. Elinizdeki veriye uyan yöntemi seçin; aynı ay için üçü de aynı sonucu vermelidir. Sonuçlar tutmuyorsa genellikle bir yıllık plan aylığa çevrilmemiş ya da tek seferlik bir gelir hesaba karışmıştır.",
+        ],
+        bullets: [
+          "ARPA yöntemi: MRR = Aktif hesap × ARPA. 100 hesap × 750 TL = 75.000 TL. En hızlısıdır ama ARPA zaten aylığa çevrilmiş tutarlardan hesaplanmışsa doğrudur",
+          "Plan yöntemi: MRR = Σ (Hesap sayısı × Planın aylık karşılığı). 60 hesap × 600 TL + 30 hesap × (9.600 TL / 12) = 36.000 + 24.000 = 60.000 TL. Birden fazla plan veya yıllık ödeme varsa en güvenilir yöntem budur",
+          "Köprü yöntemi: Ay sonu MRR = Ay başı MRR + Net yeni MRR. Aşağıdaki örnekte 160.500 + 9.200 = 169.700 TL. Plan yöntemiyle bulduğunuz rakamı kontrol etmek için kullanılır",
         ],
       },
       {
@@ -3274,7 +3285,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "mrr",
     resources: [
-      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
+      { label: "MRR Hesaplama Aracı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
       { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici/" },
       { label: "ARR Nedir? Yıllık Yinelenen Gelir ve ARR Köprüsü", href: "/blog/arr-nedir-yillik-yinelenen-gelir/" },
       { label: "ARPA Hesaplayıcı", href: "/ucretsiz-araclar/arpa-hesaplayici/" },
@@ -3657,7 +3668,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
       { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici/" },
       { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
-      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
+      { label: "MRR Hesaplama Aracı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
       { label: "MRR Nedir, Ne Demek? Aylık Yinelenen Gelir Hesaplama", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
       { label: "LTV Nedir? LTV:CAC Oranı Kaç Olmalı?", href: "/blog/ltv-nedir-ltv-cac-orani/" },
@@ -4058,7 +4069,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedToolKey: "arr",
     resources: [
       { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici/" },
-      { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
+      { label: "MRR Hesaplama Aracı", href: "/ucretsiz-araclar/mrr-hesaplayici/" },
       { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici/" },
       { label: "Rule of 40 Hesaplayıcı", href: "/ucretsiz-araclar/rule-of-40-hesaplayici/" },
       { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici/" },
@@ -8861,9 +8872,10 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "how-to-reduce-b2b-lead-generation-costs",
+    seoTitle: "Lower B2B Cost Per Lead Without More Ad Budget (2026)",
     title: "How to Reduce B2B Lead Generation Costs (2026 Guide)",
     description:
-      "Cut B2B cost per lead by 30–50% without extra ad budget: offline conversion tracking, layered targeting, GEO and behavioral email automation.",
+      "How to reduce B2B lead generation costs: optimize ads on CRM SQL data, layer your targeting and automate follow-up to cut cost per lead with no extra budget.",
     category: "b2b-lead-generation",
     tldr: [
       "Tie ad optimization to CRM SQL data instead of form fills (offline conversion tracking) — the highest-impact step that needs no extra budget.",
@@ -8872,6 +8884,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "Together these three steps can cut CPA by 30–50% without increasing ad spend.",
     ],
     publishedAt: "2026-07-28",
+    updatedAt: "2026-11-12",
     readingMinutes: 6,
     tags: ["B2B", "Lead Generation", "CAC", "GEO", "Offline Conversion"],
     sections: [
@@ -9952,7 +9965,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "black-friday-2026-ad-plan",
-    seoTitle: "Black Friday 2026 Ad Plan: Timeline, Budget and Margin",
+    seoTitle: "Black Friday 2026 Ad Budget Plan: Timeline for Turkey",
     title: "Black Friday 2026 Ad Plan: A 5-Week Timeline, Discount Margin Math and Budget",
     description:
       "Black Friday is November 27, 2026. A week-by-week ad timeline, how discounts change break-even ROAS, budget math and the 30-day lowest price rule in Turkey.",
@@ -9964,6 +9977,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "In Turkey, discount ads must use the lowest price of the previous 30 days as the 'price before discount'.",
     ],
     publishedAt: "2026-10-24",
+    updatedAt: "2026-11-12",
     readingMinutes: 9,
     tags: ["Black Friday", "Holiday Sales", "Ad Budget", "ROAS", "E-commerce", "Google Ads", "Meta Ads"],
     sections: [
@@ -10980,7 +10994,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       "The same month's SaaS Quick Ratio is only 2.0 (4+ is usually considered strong) and gross MRR churn is 5.7%: the business is growing, but the bucket leaks. If you bill in several currencies, report MRR at a constant exchange rate too.",
     ],
     publishedAt: "2026-10-29",
-    updatedAt: "2026-11-05",
+    updatedAt: "2026-11-12",
     readingMinutes: 10,
     tags: ["MRR", "Monthly Recurring Revenue", "SaaS Metrics", "Net New MRR", "Quick Ratio", "ARR"],
     sections: [
@@ -10990,6 +11004,17 @@ export const BLOG_POSTS_EN: BlogPost[] = [
           "MRR (Monthly Recurring Revenue) is the monthly value of the revenue a subscription business expects to collect again every month from its active subscriptions. It is the core growth metric for SaaS companies, mobile apps, membership sites and e-commerce brands that sell subscription boxes.",
           "Formula: MRR = Σ (Plan's monthly price × Active accounts on that plan). With a single plan, MRR = Active accounts × ARPA (average revenue per account). MRR is not an invoice total or the cash you collected this month; it is a snapshot of the monthly revenue power of your current subscriber base.",
           "The annual equivalent of MRR is ARR: ARR = MRR × 12. All figures in this article are illustrative and follow one example company; to try your own numbers, use the MRR Calculator.",
+        ],
+      },
+      {
+        heading: "What is the MRR formula? 3 ways to calculate MRR",
+        paragraphs: [
+          "MRR is one number, but there are three ways to reach it. Pick the one that matches the data you have; for the same month all three should agree. If they do not, an annual plan was probably not converted to a monthly value, or a one-off fee slipped in.",
+        ],
+        bullets: [
+          "ARPA method: MRR = Active accounts × ARPA. 100 accounts × $50 = $5,000. The fastest option, but only correct if ARPA is already based on monthly values",
+          "Plan method: MRR = Σ (Accounts × Plan's monthly value). 60 accounts × $49 + 30 accounts × ($720 / 12) = $2,940 + $1,800 = $4,740. The most reliable option when you have several plans or annual billing",
+          "Bridge method: Ending MRR = Starting MRR + Net new MRR. In the example below, $12,950 + $709 = $13,659. Use it to check the figure you get from the plan method",
         ],
       },
       {

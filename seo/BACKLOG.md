@@ -26,7 +26,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-10-28 güçlendirildi): /ucretsiz-araclar/llms-txt-olusturucu/ (TR, önce), /en/free-tools/llms-txt-generator/ ("Keşfedildi" listesinde)
 - [ ] Dizine ekleme isteği (2026-10-29, TR önce; MRR TR 02.11'de zaten dizinde, llms.txt TR 03.11'de istendi): /en/blog/what-is-mrr-how-to-calculate/, /en/blog/what-is-llms-txt-does-it-work/
 - [ ] Dizine ekleme isteği (2026-10-30 kalan): /en/blog/what-is-churn-rate/, /en/blog/how-to-run-meta-ads-guide/
-- [ ] Dizine ekleme isteği (2026-10-31 kalan, TR önce): /blog/arr-nedir-yillik-yinelenen-gelir/, /en/blog/what-is-geo-generative-engine-optimization/, /en/blog/what-is-arr-annual-recurring-revenue/
+- [ ] Dizine ekleme isteği (2026-10-31 kalan, TR önce): /en/blog/what-is-geo-generative-engine-optimization/, /en/blog/what-is-arr-annual-recurring-revenue/
 - [x] Dizine ekleme isteği gönderildi: /blog/trendyol-komisyon-oranlari-hesaplama/, /blog/google-ads-nedir-nasil-calisir/, /blog/geo-nedir-yapay-zeka-arama-optimizasyonu/, /blog/meta-reklam-verme-rehberi/, /blog/churn-nedir-churn-rate-nasil-hesaplanir/ — 2026-11-02 (5/5; hepsi "URL Google'da yok" idi, öncelik hacme göre)
 - [ ] Dizine ekleme isteği (2026-11-01 kalan): /en/blog/trendyol-commission-rates/, /en/blog/what-is-google-ads-how-it-works/
 - [x] Dizine ekleme isteği (2026-11-02 güçlendirildi, TR önce; CAC 07.11, UTM ve LTV 08.11 istendi): /blog/utm-nedir-utm-parametreleri/, /blog/cac-nedir-musteri-edinme-maliyeti/, /blog/ltv-nedir-ltv-cac-orani/
@@ -59,6 +59,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-11-11 güncellendi, TR): /blog/icp-ideal-musteri-profili-sablon/ (ICP Excel şablonu eklendi; düşük öncelik)
 - [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 1, TR önce): /blog/ptt-aras-yurtici-kargo-desi-hesaplama/, /en/blog/turkish-carriers-dimensional-weight-rules/
 - [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 2, TR önce): /blog/yurtdisi-kargo-ucreti-hesaplama-desi/, /en/blog/international-shipping-cost-dimensional-weight/
+- [ ] Dizine ekleme isteği (2026-11-12 güçlendirildi, TR önce): /ucretsiz-araclar/mrr-hesaplayici/ (MRR aracı v2), /en/free-tools/mrr-calculator/, /blog/mrr-nedir-nasil-hesaplanir/ ve /en/blog/what-is-mrr-how-to-calculate/ (3 hesap yöntemi bölümü)
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
@@ -83,6 +84,8 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [x] Destek yazısı: UTM — GA4 Unassigned yazısı + "UTM nedir" yazısı (/blog/utm-nedir-utm-parametreleri/) — 2026-10-27
 - [~] ARR sayfası: bileşenlerle ARR (yeni/genişleme/daralma/kayıp), CARR — 31.10: destek yazısı yayında (/blog/arr-nedir-yillik-yinelenen-gelir/, köprü + CARR örnekli); araca köprü modu eklemek düşük öncelik
       (analiz: seo/research/arac-serp-analizi.md)
+- [x] MRR aracı v2: plan tablosu (5 faturalama dönemi), MRR hareketleri, Quick Ratio, MRR churn, NRR, paylaşılabilir link — 2026-11-04 hazırlandı, 2026-11-12 yayında
+- [ ] Pazaryeri aracı: kategori komisyon ön ayarı YALNIZCA resmî/doğrulanabilir tablo bulunursa (rakip listeleri birbirini tutmuyor; seo/research/trendyol-komisyon-oranlari.md)
 - [x] Yeni araç: Pazaryeri (Trendyol/Hepsiburada) kâr & komisyon hesaplayıcı — 2026-10-22
 - [x] Kar Marjı aracı: kar oranı (markup), hedef marjdan fiyat, dönüşüm tablosu, paylaşılabilir link — 2026-11-03
 - [ ] Pazaryeri aracı v2: Trendyol vs Hepsiburada yan yana karşılaştırma, çoklu ürün (desi → takvimde ayrı araç, 28 Eki; "desi hesaplama" 14.800/ay)
@@ -150,7 +153,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [~] Araç dizinleri ve listeler — 01.11: hedef listesi + başvuru metinleri hazır (seo/outreach/arac-dizinleri.md: TripleDart formu, llmstxt.site PR, AlternativeTo/SaaSHub; ücretli/toplu dizinler elendi). Kullanıcı gönderir. Türkçe editoryal araç derlemesi bulunamadı
 - [ ] Topluluk: soru-cevap ve topluluklarda (LinkedIn, Reddit r/PPC, Indie Hackers) gerçekten faydalı cevaplarla araç linki — spam yok
 - [ ] Yeni yazıların LinkedIn'de özetle paylaşımı (kullanıcı)
-- [ ] Ölçüm: Search Console › Bağlantılar raporu (aylık)
+- [~] Ölçüm: Search Console › Bağlantılar raporu (aylık) — 04.11: ilk ölçüm yapıldı; yönlendiren alan adı çok az ve editoryal link yok. Sonraki kontrol: Aralık başı
 
 ## Otorite / dağıtım
 - [ ] Türkiye B2B/e-ticaret reklam maliyetleri raporu (veri çalışması)

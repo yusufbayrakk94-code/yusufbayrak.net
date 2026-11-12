@@ -87,7 +87,7 @@ SEO temel kümesi (seo nedir 1B–10B; backlink, serp, search console nedir 100�
 Marka/navigasyon sorguları (trendyol satıcı paneli, hepsiburada satıcı girişi, google analytics giriş) hedeflenmez.
 
 ## Takvim — açık konular (02.11.2026'da tam hacim + keşif turu 3 ile tek listede yeniden sıralandı)
-Sıra hacim + rakip zayıflığı + mevsimselliktir; içerik görevi üstten alır (günde 2). Tarih yalnızca sıradır. Sonraki hacim turu: açık konu 14'ün altına inince (tohum önerileri: pazaryeri satıcı rehberleri, reklam platformu rehberleri, kargo firması bazlı sorgular).
+Sıra hacim + rakip zayıflığı + mevsimselliktir; içerik görevi üstten alır (günde 2). Tarih yalnızca sıradır. Sonraki hacim turu: açık konu 14'ün altına inince (tohum önerileri: pazaryeri satıcı rehberleri, reklam platformu rehberleri, kargo firması bazlı sorgular, mrr hesaplama).
 | Tarih | Sayfa (TR + EN) | Hedef sorgu (aylık) | Grup | Neden / fırsat | Bağlanacak araç |
 |---|---|---|---|---|---|
 | [x] 3 Kas Sal → 2 Kas öne alındı, yayınlandı ([TR](https://yusufbayrak.net/ucretsiz-araclar/indirim-hesaplama/) · [EN](https://yusufbayrak.net/en/free-tools/discount-calculator/)); hacim: indirim hesaplama 49.500 — seo/research/indirim-hesaplama.md | YENİ ARAÇ: İndirim hesaplama (indirimli fiyat + yüzde + indirim sonrası kâr ve gerekli satış artışı) | indirim hesaplama (49.500) | C | En büyük hacim; rakipler yalnızca yüzde hesabı yapıyor. Black Friday (27 Kas) öncesi yayınlanmalı. Kâr etkisi açısı özgün; kar marjı yazısındaki indirim formülünü araca çevirir | Kar Marjı, ROAS |

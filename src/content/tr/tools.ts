@@ -86,7 +86,7 @@ export const churn: ToolContent = {
   relatedTools: [
     { label: "LTV Hesaplayıcı", href: "/ucretsiz-araclar/ltv-hesaplayici", note: "Churn'den yaşam boyu değer" },
     { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici", note: "Net gelir tutundurma" },
-    { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
+    { label: "MRR Hesaplama Aracı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
     { label: "SaaS Araçları", href: "/ucretsiz-araclar/saas-araclari", note: "Tüm SaaS hesaplayıcıları" },
   ],
   relatedPost: { label: "Churn Nedir? Churn Rate Nasıl Hesaplanır ve Düşürülür?", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
@@ -332,20 +332,26 @@ export const conversionRate: ToolContent = {
 export const mrr: ToolContent = {
   slug: "mrr",
   path: "/ucretsiz-araclar/mrr-hesaplayici",
-  title: "MRR Hesaplayıcı",
+  title: "MRR Hesaplama: Planlara Göre MRR ve Net Yeni MRR",
   description:
-    "Aylık Yinelenen Gelirinizi (MRR) müşteri sayısı ve ortalama abonelik bedeliyle saniyeler içinde hesaplayın.",
+    "MRR hesaplama aracı: aylık, 3 aylık, yıllık ve haftalık planları tek tabloda aylığa çevirin; MRR, ARR, ARPA, net yeni MRR, Quick Ratio ve churn'ü görün.",
   intro:
-    "MRR (Monthly Recurring Revenue), abonelik iş modelinizin her ay tekrar eden gelirini gösterir. Müşteri sayınız ile ortalama aylık abonelik bedelini girin ya da doğrudan toplam aylık geliri yazın; MRR ve karşılık gelen ARR anında hesaplanır.",
+    "MRR (Monthly Recurring Revenue), abonelik iş modelinizin her ay tekrar eden gelirini gösterir. Planlarınızı hesap sayısı, fiyat ve faturalama dönemiyle girin; yıllık, 6 aylık, 3 aylık ve haftalık planlar otomatik olarak aylığa çevrilir ve MRR, ARR ile ARPA anında hesaplanır. Tek rakamınız varsa müşteri × ortalama fiyat modunu, aylık büyümenin kalitesini görmek için MRR hareketleri modunu kullanın.",
   seoParagraphs: [
     { heading: "MRR Nedir ve Nasıl Hesaplanır?", body: "MRR (Monthly Recurring Revenue), abonelik tabanlı bir işletmenin bir ay boyunca tekrar etmesi beklenen sözleşmesel gelirinin toplamıdır. En yalın formülü MRR = Aktif Müşteri Sayısı × Ortalama Aylık Abonelik Bedeli (ARPA) şeklindedir. Yıllık ödenen planlar aylığa bölünerek (yıllık bedel / 12) MRR'ye eklenir; kurulum ücreti, danışmanlık ve tek seferlik satışlar ise MRR'ye dahil edilmez." },
     { heading: "MRR × 12 = ARR İlişkisi", body: "MRR ile ARR aynı gelirin iki farklı zaman ölçeğidir: ARR = MRR × 12. Aylık ölçek operasyonel karar almak (kampanya, fiyatlama, ekip kapasitesi) için, yıllık ölçek ise planlama, bütçeleme ve yatırımcı iletişimi için kullanılır. Bu ilişkinin doğru kurulabilmesi için MRR'nin normalize edilmiş olması, yani tüm faturalama dönemlerinin aylığa çevrilmiş olması gerekir. ARR tarafını görmek için ARR Hesaplayıcı'yı kullanabilirsiniz." },
     { body: "MRR'yi tek bir toplam sayı olarak izlemek yeterli değildir. New MRR (yeni müşteriler), Expansion MRR (upsell/cross-sell), Contraction MRR (plan küçültme) ve Churned MRR (iptaller) kırılımı, büyümenin nereden geldiğini ve nerede sızdırdığını gösterir. Net New MRR = New + Expansion − Contraction − Churned formülü, gerçek büyüme kalitesinin en dürüst göstergesidir." },
     { heading: "Örnek Hesaplama: 500 Müşterili Bir SaaS'ta MRR", body: "Diyelim ki ürününüzün 500 aktif müşterisi var. Bunların 400'ü aylık 800 ₺'lik Pro plandan, 100'ü ise yıllık 12.000 ₺ ödenen Business planından. Aylık planların katkısı 400 × 800 = 320.000 ₺. Yıllık planlar normalize edilir: 12.000 / 12 = 1.000 ₺ ve 100 × 1.000 = 100.000 ₺. Toplam MRR = 320.000 + 100.000 = 420.000 ₺, ARR ise 420.000 × 12 = 5.040.000 ₺ olur. Aynı ay 60.000 ₺'lik kurulum ve eğitim geliri faturalandıysa bu tutar MRR'ye eklenmez." },
     { body: "Aynı örnekte ay içinde 25.000 ₺ yeni MRR, 18.000 ₺ genişleme, 6.000 ₺ daralma ve 14.000 ₺ churn gerçekleştiyse Net New MRR = 25.000 + 18.000 − 6.000 − 14.000 = 23.000 ₺'dir. Yani toplam MRR 420.000 ₺'den 443.000 ₺'ye çıkar; aylık büyüme yaklaşık %5,5 olur. Bu kırılım olmadan yalnızca toplam MRR'ye bakmak, churn'ün yeni satışla maskelendiği durumları görünmez kılar." },
+    { heading: "Birden Fazla Planla MRR Nasıl Hesaplanır?", body: "Her planı ayrı satıra yazın: hesap sayısı, müşterinin gerçekten ödediği fiyat ve faturalama dönemi. Örnek: 300 hesap aylık 500 ₺, 50 hesap yıllık 6.000 ₺ ve 20 hesap 3 aylık 750 ₺ ödüyorsa MRR = 300 × 500 + 50 × (6.000 / 12) + 20 × (750 / 3) = 150.000 + 25.000 + 5.000 = 180.000 ₺ olur. ARR 2.160.000 ₺, 370 hesapta ARPA yaklaşık 486 ₺'dir." },
+    { heading: "Yıllık, 3 Aylık ve Haftalık Planlar Aylığa Nasıl Çevrilir?", body: "Yıllık bedel 12'ye, 6 aylık bedel 6'ya, 3 aylık bedel 3'e bölünür. Haftalık fiyat ise 52 ile çarpılıp 12'ye bölünür, yani yaklaşık 4,33 ile çarpılır. Haftalık 100 ₺'lik plan aylık yaklaşık 433 ₺ eder; haftayı 4 ile çarpmak MRR'yi yaklaşık %8 düşük gösterir." },
+    { heading: "MRR Hareketleri Modu Neyi Gösterir?", body: "Ay başı MRR ile yeni, genişleme, yeniden aktivasyon, daralma ve kayıp tutarlarını girdiğinizde araç net yeni MRR'yi, ay sonu MRR'yi ve büyüme oranını bulur. Yukarıdaki örnekte SaaS Quick Ratio = (25.000 + 18.000) / (6.000 + 14.000) ≈ 2,15, brüt MRR churn ≈ %4,8, net MRR churn ≈ %0,5 ve aylık NRR ≈ %99,5'tir. Büyüme var, ama Quick Ratio 4'ün altında olduğu için kazanılan gelirin önemli bölümü kaybı kapatmaya gidiyor." },
   ],
   faqs: [
     { q: "MRR ile ARR arasındaki fark nedir?", a: "MRR aylık yinelenen geliri, ARR ise yıllık yinelenen geliri ifade eder. İlişkileri basittir: ARR = MRR × 12. Aylık takip operasyonel kararlar, yıllık takip ise planlama ve yatırımcı raporlaması içindir." },
+    { q: "MRR formülü nedir?", a: "MRR = Σ (Hesap sayısı × Planın aylık karşılığı). Tek plan varsa MRR = Aktif hesap × ARPA. Köprü olarak da yazılabilir: Ay sonu MRR = Ay başı MRR + Yeni + Genişleme + Yeniden aktivasyon − Daralma − Kayıp." },
+    { q: "Haftalık abonelik MRR'ye nasıl çevrilir?", a: "Haftalık fiyatı 52 ile çarpıp 12'ye bölün. Haftalık 100 ₺ yaklaşık 433 ₺ MRR eder. 4 ile çarpmak yılda 4 haftayı kaçırdığı için MRR'yi düşük gösterir." },
+    { q: "SaaS Quick Ratio kaç olmalı?", a: "Quick Ratio = (Yeni + Genişleme + Yeniden aktivasyon) / (Daralma + Kayıp). Yatırımcı Mamoon Hamid'in yaygınlaştırdığı bu oranda 4 ve üzeri verimli büyüme kabul edilir; 1'in altı MRR'nin küçüldüğünü gösterir." },
     { q: "MRR nedir ve nasıl hesaplanır?", a: "MRR (Monthly Recurring Revenue), abonelik modelinde her ay tekrar etmesi beklenen sözleşmesel gelirdir. Formülü MRR = Aktif Müşteri Sayısı × Ortalama Aylık Abonelik Bedeli (ARPA); farklı planlar varsa her planın müşteri sayısı × fiyatı toplanır ve yıllık planlar 12'ye bölünerek eklenir." },
     { q: "500 müşterili bir SaaS'ta MRR nasıl hesaplanır?", a: "Planları ayrı ayrı toplayın. Örnek: 400 müşteri × 800 ₺ aylık = 320.000 ₺; 100 müşteri × (12.000 ₺ yıllık / 12) = 100.000 ₺. Toplam MRR 420.000 ₺, ARR 5.040.000 ₺'dir. Kurulum ve danışmanlık gibi tek seferlik gelirler bu hesabın dışında kalır." },
     { q: "Yıllık ödenen abonelikler MRR'ye nasıl eklenir?", a: "Yıllık sözleşme bedeli 12'ye bölünerek aylık karşılığı bulunur ve MRR'ye o şekilde eklenir. Tüm yıllık tutarı ödeme yapıldığı ayın MRR'sine yazmak metriği yanıltıcı biçimde şişirir." },
@@ -387,7 +393,7 @@ export const arpa: ToolContent = {
     { q: "ARPA nasıl artırılır?", a: "Paket ve fiyat mimarisini gözden geçirmek, kullanım bazlı ek modüller sunmak, yıllık plana geçişi teşvik etmek, upsell/cross-sell akışları kurmak ve düşük değerli segmente odağı azaltmak en etkili yöntemlerdir." },
   ],
   relatedTools: [
-    { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
+    { label: "MRR Hesaplama Aracı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
     { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici", note: "Yıllık yinelenen gelir" },
     { label: "NRR Hesaplayıcı", href: "/ucretsiz-araclar/nrr-hesaplayici", note: "Mevcut müşteriden gelen büyüme" },
     { label: "CAC Hesaplayıcı", href: "/ucretsiz-araclar/cac-hesaplayici", note: "Müşteri edinme maliyeti" },
@@ -422,7 +428,7 @@ export const nrr: ToolContent = {
   relatedTools: [
     { label: "ARR Hesaplayıcı", href: "/ucretsiz-araclar/arr-hesaplayici", note: "Yıllık yinelenen gelir" },
     { label: "Churn Rate Hesaplayıcı", href: "/ucretsiz-araclar/churn-rate-hesaplayici", note: "Kayıp oranı ve retention" },
-    { label: "MRR Hesaplayıcı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
+    { label: "MRR Hesaplama Aracı", href: "/ucretsiz-araclar/mrr-hesaplayici", note: "Aylık yinelenen gelir" },
     { label: "Rule of 40 Hesaplayıcı", href: "/ucretsiz-araclar/rule-of-40-hesaplayici", note: "Büyüme + kârlılık dengesi" },
   ],
   relatedPost: { label: "NRR Nedir? Formül, Örnek ve İyi NRR Kaç Olmalı?", href: "/blog/nrr-nedir-saas-buyume-metrigi/" },
