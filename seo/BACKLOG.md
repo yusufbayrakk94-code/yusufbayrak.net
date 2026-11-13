@@ -80,7 +80,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] C2 — "Nedir" sayfalarına 3-5 ilgili yazıdan sorgu metniyle bağlamsal link (cac, ltv, mrr, utm, roas, google ads, ctr, churn, geo)
 - [ ] C3 — Hub sayfaları: Pazarlama metrikleri sözlüğü (önce), E-ticaret kârlılık rehberi, SaaS metrikleri (içerik görevi)
 - [ ] B — "Nedir" sırası: cac nedir → mrr ne demek → ltv nedir → utm nedir → roas nedir → google ads nedir → ctr nedir → churn nedir → geo nedir (ilk paragraf tanım, varyant H2/SSS, tablo)
-- [ ] D1 — Kullanıcı: AdGusto ve Brandog sitelerinden yusufbayrak.net araçlarına link; LinkedIn/X/GitHub profil linkleri (Claude metin ve yerleşim önerisi hazırlar)
+- [~] D1 — Kullanıcı: AdGusto ve Brandog sitelerinden yusufbayrak.net araçlarına link; LinkedIn/X/GitHub profil linkleri (Claude metin ve yerleşim önerisi hazırlar) — 13.11: metin ve yerleşim önerileri hazır (seo/outreach/kendi-mulkler.md: AdGusto footer + SSS bağlamsal link, Brandog footer, LinkedIn/X/Instagram/GitHub alanları + GitHub README taslağı); uygulama kullanıcıda
 - [ ] D2 — Araç dizini başvuruları (seo/outreach/arac-dizinleri.md) — form gönderimi kullanıcıda
 - [ ] D3 — Veri varlığı: "Türkiye pazaryeri komisyon ve kargo maliyetleri 2026" sayfası (vergi yok) + dağıtım metinleri
 - [ ] D4 — Haftalık 5 teklif taslağı (widget/şablon/konuk yazı); eticaretmerkezim ve zunapro hatırlatması
