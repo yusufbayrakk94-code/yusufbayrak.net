@@ -102,6 +102,7 @@
 - [PTT, Aras, Yurtiçi ve MNG Kargo Desi Hesaplama: Firmaların Desi Kuralları Karşılaştırması](https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/): PTT, Aras, Yurtiçi ve MNG Kargo desiyi nasıl hesaplıyor? Bölen, 30 desi üstü, ağır gönderi eşiği, kabul sınırları, bant tarifesi ve desi itirazı örneklerle.
 - [Yurtdışı Kargo Ücreti Nasıl Hesaplanır? 5000 Böleni, 0,5 kg Yuvarlama, Ek Ücretler ve PTT Küçük Paket](https://yusufbayrak.net/blog/yurtdisi-kargo-ucreti-hesaplama-desi/): Yurtdışı kargo ücreti hesaplama: 5000 bölenli desi, 0,5 kg yuvarlama, bölge, yakıt ve uzak bölge ek ücretleri, PTT küçük paket ve kutu küçültme örnekleri.
 - [CPC Nedir? Tıklama Başı Maliyet Nasıl Hesaplanır, Ne Kadar Olmalı ve Nasıl Düşer?](https://yusufbayrak.net/blog/cpc-nedir-tiklama-basi-maliyet/): CPC (TBM) nedir, nasıl hesaplanır? Ortalama, gerçek ve maksimum TBM farkı, kârlı TBM sınırının formülü, CPC'nin neden yükseldiği ve nasıl düşürüleceği.
+- [TikTok Reklam Verme Rehberi: Minimum Bütçe, Hedef EBM'den Bütçe Hesabı, Kurulum ve Ölçüm](https://yusufbayrak.net/blog/tiktok-reklam-verme-rehberi/): TikTok reklam nasıl verilir? Ads Manager kurulumu, resmî minimum bütçeler, hedef EBM'den günlük bütçe hesabı, öğrenme aşaması, Spark Ads ve UTM ile ölçüm.
 
 ## English
 
@@ -180,6 +181,7 @@
 - [PTT, Aras, Yurtiçi and MNG: How Turkish Carriers Calculate Dimensional Weight (Desi)](https://yusufbayrak.net/en/blog/turkish-carriers-dimensional-weight-rules/): How PTT, Aras, Yurtiçi and MNG calculate desi: the 3000 divisor, pricing above 30, heavy-shipment thresholds, size limits, price bands and desi disputes.
 - [How to Calculate International Shipping Cost: the 5000 Divisor, 0.5 kg Rounding, Surcharges and Small Packets](https://yusufbayrak.net/en/blog/international-shipping-cost-dimensional-weight/): Calculate international shipping cost: volumetric weight with the 5000 divisor, 0.5 kg rounding, zones, fuel and remote-area surcharges, plus box-size examples.
 - [What Is CPC? How Cost Per Click Is Calculated, What It Should Be and How to Lower It](https://yusufbayrak.net/en/blog/what-is-cpc-cost-per-click/): What is CPC (cost per click)? Average vs actual vs max CPC, the break-even CPC formula, why CPC rises and 10 ways to lower it without losing profit.
+- [How to Run TikTok Ads: Minimum Budget, Budgeting From Target CPA, Setup and Measurement](https://yusufbayrak.net/en/blog/how-to-run-tiktok-ads/): How to advertise on TikTok: Ads Manager setup, official minimum budgets, daily budget from target CPA, learning phase, Spark Ads and UTM tracking in GA4.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim

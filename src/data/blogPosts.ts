@@ -5272,6 +5272,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "TikTok Reklam Verme Rehberi", href: "/blog/tiktok-reklam-verme-rehberi/" },
       { label: "YouTube Reklam Verme Rehberi", href: "/blog/youtube-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama Aracı", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS ve Başabaş ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
@@ -8031,6 +8032,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "TikTok Reklam Verme Rehberi: Bütçe ve Ölçüm", href: "/blog/tiktok-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
@@ -8523,6 +8525,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "TikTok Reklam Verme Rehberi", href: "/blog/tiktok-reklam-verme-rehberi/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
       { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
@@ -8536,6 +8539,189 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads Yardım: Gerçek TBM", href: "https://support.google.com/google-ads/answer/6297", external: true },
       { label: "Google Ads Yardım: Ortalama TBM", href: "https://support.google.com/google-ads/answer/14074", external: true },
       { label: "Google: Google Ads maliyeti nasıl belirlenir?", href: "https://business.google.com/tr/resources/articles/google-ads-cost/", external: true },
+    ],
+  },
+  {
+    slug: "tiktok-reklam-verme-rehberi",
+    seoTitle: "TikTok Reklam Verme Rehberi: Bütçe, Kurulum ve Ölçüm",
+    title: "TikTok Reklam Verme Rehberi: Minimum Bütçe, Hedef EBM'den Bütçe Hesabı, Kurulum ve Ölçüm",
+    description:
+      "TikTok reklam nasıl verilir? Ads Manager kurulumu, resmî minimum bütçeler, hedef EBM'den günlük bütçe hesabı, öğrenme aşaması, Spark Ads ve UTM ile ölçüm.",
+    category: "performans-pazarlama",
+    tldr: [
+      "TikTok'ta reklam, uygulamadaki 'Tanıt' özelliğiyle değil TikTok Ads Manager'da hesap açılarak verilir: hesap → ödeme → kampanya hedefi → reklam grubu (hedefleme, bütçe, teklif) → reklam (video, metin, link).",
+      "TikTok yardım merkezine göre günlük bütçe kampanya düzeyinde 50 $, reklam grubu düzeyinde 20 $ karşılığının üstünde olmalı. TL hesaplarda panel güncel karşılığı gösterir.",
+      "Asıl bütçe sınırını hedefiniz belirler: satın alma gibi derin dönüşümlerde TikTok günlük bütçeyi en az 10 × EBM önerir. Hedef EBM 250 TL ise reklam grubu başına günlük ~2.500 TL; öğrenme aşaması için ~50 dönüşüm gerekir.",
+      "Ölçüm için TikTok Pixel (tercihen Events API ile birlikte) ve dinamik UTM makroları kullanın: utm_source=tiktok&utm_medium=cpc ile trafik GA4'te Paid Social kanalına düşer.",
+    ],
+    publishedAt: "2026-11-13",
+    readingMinutes: 12,
+    tags: ["TikTok Reklam", "TikTok Ads Manager", "Spark Ads", "Reklam Bütçesi", "Sosyal Medya Reklamları", "UTM"],
+    sections: [
+      {
+        heading: "TikTok'ta reklam nasıl verilir? (Kısa cevap)",
+        paragraphs: [
+          "TikTok'ta reklam vermenin iki yolu vardır. Birincisi uygulamadaki 'Tanıt' (Promote) özelliğidir: mevcut bir videoyu birkaç dokunuşla daha çok kişiye gösterir, ama hedefleme, dönüşüm optimizasyonu ve raporlama sınırlıdır. İkincisi ve satış ya da lead hedefleyen işletmeler için doğru olanı TikTok Ads Manager'dır (ads.tiktok.com): kampanya hedefi, kitle, bütçe, teklif ve dönüşüm ölçümü burada yönetilir.",
+          "Ads Manager'da yapı üç katmanlıdır: kampanya (hedef ve isteğe bağlı kampanya bütçesi), reklam grubu (hedefleme, yerleşim, bütçe, teklif ve optimizasyon olayı) ve reklam (video, metin, harekete geçirici buton, link). TikTok'un Mayıs 2026 tarihli Türkçe başlangıç rehberi de bu sırayı izler.",
+          "Bu yazıda adım adım kurulumu, TikTok'un resmî minimum bütçe kurallarını, bütçeyi hedef edinme başı maliyetten (EBM) geriye nasıl hesaplayacağınızı, öğrenme aşamasını, Spark Ads'i ve reklamın gerçekten satış getirip getirmediğini nasıl ölçeceğinizi örnek tutarlarla bulacaksınız.",
+        ],
+      },
+      {
+        heading: "TikTok Ads Manager'da adım adım kampanya kurulumu",
+        paragraphs: [
+          "Kurulum yarım saat sürer; zor olan kısım bütçe ve ölçüm kararlarıdır. Aşağıdaki sıra, sonradan değiştirmesi zor ayarları başta doğru yapmanızı sağlar.",
+          "TikTok'un rehberine göre hesap açarken ülke, saat dilimi, faturalama para birimi, yasal işletme adı ve sektör girilir ve bazı ayarlar (özellikle saat dilimi) sonradan değiştirilemeyebilir. Saat dilimini İstanbul, para birimini raporlamada kullanacağınız para birimi olarak seçin; aksi halde günlük raporlarınız ve bütçe günleriniz kayar.",
+        ],
+        bullets: [
+          "1. ads.tiktok.com üzerinden reklam hesabı açın; ülke, saat dilimi ve para birimini kontrol edin. Birden fazla hesap yönetecekseniz Business Center kullanın",
+          "2. Ödeme yöntemini ekleyin ve istenirse işletme doğrulamasını tamamlayın",
+          "3. Ölçümü reklamdan önce kurun: TikTok Pixel'i (ve mümkünse Events API'yi) siteye ekleyin, satın alma ya da form gönderimi olayını test edin",
+          "4. Kampanya hedefini seçin: Erişim, Trafik, Video Görüntülemeleri, Topluluk Etkileşimi, Uygulama Tanıtımı, Lead Toplama veya Satış",
+          "5. Reklam grubunda optimizasyon olayını (ör. satın alma), konumu (Türkiye), yaş ve ilgi alanlarını, yerleşimi ve günlük bütçeyi belirleyin; ilk testte hedeflemeyi çok daraltmayın",
+          "6. Teklif stratejisini seçin: başlangıçta maksimum sonuç (en düşük maliyet) yaygın tercihtir; maliyet sınırı ancak yeterli dönüşüm verisinden sonra anlamlıdır",
+          "7. Reklamı oluşturun: dikey (9:16), sesli, ilk saniyede dikkat çeken bir video; kısa metin, net bir buton ve UTM'li link",
+          "8. Yayından sonra ilk 2-3 gün ayarlara dokunmayın; öğrenme aşamasını bekleyin, sonra kreatif ve kitle bazında karar verin",
+        ],
+      },
+      {
+        heading: "TikTok reklam fiyatları: minimum bütçe ne kadar?",
+        paragraphs: [
+          "TikTok'ta sabit bir reklam fiyatı yoktur; reklamlar açık artırmayla satılır ve ödediğiniz tutar hedefinize, kitlenizin rekabetine ve kreatifinizin performansına göre değişir. Kesin olan kısım minimum bütçe kurallarıdır. TikTok yardım merkezindeki bütçe sayfasına göre:",
+          "Bu tutarlar dolar cinsinden yayımlanır; TL faturalı hesaplarda karşılığını panel gösterir ve kur değiştikçe değişir. Ayrıca TikTok'un Türkçe 'bütçe' sayfası, web dönüşüm kampanyaları için EMEA bölgesindeki markalara günlük en az 30 $ önerir. Minimum bütçe yalnızca reklamın yayına girebilmesi içindir; kampanyanın öğrenip sonuç verebilmesi için gereken bütçe genellikle çok daha yüksektir (bir sonraki bölüm).",
+        ],
+        bullets: [
+          "Kampanya günlük bütçesi: 50 $ karşılığının üstünde",
+          "Reklam grubu günlük bütçesi: 20 $ karşılığının üstünde",
+          "Kampanya toplam (lifetime) bütçesi: 50 $ karşılığının üstünde",
+          "Reklam grubu toplam bütçesi: gün sayısı × 20 $ (ör. 31 günlük reklam grubu için en az 620 $ karşılığı)",
+          "Yayından sonra bütçe tutarı değiştirilebilir, ama günlük ↔ toplam bütçe türü değiştirilemez",
+        ],
+      },
+      {
+        heading: "TikTok reklam bütçesi nasıl hesaplanır? Hedef EBM'den geriye",
+        paragraphs: [
+          "TikTok'un bütçe önerileri sayfası, günlük bütçeyi mevcut edinme başı maliyetinize göre belirlemenizi önerir: satın alma ve sepete ekleme gibi derin dönüşümlerde en az 10 × EBM, sayfa görüntüleme gibi sığ olaylarda ve dönüşüm dışı kampanyalarda 50 × sonuç başı maliyet, uygulama yüklemelerinde 20 × EBM. Henüz EBM veriniz yoksa derin dönüşümler için 200 $, sığ olaylar için 100 $ karşılığı önerilir.",
+          "Önce ödeyebileceğiniz EBM'yi bulun (örnek tutarlar): ortalama sepet 800 TL, katkı marjı %40 → sipariş başı katkı kârı 320 TL. Bu, başabaş EBM'dir (başabaş ROAS 2,5). Sipariş başı 70 TL kâr bırakmak için hedef EBM'yi 250 TL seçersek hedef ROAS 800 ÷ 250 = 3,2 olur.",
+          "Sonra bütçeyi hesaplayın: satın alma optimizasyonunda günlük bütçe ≥ 10 × 250 = 2.500 TL (reklam grubu başına). TikTok'un öğrenme aşaması sayfası 50 dönüşüme ulaşmayı öğrenme aşamasını geçmenin en önemli göstergesi olarak tanımlar; 50 × 250 = 12.500 TL, yani günlük 2.500 TL ile yaklaşık 5 gün. Günlük 1.000 TL ile günde ~4 satış gelir ve 50 dönüşüm ~12-13 gün sürer; bu sürede kreatif yorulabilir.",
+          "Bütçe küçükse üç seçenek vardır: tek reklam grubunda yoğunlaşın (bütçeyi beş gruba bölmek her birini öğrenemez hale getirir), hacmi daha yüksek bir olaya optimize edin (ör. sepete ekleme başı maliyet 40 TL ise 10 × 40 = 400 TL/gün yeter) ya da önce Meta veya Google gibi zaten veri biriktirdiğiniz bir kanalda kalın.",
+        ],
+        bullets: [
+          "Başabaş EBM = sipariş başı katkı kârı (sepet × katkı marjı)",
+          "Derin dönüşüm (satın alma, sepete ekleme): günlük bütçe ≥ 10 × EBM",
+          "Sığ olay (sayfa görüntüleme) ve dönüşüm dışı kampanya: ≥ 50 × sonuç başı maliyet",
+          "Öğrenme bütçesi ≈ 50 × hedef EBM",
+        ],
+      },
+      {
+        heading: "Öğrenme aşaması ve bütçe artırma kuralları",
+        paragraphs: [
+          "Dönüşüm optimizasyonlu kampanyalarda TikTok, öğrenme aşaması geçilmeden hedefleme, teklif ya da bütçe değişikliği yapılmamasını önerir. Reklam öğrenme aşamasını geçemiyorsa TikTok'un önerisi hedeflemeyi genişletmek, teklifi artırmak ya da kreatifi iyileştirmektir.",
+          "Ölçeklerken bütçeyi kademeli artırın. TikTok'un bütçe sayfası artışı öğrenme aşamasında her seferinde en fazla %40, sonrasında en fazla %30 ile sınırlamayı ve ayarlamalar arasında en az iki gün beklemeyi önerir; bütçe önerileri sayfası ise öğrenmeden sonra önceki bütçenin %50'si aralığında kalmayı söyler. Güvenli kural: tek seferde %30 civarı artış, iki gün bekle, sonucu kontrol et.",
+          "Kampanya bütçesini reklam grubu bütçesinin altında belirlemeyin; TikTok bunun yayın sorunlarına yol açabileceğini belirtir.",
+        ],
+      },
+      {
+        heading: "TikTok reklam türleri: In-Feed, Spark Ads ve premium formatlar",
+        paragraphs: [
+          "Ads Manager'da çoğu işletmenin kullandığı format, kullanıcının 'Sana Özel' akışında organik videolar arasında görünen akış içi (In-Feed) video reklamdır. Bunun bir türü olan Spark Ads, TikTok'un tanımıyla organik TikTok gönderilerini ve özelliklerini reklamda kullanmanızı sağlayan yerel bir formattır.",
+          "Spark Ads'in iki pratik farkı vardır: reklam süresince gelen görüntüleme, yorum, paylaşım, beğeni ve takipler orijinal organik gönderiye yazılır; ve bir içerik üreticinin (influencer) videosunu, onun yetkilendirmesiyle (süresi ayarlanabilen yetki kodu) kendi reklam hesabınızdan yayınlayabilirsiniz. Açık artırmada Erişim, Trafik, Video Görüntülemeleri, Topluluk Etkileşimi, Uygulama Tanıtımı, Dönüşüm, Lead ve Satış hedefleriyle kullanılabilir.",
+          "Açılışta tam ekran görünen TopView ve markalı efektler gibi premium formatlar genellikle rezervasyonla ve büyük bütçelerle satılır; performans odaklı küçük ve orta işletmeler için başlangıç noktası akış içi reklam ve Spark Ads'tir.",
+        ],
+      },
+      {
+        heading: "TikTok reklamının satış getirip getirmediği nasıl ölçülür?",
+        paragraphs: [
+          "TikTok Pixel, sitenizdeki sayfa görüntüleme, sepete ekleme, satın alma ve form gönderimi gibi olayları TikTok'a bildirir; algoritma bu sinyallerle optimize eder. Tarayıcı engelleri ve çerez kısıtları nedeniyle olayların bir kısmı kaybolabileceği için Pixel'i sunucu tarafı Events API ile birlikte kullanmak ve iki kaynaktan gelen aynı olayı olay kimliğiyle tekilleştirmek önerilir. Pixel kişisel veri işlediği için sitenizin çerez onayı akışına dahil edin.",
+          "Platform raporu tek kaynak olmamalı: GA4'te TikTok trafiğini doğru görmek için linklere UTM ekleyin. TikTok yardım merkezi dinamik makroları destekler: __CAMPAIGN_NAME__ (kampanya adı), __AID_NAME__ (reklam grubu adı), __CID_NAME__ (kreatif adı) ve __PLACEMENT__ (yerleşim). Örnek son ek: ?utm_source=tiktok&utm_medium=cpc&utm_campaign=__CAMPAIGN_NAME__&utm_content=__CID_NAME__.",
+          "Neden bu değerler? GA4'ün varsayılan kanal kurallarında kaynak bir sosyal ağ (tiktok listede) ve ortam cpc ya da paid gibi ücretli bir değer olduğunda oturum Paid Social kanalına atanır. utm_medium=paid_social yazmak da çalışır; 'TikTok' ya da 'tiktok-reklam' gibi serbest değerler ise trafiği Unassigned'a düşürebilir.",
+        ],
+        bullets: [
+          "Platformda karar metriği: satın alma başı maliyet (EBM) ve ROAS; tıklama ve görüntüleme ara metriktir",
+          "GA4'te: Edinme › Trafik edinme › Oturum kaynağı/ortamı = tiktok / cpc; dönüşümleri ve geliri buradan kontrol edin",
+          "TikTok'ta kullanıcılar çoğu zaman videoyu görüp daha sonra markayı arayarak satın alır; görüntüleme sonrası etkiyi marka araması ve doğrudan trafikteki artışla birlikte okuyun",
+        ],
+      },
+      {
+        heading: "TikTok mu Instagram mı? Hangi işletmeye uygun?",
+        paragraphs: [
+          "TikTok'un gücü keşiftir: kullanıcı takip etmediği hesapların videolarını akışında görür, bu yüzden henüz tanınmayan bir marka için yeni kitleye ulaşmak görece kolaydır. Karşılığında kreatif çok hızlı yorulur ve 'reklam gibi görünen' videolar kaydırılır geçilir; düzenli olarak yeni, doğal görünümlü video üretebilmek ön koşuldur.",
+          "Görsel olarak anlatılabilen, dürtüsel satın alınabilen ve sepet tutarı çok yüksek olmayan ürünler (kozmetik, aksesuar, ev ürünleri, yiyecek, uygulamalar) TikTok'ta genellikle daha rahat test edilir. Uzun satış döngülü B2B hizmetlerde ise LinkedIn ve Google arama reklamları çoğu zaman daha verimli başlar. Instagram'da Reels ile benzer bir keşif ortamı vardır ve Meta'nın dönüşüm verisi birçok işletmede daha olgundur; ikisini aynı EBM hedefiyle kısa bir testte karşılaştırmak en sağlıklı yoldur.",
+        ],
+      },
+      {
+        heading: "TikTok reklamlarında en sık yapılan hatalar",
+        paragraphs: [
+          "Aşağıdaki hatalar, kampanya kötü değilken 'TikTok bize uymadı' sonucuna varılmasının en yaygın sebepleridir.",
+        ],
+        bullets: [
+          "Pixel ve satın alma olayını test etmeden yayına başlamak: algoritma neyi optimize edeceğini bilmez",
+          "Minimum bütçeyle satın alma optimizasyonu yapıp beş reklam grubuna bölmek: hiçbiri öğrenme aşamasını geçemez",
+          "İlk iki günde bütçe, kitle ve teklifle oynamak: öğrenme uzar, maliyet dalgalanır",
+          "Televizyon reklamı ya da yatay video kullanmak: TikTok'ta dikey, sesli ve doğal görünen video beklenir",
+          "Tek kreatifle haftalarca yayın: sıklık arttıkça tıklama oranı düşer, TBM ve EBM yükselir",
+          "UTM'siz link: GA4'te trafik Direct ya da Unassigned'a düşer, kanalın gerçek katkısı görünmez",
+          "Kararı tıklama ya da görüntüleme maliyetine göre vermek: kâr kararı EBM ve ROAS ile verilir",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "TikTok'ta reklam vermek ücretli mi, ne kadar?",
+        answer:
+          "Evet, reklamlar açık artırmayla satılır ve sabit bir fiyat yoktur. TikTok yardım merkezine göre günlük bütçe kampanya düzeyinde 50 $, reklam grubu düzeyinde 20 $ karşılığının üstünde olmalı. Sonuç almak için gereken bütçe ise hedefinize bağlıdır; satın alma optimizasyonunda TikTok günlük bütçeyi en az 10 × EBM önerir.",
+      },
+      {
+        question: "TikTok reklamı nasıl verilir?",
+        answer:
+          "ads.tiktok.com üzerinden reklam hesabı açın, ödeme yöntemini ekleyin, TikTok Pixel'i kurun, kampanya hedefini seçin, reklam grubunda hedefleme, bütçe ve teklifi belirleyin, ardından dikey bir video, metin ve UTM'li linkle reklamı oluşturun. İlk 2-3 gün ayarlara dokunmadan öğrenme aşamasını bekleyin.",
+      },
+      {
+        question: "Spark Ads nedir?",
+        answer:
+          "Spark Ads, organik TikTok gönderilerini reklam olarak kullanmanızı sağlayan yerel bir reklam formatıdır. Reklamdan gelen beğeni, yorum, paylaşım ve takipler orijinal gönderiye yazılır. Bir içerik üreticinin videosunu, onun verdiği yetki koduyla kendi hesabınızdan reklam olarak yayınlayabilirsiniz.",
+      },
+      {
+        question: "TikTok reklamlarında öğrenme aşaması ne kadar sürer?",
+        answer:
+          "Sabit bir süre yoktur; TikTok 50 dönüşüme ulaşmayı öğrenme aşamasını geçmenin en önemli göstergesi olarak tanımlar. Süre bütçenize ve EBM'nize bağlıdır: 250 TL EBM ve günlük 2.500 TL bütçeyle yaklaşık 5 gün, günlük 1.000 TL ile yaklaşık 12-13 gün.",
+      },
+      {
+        question: "TikTok reklamları için UTM nasıl yazılır?",
+        answer:
+          "utm_source=tiktok ve utm_medium=cpc (ya da paid_social) kullanın; kampanya ve kreatif adı için TikTok'un dinamik makrolarını ekleyin: utm_campaign=__CAMPAIGN_NAME__&utm_content=__CID_NAME__. Bu değerlerle trafik GA4'te Paid Social kanalına atanır.",
+      },
+    ],
+    howTo: {
+      name: "TikTok Ads Manager'da ilk satış kampanyası nasıl kurulur?",
+      description: "Hesaptan ölçüme yedi adımda TikTok satış kampanyası.",
+      steps: [
+        { name: "Reklam hesabını açın", text: "ads.tiktok.com'da hesap açın; ülke, saat dilimi ve faturalama para birimini doğru seçin, çünkü bazı ayarlar sonradan değiştirilemeyebilir." },
+        { name: "Ödeme ve doğrulamayı tamamlayın", text: "Ödeme yöntemini ekleyin ve istenirse işletme doğrulamasını tamamlayın." },
+        { name: "Pixel ve olayları kurun", text: "TikTok Pixel'i (mümkünse Events API ile) siteye ekleyin ve satın alma olayını test edin." },
+        { name: "Bütçeyi hedef EBM'den hesaplayın", text: "Başabaş EBM'yi sepet × katkı marjıyla bulun, hedef EBM'yi seçin; satın alma optimizasyonunda reklam grubu başına günlük bütçeyi en az 10 × hedef EBM yapın." },
+        { name: "Kampanya ve reklam grubunu oluşturun", text: "Satış hedefini seçin; reklam grubunda optimizasyon olayı olarak satın almayı, konumu, geniş bir kitleyi ve hesapladığınız günlük bütçeyi girin." },
+        { name: "Reklamı UTM'li linkle yayınlayın", text: "Dikey, sesli bir video ve net bir buton kullanın; linke utm_source=tiktok&utm_medium=cpc&utm_campaign=__CAMPAIGN_NAME__ ekleyin." },
+        { name: "Öğrenme aşamasını bekleyip ölçün", text: "İlk 2-3 gün ayarlara dokunmayın; sonra EBM ve ROAS'a göre kreatifleri ayıklayın, bütçeyi iki günde bir en fazla ~%30 artırın." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "UTM Link Oluşturucu", href: "/ucretsiz-araclar/utm-link-olusturucu/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Instagram Reklam Verme Rehberi", href: "/blog/instagram-reklam-verme-rehberi/" },
+      { label: "Meta Reklam Verme Rehberi", href: "/blog/meta-reklam-verme-rehberi/" },
+      { label: "YouTube Reklam Verme Rehberi", href: "/blog/youtube-reklam-verme-rehberi/" },
+      { label: "CPC Nedir? Tıklama Başı Maliyet", href: "/blog/cpc-nedir-tiklama-basi-maliyet/" },
+      { label: "UTM Nedir? UTM Parametreleri", href: "/blog/utm-nedir-utm-parametreleri/" },
+      { label: "GA4 Unassigned Trafik Nedir?", href: "/blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/" },
+      { label: "TikTok: Reklam Yöneticisi 101 (Türkçe)", href: "https://ads.tiktok.com/business/tr/blog/how-to-get-started-with-tiktok-ads-manager-your-step-by-step-guide", external: true },
+      { label: "TikTok Yardım: Bütçeler hakkında", href: "https://ads.tiktok.com/help/article/budget", external: true },
+      { label: "TikTok Yardım: Bütçe için en iyi uygulamalar", href: "https://ads.tiktok.com/help/article/budget-best-practices", external: true },
+      { label: "TikTok Yardım: Öğrenme aşaması SSS", href: "https://ads.tiktok.com/help/article/learning-phase-faq", external: true },
+      { label: "TikTok Yardım: Spark Ads hakkında", href: "https://ads.tiktok.com/help/article/spark-ads", external: true },
+      { label: "TikTok Yardım: UTM parametreleriyle web olaylarını izleme", href: "https://ads.tiktok.com/help/article/track-offsite-web-events-with-utm-parameters", external: true },
     ],
   },
 ];
@@ -13260,6 +13446,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run TikTok Ads", href: "/en/blog/how-to-run-tiktok-ads/" },
       { label: "How to Run YouTube Ads", href: "/en/blog/how-to-run-youtube-ads/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
@@ -15923,6 +16110,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run TikTok Ads: Budget and Measurement", href: "/en/blog/how-to-run-tiktok-ads/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
@@ -16411,6 +16599,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "How to Run TikTok Ads", href: "/en/blog/how-to-run-tiktok-ads/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
@@ -16423,6 +16612,189 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "Google Ads Help: Actual CPC", href: "https://support.google.com/google-ads/answer/6297?hl=en", external: true },
       { label: "Google Ads Help: Average CPC", href: "https://support.google.com/google-ads/answer/14074?hl=en", external: true },
       { label: "Google: How much does Google Ads cost?", href: "https://business.google.com/uk/resources/articles/google-ads-cost/", external: true },
+    ],
+  },
+  {
+    slug: "how-to-run-tiktok-ads",
+    seoTitle: "How to Run TikTok Ads: Budget, Setup and Measurement",
+    title: "How to Run TikTok Ads: Minimum Budget, Budgeting From Target CPA, Setup and Measurement",
+    description:
+      "How to advertise on TikTok: Ads Manager setup, official minimum budgets, daily budget from target CPA, learning phase, Spark Ads and UTM tracking in GA4.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Serious TikTok advertising runs in TikTok Ads Manager, not the in-app Promote button: account → payment → campaign objective → ad group (targeting, budget, bid) → ad (video, text, link).",
+      "According to TikTok's help center, daily budgets must exceed $50 at campaign level and $20 at ad group level (or the local-currency equivalent).",
+      "Your objective sets the real budget: for deep conversions like purchases TikTok recommends a daily budget of at least 10 × CPA. With a $25 target CPA that is about $250 per ad group per day; around 50 conversions signal the end of the learning phase.",
+      "Measure with the TikTok Pixel (ideally plus the Events API) and dynamic UTM macros: utm_source=tiktok&utm_medium=cpc puts traffic in GA4's Paid Social channel.",
+    ],
+    publishedAt: "2026-11-13",
+    readingMinutes: 11,
+    tags: ["TikTok Ads", "TikTok Ads Manager", "Spark Ads", "Ad Budget", "Social Media Ads", "UTM"],
+    sections: [
+      {
+        heading: "How do you run ads on TikTok? (Short answer)",
+        paragraphs: [
+          "There are two ways to advertise on TikTok. The first is the in-app Promote feature: it pushes an existing video to more people in a few taps, but targeting, conversion optimisation and reporting are limited. The second, and the right one for businesses after sales or leads, is TikTok Ads Manager (ads.tiktok.com), where objective, audience, budget, bidding and conversion tracking are managed.",
+          "Ads Manager has three layers: campaign (objective and optional campaign budget), ad group (targeting, placement, budget, bid and optimisation event) and ad (video, text, call-to-action button, link). TikTok's own getting-started guide, updated in May 2026, follows the same order.",
+          "This guide covers step-by-step setup, TikTok's official minimum budget rules, how to work your budget backwards from a target cost per acquisition (CPA), the learning phase, Spark Ads and how to measure whether ads actually drive sales, with worked examples.",
+        ],
+      },
+      {
+        heading: "Step-by-step campaign setup in TikTok Ads Manager",
+        paragraphs: [
+          "Setup takes about half an hour; the hard part is budgeting and measurement. The order below gets the hard-to-change settings right first.",
+          "According to TikTok's guide, account setup asks for country, time zone, billing currency, legal business name and industry, and some settings (especially time zone) may not be changeable later. Choose the time zone and currency you report in; otherwise daily reports and budget days drift.",
+        ],
+        bullets: [
+          "1. Create an ad account at ads.tiktok.com; double-check country, time zone and currency. Use Business Center if you manage several accounts",
+          "2. Add a payment method and complete business verification if asked",
+          "3. Set up measurement before ads: install the TikTok Pixel (and the Events API if possible) and test the purchase or lead event",
+          "4. Choose an objective: Reach, Traffic, Video Views, Community Interaction, App Promotion, Lead Generation or Sales",
+          "5. In the ad group set the optimisation event (e.g. purchase), location, age and interests, placement and daily budget; do not over-narrow the first test",
+          "6. Choose a bid strategy: maximum delivery (lowest cost) is the usual start; a cost cap only makes sense once you have enough conversion data",
+          "7. Build the ad: vertical (9:16), sound-on video that hooks in the first second, short text, a clear button and a UTM-tagged link",
+          "8. Leave settings alone for the first 2-3 days; let the learning phase run, then decide by creative and audience",
+        ],
+      },
+      {
+        heading: "How much do TikTok ads cost? Minimum budgets",
+        paragraphs: [
+          "TikTok has no fixed ad price; ads are sold at auction and what you pay depends on your objective, audience competition and creative performance. What is fixed are the minimum budget rules. According to TikTok's budget help article:",
+          "Accounts billed in other currencies see the equivalent in Ads Manager. TikTok's budgeting page also recommends at least $30 per day for web conversion campaigns for brands in North America and EMEA. Minimums only let ads deliver; the budget needed for a campaign to learn and perform is usually much higher (next section).",
+        ],
+        bullets: [
+          "Campaign daily budget: more than $50",
+          "Ad group daily budget: more than $20",
+          "Campaign lifetime budget: more than $50",
+          "Ad group lifetime budget: number of days × $20 (e.g. at least $620 for a 31-day ad group)",
+          "Budget amounts can be changed after launch, but you cannot switch between daily and lifetime budget types",
+        ],
+      },
+      {
+        heading: "How to calculate a TikTok ad budget from target CPA",
+        paragraphs: [
+          "TikTok's budget best-practices page recommends setting daily budget from your current cost per result: at least 10 × CPA for deep conversions such as purchase and add to cart, 50 × cost per result for shallow events like page view and non-conversion campaigns, and 20 × CPA for app installs. With no CPA history, it suggests $200 for deep conversions and $100 for shallow events.",
+          "First find the CPA you can afford (illustrative figures): average order $80, contribution margin 40% → $32 contribution per order. That is your break-even CPA (break-even ROAS 2.5). To keep $7 profit per order, choose a $25 target CPA, i.e. a target ROAS of $80 ÷ $25 = 3.2.",
+          "Then size the budget: with purchase optimisation, daily budget ≥ 10 × $25 = $250 per ad group. TikTok's learning-phase FAQ calls reaching 50 conversions the most significant indicator of passing the learning phase; 50 × $25 = $1,250, about 5 days at $250 a day. At $100 a day you get about 4 sales a day and 50 conversions take 12-13 days, by which time creative may fatigue.",
+          "With a small budget you have three options: concentrate on one ad group (splitting across five starves all of them), optimise for a higher-volume event (if add-to-cart costs $4, 10 × $4 = $40 a day suffices) or stay on a channel like Meta or Google where you already have conversion data.",
+        ],
+        bullets: [
+          "Break-even CPA = contribution profit per order (order value × contribution margin)",
+          "Deep conversion (purchase, add to cart): daily budget ≥ 10 × CPA",
+          "Shallow event (page view) and non-conversion campaigns: ≥ 50 × cost per result",
+          "Learning budget ≈ 50 × target CPA",
+        ],
+      },
+      {
+        heading: "Learning phase and budget scaling rules",
+        paragraphs: [
+          "For conversion-optimised campaigns TikTok advises against targeting, bid or budget changes before the learning phase is passed. If an ad fails to exit learning, TikTok suggests broadening targeting, raising the bid or improving the creative.",
+          "Scale gradually. TikTok's budget article recommends increases of no more than 40% at a time during learning and 30% after it, with at least two days between adjustments; the best-practices page says to stay within 50% of the previous budget after learning. A safe rule: raise about 30% at a time, wait two days, check results.",
+          "Do not set the campaign budget below the ad group budget; TikTok notes this can cause delivery issues.",
+        ],
+      },
+      {
+        heading: "TikTok ad formats: In-Feed, Spark Ads and premium formats",
+        paragraphs: [
+          "The format most businesses use in Ads Manager is the In-Feed video ad, shown between organic videos in the For You feed. A variant, Spark Ads, is defined by TikTok as a native ad format that lets you leverage organic TikTok posts and their features in your advertising.",
+          "Spark Ads differ in two practical ways: views, comments, shares, likes and follows earned during promotion are credited to the original organic post; and you can run a creator's video from your own ad account with their authorisation (an authorisation code with an adjustable duration). In auction buying they support Reach, Traffic, Video Views, Community Interaction, App Promotion, Conversions, Lead Generation and Sales objectives.",
+          "Premium formats such as TopView (full screen on app open) and branded effects are typically sold by reservation with larger budgets; for performance-focused small and mid-sized businesses the starting point is In-Feed and Spark Ads.",
+        ],
+      },
+      {
+        heading: "How do you measure whether TikTok ads drive sales?",
+        paragraphs: [
+          "The TikTok Pixel reports site events such as page view, add to cart, purchase and form submit back to TikTok, and the algorithm optimises on those signals. Because browser restrictions and cookie limits can drop events, pair the Pixel with the server-side Events API and deduplicate the same event from both sources with an event ID. The Pixel processes personal data, so include it in your cookie consent flow.",
+          "Do not rely on platform reporting alone: add UTMs so GA4 sees TikTok traffic correctly. TikTok supports dynamic macros: __CAMPAIGN_NAME__ (campaign name), __AID_NAME__ (ad group name), __CID_NAME__ (creative name) and __PLACEMENT__ (placement). Example suffix: ?utm_source=tiktok&utm_medium=cpc&utm_campaign=__CAMPAIGN_NAME__&utm_content=__CID_NAME__.",
+          "Why these values? Under GA4's default channel rules a session goes to Paid Social when the source is a social site (tiktok is on the list) and the medium is a paid value such as cpc or paid. utm_medium=paid_social also works; free-form values like 'TikTok' or 'tiktok-ad' can send traffic to Unassigned.",
+        ],
+        bullets: [
+          "Decision metrics in-platform: cost per purchase (CPA) and ROAS; clicks and views are intermediate",
+          "In GA4: Acquisition › Traffic acquisition › Session source/medium = tiktok / cpc; check conversions and revenue there",
+          "TikTok users often see a video and buy later after searching for the brand; read view-through impact alongside lifts in branded search and direct traffic",
+        ],
+      },
+      {
+        heading: "TikTok or Instagram? Which businesses is TikTok right for?",
+        paragraphs: [
+          "TikTok's strength is discovery: users see videos from accounts they do not follow, so reaching a new audience is relatively easy for an unknown brand. The trade-off is fast creative fatigue, and videos that look like ads get scrolled past; being able to produce new, native-looking videos regularly is a prerequisite.",
+          "Products that are easy to show visually, bought on impulse and not too expensive (cosmetics, accessories, home goods, food, apps) are usually easier to test on TikTok. For long-cycle B2B services, LinkedIn and Google search ads often start more efficiently. Instagram Reels offers a similar discovery environment and Meta's conversion data is more mature for many businesses; the healthiest approach is a short test of both against the same CPA target.",
+        ],
+      },
+      {
+        heading: "The most common TikTok ads mistakes",
+        paragraphs: [
+          "These mistakes are the most frequent reasons teams conclude 'TikTok does not work for us' when the campaign itself was not the problem.",
+        ],
+        bullets: [
+          "Launching without testing the Pixel and purchase event: the algorithm does not know what to optimise",
+          "Running purchase optimisation at minimum budget split across five ad groups: none exits learning",
+          "Changing budget, audience and bid in the first two days: learning drags on and costs swing",
+          "Using TV ads or horizontal video: TikTok expects vertical, sound-on, native-looking video",
+          "Running one creative for weeks: as frequency rises, CTR falls and CPC and CPA climb",
+          "Links without UTMs: traffic lands in Direct or Unassigned in GA4 and the channel's real contribution disappears",
+          "Deciding on cost per click or view: profit decisions are made on CPA and ROAS",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How much does it cost to advertise on TikTok?",
+        answer:
+          "Ads are sold at auction with no fixed price. According to TikTok's help center, daily budgets must exceed $50 at campaign level and $20 at ad group level. The budget needed for results depends on your objective; for purchase optimisation TikTok recommends a daily budget of at least 10 × CPA.",
+      },
+      {
+        question: "How do I run a TikTok ad?",
+        answer:
+          "Create an ad account at ads.tiktok.com, add a payment method, install the TikTok Pixel, choose a campaign objective, set targeting, budget and bid in the ad group, then build the ad with a vertical video, text and a UTM-tagged link. Leave settings alone for 2-3 days during the learning phase.",
+      },
+      {
+        question: "What are Spark Ads?",
+        answer:
+          "Spark Ads is a native TikTok ad format that lets you use organic TikTok posts as ads. Likes, comments, shares and follows from the ad are credited to the original post. You can run a creator's video from your own account using an authorisation code they provide.",
+      },
+      {
+        question: "How long does the TikTok learning phase take?",
+        answer:
+          "There is no fixed duration; TikTok calls reaching 50 conversions the most significant indicator of passing it. Time depends on budget and CPA: with a $25 CPA and $250 a day it is about 5 days, at $100 a day about 12-13 days.",
+      },
+      {
+        question: "How should I write UTMs for TikTok ads?",
+        answer:
+          "Use utm_source=tiktok and utm_medium=cpc (or paid_social), and add TikTok's dynamic macros for campaign and creative names: utm_campaign=__CAMPAIGN_NAME__&utm_content=__CID_NAME__. With these values GA4 assigns the traffic to Paid Social.",
+      },
+    ],
+    howTo: {
+      name: "How to set up your first TikTok sales campaign in Ads Manager",
+      description: "A seven-step TikTok sales campaign, from account to measurement.",
+      steps: [
+        { name: "Create the ad account", text: "Open an account at ads.tiktok.com and set country, time zone and billing currency correctly; some settings may not be changeable later." },
+        { name: "Add payment and verify", text: "Add a payment method and complete business verification if requested." },
+        { name: "Install the Pixel and events", text: "Add the TikTok Pixel (with the Events API if possible) to your site and test the purchase event." },
+        { name: "Budget from target CPA", text: "Find break-even CPA as order value × contribution margin, choose a target CPA and, for purchase optimisation, set each ad group's daily budget to at least 10 × target CPA." },
+        { name: "Create the campaign and ad group", text: "Pick the Sales objective; in the ad group choose purchase as the optimisation event, set location, a broad audience and your calculated daily budget." },
+        { name: "Launch the ad with a UTM link", text: "Use a vertical, sound-on video and a clear button; append utm_source=tiktok&utm_medium=cpc&utm_campaign=__CAMPAIGN_NAME__ to the link." },
+        { name: "Wait out learning, then measure", text: "Leave settings alone for 2-3 days; then prune creatives by CPA and ROAS and raise budget by no more than about 30% every two days." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "UTM Builder", href: "/en/free-tools/utm-builder/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "How to Run Instagram Ads", href: "/en/blog/how-to-run-instagram-ads/" },
+      { label: "How to Run Meta Ads", href: "/en/blog/how-to-run-meta-ads-guide/" },
+      { label: "How to Run YouTube Ads", href: "/en/blog/how-to-run-youtube-ads/" },
+      { label: "What Is CPC? Cost Per Click", href: "/en/blog/what-is-cpc-cost-per-click/" },
+      { label: "What Are UTM Parameters?", href: "/en/blog/what-are-utm-parameters/" },
+      { label: "GA4 Unassigned Traffic: How to Fix It", href: "/en/blog/ga4-unassigned-traffic-how-to-fix/" },
+      { label: "TikTok: Ads Manager 101", href: "https://ads.tiktok.com/business/tr/blog/how-to-get-started-with-tiktok-ads-manager-your-step-by-step-guide", external: true },
+      { label: "TikTok Help: About budgets", href: "https://ads.tiktok.com/help/article/budget?lang=en", external: true },
+      { label: "TikTok Help: Best practices for budget", href: "https://ads.tiktok.com/help/article/budget-best-practices", external: true },
+      { label: "TikTok Help: Learning phase FAQs", href: "https://ads.tiktok.com/help/article/learning-phase-faq", external: true },
+      { label: "TikTok Help: About Spark Ads", href: "https://ads.tiktok.com/help/article/spark-ads?lang=en", external: true },
+      { label: "TikTok Help: Track web events with UTM parameters", href: "https://ads.tiktok.com/help/article/track-offsite-web-events-with-utm-parameters", external: true },
     ],
   },
 ];
