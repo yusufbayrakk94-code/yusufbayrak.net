@@ -53,13 +53,17 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-11-10 güçlendirildi, ÖNCELİKLİ, TR önce): /blog/cac-nedir-musteri-edinme-maliyeti/ (gelen iç link anchor'ları), /en/free-tools/roas-calculator/
 - [x] 10–12.11 Google oturumu kapalıydı; 12.11 akşamı kullanıcı yeniden giriş yaptı. Erişimli hesap tarayıcıda 2. hesap: Search Console için /u/1/, GA4 için ?authuser=1 kullan (u/0 = AdGusto, erişimi yok)
 - [x] Dizine ekleme isteği gönderildi: /ucretsiz-araclar/roas-hesaplayici/, /ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/, /ucretsiz-araclar/desi-hesaplama/, /blog/etsyde-satis-komisyon-kar-hesabi/, /blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/ — 2026-11-12 (5/5)
+- [x] Dizine ekleme isteği gönderildi: /blog/ptt-aras-yurtici-kargo-desi-hesaplama/, /blog/yurtdisi-kargo-ucreti-hesaplama-desi/, /blog/ctr-nedir-iyi-tiklama-orani-kac/, /blog/kar-marji-nasil-hesaplanir/ (13.11 güçlendirildi), /blog/youtube-reklam-verme-rehberi/ — 2026-11-13 (5/5)
+- [ ] "Tarandı - dizine eklenmedi" (13.11 raporu, TR yüksek hacim): /blog/google-ads-nedir-nasil-calisir/, /blog/churn-nedir-churn-rate-nasil-hesaplanir/ → özgün bölüm ekle, sonra dizine ekleme iste; ayrıca GEO, ROI, ARR, llms.txt yazısı/aracı, Meta öğrenme aşaması TR/EN izleniyor
+- [ ] Dizine ekleme isteği (2026-11-13 güçlendirildi, EN): /en/blog/trendyol-commission-rates/ (başlık/açıklama)
+- [ ] Keyword Planner sonraki tur: Search Console'da sayfasız görünen 'satıcı puanı hesaplama', 'facebook hedef kitle oluşturma' hacmini kontrol et
 - [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 1, TR önce): /blog/backlink-nedir-nasil-alinir/, /en/blog/what-are-backlinks-how-to-get-them/
 - [ ] Dizine ekleme isteği (2026-11-10 yeni yazı 2, TR önce): /blog/landing-page-nedir-donusen-acilis-sayfasi/, /en/blog/what-is-a-landing-page-checklist/
-- [ ] Dizine ekleme isteği (2026-11-11 yeni yazı 1, TR önce): /blog/ctr-nedir-iyi-tiklama-orani-kac/, /en/blog/what-is-ctr-good-click-through-rate/
-- [ ] Dizine ekleme isteği (2026-11-11 yeni yazı 2, TR önce): /blog/youtube-reklam-verme-rehberi/, /en/blog/how-to-run-youtube-ads/
+- [ ] Dizine ekleme isteği (2026-11-11 yeni yazı 1; TR 13.11 istendi): /en/blog/what-is-ctr-good-click-through-rate/
+- [ ] Dizine ekleme isteği (2026-11-11 yeni yazı 2; TR 13.11 istendi): /en/blog/how-to-run-youtube-ads/
 - [ ] Dizine ekleme isteği (2026-11-11 güncellendi, TR): /blog/icp-ideal-musteri-profili-sablon/ (ICP Excel şablonu eklendi; düşük öncelik)
-- [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 1, TR önce): /blog/ptt-aras-yurtici-kargo-desi-hesaplama/, /en/blog/turkish-carriers-dimensional-weight-rules/
-- [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 2, TR önce): /blog/yurtdisi-kargo-ucreti-hesaplama-desi/, /en/blog/international-shipping-cost-dimensional-weight/
+- [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 1; TR 13.11 istendi): /en/blog/turkish-carriers-dimensional-weight-rules/
+- [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 2; TR 13.11 istendi): /en/blog/international-shipping-cost-dimensional-weight/
 - [ ] Dizine ekleme isteği (2026-11-12 güçlendirildi, TR önce): /ucretsiz-araclar/mrr-hesaplayici/ (MRR aracı v2), /en/free-tools/mrr-calculator/, /blog/mrr-nedir-nasil-hesaplanir/ ve /en/blog/what-is-mrr-how-to-calculate/ (3 hesap yöntemi bölümü)
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
