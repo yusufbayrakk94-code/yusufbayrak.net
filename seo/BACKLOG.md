@@ -73,6 +73,18 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Marka sorgusu 'yusuf bayrak' ortalama 10. sırada: Person şeması, Hakkımda sayfası ve profil linkleriyle (LinkedIn/X → site) güçlendir
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
 
+## Yol haritası işleri (13.11.2026, seo/GOALS.md › Yol haritası)
+- [ ] C1 — Blog paragraf ve maddelerinde `[metin](/yol/)` metin içi link desteği (BlogPost.tsx; prerender'da gerçek <a>), test + build
+- [ ] C2 — "Nedir" sayfalarına 3-5 ilgili yazıdan sorgu metniyle bağlamsal link (cac, ltv, mrr, utm, roas, google ads, ctr, churn, geo)
+- [ ] C3 — Hub sayfaları: Pazarlama metrikleri sözlüğü (önce), E-ticaret kârlılık rehberi, SaaS metrikleri (içerik görevi)
+- [ ] B — "Nedir" sırası: cac nedir → mrr ne demek → ltv nedir → utm nedir → roas nedir → google ads nedir → ctr nedir → churn nedir → geo nedir (ilk paragraf tanım, varyant H2/SSS, tablo)
+- [ ] D1 — Kullanıcı: AdGusto ve Brandog sitelerinden yusufbayrak.net araçlarına link; LinkedIn/X/GitHub profil linkleri (Claude metin ve yerleşim önerisi hazırlar)
+- [ ] D2 — Araç dizini başvuruları (seo/outreach/arac-dizinleri.md) — form gönderimi kullanıcıda
+- [ ] D3 — Veri varlığı: "Türkiye pazaryeri komisyon ve kargo maliyetleri 2026" sayfası (vergi yok) + dağıtım metinleri
+- [ ] D4 — Haftalık 5 teklif taslağı (widget/şablon/konuk yazı); eticaretmerkezim ve zunapro hatırlatması
+- [ ] F — Kullanıcı: kendi tarayıcısında bir araç kullan → GA4 › Gerçek zamanlı'da tool_use görünüyor mu?
+- [ ] E — Kullanıcı kararı: üretim temposu (günde 2 → 1 TR + koşullu EN)
+
 ## Teknik (rapor: seo/seo-technical-audit.md)
 - [x] dist/server (SSR paketi + kopya sitemap/robots/llms) yayından çıkarıldı — 2026-10-23
 - [x] Markalı, noindex'li 404.html — 2026-10-23
