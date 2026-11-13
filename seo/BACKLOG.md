@@ -87,6 +87,10 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] F — Kullanıcı: kendi tarayıcısında bir araç kullan → GA4 › Gerçek zamanlı'da tool_use görünüyor mu?
 - [x] E — Kullanıcı kararı (13.11): günde 1 TR sayfa + EN yalnızca TR dizine girince
 
+## EN sürüm bekleyenler (13.11.2026 kararı: EN yalnızca TR dizine girince)
+İçerik görevi yeni TR sayfayı buraya ekler; veri görevi TR sayfayı URL Denetimi'nde dizinde görünce "EN yazılabilir" diye işaretler.
+Biçim: - [ ] /blog/<tr-slug>/ → planlanan EN slug · durum: bekliyor | EN yazılabilir (tarih)
+
 ## Teknik (rapor: seo/seo-technical-audit.md)
 - [x] dist/server (SSR paketi + kopya sitemap/robots/llms) yayından çıkarıldı — 2026-10-23
 - [x] Markalı, noindex'li 404.html — 2026-10-23
