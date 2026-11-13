@@ -2913,7 +2913,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "E-ticarette asıl karar marjı katkı marjıdır: aynı ürün kargo, ödeme komisyonu, paketleme ve iade sonrası %31 bırakır; başabaş ROAS = 1 / 0,31 ≈ 3,23. %20 indirim brüt marjı %45'ten %31,25'e düşürür ve aynı brüt kârı korumak için %80 daha fazla satış gerekir.",
     ],
     publishedAt: "2026-10-28",
-    readingMinutes: 8,
+    updatedAt: "2026-11-13",
+    readingMinutes: 10,
     tags: ["Kar Marjı", "Kar Marjı Hesaplama", "Kar Oranı", "Markup", "Brüt Kar Marjı", "Katkı Marjı", "Fiyatlandırma"],
     sections: [
       {
@@ -2951,6 +2952,27 @@ export const BLOG_POSTS: BlogPost[] = [
           "%100 markup (maliyetin iki katına satış) = %50 marj",
           "%150 markup = %60 marj",
           "%200 markup (maliyetin üç katına satış) = %66,7 marj",
+        ],
+      },
+      {
+        heading: "Kar marjı hesaplama örnekleri: 5 farklı işletme",
+        paragraphs: [
+          "Formül her sektörde aynıdır; değişen, marjın ne kadar yüksek olması gerektiğidir. Aşağıdaki örnek tutarlarda kâr, kar marjı ve kar oranı (markup) yan yana hesaplandı. Düşük marjlı işler (elektronik) hacimle, yüksek marjlı işler (yeme-içme, butik giyim) ise yüksek kira, personel ve fire giderlerini karşılamak için yüksek brüt marjla çalışır.",
+          "Örneklerdeki marjlar brüt marjdır; yalnızca ürün ya da doğrudan hizmet maliyeti düşülmüştür. Kira, personel, reklam ve kargo gibi giderler düşüldüğünde (katkı ve faaliyet marjı) oranlar belirgin şekilde azalır. Satış fiyatını ve maliyeti her zaman aynı bazda alın; birini indirimli, diğerini liste fiyatıyla karşılaştırmak marjı olduğundan yüksek gösterir.",
+        ],
+        bullets: [
+          "Butik tişört: 180 TL alış, 450 TL satış → kâr 270 TL, kar marjı %60, kar oranı %150",
+          "Kafe (latte): 38 TL malzeme maliyeti, 120 TL satış → kâr 82 TL, kar marjı %68,3, kar oranı %215,8",
+          "Elektronik (kulaklık): 1.700 TL alış, 2.000 TL satış → kâr 300 TL, kar marjı %15, kar oranı %17,6",
+          "Restoran (ana yemek): 95 TL malzeme maliyeti, 320 TL satış → kâr 225 TL, kar marjı %70,3, kar oranı %236,8",
+          "Ajans hizmeti: aylık 40.000 TL ücret, 26.000 TL doğrudan maliyet (serbest çalışan + yazılım) → kâr 14.000 TL, kar marjı %35, kar oranı %53,8",
+        ],
+      },
+      {
+        heading: "Ters hesap: hedef marja göre en fazla kaça alabilirsiniz?",
+        paragraphs: [
+          "Satış fiyatı pazar tarafından belirleniyorsa (rakip fiyatı, pazaryeri fiyat bandı) soruyu tersinden sorun: bu fiyattan satıp hedef marjımı korumak için ürünü en fazla kaça almalıyım? Formül: Maksimum alış maliyeti = Satış fiyatı × (1 − Hedef marj). 1.000 TL'ye satılacak bir üründe %45 brüt marj hedefiyle tedarikçiye en fazla 1.000 × 0,55 = 550 TL ödeyebilirsiniz.",
+          "Satış başına değişken giderleri de hesaba katmak için hedefi katkı marjı olarak koyun ve giderleri ayrıca düşün: Maksimum alış maliyeti = Satış fiyatı × (1 − Hedef katkı marjı) − Komisyon − Kargo − Diğer değişken giderler. Pazaryerinde 1.000 TL'ye satılan, %20 komisyon (200 TL) ve 90 TL kargo bedeli olan üründe %35 katkı marjı için alış maliyeti en fazla 1.000 × 0,65 − 200 − 90 = 360 TL olmalıdır. Tedarikçi 420 TL istiyorsa ya fiyatı yükseltmeniz, ya kargoyu (desiyi) düşürmeniz ya da marj hedefinden vazgeçmeniz gerekir; pazarlığa bu rakamla girin.",
         ],
       },
       {
@@ -3029,6 +3051,11 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "Brüt kar marjı ile net kar marjı arasındaki fark nedir?",
         answer:
           "Brüt kar marjı yalnızca satılan malın maliyetini düşer ve ürün düzeyindeki kârlılığı gösterir. Net kar marjı tüm işletme giderleri ve diğer kalemler düşüldükten sonra kalan oranı gösterir. E-ticarette ikisinin arasında, kargo, komisyon ve iade sonrası katkı marjına bakmak reklam kararları için en kullanışlısıdır.",
+      },
+      {
+        question: "Satış fiyatı belliyse maliyet en fazla ne olmalı?",
+        answer:
+          "Maksimum maliyet = Satış fiyatı × (1 − Hedef marj). 1.000 TL'lik satış fiyatı ve %45 hedef marj için en fazla 550 TL. Pazaryerinde komisyon ve kargoyu da düşün: %35 katkı marjı, 200 TL komisyon ve 90 TL kargoyla en fazla 1.000 × 0,65 − 200 − 90 = 360 TL.",
       },
       {
         question: "Kar marjı negatif çıkarsa ne anlama gelir?",
@@ -12125,10 +12152,10 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     slug: "trendyol-commission-rates",
-    seoTitle: "Trendyol Commission Rate 2026 by Category + Fee Formula",
+    seoTitle: "Trendyol Commission Rate 2026: 5–27% by Category",
     title: "Trendyol Commission Rates 2026: How Fees Are Calculated, Shipping Thresholds and Campaign Traps (With Examples)",
     description:
-      "Trendyol commission rates in 2026: category ranges, the commission formula, shipping thresholds and service fee, break-even price and a campaign offer example.",
+      "Trendyol commission rate by category in 2026 (phones 5–7%, apparel 18–23%), the fee formula, shipping thresholds and a worked TRY profit example.",
     category: "performans-pazarlama",
     tldr: [
       "Trendyol's commission depends on category, brand, seller and campaign; public 2026 compilations put most categories between 5% and 27% (phones 5–7%, cosmetics 15–20%, apparel and footwear 18–23%). The binding rate is the one in your seller panel's commission table.",
