@@ -65,6 +65,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 1; TR 13.11 istendi): /en/blog/turkish-carriers-dimensional-weight-rules/
 - [ ] Dizine ekleme isteği (2026-11-12 yeni yazı 2; TR 13.11 istendi): /en/blog/international-shipping-cost-dimensional-weight/
 - [ ] Dizine ekleme isteği (2026-11-12 güçlendirildi, TR önce): /ucretsiz-araclar/mrr-hesaplayici/ (MRR aracı v2), /en/free-tools/mrr-calculator/, /blog/mrr-nedir-nasil-hesaplanir/ ve /en/blog/what-is-mrr-how-to-calculate/ (3 hesap yöntemi bölümü)
+- [ ] Dizine ekleme isteği (2026-11-13 yeni yazı 1, TR önce): /blog/cpc-nedir-tiklama-basi-maliyet/, /en/blog/what-is-cpc-cost-per-click/
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28

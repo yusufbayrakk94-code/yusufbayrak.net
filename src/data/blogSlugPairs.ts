@@ -45,4 +45,5 @@ export const BLOG_SLUG_PAIRS: Array<{ tr: string; en: string }> = [
   { tr: "youtube-reklam-verme-rehberi", en: "how-to-run-youtube-ads" },
   { tr: "ptt-aras-yurtici-kargo-desi-hesaplama", en: "turkish-carriers-dimensional-weight-rules" },
   { tr: "yurtdisi-kargo-ucreti-hesaplama-desi", en: "international-shipping-cost-dimensional-weight" },
+  { tr: "cpc-nedir-tiklama-basi-maliyet", en: "what-is-cpc-cost-per-click" },
 ];

@@ -4644,6 +4644,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "CPC Nedir? Tıklama Başı Maliyet Hesaplama ve Düşürme", href: "/blog/cpc-nedir-tiklama-basi-maliyet/" },
       { label: "CTR Nedir? İyi Tıklama Oranı Kaç?", href: "/blog/ctr-nedir-iyi-tiklama-orani-kac/" },
       { label: "Google Ads Reklam Verme: İlk Kampanya Adım Adım", href: "/blog/google-ads-reklam-verme-rehberi/" },
       { label: "SEO Nedir, Nasıl Yapılır? (reklamla karşılaştırma hesabı)", href: "/blog/seo-nedir-nasil-yapilir/" },
@@ -7837,6 +7838,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "CPC Nedir? Tıklama Başı Maliyet", href: "/blog/cpc-nedir-tiklama-basi-maliyet/" },
       { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
       { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
       { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
@@ -8344,6 +8346,196 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "FedEx Türkiye: Boyutsal ağırlık", href: "https://www.fedex.com/tr-tr/shipping-channel/preparing-shipment/shipping-costs/dimensional-weight.html", external: true },
       { label: "PTT: Yurt dışı gönderi teklif formu", href: "https://www.ptt.gov.tr/gonderi-ucreti-hesaplama/InternationalOffer/InternationalOfferPage", external: true },
       { label: "Ticaret Bakanlığı: E-ihracatta lojistik ve gönderim işlemleri (PDF)", href: "https://ticaret.gov.tr/data/655626e913b876b1c00ec662/Mod%C3%BCl%2013%20-%20E-%C4%B0hracatta%20Lojistik%20ve%20G%C3%B6nderim%20%C4%B0%C5%9Flemleri%20-%20Ali%20CEYLAN%20-%2010%20Kas%C4%B1m.pdf", external: true },
+    ],
+  },
+  {
+    slug: "cpc-nedir-tiklama-basi-maliyet",
+    seoTitle: "CPC Nedir? Tıklama Başı Maliyet Hesaplama ve Düşürme",
+    title: "CPC Nedir? Tıklama Başı Maliyet Nasıl Hesaplanır, Ne Kadar Olmalı ve Nasıl Düşer?",
+    description:
+      "CPC (TBM) nedir, nasıl hesaplanır? Ortalama, gerçek ve maksimum TBM farkı, kârlı TBM sınırının formülü, CPC'nin neden yükseldiği ve nasıl düşürüleceği.",
+    category: "performans-pazarlama",
+    tldr: [
+      "CPC (cost per click), Türkçede TBM (tıklama başı maliyet), bir reklam tıklaması için ödediğiniz tutardır. Ortalama TBM = toplam reklam maliyeti ÷ tıklama sayısı. 6.000 TL harcama ve 1.500 tıklama = 4 TL.",
+      "Üç farklı TBM vardır: maksimum TBM sizin teklifinizdir, gerçek TBM Google'ın her tıklama için kestiği tutardır (altınızdaki rakibi ve eşiği geçmeye yetecek en düşük tutar), ortalama TBM ise raporlarda gördüğünüz ortalamadır.",
+      "Sizin için 'pahalı' TBM'yi rakamlar değil marjınız belirler: Başabaş TBM = sipariş başı katkı kârı × dönüşüm oranı. 1.000 TL sepet, %35 katkı marjı ve %1,5 dönüşümle sınır 5,25 TL'dir.",
+      "Düşük TBM tek başına başarı değildir: 3 TL'lik ama dönüşmeyen tıklama, 9 TL'lik ama %4 dönüşen tıklamadan daha pahalıya gelir. TBM'yi her zaman dönüşüm oranı, EBM ve ROAS ile birlikte okuyun.",
+    ],
+    publishedAt: "2026-11-13",
+    readingMinutes: 11,
+    tags: ["CPC", "TBM", "Tıklama Başı Maliyet", "Google Ads", "Meta Reklam", "Reklam Metrikleri"],
+    sections: [
+      {
+        heading: "CPC nedir? (Kısa cevap)",
+        paragraphs: [
+          "CPC, İngilizce cost per click ifadesinin kısaltmasıdır; Türkçede tıklama başı maliyet (Google Ads arayüzünde TBM) olarak geçer. İki anlamda kullanılır: bir ücretlendirme modeli olarak 'reklam gösterildiğinde değil, tıklandığında ödersiniz' demektir; bir metrik olarak da bir tıklamanın size ortalama kaça mal olduğunu gösterir.",
+          "Google'ın tanımıyla ortalama TBM, reklamınıza gelen tıklamalar için sizden alınan ortalama tutardır ve toplam tıklama maliyetinin toplam tıklama sayısına bölünmesiyle hesaplanır. Örnek: bir ayda 6.000 TL harcayıp 1.500 tıklama aldıysanız ortalama TBM 6.000 ÷ 1.500 = 4 TL'dir.",
+          "Bu yazıda TBM'nin üç türünü (maksimum, gerçek, ortalama), CPC'nin CPM, CTR, EBM ve ROAS ile matematiksel bağını, işletmeniz için kârlı TBM sınırının nasıl hesaplanacağını, TBM'nin neden yükseldiğini ve nasıl düşürüleceğini sayısal örneklerle bulacaksınız. Google Ads açık artırmasının ayrıntılı örneği için Google Ads nedir yazısına bakabilirsiniz.",
+        ],
+      },
+      {
+        heading: "CPC nasıl hesaplanır? Ortalama, gerçek ve maksimum TBM farkı",
+        paragraphs: [
+          "Formül: Ortalama TBM = toplam reklam maliyeti ÷ toplam tıklama. Birden fazla kampanyanın ortalamasını bulurken kampanyaların TBM'lerinin ortalamasını almayın; toplam harcamayı toplam tıklamaya bölün. 100 tıklamalı 2 TL'lik kampanya ile 1.000 tıklamalı 6 TL'lik kampanyanın 'ortalaması' 4 TL değil, (200 + 6.000) ÷ 1.100 ≈ 5,64 TL'dir.",
+          "Google Ads'te üç ayrı TBM kavramı vardır ve sık karıştırılır. Maksimum TBM, bir tıklama için ödemeye razı olduğunuz en yüksek tutardır, yani teklifinizdir. Gerçek TBM, bir tıklama için sizden kesilen nihai tutardır. Google'ın açıklamasına göre gerçek TBM genellikle maksimum teklifin belirgin şekilde altındadır: Reklam Sıralaması eşiklerini geçmek ve hemen altınızdaki reklamverenin önüne geçmek için gereken en düşük tutarı ödersiniz; altınızda uygun bir rakip yoksa rezerv fiyatı ödersiniz.",
+          "Maksimum teklifinizden fazlası kesilmez; istisnası otomatik teklif stratejileri ve teklif ayarlamalarıdır. Ayrıca sonuçların üstündeki konumların eşiği daha yüksek olduğu için üst konumlarda ödenen gerçek TBM, alttaki konumlardan genellikle daha yüksektir. Raporlarda gördüğünüz 'Ort. TBM' ise bu gerçek TBM'lerin dönem ortalamasıdır.",
+        ],
+        bullets: [
+          "Maksimum TBM: sizin belirlediğiniz üst sınır (teklif)",
+          "Gerçek TBM: tıklama başına kesilen tutar; rakiplere, kaliteye ve eşiğe göre her açık artırmada değişir",
+          "Ortalama TBM: dönem boyunca kesilen gerçek TBM'lerin ortalaması = maliyet ÷ tıklama",
+          "Otomatik teklifte (Dönüşümleri maksimize et, hedef EBM, hedef ROAS) tıklama bazında üst sınırı sistem belirler",
+        ],
+      },
+      {
+        heading: "CPC ile CPM, CTR, EBM ve ROAS arasındaki ilişki nedir?",
+        paragraphs: [
+          "TBM tek başına yüzen bir rakam değildir; reklam hunisinin ortasında durur ve dört formülle diğer metriklere bağlanır. Bu bağlantıları bilmek, TBM değiştiğinde sebebini bulmanızı ve hedefinizi geriye doğru hesaplamanızı sağlar.",
+          "Örnek (örnek tutarlar): bin gösterim 80 TL, tıklama oranı %1. TBM = 80 ÷ (0,01 × 1.000) = 8 TL. Dönüşüm oranı %2 ise satış başı maliyet 8 ÷ 0,02 = 400 TL olur. Ortalama sepet 1.200 TL ise ROAS = 1.200 × 0,02 ÷ 8 = 3'tür. Aynı kampanyada CTR %1,25'e çıkarsa TBM 6,40 TL'ye, EBM 320 TL'ye iner ve ROAS 3,75 olur.",
+        ],
+        bullets: [
+          "TBM = BGBM (CPM) ÷ (CTR × 1.000): gösterim bazlı ücretlendirilen kanallarda TBM'yi CTR belirler",
+          "EBM (CPA) = TBM ÷ dönüşüm oranı",
+          "ROAS = ortalama sipariş tutarı × dönüşüm oranı ÷ TBM",
+          "Lead başı maliyet (CPL) = TBM ÷ form dönüşüm oranı",
+        ],
+      },
+      {
+        heading: "Hangi TBM sizin için pahalı? Maksimum ve başabaş TBM hesabı",
+        paragraphs: [
+          "'İyi TBM kaç olmalı?' sorusunun tek doğru cevabı sizin ekonominizdir. 10 TL'lik tıklama, 3.000 TL'lik bir hizmet satan için ucuz, 150 TL'lik bir ürün satan için çok pahalı olabilir. Kârlı sınırı şu formül verir: Başabaş TBM = sipariş başı katkı kârı × dönüşüm oranı. Katkı kârı; satış fiyatından ürün maliyeti, kargo, ödeme komisyonu ve pazaryeri kesintisi gibi siparişe bağlı tüm değişken giderler düşüldükten sonra kalan tutardır.",
+          "Örnek (örnek tutarlar): ortalama sepet 1.000 TL, katkı marjı %35 → sipariş başı katkı kârı 350 TL. Dönüşüm oranı %1,5 ise başabaş TBM 350 × 0,015 = 5,25 TL'dir. Bu tutarın üstündeki her tıklama zarar ettirir. Reklamdan sonra cironun %10'u kâr olarak kalsın istiyorsanız reklama ayırabileceğiniz tutar 1.000 × (0,35 − 0,10) = 250 TL'ye iner ve hedef TBM 250 × 0,015 = 3,75 TL olur.",
+          "Dönüşüm oranı değiştikçe ödeyebileceğiniz TBM doğrusal olarak değişir. Bu yüzden açılış sayfasını iyileştirmek, çoğu zaman teklif kısmaktan daha çok TBM alanı açar: dönüşüm oranı %1,5'ten %2'ye çıkarsa aynı kârla tıklama başına 5 TL ödeyebilirsiniz.",
+        ],
+        bullets: [
+          "Dönüşüm %1 → başabaş TBM 3,50 TL · %10 kâr hedefiyle 2,50 TL",
+          "Dönüşüm %1,5 → başabaş TBM 5,25 TL · %10 kâr hedefiyle 3,75 TL",
+          "Dönüşüm %2 → başabaş TBM 7,00 TL · %10 kâr hedefiyle 5,00 TL",
+          "Dönüşüm %3 → başabaş TBM 10,50 TL · %10 kâr hedefiyle 7,50 TL",
+        ],
+      },
+      {
+        heading: "Düşük CPC her zaman iyi mi? Tıklama değeri hesabı",
+        paragraphs: [
+          "Hayır. Bir tıklamanın değeri = dönüşüm oranı × sipariş başı katkı kârı. TBM bu değerin altındaysa tıklama kâr, üstündeyse zarar getirir. Ucuz tıklamalar genellikle niyeti zayıf aramalardan, geniş kitlelerden ya da yanlışlıkla tıklamaya açık yerleşimlerden gelir.",
+          "Örnek (örnek tutarlar, sipariş başı katkı kârı 350 TL, 1.000 TL harcama): A kelime grubunda TBM 3 TL ama dönüşüm %0,5. 333 tıklama, yaklaşık 1,67 sipariş, 583 TL katkı kârı; sonuç yaklaşık 417 TL zarar. B kelime grubunda TBM 9 TL ve dönüşüm %4. 111 tıklama, yaklaşık 4,44 sipariş, 1.556 TL katkı kârı; sonuç yaklaşık 556 TL kâr. Tıklama başına bakınca A her tıklamada 1,25 TL kaybettirirken B 5 TL kazandırıyor.",
+          "Bu yüzden TBM'yi düşürmek amaç değil, araçtır. Asıl hedef, tıklama başına değer ile TBM arasındaki farkı büyütmektir. Google'ın kendi açıklaması da bunu destekler: satın alma niyeti güçlü sorgular (ör. belirli bir ürünü satın alma araması), bilgi amaçlı sorgulardan daha yüksek TBM'ye sahip olabilir, çünkü daha değerlidir.",
+        ],
+      },
+      {
+        heading: "Platformlara göre CPC: Google, Meta, LinkedIn, TikTok ve pazaryerleri",
+        paragraphs: [
+          "Her platform tıklamayı ve ücretlendirmeyi farklı tanımlar; bu yüzden kanallar arası TBM karşılaştırması dikkatli yapılmalı. Karşılaştırırken her zaman aynı tıklama tanımını (sitenize giden tıklama) ve aynı sonucu (satış, lead) esas alın.",
+        ],
+        bullets: [
+          "Google Ads arama: çoğunlukla tıklama başına ödenir; TBM, Reklam Sıralaması ve rakiplere göre her açık artırmada belirlenir",
+          "Meta (Facebook, Instagram): çoğu kampanya gösterim üzerinden ücretlendirilir; TBM bir sonuç metriğidir. 'TBM (tümü)' profil, beğeni gibi tüm tıklamaları sayar; 'TBM (bağlantı tıklaması başına maliyet)' yalnızca sitenize giden tıklamaları. Kıyas için ikincisini kullanın",
+          "LinkedIn: tıklama başına ya da bin gösterim başına teklif seçenekleri vardır; B2B hedeflemenin hassasiyeti nedeniyle TBM genellikle diğer kanallardan yüksektir, karşılaştırmayı lead başı maliyetle yapın",
+          "TikTok: açık artırmada çoğu kampanya sonuca (dönüşüm, tıklama, görüntüleme) göre optimize edilir; TBM'yi raporlardan izler, kararı EBM ile verirsiniz",
+          "Pazaryeri reklamları (Trendyol vb.): ürün reklamlarında tıklama başına ödenir; her ürünün başabaş TBM'si farklı olduğu için tek teklif tüm ürünlere uymaz",
+        ],
+      },
+      {
+        heading: "Ortalama CPC kaç? Kaynaklı referans ve Türkiye için tahmin",
+        paragraphs: [
+          "Türkiye için güvenilir, kamuya açık ve sektör bazlı bir TBM ortalaması yok; internette dolaşan 'ortalama TBM şu kadar TL' rakamlarının çoğu kaynaksızdır ve enflasyon nedeniyle hızla eskir. Kaynaklı bir referans olarak LocaliQ'nun Nisan 2024–Mart 2025 arasında 16.000'den fazla ABD kampanyasını inceleyen raporunda arama reklamlarının tüm sektör ortalaması TBM 5,26 $, ortalama CTR %6,66 ve ortalama dönüşüm oranı %7,52'dir. Bu rakamlar ABD pazarını yansıtır; TL'ye çevirip hedef olarak kullanmayın.",
+          "Kendi pazarınız için en sağlam tahmin Google Ads Anahtar Kelime Planlayıcı'dır: kelimelerinizin 'Sayfanın üst kısmı teklifi (düşük aralık)' ve '(yüksek aralık)' sütunları, o kelimede üst konumlar için reklamverenlerin geçmişte ödediği TBM aralığını gösterir. Bu aralığı yukarıdaki başabaş TBM ile karşılaştırın: aralığın alt ucu bile başabaşınızın üstündeyse o kelimede kârlı olmak için önce dönüşüm oranını ya da sepet tutarını büyütmeniz gerekir.",
+          "TL bazında dönemler arası TBM kıyaslarken enflasyonu hesaba katın. Geçen yılın aynı ayına göre TBM'nin artması, gerçek rekabet artışından değil genel fiyat artışından kaynaklanabilir; bu yüzden TBM'yi her zaman ortalama sepet ve marjla aynı dönemde okuyun.",
+        ],
+      },
+      {
+        heading: "CPC neden yükselir? 6 adımlık teşhis",
+        paragraphs: [
+          "TBM birden yükseldiğinde teklifi hemen düşürmek yerine önce sebebi bulun. Aşağıdaki sırayla kontrol etmek çoğu durumda sorunu birkaç dakikada ortaya çıkarır.",
+        ],
+        bullets: [
+          "1. Gösterim bazlı kanallarda (Meta, TikTok) BGBM mi arttı, CTR mi düştü? TBM = BGBM ÷ (CTR × 1.000); BGBM sabitken CTR düşüşü TBM'yi doğrudan artırır, genellikle kreatif yorgunluğu demektir",
+          "2. Sezon ve rekabet: Kasım indirimleri ve Black Friday gibi dönemlerde açık artırmaya daha çok reklamveren girer; Google da yoğun talep dönemlerinde maliyetin yükselebileceğini belirtir",
+          "3. Teklif stratejisi değişti mi? Google'a göre 'Tıklamaları maksimize et' daha düşük TBM getirebilirken 'Dönüşümleri maksimize et' daha yüksek TBM ile sonuçlanabilir; bu her zaman kötü değildir, EBM'ye bakın",
+          "4. Arama terimleri raporu: eşleme türü genişledi ya da yeni, pahalı ve alakasız sorgular mı giriyor?",
+          "5. Kalite: beklenen tıklama oranı, reklam alaka düzeyi ya da açılış sayfası deneyimi düştü mü? Google, alakalı reklamların ve faydalı açılış sayfalarının ödediğiniz gerçek fiyatı düşürebileceğini söyler",
+          "6. Hedefleme: yeni bir konum, cihaz ya da saat dilimi eklendi mi? Rekabetin yoğun olduğu bölgelerde maliyet genellikle daha yüksektir",
+        ],
+      },
+      {
+        heading: "CPC nasıl düşürülür? Kârı koruyan 10 yöntem",
+        paragraphs: [
+          "Aşağıdaki yöntemler TBM'yi düşürürken tıklamanın değerini korumaya odaklanır. Önce en çok harcayan kampanya ya da kelimelerde uygulayın ve her değişikliğin etkisini en az iki hafta izleyin.",
+        ],
+        bullets: [
+          "Negatif anahtar kelime ekleyin: arama terimleri raporundaki alakasız sorgular hem bütçeyi hem CTR'yi düşürür",
+          "Reklam metnini aramayla eşleştirin: aranan ifade başlıkta olsun; beklenen tıklama oranı ve reklam alaka düzeyi Kalite Puanı'nın bileşenleridir",
+          "Açılış sayfasını reklamın vaadine uydurun: aynı ürün, aynı fiyat, hızlı mobil sayfa; açılış sayfası deneyimi de kaliteyi belirler",
+          "Marka ve marka dışı kampanyaları ayırın: marka aramalarının düşük TBM'si genel ortalamayı yapay olarak düşük gösterir",
+          "Reklam öğelerini kullanın (site bağlantıları, açıklama metinleri, yapılandırılmış snippet): reklam büyür, CTR artar",
+          "Saat ve cihaz raporuna göre dönüşmeyen dilimlerde teklifi azaltın ya da reklamı kapatın",
+          "Manuel ya da 'Tıklamaları maksimize et' kullanıyorsanız başabaş hesabınızdan çıkan maksimum TBM sınırını girin",
+          "Meta ve TikTok'ta kreatifi düzenli yenileyin; sıklık arttıkça CTR düşer ve TBM yükselir",
+          "Kitleyi zorla daraltmayın: çok dar kitle açık artırmada rekabeti artırıp BGBM'yi yükseltebilir; dar kitle her zaman ucuz değildir",
+          "Dönüşüm oranını artırın: TBM'yi düşürmese de ödeyebileceğiniz TBM'yi yükseltir ve aynı TBM'yi kârlı hale getirir",
+        ],
+      },
+      {
+        heading: "PPC ile CPC farkı nedir? AdSense'teki TBM ne anlama gelir?",
+        paragraphs: [
+          "PPC (pay per click, tıklama başına ödeme) bir reklam modelinin adıdır; CPC ise bu modelde bir tıklamanın maliyetidir. 'PPC kampanyası' dediğinizde tıklama bazlı reklamı, 'CPC'si 6 TL' dediğinizde tıklama başı maliyeti kastedersiniz.",
+          "Yayıncı tarafında, örneğin Google AdSense raporlarında da TBM terimi geçer; orada reklamverenin ödediği değil, sitenizdeki bir reklam tıklamasından yayıncının ortalama ne kazandığı anlamına gelir. Bu yazıdaki hesaplar reklamveren tarafı içindir.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "CPC ne demek?",
+        answer:
+          "CPC, cost per click yani tıklama başı maliyet (TBM) demektir. Bir reklam tıklaması için ödediğiniz tutarı ifade eder. Ortalama TBM = toplam reklam maliyeti ÷ tıklama sayısı.",
+      },
+      {
+        question: "TBM nasıl hesaplanır?",
+        answer:
+          "Toplam reklam harcamasını toplam tıklama sayısına bölün. Örneğin 6.000 TL harcayıp 1.500 tıklama aldıysanız TBM = 6.000 ÷ 1.500 = 4 TL'dir. Birden fazla kampanyanın toplamı için TBM'lerin ortalamasını değil, toplam harcamayı toplam tıklamaya bölün.",
+      },
+      {
+        question: "Gerçek TBM ile maksimum TBM arasındaki fark nedir?",
+        answer:
+          "Maksimum TBM sizin teklifinizdir, yani bir tıklamaya ödemeye razı olduğunuz en yüksek tutar. Gerçek TBM ise Google'ın kestiği tutardır: Reklam Sıralaması eşiğini ve hemen altınızdaki reklamvereni geçmeye yetecek en düşük tutar. Otomatik teklif ve teklif ayarlamaları dışında maksimum teklifinizden fazlası kesilmez.",
+      },
+      {
+        question: "İyi bir TBM kaç TL olmalı?",
+        answer:
+          "Sabit bir rakam yoktur; sınırı marjınız ve dönüşüm oranınız belirler. Başabaş TBM = sipariş başı katkı kârı × dönüşüm oranı. 350 TL katkı kârı ve %1,5 dönüşümle başabaş TBM 5,25 TL'dir; bunun altındaki her TBM kârlıdır.",
+      },
+      {
+        question: "TBM nasıl düşürülür?",
+        answer:
+          "Negatif anahtar kelimelerle alakasız aramaları eleyin, reklam metnini aranan ifadeyle eşleştirin, açılış sayfasını reklamın vaadine uydurun, reklam öğelerini kullanın ve dönüşmeyen saat/cihaz dilimlerinde teklifi azaltın. Meta ve TikTok'ta kreatifi yenilemek CTR'yi artırarak TBM'yi düşürür.",
+      },
+    ],
+    howTo: {
+      name: "Kampanyanız için kârlı maksimum TBM nasıl hesaplanır?",
+      description: "Sepet tutarı, katkı marjı ve dönüşüm oranından beş adımda maksimum TBM.",
+      steps: [
+        { name: "Ortalama sipariş tutarını bulun", text: "Son 3 ayın ciro toplamını sipariş sayısına bölün; iadeleri düşülmüş ciroyu kullanın." },
+        { name: "Sipariş başı katkı kârını hesaplayın", text: "Satış fiyatından ürün maliyeti, kargo, ödeme komisyonu ve pazaryeri kesintisi gibi siparişe bağlı değişken giderleri düşün." },
+        { name: "Kâr hedefinizi ayırın", text: "Reklamdan sonra kalmasını istediğiniz kâr payını katkı kârından çıkarın; kalan tutar sipariş başına reklama ayırabileceğiniz maksimum tutardır." },
+        { name: "Dönüşüm oranıyla çarpın", text: "Reklam trafiğinin dönüşüm oranını (satış ÷ tıklama) bu tutarla çarpın; sonuç ödeyebileceğiniz maksimum TBM'dir." },
+        { name: "Planlayıcı aralığıyla karşılaştırın", text: "Anahtar Kelime Planlayıcı'daki sayfanın üst kısmı teklif aralığını bu sınırla kıyaslayın; aralık sınırın üstündeyse önce dönüşüm oranını ya da sepet tutarını iyileştirin." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Reklam Bütçesi Hesaplama", href: "/ucretsiz-araclar/reklam-butcesi-hesaplama/" },
+      { label: "ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Kar Marjı Hesaplama", href: "/ucretsiz-araclar/brut-kar-marji-hesaplayici/" },
+      { label: "Dönüşüm Oranı Hesaplayıcı", href: "/ucretsiz-araclar/donusum-orani-hesaplayici/" },
+      { label: "Google Ads Nedir, Nasıl Çalışır?", href: "/blog/google-ads-nedir-nasil-calisir/" },
+      { label: "CTR Nedir? İyi Tıklama Oranı Kaç?", href: "/blog/ctr-nedir-iyi-tiklama-orani-kac/" },
+      { label: "CPL Nedir? Lead Başı Maliyet", href: "/blog/cpl-nedir-lead-basi-maliyet/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "Trendyol Reklamları Nasıl Verilir?", href: "/blog/trendyol-reklam-nasil-verilir/" },
+      { label: "Black Friday 2026 Reklam Planı", href: "/blog/black-friday-2026-reklam-plani/" },
+      { label: "Google Ads Yardım: Gerçek TBM", href: "https://support.google.com/google-ads/answer/6297", external: true },
+      { label: "Google Ads Yardım: Ortalama TBM", href: "https://support.google.com/google-ads/answer/14074", external: true },
+      { label: "Google: Google Ads maliyeti nasıl belirlenir?", href: "https://business.google.com/tr/resources/articles/google-ads-cost/", external: true },
     ],
   },
 ];
@@ -12505,6 +12697,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     ],
     relatedToolKey: "ad-budget",
     resources: [
+      { label: "What Is CPC? Cost Per Click Formula and How to Lower It", href: "/en/blog/what-is-cpc-cost-per-click/" },
       { label: "What Is CTR? What Is a Good Click-Through Rate?", href: "/en/blog/what-is-ctr-good-click-through-rate/" },
       { label: "How to Run Google Ads: First Campaign Step by Step", href: "/en/blog/how-to-run-google-ads-first-campaign/" },
       { label: "What Is SEO and How Do You Do It? (ads comparison math)", href: "/en/blog/what-is-seo-how-to-do-it/" },
@@ -15537,6 +15730,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     },
     relatedToolKey: "roas",
     resources: [
+      { label: "What Is CPC? Cost Per Click", href: "/en/blog/what-is-cpc-cost-per-click/" },
       { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
       { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
       { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
@@ -16040,6 +16234,195 @@ export const BLOG_POSTS_EN: BlogPost[] = [
       { label: "DHL Express Türkiye 2026 Service and Rate Guide (PDF)", href: "https://mydhl.express.dhl/content/dam/downloads/tr/en/rate-guide/service_and_rate_guide_tr_en_2026.pdf", external: true },
       { label: "FedEx Türkiye: Dimensional weight (Turkish)", href: "https://www.fedex.com/tr-tr/shipping-channel/preparing-shipment/shipping-costs/dimensional-weight.html", external: true },
       { label: "PTT: International shipment quote form", href: "https://www.ptt.gov.tr/gonderi-ucreti-hesaplama/InternationalOffer/InternationalOfferPage", external: true },
+    ],
+  },
+  {
+    slug: "what-is-cpc-cost-per-click",
+    seoTitle: "What Is CPC? Cost Per Click Formula and How to Lower It",
+    title: "What Is CPC? How Cost Per Click Is Calculated, What It Should Be and How to Lower It",
+    description:
+      "What is CPC (cost per click)? Average vs actual vs max CPC, the break-even CPC formula, why CPC rises and 10 ways to lower it without losing profit.",
+    category: "performans-pazarlama",
+    tldr: [
+      "CPC (cost per click) is what you pay for one ad click. Average CPC = total ad cost ÷ clicks. $6,000 spend and 1,500 clicks = $4.",
+      "There are three CPCs: max CPC is your bid, actual CPC is what Google charges per click (the least needed to clear Ad Rank thresholds and beat the advertiser below you), and average CPC is the reporting average.",
+      "Your margin, not a benchmark, decides what is 'expensive': Break-even CPC = contribution profit per order × conversion rate. A $200 basket, 35% contribution margin and 1.5% conversion rate gives a $1.05 ceiling.",
+      "Low CPC alone is not success: a $0.60 click that never converts costs more than a $1.80 click that converts at 4%. Always read CPC with conversion rate, CPA and ROAS.",
+    ],
+    publishedAt: "2026-11-13",
+    readingMinutes: 10,
+    tags: ["CPC", "Cost Per Click", "Google Ads", "Meta Ads", "PPC", "Ad Metrics"],
+    sections: [
+      {
+        heading: "What is CPC? (Short answer)",
+        paragraphs: [
+          "CPC stands for cost per click. It is used in two ways: as a pricing model it means you pay when someone clicks your ad rather than when it is shown; as a metric it tells you what one click costs you on average.",
+          "Google defines average CPC as the average amount you have been charged for a click on your ad, calculated by dividing the total cost of your clicks by the total number of clicks. Example: $6,000 spent and 1,500 clicks received in a month gives an average CPC of $6,000 ÷ 1,500 = $4.",
+          "This guide covers the three kinds of CPC (max, actual, average), how CPC links mathematically to CPM, CTR, CPA and ROAS, how to calculate the CPC ceiling that keeps your business profitable, why CPC rises and how to lower it, all with worked examples. For a detailed walkthrough of the Google Ads auction, see our What is Google Ads guide.",
+        ],
+      },
+      {
+        heading: "How is CPC calculated? Average vs actual vs max CPC",
+        paragraphs: [
+          "Formula: Average CPC = total ad cost ÷ total clicks. When combining campaigns, do not average their CPCs; divide total spend by total clicks. A $2 campaign with 100 clicks and a $6 campaign with 1,000 clicks do not average $4; the real figure is ($200 + $6,000) ÷ 1,100 ≈ $5.64.",
+          "Google Ads uses three CPC terms that are often confused. Max CPC is the most you are willing to pay for a click, i.e. your bid. Actual CPC is the final amount you are charged for a click. According to Google, actual CPC is usually well below your max bid: you pay the least needed to clear Ad Rank thresholds and outrank the advertiser just below you; if no eligible competitor sits below you, you pay the reserve price.",
+          "You are never charged more than your max CPC, except with automated bidding or bid adjustments. Because positions above the search results have higher thresholds, actual CPC there is often higher than for ads below the results. The 'Avg. CPC' column in reports is the average of these actual CPCs over the period.",
+        ],
+        bullets: [
+          "Max CPC: the ceiling you set (your bid)",
+          "Actual CPC: what each click is charged; changes every auction with competitors, quality and thresholds",
+          "Average CPC: the period average of actual CPCs = cost ÷ clicks",
+          "With automated bidding (Maximize conversions, target CPA, target ROAS) the system sets per-click limits",
+        ],
+      },
+      {
+        heading: "How does CPC relate to CPM, CTR, CPA and ROAS?",
+        paragraphs: [
+          "CPC sits in the middle of the ad funnel and connects to the other metrics through four formulas. Knowing them lets you find the cause when CPC moves and work your targets backwards.",
+          "Example (illustrative figures): CPM is $16 and CTR is 1%. CPC = $16 ÷ (0.01 × 1,000) = $1.60. At a 2% conversion rate, cost per sale is $1.60 ÷ 0.02 = $80. With a $240 average order, ROAS = $240 × 0.02 ÷ $1.60 = 3. If CTR rises to 1.25% in the same campaign, CPC drops to $1.28, CPA to $64 and ROAS rises to 3.75.",
+        ],
+        bullets: [
+          "CPC = CPM ÷ (CTR × 1,000): on impression-priced channels, CTR drives CPC",
+          "CPA = CPC ÷ conversion rate",
+          "ROAS = average order value × conversion rate ÷ CPC",
+          "Cost per lead (CPL) = CPC ÷ form conversion rate",
+        ],
+      },
+      {
+        heading: "What CPC is too expensive for you? Max and break-even CPC",
+        paragraphs: [
+          "The only correct answer to 'what is a good CPC?' is your own unit economics. A $5 click is cheap for a $3,000 service and ruinous for a $30 product. The profitable ceiling is: Break-even CPC = contribution profit per order × conversion rate. Contribution profit is the selling price minus every order-level variable cost: product cost, shipping, payment fees and marketplace commission.",
+          "Example (illustrative figures): average order $200, contribution margin 35% → $70 contribution per order. At a 1.5% conversion rate, break-even CPC is $70 × 0.015 = $1.05. Every click above that loses money. If you want 10% of revenue left as profit after ads, your ad allowance drops to $200 × (0.35 − 0.10) = $50 per order and your target CPC becomes $50 × 0.015 = $0.75.",
+          "The CPC you can afford scales linearly with conversion rate. That is why improving the landing page often creates more CPC headroom than cutting bids: lift conversion from 1.5% to 2% and you can pay $1.00 per click at the same profit.",
+        ],
+        bullets: [
+          "1% conversion → break-even CPC $0.70 · $0.50 with a 10% profit target",
+          "1.5% conversion → break-even CPC $1.05 · $0.75 with a 10% profit target",
+          "2% conversion → break-even CPC $1.40 · $1.00 with a 10% profit target",
+          "3% conversion → break-even CPC $2.10 · $1.50 with a 10% profit target",
+        ],
+      },
+      {
+        heading: "Is a low CPC always good? Value per click",
+        paragraphs: [
+          "No. Value per click = conversion rate × contribution profit per order. If CPC is below that value the click earns money; above it, the click loses money. Cheap clicks usually come from low-intent searches, broad audiences or placements prone to accidental taps.",
+          "Example (illustrative figures, $70 contribution per order, $200 spend): keyword group A has a $0.60 CPC but converts at 0.5%. 333 clicks, about 1.67 orders, $117 contribution: roughly an $83 loss. Group B has a $1.80 CPC and converts at 4%. 111 clicks, about 4.44 orders, $311 contribution: roughly a $111 profit. Per click, A loses $0.25 while B earns $1.00.",
+          "So lowering CPC is a means, not the goal. The goal is to widen the gap between value per click and CPC. Google says as much: searches with strong purchase intent can carry higher CPCs than informational searches because they are worth more.",
+        ],
+      },
+      {
+        heading: "CPC by platform: Google, Meta, LinkedIn, TikTok and marketplaces",
+        paragraphs: [
+          "Each platform defines clicks and charging differently, so compare CPC across channels carefully. Always use the same click definition (clicks to your site) and the same outcome (sale, lead).",
+        ],
+        bullets: [
+          "Google Ads search: mostly pay per click; CPC is set in each auction by Ad Rank and competitors",
+          "Meta (Facebook, Instagram): most campaigns are charged on impressions; CPC is an outcome metric. 'CPC (all)' counts every click including profile and likes; 'CPC (cost per link click)' counts only clicks to your site. Use the latter for comparisons",
+          "LinkedIn: offers cost-per-click or cost-per-thousand-impressions bidding; B2B targeting precision usually means higher CPCs, so compare on cost per lead",
+          "TikTok: most auction campaigns optimise for a result (conversion, click, view); monitor CPC in reports, decide on CPA",
+          "Marketplace ads (Amazon, Trendyol etc.): product ads are paid per click; each product has its own break-even CPC, so one bid does not fit all",
+        ],
+      },
+      {
+        heading: "What is the average CPC? A sourced benchmark and how to estimate yours",
+        paragraphs: [
+          "As a sourced reference, LocaliQ's report covering more than 16,000 US campaigns from April 2024 to March 2025 puts the all-industry average search CPC at $5.26, with an average CTR of 6.66% and an average conversion rate of 7.52%. These are US figures and vary widely by industry; treat them as context, not a target.",
+          "For your own market, Google Ads Keyword Planner is the most reliable estimate: the 'Top of page bid (low range)' and '(high range)' columns show the CPC range advertisers have historically paid for top positions on a keyword. Compare that range with your break-even CPC above. If even the low end exceeds your ceiling, raise conversion rate or order value before competing on that keyword.",
+          "When comparing CPC year over year, account for inflation and currency. A higher CPC than last year may reflect general price increases rather than more competition, so always read CPC alongside average order value and margin for the same period.",
+        ],
+      },
+      {
+        heading: "Why is my CPC increasing? A 6-step diagnosis",
+        paragraphs: [
+          "When CPC jumps, find the cause before cutting bids. Checking in this order usually surfaces the problem within minutes.",
+        ],
+        bullets: [
+          "1. On impression-priced channels (Meta, TikTok), did CPM rise or CTR fall? CPC = CPM ÷ (CTR × 1,000); a CTR drop at a steady CPM raises CPC directly and usually signals creative fatigue",
+          "2. Season and competition: during November sales and Black Friday more advertisers enter the auction; Google also notes costs can rise in high-demand periods",
+          "3. Did the bid strategy change? Google says Maximize clicks can deliver lower CPCs while Maximize conversions may produce higher CPCs; that is not always bad, check CPA",
+          "4. Search terms report: did match types broaden or did new, expensive, irrelevant queries creep in?",
+          "5. Quality: did expected CTR, ad relevance or landing page experience drop? Google says relevant ads and useful landing pages can lower the actual price you pay per click",
+          "6. Targeting: did you add a location, device or time slot? Costs are usually higher where demand or competition is high",
+        ],
+      },
+      {
+        heading: "How to lower CPC: 10 methods that protect profit",
+        paragraphs: [
+          "The methods below lower CPC while protecting the value of each click. Start with the highest-spending campaigns or keywords and watch each change for at least two weeks.",
+        ],
+        bullets: [
+          "Add negative keywords: irrelevant queries in the search terms report waste budget and drag CTR down",
+          "Match ad copy to the search: put the searched phrase in the headline; expected CTR and ad relevance are Quality Score components",
+          "Align the landing page with the ad's promise: same product, same price, fast mobile page; landing page experience also drives quality",
+          "Separate brand and non-brand campaigns: cheap brand clicks make the overall average look artificially low",
+          "Use assets (sitelinks, callouts, structured snippets): larger ads earn higher CTR",
+          "Lower bids or pause ads in hour and device segments that do not convert",
+          "On manual bidding or Maximize clicks, set the max CPC limit from your break-even calculation",
+          "Refresh creatives regularly on Meta and TikTok; as frequency rises, CTR falls and CPC climbs",
+          "Do not over-narrow audiences: a very small audience can raise auction competition and CPM; narrow is not always cheap",
+          "Raise conversion rate: it does not lower CPC itself but raises the CPC you can afford and makes the same CPC profitable",
+        ],
+      },
+      {
+        heading: "What is the difference between PPC and CPC? What does CPC mean in AdSense?",
+        paragraphs: [
+          "PPC (pay per click) is the name of an advertising model; CPC is the cost of a click within that model. 'A PPC campaign' refers to click-based advertising, while 'a $1.50 CPC' refers to cost per click.",
+          "On the publisher side, Google AdSense reports also show CPC; there it means what the publisher earns on average from an ad click on their site, not what the advertiser pays. The calculations in this guide are for advertisers.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What does CPC mean?",
+        answer:
+          "CPC means cost per click: the amount you pay for one ad click. Average CPC = total ad cost ÷ number of clicks.",
+      },
+      {
+        question: "How do you calculate CPC?",
+        answer:
+          "Divide total ad spend by total clicks. If you spent $6,000 and got 1,500 clicks, CPC = $6,000 ÷ 1,500 = $4. For several campaigns combined, divide total spend by total clicks rather than averaging CPCs.",
+      },
+      {
+        question: "What is the difference between actual CPC and max CPC?",
+        answer:
+          "Max CPC is your bid, the most you are willing to pay for a click. Actual CPC is what Google charges: the least needed to clear the Ad Rank threshold and beat the advertiser just below you. Except with automated bidding and bid adjustments, you are never charged more than your max bid.",
+      },
+      {
+        question: "What is a good CPC?",
+        answer:
+          "There is no universal number; your margin and conversion rate set the limit. Break-even CPC = contribution profit per order × conversion rate. With $70 contribution and a 1.5% conversion rate the break-even CPC is $1.05; anything below it is profitable.",
+      },
+      {
+        question: "How can I lower my CPC?",
+        answer:
+          "Exclude irrelevant searches with negative keywords, match ad copy to the searched phrase, align the landing page with the ad, use ad assets and cut bids in hour or device segments that do not convert. On Meta and TikTok, refreshing creatives lifts CTR and lowers CPC.",
+      },
+    ],
+    howTo: {
+      name: "How to calculate a profitable max CPC for your campaign",
+      description: "Five steps from order value, contribution margin and conversion rate to a max CPC.",
+      steps: [
+        { name: "Find your average order value", text: "Divide the last three months of revenue (net of returns) by the number of orders." },
+        { name: "Calculate contribution profit per order", text: "Subtract order-level variable costs such as product cost, shipping, payment fees and marketplace commission from the selling price." },
+        { name: "Set aside your profit target", text: "Subtract the profit you want to keep after ads from contribution profit; the remainder is the most you can spend on ads per order." },
+        { name: "Multiply by conversion rate", text: "Multiply that amount by the conversion rate of ad traffic (sales ÷ clicks); the result is the maximum CPC you can afford." },
+        { name: "Compare with Keyword Planner", text: "Compare Keyword Planner's top-of-page bid range with this ceiling; if the range is above it, improve conversion rate or order value first." },
+      ],
+    },
+    relatedToolKey: "ad-budget",
+    resources: [
+      { label: "Ad Budget Calculator", href: "/en/free-tools/ad-budget-calculator/" },
+      { label: "ROAS Calculator", href: "/en/free-tools/roas-calculator/" },
+      { label: "Gross Profit Margin Calculator", href: "/en/free-tools/gross-profit-margin-calculator/" },
+      { label: "Conversion Rate Calculator", href: "/en/free-tools/conversion-rate-calculator/" },
+      { label: "What Is Google Ads and How Does It Work?", href: "/en/blog/what-is-google-ads-how-it-works/" },
+      { label: "What Is CTR? Good Click-Through Rate", href: "/en/blog/what-is-ctr-good-click-through-rate/" },
+      { label: "What Is CPL? Cost Per Lead", href: "/en/blog/what-is-cpl-cost-per-lead/" },
+      { label: "What Is ROAS and How to Calculate It", href: "/en/blog/what-is-roas-how-to-calculate/" },
+      { label: "Black Friday 2026 Ad Plan", href: "/en/blog/black-friday-2026-ad-plan/" },
+      { label: "Google Ads Help: Actual CPC", href: "https://support.google.com/google-ads/answer/6297?hl=en", external: true },
+      { label: "Google Ads Help: Average CPC", href: "https://support.google.com/google-ads/answer/14074?hl=en", external: true },
+      { label: "Google: How much does Google Ads cost?", href: "https://business.google.com/uk/resources/articles/google-ads-cost/", external: true },
     ],
   },
 ];

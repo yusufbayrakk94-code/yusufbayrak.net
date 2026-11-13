@@ -675,6 +675,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yusufbayrak.net/blog/cpc-nedir-tiklama-basi-maliyet/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/cpc-nedir-tiklama-basi-maliyet/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-cpc-cost-per-click/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/cpc-nedir-tiklama-basi-maliyet/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yusufbayrak.net/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/" />
@@ -1332,6 +1341,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/international-shipping-cost-dimensional-weight/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/yurtdisi-kargo-ucreti-hesaplama-desi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/yurtdisi-kargo-ucreti-hesaplama-desi/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yusufbayrak.net/en/blog/what-is-cpc-cost-per-click/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yusufbayrak.net/en/blog/what-is-cpc-cost-per-click/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://yusufbayrak.net/blog/cpc-nedir-tiklama-basi-maliyet/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yusufbayrak.net/blog/cpc-nedir-tiklama-basi-maliyet/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

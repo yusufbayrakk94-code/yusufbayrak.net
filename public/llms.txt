@@ -101,6 +101,7 @@
 - [YouTube Reklam Verme Rehberi: Reklam Türleri, Fiyatlandırma, TL Bütçe Örneği ve Adım Adım Kurulum](https://yusufbayrak.net/blog/youtube-reklam-verme-rehberi/): YouTube'da reklam nasıl verilir? Güncel reklam türleri, TBG ve BGBM ile ödeme, TL bütçe örneği, Google Ads'te adım adım kurulum ve dönüşüm ölçümü.
 - [PTT, Aras, Yurtiçi ve MNG Kargo Desi Hesaplama: Firmaların Desi Kuralları Karşılaştırması](https://yusufbayrak.net/blog/ptt-aras-yurtici-kargo-desi-hesaplama/): PTT, Aras, Yurtiçi ve MNG Kargo desiyi nasıl hesaplıyor? Bölen, 30 desi üstü, ağır gönderi eşiği, kabul sınırları, bant tarifesi ve desi itirazı örneklerle.
 - [Yurtdışı Kargo Ücreti Nasıl Hesaplanır? 5000 Böleni, 0,5 kg Yuvarlama, Ek Ücretler ve PTT Küçük Paket](https://yusufbayrak.net/blog/yurtdisi-kargo-ucreti-hesaplama-desi/): Yurtdışı kargo ücreti hesaplama: 5000 bölenli desi, 0,5 kg yuvarlama, bölge, yakıt ve uzak bölge ek ücretleri, PTT küçük paket ve kutu küçültme örnekleri.
+- [CPC Nedir? Tıklama Başı Maliyet Nasıl Hesaplanır, Ne Kadar Olmalı ve Nasıl Düşer?](https://yusufbayrak.net/blog/cpc-nedir-tiklama-basi-maliyet/): CPC (TBM) nedir, nasıl hesaplanır? Ortalama, gerçek ve maksimum TBM farkı, kârlı TBM sınırının formülü, CPC'nin neden yükseldiği ve nasıl düşürüleceği.
 
 ## English
 
@@ -178,6 +179,7 @@
 - [How to Run YouTube Ads: Ad Formats, Pricing, a Budget Example and Step-by-Step Setup](https://yusufbayrak.net/en/blog/how-to-run-youtube-ads/): How do you advertise on YouTube? Current ad formats, paying by CPV and CPM, a worked budget example, step-by-step Google Ads setup and conversion measurement.
 - [PTT, Aras, Yurtiçi and MNG: How Turkish Carriers Calculate Dimensional Weight (Desi)](https://yusufbayrak.net/en/blog/turkish-carriers-dimensional-weight-rules/): How PTT, Aras, Yurtiçi and MNG calculate desi: the 3000 divisor, pricing above 30, heavy-shipment thresholds, size limits, price bands and desi disputes.
 - [How to Calculate International Shipping Cost: the 5000 Divisor, 0.5 kg Rounding, Surcharges and Small Packets](https://yusufbayrak.net/en/blog/international-shipping-cost-dimensional-weight/): Calculate international shipping cost: volumetric weight with the 5000 divisor, 0.5 kg rounding, zones, fuel and remote-area surcharges, plus box-size examples.
+- [What Is CPC? How Cost Per Click Is Calculated, What It Should Be and How to Lower It](https://yusufbayrak.net/en/blog/what-is-cpc-cost-per-click/): What is CPC (cost per click)? Average vs actual vs max CPC, the break-even CPC formula, why CPC rises and 10 ways to lower it without losing profit.
 - [ARR vs MRR: What's the Difference?](https://yusufbayrak.net/en/blog/arr-vs-mrr-difference/): A short, clear comparison of Annual and Monthly Recurring Revenue — the formula, when to use each, and the mistakes that distort both.
 
 ## İletişim
