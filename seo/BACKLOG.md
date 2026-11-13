@@ -76,8 +76,8 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] EN sayfalar 50-90. sıralarda: EN için öncelik düşük, TR kümesine odaklan
 
 ## Yol haritası işleri (13.11.2026, seo/GOALS.md › Yol haritası)
-- [ ] C1 — Blog paragraf ve maddelerinde `[metin](/yol/)` metin içi link desteği (BlogPost.tsx; prerender'da gerçek <a>), test + build
-- [ ] C2 — "Nedir" sayfalarına 3-5 ilgili yazıdan sorgu metniyle bağlamsal link (cac, ltv, mrr, utm, roas, google ads, ctr, churn, geo)
+- [x] C1 — (13.11 yapıldı) Blog paragraf ve maddelerinde `[metin](/yol/)` metin içi link desteği (BlogPost.tsx; prerender'da gerçek <a>), test + build
+- [~] C2 — (13.11: CAC ← LTV, SaaS 101, Reklam bütçesi, CPL; LTV ← CAC, SaaS 101, Churn; MRR ← ARR, NRR, SaaS 101, Churn; UTM ← GA4 Unassigned, CTR. Sırada: roas, google ads, ctr, churn, geo + UTM ← Meta/Instagram/Google Ads rehberleri) "Nedir" sayfalarına 3-5 ilgili yazıdan sorgu metniyle bağlamsal link (cac, ltv, mrr, utm, roas, google ads, ctr, churn, geo)
 - [ ] C3 — Hub sayfaları: Pazarlama metrikleri sözlüğü (önce), E-ticaret kârlılık rehberi, SaaS metrikleri (içerik görevi)
 - [ ] B — "Nedir" sırası: cac nedir → mrr ne demek → ltv nedir → utm nedir → roas nedir → google ads nedir → ctr nedir → churn nedir → geo nedir (ilk paragraf tanım, varyant H2/SSS, tablo)
 - [~] D1 — Kullanıcı: AdGusto ve Brandog sitelerinden yusufbayrak.net araçlarına link; LinkedIn/X/GitHub profil linkleri (Claude metin ve yerleşim önerisi hazırlar) — 13.11: metin ve yerleşim önerileri hazır (seo/outreach/kendi-mulkler.md: AdGusto footer + SSS bağlamsal link, Brandog footer, LinkedIn/X/Instagram/GitHub alanları + GitHub README taslağı); uygulama kullanıcıda
@@ -85,7 +85,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] D3 — Veri varlığı: "Türkiye pazaryeri komisyon ve kargo maliyetleri 2026" sayfası (vergi yok) + dağıtım metinleri
 - [ ] D4 — Haftalık 5 teklif taslağı (widget/şablon/konuk yazı); eticaretmerkezim ve zunapro hatırlatması
 - [ ] F — Kullanıcı: kendi tarayıcısında bir araç kullan → GA4 › Gerçek zamanlı'da tool_use görünüyor mu?
-- [ ] E — Kullanıcı kararı: üretim temposu (günde 2 → 1 TR + koşullu EN)
+- [x] E — Kullanıcı kararı (13.11): günde 1 TR sayfa + EN yalnızca TR dizine girince
 
 ## Teknik (rapor: seo/seo-technical-audit.md)
 - [x] dist/server (SSR paketi + kopya sitemap/robots/llms) yayından çıkarıldı — 2026-10-23

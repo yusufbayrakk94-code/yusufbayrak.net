@@ -479,7 +479,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "MRR: Tüm Metriklerin Başlangıç Noktası",
         paragraphs: [
-          "Monthly Recurring Revenue (MRR), yinelenen abonelik gelirinizin aylık toplamıdır. Tek seferlik kurulum ücretleri, danışmanlık gelirleri ve kullanım aşımı faturaları MRR'a dahil edilmez; bunlar tekrar etmediği için büyüme trendini yanıltır. MRR'ı net (yeni + expansion − daralma − churn) olarak takip etmek, büyümenin gerçekte nereden geldiğini gösterir.",
+          "Monthly Recurring Revenue ([MRR](/blog/mrr-nedir-nasil-hesaplanir/)), yinelenen abonelik gelirinizin aylık toplamıdır. Tek seferlik kurulum ücretleri, danışmanlık gelirleri ve kullanım aşımı faturaları MRR'a dahil edilmez; bunlar tekrar etmediği için büyüme trendini yanıltır. MRR'ı net (yeni + expansion − daralma − churn) olarak takip etmek, büyümenin gerçekte nereden geldiğini gösterir.",
           "Örnek hesaplama: 120 müşteriniz var, 80'i aylık 1.500 TL, 40'ı aylık 4.000 TL ödüyor. MRR = (80 × 1.500) + (40 × 4.000) = 120.000 + 160.000 = 280.000 TL. Bu ay 8.000 TL yeni abonelik ve 5.000 TL expansion eklendi, 6.000 TL churn oldu; net yeni MRR = 8.000 + 5.000 − 6.000 = 7.000 TL, yani aylık %2,5 büyüme.",
           "Yıllık faturalanan sözleşmeleri MRR'a dahil ederken 12'ye bölün: 60.000 TL'lik yıllık sözleşme, 5.000 TL MRR demektir. Kendi rakamlarınızı hızlıca görmek için MRR Hesaplayıcı'yı kullanabilirsiniz.",
         ],
@@ -496,8 +496,8 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "ARPA: Fiyatlama Sağlığının Göstergesi",
         paragraphs: [
           "Average Revenue Per Account (ARPA), müşteri başına ortalama aylık gelirdir ve fiyatlama stratejinizin en hızlı geri bildirim mekanizmasıdır. Formül basit: ARPA = MRR ÷ aktif müşteri sayısı. Yükselen ARPA genelde daha iyi segmentasyon, başarılı upsell veya doğru paketlemenin işaretidir.",
-          "Örnek hesaplama: 280.000 TL MRR ve 120 müşteri ile ARPA = 280.000 ÷ 120 ≈ 2.333 TL. Enterprise segmentinde ARPA 4.000 TL, SMB segmentinde 1.500 TL çıkıyorsa satış ve pazarlama bütçenizin ağırlığını hangi segmente vermeniz gerektiği netleşir. ARPA'yı segment kırılımında izlemeyen ekipler, düşük ARPA'lı müşterilere yüksek CAC harcamaya devam eder.",
-          "ARPA aynı zamanda LTV hesabının girdisidir; küçük bir ARPA artışı, LTV'yi ve dolayısıyla sürdürülebilir CAC tavanınızı doğrudan yükseltir. Segment bazlı rakamlarınızı ARPA Hesaplayıcı ile karşılaştırabilirsiniz.",
+          "Örnek hesaplama: 280.000 TL MRR ve 120 müşteri ile ARPA = 280.000 ÷ 120 ≈ 2.333 TL. Enterprise segmentinde ARPA 4.000 TL, SMB segmentinde 1.500 TL çıkıyorsa satış ve pazarlama bütçenizin ağırlığını hangi segmente vermeniz gerektiği netleşir. ARPA'yı segment kırılımında izlemeyen ekipler, düşük ARPA'lı müşterilere yüksek [CAC](/blog/cac-nedir-musteri-edinme-maliyeti/) harcamaya devam eder.",
+          "ARPA aynı zamanda [LTV](/blog/ltv-nedir-ltv-cac-orani/) hesabının girdisidir; küçük bir ARPA artışı, LTV'yi ve dolayısıyla sürdürülebilir CAC tavanınızı doğrudan yükseltir. Segment bazlı rakamlarınızı ARPA Hesaplayıcı ile karşılaştırabilirsiniz.",
         ],
       },
       {
@@ -983,7 +983,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "NRR Nedir ve Nasıl Hesaplanır?",
         paragraphs: [
-          "NRR (Net Revenue Retention), dönem başındaki müşteri tabanının dönem sonunda ürettiği gelirin başlangıç gelirine oranıdır. Formülü basittir: NRR = (Başlangıç MRR + Genişleme MRR − Daralma MRR − Kaybedilen MRR) / Başlangıç MRR × 100.",
+          "NRR (Net Revenue Retention), dönem başındaki müşteri tabanının dönem sonunda ürettiği gelirin başlangıç gelirine oranıdır. Formülü basittir: NRR = (Başlangıç [MRR](/blog/mrr-nedir-nasil-hesaplanir/) + Genişleme MRR − Daralma MRR − Kaybedilen MRR) / Başlangıç MRR × 100.",
           "Hesabın en kritik detayı, dışarıda bıraktığı şeydir: yeni kazanılan müşterilerin geliri bu formüle girmez. Bu yüzden NRR, pazarlama ve satış motorunu tamamen kapatsanız bile işletmenizin büyüyüp büyümeyeceğini gösteren tek metriktir. Diğer tüm büyüme metrikleri yeni satışla maskelenebilir; NRR maskelenemez.",
           "Örnek: Dönem başı MRR'si 400.000 ₺ olan bir SaaS'ta ay içinde 60.000 ₺ genişleme (upsell, koltuk artışı), 15.000 ₺ daralma (plan küçültme) ve 25.000 ₺ churn gerçekleşti. NRR = (400.000 + 60.000 − 15.000 − 25.000) / 400.000 × 100 = %105. Yani hiç yeni müşteri gelmese bile gelir o ay %5 büyümüş oldu. Bu tek aylık bir sonuçtur; yıllık kıyaslarla karşılaştırmadan önce aşağıdaki bölüme bakın.",
         ],
@@ -1756,7 +1756,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Adım 5: B2B ve SaaS İçin Huni Üzerinden Bütçe",
         paragraphs: [
           "Satış döngüsü uzun işlerde hedef sipariş değil yeni müşteridir ve hesap huniden geriye yapılır. Örnek: Ayda 6 yeni müşteri hedefi, SQL'den müşteriye %25 dönüşüm → 24 SQL; lead'den SQL'e %30 dönüşüm → 80 lead. Lead başı maliyet (CPL) 750 TL ise aylık reklam bütçesi 80 × 750 = 60.000 TL'dir.",
-          "Kontrol metriği CAC'tır: 60.000 / 6 = 10.000 TL reklam CAC'ı. Müşteri başı brüt kâr bazlı LTV 45.000 TL ise LTV:CAC oranı 4,5'tir ve 3'ün üzerinde olduğu için plan sağlıklıdır. Satış ekibi maliyetlerini de eklediğiniz tam CAC ile ayrıca kontrol edin.",
+          "Kontrol metriği [CAC](/blog/cac-nedir-musteri-edinme-maliyeti/)'tır: 60.000 / 6 = 10.000 TL reklam CAC'ı. Müşteri başı brüt kâr bazlı LTV 45.000 TL ise LTV:CAC oranı 4,5'tir ve 3'ün üzerinde olduğu için plan sağlıklıdır. Satış ekibi maliyetlerini de eklediğiniz tam CAC ile ayrıca kontrol edin.",
         ],
       },
       {
@@ -1886,7 +1886,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Raporlar › Edinme › Trafik edinme raporunu açın. Tablonun birincil boyutunu 'Oturumla ilişkilendirilen birincil kanal grubu' yerine 'Oturum kaynağı/aracı' yapın ve 'Oturumla ilişkilendirilen birincil kanal grubu = Unassigned' filtresi ekleyin.",
           "Karşınıza çıkan satırlar sorunun kendisidir: 'instagram / story', 'bulten / newsletter', 'qr / offline' gibi ikililer hangi kampanya linklerinin düzeltilmesi gerektiğini doğrudan gösterir. En çok oturum getiren satırdan başlayın; çoğu sitede Unassigned'ın büyük kısmı birkaç kampanya linkinden gelir.",
-          "Satırlarda '(not set)' görüyorsanız sorun UTM değil, etiket kurulumudur; bir sonraki bölümdeki (not set) kontrol listesine geçin.",
+          "Satırlarda '(not set)' görüyorsanız sorun [UTM](/blog/utm-nedir-utm-parametreleri/) değil, etiket kurulumudur; bir sonraki bölümdeki (not set) kontrol listesine geçin.",
         ],
       },
       {
@@ -2309,7 +2309,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "LTV nedir? (Kısa cevap)",
         paragraphs: [
-          "LTV (Lifetime Value, müşteri yaşam boyu değeri; CLV ya da CLTV olarak da geçer), bir müşterinin işletmenizle ilişkisi boyunca bıraktığı toplam kârdır. Bir müşteriyi kazanmak için en fazla ne kadar harcayabileceğinizi belirlediği için CAC (müşteri edinme maliyeti) ile birlikte kullanılır.",
+          "LTV (Lifetime Value, müşteri yaşam boyu değeri; CLV ya da CLTV olarak da geçer), bir müşterinin işletmenizle ilişkisi boyunca bıraktığı toplam kârdır. Bir müşteriyi kazanmak için en fazla ne kadar harcayabileceğinizi belirlediği için CAC ([müşteri edinme maliyeti](/blog/cac-nedir-musteri-edinme-maliyeti/)) ile birlikte kullanılır.",
           "En basit e-ticaret formülü: LTV = Ortalama sipariş tutarı × Müşteri başı sipariş sayısı × Katkı marjı. Örnek: ortalama sepeti 600 TL olan bir mağazada müşteri 24 ayda ortalama 2,3 sipariş veriyor ve her siparişte ürün, kargo, ödeme komisyonu ve iade düşüldükten sonra cironun %35'i kalıyor. LTV = 600 × 2,3 × 0,35 = 483 TL.",
           "Aynı müşterinin ciro LTV'si 600 × 2,3 = 1.380 TL'dir. Rakip rehberlerin çoğu bu ciro rakamını kullanır; oysa reklam bütçesini 1.380 TL'ye göre planlamak, müşteri başına kazanabileceğinizin neredeyse üç katını harcamaya izin vermek demektir. (Yazıdaki tüm tutarlar örnek tutarlardır.)",
         ],
@@ -2721,7 +2721,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "CAC ne demek? CAC (Customer Acquisition Cost), Türkçesiyle müşteri edinme maliyeti, bir yeni müşteriyi kazanmak için ortalama ne kadar harcadığınızı gösterir. Formülü: CAC = (Pazarlama giderleri + Satış giderleri) / Aynı dönemde kazanılan yeni müşteri sayısı.",
           "Örnek: Ekim ayında reklam, ajans, ekip ve araçlar dahil 310.000 TL harcayan ve bu ay ilk siparişini veren 1.000 yeni müşteri kazanan bir e-ticaret markasının CAC'ı 310.000 / 1.000 = 310 TL'dir. (Yazıdaki tüm tutarlar örnek tutarlardır.)",
-          "CAC'ın değeri, bir müşterinin size bıraktığı kârla karşılaştırıldığında ortaya çıkar. Bu yüzden CAC'ı her zaman ilk sipariş katkısı, LTV (müşteri yaşam boyu değeri) ve CAC geri ödeme süresiyle birlikte okuyun.",
+          "CAC'ın değeri, bir müşterinin size bıraktığı kârla karşılaştırıldığında ortaya çıkar. Bu yüzden CAC'ı her zaman ilk sipariş katkısı, LTV ([müşteri yaşam boyu değeri](/blog/ltv-nedir-ltv-cac-orani/)) ve CAC geri ödeme süresiyle birlikte okuyun.",
         ],
       },
       {
@@ -3532,7 +3532,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Churn rate nasıl hesaplanır? Adım adım örnek",
         paragraphs: [
-          "Örnek şirket aylık aboneliği olan bir B2B SaaS. Ekim başında 800 aktif abone var, hesap başına ortalama aylık gelir (ARPA) 450 TL, yani MRR 360.000 TL. Ekim'de 70 yeni müşteri geldi, 40 müşteri ayrıldı; ay sonunda 830 abone var.",
+          "Örnek şirket aylık aboneliği olan bir B2B SaaS. Ekim başında 800 aktif abone var, hesap başına ortalama aylık gelir (ARPA) 450 TL, yani [MRR](/blog/mrr-nedir-nasil-hesaplanir/) 360.000 TL. Ekim'de 70 yeni müşteri geldi, 40 müşteri ayrıldı; ay sonunda 830 abone var.",
           "Doğru hesap: 40 / 800 = %5. Yeni gelen 70 müşteri bu hesaba girmez; onların kaybını ölçmek isterseniz kohort analizi yapılır (aşağıda). Aboneliklerin ay içine dağıldığı ve tabanın hızlı değiştiği işlerde bazı ekipler paydaya ortalama müşteri sayısını koyar: 40 / ((800 + 830) / 2) = 40 / 815 ≈ %4,9. Hangi yöntemi seçerseniz seçin, her ay aynısını kullanın.",
         ],
         bullets: [
@@ -3595,7 +3595,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Churn analizi Excel veya Google Sheets'te nasıl yapılır?",
         paragraphs: [
           "Churn analizi için pahalı bir araca gerek yok; her müşteri için bir satır içeren bir tablo yeterlidir: A sütununda müşteri kimliği, B'de başlangıç (ilk ödeme) tarihi, C'de iptal tarihi (aktif müşteride boş), D'de kazanım kanalı veya paket. E1 hücresine dönem başını (ör. 01.10.2026), E2'ye bir sonraki dönemin başını (01.11.2026) yazın.",
-          "Kanal ya da paket kırılımı için formüllere bir koşul eklemek yeterli: ÇOKEĞERSAY(...; D:D; \"Meta\"). Aynı Ekim verisini kanala göre ayırdığımızı varsayalım: Meta reklamlarından gelen 300 aboneden 24'ü (%8), organik ve yönlendirmeden gelen 500 aboneden 16'sı (%3,2) ayrılmış. Toplam yine 40 / 800 = %5, ama tablo kaybın büyük kısmının tek bir kanaldan geldiğini gösteriyor. Bu durumda Meta'nın görünen CAC'ı düşük olsa bile LTV'si de düşüktür; kanal bütçesine karar verirken iki rakamı birlikte okuyun.",
+          "Kanal ya da paket kırılımı için formüllere bir koşul eklemek yeterli: ÇOKEĞERSAY(...; D:D; \"Meta\"). Aynı Ekim verisini kanala göre ayırdığımızı varsayalım: Meta reklamlarından gelen 300 aboneden 24'ü (%8), organik ve yönlendirmeden gelen 500 aboneden 16'sı (%3,2) ayrılmış. Toplam yine 40 / 800 = %5, ama tablo kaybın büyük kısmının tek bir kanaldan geldiğini gösteriyor. Bu durumda Meta'nın görünen CAC'ı düşük olsa bile [LTV](/blog/ltv-nedir-ltv-cac-orani/)'si de düşüktür; kanal bütçesine karar verirken iki rakamı birlikte okuyun.",
         ],
         bullets: [
           "Dönem başı aktif müşteri (Türkçe Excel): =ÇOKEĞERSAY(B:B;\"<\"&E1;C:C;\"\")+ÇOKEĞERSAY(B:B;\"<\"&E1;C:C;\">=\"&E1) — İngilizce Excel ve Google Sheets'te COUNTIFS ve virgül kullanılır",
@@ -3949,7 +3949,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "ARR nedir? (Kısa cevap)",
         paragraphs: [
           "ARR (Annual Recurring Revenue), Türkçesiyle yıllık yinelenen (tekrarlayan) gelir, abonelik ya da yıllık sözleşmeyle çalışan bir işletmenin belirli bir tarihte aktif olan tüm yinelenen sözleşmelerinin yıllık karşılığıdır. B2B SaaS şirketleri, kurumsal yazılım satıcıları ve yıllık lisans modeliyle çalışan işletmeler büyüklüklerini ve büyümelerini ARR ile ifade eder.",
-          "Formül: ARR = Σ (Her aktif sözleşmenin yıllık yinelenen bedeli). Tüm müşteriler aylık plandaysa ARR = MRR × 12 olur. Kritik nokta şudur: ARR bir yıl içinde kasaya giren paranın ya da muhasebe gelirinin toplamı değildir; 'bugünkü müşteri tabanı hiçbir şey değişmezse önümüzdeki 12 ayda ne kadar yinelenen gelir üretir?' sorusunun cevabıdır.",
+          "Formül: ARR = Σ (Her aktif sözleşmenin yıllık yinelenen bedeli). Tüm müşteriler aylık plandaysa ARR = [MRR](/blog/mrr-nedir-nasil-hesaplanir/) × 12 olur. Kritik nokta şudur: ARR bir yıl içinde kasaya giren paranın ya da muhasebe gelirinin toplamı değildir; 'bugünkü müşteri tabanı hiçbir şey değişmezse önümüzdeki 12 ayda ne kadar yinelenen gelir üretir?' sorusunun cevabıdır.",
           "Bu yazıdaki tüm tutarlar örnek tutarlardır ve tek bir örnek B2B SaaS şirketi üzerinden ilerler. Aylık hareketler (yeni, genişleme, kayıp MRR) ve Quick Ratio için MRR yazısına, kendi rakamlarınız için ARR Hesaplayıcı'ya bakabilirsiniz.",
         ],
       },
@@ -4940,7 +4940,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "İyi CPL kaç? Kendi maksimum CPL'nizi nasıl bulursunuz?",
         paragraphs: [
           "Türkçe rehberlerdeki 'iyi CPL' tabloları birbirini tutmuyor: bir yazı B2B için 200 TL'ye kadar 'makul' derken başka bir yazı 1.500–4.000 TL ve üstünü gösteriyor; ikisi de kaynak ya da yöntem vermiyor. Enflasyon altındaki TL tutarları da hızla eskir. Dolar bazında yayımlanmış bir kıyas olarak LocaliQ'nun 2026 arama reklamı verileri tüm sektörlerde ortalama 66,69 $, iş hizmetlerinde 93,69 $ lead maliyeti gösteriyor. Bu rakamlar ABD ağırlıklı müşteri kampanyalarından gelir, telefon ve sohbet gibi iletişimleri de lead sayar; Türkiye için hedef değil, yalnızca bir mertebe bilgisidir.",
-          "Daha sağlam yol, sınırı kendi ekonominizden hesaplamaktır. Maksimum CPL = Reklama ayrılan maksimum CAC × Lead'den müşteriye dönüşüm oranı. Reklama ayrılan maksimum CAC = (Müşteri brüt kâr LTV'si / Hedef LTV:CAC oranı) − Müşteri başı satış maliyeti.",
+          "Daha sağlam yol, sınırı kendi ekonominizden hesaplamaktır. Maksimum CPL = Reklama ayrılan maksimum [CAC](/blog/cac-nedir-musteri-edinme-maliyeti/) × Lead'den müşteriye dönüşüm oranı. Reklama ayrılan maksimum CAC = (Müşteri brüt kâr LTV'si / Hedef LTV:CAC oranı) − Müşteri başı satış maliyeti.",
           "Örnek: müşterinin ömür boyu brüt kârı 180.000 TL, hedef LTV:CAC oranı 3. Müşteri başına toplam 60.000 TL harcayabilirsiniz; bunun 20.000 TL'si satış ekibinin maliyetiyse reklama 40.000 TL kalır. Lead'lerin %5'i müşteri oluyorsa maksimum CPL 40.000 × 0,05 = 2.000 TL'dir.",
           "Sonuç şaşırtıcı olabilir: bu şirket 500 TL CPL'den şikâyet ederken sınırının dörtte birinde çalışıyordur. Bütçeyi kısmak yerine artırmak daha kârlı olabilir. Tersine, %1 lead-müşteri oranı olan aynı şirkette sınır 400 TL'ye iner ve 500 TL CPL zarar demektir. Bu nedenle CPL'yi hiçbir zaman dönüşüm oranından bağımsız yorumlamayın.",
         ],
@@ -7795,7 +7795,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "CTR'yi hangi metriklerle birlikte izlemelisiniz?",
         paragraphs: [
           "CTR huninin yalnızca ilk adımıdır. Kararı tek başına CTR'ye göre vermek, mağazanın vitrinine bakan kişi sayısıyla satışları tahmin etmeye benzer. Sağlıklı bir okuma için şu zinciri birlikte izleyin: gösterim → CTR → TBM → dönüşüm oranı → EBM ya da lead başı maliyet → ROAS.",
-          "Her bağlantıyı ayrı araçla kontrol edebilirsiniz: dönüşüm oranını Dönüşüm Oranı Hesaplayıcı ile, reklamın kâr getirip getirmediğini ROAS Hesaplama aracıyla, aylık hedef için gereken harcamayı Reklam Bütçesi Hesaplama ile. Trafiğin hangi reklamdan geldiğini GA4'te doğru görmek için linklerinize UTM parametreleri ekleyin.",
+          "Her bağlantıyı ayrı araçla kontrol edebilirsiniz: dönüşüm oranını Dönüşüm Oranı Hesaplayıcı ile, reklamın kâr getirip getirmediğini ROAS Hesaplama aracıyla, aylık hedef için gereken harcamayı Reklam Bütçesi Hesaplama ile. Trafiğin hangi reklamdan geldiğini GA4'te doğru görmek için linklerinize [UTM parametreleri](/blog/utm-nedir-utm-parametreleri/) ekleyin.",
         ],
       },
     ],

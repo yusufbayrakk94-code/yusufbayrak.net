@@ -11,6 +11,36 @@ import {
 import { useLocale } from "@/i18n/useLocale";
 
 import { SITE_URL as SITE } from "@/i18n/routes";
+
+// Inline links inside section paragraphs/bullets: "[anchor](/path/)" or "[anchor](https://...)".
+// Internal paths render as router <Link> (prerendered as real <a>), external ones open in a new tab.
+const INLINE_LINK = /\[([^\]]+)\]\((\/[^)\s]*|https?:\/\/[^)\s]+)\)/g;
+function renderInline(text: string) {
+  const out: (string | JSX.Element)[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  INLINE_LINK.lastIndex = 0;
+  while ((m = INLINE_LINK.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    const [, label, href] = m;
+    out.push(
+      href.startsWith("/") ? (
+        <Link key={m.index} to={href} className="text-accent underline underline-offset-2 hover:opacity-80">
+          {label}
+        </Link>
+      ) : (
+        <a key={m.index} href={href} target="_blank" rel="noopener noreferrer" className="text-accent underline underline-offset-2 hover:opacity-80">
+          {label}
+        </a>
+      ),
+    );
+    last = m.index + m[0].length;
+  }
+  if (last === 0) return text;
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 const AUTHOR = "Yusuf Bayrak";
 
 const UI = {
@@ -253,14 +283,14 @@ export default function BlogPost() {
                 </h2>
                 {sec.paragraphs.map((p, i) => (
                   <p key={i} className="text-muted-foreground leading-relaxed mb-4 text-[15px]">
-                    {p}
+                    {renderInline(p)}
                   </p>
                 ))}
                 {sec.bullets && (
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground marker:text-accent">
                     {sec.bullets.map((b, i) => (
                       <li key={i} className="leading-relaxed">
-                        {b}
+                        {renderInline(b)}
                       </li>
                     ))}
                   </ul>
