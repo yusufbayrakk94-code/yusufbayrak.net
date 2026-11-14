@@ -295,6 +295,35 @@ export default function BlogPost() {
                     ))}
                   </ul>
                 )}
+                {sec.table && (
+                  <div className="mt-6 overflow-x-auto">
+                    <table className="w-full text-sm border border-border text-muted-foreground">
+                      {sec.table.caption && (
+                        <caption className="caption-bottom mt-2 text-xs font-mono text-left">{sec.table.caption}</caption>
+                      )}
+                      <thead>
+                        <tr>
+                          {sec.table.head.map((h, j) => (
+                            <th key={j} scope="col" className="border border-border px-3 py-2 text-left text-foreground font-semibold align-top">
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {sec.table.rows.map((r, j) => (
+                          <tr key={j}>
+                            {r.map((c, k) => (
+                              <td key={k} className="border border-border px-3 py-2 align-top leading-relaxed">
+                                {renderInline(c)}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
                 {sec.image && (
                   <figure className="mt-6">
                     <img

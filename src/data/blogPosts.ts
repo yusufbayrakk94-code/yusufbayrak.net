@@ -21,6 +21,13 @@ export interface BlogSection {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  // Optional table rendered after bullets (prerendered as a real <table>).
+  // Cells support the same inline "[anchor](/path/)" link syntax.
+  table?: {
+    caption?: string;
+    head: string[];
+    rows: string[][];
+  };
   image?: {
     src: string;
     alt: string;
@@ -519,7 +526,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Bu Metrikleri Birlikte Nasıl Okumalı?",
         paragraphs: [
-          "Metrikleri tek tek değil, bir zincir olarak okuyun: ARPA fiyatlamayı, MRR momentumu, churn retention'ı, CAC verimliliği, LTV/CAC ise sürdürülebilirliği ölçer. Zincirin bir halkasındaki değişim diğerlerini domino gibi etkiler; örneğin ARPA'daki %10 artış, LTV'yi ve dolayısıyla katlanabileceğiniz CAC tavanını da yaklaşık %10 yükseltir.",
+          "Metrikleri tek tek değil, bir zincir olarak okuyun: ARPA fiyatlamayı, MRR momentumu, churn retention'ı, CAC verimliliği, LTV/CAC ise sürdürülebilirliği ölçer. Zincirin bir halkasındaki değişim diğerlerini domino gibi etkiler; örneğin ARPA'daki %10 artış, LTV'yi ve dolayısıyla katlanabileceğiniz CAC tavanını da yaklaşık %10 yükseltir. Quick Ratio, GRR ve Rule of 40 dahil tüm formüller aynı örnekle [pazarlama ve SaaS metrikleri sözlüğünde](/blog/pazarlama-metrikleri-sozlugu/) bir arada.",
         ],
         bullets: [
           "Haftalık: net yeni MRR, pipeline ve deneme-dönüşüm oranı",
@@ -1506,7 +1513,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "ROAS Nedir?",
         paragraphs: [
           "ROAS (Return on Ad Spend — reklam harcamasının getirisi), reklama harcadığınız her 1 TL'nin karşılığında ne kadar ciro elde ettiğinizi gösteren metriktir. Performans pazarlamasında kampanya, reklam seti ve kreatif düzeyinde verim karşılaştırmanın en yaygın yoludur.",
-          "ROAS bir ciro metriğidir, kârlılık metriği değildir. Bu ayrım, metriği doğru okumanın anahtarıdır: aynı 4 ROAS, %70 marjlı bir dijital üründe çok kârlıyken %20 marjlı bir elektronik mağazasında zarar anlamına gelebilir.",
+          "ROAS bir ciro metriğidir, kârlılık metriği değildir. Bu ayrım, metriği doğru okumanın anahtarıdır: aynı 4 ROAS, %70 marjlı bir dijital üründe çok kârlıyken %20 marjlı bir elektronik mağazasında zarar anlamına gelebilir. ROAS'ın POAS, MER ve ROI ile farkını [pazarlama metrikleri sözlüğündeki](/blog/pazarlama-metrikleri-sozlugu/) formül tablosunda yan yana görebilirsiniz.",
         ],
       },
       {
@@ -6266,7 +6273,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "KPI ile metrik arasındaki fark nedir?",
         paragraphs: [
-          "Metrik, ölçebildiğiniz her şeydir: gösterim, tıklama, takipçi, sayfada kalma süresi, e-posta açılma oranı. KPI ise bu metriklerin içinden, işin sonucunu en doğrudan etkileyen ve hedef konulan birkaç tanesidir. Google Analytics, Meta ve Google Ads panelleri yüzlerce metrik gösterir; KPI'ları seçmek sizin işinizdir.",
+          "Metrik, ölçebildiğiniz her şeydir: gösterim, tıklama, takipçi, sayfada kalma süresi, e-posta açılma oranı. KPI ise bu metriklerin içinden, işin sonucunu en doğrudan etkileyen ve hedef konulan birkaç tanesidir. Google Analytics, Meta ve Google Ads panelleri yüzlerce metrik gösterir; KPI'ları seçmek sizin işinizdir. Seçmeden önce adaylarınızın tanım ve formüllerini [pazarlama metrikleri sözlüğünde](/blog/pazarlama-metrikleri-sozlugu/) tek sayfada görebilirsiniz.",
           "Bir metriğin KPI olup olmadığını üç soruyla test edin:",
         ],
         bullets: [
@@ -8722,6 +8729,218 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "TikTok Yardım: Öğrenme aşaması SSS", href: "https://ads.tiktok.com/help/article/learning-phase-faq", external: true },
       { label: "TikTok Yardım: Spark Ads hakkında", href: "https://ads.tiktok.com/help/article/spark-ads", external: true },
       { label: "TikTok Yardım: UTM parametreleriyle web olaylarını izleme", href: "https://ads.tiktok.com/help/article/track-offsite-web-events-with-utm-parameters", external: true },
+    ],
+  },
+  {
+    slug: "pazarlama-metrikleri-sozlugu",
+    seoTitle: "Pazarlama Metrikleri Sözlüğü: 35 Metrik, Formül ve Örnek",
+    title: "Pazarlama Metrikleri Sözlüğü: ROAS, CAC, LTV, CTR, MRR, Churn ve Diğerleri — Formüller ve Örnekler",
+    description:
+      "Pazarlama metrikleri nedir? ROAS, CAC, LTV, CTR, CPC, CPL, MRR, ARR, churn ve NRR dahil 35 metriğin tanımı, formülü ve aynı örnek işletmeyle hesabı tek sayfada.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Pazarlama metrikleri, reklam, web sitesi ve müşteri verisinden hesaplanan ölçülerdir: CTR, CPC ve ROAS gibi reklam metrikleri, CAC ve LTV gibi müşteri metrikleri, MRR ve churn gibi abonelik metrikleri. Bu sözlükte 35 metriğin tanımı, formülü ve örneği var.",
+      "Metrikler bir zincirdir: TBM = BGBM ÷ (CTR × 1.000), EBM = TBM ÷ dönüşüm oranı, ROAS = sipariş tutarı × dönüşüm oranı ÷ TBM. Örnek mağazada 80 TL BGBM ve %1,2 CTR, 6,67 TL TBM'ye; %2,5 dönüşümle 266,67 TL EBM'ye ve 1.000 TL sepetle 3,75 ROAS'a dönüşür.",
+      "Kârlılığı tek başına ROAS değil, marj söyler: başabaş ROAS = 1 ÷ katkı marjı. %35 marjda başabaş 2,86'dır; 3,75 ROAS reklam sonrası 12.500 TL kâr ve %31,25 ROI demektir.",
+      "Abonelik işlerinde MRR, churn ve NRR birlikte okunur: 500.000 TL MRR, %4 müşteri churn'ü ve 20.000 TL genişlemeyle aylık NRR %100, GRR %96 olur; LTV = ARPA × brüt marj ÷ churn = 40.000 TL.",
+    ],
+    publishedAt: "2026-11-14",
+    readingMinutes: 16,
+    tags: ["Pazarlama Metrikleri", "Sözlük", "ROAS", "CAC", "LTV", "CTR", "MRR", "Churn", "KPI"],
+    sections: [
+      {
+        heading: "Pazarlama metrikleri nedir? (Kısa cevap)",
+        paragraphs: [
+          "Pazarlama metrikleri, reklam, web sitesi, satış ve müşteri verisinden hesaplanan ve pazarlamanın ne kadar verimli çalıştığını gösteren sayısal ölçülerdir. Tıklama oranı (CTR), tıklama başı maliyet (CPC), reklam harcamasının getirisi (ROAS), müşteri edinme maliyeti (CAC), müşteri yaşam boyu değeri (LTV) ve churn en sık kullanılanlardır.",
+          "Bu sayfa bir sözlük ve formül rehberidir: her metriğin ne anlama geldiğini, nasıl hesaplandığını ve aynı örnek işletmenin rakamlarıyla nasıl çıktığını gösterir. Her metriğin ayrıntılı rehberi ayrı bir yazıdadır; metnin içindeki bağlantılardan ilgili rehbere ve ücretsiz hesaplayıcıya geçebilirsiniz.",
+          "Metrik ile KPI aynı şey değildir. Metrik ölçtüğünüz her sayıdır; KPI ise bir hedefe bağlanmış, sahibi ve hedef değeri olan birkaç kritik metriktir. Hangi metriğin KPI olması gerektiğini [KPI nedir ve pazarlama KPI'ları nasıl belirlenir](/blog/kpi-nedir-pazarlama-kpi-ornekleri/) yazısında adım adım anlattık.",
+        ],
+      },
+      {
+        heading: "Sözlükteki örnekler: bir e-ticaret mağazası ve bir SaaS şirketi",
+        paragraphs: [
+          "Formüller tek tek ezberlendiğinde birbirinden kopuk görünür. Bu yüzden tüm örneklerde aynı iki işletmeyi kullanıyoruz; rakamlar birbirini tutar ve bir metriğin diğerini nasıl değiştirdiğini görebilirsiniz. Tüm tutarlar örnek tutarlardır.",
+          "Örnek mağaza (bir ay): reklam harcaması 40.000 TL, 500.000 gösterim, 125.000 kişilik erişim, 6.000 tıklama, 150 sipariş, ortalama sipariş tutarı 1.000 TL, katkı marjı %35. Siparişlerin 120'si yeni müşteriden geliyor. Tüm kanallarda toplam ciro 260.000 TL, toplam pazarlama harcaması (reklam, ajans, influencer) 52.000 TL; personel dahil pazarlama ve satış maliyeti 60.000 TL ve ay içinde tüm kanallardan 200 yeni müşteri kazanıldı.",
+          "Örnek SaaS (bir ay): ay başı MRR 500.000 TL ve 250 müşteri; ay içinde 30 yeni müşteriden 60.000 TL yeni MRR, mevcut müşterilerden 20.000 TL genişleme, 5.000 TL daralma ve 10 müşteri kaybından 15.000 TL churn MRR'ı. Brüt marj %80, ayın pazarlama ve satış maliyeti 360.000 TL.",
+        ],
+      },
+      {
+        heading: "Reklam ve trafik metrikleri: gösterim, erişim, sıklık, CPM, CTR, CPC",
+        paragraphs: [
+          "Gösterim (impression): reklamınızın ya da arama sonucunuzun ekranda kaç kez gösterildiğidir. Aynı kişi reklamı üç kez görürse üç gösterim sayılır. Örnek mağazada 500.000 gösterim var.",
+          "Erişim (reach): reklamı en az bir kez gören tekil kişi (ya da hesap) sayısıdır. Gösterimle karıştırılır ama erişim tekrarı saymaz. Örnek mağazada erişim 125.000 kişidir.",
+          "Sıklık (frequency): bir kişinin reklamı ortalama kaç kez gördüğüdür. Formül: Sıklık = Gösterim ÷ Erişim. Örnekte 500.000 ÷ 125.000 = 4. Sıklık yükseldikçe aynı kişiye aynı kreatif tekrarlandığı için CTR genellikle düşer ve maliyet artar.",
+          "CPM / BGBM (cost per mille, bin gösterim başına maliyet): reklamın 1.000 kez gösterilmesinin maliyetidir. Formül: BGBM = Reklam harcaması ÷ Gösterim × 1.000. Örnekte 40.000 ÷ 500.000 × 1.000 = 80 TL. Meta ve TikTok gibi gösterim bazlı açık artırmalarda maliyetin başladığı yer burasıdır.",
+          "CTR (click-through rate, tıklama oranı): gösterimlerin yüzde kaçının tıklamaya dönüştüğüdür. Formül: CTR = Tıklama ÷ Gösterim × 100. Örnekte 6.000 ÷ 500.000 = %1,2. Kanal ve sıra bazlı kaynaklı referanslar için [CTR nedir, iyi tıklama oranı kaç](/blog/ctr-nedir-iyi-tiklama-orani-kac/) yazısına bakın.",
+          "CPC / TBM (cost per click, tıklama başı maliyet): bir tıklamaya ortalama ne ödediğinizdir. Formül: TBM = Reklam harcaması ÷ Tıklama; gösterim bazlı kanallarda TBM = BGBM ÷ (CTR × 1.000). Örnekte 40.000 ÷ 6.000 = 80 ÷ (0,012 × 1.000) ≈ 6,67 TL. Maksimum, gerçek ve ortalama TBM farkı ile başabaş TBM hesabı [CPC nedir, tıklama başı maliyet nasıl düşer](/blog/cpc-nedir-tiklama-basi-maliyet/) yazısında.",
+        ],
+      },
+      {
+        heading: "Dönüşüm ve maliyet metrikleri: dönüşüm oranı, CPA (EBM), CPL",
+        paragraphs: [
+          "Dönüşüm (conversion): ölçmek istediğiniz değerli eylemdir; satın alma, form doldurma, deneme başlatma ya da arama. Hangi eylemin dönüşüm sayılacağına siz karar verirsiniz; diğer tüm metrikler bu tanıma bağlıdır.",
+          "Dönüşüm oranı (conversion rate, CR): tıklamaların ya da oturumların yüzde kaçının dönüşüme ulaştığıdır. Formül: Dönüşüm oranı = Dönüşüm ÷ Tıklama (veya oturum) × 100. Örnekte 150 ÷ 6.000 = %2,5. Paydanın tıklama mı oturum mu olduğunu raporlarda hep aynı tutun; ikisi aynı sayı değildir. Kendi rakamlarınızı [dönüşüm oranı hesaplayıcı](/ucretsiz-araclar/donusum-orani-hesaplayici/) ile hesaplayabilir, sayfa tarafını [landing page kontrol listesi](/blog/landing-page-nedir-donusen-acilis-sayfasi/) ile iyileştirebilirsiniz.",
+          "CPA / EBM (cost per acquisition, edinme başı maliyet): bir dönüşümün ortalama maliyetidir. Formül: EBM = Reklam harcaması ÷ Dönüşüm = TBM ÷ Dönüşüm oranı. Örnekte 40.000 ÷ 150 ≈ 266,67 TL (6,67 ÷ 0,025). Reklam panelinin gösterdiği EBM, mevcut müşterilerin tekrar siparişlerini de sayar; bu yüzden CAC ile aynı şey değildir (aşağıda).",
+          "CPL (cost per lead, lead başı maliyet): B2B ve hizmet işlerinde bir potansiyel müşteri kaydının maliyetidir. Formül: CPL = Pazarlama harcaması ÷ Geçerli lead sayısı. Örnek: 30.000 TL ile 60 geçerli lead → CPL 500 TL; lead'lerin %10'u müşteriye dönüşürse 6 müşteri ve müşteri başı reklam maliyeti 5.000 TL. Kârlı CPL sınırının nasıl bulunacağı [CPL nedir, lead başı maliyet nasıl hesaplanır](/blog/cpl-nedir-lead-basi-maliyet/) yazısında.",
+        ],
+      },
+      {
+        heading: "Gelir ve kârlılık metrikleri: ROAS, başabaş ROAS, POAS, ROI, MER, AOV, kar marjı",
+        paragraphs: [
+          "ROAS (return on ad spend, reklam harcamasının getirisi): reklama harcanan her 1 TL'nin kaç TL ciro getirdiğidir. Formül: ROAS = Reklamdan gelen ciro ÷ Reklam harcaması. Örnekte 150 sipariş × 1.000 TL = 150.000 TL ciro; 150.000 ÷ 40.000 = 3,75 (Google Ads'te %375). Ayrıntı ve iyi ROAS tartışması: [ROAS nedir, nasıl hesaplanır](/blog/roas-nedir-nasil-hesaplanir/); hızlı hesap için [ROAS hesaplayıcı](/ucretsiz-araclar/roas-hesaplayici/).",
+          "Başabaş ROAS (breakeven ROAS): reklamın ne kâr ne zarar ettirdiği ROAS seviyesidir. Formül: Başabaş ROAS = 1 ÷ Katkı marjı. Örnekte 1 ÷ 0,35 ≈ 2,86; yani 2,86'nın altındaki her ROAS zarar, üstü kârdır. Kâr hedefini de içeren hedef ROAS'ın Google Ads'e nasıl girileceği [hedef ROAS nasıl belirlenir](/blog/hedef-roas-nasil-belirlenir/) yazısında.",
+          "POAS (profit on ad spend, reklam harcamasının kârı): ROAS'ın ciro yerine kârla hesaplanan halidir. Formül: POAS = Katkı (brüt) kârı ÷ Reklam harcaması. Örnekte katkı kârı 150.000 × 0,35 = 52.500 TL; 52.500 ÷ 40.000 ≈ 1,31. POAS 1'in üstündeyse reklam, değişken giderlerden sonra kâr bırakıyordur.",
+          "ROI (return on investment, yatırım getirisi): yatırımın maliyetine göre net kazancıdır. Formül: ROI = (Kazanç − Maliyet) ÷ Maliyet × 100. Pazarlamada kazanç ciro değil kârdır: örnekte (52.500 − 40.000) ÷ 40.000 = %31,25. Yalnızca reklam maliyeti varken ROI = ROAS × Marj − 1 (3,75 × 0,35 − 1 = 0,3125). Ayrıntı: [ROI nedir, ROAS'tan farkı](/blog/roi-nedir-nasil-hesaplanir/).",
+          "MER (marketing efficiency ratio, pazarlama verimlilik oranı): tüm kanallardaki toplam cironun toplam pazarlama harcamasına oranıdır. Formül: MER = Toplam ciro ÷ Toplam pazarlama harcaması. Örnekte 260.000 ÷ 52.000 = 5. Reklam panelleri aynı satışı birden fazla kez sahiplenebildiği için MER, panel ROAS'larını doğrulamak için kullanılır.",
+          "AOV (average order value, ortalama sipariş tutarı): sipariş başına ortalama cirodur. Formül: AOV = Ciro ÷ Sipariş sayısı. Örnekte 150.000 ÷ 150 = 1.000 TL. AOV'yi artırmak, aynı TBM ve dönüşüm oranıyla ROAS'ı doğrudan yükseltir.",
+          "Brüt kar marjı ve katkı marjı: brüt marj, satıştan ürün maliyeti düşüldükten sonra kalan payın satışa oranıdır; katkı marjı bunun üstüne kargo, ödeme komisyonu ve pazaryeri kesintisi gibi siparişe bağlı değişken giderleri de düşer. Reklam kararları için katkı marjı daha doğrudur. Formül: Katkı marjı = (Fiyat − Tüm değişken giderler) ÷ Fiyat. Örnekte %35. Hesap yöntemi ve markup farkı: [kar marjı nasıl hesaplanır](/blog/kar-marji-nasil-hesaplanir/); araç: [kar marjı hesaplama](/ucretsiz-araclar/brut-kar-marji-hesaplayici/).",
+        ],
+      },
+      {
+        heading: "Müşteri metrikleri: CAC, LTV, LTV:CAC oranı ve CAC geri ödeme süresi",
+        paragraphs: [
+          "CAC (customer acquisition cost, müşteri edinme maliyeti): bir yeni müşteriyi kazanmanın ortalama maliyetidir. Formül: CAC = Pazarlama ve satış maliyeti ÷ Yeni müşteri sayısı. Örnek mağazada 60.000 ÷ 200 = 300 TL. Yalnızca reklamın getirdiği yeni müşterilerle hesaplarsanız 40.000 ÷ 120 ≈ 333,33 TL çıkar; panelin gösterdiği 266,67 TL'lik EBM tekrar siparişleri de saydığı için yeni müşteri maliyetini olduğundan düşük gösterir. Üç CAC türü ve kanal bazlı hesap: [CAC nedir, müşteri edinme maliyeti nasıl hesaplanır](/blog/cac-nedir-musteri-edinme-maliyeti/).",
+          "LTV / CLV (customer lifetime value, müşteri yaşam boyu değeri): bir müşterinin sizinle kaldığı süre boyunca bıraktığı toplam kârdır. E-ticaret formülü: LTV = AOV × Katkı marjı × Ortalama sipariş sayısı. Örnekte müşteri 24 ayda ortalama 2,4 sipariş veriyorsa 1.000 × 0,35 × 2,4 = 840 TL. Abonelik formülü SaaS bölümünde. Kohort yöntemiyle hesap: [LTV nedir, LTV:CAC oranı](/blog/ltv-nedir-ltv-cac-orani/).",
+          "LTV:CAC oranı: bir müşteriden kazandığınız kârın onu kazanma maliyetine oranıdır. Formül: LTV ÷ CAC. Örnek mağazada 840 ÷ 300 = 2,8. Yaygın başparmak kuralı en az 3'tür, ama oran tek başına yeterli değildir; parayı ne kadar sürede geri aldığınız da önemlidir.",
+          "CAC geri ödeme süresi (CAC payback): müşteri edinme maliyetinin kaç ayda geri kazanıldığıdır. Abonelik formülü: Geri ödeme (ay) = CAC ÷ (Aylık ARPA × Brüt marj). Örnek SaaS'ta 12.000 ÷ (2.000 × 0,80) = 7,5 ay. E-ticarette ilk siparişin katkısıyla bakılır: örnek mağazada ilk sipariş 350 TL katkı bırakır ve 300 TL'lik CAC'yi ilk siparişte geri öder. Araç: [CAC geri ödeme süresi hesaplayıcı](/ucretsiz-araclar/cac-geri-odeme-suresi-hesaplayici/).",
+        ],
+      },
+      {
+        heading: "SaaS ve abonelik metrikleri: MRR, ARR, ARPA, churn, NRR, GRR, Quick Ratio, Rule of 40",
+        paragraphs: [
+          "MRR (monthly recurring revenue, aylık yinelenen gelir): aktif aboneliklerin aylık karşılığıdır; tek seferlik kurulum ve danışmanlık gelirleri girmez. Formül: Bitiş MRR = Başlangıç MRR + Yeni + Genişleme − Daralma − Churn MRR. Örnek SaaS'ta 500.000 + 60.000 + 20.000 − 5.000 − 15.000 = 560.000 TL. Yıllık planların aylığa çevrilmesi ve üç hesap yöntemi: [MRR nedir, ne demek](/blog/mrr-nedir-nasil-hesaplanir/).",
+          "ARR (annual recurring revenue, yıllık yinelenen gelir): belirli bir tarihte aktif yinelenen gelirin yıllık karşılığıdır; yıl içinde toplanan gelir değil, o günün fotoğrafıdır. Aylık planlarda ARR = MRR × 12; örnekte 560.000 × 12 = 6.720.000 TL. ARR köprüsü ve CARR: [ARR nedir](/blog/arr-nedir-yillik-yinelenen-gelir/).",
+          "ARPA / ARPU (average revenue per account / user, hesap ya da kullanıcı başına ortalama gelir): müşteri başına aylık ortalama yinelenen gelirdir. Formül: ARPA = MRR ÷ Aktif müşteri sayısı. Örnekte ay başında 500.000 ÷ 250 = 2.000 TL. B2B'de bir hesapta birden çok kullanıcı olduğu için ARPA, tüketici uygulamalarında ARPU kullanılır. Araç: [ARPA hesaplayıcı](/ucretsiz-araclar/arpa-hesaplayici/).",
+          "Churn rate (müşteri kayıp oranı): dönem başındaki müşterilerin yüzde kaçının dönem içinde ayrıldığıdır. Formül: Churn = Kaybedilen müşteri ÷ Dönem başı müşteri × 100. Örnekte 10 ÷ 250 = %4. Aylık churn 12 ile çarpılarak yıllığa çevrilmez: 1 − (1 − 0,04)^12 ≈ %38,7 yıllık churn demektir. Gönüllü/gönülsüz churn ve kohort analizi: [churn nedir, churn rate nasıl hesaplanır](/blog/churn-nedir-churn-rate-nasil-hesaplanir/).",
+          "Gelir churn'ü (revenue churn): kaybın müşteri sayısıyla değil parayla ölçülmesidir. Brüt gelir churn'ü = (Daralma + Churn MRR) ÷ Başlangıç MRR; örnekte (5.000 + 15.000) ÷ 500.000 = %4. Net gelir churn'ü genişlemeyi de düşer: (5.000 + 15.000 − 20.000) ÷ 500.000 = %0. Net gelir churn'ünün sıfırın altına inmesine negatif churn denir.",
+          "NRR (net revenue retention, net gelir tutma): mevcut müşterilerden gelen gelirin, yeni müşteriler hariç, dönem sonunda ne kadarının kaldığıdır. Formül: NRR = (Başlangıç MRR + Genişleme − Daralma − Churn MRR) ÷ Başlangıç MRR × 100. Örnekte (500.000 + 20.000 − 5.000 − 15.000) ÷ 500.000 = %100. %100'ün üstü, yeni satış olmasa da gelirin büyüdüğü anlamına gelir. Ayrıntı: [NRR nedir](/blog/nrr-nedir-saas-buyume-metrigi/); araç: [NRR hesaplayıcı](/ucretsiz-araclar/nrr-hesaplayici/).",
+          "GRR (gross revenue retention, brüt gelir tutma): NRR'nin genişleme hariç halidir ve hiçbir zaman %100'ü geçemez. Formül: GRR = (Başlangıç MRR − Daralma − Churn MRR) ÷ Başlangıç MRR × 100. Örnekte (500.000 − 5.000 − 15.000) ÷ 500.000 = %96. NRR yüksek ama GRR düşükse büyüme birkaç büyük müşterinin genişlemesine dayanıyor demektir.",
+          "SaaS'ta LTV: LTV = ARPA × Brüt marj ÷ Aylık churn. Örnekte 2.000 × 0,80 ÷ 0,04 = 40.000 TL. Örnek SaaS'ın CAC'si 360.000 ÷ 30 = 12.000 TL olduğundan LTV:CAC = 40.000 ÷ 12.000 ≈ 3,3'tür. Kendi rakamlarınızla [LTV hesaplayıcı](/ucretsiz-araclar/ltv-hesaplayici/) ve [churn rate hesaplayıcı](/ucretsiz-araclar/churn-rate-hesaplayici/) kullanabilirsiniz.",
+          "SaaS Quick Ratio: kazanılan yinelenen gelirin kaybedilene oranıdır. Formül: Quick Ratio = (Yeni MRR + Genişleme) ÷ (Daralma + Churn MRR). Örnekte (60.000 + 20.000) ÷ (5.000 + 15.000) = 4; yani kaybedilen her 1 TL'ye karşılık 4 TL yeni yinelenen gelir ekleniyor.",
+          "Rule of 40 (40 kuralı): büyüme ile kârlılığın dengesini tek sayıda gösterir. Formül: Rule of 40 skoru = Yıllık gelir büyümesi (%) + Kâr marjı (%), kâr marjı için genellikle FAVÖK ya da serbest nakit akışı marjı kullanılır. Örnek: %35 büyüme + %8 marj = 43 → kuralı geçer. Araç: [Rule of 40 hesaplayıcı](/ucretsiz-araclar/rule-of-40-hesaplayici/). Bu metriklerin birlikte nasıl yorumlanacağı [SaaS metrikleri 101](/blog/saas-metrikleri-arr-cac-ltv/) yazısında.",
+        ],
+      },
+      {
+        heading: "Web analitiği ve SEO metrikleri: oturum, etkileşim oranı, hemen çıkma oranı, gösterim payı, ortalama konum",
+        paragraphs: [
+          "Oturum (session): bir kullanıcının sitenizdeki bir ziyaret süresidir. GA4'te oturum, kullanıcı belirli bir süre etkin olmadığında sona erer; bir kullanıcının birden fazla oturumu olabilir. Reklamdaki tıklama sayısı ile GA4'teki oturum sayısı, çerez onayı, sayfanın yüklenmemesi ve ölçüm farkları nedeniyle hiçbir zaman birebir tutmaz.",
+          "Etkileşim oranı (engagement rate): GA4'te etkileşimli oturumların tüm oturumlara oranıdır. Google'ın tanımına göre etkileşimli oturum 10 saniyeden uzun süren, bir anahtar etkinlik içeren ya da 2 veya daha fazla sayfa/ekran görüntülemesi olan oturumdur. Formül: Etkileşim oranı = Etkileşimli oturum ÷ Oturum × 100. Örnek: 10.000 oturumun 6.200'ü etkileşimliyse oran %62'dir.",
+          "Hemen çıkma oranı (bounce rate): GA4'te etkileşimli olmayan oturumların yüzdesidir, yani Hemen çıkma oranı = 100 − Etkileşim oranı. Aynı örnekte %38. Eski Universal Analytics'teki 'tek sayfalık oturum' tanımından farklıdır; 3 dakika okunup çıkılan tek sayfalık bir blog ziyareti GA4'te hemen çıkma sayılmaz.",
+          "Gösterim payı (impression share): Google Ads'te reklamınızın aldığı gösterimin, alabileceği tahmini uygun gösterim sayısına oranıdır. Formül: Gösterim payı = Alınan gösterim ÷ Tahmini uygun gösterim × 100. 40.000 gösterim ve 100.000 uygun gösterimde %40'tır. Bu bir pazar payı değildir; yalnızca hedeflediğiniz aramalardaki görünürlüğünüzü gösterir. Kaybedilen pay, bütçe ya da sıralama (Ad Rank) kaynaklı olarak ayrı raporlanır.",
+          "Organik CTR ve ortalama konum: Search Console'da organik CTR = Tıklama ÷ Gösterim, ortalama konum ise sitenizin arama sonuçlarındaki en üst konumunun gösterimlere göre ortalamasıdır. İlk 10'daki ama düşük CTR'li sorgular başlık ve açıklama iyileştirmesi için en hızlı fırsattır. SEO metriklerinin genel çerçevesi: [SEO nedir, nasıl yapılır](/blog/seo-nedir-nasil-yapilir/).",
+          "UTM parametreleri: bir metrik değil, metriklerin doğru kanala yazılmasını sağlayan etiketlerdir (utm_source, utm_medium, utm_campaign). Etiketsiz ya da yanlış etiketli trafik GA4'te Unassigned veya Direct görünür ve kanal bazlı ROAS, CAC hesapları bozulur. Doğru kullanım: [UTM nedir](/blog/utm-nedir-utm-parametreleri/); link oluşturmak için [UTM link oluşturucu](/ucretsiz-araclar/utm-link-olusturucu/).",
+        ],
+      },
+      {
+        heading: "Tüm pazarlama metrikleri ve formülleri tek tabloda",
+        paragraphs: [
+          "Aşağıdaki tablo sözlükteki metriklerin formüllerini ve örnek işletmelerdeki sonuçlarını özetler. Hücrelerdeki bağlantılar ilgili metriğin ayrıntılı rehberine gider.",
+        ],
+        table: {
+          caption: "Örnek tutarlar: e-ticaret örneği 40.000 TL reklam / 150 sipariş; SaaS örneği 500.000 TL başlangıç MRR.",
+          head: ["Metrik", "Türkçesi", "Formül", "Örnek sonuç"],
+          rows: [
+            ["Sıklık", "Frequency", "Gösterim ÷ Erişim", "4"],
+            ["CPM (BGBM)", "Bin gösterim başına maliyet", "Harcama ÷ Gösterim × 1.000", "80 TL"],
+            ["[CTR](/blog/ctr-nedir-iyi-tiklama-orani-kac/)", "Tıklama oranı", "Tıklama ÷ Gösterim × 100", "%1,2"],
+            ["[CPC (TBM)](/blog/cpc-nedir-tiklama-basi-maliyet/)", "Tıklama başı maliyet", "Harcama ÷ Tıklama", "6,67 TL"],
+            ["Dönüşüm oranı", "Conversion rate", "Dönüşüm ÷ Tıklama × 100", "%2,5"],
+            ["CPA (EBM)", "Edinme başı maliyet", "Harcama ÷ Dönüşüm", "266,67 TL"],
+            ["[CPL](/blog/cpl-nedir-lead-basi-maliyet/)", "Lead başı maliyet", "Harcama ÷ Geçerli lead", "500 TL"],
+            ["[ROAS](/blog/roas-nedir-nasil-hesaplanir/)", "Reklam harcamasının getirisi", "Reklam cirosu ÷ Reklam harcaması", "3,75"],
+            ["[Başabaş ROAS](/blog/hedef-roas-nasil-belirlenir/)", "Breakeven ROAS", "1 ÷ Katkı marjı", "2,86"],
+            ["POAS", "Reklam harcamasının kârı", "Katkı kârı ÷ Reklam harcaması", "1,31"],
+            ["[ROI](/blog/roi-nedir-nasil-hesaplanir/)", "Yatırım getirisi", "(Kâr − Maliyet) ÷ Maliyet × 100", "%31,25"],
+            ["MER", "Pazarlama verimlilik oranı", "Toplam ciro ÷ Toplam pazarlama harcaması", "5"],
+            ["AOV", "Ortalama sipariş tutarı", "Ciro ÷ Sipariş", "1.000 TL"],
+            ["[Katkı marjı](/blog/kar-marji-nasil-hesaplanir/)", "Contribution margin", "(Fiyat − Değişken giderler) ÷ Fiyat", "%35"],
+            ["[CAC](/blog/cac-nedir-musteri-edinme-maliyeti/)", "Müşteri edinme maliyeti", "Pazarlama + satış maliyeti ÷ Yeni müşteri", "300 TL"],
+            ["[LTV](/blog/ltv-nedir-ltv-cac-orani/)", "Müşteri yaşam boyu değeri", "AOV × Katkı marjı × Sipariş sayısı", "840 TL"],
+            ["LTV:CAC", "LTV / CAC oranı", "LTV ÷ CAC", "2,8"],
+            ["CAC geri ödeme süresi", "CAC payback", "CAC ÷ (ARPA × Brüt marj)", "7,5 ay (SaaS)"],
+            ["[MRR](/blog/mrr-nedir-nasil-hesaplanir/)", "Aylık yinelenen gelir", "Başlangıç + Yeni + Genişleme − Daralma − Churn", "560.000 TL"],
+            ["[ARR](/blog/arr-nedir-yillik-yinelenen-gelir/)", "Yıllık yinelenen gelir", "MRR × 12", "6.720.000 TL"],
+            ["ARPA", "Hesap başına ortalama gelir", "MRR ÷ Aktif müşteri", "2.000 TL"],
+            ["[Churn rate](/blog/churn-nedir-churn-rate-nasil-hesaplanir/)", "Müşteri kayıp oranı", "Kaybedilen ÷ Dönem başı müşteri × 100", "%4"],
+            ["Brüt gelir churn'ü", "Gross revenue churn", "(Daralma + Churn MRR) ÷ Başlangıç MRR", "%4"],
+            ["[NRR](/blog/nrr-nedir-saas-buyume-metrigi/)", "Net gelir tutma", "(Başlangıç + Genişleme − Daralma − Churn) ÷ Başlangıç", "%100"],
+            ["GRR", "Brüt gelir tutma", "(Başlangıç − Daralma − Churn) ÷ Başlangıç", "%96"],
+            ["Quick Ratio", "SaaS hızlı oranı", "(Yeni + Genişleme) ÷ (Daralma + Churn)", "4"],
+            ["Rule of 40", "40 kuralı", "Büyüme % + Kâr marjı %", "43"],
+            ["Etkileşim oranı", "Engagement rate", "Etkileşimli oturum ÷ Oturum × 100", "%62"],
+            ["Hemen çıkma oranı", "Bounce rate (GA4)", "100 − Etkileşim oranı", "%38"],
+            ["Gösterim payı", "Impression share", "Alınan ÷ Uygun gösterim × 100", "%40"],
+          ],
+        },
+      },
+      {
+        heading: "En sık karıştırılan pazarlama metrikleri: farkları ne?",
+        paragraphs: [
+          "Raporlardaki çoğu yanlış karar, adı benzeyen iki metriğin yer değiştirmesinden çıkar. Aşağıdaki çiftleri ayırt etmek, panelin söylediği ile işletmenin gerçek durumunu ayırmanızı sağlar.",
+        ],
+        bullets: [
+          "ROAS ve ROI: ROAS ciroyu reklam harcamasına böler, ROI kârı toplam maliyete. Örnekte ROAS 3,75 iken ROI %31,25'tir; %35 marjda 2,5 ROAS zarar ettirir.",
+          "CPA (EBM) ve CAC: EBM her dönüşümü, CAC yalnızca yeni müşteriyi sayar. Örnekte 266,67 TL ve 333,33 TL; bütçe kararını CAC ile verin.",
+          "Gösterim ve erişim: gösterim tekrarı sayar, erişim tekil kişiyi. Oranları sıklığı verir.",
+          "CTR ve dönüşüm oranı: CTR reklamın tıklatma gücünü, dönüşüm oranı sayfanın ve teklifin ikna gücünü ölçer. Yüksek CTR ile düşük dönüşüm, vaadin sayfada karşılanmadığını gösterir.",
+          "Brüt marj ve katkı marjı: brüt marj yalnızca ürün maliyetini düşer; katkı marjı kargo, komisyon ve ödeme gibi sipariş başı giderleri de düşer. Başabaş ROAS'ı katkı marjıyla hesaplayın.",
+          "MRR ve ARR: aynı yinelenen gelirin aylık ve yıllık karşılığıdır; ARR, yıl içinde tahsil edilen toplam gelir değildir.",
+          "NRR ve GRR: NRR genişlemeyi içerir ve %100'ü geçebilir; GRR içermez ve tutma kalitesinin tabanını gösterir.",
+          "Müşteri churn'ü ve gelir churn'ü: 10 küçük müşteri kaybı müşteri churn'ünü yükseltir ama gelir churn'ünü az etkiler; tek bir büyük müşteri kaybı tam tersini yapar.",
+          "Hemen çıkma oranı (UA) ve hemen çıkma oranı (GA4): eski tanım tek sayfalık oturumdu, GA4'te etkileşimsiz oturumdur; iki dönemi aynı grafikte karşılaştırmayın.",
+        ],
+      },
+      {
+        heading: "Hangi pazarlama metriklerini takip etmelisiniz?",
+        paragraphs: [
+          "Hepsini değil. İş modelinize göre 3-5 metriği KPI olarak seçin, diğerlerini teşhis için kullanın. E-ticarette genellikle katkı kârı, ROAS (başabaşla birlikte), yeni müşteri CAC'si ve LTV; B2B'de CPL, lead'den müşteriye dönüşüm oranı ve CAC; SaaS'ta MRR büyümesi, NRR, churn ve CAC geri ödeme süresi öne çıkar.",
+          "Bir KPI bozulduğunda zincirde geriye doğru gidin: ROAS düştüyse sırasıyla AOV'ye, dönüşüm oranına, TBM'ye, TBM yükseldiyse CTR'ye ve BGBM'ye bakın. Bu sıralama, sorunun reklamda mı, sayfada mı yoksa teklifte mi olduğunu birkaç dakikada gösterir. Reklam tarafında bütçeyi bu metriklerden geriye doğru kurmak için [reklam bütçesi nasıl belirlenir](/blog/reklam-butcesi-nasil-belirlenir/) yazısına ve [reklam bütçesi hesaplama](/ucretsiz-araclar/reklam-butcesi-hesaplama/) aracına bakabilirsiniz.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Pazarlama metrikleri nelerdir?",
+        answer:
+          "Pazarlama metrikleri; gösterim, erişim, CTR, CPC ve CPM gibi reklam metrikleri, dönüşüm oranı, EBM ve CPL gibi dönüşüm metrikleri, ROAS, ROI ve katkı marjı gibi kârlılık metrikleri, CAC ve LTV gibi müşteri metrikleri ve MRR, ARR, churn ve NRR gibi abonelik metrikleridir.",
+      },
+      {
+        question: "En önemli pazarlama metrikleri hangileri?",
+        answer:
+          "İş modeline göre değişir. E-ticarette katkı kârı, ROAS ve başabaş ROAS, yeni müşteri CAC'si ve LTV; B2B'de CPL, lead'den müşteriye dönüşüm ve CAC; SaaS'ta MRR, NRR, churn ve CAC geri ödeme süresi genellikle en kritik metriklerdir.",
+      },
+      {
+        question: "Metrik ile KPI arasındaki fark nedir?",
+        answer:
+          "Metrik ölçtüğünüz her sayıdır. KPI ise bir iş hedefine bağlanmış, sahibi, hedef değeri ve takip sıklığı belli olan birkaç kritik metriktir. Her KPI bir metriktir ama her metrik KPI değildir.",
+      },
+      {
+        question: "ROAS ile ROI aynı şey mi?",
+        answer:
+          "Hayır. ROAS reklamdan gelen ciroyu reklam harcamasına böler; ROI ise kârı maliyete böler. %35 katkı marjında 3,75 ROAS, %31,25 ROI demektir. Yalnızca reklam maliyeti varken ROI = ROAS × Marj − 1.",
+      },
+      {
+        question: "CPA ile CAC arasındaki fark nedir?",
+        answer:
+          "CPA (EBM) reklam panelinin saydığı her dönüşümün maliyetidir ve tekrar siparişleri de içerir. CAC yalnızca yeni müşterileri sayar ve genellikle reklamın yanında diğer pazarlama ve satış maliyetlerini de kapsar. Bu yüzden CAC çoğunlukla panel CPA'sından yüksektir.",
+      },
+    ],
+    relatedToolKey: "roas",
+    resources: [
+      { label: "KPI Nedir? Pazarlama KPI Örnekleri", href: "/blog/kpi-nedir-pazarlama-kpi-ornekleri/" },
+      { label: "ROAS Nedir, Nasıl Hesaplanır?", href: "/blog/roas-nedir-nasil-hesaplanir/" },
+      { label: "CAC Nedir? Müşteri Edinme Maliyeti", href: "/blog/cac-nedir-musteri-edinme-maliyeti/" },
+      { label: "LTV Nedir? LTV:CAC Oranı", href: "/blog/ltv-nedir-ltv-cac-orani/" },
+      { label: "CTR Nedir? İyi Tıklama Oranı Kaç?", href: "/blog/ctr-nedir-iyi-tiklama-orani-kac/" },
+      { label: "CPC Nedir? Tıklama Başı Maliyet", href: "/blog/cpc-nedir-tiklama-basi-maliyet/" },
+      { label: "MRR Nedir, Nasıl Hesaplanır?", href: "/blog/mrr-nedir-nasil-hesaplanir/" },
+      { label: "Churn Nedir? Churn Rate Hesaplama", href: "/blog/churn-nedir-churn-rate-nasil-hesaplanir/" },
+      { label: "SaaS Metrikleri 101", href: "/blog/saas-metrikleri-arr-cac-ltv/" },
+      { label: "ROAS Hesaplayıcı", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Pazarlama Araçları (ücretsiz hesaplayıcılar)", href: "/ucretsiz-araclar/pazarlama-araclari/" },
+      { label: "SaaS Araçları (ücretsiz hesaplayıcılar)", href: "/ucretsiz-araclar/saas-araclari/" },
+      { label: "Google Analytics Yardım: GA4 metrik tanımları", href: "https://support.google.com/analytics/answer/12195621?hl=tr", external: true },
+      { label: "Google Ads Yardım: Ortalama TBM", href: "https://support.google.com/google-ads/answer/14074", external: true },
     ],
   },
 ];
