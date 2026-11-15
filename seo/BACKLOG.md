@@ -68,6 +68,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] Dizine ekleme isteği (2026-11-13 yeni yazı 1, TR önce): /blog/cpc-nedir-tiklama-basi-maliyet/, /en/blog/what-is-cpc-cost-per-click/
 - [ ] Dizine ekleme isteği (2026-11-13 yeni yazı 2, TR önce): /blog/tiktok-reklam-verme-rehberi/, /en/blog/how-to-run-tiktok-ads/
 - [ ] Dizine ekleme isteği (2026-11-14 yeni hub, TR): /blog/pazarlama-metrikleri-sozlugu/ (ayrıca gelen link eklenen TR yazılar: /blog/kpi-nedir-pazarlama-kpi-ornekleri/, /blog/saas-metrikleri-arr-cac-ltv/ — düşük öncelik)
+- [ ] Dizine ekleme isteği (2026-11-15 yeni yazı, TR): /blog/hepsiburada-kar-hesaplama/ (gelen metin içi link eklenen TR yazılar: /blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/, /blog/trendyol-komisyon-oranlari-hesaplama/, /blog/kar-marji-nasil-hesaplanir/ — düşük öncelik)
 - [ ] Her gün yeni yayınlanan TR/EN yazılar (TR önce)
 - [ ] "Tarandı - dizine eklenmedi" (24.10 taraması): /blog/ga4-unassigned-trafik-nedir-nasil-duzeltilir/, /blog/reklam-butcesi-nasil-belirlenir/, /en/blog/what-is-roas-how-to-calculate/ — 1 hafta izle; devam ederse içerik/iç link güçlendir (yeni yazılardan link ver)
 - [x] Keyword Planner keşif turu 2: 23 Kas – 30 Kas için 16 konu takvime eklendi (aralık hacimleri) — 2026-10-28
@@ -83,7 +84,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 - [ ] B — "Nedir" sırası: cac nedir → mrr ne demek → ltv nedir → utm nedir → roas nedir → google ads nedir → ctr nedir → churn nedir → geo nedir (ilk paragraf tanım, varyant H2/SSS, tablo)
 - [~] D1 — Kullanıcı: AdGusto ve Brandog sitelerinden yusufbayrak.net araçlarına link; LinkedIn/X/GitHub profil linkleri (Claude metin ve yerleşim önerisi hazırlar) — 13.11: metin ve yerleşim önerileri hazır (seo/outreach/kendi-mulkler.md: AdGusto footer + SSS bağlamsal link, Brandog footer, LinkedIn/X/Instagram/GitHub alanları + GitHub README taslağı); uygulama kullanıcıda
 - [ ] D2 — Araç dizini başvuruları (seo/outreach/arac-dizinleri.md) — form gönderimi kullanıcıda
-- [ ] D3 — Veri varlığı: "Türkiye pazaryeri komisyon ve kargo maliyetleri 2026" sayfası (vergi yok) + dağıtım metinleri
+- [~] D3 — Veri varlığı: "Türkiye pazaryeri komisyon ve kargo maliyetleri 2026" sayfası (vergi yok) + dağıtım metinleri — 15.11: taslak v0 hazır (seo/outreach/veri-varligi-pazaryeri-maliyetleri.md): yöntem + güven ölçeği, Trendyol/Hepsiburada/n11/Amazon.com.tr sabit kesinti tablosu (kaynak+tarih), kategori komisyon aralıkları, ÖZGÜN 'komisyon dışı sabit gider payı' tablosu (8 fiyat noktası, iki pazaryeri), 4 bulgu, LinkedIn + e-posta + kaynak düzeltme metinleri. Kalan: Çiçeksepeti/Pazarama verisi, güncel desi PDF'leri, Trendyol aralıkları, CSV/XLSX. Yayın önerisi: 22–23 Kas haftası bir günün yeni sayfası (/blog/pazaryeri-komisyon-kargo-maliyetleri-2026/)
 - [~] D4 — Haftalık 5 teklif taslağı (widget/şablon/konuk yazı); eticaretmerkezim ve zunapro hatırlatması — 14.11: 14–20 Kas haftasının 5 teklifi hazır (seo/outreach/teklifler-haftalik.md: Dr. Nurettin Alabay kaynak önerisi, pazarlamailetisimi.com konuk yazı Taslak 3, Mayata Vision düzeltme + kaynak, IdeaSoft CPC hesap hatası, ikas negatif churn tanımı) + eticaretmerkezim/zunapro 04.11 hatırlatmasının gönderilip gönderilmediğini takip tablosuna yazma notu. Gönderim kullanıcıda. Sonraki hafta: 21–27 Kas (hazır bekleyen foxs, solofor, birfatura, Ticimax, Yengeç metinleri)
 - [ ] F — Kullanıcı: kendi tarayıcısında bir araç kullan → GA4 › Gerçek zamanlı'da tool_use görünüyor mu?
 - [x] E — Kullanıcı kararı (13.11): günde 1 TR sayfa + EN yalnızca TR dizine girince
@@ -92,6 +93,7 @@ notları `seo/research/<konu>.md` altına kaydedilir.
 İçerik görevi yeni TR sayfayı buraya ekler; veri görevi TR sayfayı URL Denetimi'nde dizinde görünce "EN yazılabilir" diye işaretler.
 Biçim: - [ ] /blog/<tr-slug>/ → planlanan EN slug · durum: bekliyor | EN yazılabilir (tarih)
 - [ ] /blog/pazarlama-metrikleri-sozlugu/ → /en/blog/marketing-metrics-glossary/ · durum: bekliyor (14.11 yayın)
+- [ ] /blog/hepsiburada-kar-hesaplama/ → /en/blog/hepsiburada-profit-calculation/ · durum: bekliyor (15.11 yayın)
 
 ## Teknik (rapor: seo/seo-technical-audit.md)
 - [x] dist/server (SSR paketi + kopya sitemap/robots/llms) yayından çıkarıldı — 2026-10-23
