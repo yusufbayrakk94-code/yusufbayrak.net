@@ -1046,7 +1046,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bullets: [
           "Fiyatlamayı büyümeye bağlayın: koltuk, kullanım hacmi veya işlem sayısı gibi müşteriyle birlikte büyüyen bir eksen seçin.",
-          "Onboarding'i hızlandırın: ilk değerin görüldüğü süre (time-to-value) kısaldıkça hem churn düşer hem genişleme hızlanır.",
+          "Onboarding'i hızlandırın: ilk değerin görüldüğü süre (time-to-value) kısaldıkça hem [churn](/blog/churn-nedir-churn-rate-nasil-hesaplanir/) düşer hem genişleme hızlanır.",
           "Genişlemeyi sürtünmesiz yapın: ek koltuk veya modül almak için satış görüşmesi gerekmemeli.",
           "Risk skoru kurun: kullanım düşüşü, ana kullanıcının ayrılması, destek talebi artışı gibi sinyalleri churn gerçekleşmeden yakalayın.",
           "NRR'yi kohort ve segment kırılımında izleyin: hangi müşteri profilinin genişlediğini bilmek, satın alma hedeflemenizi de düzeltir.",
@@ -1733,7 +1733,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Adım 2: Hedeften Bütçeye — Uçtan Uca Örnek",
         paragraphs: [
           "Örnek mağaza Kasım ayında reklamdan 600.000 TL net ciro hedefliyor. Ortalama sipariş 1.200 TL olduğuna göre hedef 500 sipariştir. Hedef ROAS 4 olduğundan bütçe = 600.000 / 4 = 150.000 TL; sağlaması: 500 sipariş × 300 TL maks. CPA = 150.000 TL.",
-          "Bu planın reklam sonrası katkısı 600.000 × 0,35 − 150.000 = 60.000 TL'dir. Bütçeyi günlük tutara çevirirken Google Ads'in işleyişini hesaba katın: Google, ortalama günlük bütçenin bir günde 2 katına kadar harcanabileceğini, ancak aylık faturanın ortalama günlük bütçenin yaklaşık 30,4 katını geçmeyeceğini belirtir. 150.000 TL'lik aylık plan için ortalama günlük bütçe yaklaşık 4.930 TL'dir.",
+          "Bu planın reklam sonrası katkısı 600.000 × 0,35 − 150.000 = 60.000 TL'dir. Bütçeyi günlük tutara çevirirken [Google Ads'in işleyişini](/blog/google-ads-nedir-nasil-calisir/) hesaba katın: Google, ortalama günlük bütçenin bir günde 2 katına kadar harcanabileceğini, ancak aylık faturanın ortalama günlük bütçenin yaklaşık 30,4 katını geçmeyeceğini belirtir. 150.000 TL'lik aylık plan için ortalama günlük bütçe yaklaşık 4.930 TL'dir.",
         ],
         bullets: [
           "Hedef ciro: 600.000 TL (KDV hariç, iade sonrası)",
@@ -2137,7 +2137,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Hedef ROAS (tROAS) teklif stratejisi nedir, nasıl çalışır?",
         paragraphs: [
-          "Hedef ROAS, Google Ads'in değer odaklı akıllı teklif stratejisidir. Her açık artırmada olası dönüşümün değerini tahmin eder ve ortalama dönüşüm değeri / maliyet oranını sizin belirlediğiniz hedefe yakın tutarken toplam dönüşüm değerini artıracak şekilde teklif verir. Cihaz, konum, günün saati ve yeniden pazarlama listeleri gibi sinyalleri kullanır; değerli görünen aramalarda daha yüksek, düşük değerlilerde daha düşük teklif verir.",
+          "Hedef ROAS, [Google Ads](/blog/google-ads-nedir-nasil-calisir/)'in değer odaklı akıllı teklif stratejisidir. Her açık artırmada olası dönüşümün değerini tahmin eder ve ortalama dönüşüm değeri / maliyet oranını sizin belirlediğiniz hedefe yakın tutarken toplam dönüşüm değerini artıracak şekilde teklif verir. Cihaz, konum, günün saati ve yeniden pazarlama listeleri gibi sinyalleri kullanır; değerli görünen aramalarda daha yüksek, düşük değerlilerde daha düşük teklif verir.",
           "İki noktayı bilmek önemli. Birincisi, hedef bir ortalamadır: tek tek günlerde ya da kampanyalarda gerçekleşen ROAS hedefin üstünde veya altında kalabilir. İkincisi, Google Haziran 2026'da strateji adlarını sadeleştirdi: 'Hedef ROAS ile dönüşüm değerini en üst düzeye çıkarma' artık doğrudan 'Hedef ROAS' olarak görünüyor; Google'a göre teklif davranışı değişmedi.",
           "Strateji yalnızca dönüşüm değeri gönderen hesaplarda anlamlıdır. Değeri 0 olan dönüşümler hesaba katılmaz; bu yüzden önce satın alma etiketinin sipariş tutarını doğru gönderdiğinden emin olun.",
         ],
@@ -2417,7 +2417,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "LTV nasıl artırılır?",
         paragraphs: [
           "LTV'nin üç kaldıracı vardır: sipariş başı katkı, sipariş sıklığı ve aktif kalma süresi. Kohort eğrisi hangisinde zayıf olduğunuzu gösterir: 3. ayda eğri düzleşiyorsa ikinci siparişi tetikleyen akışlar (e-posta, yeniden pazarlama, abonelik seçeneği), sepet küçükse paket ve çapraz satış, marj düşükse fiyat ve kargo politikası öncelikli iştir.",
-          "SaaS'ta en büyük etki churn'den gelir; churn formülün paydasında olduğu için aylık churn'ü %3'ten %2,5'e indirmek, diğer her şey sabitken formül LTV'sini %20 artırır. Genişleme gelirini (üst paket, koltuk artışı) izlemek için NRR'a da bakın.",
+          "SaaS'ta en büyük etki [churn](/blog/churn-nedir-churn-rate-nasil-hesaplanir/)'den gelir; churn formülün paydasında olduğu için aylık churn'ü %3'ten %2,5'e indirmek, diğer her şey sabitken formül LTV'sini %20 artırır. Genişleme gelirini (üst paket, koltuk artışı) izlemek için NRR'a da bakın.",
         ],
       },
     ],
@@ -3203,7 +3203,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "MRR büyümesi sağlıklı mı? Quick Ratio, MRR churn ve NRR",
         paragraphs: [
           "Aylık %5,7 büyüme iyi görünür; ama büyümenin kalitesini anlamak için aynı köprüden üç oran daha çıkarılır. Bu oranlar, yeni satışın churn'ü maskelediği durumları ortaya çıkarır.",
-          "Örnek şirkette büyüme yeni satıştan geliyor; mevcut müşteri tabanı ise her ay küçülüyor (aylık NRR %100'ün altında). Yeni satış yavaşladığı ay MRR de düşmeye başlar. Öncelik kayıp ve daralmanın nedenlerini (ilk 90 gün aktivasyonu, Başlangıç planındaki ayrılma) bulmaktır. Churn oranını ve gelir kaybını ayrıca Churn Rate Hesaplayıcı ile, NRR'yi NRR Hesaplayıcı ile izleyebilirsiniz.",
+          "Örnek şirkette büyüme yeni satıştan geliyor; mevcut müşteri tabanı ise her ay küçülüyor (aylık NRR %100'ün altında). Yeni satış yavaşladığı ay MRR de düşmeye başlar. Öncelik kayıp ve daralmanın nedenlerini (ilk 90 gün aktivasyonu, Başlangıç planındaki ayrılma) bulmaktır. [Churn oranını](/blog/churn-nedir-churn-rate-nasil-hesaplanir/) ve gelir kaybını ayrıca Churn Rate Hesaplayıcı ile, NRR'yi NRR Hesaplayıcı ile izleyebilirsiniz.",
         ],
         bullets: [
           "SaaS Quick Ratio = (Yeni + Genişleme + Yeniden aktivasyon) / (Daralma + Kayıp) = 18.100 / 8.900 ≈ 2,0. Yatırımcı Mamoon Hamid'in yaygınlaştırdığı bu oranda 4 ve üzeri verimli büyüme kabul edilir; 1'in altı küçülme demektir",
@@ -3437,7 +3437,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "AI aramalarında görünmek için asıl ne işe yarar?",
         paragraphs: [
-          "Google'ın AI arama rehberi, üretken AI özellikleri için yapılacak işin ayrı bir disiplin değil SEO'nun parçası olduğunu söylüyor. AI Overviews ve AI Mode'da kaynak gösterilmenin ön koşulu, sayfanın dizinde ve snippet'e uygun olmasıdır. Diğer AI aramalarında da ortak payda aynıdır: botun sayfaya erişebilmesi ve sayfada alıntılanmaya değer, özgün bir bilgi bulunması.",
+          "Google'ın AI arama rehberi, üretken AI özellikleri için yapılacak işin ayrı bir disiplin değil SEO'nun parçası olduğunu söylüyor. AI Overviews ve AI Mode'da kaynak gösterilmenin ön koşulu, sayfanın dizinde ve snippet'e uygun olmasıdır ([GEO, yani üretken motor optimizasyonu](/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/) da bu temelin üstüne kurulur). Diğer AI aramalarında da ortak payda aynıdır: botun sayfaya erişebilmesi ve sayfada alıntılanmaya değer, özgün bir bilgi bulunması.",
           "Bu sitede uyguladığımız sıra şöyle: önce sayfaların derleme sırasında üretilmiş tam HTML olarak yayınlanması ve dizine girmesi, sonra her yazının ilk bölümünde sorunun doğrudan cevabı ve kendi hesap örnekleri, en son llms.txt gibi düşük maliyetli ekler.",
         ],
         bullets: [
@@ -3445,7 +3445,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Dizin: önemli sayfalar Google'da dizinde olmalı; Search Console'da 'Keşfedildi – dizine eklenmedi' listesini düzenli temizleyin",
           "Okunabilir HTML: içeriğin JavaScript çalışmadan da HTML'de bulunması (sunucu tarafı ya da statik üretim) birçok AI botu için önemlidir",
           "Özgün içerik: Google'ın ifadesiyle 'sıradan olmayan' içerik — kendi verileriniz, hesap örnekleriniz, deneyiminiz. Herkesin yazdığı tanımı tekrarlamak alıntı getirmez",
-          "Cevap önce yapı: soru biçimli başlıklar ve her bölümün ilk cümlesinde net cevap, hem okur hem de AI özetleri için en kolay alıntılanan biçimdir",
+          "Cevap önce yapı: soru biçimli başlıklar ve her bölümün ilk cümlesinde net cevap, hem okur hem de AI özetleri için en kolay alıntılanan biçimdir ([GEO](/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/) çalışmasının temeli)",
         ],
       },
       {
@@ -3512,10 +3512,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "churn-nedir-churn-rate-nasil-hesaplanir",
-    seoTitle: "Churn Nedir? Churn Rate Nasıl Hesaplanır ve Düşürülür?",
+    seoTitle: "Churn Nedir, Ne Demek? Churn Rate Hesaplama ve Tablo",
     title: "Churn Nedir? Churn Rate Nasıl Hesaplanır, İyi Churn Oranı Kaç ve Nasıl Düşürülür?",
     description:
-      "Churn nedir, churn rate nasıl hesaplanır? Doğru formül, sık yapılan payda hatası, gönüllü ve gönülsüz churn, gelir churn'ü, kohort analizi ve düşürme planı.",
+      "Churn nedir, ne demek? Churn rate formülü, aylık-yıllık churn tablosu, sık yapılan payda hatası, gönüllü/gönülsüz churn, gelir churn'ü ve düşürme planı.",
     category: "saas-buyume",
     tldr: [
       "Churn (müşteri kaybı), bir dönemde müşterilerin aboneliği bırakması ya da işletmeyle çalışmayı bırakmasıdır. Churn rate = Dönemde kaybedilen müşteri / Dönem başındaki müşteri × 100. Ay başında 800 abone ve ay içinde 40 iptal → aylık churn %5.",
@@ -3524,17 +3524,36 @@ export const BLOG_POSTS: BlogPost[] = [
       "Müşteri churn'ünün yanında gelir churn'ünü (brüt ve net) ve kohort churn'ünü izleyin: ilk ay churn'ü yüksek, sonraki aylar düşükse sorun ürün değil onboarding'dir. Kaynaksız 'iyi churn oranı' eşikleri yerine kendi kohortlarınızın eğilimiyle kıyaslayın.",
     ],
     publishedAt: "2026-10-30",
-    updatedAt: "2026-11-11",
+    updatedAt: "2026-11-15",
     readingMinutes: 10,
     tags: ["Churn", "Churn Rate", "Müşteri Kaybı", "SaaS Metrikleri", "Gelir Churn'ü", "Kohort Analizi"],
     sections: [
       {
-        heading: "Churn nedir? (Kısa cevap)",
+        heading: "Churn nedir, ne demek? (Kısa cevap)",
         paragraphs: [
-          "Churn, Türkçede müşteri kaybı ya da müşteri terki demektir: bir dönemde müşterilerin aboneliğini iptal etmesi, yenilememesi ya da işletmeden alışveriş yapmayı bırakmasıdır. Churn rate (churn oranı, müşteri kayıp oranı) bu kaybın dönem başındaki müşteri tabanına oranıdır.",
+          "Churn, Türkçede müşteri kaybı demektir: bir dönemde müşterilerin aboneliğini iptal etmesi, yenilememesi ya da işletmeden alışveriş yapmayı bırakmasıdır. Churn rate (churn oranı) bu kaybın dönem başındaki müşterilere oranıdır; ay başında 800 abonesi olan ve ay içinde 40 abone kaybeden şirketin aylık churn'ü %5'tir.",
           "Formül: Churn rate = (Dönem içinde kaybedilen müşteri / Dönem başındaki müşteri) × 100. Ekim'e 800 aktif aboneyle başlayan ve ay içinde 40 abonesi ayrılan bir SaaS şirketinin aylık churn'ü 40 / 800 = %5'tir. Tersi elde tutma (retention) oranıdır: %95.",
           "Kavram SaaS ve abonelik işlerinde, telekomda (hat iptali, numara taşıma), bankacılıkta (hesap kapatma) ve tekrar satın almanın önemli olduğu e-ticarette kullanılır. Bu yazıdaki tutarlar örnek tutarlardır; kendi rakamlarınızla denemek için Churn Rate Hesaplayıcı'yı kullanabilirsiniz.",
         ],
+      },
+      {
+        heading: "Churn ne demek? Sektöre göre churn ve churn rate anlamı",
+        paragraphs: [
+          "Churn kelimesi İngilizcede 'çalkalamak' anlamından gelir; iş dünyasında müşteri tabanının sürekli el değiştirmesini, yani müşteri kaybını anlatır. 'Churn rate ne demek?' sorusunun cevabı da budur: kayıp müşteri oranı. 'Churn analizi' ise kimin, ne zaman ve neden ayrıldığını segment ve kohort bazında inceleme işidir.",
+          "Kelime aynı kalsa da 'kaybedilmiş müşteri' tanımı sektöre göre değişir. Abonelikte müşteri iptal ettiği gün kaybedilir; e-ticarette ise iptal diye bir an yoktur, belirli bir süre alışveriş yapmayan müşteri kaybedilmiş sayılır. Kendi işinizde churn'ü ölçmeden önce aşağıdaki tablodaki gibi tanımı ve dönemi yazılı olarak sabitleyin; tanım değişirse oranlar aylar arasında kıyaslanamaz.",
+        ],
+        table: {
+          caption: "Tanım ve pencereler örnektir; kendi ürününüzün doğal kullanım ve yeniden satın alma süresine göre belirleyin.",
+          head: ["Sektör", "Churn neyi ifade eder?", "Tipik ölçüm dönemi", "Örnek hesap"],
+          rows: [
+            ["SaaS / abonelik", "Aboneliğin iptali ya da yenilenmemesi", "Aylık (aylık plan), yıllık (yıllık sözleşme)", "800 aboneden 40 iptal → %5 aylık"],
+            ["Telekom", "Hat iptali ya da numara taşıma ile operatör değişikliği", "Aylık", "Ay başı 1 milyon aboneden 15.000 ayrılış → %1,5"],
+            ["Bankacılık", "Hesabın kapatılması ya da ürünün (kart, mevduat) bırakılması", "Çeyreklik / yıllık", "Yıl başı 50.000 kart müşterisinden 4.000 kapatma → %8 yıllık"],
+            ["E-ticaret", "Belirli süre tekrar sipariş vermeme", "90, 180 ya da 365 günlük pencere", "2.000 müşteriden 1.300'ü 180 günde dönmedi → %65"],
+            ["Mobil uygulama", "Uygulamayı belirli süre açmama", "30 gün aktif olmama", "10.000 aylık aktif kullanıcıdan 2.500'ü ertesi ay gelmedi → %25"],
+            ["İnsan kaynakları", "Çalışanın işten ayrılması (çalışan devir hızı)", "Yıllık", "120 çalışandan 18 ayrılış → %15"],
+          ],
+        },
       },
       {
         heading: "Churn rate nasıl hesaplanır? Adım adım örnek",
@@ -3568,6 +3587,26 @@ export const BLOG_POSTS: BlogPost[] = [
           "Aylık churn 12 ile çarpılmaz, çünkü her ay kalan taban küçülür ve kayıp bileşik işler. Yıllık churn = 1 − (1 − aylık churn)^12. %5 aylık churn ≈ %46 yıllık churn demektir (×12 ile bulunacak %60 değil). Yeni müşteri gelmeseydi 800 aboneden 12 ay sonra yaklaşık 432'si kalırdı.",
           "Ortalama müşteri ömrü ≈ 1 / aylık churn = 1 / 0,05 = 20 aydır. Bu varsayım churn'ün zaman içinde sabit kaldığını kabul eder; gerçekte churn genellikle ilk aylarda yüksek, sonra düşüktür, bu yüzden kohort verisiyle kontrol edin.",
         ],
+      },
+      {
+        heading: "Churn oranı tablosu: aylık churn'e göre yıllık kayıp, müşteri ömrü ve LTV",
+        paragraphs: [
+          "Aşağıdaki tablo aynı 1.000 müşterilik tabanın farklı aylık churn oranlarında ne olacağını gösterir. Son iki sütun pratik iki soruya cevap verir: yerinde saymak için her ay kaç yeni müşteri gerekir ve müşteri başına aylık 360 TL brüt kâr bırakan bir abonelikte formül LTV'si kaç olur?",
+          "Tablonun okunuşu: aylık churn'ün %5'ten %3'e inmesi kâğıt üzerinde 2 puanlık küçük bir iyileşmedir; ama yıllık kayıp %46'dan %30,6'ya, 12 ay sonra kalan müşteri 540'tan 694'e çıkar ve müşteri başına harcayabileceğiniz edinme maliyetinin üst sınırı (LTV) 7.200 TL'den 12.000 TL'ye yükselir.",
+          "Ters hesap: hedefinizi yıllık churn olarak koyduysanız aylık karşılığı = 1 − (1 − yıllık churn)^(1/12). Yıllık %20 hedefi aylık yaklaşık %1,84'e, yıllık %30 aylık %2,93'e, yıllık %50 aylık %5,61'e denk gelir. Kendi oranlarınızı [Churn Rate Hesaplayıcı](/ucretsiz-araclar/churn-rate-hesaplayici/) ile hesaplayabilir, LTV etkisini [LTV nedir](/blog/ltv-nedir-ltv-cac-orani/) yazısındaki yöntemle kontrol edebilirsiniz.",
+        ],
+        table: {
+          caption: "Örnek hesap: 1.000 müşteri, yeni müşteri yok, churn sabit; LTV = 360 TL aylık müşteri başı brüt kâr / aylık churn.",
+          head: ["Aylık churn", "Yıllık churn", "Ort. müşteri ömrü", "12 ay sonra kalan müşteri", "Yerinde saymak için aylık yeni müşteri", "Formül LTV"],
+          rows: [
+            ["%1", "%11,4", "100 ay", "886", "10", "36.000 TL"],
+            ["%2", "%21,5", "50 ay", "785", "20", "18.000 TL"],
+            ["%3", "%30,6", "33,3 ay", "694", "30", "12.000 TL"],
+            ["%5", "%46,0", "20 ay", "540", "50", "7.200 TL"],
+            ["%7", "%58,1", "14,3 ay", "419", "70", "5.143 TL"],
+            ["%10", "%71,8", "10 ay", "282", "100", "3.600 TL"],
+          ],
+        },
       },
       {
         heading: "Gönüllü ve gönülsüz churn arasındaki fark nedir?",
@@ -3664,6 +3703,11 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "Churn rate nasıl hesaplanır?",
         answer:
           "Churn rate = Dönemde kaybedilen müşteri / Dönem başındaki müşteri × 100. 800 aboneyle başlayıp 40 abone kaybeden bir şirketin aylık churn'ü %5'tir. Dönem içinde kazanılan yeni müşteriler paydaya eklenmez.",
+      },
+      {
+        question: "Aylık %3 churn yıllık kaç eder?",
+        answer:
+          "Yaklaşık %30,6. Aylık churn 12 ile çarpılmaz; yıllık churn = 1 − (1 − 0,03)^12 formülüyle bulunur. Aylık %5 churn yıllık yaklaşık %46, aylık %2 churn yıllık yaklaşık %21,5 eder.",
       },
       {
         question: "İyi bir churn oranı kaçtır?",
@@ -4022,7 +4066,7 @@ export const BLOG_POSTS: BlogPost[] = [
         bullets: [
           "NRR (net gelir tutundurma) = (Başlangıç + Genişleme − Daralma − Kayıp) / Başlangıç = 6.120.000 / 6.000.000 = %102",
           "GRR (brüt gelir tutundurma) = (Başlangıç − Daralma − Kayıp) / Başlangıç = 5.100.000 / 6.000.000 = %85; genişleme dahil edilmediği için %100'ü geçemez",
-          "Yıllık logo churn = Kaybedilen müşteri / Başlangıç müşteri = 14 / 120 ≈ %11,7",
+          "Yıllık logo [churn](/blog/churn-nedir-churn-rate-nasil-hesaplanir/) = Kaybedilen müşteri / Başlangıç müşteri = 14 / 120 ≈ %11,7",
           "Yeni satış payı = Yeni ARR / (Yeni + Genişleme) = 2.280.000 / 3.300.000 ≈ %69",
         ],
       },
@@ -4131,13 +4175,14 @@ export const BLOG_POSTS: BlogPost[] = [
       "Ölçüm: 20 soru × 3 motor × 2 tekrar = 120 cevaplık bir panelde sitenizin alıntılandığı cevap sayısı / 120 = alıntılanma oranı. Örnekte 9 / 120 = %7,5. GA4'te AI asistanları için ayrı kanal kurun; Google AI Overviews tıklamaları Search Console'da 'Web' içinde ayrılmadan görünür.",
     ],
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-15",
     readingMinutes: 10,
     tags: ["GEO", "Yapay Zekâ SEO", "AI Overviews", "ChatGPT", "AEO", "Generative Engine Optimization"],
     sections: [
       {
         heading: "GEO nedir? (Kısa cevap)",
         paragraphs: [
-          "GEO (Generative Engine Optimization), Türkçesiyle üretken motor optimizasyonu, bir markanın ya da sayfanın yapay zekâ destekli cevap motorlarında (ChatGPT arama, Google AI Overviews ve AI Mode, Gemini, Perplexity, Microsoft Copilot, Claude) kaynak olarak gösterilmesi, adının doğru bağlamda anılması ve bu cevaplardan tıklama alması için yapılan içerik ve teknik çalışmalardır.",
+          "GEO (Generative Engine Optimization, üretken motor optimizasyonu), bir sayfanın ChatGPT, Google AI Overviews, Gemini, Perplexity ve Copilot gibi yapay zekâ cevap motorlarında kaynak gösterilmesi, markanın doğru bağlamda anılması ve bu cevaplardan tıklama alması için yapılan içerik ve teknik çalışmalardır.",
           "SEO'nun hedefi arama sonuçlarındaki mavi linklerde üst sıralara çıkmaktır; GEO'nun hedefi ise kullanıcıya tek bir sentezlenmiş cevap veren sistemin o cevabı oluştururken sizin sayfanızı kullanması ve göstermesidir. Ölçü birimi sıralama değil, alıntılanma (citation) ve anılmadır (mention).",
           "Terim, Princeton, Georgia Tech, Allen Institute for AI ve IIT Delhi araştırmacılarının 2023'te yayımlayıp KDD 2024'te sunduğu 'GEO: Generative Engine Optimization' makalesiyle yaygınlaştı. Not: 'GEO' pazarlamada coğrafi hedefleme (geo-targeting) anlamında da kullanılır; bu yazı yapay zekâ aramalarındaki anlamı anlatır.",
         ],
@@ -4154,6 +4199,25 @@ export const BLOG_POSTS: BlogPost[] = [
           "GEO: üretken AI cevaplarında kaynak gösterilmek ve doğru anılmak. Ölçü: alıntılanma oranı, alıntı payı, AI asistanlarından gelen trafik",
           "Ortak zemin: taranabilir ve dizinde sayfa, soruya doğrudan cevap veren yapı, özgün bilgi, güvenilir yazar ve marka sinyalleri",
         ],
+      },
+      {
+        heading: "GEO ne demek? GEO, AEO, LLMO ve AI SEO terimleri tek tabloda",
+        paragraphs: [
+          "Türkçe kaynaklarda aynı iş için birkaç farklı kısaltma dolaşıyor ve bazıları birbirinin yerine kullanılıyor. Aşağıdaki tablo terimlerin açılımını, neyi hedeflediğini ve hangi araçla ölçüldüğünü ayırır. 'GEO ne demek?' sorusunun pazarlamadaki ikinci anlamı olan coğrafi hedefleme (geo-targeting) de karışıklığı önlemek için tabloda.",
+          "Pratik kural: hangi kısaltmayı kullanırsanız kullanın, iş listesi büyük ölçüde aynıdır — sayfanın dizinde olması, soruya ilk cümlede cevap, özgün veri ve hesap, kaynaklı iddialar ve botların erişimine açık bir site. Farkı yaratan şey ölçüm biçimidir; bu yüzden raporlarken terimi değil ölçtüğünüz metriği yazın.",
+        ],
+        table: {
+          caption: "Terimler sektörde standartlaşmış değildir; tablo en yaygın kullanımları özetler.",
+          head: ["Terim", "Açılımı", "Neyi hedefler?", "Nasıl ölçülür?"],
+          rows: [
+            ["GEO", "Generative Engine Optimization (üretken motor optimizasyonu)", "Üretken AI cevaplarında kaynak gösterilmek ve doğru anılmak", "Alıntılanma oranı, AI asistanı trafiği (GA4)"],
+            ["AEO", "Answer Engine Optimization (cevap motoru optimizasyonu)", "Öne çıkan snippet, sesli asistan ve tek cevap kutuları", "Snippet sahipliği, 'Diğer kullanıcılar şunları da sordu' görünürlüğü"],
+            ["LLMO", "Large Language Model Optimization", "Dil modellerinin markayı doğru tanıması ve önermesi", "Marka anılma sıklığı ve doğruluğu (soru paneli)"],
+            ["AI SEO / yapay zekâ SEO", "Genel kullanım; tek bir tanımı yok", "SEO'nun AI aramalarını da kapsayan hâli", "Search Console + alıntı paneli"],
+            ["[SEO](/blog/seo-nedir-nasil-yapilir/)", "Search Engine Optimization", "Arama sonuçlarında sıralama ve tıklama", "Gösterim, ortalama konum, tıklama"],
+            ["Geo-targeting (coğrafi hedefleme)", "Konuma göre hedefleme", "Reklam veya içeriği belirli bölgeye göstermek", "Konum bazlı reklam raporları"],
+          ],
+        },
       },
       {
         heading: "Yapay zekâ cevap motorları kaynaklarını nasıl seçer?",
@@ -4507,7 +4571,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "Maliyet hesabı: EBM = TBM / Dönüşüm oranı. 8 TL TBM ve %2 dönüşüm oranıyla satış başı maliyet 400 TL'dir; %40 marjlı 1.200 TL'lik siparişte başabaş EBM 480 TL olduğu için kampanya kârlıdır. Günlük 500 TL bütçe ayda en fazla 15.200 TL harcar.",
     ],
     publishedAt: "2026-11-01",
-    readingMinutes: 9,
+    updatedAt: "2026-11-15",
+    readingMinutes: 11,
     tags: ["Google Ads", "Google Reklam", "TBM", "Kalite Puanı", "Performans Pazarlama", "PPC"],
     sections: [
       {
@@ -4517,6 +4582,30 @@ export const BLOG_POSTS: BlogPost[] = [
           "En bilinen kullanımı arama reklamlarıdır: biri 'kargo desi hesaplama' ya da 'muhasebe programı' gibi bir sorgu aradığında, o sorgu için teklif veren reklamverenler arasından seçilen reklamlar sonuçların üstünde ve altında 'Sponsorlu' etiketiyle görünür. Reklamveren reklam gösterildiği için değil, çoğunlukla tıklandığında öder; buna tıklama başına maliyet (TBM) denir.",
           "Google Ads'in diğer reklam kanallarından farkı niyettir: arama reklamı, kullanıcı ihtiyacını kendisi yazdığı anda gösterilir. Bu yüzden talebi zaten var olan ürün ve hizmetlerde genellikle en hızlı dönüşüm getiren kanaldır; talebin henüz oluşmadığı yeni bir kategoride ise Meta ve YouTube gibi talep yaratan kanallarla birlikte düşünülmelidir.",
         ],
+      },
+      {
+        heading: "Google Ads ne demek? Sık geçen terimler tablosu",
+        paragraphs: [
+          "Google Ads ne demek sorusunun kısa cevabı 'Google reklamları'dır: Google'ın arama, YouTube ve iş ortağı sitelerdeki reklam alanlarını satan sisteminin adı. Panelde ve rehberlerde Türkçe ve İngilizce kısaltmalar karışık kullanıldığı için yeni başlayanlar çoğu zaman terimlerde takılır. Aşağıdaki tablo en sık geçen terimleri ve bu yazının hangi bölümünde ayrıntılandığını özetler.",
+        ],
+        table: {
+          caption: "Panel Türkçe kullanıldığında TBM, TO, BGBM ve EBM kısaltmaları görünür; İngilizce kaynaklarda CPC, CTR, CPM ve CPA geçer.",
+          head: ["Terim", "Ne demek?", "Not"],
+          rows: [
+            ["Google Ads", "Google'ın ücretli reklam platformu", "Arama, YouTube, Gmail, Discover, Haritalar ve iş ortağı siteler"],
+            ["Google AdWords", "Google Ads'in 2018'e kadarki adı", "Eski rehberlerde geçer; aynı platform"],
+            ["PPC (pay per click)", "Tıklama başına ödeme modeli", "Google Ads arama reklamları PPC modelidir"],
+            ["SEM", "Arama motoru pazarlaması", "Türkiye'de çoğunlukla ücretli arama reklamları anlamında kullanılır"],
+            ["[TBM (CPC)](/blog/cpc-nedir-tiklama-basi-maliyet/)", "Tıklama başına maliyet", "Gerçek TBM genellikle maksimum teklifin altındadır"],
+            ["[TO (CTR)](/blog/ctr-nedir-iyi-tiklama-orani-kac/)", "Tıklama oranı: tıklama ÷ gösterim", "Beklenen TO, Kalite Puanı bileşenidir"],
+            ["BGBM (CPM)", "Bin gösterim başına maliyet", "Video ve görüntülü reklamlarda yaygın"],
+            ["EBM (CPA)", "Edinme (dönüşüm) başına maliyet", "EBM = TBM ÷ Dönüşüm oranı"],
+            ["Reklam Sıralaması (Ad Rank)", "Reklamın gösterilip gösterilmeyeceğini ve sırasını belirleyen değer", "Teklif + kalite + bağlam + eşik"],
+            ["Kalite Puanı", "1–10 arası teşhis puanı", "Açık artırmaya doğrudan girmez"],
+            ["[Hedef ROAS](/blog/hedef-roas-nasil-belirlenir/)", "Dönüşüm değeri ÷ maliyet hedefi", "Değer odaklı akıllı teklif stratejisi"],
+            ["Performance Max", "Tüm Google envanterinde tek kampanya", "Dönüşüm ölçümü sağlamken kullanılmalı"],
+          ],
+        },
       },
       {
         heading: "Google Ads nasıl çalışır? Açık artırma ve Reklam Sıralaması",
@@ -4607,6 +4696,17 @@ export const BLOG_POSTS: BlogPost[] = [
           "Sıralı eşleme: aramanın anlamı anahtar kelimenizin anlamını içerdiğinde gösterilir",
           "Tam eşleme: arama, anahtar kelimenizle aynı anlamı taşıdığında gösterilir; en dar ve en kontrollü",
         ],
+        table: {
+          caption: "Örnek anahtar kelime: kargo ücreti hesaplama. Google eşleşmeyi kelime dizisine değil anlama göre yapar; tablo olası davranışı gösterir, kesin sonuç için Arama terimleri raporuna bakın.",
+          head: ["Kullanıcının araması", "Tam eşleme", "Sıralı eşleme", "Geniş eşleme"],
+          rows: [
+            ["kargo ücreti hesaplama", "Evet", "Evet", "Evet"],
+            ["kargo fiyatı hesaplama (aynı anlam)", "Evet", "Evet", "Evet"],
+            ["aras kargo ücreti hesaplama (daha dar anlam)", "Hayır", "Evet", "Evet"],
+            ["desi hesaplama (ilişkili konu)", "Hayır", "Hayır", "Olası"],
+            ["kargo firması iş ilanı (farklı niyet)", "Hayır", "Hayır", "Düşük olasılık — negatif listeye ekleyin"],
+          ],
+        },
       },
       {
         heading: "Google Ads'te başarı nasıl ölçülür?",
@@ -4624,6 +4724,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     faq: [
+      {
+        question: "Google Ads ne demek, Türkçesi nedir?",
+        answer:
+          "Google Ads, Türkçede 'Google reklamları' demektir: Google Arama, YouTube, Gmail, Discover, Haritalar ve iş ortağı sitelerde ücretli reklam göstermeyi sağlayan platformdur. 2018'e kadarki adı Google AdWords'tü.",
+      },
       {
         question: "Google Ads ücretli mi, en az ne kadar bütçe gerekir?",
         answer:
@@ -5427,7 +5532,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Hayır, ama tıklama hesabını değiştirdi. Ahrefs'in 300.000 anahtar kelimelik çalışmasına göre AI Overview çıkan sorgularda birinci sıranın masaüstü tıklama oranı, özet olmasaydı beklenen değerin yaklaşık %58 altında kaldı (Aralık 2025). Bu bir korelasyondur ve aynı dönemde öne çıkan snippet gibi başka özellikler de tıklamayı etkiliyor; yine de bilgi sorgularında 'birinci sıra = bol trafik' varsayımı artık geçerli değil.",
           "Google'ın resmî tutumu nettir: AI Overviews ve AI Mode'da görünmek için ek gereksinim yok; sayfanın dizinde ve snippet'e uygun olması yeterli, yeni bir AI metin dosyası ya da özel şema gerekmiyor. Yani önce SEO temeli. Bu özetlerden gelen trafik de ayrı değil, Search Console'da 'Web' arama türünün içinde raporlanıyor. Bu yüzden llms.txt gibi dosyaları Google sıralaması için değil, diğer AI araçları için düşük maliyetli bir ek olarak görün.",
-          "Pratikte üç değişiklik yapın: hesap, araç ve özgün veri içeren sayfalara ağırlık verin (özet bunları tam karşılayamaz); her bölümü tek başına anlaşılır, kaynaklı bir cevapla açın; başarıyı yalnızca tıklamayla değil marka aramalarının artışıyla da ölçün. Ayrıntılar GEO rehberimizde.",
+          "Pratikte üç değişiklik yapın: hesap, araç ve özgün veri içeren sayfalara ağırlık verin (özet bunları tam karşılayamaz); her bölümü tek başına anlaşılır, kaynaklı bir cevapla açın; başarıyı yalnızca tıklamayla değil marka aramalarının artışıyla da ölçün. Ayrıntılar [GEO nedir](/blog/geo-nedir-yapay-zeka-arama-optimizasyonu/) rehberimizde.",
         ],
       },
       {
@@ -6005,7 +6110,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Google Ads'te nasıl reklam verilir? (Kısa cevap)",
         paragraphs: [
           "Google Ads'te reklam vermek için ads.google.com üzerinden hesap açar, reklamla ulaşmak istediğiniz hedefi seçer, kampanya türünü belirler, hedefleme ve bütçeyi girer, reklam metnini yazar ve ödeme bilgilerini ekleyip yayınlarsınız. Google'ın incelemesinden geçen reklam yayına girer.",
-          "İlk kampanya için en güvenli yol, zaten aranan bir ihtiyacı yakalayan Arama kampanyasıdır. Bu rehber kuruluma odaklanır ve aşağıdaki sekiz adımı izler. Açık artırmanın, kalite puanının ve maliyetin mantığını öğrenmek için önce Google Ads nedir yazımıza bakabilirsiniz.",
+          "İlk kampanya için en güvenli yol, zaten aranan bir ihtiyacı yakalayan Arama kampanyasıdır. Bu rehber kuruluma odaklanır ve aşağıdaki sekiz adımı izler. Açık artırmanın, kalite puanının ve maliyetin mantığını öğrenmek için önce [Google Ads nedir](/blog/google-ads-nedir-nasil-calisir/) yazımıza bakabilirsiniz.",
         ],
         bullets: [
           "1. Hesabı açın (saat dilimi ve para birimine dikkat)",
@@ -6364,7 +6469,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bullets: [
           "MRR (aylık yinelenen gelir) ve büyüme oranı (MRR Hesaplayıcı)",
-          "Churn oranı = Dönemde kaybedilen müşteri / Dönem başı müşteri × 100 (Churn Hesaplayıcı)",
+          "[Churn oranı](/blog/churn-nedir-churn-rate-nasil-hesaplanir/) = Dönemde kaybedilen müşteri / Dönem başı müşteri × 100 (Churn Hesaplayıcı)",
           "NRR (net gelir tutma) = (Başlangıç MRR + Genişleme − Daralma − Kayıp) / Başlangıç MRR × 100",
           "LTV:CAC oranı (LTV ve CAC hesaplayıcıları)",
           "CAC geri ödeme süresi = CAC / (Aylık müşteri başı gelir × Brüt marj)",
@@ -7747,7 +7852,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "CTR yalnızca bir ilgi göstergesi değildir; bin gösterim başına ödenen tutar (BGBM, CPM) sabitken tıklama başı maliyeti (TBM, CPC) doğrudan belirler: TBM = BGBM ÷ (CTR × 1.000). Edinme başı maliyet ise EBM (CPA) = TBM ÷ dönüşüm oranı formülüyle bağlanır.",
           "Örnek (örnek tutarlar): bir Meta kampanyasında bin gösterim 60 TL. CTR %0,8 ise bin gösterimden 8 tıklama gelir ve TBM 7,5 TL olur. Kreatif yenilenip CTR %1,2'ye çıkarsa 12 tıklama gelir, TBM 5 TL'ye iner. CTR %0,5'e düşerse TBM 12 TL'ye çıkar. Dönüşüm oranı %2 ise EBM sırasıyla 375 TL, 250 TL ve 600 TL olur.",
-          "Google Ads arama reklamlarında mekanizma farklı ama sonuç benzerdir: beklenen tıklama oranı Kalite Puanı'nın üç bileşeninden biridir (diğerleri reklam alaka düzeyi ve açılış sayfası deneyimi). Google, reklamın alakalı olmasının daha düşük maliyet ve daha iyi reklam sıralaması getirebileceğini belirtir. Yani tıklanmayan bir reklam hem daha az trafik hem de daha pahalı trafik demektir.",
+          "[Google Ads](/blog/google-ads-nedir-nasil-calisir/) arama reklamlarında mekanizma farklı ama sonuç benzerdir: beklenen tıklama oranı Kalite Puanı'nın üç bileşeninden biridir (diğerleri reklam alaka düzeyi ve açılış sayfası deneyimi). Google, reklamın alakalı olmasının daha düşük maliyet ve daha iyi reklam sıralaması getirebileceğini belirtir. Yani tıklanmayan bir reklam hem daha az trafik hem de daha pahalı trafik demektir.",
         ],
         bullets: [
           "CTR %0,5 → 5 tıklama / 1.000 gösterim → TBM 12 TL → EBM 600 TL",
@@ -8387,7 +8492,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "CPC nasıl hesaplanır? Ortalama, gerçek ve maksimum TBM farkı",
         paragraphs: [
           "Formül: Ortalama TBM = toplam reklam maliyeti ÷ toplam tıklama. Birden fazla kampanyanın ortalamasını bulurken kampanyaların TBM'lerinin ortalamasını almayın; toplam harcamayı toplam tıklamaya bölün. 100 tıklamalı 2 TL'lik kampanya ile 1.000 tıklamalı 6 TL'lik kampanyanın 'ortalaması' 4 TL değil, (200 + 6.000) ÷ 1.100 ≈ 5,64 TL'dir.",
-          "Google Ads'te üç ayrı TBM kavramı vardır ve sık karıştırılır. Maksimum TBM, bir tıklama için ödemeye razı olduğunuz en yüksek tutardır, yani teklifinizdir. Gerçek TBM, bir tıklama için sizden kesilen nihai tutardır. Google'ın açıklamasına göre gerçek TBM genellikle maksimum teklifin belirgin şekilde altındadır: Reklam Sıralaması eşiklerini geçmek ve hemen altınızdaki reklamverenin önüne geçmek için gereken en düşük tutarı ödersiniz; altınızda uygun bir rakip yoksa rezerv fiyatı ödersiniz.",
+          "Google Ads'te üç ayrı TBM kavramı vardır ve sık karıştırılır. Maksimum TBM, bir tıklama için ödemeye razı olduğunuz en yüksek tutardır, yani teklifinizdir. Gerçek TBM, bir tıklama için sizden kesilen nihai tutardır. Google'ın açıklamasına göre gerçek TBM genellikle maksimum teklifin belirgin şekilde altındadır: [Google Ads açık artırmasında](/blog/google-ads-nedir-nasil-calisir/) Reklam Sıralaması eşiklerini geçmek ve hemen altınızdaki reklamverenin önüne geçmek için gereken en düşük tutarı ödersiniz; altınızda uygun bir rakip yoksa rezerv fiyatı ödersiniz.",
           "Maksimum teklifinizden fazlası kesilmez; istisnası otomatik teklif stratejileri ve teklif ayarlamalarıdır. Ayrıca sonuçların üstündeki konumların eşiği daha yüksek olduğu için üst konumlarda ödenen gerçek TBM, alttaki konumlardan genellikle daha yüksektir. Raporlarda gördüğünüz 'Ort. TBM' ise bu gerçek TBM'lerin dönem ortalamasıdır.",
         ],
         bullets: [
