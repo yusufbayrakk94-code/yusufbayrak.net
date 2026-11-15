@@ -145,6 +145,11 @@ Düşük: ga4 nedir / google search console nasıl kullanılır 170, ahrefs nedi
 0–10 veya veri yok (takvimden çıkarıldı / eklenmedi): dijital pazarlama fiyatları (10), reklam maliyeti (10), google alışveriş reklamları (10), performance max nedir (10), trendyol satıcı puanı (10), facebook pixel kurulumu (10), satıcı puanı hesaplama (—), conversions api nedir (—), cro nedir (—), ortalama sipariş tutarı (—), sepet terk oranı (—).
 Yazı yerine sayfa güçlendirmesi: kar oranı hesaplama (880) → Kar Marjı aracına kâr oranı modu; facebook reklam verme (480) → Meta reklam verme rehberine bölüm (BACKLOG). black friday 2026 → mevcut BF yazısı.
 
+## Hacim notu (15.11.2026, Keyword Planner — AdGusto hesabı, Türkiye, Türkçe, Kas 2025–Eki 2026, "Yeni anahtar kelimeler keşfedin"; plan kaydedilmedi)
+"Ne demek" varyantları (yeni sayfa değil, mevcut 'nedir' sayfalarına H2/SSS — yol haritası B): churn ne demek 1.000, roas ne demek 260 (yıllık +%52), mrr ne demek 210, ltv ne demek 170, cac ne demek 110, google ads ne demek 50. geo nedir 1.000 (yıllık +%171).
+Hub ve sayfasız sorgular: pazarlama metrikleri 10, dijital pazarlama terimleri 20 → hub (14.11) hacimsiz baş terim; değeri iç link dağıtımı ve uzun kuyruk, yeni hub önceliği düşürülmedi ama 'E-ticaret kârlılık rehberi' hub'ı mevcut yüksek hacimli sorgulara (kargo/komisyon) bağlanmalı. facebook hedef kitle oluşturma 10 → takvime eklenmedi.
+Açık konu sayısı: 21 (eşik 14) → yeni 30 konuluk tur gerekmedi; günde 1 konu tüketimiyle eşik ~22.11'de aşılır, tur 21–22.11'de yapılmalı.
+
 ## Yedek konular (gün içi SERP analizinde boşluk çıkmazsa)
 - Google Ads Performance Max bütçesi nasıl ayarlanır
 - E-ticarette ortalama sipariş tutarı (AOV) nasıl artırılır
