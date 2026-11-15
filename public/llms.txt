@@ -104,6 +104,7 @@
 - [CPC Nedir? Tıklama Başı Maliyet Nasıl Hesaplanır, Ne Kadar Olmalı ve Nasıl Düşer?](https://yusufbayrak.net/blog/cpc-nedir-tiklama-basi-maliyet/): CPC (TBM) nedir, nasıl hesaplanır? Ortalama, gerçek ve maksimum TBM farkı, kârlı TBM sınırının formülü, CPC'nin neden yükseldiği ve nasıl düşürüleceği.
 - [TikTok Reklam Verme Rehberi: Minimum Bütçe, Hedef EBM'den Bütçe Hesabı, Kurulum ve Ölçüm](https://yusufbayrak.net/blog/tiktok-reklam-verme-rehberi/): TikTok reklam nasıl verilir? Ads Manager kurulumu, resmî minimum bütçeler, hedef EBM'den günlük bütçe hesabı, öğrenme aşaması, Spark Ads ve UTM ile ölçüm.
 - [Pazarlama Metrikleri Sözlüğü: ROAS, CAC, LTV, CTR, MRR, Churn ve Diğerleri — Formüller ve Örnekler](https://yusufbayrak.net/blog/pazarlama-metrikleri-sozlugu/): Pazarlama metrikleri nedir? ROAS, CAC, LTV, CTR, CPC, CPL, MRR, ARR, churn ve NRR dahil 35 metriğin tanımı, formülü ve aynı örnek işletmeyle hesabı tek sayfada.
+- [Hepsiburada Kâr Hesaplama: Kategori Bazlı Örnekler, Barem Eşikleri ve İndirimin Kâra Etkisi](https://yusufbayrak.net/blog/hepsiburada-kar-hesaplama/): Hepsiburada kâr hesaplama formülü, 6 kategoride örnek kâr tablosu, 200 ve 400 TL barem eşiklerinin etkisi, indirim ve hedef marjla fiyat hesabı tek rehberde.
 
 ## English
 

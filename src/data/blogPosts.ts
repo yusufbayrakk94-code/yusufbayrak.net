@@ -3006,7 +3006,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Pazaryerinde kar marjı nasıl hesaplanır?",
         paragraphs: [
           "Pazaryerinde satış fiyatından komisyon ve kargo kesildiği için brüt marjla katkı marjı arasındaki fark büyür. Aynı ürünü pazaryerinde 1.000 TL'ye, örnek olarak %20 komisyon ve 90 TL kargo bedeliyle sattığınızı düşünün: 1.000 − 550 − 200 − 90 = 160 TL katkı, yani %16 katkı marjı. Kendi sitenizdeki %31'in yarısıdır.",
-          "Kargo bedeli ürünün desisine göre değişir; kutuyu birkaç santim küçültmek desiyi ve dolayısıyla marjı değiştirebilir. Komisyon oranı kategoriye göre farklıdır; güncel oranı pazaryerinin satıcı panelinden kontrol edin. Komisyon, kargo, iade ve reklam dahil sipariş başı net kârı Trendyol & Hepsiburada kâr hesaplama aracıyla, kargo desisini desi hesaplama aracıyla bulabilirsiniz.",
+          "Kargo bedeli ürünün desisine göre değişir; kutuyu birkaç santim küçültmek desiyi ve dolayısıyla marjı değiştirebilir. Komisyon oranı kategoriye göre farklıdır; güncel oranı pazaryerinin satıcı panelinden kontrol edin. Komisyon, kargo, iade ve reklam dahil sipariş başı net kârı Trendyol & Hepsiburada kâr hesaplama aracıyla, kargo desisini desi hesaplama aracıyla bulabilirsiniz. Pazaryerinde kategoriye ve barem eşiğine göre marjın nasıl değiştiğini [Hepsiburada kâr hesaplama örneklerinde](/blog/hepsiburada-kar-hesaplama/) görebilirsiniz.",
         ],
       },
       {
@@ -4386,6 +4386,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Barem eşiklerinin hemen üstünde fiyatlanan ürünler, birkaç liralık fiyat farkı için kargoda onlarca lira fazla öder. Rakip rehberler bu etkiden söz ediyor ama hesaplamıyor; iki örnekle bakalım (örnek oran %21 ve %17, hizmet bedeli 10,99 TL, ürün maliyeti 80 TL).",
           "Alt eşik (200 TL): 205 TL'ye satılan ürün 200–349,99 TL baremine düşer. Kesinti 43,05 + 70,41 + 10,99 = 124,45 TL, hakediş 80,55 TL; 80 TL maliyetle sipariş başı kâr 0,55 TL. Aynı ürün 199,90 TL'ye inerse kesinti 41,98 + 38,74 + 10,99 = 91,71 TL, hakediş 108,19 TL ve kâr 28,19 TL olur. Fiyatı 5,10 TL düşürmek kârı 27,64 TL artırıyor.",
           "Üst eşik (350 TL): 5 desilik bir ürün 345 TL'de barem tarifesiyle 70,41 TL kargo öder ve hakediş 204,95 TL olur. Fiyat 355 TL'ye çıkarsa sepet desi tarifesine geçer (5 desi 114,10 TL) ve hakediş 169,56 TL'ye düşer: 10 TL daha pahalı satıp 35,39 TL daha az kazanırsınız. Fiyat değiştirmeden önce ürünün hangi kargo kademesine düştüğünü mutlaka kontrol edin.",
+          "Hepsiburada'da eşikler farklıdır (200 ve 400 TL) ve 21.09.2026'dan beri hizmet bedeli barem siparişlerinden de alınır; aynı hesabın Hepsiburada versiyonunu ve kategori bazlı örnek tabloyu [Hepsiburada kâr hesaplama](/blog/hepsiburada-kar-hesaplama/) yazısında bulabilirsiniz.",
         ],
       },
       {
@@ -7138,7 +7139,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Örnek (KDV hariç, örnek tutarlar): KDV hariç 1.000 TL'ye sattığınız bir ürün düşünün. Komisyon %18 = 180 TL, hizmet bedeli 10,99 TL, kargo 82 TL, ürün maliyeti 450 TL ve paketleme 15 TL olsun. Tamamlanan bir sipariş size 1.000 − 180 − 10,99 − 82 − 450 − 15 = 262,01 TL bırakır.",
           "Şimdi iadeyi ekleyin. Siparişlerin %6'sı iade ediliyorsa ve iadede ürün stoğa dönüyor, komisyon iade ediliyor ama gidiş ve dönüş kargosu ile paketleme (82 + 82 + 15 = 179 TL) kayboluyorsa beklenen katkı 0,94 × 262,01 − 0,06 × 179 = 235,55 TL olur. Bu tutar reklamdan önce sipariş başına kalan paradır ve sipariş başı ödeyebileceğiniz en yüksek reklam maliyetidir.",
-          "Sipariş başı reklam maliyetiniz 60 TL ise net katkı 175,55 TL'ye iner. Başabaş ROAS ise 1.000 / 235,55 = 4,25'tir: Hepsiburada reklamlarında harcanan her 1 TL en az 4,25 TL satış getirmezse o satış zarar ettirir. Aynı hesabı kendi ürününüz için Trendyol Komisyon ve Kâr Hesaplama aracında Hepsiburada seçeneğiyle yapabilirsiniz.",
+          "Sipariş başı reklam maliyetiniz 60 TL ise net katkı 175,55 TL'ye iner. Başabaş ROAS ise 1.000 / 235,55 = 4,25'tir: Hepsiburada reklamlarında harcanan her 1 TL en az 4,25 TL satış getirmezse o satış zarar ettirir. Aynı hesabı kendi ürününüz için Trendyol Komisyon ve Kâr Hesaplama aracında Hepsiburada seçeneğiyle yapabilirsiniz. Kategoriye göre örnek kâr tablosu, 200 ve 400 TL barem eşiklerinin etkisi ve indirim senaryoları için [Hepsiburada kâr hesaplama rehberine](/blog/hepsiburada-kar-hesaplama/) bakın.",
         ],
         bullets: [
           "Tamamlanan sipariş katkısı = Satış fiyatı − Komisyon − Hizmet bedeli − Kargo − Ürün maliyeti − Paketleme",
@@ -8941,6 +8942,213 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "SaaS Araçları (ücretsiz hesaplayıcılar)", href: "/ucretsiz-araclar/saas-araclari/" },
       { label: "Google Analytics Yardım: GA4 metrik tanımları", href: "https://support.google.com/analytics/answer/12195621?hl=tr", external: true },
       { label: "Google Ads Yardım: Ortalama TBM", href: "https://support.google.com/google-ads/answer/14074", external: true },
+    ],
+  },
+  {
+    slug: "hepsiburada-kar-hesaplama",
+    seoTitle: "Hepsiburada Kâr Hesaplama: Kategori, Barem ve İndirim",
+    title: "Hepsiburada Kâr Hesaplama: Kategori Bazlı Örnekler, Barem Eşikleri ve İndirimin Kâra Etkisi",
+    description:
+      "Hepsiburada kâr hesaplama formülü, 6 kategoride örnek kâr tablosu, 200 ve 400 TL barem eşiklerinin etkisi, indirim ve hedef marjla fiyat hesabı tek rehberde.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Hepsiburada'da bir siparişin kârı = Satış fiyatı − Komisyon − Hizmet bedeli − Kargo − Ürün maliyeti − Paketleme. Komisyon kategoriye göre değişir; 21.09.2026'dan beri hizmet bedeli barem içindeki teslimatlar dahil paket başı 10,99 TL'dir (sektör kaynakları, panelden doğrulayın).",
+      "Aynı formül kategoriye göre çok farklı sonuç verir: örnek tutarlarla 1.999 TL'lik küçük ev aletinde kesintiler fiyatın %16,8'ini, 149,90 TL'lik telefon kılıfında %56,7'sini götürür.",
+      "Barem eşikleri fiyatın kendisi kadar önemlidir: 0-200 TL sepette 43,99 TL, 200-400 TL'de 75,99 TL sabit kargo uygulanır. Örnekte ürünü 199,90 TL'den 209,90 TL'ye çıkarmak sipariş kârını 22,94 TL'den −0,86 TL'ye düşürür.",
+      "İndirim kârı fiyattan çok daha hızlı eritir: 500 TL'lik üründe %10 indirim sipariş başı kârı 86,01 TL'den 45,01 TL'ye indirir; aynı toplam kâr için %91 daha fazla satış gerekir.",
+    ],
+    publishedAt: "2026-11-15",
+    readingMinutes: 11,
+    tags: ["Hepsiburada", "Hepsiburada Kâr Hesaplama", "Komisyon Hesaplama", "Barem", "Pazaryeri", "Kar Marjı", "E-ticaret"],
+    sections: [
+      {
+        heading: "Hepsiburada kâr hesaplama nasıl yapılır? (Kısa cevap)",
+        paragraphs: [
+          "Hepsiburada'da bir siparişin kârını bulmak için satış fiyatından kategori komisyonunu, paket başı hizmet bedelini, kargo ücretini, ürün maliyetini ve paketlemeyi düşersiniz. Kalan tutar reklamdan ve iadeden önceki sipariş katkısıdır. Kargo, sepet tutarı 400 TL'nin altındaysa çoğu zaman sabit barem bedelidir.",
+          "Bu yazı formülü ezberletmek yerine, aynı formülün farklı kategorilerde, barem eşiklerinde ve indirim dönemlerinde nasıl bambaşka sonuçlar verdiğini örneklerle gösteriyor. Başvuru süreci, belgeler ve ödeme vadesi için [Hepsiburada'da satıcı olmak rehberine](/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/) bakın; kendi ürününüzün hesabını [Hepsiburada ve Trendyol kâr hesaplama aracında](/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/) Hepsiburada seçeneğiyle saniyeler içinde yapabilirsiniz.",
+          "Tüm tutarlar örnek tutarlardır ve vergi etkisi hesaba katılmamıştır. Vergi ve mali yükümlülükler bu yazının konusu değildir; kendi hesabınızı mali müşavirinizle tamamlayın.",
+        ],
+        bullets: [
+          "Sipariş katkısı = Satış fiyatı × (1 − Komisyon oranı) − Hizmet bedeli − Kargo − Ürün maliyeti − Paketleme",
+          "Katkı marjı = Sipariş katkısı ÷ Satış fiyatı × 100",
+          "Kesinti payı = (Komisyon + Hizmet bedeli + Kargo) ÷ Satış fiyatı × 100",
+        ],
+      },
+      {
+        heading: "Hepsiburada'da hangi kesintiler var? (2026 güncel tutarlar)",
+        paragraphs: [
+          "Komisyon: ürünün kategorisine göre belirlenen ve satış fiyatı üzerinden alınan yüzdedir. Kesin oranı satıcı panelinde kategori bazında görürsünüz. Kamuya açık listelerden Paraşüt'ün Ocak 2026 tablosu örnek olarak şu oranları veriyor: giyim ve çanta %18, ayakkabı %19,49, kozmetik ve parfüm %17, cep telefonu %7, telefon aksesuarı %15-25, petshop %14-17, mobilya %18-22, elektrikli ev aletleri (NonTV) %12-20. Alt kategoriye göre aynı ana kategoride bile oran değişebilir.",
+          "Hizmet bedeli: teslim edilen paket başına alınan sabit tutardır. Sektör kaynaklarına göre 21 Eylül 2026'dan itibaren 10,99 TL'dir ve önceki uygulamadan farklı olarak barem desteğiyle gönderilen siparişlerden de alınır. Bu değişiklik özellikle 200 TL altındaki ürünlerde kârı belirgin şekilde düşürdü.",
+          "Kargo: sepet tutarı 400 TL'nin altındaysa ve koşullar sağlanıyorsa sabit barem bedeli, 400 TL ve üzerindeyse anlaşmalı kargo firmasının desi tarifesi uygulanır. Ürününüzün desisini [desi hesaplama aracıyla](/ucretsiz-araclar/desi-hesaplama/) bulup firmaların kurallarını [PTT, Aras ve Yurtiçi desi karşılaştırmasında](/blog/ptt-aras-yurtici-kargo-desi-hesaplama/) inceleyebilirsiniz.",
+        ],
+        table: {
+          caption: "Hepsiburada barem ve hizmet bedeli (21.09.2026 itibarıyla, sektör kaynakları; satıcı panelinden doğrulayın)",
+          head: ["Sepet tutarı", "Kargo", "Hizmet bedeli", "Sipariş başı sabit gider"],
+          rows: [
+            ["0 - 199,99 TL", "43,99 TL (barem)", "10,99 TL", "54,98 TL"],
+            ["200 - 399,99 TL", "75,99 TL (barem)", "10,99 TL", "86,98 TL"],
+            ["400 TL ve üzeri", "Desi tarifesi (firma ve desiye göre)", "10,99 TL", "Tarife + 10,99 TL"],
+          ],
+        },
+      },
+      {
+        heading: "Hepsiburada komisyon hesaplama: formül ve örnek",
+        paragraphs: [
+          "Komisyon tutarı = Satış fiyatı × Kategori komisyon oranı. Örneğin giyim kategorisinde %18 komisyonla 349,90 TL'ye satılan bir tişörtte komisyon 349,90 × 0,18 = 62,98 TL'dir. Komisyon tek başına kârı göstermez; hizmet bedeli ve kargo eklendiğinde aynı tişörtte toplam kesinti 62,98 + 10,99 + 75,99 = 149,96 TL'ye, yani fiyatın %42,9'una çıkar.",
+          "Komisyonun satış fiyatı üzerinden alınması, fiyatı maliyete yüzde ekleyerek belirleyenlerin en sık düştüğü tuzaktır: fiyatı artırdıkça komisyon da artar. Bu yüzden fiyatı aşağıda anlatılan ters formülle, istediğiniz kârdan geriye doğru hesaplayın. Aynı mantığın Trendyol tarafı için [Trendyol komisyon oranları ve komisyon hesaplama](/blog/trendyol-komisyon-oranlari-hesaplama/) yazısına bakabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Kategoriye göre Hepsiburada kâr tablosu: 6 örnek ürün",
+        paragraphs: [
+          "Aşağıdaki tabloda altı farklı kategoriden tipik fiyatlı ürünler aynı formülle hesaplandı. Komisyon oranları yukarıdaki aralıklardan seçilmiş örneklerdir; kargo 400 TL altında barem bedeli, üzerinde örnek bir desi tarifesidir. Amaç kesin rakam vermek değil, kategorinin ve fiyat seviyesinin kârlılığı nasıl değiştirdiğini göstermektir.",
+          "Tablodan üç sonuç çıkıyor. Birincisi, düşük fiyatlı ürünlerde sabit giderler (hizmet bedeli + kargo) fiyatın çok büyük bir kısmını yer: 149,90 TL'lik kılıfta kesinti payı %56,7'dir. İkincisi, yüksek fiyatlı üründe kesinti payı düşük olsa da ürün maliyeti yüksekse marj yine sınırlı kalır. Üçüncüsü, kedi maması gibi düşük marjlı ve ağır ürünlerde %6,3'lük katkı marjı, tek bir iade ya da reklam tıklamasıyla zarara dönebilir.",
+        ],
+        table: {
+          caption: "Örnek tutarlar, vergi etkisi hariç; hizmet bedeli tüm satırlarda 10,99 TL",
+          head: ["Ürün (kategori)", "Satış fiyatı", "Komisyon", "Kargo", "Ürün + paket", "Sipariş katkısı", "Katkı marjı", "Kesinti payı"],
+          rows: [
+            ["Tişört (giyim)", "349,90 TL", "%18 = 62,98 TL", "75,99 TL", "128 TL", "71,94 TL", "%20,6", "%42,9"],
+            ["Yüz kremi (kozmetik)", "249,90 TL", "%17 = 42,48 TL", "75,99 TL", "96 TL", "24,44 TL", "%9,8", "%51,8"],
+            ["Telefon kılıfı (aksesuar)", "149,90 TL", "%20 = 29,98 TL", "43,99 TL", "40 TL", "24,94 TL", "%16,6", "%56,7"],
+            ["Nevresim takımı (ev tekstili)", "799 TL", "%18 = 143,82 TL", "105 TL", "395 TL", "144,19 TL", "%18,0", "%32,5"],
+            ["Küçük ev aleti (NonTV)", "1.999 TL", "%12 = 239,88 TL", "85 TL", "1.360 TL", "303,13 TL", "%15,2", "%16,8"],
+            ["Kedi maması 3 kg (petshop)", "649 TL", "%15 = 97,35 TL", "95 TL", "405 TL", "40,66 TL", "%6,3", "%31,3"],
+          ],
+        },
+      },
+      {
+        heading: "Barem eşiği kâra nasıl etki eder? 199,90 TL ile 209,90 TL farkı",
+        paragraphs: [
+          "Barem bedeli sepet tutarına göre basamak basamak arttığı için 200 TL eşiğini aşmak kargo maliyetini bir anda 43,99 TL'den 75,99 TL'ye çıkarır. Örnek (vergi etkisi hariç): ürün maliyeti 80 TL, paketleme 6 TL ve komisyon %18 olan bir ürünü 199,90 TL'ye satarsanız sipariş başına 199,90 × 0,82 − 10,99 − 43,99 − 86 = 22,94 TL kalır.",
+          "Aynı ürünü 'biraz daha kâr ederim' diye 209,90 TL'ye çıkarırsanız kargo 75,99 TL olur ve kâr −0,86 TL'ye düşer: fiyat 10 TL arttı ama sipariş zarara geçti. Eşiğin üstünde aynı 22,94 TL kârı yakalamak için fiyatın yaklaşık 239 TL'ye çıkması gerekir. Yani 200-239 TL arası bu ürün için ölü bölgedir; ya 199,90 TL'de kalın ya da 239 TL'nin üzerine çıkabilecek bir teklif (set, ikili paket, daha büyük boy) kurun.",
+          "400 TL eşiğinde tablo farklıdır: barem biter ve desi tarifesi başlar. Hafif ürünlerde desi tarifesi 75,99 TL'ye yakın olabileceği için sıçrama küçüktür, ama 4-5 desi ve üzerindeki ürünlerde 399,90 TL ile 409,90 TL arasındaki fark birkaç on lirayı bulabilir. Kendi ürününüz için iki senaryoyu da hesaplayın.",
+        ],
+        bullets: [
+          "Eşik altı katkı = Fiyat × (1 − Komisyon) − Hizmet bedeli − Alt barem − Ürün − Paket",
+          "Eşiği aşarken aynı kârı koruyan fiyat = (Hedef kâr + Hizmet bedeli + Üst barem + Ürün + Paket) ÷ (1 − Komisyon)",
+          "Örnekte: (22,94 + 10,99 + 75,99 + 80 + 6) ÷ 0,82 ≈ 238,93 TL",
+        ],
+      },
+      {
+        heading: "Barem koşullarını kaçırırsanız ne olur?",
+        paragraphs: [
+          "Barem bedeli otomatik uygulanır ama koşula bağlıdır. Sektör kaynaklarına göre siparişin HepsiJET ya da Sürat Kargo ile gönderilmesi, kargoya veriliş süresinin 0 veya 1 gün olarak ayarlanması ve son 7 günde zamanında kargolama oranının en az %90 olması gerekir. 'Satıcı Öder' ya da 'Mağaza Hesabı' modeliyle gönderenler kapsam dışında kalır.",
+          "Koşullar sağlanmazsa sipariş, kargo firmasının desi tarifesiyle ücretlendirilir. Örnek: yukarıdaki 149,90 TL'lik telefon kılıfı barem ile 24,94 TL bırakırken, kargoya veriliş süresi 2 güne çıktığı ve sipariş 90 TL'lik (örnek) desi tarifesine düştüğü anda 149,90 − 29,98 − 10,99 − 90 − 40 = −21,07 TL zarar eder. Küçük ve ucuz ürün satan bir mağaza için kargolama hızı bir operasyon detayı değil, doğrudan kâr kalemidir.",
+        ],
+        bullets: [
+          "Kargoya veriliş süresini gerçekçi biçimde 0-1 gün tutun; tutamayacağınız ürünleri ayrı yönetin",
+          "Son 7 günlük zamanında kargolama oranını haftalık takip edin (%90 altı = barem kaybı riski)",
+          "Mobilya, yatak ve özel üretim gibi uzun hazırlık süreli kategorilerde barem hesabına güvenmeyin; desi tarifesiyle hesaplayın",
+          "Kargo firması seçiminizin barem kapsamında olup olmadığını panelden kontrol edin",
+        ],
+      },
+      {
+        heading: "İndirim ve kampanya kârı nasıl etkiler?",
+        paragraphs: [
+          "İndirim, satış fiyatını düşürür ama ürün maliyeti, kargo ve hizmet bedeli aynı kalır; bu yüzden kârdan fiyattaki yüzde kadar değil, çok daha fazlası gider. Örnek: 500 TL'ye satılan, ürün maliyeti 220 TL, paketlemesi 8 TL, komisyonu %18 ve desi tarifesiyle kargosu 85 TL olan bir ürün sipariş başına 86,01 TL bırakır.",
+          "%10 indirimle fiyat 450 TL olur ve kâr 45,01 TL'ye düşer: fiyat %10 indi, kâr %48 eridi. Aynı toplam kârı korumak için satışların 86,01 ÷ 45,01 − 1 = %91 artması gerekir. %20 indirimde fiyat 400 TL'ye iner ve barem eşiğinin hemen üstünde kalarak yalnızca 4,01 TL bırakır; fiyatı 399,90 TL yaparsanız barem devreye girer, kargo 75,99 TL'ye iner ve kâr 12,94 TL'ye çıkar. Kampanya fiyatını belirlerken eşikleri de hesaba katın.",
+          "Kuponlarda ve platform kampanyalarında indirimin kim tarafından finanse edildiğini ve komisyonun hangi tutar üzerinden alındığını kampanya koşullarında mutlaka okuyun. İndirimli fiyatın kâra etkisini [indirim hesaplama aracıyla](/ucretsiz-araclar/indirim-hesaplama/) önceden görebilirsiniz.",
+        ],
+        table: {
+          caption: "500 TL'lik ürün, örnek tutarlar (vergi etkisi hariç)",
+          head: ["İndirim", "Satış fiyatı", "Kargo", "Sipariş katkısı", "Aynı toplam kâr için gereken satış artışı"],
+          rows: [
+            ["Yok", "500 TL", "85 TL (desi)", "86,01 TL", "—"],
+            ["%10", "450 TL", "85 TL (desi)", "45,01 TL", "%91"],
+            ["%20", "400 TL", "85 TL (desi)", "4,01 TL", "Pratikte karşılanamaz"],
+            ["%20 (399,90 TL'ye yuvarlanmış)", "399,90 TL", "75,99 TL (barem)", "12,94 TL", "%565"],
+          ],
+        },
+      },
+      {
+        heading: "Hedef kâr marjına göre Hepsiburada fiyatı nasıl belirlenir?",
+        paragraphs: [
+          "Satıcı olmak rehberinde sabit bir TL kârdan fiyat hesapladık. Çok ürünlü mağazalarda daha pratik olan, her ürün için aynı yüzde marjı hedeflemektir. Formül: Fiyat = (Ürün + Paketleme + Kargo + Hizmet bedeli) ÷ (1 − Komisyon oranı − Hedef marj).",
+          "Örnek: yüz kremi için ürün 90 TL, paketleme 6 TL, kargo 75,99 TL, hizmet bedeli 10,99 TL ve komisyon %17. %20 katkı marjı hedeflerseniz fiyat (90 + 6 + 75,99 + 10,99) ÷ (1 − 0,17 − 0,20) = 182,98 ÷ 0,63 ≈ 290,44 TL olmalıdır. Tablodaki 249,90 TL'lik fiyat ise yalnızca %9,8 marj bırakıyordu.",
+          "Formülün tek dikkat noktası kargo basamağıdır: hesapladığınız fiyat başka bir barem aralığına düşüyorsa (örneğin 200 TL'nin altına ya da 400 TL'nin üstüne), o aralığın kargo bedeliyle hesabı tekrarlayın. Kâr oranı (markup) ile kar marjı farkını ve dönüşüm tablosunu [kar marjı nasıl hesaplanır](/blog/kar-marji-nasil-hesaplanir/) yazısında, hızlı hesabı [kar marjı hesaplama aracında](/ucretsiz-araclar/brut-kar-marji-hesaplayici/) bulabilirsiniz.",
+        ],
+        bullets: [
+          "Hedef marjlı fiyat = Toplam sipariş gideri ÷ (1 − Komisyon − Hedef marj)",
+          "Komisyon + hedef marj %100'e yaklaştıkça fiyat hızla büyür; %17 komisyonla %40 marj hedefi fiyatı gidere göre 2,3 katına çıkarır",
+          "Hesaplanan fiyat barem aralığını değiştiriyorsa kargo bedelini güncelleyip yeniden hesaplayın",
+        ],
+      },
+      {
+        heading: "İade ve reklam dahil gerçek kâr: başabaş ROAS",
+        paragraphs: [
+          "Tablodaki sipariş katkısı tamamlanan bir siparişin katkısıdır. Gerçek kâr için iade kaybını ve reklam maliyetini de düşmeniz gerekir. Örnek: 799 TL'lik nevresim takımı 144,19 TL katkı bırakıyor. Siparişlerin %8'i iade ediliyorsa ve iadede gidiş ve dönüş kargosu ile paketleme (105 + 105 + 15 = 225 TL) kayboluyorsa beklenen katkı 0,92 × 144,19 − 0,08 × 225 = 114,65 TL olur.",
+          "Bu 114,65 TL, sipariş başı ödeyebileceğiniz en yüksek reklam maliyetidir. Başabaş ROAS = 799 ÷ 114,65 ≈ 6,97: Hepsiburada reklamlarında harcanan her 1 TL en az 6,97 TL satış getirmezse reklamlı satışlar zarar ettirir. Düşük marjlı ürünlerde başabaş ROAS çok yükselir; kedi maması örneğinde iade olmasa bile 649 ÷ 40,66 ≈ 16 ROAS gerekir, yani bu ürün reklamla büyütülmeye uygun değildir. Başabaş ROAS mantığını [ROAS nedir, nasıl hesaplanır](/blog/roas-nedir-nasil-hesaplanir/) yazısında, hızlı hesabı [ROAS hesaplayıcıda](/ucretsiz-araclar/roas-hesaplayici/) bulabilirsiniz.",
+        ],
+        bullets: [
+          "Beklenen katkı = (1 − İade oranı) × Sipariş katkısı − İade oranı × (Gidiş kargo + Dönüş kargo + Paketleme)",
+          "Sipariş başı en yüksek reklam maliyeti = Beklenen katkı",
+          "Başabaş ROAS = Satış fiyatı ÷ Beklenen katkı",
+        ],
+      },
+      {
+        heading: "Hepsiburada kâr hesabında en sık yapılan 5 hata",
+        paragraphs: ["Rakip araçların çoğu bu kalemlerden bir ya da ikisini atlıyor; kendi hesabınızda hepsini kontrol edin:"],
+        bullets: [
+          "Hizmet bedelini barem siparişlerinde unutmak: 21.09.2026'dan beri barem teslimatlarından da alınıyor",
+          "Barem eşiğini görmeden fiyat değiştirmek: 200 TL'yi az farkla aşmak kârı silebilir",
+          "Kargoya veriliş süresini 2 gün ve üzeri girip barem bedeliyle hesap yapmak",
+          "İndirimi fiyat yüzdesiyle düşünmek: %10 indirim kârın yarısına yakınını götürebilir",
+          "Katkıyı reklam ve iade olmadan hesaplayıp reklam açmak: önce başabaş ROAS'ı bulun",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Hepsiburada kâr hesaplama formülü nedir?",
+        answer:
+          "Sipariş kârı = Satış fiyatı − (Satış fiyatı × Komisyon oranı) − Hizmet bedeli − Kargo − Ürün maliyeti − Paketleme. Gerçek kâr için bu tutardan iade kaybını ve sipariş başı reklam maliyetini de düşün.",
+      },
+      {
+        question: "Hepsiburada hizmet bedeli ne kadar?",
+        answer:
+          "Sektör kaynaklarına göre 21 Eylül 2026'dan itibaren teslim edilen paket başına 10,99 TL'dir ve barem desteğiyle gönderilen siparişlerden de alınır. Tutar değişebildiği için güncel değeri satıcı panelinizden kontrol edin.",
+      },
+      {
+        question: "Hepsiburada barem nedir, kaç TL?",
+        answer:
+          "Barem, 400 TL altındaki siparişlerde desi tarifesi yerine uygulanan sabit kargo bedelidir: 0-199,99 TL sepette 43,99 TL, 200-399,99 TL sepette 75,99 TL (sektör kaynakları). HepsiJET veya Sürat Kargo, 0-1 gün kargoya veriliş ve %90 zamanında kargolama koşulu aranır.",
+      },
+      {
+        question: "Hepsiburada komisyonu nasıl hesaplanır?",
+        answer:
+          "Komisyon tutarı = Satış fiyatı × Kategori komisyon oranı. Örneğin %18 komisyonlu 349,90 TL'lik bir üründe komisyon 62,98 TL'dir. Kesin oran kategori ve alt kategoriye göre değişir; satıcı panelindeki değeri esas alın.",
+      },
+      {
+        question: "Hepsiburada'da satış fiyatı nasıl belirlenir?",
+        answer:
+          "İstediğiniz marjdan geriye doğru hesaplayın: Fiyat = (Ürün + Paketleme + Kargo + Hizmet bedeli) ÷ (1 − Komisyon oranı − Hedef marj). Çıkan fiyat başka bir barem aralığına düşüyorsa o aralığın kargo bedeliyle hesabı tekrarlayın.",
+      },
+    ],
+    howTo: {
+      name: "Hepsiburada'da bir ürünün kârı nasıl hesaplanır?",
+      description: "Komisyondan başabaş ROAS'a beş adımda Hepsiburada kâr hesabı.",
+      steps: [
+        { name: "Komisyonu bulun", text: "Satıcı panelinden ürünün alt kategori komisyon oranını alın ve satış fiyatıyla çarpın." },
+        { name: "Sabit giderleri ekleyin", text: "Paket başı hizmet bedelini (10,99 TL) ve sepet tutarına göre barem bedelini ya da desi tarifesini ekleyin." },
+        { name: "Sipariş katkısını hesaplayın", text: "Satış fiyatından komisyon, hizmet bedeli, kargo, ürün maliyeti ve paketlemeyi düşün." },
+        { name: "Barem eşiğini kontrol edin", text: "Fiyat 200 veya 400 TL eşiğine yakınsa eşiğin iki yanındaki kârı karşılaştırın." },
+        { name: "İade ve reklamı düşün", text: "İade oranıyla beklenen katkıyı bulun, başabaş ROAS = Satış fiyatı ÷ Beklenen katkı ile reklam sınırını belirleyin." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Trendyol ve Hepsiburada Kâr Hesaplama (ücretsiz araç)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Hepsiburada'da Satıcı Olmak: Gerekenler, Komisyon ve Kâr", href: "/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/" },
+      { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+      { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "İndirim Hesaplama", href: "/ucretsiz-araclar/indirim-hesaplama/" },
+      { label: "ROAS ve Başabaş ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Pazarlama Metrikleri Sözlüğü", href: "/blog/pazarlama-metrikleri-sozlugu/" },
+      { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
+      { label: "Hepsiburada Satıcı Başvurusu (resmî sayfa)", href: "https://merchant.hepsiburada.com/v2/sign-up", external: true },
     ],
   },
 ];
