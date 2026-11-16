@@ -1492,10 +1492,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "roas-nedir-nasil-hesaplanir",
-    seoTitle: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır?",
+    seoTitle: "ROAS Nedir, Ne Demek? Hesaplama ve İyi ROAS Kaçtır?",
     title: "ROAS Nedir, Nasıl Hesaplanır? İyi ROAS Kaçtır? (Başabaş Formülüyle)",
     description:
-      "ROAS, reklama harcanan 1 TL'nin kaç TL ciro getirdiğini gösterir. Formül, örnek hesap, başabaş ROAS, iyi ROAS kaç olmalı ve ROAS nasıl artırılır?",
+      "ROAS ne demek? Return on Ad Spend: reklama harcanan 1 TL'nin getirdiği ciro. Formül, başabaş ROAS, ROAS–ACOS–marj tablosu, bütçe ters hesabı ve örnekler.",
     category: "performans-pazarlama",
     tldr: [
       "ROAS = Reklamdan gelen gelir / Reklam harcaması. 1.000 TL harcayıp 4.000 TL ciro elde ettiyseniz ROAS 4'tür (veya %400).",
@@ -1505,16 +1505,35 @@ export const BLOG_POSTS: BlogPost[] = [
       "Kararları reklam paneli ROAS'ına değil, tüm kanalları kapsayan MER (toplam ciro / toplam pazarlama harcaması) ile doğrulayın.",
     ],
     publishedAt: "2026-10-22",
-    updatedAt: "2026-11-03",
-    readingMinutes: 10,
+    updatedAt: "2026-11-16",
+    readingMinutes: 12,
     tags: ["ROAS", "Performans Pazarlama", "Google Ads", "Meta Ads", "E-ticaret"],
     sections: [
       {
-        heading: "ROAS Nedir?",
+        heading: "ROAS Nedir, Ne Demek? (Kısa Cevap)",
         paragraphs: [
-          "ROAS (Return on Ad Spend — reklam harcamasının getirisi), reklama harcadığınız her 1 TL'nin karşılığında ne kadar ciro elde ettiğinizi gösteren metriktir. Performans pazarlamasında kampanya, reklam seti ve kreatif düzeyinde verim karşılaştırmanın en yaygın yoludur.",
+          "ROAS (Return on Ad Spend), Türkçesiyle reklam harcamasının getirisi, reklama harcanan her 1 TL'nin kaç TL ciro getirdiğini gösteren orandır. Formülü ROAS = Reklamdan gelen ciro / Reklam harcaması'dır: 10.000 TL harcamayla 40.000 TL ciro elde ettiyseniz ROAS 4, yani %400'dür.",
+          "Performans pazarlamasında kampanya, reklam seti ve kreatif düzeyinde verim karşılaştırmanın en yaygın yoludur. Google Ads'te 'dönüşüm değeri / maliyet', Meta'da 'satın alma ROAS'ı' adıyla aynı oranı görürsünüz.",
           "ROAS bir ciro metriğidir, kârlılık metriği değildir. Bu ayrım, metriği doğru okumanın anahtarıdır: aynı 4 ROAS, %70 marjlı bir dijital üründe çok kârlıyken %20 marjlı bir elektronik mağazasında zarar anlamına gelebilir. ROAS'ın POAS, MER ve ROI ile farkını [pazarlama metrikleri sözlüğündeki](/blog/pazarlama-metrikleri-sozlugu/) formül tablosunda yan yana görebilirsiniz.",
         ],
+      },
+      {
+        heading: "ROAS Açılımı ve Türkçesi: ACOS, ROI, POAS ve MER'den Farkı",
+        paragraphs: [
+          "ROAS'ın açılımı Return on Ad Spend'dir; Türkçede 'reklam harcamasının getirisi' ya da 'reklam harcaması getirisi' denir. Bazı Türkçe kaynaklarda 'reklam getirisi oranı' olarak da geçer. Kısaltma büyük harfle yazılır ve 'ro-as' diye okunur.",
+          "ROAS'ı en çok karıştırılan dört metrikle yan yana koyduğunuzda farkı görmek kolaylaşır. Hepsi aynı reklam harcamasını kullanır; ayrıştıkları nokta paya neyin yazıldığıdır: ciro mu, kâr mı, tüm şirketin cirosu mu.",
+        ],
+        table: {
+          caption: "ROAS ve benzer metrikler (örnek: 10.000 TL reklam, 40.000 TL ciro, %35 katkı marjı)",
+          head: ["Metrik", "Açılımı", "Formül", "Örnekte", "Ne söyler?"],
+          rows: [
+            ["ROAS", "Return on Ad Spend", "Reklam cirosu / Reklam harcaması", "4,0 (%400)", "Reklamın ciro verimi; kampanya ve kreatif karşılaştırması"],
+            ["ACOS", "Advertising Cost of Sale", "Reklam harcaması / Reklam cirosu = 1 / ROAS", "%25", "Pazaryerlerinde (Amazon, Trendyol) aynı oranın tersi"],
+            ["POAS", "Profit on Ad Spend", "Reklamdan gelen katkı kârı / Reklam harcaması", "1,4", "1'in üstü reklam sonrası kâr demektir (40.000 × 0,35 / 10.000)"],
+            ["[ROI](/blog/roi-nedir-nasil-hesaplanir/)", "Return on Investment", "(Kâr − Yatırım) / Yatırım", "%40", "Net kârlılık; ROAS × Marj − 1 = 4 × 0,35 − 1"],
+            ["MER", "Marketing Efficiency Ratio", "Toplam ciro / Toplam pazarlama harcaması", "Şirket geneli", "Atıf hatasından bağımsız, bütçe kararı için"],
+          ],
+        },
       },
       {
         heading: "ROAS Nasıl Hesaplanır?",
@@ -1530,14 +1549,23 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "ROAS 3, reklama harcanan her 1 TL'nin 3 TL ciro getirdiğini söyler; yüzde olarak %300 yazılır. Bu ciroyu kâr sanmayın: ürün maliyeti, kargo ve komisyon henüz düşülmemiştir. Sonucun iyi mi kötü mü olduğunu kar marjınız belirler.",
           "Aynı ROAS'ın sonucu işletmeye göre değişir. 100.000 TL reklamla ROAS 4 yapan üç mağaza da 400.000 TL ciro yazar. %20 marjlı mağaza 80.000 TL brüt kâr bırakır ve reklam sonrası 20.000 TL zarardadır. %40 marjlı mağaza 60.000 TL, %70 marjlı mağaza 180.000 TL kazanır.",
+          "Aşağıdaki tablo bir ROAS değerini yüzdeye, ACOS'a ve zarar etmemek için gereken en düşük katkı marjına çevirir. Kural tek satırdır: gereken minimum marj = 1 / ROAS = ACOS. Marjınız bu eşiğin üstündeyse reklam sonrası kârdasınız.",
         ],
-        bullets: [
-          "ROAS 1 (%100): harcama kadar ciro; ürün maliyeti karşılanmaz, her zaman zarar",
-          "ROAS 2 (%200): ancak %50 ve üzeri marjda zarar etmez",
-          "ROAS 3 (%300): %33,3 ve üzeri marjda zarar etmez",
-          "ROAS 4 (%400): %25 ve üzeri marjda zarar etmez",
-          "ROAS 5 (%500): %20 ve üzeri marjda zarar etmez",
-        ],
+        table: {
+          caption: "ROAS dönüşüm tablosu: oran, yüzde, ACOS ve başabaş için gereken minimum marj",
+          head: ["ROAS", "Yüzde", "ACOS", "Zarar etmemek için min. marj", "10.000 TL reklamla ciro"],
+          rows: [
+            ["1", "%100", "%100", "%100 (her zaman zarar)", "10.000 TL"],
+            ["1,5", "%150", "%66,7", "%66,7", "15.000 TL"],
+            ["2", "%200", "%50", "%50", "20.000 TL"],
+            ["2,5", "%250", "%40", "%40", "25.000 TL"],
+            ["3", "%300", "%33,3", "%33,3", "30.000 TL"],
+            ["4", "%400", "%25", "%25", "40.000 TL"],
+            ["5", "%500", "%20", "%20", "50.000 TL"],
+            ["6", "%600", "%16,7", "%16,7", "60.000 TL"],
+            ["8", "%800", "%12,5", "%12,5", "80.000 TL"],
+          ],
+        },
       },
       {
         heading: "Başabaş ROAS: 'İyi ROAS Kaçtır?' Sorusunun Gerçek Cevabı",
@@ -1566,6 +1594,23 @@ export const BLOG_POSTS: BlogPost[] = [
           "TBM 8 → 6,40 TL (−%20): ROAS 2,5",
           "Üçü birlikte: ROAS ≈ 3,9",
         ],
+      },
+      {
+        heading: "Ters Hesap: Hedef Ciro İçin Ne Kadar Reklam Bütçesi Gerekir?",
+        paragraphs: [
+          "ROAS formülü iki yönlü kullanılır. Bütçe biliniyorsa ciroyu, ciro hedefi biliniyorsa bütçeyi verir: Gerekli bütçe = Hedef ciro / Beklenen ROAS. Bütçe sabitse hedefe ulaşmak için gereken ROAS = Hedef ciro / Bütçe.",
+          "Örnek (örnek tutarlar): bir mağaza reklamdan ayda 300.000 TL net ciro istiyor ve son 3 ayın ROAS'ı 3,5. Gerekli bütçe 300.000 / 3,5 ≈ 85.700 TL'dir. Yönetim bütçeyi 50.000 TL'de sabitlerse aynı ciro için ROAS 6 gerekir; geçmiş performans 3,5 iken bu hedef gerçekçi değildir, ya hedef ya bütçe değişmelidir.",
+          "Ciro hedefi kâr hedefi değildir. %35 katkı marjlı aynı mağazada farklı bütçe ve ROAS'ların reklam sonrası katkısı aşağıdadır (katkı = ciro × 0,35 − bütçe). ROAS başabaşın (2,86) altındaysa bütçeyi büyütmek zararı da büyütür. Gerçekte bütçe arttıkça ROAS genellikle düşer; bu yüzden ek bütçe kararını ortalama değil marjinal ROAS'la verin ([reklam bütçesi nasıl belirlenir](/blog/reklam-butcesi-nasil-belirlenir/) rehberinde adım adım).",
+        ],
+        table: {
+          caption: "Bütçe × ROAS: ciro ve reklam sonrası katkı (%35 katkı marjı, örnek tutarlar)",
+          head: ["Aylık bütçe", "ROAS 2", "ROAS 3", "ROAS 4"],
+          rows: [
+            ["25.000 TL", "50.000 TL ciro · −7.500 TL", "75.000 TL ciro · +1.250 TL", "100.000 TL ciro · +10.000 TL"],
+            ["50.000 TL", "100.000 TL ciro · −15.000 TL", "150.000 TL ciro · +2.500 TL", "200.000 TL ciro · +20.000 TL"],
+            ["100.000 TL", "200.000 TL ciro · −30.000 TL", "300.000 TL ciro · +5.000 TL", "400.000 TL ciro · +40.000 TL"],
+          ],
+        },
       },
       {
         heading: "ROAS Nasıl Artırılır?",
@@ -1619,6 +1664,21 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "ROAS nedir?",
         answer:
           "ROAS (Return on Ad Spend), reklam harcamasının getirisidir: reklamlardan elde edilen cironun reklam harcamasına oranıdır. 10.000 TL harcamayla 40.000 TL ciro elde edildiyse ROAS 4 (veya %400) olur.",
+      },
+      {
+        question: "ROAS ne demek, açılımı nedir?",
+        answer:
+          "ROAS, Return on Ad Spend'in kısaltmasıdır; Türkçesi 'reklam harcamasının getirisi'dir. Reklama harcanan her 1 TL'nin kaç TL ciro getirdiğini gösterir. 5.000 TL reklamla 15.000 TL ciro elde edildiyse ROAS 3'tür.",
+      },
+      {
+        question: "ROAS yüzde mi yazılır, oran mı?",
+        answer:
+          "İkisi de kullanılır ve aynı şeyi söyler: ROAS 4 ile %400 eşittir. Meta panelleri genellikle oranı (4,00), Google Ads'in Hedef ROAS ayarı yüzdeyi (%400) kullanır. Yüzdeyi orana çevirmek için 100'e bölün.",
+      },
+      {
+        question: "ROAS 2 ne demek, iyi mi?",
+        answer:
+          "ROAS 2, reklama harcanan 1 TL'nin 2 TL ciro getirdiği anlamına gelir (%200, ACOS %50). Ancak katkı marjınız %50 ve üzerindeyse zarar etmezsiniz; %35 marjlı bir mağazada ROAS 2 her 100 TL reklamda yaklaşık 30 TL zarar demektir.",
       },
       {
         question: "İyi bir ROAS kaçtır?",
@@ -1725,7 +1785,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Adım 1: Katkı Marjını, Başabaş ROAS'ı ve Maksimum CPA'yı Bulun",
         paragraphs: [
           "Önce bir siparişin reklamdan önce size ne bıraktığını bilmeniz gerekir. Katkı marjı = Brüt kâr marjı − sipariş başı değişken maliyetler (kargo, ödeme komisyonu, paketleme, pazaryeri komisyonu) / ciro. Brüt marjı %45, değişken maliyetleri cironun %10'u olan bir mağazanın katkı marjı %35'tir.",
-          "Başabaş ROAS = 1 / Katkı marjı = 1 / 0,35 ≈ 2,86. Başabaş CPA = Ortalama sipariş tutarı × Katkı marjı; 1.200 TL'lik ortalama siparişte 420 TL. Bu iki sayı, reklamın zarar ettirmeye başladığı sınırdır. Konunun ayrıntısı için ROAS Nedir, Nasıl Hesaplanır? yazısına bakabilirsiniz.",
+          "Başabaş ROAS = 1 / Katkı marjı = 1 / 0,35 ≈ 2,86. Başabaş CPA = Ortalama sipariş tutarı × Katkı marjı; 1.200 TL'lik ortalama siparişte 420 TL. Bu iki sayı, reklamın zarar ettirmeye başladığı sınırdır. Konunun ayrıntısı için [ROAS nedir, nasıl hesaplanır](/blog/roas-nedir-nasil-hesaplanir/) yazısına bakabilirsiniz.",
           "Kâr da istiyorsanız hedef net kâr oranını marjdan düşün: Hedef ROAS = 1 / (Katkı marjı − Hedef kâr oranı). %10 kâr hedefiyle 1 / 0,25 = 4. Maksimum CPA = 1.200 × 0,25 = 300 TL. Tüm hesaplarda KDV hariç ve iadeler düşülmüş ciro kullanın.",
         ],
       },
@@ -2129,7 +2189,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Hedef ROAS nasıl belirlenir? (Kısa cevap)",
         paragraphs: [
-          "Hedef ROAS'ı reklam panelindeki ortalamadan ya da 'sektörde %400 iyidir' gibi genel bir sayıdan değil, kendi katkı marjınızdan hesaplayın. Formül: Hedef ROAS (%) = 100 / (Katkı marjı − Hedef kâr oranı).",
+          "Hedef ROAS'ı reklam panelindeki ortalamadan ya da 'sektörde %400 iyidir' gibi genel bir sayıdan değil, kendi katkı marjınızdan hesaplayın ([ROAS ne demek](/blog/roas-nedir-nasil-hesaplanir/): reklam cirosu / reklam harcaması). Formül: Hedef ROAS (%) = 100 / (Katkı marjı − Hedef kâr oranı).",
           "Örnek: Siparişlerinizde ürün maliyeti, kargo, ödeme komisyonu ve paketleme düşüldükten sonra cironun %35'i kalıyor (katkı marjı) ve reklamdan sonra cironun %10'unu kâr olarak bırakmak istiyorsunuz. Hedef ROAS = 100 / (0,35 − 0,10) = %400. Google Ads'te hedef ROAS alanına 400 yazarsınız; bu, reklama harcanan her 1 TL için ortalama 4 TL dönüşüm değeri hedeflendiği anlamına gelir.",
           "Ardından bu sayıyı üç düzeltmeden geçirin: iade oranı, geçmiş ROAS'ınızla arasındaki fark (başlangıç değeri) ve kârı en yükseğe çıkaran hedef. Aşağıdaki bölümler bu üç adımı örneklerle anlatıyor.",
         ],
@@ -2309,7 +2369,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "LTV'yi reklam hedefine çevirin: Maks. CAC = LTV / Hedef oran. Örnekte 3:1 hedefi 161 TL CAC ve ilk siparişte yaklaşık 3,73 ROAS demektir; tekrar satın alma düşükse 3:1 kuralı ilk siparişte kâr etmeyi gerektirir.",
     ],
     publishedAt: "2026-10-26",
-    updatedAt: "2026-11-08",
+    updatedAt: "2026-11-16",
     readingMinutes: 9,
     tags: ["LTV", "LTV:CAC", "Müşteri Yaşam Boyu Değeri", "Kohort Analizi", "CAC", "Birim Ekonomisi"],
     sections: [
@@ -2320,6 +2380,25 @@ export const BLOG_POSTS: BlogPost[] = [
           "En basit e-ticaret formülü: LTV = Ortalama sipariş tutarı × Müşteri başı sipariş sayısı × Katkı marjı. Örnek: ortalama sepeti 600 TL olan bir mağazada müşteri 24 ayda ortalama 2,3 sipariş veriyor ve her siparişte ürün, kargo, ödeme komisyonu ve iade düşüldükten sonra cironun %35'i kalıyor. LTV = 600 × 2,3 × 0,35 = 483 TL.",
           "Aynı müşterinin ciro LTV'si 600 × 2,3 = 1.380 TL'dir. Rakip rehberlerin çoğu bu ciro rakamını kullanır; oysa reklam bütçesini 1.380 TL'ye göre planlamak, müşteri başına kazanabileceğinizin neredeyse üç katını harcamaya izin vermek demektir. (Yazıdaki tüm tutarlar örnek tutarlardır.)",
         ],
+      },
+      {
+        heading: "LTV ne demek? Açılımı, Türkçesi ve karıştırılan terimler",
+        paragraphs: [
+          "LTV'nin açılımı Lifetime Value'dur; Türkçede müşteri yaşam boyu değeri ya da müşteri ömür boyu değeri denir. CLV ve CLTV (Customer Lifetime Value) aynı metriğin diğer adlarıdır. Bankacılık ve kriptoda geçen LTV ise Loan-to-Value'dur ve tamamen farklı bir kavramdır.",
+          "LTV, aynı müşteri verisinden türeyen birkaç metrikle sık karıştırılır. Aşağıdaki tabloda yazıdaki örnek mağazanın (600 TL sepet, 24 ayda 2,3 sipariş, %35 katkı marjı) rakamlarıyla farkları görebilirsiniz.",
+        ],
+        table: {
+          caption: "LTV ve karıştırılan terimler (örnek mağaza)",
+          head: ["Terim", "Açılımı / Türkçesi", "Formül", "Örnekte"],
+          rows: [
+            ["LTV (marjlı)", "Lifetime Value — müşteri yaşam boyu değeri", "Sepet × Sipariş sayısı × Katkı marjı", "483 TL"],
+            ["Ciro LTV'si", "Gross / revenue LTV", "Sepet × Sipariş sayısı", "1.380 TL"],
+            ["AOV", "Average Order Value — ortalama sipariş tutarı", "Ciro ÷ Sipariş sayısı", "600 TL"],
+            ["ARPU / ARPA", "Kullanıcı / hesap başına ortalama gelir", "Dönem geliri ÷ Kullanıcı (hesap)", "Abonelikte aylık; [MRR](/blog/mrr-nedir-nasil-hesaplanir/) ÷ hesap"],
+            ["[CAC](/blog/cac-nedir-musteri-edinme-maliyeti/)", "Customer Acquisition Cost — müşteri edinme maliyeti", "Edinme harcaması ÷ Yeni müşteri", "LTV:CAC = 3 için en fazla 161 TL"],
+            ["LTV (finans)", "Loan-to-Value — kredi / teminat oranı", "Kredi ÷ Teminat değeri", "Pazarlamayla ilgisi yok"],
+          ],
+        },
       },
       {
         heading: "LTV nasıl hesaplanır? Üç formül",
@@ -2339,7 +2418,17 @@ export const BLOG_POSTS: BlogPost[] = [
           "LTV'nin işi 'bu müşteri için ne kadar harcayabilirim?' sorusunu cevaplamaktır. Müşterinin ödediği tutarın ürün maliyeti, kargo ve komisyon kısmı zaten size ait değildir; reklama ayrılabilecek para yalnızca geriye kalan katkıdır.",
           "Örnekteki mağaza ciro LTV'siyle (1.380 TL) LTV:CAC = 3 hedeflerse CAC'ı 460 TL'ye kadar çıkarabileceğini düşünür. Marjlı LTV 483 TL olduğu için bu, her yeni müşteriyle 24 ay sonunda bile yaklaşık başabaşta kalmak demektir. Marjlı hesapta aynı hedef 161 TL'lik CAC'a izin verir.",
           "E-ticarette brüt marj yerine katkı marjı kullanmak bir adım daha iyidir: iade oranı yüksek kategorilerde (giyim, ayakkabı) brüt marjla hesaplanan LTV gerçekte olduğundan belirgin biçimde yüksek çıkar.",
+          "Aynı müşteriyi üç farklı yöntemle hesaplayıp 200 TL'lik bir CAC'la karşılaştırınca fark netleşir: ciroyla bakan ekip 'oran 7, bütçeyi artır' der; katkı marjıyla bakan ekip oranın 3'ün altında olduğunu görür. (Brüt marj örnekte %50 kabul edildi; kargo, komisyon ve iade düşülünce katkı marjı %35'e iner.)",
         ],
+        table: {
+          caption: "Aynı müşteri, üç LTV: CAC 200 TL iken LTV:CAC (örnek tutarlar)",
+          head: ["Yöntem", "Hesap", "LTV", "LTV:CAC", "Karar"],
+          rows: [
+            ["Ciro LTV'si", "600 × 2,3", "1.380 TL", "6,9", "Yanıltıcı: bütçeyi gereğinden fazla açar"],
+            ["Brüt marjlı LTV", "1.380 × 0,50", "690 TL", "3,45", "İadesi yüksek kategoride iyimser"],
+            ["Katkı marjlı LTV", "1.380 × 0,35", "483 TL", "2,42", "Doğru eşik: CAC'ı 161 TL'ye indirmek gerekir"],
+          ],
+        },
       },
       {
         heading: "Kohort LTV nasıl hesaplanır? Adım adım örnek",
@@ -2426,6 +2515,11 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "LTV ne demek? Kredideki LTV ile aynı şey mi?",
         answer:
           "Pazarlama ve e-ticarette LTV, Lifetime Value yani müşteri yaşam boyu değeri demektir: bir müşterinin ilişki boyunca bıraktığı toplam kâr. Bankacılık ve kripto kredilerinde geçen LTV ise Loan-to-Value'dur, yani kredi tutarının teminat değerine oranıdır. İkisinin kısaltması aynı, anlamı tamamen farklıdır; bu yazı müşteri yaşam boyu değerini anlatır.",
+      },
+      {
+        question: "LTV ile ARPU arasındaki fark nedir?",
+        answer:
+          "ARPU (kullanıcı başına ortalama gelir) bir dönemin, genellikle bir ayın gelirini kullanıcı sayısına böler; LTV ise müşterinin tüm ilişki boyunca bıraktığı kârı gösterir. Abonelikte LTV ≈ ARPU × Brüt marj / Aylık churn ile ARPU'dan türetilir.",
       },
       {
         question: "LTV ile CLV aynı şey mi?",
@@ -3828,7 +3922,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Meta reklam bütçesi nasıl belirlenir? Hedeften geriye hesap",
         paragraphs: [
           "Bütçeyi 'günde 500 TL deneyelim' diye değil, kârlılık hedefinden geriye hesaplayın. Örnek: ortalama sipariş tutarı 1.200 TL, ürün maliyeti + kargo + komisyon + paketleme sonrası reklam öncesi katkı marjı %40. Sipariş başı katkı 1.200 × 0,40 = 480 TL'dir.",
-          "Başabaş CPA 480 TL, başabaş ROAS 1 / 0,40 = 2,5'tir. Sipariş başına cironun %10'u kadar kâr kalsın istiyorsanız reklama ayırabileceğiniz tutar 1.200 × (0,40 − 0,10) = 360 TL'dir: hedef CPA 360 TL, hedef ROAS 1.200 / 360 ≈ 3,33. Bu hedefleri Meta'da maliyet hedefi ya da ROAS hedefi teklifi olarak da kullanabilirsiniz; ilk haftalarda sadece izleme eşiği olarak tutmak daha güvenlidir.",
+          "Başabaş CPA 480 TL, [başabaş ROAS](/blog/roas-nedir-nasil-hesaplanir/) 1 / 0,40 = 2,5'tir. Sipariş başına cironun %10'u kadar kâr kalsın istiyorsanız reklama ayırabileceğiniz tutar 1.200 × (0,40 − 0,10) = 360 TL'dir: hedef CPA 360 TL, hedef ROAS 1.200 / 360 ≈ 3,33. Bu hedefleri Meta'da maliyet hedefi ya da ROAS hedefi teklifi olarak da kullanabilirsiniz; ilk haftalarda sadece izleme eşiği olarak tutmak daha güvenlidir.",
           "Sonra öğrenme aşaması kısıtını ekleyin: Meta, reklam setinin teslimatı oturtması için son önemli düzenlemeden sonraki 7 günde yaklaşık 50 optimizasyon olayı bekler. 360 TL CPA ile haftada 50 satın alma 18.000 TL, yani reklam seti başına günde ≈ 2.571 TL bütçe ister.",
         ],
         bullets: [
@@ -3877,7 +3971,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Açılar: sorun–çözüm, ürün kullanım videosu, müşteri yorumu (gerçek ve izinli), karşılaştırma, kampanya/teklif",
           "Metin: ilk satırda fayda ve teklif; fiyat ya da kargo avantajı varsa açıkça yazın; harekete geçirici mesaj amaca uygun olsun",
           "Rakip incelemesi: Meta Reklam Kütüphanesi'nde rakiplerin uzun süredir yayında tuttuğu reklamlar, işe yarayan açıları gösterir",
-          "Yorgunluk: frekans artıp tıklama oranı düşüyor ve CPA yükseliyorsa yeni açı ekleyin; kazananı silmeyin",
+          "Yorgunluk: frekans artıp [tıklama oranı](/blog/ctr-nedir-iyi-tiklama-orani-kac/) düşüyor ve CPA yükseliyorsa yeni açı ekleyin; kazananı silmeyin",
         ],
       },
       {
@@ -4852,7 +4946,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Trendyol'da başabaş ROAS kaç? (İade dahil hesap)",
         paragraphs: [
-          "ROAS tek başına iyi ya da kötü değildir; ürünün reklam öncesi bıraktığı kâra göre okunur. Komisyon, kargo ve hizmet bedeli kesintilerini Trendyol komisyon oranları yazısında ayrıntılı anlattık. Reklam kararında çoğu hesabın atladığı nokta iadedir: iade edilen siparişte ciro ve komisyon geri döner, ama gidiş kargosu, dönüş kargosu ve paketleme satıcıda kalır. Üstelik reklam tıklaması için ödediğiniz para da geri gelmez.",
+          "[ROAS](/blog/roas-nedir-nasil-hesaplanir/) tek başına iyi ya da kötü değildir; ürünün reklam öncesi bıraktığı kâra göre okunur. Komisyon, kargo ve hizmet bedeli kesintilerini Trendyol komisyon oranları yazısında ayrıntılı anlattık. Reklam kararında çoğu hesabın atladığı nokta iadedir: iade edilen siparişte ciro ve komisyon geri döner, ama gidiş kargosu, dönüş kargosu ve paketleme satıcıda kalır. Üstelik reklam tıklaması için ödediğiniz para da geri gelmez.",
           "Bu yüzden 'kesintileri topla, fiyattan çıkar' yöntemi eşiği olduğundan düşük gösterir. Doğru hesap, siparişin iade edilme ihtimalini de içerir: Reklam öncesi beklenen kâr = (1 − İade oranı) × (Fiyat − Komisyon − Hizmet bedeli − Ürün maliyeti) − Gidiş kargo − Paketleme − İade oranı × Dönüş kargo. Başabaş ROAS = Fiyat / Reklam öncesi beklenen kâr.",
           "Örnek: 800 TL fiyat, %21 komisyon (168 TL), 10,99 TL hizmet bedeli, 300 TL ürün maliyeti, 81,95 TL gidiş ve aynı tutarda dönüş kargosu, 10 TL paketleme, %8 iade (tutarlar örnektir). Beklenen kâr 0,92 × 321,01 − 81,95 − 10 − 6,56 = 196,82 TL, başabaş ROAS 800 / 196,82 = 4,06 olur. İade yokmuş gibi hesaplarsanız kâr 229,06 TL ve eşik 3,49 çıkar. Fark küçük görünür ama panelde 3,5 ile 4,1 arasındaki her kampanya kârlı sanılırken zarar yazar.",
           "Aşağıdaki liste aynı ürünü farklı panel ROAS'larında gösterir. Satış fiyatının %8'ini (64 TL) kâr olarak bırakmak istiyorsanız hedef ROAS 800 / (196,82 − 64) = 6,02'dir. Trendyol'un tanıtım sayfasındaki 'reklam harcaması getirisinin 12 katına kadar' ifadesi bir üst sınır pazarlama cümlesidir; sizin için önemli olan bu eşiği geçip geçmediğinizdir.",
@@ -5200,7 +5294,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Instagram reklam bütçesi nasıl hesaplanır? TL örneği",
         paragraphs: [
           "Örnek: 1.200 TL sepet, reklam öncesi %40 katkı marjı. Sipariş başı reklama ayrılabilecek en yüksek tutar 480 TL'dir (başabaş), başabaş ROAS 2,5'tir. Günde 300 TL, yani ayda 9.000 TL ayırıyorsunuz. Varsayımlar: BGBM 80 TL, tıklama oranı %1, sitede dönüşüm oranı %1,5.",
-          "9.000 / 80 × 1.000 = 112.500 gösterim. %1 tıklama oranıyla 1.125 tıklama, tıklama başı 8 TL. %1,5 dönüşümle 16,9 sipariş. Sipariş başı reklam maliyeti 9.000 / 16,9 = 533 TL, ciro 20.250 TL, ROAS 2,25. Siparişlerin reklam öncesi katkısı 8.100 TL olduğu için ay 900 TL zararla kapanır.",
+          "9.000 / 80 × 1.000 = 112.500 gösterim. %1 tıklama oranıyla 1.125 tıklama, tıklama başı 8 TL. %1,5 dönüşümle 16,9 sipariş. Sipariş başı reklam maliyeti 9.000 / 16,9 = 533 TL, ciro 20.250 TL, [ROAS](/blog/roas-nedir-nasil-hesaplanir/) 2,25. Siparişlerin reklam öncesi katkısı 8.100 TL olduğu için ay 900 TL zararla kapanır.",
           "Başabaşa dönmek için tek bir kaldıraç yeterlidir: tıklama başı maliyeti 7,20 TL'ye indirmek (aynı BGBM'de tıklama oranı %1,11) ya da dönüşüm oranını %1,67'ye çıkarmak. Aşağıdaki senaryolar aynı 9.000 TL ile ne kadar farklı sonuç alınabileceğini gösterir:",
         ],
         bullets: [
@@ -5473,7 +5567,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "En pahalı SEO hatası, kimsenin aramadığı konuya iyi yazı yazmaktır. Sezgi burada yanıltır. Kendi çalışmamızdan bir örnek: 'cac hesaplama', 'ltv hesaplama' ve 'churn rate hesaplama' sorgularını hedef almıştık. Keyword Planner'da (Türkiye, son 12 ay ortalaması, Ekim 2026) üçü de 0-10 bandında kaldı ya da hiç veri vermedi; aynı konularda 'cac nedir' 320, 'ltv nedir' 210, 'churn nedir' 210 arama alıyordu. Hedef listesi tek bir tabloyla değişti.",
           "Hacim yetmez, niyeti de kontrol edin. 'ltv nedir' sonuçlarının bir kısmı müşteri değerini değil kredi/teminat oranını (loan-to-value) anlatıyor; 'arpa nedir' aramalarının çoğu tahıl içindir. Google'ın ilk sayfasında ne gördüğünüz, sorguyu kimin aradığını size söyler.",
-          "Sıralama fırsatını da tahmin edin: Aylık tıklama ≈ Aylık hacim × Tıklama oranı. Ahrefs'in toplulaştırılmış masaüstü verisinde (Aralık 2025) birinci sıranın tıklama oranı AI Overview çıkmayan bilgi sorgularında %3,9, AI Overview çıkan sorgularda %1,6. 'seo nedir' (5.400 arama/ay) için bu, birinci sırada bile ayda yaklaşık 86-211 tıklama demektir. Yüksek hacim, yüksek trafik anlamına gelmez; hesap yapmadan beklenti kurmayın.",
+          "Sıralama fırsatını da tahmin edin: Aylık tıklama ≈ Aylık hacim × [Tıklama oranı (CTR)](/blog/ctr-nedir-iyi-tiklama-orani-kac/). Ahrefs'in toplulaştırılmış masaüstü verisinde (Aralık 2025) birinci sıranın tıklama oranı AI Overview çıkmayan bilgi sorgularında %3,9, AI Overview çıkan sorgularda %1,6. 'seo nedir' (5.400 arama/ay) için bu, birinci sırada bile ayda yaklaşık 86-211 tıklama demektir. Yüksek hacim, yüksek trafik anlamına gelmez; hesap yapmadan beklenti kurmayın.",
         ],
         bullets: [
           "Bilgi niyeti ('roas nedir'): rehber yazı. Çoğu zaman AI Overview çıkar, tıklama düşer ama marka güveni kazandırır",
@@ -7795,7 +7889,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ctr-nedir-iyi-tiklama-orani-kac",
-    seoTitle: "CTR Nedir? Tıklama Oranı Hesaplama ve İyi CTR Kaç Olmalı",
+    seoTitle: "CTR Nedir, Ne Demek? Tıklama Oranı Hesaplama, İyi CTR Kaç",
     title: "CTR Nedir? Tıklama Oranı Nasıl Hesaplanır, Reklamda ve SEO'da İyi CTR Kaç?",
     description:
       "CTR (tıklama oranı) nedir, nasıl hesaplanır? Google Ads, Meta, SEO ve e-postada iyi CTR kaç, CTR'nin TBM ve EBM'ye etkisi, Search Console'da doğru okuma.",
@@ -7807,22 +7901,41 @@ export const BLOG_POSTS: BlogPost[] = [
       "Yüksek CTR tek başına başarı değildir: tıklayan kişi dönüşmüyorsa daha çok ödersiniz. CTR'yi her zaman dönüşüm oranı ve edinme başı maliyetle (EBM) birlikte okuyun.",
     ],
     publishedAt: "2026-11-11",
+    updatedAt: "2026-11-16",
     readingMinutes: 10,
     tags: ["CTR", "Tıklama Oranı", "Google Ads", "Search Console", "SEO", "Reklam Metrikleri"],
     sections: [
       {
-        heading: "CTR nedir? (Kısa cevap)",
+        heading: "CTR nedir, ne demek? (Kısa cevap)",
         paragraphs: [
-          "CTR, İngilizce click-through rate kelimelerinin kısaltmasıdır; Türkçede tıklama oranı (Google Ads arayüzünde 'TO') olarak geçer. Bir reklamın, arama sonucunun, e-postadaki linkin ya da bir ürün kartının kaç kez görüldüğüne karşılık kaç kez tıklandığını yüzde olarak gösterir.",
+          "CTR (click-through rate), Türkçesiyle tıklama oranı (Google Ads'te 'TO'), bir reklamın, arama sonucunun ya da linkin görüldüğü her 100 seferden kaçında tıklandığını gösteren yüzdedir. Formül: CTR = Tıklama ÷ Gösterim × 100. 2.000 gösterimde 40 tıklama, %2 CTR demektir.",
           "Google'ın tanımıyla CTR, reklamınızı görenlerin ne sıklıkla tıkladığını gösteren orandır ve reklamlarınızın ve anahtar kelimelerinizin ne kadar iyi performans gösterdiğini değerlendirmek için kullanılır. Aynı mantık organik aramada da geçerlidir: Search Console, sayfanızın arama sonuçlarında kaç kez gösterildiğini ve kaç kez tıklandığını ayrı ayrı raporlar.",
           "Bu yazıda CTR'nin nasıl hesaplandığını, kanal kanal kaynaklı karşılaştırma rakamlarını, CTR'nin tıklama başı maliyete etkisini sayılarla, Search Console'da düşük CTR'li sayfaları nasıl bulacağınızı ve CTR'nin yanılttığı durumları bulacaksınız.",
         ],
+      },
+      {
+        heading: "CTR açılımı ve Türkçesi: TO, beklenen TO, bağlantı TO ve CTOR",
+        paragraphs: [
+          "CTR'nin açılımı click-through rate'tir; Türkçede tıklama oranı ya da kısaca TO denir. Aynı kısaltma platformdan platforma farklı paydalarla raporlanır. İki raporda iki ayrı 'CTR' görüyorsanız önce neyin neye bölündüğünü kontrol edin.",
+        ],
+        table: {
+          caption: "Platformlarda geçen CTR türleri",
+          head: ["Terim", "Nerede?", "Formül", "Not"],
+          rows: [
+            ["TO (CTR)", "Google Ads, Microsoft Ads", "Tıklama ÷ Gösterim", "Arama ve görüntülü reklamın temel oranı"],
+            ["Beklenen TO", "Google Ads › Kalite Puanı", "Google'ın tahmini (ortalamanın üstü / ortalama / altı)", "Kalite Puanı'nın üç bileşeninden biri; [TBM](/blog/cpc-nedir-tiklama-basi-maliyet/)'yi etkiler"],
+            ["Bağlantı TO", "Meta (Facebook, Instagram)", "Bağlantı tıklaması ÷ Gösterim", "'TO (tümü)' beğeni ve profil tıklamasını da sayar, daha yüksek çıkar"],
+            ["Organik CTR", "Search Console", "Tıklama ÷ Arama sonucu gösterimi", "Ortalama konumla birlikte okunur"],
+            ["CTOR", "E-posta araçları", "Tıklayan ÷ Açan", "E-posta CTR'si teslim edilene böler; CTOR içeriği ölçer"],
+          ],
+        },
       },
       {
         heading: "CTR nasıl hesaplanır? Formül ve örnekler",
         paragraphs: [
           "Formül: CTR = tıklama sayısı ÷ gösterim sayısı × 100. Gösterim, reklamın ya da sonucun ekranda görüntülenme sayısıdır; tıklama ise bu gösterimlerden kaçının tıklamaya dönüştüğüdür.",
           "Bir hesap ya da sitenin toplam CTR'sini bulurken satırların CTR'lerinin ortalamasını almayın; toplam tıklamayı toplam gösterime bölün. Örnek: A sayfası 10.000 gösterimde 100 tıklama (%1), B sayfası 500 gösterimde 50 tıklama (%10) almış olsun. İki oranın ortalaması %5,5 eder ama gerçek toplam CTR 150 ÷ 10.500 = %1,43'tür. Gösterimi az olan satır ortalamayı şişirir.",
+          "Ters hesap: hedef tıklama sayısına ulaşmak için gereken CTR = Hedef tıklama ÷ Gösterim × 100. Search Console'da ayda 3.000 gösterim alan bir sayfadan 100 tıklama istiyorsanız %3,3 CTR gerekir; aynı sayfa %1 CTR'de kalıyorsa hedef için 10.000 gösterime, yani daha iyi bir sıraya ihtiyaç vardır. Bu hesap, başlığı mı iyileştirmeniz gerektiğini yoksa sıralamayı mı yükseltmeniz gerektiğini ayırır.",
         ],
         bullets: [
           "Google Ads: 20.000 gösterim, 300 tıklama → CTR %1,5",
@@ -7917,6 +8030,11 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "CTR ne demek?",
         answer:
           "CTR, click-through rate yani tıklama oranı demektir. Bir reklamın, arama sonucunun ya da linkin görüldüğü her 100 seferden kaçında tıklandığını gösterir. Formülü: tıklama ÷ gösterim × 100.",
+      },
+      {
+        question: "CTR açılımı nedir, Türkçesi ne?",
+        answer:
+          "CTR'nin açılımı click-through rate'tir; Türkçesi tıklama oranıdır. Google Ads Türkçe arayüzünde 'TO' olarak kısaltılır. Meta'da 'bağlantı TO' ve 'TO (tümü)' olarak iki ayrı sütun bulunur.",
       },
       {
         question: "CTR nasıl hesaplanır?",
@@ -8091,7 +8209,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "TBG (görüntüleme başı maliyet) = maliyet ÷ görüntüleme; BGBM = maliyet ÷ gösterim × 1.000",
           "Video oynatma yüzdeleri (%25, %50, %75, %100): videonun nerede izleyici kaybettiğini gösterir",
           "Tekil erişim ve ortalama sıklık: erişim kampanyalarında asıl başarı ölçüsü",
-          "Tıklama oranı, dönüşüm ve EBM/ROAS: Demand Gen ve satış hedefinde asıl karar metrikleri",
+          "[Tıklama oranı (CTR)](/blog/ctr-nedir-iyi-tiklama-orani-kac/), dönüşüm ve EBM/[ROAS](/blog/roas-nedir-nasil-hesaplanir/): Demand Gen ve satış hedefinde asıl karar metrikleri",
         ],
       },
       {
@@ -8506,7 +8624,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "CPC ile CPM, CTR, EBM ve ROAS arasındaki ilişki nedir?",
         paragraphs: [
           "TBM tek başına yüzen bir rakam değildir; reklam hunisinin ortasında durur ve dört formülle diğer metriklere bağlanır. Bu bağlantıları bilmek, TBM değiştiğinde sebebini bulmanızı ve hedefinizi geriye doğru hesaplamanızı sağlar.",
-          "Örnek (örnek tutarlar): bin gösterim 80 TL, tıklama oranı %1. TBM = 80 ÷ (0,01 × 1.000) = 8 TL. Dönüşüm oranı %2 ise satış başı maliyet 8 ÷ 0,02 = 400 TL olur. Ortalama sepet 1.200 TL ise ROAS = 1.200 × 0,02 ÷ 8 = 3'tür. Aynı kampanyada CTR %1,25'e çıkarsa TBM 6,40 TL'ye, EBM 320 TL'ye iner ve ROAS 3,75 olur.",
+          "Örnek (örnek tutarlar): bin gösterim 80 TL, [tıklama oranı (CTR)](/blog/ctr-nedir-iyi-tiklama-orani-kac/) %1. TBM = 80 ÷ (0,01 × 1.000) = 8 TL. Dönüşüm oranı %2 ise satış başı maliyet 8 ÷ 0,02 = 400 TL olur. Ortalama sepet 1.200 TL ise ROAS = 1.200 × 0,02 ÷ 8 = 3'tür. Aynı kampanyada CTR %1,25'e çıkarsa TBM 6,40 TL'ye, EBM 320 TL'ye iner ve ROAS 3,75 olur.",
         ],
         bullets: [
           "TBM = BGBM (CPM) ÷ (CTR × 1.000): gösterim bazlı ücretlendirilen kanallarda TBM'yi CTR belirler",
@@ -8771,7 +8889,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Minimum bütçeyle satın alma optimizasyonu yapıp beş reklam grubuna bölmek: hiçbiri öğrenme aşamasını geçemez",
           "İlk iki günde bütçe, kitle ve teklifle oynamak: öğrenme uzar, maliyet dalgalanır",
           "Televizyon reklamı ya da yatay video kullanmak: TikTok'ta dikey, sesli ve doğal görünen video beklenir",
-          "Tek kreatifle haftalarca yayın: sıklık arttıkça tıklama oranı düşer, TBM ve EBM yükselir",
+          "Tek kreatifle haftalarca yayın: sıklık arttıkça [tıklama oranı](/blog/ctr-nedir-iyi-tiklama-orani-kac/) düşer, TBM ve EBM yükselir",
           "UTM'siz link: GA4'te trafik Direct ya da Unassigned'a düşer, kanalın gerçek katkısı görünmez",
           "Kararı tıklama ya da görüntüleme maliyetine göre vermek: kâr kararı EBM ve ROAS ile verilir",
         ],
