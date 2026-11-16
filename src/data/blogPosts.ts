@@ -5710,7 +5710,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Dropshipping nerede yapılır? Pazaryeri mi, kendi site mi?",
         paragraphs: [
           "Kanal seçimi kâr yapınızı belirler. Pazaryeri trafiği hazırdır ama komisyon keser; kendi sitede komisyon yoktur ama trafiği reklamla siz satın alırsınız. Bu farkı aşağıdaki hesapta göreceksiniz.",
-          "Platform kurallarını panelden doğrulayın. Trendyol için kamuya açık, resmî bir dropshipping yasağı bulamadık; ancak Satıcı Bilgi Merkezi'ni okuyamadık ve Türkçe rehberler kaynak göstermiyor. Amazon'un politikası ise açık: stoksuz satışa ancak alıcı için satıcının siz olduğu belliyse izin verir, paket ve belgelerde başka bir satıcı adı bulunamaz, iadeleri de siz yönetirsiniz.",
+          "Platform kurallarını panelden doğrulayın. Trendyol için kamuya açık, resmî bir dropshipping yasağı bulamadık; ancak Satıcı Bilgi Merkezi'ni okuyamadık ve Türkçe rehberler kaynak göstermiyor. Amazon'un politikası ise açık ([Amazon'da satıcı olmak ve FBA rehberimizde](/blog/amazon-satici-olmak-fba-nedir/) Türkiye'deki ücretleri de hesapladık): stoksuz satışa ancak alıcı için satıcının siz olduğu belliyse izin verir, paket ve belgelerde başka bir satıcı adı bulunamaz, iadeleri de siz yönetirsiniz.",
         ],
         bullets: [
           "Pazaryeri (Trendyol, Hepsiburada): hazır talep, yüksek rekabet, komisyon ve geç kargo ya da iptal puanı. Geciken tedarikçi doğrudan mağaza puanınızı etkiler",
@@ -7084,7 +7084,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Etsy mi, Trendyol mu? Kesintileri karşılaştırma",
         paragraphs: [
           "Örnekteki Etsy kesintisi (%15,7) Trendyol'daki birçok kategori komisyonuyla aynı bantta görünür; ama iki pazaryerini karşılaştırırken yalnızca yüzdeye bakmak yanıltır. Trendyol'da kargo genellikle anlaşmalı yurt içi tarifeyle gider ve sepet tutarları daha düşüktür; Etsy'de sepet döviz bazlı ve yüksek, kargo ise pahalıdır. Karşılaştırmayı sipariş başı net kalan tutarla yapın.",
-          "Trendyol ve Hepsiburada tarafını Trendyol Komisyon ve Kâr Hesaplama aracıyla, Etsy tarafını bu yazıdaki formülle hesaplayın. El yapımı, kişiye özel ya da tasarım ürünlerinde Etsy'nin yüksek sepet tutarı kargo ve kesintiyi rahatça karşılayabilir; standart ve ağır ürünlerde ise yurt içi pazaryerleri genellikle daha fazla bırakır.",
+          "Trendyol ve Hepsiburada tarafını Trendyol Komisyon ve Kâr Hesaplama aracıyla, Etsy tarafını bu yazıdaki formülle hesaplayın. El yapımı, kişiye özel ya da tasarım ürünlerinde Etsy'nin yüksek sepet tutarı kargo ve kesintiyi rahatça karşılayabilir; standart ve ağır ürünlerde ise yurt içi pazaryerleri genellikle daha fazla bırakır. Türkiye'deki alıcıya Amazon.com.tr üzerinden satmayı düşünüyorsanız kategori komisyonlarını ve Amazon Lojistik ücretlerini [Amazon'da satıcı olmak ve FBA nedir](/blog/amazon-satici-olmak-fba-nedir/) yazısında örnek kâr hesabıyla bulabilirsiniz.",
         ],
       },
       {
@@ -7244,7 +7244,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Örnek (KDV hariç, örnek tutarlar): KDV hariç 1.000 TL'ye sattığınız bir ürün düşünün. Komisyon %18 = 180 TL, hizmet bedeli 10,99 TL, kargo 82 TL, ürün maliyeti 450 TL ve paketleme 15 TL olsun. Tamamlanan bir sipariş size 1.000 − 180 − 10,99 − 82 − 450 − 15 = 262,01 TL bırakır.",
           "Şimdi iadeyi ekleyin. Siparişlerin %6'sı iade ediliyorsa ve iadede ürün stoğa dönüyor, komisyon iade ediliyor ama gidiş ve dönüş kargosu ile paketleme (82 + 82 + 15 = 179 TL) kayboluyorsa beklenen katkı 0,94 × 262,01 − 0,06 × 179 = 235,55 TL olur. Bu tutar reklamdan önce sipariş başına kalan paradır ve sipariş başı ödeyebileceğiniz en yüksek reklam maliyetidir.",
-          "Sipariş başı reklam maliyetiniz 60 TL ise net katkı 175,55 TL'ye iner. Başabaş ROAS ise 1.000 / 235,55 = 4,25'tir: Hepsiburada reklamlarında harcanan her 1 TL en az 4,25 TL satış getirmezse o satış zarar ettirir. Aynı hesabı kendi ürününüz için Trendyol Komisyon ve Kâr Hesaplama aracında Hepsiburada seçeneğiyle yapabilirsiniz. Kategoriye göre örnek kâr tablosu, 200 ve 400 TL barem eşiklerinin etkisi ve indirim senaryoları için [Hepsiburada kâr hesaplama rehberine](/blog/hepsiburada-kar-hesaplama/) bakın.",
+          "Sipariş başı reklam maliyetiniz 60 TL ise net katkı 175,55 TL'ye iner. Başabaş ROAS ise 1.000 / 235,55 = 4,25'tir: Hepsiburada reklamlarında harcanan her 1 TL en az 4,25 TL satış getirmezse o satış zarar ettirir. Aynı hesabı kendi ürününüz için Trendyol Komisyon ve Kâr Hesaplama aracında Hepsiburada seçeneğiyle yapabilirsiniz; üçüncü bir kanal olarak Amazon.com.tr'yi değerlendiriyorsanız komisyon tablosu ve FBA kâr karşılaştırması [Amazon'da satıcı olmak rehberinde](/blog/amazon-satici-olmak-fba-nedir/). Kategoriye göre örnek kâr tablosu, 200 ve 400 TL barem eşiklerinin etkisi ve indirim senaryoları için [Hepsiburada kâr hesaplama rehberine](/blog/hepsiburada-kar-hesaplama/) bakın.",
         ],
         bullets: [
           "Tamamlanan sipariş katkısı = Satış fiyatı − Komisyon − Hizmet bedeli − Kargo − Ürün maliyeti − Paketleme",
@@ -9254,6 +9254,281 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Pazarlama Metrikleri Sözlüğü", href: "/blog/pazarlama-metrikleri-sozlugu/" },
       { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
       { label: "Hepsiburada Satıcı Başvurusu (resmî sayfa)", href: "https://merchant.hepsiburada.com/v2/sign-up", external: true },
+    ],
+  },
+  {
+    slug: "amazon-satici-olmak-fba-nedir",
+    seoTitle: "Amazon Satıcı Olmak ve FBA Nedir? 2026 Ücret ve Kâr",
+    title: "Amazon'da Satıcı Olmak ve FBA Nedir? 2026 Komisyon Oranları, Amazon Lojistik Ücretleri ve Kâr Hesabı",
+    description:
+      "Amazon satıcı olmak için gerekenler, FBA (Amazon Lojistik) nedir, 2026 komisyon ve lojistik ücretleri, FBA ile satıcı gönderimi kâr karşılaştırması.",
+    category: "performans-pazarlama",
+    tldr: [
+      "Amazon FBA (Fulfillment by Amazon, Türkiye'de Amazon Lojistik), ürünlerinizi Amazon'un deposuna gönderdiğiniz; depolama, paketleme, kargo, müşteri hizmeti ve iadeyi Amazon'un üstlendiği satış modelidir. Karşılığında birim başına lojistik ücreti ve aylık depolama ücreti ödersiniz.",
+      "Amazon.com.tr'de satıcı olmak için şirket kayıt bilgileri, kimlik, adres kanıtı, kredi kartı ve telefon gerekir. Aylık 99 TL'lik üyelik bedeli kampanya kapsamında alınmıyor; satış komisyonu kategoriye göre %6 ile %20 arasında ve kargo dahil toplam satış fiyatı üzerinden alınır (resmî ücretlendirme sayfası, Kasım 2026).",
+      "Örnek tutarlarla 1.299 TL'lik bir ekmek kızartma makinesi FBA ile 279,82 TL, kendi kargonuzla 256,11 TL bırakıyor. 300 TL altı giyimde Amazon Lojistik sabit kargo kampanyası farkı açıyor: 280 TL'lik tişörtte FBA 96,70 TL, satıcı gönderimi 55,60 TL.",
+      "Kozmetik, gıda ve takıda komisyon fiyata göre basamaklı: kozmetikte 499 TL'den 509 TL'ye çıkmak eline geçen tutarı 16,35 TL azaltır; takıda 900 TL'yi aşmak komisyonu %20'den %6'ya indirir.",
+      "Yeni satıcılara 31.12.2026'ya kadar kayıttan itibaren 90 gün, 2 milyon TL satışa kadar %1 komisyon kampanyası var; FBA'daki sıfır komisyon programı ise Ekim 2026'da sona erdi. Fiyatınızı kampanya oranına değil standart orana göre kurun.",
+    ],
+    publishedAt: "2026-11-16",
+    readingMinutes: 12,
+    tags: ["Amazon", "Amazon Satıcı Olmak", "Amazon FBA", "Amazon Lojistik", "Komisyon Hesaplama", "Pazaryeri", "E-ticaret"],
+    sections: [
+      {
+        heading: "Amazon FBA nedir? (Kısa cevap)",
+        paragraphs: [
+          "Amazon FBA (Fulfillment by Amazon), satıcının ürünlerini Amazon'un lojistik merkezine gönderdiği, siparişlerin depolanması, paketlenmesi, kargolanması, müşteri hizmetleri ve iadelerin Amazon tarafından yürütüldüğü satış modelidir. Türkiye'de adı Amazon Lojistik'tir; satıcı birim başına lojistik ücreti ve aylık depolama ücreti öder.",
+          "FBA'nın alternatifi satıcı gönderimidir (FBM, Fulfilled by Merchant): ürün sizin deponuzda durur, siparişi siz paketleyip kendi anlaşmalı kargonuzla ya da Amazon'un Kolay Gönderi hizmetiyle gönderirsiniz. Aynı mağazada bazı ürünleri FBA, bazılarını satıcı gönderimiyle satabilirsiniz; karar ürün bazında verilir.",
+          "Bu yazıda önce Amazon.com.tr'de satıcı olmanın adımlarını, sonra 2026 komisyon ve lojistik ücretlerini, ardından aynı ürünün FBA ve satıcı gönderimiyle kâr karşılaştırmasını bulacaksınız. Tüm tutarlar örnek tutarlardır ve vergi etkisi hesaba katılmamıştır; mali yükümlülükleri mali müşavirinizle netleştirin.",
+        ],
+        bullets: [
+          "FBA = Fulfillment by Amazon = Amazon Lojistik: stok Amazon'da, gönderim ve iade Amazon'da",
+          "FBM = Fulfilled by Merchant = Satıcı gönderimi: stok sizde, gönderim sizde",
+          "Prime etiketi: FBA ürünleri ücretsiz ve hızlı kargo ile Prime etiketi alır",
+        ],
+      },
+      {
+        heading: "Amazon FBA ne demek, açılımı nedir?",
+        paragraphs: [
+          "FBA, İngilizce 'Fulfillment by Amazon' ifadesinin kısaltmasıdır ve 'siparişin Amazon tarafından karşılanması' anlamına gelir. Fulfillment, e-ticarette siparişin depodan alınıp paketlenmesi, kargolanması ve teslimine kadar geçen sürecin tamamını anlatır. Amazon Türkiye bu hizmeti Türkçe arayüzde 'Amazon Lojistik' adıyla sunar.",
+          "Sık karışan iki kavram daha var: Seller Flex, satıcının kendi deposunu Amazon'un sistemiyle çalıştırdığı bir programdır; MCF (Multi-Channel Fulfillment) ise Amazon deposundaki stoğunuzla kendi sitenizdeki ya da başka kanallardaki siparişleri gönderme hizmetidir. 'Amazon'da FBA yapmak' dendiğinde kastedilen neredeyse her zaman ürünleri Amazon deposuna gönderip orada satmaktır.",
+        ],
+      },
+      {
+        heading: "Amazon'da satıcı olmak için ne gerekir?",
+        paragraphs: [
+          "Amazon Türkiye'nin başlangıç kılavuzuna göre hesap açmadan önce şu bilgileri hazırlamanız gerekir. Amazon kayıt sırasında işletme türünü, şirket sicil ve kayıt bilgilerini istediği için satışa başlamadan önce hangi şirket yapısıyla satacağınızı netleştirin; bu karar mali ve hukuki bir karardır, bir mali müşavirle verin.",
+          "Kayıt sırasında karttan ücret çekilmez; kart, hesap bakiyeniz satış ücretlerini karşılamadığında kullanılır. Bazı kategoriler 'onay gerektiren kategori'dir ve belirli markaları satmak için Amazon ek belge ya da performans koşulu isteyebilir. Kendi markanızı satacaksanız ilk 90 gün içinde Marka Kaydı programına başvurmak, listelerinizi başka satıcıların değiştirmesine karşı korur.",
+        ],
+        bullets: [
+          "İşletme e-posta adresi",
+          "Birincil irtibat kişisinin geçerli kimlik bilgileri",
+          "Şirket kayıt bilgileri: işletme türü, sicil numarası, kayıtlı iş adresi ve resmî kayıt numaraları",
+          "Adres kanıtı: kredi kartı ekstresi veya banka hesap dekontu",
+          "Süresi dolmamış bir kredi kartı (şahıs veya şirket adına)",
+          "Ülke kodlu, geçerli bir telefon numarası",
+          "Satacağınız ürünler için GTIN barkod (EAN, UPC, ISBN) ya da barkod muafiyeti",
+        ],
+      },
+      {
+        heading: "Amazon satıcı hesabı nasıl açılır? Adım adım",
+        paragraphs: [
+          "Hesap açma akışı Seller Central üzerinden yürür. Amazon onay süresi için kesin bir gün vermiyor; belgelerinizin hazır ve tutarlı olması (şirket adı, adres ve kart bilgilerinin birbiriyle eşleşmesi) süreci en çok hızlandıran şeydir.",
+          "Kampanyadan yararlanacaksanız takvim önemlidir: Amazon Türkiye'nin Ekim 2026 duyurusuna göre yeni satıcı kampanyasında hesap kayıt tarihinden itibaren 20 gün içinde ürün listelemeniz gerekiyor ve indirimli komisyon kayıttan itibaren 90 gün geçerli. Ürün görsellerini, barkodları ve ilk stok planını hesabı açmadan önce hazırlamak bu süreyi boşa harcamamanızı sağlar.",
+        ],
+        bullets: [
+          "1. satis.amazon.com.tr üzerinden 'Hesap aç' ile Seller Central kaydını başlatın",
+          "2. İşletme bilgilerini, irtibat kişisini, adres kanıtını, kartı ve telefonu girin; kimlik doğrulamasını tamamlayın",
+          "3. Mağaza adını belirleyin ve onay gerektiren kategorilerde satacaksanız onay talebi gönderin",
+          "4. İlk ürünleri listeleyin: mevcut bir ürün sayfasıyla eşleştirin ya da yeni liste oluşturun (SKU, başlık, madde işaretleri, görseller, arama terimleri)",
+          "5. Her ürün için gönderim modelini seçin: Amazon Lojistik (FBA) ya da satıcı gönderimi",
+          "6. FBA seçtiyseniz kargo planı oluşturun, etiketleri yapıştırın ve ürünleri lojistik merkezine gönderin; ürünler teslim alındıktan sonra 48-72 saat içinde satışa açılır",
+        ],
+      },
+      {
+        heading: "Amazon komisyon oranları 2026: kategori tablosu",
+        paragraphs: [
+          "Amazon'un satış komisyonu (yönlendirme ücreti), toplam satış fiyatı üzerinden yüzde olarak alınır. Toplam satış fiyatı ürün fiyatını, kargo ücretini ve alıcının ödediği tüm tutarı kapsar. Satıcı gönderiminde alıcıdan ayrıca kargo ücreti alamadığınız ve fiyatı kargo dahil kurduğunuz için, komisyonu kargo payınız üzerinden de ödersiniz.",
+          "Aşağıdaki oranlar Amazon Türkiye'nin resmî ücretlendirme sayfasından 16.11.2026'da alındı. Aylık 99 TL'lik profesyonel üyelik bedeli şu an kampanya kapsamında alınmıyor; Amazon bu kampanyayı değiştirmeden 3 ay önce duyuracağını belirtiyor. Hepsiburada'nın aksine ücretlendirme sayfasında paket başı sabit bir hizmet bedeli yer almıyor. Ürün iade edildiğinde komisyonun bir kısmı, bir işlem ücreti düşüldükten sonra geri ödenir.",
+        ],
+        table: {
+          caption: "Amazon.com.tr satış komisyonları (resmî ücretlendirme sayfası, 16.11.2026; satıcı panelinden doğrulayın)",
+          head: ["Kategori", "Komisyon", "Kategori", "Komisyon"],
+          rows: [
+            ["Bilgisayar", "%7", "Mutfak (küçük ev aletleri)", "%11"],
+            ["Beyaz eşya", "%7", "Elektronik aksesuarlar", "%11"],
+            ["Cep telefonu", "%8", "Bebek ürünleri (giyim hariç)", "%11,5"],
+            ["Video oyunu konsolları", "%8,5", "Otomotiv ve motosiklet", "%12,5"],
+            ["Fotoğraf makinesi", "%9", "Yapı market", "%12,7"],
+            ["Elektronik", "%9,5", "Oyuncak ve oyun / Ofis ürünleri", "%13"],
+            ["Spor / Video oyunları / Diğer", "%10", "Kişisel bakım cihazları", "%13,6"],
+            ["Kitap", "%10,2", "Sağlık ve kişisel bakım / Evcil hayvan", "%13,5"],
+            ["Bahçe", "%14", "Mobilya", "%14,5"],
+            ["Mutfak eşyaları ve dekorasyon", "%15", "Giyim / Kol saatleri", "%15,5"],
+            ["Bavul ve seyahat aksesuarları", "%16", "Ayakkabı, çanta ve ayakkabı aksesuarları", "%17"],
+            ["Kişisel bakım ve kozmetik", "500 TL'ye kadar %9, üstü %14", "Gıda ürünleri", "500 TL'ye kadar %9, üstü %13"],
+            ["Takı", "900 TL'ye kadar %20, üstü %6", "", ""],
+          ],
+        },
+      },
+      {
+        heading: "Amazon Lojistik (FBA) ücretleri ne kadar?",
+        paragraphs: [
+          "FBA'da iki ana ücret vardır. Lojistik ücreti, satılan her birim için ürünün boyut ve ağırlık katmanına göre alınan sabit tutardır; paketleme ve müşteriye gönderimi kapsar. Depolama ücreti ise ürünlerinizin depoda kapladığı ortalama hacme göre metreküp başına aylık alınır ve yılın son çeyreğinde yükselir.",
+          "Amazon'un örnek lojistik ücretleri (16 Nisan 2026'dan beri geçerli tarife): 30 gramlık bir SD kart (küçük zarf) 53,80 TL, 1,2 kg'lık bir ekmek kızartma makinesi (standart paket) 63,58 TL, 10 kg'lık 43 inç LED TV (standart büyük boyut) 163,93 TL. Standart boyut sınırı en fazla 12 kg ve 45 × 34 × 26 cm'dir; 30 kg'dan ağır ürünler FBA'ya alınmaz. Ürününüzün hangi katmana düştüğünü kabaca görmek için ölçülerini [desi hesaplama aracına](/ucretsiz-araclar/desi-hesaplama/) girebilirsiniz.",
+          "Lojistik merkezine gönderim kargosunu (inbound) satıcı öder; bu kalem ücret tablolarında görünmediği için hesaplarda en sık unutulan maliyettir. Koli başına ödediğiniz tutarı koli içindeki birim sayısına bölerek birim başına payını bulun.",
+        ],
+        table: {
+          caption: "Amazon Lojistik ücret kalemleri (resmî ücretlendirme sayfası, 16.11.2026)",
+          head: ["Ücret kalemi", "Tutar", "Not"],
+          rows: [
+            ["Lojistik ücreti (birim başına)", "Boyut ve ağırlığa göre; örnek 53,80 / 63,58 / 163,93 TL", "Tam liste: Amazon FBA Domestic Rate Card (16.04.2026)"],
+            ["Aylık depolama, Ocak-Eylül", "64 TL / m³", "Ortalama günlük hacme göre"],
+            ["Aylık depolama, Ekim-Aralık", "83 TL / m³", "Yoğun sezon tarifesi"],
+            ["Uzun süreli depolama (365 günden fazla)", "1.500 TL / m³ aylık", "Değerlendirme her ayın 15'inde"],
+            ["Kaldırma (birim başına)", "6,40 TL dizilebilen / 11,00 TL dizilemeyen", "Stoğu depodan geri çekme"],
+            ["Hazırlama / etiketleme", "0,60 TL / 1,00 TL", "Amazon'a yaptırırsanız"],
+            ["İade", "Şu an ek ücret yok", "Amazon yönetir"],
+          ],
+        },
+      },
+      {
+        heading: "FBA mı satıcı gönderimi mi? Karşılaştırma tablosu",
+        paragraphs: [
+          "İki modelin farkı yalnızca ücret değildir. FBA, Prime etiketi ve hızlı teslimatla dönüşüm oranını artırabilir, müşteri hizmeti ve iade yükünü sizden alır; buna karşılık stok Amazon'un deposunda bağlanır, depolama ücreti ve uzun süreli depolama riski doğar. Satıcı gönderimi ise esneklik ve stok kontrolü sağlar ama paketleme, kargo süresi ve müşteri iletişimi sizin performansınıza bağlıdır.",
+        ],
+        table: {
+          caption: "Amazon Lojistik (FBA) ve satıcı gönderimi (FBM)",
+          head: ["Kriter", "Amazon Lojistik (FBA)", "Satıcı gönderimi (FBM)"],
+          rows: [
+            ["Stok nerede?", "Amazon lojistik merkezinde", "Sizin deponuzda"],
+            ["Paketleme ve kargo", "Amazon", "Siz (kendi kargonuz veya Kolay Gönderi)"],
+            ["Ücret", "Komisyon + birim başı lojistik + depolama + inbound kargo", "Komisyon + kendi kargo ve paketleme maliyetiniz"],
+            ["Prime etiketi", "Var", "Yok"],
+            ["Müşteri hizmeti ve iade", "Amazon yönetir", "Siz yönetirsiniz"],
+            ["En uygun ürün", "Hızlı dönen, küçük-orta boy, standart ürünler", "Yavaş dönen, büyük/ağır, özel üretim ürünler"],
+            ["Ana risk", "Satılmayan stokta depolama ve uzun süreli depolama ücreti", "Gecikme, kargo maliyeti dalgalanması, operasyon yükü"],
+          ],
+        },
+      },
+      {
+        heading: "Amazon kâr hesaplama: FBA ve satıcı gönderimi örneği",
+        paragraphs: [
+          "Formül diğer pazaryerleriyle aynıdır: Sipariş katkısı = Satış fiyatı − Komisyon − Gönderim maliyeti − Ürün maliyeti. Fark, gönderim maliyetinin içeriğindedir. FBA'da gönderim maliyeti lojistik ücreti, depolama payı, inbound kargo payı ve varsa hazırlama-etiketlemedir; satıcı gönderiminde kendi kargo ve paketleme maliyetinizdir.",
+          "Örnek 1 — ekmek kızartma makinesi (mutfak küçük ev aletleri, %11): satış fiyatı 1.299 TL, ürün maliyeti 800 TL, ambalajlı ölçü 30 × 25 × 25 cm (0,01875 m³). FBA'da komisyon 142,89 TL, lojistik ücreti 63,58 TL, iki aylık yoğun sezon depolama payı 0,01875 × 83 × 2 = 3,11 TL, inbound kargo payı 8 TL (örnek) ve hazırlama-etiketleme 1,60 TL: toplam 219,18 TL kesinti, 279,82 TL katkı (%21,5). Satıcı gönderiminde aynı komisyon, 90 TL kargo (örnek) ve 10 TL paketlemeyle katkı 256,11 TL'ye (%19,7) iner.",
+          "Örnek 2 — tişört (giyim, %15,5): satış fiyatı 280 TL, ürün maliyeti 110 TL. Amazon Lojistik sabit kargo kampanyası, 300 TL'ye kadar olan ürünlerde (Seller Flex kategorileri: giyim, ayakkabı, çanta, takı, saat, bavul) lojistik ücretini birim başına 25 TL'ye sabitliyor (sayfada 20 TL de geçiyor; hesapta yüksek olanı kullandık). Komisyon 43,40 TL, sabit lojistik 25 TL, inbound 3 TL, hazırlama 1,60 TL ve depolama 0,30 TL ile FBA katkısı 96,70 TL (%34,5). Aynı tişört 65 TL kargo ve 6 TL paketlemeyle satıcı gönderiminde 55,60 TL (%19,9) bırakır.",
+          "İki örnekten çıkan sonuç: düşük fiyatlı ve hafif ürünlerde FBA'nın kampanyalı ya da düşük katmanlı lojistik ücreti, tek tek anlaşılan kargodan belirgin şekilde ucuzdur. Pahalı ve hızlı dönen ürünlerde fark küçülür, ama Prime etiketinin dönüşüme etkisi hesaba eklenmeden bile FBA önde kalabilir. Satılmayan stok ise tabloyu tersine çevirir: 365 günü aşan ürün için aylık 1.500 TL/m³ uzun süreli depolama ücreti, aynı ekmek kızartma makinesinde birim başına ayda yaklaşık 28 TL demektir.",
+        ],
+        table: {
+          caption: "Örnek tutarlar, vergi etkisi hariç; kargo ve inbound tutarları örnektir",
+          head: ["Ürün ve model", "Satış fiyatı", "Komisyon", "Gönderim maliyeti", "Ürün maliyeti", "Sipariş katkısı", "Katkı marjı"],
+          rows: [
+            ["Ekmek kızartma makinesi — FBA", "1.299 TL", "%11 = 142,89 TL", "76,29 TL", "800 TL", "279,82 TL", "%21,5"],
+            ["Ekmek kızartma makinesi — satıcı gönderimi", "1.299 TL", "%11 = 142,89 TL", "100 TL", "800 TL", "256,11 TL", "%19,7"],
+            ["Tişört — FBA (sabit kargo kampanyası)", "280 TL", "%15,5 = 43,40 TL", "29,90 TL", "110 TL", "96,70 TL", "%34,5"],
+            ["Tişört — satıcı gönderimi", "280 TL", "%15,5 = 43,40 TL", "71 TL", "110 TL", "55,60 TL", "%19,9"],
+          ],
+        },
+        bullets: [
+          "FBA katkısı = Fiyat × (1 − Komisyon) − Lojistik ücreti − Depolama payı − Inbound payı − Hazırlama − Ürün maliyeti",
+          "Satıcı gönderimi katkısı = Fiyat × (1 − Komisyon) − Kargo − Paketleme − Ürün maliyeti",
+          "Birim depolama payı = Ürün hacmi (m³) × Aylık m³ ücreti × Ortalama bekleme süresi (ay)",
+        ],
+      },
+      {
+        heading: "Komisyon eşikleri: kozmetik, gıda ve takıda fiyat nasıl belirlenir?",
+        paragraphs: [
+          "Üç kategoride komisyon, toplam satış fiyatına göre basamaklıdır ve bu basamak fiyatlamada barem eşiği kadar önemlidir. Kişisel bakım ve kozmetikte 500 TL'ye kadar %9, üstünde %14 uygulanır. 499 TL'lik bir serumda komisyon 44,91 TL, elinize geçen tutar 454,09 TL'dir. Fiyatı 509 TL'ye çıkarırsanız komisyon 71,26 TL'ye yükselir ve elinize geçen tutar 437,74 TL'ye düşer: fiyat 10 TL arttı, gelir 16,35 TL azaldı.",
+          "Eşiğin üstünde aynı tutarı yakalamak için fiyatın 454,09 ÷ 0,86 ≈ 528 TL'ye çıkması gerekir; yani bu kategoride 500-528 TL arası ölü bölgedir. Gıdada (%9 / %13) aynı eşik 500 TL'dir ve ölü bölge yaklaşık 522 TL'ye kadar uzanır. Komisyon kargo dahil toplam fiyat üzerinden hesaplandığı için satıcı gönderiminde fiyatınızın içindeki kargo payı da eşiği aşmanıza neden olabilir.",
+          "Takıda basamak ters yöndedir: 900 TL'ye kadar %20, üstünde %6. 899 TL'lik bir kolyede komisyon 179,80 TL iken 901 TL'de 54,06 TL'dir; 2 TL'lik fiyat artışı elinize geçen tutarı 719,20 TL'den 846,94 TL'ye çıkarır. 700-900 TL bandında takı satıyorsanız ikili set ya da daha değerli bir varyantla 900 TL'nin üstüne çıkmayı mutlaka hesaplayın. Bu tür eşik hesaplarının Hepsiburada tarafını [Hepsiburada kâr hesaplama yazısındaki barem örneğinde](/blog/hepsiburada-kar-hesaplama/) görebilirsiniz.",
+        ],
+        bullets: [
+          "Eşik altı net = Fiyat × (1 − Alt oran)",
+          "Eşiği aşarken aynı neti koruyan fiyat = Eşik altı net ÷ (1 − Üst oran)",
+          "Kozmetik örneği: 499 × 0,91 ÷ 0,86 ≈ 528,01 TL",
+        ],
+      },
+      {
+        heading: "Amazon'da hedef marja göre fiyat nasıl belirlenir?",
+        paragraphs: [
+          "Komisyon satış fiyatı üzerinden alındığı için fiyatı maliyetin üstüne yüzde ekleyerek değil, istediğiniz marjdan geriye doğru hesaplayın: Fiyat = (Ürün maliyeti + Sabit gönderim maliyeti) ÷ (1 − Komisyon oranı − Hedef marj).",
+          "Ekmek kızartma makinesinde FBA sabit maliyeti 76,29 TL'dir. %25 katkı marjı hedeflerseniz fiyat (800 + 76,29) ÷ (1 − 0,11 − 0,25) = 876,29 ÷ 0,64 ≈ 1.369,20 TL olmalıdır; 1.299 TL'lik fiyat %21,5 marj bırakıyordu. Kar marjı ile kâr oranı (markup) farkını [kar marjı nasıl hesaplanır](/blog/kar-marji-nasil-hesaplanir/) yazısında, hızlı hesabı [kar marjı hesaplama aracında](/ucretsiz-araclar/brut-kar-marji-hesaplayici/) bulabilirsiniz.",
+          "Aynı formülün Trendyol ve Hepsiburada sürümünde paket başı hizmet bedeli ve barem kargosu da sabit maliyete girer. Ürününüzü birden fazla pazaryerinde satıyorsanız her kanal için ayrı fiyat hesaplayın; Trendyol tarafı için [Trendyol komisyon oranları ve komisyon hesaplama](/blog/trendyol-komisyon-oranlari-hesaplama/) yazısına, iki Türk pazaryerinin anlık hesabı için [Trendyol ve Hepsiburada kâr hesaplama aracına](/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/) bakabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Amazon Türkiye kampanyaları: %1 komisyon ve 4.000 TL reklam kredisi",
+        paragraphs: [
+          "Amazon Türkiye'nin 7 Ekim 2026'da duyurduğu kampanyaya göre ilk kez satıcı hesabı açan yeni satış ortakları, 30 Eylül - 31 Aralık 2026 arasında kayıt tarihinden itibaren 90 gün boyunca, Amazon.com.tr'deki 2 milyon TL'ye kadar satışları için %1 satış komisyonu öder. Koşul, kayıttan itibaren 20 gün içinde ürün listelemektir. Sponsorlu Ürünler reklamını daha önce hiç kullanmamış yeni ve mevcut satıcılara ayrıca 4.000 TL reklam kredisi veriliyor.",
+          "Kampanyanın etkisi büyüktür ama geçicidir: ekmek kızartma makinesi örneğinde komisyon 142,89 TL'den 12,99 TL'ye iner ve FBA katkısı 279,82 TL'den 409,72 TL'ye çıkar. 90 gün dolduğunda standart orana dönülür. Fiyatı kampanya oranına göre kurarsanız 91. gün kâr bir anda üçte bir azalır; fiyatı standart orana göre kurup kampanya dönemindeki ek katkıyı reklam testine ve ilk yorumları toplamaya ayırmak daha sağlıklıdır.",
+          "Bahar ve yaz aylarında uygulanan 'Sıfır Komisyon, Büyük Kazanç Paketi' (300-10.000 TL arası FBA ürünlerinde sıfır komisyon ve %50 indirimli teslimat) en geç 31 Ekim 2026'da sona erdi. Bu programı güncel gibi anlatan sayfalara dikkat edin; kampanya koşullarını her zaman satıcı panelinden doğrulayın.",
+        ],
+      },
+      {
+        heading: "Sponsorlu Ürünler ve başabaş ROAS (ACOS)",
+        paragraphs: [
+          "Amazon'da reklam metriği olarak çoğunlukla ACOS kullanılır: ACOS = Reklam harcaması ÷ Reklam cirosu = 1 ÷ ROAS. Reklama ne kadar harcayabileceğiniz, iade ve reklam öncesi katkınızla sınırlıdır.",
+          "Ekmek kızartma makinesinde FBA katkısı 279,82 TL'dir. Siparişlerin %5'i iade ediliyor ve iade başına kayıp (komisyonun geri ödenmeyen kısmı, lojistik ücreti ve satılamaz hale gelen birimlerin payı) 90 TL ise (örnek) beklenen katkı 0,95 × 279,82 − 0,05 × 90 = 261,33 TL olur. Başabaş ROAS 1.299 ÷ 261,33 ≈ 4,97, başabaş ACOS ise yaklaşık %20,1'dir: bu ürünün reklamlarında ACOS %20'nin üzerine çıkarsa reklamlı satışlar zarar ettirir. Başabaş ROAS mantığını [ROAS nedir, nasıl hesaplanır](/blog/roas-nedir-nasil-hesaplanir/) yazısında, hızlı hesabı [ROAS hesaplayıcıda](/ucretsiz-araclar/roas-hesaplayici/) bulabilirsiniz.",
+        ],
+        bullets: [
+          "Beklenen katkı = (1 − İade oranı) × Sipariş katkısı − İade oranı × İade başına kayıp",
+          "Başabaş ROAS = Satış fiyatı ÷ Beklenen katkı",
+          "Başabaş ACOS = Beklenen katkı ÷ Satış fiyatı",
+        ],
+      },
+      {
+        heading: "Amazon'da satış yaparken en sık yapılan 6 hata",
+        paragraphs: ["Rakip rehberlerin çoğu ücretleri listeliyor ama hesaba dökmüyor. Kendi hesabınızda şu kalemleri kontrol edin:"],
+        bullets: [
+          "Komisyonun kargo dahil toplam fiyat üzerinden alındığını unutmak",
+          "Kozmetik, gıda ve takıdaki fiyat basamaklarını görmeden fiyat değiştirmek",
+          "FBA hesabında inbound kargoyu ve depolama payını atlamak",
+          "Ekim-Aralık depolama tarifesini (83 TL/m³) ve 365 günü aşan stokta uzun süreli depolama ücretini hesaba katmamak",
+          "Fiyatı %1 kampanya komisyonuna göre kurup 90 gün sonra zarara düşmek",
+          "Reklamı başabaş ACOS'u hesaplamadan açmak",
+        ],
+      },
+      {
+        heading: "Amazon'da satış Türkiye'deki diğer pazaryerlerinden nasıl ayrılır?",
+        paragraphs: [
+          "Türkiye'deki müşteriye satış için Amazon.com.tr, Trendyol ve Hepsiburada'nın yanında üçüncü bir kanal olarak düşünülebilir. Kesinti yapısı daha sade (paket başı hizmet bedeli ve barem tablosu yok), ama ürününüzün lojistik katmanı ve kategori komisyonu belirleyicidir. Başvuru süreci ve ödeme vadesi gibi Hepsiburada'ya özgü konular için [Hepsiburada'da satıcı olmak rehberine](/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/) bakabilirsiniz.",
+          "Yurt dışına satmak ayrı bir plandır: Amazon'un diğer ülke mağazaları (Global Selling), Etsy ya da kendi sitenizle e-ihracatta kargo ve iade maliyeti tabloyu tamamen değiştirir. El yapımı ve tasarım ürünlerde [Etsy'de satış ve kâr hesabı](/blog/etsyde-satis-komisyon-kar-hesabi/), gönderim maliyeti için [yurtdışı kargo ücreti ve desi](/blog/yurtdisi-kargo-ucreti-hesaplama-desi/) yazılarına göz atın. Stok tutmadan satmayı düşünüyorsanız Amazon'un stoksuz satış koşullarını [dropshipping nedir](/blog/dropshipping-nedir-nasil-yapilir/) yazısında özetledik.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Amazon FBA nedir?",
+        answer:
+          "FBA (Fulfillment by Amazon), Türkiye'de Amazon Lojistik adıyla sunulan hizmettir: ürünlerinizi Amazon'un lojistik merkezine gönderirsiniz, depolama, paketleme, kargo, müşteri hizmeti ve iadeyi Amazon yürütür. Satıcı birim başına lojistik ücreti ve aylık depolama ücreti öder; ürünler Prime etiketi alır.",
+      },
+      {
+        question: "Amazon'da satıcı olmak ücretli mi?",
+        answer:
+          "Profesyonel satıcı hesabının aylık 99 TL'lik üyelik bedeli şu an kampanya kapsamında alınmıyor (Amazon değişikliği 3 ay önceden duyuracağını belirtiyor). Satış başına kategoriye göre %6-20 komisyon ödenir; FBA kullanırsanız lojistik ve depolama ücretleri eklenir.",
+      },
+      {
+        question: "Amazon komisyon oranları ne kadar?",
+        answer:
+          "Amazon.com.tr'de satış komisyonu kategoriye göre %6 ile %20 arasındadır: örneğin bilgisayar %7, elektronik %9,5, küçük ev aletleri %11, giyim %15,5, ayakkabı ve çanta %17. Kozmetik ve gıdada 500 TL'nin, takıda 900 TL'nin üstünde farklı oran uygulanır. Komisyon kargo dahil toplam satış fiyatı üzerinden alınır.",
+      },
+      {
+        question: "Amazon'da şahıs olarak satış yapılabilir mi?",
+        answer:
+          "Amazon Türkiye kayıt sırasında işletme türünü, şirket sicil ve kayıt bilgilerini istiyor. Hangi şirket yapısıyla satacağınız mali ve hukuki bir karardır; satışa başlamadan önce bir mali müşavirle netleştirin.",
+      },
+      {
+        question: "FBA mı satıcı gönderimi mi daha kârlı?",
+        answer:
+          "Ürüne bağlıdır. Hafif, hızlı dönen ve düşük fiyatlı ürünlerde FBA'nın birim lojistik ücreti çoğu zaman kendi kargonuzdan ucuzdur ve Prime etiketi dönüşümü artırabilir. Büyük, ağır ve yavaş dönen ürünlerde depolama ve uzun süreli depolama ücreti nedeniyle satıcı gönderimi daha kârlı olabilir. Her ürün için iki senaryoyu hesaplayın.",
+      },
+    ],
+    howTo: {
+      name: "Amazon.com.tr'de satıcı hesabı nasıl açılır?",
+      description: "Hazırlıktan ilk FBA gönderimine altı adımda Amazon Türkiye satıcı hesabı.",
+      steps: [
+        { name: "Bilgileri hazırlayın", text: "İşletme e-postası, kimlik, şirket kayıt bilgileri, adres kanıtı, kredi kartı ve telefonu hazırlayın." },
+        { name: "Seller Central kaydını yapın", text: "satis.amazon.com.tr üzerinden hesap açın, bilgileri girin ve kimlik doğrulamasını tamamlayın." },
+        { name: "Kategori onaylarını isteyin", text: "Onay gerektiren kategorilerde satacaksanız Seller Central'dan onay talebi gönderin." },
+        { name: "Ürünleri listeleyin", text: "Mevcut ürün sayfasıyla eşleştirin ya da GTIN barkod veya muafiyetle yeni liste oluşturun." },
+        { name: "Gönderim modelini seçin", text: "Her ürün için Amazon Lojistik (FBA) ya da satıcı gönderimini, kâr hesabını yaparak seçin." },
+        { name: "İlk FBA gönderimini yapın", text: "Kargo planı oluşturun, etiketleri yapıştırın ve ürünleri lojistik merkezine gönderin; ürünler 48-72 saat içinde satışa açılır." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Trendyol ve Hepsiburada Kâr Hesaplama (ücretsiz araç)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Hepsiburada Kâr Hesaplama: Kategori, Barem ve İndirim", href: "/blog/hepsiburada-kar-hesaplama/" },
+      { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+      { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "ROAS ve Başabaş ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Etsy'de Satış: Komisyon ve Kâr Hesabı", href: "/blog/etsyde-satis-komisyon-kar-hesabi/" },
+      { label: "Pazarlama Metrikleri Sözlüğü", href: "/blog/pazarlama-metrikleri-sozlugu/" },
+      { label: "Ürün Kârlılık Şablonu (ücretsiz Excel indir)", href: "https://yusufbayrak.net/sablonlar/urun-karlilik-sablonu.xlsx", external: true },
+      { label: "Amazon Türkiye: Ücretlendirmeye genel bakış (resmî)", href: "https://satis.amazon.com.tr/ucretlendirme", external: true },
+      { label: "Amazon Türkiye: Amazon Lojistik (FBA) nedir, nasıl çalışır? (resmî)", href: "https://satis.amazon.com.tr/lojistik/amazon-lojistik", external: true },
+      { label: "Amazon Türkiye: Satıcı başlangıç kılavuzu (resmî)", href: "https://satis.amazon.com.tr/satis/baslangic-kilavuzu", external: true },
     ],
   },
 ];
