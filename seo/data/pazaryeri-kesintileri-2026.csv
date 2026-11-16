@@ -1,0 +1,56 @@
+pazaryeri;kalem;kategori_veya_kosul;deger;birim;kaynak;kaynak_tarihi;guven;not
+Amazon.com.tr;satış komisyonu;Bilgisayar;7;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;kargo dahil toplam satış fiyatı üzerinden
+Amazon.com.tr;satış komisyonu;Beyaz eşya;7;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Cep telefonu;8;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Video oyunu konsolları;8,5;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Fotoğraf makinesi;9;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Elektronik;9,5;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Spor / Video oyunları / Diğer;10;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Kitap;10,2;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Mutfak (küçük ev aletleri);11;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Elektronik aksesuarlar;11;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Ev eğlence sistemleri;11,5;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Bebek ürünleri (giyim hariç);11,5;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Otomotiv ve motosiklet;12,5;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Yapı market;12,7;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Oyuncak ve oyun / Ofis ürünleri;13;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Sağlık ve kişisel bakım / Evcil hayvan;13,5;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Kişisel bakım cihazları;13,6;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Bahçe;14;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Mobilya;14,5;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Mutfak eşyaları ve dekorasyon;15;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Giyim / Kol saatleri;15,5;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Bavul ve seyahat aksesuarları;16;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Ayakkabı, çanta ve ayakkabı aksesuarları;17;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Kişisel bakım ve kozmetik (toplam ≤500 TL);9;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;500 TL üstü %14
+Amazon.com.tr;satış komisyonu;Kişisel bakım ve kozmetik (toplam >500 TL);14;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Gıda (toplam ≤500 TL);9;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;500 TL üstü %13
+Amazon.com.tr;satış komisyonu;Gıda (toplam >500 TL);13;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;satış komisyonu;Takı (toplam ≤900 TL);20;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;900 TL üstü %6
+Amazon.com.tr;satış komisyonu;Takı (toplam >900 TL);6;%;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;FBA lojistik ücreti;Küçük zarf 30 g (SD kart örneği);53,80;TL/birim;https://satis.amazon.com.tr/ucretlendirme;2026-04-16;Yüksek;tarife 16.04.2026
+Amazon.com.tr;FBA lojistik ücreti;Standart paket 1,2 kg (ekmek kızartma örneği);63,58;TL/birim;https://satis.amazon.com.tr/ucretlendirme;2026-04-16;Yüksek;
+Amazon.com.tr;FBA lojistik ücreti;Standart büyük boyut 10 kg (43 inç TV örneği);163,93;TL/birim;https://satis.amazon.com.tr/ucretlendirme;2026-04-16;Yüksek;
+Amazon.com.tr;FBA depolama;Ocak-Eylül;64;TL/m³/ay;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;FBA depolama;Ekim-Aralık;83;TL/m³/ay;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;FBA uzun süreli depolama;365 günden fazla;1500;TL/m³/ay;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
+Amazon.com.tr;FBA sabit kargo kampanyası;0-300 TL, Seller Flex kategorileri;25;TL/birim;https://satis.amazon.com.tr/lojistik/sabit-kargo-ucreti-kampanyasi;2026-11-16;Orta;sayfada 20 TL de geçiyor; bitiş tarihi yok
+Amazon.com.tr;kampanya komisyonu;Yeni satıcı, kayıttan 90 gün, 2 milyon TL'ye kadar (30.09-31.12.2026);1;%;https://www.foreks.com/haber/detay/6ac608c195016b5817e669d9/FRKS/tr/amazon-turkiye-yeni-saticilara-avantajli-firsatlar-sundugunu-duyurdu-07-10-26/;2026-10-07;Orta;
+Hepsiburada;hizmet bedeli;Teslimat başına (barem içinde de);10,99;TL;https://ezv.com.tr/blog/hepsiburada-kargo-ucretleri-guncellendi-barem-destegine-10-99-tl-hizmet-bedeli-eklendi;2026-08-21;Orta;21.09.2026'dan beri
+Hepsiburada;barem kargo;0-199,99 TL;43,99;TL;https://www.kargonomi.com.tr/blog/hepsiburada-kargo-ucretleri-ve-barem-destek-sistemi/;2026-10-22;Orta;HepsiJET/Sürat, 0-1 gün
+Hepsiburada;barem kargo;200-399,99 TL;75,99;TL;https://www.kargonomi.com.tr/blog/hepsiburada-kargo-ucretleri-ve-barem-destek-sistemi/;2026-10-22;Orta;
+Trendyol;hizmet bedeli;Gönderi başına;10,99;TL;seo/research/trendyol-komisyon-oranlari.md;2026-09-30;Orta;Bugün Kargoda koşulunda daha düşük
+Trendyol;barem kargo;0-199,99 TL;38,74;TL;seo/research/trendyol-komisyon-oranlari.md;2026-08-10;Orta;Trendyol Express, 1 gün
+Trendyol;barem kargo;200-349,99 TL;70,41;TL;seo/research/trendyol-komisyon-oranlari.md;2026-08-10;Orta;
+Pazarama;satış komisyonu;Moda / Kozmetik / Ayakkabı-çanta / Telefon aksesuarı;19;%;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Orta;sentos 24.04.2026 aynı oran
+Pazarama;satış komisyonu;Anne-bebek / Kitap-kırtasiye-oyuncak;18;%;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Orta;
+Pazarama;satış komisyonu;Ev-yaşam-yapı market / Gıda / Pet shop;17;%;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Orta;
+Pazarama;satış komisyonu;Spor ve outdoor;16;%;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Orta;
+Pazarama;satış komisyonu;Otomotiv;15;%;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Orta;
+Pazarama;satış komisyonu;Elektronik;14;%;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Orta;
+Pazarama;satış komisyonu;Oyun, konsol ve dijital servisler;11;%;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Orta;
+Pazarama;satış komisyonu;Cep telefonları;10;%;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Orta;
+Pazarama;barem kargo;0-149,99 TL (Sürat, Aras, DHL eCommerce, PTT, Kolay Gelsin);31,90;TL;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Düşük;Yurtiçi 56,90 TL
+Pazarama;barem kargo;150-300 TL (Sürat, Aras, DHL eCommerce, PTT, Kolay Gelsin);56,90;TL;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Düşük;Yurtiçi 79,90 TL
+Çiçeksepeti;satış komisyonu;Kategoriye göre (tahmini aralık);5-30;%;https://birfatura.com/cicek-sepeti-komisyon-orani-ne-kadar/;2026-10-16;Düşük;resmî kamuya açık tablo yok
+Çiçeksepeti;güvenli ödeme altyapısı bedeli;Sipariş tutarı üzerinden;1,5;%;https://birfatura.com/cicek-sepeti-komisyon-orani-ne-kadar/;2026-10-16;Düşük;

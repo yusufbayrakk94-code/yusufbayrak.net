@@ -9337,7 +9337,7 @@ export const BLOG_POSTS: BlogPost[] = [
           rows: [
             ["Bilgisayar", "%7", "Mutfak (küçük ev aletleri)", "%11"],
             ["Beyaz eşya", "%7", "Elektronik aksesuarlar", "%11"],
-            ["Cep telefonu", "%8", "Bebek ürünleri (giyim hariç)", "%11,5"],
+            ["Cep telefonu", "%8", "Bebek ürünleri (giyim hariç) / Ev eğlence sistemleri", "%11,5"],
             ["Video oyunu konsolları", "%8,5", "Otomotiv ve motosiklet", "%12,5"],
             ["Fotoğraf makinesi", "%9", "Yapı market", "%12,7"],
             ["Elektronik", "%9,5", "Oyuncak ve oyun / Ofis ürünleri", "%13"],
