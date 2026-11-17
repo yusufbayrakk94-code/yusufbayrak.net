@@ -1,9 +1,9 @@
 export const about = {
   path: "/hakkimda",
-  seoTitle: "Hakkımda — Dijital Pazarlama Uzmanı | Yusuf Bayrak",
+  seoTitle: "Yusuf Bayrak Kimdir? Dijital Pazarlama Uzmanı | Hakkımda",
   seoDescription:
     "Yusuf Bayrak — B2B büyüme stratejileri, performans pazarlama ve veri odaklı lead generation üzerine çalışan dijital pazarlama uzmanı.",
-  heading: "Hakkımda",
+  heading: "Yusuf Bayrak — Hakkımda",
   whoHeading: "Yusuf Bayrak Kimdir?",
   whoAnswer:
     "Yusuf Bayrak; B2B büyüme stratejileri, performans pazarlama ve dijital veri mimarileri alanlarında çalışan bir dijital pazarlama uzmanıdır. Markalar için web altyapısı, reklam yönetimi ve veri odaklı lead generation süreçleri üzerine çalışmalar yürütür.",

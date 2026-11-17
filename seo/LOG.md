@@ -2,6 +2,11 @@
 
 En yeni üstte. Her kayıt: tarih, ne yapıldı, neden (veri/analiz), ölçülecek metrik.
 
+## 2026-11-17 (içerik görevi — marka sorgusu, kullanıcı isteği)
+- Kullanıcı kararı: 'yusuf bayrak' marka sorgularında yükselmek de görevin parçası → GOALS G ve BACKLOG G güncellendi (veri görevi her gün konum bandını yazar; içerik görevi site içi varlık sinyallerini güçlendirir).
+- Bulgu: web aramasında (ABD sonuçları) 'yusuf bayrak' için aynı adlı başka kişiler ilk 20'yi dolduruyor, yusufbayrak.net yok; Türkiye sonucu GSC'den ölçülecek. LOG'da marka sorgusunun konumu daha önce hiç ayrıca kaydedilmemiş.
+- Yapılan: Hakkımda title "Yusuf Bayrak Kimdir? Dijital Pazarlama Uzmanı | Hakkımda" (56), H1 "Yusuf Bayrak — Hakkımda" (EN "About Yusuf Bayrak"); Person şemasına (site geneli + ProfilePage) GitHub sameAs, givenName/familyName. Build + JSON-LD doğrulandı.
+- Ölçüm: 'yusuf bayrak' konum bandı ve sıralanan sayfa (ana sayfa mı Hakkımda mı), Hakkımda dizin durumu.
 ## 2026-11-17 (veri görevi)
 - Search Console (son 28 gün, veri 15.11'e kadar; hesap /u/0/ altında açıldı): tıklama hâlâ 31.12 hedefinin (40+) çok altında, gösterim 1.500+ hedefinin üstünde ve artıyor. Son 7 gün 28 günlük gösterimin yarısından fazlası; ortalama konum ~29 (hafif iyileşme), son 7 günde tıklama neredeyse yok. Gösterimin çoğu EN sayfalarda (Discount aracı, Google Ads nedir EN, MRR EN, Shipping Cost) ve 40-90. sırada. Tıklamalar marka/AdGusto, ana sayfa, Trendyol komisyon (TR+EN).
 - Hedef/"nedir" sorguları: 'ltv nedir' ~8, 'troas ne demek' ~8, 'cac açılımı' ~12, 'ltv ne demek' ~11-12, 'mrr ne demek' ~13-14, 'cac nedir' ~21, 'cac ne demek' ~23, 'utm nedir' ~53, 'başabaş roas' ~65, 'roas ne demek' ~96, 'roas hesaplama' ~81, 'indirim hesaplama' ~45; EN 'trendyol commission rate' ~7. Sayfa bazında TR: CAC ~12, LTV ~11, MRR ~10, UTM ~18, CTR ~24, Hedef ROAS ~12, ROAS ~36, Meta reklam verme ~43, Desi aracı ~52. roas/google ads/ctr/churn/geo nedir, desi, Trendyol komisyon/kar hesaplama için hâlâ TR gösterim yok/çok az.

@@ -3,7 +3,7 @@ export const about = {
   seoTitle: "About Yusuf Bayrak — Digital Marketing Specialist",
   seoDescription:
     "Yusuf Bayrak — digital marketing specialist focused on B2B growth strategy, performance marketing and data-driven lead generation.",
-  heading: "About",
+  heading: "About Yusuf Bayrak",
   whoHeading: "Who Is Yusuf Bayrak?",
   whoAnswer:
     "Yusuf Bayrak is a digital marketing specialist working on B2B growth strategy, performance marketing and digital data architecture. He works with brands on web infrastructure, ad management and data-driven lead generation processes.",
