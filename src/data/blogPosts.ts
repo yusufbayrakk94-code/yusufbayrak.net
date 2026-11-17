@@ -763,7 +763,7 @@ export const BLOG_POSTS: BlogPost[] = [
         bullets: [
           "MQL → SQL dönüşüm oranı: pazarlamanın ürettiği leadlerin yüzde kaçı satışa değer bulunuyor. %15'in altındaysa hedefleme veya lead magnet'te sorun var.",
           "Kanal bazlı SQL maliyeti — sadece lead maliyeti değil. Ucuz lead getiren ama SQL'e dönmeyen kanal, göründüğünden çok daha pahalıdır.",
-          "CAC:LTV oranı: genel kabul gören eşik 1:3. Oran 1:1'e yaklaşıyorsa büyüme sürdürülebilir değildir, sadece nakit yakıyorsunuzdur.",
+          "CAC:LTV oranı ([CAC ne demek](/blog/cac-nedir-musteri-edinme-maliyeti/)): genel kabul gören eşik 1:3. Oran 1:1'e yaklaşıyorsa büyüme sürdürülebilir değildir, sadece nakit yakıyorsunuzdur.",
         ],
       },
     ],
@@ -1443,7 +1443,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Ölçümde en sık yapılan hata, aynı ay içinde kayıt olan ve ücretliye geçen kullanıcıları birbirine bölmektir. Freemium'da dönüşüm çoğu zaman haftalar sonra gerçekleşir; bu yüzden kohort bazlı ölçüm şarttır. Ocak ayında kayıt olan kullanıcıların 30, 60 ve 90 gün sonundaki dönüşüm oranını ayrı ayrı takip edin.",
           "İkinci hata, dönüşümü tek bir ortalamayla yönetmektir. Kanala (organik, reklam, referans), şirket büyüklüğüne ve aktivasyon durumuna göre kırılım aldığınızda oranlar arasında sıklıkla 3-5 kat fark çıkar. Bütçeyi bu kırılıma göre yeniden dağıtmak, dönüşüm oranını hiçbir ürün değişikliği yapmadan yükseltebilir.",
-          "Üçüncüsü, freemium'un CAC üzerindeki etkisini yok saymaktır. Ücretsiz kullanıcıların altyapı ve destek maliyeti fiilen edinme maliyetinin parçasıdır. Dönüşüm oranı düştüğünde efektif CAC yükselir ve geri ödeme süresi uzar; bu yüzden dönüşüm oranını CAC geri ödeme süresiyle birlikte izleyin.",
+          "Üçüncüsü, freemium'un CAC üzerindeki etkisini yok saymaktır. Ücretsiz kullanıcıların altyapı ve destek maliyeti fiilen edinme maliyetinin parçasıdır. Dönüşüm oranı düştüğünde efektif [CAC (müşteri edinme maliyeti)](/blog/cac-nedir-musteri-edinme-maliyeti/) yükselir ve geri ödeme süresi uzar; bu yüzden dönüşüm oranını CAC geri ödeme süresiyle birlikte izleyin.",
         ],
       },
     ],
@@ -1616,7 +1616,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "ROAS Nasıl Artırılır?",
         paragraphs: [
           "Önce ölçümü doğrulayın, sonra üç sayıdan en zayıf olanına gidin. Sırası önemlidir: çift sayılan satışlar ya da panele düşmeyen iadeler varken yapılan optimizasyon yanlış kampanyayı ödüllendirir.",
-          "Uyarı: ROAS'ı yükseltmek her zaman kârı yükseltmez. Bütçeyi kısarsanız ROAS genellikle artar, çünkü en verimli tıklamalar kalır; ama toplam kâr düşebilir. Karar ölçütü ROAS'ın yüksekliği değil, reklam sonrası toplam kârdır. Bu ayrımı 'Hedef ROAS Nasıl Belirlenir?' rehberinde senaryo tablosuyla anlattık.",
+          "Uyarı: ROAS'ı yükseltmek her zaman kârı yükseltmez. Bütçeyi kısarsanız ROAS genellikle artar, çünkü en verimli tıklamalar kalır; ama toplam kâr düşebilir. Karar ölçütü ROAS'ın yüksekliği değil, reklam sonrası toplam kârdır; kârlılığı [ROI nasıl hesaplanır](/blog/roi-nedir-nasil-hesaplanir/) yazısındaki brüt kâr formülüyle ölçün. Bu ayrımı 'Hedef ROAS Nasıl Belirlenir?' rehberinde senaryo tablosuyla anlattık.",
         ],
         bullets: [
           "Ölçüm: iadeleri düşün, dönüşümü tek satın alma olayında tutun, kanal ve kampanya adlarını UTM ile standartlaştırın",
@@ -2320,7 +2320,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "Hedef ROAS'ı yükseltince neden satışlar düşüyor?",
         answer:
-          "Yüksek hedef, Google'ın yalnızca en değerli görünen açık artırmalara girmesine yol açar; daha az trafik ve daha az dönüşüm gelir. ROAS yükselir ama toplam ciro ve çoğu zaman toplam kâr düşer. Hacim istiyorsanız hedefi kademeli olarak düşürün.",
+          "Yüksek hedef, Google'ın yalnızca en değerli görünen açık artırmalara girmesine yol açar; daha az trafik ve daha az dönüşüm gelir. ROAS yükselir ama toplam ciro ve çoğu zaman toplam kâr düşer. Hacim istiyorsanız hedefi kademeli olarak düşürün",
       },
       {
         question: "Hedef ROAS için kaç dönüşüm gerekir?",
@@ -2813,8 +2813,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "CAC tek başına iyi ya da kötü değildir; ilk sipariş katkısı, LTV ve geri ödeme süresiyle okunur. 900 TL sepet ve %30 katkı marjıyla ilk sipariş 270 TL bırakır; 329 TL'lik paid CAC her yeni müşteride ilk siparişte 59 TL açık demektir.",
     ],
     publishedAt: "2026-10-28",
-    updatedAt: "2026-11-07",
-    readingMinutes: 10,
+    updatedAt: "2026-11-17",
+    readingMinutes: 12,
     tags: ["CAC", "Müşteri Edinme Maliyeti", "Paid CAC", "Blended CAC", "Birim Ekonomisi", "LTV:CAC"],
     sections: [
       {
@@ -2882,7 +2882,20 @@ export const BLOG_POSTS: BlogPost[] = [
           "CPA (Cost per Acquisition / dönüşüm başı maliyet), reklam panelinin gösterdiği, bir kampanyanın tanımlı dönüşüm başına maliyetidir. Dönüşüm bir satın alma, kayıt ya da form olabilir ve mevcut müşterinin tekrar siparişini de kapsar. CPL (Cost per Lead), lead başı maliyettir. CAC ise tüm edinme maliyetini yalnızca gerçek yeni müşterilere böler.",
           "Örnekte Meta paneli Ekim'de 500 satın alma raporluyor; bunların 100'ü mevcut müşterilerin tekrar siparişi. Panel CPA'sı 120.000 / 500 = 240 TL görünürken yeni müşteri başına maliyet 120.000 / 400 = 300 TL'dir. Yeni müşteri edinmeyi hedefleyen bir kampanyayı panel CPA'sıyla yönetmek, maliyeti %25 düşük görmek demektir. Meta ve Google'da yeni müşteri hedefleme/raporlama seçeneklerini açmak ya da sipariş verisini kendi tarafınızda yeni/mevcut olarak ayırmak bu farkı görünür kılar.",
           "B2B'de zincir uzar: 180.000 TL reklamla 500 lead (CPL 360 TL) ve %5 lead-müşteri dönüşümüyle 25 müşteri kazanılırsa medya CAC'ı 180.000 / 25 = 7.200 TL'dir; yani CAC = CPL / Lead→müşteri dönüşüm oranı. CPL'yi yarıya indiren ama dönüşümü üçte birine düşüren bir kampanya CAC'ı artırır.",
+          "CAC ne demek sorusu çoğu zaman bu kısaltmaların karışmasından doğar. Aşağıdaki tablo hepsini aynı Meta kampanyası üzerinden gösteriyor: 120.000 TL reklam harcaması, 30.000 tıklama, 500 satın alma (100'ü mevcut müşterilerden), 400 yeni müşteri, 900 TL sepet.",
         ],
+        table: {
+          caption: "CAC açılımı ve karıştırılan terimler — aynı kampanya (120.000 TL reklam, 400 yeni müşteri)",
+          head: ["Kısaltma", "Açılımı / Türkçesi", "Neye böler?", "Bu kampanyada"],
+          rows: [
+            ["CAC", "Customer Acquisition Cost / müşteri edinme maliyeti", "Maliyet ÷ yeni müşteri", "300 TL (medya CAC)"],
+            ["CPA", "Cost per Acquisition / dönüşüm başı maliyet", "Maliyet ÷ tüm dönüşümler (tekrar siparişler dahil)", "240 TL"],
+            ["[CPC](/blog/cpc-nedir-tiklama-basi-maliyet/)", "Cost per Click / tıklama başı maliyet", "Maliyet ÷ tıklama", "4 TL"],
+            ["[CPL](/blog/cpl-nedir-lead-basi-maliyet/)", "Cost per Lead / lead başı maliyet", "Maliyet ÷ form/lead", "B2B'de; CAC = CPL ÷ lead→müşteri oranı"],
+            ["[ROAS](/blog/roas-nedir-nasil-hesaplanir/)", "Return on Ad Spend / reklam harcamasının getirisi", "Ciro ÷ reklam harcaması", "3,75 (panel), 3,0 (yeni müşteri)"],
+            ["LTV:CAC", "Lifetime Value ÷ CAC", "Müşteri ömür boyu katkısı ÷ CAC", "[LTV](/blog/ltv-nedir-ltv-cac-orani/) 1.000 TL ise 3,3"],
+          ],
+        },
       },
       {
         heading: "CAC ile ROAS arasındaki fark nedir?",
@@ -2897,12 +2910,23 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Evrensel bir 'iyi CAC' tutarı yoktur; 300 TL, 150 TL'lik tek seferlik bir ürün için çok yüksek, yıllık sözleşmeli bir B2B hizmeti için çok düşüktür. CAC'ı üç ölçüyle değerlendirin.",
           "Örnek markada ortalama sepet 900 TL, katkı marjı (ürün, kargo, ödeme komisyonu ve iade düşüldükten sonra kalan) %30; ilk sipariş 270 TL katkı bırakıyor. 329 TL'lik paid CAC ile her yeni müşteri ilk siparişte 59 TL açık veriyor; açık ikinci siparişle kapanıyorsa sorun yok, kapanmıyorsa reklam büyüdükçe zarar büyür. Kanal bazında Meta (300 TL) sınıra yakın, influencer (600 TL) ancak yüksek tekrar satın almayla savunulabilir.",
+          "Aşağıdaki tablo kendi sınırınızı bulmanız için hazırlandı: her hücrede ilk rakam, müşterinin ilk siparişte kendini ödediği maksimum CAC'tır (Sepet × Katkı marjı); ikinci rakam, müşteri 12 ayda ortalama 2,5 sipariş veriyorsa bu sürede başabaş olan maksimum CAC'tır. İkinci rakamı kullanacaksanız tekrar sipariş oranını kendi verinizden (kohort) ölçün; tahminle gevşetilen CAC sınırı, reklam büyüdükçe nakit açığını büyütür.",
         ],
         bullets: [
           "İlk sipariş katkısı: CAC ≤ İlk sipariş katkısı ise müşteri ilk siparişte kendini öder (tekrar satın almanın az olduğu kategorilerde şart)",
           "LTV:CAC oranı: marjla hesaplanmış LTV / CAC; yaygın başparmak kuralı en az 3'tür. LTV'nin nasıl hesaplanacağını LTV yazısında ayrıntılı anlattım",
           "CAC geri ödeme süresi: CAC / Aylık müşteri başı marj katkısı; B2B SaaS'ta 12 ayın altı yaygın hedeftir",
         ],
+        table: {
+          caption: "Maksimum CAC tablosu: ortalama sepet ve katkı marjına göre (ilk siparişte başabaş / 12 ayda 2,5 sipariş)",
+          head: ["Ortalama sepet", "%20 katkı marjı", "%30 katkı marjı", "%40 katkı marjı"],
+          rows: [
+            ["400 TL", "80 TL / 200 TL", "120 TL / 300 TL", "160 TL / 400 TL"],
+            ["900 TL", "180 TL / 450 TL", "270 TL / 675 TL", "360 TL / 900 TL"],
+            ["1.500 TL", "300 TL / 750 TL", "450 TL / 1.125 TL", "600 TL / 1.500 TL"],
+            ["3.000 TL", "600 TL / 1.500 TL", "900 TL / 2.250 TL", "1.200 TL / 3.000 TL"],
+          ],
+        },
       },
       {
         heading: "B2B ve SaaS'ta CAC nasıl hesaplanır? Zaman kayması örneği",
@@ -3100,7 +3124,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Pazaryerinde kar marjı nasıl hesaplanır?",
         paragraphs: [
           "Pazaryerinde satış fiyatından komisyon ve kargo kesildiği için brüt marjla katkı marjı arasındaki fark büyür. Aynı ürünü pazaryerinde 1.000 TL'ye, örnek olarak %20 komisyon ve 90 TL kargo bedeliyle sattığınızı düşünün: 1.000 − 550 − 200 − 90 = 160 TL katkı, yani %16 katkı marjı. Kendi sitenizdeki %31'in yarısıdır.",
-          "Kargo bedeli ürünün desisine göre değişir; kutuyu birkaç santim küçültmek desiyi ve dolayısıyla marjı değiştirebilir. Komisyon oranı kategoriye göre farklıdır; güncel oranı pazaryerinin satıcı panelinden kontrol edin. Komisyon, kargo, iade ve reklam dahil sipariş başı net kârı Trendyol & Hepsiburada kâr hesaplama aracıyla, kargo desisini desi hesaplama aracıyla bulabilirsiniz. Pazaryerinde kategoriye ve barem eşiğine göre marjın nasıl değiştiğini [Hepsiburada kâr hesaplama örneklerinde](/blog/hepsiburada-kar-hesaplama/) görebilirsiniz.",
+          "Kargo bedeli ürünün desisine göre değişir; kutuyu birkaç santim küçültmek desiyi ve dolayısıyla marjı değiştirebilir. Komisyon oranı kategoriye göre farklıdır; güncel oranı pazaryerinin satıcı panelinden kontrol edin. Komisyon, kargo, iade ve reklam dahil sipariş başı net kârı Trendyol & Hepsiburada kâr hesaplama aracıyla, kargo desisini desi hesaplama aracıyla bulabilirsiniz. Reklam ve kampanya harcamalarının bu marj üzerinden ne kadar net kazanç bıraktığını [ROI nedir, nasıl hesaplanır](/blog/roi-nedir-nasil-hesaplanir/) yazısındaki brüt kâr formülüyle ölçebilirsiniz. Pazaryerinde kategoriye ve barem eşiğine göre marjın nasıl değiştiğini [Hepsiburada kâr hesaplama örneklerinde](/blog/hepsiburada-kar-hesaplama/) görebilirsiniz.",
         ],
       },
       {
@@ -6036,7 +6060,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "CRM ile hangi metrikler ölçülür?",
         paragraphs: [
-          "CRM kurulduğunda ilk kazanç, lead başına maliyetten müşteri başına maliyete geçmektir. Aynı örnekte reklam bütçesini iki kanala eşit bölelim. Google 21.000 TL ile 60 lead, Meta 21.000 TL ile 60 lead getirsin: ikisinin CPL'i de 350 TL'dir. CRM'de kaynağa göre baktığınızda Google lead'lerinden 4, Meta lead'lerinden 2 müşteri çıktığını görürsünüz. Google'ın CAC'ı 5.250 TL, Meta'nınki 10.500 TL'dir. Yalnızca reklam panelindeki CPL'e bakan biri bu farkı hiç görmez.",
+          "CRM kurulduğunda ilk kazanç, lead başına maliyetten müşteri başına maliyete ([CAC](/blog/cac-nedir-musteri-edinme-maliyeti/)) geçmektir. Aynı örnekte reklam bütçesini iki kanala eşit bölelim. Google 21.000 TL ile 60 lead, Meta 21.000 TL ile 60 lead getirsin: ikisinin CPL'i de 350 TL'dir. CRM'de kaynağa göre baktığınızda Google lead'lerinden 4, Meta lead'lerinden 2 müşteri çıktığını görürsünüz. Google'ın CAC'ı 5.250 TL, Meta'nınki 10.500 TL'dir. Yalnızca reklam panelindeki CPL'e bakan biri bu farkı hiç görmez.",
           "İkinci kazanç ağırlıklı fırsat hattıdır (weighted pipeline). Her aşamaya, kendi geçmiş verinizden gelen bir kapanma olasılığı verilir. 8 fırsat keşifte (%10), 5'i teklifte (%30), 2'si müzakerede (%60) ve fırsat değeri 60.000 TL ise: 48.000 + 90.000 + 72.000 = 210.000 TL. Ham toplam 900.000 TL görünür; yönetim bütçeyi buna göre planlarsa yanılır.",
           "Aşama olasılıkları varsayımdan değil, en az birkaç aylık kayıttan gelmelidir. İlk aylarda veri azsa olasılıkları tahmin olarak işaretleyin ve üç ayda bir gerçek oranlarla değiştirin.",
         ],
@@ -6487,7 +6511,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "En sağlam yöntem, iş hedefinden başlayıp onu oluşturan çarpanlara ayırmaktır. Böylece her KPI ana hedefe matematiksel olarak bağlanır ve 'neden bu sayıya bakıyoruz' sorusunun cevabı hazır olur.",
           "Örnek bir e-ticaret sitesi aylık 600.000 TL ciro hedefliyor. Sepet ortalaması (AOV) 1.200 TL ise 600.000 / 1.200 = 500 sipariş gerekir. Sitenin dönüşüm oranı %1,5 ise 500 / 0,015 ≈ 33.300 oturum gerekir.",
-          "Siparişlerin %60'ının reklamdan gelmesi bekleniyorsa reklamın görevi 300 siparişdir. Brüt kâr marjı %40 ise sipariş başına brüt kâr 1.200 × 0,40 = 480 TL'dir; bu, reklamın sipariş başına harcayabileceği en yüksek tutardır (başabaş CPA). Şirket sipariş başı 300 TL hedeflerse reklam bütçesi 300 × 300 = 90.000 TL olur, ROAS (300 × 1.200) / 90.000 = 4,0 çıkar. Başabaş ROAS 1 / 0,40 = 2,5'tir. Reklamdan gelen siparişler, reklam maliyeti düşüldükten sonra 300 × 480 − 90.000 = 54.000 TL katkı bırakır.",
+          "Siparişlerin %60'ının reklamdan gelmesi bekleniyorsa reklamın görevi 300 siparişdir. Brüt kâr marjı %40 ise sipariş başına brüt kâr 1.200 × 0,40 = 480 TL'dir; bu, reklamın sipariş başına harcayabileceği en yüksek tutardır (başabaş CPA). Şirket sipariş başı 300 TL hedeflerse reklam bütçesi 300 × 300 = 90.000 TL olur, ROAS (300 × 1.200) / 90.000 = 4,0 çıkar. Başabaş ROAS 1 / 0,40 = 2,5'tir. Reklamdan gelen siparişler, reklam maliyeti düşüldükten sonra 300 × 480 − 90.000 = 54.000 TL katkı bırakır. Bu, reklam için 54.000 / 90.000 = %60 [ROI](/blog/roi-nedir-nasil-hesaplanir/) demektir.",
           "Bu ağaçtan şu KPI seti çıkar: ana hedef olarak aylık ciro ve reklam sonrası katkı; ara KPI olarak sipariş sayısı, sepet ortalaması, dönüşüm oranı ve sipariş başı maliyet (ya da ROAS). Bir halka hedefin altında kaldığında hangi ekibin neyi düzelteceği bellidir.",
         ],
         bullets: [
@@ -6552,7 +6576,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Lead başı maliyet: CPL = Harcama / Geçerli lead sayısı",
           "Lead'den satış görüşmesine (SQL) dönüşüm oranı = SQL / Lead × 100",
           "Kazanma oranı = Kazanılan teklif / Verilen teklif × 100",
-          "Müşteri edinme maliyeti: CAC = Satış ve pazarlama maliyeti / Yeni müşteri sayısı (CAC Hesaplayıcı)",
+          "[Müşteri edinme maliyeti](/blog/cac-nedir-musteri-edinme-maliyeti/): CAC = Satış ve pazarlama maliyeti / Yeni müşteri sayısı (CAC Hesaplayıcı)",
           "Pipeline değeri: açık fırsatların toplam tutarı (CRM)",
         ],
       },
@@ -6671,10 +6695,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "roi-nedir-nasil-hesaplanir",
-    seoTitle: "ROI Nedir, Nasıl Hesaplanır? Formül, Örnek, ROAS Farkı",
+    seoTitle: "ROI Nedir, Ne Demek? ROI Hesaplama Formülü ve Örnek",
     title: "ROI Nedir, Nasıl Hesaplanır? Pazarlamada Doğru ROI Formülü ve ROAS Farkı",
     description:
-      "ROI nedir, nasıl hesaplanır? Yatırım getirisi formülü, pazarlamada ciro yerine brüt kârla hesap, ROI ile ROAS farkı, yıllıklandırma ve sayısal örnekler.",
+      "ROI nedir, ne demek? Yatırım getirisi formülü, brüt kârla ROI hesaplama, ROAS ve marja göre ROI tablosu, hedef ROI için ters hesap ve ROAS farkı.",
     category: "performans-pazarlama",
     tldr: [
       "ROI (Return on Investment, yatırım getirisi), bir yatırımdan elde edilen net kazancın yatırım maliyetine oranıdır: ROI = (Getiri − Maliyet) / Maliyet × 100.",
@@ -6683,14 +6707,15 @@ export const BLOG_POSTS: BlogPost[] = [
       "ROI'yi süreyle birlikte okuyun: 6 ayda %30 getiri yıllık yaklaşık %69 demektir. Kampanya olmasa da gelecek satışları düşmezseniz ROI'yi olduğundan yüksek hesaplarsınız.",
     ],
     publishedAt: "2026-11-07",
-    readingMinutes: 9,
+    updatedAt: "2026-11-17",
+    readingMinutes: 11,
     tags: ["ROI", "Yatırım Getirisi", "ROAS", "Pazarlama Metrikleri", "Performans Pazarlama", "E-ticaret"],
     sections: [
       {
         heading: "ROI nedir? (Kısa cevap)",
         paragraphs: [
-          "ROI, İngilizce Return on Investment'ın kısaltmasıdır ve Türkçede yatırım getirisi ya da yatırımın geri dönüşü olarak kullanılır. Bir yatırıma koyduğunuz her 100 liranın size kaç lira net kazanç bıraktığını yüzde olarak gösterir.",
-          "Formül: ROI = (Getiri − Maliyet) / Maliyet × 100. 10.000 TL'lik bir yatırım 13.000 TL geri getirdiyse net kazanç 3.000 TL, ROI %30'dur. ROI %0 ise paranızı yalnızca geri almışsınızdır; eksi bir ROI zarar ettiğinizi gösterir.",
+          "ROI (Return on Investment), Türkçesiyle yatırım getirisi, bir yatırımın maliyetine göre ne kadar net kazanç sağladığını yüzde olarak gösteren orandır. Formülü ROI = (Getiri − Maliyet) / Maliyet × 100'dür: 10.000 TL'lik bir yatırım 13.000 TL geri getirdiyse net kazanç 3.000 TL, ROI %30'dur.",
+          "Yani ROI, koyduğunuz her 100 liranın size kaç lira net kazanç bıraktığını söyler. ROI %0 ise paranızı yalnızca geri almışsınızdır; eksi bir ROI zarar ettiğinizi gösterir.",
           "Aynı formül hisse senedi, makine, yazılım, eğitim ya da reklam kampanyası için kullanılabilir. Farkı yaratan, 'getiri' ve 'maliyet' kalemlerine neyi yazdığınızdır. Bu yazı özellikle pazarlama ve e-ticaret kararlarında ROI'nin nasıl doğru hesaplanacağına odaklanır.",
         ],
       },
@@ -6736,6 +6761,60 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        heading: "ROI ne demek? ROI, ROAS, ROMI, POAS ve ACOS farkı tek tabloda",
+        paragraphs: [
+          "ROI ne demek sorusunun kısa cevabı 'yatırım getirisi'dir; ama pazarlama raporlarında ROI'nin yanında benzer kısaltmalar da geçer ve hepsi farklı bir şeyi böler. Aşağıdaki tabloda hepsini aynı kampanya üzerinden hesapladım: toplam maliyet 60.000 TL (bunun 45.000 TL'si reklam harcaması, 15.000 TL'si ajans ve içerik), ciro 250.000 TL, brüt marj %40, yani brüt kâr 100.000 TL.",
+          "Aynı kampanya ROAS'a göre 5,56 ile çok başarılı, POAS'a göre 2,22 ile kârlı, ROI'ye göre %66,7 ile makul görünür. Hangisinin 'doğru' olduğu sorduğunuz soruya bağlıdır: reklam platformunu yönetirken ROAS ya da POAS, kampanyanın işe para kazandırıp kazandırmadığını sorarken ROI kullanılır. ROE (özsermaye kârlılığı) ise şirket düzeyinde bir orandır; kampanya ölçmek için kullanılmaz.",
+        ],
+        table: {
+          caption: "Aynı kampanyada beş metrik (maliyet 60.000 TL, reklam 45.000 TL, ciro 250.000 TL, brüt marj %40)",
+          head: ["Metrik", "Açılımı / Türkçesi", "Formül", "Bu kampanyada", "Ne zaman kullanılır?"],
+          rows: [
+            ["ROI", "Return on Investment / yatırım getirisi", "(Brüt kâr − Toplam maliyet) / Toplam maliyet", "%66,7", "Yatırım işe net kazanç bıraktı mı?"],
+            ["ROMI", "Return on Marketing Investment / pazarlama yatırımının getirisi", "ROI'nin yalnızca pazarlama harcamasına uygulanmış hali", "%66,7", "Pazarlama bütçesinin toplam getirisi"],
+            ["[ROAS](/blog/roas-nedir-nasil-hesaplanir/)", "Return on Ad Spend / reklam harcamasının getirisi", "Ciro / Reklam harcaması", "5,56", "Kanal ve kampanya optimizasyonu"],
+            ["POAS", "Profit on Ad Spend / reklam harcaması başına kâr", "Brüt kâr / Reklam harcaması", "2,22", "Kâr bazlı teklif; 1'in üstü reklam maliyetini karşılar"],
+            ["ACOS", "Advertising Cost of Sales / satışa oranla reklam maliyeti", "Reklam harcaması / Ciro", "%18", "Pazaryeri reklamları (ROAS'ın tersi)"],
+          ],
+        },
+      },
+      {
+        heading: "ROI tablosu: ROAS ve brüt marja göre ROI kaç eder?",
+        paragraphs: [
+          "Kampanyanın tek maliyeti reklam harcamasıysa ROI'yi ROAS ve brüt marjdan doğrudan okuyabilirsiniz: ROI = ROAS × Brüt marj − 1. Aşağıdaki tablo bu köprüyü sık görülen değerler için hesaplar; satır ROAS'ınız, sütun brüt marjınızdır. Eksi değerler zarardır, %0 başabaştır.",
+          "Tablodan iki şey hemen görülür. Birincisi, aynı ROAS marja göre çok farklı sonuç verir: ROAS 4, %20 marjda %20 zarar, %50 marjda %100 kazançtır. İkincisi, düşük marjlı işlerde ROAS'ı yükseltmek marjı yükseltmekten daha zordur; %20 marjla başabaş için ROAS 5 gerekirken %40 marjla 2,5 yeter. Ajans, ekip ve araç maliyeti de varsa tablodaki ROI'den düşük bir sonuç bekleyin; o durumda yukarıdaki genel formülü kullanın.",
+        ],
+        table: {
+          caption: "ROI = ROAS × Brüt marj − 1 (yalnızca reklam maliyeti varken)",
+          head: ["ROAS", "%20 marj", "%30 marj", "%40 marj", "%50 marj"],
+          rows: [
+            ["2", "−%60", "−%40", "−%20", "%0 (başabaş)"],
+            ["3", "−%40", "−%10", "%20", "%50"],
+            ["4", "−%20", "%20", "%60", "%100"],
+            ["5", "%0 (başabaş)", "%50", "%100", "%150"],
+            ["6", "%20", "%80", "%140", "%200"],
+            ["8", "%60", "%140", "%220", "%300"],
+          ],
+        },
+      },
+      {
+        heading: "Ters hesap: hedef ROI için ne kadar ciro gerekir?",
+        paragraphs: [
+          "Kampanyayı planlarken soru genellikle terstir: 'Bu bütçeyle %50 ROI istiyorsam ne kadar satmam gerekir?' Formül: Gerekli ciro = Toplam maliyet × (1 + Hedef ROI) / Brüt marj. Gerekli brüt kâr ise Toplam maliyet × (1 + Hedef ROI)'dir.",
+          "60.000 TL'lik kampanyada %40 marjla yalnızca başabaş için 150.000 TL, %50 ROI için 225.000 TL ciro gerekir. Aynı hedef %30 marjlı bir üründe 300.000 TL ciro ister. Bu ciroyu sipariş sayısına çevirmek için ortalama sepete bölün; çıkan sayı reklam paneline gireceğiniz hedeflerin ([hedef ROAS](/blog/hedef-roas-nasil-belirlenir/) gibi) gerçekçi olup olmadığını gösterir.",
+        ],
+        table: {
+          caption: "60.000 TL toplam maliyet için gerekli ciro",
+          head: ["Hedef ROI", "%30 brüt marj", "%40 brüt marj", "%50 brüt marj"],
+          rows: [
+            ["%0 (başabaş)", "200.000 TL", "150.000 TL", "120.000 TL"],
+            ["%25", "250.000 TL", "187.500 TL", "150.000 TL"],
+            ["%50", "300.000 TL", "225.000 TL", "180.000 TL"],
+            ["%100", "400.000 TL", "300.000 TL", "240.000 TL"],
+          ],
+        },
+      },
+      {
         heading: "ROI'de süre neden önemli? Yıllıklandırma ve geri ödeme süresi",
         paragraphs: [
           "ROI formülünde zaman yoktur. 3 ayda %30 kazandıran yatırımla 3 yılda %30 kazandıran yatırım aynı ROI'yi verir ama aynı iş değildir. Farklı süreli yatırımları karşılaştırırken ROI'yi yıllığa çevirin.",
@@ -6752,7 +6831,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Tekrar satın alınan ürünlerde ilk siparişin ROI'si çoğu zaman eksidir ve bu tek başına kampanyanın kötü olduğunu göstermez. Doğru soru, müşterinin belirli bir sürede bıraktığı toplam brüt kârın edinme maliyetini geçip geçmediğidir.",
           "Örnek: bir müşteriyi kazanmanın maliyeti (CAC) 600 TL. İlk siparişin brüt kârı 480 TL, yani ilk sipariş ROI'si (480 − 600) / 600 = %−20. Aynı müşteri 12 ayda toplam 1.200 TL brüt kâr bırakıyorsa 12 aylık ROI (1.200 − 600) / 600 = %100'dür.",
-          "Bu yüzden raporda hangi pencereyi kullandığınızı yazın: ilk sipariş, 90 gün ya da 12 ay. Müşteri ömrü hesabını LTV yazısında, edinme maliyeti hesabını CAC yazısında ayrıntılı bulabilirsiniz. Nakit akışı dar bir işletme için 12 ay beklemek mümkün olmayabilir; uzun pencere ROI'sini geri ödeme süresiyle birlikte okuyun.",
+          "Bu yüzden raporda hangi pencereyi kullandığınızı yazın: ilk sipariş, 90 gün ya da 12 ay. Müşteri ömrü hesabını [LTV nedir](/blog/ltv-nedir-ltv-cac-orani/) yazısında, edinme maliyetini [CAC ne demek, nasıl hesaplanır](/blog/cac-nedir-musteri-edinme-maliyeti/) yazısında ayrıntılı bulabilirsiniz. Nakit akışı dar bir işletme için 12 ay beklemek mümkün olmayabilir; uzun pencere ROI'sini geri ödeme süresiyle birlikte okuyun.",
         ],
       },
       {
@@ -6812,6 +6891,16 @@ export const BLOG_POSTS: BlogPost[] = [
         question: "ROI ile ROAS aynı şey mi?",
         answer:
           "Hayır. ROAS ciroyu reklam harcamasına böler ve kat olarak okunur (ör. 5). ROI kârı maliyete böler ve yüzde olarak okunur. Yalnızca reklam maliyeti varken ROI = ROAS × Brüt marj − 1 olur; %40 marjda ROAS 5, ROI %100'e karşılık gelir.",
+      },
+      {
+        question: "ROI yüzde mi, kat mı yazılır?",
+        answer:
+          "ROI yüzde olarak yazılır: (Getiri − Maliyet) / Maliyet × 100. Getiri / Maliyet oranı (ör. 1,3) ise geri dönüş katsayısıdır ve %30 ROI ile aynı şeyi anlatır. Kat olarak okunan metrik ROAS'tır; ROAS 4, %40 marjda %60 ROI'ye karşılık gelir.",
+      },
+      {
+        question: "ROAS 4 kaç ROI eder?",
+        answer:
+          "Yalnızca reklam maliyeti varken ROI = ROAS × Brüt marj − 1'dir. ROAS 4, %20 marjda −%20, %30 marjda %20, %40 marjda %60, %50 marjda %100 ROI eder. Ajans ve ekip maliyeti varsa ROI daha düşük çıkar.",
       },
       {
         question: "Negatif ROI ne anlama gelir?",
@@ -8341,6 +8430,18 @@ export const BLOG_POSTS: BlogPost[] = [
           "Kutu küçültürken ürünün korunmasını ve ezilme riskini ihmal etmeyin; hasarlı iade, kazanılan kargo farkından pahalıdır",
           "Tüm ürünlerinizin bandını, alt banda inmek için gereken en yüksek kutu yüksekliğini ve aylık tasarrufu ücretsiz Kargo Desi ve Kutu Optimizasyonu Şablonu (Excel) ile tek tabloda görebilirsiniz",
         ],
+        table: {
+          caption: "Sık kullanılan koli ölçüleri: desi (÷ 3000), tam desiye yuvarlama ve bir alt desiye inmek için en yüksek yükseklik (bant örneği: 1-4 / 5-7 / 8-10 desi)",
+          head: ["Koli (En × Boy × Yükseklik)", "Desi", "Yuvarlanmış desi (bant)", "1 desi düşürmek için en yüksek yükseklik", "Yeni desi (bant)"],
+          rows: [
+            ["25 × 20 × 10 cm", "1,67", "2 (1-4)", "6,0 cm", "1 (1-4)"],
+            ["30 × 20 × 12 cm", "2,40", "3 (1-4)", "10,0 cm", "2 (1-4)"],
+            ["35 × 25 × 15 cm", "4,38", "5 (5-7)", "13,7 cm", "4 (1-4) — bant değişir"],
+            ["40 × 30 × 22 cm", "8,80", "9 (8-10)", "20,0 cm", "8 (8-10)"],
+            ["45 × 35 × 25 cm", "13,13", "14 (10 üstü)", "24,7 cm", "13 (10 üstü)"],
+            ["50 × 40 × 32 cm", "21,33", "22 (10 üstü)", "31,5 cm", "21 (10 üstü)"],
+          ],
+        },
       },
       {
         heading: "30 desi üstü gönderilerde ücret nasıl hesaplanır?",
