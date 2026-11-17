@@ -87,6 +87,7 @@ SEO temel kümesi (seo nedir 1B–10B; backlink, serp, search console nedir 100�
 Marka/navigasyon sorguları (trendyol satıcı paneli, hepsiburada satıcı girişi, google analytics giriş) hedeflenmez.
 
 ## Takvim — açık konular (02.11.2026'da tam hacim + keşif turu 3 ile tek listede yeniden sıralandı)
+17.11 veri görevi: 19 açık konu (eşik 14), hacmi eksik konu yok → Keyword Planner turu 21–22.11'de; Search Console'da sayfası olmayan yeni TR sorgu çıkmadı.
 Sıra hacim + rakip zayıflığı + mevsimselliktir; içerik görevi üstten alır (günde 2). Tarih yalnızca sıradır. Sonraki hacim turu: açık konu 14'ün altına inince (tohum önerileri: pazaryeri satıcı rehberleri, reklam platformu rehberleri, kargo firması bazlı sorgular, mrr hesaplama).
 | Tarih | Sayfa (TR + EN) | Hedef sorgu (aylık) | Grup | Neden / fırsat | Bağlanacak araç |
 |---|---|---|---|---|---|
