@@ -4544,7 +4544,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Barem eşiklerinin hemen üstünde fiyatlanan ürünler, birkaç liralık fiyat farkı için kargoda onlarca lira fazla öder. Rakip rehberler bu etkiden söz ediyor ama hesaplamıyor; iki örnekle bakalım (örnek oran %21 ve %17, hizmet bedeli 10,99 TL, ürün maliyeti 80 TL).",
           "Alt eşik (200 TL): 205 TL'ye satılan ürün 200–349,99 TL baremine düşer. Kesinti 43,05 + 70,41 + 10,99 = 124,45 TL, hakediş 80,55 TL; 80 TL maliyetle sipariş başı kâr 0,55 TL. Aynı ürün 199,90 TL'ye inerse kesinti 41,98 + 38,74 + 10,99 = 91,71 TL, hakediş 108,19 TL ve kâr 28,19 TL olur. Fiyatı 5,10 TL düşürmek kârı 27,64 TL artırıyor.",
           "Üst eşik (350 TL): 5 desilik bir ürün 345 TL'de barem tarifesiyle 70,41 TL kargo öder ve hakediş 204,95 TL olur. Fiyat 355 TL'ye çıkarsa sepet desi tarifesine geçer (5 desi 114,10 TL) ve hakediş 169,56 TL'ye düşer: 10 TL daha pahalı satıp 35,39 TL daha az kazanırsınız. Fiyat değiştirmeden önce ürünün hangi kargo kademesine düştüğünü mutlaka kontrol edin.",
-          "Hepsiburada'da eşikler farklıdır (200 ve 400 TL) ve 21.09.2026'dan beri hizmet bedeli barem siparişlerinden de alınır; aynı hesabın Hepsiburada versiyonunu ve kategori bazlı örnek tabloyu [Hepsiburada kâr hesaplama](/blog/hepsiburada-kar-hesaplama/) yazısında bulabilirsiniz.",
+          "Hepsiburada'da eşikler farklıdır (200 ve 400 TL) ve 21.09.2026'dan beri hizmet bedeli barem siparişlerinden de alınır; aynı hesabın Hepsiburada versiyonunu ve kategori bazlı örnek tabloyu [Hepsiburada kâr hesaplama](/blog/hepsiburada-kar-hesaplama/) yazısında bulabilirsiniz. n11'de ise şartlı kargo baremi 150 ve 300 TL eşiklerinde değişir ve sabit hizmet bedeli yerine %1,67 yüzdesel bedel alınır; örnek hesaplar [n11 komisyon hesaplama](/blog/n11-satici-olmak-komisyon-hesaplama/) rehberinde.",
         ],
       },
       {
@@ -9245,7 +9245,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Barem bedeli sepet tutarına göre basamak basamak arttığı için 200 TL eşiğini aşmak kargo maliyetini bir anda 43,99 TL'den 75,99 TL'ye çıkarır. Örnek (vergi etkisi hariç): ürün maliyeti 80 TL, paketleme 6 TL ve komisyon %18 olan bir ürünü 199,90 TL'ye satarsanız sipariş başına 199,90 × 0,82 − 10,99 − 43,99 − 86 = 22,94 TL kalır.",
           "Aynı ürünü 'biraz daha kâr ederim' diye 209,90 TL'ye çıkarırsanız kargo 75,99 TL olur ve kâr −0,86 TL'ye düşer: fiyat 10 TL arttı ama sipariş zarara geçti. Eşiğin üstünde aynı 22,94 TL kârı yakalamak için fiyatın yaklaşık 239 TL'ye çıkması gerekir. Yani 200-239 TL arası bu ürün için ölü bölgedir; ya 199,90 TL'de kalın ya da 239 TL'nin üzerine çıkabilecek bir teklif (set, ikili paket, daha büyük boy) kurun.",
-          "400 TL eşiğinde tablo farklıdır: barem biter ve desi tarifesi başlar. Hafif ürünlerde desi tarifesi 75,99 TL'ye yakın olabileceği için sıçrama küçüktür, ama 4-5 desi ve üzerindeki ürünlerde 399,90 TL ile 409,90 TL arasındaki fark birkaç on lirayı bulabilir. Kendi ürününüz için iki senaryoyu da hesaplayın.",
+          "400 TL eşiğinde tablo farklıdır: barem biter ve desi tarifesi başlar. Hafif ürünlerde desi tarifesi 75,99 TL'ye yakın olabileceği için sıçrama küçüktür, ama 4-5 desi ve üzerindeki ürünlerde 399,90 TL ile 409,90 TL arasındaki fark birkaç on lirayı bulabilir. Kendi ürününüz için iki senaryoyu da hesaplayın. Aynı ürünü n11'de de satıyorsanız orada barem 300 TL'de biter; 299,90 ile 309,90 TL farkını [n11'de satıcı olmak ve komisyon hesaplama](/blog/n11-satici-olmak-komisyon-hesaplama/) yazısında hesapladık.",
         ],
         bullets: [
           "Eşik altı katkı = Fiyat × (1 − Komisyon) − Hizmet bedeli − Alt barem − Ürün − Paket",
@@ -9589,7 +9589,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Amazon'da satış Türkiye'deki diğer pazaryerlerinden nasıl ayrılır?",
         paragraphs: [
-          "Türkiye'deki müşteriye satış için Amazon.com.tr, Trendyol ve Hepsiburada'nın yanında üçüncü bir kanal olarak düşünülebilir. Kesinti yapısı daha sade (paket başı hizmet bedeli ve barem tablosu yok), ama ürününüzün lojistik katmanı ve kategori komisyonu belirleyicidir. Başvuru süreci ve ödeme vadesi gibi Hepsiburada'ya özgü konular için [Hepsiburada'da satıcı olmak rehberine](/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/) bakabilirsiniz.",
+          "Türkiye'deki müşteriye satış için Amazon.com.tr, Trendyol ve Hepsiburada'nın yanında üçüncü bir kanal olarak düşünülebilir. Kesinti yapısı daha sade (paket başı hizmet bedeli ve barem tablosu yok), ama ürününüzün lojistik katmanı ve kategori komisyonu belirleyicidir. Başvuru süreci ve ödeme vadesi gibi Hepsiburada'ya özgü konular için [Hepsiburada'da satıcı olmak rehberine](/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/), n11'in komisyon bantları, 150/300 TL kargo baremi ve örnek kâr tablosu için [n11'de satıcı olmak rehberine](/blog/n11-satici-olmak-komisyon-hesaplama/) bakabilirsiniz.",
           "Yurt dışına satmak ayrı bir plandır: Amazon'un diğer ülke mağazaları (Global Selling), Etsy ya da kendi sitenizle e-ihracatta kargo ve iade maliyeti tabloyu tamamen değiştirir. El yapımı ve tasarım ürünlerde [Etsy'de satış ve kâr hesabı](/blog/etsyde-satis-komisyon-kar-hesabi/), gönderim maliyeti için [yurtdışı kargo ücreti ve desi](/blog/yurtdisi-kargo-ucreti-hesaplama-desi/) yazılarına göz atın. Stok tutmadan satmayı düşünüyorsanız Amazon'un stoksuz satış koşullarını [dropshipping nedir](/blog/dropshipping-nedir-nasil-yapilir/) yazısında özetledik.",
         ],
       },
@@ -9647,6 +9647,277 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Amazon Türkiye: Ücretlendirmeye genel bakış (resmî)", href: "https://satis.amazon.com.tr/ucretlendirme", external: true },
       { label: "Amazon Türkiye: Amazon Lojistik (FBA) nedir, nasıl çalışır? (resmî)", href: "https://satis.amazon.com.tr/lojistik/amazon-lojistik", external: true },
       { label: "Amazon Türkiye: Satıcı başlangıç kılavuzu (resmî)", href: "https://satis.amazon.com.tr/satis/baslangic-kilavuzu", external: true },
+    ],
+  },
+  {
+    slug: "n11-satici-olmak-komisyon-hesaplama",
+    seoTitle: "n11'de Satıcı Olmak ve Komisyon Hesaplama (2026)",
+    title: "n11'de Satıcı Olmak: Mağaza Açma, 2026 Komisyon Oranları ve Örnek Tutarlarla Komisyon Hesaplama",
+    description:
+      "n11'de satıcı olmak için gerekenler, mağaza açma adımları, 2026 komisyon ve hizmet bedelleri, kargo baremi ve örnek tutarlarla n11 komisyon hesaplama.",
+    category: "performans-pazarlama",
+    tldr: [
+      "n11'de satıcı olmak için vergi numarası, e-posta, banka hesabı ve 18 yaşını doldurmuş olmak yeterlidir; mağaza açmak ücretsizdir. Başvuru n11'in 'Ücretsiz Mağaza Aç' sayfasından yapılır, belgeler yüklenir ve onay sonrası ürün listelenir.",
+      "n11 her satıştan kategori komisyonu (kamuya açık 2026 kaynaklarında çoğu kategoride %12-21 bandı) ile birlikte %1 pazarlama hizmet bedeli ve %0,67 pazaryeri hizmet bedeli keser. Trendyol ve Hepsiburada'daki gibi sipariş başı sabit hizmet bedeli kamuya açık kaynaklarda görünmüyor.",
+      "n11 komisyon hesaplama formülü: Eline geçen = Satış fiyatı × (1 − komisyon − %1,67) − kargo. Örnek tutarlarla 749,90 TL'lik bir ayakkabıda (%18 komisyon, 4 desi) kesintiler 254,89 TL, ürün ve paket sonrası kâr 187,01 TL.",
+      "300 TL altı ve en fazla 5 desilik siparişlerde şartlı kargo baremi uygulanır (150 TL'nin altı ve 150-299,99 TL iki kademe). 299,90 TL'den 309,90 TL'ye çıkmak örnekte kârı 46,17 TL'den 40,82 TL'ye düşürür; aynı kâr için fiyatın yaklaşık 316,73 TL olması gerekir.",
+      "Aynı barem kademesinde kargo firmaları arasındaki fark 38,75 TL'yi buluyor: 249,90 TL'lik üründe PTT ile 34,92 TL kâr kalırken Yurtiçi ile sipariş zarara geçiyor. Kargo firmasını fiyat kadar dikkatle seçin.",
+    ],
+    publishedAt: "2026-11-17",
+    readingMinutes: 11,
+    tags: ["n11", "n11 Satıcı Olmak", "n11 Komisyon Hesaplama", "n11 Komisyon Oranları", "Kargo Barem", "Pazaryeri", "E-ticaret"],
+    sections: [
+      {
+        heading: "n11'de satıcı olmak için ne gerekir? (Kısa cevap)",
+        paragraphs: [
+          "n11'de satıcı olmak için Türkiye'de geçerli bir vergi numarası, işletmeye ait e-posta adresi, aktif bir banka hesabı ve 18 yaşını doldurmuş olmak gerekir. Mağaza açmak ücretsizdir; başvuru n11'in 'Ücretsiz Mağaza Aç' sayfasından yapılır, şahıs ya da şirket belgeleri yüklenir ve onaydan sonra satış başlar.",
+          "Satış başladığında n11 her siparişten kategori komisyonu, %1 pazarlama hizmet bedeli ve %0,67 pazaryeri hizmet bedeli keser; kargo ücretini kimin ödediğini siz seçersiniz. Bu yazıda önce mağaza açma adımlarını, sonra 2026 kesintilerini, ardından beş örnek ürünle n11 komisyon hesaplamayı, kargo baremi eşiğini ve kargo firması seçiminin kâra etkisini bulacaksınız.",
+          "Tüm tutarlar örnek tutarlardır, kargo için anlaşmalı kargo liste tutarları kullanılmıştır ve vergi etkisi hesaba katılmamıştır. Hangi şirket yapısıyla satacağınız ve mali yükümlülükleriniz için bir mali müşavirle görüşün.",
+        ],
+        bullets: [
+          "Vergi numarası (şahıs şirketi ya da sermaye şirketi)",
+          "İşletme e-posta adresi ve cep telefonu",
+          "Şirket ya da şahıs adına aktif banka hesabı (IBAN)",
+          "18 yaşını doldurmuş olmak",
+          "Satılacak ürünler için görseller, barkod ve stok bilgisi",
+        ],
+      },
+      {
+        heading: "n11 mağaza açma adımları: başvuru nasıl yapılır?",
+        paragraphs: [
+          "n11'de mağaza açma süreci tamamen çevrim içidir. n11 onay için kesin bir gün vermiyor; belgelerdeki unvan, adres ve vergi bilgilerinin birbiriyle eşleşmesi süreci en çok hızlandıran şeydir. Başvurudan önce ilk 10-20 ürününüzün görsellerini, açıklamalarını ve maliyetlerini hazırlarsanız onay gelir gelmez listelemeye başlayabilirsiniz.",
+        ],
+        bullets: [
+          "1. n11.com'un alt kısmındaki 'Mağazalar' bölümünden 'Ücretsiz Mağaza Aç' sayfasına girin",
+          "2. Üyelik bilgilerini doldurun ve işletme türünü seçin: şahıs ya da şirket",
+          "3. Satıcı İş Ortaklığı ve Aracılık Hizmetleri Sözleşmesi'ni okuyup onaylayın",
+          "4. E-posta adresinize gelen aktivasyon bağlantısını onaylayın",
+          "5. Kullanıcı adı ve şifrenizle satıcı paneline girin ve istenen belgeleri yükleyin",
+          "6. n11'in başvuruyu onaylamasını bekleyin",
+          "7. Onaydan sonra mağaza bilgilerini, kargo ve iade ayarlarını tamamlayıp ilk ürünlerinizi listeleyin",
+        ],
+      },
+      {
+        heading: "n11 mağaza açmak için hangi belgeler gerekir?",
+        paragraphs: [
+          "Belge listesi işletme türüne göre değişir. Kamuya açık rehberlerde (ikas, Şubat 2026) aktarılan güncel liste aşağıdadır; panel başvuru sırasında ek belge isteyebilir, bu yüzden kesin listeyi başvuru ekranından kontrol edin. Hangi işletme türünün size uygun olduğu mali bir karardır.",
+        ],
+        table: {
+          caption: "n11 mağaza açma belgeleri (işletme türüne göre)",
+          head: ["Şahıs işletmesi", "Şirket (limited, anonim vb.)"],
+          rows: [
+            ["Son yıla ait vergi levhası", "Güncel vergi levhası"],
+            ["İmza sirküleri (ticaret sicil kaydı yoksa imza beyannamesi)", "İmza sirküleri"],
+            ["Kimlik kartı ön yüz fotokopisi", "Ticaret sicil gazetesi"],
+            ["İmzalı Satıcı İş Ortaklığı ve Aracılık Hizmetleri Sözleşmesi", "Son 6 aya ait faaliyet belgesi ve imzalı sözleşme"],
+          ],
+        },
+      },
+      {
+        heading: "n11 komisyon oranları 2026'da ne kadar?",
+        paragraphs: [
+          "n11 komisyonu kategoriye göre değişir ve satış fiyatı üzerinden alınır. Resmî tam liste satıcı panelinde ve n11 Mağaza Destek Merkezi'ndedir; kamuya açık 2026 kaynakları ise aşağıdaki bantları veriyor. Kaynaklar arasında bazı kategorilerde fark var (örneğin bir rehber modayı %13 yazarken iki ayrı 2026 kaynağı %18-20,34 veriyor); bu yüzden fiyat kurmadan önce kendi alt kategorinizin oranını panelden mutlaka doğrulayın.",
+          "Komisyonun yanında iki yüzdesel bedel daha vardır: %1 pazarlama hizmet bedeli ve %0,67 pazaryeri hizmet bedeli. Paraşüt'ün Mart 2026 tablosunda bu iki bedel tüm kategori satırlarında aynıdır, ikas ve Sentos da aynı oranları veriyor. Yani hesaplarda kategori komisyonuna 1,67 puan eklemeniz gerekir: %18 komisyonlu bir ayakkabının toplam yüzdesel kesintisi %19,67'dir.",
+        ],
+        table: {
+          caption: "n11 kategori komisyon bantları (kamuya açık kaynaklar, 2026; panelden doğrulayın)",
+          head: ["Kategori", "Komisyon bandı", "Kaynak notu"],
+          rows: [
+            ["Elektronik", "%5,5 – %20", "Alt kategoriye göre çok değişken; aksesuar ve kablo %20'ye kadar (BirFatura, Ekim 2026)"],
+            ["Moda ve giyim", "%18 – %20,34", "Çocuk giyim %20-20,34 (Paraşüt, Mart 2026; BirFatura, Ekim 2026)"],
+            ["Ayakkabı ve çanta", "%18 – %19", "Kadın, erkek, çocuk ayakkabı %18; bakım ürünleri %19 (Paraşüt, Mart 2026)"],
+            ["Ev ve yaşam", "%15 – %21", "Mobilya ve dekorasyonda farklılaşır (BirFatura, Ekim 2026)"],
+            ["Anne ve bebek", "%12 – %21", "Ürün grubuna göre değişir (BirFatura, Ekim 2026)"],
+            ["Kozmetik ve kişisel bakım", "%13 – %17", "BirFatura, Ekim 2026"],
+            ["Beyaz eşya", "%8 – %11", "ikas, Şubat 2026"],
+            ["Tüm kategoriler (ek)", "+%1 pazarlama, +%0,67 pazaryeri hizmet bedeli", "Paraşüt, ikas, Sentos (2026)"],
+          ],
+        },
+      },
+      {
+        heading: "n11 komisyon hesaplama nasıl yapılır? Formül ve örnek",
+        paragraphs: [
+          "n11 komisyon hesaplamanın mantığı basittir: satış fiyatından komisyonu, iki yüzdesel hizmet bedelini ve mağaza ödüyorsa kargo ücretini düşersiniz; kalan tutar hesabınıza yatacak hakediştir. Kârı bulmak için hakedişten ürün maliyetini ve paketlemeyi çıkarırsınız.",
+          "Örnek (vergi etkisi hariç): 749,90 TL'lik kadın ayakkabısı, komisyon %18, 4 desilik kutu ve kargoyu mağaza ödüyor (Aras liste tutarı 107,38 TL). Komisyon 134,98 TL, pazarlama hizmet bedeli 7,50 TL, pazaryeri hizmet bedeli 5,02 TL; toplam kesinti 254,89 TL, yani fiyatın %34'ü. Hakediş 495,01 TL'dir. Ürün maliyeti 300 TL ve paketleme 8 TL ise sipariş başı kâr 187,01 TL, kâr marjı %24,9 olur. Kâr marjı ile kâr oranı farkını [kar marjı nasıl hesaplanır](/blog/kar-marji-nasil-hesaplanir/) yazısında anlattık.",
+        ],
+        bullets: [
+          "Komisyon tutarı = Satış fiyatı × Komisyon oranı",
+          "Hizmet bedelleri = Satış fiyatı × (%1 + %0,67)",
+          "Hakediş = Satış fiyatı × (1 − Komisyon − 0,0167) − Kargo",
+          "Sipariş başı kâr = Hakediş − Ürün maliyeti − Paketleme",
+          "Kesinti payı = (Komisyon + Hizmet bedelleri + Kargo) ÷ Satış fiyatı",
+        ],
+      },
+      {
+        heading: "n11'de 5 örnek ürünle kesinti ve kâr tablosu",
+        paragraphs: [
+          "Rakip rehberler oranları listeliyor ama kalem kalem hesaba dökmüyor. Aşağıdaki tabloda beş farklı fiyat noktası için kesinti ve kârı aynı formülle hesapladık. Kargo: 300 TL altı ve en fazla 5 desi siparişlerde şartlı kargo baremi, diğerlerinde Aras desi tarifesi (n11 anlaşmalı kargo liste tutarları, 2026). Komisyon oranları örnektir; ürün maliyeti ve paketleme varsayımdır.",
+          "Tablodaki en önemli ders şudur: kesinti payı fiyat düştükçe hızla yükselir. 129,90 TL'lik bir aksesuarda fiyatın %54,7'si komisyon, hizmet bedeli ve kargoya giderken 1.499 TL'lik bir küçük ev aletinde bu pay %22'ye iner. Düşük fiyatlı ürünlerde komisyon farkından çok kargo kalemi belirleyicidir; kutu ölçüsünü [desi hesaplama aracıyla](/ucretsiz-araclar/desi-hesaplama/) kontrol edin.",
+        ],
+        table: {
+          caption: "n11 kesinti ve kâr tablosu (örnek tutarlar, vergi etkisi hariç)",
+          head: ["Ürün", "Fiyat", "Komisyon", "Kargo", "Toplam kesinti (pay)", "Ürün + paket", "Kâr (marj)"],
+          rows: [
+            ["Aksesuar", "129,90 TL", "%20", "42,91 TL (barem 0-149,99)", "71,06 TL (%54,7)", "44 TL", "14,84 TL (%11,4)"],
+            ["Çocuk giyim", "249,90 TL", "%20", "73,74 TL (barem 150-299,99)", "127,89 TL (%51,2)", "95 TL", "27,01 TL (%10,8)"],
+            ["Çocuk giyim (üst fiyat)", "299,90 TL", "%20", "73,74 TL (barem 150-299,99)", "138,73 TL (%46,3)", "115 TL", "46,17 TL (%15,4)"],
+            ["Kadın ayakkabı", "749,90 TL", "%18", "107,38 TL (4 desi)", "254,89 TL (%34,0)", "308 TL", "187,01 TL (%24,9)"],
+            ["Küçük ev aleti", "1.499 TL", "%12", "125,44 TL (6 desi)", "330,35 TL (%22,0)", "910 TL", "258,65 TL (%17,3)"],
+          ],
+        },
+      },
+      {
+        heading: "n11 kargo baremi nedir? 150 ve 300 TL eşikleri",
+        paragraphs: [
+          "n11'de kargo ücretini kimin ödeyeceğini ürün eklerken siz seçersiniz: alıcı öder, mağaza öder (ücretsiz kargo) ya da şartlı kargo (belirli bir sepet tutarının üstünde mağaza öder). Mağazanın ödediği 300 TL altı ve en fazla 5 desilik gönderilerde n11 anlaşmalı kargo firmaları desi tarifesi yerine sabit barem ücreti uygular. 300 TL ve üstü ya da 5 desiyi aşan gönderiler firmanın desi tarifesinden ücretlendirilir.",
+          "Barem iki kademelidir ve kargo firmasına göre değişir. Aşağıdaki tutarlar n11 anlaşmalı kargo listesinden aktarılan 2026 liste tutarlarıdır (Paraşüt Mart 2026 ve pazarus Haziran 2026 listesi aynı rakamları veriyor); güncel tarifeyi satıcı panelinizden doğrulayın. Firma bazlı desi kurallarını [PTT, Aras ve Yurtiçi kargo desi hesaplama](/blog/ptt-aras-yurtici-kargo-desi-hesaplama/) yazısında karşılaştırdık.",
+        ],
+        table: {
+          caption: "n11 şartlı kargo baremi (en fazla 5 desi, 2026 liste tutarları)",
+          head: ["Kargo firması", "0 – 149,99 TL", "150 – 299,99 TL", "300 TL ve üstü"],
+          rows: [
+            ["PTT Kargo", "34,16 TL", "65,83 TL", "Desi tarifesi"],
+            ["Aras Kargo", "42,91 TL", "73,74 TL", "Desi tarifesi (2 desi 86,92 TL)"],
+            ["Sürat Kargo", "48,74 TL", "79,58 TL", "Desi tarifesi"],
+            ["Kolay Gelsin", "51,24 TL", "82,08 TL", "Desi tarifesi"],
+            ["DHL e-Commerce", "52,08 TL", "82,91 TL", "Desi tarifesi"],
+            ["Yurtiçi Kargo", "74,58 TL", "104,58 TL", "Desi tarifesi"],
+          ],
+        },
+      },
+      {
+        heading: "Barem eşiği kâra nasıl etki eder? 299,90 TL ile 309,90 TL farkı",
+        paragraphs: [
+          "300 TL eşiğini aşan sipariş barem dışına çıkar ve desi tarifesine geçer. Hafif bir üründe bile bu, kargoyu bir anda yükseltebilir. Örnek (vergi etkisi hariç): 2 desilik çocuk montu, komisyon %20, ürün maliyeti 110 TL, paketleme 5 TL, Aras Kargo. 299,90 TL'de kargo 73,74 TL'dir ve sipariş başına 46,17 TL kâr kalır.",
+          "Aynı ürünü 309,90 TL'ye çıkarırsanız kargo 2 desi tarifesinden 86,92 TL olur ve kâr 40,82 TL'ye düşer: fiyat 10 TL arttı, kâr 5,35 TL azaldı. Eşiğin üstünde aynı 46,17 TL kârı yakalamak için fiyatın yaklaşık 316,73 TL olması gerekir. Yani bu ürün için 300-316 TL arası ölü bölgedir; ya 299,90 TL'de kalın ya da 317 TL'nin üstüne çıkabilecek bir teklif (ikili paket, set) kurun. Desi arttıkça sıçrama büyür: 4 desilik bir üründe barem dışı tutar 107,38 TL'dir.",
+          "150 TL eşiği daha az tehlikelidir ama aynı mantıkla çalışır: Aras'ta 149,90 TL'den 150 TL'ye geçmek kargoyu 42,91 TL'den 73,74 TL'ye çıkarır. 150-180 TL arasında fiyatlanan ürünlerde 149,90 TL'ye inmek çoğu zaman daha kârlıdır. Trendyol'un 200/350 TL ve Hepsiburada'nın 200/400 TL eşikleri farklıdır; o hesapları [Trendyol komisyon oranları](/blog/trendyol-komisyon-oranlari-hesaplama/) ve [Hepsiburada kâr hesaplama](/blog/hepsiburada-kar-hesaplama/) yazılarında bulabilirsiniz.",
+        ],
+        bullets: [
+          "Eşiği aşarken aynı kârı koruyan fiyat = (Hedef kâr + Ürün + Paket + Üst kargo) ÷ (1 − Komisyon − 0,0167)",
+          "Örnekte: (46,17 + 110 + 5 + 86,92) ÷ (1 − 0,20 − 0,0167) ≈ 316,73 TL",
+        ],
+      },
+      {
+        heading: "Kargo firması seçimi kârı ne kadar değiştirir?",
+        paragraphs: [
+          "n11'de aynı barem kademesinde en ucuz ve en pahalı anlaşmalı firma arasındaki fark 150-299,99 TL kademesinde 38,75 TL'dir (PTT 65,83 TL, Yurtiçi 104,58 TL). Düşük fiyatlı üründe bu fark kârın tamamından büyüktür.",
+          "Örnek: 249,90 TL'lik çocuk tişörtü (%20 komisyon, ürün ve paket 95 TL) PTT ile gönderildiğinde 34,92 TL, Aras ile 27,01 TL kâr bırakır; Yurtiçi ile ise sipariş başına 3,83 TL zarar eder. Kargo firmasını yalnızca fiyatla değil teslim süresi, hasar ve iade oranıyla birlikte değerlendirin, ama düşük sepetli ürünlerde farkı mutlaka hesaba katın. Kendi kargo tarifenizle karşılaştırma için [kargo ücreti hesaplama aracını](/ucretsiz-araclar/kargo-ucreti-hesaplama/) kullanabilirsiniz.",
+        ],
+      },
+      {
+        heading: "İndirim ve kampanya n11 kârını nasıl etkiler?",
+        paragraphs: [
+          "Komisyon ve hizmet bedelleri yüzdesel olduğu için indirimle birlikte azalır, ama kargo ve ürün maliyeti sabit kalır; bu yüzden indirim kârı fiyattaki düşüşten çok daha hızlı eritir. 749,90 TL'lik ayakkabıda %10 indirim fiyatı 674,91 TL'ye indirir ve sipariş başı kâr 187,01 TL'den 126,78 TL'ye düşer: kâr %32 azalır.",
+          "Aynı toplam kârı korumak için indirimli dönemde satış adedinin yaklaşık %47,5 artması gerekir. n11, 2026'da bazı kampanyalarda %2'ye varan komisyon avantajı sunduğunu duyurdu (Para Dergi, Nisan 2026); böyle bir teklifi kabul etmeden önce indirimli fiyat ve düşük komisyonla kârı yeniden hesaplayın. Hızlı hesap için [indirim hesaplama aracı](/ucretsiz-araclar/indirim-hesaplama/) indirim sonrası kârı ve gereken satış artışını gösterir.",
+        ],
+        bullets: [
+          "Gerekli satış artışı = (İndirim öncesi kâr ÷ İndirim sonrası kâr) − 1",
+          "Örnekte: 187,01 ÷ 126,78 − 1 ≈ %47,5",
+        ],
+      },
+      {
+        heading: "Hedef kâr marjına göre n11 satış fiyatı nasıl belirlenir?",
+        paragraphs: [
+          "Fiyatı tahminle değil ters hesapla kurun: maliyetler ve hedef marj belliyse gereken satış fiyatı tek formülle bulunur. 300 TL maliyetli, 8 TL paketli ve 4 desilik (107,38 TL) ayakkabıda %18 komisyonla %20 net marj istiyorsanız fiyat (300 + 8 + 107,38) ÷ (1 − 0,18 − 0,0167 − 0,20) ≈ 688,51 TL olmalıdır.",
+          "Sonucu rakip fiyatlarla karşılaştırın: pazaryerinde aynı ürün 600 TL'ye satılıyorsa ya maliyeti (tedarik, kutu boyutu) düşürmeniz ya da daha düşük marja razı olmanız gerekir. Bu hesabı Trendyol ve Hepsiburada için hazır kesintilerle yapan aracımızı n11 için de kullanabilirsiniz: [Trendyol ve Hepsiburada kâr hesaplama aracında](/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/) 'Diğer' seçeneğini seçin, komisyon alanına kategori oranınıza 1,67 puan ekleyerek girin (ayakkabıda %19,67) ve hizmet bedelini 0 bırakın. Araç fiyatı ayrıca vergi hariç tabana çevirdiği için sonuçlar bu yazıdaki sadeleştirilmiş örneklerden farklı çıkabilir.",
+        ],
+        bullets: [
+          "Hedef fiyat = (Ürün + Paket + Kargo) ÷ (1 − Komisyon − 0,0167 − Hedef marj)",
+          "Başabaş fiyat = (Ürün + Paket + Kargo) ÷ (1 − Komisyon − 0,0167)",
+          "Örnekte başabaş fiyat: 415,38 ÷ 0,8033 ≈ 517,09 TL",
+        ],
+      },
+      {
+        heading: "İade ve reklam dahil gerçek kâr: n11 başabaş ROAS",
+        paragraphs: [
+          "Tablodaki kâr, iade edilmeyen ve reklamsız bir siparişin kârıdır. İadelerde gidiş ve dönüş kargosu ile paket kaybı oluşur; reklamda ise her sipariş için harcama eklenir. Ayakkabı örneğinde siparişlerin %8'i iade ediliyor ve iade başına kayıp 120 TL ise (örnek) beklenen katkı 0,92 × 187,01 − 0,08 × 120 = 162,45 TL olur.",
+          "Başabaş ROAS 749,90 ÷ 162,45 ≈ 4,62'dir: n11 reklamlarında harcanan her 1 TL en az 4,62 TL satış getirmiyorsa reklamlı satış zarar ettirir. Başabaş ROAS mantığını [ROAS nedir, nasıl hesaplanır](/blog/roas-nedir-nasil-hesaplanir/) yazısında, hızlı hesabı [ROAS hesaplayıcıda](/ucretsiz-araclar/roas-hesaplayici/) bulabilirsiniz.",
+        ],
+        bullets: [
+          "Beklenen katkı = (1 − İade oranı) × Sipariş kârı − İade oranı × İade başına kayıp",
+          "Başabaş ROAS = Satış fiyatı ÷ Beklenen katkı",
+        ],
+      },
+      {
+        heading: "n11 ödemeleri ne zaman yapar?",
+        paragraphs: [
+          "Kamuya açık 2026 rehberlerine (ikas, BirFatura) göre n11, teslim edilip tamamlanan siparişlerin hakedişini her ayın 3'ü, 13'ü ve 23'ünde öder; tarih resmî tatile denk gelirse ilk iş gününe kayar. n11 Nisan 2026'da satıcılar için 'Ertesi Gün Ödeme' seçeneğini de duyurdu; hangi koşullarda ve hangi ücretle kullanılabildiğini satıcı panelinden kontrol edin.",
+          "Ödeme takvimi nakit akışınızı belirler: ayın 4'ünde teslim edilen bir siparişin parası bir sonraki ödeme gününü bekler. Stok ve reklam bütçesini planlarken siparişten ödemeye kadar geçen süreyi hesaba katın.",
+        ],
+      },
+      {
+        heading: "n11'de satış yaparken en sık yapılan 6 hata",
+        paragraphs: ["Satıcıların n11 kâr hesabında en çok atladığı kalemler şunlar:"],
+        bullets: [
+          "Komisyonu hesaplayıp %1 pazarlama ve %0,67 pazaryeri hizmet bedelini unutmak",
+          "Kategori oranını panel yerine eski bir tablodan almak",
+          "300 TL eşiğinin hemen üstünde fiyatlamak ve barem dışı desi tarifesine düşmek",
+          "Düşük sepetli ürünlerde pahalı kargo firmasıyla çalışmak",
+          "İndirim ya da kampanya teklifini gereken satış artışını hesaplamadan kabul etmek",
+          "Reklamı başabaş ROAS'ı hesaplamadan açmak",
+        ],
+      },
+      {
+        heading: "n11 diğer pazaryerlerinden nasıl ayrılır?",
+        paragraphs: [
+          "n11'in kesinti yapısı Trendyol ve Hepsiburada'dan biraz farklıdır: komisyon bantları benzer olsa da kamuya açık kaynaklarda sipariş başı sabit hizmet bedeli görünmüyor, buna karşılık her satıştan %1,67 yüzdesel bedel alınıyor ve barem eşikleri 150 ve 300 TL. Aynı ürünü birden çok pazaryerinde satıyorsanız fiyatı her kanalın kendi eşiğine göre ayrı kurun.",
+          "Kanal karşılaştırması için Hepsiburada tarafında [Hepsiburada'da satıcı olmak rehberine](/blog/hepsiburada-satici-olmak-komisyon-kar-hesabi/), Amazon.com.tr tarafında [Amazon'da satıcı olmak ve FBA nedir](/blog/amazon-satici-olmak-fba-nedir/) yazısına bakabilirsiniz. Stok tutmadan satmayı düşünüyorsanız [dropshipping nedir](/blog/dropshipping-nedir-nasil-yapilir/) yazısındaki kâr hesabı da aynı mantıkla çalışır.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "n11'de mağaza açmak ücretli mi?",
+        answer:
+          "Hayır, n11'de mağaza açmak ücretsizdir. Satış yaptıkça kategori komisyonu, %1 pazarlama hizmet bedeli ve %0,67 pazaryeri hizmet bedeli ödersiniz; kargoyu mağaza ödüyorsa kargo ücreti de hakedişten düşülür.",
+      },
+      {
+        question: "n11 komisyon oranları ne kadar?",
+        answer:
+          "Kamuya açık 2026 kaynaklarına göre n11 komisyonu kategoriye göre değişir: elektronikte %5,5-20, moda ve giyimde %18-20,34, ayakkabıda %18-19, ev ve yaşamda %15-21, kozmetikte %13-17. Buna tüm kategorilerde %1 pazarlama ve %0,67 pazaryeri hizmet bedeli eklenir. Kesin oranı satıcı panelinden kontrol edin.",
+      },
+      {
+        question: "n11 komisyon hesaplama nasıl yapılır?",
+        answer:
+          "Hakediş = Satış fiyatı × (1 − komisyon oranı − 0,0167) − kargo. Örneğin %18 komisyonlu 749,90 TL'lik üründe kargo 107,38 TL ise hakediş 495,01 TL olur. Kârı bulmak için hakedişten ürün maliyetini ve paketlemeyi çıkarın.",
+      },
+      {
+        question: "n11'de şahıs olarak satış yapılabilir mi?",
+        answer:
+          "n11 vergi numarası istediği için vergi kaydı olmayan bireyler mağaza açamaz; şahıs işletmesi ya da şirket olarak başvurulur. Hangi işletme türünün size uygun olduğunu bir mali müşavirle netleştirin.",
+      },
+      {
+        question: "n11 kargo ücretini kim öder?",
+        answer:
+          "Ürünü eklerken siz seçersiniz: alıcı öder, mağaza öder ya da şartlı kargo (belirli bir sepet tutarının üstünde mağaza öder). Mağazanın ödediği 300 TL altı ve en fazla 5 desilik siparişlerde sabit barem ücreti, diğerlerinde kargo firmasının desi tarifesi uygulanır.",
+      },
+    ],
+    howTo: {
+      name: "n11'de mağaza nasıl açılır?",
+      description: "Başvurudan ilk ürüne altı adımda n11 satıcı hesabı.",
+      steps: [
+        { name: "Bilgileri hazırlayın", text: "Vergi numarası, işletme e-postası, banka hesabı ve işletme türünüze göre belgeleri hazırlayın." },
+        { name: "Başvuruyu başlatın", text: "n11.com'daki 'Ücretsiz Mağaza Aç' sayfasından üyelik bilgilerini doldurun ve işletme türünü seçin." },
+        { name: "Sözleşmeyi onaylayın", text: "Satıcı İş Ortaklığı ve Aracılık Hizmetleri Sözleşmesi'ni okuyup onaylayın ve e-posta aktivasyonunu tamamlayın." },
+        { name: "Belgeleri yükleyin", text: "Satıcı paneline girip vergi levhası, imza sirküleri ve diğer istenen belgeleri yükleyin." },
+        { name: "Onayı bekleyin", text: "n11 belgeleri inceleyip başvurunuzu onaylar; unvan ve adres bilgilerinin tutarlı olması süreci hızlandırır." },
+        { name: "Ürünleri listeleyin", text: "Kargo ve iade ayarlarını yapın, her ürünün fiyatını komisyon, hizmet bedeli ve kargo baremiyle hesaplayıp listeleyin." },
+      ],
+    },
+    relatedToolKey: "marketplace",
+    resources: [
+      { label: "Trendyol ve Hepsiburada Kâr Hesaplama (n11 için 'Diğer' seçeneği)", href: "/ucretsiz-araclar/trendyol-hepsiburada-kar-hesaplama/" },
+      { label: "Trendyol Komisyon Oranları 2026 ve Komisyon Hesaplama", href: "/blog/trendyol-komisyon-oranlari-hesaplama/" },
+      { label: "Hepsiburada Kâr Hesaplama: Kategori, Barem ve İndirim", href: "/blog/hepsiburada-kar-hesaplama/" },
+      { label: "Amazon'da Satıcı Olmak ve FBA Nedir?", href: "/blog/amazon-satici-olmak-fba-nedir/" },
+      { label: "Kar Marjı Nasıl Hesaplanır?", href: "/blog/kar-marji-nasil-hesaplanir/" },
+      { label: "Desi Hesaplama ve Hazır Desi Tablosu", href: "/ucretsiz-araclar/desi-hesaplama/" },
+      { label: "Kargo Ücreti Hesaplama", href: "/ucretsiz-araclar/kargo-ucreti-hesaplama/" },
+      { label: "İndirim Hesaplama", href: "/ucretsiz-araclar/indirim-hesaplama/" },
+      { label: "ROAS ve Başabaş ROAS Hesaplama", href: "/ucretsiz-araclar/roas-hesaplayici/" },
+      { label: "Pazarlama Metrikleri Sözlüğü", href: "/blog/pazarlama-metrikleri-sozlugu/" },
+      { label: "n11 Mağaza Destek Merkezi: Komisyon oranları (resmî)", href: "https://magazadestek.n11.com/s/komisyon-oranlari", external: true },
+      { label: "n11 Satıcı İş Ortaklığı ve Aracılık Hizmetleri Sözleşmesi (resmî)", href: "https://magazadestek.n11.com/s/kullanim-kosullari", external: true },
     ],
   },
 ];
