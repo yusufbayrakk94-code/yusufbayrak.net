@@ -1,4 +1,4 @@
-# D3 — Veri varlığı: "Türkiye pazaryeri komisyon ve kargo maliyetleri 2026" (taslak v1, 16.11.2026; v0 15.11.2026)
+# D3 — Veri varlığı: "Türkiye pazaryeri komisyon ve kargo maliyetleri 2026" (taslak v2, 17.11.2026; v1 16.11.2026; v0 15.11.2026)
 
 Durum: veri toplama + yöntem + ilk özgün tablo hazır. Sayfa henüz yayında değil; yayın, takvimde bir günün "yeni sayfası" olarak (blog yazısı biçiminde, /blog/pazaryeri-komisyon-kargo-maliyetleri-2026/ önerisi) yapılacak — öneri: 22–23 Kas haftası, E-ticaret kârlılık rehberi hub'ından önce ya da hub'la birlikte (hub bu sayfaya link verir).
 Kural: vergi yok (KDV/stopaj hesabı, yorumu yok; tüm tutarlar "KDV hariç, örnek tutarlar"). Ham Search Console verisi yok.
@@ -20,7 +20,7 @@ Kural: vergi yok (KDV/stopaj hesabı, yorumu yok; tüm tutarlar "KDV hariç, ör
 |---|---|---|---|---|---|
 | Trendyol | 10,99 TL / gönderi ("Bugün Kargoda" koşulunda daha düşük) | Anlaşmalı kargo; 350 TL üstü desi tarifesi | 0–199,99 TL: 38,74 TL · 200–349,99 TL: 70,41 TL (Trendyol Express, 1 gün; 26.03.2026'dan beri eşikler 200/350) | webosentez 30.09.2026; ezv.com.tr 10.08.2026 tarifesi; seo/research/trendyol-komisyon-oranlari.md | Orta |
 | Hepsiburada | 10,99 TL / teslimat (21.09.2026'dan beri barem içinde de) | Anlaşmalı kargo; 400 TL üstü desi tarifesi | 0–199,99 TL: 43,99 TL · 200–399,99 TL: 75,99 TL (HepsiJET/Sürat, 0–1 gün, %90 zamanında) | ezv.com.tr 21.08 ve 30.09.2026; kargonomi 22.10.2026; seo/research/hepsiburada-kar-hesaplama.md | Orta |
-| n11 | Pazarlama katkı payı (örnekte %0,92) + hizmet bedeli (tutar kamuya açık değil) | — | Kamuya açık veri bulunamadı | BirFatura 16.10.2026 (oranlar 14.10.2026, "tahmini"); resmî: magazadestek.n11.com/s/komisyon-oranlari | Düşük |
+| n11 | Sipariş başı sabit hizmet bedeli kamuya açık kaynaklarda yok; her satıştan %1 pazarlama hizmet bedeli + %0,67 pazaryeri hizmet bedeli (tüm kategoriler, satış fiyatı üzerinden) | Anlaşmalı kargo (PTT, Aras, Sürat, Kolay Gelsin, DHL e-Commerce, Yurtiçi); ödeme tipi: alıcı öder / mağaza öder / şartlı; 300 TL üstü veya 5 desi üstü desi tarifesi (Aras 2 desi 86,92 TL, 4 desi 107,38 TL) | En fazla 5 desi: 0–149,99 TL: PTT 34,16 · Aras 42,91 · Sürat 48,74 · Kolay Gelsin 51,24 · DHL 52,08 · Yurtiçi 74,58 TL; 150–299,99 TL: 65,83 · 73,74 · 79,58 · 82,08 · 82,91 · 104,58 TL | Hizmet bedelleri: Paraşüt 09.03.2026 + ikas 04.02.2026 + Sentos 2026 (aynı oranlar); barem/desi: Paraşüt 10.03.2026 + pazarus (n11 listesi 14.06.2026) aynı rakamlar; ödeme ayın 3/13/23 (ikas, BirFatura) + "Ertesi Gün Ödeme" (Para Dergi 30.04.2026); resmî magazadestek.n11.com buluttan okunamadı | Orta |
 | Amazon.com.tr | Paket başı hizmet bedeli YOK; aylık 99 TL üyelik kampanya ile alınmıyor. Komisyon kargo dahil toplam satış fiyatı üzerinden (%6–20). Kampanya: yeni satıcıya kayıttan 90 gün, 2 milyon TL'ye kadar %1 komisyon (30.09–31.12.2026) + 4.000 TL Sponsorlu Ürünler kredisi | FBA: birim başı lojistik ücreti (örnek 53,80 TL küçük zarf 30 g · 63,58 TL standart paket 1,2 kg · 163,93 TL 10 kg TV; tarife 16.04.2026) + depolama 64 / 83 TL/m³ (Oca–Eyl / Eki–Ara), 365 gün üstü 1.500 TL/m³ · Satıcı gönderimi: kendi kargo, alıcıdan ayrı kargo alınamaz | FBA sabit kargo kampanyası: 0–300 TL ürünlerde 25 TL/birim (Seller Flex kategorileri: giyim, ayakkabı, çanta, takı, saat, bavul; sayfada 20 TL de geçiyor, bitiş tarihi yok) | Resmî: satis.amazon.com.tr/ucretlendirme ve /lojistik/sabit-kargo-ucreti-kampanyasi (16.11.2026); kampanya: foreks.com 07.10.2026; seo/research/amazon-satici-olmak-fba.md | Yüksek (ücretler) / Orta (kampanya) |
 | Çiçeksepeti | Güvenli ödeme altyapısı bedeli sipariş tutarının %1,5'i; aylık listeleme bedeli satılan adet × birim bedel (kaynakta 3 TL, aynı sayfanın örneğinde 10 TL → çelişkili) | Kamuya açık tarife bulunamadı | Kamuya açık veri bulunamadı | BirFatura (güncelleme 16.10.2026, "tahmini"); ikas (07.11.2025, yalnızca %6–30 aralığı) | Düşük |
 | Pazarama | Ayrı hizmet bedeli kaynaklarda yok; mağaza açmak ücretsiz | Anlaşmalı kargo, desi bazlı, hakedişten kesilir; 100 desi üstü "ağır kargo hizmet bedeli" | 0–149,99 TL: 31,90 TL · 150–300 TL: 56,90 TL (Sürat, Aras, DHL eCommerce, PTT, Kolay Gelsin); Yurtiçi: 56,90 / 79,90 TL | Komisyon: sentos 24.04.2026 + mukellef 14.09.2026 (Pazarama resmî komisyon listesine atıf) aynı oranlar; barem: yalnızca mukellef 14.09.2026 | Orta (komisyon) / Düşük (barem) |
@@ -42,18 +42,18 @@ Kaynaklar: Paraşüt (Hepsiburada, "Ocak 2026", yayın 29.06.2026), BirFatura (n
 
 ### C. ÖZGÜN: Komisyon dışı sabit giderin fiyat içindeki payı (kargo + hizmet bedeli; 0–2 desi, örnek tutarlar)
 Varsayım: Trendyol desi tarifesi 0–2 desi 81,95 TL (TEX, 10.08.2026); Hepsiburada desi tarifesi 0–2 desi 78,50 TL (HepsiJET, 10.08.2026; 24.08.2026'da güncellendi → yayından önce PDF'ten yenilenecek).
-| Satış fiyatı | Trendyol sabit gider | Payı | Hepsiburada sabit gider | Payı | Pazarama barem* | Payı | Amazon FBA** | Payı |
-|---|---|---|---|---|---|---|---|---|
-| 149,90 TL | 49,73 TL | %33,2 | 54,98 TL | %36,7 | 31,90 TL | %21,3 | 25 TL | %16,7 |
-| 199,90 TL | 49,73 TL | %24,9 | 54,98 TL | %27,5 | 56,90 TL | %28,5 | 25 TL | %12,5 |
-| 249,90 TL | 81,40 TL | %32,6 | 86,98 TL | %34,8 | 56,90 TL | %22,8 | 25 TL | %10,0 |
-| 349,90 TL | 81,40 TL | %23,3 | 86,98 TL | %24,9 | desi tarifesi (veri yok) | — | 63,58 TL | %18,2 |
-| 379,90 TL | 92,94 TL | %24,5 | 86,98 TL | %22,9 | desi tarifesi | — | 63,58 TL | %16,7 |
-| 399,90 TL | 92,94 TL | %23,2 | 86,98 TL | %21,8 | desi tarifesi | — | 63,58 TL | %15,9 |
-| 499,90 TL | 92,94 TL | %18,6 | 89,49 TL | %17,9 | desi tarifesi | — | 63,58 TL | %12,7 |
-| 999 TL | 92,94 TL | %9,3 | 89,49 TL | %9,0 | desi tarifesi | — | 63,58 TL | %6,4 |
+| Satış fiyatı | Trendyol sabit gider | Payı | Hepsiburada sabit gider | Payı | Pazarama barem* | Payı | Amazon FBA** | Payı | n11 (Aras)*** | Payı |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 149,90 TL | 49,73 TL | %33,2 | 54,98 TL | %36,7 | 31,90 TL | %21,3 | 25 TL | %16,7 | 45,41 TL | %30,3 |
+| 199,90 TL | 49,73 TL | %24,9 | 54,98 TL | %27,5 | 56,90 TL | %28,5 | 25 TL | %12,5 | 77,08 TL | %38,6 |
+| 249,90 TL | 81,40 TL | %32,6 | 86,98 TL | %34,8 | 56,90 TL | %22,8 | 25 TL | %10,0 | 77,91 TL | %31,2 |
+| 349,90 TL | 81,40 TL | %23,3 | 86,98 TL | %24,9 | desi tarifesi (veri yok) | — | 63,58 TL | %18,2 | 92,76 TL | %26,5 |
+| 379,90 TL | 92,94 TL | %24,5 | 86,98 TL | %22,9 | desi tarifesi | — | 63,58 TL | %16,7 | 93,26 TL | %24,5 |
+| 399,90 TL | 92,94 TL | %23,2 | 86,98 TL | %21,8 | desi tarifesi | — | 63,58 TL | %15,9 | 93,60 TL | %23,4 |
+| 499,90 TL | 92,94 TL | %18,6 | 89,49 TL | %17,9 | desi tarifesi | — | 63,58 TL | %12,7 | 95,27 TL | %19,1 |
+| 999 TL | 92,94 TL | %9,3 | 89,49 TL | %9,0 | desi tarifesi | — | 63,58 TL | %6,4 | 103,60 TL | %10,4 |
 
-\* Pazarama: Sürat/Aras/DHL/PTT/Kolay Gelsin baremi, hizmet bedeli kaynaklarda yok (güven düşük). \*\* Amazon FBA: 300 TL'ye kadar sabit kargo kampanyası (yalnızca Seller Flex kategorileri), üstünde Amazon'un 1,2 kg standart paket örnek ücreti; inbound kargo ve depolama hariç. Amazon'da paket başı hizmet bedeli yok.
+\* Pazarama: Sürat/Aras/DHL/PTT/Kolay Gelsin baremi, hizmet bedeli kaynaklarda yok (güven düşük). \*\* Amazon FBA: 300 TL'ye kadar sabit kargo kampanyası (yalnızca Seller Flex kategorileri), üstünde Amazon'un 1,2 kg standart paket örnek ücreti; inbound kargo ve depolama hariç. Amazon'da paket başı hizmet bedeli yok. \*\*\* n11: Aras barem/2 desi tarifesi + %1,67 yüzdesel hizmet bedelleri (sabit değil, fiyatla artar); PTT ile 150–299,99 TL bandında 7,91 TL daha düşük, Yurtiçi ile 30,84 TL daha yüksek (v2, 17.11.2026).
 
 Bulgular (dağıtım metinlerinde kullanılacak):
 1. 200 TL altı üründe komisyondan önce fiyatın dörtte biri ile üçte biri sabit giderlere gidiyor.
@@ -63,6 +63,8 @@ Bulgular (dağıtım metinlerinde kullanılacak):
 5. (v1) Amazon'un FBA sabit kargo kampanyası, 300 TL altı giyim/ayakkabı/takıda sabit gider payını %10–17'ye indiriyor; aynı fiyatlarda Trendyol ve Hepsiburada'da pay %25–37. Kampanyanın bitiş tarihi yok → sayfada "kampanya; panelden doğrulayın" notu.
 6. (v1) Amazon'da komisyon basamakları fiyatlamayı barem kadar etkiliyor: kozmetikte 499 → 509 TL fiyat artışı satıcının eline geçen tutarı 16,35 TL azaltıyor (500–528 TL ölü bölge); takıda 900 TL üstü oran %20'den %6'ya düşüyor.
 7. (v1) Pazarama'nın barem eşikleri (150 / 300 TL) Trendyol (200 / 350) ve Hepsiburada'dan (200 / 400) farklı: aynı ürünü üç pazaryerinde aynı fiyata satmak üç farklı kargo basamağına düşürebilir (ör. 199,90 TL Pazarama'da üst baremde).
+8. (v2) n11'de 150 TL barem eşiği nedeniyle 199,90 TL'lik ürünün sabit gider payı %38,6 — tablodaki en yüksek değer (Trendyol %24,9, Hepsiburada %27,5). n11'de 150–200 TL bandı fiyatlama açısından en pahalı bant; 149,90 TL'de pay %30,3'e iniyor.
+9. (v2) n11'de aynı barem kademesinde kargo firması farkı 38,75 TL (150–299,99 TL: PTT 65,83 / Yurtiçi 104,58 TL); 249,90 TL'lik %20 komisyonlu bir üründe bu fark kârı 34,92 TL'den −3,83 TL'ye çeviriyor (örnek: ürün + paket 95 TL). Kaynak hesap: /blog/n11-satici-olmak-komisyon-hesaplama/.
 
 ## Dağıtım ve teklif metinleri (gönderim kullanıcıda, sayfa yayınlandıktan sonra)
 1. **LinkedIn gönderisi (kullanıcının profili):**

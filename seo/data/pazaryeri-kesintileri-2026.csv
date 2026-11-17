@@ -34,7 +34,7 @@ Amazon.com.tr;FBA lojistik ücreti;Standart büyük boyut 10 kg (43 inç TV örn
 Amazon.com.tr;FBA depolama;Ocak-Eylül;64;TL/m³/ay;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
 Amazon.com.tr;FBA depolama;Ekim-Aralık;83;TL/m³/ay;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
 Amazon.com.tr;FBA uzun süreli depolama;365 günden fazla;1500;TL/m³/ay;https://satis.amazon.com.tr/ucretlendirme;2026-11-16;Yüksek;
-Amazon.com.tr;FBA sabit kargo kampanyası;0-300 TL, Seller Flex kategorileri;25;TL/birim;https://satis.amazon.com.tr/lojistik/sabit-kargo-ucreti-kampanyasi;2026-11-16;Orta;sayfada 20 TL de geçiyor; bitiş tarihi yok
+Amazon.com.tr;FBA sabit kargo kampanyası;0-300 TL, Seller Flex kategorileri;25;TL/birim;https://satis.amazon.com.tr/lojistik/sabit-kargo-ucreti-kampanyasi;2026-11-16;Orta;sayfada 20 TL de geçiyor — bitiş tarihi yok
 Amazon.com.tr;kampanya komisyonu;Yeni satıcı, kayıttan 90 gün, 2 milyon TL'ye kadar (30.09-31.12.2026);1;%;https://www.foreks.com/haber/detay/6ac608c195016b5817e669d9/FRKS/tr/amazon-turkiye-yeni-saticilara-avantajli-firsatlar-sundugunu-duyurdu-07-10-26/;2026-10-07;Orta;
 Hepsiburada;hizmet bedeli;Teslimat başına (barem içinde de);10,99;TL;https://ezv.com.tr/blog/hepsiburada-kargo-ucretleri-guncellendi-barem-destegine-10-99-tl-hizmet-bedeli-eklendi;2026-08-21;Orta;21.09.2026'dan beri
 Hepsiburada;barem kargo;0-199,99 TL;43,99;TL;https://www.kargonomi.com.tr/blog/hepsiburada-kargo-ucretleri-ve-barem-destek-sistemi/;2026-10-22;Orta;HepsiJET/Sürat, 0-1 gün
@@ -54,3 +54,16 @@ Pazarama;barem kargo;0-149,99 TL (Sürat, Aras, DHL eCommerce, PTT, Kolay Gelsin
 Pazarama;barem kargo;150-300 TL (Sürat, Aras, DHL eCommerce, PTT, Kolay Gelsin);56,90;TL;https://mukellef.co/blog/pazaramada-satici-olmak/;2026-09-14;Düşük;Yurtiçi 79,90 TL
 Çiçeksepeti;satış komisyonu;Kategoriye göre (tahmini aralık);5-30;%;https://birfatura.com/cicek-sepeti-komisyon-orani-ne-kadar/;2026-10-16;Düşük;resmî kamuya açık tablo yok
 Çiçeksepeti;güvenli ödeme altyapısı bedeli;Sipariş tutarı üzerinden;1,5;%;https://birfatura.com/cicek-sepeti-komisyon-orani-ne-kadar/;2026-10-16;Düşük;
+n11;pazarlama hizmet bedeli;Tüm kategoriler;1;%;https://www.parasut.com/blog/n11-komisyon-oranlari;2026-03-09;Orta;satış fiyatı üzerinden — ikas 04.02.2026 ve Sentos 2026 aynı oran
+n11;pazaryeri hizmet bedeli;Tüm kategoriler;0,67;%;https://www.parasut.com/blog/n11-komisyon-oranlari;2026-03-09;Orta;satış fiyatı üzerinden — ikas 04.02.2026 ve Sentos 2026 aynı oran
+n11;sipariş başı sabit hizmet bedeli;Tüm kategoriler;;TL;https://nitru.com/n11-kar-hesaplama;2026-06;Düşük;kamuya açık kaynaklarda yok (nitru metni "yoktur") — panelden doğrulanmalı
+n11;satış komisyonu;Elektronik;5,5-20;%;https://birfatura.com/n11-komisyon-oranlari-ve-diger-kesintiler/;2026-10-14;Düşük;kaynakta "tahmini aralık"
+n11;satış komisyonu;Moda ve giyim;18-20,34;%;https://www.parasut.com/blog/n11-komisyon-oranlari;2026-03-09;Orta;BirFatura 14.10.2026 aynı aralık
+n11;satış komisyonu;Ayakkabı ve çanta;18-19;%;https://www.parasut.com/blog/n11-komisyon-oranlari;2026-03-09;Düşük;tek kaynak (kategori ağacı tablosu)
+n11;satış komisyonu;Ev ve yaşam;15-21;%;https://birfatura.com/n11-komisyon-oranlari-ve-diger-kesintiler/;2026-10-14;Düşük;tahmini aralık
+n11;satış komisyonu;Anne ve bebek;12-21;%;https://birfatura.com/n11-komisyon-oranlari-ve-diger-kesintiler/;2026-10-14;Düşük;tahmini aralık
+n11;satış komisyonu;Kozmetik ve kişisel bakım;13-17;%;https://birfatura.com/n11-komisyon-oranlari-ve-diger-kesintiler/;2026-10-14;Düşük;tahmini aralık
+n11;kargo baremi;0-149,99 TL, en fazla 5 desi, Aras;42,91;TL;https://pazarus.io/kargo-fiyatlari/n11;2026-06-14;Orta;Paraşüt 10.03.2026 aynı — PTT 34,16 · Sürat 48,74 · Kolay Gelsin 51,24 · DHL 52,08 · Yurtiçi 74,58 — KDV hariç liste tutarı
+n11;kargo baremi;150-299,99 TL, en fazla 5 desi, Aras;73,74;TL;https://pazarus.io/kargo-fiyatlari/n11;2026-06-14;Orta;Paraşüt 10.03.2026 aynı — PTT 65,83 · Sürat 79,58 · Kolay Gelsin 82,08 · DHL 82,91 · Yurtiçi 104,58 — KDV hariç liste tutarı
+n11;desi tarifesi;Aras 2 desi (300 TL üstü veya 5 desi üstü);86,92;TL;https://pazarus.io/kargo-fiyatlari/n11;2026-06-14;Orta;Paraşüt 10.03.2026 aynı — 4 desi 107,38 · 6 desi 125,44
+n11;ödeme günleri;Tamamlanan siparişler;3, 13, 23;ayın günü;https://ikas.com/tr/blog/n11-magaza-acma-rehberi;2026-02-04;Orta;BirFatura 16.10.2026 aynı — "Ertesi Gün Ödeme" seçeneği Para Dergi 30.04.2026
